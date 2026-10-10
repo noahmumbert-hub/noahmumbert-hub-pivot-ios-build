@@ -7,7 +7,7 @@
   "localizedDescription": "PIVOT updates for SideStore. Uses the existing PIVOT app identity.",
   "website": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
   "websiteURL": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
-  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/fba7ce9b702a59ae14a637d9b7af3aa8abf2ea2e/icon.png",
+  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/6bb5b579c946039a3560fc2721bb69b9186a26a9/icon.png",
   "tintColor": "70DFC0",
   "apps": [
     {
@@ -16,14 +16,23 @@
       "developerName": "Noah Mumbert",
       "subtitle": "Theme park companion",
       "localizedDescription": "Park wait times, ride status, weather observations, planning, shows and Live Activities.",
-      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/fba7ce9b702a59ae14a637d9b7af3aa8abf2ea2e/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/6bb5b579c946039a3560fc2721bb69b9186a26a9/icon.png",
       "tintColor": "70DFC0",
-      "version": "1.14.1",
-      "versionDate": "2026-10-10T20:16:17Z",
-      "versionDescription": "Saved lightning observations now expire and clearly show saved or unavailable data. Empty or unhealthy ride feeds no longer report that all rides are clear. Failed refresh status stays saved when switching parks, and delayed GPS results no longer override manual park choices. Existing 1.14 features, saved-data keys and the Live Activity extension are preserved. Native update only; backend changes are separate.",
-      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/fba7ce9b702a59ae14a637d9b7af3aa8abf2ea2e/PIVOT-1.14.1-100.3.1.ipa",
-      "size": 2812500,
+      "version": "1.14.2",
+      "versionDate": "2026-10-10T21:30:32Z",
+      "versionDescription": "Halloween Horror Nights gets a clearer purple-and-amber layout, larger wait numbers, readable house statuses, search, and All houses/Favorites/To do filters. A favorite-house checklist tracks your night; existing favorites, sorting and completed houses are preserved. Preview, saved and unavailable data have distinct labels, and stale or missing waits stay unknown. Large text layouts and touch targets were checked in the iPhone simulator. This native update includes the previous 1.14.1 fixes and preserves the existing app and Live Activity identity. Keep PIVOT installed and update it using the same SideStore signing identity. Physical SideStore installation remains untested.",
+      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/6bb5b579c946039a3560fc2721bb69b9186a26a9/PIVOT-1.14.2-100.8.1.ipa",
+      "size": 2841167,
       "versions": [
+        {
+          "version": "1.14.2",
+          "buildVersion": "100.8.1",
+          "date": "2026-10-10T21:30:32Z",
+          "localizedDescription": "Halloween Horror Nights gets a clearer purple-and-amber layout, larger wait numbers, readable house statuses, search, and All houses/Favorites/To do filters. A favorite-house checklist tracks your night; existing favorites, sorting and completed houses are preserved. Preview, saved and unavailable data have distinct labels, and stale or missing waits stay unknown. Large text layouts and touch targets were checked in the iPhone simulator. This native update includes the previous 1.14.1 fixes and preserves the existing app and Live Activity identity. Keep PIVOT installed and update it using the same SideStore signing identity. Physical SideStore installation remains untested.",
+          "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/6bb5b579c946039a3560fc2721bb69b9186a26a9/PIVOT-1.14.2-100.8.1.ipa",
+          "size": 2841167,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.14.1",
           "buildVersion": "100.3.1",

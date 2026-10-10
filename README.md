@@ -4,11 +4,11 @@ Add this source in SideStore → Sources → +:
 
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 
-Current update: **1.14.1 / build 100.3.1**, iOS 17.0+.
+Current update: **1.14.2 / build 100.8.1**, iOS 17.0+.
 
-Saved lightning observations now expire and clearly show saved or unavailable data. Empty or unhealthy ride feeds no longer report that all rides are clear. Failed refresh status stays saved when switching parks, and delayed GPS results no longer override manual park choices. Existing 1.14 features, saved-data keys and the Live Activity extension are preserved. Native update only; backend changes are separate.
+Halloween Horror Nights gets a clearer purple-and-amber layout, larger wait numbers, readable house statuses, search, and All houses/Favorites/To do filters. A favorite-house checklist tracks your night; existing favorites, sorting and completed houses are preserved. Preview, saved and unavailable data have distinct labels, and stale or missing waits stay unknown. Large text layouts and touch targets were checked in the iPhone simulator. This native update includes the previous 1.14.1 fixes and preserves the existing app and Live Activity identity. Keep PIVOT installed and update it using the same SideStore signing identity. Physical SideStore installation remains untested.
 
-IPA SHA-256: `6032370d60a08c2ae4dcb960477182b6a2d4395d15dcf3d05835ba52f04efe0d`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38080886085).
+IPA SHA-256: `c016400d0b89fbf404f2b3666628a9e2cf4fdac9b3351444b6b5b808d78006da`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38087339360).
 The unsigned IPA preserves `com.noahmumbert.PIVOT` and its Live Activity extension.
 Install as an update using the same signing identity; keep the existing app installed to retain saved data.
 Native unit and simulator UI tests passed for this build. Physical SideStore installation remains untested.
