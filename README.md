@@ -78,7 +78,7 @@ In SideStore, open **Sources → +** (usually under Browse) and add:
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 ```
 
-PIVOT **1.14.3 / 100.9.1** is the latest listed update; the tested 1.14.2 and 1.14.1 updates remain in version history. Install it as an update to the existing PIVOT app, using the same signing identity. Keep the app installed to preserve saved data. The source and IPA downloads are public and do not expire with Actions artifacts. Physical SideStore installation remains untested.
+PIVOT **1.14.4 / 100.11.1** is the latest listed update; earlier tested updates remain in version history. Install it as an update to the existing PIVOT app, using the same signing identity. Keep the app installed to preserve saved data. The source and IPA downloads are public and do not expire with Actions artifacts. Physical SideStore installation remains untested.
 
 Future updates use this same source URL. Each native update still needs a new tested IPA; SideStore downloads and signs it when you choose to update. Publishing is manual, after successful Xcode tests and archive validation. Workflow permissions are unchanged.
 
@@ -100,3 +100,9 @@ Add `--publish` when publication is authorized. The helper checks checksum, devi
 ## Compact HHN follow-up
 
 **1.14.3 / 100.9.1** replaces the large event hero with a compact card and a slim favorites progress strip, bringing the houses closer to the top. [Xcode run 38088227371](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38088227371) passed 149 unit tests, 10 simulator UI tests and the Release archive. The tested update is published through the same SideStore source. [Validation and delivery report](docs/hhn-compact-update.md).
+
+## HHN posted-wait fix
+
+**1.14.4 / 100.11.1** restores valid unchanged house waits from fresh observations and separates HHN house health from regular-ride feed health. The app can recover house waits omitted by the backend using the same free ThemeParks.wiki source, with bounded requests. Invalid, future, missing, failed and expired observations remain unavailable. Compact layout and saved data are preserved.
+
+[Verified Xcode run](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38092438641): 154 unit tests, 10 simulator UI tests and Release archive passed. Available through the same SideStore source. [Validation and delivery report](docs/hhn-wait-update.md) distinguishes source/recorded-response tests, baseline lint/typecheck failures, simulator checks and unrun physical installation. Prepared backend/web source changes are not deployed by installing this IPA.
