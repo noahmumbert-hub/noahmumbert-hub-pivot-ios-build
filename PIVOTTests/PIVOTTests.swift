@@ -2,6 +2,229 @@ import XCTest
 @testable import PIVOT
 
 final class PIVOTTests: XCTestCase {
+    func testLightningPanelExpiresChecksSourceAgeAndFailedRefresh() throws {
+        let snapshot = makeSnapshot(sourceOffset: 0, ride: makeRide(status: .open))
+        let live = DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot, isLoading: false, refreshFailed: false, at: start)
+        var data = try XCTUnwrap(JSONSerialization.jsonObject(with: JSONEncoder().encode(snapshot.weather.lightning)) as? [String: Any])
+        data["clearanceState"] = "VERIFIED"
+        data["completeFrames30Minutes"] = 3
+        func lightning() throws -> LightningDetails {
+            try JSONDecoder().decode(LightningDetails.self, from: JSONSerialization.data(withJSONObject: data))
+        }
+        XCTAssertTrue(DashboardLightningHealth.presentation(lightning: try lightning(), feedHealth: live, at: start).isCurrent)
+        for age in [DashboardLightningHealth.maximumCheckAge, DashboardLightningHealth.maximumCheckAge + 1] {
+            let result = DashboardLightningHealth.presentation(lightning: try lightning(), feedHealth: live, at: start.addingTimeInterval(age))
+            XCTAssertFalse(result.isCurrent)
+            XCTAssertTrue(result.title.contains("Saved"))
+        }
+        let failed = DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot, isLoading: false, refreshFailed: true, at: start)
+        XCTAssertFalse(DashboardLightningHealth.presentation(lightning: try lightning(), feedHealth: failed, at: start).isCurrent)
+        for offset in [-DashboardLightningHealth.maximumDensityAge, 121] {
+            data["sourceUpdatedAt"] = start.addingTimeInterval(offset).timeIntervalSinceReferenceDate
+            XCTAssertFalse(DashboardLightningHealth.presentation(lightning: try lightning(), feedHealth: live, at: start).isCurrent)
+        }
+        data.removeValue(forKey: "sourceUpdatedAt")
+        XCTAssertTrue(DashboardLightningHealth.presentation(lightning: try lightning(), feedHealth: live, at: start).title.contains("unavailable"))
+    }
+
+    func testColdFailureEmptyAndUnknownRideDataCannotAssertNoClosures() throws {
+        let liveSnapshot = makeSnapshot(sourceOffset: 0, ride: makeRide(status: .open))
+        let live = DashboardFeedHealth.presentation(parkSelected: true, snapshot: liveSnapshot, isLoading: false, refreshFailed: false, at: start)
+        XCTAssertTrue(DashboardClosureHealth.canAssertNoClosures(snapshot: liveSnapshot, feedHealth: live))
+        XCTAssertFalse(DashboardClosureHealth.canAssertNoClosures(snapshot: nil, feedHealth: live))
+        var data = try XCTUnwrap(JSONSerialization.jsonObject(with: JSONEncoder().encode(liveSnapshot)) as? [String: Any])
+        data["rides"] = []
+        let empty = try JSONDecoder().decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: data))
+        XCTAssertFalse(DashboardClosureHealth.canAssertNoClosures(snapshot: empty, feedHealth: live))
+        for status: RideStatus in [.stale, .unknown("UNAVAILABLE"), .down] {
+            XCTAssertFalse(DashboardClosureHealth.canAssertNoClosures(snapshot: makeSnapshot(sourceOffset: 0, ride: makeRide(status: status)), feedHealth: live))
+        }
+        let failed = DashboardFeedHealth.presentation(parkSelected: true, snapshot: liveSnapshot, isLoading: false, refreshFailed: true, at: start)
+        XCTAssertFalse(DashboardClosureHealth.canAssertNoClosures(snapshot: liveSnapshot, feedHealth: failed))
+    }
+
+    @MainActor
+    func testLateStartupAndExplicitGPSCannotOverrideManualParkOrNoPark() async throws {
+        for automatic in [true, false] {
+            for manual: FloridaPark? in [.magicKingdom, .epcot, nil] {
+                let defaults = try XCTUnwrap(UserDefaults(suiteName: "gps-race-\(UUID())"))
+                if !automatic { defaults.set(FloridaPark.magicKingdom.rawValue, forKey: "pivot.selectedPark") }
+                var pending: CheckedContinuation<ParkLocationRequest, Never>?
+                let store = DashboardStore(defaults: defaults, locationRequest: {
+                    await withCheckedContinuation { pending = $0 }
+                })
+                if automatic { await store.bootstrap() } else { store.requestParkFromLocation() }
+                for _ in 0..<50 where pending == nil { await Task.yield() }
+                let callback = try XCTUnwrap(pending)
+                store.selectPark(manual)
+                callback.resume(returning: .location(latitude: 28.4177, longitude: -81.5812))
+                for _ in 0..<20 { await Task.yield() }
+                XCTAssertEqual(store.selectedPark, manual)
+                XCTAssertEqual(store.locationStatus, .idle)
+            }
+        }
+    }
+
+    @MainActor
+    func testFailedParkCacheStaysSavedAcrossRepeatedSwitchesUntilRevalidation() async throws {
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: "cache-switch-\(UUID())"))
+        defaults.set(6, forKey: "pivot.selectedPark")
+        let config = URLSessionConfiguration.ephemeral
+        config.protocolClasses = [AuditURLProtocol.self]
+        let client = PivotAPIClient(baseURL: URL(string: "https://audit.invalid")!, session: URLSession(configuration: config))
+        let encoder = JSONEncoder()
+        encoder.dateEncodingStrategy = .iso8601
+        let payload = try encoder.encode(makeSnapshot(sourceOffset: 0, ride: makeRide(status: .open)))
+        AuditURLProtocol.response = { _ in payload }
+        defer { AuditURLProtocol.response = nil }
+        let store = DashboardStore(apiClient: client, defaults: defaults)
+        await store.refreshNow()
+        XCTAssertTrue(store.feedHealth(at: start).isLive)
+        AuditURLProtocol.response = { _ in throw URLError(.notConnectedToInternet) }
+        await store.refreshNow()
+        XCTAssertEqual(store.feedHealth(at: start).badgeLabel, "Saved")
+        for _ in 0..<3 {
+            store.selectPark(.epcot)
+            store.selectPark(.magicKingdom)
+            XCTAssertEqual(store.feedHealth(at: start).badgeLabel, "Saved")
+            XCTAssertNotNil(store.errorMessage)
+            XCTAssertFalse(store.canAssertNoClosures(at: start))
+        }
+        AuditURLProtocol.response = { _ in payload }
+        await store.refreshNow()
+        XCTAssertTrue(store.feedHealth(at: start).isLive)
+        XCTAssertNil(store.errorMessage)
+    }
+
+    func testFeedHealthFailureOverridesHealthyRetainedSnapshotAndRecovers() throws {
+        let snapshot = makeSnapshot(sourceOffset: 0, ride: makeRide(status: .down))
+        let healthy = DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot, isLoading: false, refreshFailed: false, at: start)
+        XCTAssertTrue(healthy.isLive)
+        XCTAssertEqual(healthy.badgeLabel, "Live")
+        XCTAssertNil(healthy.retainedGuidance)
+
+        // A retry must not turn the saved response green while it is in flight.
+        for loading in [false, true] {
+            let failed = DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot, isLoading: loading, refreshFailed: true, at: start.addingTimeInterval(5))
+            XCTAssertFalse(failed.isLive)
+            XCTAssertEqual(failed.badgeLabel, "Saved")
+            XCTAssertTrue(failed.status.contains("last update retained"))
+            XCTAssertTrue(try XCTUnwrap(failed.retainedGuidance).contains("reopening guidance"))
+            XCTAssertNotNil(snapshot.rides.first?.estimate, "Keep the saved forecast available with the warning")
+        }
+
+        let recovered = DashboardFeedHealth.presentation(parkSelected: true, snapshot: makeSnapshot(sourceOffset: 10, ride: makeRide(status: .down)), isLoading: false, refreshFailed: false, at: start.addingTimeInterval(10))
+        XCTAssertTrue(recovered.isLive)
+        XCTAssertNil(recovered.retainedGuidance)
+    }
+
+    func testFeedHealthExpiresAtFreshnessBoundaryWithoutAnotherResponse() {
+        let snapshot = makeSnapshot(sourceOffset: 0, ride: makeRide(status: .open))
+        for age in [DashboardFeedHealth.maximumAge - 1, DashboardFeedHealth.maximumAge, DashboardFeedHealth.maximumAge + 1] {
+            let health = DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot, isLoading: false, refreshFailed: false, at: start.addingTimeInterval(age))
+            XCTAssertEqual(health.isLive, age < DashboardFeedHealth.maximumAge)
+            XCTAssertEqual(health.retainedGuidance == nil, health.isLive)
+            if !health.isLive { XCTAssertEqual(health.badgeLabel, "Saved") }
+        }
+    }
+
+    func testFeedHealthChecksProviderFetchAgeAndRetainedCacheFlag() {
+        for provider in [
+            makeThemeParksWikiSummary(available: false),
+            makeThemeParksWikiSummary(cacheStale: true),
+            makeThemeParksWikiSummary(fetchedAt: start.addingTimeInterval(-DashboardFeedHealth.maximumAge)),
+        ] {
+            let snapshot = makeSnapshot(sourceOffset: 0, themeParksWiki: provider, ride: makeRide(status: .down))
+            let health = DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot, isLoading: false, refreshFailed: false, at: start)
+            XCTAssertFalse(health.isLive)
+            XCTAssertEqual(health.badgeLabel, "Saved")
+            XCTAssertNotNil(health.retainedGuidance)
+        }
+    }
+
+    func testFeedHealthDoesNotConfuseOldSourceVersionWithOldFetch() {
+        let snapshot = makeSnapshot(sourceOffset: 0, waitStatusSourceOffset: -3600, themeParksWiki: makeThemeParksWikiSummary(), ride: makeRide(status: .down))
+        let health = DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot, isLoading: false, refreshFailed: false, at: start)
+        XCTAssertTrue(health.isLive, "An unchanged closure is allowed when the provider was freshly checked")
+        XCTAssertNil(health.retainedGuidance)
+    }
+
+    func testFeedHealthRejectsUnhealthyAndFutureDatedSnapshots() {
+        for snapshot in [
+            makeSnapshot(sourceOffset: 0, feedHealthy: false, ride: makeRide(status: .open)),
+            makeSnapshot(sourceOffset: 121, ride: makeRide(status: .open)),
+        ] {
+            let health = DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot, isLoading: false, refreshFailed: false, at: start)
+            XCTAssertFalse(health.isLive)
+            XCTAssertNotNil(health.retainedGuidance)
+        }
+    }
+
+    func testFeedHealthHandlesPausedLoadingAndMissingSnapshotFailures() {
+        let paused = DashboardFeedHealth.presentation(parkSelected: false, snapshot: makeSnapshot(sourceOffset: 0, ride: makeRide(status: .open)), isLoading: false, refreshFailed: true, at: start)
+        XCTAssertFalse(paused.isLive)
+        XCTAssertEqual(paused.status, "Paused · choose a park")
+        XCTAssertNil(paused.retainedGuidance)
+        let loading = DashboardFeedHealth.presentation(parkSelected: true, snapshot: nil, isLoading: true, refreshFailed: false, at: start)
+        XCTAssertFalse(loading.isLive)
+        XCTAssertEqual(loading.status, "Refreshing")
+        XCTAssertNil(loading.retainedGuidance)
+        let failed = DashboardFeedHealth.presentation(parkSelected: true, snapshot: nil, isLoading: false, refreshFailed: true, at: start)
+        XCTAssertFalse(failed.isLive)
+        XCTAssertEqual(failed.status, "Refresh failed")
+        XCTAssertNil(failed.retainedGuidance)
+    }
+
+    func testParkHoursExpireAtParkLocalMidnightNotDeviceOrUTCMidnight() throws {
+        let formatter = ISO8601DateFormatter()
+        let beforeEasternMidnight = try XCTUnwrap(formatter.date(from: "2026-09-30T03:59:59Z"))
+        let easternMidnight = beforeEasternMidnight.addingTimeInterval(1)
+        let easternHours = makeParkHours(date: "2026-09-29")
+        let pacificHours = makeParkHours(park: .sixFlagsMagicMountain, date: "2026-09-29")
+        XCTAssertTrue(easternHours.isCurrent(for: .magicKingdom, at: beforeEasternMidnight))
+        XCTAssertFalse(easternHours.isCurrent(for: .magicKingdom, at: easternMidnight))
+        XCTAssertTrue(pacificHours.isCurrent(for: .sixFlagsMagicMountain, at: easternMidnight))
+        XCTAssertFalse(pacificHours.isCurrent(for: .sixFlagsMagicMountain, at: easternMidnight.addingTimeInterval(3 * 3600)))
+        XCTAssertEqual(ParkHoursSnapshot.localDate(for: .magicKingdom, at: easternMidnight), "2026-09-30")
+        XCTAssertEqual(ParkHoursSnapshot.localDate(for: .sixFlagsMagicMountain, at: easternMidnight), "2026-09-29")
+    }
+
+    func testParkHoursUseDaylightSavingAndYearBoundaries() throws {
+        let formatter = ISO8601DateFormatter()
+        for timestamp in ["2026-03-09T04:00:00Z", "2026-11-02T05:00:00Z", "2027-01-01T05:00:00Z"] {
+            let midnight = try XCTUnwrap(formatter.date(from: timestamp))
+            let date = ParkHoursSnapshot.localDate(for: .magicKingdom, at: midnight.addingTimeInterval(-1))
+            let hours = makeParkHours(date: date)
+            XCTAssertTrue(hours.isCurrent(for: .magicKingdom, at: midnight.addingTimeInterval(-1)))
+            XCTAssertFalse(hours.isCurrent(for: .magicKingdom, at: midnight))
+        }
+    }
+
+    func testParkHoursRejectWrongParkYesterdayAndTomorrowAndFindCurrentCache() throws {
+        let now = try XCTUnwrap(ISO8601DateFormatter().date(from: "2026-09-30T16:00:00Z"))
+        let yesterday = makeParkHours(date: "2026-09-29")
+        let tomorrow = makeParkHours(date: "2026-10-01")
+        let wrongPark = makeParkHours(park: .epcot)
+        let current = makeParkHours(fetchedAt: now)
+        XCTAssertNil(ParkHoursSnapshot.current(for: .magicKingdom, candidates: [nil, yesterday, tomorrow, wrongPark], at: now))
+        let selected = try XCTUnwrap(ParkHoursSnapshot.current(for: .magicKingdom, candidates: [yesterday, current, wrongPark], at: now))
+        XCTAssertEqual(selected.date, "2026-09-30")
+        XCTAssertEqual(selected.fetchedAt, now)
+    }
+
+    func testParkHoursPreferFreshThenNewestButRetainCurrentDayStaleFallback() throws {
+        let now = try XCTUnwrap(ISO8601DateFormatter().date(from: "2026-09-30T16:00:00Z"))
+        let old = makeParkHours(fetchedAt: now.addingTimeInterval(-120))
+        let recent = makeParkHours(fetchedAt: now.addingTimeInterval(-60))
+        let stale = makeParkHours(fetchedAt: now, stale: true)
+        for candidates in [[old, stale, recent], [recent, old, stale]] {
+            let selected = try XCTUnwrap(ParkHoursSnapshot.current(for: .magicKingdom, candidates: candidates.map { Optional($0) }, at: now))
+            XCTAssertFalse(selected.stale)
+            XCTAssertEqual(selected.fetchedAt, recent.fetchedAt)
+        }
+        XCTAssertTrue(try XCTUnwrap(ParkHoursSnapshot.current(for: .magicKingdom, candidates: [stale], at: now)).stale)
+    }
+
     func testHorrorNightSwitchesAtSixAndRemainsActiveAfterMidnight() throws {
         let formatter = ISO8601DateFormatter()
         let night = HorrorNight(date: "2026-09-26", modeStartsAt: try XCTUnwrap(formatter.date(from: "2026-09-26T22:00:00Z")), openingTime: try XCTUnwrap(formatter.date(from: "2026-09-26T22:30:00Z")), closingTime: try XCTUnwrap(formatter.date(from: "2026-09-27T06:00:00Z")))
@@ -1909,9 +2132,65 @@ final class PIVOTTests: XCTestCase {
         )
     }
 
+    private func makeThemeParksWikiSummary(
+        available: Bool = true,
+        cacheStale: Bool = false,
+        fetchedAt: Date? = nil
+    ) -> ThemeParksWikiSummary {
+        ThemeParksWikiSummary(
+            available: available,
+            cacheStale: cacheStale,
+            fetchedAt: fetchedAt ?? start,
+            sourceUpdatedAt: start.addingTimeInterval(-3600),
+            cacheAgeSeconds: 0,
+            cacheHit: false,
+            matchedRideCount: 1,
+            unmatchedRides: [],
+            showCount: nil,
+            showsWithUpcomingTimes: nil,
+            showSourceUpdatedAt: nil,
+            warning: nil,
+            role: "PRIMARY",
+            statusSemantics: "Current provider status",
+            usedForWaitTimes: true,
+            usedForOperationalEligibility: true,
+            usedForOperationalTraining: false,
+            source: makeThemeParksWikiAttribution()
+        )
+    }
+
+    private func makeThemeParksWikiAttribution() -> ThemeParksWikiAttribution {
+        ThemeParksWikiAttribution(name: "ThemeParks.wiki", label: "ThemeParks.wiki", url: "https://www.themeparks.wiki/", termsUrl: "https://www.themeparks.wiki/", updateCadenceMinutes: 5)
+    }
+
+    private func makeParkHours(
+        park: FloridaPark = .magicKingdom,
+        date: String = "2026-09-30",
+        fetchedAt: Date? = nil,
+        stale: Bool = false
+    ) -> ParkHoursSnapshot {
+        ParkHoursSnapshot(
+            parkId: park.rawValue,
+            parkName: park.name,
+            timezone: park.timeZoneIdentifier,
+            date: date,
+            fetchedAt: fetchedAt ?? start,
+            sourceUpdatedAt: nil,
+            cacheAgeSeconds: 0,
+            cacheHit: true,
+            stale: stale,
+            warning: nil,
+            regular: nil,
+            earlyEntry: nil,
+            source: makeThemeParksWikiAttribution()
+        )
+    }
+
     private func makeSnapshot(
         sourceOffset: TimeInterval,
         waitStatusSourceOffset: TimeInterval? = nil,
+        feedHealthy: Bool = true,
+        themeParksWiki: ThemeParksWikiSummary? = nil,
         ride: LiveRide
     ) -> LiveParkSnapshot {
         let sourceDate = start.addingTimeInterval(sourceOffset)
@@ -1926,7 +2205,7 @@ final class PIVOTTests: XCTestCase {
                 timezone: "America/New_York"
             ),
             parkActive: true,
-            feedHealthy: true,
+            feedHealthy: feedHealthy,
             fetchedAt: sourceDate,
             sourceUpdatedAt: sourceDate,
             sourceUpdatedAtByProvider: ProviderSourceTimes(
@@ -1943,7 +2222,7 @@ final class PIVOTTests: XCTestCase {
                 reportingCount: 1
             ),
             source: SourceDetails(name: "ThemeParks.wiki", url: "https://www.themeparks.wiki/", updateCadenceMinutes: 5),
-            themeParksWiki: nil,
+            themeParksWiki: themeParksWiki,
             weather: makeWeather(at: sourceDate)
         )
     }
@@ -2008,4 +2287,20 @@ final class PIVOTTests: XCTestCase {
             )
         )
     }
+}
+
+private final class AuditURLProtocol: URLProtocol, @unchecked Sendable {
+    nonisolated(unsafe) static var response: ((URLRequest) throws -> Data)?
+    override class func canInit(with request: URLRequest) -> Bool { request.url?.host == "audit.invalid" }
+    override class func canonicalRequest(for request: URLRequest) -> URLRequest { request }
+    override func startLoading() {
+        do {
+            guard let response = Self.response else { throw URLError(.badServerResponse) }
+            let data = try response(request)
+            client?.urlProtocol(self, didReceive: HTTPURLResponse(url: request.url!, statusCode: 200, httpVersion: nil, headerFields: ["Content-Type": "application/json"])!, cacheStoragePolicy: .notAllowed)
+            client?.urlProtocol(self, didLoad: data)
+            client?.urlProtocolDidFinishLoading(self)
+        } catch { client?.urlProtocol(self, didFailWithError: error) }
+    }
+    override func stopLoading() {}
 }

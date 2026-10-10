@@ -9,7 +9,7 @@ if [[ "$(uname -s)" != Darwin ]]; then
   exit 1
 fi
 
-build_number="${PIVOT_BUILD_NUMBER:-100.1.1}"
+build_number="${PIVOT_BUILD_NUMBER:?Set PIVOT_BUILD_NUMBER above the build already installed on your device.}"
 if [[ ! "$build_number" =~ ^[0-9]+(\.[0-9]+){0,2}$ ]]; then
   echo 'PIVOT_BUILD_NUMBER must contain one to three numeric components.' >&2
   exit 1
