@@ -7,7 +7,7 @@
   "localizedDescription": "PIVOT updates for SideStore. Uses the existing PIVOT app identity.",
   "website": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
   "websiteURL": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
-  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/b6c2e970e8120ab2834294d431ed1e276f1acaec/icon.png",
+  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/9133aef0157a92993a6e8491fb6b29cabde7e6cd/icon.png",
   "tintColor": "70DFC0",
   "apps": [
     {
@@ -16,14 +16,23 @@
       "developerName": "Noah Mumbert",
       "subtitle": "Theme park companion",
       "localizedDescription": "Park wait times, ride status, weather observations, planning, shows and Live Activities.",
-      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/b6c2e970e8120ab2834294d431ed1e276f1acaec/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/9133aef0157a92993a6e8491fb6b29cabde7e6cd/icon.png",
       "tintColor": "70DFC0",
-      "version": "1.14.3",
-      "versionDate": "2026-10-10T21:48:41Z",
-      "versionDescription": "Halloween Horror Nights uses a smaller event card and a slim favorites progress strip so houses appear sooner. The moon icon and purple/amber theme remain, with readable event date, hours, ticket notice and Live/Preview/Saved labels. Existing favorites, completion, sorting and previous fixes are preserved. Update the existing PIVOT app using the same SideStore signing identity. Physical SideStore installation remains untested.",
-      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/b6c2e970e8120ab2834294d431ed1e276f1acaec/PIVOT-1.14.3-100.9.1.ipa",
-      "size": 2839356,
+      "version": "1.14.4",
+      "versionDate": "2026-10-10T22:54:11Z",
+      "versionDescription": "Fixes HHN house waits disappearing when an unchanged posted wait has an older provider timestamp. Fresh house observations keep valid posted waits, including zero; missing, invalid, future-dated, failed and expired observations remain unavailable. HHN house feed health is independent of regular rides. The app can refresh houses from the same free ThemeParks.wiki provider when the server has omitted waits, with bounded requests and retry backoff. The compact Halloween layout and existing favorites/completion data are preserved. Update the existing PIVOT app with the same SideStore signing identity. Physical SideStore installation remains untested.",
+      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/9133aef0157a92993a6e8491fb6b29cabde7e6cd/PIVOT-1.14.4-100.11.1.ipa",
+      "size": 2846592,
       "versions": [
+        {
+          "version": "1.14.4",
+          "buildVersion": "100.11.1",
+          "date": "2026-10-10T22:54:11Z",
+          "localizedDescription": "Fixes HHN house waits disappearing when an unchanged posted wait has an older provider timestamp. Fresh house observations keep valid posted waits, including zero; missing, invalid, future-dated, failed and expired observations remain unavailable. HHN house feed health is independent of regular rides. The app can refresh houses from the same free ThemeParks.wiki provider when the server has omitted waits, with bounded requests and retry backoff. The compact Halloween layout and existing favorites/completion data are preserved. Update the existing PIVOT app with the same SideStore signing identity. Physical SideStore installation remains untested.",
+          "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/9133aef0157a92993a6e8491fb6b29cabde7e6cd/PIVOT-1.14.4-100.11.1.ipa",
+          "size": 2846592,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.14.3",
           "buildVersion": "100.9.1",
