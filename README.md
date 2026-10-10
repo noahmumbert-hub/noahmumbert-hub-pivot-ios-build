@@ -7,7 +7,7 @@ history are not included here. The app uses the existing PIVOT backend.
 ## Build an IPA
 
 1. Open **Actions → Build SideStore IPA → Run workflow**.
-2. Select `main` and wait for the run to finish successfully.
+2. Select the intended branch and wait for a successful run. The October 8 audit candidate is on `fix/october8-audit`; `main` remains the older release until reviewed.
 3. Download the **PIVOT-SideStore** artifact at the bottom of the run page.
 4. Extract the downloaded ZIP. It contains an `.ipa`, `SHA256SUMS`, and
    `build-info.json` identifying the source commit and app version.
@@ -28,7 +28,7 @@ public, although GitHub may require login to download Actions artifacts.
 ## Build from a cloud chat
 
 ```bash
-gh workflow run build-ipa.yml --repo noahmumbert-hub/noahmumbert-hub-pivot-ios-build --ref main
+gh workflow run build-ipa.yml --repo noahmumbert-hub/noahmumbert-hub-pivot-ios-build --ref fix/october8-audit
 gh run list --repo noahmumbert-hub/noahmumbert-hub-pivot-ios-build --workflow build-ipa.yml
 gh run download RUN_ID --repo noahmumbert-hub/noahmumbert-hub-pivot-ios-build --name ARTIFACT_NAME
 ```
@@ -45,7 +45,7 @@ Install Xcode 26.3 and run:
 
 ```bash
 export DEVELOPER_DIR=/Applications/Xcode_26.3.app/Contents/Developer
-PIVOT_BUILD_NUMBER=100.1.1 bash scripts/build-ipa.sh
+PIVOT_BUILD_NUMBER=100.3.2 bash scripts/build-ipa.sh
 ```
 
 The workflow uses the standard `macos-15` runner. Standard GitHub-hosted
@@ -58,3 +58,14 @@ The initial iOS project was copied from PIVOT source commit
 `882055c8a5e267f2f0df0baf2e17bb3c901f5666` (release `2026.09.26.2`, native version
 `1.13.0`). Only the app, Xcode project, Live Activity extension, and native
 test targets were copied; the public repository starts with fresh history.
+
+
+## October 8 audit candidate
+
+The candidate advances to **1.14.1** from the verified published **1.14.0 / build 22** source archive `PIVOT-iOS-2026.10.04.2.zip`. Archive SHA-256: `1dd32326df0c8540cbcd98e4df2bac73050002a2cb3cf07501c199e2c0eb5f14`. Current 1.14 features are retained.
+
+Native changes expire saved lightning guidance, require valid ride observations before reporting no closures, preserve failed cache health across park switches, and reject delayed GPS results after manual choices. Bundle identifiers and preference keys are unchanged.
+
+[Verified candidate build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38080886085): 142 Xcode unit tests and 5 simulator UI tests passed. Unsigned IPA **1.14.1 / 100.3.1**, SHA-256 `6032370d60a08c2ae4dcb960477182b6a2d4395d15dcf3d05835ba52f04efe0d`. Download the **PIVOT-SideStore-3-1** artifact and import it as an update to the existing PIVOT app using the same signing identity. Keep the existing app installed to retain its data. Physical iPhone / SideStore installation remains untested.
+
+The candidate has not been merged or published as a release. Backend fixes are reviewed separately and are not applied by installing this IPA. For manual Mac builds, set an explicit build number above the one already installed; the workflow sets it automatically.
