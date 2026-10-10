@@ -68,4 +68,25 @@ Native changes expire saved lightning guidance, require valid ride observations 
 
 [Verified candidate build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38080886085): 142 Xcode unit tests and 5 simulator UI tests passed. Unsigned IPA **1.14.1 / 100.3.1**, SHA-256 `6032370d60a08c2ae4dcb960477182b6a2d4395d15dcf3d05835ba52f04efe0d`. Download the **PIVOT-SideStore-3-1** artifact and import it as an update to the existing PIVOT app using the same signing identity. Keep the existing app installed to retain its data. Physical iPhone / SideStore installation remains untested.
 
-The candidate has not been merged or published as a release. Backend fixes are reviewed separately and are not applied by installing this IPA. For manual Mac builds, set an explicit build number above the one already installed; the workflow sets it automatically.
+The candidate has not been merged or published as a GitHub release. The tested native update is available through the SideStore source below. Backend fixes are reviewed separately and are not applied by installing this IPA. For manual Mac builds, set an explicit build number above the one already installed; the workflow sets it automatically.
+
+## SideStore update source
+
+In SideStore, open **Sources → +** (usually under Browse) and add:
+
+```text
+https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
+```
+
+PIVOT **1.14.1 / 100.3.1** is the first listed update. Install it as an update to the existing PIVOT app, using the same signing identity. Keep the app installed to preserve saved data. The source and IPA downloads are public and do not expire with Actions artifacts. Physical SideStore installation remains untested.
+
+Future updates use this same source URL. Each native update still needs a new tested IPA; SideStore downloads and signs it when you choose to update. Publishing is manual, after successful Xcode tests and archive validation. Workflow permissions are unchanged.
+
+After downloading a successful newer build's IPA and metadata, prepare the source update with:
+
+```bash
+python3 scripts/test-sidestore-source.py
+python3 scripts/publish-sidestore.py --ipa /path/to/PIVOT-new-version.ipa --info /path/to/build-info.json --notes /path/to/release-notes.txt
+```
+
+Add `--publish` when publication is authorized. The helper checks checksum, device platform, app and extension identity/version, successful build/test provenance, and version continuity. It appends immutable downloads and updates only the `ipa-builds` branch, preserving the source checkout and existing version history. New entitlements require an explicit permissions review before the helper can publish.
