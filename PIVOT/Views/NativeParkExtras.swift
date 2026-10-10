@@ -383,7 +383,8 @@ private struct NativeHorrorNightChecklist: View {
     private var searchField: some View {
         HStack(spacing: 10) {
             Image(systemName: "magnifyingglass").foregroundStyle(HorrorNightTheme.muted).accessibilityHidden(true)
-            TextField("Search houses", text: $query)
+            TextField("Search houses", text: $query,
+                      prompt: Text("Search houses").foregroundColor(HorrorNightTheme.muted))
                 .font(.body).autocorrectionDisabled()
                 .focused($searchFocused).submitLabel(.search)
                 .onSubmit { searchFocused = false }
