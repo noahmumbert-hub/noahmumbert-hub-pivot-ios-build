@@ -558,7 +558,7 @@ struct NativeHorrorNightUITestScreen: View {
             houses: arguments.contains("--hhn-ui-test-empty") ? [] : [
                 HorrorHouse(id: "test-alpha", name: "The Haunted Conservatory", status: "OPEN", waitTime: 15, sourceUpdatedAt: now),
                 HorrorHouse(id: "test-bravo", name: "A Very Long Haunted House Name for Readability", status: "DOWN", waitTime: nil, sourceUpdatedAt: now),
-                HorrorHouse(id: "test-charlie", name: "Midnight Lanterns", status: "OPEN", waitTime: 0, sourceUpdatedAt: now)
+                HorrorHouse(id: "test-charlie", name: "Midnight Lanterns", status: "OPEN", waitTime: 0, sourceUpdatedAt: now.addingTimeInterval(-7200))
             ])
         if arguments.contains("--reset-hhn-ui-test") && !Self.didResetPreferences {
             Self.didResetPreferences = true

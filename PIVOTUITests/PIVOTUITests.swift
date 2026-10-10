@@ -35,6 +35,8 @@ final class PIVOTUITests: XCTestCase {
     func testHHNFavoritesCompletionUndoAndRelaunch() {
         let app = hhnApp()
         XCTAssertEqual(app.descendants(matching: .any)["hhn-feed-status"].label, "Live house updates")
+        XCTAssertTrue(app.descendants(matching: .any).matching(NSPredicate(format: "label == '0 minute wait'")).firstMatch.exists,
+                      "A freshly observed unchanged house wait must remain visible")
         let headerSpan = app.descendants(matching: .any)["hhn-feed-status"].frame.maxY - app.staticTexts["hhn-event-title"].frame.minY
         XCTAssertLessThan(headerSpan, 150, "The normal-text HHN event header should leave room for houses")
         screenshot("HHN live overview", app: app)
