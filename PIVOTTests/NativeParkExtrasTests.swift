@@ -124,6 +124,13 @@ final class NativeParkExtrasTests: XCTestCase {
         }
     }
 
+    func testHHNFeedBadgeUsesTheSameDeduplicatedHousesAsTheList() {
+        let event = makeEvent(houses: [makeHouse(id: "same", updatedAt: now.addingTimeInterval(-901)), makeHouse(id: "same")])
+        XCTAssertEqual(HorrorNightPresentation.sortedHouses(event, sort: .shortest, now: now, refreshFailed: false).count, 1)
+        XCTAssertEqual(HorrorNightPresentation.feedState(for: event, now: now, refreshFailed: false), .unavailable)
+        XCTAssertEqual(HorrorNightPresentation.feedState(for: makeEvent(houses: [makeHouse(id: "")]), now: now, refreshFailed: true), .unavailable)
+    }
+
     func testHistoryKeepsActualTimesFiltersInvalidAndCapsAtTwelve() {
         let valid = (0..<15).map { WaitHistorySample(observedAt: now.addingTimeInterval(Double(-$0 * 60)), waitTime: Double($0)) }
         let invalid = [

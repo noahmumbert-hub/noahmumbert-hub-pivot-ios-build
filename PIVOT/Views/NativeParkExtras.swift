@@ -111,9 +111,10 @@ extension HorrorNightPresentation {
     static func feedState(for event: HorrorNightSnapshot, now: Date, refreshFailed: Bool) -> HorrorNightFeedState {
         guard phase(for: event, at: now) != .hidden else { return .unavailable }
         if now < event.night.openingTime { return .preview }
-        guard !event.houses.isEmpty else { return .unavailable }
+        let houses = sortedHouses(event, sort: .name, now: now, refreshFailed: refreshFailed)
+        guard !houses.isEmpty else { return .unavailable }
         guard !refreshFailed, isFresh(event.fetchedAt, now: now, maximumAge: 15 * 60) else { return .saved }
-        let observed = event.houses.contains {
+        let observed = houses.contains {
             !$0.id.isEmpty && ["OPEN", "DOWN", "CLOSED", "UPCOMING"].contains($0.status) &&
             isFresh($0.sourceUpdatedAt, now: now, maximumAge: 15 * 60)
         }
