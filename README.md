@@ -7,7 +7,7 @@ history are not included here. The app uses the existing PIVOT backend.
 ## Build an IPA
 
 1. Open **Actions → Build SideStore IPA → Run workflow**.
-2. Select the intended branch and wait for a successful run. The October 8 audit candidate is on `fix/october8-audit`; `main` remains the older release until reviewed.
+2. Select the intended branch and wait for a successful run. The latest native HHN UI candidate is on `feat/hhn-ui-refresh`, including the October 8 native audit fixes; `main` remains the older source until reviewed.
 3. Download the **PIVOT-SideStore** artifact at the bottom of the run page.
 4. Extract the downloaded ZIP. It contains an `.ipa`, `SHA256SUMS`, and
    `build-info.json` identifying the source commit and app version.
@@ -28,7 +28,7 @@ public, although GitHub may require login to download Actions artifacts.
 ## Build from a cloud chat
 
 ```bash
-gh workflow run build-ipa.yml --repo noahmumbert-hub/noahmumbert-hub-pivot-ios-build --ref fix/october8-audit
+gh workflow run build-ipa.yml --repo noahmumbert-hub/noahmumbert-hub-pivot-ios-build --ref feat/hhn-ui-refresh
 gh run list --repo noahmumbert-hub/noahmumbert-hub-pivot-ios-build --workflow build-ipa.yml
 gh run download RUN_ID --repo noahmumbert-hub/noahmumbert-hub-pivot-ios-build --name ARTIFACT_NAME
 ```
@@ -78,7 +78,7 @@ In SideStore, open **Sources → +** (usually under Browse) and add:
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 ```
 
-PIVOT **1.14.1 / 100.3.1** is the first listed update. Install it as an update to the existing PIVOT app, using the same signing identity. Keep the app installed to preserve saved data. The source and IPA downloads are public and do not expire with Actions artifacts. Physical SideStore installation remains untested.
+PIVOT **1.14.4 / 100.11.1** is the latest listed update; earlier tested updates remain in version history. Install it as an update to the existing PIVOT app, using the same signing identity. Keep the app installed to preserve saved data. The source and IPA downloads are public and do not expire with Actions artifacts. Physical SideStore installation remains untested.
 
 Future updates use this same source URL. Each native update still needs a new tested IPA; SideStore downloads and signs it when you choose to update. Publishing is manual, after successful Xcode tests and archive validation. Workflow permissions are unchanged.
 
@@ -90,3 +90,19 @@ python3 scripts/publish-sidestore.py --ipa /path/to/PIVOT-new-version.ipa --info
 ```
 
 Add `--publish` when publication is authorized. The helper checks checksum, device platform, app and extension identity/version, successful build/test provenance, and version continuity. It appends immutable downloads and updates only the `ipa-builds` branch, preserving the source checkout and existing version history. New entitlements require an explicit permissions review before the helper can publish.
+
+## Halloween Horror Nights update
+
+**1.14.2 / 100.8.1** improves the native HHN layout with a purple/amber event header, readable house cards, larger waits, search, Favorites/To do filters and favorite completion progress. Existing preferences and app/widget identity are preserved. Stale, missing and preview waits stay unknown.
+
+[Verified build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38087339360): 149 unit tests, 10 iPhone simulator UI tests and the Release device archive passed. The update is available from the existing SideStore source. Main remains the older source pending review; use `feat/hhn-ui-refresh` for the current tested native changes. [Validation and delivery report](docs/hhn-ui-update.md) includes failed/superseded runs, limitations, checksum and release notes.
+
+## Compact HHN follow-up
+
+**1.14.3 / 100.9.1** replaces the large event hero with a compact card and a slim favorites progress strip, bringing the houses closer to the top. [Xcode run 38088227371](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38088227371) passed 149 unit tests, 10 simulator UI tests and the Release archive. The tested update is published through the same SideStore source. [Validation and delivery report](docs/hhn-compact-update.md).
+
+## HHN posted-wait fix
+
+**1.14.4 / 100.11.1** restores valid unchanged house waits from fresh observations and separates HHN house health from regular-ride feed health. The app can recover house waits omitted by the backend using the same free ThemeParks.wiki source, with bounded requests. Invalid, future, missing, failed and expired observations remain unavailable. Compact layout and saved data are preserved.
+
+[Verified Xcode run](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38092438641): 154 unit tests, 10 simulator UI tests and Release archive passed. Available through the same SideStore source. [Validation and delivery report](docs/hhn-wait-update.md) distinguishes source/recorded-response tests, baseline lint/typecheck failures, simulator checks and unrun physical installation. Prepared backend/web source changes are not deployed by installing this IPA.

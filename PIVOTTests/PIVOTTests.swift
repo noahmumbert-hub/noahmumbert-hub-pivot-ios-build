@@ -2,6 +2,74 @@ import XCTest
 @testable import PIVOT
 
 final class PIVOTTests: XCTestCase {
+    func testHHNRefreshRestoresPostedWaitFromFreshProviderAndBoundsRequests() async throws {
+        let now = Date()
+        let sourceAt = now.addingTimeInterval(-7200)
+        let payload = try hhnServerPayload(at: now, sourceAt: sourceAt)
+        let provider = try JSONSerialization.data(withJSONObject: ["id": NativeHorrorHouseFeed.parkEntityID, "liveData": [
+            ["id": "house", "name": "House", "entityType": "ATTRACTION", "parkId": NativeHorrorHouseFeed.parkEntityID,
+             "externalId": "uor.usf.rides.hhn_haunted_house_test", "status": "OPERATING",
+             "lastUpdated": ISO8601DateFormatter().string(from: sourceAt), "queue": ["STANDBY": ["waitTime": 10]]]
+        ]])
+        var requests = 0
+        AuditURLProtocol.response = { request in
+            if request.url?.path == "/houses" { requests += 1; return provider }
+            return payload
+        }
+        defer { AuditURLProtocol.response = nil }
+        let client = hhnTestClient()
+        for _ in 0..<2 {
+            let result = try await client.snapshot(for: .universalStudiosFlorida)
+            XCTAssertFalse(result.feedHealthy, "Regular-ride feed health must remain independent of HHN house observations")
+            let event = try XCTUnwrap(result.halloweenHorrorNights)
+            XCTAssertEqual(event.houses.first?.waitTime, 10)
+            XCTAssertEqual(HorrorNightPresentation.liveWait(for: event.houses[0], event: event, now: Date(), refreshFailed: false), 10)
+            XCTAssertEqual(event.houses.first?.sourceUpdatedAt.timeIntervalSince1970 ?? 0, sourceAt.timeIntervalSince1970, accuracy: 1)
+        }
+        XCTAssertEqual(requests, 1, "Rapid polls reuse the original successful observation for at most one minute")
+    }
+
+    func testFailedHHNProviderRefreshPreservesOriginalUnknownAndDoesNotRenewAge() async throws {
+        let now = Date()
+        let payload = try hhnServerPayload(at: now, sourceAt: now.addingTimeInterval(-7200))
+        var requests = 0
+        AuditURLProtocol.response = { request in
+            if request.url?.path == "/houses" { requests += 1; throw URLError(.notConnectedToInternet) }
+            return payload
+        }
+        defer { AuditURLProtocol.response = nil }
+        let client = hhnTestClient()
+        for _ in 0..<2 {
+            let result = try await client.snapshot(for: .universalStudiosFlorida)
+            let event = try XCTUnwrap(result.halloweenHorrorNights)
+            XCTAssertNil(event.houses.first?.waitTime)
+            XCTAssertEqual(event.fetchedAt.timeIntervalSince1970, now.timeIntervalSince1970, accuracy: 1)
+        }
+        XCTAssertEqual(requests, 1, "Failed provider attempts have a retry backoff")
+    }
+
+    private func hhnTestClient() -> PivotAPIClient {
+        let configuration = URLSessionConfiguration.ephemeral
+        configuration.protocolClasses = [AuditURLProtocol.self]
+        return PivotAPIClient(baseURL: URL(string: "https://audit.invalid")!, session: URLSession(configuration: configuration),
+                              horrorHouseURL: URL(string: "https://audit.invalid/houses")!)
+    }
+
+    private func hhnServerPayload(at now: Date, sourceAt: Date) throws -> Data {
+        let formatter = ISO8601DateFormatter()
+        let encoder = JSONEncoder()
+        encoder.dateEncodingStrategy = .iso8601
+        var json = try XCTUnwrap(JSONSerialization.jsonObject(with: encoder.encode(makeSnapshot(sourceOffset: 0, feedHealthy: false, ride: makeRide(status: .open)))) as? [String: Any])
+        json["parkId"] = 65
+        json["halloweenHorrorNights"] = [
+            "night": ["date": "2026-10-10", "modeStartsAt": formatter.string(from: now.addingTimeInterval(-7200)),
+                      "openingTime": formatter.string(from: now.addingTimeInterval(-3600)), "closingTime": formatter.string(from: now.addingTimeInterval(3600))],
+            "scheduleCheckedAt": formatter.string(from: now), "fetchedAt": formatter.string(from: now),
+            "houses": [["id": "house", "name": "House", "status": "OPEN", "waitTime": NSNull(), "sourceUpdatedAt": formatter.string(from: sourceAt)]]
+        ]
+        return try JSONSerialization.data(withJSONObject: json)
+    }
+
     func testLightningPanelExpiresChecksSourceAgeAndFailedRefresh() throws {
         let snapshot = makeSnapshot(sourceOffset: 0, ride: makeRide(status: .open))
         let live = DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot, isLoading: false, refreshFailed: false, at: start)

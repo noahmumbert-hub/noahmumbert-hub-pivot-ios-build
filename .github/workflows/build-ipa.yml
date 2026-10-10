@@ -62,5 +62,6 @@ jobs:
             build/xcodebuild.log
             build/native-tests.log
             build/native-tests.xcresult
+            build/ui-screenshots
           if-no-files-found: ignore
           retention-days: 7
