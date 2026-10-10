@@ -1,0 +1,273 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00000000000000000000001 /* PIVOTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000001 /* PIVOTApp.swift */; };
+		B00000000000000000000002 /* PivotModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000002 /* PivotModels.swift */; };
+		B00000000000000000000003 /* PivotFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000003 /* PivotFormatting.swift */; };
+		B00000000000000000000004 /* PivotAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000004 /* PivotAPIClient.swift */; };
+		B00000000000000000000005 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000005 /* NotificationService.swift */; };
+		B00000000000000000000006 /* RideTransitionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000006 /* RideTransitionEngine.swift */; };
+		B00000000000000000000007 /* DashboardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000007 /* DashboardStore.swift */; };
+		B00000000000000000000008 /* PivotTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000008 /* PivotTheme.swift */; };
+		B00000000000000000000009 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000009 /* RootView.swift */; };
+		B0000000000000000000000A /* RadarCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000A /* RadarCardView.swift */; };
+		B0000000000000000000000B /* ParkPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000B /* ParkPickerView.swift */; };
+		B0000000000000000000000C /* AlertSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000C /* AlertSettingsView.swift */; };
+		B0000000000000000000000D /* RideListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000D /* RideListView.swift */; };
+		B0000000000000000000000E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000E /* Assets.xcassets */; };
+		B0000000000000000000000F /* PIVOTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000F /* PIVOTTests.swift */; };
+		B00000000000000000000010 /* PIVOTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000010 /* PIVOTUITests.swift */; };
+		B00000000000000000000011 /* PIVOTLiveActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000011 /* PIVOTLiveActivityAttributes.swift */; };
+		B00000000000000000000012 /* LiveActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000012 /* LiveActivityService.swift */; };
+		B00000000000000000000013 /* PIVOTLiveActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000011 /* PIVOTLiveActivityAttributes.swift */; };
+		B00000000000000000000014 /* PIVOTLiveActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000013 /* PIVOTLiveActivityWidget.swift */; };
+		B00000000000000000000015 /* PIVOTLiveActivityWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F00000000000000000000103 /* PIVOTLiveActivityWidget.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E00000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000000002;
+			remoteInfo = PIVOT;
+		};
+		E00000000000000000000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000000002;
+			remoteInfo = PIVOT;
+		};
+		E00000000000000000000003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000000005;
+			remoteInfo = PIVOTLiveActivityWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C00000000000000000000131 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (B00000000000000000000015 /* PIVOTLiveActivityWidget.appex in Embed Foundation Extensions */,);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F00000000000000000000001 /* PIVOTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIVOTApp.swift; sourceTree = "<group>"; };
+		F00000000000000000000002 /* PivotModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PivotModels.swift; sourceTree = "<group>"; };
+		F00000000000000000000003 /* PivotFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PivotFormatting.swift; sourceTree = "<group>"; };
+		F00000000000000000000004 /* PivotAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PivotAPIClient.swift; sourceTree = "<group>"; };
+		F00000000000000000000005 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		F00000000000000000000006 /* RideTransitionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideTransitionEngine.swift; sourceTree = "<group>"; };
+		F00000000000000000000007 /* DashboardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardStore.swift; sourceTree = "<group>"; };
+		F00000000000000000000008 /* PivotTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PivotTheme.swift; sourceTree = "<group>"; };
+		F00000000000000000000009 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F0000000000000000000000A /* RadarCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarCardView.swift; sourceTree = "<group>"; };
+		F0000000000000000000000B /* ParkPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkPickerView.swift; sourceTree = "<group>"; };
+		F0000000000000000000000C /* AlertSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSettingsView.swift; sourceTree = "<group>"; };
+		F0000000000000000000000D /* RideListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideListView.swift; sourceTree = "<group>"; };
+		F0000000000000000000000E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0000000000000000000000F /* PIVOTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIVOTTests.swift; sourceTree = "<group>"; };
+		F00000000000000000000010 /* PIVOTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIVOTUITests.swift; sourceTree = "<group>"; };
+		F00000000000000000000011 /* PIVOTLiveActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIVOTLiveActivityAttributes.swift; sourceTree = "<group>"; };
+		F00000000000000000000012 /* LiveActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityService.swift; sourceTree = "<group>"; };
+		F00000000000000000000013 /* PIVOTLiveActivityWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIVOTLiveActivityWidget.swift; sourceTree = "<group>"; };
+		F00000000000000000000014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F00000000000000000000100 /* PIVOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PIVOT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00000000000000000000101 /* PIVOTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PIVOTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00000000000000000000102 /* PIVOTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PIVOTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00000000000000000000103 /* PIVOTLiveActivityWidget.appex */ = {isa = PBXFileReference; explicitFileType = wrapper.app-extension; includeInIndex = 0; path = PIVOTLiveActivityWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C00000000000000000000101 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C00000000000000000000102 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C00000000000000000000103 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C00000000000000000000104 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C00000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000003 /* PIVOT */,
+				C0000000000000000000000A /* PIVOTTests */,
+				C0000000000000000000000B /* PIVOTUITests */,
+				C0000000000000000000000D /* PIVOTLiveActivityWidget */,
+				C00000000000000000000002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C00000000000000000000002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000100 /* PIVOT.app */,
+				F00000000000000000000101 /* PIVOTTests.xctest */,
+				F00000000000000000000102 /* PIVOTUITests.xctest */,
+				F00000000000000000000103 /* PIVOTLiveActivityWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C00000000000000000000003 /* PIVOT */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000004 /* App */,
+				C00000000000000000000005 /* Models */,
+				C00000000000000000000006 /* Networking */,
+				C00000000000000000000007 /* Services */,
+				C00000000000000000000008 /* Store */,
+				C00000000000000000000009 /* Views */,
+				C0000000000000000000000C /* Resources */,
+			);
+			path = PIVOT;
+			sourceTree = "<group>";
+		};
+		C00000000000000000000004 /* App */ = {isa = PBXGroup; children = (F00000000000000000000001 /* PIVOTApp.swift */,); path = App; sourceTree = "<group>"; };
+		C00000000000000000000005 /* Models */ = {isa = PBXGroup; children = (F00000000000000000000002 /* PivotModels.swift */, F00000000000000000000003 /* PivotFormatting.swift */, F00000000000000000000011 /* PIVOTLiveActivityAttributes.swift */,); path = Models; sourceTree = "<group>"; };
+		C00000000000000000000006 /* Networking */ = {isa = PBXGroup; children = (F00000000000000000000004 /* PivotAPIClient.swift */,); path = Networking; sourceTree = "<group>"; };
+		C00000000000000000000007 /* Services */ = {isa = PBXGroup; children = (F00000000000000000000005 /* NotificationService.swift */, F00000000000000000000006 /* RideTransitionEngine.swift */, F00000000000000000000012 /* LiveActivityService.swift */,); path = Services; sourceTree = "<group>"; };
+		C00000000000000000000008 /* Store */ = {isa = PBXGroup; children = (F00000000000000000000007 /* DashboardStore.swift */,); path = Store; sourceTree = "<group>"; };
+		C00000000000000000000009 /* Views */ = {isa = PBXGroup; children = (F00000000000000000000008 /* PivotTheme.swift */, F00000000000000000000009 /* RootView.swift */, F0000000000000000000000A /* RadarCardView.swift */, F0000000000000000000000B /* ParkPickerView.swift */, F0000000000000000000000C /* AlertSettingsView.swift */, F0000000000000000000000D /* RideListView.swift */,); path = Views; sourceTree = "<group>"; };
+		C0000000000000000000000A /* PIVOTTests */ = {isa = PBXGroup; children = (F0000000000000000000000F /* PIVOTTests.swift */,); path = PIVOTTests; sourceTree = "<group>"; };
+		C0000000000000000000000B /* PIVOTUITests */ = {isa = PBXGroup; children = (F00000000000000000000010 /* PIVOTUITests.swift */,); path = PIVOTUITests; sourceTree = "<group>"; };
+		C0000000000000000000000C /* Resources */ = {isa = PBXGroup; children = (F0000000000000000000000E /* Assets.xcassets */,); path = Resources; sourceTree = "<group>"; };
+		C0000000000000000000000D /* PIVOTLiveActivityWidget */ = {isa = PBXGroup; children = (F00000000000000000000013 /* PIVOTLiveActivityWidget.swift */, F00000000000000000000014 /* Info.plist */,); path = PIVOTLiveActivityWidget; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000002 /* PIVOT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D00000000000000000000101 /* Build configuration list for PBXNativeTarget "PIVOT" */;
+			buildPhases = (C00000000000000000000111 /* Sources */, C00000000000000000000101 /* Frameworks */, C00000000000000000000121 /* Resources */, C00000000000000000000131 /* Embed Foundation Extensions */,);
+			buildRules = ();
+			dependencies = (E00000000000000000000103 /* PBXTargetDependency */,);
+			name = PIVOT;
+			productName = PIVOT;
+			productReference = F00000000000000000000100 /* PIVOT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A00000000000000000000003 /* PIVOTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D00000000000000000000102 /* Build configuration list for PBXNativeTarget "PIVOTTests" */;
+			buildPhases = (C00000000000000000000112 /* Sources */, C00000000000000000000102 /* Frameworks */, C00000000000000000000122 /* Resources */,);
+			buildRules = ();
+			dependencies = (E00000000000000000000101 /* PBXTargetDependency */,);
+			name = PIVOTTests;
+			productName = PIVOTTests;
+			productReference = F00000000000000000000101 /* PIVOTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A00000000000000000000004 /* PIVOTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D00000000000000000000103 /* Build configuration list for PBXNativeTarget "PIVOTUITests" */;
+			buildPhases = (C00000000000000000000113 /* Sources */, C00000000000000000000103 /* Frameworks */, C00000000000000000000123 /* Resources */,);
+			buildRules = ();
+			dependencies = (E00000000000000000000102 /* PBXTargetDependency */,);
+			name = PIVOTUITests;
+			productName = PIVOTUITests;
+			productReference = F00000000000000000000102 /* PIVOTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A00000000000000000000005 /* PIVOTLiveActivityWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D00000000000000000000104 /* Build configuration list for PBXNativeTarget "PIVOTLiveActivityWidget" */;
+			buildPhases = (C00000000000000000000114 /* Sources */, C00000000000000000000104 /* Frameworks */, C00000000000000000000124 /* Resources */,);
+			buildRules = ();
+			dependencies = ();
+			name = PIVOTLiveActivityWidget;
+			productName = PIVOTLiveActivityWidget;
+			productReference = F00000000000000000000103 /* PIVOTLiveActivityWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					A00000000000000000000002 = {CreatedOnToolsVersion = 26.0; };
+					A00000000000000000000003 = {CreatedOnToolsVersion = 26.0; TestTargetID = A00000000000000000000002; };
+					A00000000000000000000004 = {CreatedOnToolsVersion = 26.0; TestTargetID = A00000000000000000000002; };
+					A00000000000000000000005 = {CreatedOnToolsVersion = 26.0; };
+				};
+			};
+			buildConfigurationList = D00000000000000000000100 /* Build configuration list for PBXProject "PIVOT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base,);
+			mainGroup = C00000000000000000000001;
+			productRefGroup = C00000000000000000000002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (A00000000000000000000002 /* PIVOT */, A00000000000000000000003 /* PIVOTTests */, A00000000000000000000004 /* PIVOTUITests */, A00000000000000000000005 /* PIVOTLiveActivityWidget */,);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C00000000000000000000121 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (B0000000000000000000000E /* Assets.xcassets in Resources */,); runOnlyForDeploymentPostprocessing = 0; };
+		C00000000000000000000122 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C00000000000000000000123 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C00000000000000000000124 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C00000000000000000000111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (B00000000000000000000001, B00000000000000000000002, B00000000000000000000003, B00000000000000000000004, B00000000000000000000005, B00000000000000000000006, B00000000000000000000007, B00000000000000000000008, B00000000000000000000009, B0000000000000000000000A, B0000000000000000000000B, B0000000000000000000000C, B0000000000000000000000D, B00000000000000000000011, B00000000000000000000012,);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C00000000000000000000112 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (B0000000000000000000000F,); runOnlyForDeploymentPostprocessing = 0; };
+		C00000000000000000000113 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (B00000000000000000000010,); runOnlyForDeploymentPostprocessing = 0; };
+		C00000000000000000000114 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (B00000000000000000000013, B00000000000000000000014,); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E00000000000000000000101 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = A00000000000000000000002 /* PIVOT */; targetProxy = E00000000000000000000001 /* PBXContainerItemProxy */; };
+		E00000000000000000000102 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = A00000000000000000000002 /* PIVOT */; targetProxy = E00000000000000000000002 /* PBXContainerItemProxy */; };
+		E00000000000000000000103 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = A00000000000000000000005 /* PIVOTLiveActivityWidget */; targetProxy = E00000000000000000000003 /* PBXContainerItemProxy */; };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D00000000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_TESTABILITY = YES; GCC_C_LANGUAGE_STANDARD = gnu17; GCC_NO_COMMON_BLOCKS = YES; GCC_OPTIMIZATION_LEVEL = 0; GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)",); IPHONEOS_DEPLOYMENT_TARGET = 17.0; MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE; ONLY_ACTIVE_ARCH = YES; SDKROOT = iphoneos; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)"; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; }; name = Debug; };
+		D00000000000000000000002 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_NS_ASSERTIONS = NO; GCC_C_LANGUAGE_STANDARD = gnu17; GCC_NO_COMMON_BLOCKS = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MTL_ENABLE_DEBUG_INFO = NO; SDKROOT = iphoneos; SWIFT_COMPILATION_MODE = wholemodule; VALIDATE_PRODUCT = YES; }; name = Release; };
+		D00000000000000000000011 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 20; ENABLE_PREVIEWS = YES; ENABLE_USER_SCRIPT_SANDBOXING = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = PIVOT; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel"; INFOPLIST_KEY_NSSupportsLiveActivities = YES; INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "PIVOT uses your location to select a supported theme park you’re currently visiting."; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks",); MARKETING_VERSION = 1.13.0; PRODUCT_BUNDLE_IDENTIFIER = com.noahmumbert.PIVOT; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		D00000000000000000000012 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 20; ENABLE_PREVIEWS = YES; ENABLE_USER_SCRIPT_SANDBOXING = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = PIVOT; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel"; INFOPLIST_KEY_NSSupportsLiveActivities = YES; INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "PIVOT uses your location to select a supported theme park you’re currently visiting."; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks",); MARKETING_VERSION = 1.13.0; PRODUCT_BUNDLE_IDENTIFIER = com.noahmumbert.PIVOT; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+		D00000000000000000000021 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@loader_path/Frameworks",); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.noahmumbert.PIVOTTests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PIVOT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PIVOT"; }; name = Debug; };
+		D00000000000000000000022 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@loader_path/Frameworks",); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.noahmumbert.PIVOTTests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PIVOT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PIVOT"; }; name = Release; };
+		D00000000000000000000031 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@loader_path/Frameworks",); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.noahmumbert.PIVOTUITests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; TEST_TARGET_NAME = PIVOT; }; name = Debug; };
+		D00000000000000000000032 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@loader_path/Frameworks",); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.noahmumbert.PIVOTUITests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; TEST_TARGET_NAME = PIVOT; }; name = Release; };
+		D00000000000000000000041 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 20; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_FILE = PIVOTLiveActivityWidget/Info.plist; INFOPLIST_KEY_CFBundleDisplayName = PIVOT; IPHONEOS_DEPLOYMENT_TARGET = 17.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks",); MARKETING_VERSION = 1.13.0; PRODUCT_BUNDLE_IDENTIFIER = com.noahmumbert.PIVOT.LiveActivityWidget; PRODUCT_NAME = "$(TARGET_NAME)"; SKIP_INSTALL = YES; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		D00000000000000000000042 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 20; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_FILE = PIVOTLiveActivityWidget/Info.plist; INFOPLIST_KEY_CFBundleDisplayName = PIVOT; IPHONEOS_DEPLOYMENT_TARGET = 17.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks",); MARKETING_VERSION = 1.13.0; PRODUCT_BUNDLE_IDENTIFIER = com.noahmumbert.PIVOT.LiveActivityWidget; PRODUCT_NAME = "$(TARGET_NAME)"; SKIP_INSTALL = YES; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D00000000000000000000100 /* Build configuration list for PBXProject "PIVOT" */ = {isa = XCConfigurationList; buildConfigurations = (D00000000000000000000001 /* Debug */, D00000000000000000000002 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		D00000000000000000000101 /* Build configuration list for PBXNativeTarget "PIVOT" */ = {isa = XCConfigurationList; buildConfigurations = (D00000000000000000000011 /* Debug */, D00000000000000000000012 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		D00000000000000000000102 /* Build configuration list for PBXNativeTarget "PIVOTTests" */ = {isa = XCConfigurationList; buildConfigurations = (D00000000000000000000021 /* Debug */, D00000000000000000000022 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		D00000000000000000000103 /* Build configuration list for PBXNativeTarget "PIVOTUITests" */ = {isa = XCConfigurationList; buildConfigurations = (D00000000000000000000031 /* Debug */, D00000000000000000000032 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		D00000000000000000000104 /* Build configuration list for PBXNativeTarget "PIVOTLiveActivityWidget" */ = {isa = XCConfigurationList; buildConfigurations = (D00000000000000000000041 /* Debug */, D00000000000000000000042 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000001 /* Project object */;
+}

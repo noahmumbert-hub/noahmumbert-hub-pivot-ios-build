@@ -1,0 +1,60 @@
+name: Build SideStore IPA
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'PIVOT/**'
+      - 'PIVOT.xcodeproj/**'
+      - 'PIVOTLiveActivityWidget/**'
+      - 'scripts/**'
+      - '.github/workflows/build-ipa.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ipa-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 30
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
+    steps:
+      - name: Check out iOS source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Confirm Xcode toolchain
+        run: xcodebuild -version
+
+      - name: Build and validate unsigned IPA
+        env:
+          PIVOT_BUILD_NUMBER: 100.${{ github.run_number }}.${{ github.run_attempt }}
+        run: bash scripts/build-ipa.sh
+
+      - name: Upload IPA and checksum
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: PIVOT-SideStore-${{ github.run_number }}-${{ github.run_attempt }}
+          path: |
+            build/ipa/*.ipa
+            build/ipa/SHA256SUMS
+            build/ipa/build-info.json
+          if-no-files-found: error
+          retention-days: 14
+          compression-level: 0
+
+      - name: Upload build log
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: PIVOT-build-log-${{ github.run_number }}-${{ github.run_attempt }}
+          path: build/xcodebuild.log
+          if-no-files-found: ignore
+          retention-days: 7
