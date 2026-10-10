@@ -44,13 +44,13 @@ final class NativeParkExtrasTests: XCTestCase {
         XCTAssertEqual(HorrorNightPreferences.ids(from: "invalid json"), [])
     }
 
-    func testHHNWaitsStayUnknownWhenMissingStaleNegativeFutureOrRefreshFails() {
+    func testHHNWaitsStayUnknownWhenMissingNegativeFutureOrRefreshFails() {
         let event = makeEvent()
         XCTAssertEqual(HorrorNightPresentation.liveWait(for: event.houses[0], event: event, now: now, refreshFailed: false), 20)
         XCTAssertNil(HorrorNightPresentation.liveWait(for: event.houses[0], event: event, now: now, refreshFailed: true))
         for house in [
             makeHouse(wait: nil), makeHouse(wait: -1), makeHouse(status: "DOWN", wait: 0),
-            makeHouse(updatedAt: now.addingTimeInterval(-900)), makeHouse(updatedAt: now.addingTimeInterval(121))
+            makeHouse(updatedAt: now.addingTimeInterval(121))
         ] {
             XCTAssertNil(HorrorNightPresentation.liveWait(for: house, event: event, now: now, refreshFailed: false))
         }
@@ -92,7 +92,7 @@ final class NativeParkExtrasTests: XCTestCase {
         XCTAssertEqual(HorrorNightPresentation.feedState(for: makeEvent(fetchedAt: now.addingTimeInterval(-900)), now: now, refreshFailed: false), .saved)
         XCTAssertEqual(HorrorNightPresentation.feedState(for: makeEvent(houses: []), now: now, refreshFailed: true), .unavailable)
         XCTAssertEqual(HorrorNightPresentation.feedState(for: makeEvent(houses: [makeHouse(status: "UNKNOWN")]), now: now, refreshFailed: false), .unavailable)
-        for updatedAt in [now.addingTimeInterval(-900), now.addingTimeInterval(121)] {
+        for updatedAt in [now.addingTimeInterval(121)] {
             XCTAssertEqual(HorrorNightPresentation.feedState(for: makeEvent(houses: [makeHouse(updatedAt: updatedAt)]), now: now, refreshFailed: false), .unavailable)
         }
     }
@@ -116,7 +116,7 @@ final class NativeParkExtrasTests: XCTestCase {
     }
 
     func testHHNZeroWaitAndPartialCoverageRemainDistinctFromUnknown() {
-        let event = makeEvent(houses: [makeHouse(id: "known", wait: 0), makeHouse(id: "missing", wait: nil), makeHouse(id: "stale", updatedAt: now.addingTimeInterval(-901))])
+        let event = makeEvent(houses: [makeHouse(id: "known", wait: 0), makeHouse(id: "missing", wait: nil), makeHouse(id: "invalid", updatedAt: now.addingTimeInterval(121))])
         XCTAssertEqual(HorrorNightPresentation.feedState(for: event, now: now, refreshFailed: false), .live)
         XCTAssertEqual(HorrorNightPresentation.liveWait(for: event.houses[0], event: event, now: now, refreshFailed: false), 0)
         for house in event.houses.dropFirst() {
@@ -125,10 +125,70 @@ final class NativeParkExtrasTests: XCTestCase {
     }
 
     func testHHNFeedBadgeUsesTheSameDeduplicatedHousesAsTheList() {
-        let event = makeEvent(houses: [makeHouse(id: "same", updatedAt: now.addingTimeInterval(-901)), makeHouse(id: "same")])
+        let event = makeEvent(houses: [makeHouse(id: "same", updatedAt: now.addingTimeInterval(121)), makeHouse(id: "same")])
         XCTAssertEqual(HorrorNightPresentation.sortedHouses(event, sort: .shortest, now: now, refreshFailed: false).count, 1)
         XCTAssertEqual(HorrorNightPresentation.feedState(for: event, now: now, refreshFailed: false), .unavailable)
         XCTAssertEqual(HorrorNightPresentation.feedState(for: makeEvent(houses: [makeHouse(id: "")]), now: now, refreshFailed: true), .unavailable)
+    }
+
+    func testHHNFreshObservationKeepsUnchangedWaitAndStatus() {
+        let house = makeHouse(updatedAt: now.addingTimeInterval(-6 * 3600))
+        let event = makeEvent(houses: [house])
+        XCTAssertEqual(HorrorNightPresentation.liveWait(for: house, event: event, now: now, refreshFailed: false), 20)
+        XCTAssertEqual(HorrorNightPresentation.houseStatus(house, event: event, now: now, refreshFailed: false), "Open")
+        XCTAssertEqual(HorrorNightPresentation.feedState(for: event, now: now, refreshFailed: false), .live)
+        XCTAssertNil(HorrorNightPresentation.liveWait(for: house, event: event, now: now.addingTimeInterval(900), refreshFailed: false))
+        XCTAssertNil(HorrorNightPresentation.liveWait(for: house, event: event, now: now, refreshFailed: true))
+    }
+
+    func testHHNProviderFeedUsesRegularHouseQueueAndOldVersionTimestamp() throws {
+        let rows: [[String: Any]] = [
+            providerHouse("old", updatedAt: now.addingTimeInterval(-7200), wait: 10),
+            providerHouse("zero", wait: 0),
+            providerHouse("paid", wait: NSNull(), paidWait: 35),
+            providerHouse("missing", wait: NSNull()),
+            providerHouse("boolean", wait: true),
+            providerHouse("negative", wait: -5),
+            providerHouse("future", updatedAt: now.addingTimeInterval(121), wait: 30),
+            providerHouse("closed", status: "CLOSED", wait: 10),
+            providerHouse("down", status: "DOWN", wait: 10),
+            providerHouse("other-park", parkID: "wrong", wait: 50),
+            providerHouse("ordinary", externalID: "uor.usf.rides.regular", wait: 40)
+        ]
+        let houses = try NativeHorrorHouseFeed.houses(from: providerData(rows), observedAt: now)
+        XCTAssertEqual(houses.count, 9)
+        XCTAssertEqual(houses.first { $0.id == "old" }?.waitTime, 10)
+        XCTAssertEqual(houses.first { $0.id == "old" }?.sourceUpdatedAt, now.addingTimeInterval(-7200))
+        XCTAssertEqual(houses.first { $0.id == "zero" }?.waitTime, 0)
+        XCTAssertEqual(houses.first { $0.id == "paid" }?.waitTime, 35)
+        for id in ["missing", "boolean", "negative", "future", "closed", "down"] {
+            XCTAssertNil(houses.first { $0.id == id }?.waitTime)
+        }
+        XCTAssertEqual(houses.first { $0.id == "future" }?.status, "UNAVAILABLE")
+    }
+
+    func testHHNProviderFeedRejectsWrongParkMalformedAndDuplicateRows() throws {
+        XCTAssertThrowsError(try NativeHorrorHouseFeed.houses(from: providerData([], parkID: "wrong"), observedAt: now))
+        XCTAssertThrowsError(try NativeHorrorHouseFeed.houses(from: Data("{}".utf8), observedAt: now))
+        XCTAssertThrowsError(try NativeHorrorHouseFeed.houses(from: providerData([providerHouse("same", wait: 10), providerHouse("same", wait: 20)]), observedAt: now))
+        var missing = providerHouse("missing", wait: 10)
+        missing.removeValue(forKey: "lastUpdated")
+        var invalid = providerHouse("invalid", wait: 10)
+        invalid["lastUpdated"] = "invalid"
+        XCTAssertTrue(try NativeHorrorHouseFeed.houses(from: providerData([missing, invalid]), observedAt: now).isEmpty)
+    }
+
+    private func providerHouse(_ id: String, status: String = "OPERATING", updatedAt: Date? = nil,
+                               parkID: String = NativeHorrorHouseFeed.parkEntityID,
+                               externalID: String = "uor.usf.rides.hhn_haunted_house_test",
+                               wait: Any, paidWait: Any = NSNull()) -> [String: Any] {
+        ["id": id, "name": id, "entityType": "ATTRACTION", "parkId": parkID, "externalId": externalID,
+         "status": status, "lastUpdated": ISO8601DateFormatter().string(from: updatedAt ?? now),
+         "queue": ["STANDBY": ["waitTime": wait], "PAID_STANDBY": ["waitTime": paidWait]]]
+    }
+
+    private func providerData(_ rows: [[String: Any]], parkID: String = NativeHorrorHouseFeed.parkEntityID) throws -> Data {
+        try JSONSerialization.data(withJSONObject: ["id": parkID, "liveData": rows])
     }
 
     func testHistoryKeepsActualTimesFiltersInvalidAndCapsAtTwelve() {

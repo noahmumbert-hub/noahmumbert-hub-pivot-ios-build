@@ -62,9 +62,15 @@ enum HorrorNightPresentation {
     static func liveWait(for house: HorrorHouse, event: HorrorNightSnapshot, now: Date, refreshFailed: Bool) -> Int? {
         guard !refreshFailed, phase(for: event, at: now) == .live, now >= event.night.openingTime,
               isFresh(event.fetchedAt, now: now, maximumAge: 15 * 60),
-              isFresh(house.sourceUpdatedAt, now: now, maximumAge: 15 * 60),
+              sourceVersionIsUsable(house.sourceUpdatedAt, now: now),
               house.status == "OPEN", let wait = house.waitTime, wait >= 0 else { return nil }
         return wait
+    }
+
+    // A fresh successful park response observes the current posted value.
+    // lastUpdated describes when that value changed, not when it was checked.
+    static func sourceVersionIsUsable(_ date: Date, now: Date) -> Bool {
+        date.timeIntervalSince1970.isFinite && date <= now.addingTimeInterval(120)
     }
 
     static func sortedHouses(_ event: HorrorNightSnapshot, sort: HorrorHouseSort, now: Date, refreshFailed: Bool) -> [HorrorHouse] {
@@ -116,7 +122,7 @@ extension HorrorNightPresentation {
         guard !refreshFailed, isFresh(event.fetchedAt, now: now, maximumAge: 15 * 60) else { return .saved }
         let observed = houses.contains {
             !$0.id.isEmpty && ["OPEN", "DOWN", "CLOSED", "UPCOMING"].contains($0.status) &&
-            isFresh($0.sourceUpdatedAt, now: now, maximumAge: 15 * 60)
+            sourceVersionIsUsable($0.sourceUpdatedAt, now: now)
         }
         return observed ? .live : .unavailable
     }
@@ -139,7 +145,7 @@ extension HorrorNightPresentation {
         guard phase(for: event, at: now) != .hidden else { return "Status unavailable" }
         if now < event.night.openingTime { return "Opens with event" }
         guard !refreshFailed, isFresh(event.fetchedAt, now: now, maximumAge: 15 * 60),
-              isFresh(house.sourceUpdatedAt, now: now, maximumAge: 15 * 60) else { return "Status unavailable" }
+              sourceVersionIsUsable(house.sourceUpdatedAt, now: now) else { return "Status unavailable" }
         switch house.status {
         case "OPEN": return "Open"
         case "DOWN": return "Temporarily down"
