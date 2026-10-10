@@ -4,11 +4,11 @@ Add this source in SideStore → Sources → +:
 
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 
-Current update: **1.14.2 / build 100.8.1**, iOS 17.0+.
+Current update: **1.14.3 / build 100.9.1**, iOS 17.0+.
 
-Halloween Horror Nights gets a clearer purple-and-amber layout, larger wait numbers, readable house statuses, search, and All houses/Favorites/To do filters. A favorite-house checklist tracks your night; existing favorites, sorting and completed houses are preserved. Preview, saved and unavailable data have distinct labels, and stale or missing waits stay unknown. Large text layouts and touch targets were checked in the iPhone simulator. This native update includes the previous 1.14.1 fixes and preserves the existing app and Live Activity identity. Keep PIVOT installed and update it using the same SideStore signing identity. Physical SideStore installation remains untested.
+Halloween Horror Nights uses a smaller event card and a slim favorites progress strip so houses appear sooner. The moon icon and purple/amber theme remain, with readable event date, hours, ticket notice and Live/Preview/Saved labels. Existing favorites, completion, sorting and previous fixes are preserved. Update the existing PIVOT app using the same SideStore signing identity. Physical SideStore installation remains untested.
 
-IPA SHA-256: `c016400d0b89fbf404f2b3666628a9e2cf4fdac9b3351444b6b5b808d78006da`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38087339360).
+IPA SHA-256: `9f060d998e29bd08298b9d3fdd701c44bfdb7ac4f3449a6fb536166d0097853e`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38088227371).
 The unsigned IPA preserves `com.noahmumbert.PIVOT` and its Live Activity extension.
 Install as an update using the same signing identity; keep the existing app installed to retain saved data.
 Native unit and simulator UI tests passed for this build. Physical SideStore installation remains untested.
