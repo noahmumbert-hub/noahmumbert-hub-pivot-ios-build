@@ -71,7 +71,7 @@ struct PivotSettingsView: View {
                     Divider()
                     Text("PIVOT \(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "Unknown")")
                         .font(.subheadline.weight(.semibold))
-                    Text("For new app versions, run Update PIVOT.command on your Mac.")
+                    Text("App updates are available in SideStore through the PIVOT source.")
                         .font(.subheadline).foregroundStyle(Color.pivotMuted)
                 }.padding(20)
             }

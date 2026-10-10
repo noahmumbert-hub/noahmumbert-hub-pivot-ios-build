@@ -69,6 +69,61 @@ final class NativeParkExtrasTests: XCTestCase {
         XCTAssertEqual(HorrorNightPresentation.sortedHouses(event, sort: .shortest, now: now, refreshFailed: true).map(\.id), ["a", "b", "c"])
     }
 
+    func testHHNFiltersPreserveSortAndEventNightCompletion() {
+        let houses = [makeHouse(id: "a"), makeHouse(id: "b"), makeHouse(id: "c")]
+        let favorites: Set<String> = ["a", "c", "missing-from-feed"]
+        let done: Set<String> = ["a", "b", "missing-from-feed"]
+        XCTAssertEqual(HorrorNightPresentation.visibleHouses(houses, filter: .all, favorites: favorites, done: done, query: "").map(\.id), ["a", "b", "c"])
+        XCTAssertEqual(HorrorNightPresentation.visibleHouses(houses, filter: .favorites, favorites: favorites, done: done, query: "").map(\.id), ["a", "c"])
+        XCTAssertEqual(HorrorNightPresentation.visibleHouses(houses, filter: .remaining, favorites: favorites, done: done, query: "").map(\.id), ["c"])
+        XCTAssertEqual(favorites, ["a", "c", "missing-from-feed"], "Filtering must not discard saved houses absent from the feed")
+    }
+
+    func testHHNSearchMatchesNamesWithoutChangingSelections() {
+        let houses = [makeHouse(id: "a", name: "Haunted Conservatory"), makeHouse(id: "b", name: "Midnight Lanterns")]
+        XCTAssertEqual(HorrorNightPresentation.visibleHouses(houses, filter: .all, favorites: [], done: [], query: "  LANTERNS  ").map(\.id), ["b"])
+        XCTAssertEqual(HorrorNightPresentation.visibleHouses(houses, filter: .favorites, favorites: ["a"], done: [], query: "Lanterns").map(\.id), [])
+        XCTAssertEqual(HorrorNightPresentation.visibleHouses(houses, filter: .all, favorites: [], done: [], query: " \n ").count, 2)
+    }
+
+    func testHHNFeedBadgeDistinguishesLiveSavedEmptyAndUnknown() {
+        XCTAssertEqual(HorrorNightPresentation.feedState(for: makeEvent(), now: now, refreshFailed: false), .live)
+        XCTAssertEqual(HorrorNightPresentation.feedState(for: makeEvent(), now: now, refreshFailed: true), .saved)
+        XCTAssertEqual(HorrorNightPresentation.feedState(for: makeEvent(fetchedAt: now.addingTimeInterval(-900)), now: now, refreshFailed: false), .saved)
+        XCTAssertEqual(HorrorNightPresentation.feedState(for: makeEvent(houses: []), now: now, refreshFailed: true), .unavailable)
+        XCTAssertEqual(HorrorNightPresentation.feedState(for: makeEvent(houses: [makeHouse(status: "UNKNOWN")]), now: now, refreshFailed: false), .unavailable)
+        for updatedAt in [now.addingTimeInterval(-900), now.addingTimeInterval(121)] {
+            XCTAssertEqual(HorrorNightPresentation.feedState(for: makeEvent(houses: [makeHouse(updatedAt: updatedAt)]), now: now, refreshFailed: false), .unavailable)
+        }
+    }
+
+    func testHHNPreviewNeverClaimsLiveUpdatesOrWaits() {
+        let afternoon = date("2026-10-04T17:00:00Z")
+        let event = makeEvent(fetchedAt: afternoon, checkedAt: afternoon)
+        XCTAssertEqual(HorrorNightPresentation.feedState(for: event, now: afternoon, refreshFailed: false), .preview)
+        XCTAssertEqual(HorrorNightPresentation.houseStatus(event.houses[0], event: event, now: afternoon, refreshFailed: false), "Opens with event")
+        XCTAssertNil(HorrorNightPresentation.liveWait(for: event.houses[0], event: event, now: afternoon, refreshFailed: false))
+        XCTAssertEqual(HorrorNightPresentation.feedState(for: event, now: event.night.closingTime, refreshFailed: false), .unavailable)
+    }
+
+    func testHHNRowStatusExpiresWithWaitAndRetainedRefreshFailure() {
+        let event = makeEvent()
+        XCTAssertEqual(HorrorNightPresentation.houseStatus(event.houses[0], event: event, now: now, refreshFailed: false), "Open")
+        XCTAssertEqual(HorrorNightPresentation.houseStatus(event.houses[0], event: event, now: now, refreshFailed: true), "Status unavailable")
+        XCTAssertEqual(HorrorNightPresentation.houseStatus(event.houses[0], event: event, now: now.addingTimeInterval(900), refreshFailed: false), "Status unavailable")
+        XCTAssertEqual(HorrorNightPresentation.houseStatus(makeHouse(status: "DOWN"), event: event, now: now, refreshFailed: false), "Temporarily down")
+        XCTAssertEqual(HorrorNightPresentation.houseStatus(makeHouse(status: "NEW_STATUS"), event: event, now: now, refreshFailed: false), "Status unavailable")
+    }
+
+    func testHHNZeroWaitAndPartialCoverageRemainDistinctFromUnknown() {
+        let event = makeEvent(houses: [makeHouse(id: "known", wait: 0), makeHouse(id: "missing", wait: nil), makeHouse(id: "stale", updatedAt: now.addingTimeInterval(-901))])
+        XCTAssertEqual(HorrorNightPresentation.feedState(for: event, now: now, refreshFailed: false), .live)
+        XCTAssertEqual(HorrorNightPresentation.liveWait(for: event.houses[0], event: event, now: now, refreshFailed: false), 0)
+        for house in event.houses.dropFirst() {
+            XCTAssertNil(HorrorNightPresentation.liveWait(for: house, event: event, now: now, refreshFailed: false))
+        }
+    }
+
     func testHistoryKeepsActualTimesFiltersInvalidAndCapsAtTwelve() {
         let valid = (0..<15).map { WaitHistorySample(observedAt: now.addingTimeInterval(Double(-$0 * 60)), waitTime: Double($0)) }
         let invalid = [

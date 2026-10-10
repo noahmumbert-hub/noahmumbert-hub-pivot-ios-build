@@ -14,7 +14,7 @@ struct PIVOTApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RootView()
+            appContent
                 .environmentObject(store)
                 .environment(\.pivotAccent, PivotAccent.resolve(selectedAccent).color)
                 .tint(PivotAccent.resolve(selectedAccent).color)
@@ -23,6 +23,19 @@ struct PIVOTApp: App {
                     store.synchronizeLiveActivity()
                 }
         }
+    }
+
+    @ViewBuilder
+    private var appContent: some View {
+#if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("--hhn-ui-test") {
+            NativeHorrorNightUITestScreen()
+        } else {
+            RootView()
+        }
+#else
+        RootView()
+#endif
     }
 }
 

@@ -87,8 +87,85 @@ enum HorrorNightPresentation {
     }
 }
 
-/// Use only for USF snapshots. Pre-event content starts collapsed so regular
-/// wait times remain the main Waits surface. No route or walking claims.
+enum HorrorHouseFilter: String, CaseIterable, Identifiable {
+    case all = "All houses"
+    case favorites = "Favorites"
+    case remaining = "To do"
+    var id: String { rawValue }
+}
+
+enum HorrorNightFeedState: Equatable {
+    case preview, live, saved, unavailable
+
+    var label: String {
+        switch self {
+        case .preview: "Tonight’s preview"
+        case .live: "Live house updates"
+        case .saved: "Saved · waits unknown"
+        case .unavailable: "Updates unavailable"
+        }
+    }
+}
+
+extension HorrorNightPresentation {
+    static func feedState(for event: HorrorNightSnapshot, now: Date, refreshFailed: Bool) -> HorrorNightFeedState {
+        guard phase(for: event, at: now) != .hidden else { return .unavailable }
+        if now < event.night.openingTime { return .preview }
+        guard !event.houses.isEmpty else { return .unavailable }
+        guard !refreshFailed, isFresh(event.fetchedAt, now: now, maximumAge: 15 * 60) else { return .saved }
+        let observed = event.houses.contains {
+            !$0.id.isEmpty && ["OPEN", "DOWN", "CLOSED", "UPCOMING"].contains($0.status) &&
+            isFresh($0.sourceUpdatedAt, now: now, maximumAge: 15 * 60)
+        }
+        return observed ? .live : .unavailable
+    }
+
+    static func visibleHouses(_ houses: [HorrorHouse], filter: HorrorHouseFilter,
+                              favorites: Set<String>, done: Set<String>, query: String) -> [HorrorHouse] {
+        let query = query.trimmingCharacters(in: .whitespacesAndNewlines)
+        return houses.filter { house in
+            let included: Bool
+            switch filter {
+            case .all: included = true
+            case .favorites: included = favorites.contains(house.id)
+            case .remaining: included = favorites.contains(house.id) && !done.contains(house.id)
+            }
+            return included && (query.isEmpty || house.name.localizedStandardContains(query))
+        }
+    }
+
+    static func houseStatus(_ house: HorrorHouse, event: HorrorNightSnapshot, now: Date, refreshFailed: Bool) -> String {
+        guard phase(for: event, at: now) != .hidden else { return "Status unavailable" }
+        if now < event.night.openingTime { return "Opens with event" }
+        guard !refreshFailed, isFresh(event.fetchedAt, now: now, maximumAge: 15 * 60),
+              isFresh(house.sourceUpdatedAt, now: now, maximumAge: 15 * 60) else { return "Status unavailable" }
+        switch house.status {
+        case "OPEN": return "Open"
+        case "DOWN": return "Temporarily down"
+        case "CLOSED": return "Closed"
+        case "UPCOMING": return "Opening later"
+        default: return "Status unavailable"
+        }
+    }
+}
+
+private enum HorrorNightTheme {
+    static let amber = Color(red: 1, green: 0.72, blue: 0.40)
+    static let lavender = Color(red: 0.79, green: 0.70, blue: 1)
+    static let surface = Color(red: 0.095, green: 0.080, blue: 0.125)
+    static let muted = Color(red: 0.73, green: 0.70, blue: 0.79)
+    static let border = lavender.opacity(0.18)
+}
+
+private extension View {
+    func horrorNightCard(padding: CGFloat = 16) -> some View {
+        self.padding(padding)
+            .background(HorrorNightTheme.surface, in: RoundedRectangle(cornerRadius: 20))
+            .overlay { RoundedRectangle(cornerRadius: 20).stroke(HorrorNightTheme.border, lineWidth: 1) }
+    }
+}
+
+/// Scoped to the USF event night, including its operating hours after midnight.
 struct NativeHorrorNightPanel: View {
     let event: HorrorNightSnapshot
     var showHouses: Bool = true
@@ -99,31 +176,17 @@ struct NativeHorrorNightPanel: View {
         TimelineView(.periodic(from: .now, by: 15)) { context in
             let phase = HorrorNightPresentation.phase(for: event, at: context.date)
             if phase != .hidden {
-                VStack(alignment: .leading, spacing: 14) {
-                    if phase == .preview {
+                VStack(alignment: .leading, spacing: 16) {
+                    if phase == .preview && showHouses {
                         DisclosureGroup(isExpanded: $previewExpanded) {
-                            VStack(alignment: .leading, spacing: 14) {
-                                eventDescription
-                                if showHouses { checklist(now: context.date) }
-                            }.padding(.top, 10)
+                            if showHouses { checklist(now: context.date).padding(.top, 16) }
                         } label: {
-                            VStack(alignment: .leading, spacing: 4) {
-                                Text("Halloween Horror Nights").font(.headline)
-                                Text("Tonight preview · opens \(clock(event.night.openingTime))")
-                                    .font(.caption).foregroundStyle(Color.pivotMuted)
-                            }
+                            eventHeader(now: context.date)
                         }
-                        .tint(.orange)
-                        .pivotCard(padding: 16)
+                        .tint(HorrorNightTheme.amber)
                         .accessibilityIdentifier("hhn-tonight-preview")
                     } else {
-                        VStack(alignment: .leading, spacing: 6) {
-                            Text("Halloween Horror Nights").font(.title3.bold())
-                            eventDescription
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(16)
-                        .background(Color.orange.opacity(0.12), in: RoundedRectangle(cornerRadius: 18))
+                        eventHeader(now: context.date)
                         if showHouses { checklist(now: context.date) }
                     }
                 }
@@ -133,13 +196,95 @@ struct NativeHorrorNightPanel: View {
         .onChange(of: event.night.date) { _, _ in previewExpanded = false }
     }
 
-    private var eventDescription: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text("Event night \(event.night.date) · \(clock(event.night.openingTime))–\(clock(event.night.closingTime))")
-                .font(.subheadline)
-            Text("Separate event ticket required · checklist stays on this event night after midnight")
-                .font(.footnote).foregroundStyle(Color.pivotMuted)
+    @ViewBuilder
+    private func eventHeader(now: Date) -> some View {
+        if showHouses {
+            fullEventHeader(now: now)
+        } else {
+            VStack(alignment: .leading, spacing: 10) {
+                Label("Halloween Horror Nights", systemImage: "moon.stars.fill")
+                    .font(.headline).foregroundStyle(HorrorNightTheme.amber)
+                eventHours
+                ViewThatFits(in: .horizontal) {
+                    HStack(spacing: 12) { feedBadge(now: now); Spacer(minLength: 0); ticketNotice }
+                    VStack(alignment: .leading, spacing: 8) { feedBadge(now: now); ticketNotice }
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .horrorNightCard()
+            .accessibilityIdentifier("hhn-event-header")
         }
+    }
+
+    private func fullEventHeader(now: Date) -> some View {
+        VStack(alignment: .leading, spacing: 16) {
+            HStack(alignment: .top, spacing: 14) {
+                Image(systemName: "moon.stars.fill")
+                    .font(.title2).foregroundStyle(HorrorNightTheme.amber)
+                    .padding(12)
+                    .background(HorrorNightTheme.amber.opacity(0.10), in: RoundedRectangle(cornerRadius: 16))
+                    .accessibilityHidden(true)
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("UNIVERSAL ORLANDO")
+                        .font(.caption.weight(.semibold)).tracking(1.4)
+                        .foregroundStyle(HorrorNightTheme.lavender)
+                    Text("Halloween Horror Nights")
+                        .font(.title.bold()).fixedSize(horizontal: false, vertical: true)
+                }
+            }
+            ViewThatFits(in: .horizontal) {
+                HStack(spacing: 12) { eventDate; Spacer(minLength: 0); eventHours }
+                VStack(alignment: .leading, spacing: 6) { eventDate; eventHours }
+            }
+            Divider().overlay(HorrorNightTheme.border)
+            ViewThatFits(in: .horizontal) {
+                HStack(spacing: 12) { feedBadge(now: now); Spacer(minLength: 0); ticketNotice }
+                VStack(alignment: .leading, spacing: 10) { feedBadge(now: now); ticketNotice }
+            }
+            if now < event.night.openingTime && showHouses {
+                Text("Browse tonight’s houses and save your favorites.")
+                    .font(.subheadline).foregroundStyle(HorrorNightTheme.muted)
+            }
+        }
+        .padding(20)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background {
+            RoundedRectangle(cornerRadius: 24)
+                .fill(LinearGradient(colors: [Color(red: 0.18, green: 0.10, blue: 0.27), HorrorNightTheme.surface],
+                                     startPoint: .topLeading, endPoint: .bottomTrailing))
+        }
+        .overlay { RoundedRectangle(cornerRadius: 24).stroke(HorrorNightTheme.lavender.opacity(0.25), lineWidth: 1) }
+        .accessibilityIdentifier("hhn-event-header")
+    }
+
+    private var eventDate: some View {
+        let formatter = DateFormatter()
+        formatter.locale = .autoupdatingCurrent
+        formatter.timeZone = HorrorNightPresentation.timeZone
+        formatter.dateFormat = "EEE, MMM d"
+        return Text(formatter.string(from: event.night.openingTime))
+            .font(.subheadline.weight(.semibold))
+    }
+
+    private var eventHours: some View {
+        Label("\(clock(event.night.openingTime)) – \(clock(event.night.closingTime))", systemImage: "clock")
+            .font(.subheadline).foregroundStyle(HorrorNightTheme.muted)
+    }
+
+    private var ticketNotice: some View {
+        Label("Separate ticket required", systemImage: "ticket")
+            .font(.caption).foregroundStyle(HorrorNightTheme.muted)
+    }
+
+    private func feedBadge(now: Date) -> some View {
+        let state = HorrorNightPresentation.feedState(for: event, now: now, refreshFailed: refreshFailed)
+        let color = state == .live ? Color.pivotMint : HorrorNightTheme.amber
+        return Label(state.label, systemImage: state == .live ? "dot.radiowaves.left.and.right" : state == .preview ? "moon" : "exclamationmark.circle")
+            .font(.caption.weight(.semibold)).foregroundStyle(color)
+            .padding(.horizontal, 10).padding(.vertical, 8)
+            .background(color.opacity(0.10), in: Capsule())
+            .accessibilityLabel(state.label)
+            .accessibilityIdentifier("hhn-feed-status")
     }
 
     private func checklist(now: Date) -> some View {
@@ -153,12 +298,16 @@ struct NativeHorrorNightPanel: View {
 }
 
 private struct NativeHorrorNightChecklist: View {
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     let event: HorrorNightSnapshot
     let now: Date
     let refreshFailed: Bool
     @AppStorage(HorrorNightPreferences.favoritesKey) private var favoritesJSON = "[]"
     @AppStorage(HorrorNightPreferences.sortKey) private var sortValue = HorrorHouseSort.shortest.rawValue
     @AppStorage private var doneJSON: String
+    @State private var filter: HorrorHouseFilter = .all
+    @State private var query = ""
+    @FocusState private var searchFocused: Bool
 
     init(event: HorrorNightSnapshot, now: Date, refreshFailed: Bool) {
         self.event = event
@@ -172,58 +321,112 @@ private struct NativeHorrorNightChecklist: View {
     private var houses: [HorrorHouse] {
         HorrorNightPresentation.sortedHouses(event, sort: HorrorHouseSort(rawValue: sortValue) ?? .shortest, now: now, refreshFailed: refreshFailed)
     }
-    private var remaining: [HorrorHouse] { houses.filter { favorites.contains($0.id) && !done.contains($0.id) } }
+    private var favoriteHouses: [HorrorHouse] { houses.filter { favorites.contains($0.id) } }
+    private var completedCount: Int { favoriteHouses.filter { done.contains($0.id) }.count }
+    private var visible: [HorrorHouse] {
+        HorrorNightPresentation.visibleHouses(houses, filter: filter, favorites: favorites, done: done, query: query)
+    }
     private var isPreview: Bool { now < event.night.openingTime }
-    private var feedFresh: Bool { !refreshFailed && HorrorNightPresentation.isFresh(event.fetchedAt, now: now, maximumAge: 15 * 60) }
+    private var feedState: HorrorNightFeedState { HorrorNightPresentation.feedState(for: event, now: now, refreshFailed: refreshFailed) }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 16) {
+            nightProgress
             ViewThatFits(in: .horizontal) {
                 HStack { Text("Haunted houses").font(.title2.bold()); Spacer(); sortMenu }
-                VStack(alignment: .leading) { Text("Haunted houses").font(.title2.bold()); sortMenu }
+                VStack(alignment: .leading, spacing: 4) { Text("Haunted houses").font(.title2.bold()); sortMenu }
             }
-            if isPreview || !feedFresh {
-                Text(isPreview ? "Tonight preview · live waits start with the event" : "House updates unavailable · waits are unknown")
-                    .font(.subheadline).foregroundStyle(Color.pivotMuted)
+            searchField
+            filters
+            if isPreview || feedState != .live {
+                Label(isPreview ? "Live waits start when the event opens." : "Live waits are unavailable. Your checklist is still saved.",
+                      systemImage: isPreview ? "clock" : "exclamationmark.circle")
+                    .font(.subheadline).foregroundStyle(HorrorNightTheme.muted)
+                    .fixedSize(horizontal: false, vertical: true)
             }
-            ForEach(houses) { house in houseRow(house) }
-            if houses.isEmpty {
-                Text("House listings are unavailable from the live feed. PIVOT will retry automatically.")
-                    .font(.subheadline).foregroundStyle(Color.pivotMuted)
-            }
-            DisclosureGroup("Remaining favorite houses · \(remaining.count)") {
-                VStack(alignment: .leading, spacing: 10) {
-                    ForEach(remaining) { house in
-                        HStack(alignment: .top) {
-                            VStack(alignment: .leading, spacing: 4) {
-                                Text(house.name).font(.subheadline.weight(.semibold))
-                                Text(wait(for: house).map { "\($0) min" } ?? "Wait unknown")
-                                    .font(.caption).foregroundStyle(Color.pivotMuted)
-                            }
-                            Spacer(minLength: 8)
-                            Button("Done") { doneJSON = HorrorNightPreferences.toggling(house.id, in: doneJSON) }
-                                .frame(minWidth: 44, minHeight: 44)
-                                .accessibilityLabel("Mark \(house.name) done for event night \(event.night.date)")
-                        }
-                    }
-                    if remaining.isEmpty {
-                        Text(favorites.isEmpty ? "Favorite houses above to build your checklist." : "No listed favorites remaining. Use Undo on a completed house to bring it back.")
-                            .font(.subheadline)
-                    }
-                    let missing = favorites.subtracting(Set(houses.map(\.id)))
-                    if !missing.isEmpty {
-                        Text("\(missing.count) saved favorite house(s) are absent from this feed. Their preferences are kept.")
-                            .font(.caption).foregroundStyle(Color.pivotMuted)
-                    }
-                    Text("Order follows your selected sort. This is a checklist, not a walking-optimized route; verified house coordinates are unavailable.")
-                        .font(.caption).foregroundStyle(Color.pivotMuted)
-                }.padding(.top, 10)
-            }
-            .tint(.orange)
-            .pivotCard(padding: 16)
-            Text("House waits by ThemeParks.wiki · missing or stale waits stay unknown")
-                .font(.footnote).foregroundStyle(Color.pivotMuted)
+            ForEach(visible) { house in houseRow(house) }
+            if visible.isEmpty { emptyState }
+            Text("House updates by ThemeParks.wiki")
+                .font(.footnote).foregroundStyle(HorrorNightTheme.muted)
         }
+    }
+
+    private var nightProgress: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(alignment: .top) {
+                VStack(alignment: .leading, spacing: 5) {
+                    Text("Your night").font(.headline)
+                    Text(favoriteHouses.isEmpty ? "Star the houses you want to visit." : "\(completedCount) of \(favoriteHouses.count) favorites done")
+                        .font(.subheadline).foregroundStyle(HorrorNightTheme.muted)
+                        .accessibilityIdentifier("hhn-progress-description")
+                }
+                Spacer(minLength: 12)
+                Image(systemName: favoriteHouses.isEmpty ? "star" : "checkmark.circle")
+                    .font(.title2).foregroundStyle(HorrorNightTheme.amber).accessibilityHidden(true)
+            }
+            if !favoriteHouses.isEmpty {
+                ProgressView(value: Double(completedCount), total: Double(favoriteHouses.count))
+                    .tint(HorrorNightTheme.amber)
+                    .accessibilityLabel("Favorite house progress")
+                    .accessibilityValue("\(completedCount) of \(favoriteHouses.count) completed")
+            }
+            let missing = favorites.subtracting(Set(houses.map(\.id))).count
+            if missing > 0 {
+                Text("\(missing) saved favorite\(missing == 1 ? " is" : "s are") missing from this feed. They’re still saved.")
+                    .font(.caption).foregroundStyle(HorrorNightTheme.muted)
+            }
+        }
+        .horrorNightCard()
+    }
+
+    private var searchField: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "magnifyingglass").foregroundStyle(HorrorNightTheme.muted).accessibilityHidden(true)
+            TextField("Search houses", text: $query)
+                .font(.body).autocorrectionDisabled()
+                .focused($searchFocused).submitLabel(.search)
+                .onSubmit { searchFocused = false }
+                .accessibilityIdentifier("hhn-house-search")
+            if !query.isEmpty {
+                Button { query = "" } label: {
+                    Image(systemName: "xmark.circle.fill").foregroundStyle(HorrorNightTheme.muted)
+                        .frame(width: 44, height: 44)
+                }
+                .buttonStyle(.plain).accessibilityLabel("Clear house search")
+            }
+        }
+        .frame(minHeight: 48).padding(.horizontal, 14)
+        .background(HorrorNightTheme.surface, in: RoundedRectangle(cornerRadius: 14))
+        .overlay { RoundedRectangle(cornerRadius: 14).stroke(HorrorNightTheme.border, lineWidth: 1) }
+    }
+
+    private var filters: some View {
+        ViewThatFits(in: .horizontal) {
+            HStack(spacing: 6) { ForEach(HorrorHouseFilter.allCases) { filterButton($0) } }
+            VStack(spacing: 6) { ForEach(HorrorHouseFilter.allCases) { filterButton($0) } }
+        }
+    }
+
+    private func filterButton(_ choice: HorrorHouseFilter) -> some View {
+        let selected = filter == choice
+        let count = HorrorNightPresentation.visibleHouses(houses, filter: choice, favorites: favorites, done: done, query: "").count
+        return Button { filter = choice } label: {
+            HStack(spacing: 6) {
+                Text(choice.rawValue).font(.subheadline.weight(.semibold))
+                Text("\(count)").font(.caption.weight(.semibold)).monospacedDigit()
+                    .padding(.horizontal, 6).padding(.vertical, 3)
+                    .background(selected ? Color.black.opacity(0.10) : HorrorNightTheme.lavender.opacity(0.10), in: Capsule())
+            }
+            .frame(maxWidth: .infinity, minHeight: 44)
+            .padding(.horizontal, 8)
+            .foregroundStyle(selected ? Color.pivotBackground : HorrorNightTheme.muted)
+            .background(selected ? HorrorNightTheme.amber : HorrorNightTheme.surface, in: RoundedRectangle(cornerRadius: 12))
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(choice == .all ? "Show all houses" : choice == .favorites ? "Show favorite houses" : "Show remaining favorite houses")
+        .accessibilityValue("\(selected ? "Selected" : "Not selected"), \(count) houses")
+        .accessibilityAddTraits(selected ? .isSelected : [])
+        .accessibilityIdentifier("hhn-filter-\(choice == .all ? "all" : choice == .favorites ? "favorites" : "remaining")")
     }
 
     private var sortMenu: some View {
@@ -235,72 +438,149 @@ private struct NativeHorrorNightChecklist: View {
             Label(HorrorHouseSort(rawValue: sortValue)?.rawValue ?? "Shortest wait", systemImage: "arrow.up.arrow.down")
                 .font(.subheadline).frame(minHeight: 44)
         }
-        .tint(.orange)
+        .tint(HorrorNightTheme.lavender)
         .accessibilityLabel("Sort haunted houses")
+        .accessibilityIdentifier("hhn-sort-menu")
     }
 
     private func houseRow(_ house: HorrorHouse) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            HStack(alignment: .top, spacing: 12) {
-                VStack(alignment: .leading, spacing: 5) {
-                    Text(house.name).font(.headline).fixedSize(horizontal: false, vertical: true)
-                    Text(status(for: house)).font(.subheadline).foregroundStyle(Color.pivotMuted)
+        let completed = done.contains(house.id)
+        return VStack(alignment: .leading, spacing: 14) {
+            if dynamicTypeSize.isAccessibilitySize {
+                VStack(alignment: .leading, spacing: 12) {
+                    houseIdentity(house)
+                    waitDisplay(house)
                 }
-                Spacer(minLength: 4)
-                if let wait = wait(for: house) {
-                    VStack(spacing: 2) {
-                        Text("\(wait)").font(.title2.bold()).monospacedDigit()
-                        Text("min").font(.caption)
-                    }.accessibilityElement(children: .ignore).accessibilityLabel("\(wait) minute wait")
-                } else {
-                    Text("Wait unknown").font(.caption).foregroundStyle(Color.pivotMuted)
-                        .frame(maxWidth: 80).multilineTextAlignment(.trailing)
+            } else {
+                HStack(alignment: .top, spacing: 12) {
+                    houseIdentity(house)
+                    waitDisplay(house)
                 }
             }
-            ViewThatFits(in: .horizontal) {
-                HStack(spacing: 12) { favoriteButton(house); doneButton(house); Spacer(minLength: 0) }
-                VStack(alignment: .leading, spacing: 4) { favoriteButton(house); doneButton(house) }
+            Divider().overlay(HorrorNightTheme.border)
+            HStack(spacing: 12) {
+                favoriteButton(house)
+                Button { doneJSON = HorrorNightPreferences.toggling(house.id, in: doneJSON) } label: {
+                    Label(completed ? "Done · Undo" : "Mark done", systemImage: completed ? "checkmark.circle.fill" : "circle")
+                        .font(.subheadline.weight(.semibold)).fixedSize(horizontal: false, vertical: true)
+                        .frame(maxWidth: .infinity, minHeight: 44)
+                        .padding(.horizontal, 10)
+                        .background(completed ? Color.pivotMint.opacity(0.10) : HorrorNightTheme.lavender.opacity(0.10), in: RoundedRectangle(cornerRadius: 12))
+                }
+                .buttonStyle(.plain).foregroundStyle(completed ? Color.pivotMint : HorrorNightTheme.lavender)
+                .accessibilityLabel("\(completed ? "Undo completion of" : "Mark done") \(house.name) for event night \(event.night.date)")
+                .accessibilityValue(completed ? "Done" : "Not done")
+                .accessibilityIdentifier("hhn-done-\(house.id)")
             }
         }
-        .pivotCard(padding: 16)
+        .horrorNightCard()
+        .overlay { RoundedRectangle(cornerRadius: 20).stroke(completed ? Color.pivotMint.opacity(0.25) : Color.clear, lineWidth: 1) }
+        .accessibilityIdentifier("hhn-house-\(house.id)")
+    }
+
+    private func houseIdentity(_ house: HorrorHouse) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(house.name).font(.headline).fixedSize(horizontal: false, vertical: true)
+            statusBadge(house)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    private func waitDisplay(_ house: HorrorHouse) -> some View {
+        VStack(alignment: dynamicTypeSize.isAccessibilitySize ? .leading : .trailing, spacing: 2) {
+            if let wait = HorrorNightPresentation.liveWait(for: house, event: event, now: now, refreshFailed: refreshFailed) {
+                Text("\(wait)").font(.largeTitle.weight(.bold)).monospacedDigit().foregroundStyle(HorrorNightTheme.amber)
+                Text("min wait").font(.caption).foregroundStyle(HorrorNightTheme.muted)
+            } else {
+                Text("—").font(.title.weight(.semibold)).foregroundStyle(HorrorNightTheme.muted)
+                Text(isPreview ? "Not open yet" : "Wait unknown").font(.caption).foregroundStyle(HorrorNightTheme.muted)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(HorrorNightPresentation.liveWait(for: house, event: event, now: now, refreshFailed: refreshFailed).map { "\($0) minute wait" } ?? (isPreview ? "Live wait begins when the event opens" : "Wait unknown"))
+        .accessibilityIdentifier("hhn-wait-\(house.id)")
+    }
+
+    private func statusBadge(_ house: HorrorHouse) -> some View {
+        let status = HorrorNightPresentation.houseStatus(house, event: event, now: now, refreshFailed: refreshFailed)
+        let color: Color = status == "Open" ? .pivotMint : status == "Temporarily down" ? HorrorNightTheme.amber : HorrorNightTheme.muted
+        return Label(status, systemImage: status == "Open" ? "checkmark.circle" : status == "Temporarily down" ? "pause.circle" : "clock")
+            .font(.caption.weight(.medium)).foregroundStyle(color)
+            .fixedSize(horizontal: false, vertical: true)
     }
 
     private func favoriteButton(_ house: HorrorHouse) -> some View {
-        Button { favoritesJSON = HorrorNightPreferences.toggling(house.id, in: favoritesJSON) } label: {
-            Label("Favorite", systemImage: favorites.contains(house.id) ? "star.fill" : "star")
-                .font(.subheadline).frame(minHeight: 44)
+        let selected = favorites.contains(house.id)
+        return Button { favoritesJSON = HorrorNightPreferences.toggling(house.id, in: favoritesJSON) } label: {
+            Image(systemName: selected ? "star.fill" : "star")
+                .font(.body.weight(.semibold)).frame(minWidth: 48, minHeight: 44)
+                .background(HorrorNightTheme.amber.opacity(selected ? 0.16 : 0.06), in: RoundedRectangle(cornerRadius: 12))
         }
-        .buttonStyle(.plain).foregroundStyle(.orange)
-        .accessibilityLabel("\(favorites.contains(house.id) ? "Remove" : "Add") \(house.name) \(favorites.contains(house.id) ? "from" : "to") HHN favorites")
-        .accessibilityValue(favorites.contains(house.id) ? "Favorited" : "Not favorited")
+        .buttonStyle(.plain).foregroundStyle(HorrorNightTheme.amber)
+        .accessibilityLabel("\(selected ? "Remove" : "Add") \(house.name) \(selected ? "from" : "to") HHN favorites")
+        .accessibilityValue(selected ? "Favorited" : "Not favorited")
+        .accessibilityIdentifier("hhn-favorite-\(house.id)")
     }
 
-    private func doneButton(_ house: HorrorHouse) -> some View {
-        Button { doneJSON = HorrorNightPreferences.toggling(house.id, in: doneJSON) } label: {
-            Label(done.contains(house.id) ? "Done · Undo" : "Mark done", systemImage: done.contains(house.id) ? "checkmark.circle.fill" : "circle")
-                .font(.subheadline).frame(minHeight: 44)
+    private var emptyState: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Label(houses.isEmpty ? "House listings unavailable" : !query.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "No matching houses" : filter == .remaining && !favoriteHouses.isEmpty ? "All favorites done" : "No favorites yet",
+                  systemImage: houses.isEmpty ? "exclamationmark.circle" : filter == .remaining && !favoriteHouses.isEmpty ? "checkmark.circle" : "star")
+                .font(.headline)
+            Text(houses.isEmpty ? "House listings will appear when the feed returns. Your saved favorites are kept." : !query.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "Try a different name or clear your search." : filter == .remaining && !favoriteHouses.isEmpty ? "Switch to Favorites to undo a completed house." : "Switch to All houses and tap a star to build your night.")
+                .font(.subheadline).foregroundStyle(HorrorNightTheme.muted)
         }
-        .buttonStyle(.plain).foregroundStyle(done.contains(house.id) ? Color.pivotMint : Color.pivotMuted)
-        .accessibilityLabel("\(done.contains(house.id) ? "Undo completion of" : "Mark done") \(house.name) for event night \(event.night.date)")
-        .accessibilityValue(done.contains(house.id) ? "Done" : "Not done")
-    }
-
-    private func wait(for house: HorrorHouse) -> Int? {
-        HorrorNightPresentation.liveWait(for: house, event: event, now: now, refreshFailed: refreshFailed)
-    }
-
-    private func status(for house: HorrorHouse) -> String {
-        if isPreview { return "Tonight preview" }
-        guard feedFresh, HorrorNightPresentation.isFresh(house.sourceUpdatedAt, now: now, maximumAge: 15 * 60) else { return "Updating status" }
-        switch house.status {
-        case "OPEN": return "Open"
-        case "DOWN": return "Temporarily down"
-        case "CLOSED": return "Closed"
-        case "UPCOMING": return "Opens with event"
-        default: return "Status unavailable"
-        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .horrorNightCard()
+        .accessibilityIdentifier("hhn-empty-state")
     }
 }
+
+#if DEBUG
+/// Explicit simulator UI-test screen. Excluded from release IPAs.
+struct NativeHorrorNightUITestScreen: View {
+    private static var didResetPreferences = false
+    private let event: HorrorNightSnapshot
+    private let failed: Bool
+    private let largeType: Bool
+
+    init() {
+        let arguments = ProcessInfo.processInfo.arguments
+        let now = Date()
+        let preview = arguments.contains("--hhn-ui-test-preview")
+        let formatter = DateFormatter()
+        formatter.timeZone = HorrorNightPresentation.timeZone
+        formatter.dateFormat = "yyyy-MM-dd"
+        let eventDate = formatter.string(from: now)
+        failed = arguments.contains("--hhn-ui-test-stale")
+        largeType = arguments.contains("--hhn-ui-test-large-type")
+        event = HorrorNightSnapshot(
+            night: HorrorNight(date: eventDate, modeStartsAt: now.addingTimeInterval(preview ? 3600 : -7200),
+                               openingTime: now.addingTimeInterval(preview ? 5400 : -3600), closingTime: now.addingTimeInterval(6 * 3600)),
+            scheduleCheckedAt: now, fetchedAt: failed ? now.addingTimeInterval(-1800) : now,
+            houses: arguments.contains("--hhn-ui-test-empty") ? [] : [
+                HorrorHouse(id: "test-alpha", name: "The Haunted Conservatory", status: "OPEN", waitTime: 15, sourceUpdatedAt: now),
+                HorrorHouse(id: "test-bravo", name: "A Very Long Haunted House Name for Readability", status: "DOWN", waitTime: nil, sourceUpdatedAt: now),
+                HorrorHouse(id: "test-charlie", name: "Midnight Lanterns", status: "OPEN", waitTime: 0, sourceUpdatedAt: now)
+            ])
+        if arguments.contains("--reset-hhn-ui-test") && !Self.didResetPreferences {
+            Self.didResetPreferences = true
+            UserDefaults.standard.removeObject(forKey: HorrorNightPreferences.favoritesKey)
+            UserDefaults.standard.removeObject(forKey: HorrorNightPreferences.sortKey)
+            UserDefaults.standard.removeObject(forKey: HorrorNightPreferences.doneKey(eventDate: eventDate))
+        }
+    }
+
+    var body: some View {
+        ScrollView {
+            NativeHorrorNightPanel(event: event, refreshFailed: failed).padding(18)
+        }
+        .background(Color.pivotBackground)
+        .dynamicTypeSize(largeType ? .accessibility3 : .large)
+    }
+}
+#endif
 
 // MARK: - Actual timestamped wait observations
 

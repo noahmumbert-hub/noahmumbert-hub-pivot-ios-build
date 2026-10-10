@@ -24,3 +24,4 @@ xcodebuild -project PIVOT.xcodeproj -scheme PIVOT \
   -parallel-testing-enabled NO -jobs 3 \
   CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO DEVELOPMENT_TEAM= \
   test 2>&1 | tee build/native-tests.log
+xcrun xcresulttool export attachments --path build/native-tests.xcresult --output-path build/ui-screenshots
