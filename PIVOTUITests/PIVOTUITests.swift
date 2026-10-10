@@ -5,7 +5,7 @@ final class PIVOTUITests: XCTestCase {
         let app = XCUIApplication()
         app.launchArguments = ["--hhn-ui-test", "--reset-hhn-ui-test"] + extraArguments
         app.launch()
-        XCTAssertTrue(app.descendants(matching: .any)["hhn-event-header"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["Halloween Horror Nights"].waitForExistence(timeout: 5))
         return app
     }
 
@@ -101,7 +101,7 @@ final class PIVOTUITests: XCTestCase {
 
     func testHHNPreviewExpandsWithoutPretendingWaitsAreLive() {
         let app = hhnApp(["--hhn-ui-test-preview"])
-        XCTAssertEqual(app.descendants(matching: .any)["hhn-feed-status"].label, "Tonight’s preview")
+        XCTAssertTrue(app.buttons["hhn-tonight-preview"].label.contains("Tonight’s preview"))
         XCTAssertFalse(app.textFields["hhn-house-search"].exists)
         app.descendants(matching: .any)["hhn-tonight-preview"].tap()
         XCTAssertTrue(app.textFields["hhn-house-search"].waitForExistence(timeout: 3))

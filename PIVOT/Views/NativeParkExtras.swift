@@ -204,6 +204,7 @@ struct NativeHorrorNightPanel: View {
             VStack(alignment: .leading, spacing: 10) {
                 Label("Halloween Horror Nights", systemImage: "moon.stars.fill")
                     .font(.headline).foregroundStyle(HorrorNightTheme.amber)
+                    .accessibilityIdentifier("hhn-event-title")
                 eventHours
                 ViewThatFits(in: .horizontal) {
                     HStack(spacing: 12) { feedBadge(now: now); Spacer(minLength: 0); ticketNotice }
@@ -212,7 +213,6 @@ struct NativeHorrorNightPanel: View {
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .horrorNightCard()
-            .accessibilityIdentifier("hhn-event-header")
         }
     }
 
@@ -230,6 +230,7 @@ struct NativeHorrorNightPanel: View {
                         .foregroundStyle(HorrorNightTheme.lavender)
                     Text("Halloween Horror Nights")
                         .font(.title.bold()).fixedSize(horizontal: false, vertical: true)
+                        .accessibilityIdentifier("hhn-event-title")
                 }
             }
             ViewThatFits(in: .horizontal) {
@@ -254,7 +255,6 @@ struct NativeHorrorNightPanel: View {
                                      startPoint: .topLeading, endPoint: .bottomTrailing))
         }
         .overlay { RoundedRectangle(cornerRadius: 24).stroke(HorrorNightTheme.lavender.opacity(0.25), lineWidth: 1) }
-        .accessibilityIdentifier("hhn-event-header")
     }
 
     private var eventDate: some View {
@@ -283,6 +283,7 @@ struct NativeHorrorNightPanel: View {
             .font(.caption.weight(.semibold)).foregroundStyle(color)
             .padding(.horizontal, 10).padding(.vertical, 8)
             .background(color.opacity(0.10), in: Capsule())
+            .accessibilityElement(children: .ignore)
             .accessibilityLabel(state.label)
             .accessibilityIdentifier("hhn-feed-status")
     }
@@ -424,7 +425,7 @@ private struct NativeHorrorNightChecklist: View {
         }
         .buttonStyle(.plain)
         .accessibilityLabel(choice == .all ? "Show all houses" : choice == .favorites ? "Show favorite houses" : "Show remaining favorite houses")
-        .accessibilityValue("\(selected ? "Selected" : "Not selected"), \(count) houses")
+        .accessibilityValue("\(count) houses")
         .accessibilityAddTraits(selected ? .isSelected : [])
         .accessibilityIdentifier("hhn-filter-\(choice == .all ? "all" : choice == .favorites ? "favorites" : "remaining")")
     }
@@ -475,12 +476,12 @@ private struct NativeHorrorNightChecklist: View {
         }
         .horrorNightCard()
         .overlay { RoundedRectangle(cornerRadius: 20).stroke(completed ? Color.pivotMint.opacity(0.25) : Color.clear, lineWidth: 1) }
-        .accessibilityIdentifier("hhn-house-\(house.id)")
     }
 
     private func houseIdentity(_ house: HorrorHouse) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(house.name).font(.headline).fixedSize(horizontal: false, vertical: true)
+                .accessibilityIdentifier("hhn-house-title-\(house.id)")
             statusBadge(house)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
