@@ -26,9 +26,12 @@ struct RideListView: View {
                     HStack(alignment: .firstTextBaseline) {
                         Text("Wait times").font(.largeTitle.weight(.bold)).tracking(-1.2)
                         Spacer(minLength: 8)
-                        Label(feedLabel, systemImage: "circle.fill")
-                            .font(.caption.weight(.medium))
-                            .foregroundStyle(feedIsLive ? Color.pivotMint : Color.pivotMuted)
+                        TimelineView(.periodic(from: .now, by: 1)) { context in
+                            let health = store.feedHealth(at: context.date)
+                            Label(health.badgeLabel, systemImage: "circle.fill")
+                                .font(.caption.weight(.medium))
+                                .foregroundStyle(health.isLive ? Color.pivotMint : Color.orange)
+                        }
                     }
                     ViewThatFits(in: .horizontal) {
                         HStack { rideCounts; Spacer(minLength: 8); freshness }
@@ -38,7 +41,7 @@ struct RideListView: View {
                 .padding(.top, 4)
             }
 
-            if let error = store.errorMessage {
+            if let error = store.errorMessage, store.snapshot == nil {
                 HStack(alignment: .top, spacing: 10) {
                     Image(systemName: "wifi.exclamationmark").foregroundStyle(.orange)
                     VStack(alignment: .leading, spacing: 4) {
@@ -118,7 +121,7 @@ struct RideListView: View {
                     .pivotCard()
                 } else if rides.isEmpty {
                     ContentUnavailableView {
-                        Label(emptyTitle, systemImage: effectiveFilter == .radar ? "checkmark.circle" : "magnifyingglass")
+                        Label(emptyTitle, systemImage: effectiveFilter == .radar ? (store.canAssertNoClosures() ? "checkmark.circle" : "questionmark.circle") : "magnifyingglass")
                     } description: { Text(emptyDetail) }
                     .foregroundStyle(.white)
                     .frame(maxWidth: .infinity)
@@ -135,8 +138,6 @@ struct RideListView: View {
         }
     }
 
-    private var feedIsLive: Bool { store.snapshot?.feedHealthy == true && store.errorMessage == nil }
-    private var feedLabel: String { store.errorMessage != nil ? "Offline" : feedIsLive ? "Live" : "Updating" }
     private var effectiveFilter: RideListFilter { radarOnly ? .radar : filter }
 
     private var rideCounts: some View {
@@ -149,9 +150,12 @@ struct RideListView: View {
     }
 
     private var freshness: some View {
-        Text(store.snapshot == nil ? "Checking the park…" : "Checked \(ParkTimeFormatter.age(store.snapshot?.fetchedAt))")
-            .font(.caption)
-            .foregroundStyle(Color.pivotMuted)
+        TimelineView(.periodic(from: .now, by: 1)) { context in
+            let health = store.feedHealth(at: context.date)
+            Text(health.status)
+                .font(.caption)
+                .foregroundStyle(Color.pivotMuted)
+        }
     }
 
     private var emptyTitle: String {
@@ -159,7 +163,7 @@ struct RideListView: View {
         switch effectiveFilter {
         case .all: return "No current ride data"
         case .open: return "No open ride waits"
-        case .radar: return "Reopen Radar is clear"
+        case .radar: return store.canAssertNoClosures() ? "No reviewed rides reported down" : "Current ride status unavailable"
         }
     }
 
@@ -168,7 +172,7 @@ struct RideListView: View {
         switch effectiveFilter {
         case .all: return "Pull to refresh and check for current attraction data."
         case .open: return "No reviewed attractions currently report an open wait."
-        case .radar: return "No rides are currently reported down at \(store.selectedPark?.name ?? "this park")."
+        case .radar: return store.canAssertNoClosures() ? "No down rides in the current observations at \(store.selectedPark?.name ?? "this park")." : "Missing or saved data cannot establish that there are no closures. Pull to refresh."
         }
     }
 }
@@ -224,6 +228,7 @@ private struct RideDetailScreenView: View {
             GeometryReader { geometry in
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
+                    RetainedSnapshotNotice()
                     if let photo = ride.details?.photo {
                         VStack(alignment: .leading, spacing: 8) {
                             AsyncImage(url: photo.url) { phase in
@@ -282,6 +287,7 @@ private struct RideDetailScreenView: View {
                         .font(.subheadline).foregroundStyle(.white)
                         .frame(maxWidth: .infinity, alignment: .leading).pivotCard()
                     }
+                    NativeWaitHistoryView(ride: ride, timeZone: timeZone, initiallyExpanded: true).pivotCard()
                     if let details = ride.details { RideInformationView(details: details).pivotCard() }
                 }
                 .frame(width: max(0, geometry.size.width - 40), alignment: .leading)
@@ -338,6 +344,9 @@ private struct RideRowView: View {
                 .buttonStyle(.plain)
                 .accessibilityLabel(accessibilitySummary)
                 .accessibilityHint("Double tap to open the ride information screen")
+
+                NativeWaitHistoryView(ride: ride, timeZone: timeZone)
+                    .padding(.top, 12)
 
                 if let forecast = ride.estimate?.presentation(timeZone: timeZone), ride.status == .down {
                     HStack(alignment: .top, spacing: 8) {

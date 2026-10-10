@@ -1,5 +1,120 @@
 import Foundation
 
+struct DashboardFeedHealth: Equatable, Sendable {
+    let isLive: Bool
+    let status: String
+    let retainedGuidance: String?
+
+    var badgeLabel: String {
+        isLive ? "Live" : retainedGuidance != nil ? "Saved" : "Updating"
+    }
+
+    // Match the existing live-wait and Live Activity freshness window. Source
+    // version timestamps may stay unchanged for a long closure; age the fetch.
+    static let maximumAge: TimeInterval = 15 * 60
+
+    static func presentation(
+        parkSelected: Bool,
+        snapshot: LiveParkSnapshot?,
+        isLoading: Bool,
+        refreshFailed: Bool,
+        at now: Date = Date()
+    ) -> DashboardFeedHealth {
+        guard parkSelected else {
+            return Self(isLive: false, status: "Paused · choose a park", retainedGuidance: nil)
+        }
+        let retainedGuidance = snapshot == nil ? nil
+            : "Saved wait times, ride status, and reopening guidance may have changed. Check current conditions before relying on them."
+        // A previously healthy response cannot hide a later failed refresh.
+        if refreshFailed {
+            return Self(
+                isLive: false,
+                status: snapshot == nil ? "Refresh failed" : "Refresh failed · last update retained",
+                retainedGuidance: retainedGuidance
+            )
+        }
+        guard let snapshot else {
+            return Self(isLive: false, status: isLoading ? "Refreshing" : "Waiting for live data", retainedGuidance: nil)
+        }
+        let fetchedAt = min(snapshot.fetchedAt, snapshot.themeParksWiki?.fetchedAt ?? snapshot.fetchedAt)
+        let age = now.timeIntervalSince(fetchedAt)
+        guard snapshot.feedHealthy, snapshot.themeParksWiki?.available != false,
+              age.isFinite, age >= -120, age < maximumAge else {
+            return Self(isLive: false, status: "Source too old to call live · last update retained", retainedGuidance: retainedGuidance)
+        }
+        let checked = ParkTimeFormatter.age(snapshot.fetchedAt, relativeTo: now)
+        if snapshot.themeParksWiki?.cacheStale == true {
+            return Self(isLive: false, status: "Saved snapshot · retrying · checked \(checked)", retainedGuidance: retainedGuidance)
+        }
+        return Self(isLive: true, status: "Live · auto 5s · checked \(checked)", retainedGuidance: nil)
+    }
+}
+
+/// Source observations describe mapped activity, not the operator's reopening decision.
+struct DashboardLightningHealth: Equatable, Sendable {
+    let isCurrent: Bool
+    let title: String
+    static let maximumCheckAge: TimeInterval = 3 * 60
+    static let maximumDensityAge: TimeInterval = 30 * 60
+
+    static func presentation(lightning: LightningDetails, feedHealth: DashboardFeedHealth, at now: Date) -> Self {
+        func fresh(_ date: Date?, maximumAge: TimeInterval) -> Bool {
+            guard let date else { return false }
+            let age = now.timeIntervalSince(date)
+            return age.isFinite && age >= -120 && age < maximumAge
+        }
+        let glm = lightning.sourceKind == "GLM" ? lightning.glm : nil
+        let observedAt = glm?.observedThrough ?? lightning.sourceUpdatedAt
+        let hasCoverage = glm != nil
+            ? glm?.status == "LIVE" && glm?.state != "UNKNOWN"
+            : (lightning.completeFrames30Minutes ?? 0) > 0
+        let current = feedHealth.isLive && lightning.status == "LIVE" && hasCoverage &&
+            fresh(glm?.checkedAt ?? lightning.checkedAt, maximumAge: maximumCheckAge) &&
+            fresh(observedAt, maximumAge: glm != nil ? 5 * 60 : maximumDensityAge)
+        return Self(isCurrent: current, title: current ? "Mapped lightning observations"
+            : observedAt == nil ? "Lightning observations unavailable" : "Saved lightning observations · current conditions unknown")
+    }
+}
+
+struct DashboardClosureHealth {
+    static func canAssertNoClosures(snapshot: LiveParkSnapshot?, feedHealth: DashboardFeedHealth) -> Bool {
+        guard feedHealth.isLive, let snapshot, snapshot.parkActive else { return false }
+        let rides = snapshot.rides.filter(\.radarEligible)
+        return !rides.isEmpty && rides.allSatisfy {
+            $0.status == .open || $0.status == .scheduled || $0.status == .parkInactive
+        }
+    }
+}
+
+extension ParkHoursSnapshot {
+    func isCurrent(for park: FloridaPark, at now: Date = Date()) -> Bool {
+        parkId == park.rawValue && date == Self.localDate(for: park, at: now)
+    }
+
+    static func localDate(for park: FloridaPark, at now: Date = Date()) -> String {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.calendar = Calendar(identifier: .gregorian)
+        formatter.timeZone = park.timeZone
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter.string(from: now)
+    }
+
+    static func current(
+        for park: FloridaPark,
+        candidates: [ParkHoursSnapshot?],
+        at now: Date = Date()
+    ) -> ParkHoursSnapshot? {
+        candidates.compactMap { $0 }
+            .filter { $0.isCurrent(for: park, at: now) }
+            .sorted {
+                if $0.stale != $1.stale { return !$0.stale }
+                return $0.fetchedAt > $1.fetchedAt
+            }
+            .first
+    }
+}
+
 struct ForecastPresentation: Equatable, Sendable {
     let headline: String
     let range: String

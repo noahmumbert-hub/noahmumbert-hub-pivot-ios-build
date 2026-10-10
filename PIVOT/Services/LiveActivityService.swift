@@ -19,6 +19,14 @@ struct PIVOTLiveActivityTarget: Equatable, Sendable {
 }
 
 enum PIVOTLiveActivityRideSelector {
+    static func featuredClosedRide(in rides: [LiveRide], pinnedRideID: Int?) -> LiveRide? {
+        if let pinnedRideID,
+           let pinned = rides.first(where: { $0.id == pinnedRideID && $0.isRadarDown }) {
+            return pinned
+        }
+        return mostPopularClosedRide(in: rides)
+    }
+
     static func mostPopularClosedRide(in rides: [LiveRide]) -> LiveRide? {
         rides
             .filter(\.isRadarDown)
