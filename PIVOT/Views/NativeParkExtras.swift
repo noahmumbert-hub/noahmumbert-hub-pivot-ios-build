@@ -177,10 +177,10 @@ struct NativeHorrorNightPanel: View {
         TimelineView(.periodic(from: .now, by: 15)) { context in
             let phase = HorrorNightPresentation.phase(for: event, at: context.date)
             if phase != .hidden {
-                VStack(alignment: .leading, spacing: 16) {
+                VStack(alignment: .leading, spacing: 12) {
                     if phase == .preview && showHouses {
                         DisclosureGroup(isExpanded: $previewExpanded) {
-                            if showHouses { checklist(now: context.date).padding(.top, 16) }
+                            if showHouses { checklist(now: context.date).padding(.top, 12) }
                         } label: {
                             eventHeader(now: context.date)
                         }
@@ -199,7 +199,7 @@ struct NativeHorrorNightPanel: View {
     @ViewBuilder
     private func eventHeader(now: Date) -> some View {
         if showHouses {
-            fullEventHeader(now: now)
+            compactEventHeader(now: now)
         } else {
             VStack(alignment: .leading, spacing: 10) {
                 Label("Halloween Horror Nights", systemImage: "moon.stars.fill")
@@ -216,45 +216,35 @@ struct NativeHorrorNightPanel: View {
         }
     }
 
-    private func fullEventHeader(now: Date) -> some View {
-        VStack(alignment: .leading, spacing: 16) {
-            HStack(alignment: .top, spacing: 14) {
+    private func compactEventHeader(now: Date) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            HStack(alignment: .center, spacing: 10) {
                 Image(systemName: "moon.stars.fill")
-                    .font(.title2).foregroundStyle(HorrorNightTheme.amber)
-                    .padding(12)
-                    .background(HorrorNightTheme.amber.opacity(0.10), in: RoundedRectangle(cornerRadius: 16))
+                    .font(.body).foregroundStyle(HorrorNightTheme.amber)
+                    .padding(8)
+                    .background(HorrorNightTheme.amber.opacity(0.10), in: RoundedRectangle(cornerRadius: 10))
                     .accessibilityHidden(true)
-                VStack(alignment: .leading, spacing: 6) {
-                    Text("UNIVERSAL ORLANDO")
-                        .font(.caption.weight(.semibold)).tracking(1.4)
-                        .foregroundStyle(HorrorNightTheme.lavender)
-                    Text("Halloween Horror Nights")
-                        .font(.title.bold()).fixedSize(horizontal: false, vertical: true)
-                        .accessibilityIdentifier("hhn-event-title")
-                }
+                Text("Halloween Horror Nights")
+                    .font(.headline).fixedSize(horizontal: false, vertical: true)
+                    .accessibilityIdentifier("hhn-event-title")
             }
             ViewThatFits(in: .horizontal) {
                 HStack(spacing: 12) { eventDate; Spacer(minLength: 0); eventHours }
                 VStack(alignment: .leading, spacing: 6) { eventDate; eventHours }
             }
-            Divider().overlay(HorrorNightTheme.border)
             ViewThatFits(in: .horizontal) {
-                HStack(spacing: 12) { feedBadge(now: now); Spacer(minLength: 0); ticketNotice }
-                VStack(alignment: .leading, spacing: 10) { feedBadge(now: now); ticketNotice }
-            }
-            if now < event.night.openingTime && showHouses {
-                Text("Browse tonight’s houses and save your favorites.")
-                    .font(.subheadline).foregroundStyle(HorrorNightTheme.muted)
+                HStack(spacing: 8) { feedBadge(now: now, compact: true); Spacer(minLength: 0); ticketNotice }
+                VStack(alignment: .leading, spacing: 6) { feedBadge(now: now, compact: true); ticketNotice }
             }
         }
-        .padding(20)
+        .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background {
-            RoundedRectangle(cornerRadius: 24)
+            RoundedRectangle(cornerRadius: 18)
                 .fill(LinearGradient(colors: [Color(red: 0.18, green: 0.10, blue: 0.27), HorrorNightTheme.surface],
                                      startPoint: .topLeading, endPoint: .bottomTrailing))
         }
-        .overlay { RoundedRectangle(cornerRadius: 24).stroke(HorrorNightTheme.lavender.opacity(0.25), lineWidth: 1) }
+        .overlay { RoundedRectangle(cornerRadius: 18).stroke(HorrorNightTheme.lavender.opacity(0.25), lineWidth: 1) }
     }
 
     private var eventDate: some View {
@@ -276,12 +266,12 @@ struct NativeHorrorNightPanel: View {
             .font(.caption).foregroundStyle(HorrorNightTheme.muted)
     }
 
-    private func feedBadge(now: Date) -> some View {
+    private func feedBadge(now: Date, compact: Bool = false) -> some View {
         let state = HorrorNightPresentation.feedState(for: event, now: now, refreshFailed: refreshFailed)
         let color = state == .live ? Color.pivotMint : HorrorNightTheme.amber
         return Label(state.label, systemImage: state == .live ? "dot.radiowaves.left.and.right" : state == .preview ? "moon" : "exclamationmark.circle")
             .font(.caption.weight(.semibold)).foregroundStyle(color)
-            .padding(.horizontal, 10).padding(.vertical, 8)
+            .padding(.horizontal, compact ? 6 : 10).padding(.vertical, compact ? 4 : 8)
             .background(color.opacity(0.10), in: Capsule())
             .accessibilityElement(children: .ignore)
             .accessibilityLabel(state.label)
@@ -331,7 +321,7 @@ private struct NativeHorrorNightChecklist: View {
     private var feedState: HorrorNightFeedState { HorrorNightPresentation.feedState(for: event, now: now, refreshFailed: refreshFailed) }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .leading, spacing: 12) {
             nightProgress
             ViewThatFits(in: .horizontal) {
                 HStack { Text("Haunted houses").font(.title2.bold()); Spacer(); sortMenu }
@@ -353,17 +343,15 @@ private struct NativeHorrorNightChecklist: View {
     }
 
     private var nightProgress: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack(alignment: .top) {
-                VStack(alignment: .leading, spacing: 5) {
-                    Text("Your night").font(.headline)
-                    Text(favoriteHouses.isEmpty ? "Star the houses you want to visit." : "\(completedCount) of \(favoriteHouses.count) favorites done")
-                        .font(.subheadline).foregroundStyle(HorrorNightTheme.muted)
-                        .accessibilityIdentifier("hhn-progress-description")
-                }
-                Spacer(minLength: 12)
+        VStack(alignment: .leading, spacing: 8) {
+            HStack(spacing: 8) {
                 Image(systemName: favoriteHouses.isEmpty ? "star" : "checkmark.circle")
-                    .font(.title2).foregroundStyle(HorrorNightTheme.amber).accessibilityHidden(true)
+                    .font(.body).foregroundStyle(HorrorNightTheme.amber).accessibilityHidden(true)
+                Text(favoriteHouses.isEmpty ? "Star houses to plan your night." : "\(completedCount) of \(favoriteHouses.count) favorites done")
+                    .font(.subheadline).foregroundStyle(HorrorNightTheme.muted)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .accessibilityIdentifier("hhn-progress-description")
+                Spacer(minLength: 0)
             }
             if !favoriteHouses.isEmpty {
                 ProgressView(value: Double(completedCount), total: Double(favoriteHouses.count))
@@ -377,7 +365,7 @@ private struct NativeHorrorNightChecklist: View {
                     .font(.caption).foregroundStyle(HorrorNightTheme.muted)
             }
         }
-        .horrorNightCard()
+        .horrorNightCard(padding: 12)
     }
 
     private var searchField: some View {

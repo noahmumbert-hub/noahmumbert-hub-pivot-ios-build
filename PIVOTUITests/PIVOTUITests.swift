@@ -35,6 +35,8 @@ final class PIVOTUITests: XCTestCase {
     func testHHNFavoritesCompletionUndoAndRelaunch() {
         let app = hhnApp()
         XCTAssertEqual(app.descendants(matching: .any)["hhn-feed-status"].label, "Live house updates")
+        let headerSpan = app.descendants(matching: .any)["hhn-feed-status"].frame.maxY - app.staticTexts["hhn-event-title"].frame.minY
+        XCTAssertLessThan(headerSpan, 150, "The normal-text HHN event header should leave room for houses")
         screenshot("HHN live overview", app: app)
         let favorite = app.buttons["hhn-favorite-test-charlie"]
         reveal(favorite, in: app)
@@ -169,7 +171,7 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["More"].tap()
         app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Settings'")).firstMatch.tap()
         XCTAssertEqual(app.buttons["accent-purple"].value as? String, "Selected")
-        XCTAssertTrue(app.staticTexts["PIVOT 1.14.2"].exists)
+        XCTAssertTrue(app.staticTexts["PIVOT 1.14.3"].exists)
         app.buttons["accent-mint"].tap()
     }
 
