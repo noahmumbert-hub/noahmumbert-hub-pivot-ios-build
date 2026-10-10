@@ -185,7 +185,6 @@ struct NativeHorrorNightPanel: View {
                             eventHeader(now: context.date)
                         }
                         .tint(HorrorNightTheme.amber)
-                        .accessibilityIdentifier("hhn-tonight-preview")
                     } else {
                         eventHeader(now: context.date)
                         if showHouses { checklist(now: context.date) }

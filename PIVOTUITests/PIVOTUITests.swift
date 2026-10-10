@@ -101,11 +101,15 @@ final class PIVOTUITests: XCTestCase {
 
     func testHHNPreviewExpandsWithoutPretendingWaitsAreLive() {
         let app = hhnApp(["--hhn-ui-test-preview"])
-        XCTAssertTrue(app.buttons["hhn-tonight-preview"].label.contains("Tonight’s preview"))
+        let preview = app.buttons.matching(NSPredicate(format: "label CONTAINS 'Tonight’s preview' AND label CONTAINS 'Halloween Horror Nights'")).firstMatch
+        XCTAssertTrue(preview.label.contains("Tonight’s preview"))
         XCTAssertFalse(app.textFields["hhn-house-search"].exists)
-        app.descendants(matching: .any)["hhn-tonight-preview"].tap()
+        preview.tap()
         XCTAssertTrue(app.textFields["hhn-house-search"].waitForExistence(timeout: 3))
         XCTAssertFalse(app.descendants(matching: .any).matching(NSPredicate(format: "label == '15 minute wait'")).firstMatch.exists)
+        reveal(app.buttons["hhn-favorite-test-charlie"], in: app)
+        app.buttons["hhn-favorite-test-charlie"].tap()
+        XCTAssertEqual(app.buttons["hhn-favorite-test-charlie"].value as? String, "Favorited")
         screenshot("HHN tonight preview", app: app)
     }
 
