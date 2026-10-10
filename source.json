@@ -1,0 +1,46 @@
+{
+  "name": "PIVOT",
+  "identifier": "com.noahmumbert.PIVOT.Source",
+  "sourceURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json",
+  "subtitle": "PIVOT for SideStore",
+  "description": "PIVOT updates for SideStore. Uses the existing PIVOT app identity.",
+  "localizedDescription": "PIVOT updates for SideStore. Uses the existing PIVOT app identity.",
+  "website": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
+  "websiteURL": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
+  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/fba7ce9b702a59ae14a637d9b7af3aa8abf2ea2e/icon.png",
+  "tintColor": "70DFC0",
+  "apps": [
+    {
+      "name": "PIVOT",
+      "bundleIdentifier": "com.noahmumbert.PIVOT",
+      "developerName": "Noah Mumbert",
+      "subtitle": "Theme park companion",
+      "localizedDescription": "Park wait times, ride status, weather observations, planning, shows and Live Activities.",
+      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/fba7ce9b702a59ae14a637d9b7af3aa8abf2ea2e/icon.png",
+      "tintColor": "70DFC0",
+      "version": "1.14.1",
+      "versionDate": "2026-10-10T20:16:17Z",
+      "versionDescription": "Saved lightning observations now expire and clearly show saved or unavailable data. Empty or unhealthy ride feeds no longer report that all rides are clear. Failed refresh status stays saved when switching parks, and delayed GPS results no longer override manual park choices. Existing 1.14 features, saved-data keys and the Live Activity extension are preserved. Native update only; backend changes are separate.",
+      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/fba7ce9b702a59ae14a637d9b7af3aa8abf2ea2e/PIVOT-1.14.1-100.3.1.ipa",
+      "size": 2812500,
+      "versions": [
+        {
+          "version": "1.14.1",
+          "buildVersion": "100.3.1",
+          "date": "2026-10-10T20:16:17Z",
+          "localizedDescription": "Saved lightning observations now expire and clearly show saved or unavailable data. Empty or unhealthy ride feeds no longer report that all rides are clear. Failed refresh status stays saved when switching parks, and delayed GPS results no longer override manual park choices. Existing 1.14 features, saved-data keys and the Live Activity extension are preserved. Native update only; backend changes are separate.",
+          "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/fba7ce9b702a59ae14a637d9b7af3aa8abf2ea2e/PIVOT-1.14.1-100.3.1.ipa",
+          "size": 2812500,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocationWhenInUseUsageDescription": "PIVOT uses your location to select a supported theme park you’re currently visiting."
+        }
+      }
+    }
+  ],
+  "news": []
+}
