@@ -236,7 +236,7 @@ struct RootView: View {
 
     private func horrorNightSection(_ event: HorrorNightSnapshot, showHouses: Bool) -> some View {
         NativeHorrorNightPanel(event: event, showHouses: showHouses,
-                              refreshFailed: store.errorMessage != nil || store.snapshot?.feedHealthy != true)
+                              refreshFailed: store.errorMessage != nil)
     }
 
     private var radarSelection: some View {

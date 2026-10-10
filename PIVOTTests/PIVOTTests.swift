@@ -20,6 +20,7 @@ final class PIVOTTests: XCTestCase {
         let client = hhnTestClient()
         for _ in 0..<2 {
             let result = try await client.snapshot(for: .universalStudiosFlorida)
+            XCTAssertFalse(result.feedHealthy, "Regular-ride feed health must remain independent of HHN house observations")
             let event = try XCTUnwrap(result.halloweenHorrorNights)
             XCTAssertEqual(event.houses.first?.waitTime, 10)
             XCTAssertEqual(HorrorNightPresentation.liveWait(for: event.houses[0], event: event, now: Date(), refreshFailed: false), 10)
@@ -58,7 +59,7 @@ final class PIVOTTests: XCTestCase {
         let formatter = ISO8601DateFormatter()
         let encoder = JSONEncoder()
         encoder.dateEncodingStrategy = .iso8601
-        var json = try XCTUnwrap(JSONSerialization.jsonObject(with: encoder.encode(makeSnapshot(sourceOffset: 0, ride: makeRide(status: .open)))) as? [String: Any])
+        var json = try XCTUnwrap(JSONSerialization.jsonObject(with: encoder.encode(makeSnapshot(sourceOffset: 0, feedHealthy: false, ride: makeRide(status: .open)))) as? [String: Any])
         json["parkId"] = 65
         json["halloweenHorrorNights"] = [
             "night": ["date": "2026-10-10", "modeStartsAt": formatter.string(from: now.addingTimeInterval(-7200)),
