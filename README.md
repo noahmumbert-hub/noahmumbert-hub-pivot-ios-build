@@ -78,7 +78,7 @@ In SideStore, open **Sources → +** (usually under Browse) and add:
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 ```
 
-PIVOT **1.14.2 / 100.8.1** is the latest listed update; the tested 1.14.1 update remains in version history. Install it as an update to the existing PIVOT app, using the same signing identity. Keep the app installed to preserve saved data. The source and IPA downloads are public and do not expire with Actions artifacts. Physical SideStore installation remains untested.
+PIVOT **1.14.3 / 100.9.1** is the latest listed update; the tested 1.14.2 and 1.14.1 updates remain in version history. Install it as an update to the existing PIVOT app, using the same signing identity. Keep the app installed to preserve saved data. The source and IPA downloads are public and do not expire with Actions artifacts. Physical SideStore installation remains untested.
 
 Future updates use this same source URL. Each native update still needs a new tested IPA; SideStore downloads and signs it when you choose to update. Publishing is manual, after successful Xcode tests and archive validation. Workflow permissions are unchanged.
 
@@ -96,3 +96,7 @@ Add `--publish` when publication is authorized. The helper checks checksum, devi
 **1.14.2 / 100.8.1** improves the native HHN layout with a purple/amber event header, readable house cards, larger waits, search, Favorites/To do filters and favorite completion progress. Existing preferences and app/widget identity are preserved. Stale, missing and preview waits stay unknown.
 
 [Verified build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38087339360): 149 unit tests, 10 iPhone simulator UI tests and the Release device archive passed. The update is available from the existing SideStore source. Main remains the older source pending review; use `feat/hhn-ui-refresh` for the current tested native changes. [Validation and delivery report](docs/hhn-ui-update.md) includes failed/superseded runs, limitations, checksum and release notes.
+
+## Compact HHN follow-up
+
+**1.14.3 / 100.9.1** replaces the large event hero with a compact card and a slim favorites progress strip, bringing the houses closer to the top. [Xcode run 38088227371](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38088227371) passed 149 unit tests, 10 simulator UI tests and the Release archive. The tested update is published through the same SideStore source. [Validation and delivery report](docs/hhn-compact-update.md).
