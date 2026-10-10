@@ -36,7 +36,7 @@ final class PIVOTTests: XCTestCase {
         data["rides"] = []
         let empty = try JSONDecoder().decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: data))
         XCTAssertFalse(DashboardClosureHealth.canAssertNoClosures(snapshot: empty, feedHealth: live))
-        for status: RideStatus in [.stale, .unknown, .down] {
+        for status: RideStatus in [.stale, .unknown("UNAVAILABLE"), .down] {
             XCTAssertFalse(DashboardClosureHealth.canAssertNoClosures(snapshot: makeSnapshot(sourceOffset: 0, ride: makeRide(status: status)), feedHealth: live))
         }
         let failed = DashboardFeedHealth.presentation(parkSelected: true, snapshot: liveSnapshot, isLoading: false, refreshFailed: true, at: start)
