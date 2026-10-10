@@ -28,9 +28,9 @@ public, although GitHub may require login to download Actions artifacts.
 ## Build from a cloud chat
 
 ```bash
-gh workflow run build-ipa.yml --repo noahmumbert-hub/pivot-ios-build --ref main
-gh run list --repo noahmumbert-hub/pivot-ios-build --workflow build-ipa.yml
-gh run download RUN_ID --repo noahmumbert-hub/pivot-ios-build --name ARTIFACT_NAME
+gh workflow run build-ipa.yml --repo noahmumbert-hub/noahmumbert-hub-pivot-ios-build --ref main
+gh run list --repo noahmumbert-hub/noahmumbert-hub-pivot-ios-build --workflow build-ipa.yml
+gh run download RUN_ID --repo noahmumbert-hub/noahmumbert-hub-pivot-ios-build --name ARTIFACT_NAME
 ```
 
 Develop future native changes in this repository and push them to `main` to
