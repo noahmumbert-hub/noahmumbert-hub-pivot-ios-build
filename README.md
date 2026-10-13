@@ -4,11 +4,20 @@ Add this source in SideStore → Sources → +:
 
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 
-Current update: **1.14.4 / build 100.11.1**, iOS 17.0+.
+Current update: **1.15.0 / build 100.21.1**, iOS 17.0+.
 
-Fixes HHN house waits disappearing when an unchanged posted wait has an older provider timestamp. Fresh house observations keep valid posted waits, including zero; missing, invalid, future-dated, failed and expired observations remain unavailable. HHN house feed health is independent of regular rides. The app can refresh houses from the same free ThemeParks.wiki provider when the server has omitted waits, with bounded requests and retry backoff. The compact Halloween layout and existing favorites/completion data are preserved. Update the existing PIVOT app with the same SideStore signing identity. Physical SideStore installation remains untested.
+PIVOT 1.15.0 — Predicted waits and park crowds
 
-IPA SHA-256: `7c32eb0dde29886ff88436f8df18b731163c71732ebb3f6713e23bcf993d702b`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38092438641).
+• A compact crowd meter on Waits uses current posted waits to estimate how busy the park feels.
+• Compare supported parks and visit dates, including observed past days and preliminary future estimates.
+• Open a ride to see hourly wait estimates and the lowest estimated remaining wait, once enough history is available.
+• Forecasts learn from real observations on this device and adjust for today's queue pressure when coverage allows.
+• Learning states, confidence labels, missing-hour gaps, and failed-data handling keep unavailable data from looking like a quiet park.
+• Existing app identity, saved choices, compact HHN design, and SideStore compatibility are preserved.
+
+Crowds are a wait-based estimate, not attendance or park capacity. Ride forecasts and future crowd ratings need at least three previous observed days. This first model is preliminary and has not been calibrated against real-world outcomes; holidays, events, weather, and operations can change waits. No paid feeds or backend deployment were added.
+
+IPA SHA-256: `d1b581966bac1a6fcab5871df234992195527d12bdd739eb77a033a9db3e30ad`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38330317542).
 The unsigned IPA preserves `com.noahmumbert.PIVOT` and its Live Activity extension.
 Install as an update using the same signing identity; keep the existing app installed to retain saved data.
 Native unit and simulator UI tests passed for this build. Physical SideStore installation remains untested.

@@ -7,7 +7,7 @@
   "localizedDescription": "PIVOT updates for SideStore. Uses the existing PIVOT app identity.",
   "website": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
   "websiteURL": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
-  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/9133aef0157a92993a6e8491fb6b29cabde7e6cd/icon.png",
+  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/c4465c71d4a27bdb4752554a616e2105463626a0/icon.png",
   "tintColor": "70DFC0",
   "apps": [
     {
@@ -16,14 +16,23 @@
       "developerName": "Noah Mumbert",
       "subtitle": "Theme park companion",
       "localizedDescription": "Park wait times, ride status, weather observations, planning, shows and Live Activities.",
-      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/9133aef0157a92993a6e8491fb6b29cabde7e6cd/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/c4465c71d4a27bdb4752554a616e2105463626a0/icon.png",
       "tintColor": "70DFC0",
-      "version": "1.14.4",
-      "versionDate": "2026-10-10T22:54:11Z",
-      "versionDescription": "Fixes HHN house waits disappearing when an unchanged posted wait has an older provider timestamp. Fresh house observations keep valid posted waits, including zero; missing, invalid, future-dated, failed and expired observations remain unavailable. HHN house feed health is independent of regular rides. The app can refresh houses from the same free ThemeParks.wiki provider when the server has omitted waits, with bounded requests and retry backoff. The compact Halloween layout and existing favorites/completion data are preserved. Update the existing PIVOT app with the same SideStore signing identity. Physical SideStore installation remains untested.",
-      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/9133aef0157a92993a6e8491fb6b29cabde7e6cd/PIVOT-1.14.4-100.11.1.ipa",
-      "size": 2846592,
+      "version": "1.15.0",
+      "versionDate": "2026-10-13T01:15:22Z",
+      "versionDescription": "PIVOT 1.15.0 — Predicted waits and park crowds\n\n• A compact crowd meter on Waits uses current posted waits to estimate how busy the park feels.\n• Compare supported parks and visit dates, including observed past days and preliminary future estimates.\n• Open a ride to see hourly wait estimates and the lowest estimated remaining wait, once enough history is available.\n• Forecasts learn from real observations on this device and adjust for today's queue pressure when coverage allows.\n• Learning states, confidence labels, missing-hour gaps, and failed-data handling keep unavailable data from looking like a quiet park.\n• Existing app identity, saved choices, compact HHN design, and SideStore compatibility are preserved.\n\nCrowds are a wait-based estimate, not attendance or park capacity. Ride forecasts and future crowd ratings need at least three previous observed days. This first model is preliminary and has not been calibrated against real-world outcomes; holidays, events, weather, and operations can change waits. No paid feeds or backend deployment were added.",
+      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/c4465c71d4a27bdb4752554a616e2105463626a0/PIVOT-1.15.0-100.21.1.ipa",
+      "size": 2946530,
       "versions": [
+        {
+          "version": "1.15.0",
+          "buildVersion": "100.21.1",
+          "date": "2026-10-13T01:15:22Z",
+          "localizedDescription": "PIVOT 1.15.0 — Predicted waits and park crowds\n\n• A compact crowd meter on Waits uses current posted waits to estimate how busy the park feels.\n• Compare supported parks and visit dates, including observed past days and preliminary future estimates.\n• Open a ride to see hourly wait estimates and the lowest estimated remaining wait, once enough history is available.\n• Forecasts learn from real observations on this device and adjust for today's queue pressure when coverage allows.\n• Learning states, confidence labels, missing-hour gaps, and failed-data handling keep unavailable data from looking like a quiet park.\n• Existing app identity, saved choices, compact HHN design, and SideStore compatibility are preserved.\n\nCrowds are a wait-based estimate, not attendance or park capacity. Ride forecasts and future crowd ratings need at least three previous observed days. This first model is preliminary and has not been calibrated against real-world outcomes; holidays, events, weather, and operations can change waits. No paid feeds or backend deployment were added.",
+          "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/c4465c71d4a27bdb4752554a616e2105463626a0/PIVOT-1.15.0-100.21.1.ipa",
+          "size": 2946530,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.14.4",
           "buildVersion": "100.11.1",
