@@ -168,9 +168,9 @@ struct WaitForecastTimeline: View {
                 }
                 Chart(points) { point in
                     let inset = point.end.timeIntervalSince(point.start) * 0.12
-                    BarMark(xStart: .value("Hour start", point.start.addingTimeInterval(inset)),
-                            xEnd: .value("Hour end", point.end.addingTimeInterval(-inset)),
-                            y: .value("Estimated wait", point.minutes))
+                    RectangleMark(xStart: .value("Hour start", point.start.addingTimeInterval(inset)),
+                                  xEnd: .value("Hour end", point.end.addingTimeInterval(-inset)),
+                                  yStart: .value("Zero wait", 0), yEnd: .value("Estimated wait", point.minutes))
                         .foregroundStyle(Color.pivotMint)
                         .annotation(position: .top) { Text("\(point.minutes)").font(.caption2).foregroundStyle(Color.pivotMuted) }
                 }
