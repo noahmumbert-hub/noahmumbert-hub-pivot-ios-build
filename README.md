@@ -7,7 +7,7 @@ history are not included here. The app uses the existing PIVOT backend.
 ## Build an IPA
 
 1. Open **Actions → Build SideStore IPA → Run workflow**.
-2. Select the intended branch and wait for a successful run. The latest tested native wait/crowd update is on `feat/wait-crowd-forecast`, including the compact HHN UI and October 8 native audit fixes; `main` remains the older source until reviewed.
+2. Select the intended branch and wait for a successful run. The reopening-guidance update is on `feat/reopening-reliability`, continuing the Plan crowd/wait update, compact HHN UI and October 8 native audit fixes. See [validation and delivery notes](docs/reopening-reliability-update.md); `main` remains the older source until reviewed.
 3. Download the **PIVOT-SideStore** artifact at the bottom of the run page.
 4. Extract the downloaded ZIP. It contains an `.ipa`, `SHA256SUMS`, and
    `build-info.json` identifying the source commit and app version.
@@ -28,7 +28,7 @@ public, although GitHub may require login to download Actions artifacts.
 ## Build from a cloud chat
 
 ```bash
-gh workflow run build-ipa.yml --repo noahmumbert-hub/noahmumbert-hub-pivot-ios-build --ref feat/hhn-ui-refresh
+gh workflow run build-ipa.yml --repo noahmumbert-hub/noahmumbert-hub-pivot-ios-build --ref feat/reopening-reliability
 gh run list --repo noahmumbert-hub/noahmumbert-hub-pivot-ios-build --workflow build-ipa.yml
 gh run download RUN_ID --repo noahmumbert-hub/noahmumbert-hub-pivot-ios-build --name ARTIFACT_NAME
 ```
