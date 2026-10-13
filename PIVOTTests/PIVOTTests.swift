@@ -153,6 +153,7 @@ final class PIVOTTests: XCTestCase {
         XCTAssertEqual(store.feedHealth(at: start).badgeLabel, "Saved")
         for _ in 0..<3 {
             store.selectPark(.epcot)
+            XCTAssertTrue(store.crowdRefreshFailed(for: .magicKingdom), "Crowd browsing retains the failed park state while another park is selected")
             store.selectPark(.magicKingdom)
             XCTAssertEqual(store.feedHealth(at: start).badgeLabel, "Saved")
             XCTAssertNotNil(store.errorMessage)
@@ -162,6 +163,7 @@ final class PIVOTTests: XCTestCase {
         await store.refreshNow()
         XCTAssertTrue(store.feedHealth(at: start).isLive)
         XCTAssertNil(store.errorMessage)
+        XCTAssertFalse(store.crowdRefreshFailed(for: .magicKingdom))
     }
 
     func testFeedHealthFailureOverridesHealthyRetainedSnapshotAndRecovers() throws {
@@ -2135,6 +2137,117 @@ final class PIVOTTests: XCTestCase {
             radarReflectivityDbz: 28,
             radarProjectedClearAt: start.addingTimeInterval(10 * 60)
         )
+    }
+
+    @MainActor
+    func testCrowdBrowsingDoesNotChangeSelectionAndFailureKeepsDataUnavailable() async throws {
+        let suite = "crowd-browse-\(UUID())"
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: suite))
+        defer { defaults.removePersistentDomain(forName: suite) }
+        defaults.set(6, forKey: "pivot.selectedPark")
+        let now = Date()
+        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601
+        var json = try XCTUnwrap(JSONSerialization.jsonObject(with: encoder.encode(makeSnapshot(sourceOffset: now.timeIntervalSince(start), ride: makeRide(status: .open)))) as? [String: Any])
+        json["parkId"] = 5
+        let payload = try JSONSerialization.data(withJSONObject: json)
+        AuditURLProtocol.response = { request in
+            XCTAssertTrue(request.url?.query?.contains("park=5") == true)
+            return payload
+        }
+        defer { AuditURLProtocol.response = nil }
+        let store = DashboardStore(apiClient: hhnTestClient(), defaults: defaults)
+        await store.refreshCrowd(for: .epcot)
+        XCTAssertEqual(store.selectedPark, .magicKingdom)
+        XCTAssertEqual(defaults.integer(forKey: "pivot.selectedPark"), 6)
+        XCTAssertEqual(store.crowdSnapshot(for: .epcot)?.parkId, 5)
+        XCTAssertFalse(store.crowdRefreshFailed(for: .epcot))
+        AuditURLProtocol.response = { _ in throw URLError(.notConnectedToInternet) }
+        await store.refreshCrowd(for: .epcot)
+        XCTAssertTrue(store.crowdRefreshFailed(for: .epcot))
+        XCTAssertEqual(store.crowdSnapshot(for: .epcot)?.parkId, 5)
+        XCTAssertFalse(store.crowdLoading.contains(5))
+        store.selectPark(nil)
+        XCTAssertNil(store.selectedPark)
+        XCTAssertEqual(store.crowdSnapshot(for: .epcot)?.parkId, 5)
+    }
+
+    func testWaitLearningRecordsOnlyHealthyValidWaitsWithoutPollInflation() throws {
+        let now = start.addingTimeInterval(300)
+        let rides = (1...6).map { makeRide(id: $0, status: .open, waitTime: $0 * 10) }
+        var observation = makeSnapshot(sourceOffset: 300, ride: rides[0])
+        let helper = NativeWaitForecastTests()
+        observation.parkHours = helper.hours(open: "2026-04-04T13:00:00Z", close: "2026-04-05T01:00:00Z", at: now)
+        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601
+        var json = try XCTUnwrap(JSONSerialization.jsonObject(with: encoder.encode(observation)) as? [String: Any])
+        json["rides"] = try JSONSerialization.jsonObject(with: encoder.encode(rides))
+        func decode() throws -> LiveParkSnapshot { try PivotAPIClient.makeDecoder().decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: json)) }
+        observation = try decode()
+        var history = WaitLearningHistory()
+        XCTAssertTrue(history.record(observation, now: now))
+        XCTAssertFalse(history.record(observation, now: now), "Repeated polls have one vote per quarter-hour")
+        XCTAssertEqual(history.bins.count, 6)
+        XCTAssertEqual(history.liveCrowd(park: .magicKingdom, snapshot: observation, failed: false, now: now)?.typicalWait, 35)
+        XCTAssertNil(history.liveCrowd(park: .magicKingdom, snapshot: observation, failed: true, now: now))
+        XCTAssertNil(history.liveCrowd(park: .magicKingdom, snapshot: observation, failed: false, now: now.addingTimeInterval(900)))
+        for (field, value) in [("feedHealthy", false), ("parkActive", false)] {
+            json[field] = value
+            var empty = WaitLearningHistory()
+            XCTAssertFalse(empty.record(try decode(), now: now))
+            XCTAssertNil(empty.liveCrowd(park: .magicKingdom, snapshot: try decode(), failed: false, now: now))
+            json[field] = true
+        }
+        for day in ["2026-04-03", "2026-04-02", "2026-04-01"] {
+            for id in 1...6 {
+                let bin = WaitLearningBin(parkID: 6, rideID: id, day: day, weekday: 7, hour: 12,
+                    quarters: [0: Double(id * 5)], lastSeen: start.addingTimeInterval(-86400))
+                history.bins["6:\(id):\(day):12"] = bin
+                history.eligibleCounts["6:\(day):12"] = 6
+            }
+        }
+        let adjusted = history.forecast(rideID: 1, park: .magicKingdom, hours: observation.parkHours,
+            snapshot: observation, failed: false, now: now)
+        XCTAssertEqual(adjusted.first?.minutes, 10, "Twice normal park waits scales the baseline")
+        XCTAssertEqual(adjusted.first?.crowdAdjusted, true)
+        let saved = history.forecast(rideID: 1, park: .magicKingdom, hours: observation.parkHours,
+            snapshot: observation, failed: true, now: now)
+        XCTAssertEqual(saved.first?.minutes, 5)
+        XCTAssertEqual(saved.first?.crowdAdjusted, false, "Failed data never supplies the crowd adjustment")
+        var rows = try XCTUnwrap(json["rides"] as? [[String: Any]])
+        rows[0]["lastUpdated"] = ISO8601DateFormatter().string(from: now.addingTimeInterval(121))
+        rows[1]["waitTime"] = NSNull()
+        rows[2]["status"] = "DOWN"; rows[2]["isOpen"] = false
+        json["rides"] = rows
+        json["fetchedAt"] = ISO8601DateFormatter().string(from: now.addingTimeInterval(120))
+        rows[0]["lastUpdated"] = ISO8601DateFormatter().string(from: now.addingTimeInterval(220))
+        json["rides"] = rows
+        XCTAssertNil(WaitLearningHistory.currentWaits(try decode(), now: now)[1], "Fetch clock skew must not extend permitted source skew")
+        json["fetchedAt"] = ISO8601DateFormatter().string(from: now)
+        rows[0]["lastUpdated"] = ISO8601DateFormatter().string(from: now.addingTimeInterval(121))
+        json["rides"] = rows
+        var invalid = WaitLearningHistory()
+        XCTAssertTrue(invalid.record(try decode(), now: now))
+        XCTAssertEqual(invalid.bins.count, 3)
+        XCTAssertNil(invalid.liveCrowd(park: .magicKingdom, snapshot: try decode(), failed: false, now: now))
+        XCTAssertNil(invalid.dailyCrowd(park: .magicKingdom, date: now, now: now))
+    }
+
+    func testWaitLearningRejectsConflictingDuplicateAndFutureSamples() throws {
+        let now = start.addingTimeInterval(300)
+        var ride = makeRide(status: .open)
+        ride.waitHistory = [WaitHistorySample(observedAt: start, waitTime: 10), WaitHistorySample(observedAt: start, waitTime: 60),
+            WaitHistorySample(observedAt: now.addingTimeInterval(1), waitTime: 0)]
+        var observation = makeSnapshot(sourceOffset: 300, ride: ride)
+        observation.parkHours = NativeWaitForecastTests().hours(open: "2026-04-04T13:00:00Z", close: "2026-04-05T01:00:00Z", at: now)
+        var history = WaitLearningHistory()
+        XCTAssertTrue(history.record(observation, now: now))
+        XCTAssertEqual(history.bins.values.first?.mean, 35, "Only the valid current snapshot observation survives")
+        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601
+        var json = try XCTUnwrap(JSONSerialization.jsonObject(with: encoder.encode(observation)) as? [String: Any])
+        json["rides"] = try JSONSerialization.jsonObject(with: encoder.encode([ride, ride]))
+        let duplicate = try PivotAPIClient.makeDecoder().decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: json))
+        var empty = WaitLearningHistory()
+        XCTAssertFalse(empty.record(duplicate, now: now))
+        XCTAssertTrue(WaitLearningHistory.currentWaits(duplicate).isEmpty)
     }
 
     private func makeRide(

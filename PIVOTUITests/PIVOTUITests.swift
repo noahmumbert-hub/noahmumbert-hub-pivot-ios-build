@@ -1,6 +1,50 @@
 import XCTest
 
 final class PIVOTUITests: XCTestCase {
+    func testWaitForecastShowsHourlyPlanCrowdAndLearningState() {
+        let app = XCUIApplication()
+        app.launchArguments = ["--wait-forecast-ui-test"]
+        app.launch()
+        XCTAssertTrue(app.staticTexts["Crowds & waits"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "5/10")).firstMatch.exists)
+        XCTAssertTrue(app.staticTexts["Lowest estimated wait"].exists)
+        XCTAssertTrue(app.staticTexts["Hourly estimates"].exists)
+        app.staticTexts["Hourly estimates"].tap()
+        app.swipeUp()
+        XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "same weekday")).count > 0)
+        let screenshot = XCTAttachment(screenshot: app.screenshot()); screenshot.name = "Wait forecasts and park crowd meter"; screenshot.lifetime = .keepAlways
+        add(screenshot)
+    }
+
+    func testSavedForecastDoesNotSuggestRidingNow() {
+        let app = XCUIApplication()
+        app.launchArguments = ["--wait-forecast-ui-test", "--forecast-saved"]
+        app.launch()
+        XCTAssertTrue(app.staticTexts["Crowds & waits"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.staticTexts["Lowest estimated wait"].exists)
+        XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH %@", "History only")).firstMatch.exists)
+    }
+
+    func testPlanOwnsCrowdAndPredictedWaitControls() {
+        let app = XCUIApplication()
+        app.launchArguments = ["-pivot.selectedPark", "6"]
+        app.launch()
+        XCTAssertTrue(app.staticTexts["Wait times"].waitForExistence(timeout: 10))
+        XCTAssertFalse(app.descendants(matching: .any)["park-crowd-meter"].exists)
+        XCTAssertFalse(app.buttons["plan-predicted-waits"].exists)
+        app.tabBars.buttons["Plan"].tap()
+        XCTAssertTrue(app.staticTexts["Your day"].waitForExistence(timeout: 5))
+        let forecasts = app.buttons["plan-predicted-waits"]
+        reveal(forecasts, in: app)
+        XCTAssertTrue(app.descendants(matching: .any)["park-crowd-meter"].exists)
+        XCTAssertTrue(app.buttons["browse-park-crowds"].exists)
+        screenshot("Crowd meter and predicted waits on Plan", app: app)
+        app.tabBars.buttons["Waits"].tap()
+        XCTAssertTrue(app.staticTexts["Wait times"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.buttons["plan-predicted-waits"].exists)
+        XCTAssertFalse(app.descendants(matching: .any)["park-crowd-meter"].exists)
+    }
+
     private func hhnApp(_ extraArguments: [String] = []) -> XCUIApplication {
         let app = XCUIApplication()
         app.launchArguments = ["--hhn-ui-test", "--reset-hhn-ui-test"] + extraArguments
@@ -173,7 +217,7 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["More"].tap()
         app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Settings'")).firstMatch.tap()
         XCTAssertEqual(app.buttons["accent-purple"].value as? String, "Selected")
-        XCTAssertTrue(app.staticTexts["PIVOT 1.14.4"].exists)
+        XCTAssertTrue(app.staticTexts["PIVOT 1.15.1"].exists)
         app.buttons["accent-mint"].tap()
     }
 
