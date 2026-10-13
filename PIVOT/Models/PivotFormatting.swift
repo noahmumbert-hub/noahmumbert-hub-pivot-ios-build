@@ -154,8 +154,8 @@ struct ReopeningGuidance: Equatable, Sendable {
         }
         let range = "\(ParkTimeFormatter.time(estimate.windowStart, timeZone: timeZone))–\(ParkTimeFormatter.time(estimate.windowEnd, timeZone: timeZone))"
         if ride.hasWeatherHold {
-            guard let lightning = snapshot.weather?.lightning,
-                  lightning.sourceKind != "GLM",
+            let lightning = snapshot.weather.lightning
+            guard lightning.sourceKind != "GLM",
                   DashboardLightningHealth.presentation(lightning: lightning, feedHealth: feedHealth, at: now).isCurrent else {
                 return uncertain("Current lightning observations are unavailable. Weather reopening timing is unknown.", title: "Weather timing unavailable")
             }
