@@ -1,0 +1,12 @@
+{
+  "filename": "PIVOT-1.15.0-100.21.1.ipa",
+  "sha256": "d1b581966bac1a6fcab5871df234992195527d12bdd739eb77a033a9db3e30ad",
+  "size": 2946530,
+  "bundleIdentifier": "com.noahmumbert.PIVOT",
+  "version": "1.15.0",
+  "build": "100.21.1",
+  "minimumOSVersion": "17.0",
+  "signed": false,
+  "commit": "1b0ef3fe0bbce78c02bce9824a1cb66309cd1bda",
+  "run": "38330317542"
+}
