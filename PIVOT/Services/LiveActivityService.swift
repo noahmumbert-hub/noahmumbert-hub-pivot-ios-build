@@ -72,6 +72,10 @@ enum PIVOTLiveActivityTargetBuilder {
         }
 
         let estimate = featuredRide.estimate
+        let guidance = ReopeningGuidance.presentation(ride: featuredRide, snapshot: snapshot,
+            feedHealth: DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot,
+                isLoading: false, refreshFailed: false, at: snapshot.fetchedAt),
+            at: snapshot.fetchedAt, timeZone: selectedPark.timeZone)
         // A freshly fetched snapshot is a fresh observation even when the
         // provider's per-ride timestamp is old. Use the successful snapshot
         // observation for ActivityKit freshness, duration copy, and staleness.
@@ -123,11 +127,12 @@ enum PIVOTLiveActivityTargetBuilder {
                 forecastPhase: estimate?.forecastPhase.rawValue,
                 forecastRevision: estimate?.revision,
                 forecastRevisionReason: estimate?.revisionReason,
-                windowStart: estimate?.windowStart,
-                bestGuess: estimate?.historicalMedianAt,
-                windowEnd: estimate?.windowEnd,
+                windowStart: guidance.range == nil ? nil : estimate?.windowStart,
+                bestGuess: guidance.bestGuess == nil ? nil : estimate?.historicalMedianAt,
+                windowEnd: guidance.range == nil ? nil : estimate?.windowEnd,
                 evidenceStrength: estimate?.evidenceStrength,
-                lastUpdated: snapshotObservedAt
+                lastUpdated: snapshotObservedAt,
+                guidanceVersion: 1
             ),
             staleDate: snapshotObservedAt.addingTimeInterval(sourceStaleInterval),
             episodeIdentifier: episodeIdentifier

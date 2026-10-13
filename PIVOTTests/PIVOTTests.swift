@@ -1472,7 +1472,7 @@ final class PIVOTTests: XCTestCase {
         XCTAssertEqual(selected?.id, popularClosure.id)
     }
 
-    func testLiveActivityTargetCarriesClosureAndFullForecastWindow() {
+    func testLiveActivityTargetKeepsClosureButWithholdsUnsupportedLegacyWindow() {
         let ride = makeRide(status: .down, downSince: start, elapsedDownMinutes: 42)
         let snapshot = makeSnapshot(sourceOffset: 42 * 60, ride: ride)
         let target = PIVOTLiveActivityTargetBuilder.makeTarget(
@@ -1488,9 +1488,9 @@ final class PIVOTTests: XCTestCase {
         XCTAssertEqual(target?.state.closureStartedAt, start)
         XCTAssertEqual(target?.state.closureDurationIsMinimum, false)
         XCTAssertEqual(target?.state.closureDurationText, "Closed for 42 min")
-        XCTAssertEqual(target?.state.windowStart, start)
-        XCTAssertEqual(target?.state.bestGuess, best)
-        XCTAssertEqual(target?.state.windowEnd, end)
+        XCTAssertNil(target?.state.windowStart)
+        XCTAssertNil(target?.state.bestGuess)
+        XCTAssertNil(target?.state.windowEnd)
         XCTAssertEqual(target?.state.forecastPhase, "UPCOMING")
         XCTAssertEqual(target?.state.forecastRevision, 0)
         XCTAssertEqual(target?.state.forecastRevisionReason, "INITIAL")
@@ -1799,6 +1799,151 @@ final class PIVOTTests: XCTestCase {
 
         let data = try JSONSerialization.data(withJSONObject: json)
         return try PivotAPIClient.makeDecoder().decode(LiveParkSnapshot.self, from: data)
+    }
+
+    private func reopeningFixture(estimate changes: [String: Any] = [:], lightning: [String: Any]? = nil) throws -> LiveParkSnapshot {
+        var json = try XCTUnwrap(JSONSerialization.jsonObject(with: Data(Self.productionV6SnapshotJSON.utf8)) as? [String: Any])
+        let now = Self.isoDate("2026-10-13T18:00:00.000Z")
+        func iso(_ offset: TimeInterval) -> String { ISO8601DateFormatter().string(from: now.addingTimeInterval(offset)) }
+        json["fetchedAt"] = iso(0)
+        json["sourceUpdatedAt"] = iso(0)
+        var rows = try XCTUnwrap(json["rides"] as? [[String: Any]])
+        var ride = rows[0]
+        ride["status"] = "DOWN"
+        ride["delayType"] = lightning == nil ? "RIDE" : "WEATHER"
+        ride["weatherHoldActive"] = lightning != nil
+        var estimate = try XCTUnwrap(ride["estimate"] as? [String: Any])
+        estimate["issuedAt"] = iso(-30)
+        estimate["windowStart"] = iso(300)
+        estimate["historicalMedianAt"] = iso(1200)
+        estimate["windowEnd"] = iso(2400)
+        estimate["forecastPhase"] = "UPCOMING"
+        estimate["sameRideSampleSize"] = 8
+        estimate["effectiveSampleSize"] = 8
+        estimate["recentSampleSize"] = 8
+        estimate["distinctDayCount"] = 4
+        estimate["startQuality"] = "observed"
+        estimate["closureSignal"] = "confirmed"
+        estimate["calibration"] = NSNull()
+        var provenance = try XCTUnwrap(estimate["historyProvenance"] as? [String: Any])
+        provenance["trainedThrough"] = iso(-86_400)
+        estimate["historyProvenance"] = provenance
+        if let lightning {
+            var weather = try XCTUnwrap(json["weather"] as? [String: Any])
+            var feed = try XCTUnwrap(weather["lightning"] as? [String: Any])
+            feed["status"] = "LIVE"
+            feed["sourceKind"] = "DENSITY"
+            feed["checkedAt"] = iso(0)
+            feed["sourceUpdatedAt"] = iso(-60)
+            feed["completeFrames30Minutes"] = 3
+            feed["clearanceState"] = "ACTIVE"
+            feed["clearanceAt"] = iso(-120)
+            feed["clearanceVerifiedAt"] = iso(-120)
+            feed.merge(lightning) { _, new in new }
+            weather["lightning"] = feed
+            json["weather"] = weather
+            estimate["estimateKind"] = "WEATHER"
+            estimate["weatherClearanceAt"] = iso(-120)
+            estimate["weatherRestartLagSampleSize"] = 8
+        }
+        estimate.merge(changes) { _, new in new }
+        ride["estimate"] = estimate
+        rows[0] = ride
+        json["rides"] = rows
+        return try PivotAPIClient.makeDecoder().decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: json))
+    }
+
+    private func reopeningGuidance(_ snapshot: LiveParkSnapshot, at date: Date? = nil, failed: Bool = false) -> ReopeningGuidance {
+        let now = date ?? snapshot.fetchedAt
+        return ReopeningGuidance.presentation(ride: snapshot.rides[0], snapshot: snapshot,
+            feedHealth: DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot,
+                isLoading: false, refreshFailed: failed, at: now), at: now, timeZone: FloridaPark.magicKingdom.timeZone)
+    }
+
+    func testSparseReopeningHistoryCannotShowAnExactGuess() throws {
+        for count in [0, 1, 3] {
+            let snapshot = try reopeningFixture(estimate: ["sameRideSampleSize": count])
+            let result = reopeningGuidance(snapshot)
+            XCTAssertNil(result.range)
+            XCTAssertNil(result.bestGuess)
+            XCTAssertTrue(result.detail.contains("Too few comparable closures"))
+        }
+        XCTAssertNil(reopeningGuidance(try reopeningFixture(estimate: ["startQuality": "unknown"])).range)
+        XCTAssertNil(reopeningGuidance(try reopeningFixture(estimate: ["closureSignal": "first-seen"])).range)
+    }
+
+    func testReopeningRangeNeedsHistoryAndPointNeedsScoredSameRideSupport() throws {
+        let supported = try reopeningFixture()
+        XCTAssertNotNil(reopeningGuidance(supported).range)
+        XCTAssertNil(reopeningGuidance(supported).bestGuess)
+        let calibration: [String: Any] = ["version": "test", "basis": "same-ride residuals", "sampleSize": 25,
+            "effectiveSampleSize": 20, "distinctRideCount": 1, "distinctParkCount": 1, "historicalCoverage": 0.8,
+            "medianAdjustmentMinutes": 0, "intervalPaddingMinutes": 0, "trainedThrough": "2026-10-12T18:00:00Z"]
+        XCTAssertNotNil(reopeningGuidance(try reopeningFixture(estimate: ["calibration": calibration])).bestGuess)
+        var poor = calibration
+        poor["historicalCoverage"] = 0.3
+        XCTAssertNil(reopeningGuidance(try reopeningFixture(estimate: ["calibration": poor])).range)
+        poor = calibration
+        poor["basis"] = "network residuals"
+        XCTAssertNil(reopeningGuidance(try reopeningFixture(estimate: ["calibration": poor])).bestGuess)
+    }
+
+    func testExpiredReopeningWindowCannotRemainUpcomingBetweenRefreshes() throws {
+        let snapshot = try reopeningFixture()
+        let now = try XCTUnwrap(snapshot.rides[0].estimate).windowEnd.addingTimeInterval(1)
+        // Keep the status observation current while retaining the issued window.
+        let data = try JSONEncoder().encode(snapshot)
+        var json = try XCTUnwrap(JSONSerialization.jsonObject(with: data) as? [String: Any])
+        json["fetchedAt"] = now.timeIntervalSinceReferenceDate
+        let current = try JSONDecoder().decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: json))
+        let result = reopeningGuidance(current, at: now)
+        XCTAssertEqual(result.headline, "Earlier window missed")
+        XCTAssertNil(result.bestGuess)
+        XCTAssertNil(result.range)
+    }
+
+    func testFailedExpiredAndFutureDataWithholdReopeningGuidance() throws {
+        let snapshot = try reopeningFixture()
+        XCTAssertNil(reopeningGuidance(snapshot, failed: true).range)
+        XCTAssertNil(reopeningGuidance(snapshot, at: snapshot.fetchedAt.addingTimeInterval(16 * 60)).range)
+        XCTAssertNil(reopeningGuidance(try reopeningFixture(estimate: ["issuedAt": "2026-10-14T18:00:00Z"])).range)
+        XCTAssertNil(reopeningGuidance(try reopeningFixture(estimate: ["windowStart": "2026-10-14T18:00:00Z"])).range)
+    }
+
+    func testActiveAndUnobservedLightningCannotPromiseAReopening() throws {
+        let active = try reopeningFixture(lightning: [:])
+        XCTAssertEqual(reopeningGuidance(active).headline, "Weather timing uncertain")
+        let cases: [[String: Any]] = [ ["status": "UNAVAILABLE"], ["completeFrames30Minutes": 0],
+            ["sourceUpdatedAt": "2026-10-13T16:00:00Z"], ["checkedAt": "2026-10-14T18:00:00Z"], ["sourceKind": "GLM"] ]
+        for override in cases {
+            let result = reopeningGuidance(try reopeningFixture(lightning: override))
+            XCTAssertEqual(result.headline, "Weather timing unavailable")
+            XCTAssertNil(result.range)
+        }
+    }
+
+    func testMappedClearanceNeedsCurrentSupportedRestartEvidence() throws {
+        let clear: [String: Any] = ["clearanceState": "VERIFIED"]
+        XCTAssertNil(reopeningGuidance(try reopeningFixture(lightning: clear)).range, "Legacy weather clocks are conditional, not reopening estimates")
+        let reliability: [String: Any] = ["status": "HISTORICAL_RANGE", "showRange": true, "showBestGuess": false, "reason": "Observed restarts"]
+        let supported = try reopeningFixture(estimate: ["reliability": reliability], lightning: clear)
+        XCTAssertNotNil(reopeningGuidance(supported).range)
+        XCTAssertNil(reopeningGuidance(supported).bestGuess)
+        let changedStorm = try reopeningFixture(estimate: ["reliability": reliability], lightning: ["clearanceState": "VERIFIED", "clearanceAt": "2026-10-13T17:50:00Z"])
+        XCTAssertNil(reopeningGuidance(changedStorm).range)
+        let fewRestarts = try reopeningFixture(estimate: ["reliability": reliability, "weatherRestartLagSampleSize": 1], lightning: clear)
+        XCTAssertNil(reopeningGuidance(fewRestarts).range)
+    }
+
+    func testLiveActivityRetainsRangeWithoutUnsupportedPointAndMarksItsContract() throws {
+        let snapshot = try reopeningFixture()
+        let target = try XCTUnwrap(PIVOTLiveActivityTargetBuilder.makeTarget(selectedPark: .magicKingdom,
+            snapshot: snapshot, featuredRide: snapshot.rides[0]))
+        XCTAssertNotNil(target.state.windowStart)
+        XCTAssertNil(target.state.bestGuess)
+        XCTAssertEqual(target.state.guidanceVersion, 1)
+        let saved = try JSONDecoder().decode(PIVOTLiveActivityAttributes.ContentState.self, from: JSONEncoder().encode(target.state))
+        XCTAssertEqual(saved.guidanceVersion, 1)
     }
 
     private static let productionV6SnapshotJSON = #"""
