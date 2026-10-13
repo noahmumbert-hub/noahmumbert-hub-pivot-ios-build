@@ -8,7 +8,7 @@ final class NativeWaitForecastTests: XCTestCase {
 
     func hours(open: String = "2026-10-13T13:00:00Z", close: String = "2026-10-13T23:00:00Z", at: Date? = nil) -> ParkHoursSnapshot {
         ParkHoursSnapshot(parkId: 6, parkName: park.name, timezone: park.timeZoneIdentifier,
-            date: "2026-10-13", fetchedAt: at ?? now, sourceUpdatedAt: now, cacheAgeSeconds: 0, cacheHit: false,
+            date: "2026-10-13", fetchedAt: at ?? now, sourceUpdatedAt: at ?? now, cacheAgeSeconds: 0, cacheHit: false,
             stale: false, warning: nil, regular: ParkHoursPeriod(openingTime: date(open), closingTime: date(close), label: "Regular", type: "OPERATING"),
             earlyEntry: nil, source: ThemeParksWikiAttribution(name: "ThemeParks.wiki", label: "Schedule", url: "https://themeparks.wiki", termsUrl: "https://themeparks.wiki", updateCadenceMinutes: 60))
     }
@@ -53,6 +53,19 @@ final class NativeWaitForecastTests: XCTestCase {
         XCTAssertEqual(points.first?.minutes, 10)
         XCTAssertEqual(points.first?.end, date("2026-10-14T05:00:00Z"))
         XCTAssertTrue(seeded().forecast(rideID: 1, park: park, hours: period, snapshot: nil, failed: false, now: date("2026-10-14T05:00:00Z")).isEmpty)
+    }
+
+    func testParkComparisonPreservesChosenLocalDateAcrossTimeZones() {
+        let chosen = date("2026-10-14T04:00:00Z") // midnight in New York
+        let converted = WaitLearningHistory.matchingDay(chosen, from: park, to: .sixFlagsMagicMountain)
+        XCTAssertEqual(WaitLearningHistory.dayKey(converted, park: .sixFlagsMagicMountain), "2026-10-14")
+        XCTAssertEqual(WaitLearningHistory.dayKey(chosen, park: .sixFlagsMagicMountain), "2026-10-13")
+    }
+
+    func testFutureAndExpiredSchedulesCannotGenerateForecasts() {
+        for at in [now.addingTimeInterval(121), now.addingTimeInterval(-36 * 3600)] {
+            XCTAssertTrue(seeded().forecast(rideID: 1, park: park, hours: hours(at: at), snapshot: nil, failed: false, now: now).isEmpty)
+        }
     }
 
     func testParkIsolationAndDifferentWeekdayFallbackRemainLimited() {

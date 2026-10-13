@@ -61,6 +61,12 @@ struct WaitLearningHistory: Codable, Equatable, Sendable {
         return String(format: "%04d-%02d-%02d", parts.year ?? 0, parts.month ?? 0, parts.day ?? 0)
     }
 
+    static func matchingDay(_ date: Date, from sourcePark: FloridaPark, to park: FloridaPark) -> Date {
+        var parts = calendar(for: sourcePark).dateComponents([.year, .month, .day], from: date)
+        parts.hour = 12
+        return calendar(for: park).date(from: parts) ?? date
+    }
+
     static func fresh(_ date: Date, now: Date) -> Bool {
         let age = now.timeIntervalSince(date)
         return age.isFinite && age >= -120 && age < 900
@@ -78,6 +84,7 @@ struct WaitLearningHistory: Codable, Equatable, Sendable {
         guard let hours, hours.parkId == park.rawValue, !hours.stale,
               hours.fetchedAt.timeIntervalSince1970.isFinite,
               now.timeIntervalSince(hours.fetchedAt) >= -120, now.timeIntervalSince(hours.fetchedAt) < 36 * 3600,
+              hours.sourceUpdatedAt.map({ $0.timeIntervalSince1970.isFinite && $0 <= now.addingTimeInterval(120) }) != false,
               let period = hours.regular,
               period.openingTime.timeIntervalSince1970.isFinite,
               period.closingTime.timeIntervalSince1970.isFinite,
@@ -136,7 +143,8 @@ struct WaitLearningHistory: Codable, Equatable, Sendable {
                       values.allSatisfy({ $0.waitTime == wait }) else { continue }
                 let hour = calendar.component(.hour, from: time)
                 let coverageKey = "\(park.rawValue):\(day):\(hour)"
-                eligibleCounts[coverageKey] = max(eligibleCounts[coverageKey] ?? 0, totalEligible)
+                let coverage = max(eligibleCounts[coverageKey] ?? 0, totalEligible)
+                if eligibleCounts[coverageKey] != coverage { eligibleCounts[coverageKey] = coverage; changed = true }
                 let quarter = calendar.component(.minute, from: time) / 15
                 let id = key(ride.id, hour)
                 var bin = bins[id] ?? WaitLearningBin(parkID: park.rawValue, rideID: ride.id,
@@ -262,7 +270,7 @@ struct WaitLearningHistory: Codable, Equatable, Sendable {
             let history = comparable(park: park, rideID: rideID, hour: hour, day: day, now: now)
             let count = Set(history.map(\.day)).count
             if count >= 3 {
-                let values = history.map { $0.mean * factor }
+                let values = history.map { min(1440, $0.mean * factor) }
                 let median = Self.quantile(values)
                 // Descriptive spread plus 5 minutes, not a calibrated probability interval.
                 let low = max(0, Self.quantile(values, 0.2) - 5)

@@ -101,7 +101,7 @@ struct NativeParkCrowdBrowser: View {
                             HStack {
                                 Text(item.name).font(.subheadline).foregroundStyle(.white)
                                 Spacer()
-                                let estimate = store.waitLearning.dailyCrowd(park: item, date: date, now: Date())
+                                let estimate = store.waitLearning.dailyCrowd(park: item, date: WaitLearningHistory.matchingDay(date, from: park, to: item), now: Date())
                                 Text(estimate.map { "\($0.label) · \($0.score)/10" } ?? "Learning")
                                     .font(.caption).foregroundStyle(Color.pivotMuted)
                             }.frame(minHeight: 44)
@@ -113,6 +113,9 @@ struct NativeParkCrowdBrowser: View {
             .navigationTitle("Park crowds")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .topBarTrailing) { Button("Done") { dismiss() } } }
+            .onChange(of: park) { oldPark, newPark in
+                date = WaitLearningHistory.matchingDay(date, from: oldPark, to: newPark)
+            }
             .task(id: park) { await store.refreshCrowd(for: park) }
         }.preferredColorScheme(.dark)
     }
@@ -150,6 +153,8 @@ struct WaitForecastTimeline: View {
             if points.isEmpty {
                 Text(learningText).font(.subheadline).foregroundStyle(Color.pivotMuted)
             } else {
+                Text("From \(ParkTimeFormatter.dateTime(points[0].start, timeZone: timeZone))")
+                    .font(.caption).foregroundStyle(Color.pivotMuted)
                 if let best {
                     VStack(alignment: .leading, spacing: 4) {
                         Text("Lowest estimated wait").font(.caption.weight(.medium)).foregroundStyle(Color.pivotMint)
