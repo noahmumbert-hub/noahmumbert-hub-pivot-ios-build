@@ -4,18 +4,15 @@ Add this source in SideStore → Sources → +:
 
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 
-Current update: **1.15.1 / build 100.22.2**, iOS 17.0+.
+Current update: **1.15.2 / build 100.26.1**, iOS 17.0+.
 
-PIVOT 1.15.1 — Crowd and wait forecasts on Plan
+Reopening guidance now shows uncertainty when ride history or current observations cannot support a time. Expired windows stop displaying as upcoming, and saved or failed refreshes cannot keep an exact reopening guess visible.
 
-• Find the crowd meter and park/day comparisons beneath Your day on the Plan tab.
-• Open Predicted waits on Plan and choose a ride to see its hourly estimates and lowest-wait suggestion.
-• Waits and ride information focus on posted waits and recent observations.
-• Existing learned history, favorites, plans, app identity, and SideStore compatibility are preserved.
+Weather guidance separates mapped lightning clearance from the park's reopening decision. Unsupported weather times and older push estimates are withheld. Lock Screen guidance expires with its supported window.
 
-Forecast calculations and learning thresholds are unchanged. Predictions remain preliminary and need sufficient historical observations.
+You may see fewer numeric forecasts while evidence is limited. This update improves forecast reliability and labeling; a more accurate timing model still needs validation against recent forecast outcomes. Favorites, plans, settings and the existing app identity are preserved.
 
-IPA SHA-256: `07b39c083f1c94e096896f1767c9c9b0e8036df21eb98394c605251279ac182f`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38332103121).
+IPA SHA-256: `59e313250f3f72961f78e96b09f351fb2030b5e46bb9f5f0ddd3003fa421ca7b`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38392069570).
 The unsigned IPA preserves `com.noahmumbert.PIVOT` and its Live Activity extension.
 Install as an update using the same signing identity; keep the existing app installed to retain saved data.
 Native unit and simulator UI tests passed for this build. Physical SideStore installation remains untested.

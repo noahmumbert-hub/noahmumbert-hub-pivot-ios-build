@@ -7,7 +7,7 @@
   "localizedDescription": "PIVOT updates for SideStore. Uses the existing PIVOT app identity.",
   "website": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
   "websiteURL": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
-  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/06d3b8a4ff80fa98b273bff17d52c3a99b3eeff2/icon.png",
+  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/8a15780c6163ba1e8f861b8fce57d12c4b0c50dd/icon.png",
   "tintColor": "70DFC0",
   "apps": [
     {
@@ -16,14 +16,23 @@
       "developerName": "Noah Mumbert",
       "subtitle": "Theme park companion",
       "localizedDescription": "Park wait times, ride status, weather observations, planning, shows and Live Activities.",
-      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/06d3b8a4ff80fa98b273bff17d52c3a99b3eeff2/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/8a15780c6163ba1e8f861b8fce57d12c4b0c50dd/icon.png",
       "tintColor": "70DFC0",
-      "version": "1.15.1",
-      "versionDate": "2026-10-13T01:46:26Z",
-      "versionDescription": "PIVOT 1.15.1 — Crowd and wait forecasts on Plan\n\n• Find the crowd meter and park/day comparisons beneath Your day on the Plan tab.\n• Open Predicted waits on Plan and choose a ride to see its hourly estimates and lowest-wait suggestion.\n• Waits and ride information focus on posted waits and recent observations.\n• Existing learned history, favorites, plans, app identity, and SideStore compatibility are preserved.\n\nForecast calculations and learning thresholds are unchanged. Predictions remain preliminary and need sufficient historical observations.",
-      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/06d3b8a4ff80fa98b273bff17d52c3a99b3eeff2/PIVOT-1.15.1-100.22.2.ipa",
-      "size": 2959787,
+      "version": "1.15.2",
+      "versionDate": "2026-10-13T11:58:55Z",
+      "versionDescription": "Reopening guidance now shows uncertainty when ride history or current observations cannot support a time. Expired windows stop displaying as upcoming, and saved or failed refreshes cannot keep an exact reopening guess visible.\n\nWeather guidance separates mapped lightning clearance from the park's reopening decision. Unsupported weather times and older push estimates are withheld. Lock Screen guidance expires with its supported window.\n\nYou may see fewer numeric forecasts while evidence is limited. This update improves forecast reliability and labeling; a more accurate timing model still needs validation against recent forecast outcomes. Favorites, plans, settings and the existing app identity are preserved.",
+      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/8a15780c6163ba1e8f861b8fce57d12c4b0c50dd/PIVOT-1.15.2-100.26.1.ipa",
+      "size": 2968830,
       "versions": [
+        {
+          "version": "1.15.2",
+          "buildVersion": "100.26.1",
+          "date": "2026-10-13T11:58:55Z",
+          "localizedDescription": "Reopening guidance now shows uncertainty when ride history or current observations cannot support a time. Expired windows stop displaying as upcoming, and saved or failed refreshes cannot keep an exact reopening guess visible.\n\nWeather guidance separates mapped lightning clearance from the park's reopening decision. Unsupported weather times and older push estimates are withheld. Lock Screen guidance expires with its supported window.\n\nYou may see fewer numeric forecasts while evidence is limited. This update improves forecast reliability and labeling; a more accurate timing model still needs validation against recent forecast outcomes. Favorites, plans, settings and the existing app identity are preserved.",
+          "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/8a15780c6163ba1e8f861b8fce57d12c4b0c50dd/PIVOT-1.15.2-100.26.1.ipa",
+          "size": 2968830,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.15.1",
           "buildVersion": "100.22.2",
