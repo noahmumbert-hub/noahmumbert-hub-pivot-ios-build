@@ -2142,7 +2142,7 @@ final class PIVOTTests: XCTestCase {
         let rides = (1...6).map { makeRide(id: $0, status: .open, waitTime: $0 * 10) }
         var observation = makeSnapshot(sourceOffset: 300, ride: rides[0])
         let helper = NativeWaitForecastTests()
-        observation.parkHours = helper.hours(open: "2026-04-05T13:00:00Z", close: "2026-04-06T01:00:00Z", at: now)
+        observation.parkHours = helper.hours(open: "2026-04-04T13:00:00Z", close: "2026-04-05T01:00:00Z", at: now)
         let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601
         var json = try XCTUnwrap(JSONSerialization.jsonObject(with: encoder.encode(observation)) as? [String: Any])
         json["rides"] = try JSONSerialization.jsonObject(with: encoder.encode(rides))
@@ -2162,12 +2162,12 @@ final class PIVOTTests: XCTestCase {
             XCTAssertNil(empty.liveCrowd(park: .magicKingdom, snapshot: try decode(), failed: false, now: now))
             json[field] = true
         }
-        for day in ["2026-04-04", "2026-04-03", "2026-04-02"] {
+        for day in ["2026-04-03", "2026-04-02", "2026-04-01"] {
             for id in 1...6 {
-                let bin = WaitLearningBin(parkID: 6, rideID: id, day: day, weekday: 7, hour: 13,
+                let bin = WaitLearningBin(parkID: 6, rideID: id, day: day, weekday: 7, hour: 12,
                     quarters: [0: Double(id * 5)], lastSeen: start.addingTimeInterval(-86400))
-                history.bins["6:\(id):\(day):13"] = bin
-                history.eligibleCounts["6:\(day):13"] = 6
+                history.bins["6:\(id):\(day):12"] = bin
+                history.eligibleCounts["6:\(day):12"] = 6
             }
         }
         let adjusted = history.forecast(rideID: 1, park: .magicKingdom, hours: observation.parkHours,
@@ -2196,7 +2196,7 @@ final class PIVOTTests: XCTestCase {
         ride.waitHistory = [WaitHistorySample(observedAt: start, waitTime: 10), WaitHistorySample(observedAt: start, waitTime: 60),
             WaitHistorySample(observedAt: now.addingTimeInterval(1), waitTime: 0)]
         var observation = makeSnapshot(sourceOffset: 300, ride: ride)
-        observation.parkHours = NativeWaitForecastTests().hours(open: "2026-04-05T13:00:00Z", close: "2026-04-06T01:00:00Z", at: now)
+        observation.parkHours = NativeWaitForecastTests().hours(open: "2026-04-04T13:00:00Z", close: "2026-04-05T01:00:00Z", at: now)
         var history = WaitLearningHistory()
         XCTAssertTrue(history.record(observation, now: now))
         XCTAssertEqual(history.bins.values.first?.mean, 35, "Only the valid current snapshot observation survives")
