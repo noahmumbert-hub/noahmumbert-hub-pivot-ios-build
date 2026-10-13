@@ -354,7 +354,7 @@ final class PIVOTTests: XCTestCase {
             XCTAssertEqual(decoded.delayType, "RIDE")
             XCTAssertEqual(decoded.estimate?.estimateKind, "OPERATIONAL")
             XCTAssertEqual(decoded.estimate?.windowEnd, originalEnd)
-            XCTAssertEqual(decoded.statusDescription, "Weather hold active · original ride window retained")
+            XCTAssertEqual(decoded.statusDescription, "Ride delay · lightning nearby")
         }
     }
 

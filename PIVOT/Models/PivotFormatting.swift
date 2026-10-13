@@ -1037,15 +1037,15 @@ extension LiveRide {
         case .down where isPostOperationalWeatherConstraint:
             return "Ride delay · reopening now limited by lightning"
         case .down where retainedOperationalWeatherNote != nil:
-            return "Weather hold active · original ride window retained"
+            return "Ride delay · lightning nearby"
         case .down where hasWeatherHold:
-            return "Weather delay likely · PIVOT weather range"
+            return "Weather delay likely · waiting for ride confirmation"
         case .down where delayEvidence?.label == "Weather possible; awaiting nearby lightning confirmation":
             return "Weather check pending · awaiting the newest NOAA lightning frame"
         case .down where delayType == "RIDE":
             return "Ride delay · cause not published"
         case .down:
-            return "Delay cause unclear · PIVOT range"
+            return "Delay cause not published"
         case .scheduled:
             if let operatingWindow {
                 return operatingWindow.label
