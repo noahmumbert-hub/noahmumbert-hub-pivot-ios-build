@@ -1955,6 +1955,12 @@ final class PIVOTTests: XCTestCase {
         XCTAssertEqual(target.state.guidanceVersion, 1)
         let saved = try JSONDecoder().decode(PIVOTLiveActivityAttributes.ContentState.self, from: JSONEncoder().encode(target.state))
         XCTAssertEqual(saved.guidanceVersion, 1)
+        let ending = try reopeningFixture(estimate: ["windowStart": "2026-10-13T18:01:00Z",
+            "historicalMedianAt": "2026-10-13T18:03:00Z", "windowEnd": "2026-10-13T18:05:00Z"])
+        let endingTarget = try XCTUnwrap(PIVOTLiveActivityTargetBuilder.makeTarget(selectedPark: .magicKingdom,
+            snapshot: ending, featuredRide: ending.rides[0]))
+        XCTAssertEqual(endingTarget.staleDate, ending.rides[0].estimate?.windowEnd,
+                       "ActivityKit must expire the window without waiting for another push or view redraw")
     }
 
     private static let productionV6SnapshotJSON = #"""

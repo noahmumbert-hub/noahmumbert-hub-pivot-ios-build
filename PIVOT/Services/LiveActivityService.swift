@@ -134,7 +134,8 @@ enum PIVOTLiveActivityTargetBuilder {
                 lastUpdated: snapshotObservedAt,
                 guidanceVersion: 1
             ),
-            staleDate: snapshotObservedAt.addingTimeInterval(sourceStaleInterval),
+            staleDate: min(snapshotObservedAt.addingTimeInterval(sourceStaleInterval),
+                           guidance.range == nil ? .distantFuture : (estimate?.windowEnd ?? .distantFuture)),
             episodeIdentifier: episodeIdentifier
         )
     }
