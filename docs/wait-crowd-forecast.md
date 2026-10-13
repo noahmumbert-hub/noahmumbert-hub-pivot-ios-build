@@ -1,5 +1,7 @@
 # Hourly ride waits and park crowds — PIVOT 1.15.0
 
+**Current placement:** [PIVOT 1.15.1 moves these controls to Plan](plan-crowd-update.md); the model below is unchanged. This report retains the original 1.15.0 delivery history.
+
 Adds a wait-based crowd meter to Waits, a browser for all supported parks and dates, and an hourly forecast with the lowest estimated remaining wait in each ride's details. This native update retains the compact HHN UI and all previous audit fixes, identities, preference keys, and SideStore compatibility.
 
 ## What the estimates mean

@@ -78,7 +78,7 @@ In SideStore, open **Sources → +** (usually under Browse) and add:
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 ```
 
-PIVOT **1.15.0 / 100.21.1** is the latest listed update; earlier tested updates remain in version history. Install it as an update to the existing PIVOT app, using the same signing identity. Keep the app installed to preserve saved data. The source and IPA downloads are public and do not expire with Actions artifacts. Physical SideStore installation remains untested.
+PIVOT **1.15.1 / 100.22.2** is the latest listed update; earlier tested updates remain in version history. Install it as an update to the existing PIVOT app, using the same signing identity. Keep the app installed to preserve saved data. The source and IPA downloads are public and do not expire with Actions artifacts. Physical SideStore installation remains untested.
 
 Future updates use this same source URL. Each native update still needs a new tested IPA; SideStore downloads and signs it when you choose to update. Publishing is manual, after successful Xcode tests and archive validation. Workflow permissions are unchanged.
 
@@ -112,3 +112,9 @@ Add `--publish` when publication is authorized. The helper checks checksum, devi
 **1.15.0 / 100.21.1** adds a compact wait-based crowd meter, a park/date browser, and hourly ride wait estimates with the lowest estimated remaining wait in ride details. Predictions learn from real observations on this device and show Learning until at least three previous days are available. Estimates are preliminary and are not attendance or capacity measurements; no paid feeds or backend deployment were added.
 
 [Verified Xcode run](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38330317542) passed 167 unit tests, 12 simulator UI tests, and the Release archive. The tested IPA is available through the existing SideStore source, preserving identities and saved choices. [Validation and delivery report](docs/wait-crowd-forecast.md) includes the exact model, learning limits, failed/superseded checks, corrected simulator chart, immutable IPA checksum, and unrun physical installation/calibration.
+
+### Crowd and forecast controls on Plan
+
+**1.15.1 / 100.22.2** puts the crowd meter, park/date browser, and a ride forecast selector beneath Your day on the Plan tab. Waits and ride information retain posted waits and observed history. Learned data and forecast calculations are preserved.
+
+[Verified Xcode run, attempt 2](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38332103121) passed 167 unit tests, 13 simulator UI tests, and the Release archive. The update is available through the existing SideStore source. [Validation and delivery report](docs/plan-crowd-update.md) includes the actual tab-placement check, inspected screenshot, first-attempt simulator startup failures, checksum, and unrun physical installation.
