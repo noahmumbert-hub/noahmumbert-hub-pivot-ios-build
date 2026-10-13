@@ -7,7 +7,7 @@
   "localizedDescription": "PIVOT updates for SideStore. Uses the existing PIVOT app identity.",
   "website": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
   "websiteURL": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
-  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/c4465c71d4a27bdb4752554a616e2105463626a0/icon.png",
+  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/06d3b8a4ff80fa98b273bff17d52c3a99b3eeff2/icon.png",
   "tintColor": "70DFC0",
   "apps": [
     {
@@ -16,14 +16,23 @@
       "developerName": "Noah Mumbert",
       "subtitle": "Theme park companion",
       "localizedDescription": "Park wait times, ride status, weather observations, planning, shows and Live Activities.",
-      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/c4465c71d4a27bdb4752554a616e2105463626a0/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/06d3b8a4ff80fa98b273bff17d52c3a99b3eeff2/icon.png",
       "tintColor": "70DFC0",
-      "version": "1.15.0",
-      "versionDate": "2026-10-13T01:15:22Z",
-      "versionDescription": "PIVOT 1.15.0 — Predicted waits and park crowds\n\n• A compact crowd meter on Waits uses current posted waits to estimate how busy the park feels.\n• Compare supported parks and visit dates, including observed past days and preliminary future estimates.\n• Open a ride to see hourly wait estimates and the lowest estimated remaining wait, once enough history is available.\n• Forecasts learn from real observations on this device and adjust for today's queue pressure when coverage allows.\n• Learning states, confidence labels, missing-hour gaps, and failed-data handling keep unavailable data from looking like a quiet park.\n• Existing app identity, saved choices, compact HHN design, and SideStore compatibility are preserved.\n\nCrowds are a wait-based estimate, not attendance or park capacity. Ride forecasts and future crowd ratings need at least three previous observed days. This first model is preliminary and has not been calibrated against real-world outcomes; holidays, events, weather, and operations can change waits. No paid feeds or backend deployment were added.",
-      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/c4465c71d4a27bdb4752554a616e2105463626a0/PIVOT-1.15.0-100.21.1.ipa",
-      "size": 2946530,
+      "version": "1.15.1",
+      "versionDate": "2026-10-13T01:46:26Z",
+      "versionDescription": "PIVOT 1.15.1 — Crowd and wait forecasts on Plan\n\n• Find the crowd meter and park/day comparisons beneath Your day on the Plan tab.\n• Open Predicted waits on Plan and choose a ride to see its hourly estimates and lowest-wait suggestion.\n• Waits and ride information focus on posted waits and recent observations.\n• Existing learned history, favorites, plans, app identity, and SideStore compatibility are preserved.\n\nForecast calculations and learning thresholds are unchanged. Predictions remain preliminary and need sufficient historical observations.",
+      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/06d3b8a4ff80fa98b273bff17d52c3a99b3eeff2/PIVOT-1.15.1-100.22.2.ipa",
+      "size": 2959787,
       "versions": [
+        {
+          "version": "1.15.1",
+          "buildVersion": "100.22.2",
+          "date": "2026-10-13T01:46:26Z",
+          "localizedDescription": "PIVOT 1.15.1 — Crowd and wait forecasts on Plan\n\n• Find the crowd meter and park/day comparisons beneath Your day on the Plan tab.\n• Open Predicted waits on Plan and choose a ride to see its hourly estimates and lowest-wait suggestion.\n• Waits and ride information focus on posted waits and recent observations.\n• Existing learned history, favorites, plans, app identity, and SideStore compatibility are preserved.\n\nForecast calculations and learning thresholds are unchanged. Predictions remain preliminary and need sufficient historical observations.",
+          "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/06d3b8a4ff80fa98b273bff17d52c3a99b3eeff2/PIVOT-1.15.1-100.22.2.ipa",
+          "size": 2959787,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.15.0",
           "buildVersion": "100.21.1",
