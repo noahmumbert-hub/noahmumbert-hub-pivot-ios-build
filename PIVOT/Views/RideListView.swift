@@ -53,8 +53,6 @@ struct RideListView: View {
                 .pivotCard(padding: 14)
             }
 
-            if !radarOnly { NativeParkCrowdOverview() }
-
             HStack(spacing: 8) {
                 HStack(spacing: 8) {
                     Image(systemName: "magnifyingglass").foregroundStyle(Color.pivotMuted)
@@ -289,7 +287,6 @@ private struct RideDetailScreenView: View {
                         .font(.subheadline).foregroundStyle(.white)
                         .frame(maxWidth: .infinity, alignment: .leading).pivotCard()
                     }
-                    NativeRideWaitForecast(ride: ride, timeZone: timeZone)
                     NativeWaitHistoryView(ride: ride, timeZone: timeZone, initiallyExpanded: true).pivotCard()
                     if let details = ride.details { RideInformationView(details: details).pivotCard() }
                 }

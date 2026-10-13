@@ -27,6 +27,8 @@ struct NativeDayPlannerView: View {
                         .font(.subheadline).foregroundStyle(Color.pivotMuted)
                 }
                 if let park {
+                    NativeParkCrowdOverview()
+                    NativePlanWaitForecasts()
                     content(park: park, now: context.date)
                 } else {
                     Button(action: onChoosePark) {

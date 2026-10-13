@@ -121,6 +121,68 @@ struct NativeParkCrowdBrowser: View {
     }
 }
 
+/// Plan owns forecast navigation; Waits retains only posted waits and history.
+struct NativePlanWaitForecasts: View {
+    @EnvironmentObject private var store: DashboardStore
+    @State private var presenting = false
+    private var rides: [LiveRide] {
+        store.reviewedRides.sorted { $0.name.localizedCaseInsensitiveCompare($1.name) == .orderedAscending }
+    }
+    var body: some View {
+        Button { presenting = true } label: {
+            HStack(spacing: 12) {
+                Image(systemName: "chart.xyaxis.line").foregroundStyle(Color.pivotMint)
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("Predicted waits").font(.headline).foregroundStyle(.white)
+                    Text(rides.isEmpty ? "Rides appear after a park update" : "Hourly estimates & lowest-wait times")
+                        .font(.caption).foregroundStyle(Color.pivotMuted)
+                }
+                Spacer(minLength: 0)
+                Image(systemName: "chevron.right").font(.caption).foregroundStyle(Color.pivotMuted)
+            }.frame(minHeight: 44).pivotCard(padding: 16)
+        }
+        .buttonStyle(.plain)
+        .disabled(rides.isEmpty)
+        .accessibilityIdentifier("plan-predicted-waits")
+        .sheet(isPresented: $presenting) {
+            NativePlanRideForecastBrowser(rides: rides).environmentObject(store)
+        }
+        .onChange(of: store.selectedPark) { _, _ in presenting = false }
+    }
+}
+
+private struct NativePlanRideForecastBrowser: View {
+    @EnvironmentObject private var store: DashboardStore
+    @Environment(\.dismiss) private var dismiss
+    let rides: [LiveRide]
+    @State private var rideID: Int
+    init(rides: [LiveRide]) {
+        self.rides = rides
+        _rideID = State(initialValue: rides.first?.id ?? -1)
+    }
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 18) {
+                    Text(store.selectedPark?.name ?? "Ride forecasts").font(.subheadline).foregroundStyle(Color.pivotMuted)
+                    Picker("Ride", selection: $rideID) {
+                        ForEach(rides) { Text($0.name).tag($0.id) }
+                    }.tint(Color.pivotMint).accessibilityIdentifier("plan-forecast-ride-picker")
+                    if let original = rides.first(where: { $0.id == rideID }) {
+                        let ride = store.snapshot?.rides.first(where: { $0.id == rideID }) ?? original
+                        Text(ride.name).font(.title2.weight(.semibold)).fixedSize(horizontal: false, vertical: true)
+                        NativeRideWaitForecast(ride: ride, timeZone: store.selectedPark?.timeZone ?? .current)
+                    }
+                }.padding(20)
+            }
+            .background(Color.pivotBackground)
+            .navigationTitle("Predicted waits")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar { ToolbarItem(placement: .topBarTrailing) { Button("Done") { dismiss() } } }
+        }.preferredColorScheme(.dark)
+    }
+}
+
 struct NativeRideWaitForecast: View {
     @EnvironmentObject private var store: DashboardStore
     let ride: LiveRide
@@ -132,7 +194,8 @@ struct NativeRideWaitForecast: View {
                     hours: store.parkHours(for: park), snapshot: store.snapshot,
                     failed: store.errorMessage != nil, now: context.date)
                 WaitForecastTimeline(points: points, timeZone: timeZone,
-                    canRecommend: ride.status == .open && store.feedHealth(at: context.date).isLive,
+                    canRecommend: ride.status == .open && store.feedHealth(at: context.date).isLive
+                        && store.snapshot?.rides.contains(where: { $0.id == ride.id }) == true,
                     learningText: WaitLearningHistory.interval(store.parkHours(for: park), park: park, now: context.date) == nil
                         ? "Fresh operating hours aren’t available, or today’s session has ended."
                         : "Learning this ride’s pattern. Hourly estimates need at least three previous observed days. Keep using PIVOT to build its history.")
