@@ -303,7 +303,7 @@ final class DashboardStore: ObservableObject {
     }
 
     func crowdRefreshFailed(for park: FloridaPark) -> Bool {
-        if selectedPark == park { return errorMessage != nil }
+        if selectedPark == park { return errorMessage != nil || crowdRefreshErrors.contains(park.rawValue) }
         return crowdRefreshErrors.contains(park.rawValue)
     }
 
@@ -322,6 +322,7 @@ final class DashboardStore: ObservableObject {
         } catch is CancellationError {
             return
         } catch {
+            guard !Task.isCancelled else { return }
             if (crowdSnapshots[park.rawValue]?.fetchedAt ?? .distantPast) <= requestedAt {
                 crowdRefreshErrors.insert(park.rawValue)
             }

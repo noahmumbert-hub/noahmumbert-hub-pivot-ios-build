@@ -2215,6 +2215,13 @@ final class PIVOTTests: XCTestCase {
         rows[1]["waitTime"] = NSNull()
         rows[2]["status"] = "DOWN"; rows[2]["isOpen"] = false
         json["rides"] = rows
+        json["fetchedAt"] = ISO8601DateFormatter().string(from: now.addingTimeInterval(120))
+        rows[0]["lastUpdated"] = ISO8601DateFormatter().string(from: now.addingTimeInterval(220))
+        json["rides"] = rows
+        XCTAssertNil(WaitLearningHistory.currentWaits(try decode(), now: now)[1], "Fetch clock skew must not extend permitted source skew")
+        json["fetchedAt"] = ISO8601DateFormatter().string(from: now)
+        rows[0]["lastUpdated"] = ISO8601DateFormatter().string(from: now.addingTimeInterval(121))
+        json["rides"] = rows
         var invalid = WaitLearningHistory()
         XCTAssertTrue(invalid.record(try decode(), now: now))
         XCTAssertEqual(invalid.bins.count, 3)

@@ -94,14 +94,14 @@ struct WaitLearningHistory: Codable, Equatable, Sendable {
         return period
     }
 
-    static func currentWaits(_ snapshot: LiveParkSnapshot) -> [Int: Double] {
+    static func currentWaits(_ snapshot: LiveParkSnapshot, now: Date = Date()) -> [Int: Double] {
         var waits: [Int: Double] = [:]
         let duplicate = Set(Dictionary(grouping: snapshot.rides, by: \.id).filter { $0.value.count > 1 }.keys)
         for ride in snapshot.rides where ride.radarEligible {
             guard ride.status == .open, ride.isOpen, let wait = ride.waitTime,
                   validWait(Double(wait)), let version = ride.lastUpdated,
                   version.timeIntervalSince1970.isFinite,
-                  version <= snapshot.fetchedAt.addingTimeInterval(120),
+                  version <= min(snapshot.fetchedAt, now).addingTimeInterval(120),
                   !duplicate.contains(ride.id) else { continue }
             waits[ride.id] = Double(wait)
         }
@@ -127,7 +127,7 @@ struct WaitLearningHistory: Codable, Equatable, Sendable {
         let weekday = calendar.component(.weekday, from: period.openingTime)
         var changed = false
         func key(_ ride: Int, _ hour: Int) -> String { "\(park.rawValue):\(ride):\(day):\(hour)" }
-        let current = Self.currentWaits(snapshot)
+        let current = Self.currentWaits(snapshot, now: now)
         let totalEligible = Set(snapshot.rides.filter(\.radarEligible).map(\.id)).count
         let duplicateIDs = Set(Dictionary(grouping: snapshot.rides, by: \.id).filter { $0.value.count > 1 }.keys)
         for ride in snapshot.rides where ride.radarEligible && !duplicateIDs.contains(ride.id) {
@@ -204,7 +204,7 @@ struct WaitLearningHistory: Codable, Equatable, Sendable {
 
     func liveCrowd(park: FloridaPark, snapshot: LiveParkSnapshot?, failed: Bool, now: Date) -> ParkCrowdEstimate? {
         guard Self.usable(snapshot, park: park, failed: failed, now: now), let snapshot else { return nil }
-        let waits = Self.currentWaits(snapshot)
+        let waits = Self.currentWaits(snapshot, now: now)
         guard Self.hasCoverage(snapshot, count: waits.count) else { return nil }
         return ParkCrowdEstimate(typicalWait: Int(Self.quantile(Array(waits.values)).rounded()),
             rideCount: waits.count, hourCount: 1, days: 1, basis: "Live · posted waits")
@@ -250,9 +250,9 @@ struct WaitLearningHistory: Codable, Equatable, Sendable {
         let weekday = calendar.component(.weekday, from: day)
         let live = Self.usable(snapshot, park: park, failed: failed, now: now)
         var ratios: [Double] = []
-        if live, let snapshot, Self.hasCoverage(snapshot, count: Self.currentWaits(snapshot).count) {
+        if live, let snapshot, Self.hasCoverage(snapshot, count: Self.currentWaits(snapshot, now: now).count) {
             let currentHour = calendar.component(.hour, from: now)
-            for (id, wait) in Self.currentWaits(snapshot) {
+            for (id, wait) in Self.currentWaits(snapshot, now: now) {
                 let history = comparable(park: park, rideID: id, hour: currentHour, day: day, now: now)
                 guard Set(history.map(\.day)).count >= 3 else { continue }
                 let normal = Self.quantile(history.map(\.mean))
