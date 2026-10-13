@@ -14,7 +14,9 @@ struct RadarCardView: View {
             } else if store.isLoading && store.snapshot == nil {
                 loading
             } else if let ride = store.radarRide {
-                radar(ride)
+                TimelineView(.periodic(from: .now, by: 15)) { context in
+                    radar(ride, at: context.date)
+                }
             } else {
                 TimelineView(.periodic(from: .now, by: 1)) { context in
                     clearState(at: context.date)
@@ -54,11 +56,11 @@ struct RadarCardView: View {
         .accessibilityLabel("Checking the selected park now")
     }
 
-    private func radar(_ ride: LiveRide) -> some View {
+    private func radar(_ ride: LiveRide, at now: Date) -> some View {
         let downTime = ride.downTimePresentation
-        let presentation = ride.estimate?.presentation(
-            timeZone: store.selectedPark?.timeZone ?? ParkTimeFormatter.selectedParkTimeZone
-        )
+        let guidance = ReopeningGuidance.presentation(ride: ride, snapshot: store.snapshot,
+            feedHealth: store.feedHealth(at: now), at: now,
+            timeZone: store.selectedPark?.timeZone ?? ParkTimeFormatter.selectedParkTimeZone)
         let weather = ride.hasWeatherHold
         let closureWaveOpenCopy = (ride.delayEvidence?.closureWaveOpenNonVetoDescription)
             .map { "\($0) " } ?? ""
@@ -91,30 +93,15 @@ struct RadarCardView: View {
                             .accessibilityLabel(downTime.accessibilityLabel)
                     }
 
-                    if let presentation {
-                        Text(presentation.headline)
-                            .font(.caption.weight(.semibold))
-                            .foregroundStyle(.white.opacity(0.82))
-                        Text(presentation.range)
-                            .font(.title2.weight(.bold))
-                            .monospacedDigit()
-                        Text("Best guess \(presentation.bestGuess) · \(ride.estimate?.evidenceStrength ?? "") evidence")
-                            .font(.subheadline)
-                            .foregroundStyle(.white.opacity(0.82))
-                            .fixedSize(horizontal: false, vertical: true)
-                        if let note = ride.retainedOperationalWeatherNote {
-                            Text(note)
-                                .font(.caption)
-                                .foregroundStyle(Color.pivotWeather)
-                                .fixedSize(horizontal: false, vertical: true)
-                        }
-                    } else {
-                        Text("Refreshing model range")
-                            .font(.headline)
-                        Text("PIVOT is processing the latest closure update.")
-                            .font(.subheadline)
-                            .foregroundStyle(.white.opacity(0.78))
+                    Text(guidance.headline).font(.headline)
+                    if let range = guidance.range {
+                        Text(range).font(.title2.weight(.bold)).monospacedDigit()
                     }
+                    if let best = guidance.bestGuess {
+                        Text("Best guess \(best)").font(.subheadline)
+                    }
+                    Text(guidance.detail).font(.subheadline).foregroundStyle(.white.opacity(0.78))
+                        .fixedSize(horizontal: false, vertical: true)
                 }
 
                 Spacer(minLength: 0)

@@ -99,7 +99,8 @@ private struct PIVOTActivityFamilyView: View {
                     .minimumScaleFactor(0.8)
                 if context.isStale {
                     Text("Open PIVOT to refresh").font(.caption2)
-                } else if let bestGuess = context.state.bestGuess {
+                } else if context.state.guidanceVersion == 1, let bestGuess = context.state.bestGuess,
+                          let end = context.state.windowEnd, end >= Date() {
                     HStack(spacing: 4) {
                         Text("Est. reopen")
                         Text(bestGuess, style: .time)
@@ -276,9 +277,8 @@ private struct PIVOTCompactForecastView: View {
                 .font(.caption2.weight(.semibold))
                 .foregroundStyle(.secondary)
                 .lineLimit(1)
-        } else if let windowStart = context.state.windowStart,
-                  let bestGuess = context.state.bestGuess,
-                  let windowEnd = context.state.windowEnd {
+        } else if context.state.guidanceVersion == 1, let windowStart = context.state.windowStart,
+                  let windowEnd = context.state.windowEnd, windowEnd >= Date() {
             HStack(spacing: 6) {
                 Text(context.state.forecastTitle)
                     .foregroundStyle(.secondary)
@@ -289,19 +289,18 @@ private struct PIVOTCompactForecastView: View {
                 }
                 .monospacedDigit()
                 Spacer(minLength: 4)
-                Text("Best")
-                    .foregroundStyle(.secondary)
-                Text(bestGuess, style: .time)
-                    .monospacedDigit()
-                    .fontWeight(.bold)
-                    .contentTransition(.numericText(value: bestGuess.timeIntervalSinceReferenceDate))
+                if let bestGuess = context.state.bestGuess {
+                    Text("Best").foregroundStyle(.secondary)
+                    Text(bestGuess, style: .time).monospacedDigit().fontWeight(.bold)
+                        .contentTransition(.numericText(value: bestGuess.timeIntervalSinceReferenceDate))
+                }
             }
             .font(.caption2)
             .lineLimit(1)
             .minimumScaleFactor(0.72)
             .accessibilityElement(children: .combine)
         } else {
-            Text("Reopening forecast updating")
+            Text("Reopening time uncertain")
                 .font(.caption2)
                 .foregroundStyle(.secondary)
                 .lineLimit(1)

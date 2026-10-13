@@ -401,6 +401,13 @@ struct AggregateReliabilityPrior: Codable, Sendable {
     let evidenceAccounting: AggregateReliabilityEvidenceAccounting
 }
 
+struct ForecastReliability: Codable, Sendable {
+    let status: String
+    let showRange: Bool
+    let showBestGuess: Bool
+    let reason: String
+}
+
 struct ReopeningEstimate: Codable, Sendable {
     let modelVersion: String
     let estimateKind: String
@@ -444,6 +451,7 @@ struct ReopeningEstimate: Codable, Sendable {
     let revision: Int
     let revisionReason: String
     let lockedForOutage: Bool
+    var reliability: ForecastReliability? = nil
 }
 
 struct ThemeParksWikiRideStatus: Codable, Sendable {

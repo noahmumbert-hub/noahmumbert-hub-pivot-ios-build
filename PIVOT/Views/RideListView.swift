@@ -258,7 +258,7 @@ private struct RideDetailScreenView: View {
                         if !ride.land.isEmpty { Text(ride.land).font(.subheadline).foregroundStyle(Color.pivotMuted) }
                     }
                     if ride.details?.photo == nil { Text("A verified ride photo isn’t available yet.").font(.subheadline).foregroundStyle(Color.pivotMuted) }
-                    TimelineView(.periodic(from: .now, by: 15)) { _ in
+                    TimelineView(.periodic(from: .now, by: 15)) { context in
                         VStack(alignment: .leading, spacing: 10) {
                             Text(ride.statusDescription).font(.headline)
                             if ride.status == .open {
@@ -268,12 +268,13 @@ private struct RideDetailScreenView: View {
                             if ride.hasWeatherHold, let clearance = ride.delayEvidence?.rideWeatherClearanceDescription {
                                 Label(clearance, systemImage: "bolt.shield.fill").foregroundStyle(Color.pivotWeather)
                             }
-                            if let forecast = ride.estimate?.presentation(timeZone: timeZone), ride.status == .down {
-                                Text("\(forecast.headline) · \(forecast.range)").font(.headline)
-                                Text("Best guess \(forecast.bestGuess)")
-                                if let note = ride.retainedOperationalWeatherNote { Text(note).foregroundStyle(Color.pivotWeather) }
-                                Text(forecast.detail).foregroundStyle(Color.pivotMuted)
-                                if let reason = ride.estimateReason { Text(reason).foregroundStyle(Color.pivotMuted) }
+                            if ride.status == .down {
+                                let guidance = ReopeningGuidance.presentation(ride: ride, snapshot: store.snapshot,
+                                    feedHealth: store.feedHealth(at: context.date), at: context.date, timeZone: timeZone)
+                                Text(guidance.headline).font(.headline)
+                                if let range = guidance.range { Text(range).font(.headline) }
+                                if let best = guidance.bestGuess { Text("Best guess \(best)") }
+                                Text(guidance.detail).foregroundStyle(Color.pivotMuted)
                             }
                             if ride.status == .scheduled {
                                 if let closure = ride.scheduledClosure {
@@ -305,12 +306,13 @@ private struct RideDetailScreenView: View {
 
 private struct RideRowView: View {
     @Environment(\.pivotAccent) private var accent
+    @EnvironmentObject private var store: DashboardStore
     let ride: LiveRide
     let timeZone: TimeZone
     let onSelect: () -> Void
 
     var body: some View {
-        TimelineView(.periodic(from: .now, by: 15)) { _ in
+        TimelineView(.periodic(from: .now, by: 15)) { context in
             VStack(alignment: .leading, spacing: 0) {
                 Button {
                     onSelect()
@@ -348,18 +350,17 @@ private struct RideRowView: View {
                 NativeWaitHistoryView(ride: ride, timeZone: timeZone)
                     .padding(.top, 12)
 
-                if let forecast = ride.estimate?.presentation(timeZone: timeZone), ride.status == .down {
+                if ride.status == .down {
+                    let guidance = ReopeningGuidance.presentation(ride: ride, snapshot: store.snapshot,
+                        feedHealth: store.feedHealth(at: context.date), at: context.date, timeZone: timeZone)
                     HStack(alignment: .top, spacing: 8) {
                         Image(systemName: ride.hasWeatherHold ? "cloud.bolt" : "arrow.uturn.forward")
                             .foregroundStyle(statusColor)
                         VStack(alignment: .leading, spacing: 4) {
-                            Text("\(forecast.headline) · \(forecast.range)")
-                                .font(.caption.weight(.semibold)).foregroundStyle(.white)
-                            Text("Best guess \(forecast.bestGuess)")
-                                .font(.caption).foregroundStyle(Color.pivotMuted)
-                            if let note = ride.retainedOperationalWeatherNote {
-                                Text(note).font(.caption).foregroundStyle(Color.pivotWeather)
-                            }
+                            Text(guidance.headline).font(.caption.weight(.semibold)).foregroundStyle(.white)
+                            if let range = guidance.range { Text(range).font(.caption.weight(.semibold)).foregroundStyle(.white) }
+                            if let best = guidance.bestGuess { Text("Best guess \(best)").font(.caption).foregroundStyle(Color.pivotMuted) }
+                            Text(guidance.detail).font(.caption).foregroundStyle(Color.pivotMuted)
                         }
                     }
                     .padding(.top, 24)

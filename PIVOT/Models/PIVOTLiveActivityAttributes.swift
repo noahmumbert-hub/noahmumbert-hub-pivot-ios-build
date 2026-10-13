@@ -20,6 +20,8 @@ struct PIVOTLiveActivityAttributes: Codable, Hashable, Sendable {
         let windowEnd: Date?
         let evidenceStrength: String?
         let lastUpdated: Date
+        // Older server pushes do not carry the current evidence gates.
+        var guidanceVersion: Int? = nil
 
         var isWeatherDelay: Bool {
             delayType == "WEATHER"

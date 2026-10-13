@@ -122,6 +122,91 @@ struct ForecastPresentation: Equatable, Sendable {
     let detail: String
     let inline: String
 }
+
+/// A supported historical range is different from a park-confirmed reopening.
+/// These gates also protect clients talking to older servers without metadata.
+struct ReopeningGuidance: Equatable, Sendable {
+    let headline: String
+    let range: String?
+    let bestGuess: String?
+    let detail: String
+
+    static func presentation(ride: LiveRide, snapshot: LiveParkSnapshot?, feedHealth: DashboardFeedHealth,
+                             at now: Date, timeZone: TimeZone) -> Self {
+        func uncertain(_ detail: String, title: String = "Reopening time uncertain") -> Self {
+            Self(headline: title, range: nil, bestGuess: nil, detail: detail)
+        }
+        guard feedHealth.isLive, let snapshot, snapshot.parkActive,
+              snapshot.rides.contains(where: { $0.id == ride.id && $0.status == .down }), ride.status == .down else {
+            return uncertain("Refresh current ride observations before relying on reopening guidance.", title: "Saved guidance · time unavailable")
+        }
+        guard let estimate = ride.estimate else {
+            return uncertain("A reliable reopening time is not available yet.")
+        }
+        let dates = [estimate.issuedAt, estimate.windowStart, estimate.historicalMedianAt, estimate.windowEnd]
+        guard dates.allSatisfy({ $0.timeIntervalSince1970.isFinite }),
+              estimate.issuedAt <= now.addingTimeInterval(120), estimate.windowStart <= estimate.historicalMedianAt,
+              estimate.historicalMedianAt <= estimate.windowEnd else {
+            return uncertain("The reopening estimate could not be verified.")
+        }
+        guard now <= estimate.windowEnd else {
+            return uncertain("The earlier window passed. The ride is still reported down; a reliable new time is unavailable.", title: "Earlier window missed")
+        }
+        let range = "\(ParkTimeFormatter.time(estimate.windowStart, timeZone: timeZone))–\(ParkTimeFormatter.time(estimate.windowEnd, timeZone: timeZone))"
+        if ride.hasWeatherHold {
+            let lightning = snapshot.weather.lightning
+            guard lightning.sourceKind != "GLM",
+                  DashboardLightningHealth.presentation(lightning: lightning, feedHealth: feedHealth, at: now).isCurrent else {
+                return uncertain("Current lightning observations are unavailable. Weather reopening timing is unknown.", title: "Weather timing unavailable")
+            }
+            guard lightning.clearanceState == "VERIFIED", let verified = lightning.clearanceVerifiedAt,
+                  let clearance = lightning.clearanceAt, verified >= clearance, verified <= now,
+                  let observed = lightning.sourceUpdatedAt, observed >= verified,
+                  (lightning.completeFrames30Minutes ?? 0) >= 2 else {
+                return uncertain("Lightning may continue. The clear clock does not predict when the park will reopen a ride.", title: "Weather timing uncertain")
+            }
+            guard estimate.estimateKind == "WEATHER", estimate.reliability?.showRange == true,
+                  (estimate.weatherRestartLagSampleSize ?? 0) >= 5,
+                  let estimateClearance = estimate.weatherClearanceAt,
+                  abs(estimateClearance.timeIntervalSince(clearance)) < 60 else {
+                return uncertain("Mapped lightning has cleared. Waiting for the park to confirm reopening; comparable restart history is limited.", title: "Waiting for ride confirmation")
+            }
+            return Self(headline: "Historical restart range", range: range, bestGuess: nil,
+                        detail: "Based on observed restarts after mapped lightning clearance. The park decides when the ride reopens.")
+        }
+        guard estimate.startQuality == "observed", estimate.closureSignal == "confirmed" else {
+            return uncertain("The closure start or a second closed observation is not confirmed yet.")
+        }
+        func recent(_ timestamp: String?) -> Bool {
+            guard let timestamp,
+                  let data = try? JSONEncoder().encode(timestamp),
+                  let date = try? PivotAPIClient.makeDecoder().decode(Date.self, from: data) else { return false }
+            let age = estimate.issuedAt.timeIntervalSince(date)
+            return age >= 0 && age <= 90 * 24 * 60 * 60
+        }
+        guard (estimate.sameRideSampleSize ?? 0) >= 4, estimate.effectiveSampleSize >= 4,
+              estimate.distinctDayCount >= 3, estimate.recentSampleSize >= 4,
+              recent(estimate.historyProvenance?.trainedThrough) else {
+            return uncertain("Too few comparable closures for this ride at its current downtime. PIVOT is still learning.")
+        }
+        if let calibration = estimate.calibration, calibration.sampleSize >= 20,
+           let coverage = calibration.historicalCoverage, !coverage.isFinite || coverage < 0.6 {
+            return uncertain("Recent scored windows have missed too often to give a reliable reopening time.")
+        }
+        if let reliability = estimate.reliability, !reliability.showRange {
+            return uncertain(reliability.reason)
+        }
+        let calibration = estimate.calibration
+        let showBest = estimate.evidenceStrength == "Moderate" && (estimate.sameRideSampleSize ?? 0) >= 8 &&
+            calibration?.version == "PIVOT-ONLINE-CALIBRATION-v4" &&
+            calibration?.basis == "same-ride residuals" && (calibration?.sampleSize ?? 0) >= 20 &&
+            (calibration?.effectiveSampleSize ?? 0) >= 12 && (calibration?.historicalCoverage ?? 0) >= 0.7 &&
+            recent(calibration?.trainedThrough) && estimate.reliability?.showBestGuess != false
+        return Self(headline: "Historical reopening range", range: range,
+                    bestGuess: showBest ? ParkTimeFormatter.time(estimate.historicalMedianAt, timeZone: timeZone) : nil,
+                    detail: "Based on comparable observed closures. The park has not announced a reopening time.")
+    }
+}
 struct DownTimePresentation: Equatable, Sendable {
     let text: String
     let accessibilityLabel: String
@@ -952,15 +1037,15 @@ extension LiveRide {
         case .down where isPostOperationalWeatherConstraint:
             return "Ride delay · reopening now limited by lightning"
         case .down where retainedOperationalWeatherNote != nil:
-            return "Weather hold active · original ride window retained"
+            return "Ride delay · lightning nearby"
         case .down where hasWeatherHold:
-            return "Weather delay likely · PIVOT weather range"
+            return "Weather delay likely · waiting for ride confirmation"
         case .down where delayEvidence?.label == "Weather possible; awaiting nearby lightning confirmation":
             return "Weather check pending · awaiting the newest NOAA lightning frame"
         case .down where delayType == "RIDE":
             return "Ride delay · cause not published"
         case .down:
-            return "Delay cause unclear · PIVOT range"
+            return "Delay cause not published"
         case .scheduled:
             if let operatingWindow {
                 return operatingWindow.label
