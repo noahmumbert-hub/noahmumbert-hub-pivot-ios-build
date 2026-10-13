@@ -1807,6 +1807,11 @@ final class PIVOTTests: XCTestCase {
         func iso(_ offset: TimeInterval) -> String { ISO8601DateFormatter().string(from: now.addingTimeInterval(offset)) }
         json["fetchedAt"] = iso(0)
         json["sourceUpdatedAt"] = iso(0)
+        var provider = try XCTUnwrap(json["themeParksWiki"] as? [String: Any])
+        provider["fetchedAt"] = iso(0)
+        provider["cacheStale"] = false
+        provider["available"] = true
+        json["themeParksWiki"] = provider
         var rows = try XCTUnwrap(json["rides"] as? [[String: Any]])
         var ride = rows[0]
         ride["status"] = "DOWN"
@@ -1876,13 +1881,16 @@ final class PIVOTTests: XCTestCase {
         let supported = try reopeningFixture()
         XCTAssertNotNil(reopeningGuidance(supported).range)
         XCTAssertNil(reopeningGuidance(supported).bestGuess)
-        let calibration: [String: Any] = ["version": "test", "basis": "same-ride residuals", "sampleSize": 25,
+        let calibration: [String: Any] = ["version": "PIVOT-ONLINE-CALIBRATION-v4", "basis": "same-ride residuals", "sampleSize": 25,
             "effectiveSampleSize": 20, "distinctRideCount": 1, "distinctParkCount": 1, "historicalCoverage": 0.8,
             "medianAdjustmentMinutes": 0, "intervalPaddingMinutes": 0, "trainedThrough": "2026-10-12T18:00:00Z"]
         XCTAssertNotNil(reopeningGuidance(try reopeningFixture(estimate: ["calibration": calibration])).bestGuess)
         var poor = calibration
         poor["historicalCoverage"] = 0.3
         XCTAssertNil(reopeningGuidance(try reopeningFixture(estimate: ["calibration": poor])).range)
+        poor = calibration
+        poor["version"] = "PIVOT-ONLINE-CALIBRATION-v3"
+        XCTAssertNil(reopeningGuidance(try reopeningFixture(estimate: ["calibration": poor])).bestGuess)
         poor = calibration
         poor["basis"] = "network residuals"
         XCTAssertNil(reopeningGuidance(try reopeningFixture(estimate: ["calibration": poor])).bestGuess)
@@ -1895,6 +1903,9 @@ final class PIVOTTests: XCTestCase {
         let data = try JSONEncoder().encode(snapshot)
         var json = try XCTUnwrap(JSONSerialization.jsonObject(with: data) as? [String: Any])
         json["fetchedAt"] = now.timeIntervalSinceReferenceDate
+        var provider = try XCTUnwrap(json["themeParksWiki"] as? [String: Any])
+        provider["fetchedAt"] = now.timeIntervalSinceReferenceDate
+        json["themeParksWiki"] = provider
         let current = try JSONDecoder().decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: json))
         let result = reopeningGuidance(current, at: now)
         XCTAssertEqual(result.headline, "Earlier window missed")

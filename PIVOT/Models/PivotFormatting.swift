@@ -198,6 +198,7 @@ struct ReopeningGuidance: Equatable, Sendable {
         }
         let calibration = estimate.calibration
         let showBest = estimate.evidenceStrength == "Moderate" && (estimate.sameRideSampleSize ?? 0) >= 8 &&
+            calibration?.version == "PIVOT-ONLINE-CALIBRATION-v4" &&
             calibration?.basis == "same-ride residuals" && (calibration?.sampleSize ?? 0) >= 20 &&
             (calibration?.effectiveSampleSize ?? 0) >= 12 && (calibration?.historicalCoverage ?? 0) >= 0.7 &&
             recent(calibration?.trainedThrough) && estimate.reliability?.showBestGuess != false
