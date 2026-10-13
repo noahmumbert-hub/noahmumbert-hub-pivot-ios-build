@@ -167,9 +167,14 @@ struct WaitForecastTimeline: View {
                         .font(.caption).foregroundStyle(Color.pivotMuted)
                 }
                 Chart(points) { point in
-                    BarMark(x: .value("Hour", point.start), y: .value("Estimated wait", point.minutes), width: .ratio(0.6))
+                    let inset = point.end.timeIntervalSince(point.start) * 0.12
+                    BarMark(xStart: .value("Hour start", point.start.addingTimeInterval(inset)),
+                            xEnd: .value("Hour end", point.end.addingTimeInterval(-inset)),
+                            y: .value("Estimated wait", point.minutes))
                         .foregroundStyle(Color.pivotMint)
+                        .annotation(position: .top) { Text("\(point.minutes)").font(.caption2).foregroundStyle(Color.pivotMuted) }
                 }
+                .chartXScale(domain: points[0].start...points[points.count - 1].end)
                 .chartYScale(domain: 0...max(15, points.map(\.upper).max() ?? 15))
                 .chartXAxis { AxisMarks(values: .stride(by: .hour, count: points.count > 8 ? 2 : 1)) { value in
                     AxisValueLabel { if let date = value.as(Date.self) { Text(clock(date)).font(.caption2) } }
