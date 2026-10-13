@@ -637,6 +637,7 @@ final class DashboardStore: ObservableObject {
             liveActivityObservationParkID = nil
             errorMessage = error.localizedDescription
             cachedRefreshErrors[expectedPark.rawValue] = error.localizedDescription
+            crowdRefreshErrors.insert(expectedPark.rawValue)
         }
     }
 

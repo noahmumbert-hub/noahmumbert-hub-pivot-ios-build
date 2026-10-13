@@ -153,6 +153,7 @@ final class PIVOTTests: XCTestCase {
         XCTAssertEqual(store.feedHealth(at: start).badgeLabel, "Saved")
         for _ in 0..<3 {
             store.selectPark(.epcot)
+            XCTAssertTrue(store.crowdRefreshFailed(for: .magicKingdom), "Crowd browsing retains the failed park state while another park is selected")
             store.selectPark(.magicKingdom)
             XCTAssertEqual(store.feedHealth(at: start).badgeLabel, "Saved")
             XCTAssertNotNil(store.errorMessage)
@@ -162,6 +163,7 @@ final class PIVOTTests: XCTestCase {
         await store.refreshNow()
         XCTAssertTrue(store.feedHealth(at: start).isLive)
         XCTAssertNil(store.errorMessage)
+        XCTAssertFalse(store.crowdRefreshFailed(for: .magicKingdom))
     }
 
     func testFeedHealthFailureOverridesHealthyRetainedSnapshotAndRecovers() throws {
