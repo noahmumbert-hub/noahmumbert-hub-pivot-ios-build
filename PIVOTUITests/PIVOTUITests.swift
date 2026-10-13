@@ -6,7 +6,7 @@ final class PIVOTUITests: XCTestCase {
         app.launchArguments = ["--wait-forecast-ui-test"]
         app.launch()
         XCTAssertTrue(app.staticTexts["Crowds & waits"].waitForExistence(timeout: 5))
-        XCTAssertTrue(app.staticTexts["5/10"].exists)
+        XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "5/10")).firstMatch.exists)
         XCTAssertTrue(app.staticTexts["Lowest estimated wait"].exists)
         XCTAssertTrue(app.staticTexts["Hourly estimates"].exists)
         app.staticTexts["Hourly estimates"].tap()

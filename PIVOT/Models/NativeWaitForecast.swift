@@ -89,8 +89,7 @@ struct WaitLearningHistory: Codable, Equatable, Sendable {
 
     static func currentWaits(_ snapshot: LiveParkSnapshot) -> [Int: Double] {
         var waits: [Int: Double] = [:]
-        var duplicate = Set<Int>()
-        duplicate = Set(Dictionary(grouping: snapshot.rides, by: \.id).filter { $0.value.count > 1 }.keys)
+        let duplicate = Set(Dictionary(grouping: snapshot.rides, by: \.id).filter { $0.value.count > 1 }.keys)
         for ride in snapshot.rides where ride.radarEligible {
             guard ride.status == .open, ride.isOpen, let wait = ride.waitTime,
                   validWait(Double(wait)), let version = ride.lastUpdated,
@@ -122,6 +121,7 @@ struct WaitLearningHistory: Codable, Equatable, Sendable {
         var changed = false
         func key(_ ride: Int, _ hour: Int) -> String { "\(park.rawValue):\(ride):\(day):\(hour)" }
         let current = Self.currentWaits(snapshot)
+        let totalEligible = Set(snapshot.rides.filter(\.radarEligible).map(\.id)).count
         let duplicateIDs = Set(Dictionary(grouping: snapshot.rides, by: \.id).filter { $0.value.count > 1 }.keys)
         for ride in snapshot.rides where ride.radarEligible && !duplicateIDs.contains(ride.id) {
             var samples = ride.waitHistory ?? []
@@ -136,7 +136,7 @@ struct WaitLearningHistory: Codable, Equatable, Sendable {
                       values.allSatisfy({ $0.waitTime == wait }) else { continue }
                 let hour = calendar.component(.hour, from: time)
                 let coverageKey = "\(park.rawValue):\(day):\(hour)"
-                eligibleCounts[coverageKey] = max(eligibleCounts[coverageKey] ?? 0, Set(snapshot.rides.filter(\.radarEligible).map(\.id)).count)
+                eligibleCounts[coverageKey] = max(eligibleCounts[coverageKey] ?? 0, totalEligible)
                 let quarter = calendar.component(.minute, from: time) / 15
                 let id = key(ride.id, hour)
                 var bin = bins[id] ?? WaitLearningBin(parkID: park.rawValue, rideID: ride.id,

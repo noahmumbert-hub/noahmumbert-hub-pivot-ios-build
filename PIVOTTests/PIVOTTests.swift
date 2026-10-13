@@ -2137,6 +2137,38 @@ final class PIVOTTests: XCTestCase {
         )
     }
 
+    @MainActor
+    func testCrowdBrowsingDoesNotChangeSelectionAndFailureKeepsDataUnavailable() async throws {
+        let suite = "crowd-browse-\(UUID())"
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: suite))
+        defer { defaults.removePersistentDomain(forName: suite) }
+        defaults.set(6, forKey: "pivot.selectedPark")
+        let now = Date()
+        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601
+        var json = try XCTUnwrap(JSONSerialization.jsonObject(with: encoder.encode(makeSnapshot(sourceOffset: now.timeIntervalSince(start), ride: makeRide(status: .open)))) as? [String: Any])
+        json["parkId"] = 5
+        let payload = try JSONSerialization.data(withJSONObject: json)
+        AuditURLProtocol.response = { request in
+            XCTAssertTrue(request.url?.query?.contains("park=5") == true)
+            return payload
+        }
+        defer { AuditURLProtocol.response = nil }
+        let store = DashboardStore(apiClient: hhnTestClient(), defaults: defaults)
+        await store.refreshCrowd(for: .epcot)
+        XCTAssertEqual(store.selectedPark, .magicKingdom)
+        XCTAssertEqual(defaults.integer(forKey: "pivot.selectedPark"), 6)
+        XCTAssertEqual(store.crowdSnapshot(for: .epcot)?.parkId, 5)
+        XCTAssertFalse(store.crowdRefreshFailed(for: .epcot))
+        AuditURLProtocol.response = { _ in throw URLError(.notConnectedToInternet) }
+        await store.refreshCrowd(for: .epcot)
+        XCTAssertTrue(store.crowdRefreshFailed(for: .epcot))
+        XCTAssertEqual(store.crowdSnapshot(for: .epcot)?.parkId, 5)
+        XCTAssertFalse(store.crowdLoading.contains(5))
+        store.selectPark(nil)
+        XCTAssertNil(store.selectedPark)
+        XCTAssertEqual(store.crowdSnapshot(for: .epcot)?.parkId, 5)
+    }
+
     func testWaitLearningRecordsOnlyHealthyValidWaitsWithoutPollInflation() throws {
         let now = start.addingTimeInterval(300)
         let rides = (1...6).map { makeRide(id: $0, status: .open, waitTime: $0 * 10) }
