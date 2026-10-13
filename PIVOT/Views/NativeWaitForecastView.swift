@@ -39,7 +39,7 @@ struct NativeParkCrowdOverview: View {
                 VStack(alignment: .leading, spacing: 12) {
                     ParkCrowdCard(estimate: store.waitLearning.liveCrowd(park: park,
                         snapshot: store.snapshot, failed: store.errorMessage != nil, now: context.date),
-                        subtitle: store.snapshot?.parkActive == false ? "Park closed · no live crowd rating" : "Not enough fresh reporting rides yet")
+                        subtitle: store.snapshot?.parkActive == false ? "Outside monitored operating hours · no live crowd rating" : "Not enough fresh reporting rides yet")
                     Button { browsing = true } label: {
                         Label("Compare parks & days", systemImage: "calendar").font(.subheadline.weight(.medium))
                     }.accessibilityIdentifier("browse-park-crowds")
@@ -83,7 +83,7 @@ struct NativeParkCrowdBrowser: View {
                                 Text("Right now").font(.subheadline.weight(.semibold))
                                 ParkCrowdCard(estimate: store.waitLearning.liveCrowd(park: park,
                                     snapshot: store.crowdSnapshot(for: park), failed: store.crowdRefreshFailed(for: park), now: context.date),
-                                    subtitle: store.crowdSnapshot(for: park)?.parkActive == false ? "Park closed" : "Current crowd unavailable · refresh or check coverage")
+                                    subtitle: store.crowdSnapshot(for: park)?.parkActive == false ? "Outside monitored operating hours" : "Current crowd unavailable · refresh or check coverage")
                             }
                         }.pivotCard()
                     }
