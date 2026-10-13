@@ -91,6 +91,10 @@ private final class ParkLocationService: NSObject, CLLocationManagerDelegate {
 
 @MainActor
 final class DashboardStore: ObservableObject {
+    @Published private(set) var waitLearning: WaitLearningHistory
+    @Published private(set) var crowdSnapshots: [Int: LiveParkSnapshot] = [:]
+    @Published private(set) var crowdRefreshErrors: Set<Int> = []
+    @Published private(set) var crowdLoading: Set<Int> = []
     @Published private(set) var selectedPark: FloridaPark?
     @Published private(set) var snapshot: LiveParkSnapshot?
     @Published private(set) var isLoading = false
@@ -147,6 +151,7 @@ final class DashboardStore: ObservableObject {
         self.notificationService = notificationService ?? NotificationService()
         self.liveActivityService = liveActivityService ?? LiveActivityService()
         self.defaults = defaults
+        waitLearning = WaitLearningHistory.load(from: defaults)
         self.locationRequest = locationRequest
         alertPreferences = NativeAlertPreferences.load(from: defaults)
         alertCooldown = NativeAlertCooldown(defaults: defaults)
@@ -281,6 +286,46 @@ final class DashboardStore: ObservableObject {
 
     var sourceStatus: String {
         feedHealth().status
+    }
+
+    private func learnWaits(from observation: LiveParkSnapshot, now: Date) {
+        var next = waitLearning
+        if next.record(observation, now: now) {
+            waitLearning = next
+            next.save(to: defaults)
+        }
+    }
+
+    func crowdSnapshot(for park: FloridaPark) -> LiveParkSnapshot? {
+        guard selectedPark == park else { return crowdSnapshots[park.rawValue] }
+        guard let latest = crowdSnapshots[park.rawValue] else { return snapshot }
+        return (snapshot?.fetchedAt ?? .distantPast) > latest.fetchedAt ? snapshot : latest
+    }
+
+    func crowdRefreshFailed(for park: FloridaPark) -> Bool {
+        if selectedPark == park { return errorMessage != nil }
+        return crowdRefreshErrors.contains(park.rawValue)
+    }
+
+    func refreshCrowd(for park: FloridaPark) async {
+        guard !crowdLoading.contains(park.rawValue) else { return }
+        crowdLoading.insert(park.rawValue)
+        let requestedAt = Date()
+        defer { crowdLoading.remove(park.rawValue) }
+        do {
+            let observation = try await apiClient.snapshot(for: park)
+            guard !Task.isCancelled, observation.parkId == park.rawValue else { return }
+            if let prior = crowdSnapshots[park.rawValue], observation.fetchedAt < prior.fetchedAt { return }
+            crowdSnapshots[park.rawValue] = observation
+            crowdRefreshErrors.remove(park.rawValue)
+            learnWaits(from: observation, now: Date())
+        } catch is CancellationError {
+            return
+        } catch {
+            if (crowdSnapshots[park.rawValue]?.fetchedAt ?? .distantPast) <= requestedAt {
+                crowdRefreshErrors.insert(park.rawValue)
+            }
+        }
     }
 
     func feedHealth(at now: Date = Date()) -> DashboardFeedHealth {
@@ -550,6 +595,9 @@ final class DashboardStore: ObservableObject {
             }
             snapshot = nextSnapshot
             errorMessage = nil
+            crowdSnapshots[expectedPark.rawValue] = nextSnapshot
+            crowdRefreshErrors.remove(expectedPark.rawValue)
+            learnWaits(from: nextSnapshot, now: now)
             if nextSnapshot.feedHealthy, !observation.providerCacheStale,
                NativeSmartAlertEngine.isFresh(nextSnapshot.fetchedAt, at: now) {
                 liveActivityObservationParkID = expectedPark.rawValue

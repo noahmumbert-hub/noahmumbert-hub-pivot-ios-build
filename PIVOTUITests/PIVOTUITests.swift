@@ -1,6 +1,30 @@
 import XCTest
 
 final class PIVOTUITests: XCTestCase {
+    func testWaitForecastShowsHourlyPlanCrowdAndLearningState() {
+        let app = XCUIApplication()
+        app.launchArguments = ["--wait-forecast-ui-test"]
+        app.launch()
+        XCTAssertTrue(app.staticTexts["Crowds & waits"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["5/10"].exists)
+        XCTAssertTrue(app.staticTexts["Lowest estimated wait"].exists)
+        XCTAssertTrue(app.staticTexts["Hourly estimates"].exists)
+        app.staticTexts["Hourly estimates"].tap()
+        app.swipeUp()
+        XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "same weekday")).count > 0)
+        let screenshot = XCTAttachment(screenshot: app.screenshot()); screenshot.name = "Wait forecasts and park crowd meter"; screenshot.lifetime = .keepAlways
+        add(screenshot)
+    }
+
+    func testSavedForecastDoesNotSuggestRidingNow() {
+        let app = XCUIApplication()
+        app.launchArguments = ["--wait-forecast-ui-test", "--forecast-saved"]
+        app.launch()
+        XCTAssertTrue(app.staticTexts["Crowds & waits"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.staticTexts["Lowest estimated wait"].exists)
+        XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH %@", "History only")).firstMatch.exists)
+    }
+
     private func hhnApp(_ extraArguments: [String] = []) -> XCUIApplication {
         let app = XCUIApplication()
         app.launchArguments = ["--hhn-ui-test", "--reset-hhn-ui-test"] + extraArguments
