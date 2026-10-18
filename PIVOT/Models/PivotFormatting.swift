@@ -309,8 +309,40 @@ private enum ClosureDurationFormatter {
     }
 }
 
+// DateFormatter is thread-safe on supported iOS versions. Cached instances
+// are configured once and never mutated after publication; keys include zone.
+// https://developer.apple.com/documentation/foundation/dateformatter
+private final class ParkDisplayFormatterCache: @unchecked Sendable {
+    let values = NSCache<NSString, DateFormatter>()
+    private var localeObserver: NSObjectProtocol?
+    init() {
+        values.countLimit = 128
+        localeObserver = NotificationCenter.default.addObserver(
+            forName: NSLocale.currentLocaleDidChangeNotification, object: nil, queue: nil
+        ) { [weak self] _ in self?.values.removeAllObjects() }
+    }
+    deinit { if let localeObserver { NotificationCenter.default.removeObserver(localeObserver) } }
+}
+
 enum ParkTimeFormatter {
     static let floridaTimeZone = TimeZone(identifier: "America/New_York")!
+    private static let displayCache = ParkDisplayFormatterCache()
+
+    private static func displayFormatter(_ template: String, timeZone: TimeZone?) -> DateFormatter {
+        let zone = timeZone ?? selectedParkTimeZone
+        let key = "\(zone.identifier)|\(template)" as NSString
+        if let cached = displayCache.values.object(forKey: key) { return cached }
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US")
+        formatter.timeZone = zone
+        if template == "shortTime" {
+            formatter.dateStyle = .none; formatter.timeStyle = .short
+        } else {
+            formatter.setLocalizedDateFormatFromTemplate(template)
+        }
+        displayCache.values.setObject(formatter, forKey: key)
+        return formatter
+    }
 
     static var selectedParkTimeZone: TimeZone {
         guard let value = UserDefaults.standard.object(forKey: "pivot.selectedPark") as? NSNumber,
@@ -321,38 +353,21 @@ enum ParkTimeFormatter {
     }
 
     static func time(_ date: Date, timeZone: TimeZone? = nil) -> String {
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US")
-        formatter.timeZone = timeZone ?? selectedParkTimeZone
-        formatter.dateStyle = .none
-        formatter.timeStyle = .short
-        return formatter.string(from: date)
+        displayFormatter("shortTime", timeZone: timeZone).string(from: date)
     }
 
     static func dateTime(_ date: Date?, timeZone: TimeZone? = nil) -> String {
         guard let date else { return "Not available" }
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US")
-        formatter.timeZone = timeZone ?? selectedParkTimeZone
-        formatter.setLocalizedDateFormatFromTemplate("MMM d h:mm a z")
-        return formatter.string(from: date)
+        return displayFormatter("MMM d h:mm a z", timeZone: timeZone).string(from: date)
     }
 
     static func observationTime(_ date: Date?, timeZone: TimeZone? = nil) -> String {
         guard let date else { return "Not available" }
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US")
-        formatter.timeZone = timeZone ?? selectedParkTimeZone
-        formatter.setLocalizedDateFormatFromTemplate("h:mm:ss a z")
-        return formatter.string(from: date)
+        return displayFormatter("h:mm:ss a z", timeZone: timeZone).string(from: date)
     }
 
     static func parkDate(_ date: Date = Date(), timeZone: TimeZone? = nil) -> String {
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US")
-        formatter.timeZone = timeZone ?? selectedParkTimeZone
-        formatter.setLocalizedDateFormatFromTemplate("EEEE MMMM d")
-        return formatter.string(from: date).uppercased()
+        displayFormatter("EEEE MMMM d", timeZone: timeZone).string(from: date).uppercased()
     }
 
     static func modelTimestamp(_ value: String?) -> String {

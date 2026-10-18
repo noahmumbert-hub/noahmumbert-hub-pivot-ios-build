@@ -2,6 +2,142 @@ import XCTest
 @testable import PIVOT
 
 final class PIVOTTests: XCTestCase {
+    // Frozen 1.15.5 decoder for reproducible same-process comparisons.
+    private func baselineDateDecoder() -> JSONDecoder {
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .custom { decoder in
+            let c = try decoder.singleValueContainer(); let value = try c.decode(String.self)
+            let fractional = ISO8601DateFormatter(); fractional.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+            if let date = fractional.date(from: value) { return date }
+            let standard = ISO8601DateFormatter(); standard.formatOptions = [.withInternetDateTime]
+            if let date = standard.date(from: value) { return date }
+            throw DecodingError.dataCorruptedError(in: c, debugDescription: "Unsupported ISO-8601 date: \(value)")
+        }
+        return decoder
+    }
+
+    private func baselineTime(_ date: Date, zone: TimeZone, template: String = "shortTime") -> String {
+        let f = DateFormatter(); f.locale = Locale(identifier: "en_US"); f.timeZone = zone
+        if template == "shortTime" { f.dateStyle = .none; f.timeStyle = .short }
+        else { f.setLocalizedDateFormatFromTemplate(template) }
+        return f.string(from: date)
+    }
+
+    private func performanceSamples(_ body: () throws -> Void) rethrows -> [Double] {
+        try body() // Warm up both implementations before recording.
+        return try (0..<7).map { _ in
+            let started = ProcessInfo.processInfo.systemUptime
+            try autoreleasepool { try body() }
+            return (ProcessInfo.processInfo.systemUptime - started) * 1000
+        }
+    }
+
+    func testPerformanceComparisonUsesIdenticalSnapshotAndLabelOutputs() throws {
+        var raw = makeSnapshot(sourceOffset: 0, ride: makeRide(status: .down))
+        raw.rides = (0..<60).map { makeRide(id: 1000 + $0, status: .down) }
+        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601; encoder.outputFormatting = .sortedKeys
+        let data = try encoder.encode(raw)
+        let old = try baselineDateDecoder().decode(LiveParkSnapshot.self, from: data)
+        let new = try PivotAPIClient.makeDecoder().decode(LiveParkSnapshot.self, from: data)
+        XCTAssertEqual(try encoder.encode(old), try encoder.encode(new))
+        let beforeDecode = try performanceSamples { _ = try baselineDateDecoder().decode(LiveParkSnapshot.self, from: data) }
+        let afterDecode = try performanceSamples { _ = try PivotAPIClient.makeDecoder().decode(LiveParkSnapshot.self, from: data) }
+        let zone = TimeZone(identifier: "America/New_York")!
+        let dates = (0..<240).map { start.addingTimeInterval(Double($0 * 60)) }
+        XCTAssertEqual(dates.map { baselineTime($0, zone: zone) }, dates.map { ParkTimeFormatter.time($0, timeZone: zone) })
+        let beforeLabels = performanceSamples { _ = dates.map { baselineTime($0, zone: zone) } }
+        let afterLabels = performanceSamples { _ = dates.map { ParkTimeFormatter.time($0, timeZone: zone) } }
+        let report: [String: Any] = ["snapshotBytes": data.count, "rides": 60, "labels": 240, "samples": 7,
+            "decodeBeforeMs": beforeDecode, "decodeAfterMs": afterDecode,
+            "labelsBeforeMs": beforeLabels, "labelsAfterMs": afterLabels,
+            "environment": "iOS simulator; Debug XCTest; fixed payload; no network; warm samples"]
+        print("PIVOT_PERF " + String(decoding: try JSONSerialization.data(withJSONObject: report, options: [.sortedKeys]), as: UTF8.self))
+    }
+
+    func testCachedDisplayFormatsRetainTimezoneDSTAndLocaleChangeBehavior() throws {
+        let decoder = PivotAPIClient.makeDecoder()
+        for zoneID in ["America/New_York", "America/Los_Angeles", "Europe/London", "Asia/Tokyo"] {
+            let zone = try XCTUnwrap(TimeZone(identifier: zoneID))
+            for iso in ["2026-11-01T05:30:00Z", "2026-11-01T06:30:00Z", "2026-03-08T07:00:00Z", "2027-01-01T00:30:00Z"] {
+                let date = try decoder.decode(Date.self, from: JSONEncoder().encode(iso))
+                XCTAssertEqual(ParkTimeFormatter.time(date, timeZone: zone), baselineTime(date, zone: zone))
+                XCTAssertEqual(ParkTimeFormatter.dateTime(date, timeZone: zone), baselineTime(date, zone: zone, template: "MMM d h:mm a z"))
+                XCTAssertEqual(ParkTimeFormatter.observationTime(date, timeZone: zone), baselineTime(date, zone: zone, template: "h:mm:ss a z"))
+                XCTAssertEqual(ParkTimeFormatter.parkDate(date, timeZone: zone), baselineTime(date, zone: zone, template: "EEEE MMMM d").uppercased())
+            }
+        }
+        NotificationCenter.default.post(name: NSLocale.currentLocaleDidChangeNotification, object: nil)
+        XCTAssertEqual(ParkTimeFormatter.time(start, timeZone: .gmt), baselineTime(start, zone: .gmt))
+        XCTAssertEqual(ParkTimeFormatter.dateTime(nil), "Not available")
+        XCTAssertEqual(ParkTimeFormatter.observationTime(nil), "Not available")
+        for invalid in ["not-a-date", "2026-10-18", ""] {
+            XCTAssertThrowsError(try decoder.decode(Date.self, from: JSONEncoder().encode(invalid)))
+        }
+    }
+
+    @MainActor
+    func testSelectedCrowdAndManualRefreshDoNotDuplicateInflightLiveRequest() async throws {
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: "perf-dedup-\(UUID())")); defaults.set(6, forKey: "pivot.selectedPark")
+        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601
+        let data = try encoder.encode(makeSnapshot(sourceOffset: 0, ride: makeRide(status: .open)))
+        let began = expectation(description: "First live request started")
+        var loader: AuditURLProtocol?; var requests = 0
+        AuditURLProtocol.intercept = { request in Task { @MainActor in
+            requests += 1; loader = request; began.fulfill()
+        } }
+        defer { AuditURLProtocol.intercept = nil; AuditURLProtocol.response = nil }
+        let store = DashboardStore(apiClient: hhnTestClient(), defaults: defaults)
+        let first = Task { await store.refreshNow() }
+        await fulfillment(of: [began], timeout: 3)
+        await store.refreshCrowd(for: .magicKingdom)
+        await store.refreshNow()
+        XCTAssertEqual(requests, 1)
+        try XCTUnwrap(loader).finish(with: data)
+        await first.value
+        XCTAssertEqual(store.crowdSnapshot(for: .magicKingdom)?.parkId, 6)
+        XCTAssertFalse(store.isRefreshing)
+        AuditURLProtocol.intercept = nil
+        var laterRequests = 0
+        AuditURLProtocol.response = { _ in laterRequests += 1; return data }
+        await store.refreshNow() // A later refresh remains a real request; no TTL added.
+        XCTAssertEqual(laterRequests, 1)
+        XCTAssertNotNil(store.snapshot)
+        print("PIVOT_PERF selected-park overlapping dashboard/crowd/manual requests=1; freshness cadence unchanged")
+    }
+
+    @MainActor
+    func testParkSwitchStartsImmediatelyDespiteOldRequestAndOldCleanupCannotClearLoading() async throws {
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: "perf-switch-\(UUID())")); defaults.set(6, forKey: "pivot.selectedPark")
+        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601
+        let oldData = try encoder.encode(makeSnapshot(sourceOffset: 0, ride: makeRide(status: .open)))
+        let newData = try encoder.encode(openingFixture(id: 155, at: "2026-10-18T14:00:00Z", source: "2026-10-18T13:59:00Z", status: "OPEN"))
+        let oldBegan = expectation(description: "Old park request started")
+        let newBegan = expectation(description: "New park starts while old park is held")
+        var pending: [Int: AuditURLProtocol] = [:]
+        AuditURLProtocol.intercept = { request in Task { @MainActor in
+            let id = Int(URLComponents(url: request.request.url!, resolvingAgainstBaseURL: false)!.queryItems!.first(where: { $0.name == "park" })!.value!)!
+            pending[id] = request
+            (id == 6 ? oldBegan : newBegan).fulfill()
+        } }
+        defer { AuditURLProtocol.intercept = nil }
+        let store = DashboardStore(apiClient: hhnTestClient(), defaults: defaults)
+        let oldTask = Task { await store.refreshNow() }
+        await fulfillment(of: [oldBegan], timeout: 3)
+        let switchAt = ProcessInfo.processInfo.systemUptime
+        store.selectPark(.epcot)
+        let newTask = Task { await store.refreshNow() }
+        await fulfillment(of: [newBegan], timeout: 3)
+        print("PIVOT_PERF park-switch request-start ms=\((ProcessInfo.processInfo.systemUptime - switchAt) * 1000); old request still held; simulated transport")
+        try XCTUnwrap(pending[6]).finish(with: oldData)
+        await oldTask.value
+        XCTAssertTrue(store.isRefreshing); XCTAssertTrue(store.isLoading)
+        XCTAssertNil(store.snapshot, "Late old-park data must not be published")
+        try XCTUnwrap(pending[5]).finish(with: newData)
+        await newTask.value
+        XCTAssertEqual(store.snapshot?.parkId, 5)
+        XCTAssertFalse(store.isRefreshing); XCTAssertFalse(store.isLoading)
+    }
+
     private func retirementFixture(status: RideStatus, parkID: Int = 65, at: String = "2026-10-18T14:00:00Z") throws -> LiveParkSnapshot {
         var raw = makeSnapshot(sourceOffset: 0, ride: makeRide(id: 6038, name: "Fast & Furious - Supercharged™", status: status))
         raw.rides.append(makeRide(id: 6000, name: "Revenge of the Mummy", status: .open, waitTime: 20))
@@ -2795,9 +2931,16 @@ final class PIVOTTests: XCTestCase {
 
 private final class AuditURLProtocol: URLProtocol, @unchecked Sendable {
     nonisolated(unsafe) static var response: ((URLRequest) throws -> Data)?
+    nonisolated(unsafe) static var intercept: ((AuditURLProtocol) -> Void)?
     override class func canInit(with request: URLRequest) -> Bool { request.url?.host == "audit.invalid" }
     override class func canonicalRequest(for request: URLRequest) -> URLRequest { request }
+    func finish(with data: Data) {
+        client?.urlProtocol(self, didReceive: HTTPURLResponse(url: request.url!, statusCode: 200, httpVersion: nil, headerFields: ["Content-Type": "application/json"])!, cacheStoragePolicy: .notAllowed)
+        client?.urlProtocol(self, didLoad: data)
+        client?.urlProtocolDidFinishLoading(self)
+    }
     override func startLoading() {
+        if let intercept = Self.intercept { intercept(self); return }
         do {
             guard let response = Self.response else { throw URLError(.badServerResponse) }
             let data = try response(request)

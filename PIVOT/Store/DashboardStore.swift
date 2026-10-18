@@ -117,6 +117,8 @@ final class DashboardStore: ObservableObject {
     private var sceneIsActive = false
     private var monitoringTask: Task<Void, Never>?
     private var monitoringGeneration: UInt = 0
+    private var refreshSequence: UInt = 0
+    private var activeRefresh: (id: UInt, park: FloridaPark, generation: UInt)?
     private var parkHoursTask: Task<Void, Never>?
     private var requestedParkHours: Set<FloridaPark> = []
     private var locationTask: Task<Void, Never>?
@@ -308,6 +310,12 @@ final class DashboardStore: ObservableObject {
     }
 
     func refreshCrowd(for park: FloridaPark) async {
+        // The selected park's refresh already updates both dashboard and crowd
+        // data. Share that path instead of issuing a second live request.
+        if selectedPark == park {
+            await refreshNow()
+            return
+        }
         guard !crowdLoading.contains(park.rawValue) else { return }
         crowdLoading.insert(park.rawValue)
         let requestedAt = Date()
@@ -544,13 +552,22 @@ final class DashboardStore: ObservableObject {
     }
 
     private func refresh(expectedPark: FloridaPark) async {
-        guard selectedPark == expectedPark, !isRefreshing else { return }
+        guard selectedPark == expectedPark else { return }
         let requestGeneration = monitoringGeneration
+        if let activeRefresh, activeRefresh.park == expectedPark,
+           activeRefresh.generation == requestGeneration { return }
+        refreshSequence &+= 1
+        let requestID = refreshSequence
+        activeRefresh = (requestID, expectedPark, requestGeneration)
         isRefreshing = true
         if snapshot == nil { isLoading = true }
         defer {
-            isRefreshing = false
-            isLoading = false
+            // A slow/cancelled previous park cannot clear the new request's UI.
+            if activeRefresh?.id == requestID {
+                activeRefresh = nil
+                isRefreshing = false
+                isLoading = false
+            }
         }
 
         do {
