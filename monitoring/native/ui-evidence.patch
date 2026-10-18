@@ -1,0 +1,17 @@
+--- a/PIVOTUITests/PIVOTUITests.swift
++++ b/PIVOTUITests/PIVOTUITests.swift
+@@ -21,6 +21,7 @@
+         app.launchArguments = ["--wait-forecast-ui-test", "--forecast-saved"]
+         app.launch()
+         XCTAssertTrue(app.staticTexts["Crowds & waits"].waitForExistence(timeout: 5))
++        screenshot("Saved forecast fixture", app: app)
+         XCTAssertFalse(app.staticTexts["Lowest estimated wait"].exists)
+         XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH %@", "History only")).firstMatch.exists)
+     }
+@@ -322,5 +323,6 @@
+                 NSPredicate(format: "label CONTAINS[c] 'Current park: Cedar Point'")
+             ).firstMatch.waitForExistence(timeout: 5)
+         )
++        screenshot("Live navigation after park selection; data availability unverified", app: app)
+     }
+ }

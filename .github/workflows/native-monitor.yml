@@ -1,0 +1,79 @@
+name: Native simulator observation (logs only)
+
+on:
+  workflow_dispatch:
+  # Proposed, NOT active: once daily at 14:37 UTC (10:37 EDT / 09:37 EST).
+  # schedule:
+  #   - cron: '37 14 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pivot-native-monitor
+  cancel-in-progress: false
+
+jobs:
+  observe:
+    # Standard public runners are free; skip before allocation if visibility changes.
+    if: ${{ github.event.repository.visibility == 'public' }}
+    runs-on: macos-15
+    timeout-minutes: 27
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
+    steps:
+      - name: Check out monitoring definitions
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: monitor
+          persist-credentials: false
+
+      - name: Check out released 1.15.6 source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: 04b1c98d588b471479631f6e9df2aab4e8a1d05d
+          path: app
+          persist-credentials: false
+
+      - name: Assert public repository and prepare evidence
+        env:
+          REPOSITORY_VISIBILITY: ${{ github.event.repository.visibility }}
+        run: |
+          test "$REPOSITORY_VISIBILITY" = public
+          mkdir -p app/build/monitor
+          git -C app rev-parse HEAD > app/build/monitor/source-sha.txt
+          git -C monitor rev-parse HEAD > app/build/monitor/monitor-sha.txt
+          xcodebuild -version > app/build/monitor/toolchain.txt
+          git -C app apply ../monitor/monitoring/native/ui-evidence.patch
+
+      - name: Compile simulator tests once
+        id: compile
+        timeout-minutes: 12
+        working-directory: app
+        run: bash ../monitor/monitoring/native/simulator.sh build
+
+      - name: Deterministic fixture regressions
+        if: ${{ !cancelled() && steps.compile.outcome == 'success' }}
+        timeout-minutes: 7
+        working-directory: app
+        run: bash ../monitor/monitoring/native/simulator.sh fixtures
+
+      - name: Live native navigation smoke (not fixture or data-health proof)
+        if: ${{ !cancelled() && steps.compile.outcome == 'success' }}
+        timeout-minutes: 4
+        working-directory: app
+        run: bash ../monitor/monitoring/native/simulator.sh live-ui
+
+      - name: Separate live API observations
+        if: ${{ !cancelled() && steps.compile.outcome == 'success' }}
+        timeout-minutes: 2
+        working-directory: app
+        run: python3 ../monitor/monitoring/native/live_api.py
+
+      - name: Retain text results in normal logs and job summary
+        if: always()
+        timeout-minutes: 2
+        working-directory: app
+        run: |
+          bash ../monitor/monitoring/native/simulator.sh export
+          python3 ../monitor/monitoring/native/report_results.py
