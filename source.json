@@ -7,7 +7,7 @@
   "localizedDescription": "PIVOT updates for SideStore. Uses the existing PIVOT app identity.",
   "website": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
   "websiteURL": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
-  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/8a15780c6163ba1e8f861b8fce57d12c4b0c50dd/icon.png",
+  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/a87688a6cca1f6e1d50f68c0c2f74a557679660f/icon.png",
   "tintColor": "70DFC0",
   "apps": [
     {
@@ -16,14 +16,23 @@
       "developerName": "Noah Mumbert",
       "subtitle": "Theme park companion",
       "localizedDescription": "Park wait times, ride status, weather observations, planning, shows and Live Activities.",
-      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/8a15780c6163ba1e8f861b8fce57d12c4b0c50dd/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/a87688a6cca1f6e1d50f68c0c2f74a557679660f/icon.png",
       "tintColor": "70DFC0",
-      "version": "1.15.2",
-      "versionDate": "2026-10-13T11:58:55Z",
-      "versionDescription": "Reopening guidance now shows uncertainty when ride history or current observations cannot support a time. Expired windows stop displaying as upcoming, and saved or failed refreshes cannot keep an exact reopening guess visible.\n\nWeather guidance separates mapped lightning clearance from the park's reopening decision. Unsupported weather times and older push estimates are withheld. Lock Screen guidance expires with its supported window.\n\nYou may see fewer numeric forecasts while evidence is limited. This update improves forecast reliability and labeling; a more accurate timing model still needs validation against recent forecast outcomes. Favorites, plans, settings and the existing app identity are preserved.",
-      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/8a15780c6163ba1e8f861b8fce57d12c4b0c50dd/PIVOT-1.15.2-100.26.1.ipa",
-      "size": 2968830,
+      "version": "1.15.4",
+      "versionDate": "2026-10-18T14:47:49Z",
+      "versionDescription": "EPCOT opening-hours protection\n\nScheduled and unverified preopening closures no longer produce breakdown forecasts or overnight closure timers in the iOS app. The verified October 18 openings for Figment, Living with the Land and Gran Fiesta remain separate from park-wide early entry. Missing attraction eligibility is shown as unverified; the scheduled opening time alone never marks a ride open.\n\nFresh source updates cannot validate forecasts or timers carried over from before the attraction's operating session. Existing saved preferences, plans, app identity and the prior native reliability improvements are preserved.\n\nThis release changes native presentation, including its inputs to Radar, planning, local alert processing and app-driven Live Activities. Separate server-side eligibility, evaluation and export changes are prepared for review; installing this IPA does not deploy them or rewrite historical forecasts.",
+      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/a87688a6cca1f6e1d50f68c0c2f74a557679660f/PIVOT-1.15.4-100.31.1.ipa",
+      "size": 2981827,
       "versions": [
+        {
+          "version": "1.15.4",
+          "buildVersion": "100.31.1",
+          "date": "2026-10-18T14:47:49Z",
+          "localizedDescription": "EPCOT opening-hours protection\n\nScheduled and unverified preopening closures no longer produce breakdown forecasts or overnight closure timers in the iOS app. The verified October 18 openings for Figment, Living with the Land and Gran Fiesta remain separate from park-wide early entry. Missing attraction eligibility is shown as unverified; the scheduled opening time alone never marks a ride open.\n\nFresh source updates cannot validate forecasts or timers carried over from before the attraction's operating session. Existing saved preferences, plans, app identity and the prior native reliability improvements are preserved.\n\nThis release changes native presentation, including its inputs to Radar, planning, local alert processing and app-driven Live Activities. Separate server-side eligibility, evaluation and export changes are prepared for review; installing this IPA does not deploy them or rewrite historical forecasts.",
+          "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/a87688a6cca1f6e1d50f68c0c2f74a557679660f/PIVOT-1.15.4-100.31.1.ipa",
+          "size": 2981827,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.15.2",
           "buildVersion": "100.26.1",
