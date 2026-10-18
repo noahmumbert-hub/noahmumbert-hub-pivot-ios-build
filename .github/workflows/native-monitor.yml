@@ -2,9 +2,9 @@ name: Native simulator observation (logs only)
 
 on:
   workflow_dispatch:
-  # Proposed, NOT active: once daily at 14:37 UTC (10:37 EDT / 09:37 EST).
-  # schedule:
-  #   - cron: '37 14 * * *'
+  # Once daily at 14:37 UTC (10:37 EDT / 09:37 EST).
+  schedule:
+    - cron: '37 14 * * *'
 
 permissions:
   contents: read
@@ -60,7 +60,7 @@ jobs:
 
       - name: Live native navigation smoke (not fixture or data-health proof)
         if: ${{ !cancelled() && steps.compile.outcome == 'success' }}
-        timeout-minutes: 4
+        timeout-minutes: 6
         working-directory: app
         run: bash ../monitor/monitoring/native/simulator.sh live-ui
 
