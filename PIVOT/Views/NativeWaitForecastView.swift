@@ -90,8 +90,8 @@ struct NativeParkCrowdBrowser: View {
                     Button {
                         Task { await store.refreshCrowd(for: park) }
                     } label: {
-                        Label(store.crowdLoading.contains(park.rawValue) ? "Checking park…" : "Refresh this park", systemImage: "arrow.clockwise")
-                    }.disabled(store.crowdLoading.contains(park.rawValue)).tint(Color.pivotMint)
+                        Label(store.isCrowdLoading(for: park) ? "Checking park…" : "Refresh this park", systemImage: "arrow.clockwise")
+                    }.disabled(store.isCrowdLoading(for: park)).tint(Color.pivotMint)
                     Text("PIVOT learns from this device’s fresh park observations and recent wait history while you use the app. Open different parks here to build their histories. Future dates use previous observed days; holidays, events, weather, and ride capacity can change the result.")
                         .font(.caption).foregroundStyle(Color.pivotMuted)
                     Text("All parks").font(.title3.weight(.semibold))

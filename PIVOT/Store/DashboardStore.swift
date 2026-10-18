@@ -309,6 +309,11 @@ final class DashboardStore: ObservableObject {
         return crowdRefreshErrors.contains(park.rawValue)
     }
 
+    func isCrowdLoading(for park: FloridaPark) -> Bool {
+        crowdLoading.contains(park.rawValue) ||
+            (selectedPark == park && isRefreshing && activeRefresh?.park == park)
+    }
+
     func refreshCrowd(for park: FloridaPark) async {
         // The selected park's refresh already updates both dashboard and crowd
         // data. Share that path instead of issuing a second live request.

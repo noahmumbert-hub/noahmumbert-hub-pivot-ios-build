@@ -92,10 +92,12 @@ final class PIVOTTests: XCTestCase {
         await store.refreshCrowd(for: .magicKingdom)
         await store.refreshNow()
         XCTAssertEqual(requests, 1)
+        XCTAssertTrue(store.isCrowdLoading(for: .magicKingdom), "Sharing a request must retain the loading indicator")
         try XCTUnwrap(loader).finish(with: data)
         await first.value
         XCTAssertEqual(store.crowdSnapshot(for: .magicKingdom)?.parkId, 6)
         XCTAssertFalse(store.isRefreshing)
+        XCTAssertFalse(store.isCrowdLoading(for: .magicKingdom))
         AuditURLProtocol.intercept = nil
         var laterRequests = 0
         AuditURLProtocol.response = { _ in laterRequests += 1; return data }
