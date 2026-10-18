@@ -1033,7 +1033,19 @@ enum NativeOpeningEligibility {
             // An old preopening version does not become downtime just because
             // an API poll ingested it after opening. Do not invent OPEN at 09:00.
             let observedInSession = withinSession && source != nil && source! >= opening!
-            if observedInSession && !scheduled { return original }
+            if observedInSession && !scheduled {
+                // A newer provider version cannot validate an older session's
+                // forecast or overnight display timer. Preserve the raw copy.
+                if let estimate = ride.estimate,
+                   estimate.episodeAnchorAt < opening! || estimate.issuedAt < opening! {
+                    ride.estimate = nil
+                    ride.estimateReason = "Opening delay · awaiting a forecast for this operating session"
+                }
+                if let downSince = ride.downSince, downSince < opening! {
+                    ride.downSince = nil; ride.elapsedDownMinutes = nil; ride.minimumDownMinutes = nil
+                }
+                return ride
+            }
             if withinSession { label = "Opening status unverified · waiting for an operating-session update" }
             ride.status = scheduled ? .scheduled : .stale
             ride.isOpen = false; ride.waitTime = nil; ride.reopenPending = false

@@ -46,7 +46,10 @@ final class PIVOTTests: XCTestCase {
         let transition = RideTransitionEngine.evaluate(selectedParkId: 5, previous: nil, current: NativeOpeningEligibility.applying(to: before))
         XCTAssertTrue(RideTransitionEngine.evaluate(selectedParkId: 5, previous: transition.nextBaseline, current: result).alerts.isEmpty)
         let freshDown = try openingFixture(id: 155, at: "2026-10-18T13:06:00Z", source: "2026-10-18T13:05:00Z")
-        XCTAssertEqual(NativeOpeningEligibility.applying(to: freshDown).rides[0].status, .down)
+        let fresh = NativeOpeningEligibility.applying(to: freshDown).rides[0]
+        XCTAssertEqual(fresh.status, .down)
+        XCTAssertNil(fresh.estimate, "A new source update cannot validate a forecast issued before this session")
+        XCTAssertNil(fresh.downSince, "An overnight display clock is not a daytime breakdown clock")
     }
 
     func testGuardiansIsEligibleButOldSourceIsNotBreakdownEvidence() throws {
