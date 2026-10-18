@@ -556,6 +556,8 @@ struct RideDetails: Codable, Sendable {
 }
 
 struct LiveRide: Codable, Identifiable, Sendable {
+    var statusObservedAt: Date? = nil
+    var statusEpisodeAnchorAt: Date? = nil
     let id: Int
     let name: String
     let land: String

@@ -150,7 +150,14 @@ struct ReopeningGuidance: Equatable, Sendable {
             return uncertain("The reopening estimate could not be verified.")
         }
         guard now <= estimate.windowEnd else {
-            return uncertain("The earlier window passed. The ride is still reported down; a reliable new time is unavailable.", title: "Earlier window missed")
+            let range = "\(ParkTimeFormatter.time(estimate.windowStart, timeZone: timeZone))–\(ParkTimeFormatter.time(estimate.windowEnd, timeZone: timeZone))"
+            if let observed = ride.statusObservedAt, observed > estimate.windowEnd, observed <= now,
+               now.timeIntervalSince(observed) <= 15 * 60, ride.statusEpisodeAnchorAt == estimate.episodeAnchorAt {
+                return uncertain("Issued window \(range). Result pending; delayed source updates may change the outcome.",
+                                 title: "Still closed on the latest source update")
+            }
+            return uncertain("Issued window \(range). Waiting for a fresh ride update; an elapsed window alone does not confirm a miss.",
+                             title: "Window ended · waiting for a fresh ride update")
         }
         let range = "\(ParkTimeFormatter.time(estimate.windowStart, timeZone: timeZone))–\(ParkTimeFormatter.time(estimate.windowEnd, timeZone: timeZone))"
         if ride.hasWeatherHold {
@@ -546,7 +553,7 @@ extension ReopeningEstimate {
                     headline: "Revised reopening window",
                     range: range,
                     bestGuess: best,
-                    detail: "Updated after the prior window was missed · \(range) · best guess \(best)",
+                    detail: "Updated after a later closed observation · \(range) · best guess \(best)",
                     inline: "Revised window · \(range) · best guess \(best)"
                 )
             }
@@ -584,21 +591,12 @@ extension ReopeningEstimate {
                 inline: "Inside predicted window · \(range) · best guess \(best)"
             )
         case .pastWindow:
-            if isMissedWindowRevision {
-                return ForecastPresentation(
-                    headline: "Revised window missed by \(lateMinutes) min",
-                    range: range,
-                    bestGuess: best,
-                    detail: "Revised window missed by \(lateMinutes) min · ride still down · best guess was \(best)",
-                    inline: "Revised window missed by \(lateMinutes) min · \(range) · best guess was \(best)"
-                )
-            }
             return ForecastPresentation(
-                headline: "Past original window by \(lateMinutes) min",
+                headline: "Window ended · waiting for a fresh ride update",
                 range: range,
                 bestGuess: best,
-                detail: "Original window missed by \(lateMinutes) min · ride still down · original best guess \(best)",
-                inline: "Past original window by \(lateMinutes) min · \(range) · best guess \(best)"
+                detail: "Issued window \(range). An elapsed window alone does not confirm a miss.",
+                inline: "Window ended · \(range) · waiting for a fresh ride update"
             )
         case .unknown:
             if isMissedWindowRevision {
