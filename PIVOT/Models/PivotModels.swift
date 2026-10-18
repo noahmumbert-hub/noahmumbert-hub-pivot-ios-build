@@ -867,7 +867,7 @@ struct LiveParkSnapshot: Codable, Sendable {
     var showsSource: ShowScheduleSource? = nil
     var parkHours: ParkHoursSnapshot? = nil
     var halloweenHorrorNights: HorrorNightSnapshot? = nil
-    let metrics: ParkMetrics
+    var metrics: ParkMetrics
     let source: SourceDetails
     let themeParksWiki: ThemeParksWikiSummary?
     let weather: WeatherSnapshot
@@ -1058,6 +1058,37 @@ enum NativeOpeningEligibility {
             }
             return ride
         }
+        return result
+    }
+}
+
+/// Current presentation exclusion, independent of provider status or age.
+/// Historical payloads/storage stay intact; only the active local copy changes.
+/// TouringPlans confirms August 16, 2026 was the final operating day:
+/// https://touringplans.com/universal-studios-florida/attractions/fast-and-furious-supercharged
+enum NativeRetiredAttractions {
+    static func excludes(parkID: Int, rideID: Int, name: String, entityID: String? = nil) -> Bool {
+        guard parkID == FloridaPark.universalStudiosFlorida.rawValue else { return false }
+        if rideID == 6038 || entityID == "6a3ffac7-bef4-4a22-8ba6-f2963aac7f70" { return true }
+        // A provider rename or remapping must not revive the same retired ride.
+        let normalized = name.lowercased().replacingOccurrences(of: "&amp;", with: "and")
+            .replacingOccurrences(of: "&", with: "and")
+            .components(separatedBy: CharacterSet.alphanumerics.inverted).filter { !$0.isEmpty }.joined()
+        return normalized == "fastandfurioussupercharged" || normalized == "fastandfurioussuperchargedsinglerider"
+    }
+
+    static func applying(to raw: LiveParkSnapshot) -> LiveParkSnapshot {
+        var result = raw
+        result.rides = raw.rides.filter {
+            !excludes(parkID: raw.parkId, rideID: $0.id, name: $0.name, entityID: $0.themeParksWikiStatus?.entityId)
+        }
+        guard result.rides.count != raw.rides.count else { return raw }
+        let waits = result.rides.filter { $0.status == .open }.compactMap(\.waitTime)
+        result.metrics = ParkMetrics(openCount: result.rides.filter { $0.status == .open }.count,
+            downCount: result.rides.filter { $0.status == .down }.count,
+            scheduledCount: result.rides.filter { $0.status == .scheduled }.count,
+            averageWait: waits.isEmpty ? nil : Int((Double(waits.reduce(0, +)) / Double(waits.count)).rounded()),
+            reportingCount: result.rides.filter { $0.status != .stale }.count)
         return result
     }
 }

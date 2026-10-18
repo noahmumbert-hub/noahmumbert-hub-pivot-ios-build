@@ -2,6 +2,53 @@ import XCTest
 @testable import PIVOT
 
 final class PIVOTTests: XCTestCase {
+    private func retirementFixture(status: RideStatus, parkID: Int = 65, at: String = "2026-10-18T14:00:00Z") throws -> LiveParkSnapshot {
+        var raw = makeSnapshot(sourceOffset: 0, ride: makeRide(id: 6038, name: "Fast & Furious - Supercharged™", status: status))
+        raw.rides.append(makeRide(id: 6000, name: "Revenge of the Mummy", status: .open, waitTime: 20))
+        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601
+        var json = try XCTUnwrap(JSONSerialization.jsonObject(with: encoder.encode(raw)) as? [String: Any])
+        json["parkId"] = parkID; json["fetchedAt"] = at
+        return try PivotAPIClient.makeDecoder().decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: json))
+    }
+
+    func testRetirementOverridesEveryUpstreamStatusAndStaleSnapshotWithoutErasingHistory() throws {
+        for status in [RideStatus.open, .down, .scheduled, .stale, .parkInactive, .unknown("CLOSED")] {
+            let raw = try retirementFixture(status: status, at: "2026-08-01T14:00:00Z")
+            let result = NativeRetiredAttractions.applying(to: raw)
+            XCTAssertEqual(result.rides.map(\.id), [6000])
+            XCTAssertEqual(result.metrics.openCount, 1); XCTAssertEqual(result.metrics.downCount, 0)
+            XCTAssertEqual(result.metrics.reportingCount, 1); XCTAssertEqual(result.metrics.averageWait, 20)
+            XCTAssertFalse(result.rides.contains { $0.isRadarDown })
+            XCTAssertEqual(raw.rides.count, 2); XCTAssertEqual(raw.rides[0].status, status)
+            XCTAssertEqual(result.fetchedAt, raw.fetchedAt)
+            XCTAssertEqual(NativeAlertObservation(snapshot: result).rides.map(\.id), [6000])
+        }
+    }
+
+    func testRetirementMatchesIdentityAliasesButNotOtherParksOrHollywoodDrift() throws {
+        for name in ["Fast & Furious – Supercharged™", "Fast and Furious: Supercharged", "Fast &amp; Furious - Supercharged Single Rider"] {
+            XCTAssertTrue(NativeRetiredAttractions.excludes(parkID: 65, rideID: 999, name: name))
+        }
+        XCTAssertTrue(NativeRetiredAttractions.excludes(parkID: 65, rideID: 999, name: "renamed", entityID: "6a3ffac7-bef4-4a22-8ba6-f2963aac7f70"))
+        XCTAssertFalse(NativeRetiredAttractions.excludes(parkID: 65, rideID: 999, name: "Fast & Furious: Hollywood Drift"))
+        XCTAssertEqual(NativeRetiredAttractions.applying(to: try retirementFixture(status: .down, parkID: 64)).rides.count, 2)
+    }
+
+    func testRetirementRunsAtAPIEntryAndCannotGenerateReopeningAlert() async throws {
+        let raw = try retirementFixture(status: .open)
+        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601
+        let payload = try encoder.encode(raw)
+        AuditURLProtocol.response = { _ in payload }
+        defer { AuditURLProtocol.response = nil }
+        let result = try await hhnTestClient().snapshot(for: .universalStudiosFlorida)
+        XCTAssertEqual(result.rides.map(\.id), [6000])
+        let baseline = RideTransitionEngine.evaluate(selectedParkId: 65, previous: nil,
+            current: try retirementFixture(status: .down, at: "2026-10-18T13:55:00Z")).nextBaseline
+        let transition = RideTransitionEngine.evaluate(selectedParkId: 65, previous: baseline, current: result)
+        XCTAssertTrue(transition.alerts.isEmpty)
+        XCTAssertNil(transition.nextBaseline?.rides[6038])
+    }
+
     private func openingFixture(id: Int, at: String, source: String = "2026-10-18T09:50:22Z", status: String = "DOWN", hours: Bool = true) throws -> LiveParkSnapshot {
         let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601
         let raw = makeSnapshot(sourceOffset: 0, ride: makeRide(id: id, status: .down,
