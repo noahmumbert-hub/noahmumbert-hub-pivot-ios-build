@@ -4,13 +4,15 @@ Add this source in SideStore → Sources → +:
 
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 
-Current update: **1.15.5 / build 100.32.1**, iOS 17.0+.
+Current update: **1.15.6 / build 100.34.1**, iOS 17.0+.
 
-Fast & Furious – Supercharged has permanently closed and is removed from active Universal Studios Florida ride listings, temporary-closure forecasts, Radar, plans and active counts. Stale or incorrect provider entries cannot bring it back. Historical records and saved preferences remain intact.
+Loading and responsiveness improvements
 
-This update preserves PIVOT 1.15.4 opening-hours protection and prior improvements. Native presentation works with the existing server; the separate backend retirement candidate is not deployed by this release. Old saved offline packs remain historical snapshots.
+PIVOT reuses timestamp parsers during live-response decoding and reuses time-label formatters during view updates. Switching parks can start the new park request while an older request finishes. Crowd browsing shares an overlapping selected-park refresh, with its loading indicator preserved.
 
-IPA SHA-256: `af2b95b60c821d177095a709761ff61c0c31836381fb721c68662c8ed070dba0`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/39140398941).
+Freshness rules, the five-second foreground refresh cadence, last-good data, and failure labels remain unchanged. This release includes the Supercharged permanent-retirement removal and EPCOT opening-hours fixes from 1.15.5 and 1.15.4. Saved preferences and app identity are preserved. Backend and website deployment are separate.
+
+IPA SHA-256: `b82d0d24ea8f2f04e6dd554f75996a20b4be7f8597cb2b5d9c755356dd7c8cad`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/39141813803).
 The unsigned IPA preserves `com.noahmumbert.PIVOT` and its Live Activity extension.
 Install as an update using the same signing identity; keep the existing app installed to retain saved data.
 Native unit and simulator UI tests passed for this build. Physical SideStore installation remains untested.

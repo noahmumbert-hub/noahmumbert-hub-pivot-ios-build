@@ -7,7 +7,7 @@
   "localizedDescription": "PIVOT updates for SideStore. Uses the existing PIVOT app identity.",
   "website": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
   "websiteURL": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
-  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/376675e95b5a577c21466a14a5428e5ccc741272/icon.png",
+  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/90b4cfe2be02f0c668f7270c7e844587fa17934f/icon.png",
   "tintColor": "70DFC0",
   "apps": [
     {
@@ -16,14 +16,23 @@
       "developerName": "Noah Mumbert",
       "subtitle": "Theme park companion",
       "localizedDescription": "Park wait times, ride status, weather observations, planning, shows and Live Activities.",
-      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/376675e95b5a577c21466a14a5428e5ccc741272/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/90b4cfe2be02f0c668f7270c7e844587fa17934f/icon.png",
       "tintColor": "70DFC0",
-      "version": "1.15.5",
-      "versionDate": "2026-10-18T15:39:09Z",
-      "versionDescription": "Fast & Furious – Supercharged has permanently closed and is removed from active Universal Studios Florida ride listings, temporary-closure forecasts, Radar, plans and active counts. Stale or incorrect provider entries cannot bring it back. Historical records and saved preferences remain intact.\n\nThis update preserves PIVOT 1.15.4 opening-hours protection and prior improvements. Native presentation works with the existing server; the separate backend retirement candidate is not deployed by this release. Old saved offline packs remain historical snapshots.",
-      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/376675e95b5a577c21466a14a5428e5ccc741272/PIVOT-1.15.5-100.32.1.ipa",
-      "size": 2985097,
+      "version": "1.15.6",
+      "versionDate": "2026-10-18T15:57:59Z",
+      "versionDescription": "Loading and responsiveness improvements\n\nPIVOT reuses timestamp parsers during live-response decoding and reuses time-label formatters during view updates. Switching parks can start the new park request while an older request finishes. Crowd browsing shares an overlapping selected-park refresh, with its loading indicator preserved.\n\nFreshness rules, the five-second foreground refresh cadence, last-good data, and failure labels remain unchanged. This release includes the Supercharged permanent-retirement removal and EPCOT opening-hours fixes from 1.15.5 and 1.15.4. Saved preferences and app identity are preserved. Backend and website deployment are separate.",
+      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/90b4cfe2be02f0c668f7270c7e844587fa17934f/PIVOT-1.15.6-100.34.1.ipa",
+      "size": 2989135,
       "versions": [
+        {
+          "version": "1.15.6",
+          "buildVersion": "100.34.1",
+          "date": "2026-10-18T15:57:59Z",
+          "localizedDescription": "Loading and responsiveness improvements\n\nPIVOT reuses timestamp parsers during live-response decoding and reuses time-label formatters during view updates. Switching parks can start the new park request while an older request finishes. Crowd browsing shares an overlapping selected-park refresh, with its loading indicator preserved.\n\nFreshness rules, the five-second foreground refresh cadence, last-good data, and failure labels remain unchanged. This release includes the Supercharged permanent-retirement removal and EPCOT opening-hours fixes from 1.15.5 and 1.15.4. Saved preferences and app identity are preserved. Backend and website deployment are separate.",
+          "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/90b4cfe2be02f0c668f7270c7e844587fa17934f/PIVOT-1.15.6-100.34.1.ipa",
+          "size": 2989135,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.15.5",
           "buildVersion": "100.32.1",
