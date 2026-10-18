@@ -756,7 +756,7 @@ final class PIVOTTests: XCTestCase {
         XCTAssertTrue(upcoming.inline.contains(upcoming.range))
         XCTAssertTrue(upcoming.inline.contains("best guess \(upcoming.bestGuess)"))
         XCTAssertEqual(inWindow.headline, "Inside revised window")
-        XCTAssertEqual(missedAgain.headline, "Revised window missed by 12 min")
+        XCTAssertEqual(missedAgain.headline, "Window ended · waiting for a fresh ride update")
         XCTAssertFalse(missedAgain.detail.contains("original"))
     }
 
@@ -1908,7 +1908,7 @@ final class PIVOTTests: XCTestCase {
         json["themeParksWiki"] = provider
         let current = try JSONDecoder().decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: json))
         let result = reopeningGuidance(current, at: now)
-        XCTAssertEqual(result.headline, "Earlier window missed")
+        XCTAssertEqual(result.headline, "Window ended · waiting for a fresh ride update")
         XCTAssertNil(result.bestGuess)
         XCTAssertNil(result.range)
     }
@@ -1919,6 +1919,41 @@ final class PIVOTTests: XCTestCase {
         XCTAssertNil(reopeningGuidance(snapshot, at: snapshot.fetchedAt.addingTimeInterval(16 * 60)).range)
         XCTAssertNil(reopeningGuidance(try reopeningFixture(estimate: ["issuedAt": "2026-10-14T18:00:00Z"])).range)
         XCTAssertNil(reopeningGuidance(try reopeningFixture(estimate: ["windowStart": "2026-10-14T18:00:00Z"])).range)
+    }
+
+    func testOctober17FigmentRevisionWaitsForSameEpisodeObservation() throws {
+        let base = try reopeningFixture()
+        var json = try XCTUnwrap(JSONSerialization.jsonObject(with: JSONEncoder().encode(base)) as? [String: Any])
+        let now = Self.isoDate("2026-10-17T20:45:15.564Z")
+        let beforeEnd = Self.isoDate("2026-10-17T20:40:00.000Z")
+        let anchor = Self.isoDate("2026-10-17T18:40:47.924Z")
+        json["fetchedAt"] = beforeEnd.timeIntervalSinceReferenceDate
+        var provider = try XCTUnwrap(json["themeParksWiki"] as? [String: Any])
+        provider["fetchedAt"] = beforeEnd.timeIntervalSinceReferenceDate
+        json["themeParksWiki"] = provider
+        var rides = try XCTUnwrap(json["rides"] as? [[String: Any]])
+        var estimate = try XCTUnwrap(rides[0]["estimate"] as? [String: Any])
+        for (key, value) in ["issuedAt": "2026-10-17T19:54:46.625Z", "windowStart": "2026-10-17T19:54:46.625Z",
+                             "historicalMedianAt": "2026-10-17T20:09:46.625Z", "windowEnd": "2026-10-17T20:44:46.625Z"] {
+            estimate[key] = Self.isoDate(value).timeIntervalSinceReferenceDate
+        }
+        estimate["episodeAnchorAt"] = anchor.timeIntervalSinceReferenceDate
+        estimate["revision"] = 1
+        estimate["revisionReason"] = "WINDOW_MISSED"
+        rides[0]["estimate"] = estimate
+        rides[0]["statusObservedAt"] = beforeEnd.timeIntervalSinceReferenceDate
+        rides[0]["statusEpisodeAnchorAt"] = anchor.timeIntervalSinceReferenceDate
+        func result() throws -> ReopeningGuidance {
+            json["rides"] = rides
+            let snapshot = try JSONDecoder().decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: json))
+            return reopeningGuidance(snapshot, at: now)
+        }
+        XCTAssertEqual(try result().headline, "Window ended · waiting for a fresh ride update")
+        rides[0]["statusObservedAt"] = now.timeIntervalSinceReferenceDate
+        XCTAssertEqual(try result().headline, "Still closed on the latest source update")
+        XCTAssertTrue(try result().detail.contains("Result pending"))
+        rides[0]["statusEpisodeAnchorAt"] = now.timeIntervalSinceReferenceDate
+        XCTAssertEqual(try result().headline, "Window ended · waiting for a fresh ride update")
     }
 
     func testActiveAndUnobservedLightningCannotPromiseAReopening() throws {
