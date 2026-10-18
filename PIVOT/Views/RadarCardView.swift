@@ -167,7 +167,7 @@ struct RadarCardView: View {
                             Text("Initial forecast issued \(ParkTimeFormatter.dateTime(estimate.issuedAt)).")
                         }
                         if estimate.lockedForOutage {
-                            Text("This issued window is fixed. It does not slide with the clock; a confirmed miss creates a separate follow-up revision.")
+                            Text("This issued window is fixed. It does not slide with the clock; a later closed observation can create a separate conditional revision while the prior result remains pending.")
                         }
                         if let lightningAt = ride.delayEvidence?.lastLightningDensityAt {
                             let clearMinutes = ride.delayEvidence?.clearMinutes ?? 0
