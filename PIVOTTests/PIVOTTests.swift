@@ -2,6 +2,82 @@ import XCTest
 @testable import PIVOT
 
 final class PIVOTTests: XCTestCase {
+    private func openingFixture(id: Int, at: String, source: String = "2026-10-18T09:50:22Z", status: String = "DOWN", hours: Bool = true) throws -> LiveParkSnapshot {
+        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601
+        let raw = makeSnapshot(sourceOffset: 0, ride: makeRide(id: id, status: .down,
+            downSince: Date(timeIntervalSince1970: 1792285211.7), elapsedDownMinutes: 695))
+        var json = try XCTUnwrap(JSONSerialization.jsonObject(with: encoder.encode(raw)) as? [String: Any])
+        json["parkId"] = 5; json["fetchedAt"] = at
+        var rides = try XCTUnwrap(json["rides"] as? [[String: Any]])
+        rides[0]["lastUpdated"] = source; rides[0]["status"] = status; rides[0]["isOpen"] = status == "OPEN"
+        rides[0]["themeParksWikiStatus"] = ["entityId":"fixture", "entityName":"fixture", "status": status == "OPEN" ? "OPERATING" : "CLOSED", "sourceUpdatedAt":source, "matchedBy":"id"]
+        json["rides"] = rides
+        if hours {
+            let calendar = makeParkHours(park: .epcot, date: "2026-10-18")
+            var encoded = try XCTUnwrap(JSONSerialization.jsonObject(with: encoder.encode(calendar)) as? [String: Any])
+            encoded["regular"] = ["openingTime":"2026-10-18T13:00:00Z", "closingTime":"2026-10-19T01:00:00Z", "label":"Regular", "type":"OPERATING"]
+            encoded["earlyEntry"] = ["openingTime":"2026-10-18T12:30:00Z", "closingTime":"2026-10-18T13:00:00Z", "label":"Early", "type":"EARLY_ENTRY"]
+            json["parkHours"] = encoded
+        }
+        return try PivotAPIClient.makeDecoder().decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: json))
+    }
+
+    func testOpeningEligibilityProtectsThreeScheduledRidesAndRetainsRawForecast() throws {
+        for id in [155, 156, 466] {
+            let raw = try openingFixture(id: id, at: "2026-10-18T12:35:00Z")
+            let originalAnchor = raw.rides[0].estimate?.episodeAnchorAt
+            let result = NativeOpeningEligibility.applying(to: raw)
+            let ride = result.rides[0]
+            XCTAssertEqual(ride.status, .scheduled); XCTAssertFalse(ride.isRadarDown)
+            XCTAssertEqual(ride.operatingWindow?.label, "Opens at 9:00 AM")
+            XCTAssertNil(ride.estimate); XCTAssertNil(ride.downSince); XCTAssertNil(ride.elapsedDownMinutes)
+            XCTAssertEqual(raw.rides[0].elapsedDownMinutes, 695)
+            XCTAssertEqual(raw.rides[0].estimate?.episodeAnchorAt, originalAnchor)
+            XCTAssertEqual(result.fetchedAt, raw.fetchedAt)
+        }
+    }
+
+    func testOpeningBoundaryCannotFabricateOpenOrFreshDowntime() throws {
+        let before = try openingFixture(id: 155, at: "2026-10-18T12:59:00Z")
+        let boundary = try openingFixture(id: 155, at: "2026-10-18T13:00:00Z")
+        let result = NativeOpeningEligibility.applying(to: boundary)
+        XCTAssertEqual(result.rides[0].status, .stale); XCTAssertFalse(result.rides[0].isOpen)
+        XCTAssertNil(result.rides[0].estimate)
+        let transition = RideTransitionEngine.evaluate(selectedParkId: 5, previous: nil, current: NativeOpeningEligibility.applying(to: before))
+        XCTAssertTrue(RideTransitionEngine.evaluate(selectedParkId: 5, previous: transition.nextBaseline, current: result).alerts.isEmpty)
+        let freshDown = try openingFixture(id: 155, at: "2026-10-18T13:06:00Z", source: "2026-10-18T13:05:00Z")
+        XCTAssertEqual(NativeOpeningEligibility.applying(to: freshDown).rides[0].status, .down)
+    }
+
+    func testGuardiansIsEligibleButOldSourceIsNotBreakdownEvidence() throws {
+        let raw = try openingFixture(id: 10916, at: "2026-10-18T12:35:00Z")
+        XCTAssertEqual(NativeOpeningEligibility.applying(to: raw).rides[0].status, .stale)
+        let opened = try openingFixture(id: 10916, at: "2026-10-18T12:41:15Z", source: "2026-10-18T12:35:20Z", status: "OPEN")
+        XCTAssertEqual(NativeOpeningEligibility.applying(to: opened).rides[0].status, .open)
+        XCTAssertEqual(NativeOpeningEligibility.applying(to: opened).rides[0].lastUpdated, opened.rides[0].lastUpdated)
+    }
+
+    func testMissingOpeningEvidenceDoesNotGrantEarlyEntry() throws {
+        for id in [10916, 999] {
+            let missing = try openingFixture(id: id, at: "2026-10-18T12:35:00Z", source: "2026-10-18T12:34:00Z", hours: false)
+            XCTAssertEqual(NativeOpeningEligibility.applying(to: missing).rides[0].status, .stale)
+            XCTAssertNil(NativeOpeningEligibility.applying(to: missing).rides[0].estimate)
+        }
+        let unknown = try openingFixture(id: 999, at: "2026-10-18T12:35:00Z", source: "2026-10-18T12:34:00Z")
+        XCTAssertEqual(NativeOpeningEligibility.applying(to: unknown).rides[0].status, .stale)
+    }
+
+    func testOpeningGuardRunsOnAPIResponseBeforeNativeConsumers() async throws {
+        let raw = try openingFixture(id: 155, at: "2026-10-18T12:35:00Z")
+        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601
+        let payload = try encoder.encode(raw)
+        AuditURLProtocol.response = { _ in payload }
+        defer { AuditURLProtocol.response = nil }
+        let result = try await hhnTestClient().snapshot(for: .epcot)
+        XCTAssertEqual(result.rides[0].status, .scheduled)
+        XCTAssertFalse(result.rides[0].isRadarDown)
+    }
+
     func testHHNRefreshRestoresPostedWaitFromFreshProviderAndBoundsRequests() async throws {
         let now = Date()
         let sourceAt = now.addingTimeInterval(-7200)

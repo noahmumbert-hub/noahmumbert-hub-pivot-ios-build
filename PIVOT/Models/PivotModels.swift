@@ -454,7 +454,14 @@ struct ReopeningEstimate: Codable, Sendable {
     var reliability: ForecastReliability? = nil
 }
 
+struct ProviderAttractionHours: Codable, Sendable {
+    let type: String?
+    let startTime: Date
+    let endTime: Date?
+}
+
 struct ThemeParksWikiRideStatus: Codable, Sendable {
+    var operatingHours: [ProviderAttractionHours]? = nil
     let entityId: String
     let entityName: String
     let status: String
@@ -561,15 +568,15 @@ struct LiveRide: Codable, Identifiable, Sendable {
     let id: Int
     let name: String
     let land: String
-    let status: RideStatus
-    let isOpen: Bool
-    let waitTime: Int?
+    var status: RideStatus
+    var isOpen: Bool
+    var waitTime: Int?
     let lastUpdated: Date?
-    let downSince: Date?
-    let elapsedDownMinutes: Int?
-    let minimumDownMinutes: Int?
-    let estimate: ReopeningEstimate?
-    let estimateReason: String?
+    var downSince: Date?
+    var elapsedDownMinutes: Int?
+    var minimumDownMinutes: Int?
+    var estimate: ReopeningEstimate?
+    var estimateReason: String?
     let delayType: String?
     var weatherHoldActive: Bool? = nil
     var details: RideDetails? = nil
@@ -577,7 +584,7 @@ struct LiveRide: Codable, Identifiable, Sendable {
     let weatherExposure: String
     let radarEligible: Bool
     let radarCategory: String
-    let reopenPending: Bool
+    var reopenPending: Bool
     let trend: [Int]
     let location: AttractionLocation?
     let themeParksWikiStatus: ThemeParksWikiRideStatus?
@@ -587,7 +594,7 @@ struct LiveRide: Codable, Identifiable, Sendable {
     let statusProvenance: String?
     let statusComparisonReason: String?
     let scheduledReason: String?
-    let operatingWindow: AttractionOperatingWindow?
+    var operatingWindow: AttractionOperatingWindow?
     /// Real timestamped API observations; legacy trend values have no timestamps.
     var waitHistory: [WaitHistorySample]? = nil
 
@@ -852,7 +859,7 @@ struct LiveParkSnapshot: Codable, Sendable {
     let sourceUpdatedAt: Date?
     let sourceUpdatedAtByProvider: ProviderSourceTimes?
     let cacheAgeSeconds: Int
-    let rides: [LiveRide]
+    var rides: [LiveRide]
     var shows: [LiveShow]? = nil
     var nextShowAt: Date? = nil
     var nextShowName: String? = nil
@@ -969,4 +976,76 @@ struct LightningDepartureMotion: Codable, Sendable {
 struct LightningDepartureSource: Codable, Sendable {
     let radar: String
     let lightning: String
+}
+
+
+/// Protect native consumers of older server payloads before counts, Radar,
+/// notifications, planning or Live Activities see them. This changes a local
+/// presentation copy only; server forecasts/outcomes are never rewritten.
+enum NativeOpeningEligibility {
+    private static let reviewedStart = Date(timeIntervalSince1970: 1792296000) // Oct 18 00:00 EDT
+    private static let reviewedEnd = Date(timeIntervalSince1970: 1792382400)
+    private static let regularOpening = Date(timeIntervalSince1970: 1792328400) // 09:00 EDT
+    private static let regularClosing = Date(timeIntervalSince1970: 1792371600)
+    private static let regularOnly: Set<Int> = [155, 156, 466]
+    private static let earlyRides: Set<Int> = [159, 10916, 158, 160, 16467, 153, 2679, 10914]
+
+    static func applying(to raw: LiveParkSnapshot) -> LiveParkSnapshot {
+        guard raw.parkId == 5, raw.fetchedAt >= reviewedStart else { return raw }
+        var result = raw
+        let now = raw.fetchedAt // Never make a saved response fresh using device time.
+        let reviewedDate = now < reviewedEnd
+        result.rides = raw.rides.map { original in
+            guard original.status == .down else { return original }
+            var ride = original
+            var opening: Date?
+            var closing: Date?
+            var scheduled = false
+            var label = "Attraction opening hours unverified"
+            if reviewedDate && regularOnly.contains(ride.id) {
+                opening = regularOpening; closing = regularClosing
+                scheduled = now < regularOpening || now >= regularClosing
+                label = now < regularOpening ? "Opens at 9:00 AM" : "Closed for the scheduled day"
+            } else if let period = original.themeParksWikiStatus?.operatingHours?
+                .filter({ $0.type == "OPERATING" && $0.endTime != nil && $0.endTime! > $0.startTime })
+                .sorted(by: { $0.startTime < $1.startTime })
+                .first(where: { ($0.startTime <= now && now < $0.endTime!) || ($0.startTime > now && $0.startTime.timeIntervalSince(now) <= 36 * 3600) }) {
+                opening = period.startTime; closing = period.endTime
+                scheduled = now < period.startTime
+                let formatter = DateFormatter()
+                formatter.timeZone = TimeZone(identifier: "America/New_York")
+                formatter.locale = Locale(identifier: "en_US_POSIX")
+                formatter.dateFormat = "h:mm a"
+                label = "Opens at \(formatter.string(from: period.startTime))"
+            } else if let hours = raw.parkHours, !hours.stale, let regular = hours.regular,
+                      regular.closingTime > regular.openingTime {
+                opening = regular.openingTime; closing = regular.closingTime
+                if reviewedDate && earlyRides.contains(ride.id), let early = hours.earlyEntry,
+                   early.openingTime < regular.openingTime {
+                    opening = early.openingTime
+                }
+                if now < opening! {
+                    label = "Early-entry eligibility unverified · awaiting regular opening"
+                }
+            }
+            let source = original.themeParksWikiStatus?.sourceUpdatedAt ?? original.lastUpdated
+            let withinSession = opening != nil && closing != nil && now >= opening! && now < closing!
+            // An old preopening version does not become downtime just because
+            // an API poll ingested it after opening. Do not invent OPEN at 09:00.
+            let observedInSession = withinSession && source != nil && source! >= opening!
+            if observedInSession && !scheduled { return original }
+            if withinSession { label = "Opening status unverified · waiting for an operating-session update" }
+            ride.status = scheduled ? .scheduled : .stale
+            ride.isOpen = false; ride.waitTime = nil; ride.reopenPending = false
+            ride.estimate = nil; ride.estimateReason = label
+            ride.downSince = nil; ride.elapsedDownMinutes = nil; ride.minimumDownMinutes = nil
+            ride.statusEpisodeAnchorAt = nil
+            if scheduled {
+                ride.operatingWindow = AttractionOperatingWindow(state: now < opening! ? "BEFORE_OPEN" : "AFTER_CLOSE",
+                    openingTime: nil, closingTime: nil, label: label, source: "OFFICIAL_DATED_HOURS", confidence: "HIGH", observedDays: 0)
+            }
+            return ride
+        }
+        return result
+    }
 }

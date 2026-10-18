@@ -117,7 +117,7 @@ actor PivotAPIClient {
         if park == .universalStudiosFlorida, let event = snapshot.halloweenHorrorNights {
             snapshot.halloweenHorrorNights = await refreshingHorrorHouses(event, now: Date())
         }
-        return snapshot
+        return NativeOpeningEligibility.applying(to: snapshot)
     }
 
     private func refreshingHorrorHouses(_ event: HorrorNightSnapshot, now: Date) async -> HorrorNightSnapshot {
