@@ -1,47 +1,37 @@
-# Native simulator monitoring — prepared, not active
+# Native simulator monitoring — logs only
 
-Noah authorized cloud-coordinated GitHub macOS simulator observations, conditional on no new paid usage. This package is deliberately inactive: the cron is commented out and the job condition starts with `false`. No simulator run or artifact upload was dispatched for this work.
+Noah authorized cloud-coordinated GitHub macOS simulator observations with no new paid usage. Retained screenshots have been replaced by normal workflow logs and a textual job summary. Screenshots and xcresult files exist only transiently on the runner and are unavailable after the job. There is no artifact upload, cache, release publication or deployment in this workflow.
 
-## Cost and existing setup, checked October 18, 2026
+## Verified no-cost basis
 
-- Repository `noahmumbert-hub/noahmumbert-hub-pivot-ios-build` is public. `macos-15` is a standard GitHub-hosted runner; no larger runner, self-hosted runner, Noah's Mac, cache, external service, credential or permission addition is used.
-- Only the existing `Build SideStore IPA` workflow was registered. Its triggers are manual dispatch and path-filtered pushes to `main`; no existing native schedule was found. The separate website availability observer remains separate.
-- Standard runner time in public repositories is free. GitHub's billing documentation also describes a pooled allowance for Actions artifact and Packages storage. Current unexpired artifacts in this repository totaled **454,298,577 bytes (about 433.3 MiB)**. This is neither total account usage nor accrued storage usage.
-- Both `GET /users/noahmumbert-hub/settings/billing/usage` and `GET /users/noahmumbert-hub/settings/billing/shared-storage` returned **403 Resource not accessible by integration**. The user API did not expose the account plan. No billing or permission settings were changed.
-- **Activation blocker:** no reliable evidence of free shared storage headroom or an effective zero-spend stop for the required retained screenshots/test artifacts. A small cap and short retention do not alone prove zero cost. No artifact deletion was performed.
+The repository is public and `macos-15` is a standard GitHub-hosted runner. GitHub documents that standard public runners are free and that workflow logs and job summaries do not count toward artifact storage. [GitHub Actions billing](https://docs.github.com/en/billing/concepts/product-billing/github-actions), [standard runner labels](https://docs.github.com/en/actions/reference/runners/github-hosted-runners).
 
-Sources: [GitHub Actions billing](https://docs.github.com/en/billing/concepts/product-billing/github-actions), [standard runner labels](https://docs.github.com/en/actions/reference/runners/github-hosted-runners), [schedule semantics](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
+The job checks public visibility before runner allocation and again after checkout. It has only `contents: read` permissions. No new credentials, billing access, permissions, larger runner, Noah's Mac, artifact storage, cache storage or paid service is used. Earlier billing reads returned 403; those denied reads were not bypassed and are unnecessary for this logs-only design. Existing unrelated artifacts and billing settings were not changed.
 
-## Proposed limits
+## Limits and retained evidence
 
-| Item | Bound |
-| --- | --- |
-| Schedule, currently disabled | `37 14 * * *`: once daily at 14:37 UTC, 10:37 EDT / 09:37 EST |
-| Runner | One standard `macos-15`, one iPhone simulator, no matrix |
-| Job | 27-minute hard timeout; compile once; no test retries |
-| Concurrency | One global monitor group, no overlapping execution |
-| Fixtures | Existing 187 unit tests and 4 selected fixture UI tests |
-| Live native UI | 2 existing smoke tests, maximum 4 minutes |
-| Explicit API probes | EPCOT (5) and Universal Studios Florida (65); one GET each, no retry or redirect, 5-second connect / 15-second total curl timeout, 2 MiB body limit |
-| Retention | One evidence ZIP per run, maximum 20 MiB, one day |
-| Evidence | Source SHA, monitor SHA, toolchain/simulator, phase timestamps/exits, exported XCTest summaries, screenshots, log tails, separate API observations, inclusion/omission manifest |
+- Intended schedule: once daily at **14:37 UTC** (`37 14 * * *`), 10:37 EDT / 09:37 EST. The workflow YAML is the source of truth for activation; the cron stays commented until the initial manual run has been reviewed.
+- One standard macOS runner, one iPhone simulator, no matrix, one compilation, no automatic test retries. Global concurrency prevents overlapping monitor runs.
+- Hard job limit: **27 minutes**. Compile 12 minutes; fixtures 7; live UI 4; explicit API probes 2; result export/report 2. A hard timeout may prevent the final summary; step logs remain the available evidence.
+- Fixture phase: existing **187 unit tests and 4 fixture UI tests**. Separate live UI phase: **2 navigation smoke tests**.
+- Explicit API probes: EPCOT (5) and Universal Studios Florida (65), one GET each, no retries or redirects, 5-second connect / 15-second total timeout and 2 MiB response cap. The app's live UI also makes its ordinary requests while tests run; the two-request cap applies only to explicit probes.
+- Normal Actions logs retain compiler/test output, pass/fail details and fixture performance measurements. The job summary retains source/monitor SHAs, toolchain, simulator, phase timing/exits, exported XCTest summaries, measurements and separate live API observations. Text sections are bounded to 32 KiB. Retention follows the repository's normal workflow-log policy; no account setting is changed.
+- Screenshots are taken by XCTest and exported locally during the run, but **are not retained or available for later visual review**. No binary image data is embedded in logs or summaries. Full xcresult bundles are not retained.
 
-The app's normal live UI smoke can also make its usual requests while running; the two-request cap applies to explicit API probes. No collection trigger, refresh POST, homepage ping loop, prediction-score update, release build, SideStore publication or deployment is included. UI polling ends when the bounded test phase ends. Logs and job summaries remain visible under the repository's normal Actions retention; full xcresult databases are not uploaded. Cap omissions, export failures, timeouts and missing completion records are unverified evidence, not a pass. A hard job timeout can prevent artifact upload.
+## Interpretation
 
-## What the checks establish
+**Fixture regressions:** loading ownership across park changes, overlapping refresh suppression, retained-data/feed failures, opening eligibility, retired rides, ride contracts, source clocks and original/revised forecasts. Fixture UI checks hourly forecasts, saved forecast wording, HHN ride favorites/completion/relaunch, and saved/empty ride-feed presentation. Fixture results cannot establish live API health or representative prediction accuracy.
 
-1. **Deterministic regression:** unit coverage for loading ownership across park changes, overlapping refresh suppression, retained-data/feed failures, opening eligibility, retired rides, ride contracts, source clocks and original/revised forecasts. Fixture UI verifies hourly forecasts, saved forecast wording, HHN ride favorites/completion/relaunch, and saved/empty ride-feed presentation. These cases cannot establish live API health or representative model accuracy.
-2. **Live native UI smoke:** real app launch, Magic Kingdom Plan/Waits navigation and forecast-control placement, then a separate launch and park search/selection of Cedar Point. Existing assertions verify navigation responsiveness; a screenshot-only patch retains the selected-park and saved-forecast screens. Passing these tests does **not** prove rides loaded, forecasts were available, or every park switched correctly. Loading/data behavior is covered deterministically above; actual visible live state is retained for review.
-3. **Live API observation:** HTTP/content type/JSON/park identity/ride-list contract and reported feed state, fetched timestamp, provider status timestamps, ride and forecast counts. Five-minute fetch age is an observation threshold, not a model deadline; provider status time is kept separate. Original prediction windows are not revised or scored. An inactive park is reported explicitly. Empty data, transport errors and unhealthy/stale responses remain separate findings; no synthetic zero-down-ride count is emitted.
+**Live navigation smoke:** real app launch, Magic Kingdom Plan/Waits navigation and forecast-control placement, then a separate launch and Cedar Point search/selection. These assertions verify navigation responsiveness, not that live rides loaded or forecasts were available. A screenshot-only test patch changes attachments in the ephemeral source checkout; application code is unchanged.
 
-Fixtures and live UI have separate xcresult bundles, workflow steps and exit records; API findings are separate JSON. A fixture failure does not suppress the live observations if compilation succeeded. A compile failure makes later observations unverified.
+**Live API observations:** HTTP/content type/JSON/park identity/ride-list contract, feed state, fetch and provider timestamps, ride and forecast counts. The five-minute fetch-age threshold is an observation threshold, not a model deadline. Provider time stays separate; prediction windows are not revised or scored. Inactive parks are explicit; empty/stale/unhealthy data and transport failures remain separate findings, not synthetic zero-down-ride counts. A live API failure can correctly make the workflow red while fixture tests pass.
 
-## Source and activation procedure
+Each phase has its own step and result record. Fixture failures do not suppress the live observations if compilation succeeded. Missing records or export failures are unverified, never a pass. The existing website availability observer remains separate.
 
-The application checkout is pinned to released **1.15.6**, commit `04b1c98d588b471479631f6e9df2aab4e8a1d05d`. Application code is unchanged. The screenshot patch changes XCTest attachments only, applied to the ephemeral runner checkout. The existing release run [39141813803](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/39141813803) passed 187 unit and 13 UI tests; it is prior evidence, not a validation run of this new workflow.
+## Source and installation
 
-Default `main` is older (`85770e40a4c2c00cb9c798053d9b984b6c011275` when checked). The workflow checks out monitoring definitions separately from the immutable application source, so **only this package's commit** needs to be cherry-picked onto default `main`; do not merge unrelated application history merely to install monitoring. Its changed paths do not match the existing IPA build push filters.
+Application source is pinned to released **1.15.6**, `04b1c98d588b471479631f6e9df2aab4e8a1d05d`. Update this pin deliberately when a newer release should be monitored. Prior release run [39141813803](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/39141813803) passed 187 unit and 13 UI tests; it is not the monitor's validation run.
 
-Before activation, obtain current billing evidence establishing no-cost retention (including pooled usage/allowance and any effective stop), without adding billing access or enabling paid usage. Then install the monitoring-only commit on default `main`, preserve the public-repository condition while replacing the leading `false`, and run one manual verification with the cron still commented. Review all phase results and retained screenshots; only after a successful, safely free validation should the daily cron be uncommented. No activation or verification run was performed here. Recheck public visibility and storage assumptions at that point. GitHub cron runs only from the default branch, may be delayed, and public-repository schedules can be disabled after 60 days without activity; this is periodic observation, not continuous monitoring.
+The workflow checks out monitoring definitions separately from application source. Install only `.github/workflows/native-monitor.yml` and `monitoring/native/` on default `main`; no unrelated application history is merged. These paths do not trigger the existing IPA build workflow. Review one manual run before uncommenting the daily cron. Scheduled workflows run from the default branch, may be delayed, and can be disabled after 60 days without repository activity. This is periodic observation, not continuous monitoring. [GitHub schedule semantics](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
 
-Local validation passed: shell syntax, Python compilation, **9 regression tests** (HTTP/HTML/JSON/identity/clock handling, bounded requests and evidence size/log-tail preservation), screenshot patch applicability against pinned source, inactive/public/read-only configuration assertions, and **actionlint 1.7.7**. Xcode/simulator execution remains unverified for this workflow because this workspace is Linux and no artifact-producing cloud run was authorized without establishing no cost. No new run or screenshot artifact link exists yet.
+Local checks: shell syntax, **10 Python regression tests**, screenshot-patch applicability against pinned source, workflow lint using actionlint 1.7.7, and assertions that no artifact/cache upload action exists. Runtime verification is recorded in the actual Actions run, including any live-service findings.

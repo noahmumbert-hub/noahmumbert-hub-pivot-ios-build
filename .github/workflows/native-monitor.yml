@@ -1,4 +1,4 @@
-name: Native simulator observation (activation blocked)
+name: Native simulator observation (logs only)
 
 on:
   workflow_dispatch:
@@ -15,9 +15,8 @@ concurrency:
 
 jobs:
   observe:
-    # Deliberate hard stop for manual and scheduled runs. See monitoring/native/README.md.
-    # Remove only after no-cost artifact retention is established and documented.
-    if: ${{ false && github.event.repository.visibility == 'public' }}
+    # Standard public runners are free; skip before allocation if visibility changes.
+    if: ${{ github.event.repository.visibility == 'public' }}
     runs-on: macos-15
     timeout-minutes: 27
     env:
@@ -71,20 +70,10 @@ jobs:
         working-directory: app
         run: python3 ../monitor/monitoring/native/live_api.py
 
-      - name: Export and bound evidence
+      - name: Retain text results in normal logs and job summary
         if: always()
         timeout-minutes: 2
         working-directory: app
         run: |
           bash ../monitor/monitoring/native/simulator.sh export
-          python3 ../monitor/monitoring/native/package_evidence.py
-
-      - name: Retain screenshots and test evidence for one day
-        if: always()
-        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
-        with:
-          name: native-monitor-${{ github.run_id }}-${{ github.run_attempt }}
-          path: app/build/monitor-evidence.zip
-          if-no-files-found: error
-          retention-days: 1
-          compression-level: 0
+          python3 ../monitor/monitoring/native/report_results.py

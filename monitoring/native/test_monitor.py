@@ -4,10 +4,9 @@ from pathlib import Path
 import tempfile
 import unittest
 from unittest.mock import patch
-import zipfile
 
 import live_api
-import package_evidence
+import report_results
 
 
 class MonitorChecks(unittest.TestCase):
@@ -64,22 +63,30 @@ class MonitorChecks(unittest.TestCase):
         self.assertNotIn('--location', args)
         self.assertEqual(args[-1], live_api.BASE + '/api/live?park=5')
 
-    def test_evidence_cap_and_log_tail_preserve_small_screenshot(self):
+    def test_summary_keeps_text_and_omits_binary_screenshots(self):
         with tempfile.TemporaryDirectory() as folder:
-            root = Path(folder) / 'evidence'
-            root.mkdir()
-            (root / 'a.log').write_bytes(b'x' * 100000 + b'final-line')
-            (root / 'screen.png').write_bytes(b'example screenshot')
-            with (root / 'oversized.png').open('wb') as stream:
-                stream.truncate(package_evidence.LIMIT + 1)
-            output = Path(folder) / 'evidence.zip'
-            report = package_evidence.package(root, output)
-            self.assertLessEqual(output.stat().st_size, package_evidence.LIMIT)
-            self.assertIn('oversized.png', report['omitted'])
-            with zipfile.ZipFile(output) as archive:
-                self.assertEqual(len(archive.read('a.log')), 65536)
-                self.assertTrue(archive.read('a.log').endswith(b'final-line'))
-                self.assertEqual(archive.read('screen.png'), b'example screenshot')
+            root = Path(folder)
+            (root / 'source-sha.txt').write_text('released-sha')
+            (root / 'fixtures-summary.json').write_text('{"passedTests": 191}')
+            (root / 'fixtures-screenshots').mkdir()
+            (root / 'fixtures-screenshots' / 'screen.png').write_bytes(b'SECRET_BINARY_IMAGE')
+            result = report_results.render(root)
+            self.assertIn('released-sha', result)
+            self.assertIn('passedTests', result)
+            self.assertIn('191', result)
+            self.assertIn('Screenshots are transient', result)
+            self.assertNotIn('SECRET_BINARY_IMAGE', result)
+            self.assertIn('unverified / no completion record', result)
+
+    def test_summary_bounds_text_and_preserves_performance_measurement(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / 'fixtures-summary.json').write_text('x' * 100000)
+            (root / 'fixtures.log').write_text('PIVOT_PERF {"samples": 7}\n')
+            result = report_results.render(root)
+            self.assertIn('truncated', result)
+            self.assertIn('PIVOT_PERF', result)
+            self.assertLess(len(result), 50000)
 
 
 if __name__ == '__main__':
