@@ -4,17 +4,13 @@ Add this source in SideStore → Sources → +:
 
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 
-Current update: **1.15.4 / build 100.31.1**, iOS 17.0+.
+Current update: **1.15.5 / build 100.32.1**, iOS 17.0+.
 
-EPCOT opening-hours protection
+Fast & Furious – Supercharged has permanently closed and is removed from active Universal Studios Florida ride listings, temporary-closure forecasts, Radar, plans and active counts. Stale or incorrect provider entries cannot bring it back. Historical records and saved preferences remain intact.
 
-Scheduled and unverified preopening closures no longer produce breakdown forecasts or overnight closure timers in the iOS app. The verified October 18 openings for Figment, Living with the Land and Gran Fiesta remain separate from park-wide early entry. Missing attraction eligibility is shown as unverified; the scheduled opening time alone never marks a ride open.
+This update preserves PIVOT 1.15.4 opening-hours protection and prior improvements. Native presentation works with the existing server; the separate backend retirement candidate is not deployed by this release. Old saved offline packs remain historical snapshots.
 
-Fresh source updates cannot validate forecasts or timers carried over from before the attraction's operating session. Existing saved preferences, plans, app identity and the prior native reliability improvements are preserved.
-
-This release changes native presentation, including its inputs to Radar, planning, local alert processing and app-driven Live Activities. Separate server-side eligibility, evaluation and export changes are prepared for review; installing this IPA does not deploy them or rewrite historical forecasts.
-
-IPA SHA-256: `b13da69f24949fb21fb4d239658e87d4857373cec1c6590997be51365055c15b`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/39136348588).
+IPA SHA-256: `af2b95b60c821d177095a709761ff61c0c31836381fb721c68662c8ed070dba0`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/39140398941).
 The unsigned IPA preserves `com.noahmumbert.PIVOT` and its Live Activity extension.
 Install as an update using the same signing identity; keep the existing app installed to retain saved data.
 Native unit and simulator UI tests passed for this build. Physical SideStore installation remains untested.
