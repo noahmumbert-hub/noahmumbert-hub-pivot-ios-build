@@ -5,12 +5,12 @@ pivot_reported_build() {
     local json="$1" bundle="$2" index reported version
     [[ "$(plist_read "$json" info.outcome || true)" == success ]] || return 1
     for index in {0..127}; do
-        reported="$(plist_read "$json" "result.apps.$index.bundleIdentifier" || true)"
-        [[ -n "$reported" ]] || reported="$(plist_read "$json" "result.apps.$index.bundleID" || true)"
+        reported="$(plist_read "$json" "result.apps.$index.bundleIdentifier")" || reported=""
+        [[ -n "$reported" ]] || { reported="$(plist_read "$json" "result.apps.$index.bundleID")" || reported=""; }
         [[ -n "$reported" ]] || break
         [[ "$reported" == "$bundle" ]] || continue
-        version="$(plist_read "$json" "result.apps.$index.bundleVersionNumber" || true)"
-        [[ -n "$version" ]] || version="$(plist_read "$json" "result.apps.$index.bundleVersion" || true)"
+        version="$(plist_read "$json" "result.apps.$index.bundleVersionNumber")" || version=""
+        [[ -n "$version" ]] || { version="$(plist_read "$json" "result.apps.$index.bundleVersion")" || version=""; }
         [[ -n "$version" && "$version" != *[^0-9.]* ]] || return 1
         print -r -- "$version"
         return 0
