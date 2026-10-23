@@ -1,0 +1,16 @@
+name: Archive native fixture verification
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fixture-tests:
+    if: ${{ github.event.repository.visibility == 'public' }}
+    runs-on: macos-15
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Run only synthetic native verification fixtures
+        run: node --test tests/archive-native-verification.test.mjs
