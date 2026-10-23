@@ -97,6 +97,9 @@ final class DashboardStore: ObservableObject {
     @Published private(set) var isRefreshing = false
     @Published private(set) var errorMessage: String?
     @Published private(set) var alertsEnabled: Bool
+    @Published private(set) var isRequestingAlertPermission = false
+    @Published private(set) var alertPreferences: NativeAlertPreferences
+    @Published private(set) var pinnedRadarRideID: Int? = nil
     @Published private(set) var cachedParkHours: [Int: ParkHoursSnapshot] = [:]
     @Published private(set) var locationStatus: ParkLocationStatus = .idle
     @Published var toastMessage: String?
@@ -111,9 +114,18 @@ final class DashboardStore: ObservableObject {
     private var monitoringTask: Task<Void, Never>?
     private var monitoringGeneration: UInt = 0
     private var parkHoursTask: Task<Void, Never>?
+    private var requestedParkHours: Set<FloridaPark> = []
     private var locationTask: Task<Void, Never>?
+    private var locationGeneration: UInt = 0
+    private let locationRequest: (@MainActor () async -> ParkLocationRequest)?
     private var cachedSnapshots: [Int: LiveParkSnapshot] = [:]
+    private var cachedRefreshErrors: [Int: String] = [:]
+    private var liveActivityObservationParkID: Int?
     private var notificationBaselines: [Int: ParkRideBaseline] = [:]
+    private var smartAlertBaselines: [Int: NativeAlertObservation] = [:]
+    private var alertCooldown: NativeAlertCooldown
+    private var alertDeliveryGeneration: UInt = 0
+    private var alertPermissionGeneration: UInt = 0
 
     private static let selectedParkKey = "pivot.selectedPark"
     private static let alertsEnabledKey = "pivot.alertsEnabled"
@@ -128,12 +140,16 @@ final class DashboardStore: ObservableObject {
         apiClient: PivotAPIClient = .shared,
         notificationService: NotificationService? = nil,
         liveActivityService: LiveActivityService? = nil,
-        defaults: UserDefaults = .standard
+        defaults: UserDefaults = .standard,
+        locationRequest: (@MainActor () async -> ParkLocationRequest)? = nil
     ) {
         self.apiClient = apiClient
         self.notificationService = notificationService ?? NotificationService()
         self.liveActivityService = liveActivityService ?? LiveActivityService()
         self.defaults = defaults
+        self.locationRequest = locationRequest
+        alertPreferences = NativeAlertPreferences.load(from: defaults)
+        alertCooldown = NativeAlertCooldown(defaults: defaults)
 
         if defaults.object(forKey: Self.selectedParkKey) == nil {
             selectedPark = .magicKingdom
@@ -142,6 +158,7 @@ final class DashboardStore: ObservableObject {
             selectedPark = stored == Self.noParkValue ? nil : FloridaPark(rawValue: stored) ?? .magicKingdom
         }
         alertsEnabled = defaults.bool(forKey: Self.alertsEnabledKey)
+        pinnedRadarRideID = selectedPark.flatMap { defaults.object(forKey: Self.radarPinKey($0.rawValue)) as? Int }
     }
 
     deinit {
@@ -158,8 +175,46 @@ final class DashboardStore: ObservableObject {
         reviewedRides.filter(\.isRadarDown)
     }
 
-    var radarRide: LiveRide? {
-        PIVOTLiveActivityRideSelector.mostPopularClosedRide(in: reviewedRides)
+    /// One selection is shared by the in-app Radar and the local Live Activity.
+    var featuredRadarRide: LiveRide? {
+        PIVOTLiveActivityRideSelector.featuredClosedRide(in: reviewedRides, pinnedRideID: pinnedRadarRideID)
+    }
+
+    // Compatibility for existing RootView callers.
+    var radarRide: LiveRide? { featuredRadarRide }
+
+    private static func radarPinKey(_ parkID: Int) -> String { "pivot.radarPin.\(parkID)" }
+
+    func pinRadarRide(_ rideID: Int?) {
+        guard let selectedPark else { return }
+        if let rideID, !reviewedRides.contains(where: { $0.id == rideID }) { return }
+        pinnedRadarRideID = rideID
+        if let rideID {
+            defaults.set(rideID, forKey: Self.radarPinKey(selectedPark.rawValue))
+        } else {
+            defaults.removeObject(forKey: Self.radarPinKey(selectedPark.rawValue))
+        }
+        synchronizeLiveActivity()
+    }
+
+    func updateAlertPreferences(_ value: NativeAlertPreferences) {
+        let next = value.normalized
+        guard next != alertPreferences else { return }
+        alertPreferences = next
+        next.save(to: defaults)
+        // Preferences never request notification permission or enable delivery.
+        alertDeliveryGeneration &+= 1
+    }
+
+    var favoriteRideIDsForSelectedPark: Set<Int> {
+        guard let selectedPark else { return [] }
+        return Set(defaults.array(forKey: "pivot.favoriteRides.\(selectedPark.rawValue)") as? [Int] ?? [])
+    }
+
+    private func resetAlertBaselines() {
+        notificationBaselines.removeAll()
+        smartAlertBaselines.removeAll()
+        alertDeliveryGeneration &+= 1
     }
 
     var bestOpenRide: LiveRide? {
@@ -172,21 +227,27 @@ final class DashboardStore: ObservableObject {
             .first
     }
 
-    /// Returns the most recent schedule already loaded for a park. The picker
+    /// Returns the current park-local day's schedule already loaded for a park. The picker
     /// uses this for an at-a-glance schedule without starting background
     /// monitoring for every park just because the menu is open.
-    func parkHours(for park: FloridaPark) -> ParkHoursSnapshot? {
-        if selectedPark == park {
-            return snapshot?.parkHours ?? cachedParkHours[park.rawValue]
-        }
-        return cachedParkHours[park.rawValue] ?? cachedSnapshots[park.rawValue]?.parkHours
+    func parkHours(for park: FloridaPark, at now: Date = Date()) -> ParkHoursSnapshot? {
+        ParkHoursSnapshot.current(for: park, candidates: [
+            selectedPark == park ? snapshot?.parkHours : nil,
+            cachedParkHours[park.rawValue],
+            cachedSnapshots[park.rawValue]?.parkHours,
+        ], at: now)
     }
 
     /// Populate park-picker schedule previews without starting ride/weather
     /// monitoring for every park. Requests run in small batches so the full
     /// catalog loads promptly without creating an unbounded request burst.
     func loadParkHours(for parks: [FloridaPark] = FloridaPark.allCases) {
-        let parksToLoad = parks.filter { parkHours(for: $0) == nil }
+        requestedParkHours.formUnion(parks)
+        let now = Date()
+        let parksToLoad = parks.filter {
+            let hours = parkHours(for: $0, at: now)
+            return hours == nil || hours?.stale == true
+        }
         guard !parksToLoad.isEmpty else { return }
 
         parkHoursTask?.cancel()
@@ -206,7 +267,10 @@ final class DashboardStore: ObservableObject {
                             group.cancelAll()
                             return
                         }
-                        if let hours {
+                        // The local day may have changed while the request was
+                        // in flight, or the provider may have retained yesterday.
+                        if let hours, let park = FloridaPark(rawValue: parkId),
+                           hours.isCurrent(for: park) {
                             self?.cachedParkHours[parkId] = hours
                         }
                     }
@@ -216,16 +280,17 @@ final class DashboardStore: ObservableObject {
     }
 
     var sourceStatus: String {
-        if selectedPark == nil { return "Paused · choose a park" }
-        if isLoading && snapshot == nil { return "Refreshing" }
-        if snapshot?.feedHealthy == true {
-            if snapshot?.themeParksWiki?.cacheStale == true {
-                return "Live snapshot · retrying · checked \(ParkTimeFormatter.age(snapshot?.fetchedAt))"
-            }
-            return "Live · auto 5s · checked \(ParkTimeFormatter.age(snapshot?.fetchedAt))"
-        }
-        if errorMessage != nil { return "Last update retained" }
-        return "Source too old to call live"
+        feedHealth().status
+    }
+
+    func feedHealth(at now: Date = Date()) -> DashboardFeedHealth {
+        DashboardFeedHealth.presentation(
+            parkSelected: selectedPark != nil,
+            snapshot: snapshot,
+            isLoading: isLoading,
+            refreshFailed: errorMessage != nil,
+            at: now
+        )
     }
 
     func bootstrap() async {
@@ -244,14 +309,22 @@ final class DashboardStore: ObservableObject {
         }
     }
 
+    func canAssertNoClosures(at now: Date = Date()) -> Bool {
+        DashboardClosureHealth.canAssertNoClosures(snapshot: snapshot, feedHealth: feedHealth(at: now))
+    }
+
     func requestParkFromLocation() {
         guard locationStatus != .searching else { return }
         locationTask?.cancel()
+        locationGeneration &+= 1
+        let requestGeneration = locationGeneration
         locationTask = Task { [weak self] in
             guard let self else { return }
             self.locationStatus = .searching
-            let result = await self.locationService.requestLocation()
-            guard !Task.isCancelled else { return }
+            let result: ParkLocationRequest
+            if let request = self.locationRequest { result = await request() }
+            else { result = await self.locationService.requestLocation() }
+            guard !Task.isCancelled, requestGeneration == self.locationGeneration else { return }
 
             switch result {
             case .location(let latitude, let longitude):
@@ -259,8 +332,8 @@ final class DashboardStore: ObservableObject {
                     self.locationStatus = .outsideSupportedPark
                     return
                 }
-                self.locationStatus = .found(match)
                 self.selectPark(match.park)
+                self.locationStatus = .found(match)
             case .denied:
                 self.locationStatus = .denied
             case .unavailable:
@@ -274,7 +347,12 @@ final class DashboardStore: ObservableObject {
     func setSceneActive(_ isActive: Bool) {
         guard sceneIsActive != isActive else { return }
         sceneIsActive = isActive
+        // A foreground return is a new observation session, never a replay.
+        resetAlertBaselines()
         if isActive {
+            // Refresh previously requested picker previews after an overnight
+            // suspension without starting ride monitoring for other parks.
+            loadParkHours(for: Array(requestedParkHours))
             restartMonitoring()
         } else {
             monitoringGeneration &+= 1
@@ -284,6 +362,10 @@ final class DashboardStore: ObservableObject {
     }
 
     func selectPark(_ park: FloridaPark?) {
+        // Even reselecting the same park or No Park cancels an older GPS intent.
+        locationGeneration &+= 1
+        locationTask?.cancel()
+        locationStatus = .idle
         if selectedPark == park {
             defaults.set(park?.rawValue ?? Self.noParkValue, forKey: Self.selectedParkKey)
             return
@@ -291,12 +373,17 @@ final class DashboardStore: ObservableObject {
         monitoringTask?.cancel()
         monitoringTask = nil
         selectedPark = park
+        liveActivityObservationParkID = nil
+        alertPermissionGeneration &+= 1
+        pinnedRadarRideID = park.flatMap { defaults.object(forKey: Self.radarPinKey($0.rawValue)) as? Int }
+        resetAlertBaselines()
         defaults.set(park?.rawValue ?? Self.noParkValue, forKey: Self.selectedParkKey)
         errorMessage = nil
         toastMessage = nil
 
         if let park {
             snapshot = cachedSnapshots[park.rawValue]
+            errorMessage = cachedRefreshErrors[park.rawValue]
             notificationBaselines.removeValue(forKey: park.rawValue)
             isLoading = snapshot == nil
         } else {
@@ -315,14 +402,22 @@ final class DashboardStore: ObservableObject {
     }
 
     func enableAlerts() async {
-        guard selectedPark != nil else { return }
+        guard let requestedPark = selectedPark, !isRequestingAlertPermission else { return }
+        isRequestingAlertPermission = true
+        alertPermissionGeneration &+= 1
+        let permissionGeneration = alertPermissionGeneration
+        defer { isRequestingAlertPermission = false }
         let granted = await notificationService.requestAuthorization()
+        guard selectedPark == requestedPark, permissionGeneration == alertPermissionGeneration else { return }
+        resetAlertBaselines()
         alertsEnabled = granted
         defaults.set(granted, forKey: Self.alertsEnabledKey)
-        toastMessage = granted ? "Ride alerts are on for \(selectedPark?.name ?? "the selected park")." : "Notifications were not enabled."
+        toastMessage = granted ? "Foreground ride alerts are on for \(requestedPark.name)." : "Notifications were not enabled."
     }
 
     func disableAlerts() {
+        alertPermissionGeneration &+= 1
+        resetAlertBaselines()
         alertsEnabled = false
         defaults.set(false, forKey: Self.alertsEnabledKey)
         toastMessage = "Ride alerts are off."
@@ -404,6 +499,7 @@ final class DashboardStore: ObservableObject {
 
     private func refresh(expectedPark: FloridaPark) async {
         guard selectedPark == expectedPark, !isRefreshing else { return }
+        let requestGeneration = monitoringGeneration
         isRefreshing = true
         if snapshot == nil { isLoading = true }
         defer {
@@ -413,48 +509,102 @@ final class DashboardStore: ObservableObject {
 
         do {
             let nextSnapshot = try await apiClient.snapshot(for: expectedPark)
-            guard selectedPark == expectedPark else { return }
+            guard !Task.isCancelled, selectedPark == expectedPark, requestGeneration == monitoringGeneration else { return }
 
+            let now = Date()
+            let observation = NativeAlertObservation(snapshot: nextSnapshot)
+            // Cache grace reports may reuse an older/duplicate fetchedAt while
+            // still saying feedHealthy. Invalidate before the ordering guard.
+            if observation.providerCacheStale {
+                resetAlertBaselines()
+                liveActivityObservationParkID = nil
+            }
+            // A late older response must not move the UI/Activity back in time.
+            if let displayed = snapshot, displayed.parkId == expectedPark.rawValue,
+               nextSnapshot.fetchedAt < displayed.fetchedAt { return }
+            let previousObservation = smartAlertBaselines[expectedPark.rawValue]
             let transition = RideTransitionEngine.evaluate(
                 selectedParkId: expectedPark.rawValue,
                 previous: notificationBaselines[expectedPark.rawValue],
                 current: nextSnapshot
             )
-            notificationBaselines[expectedPark.rawValue] = transition.nextBaseline
+            let candidates = NativeSmartAlertEngine.candidates(
+                selectedParkId: expectedPark.rawValue,
+                previous: previousObservation, current: observation,
+                transitions: transition.alerts, preferences: alertPreferences,
+                favorites: favoriteRideIDsForSelectedPark, now: now
+            )
+            if let nextBaseline = NativeSmartAlertEngine.nextBaseline(
+                previous: previousObservation, current: observation, now: now
+            ) {
+                notificationBaselines[expectedPark.rawValue] = transition.nextBaseline
+                smartAlertBaselines[expectedPark.rawValue] = nextBaseline
+            } else {
+                // The first healthy response after an outage is only a baseline.
+                resetAlertBaselines()
+            }
             cachedSnapshots[expectedPark.rawValue] = nextSnapshot
+            cachedRefreshErrors.removeValue(forKey: expectedPark.rawValue)
             if let hours = nextSnapshot.parkHours {
                 cachedParkHours[expectedPark.rawValue] = hours
             }
             snapshot = nextSnapshot
             errorMessage = nil
-            if nextSnapshot.feedHealthy {
+            if nextSnapshot.feedHealthy, !observation.providerCacheStale,
+               NativeSmartAlertEngine.isFresh(nextSnapshot.fetchedAt, at: now) {
+                liveActivityObservationParkID = expectedPark.rawValue
                 synchronizeLiveActivity()
+            } else {
+                liveActivityObservationParkID = nil
             }
 
-            if alertsEnabled, !transition.alerts.isEmpty {
-                await notificationService.deliver(
-                    alerts: transition.alerts,
+            if sceneIsActive, alertsEnabled, !candidates.isEmpty {
+                let accepted = alertCooldown.reserve(candidates, at: now)
+                alertCooldown.save(to: defaults)
+                let deliveryGeneration = alertDeliveryGeneration
+                let delivered = await notificationService.deliver(
+                    alerts: accepted,
                     park: expectedPark,
-                    snapshotFetchedAt: nextSnapshot.fetchedAt
+                    shouldDeliver: { [weak self] alert in
+                        guard let self else { return false }
+                        return self.sceneIsActive && self.alertsEnabled
+                            && self.selectedPark == expectedPark
+                            && self.alertDeliveryGeneration == deliveryGeneration
+                            && (!self.alertPreferences.favoritesOnly || self.favoriteRideIDsForSelectedPark.contains(alert.rideId))
+                    }
                 )
-                toastMessage = transition.alerts.count == 1
-                    ? transition.alerts[0].rideName + (transition.alerts[0].kind == .closed ? " closed" : " reopened")
-                    : "\(transition.alerts.count) ride statuses changed at \(expectedPark.name)."
+                guard alertDeliveryGeneration == deliveryGeneration else { return }
+                if delivered.count == 1 {
+                    toastMessage = delivered[0].summary
+                } else if !delivered.isEmpty {
+                    toastMessage = "\(delivered.count) ride alerts at \(expectedPark.name)."
+                }
             }
         } catch is CancellationError {
             return
         } catch {
-            guard selectedPark == expectedPark else { return }
+            guard selectedPark == expectedPark, requestGeneration == monitoringGeneration else { return }
+            resetAlertBaselines()
+            liveActivityObservationParkID = nil
             errorMessage = error.localizedDescription
+            cachedRefreshErrors[expectedPark.rawValue] = error.localizedDescription
         }
     }
 
     func synchronizeLiveActivity() {
+        guard let selectedPark else {
+            liveActivityService.synchronize(nil)
+            return
+        }
+        // Accent/pin UI changes cannot start a new Activity from a park cache.
+        // Keep an existing Activity's timer, allowing its staleDate to expire.
+        guard liveActivityObservationParkID == selectedPark.rawValue,
+              NativeSmartAlertEngine.isFresh(snapshot?.fetchedAt, at: Date()) else { return }
         liveActivityService.synchronize(
             PIVOTLiveActivityTargetBuilder.makeTarget(
                 selectedPark: selectedPark,
                 snapshot: snapshot,
-                featuredRide: radarRide,
+                featuredRide: featuredRadarRide,
                 accentName: UserDefaults.standard.string(forKey: PivotAccent.storageKey) ?? "mint"
             )
         )
