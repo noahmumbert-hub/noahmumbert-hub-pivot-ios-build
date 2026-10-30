@@ -389,6 +389,30 @@ final class PIVOTUITests: XCTestCase {
         screenshot("Map food category", app: app)
         app.buttons["Browse map places"].tap()
         XCTAssertTrue(app.staticTexts["Map coverage & sources"].exists || app.buttons["Done"].exists)
+        app.buttons["Done"].tap()
+        app.buttons["map-category-RIDE"].tap()
+        search.tap()
+        search.typeText("Space Mountain\n")
+        let pin = app.buttons["map-pin-b2260923-9315-40fd-9c6b-44dd811dbe64"]
+        XCTAssertTrue(pin.waitForExistence(timeout: 5))
+        XCTAssertGreaterThanOrEqual(pin.frame.width, 44)
+        XCTAssertGreaterThanOrEqual(pin.frame.height, 44)
+        pin.tap()
+        let status = app.staticTexts["Selected ride wait"]
+        XCTAssertTrue(status.waitForExistence(timeout: 3))
+        XCTAssertTrue(status.isHittable)
+        XCTAssertFalse(status.label.isEmpty)
+        XCTAssertTrue(app.buttons["Full screen map"].isHittable)
+        XCTAssertTrue(app.buttons["Browse map places"].isHittable)
+        XCTAssertTrue(app.tabBars.buttons["Map"].isSelected)
+        screenshot("Production map selected ride with tab bar", app: app)
+        app.buttons["Full screen map"].tap()
+        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
+        XCTAssertTrue(status.isHittable)
+        screenshot("Production full screen map selected ride", app: app)
+        app.buttons["Close full screen map"].tap()
+        XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 5))
+        XCTAssertTrue(status.isHittable)
     }
 
     func testNativeTabBarStaysFixedWhileContentScrolls() {

@@ -196,11 +196,13 @@ struct ParkMapView: View {
                                     selectedID = point.id
                                 } label: {
                                     Image(systemName: point.category.symbol)
-                                        .font(.headline)
+                                        .font(.subheadline.weight(.semibold))
                                         .foregroundStyle(Color.pivotBackground)
-                                        .frame(width: 44, height: 44)
+                                        .frame(width: 30, height: 30)
                                         .background(point.category.color, in: Circle())
                                         .overlay { Circle().stroke(selectedID == point.id ? Color.white : .clear, lineWidth: 3) }
+                                        .frame(width: 44, height: 44)
+                                        .contentShape(Circle())
                                 }
                                 .buttonStyle(.plain)
                                 .accessibilityLabel(point.name)
@@ -240,7 +242,7 @@ struct ParkMapView: View {
                 }
                 Button { showPlaces = true } label: {
                     HStack {
-                        Label("Browse \(points.count) places", systemImage: "list.bullet")
+                        Label("Browse \(points.count) \(points.count == 1 ? "place" : "places")", systemImage: "list.bullet")
                         Spacer()
                         Image(systemName: "chevron.up")
                     }.font(.subheadline.weight(.semibold)).frame(minHeight: 44)
