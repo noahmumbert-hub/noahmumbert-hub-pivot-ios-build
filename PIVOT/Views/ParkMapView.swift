@@ -406,7 +406,9 @@ struct ParkMapView: View {
                     NativeParkMapCanvas(points: points, allPoints: allPoints, park: park, selectedID: $selectedID,
                         session: session, command: command,
                         margins: UIEdgeInsets(top: geometry.safeAreaInsets.top + 72, left: 12,
-                                              bottom: geometry.safeAreaInsets.bottom + bottomHeight + 16, right: 12),
+                                              // The selected card has a190pt content limit plus its44pt Browse row.
+                                              // Reserve that complete resting height immediately, before preferences update.
+                                              bottom: geometry.safeAreaInsets.bottom + max(bottomHeight, selected == nil ? 60 : 250) + 16, right: 12),
                         viewportSize: CGSize(width: geometry.size.width,
                             height: geometry.size.height + (isFullScreen ? geometry.safeAreaInsets.top + geometry.safeAreaInsets.bottom : 0)),
                         accent: accent,
@@ -438,6 +440,17 @@ struct ParkMapView: View {
                     }.padding(.horizontal, 10).padding(.bottom, 8)
 #if DEBUG
                     if ProcessInfo.processInfo.arguments.contains("--park-map-ui-test") || ProcessInfo.processInfo.arguments.contains("--apple-ui-test") {
+                        // XCTest's whole-window pinch begins over the floating controls.
+                        // This transparent, noninteractive target only supplies a central
+                        // rectangle; synthesized touches still reach the real MKMapView.
+                        Rectangle().fill(Color.black.opacity(0.001))
+                            .frame(width: max(120, geometry.size.width - 120),
+                                   height: min(300, max(120, geometry.size.height - bottomHeight - 170)))
+                            .position(x: geometry.size.width / 2 - 20, y: geometry.size.height / 2)
+                            .accessibilityElement(children: .ignore)
+                            .accessibilityLabel("Map gesture area")
+                            .accessibilityIdentifier("Map gesture area")
+                            .allowsHitTesting(false)
                         Text(session.telemetry).font(.system(size: 1)).opacity(0.02)
                             .accessibilityIdentifier("Map camera state")
                             .frame(width: 1, height: 1).allowsHitTesting(false)

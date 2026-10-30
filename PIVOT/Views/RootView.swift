@@ -37,6 +37,7 @@ struct RootView: View {
                 .tag(DashboardSection.today)
 
             showsTab
+                .environment(\.pivotScreenIsActive, selectedDockSection == .shows)
                 .tabItem { Label("Shows", systemImage: "sparkles") }
                 .tag(DashboardSection.shows)
 
@@ -319,6 +320,7 @@ struct RootView: View {
                 }
             }
         }
+        .environment(\.pivotScreenIsActive, selectedDockSection == section)
     }
 
     private func radarCard(onShowDown: @escaping () -> Void) -> some View {
@@ -1880,14 +1882,48 @@ private extension View {
     }
 }
 
+private struct PivotScreenIsActiveKey: EnvironmentKey {
+    static let defaultValue = true
+}
+
+extension EnvironmentValues {
+    var pivotScreenIsActive: Bool {
+        get { self[PivotScreenIsActiveKey.self] }
+        set { self[PivotScreenIsActiveKey.self] = newValue }
+    }
+}
+
+/// Hidden tabs keep their scroll and view state without scheduling freshness
+/// layout every second. Returning to the tab immediately evaluates the new time.
+struct ActiveScreenTimeline<Content: View>: View {
+    @Environment(\.pivotScreenIsActive) private var isActive
+    private let interval: TimeInterval
+    private let content: (Date) -> Content
+
+    init(every interval: TimeInterval = 1, @ViewBuilder content: @escaping (Date) -> Content) {
+        self.interval = interval
+        self.content = content
+    }
+
+    var body: some View {
+        if isActive {
+            TimelineView(.periodic(from: .now, by: interval)) { context in
+                content(context.date)
+            }
+        } else {
+            content(Date())
+        }
+    }
+}
+
 /// A single freshness warning for every dashboard tab and the full-screen ride
 /// detail. Time alone can expire a retained snapshot, even without a new response.
 struct RetainedSnapshotNotice: View {
     @EnvironmentObject private var store: DashboardStore
 
     var body: some View {
-        TimelineView(.periodic(from: .now, by: 1)) { context in
-            let health = store.feedHealth(at: context.date)
+        ActiveScreenTimeline { date in
+            let health = store.feedHealth(at: date)
             if let guidance = health.retainedGuidance {
                 VStack(alignment: .leading, spacing: 5) {
                     Label(health.status, systemImage: "exclamationmark.triangle")

@@ -26,8 +26,8 @@ struct RideListView: View {
                     HStack(alignment: .firstTextBaseline) {
                         Text("Current rides").font(.headline)
                         Spacer(minLength: 8)
-                        TimelineView(.periodic(from: .now, by: 1)) { context in
-                            let health = store.feedHealth(at: context.date)
+                        ActiveScreenTimeline { date in
+                            let health = store.feedHealth(at: date)
                             Label(health.badgeLabel, systemImage: "circle.fill")
                                 .font(.caption.weight(.medium))
                                 .foregroundStyle(health.isLive ? Color.pivotMint : Color.orange)
@@ -138,8 +138,8 @@ struct RideListView: View {
     }
 
     private var freshness: some View {
-        TimelineView(.periodic(from: .now, by: 1)) { context in
-            let health = store.feedHealth(at: context.date)
+        ActiveScreenTimeline { date in
+            let health = store.feedHealth(at: date)
             Text(health.status)
                 .font(.caption)
                 .foregroundStyle(Color.pivotMuted)
@@ -247,11 +247,11 @@ struct RideDetailScreenView: View {
                         if !ride.land.isEmpty { Text(ride.land).font(.subheadline).foregroundStyle(Color.pivotMuted) }
                     }
                     if ride.details?.photo == nil { Text("A verified ride photo isn’t available yet.").font(.subheadline).foregroundStyle(Color.pivotMuted) }
-                    TimelineView(.periodic(from: .now, by: 15)) { context in
+                    ActiveScreenTimeline(every: 15) { date in
                         VStack(alignment: .leading, spacing: 10) {
                             if let mapPoint {
                                 let status = ParkMapRidePresentation.resolve(point: mapPoint, parkID: store.selectedPark?.id,
-                                    snapshot: store.snapshot, refreshFailed: store.errorMessage != nil, at: context.date)
+                                    snapshot: store.snapshot, refreshFailed: store.errorMessage != nil, at: date)
                                 Text(status.waitMinutes == nil ? "Ride status" : "Current wait").font(.caption).foregroundStyle(.secondary)
                                 Text(status.title).font(.title2.weight(.semibold))
                                 Text(status.detail).font(.caption).foregroundStyle(Color.pivotMuted)
@@ -267,7 +267,7 @@ struct RideDetailScreenView: View {
                             }
                             if ride.status == .down {
                                 let guidance = ReopeningGuidance.presentation(ride: ride, snapshot: store.snapshot,
-                                    feedHealth: store.feedHealth(at: context.date), at: context.date, timeZone: timeZone)
+                                    feedHealth: store.feedHealth(at: date), at: date, timeZone: timeZone)
                                 Text(guidance.headline).font(.headline)
                                 if let range = guidance.range { Text(range).font(.headline) }
                                 if let best = guidance.bestGuess { Text("Best guess \(best)") }
@@ -309,7 +309,7 @@ private struct RideRowView: View {
     let onSelect: () -> Void
 
     var body: some View {
-        TimelineView(.periodic(from: .now, by: 15)) { context in
+        ActiveScreenTimeline(every: 15) { date in
             VStack(alignment: .leading, spacing: 0) {
                 Button {
                     onSelect()
@@ -349,7 +349,7 @@ private struct RideRowView: View {
 
                 if ride.status == .down {
                     let guidance = ReopeningGuidance.presentation(ride: ride, snapshot: store.snapshot,
-                        feedHealth: store.feedHealth(at: context.date), at: context.date, timeZone: timeZone)
+                        feedHealth: store.feedHealth(at: date), at: date, timeZone: timeZone)
                     HStack(alignment: .top, spacing: 8) {
                         Image(systemName: ride.hasWeatherHold ? "cloud.bolt" : "arrow.uturn.forward")
                             .foregroundStyle(statusColor)

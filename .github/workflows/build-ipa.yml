@@ -16,7 +16,7 @@ on:
         options: ['iPhone SE (3rd generation)', 'iPhone 16 Pro', 'iPhone 16 Pro Max']
         required: true
   push:
-    branches: [main, diagnostics/apple-native-redesign]
+    branches: [main, diagnostics/apple-native-redesign, feature/apple-native-redesign]
     paths:
       - 'PIVOT/**'
       - 'PIVOTUITests/**'

@@ -57,11 +57,15 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertEqual(initial[0], 28.419, accuracy: 0.006)
         XCTAssertEqual(initial[1], -81.581, accuracy: 0.006)
         XCTAssertLessThan(initial[2], 10_000, "Whole-park fit must frame the park, not the surrounding region")
-        // Real two-finger gesture over the dense native annotation area.
-        map.pinch(withScale: 2, velocity: 1)
+        // Real two-finger gestures begin inside native map pixels, clear of the
+        // search/Browse overlays that occupy the whole Map element's outer edges.
+        let gestureArea = app.descendants(matching: .any)["Map gesture area"]
+        XCTAssertTrue(gestureArea.waitForExistence(timeout: 5))
+        XCTAssertTrue(map.frame.contains(gestureArea.frame))
+        gestureArea.pinch(withScale: 2, velocity: 1)
         waitForCamera(app) { $0[2] < initial[2] * 0.85 }
         let pinched = camera(app)
-        map.pinch(withScale: 0.5, velocity: -1)
+        gestureArea.pinch(withScale: 0.5, velocity: -1)
         waitForCamera(app) { $0[2] > pinched[2] * 1.15 }
         let beforeDoubleTap = camera(app)
         map.coordinate(withNormalizedOffset: CGVector(dx: 0.2, dy: 0.55)).doubleTap()
