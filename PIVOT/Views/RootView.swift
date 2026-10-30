@@ -231,7 +231,9 @@ struct RootView: View {
                             if store.selectedPark != nil {
                                 rideList(radarOnly: false)
                             } else {
-                                tabIntro(eyebrow: "", title: "Wait times", detail: "Choose your park to see current rides and waits.")
+                                Text("Choose your park to see current rides and waits.")
+                                    .font(.subheadline).foregroundStyle(.secondary)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
                                 chooseParkCard(
                                     title: "Where are you heading?",
                                     detail: "Search parks or use your location."
