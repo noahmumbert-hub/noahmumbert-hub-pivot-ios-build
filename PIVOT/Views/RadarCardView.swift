@@ -42,7 +42,7 @@ struct RadarCardView: View {
     private var loading: some View {
         HStack(spacing: 14) {
             ProgressView()
-                .tint(.white)
+                .tint(.primary)
             VStack(alignment: .leading, spacing: 4) {
                 Text("Checking the park now")
                     .font(.headline)
@@ -80,7 +80,7 @@ struct RadarCardView: View {
                 VStack(alignment: .leading, spacing: 7) {
                     Text(ride.trend.isEmpty ? "Featured closed ride" : "Most popular closed ride")
                         .font(.subheadline)
-                        .foregroundStyle(.white.opacity(0.76))
+                        .foregroundStyle(.secondary)
                     Text(ride.name)
                         .font(.title.weight(.semibold))
                         .fixedSize(horizontal: false, vertical: true)
@@ -88,7 +88,7 @@ struct RadarCardView: View {
                     if let downTime {
                         Label(downTime.text, systemImage: "clock")
                             .font(.headline)
-                            .foregroundStyle(.white)
+                            .foregroundStyle(.primary)
                             .fixedSize(horizontal: false, vertical: true)
                             .accessibilityLabel(downTime.accessibilityLabel)
                     }
@@ -100,7 +100,7 @@ struct RadarCardView: View {
                     if let best = guidance.bestGuess {
                         Text("Best guess \(best)").font(.subheadline)
                     }
-                    Text(guidance.detail).font(.subheadline).foregroundStyle(.white.opacity(0.78))
+                    Text(guidance.detail).font(.subheadline).foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                 }
 
@@ -146,7 +146,7 @@ struct RadarCardView: View {
                             Text("Aggregate reliability prior: \(prior.sourceRideName ?? "matched ride") · \(prior.meanOutageMinutes.map(String.init) ?? "unknown") min published mean across \(prior.aggregateOutageCount) aggregate outages and \(prior.operatingDays) operating days\(availabilityCopy(prior.availabilityPercent)). PIVOT applies a \(decimal(prior.timeScale, places: 3))× shape adjustment at \(decimal(prior.totalWeight, places: 3)) total weight for \(prior.exposure.lowercased()) exposure. It is aggregate-only, not event-level, and contributes \(prior.evidenceCount) closure events and \(prior.evidenceAccounting.distinctDayCountContribution) park days to PIVOT’s evidence counts.")
                             if let documentationURL = URL(string: prior.provenance.documentationUrl) {
                                 Link("Rope Drop News · CC BY 4.0 ↗", destination: documentationURL)
-                                    .foregroundStyle(.white)
+                                    .foregroundStyle(.primary)
                             }
                         }
 
@@ -185,10 +185,10 @@ struct RadarCardView: View {
                         if let reason = ride.estimateReason { Text(reason) }
                     }
                     .font(.caption)
-                    .foregroundStyle(.white.opacity(0.78))
+                    .foregroundStyle(.secondary)
                     .padding(.top, 8)
                 }
-                .tint(.white)
+                .tint(.primary)
                 .font(.subheadline.weight(.semibold))
             }
 

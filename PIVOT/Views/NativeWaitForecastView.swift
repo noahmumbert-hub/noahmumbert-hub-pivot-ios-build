@@ -99,7 +99,7 @@ struct NativeParkCrowdBrowser: View {
                     ForEach(FloridaPark.allCases.filter { search.isEmpty || $0.name.localizedCaseInsensitiveContains(search) }.sorted { $0.name < $1.name }) { item in
                         Button { park = item } label: {
                             HStack {
-                                Text(item.name).font(.subheadline).foregroundStyle(.white)
+                                Text(item.name).font(.subheadline).foregroundStyle(.primary)
                                 Spacer()
                                 let estimate = store.waitLearning.dailyCrowd(park: item, date: WaitLearningHistory.matchingDay(date, from: park, to: item), now: Date())
                                 Text(estimate.map { "\($0.label) · \($0.score)/10" } ?? "Learning")
@@ -117,7 +117,7 @@ struct NativeParkCrowdBrowser: View {
                 date = WaitLearningHistory.matchingDay(date, from: oldPark, to: newPark)
             }
             .task(id: park) { await store.refreshCrowd(for: park) }
-        }.preferredColorScheme(.dark)
+        }
     }
 }
 
@@ -133,7 +133,7 @@ struct NativePlanWaitForecasts: View {
             HStack(spacing: 12) {
                 Image(systemName: "chart.xyaxis.line").foregroundStyle(Color.pivotMint)
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("Predicted waits").font(.headline).foregroundStyle(.white)
+                    Text("Predicted waits").font(.headline).foregroundStyle(.primary)
                     Text(rides.isEmpty ? "Rides appear after a park update" : "Hourly estimates & lowest-wait times")
                         .font(.caption).foregroundStyle(Color.pivotMuted)
                 }
@@ -179,7 +179,7 @@ private struct NativePlanRideForecastBrowser: View {
             .navigationTitle("Predicted waits")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .topBarTrailing) { Button("Done") { dismiss() } } }
-        }.preferredColorScheme(.dark)
+        }
     }
 }
 
@@ -280,7 +280,7 @@ struct NativeWaitForecastUITestScreen: View {
                 WaitForecastTimeline(points: [], timeZone: .current, canRecommend: false, learningText: "Learning this ride’s pattern")
                     .pivotCard()
             }.padding(20)
-        }.background(Color.pivotBackground).preferredColorScheme(.dark)
+        }.background(Color.pivotBackground)
     }
 }
 #endif

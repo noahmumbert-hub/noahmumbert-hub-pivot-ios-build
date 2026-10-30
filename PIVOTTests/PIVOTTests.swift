@@ -1,7 +1,30 @@
 import XCTest
+import SwiftUI
+import UIKit
 @testable import PIVOT
 
 final class PIVOTTests: XCTestCase {
+    func testAdaptiveAccentTextMeetsContrastInBothSystemAppearances() {
+        func luminance(_ color: UIColor, traits: UITraitCollection) -> Double {
+            var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
+            XCTAssertTrue(color.resolvedColor(with: traits).getRed(&red, green: &green, blue: &blue, alpha: &alpha))
+            func linear(_ value: CGFloat) -> Double {
+                let x = Double(value)
+                return x <= 0.04045 ? x / 12.92 : pow((x + 0.055) / 1.055, 2.4)
+            }
+            return 0.2126 * linear(red) + 0.7152 * linear(green) + 0.0722 * linear(blue)
+        }
+        for style in [UIUserInterfaceStyle.light, .dark] {
+            let traits = UITraitCollection(userInterfaceStyle: style)
+            for accent in PivotAccent.allCases {
+                let foreground = luminance(UIColor(accent.color), traits: traits)
+                let background = luminance(.secondarySystemGroupedBackground, traits: traits)
+                let contrast = (max(foreground, background) + 0.05) / (min(foreground, background) + 0.05)
+                XCTAssertGreaterThanOrEqual(contrast, 4.5, "\(accent.label) must remain readable as normal text in \(style)")
+            }
+        }
+    }
+
     func testBundledMapCatalogCoversEveryParkWithValidUniquePlaces() throws {
         let catalog = try ParkMapCatalog.load()
         XCTAssertEqual(Set(catalog.parks.keys), Set(FloridaPark.allCases.map { String($0.id) }))

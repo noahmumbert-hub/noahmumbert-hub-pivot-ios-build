@@ -64,7 +64,7 @@ struct ParkPickerView: View {
                             VStack(alignment: .leading, spacing: 3) {
                                 Text(store.locationStatus == .searching ? "Finding your park…" : "Use my location")
                                     .font(.headline)
-                                    .foregroundStyle(.white)
+                                    .foregroundStyle(.primary)
                                 Text(store.locationStatus.label)
                                     .font(.caption)
                                     .foregroundStyle(Color.pivotMuted)
@@ -102,37 +102,21 @@ struct ParkPickerView: View {
             .navigationBarTitleDisplayMode(.inline)
 #endif
             .searchable(text: $query, prompt: "Search \(FloridaPark.allCases.count) supported parks")
-            .safeAreaInset(edge: .top) {
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 8) {
-                        ForEach(ParkOperatorFilter.allCases) { filter in
-                            Button {
-                                operatorFilter = filter
-                            } label: {
-                                Text(filter.title)
-                                    .font(.subheadline.weight(.semibold))
-                                    .foregroundStyle(operatorFilter == filter ? Color.pivotBackground : .white)
-                                    .padding(.horizontal, 12)
-                                    .frame(minHeight: 44)
-                                    .background(operatorFilter == filter ? accent : Color.pivotSurfaceRaised)
-                                    .clipShape(Capsule())
-                            }
-                            .buttonStyle(.plain)
-                            .accessibilityAddTraits(operatorFilter == filter ? .isSelected : [])
-                        }
-                    }
-                    .padding(.horizontal)
-                }
-                .padding(.vertical, 8)
-                .background(.bar)
-            }
             .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Menu {
+                        Picker("Park operator", selection: $operatorFilter) {
+                            ForEach(ParkOperatorFilter.allCases) { Text($0.title).tag($0) }
+                        }
+                    } label: { Label(operatorFilter == .all ? "Filter" : operatorFilter.title, systemImage: "line.3.horizontal.decrease") }
+                    .accessibilityLabel("Filter parks by operator")
+                }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Done") { dismiss() }
                 }
             }
         }
-        .preferredColorScheme(.dark)
+
         .onChange(of: store.locationStatus) { _, status in
             if case .found = status {
                 dismiss()
@@ -163,27 +147,27 @@ struct ParkPickerView: View {
                 VStack(alignment: .leading, spacing: 3) {
                     Text(park?.name ?? "No park")
                         .font(.headline)
-                        .foregroundStyle(.white)
+                        .foregroundStyle(.primary)
                     Text(parkDetail(for: park))
                         .font(.caption)
                         .foregroundStyle(Color.pivotMuted)
                     if let park, let hours = store.parkHours(for: park, at: now) {
                         Text(scheduleLine(hours, park: park))
                             .font(.caption.weight(.semibold))
-                            .foregroundStyle(.white)
+                            .foregroundStyle(.primary)
                             .fixedSize(horizontal: false, vertical: true)
                         Text(earlyEntryLine(hours, park: park))
                             .font(.caption)
-                            .foregroundStyle(.white)
+                            .foregroundStyle(.primary)
                             .fixedSize(horizontal: false, vertical: true)
                     } else if park != nil {
                         Text("Park hours updating")
                             .font(.caption)
-                            .foregroundStyle(.white)
+                            .foregroundStyle(.primary)
                             .fixedSize(horizontal: false, vertical: true)
                         Text("Early entry · Updating")
                             .font(.caption)
-                            .foregroundStyle(.white)
+                            .foregroundStyle(.primary)
                             .fixedSize(horizontal: false, vertical: true)
                     }
                 }
@@ -212,7 +196,7 @@ struct ParkPickerView: View {
                     .foregroundStyle(accent)
                 Text(hours.parkName)
                     .font(.subheadline.weight(.semibold))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(.primary)
                 Spacer()
                 Text(hours.stale ? "Saved schedule" : "Today")
                     .font(.caption2.weight(.semibold))
@@ -220,10 +204,10 @@ struct ParkPickerView: View {
             }
             Text(scheduleLine(hours, park: park))
                 .font(.subheadline.weight(.semibold))
-                .foregroundStyle(.white)
+                .foregroundStyle(.primary)
             Text(earlyEntryLine(hours, park: park))
                 .font(.caption)
-                .foregroundStyle(.white)
+                .foregroundStyle(.primary)
             if let warning = hours.warning {
                 Text(warning)
                     .font(.caption2)

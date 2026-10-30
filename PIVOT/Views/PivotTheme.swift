@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 enum PivotAccent: String, CaseIterable, Identifiable {
     static let storageKey = "pivot:accent-color"
@@ -17,10 +18,23 @@ enum PivotAccent: String, CaseIterable, Identifiable {
         }
     }
     var color: Color {
-        Color(red: Double((hex >> 16) & 255) / 255,
-              green: Double((hex >> 8) & 255) / 255,
-              blue: Double(hex & 255) / 255)
+        let light: UInt32
+        switch self {
+        case .mint: light = 0x08785C
+        case .blue: light = 0x075BAA
+        case .purple: light = 0x7037AF
+        case .pink: light = 0xAA245C
+        case .orange: light = 0x994400
+        case .gold: light = 0x766000
+        }
+        return Color(uiColor: UIColor { traits in
+            let value = traits.userInterfaceStyle == .dark ? hex : light
+            return UIColor(red: CGFloat((value >> 16) & 255) / 255,
+                           green: CGFloat((value >> 8) & 255) / 255,
+                           blue: CGFloat(value & 255) / 255, alpha: 1)
+        })
     }
+
 }
 
 private struct PivotAccentKey: EnvironmentKey {
@@ -41,41 +55,31 @@ struct PivotSettingsView: View {
 
     var body: some View {
         NavigationStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
-                    Text("Accent color").font(.headline)
-                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 95), spacing: 12)], spacing: 12) {
-                        ForEach(PivotAccent.allCases) { option in
-                            let selected = PivotAccent.resolve(selectedAccent) == option
-                            Button { selectedAccent = option.rawValue } label: {
-                                VStack(spacing: 10) {
-                                    Circle().fill(option.color).frame(width: 36, height: 36)
-                                        .overlay {
-                                            if selected { Image(systemName: "checkmark").font(.body.bold()).foregroundStyle(Color.pivotBackground) }
-                                        }
-                                    Text(option.label).font(.subheadline).foregroundStyle(.white)
-                                }
-                                .frame(maxWidth: .infinity).padding(.vertical, 16)
-                                .background(selected ? option.color.opacity(0.1) : Color.pivotSurface, in: RoundedRectangle(cornerRadius: 16))
-                                .overlay { RoundedRectangle(cornerRadius: 16).stroke(selected ? option.color : Color.pivotBorder, lineWidth: 1) }
-                            }
-                            .buttonStyle(.plain)
-                            .accessibilityLabel(option.label)
-                            .accessibilityValue(selected ? "Selected" : "Not selected")
-                            .accessibilityAddTraits(selected ? .isSelected : [])
-                            .accessibilityIdentifier("accent-\(option.rawValue)")
+            Form {
+                Section {
+                    ForEach(PivotAccent.allCases) { option in
+                        let selected = PivotAccent.resolve(selectedAccent) == option
+                        Button { selectedAccent = option.rawValue } label: {
+                            HStack {
+                                Circle().fill(option.color).frame(width: 22, height: 22).accessibilityHidden(true)
+                                Text(option.label).foregroundStyle(.primary)
+                                Spacer()
+                                if selected { Image(systemName: "checkmark").foregroundStyle(accent) }
+                            }.frame(minHeight: 32)
                         }
+                        .accessibilityLabel(option.label)
+                        .accessibilityValue(selected ? "Selected" : "Not selected")
+                        .accessibilityAddTraits(selected ? .isSelected : [])
+                        .accessibilityIdentifier("accent-\(option.rawValue)")
                     }
-                    Text("Applies to the app and its Lock Screen and Apple Watch Live Activities. Ride-status colors in the app stay the same. Your website color is saved separately.")
-                        .font(.subheadline).foregroundStyle(Color.pivotMuted)
-                    Divider()
+                } header: { Text("Accent color") } footer: {
+                    Text("Applies to PIVOT and its Live Activities. Status colors retain their meanings. Appearance follows your iPhone’s Light or Dark setting.")
+                }
+                Section("About") {
                     Text("PIVOT \(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "Unknown")")
-                        .font(.subheadline.weight(.semibold))
-                    Text("App updates are available in SideStore through the PIVOT source.")
-                        .font(.subheadline).foregroundStyle(Color.pivotMuted)
-                }.padding(20)
+                    Text("App updates are available in SideStore through the PIVOT source.").foregroundStyle(.secondary)
+                }
             }
-            .background(Color.pivotBackground)
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
@@ -84,37 +88,26 @@ struct PivotSettingsView: View {
 }
 
 extension Color {
-    static let pivotBackground = Color(red: 0.039, green: 0.063, blue: 0.071)
-    static let pivotSurface = Color(red: 0.075, green: 0.102, blue: 0.110)
-    static let pivotSurfaceRaised = Color(red: 0.110, green: 0.145, blue: 0.153)
-    static let pivotBorder = Color.white.opacity(0.09)
-    static let pivotMuted = Color(red: 0.64, green: 0.71, blue: 0.72)
-    // Retain the existing token name for all current controls and widgets.
-    static let pivotPurple = Color(red: 0.47, green: 0.89, blue: 0.75)
-    static let pivotPink = Color(red: 1.0, green: 0.48, blue: 0.48)
-    static let pivotBlue = Color(red: 0.06, green: 0.52, blue: 0.95)
-    static let pivotMint = Color(red: 0.47, green: 0.89, blue: 0.75)
-    static let pivotWeather = Color(red: 0.37, green: 0.75, blue: 1.0)
+    static let pivotBackground = Color(uiColor: .systemGroupedBackground)
+    static let pivotSurface = Color(uiColor: .secondarySystemGroupedBackground)
+    static let pivotSurfaceRaised = Color(uiColor: .tertiarySystemGroupedBackground)
+    static let pivotBorder = Color(uiColor: .separator).opacity(0.45)
+    static let pivotMuted = Color.secondary
+    static let pivotPurple = PivotAccent.mint.color
+    static let pivotPink = Color.red
+    static let pivotBlue = Color.blue
+    static let pivotMint = PivotAccent.mint.color
+    static let pivotWeather = Color.blue
 }
 struct PivotCardModifier: ViewModifier {
-    var padding: CGFloat = 18
-
+    var padding: CGFloat = 16
     func body(content: Content) -> some View {
-        content
-            .padding(padding)
-            .background(Color.pivotSurface)
-            .overlay {
-                RoundedRectangle(cornerRadius: 20, style: .continuous)
-                    .stroke(Color.pivotBorder, lineWidth: 1)
-            }
-            .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+        content.padding(padding)
+            .background(Color.pivotSurface, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 }
-
 extension View {
-    func pivotCard(padding: CGFloat = 18) -> some View {
-        modifier(PivotCardModifier(padding: padding))
-    }
+    func pivotCard(padding: CGFloat = 16) -> some View { modifier(PivotCardModifier(padding: padding)) }
 }
 
 struct PivotStatusDot: View {

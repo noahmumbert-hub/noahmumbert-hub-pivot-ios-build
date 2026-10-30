@@ -20,12 +20,8 @@ struct NativeDayPlannerView: View {
     var body: some View {
         TimelineView(.periodic(from: .now, by: 15)) { context in
             VStack(alignment: .leading, spacing: 18) {
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("Your day").font(.largeTitle.bold()).tracking(-1.2)
-                        .accessibilityIdentifier("Today planner title")
-                    Text("Your favorites, in a better order.")
-                        .font(.subheadline).foregroundStyle(Color.pivotMuted)
-                }
+                Text("Your favorites, in a better order.")
+                    .font(.subheadline).foregroundStyle(.secondary)
                 if let park {
                     content(park: park, now: context.date)
                 } else {

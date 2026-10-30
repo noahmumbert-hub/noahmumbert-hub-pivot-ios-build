@@ -1,5 +1,6 @@
 import SwiftUI
 import MapKit
+import UIKit
 
 // A bundled, source-attributed catalog keeps locations independent of live-feed failures.
 struct ParkMapCatalog: Decodable {
@@ -89,6 +90,179 @@ struct ParkMapRidePresentation: Equatable {
     }
 }
 
+// MapKit owns user-driven camera changes. SwiftUI refreshes only issue a camera
+// update when an explicit command ID changes; freshness ticks never reset zoom.
+@MainActor
+final class ParkMapSession: ObservableObject {
+    var camera: MKMapCamera?
+#if DEBUG
+    @Published var telemetry = ""
+#endif
+}
+struct ParkMapCameraCommand {
+    enum Action { case fit, zoom(Double), focus(CLLocationCoordinate2D) }
+    let id = UUID()
+    let action: Action
+}
+private final class ParkPlaceAnnotation: NSObject, MKAnnotation {
+    let point: ParkMapPoint
+    var coordinate: CLLocationCoordinate2D { point.coordinate }
+    var title: String? { point.name }
+    init(_ point: ParkMapPoint) { self.point = point }
+}
+private final class ParkMarkerView: MKMarkerAnnotationView {
+    private func minimumTarget(_ rect: CGRect) -> CGRect {
+        rect.insetBy(dx: min(0, (rect.width - 44) / 2), dy: min(0, (rect.height - 44) / 2))
+    }
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool { minimumTarget(bounds).contains(point) }
+    override var accessibilityFrame: CGRect {
+        get { minimumTarget(super.accessibilityFrame) }
+        set { super.accessibilityFrame = newValue }
+    }
+}
+private struct NativeParkMapCanvas: UIViewRepresentable {
+    let points: [ParkMapPoint]
+    let allPoints: [ParkMapPoint]
+    let park: FloridaPark
+    @Binding var selectedID: String?
+    let session: ParkMapSession
+    let command: ParkMapCameraCommand
+    let margins: UIEdgeInsets
+    let accent: Color
+    let onCluster: ([ParkMapPoint]) -> Void
+
+    func makeCoordinator() -> Coordinator { Coordinator(self) }
+    func makeUIView(context: Context) -> MKMapView {
+        let map = MKMapView()
+        map.delegate = context.coordinator
+        map.accessibilityIdentifier = "Park map"
+        map.isZoomEnabled = true
+        map.isScrollEnabled = true
+        map.isRotateEnabled = true
+        map.isPitchEnabled = true
+        map.showsCompass = true
+        map.showsScale = true
+        map.pointOfInterestFilter = .excludingAll
+        map.register(ParkMarkerView.self, forAnnotationViewWithReuseIdentifier: "place")
+        map.register(ParkMarkerView.self, forAnnotationViewWithReuseIdentifier: "cluster")
+        if let camera = session.camera {
+            map.setCamera(camera, animated: false)
+            context.coordinator.lastCommand = command.id
+        }
+        return map
+    }
+    func updateUIView(_ map: MKMapView, context: Context) {
+        let coordinator = context.coordinator
+        coordinator.parent = self
+        map.layoutMargins = margins
+        coordinator.updatingSelection = true
+        defer { coordinator.updatingSelection = false }
+        let desired = Set(points.map(\.id))
+        let existing = map.annotations.compactMap { $0 as? ParkPlaceAnnotation }
+        map.removeAnnotations(existing.filter { !desired.contains($0.point.id) })
+        let present = Set(existing.map { $0.point.id })
+        map.addAnnotations(points.filter { !present.contains($0.id) }.map(ParkPlaceAnnotation.init))
+        if coordinator.lastCommand != command.id {
+            coordinator.lastCommand = command.id
+            switch command.action {
+            case .fit:
+                coordinator.fit(allPoints.map(\.coordinate), on: map, animated: false)
+            case .focus(let coordinate):
+                map.setRegion(MKCoordinateRegion(center: coordinate, latitudinalMeters: 500, longitudinalMeters: 500), animated: true)
+            case .zoom(let factor):
+                let camera = map.camera.copy() as! MKMapCamera
+                camera.altitude = min(100_000, max(35, camera.altitude * factor))
+                map.setCamera(camera, animated: true)
+            }
+        }
+        if let selectedID,
+           let annotation = map.annotations.compactMap({ $0 as? ParkPlaceAnnotation }).first(where: { $0.point.id == selectedID }),
+           !map.selectedAnnotations.contains(where: { ($0 as? ParkPlaceAnnotation)?.point.id == selectedID }) {
+            map.selectAnnotation(annotation, animated: false)
+        } else if selectedID == nil {
+            map.selectedAnnotations.forEach { map.deselectAnnotation($0, animated: false) }
+        }
+    }
+    static func dismantleUIView(_ map: MKMapView, coordinator: Coordinator) { map.delegate = nil }
+    final class Coordinator: NSObject, MKMapViewDelegate {
+        var parent: NativeParkMapCanvas
+        var lastCommand: UUID?
+        var updatingSelection = false
+        init(_ parent: NativeParkMapCanvas) { self.parent = parent }
+        func fit(_ coordinates: [CLLocationCoordinate2D], on map: MKMapView, animated: Bool, paddingMeters: Double = 250) {
+            guard let first = coordinates.first ?? ParkLocationDetector.coordinates[parent.park] else { return }
+            var rect = MKMapRect.null
+            for coordinate in coordinates.isEmpty ? [first] : coordinates {
+                let point = MKMapPoint(coordinate)
+                rect = rect.union(MKMapRect(x: point.x, y: point.y, width: 1, height: 1))
+            }
+            let minimum = MKMapPointsPerMeterAtLatitude(first.latitude) * paddingMeters
+            rect = rect.insetBy(dx: -max(minimum, rect.width * 0.08), dy: -max(minimum, rect.height * 0.08))
+            map.setVisibleMapRect(rect, edgePadding: parent.margins, animated: animated)
+        }
+        func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
+            guard !updatingSelection, let annotation = view.annotation as? ParkPlaceAnnotation,
+                  parent.selectedID == annotation.point.id else { return }
+            parent.selectedID = nil
+        }
+        func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+            parent.session.camera = mapView.camera.copy() as? MKMapCamera
+#if DEBUG
+            let c = mapView.centerCoordinate
+            parent.session.telemetry = "\(c.latitude),\(c.longitude),\(mapView.camera.altitude)"
+#endif
+        }
+        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+            if let cluster = annotation as? MKClusterAnnotation {
+                let view = mapView.dequeueReusableAnnotationView(withIdentifier: "cluster", for: cluster) as! MKMarkerAnnotationView
+                view.markerTintColor = UIColor(parent.accent)
+                view.glyphText = "\(cluster.memberAnnotations.count)"
+                view.glyphTintColor = UIColor { $0.userInterfaceStyle == .dark ? .black : .white }
+                view.titleVisibility = .hidden
+                view.isAccessibilityElement = true
+                view.accessibilityTraits = .button
+                view.accessibilityLabel = "\(cluster.memberAnnotations.count) places. Zoom in"
+                view.accessibilityIdentifier = "Map place cluster"
+                return view
+            }
+            guard let annotation = annotation as? ParkPlaceAnnotation else { return nil }
+            let view = mapView.dequeueReusableAnnotationView(withIdentifier: "place", for: annotation) as! MKMarkerAnnotationView
+            view.markerTintColor = UIColor(annotation.point.category.color)
+            view.glyphImage = UIImage(systemName: annotation.point.category.symbol)
+            view.glyphTintColor = annotation.point.category == .ride
+                ? UIColor { $0.userInterfaceStyle == .dark ? .black : .white } : .black
+            view.clusteringIdentifier = "park-places"
+            view.canShowCallout = false
+            view.titleVisibility = .adaptive
+            view.isAccessibilityElement = true
+            view.accessibilityTraits = .button
+            view.accessibilityLabel = annotation.point.name
+            view.accessibilityIdentifier = "map-pin-\(annotation.point.id)"
+            return view
+        }
+        func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+            if let cluster = view.annotation as? MKClusterAnnotation {
+                mapView.deselectAnnotation(cluster, animated: false)
+                let members = cluster.memberAnnotations.compactMap { ($0 as? ParkPlaceAnnotation)?.point }
+                let coordinates = members.map(\.coordinate)
+                if let first = coordinates.first,
+                   coordinates.allSatisfy({ MKMapPoint(first).distance(to: MKMapPoint($0)) < 20 }) {
+                    parent.onCluster(members)
+                } else {
+                    fit(coordinates, on: mapView, animated: true, paddingMeters: 20)
+                }
+                return
+            }
+            guard let annotation = view.annotation as? ParkPlaceAnnotation else { return }
+            parent.selectedID = annotation.point.id
+        }
+    }
+}
+private struct MapBottomHeightKey: PreferenceKey {
+    static var defaultValue: CGFloat = 60
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) { value = nextValue() }
+}
+
 struct ParkMapView: View {
     @Environment(\.pivotAccent) private var accent
     let park: FloridaPark?
@@ -102,12 +276,14 @@ struct ParkMapView: View {
     @State private var query = ""
     @State private var openOnly = false
     @State private var selectedID: String?
-    @State private var position: MapCameraPosition = .automatic
-    @State private var lastCamera: MapCamera?
+    @StateObject private var session = ParkMapSession()
+    @State private var command = ParkMapCameraCommand(action: .fit)
+    @State private var clusterPoints: [ParkMapPoint]?
     @State private var showPlaces = false
     @State private var selectedRide: LiveRide?
     @State private var isFullScreen = false
     @State private var now = Date()
+    @State private var bottomHeight: CGFloat = 60
     @FocusState private var searchFocused: Bool
 
     private var parkData: ParkMapPark? { park.flatMap { catalog?.parks[String($0.id)] } }
@@ -135,189 +311,146 @@ struct ParkMapView: View {
 
     var body: some View {
         Group {
-            if isFullScreen { Color.clear } else { mapContent }
+            if isFullScreen { Color.clear } else { mapScreen }
         }
-        .task(id: park?.id) { loadCatalog(); recenter() }
+        .task(id: park?.id) { loadCatalog() }
         .onChange(of: category) { _, _ in openOnly = false; selectedID = nil }
-        .fullScreenCover(isPresented: $isFullScreen, onDismiss: {
-            searchFocused = false
-            if let lastCamera { position = .camera(lastCamera) }
-        }) {
-            NavigationStack {
-                mapContent
-                    .padding(12)
-                    .background(Color.pivotBackground)
-                    .navigationTitle(park?.name ?? "Park map")
-                    .navigationBarTitleDisplayMode(.inline)
-                    .toolbar {
-                        ToolbarItem(placement: .confirmationAction) {
-                            Button("Done") { setFullScreen(false) }
-                                .accessibilityIdentifier("Close full screen map")
-                        }
-                    }
-            }
-            .preferredColorScheme(.dark)
-        }
+        .fullScreenCover(isPresented: $isFullScreen) { mapScreen }
     }
-
-    private var mapContent: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            if park == nil {
-                ContentUnavailableView {
-                    Label("Explore the park", systemImage: "map")
-                } description: {
-                    Text("Choose a park to see rides, food, and shows.")
-                } actions: {
-                    Button("Choose park", action: onChoosePark).buttonStyle(.borderedProminent)
-                }
-            } else if loadFailed || (catalog != nil && parkData == nil) {
-                ContentUnavailableView {
-                    Label("Locations unavailable", systemImage: "map")
-                } description: {
-                    Text("The park catalog could not load.")
-                } actions: { Button("Try again", action: loadCatalog) }
-            } else if parkData == nil {
-                ProgressView("Loading park locations…").frame(maxWidth: .infinity, maxHeight: .infinity)
-            } else {
-                searchField
-                filters
-                if category == .ride {
-                    Toggle("Open rides only", isOn: $openOnly)
-                        .font(.caption)
-                        .tint(accent)
-                        .accessibilityIdentifier("Map open rides only")
-                }
-                ZStack(alignment: .topTrailing) {
-                    Map(position: $position) {
-                        ForEach(points) { point in
-                            Annotation(point.name, coordinate: point.coordinate) {
-                                Button {
-                                    searchFocused = false
-                                    selectedID = point.id
-                                } label: {
-                                    Image(systemName: point.category.symbol)
-                                        .font(.subheadline.weight(.semibold))
-                                        .foregroundStyle(Color.pivotBackground)
-                                        .frame(width: 30, height: 30)
-                                        .background(point.category.color, in: Circle())
-                                        .overlay { Circle().stroke(selectedID == point.id ? Color.white : .clear, lineWidth: 3) }
-                                        .frame(width: 44, height: 44)
-                                        .contentShape(Circle())
-                                }
-                                .buttonStyle(.plain)
-                                .accessibilityLabel(point.name)
-                                .accessibilityIdentifier("map-pin-\(point.id)")
+    private var mapScreen: some View {
+        GeometryReader { geometry in
+            ZStack {
+                if let park, parkData != nil {
+                    NativeParkMapCanvas(points: points, allPoints: allPoints, park: park, selectedID: $selectedID,
+                        session: session, command: command,
+                        margins: UIEdgeInsets(top: geometry.safeAreaInsets.top + 72, left: 12,
+                                              bottom: geometry.safeAreaInsets.bottom + bottomHeight + 16, right: 12), accent: accent,
+                        onCluster: { clusterPoints = $0; showPlaces = true })
+                        .ignoresSafeArea(edges: isFullScreen ? .all : [])
+                    VStack {
+                        mapToolbar
+                        Spacer(minLength: 0)
+                    }.padding(10)
+                    VStack {
+                        Spacer(minLength: 76)
+                        HStack {
+                            Spacer()
+                            VStack(spacing: 0) {
+                                mapControl("Zoom in", symbol: "plus") { command = .init(action: .zoom(0.5)) }
+                                Divider().frame(width: 32)
+                                mapControl("Zoom out", symbol: "minus") { command = .init(action: .zoom(2)) }
+                                Divider().frame(width: 32)
+                                mapControl("Show whole park", symbol: "location") { command = .init(action: .fit) }
                             }
+                            .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 14))
                         }
+                        Spacer(minLength: bottomHeight + 30)
+                    }.padding(.trailing, 10).allowsHitTesting(true)
+                    VStack {
+                        Spacer(minLength: 0)
+                        bottomPanel
+                            .background(GeometryReader { proxy in Color.clear.preference(key: MapBottomHeightKey.self, value: proxy.size.height) })
+                    }.padding(.horizontal, 10).padding(.bottom, 8)
+#if DEBUG
+                    if ProcessInfo.processInfo.arguments.contains("--park-map-ui-test") || ProcessInfo.processInfo.arguments.contains("--apple-ui-test") {
+                        Text(session.telemetry).font(.system(size: 1)).opacity(0.02)
+                            .accessibilityIdentifier("Map camera state")
+                            .frame(width: 1, height: 1).allowsHitTesting(false)
                     }
-                    .onMapCameraChange(frequency: .onEnd) { lastCamera = $0.camera }
-                    .mapStyle(.standard(elevation: .flat, pointsOfInterest: .excludingAll))
-                    .mapControls { MapCompass(); MapScaleView() }
-                    HStack(spacing: 8) {
-                        if !isFullScreen {
-                            Button { setFullScreen(true) } label: {
-                                Image(systemName: "arrow.up.left.and.arrow.down.right").frame(width: 44, height: 44)
-                            }
-                            .accessibilityLabel("Full screen map")
-                            .accessibilityIdentifier("Full screen map")
-                        }
-                        Button { searchFocused = false; recenter() } label: {
-                            Image(systemName: "arrow.counterclockwise").frame(width: 44, height: 44)
-                        }
-                        .accessibilityLabel("Show whole park")
-                    }
-                    .background(Color.pivotSurface, in: RoundedRectangle(cornerRadius: 12))
-                    .padding(10)
-                }
-                .clipShape(RoundedRectangle(cornerRadius: 18))
-                .frame(minHeight: 180, maxHeight: .infinity)
-                if let point = selected {
-                    selectedPlace(point)
-                } else if points.isEmpty {
-                    HStack {
-                        Text(query.isEmpty ? "No locations match these filters." : "No matching places.").font(.caption)
-                        Spacer()
-                        Button("Reset") { category = nil; query = ""; openOnly = false }
-                    }.padding(8)
-                }
-                Button { showPlaces = true } label: {
-                    HStack {
-                        Label("Browse \(points.count) \(points.count == 1 ? "place" : "places")", systemImage: "list.bullet")
-                        Spacer()
-                        Image(systemName: "chevron.up")
-                    }.font(.subheadline.weight(.semibold)).frame(minHeight: 44)
-                }
-                .accessibilityIdentifier("Browse map places")
+#endif
+                } else if park == nil {
+                    ContentUnavailableView {
+                        Label("Explore the park", systemImage: "map")
+                    } description: { Text("Choose a park to see rides, food, and shows.")
+                    } actions: { Button("Choose park", action: onChoosePark).buttonStyle(.borderedProminent) }
+                } else if loadFailed {
+                    ContentUnavailableView {
+                        Label("Locations unavailable", systemImage: "map")
+                    } description: { Text("The park catalog could not load.")
+                    } actions: { Button("Try again", action: loadCatalog) }
+                } else { ProgressView("Loading park locations…") }
             }
+            .onPreferenceChange(MapBottomHeightKey.self) { bottomHeight = $0 }
         }
+        .background(Color.pivotBackground)
         .task {
             while !Task.isCancelled {
                 now = Date()
-                do { try await Task.sleep(nanoseconds: 15_000_000_000) }
-                catch { break }
+                do { try await Task.sleep(nanoseconds: 15_000_000_000) } catch { break }
             }
         }
+        .onChange(of: selectedID) { _, _ in searchFocused = false }
         .sheet(isPresented: $showPlaces) { placesSheet }
         .sheet(item: $selectedRide) { ride in
             RideDetailScreenView(initialRide: ride, timeZone: park?.timeZone ?? .current,
                                  mapPoint: allPoints.first { $0.rideId == ride.id })
         }
     }
-
-    private var searchField: some View {
-        HStack(spacing: 9) {
-            Image(systemName: "magnifyingglass").foregroundStyle(Color.pivotMuted)
-            TextField("Search rides, food, shows", text: $query)
-                .font(.subheadline)
-                .autocorrectionDisabled()
-                .textInputAutocapitalization(.never)
-                .focused($searchFocused)
-                .submitLabel(.search)
-                .onSubmit { searchFocused = false }
+    private var mapToolbar: some View {
+        HStack(spacing: 4) {
+            Image(systemName: "magnifyingglass").foregroundStyle(.secondary).padding(.leading, 12)
+            TextField("Search park places", text: $query)
+                .textInputAutocapitalization(.never).autocorrectionDisabled()
+                .focused($searchFocused).submitLabel(.search).onSubmit { searchFocused = false }
                 .accessibilityIdentifier("Search park places")
             if !query.isEmpty {
-                Button { query = "" } label: { Image(systemName: "xmark.circle.fill") }
-                    .frame(minWidth: 36, minHeight: 44).accessibilityLabel("Clear place search")
+                Button { query = "" } label: { Image(systemName: "xmark.circle.fill").foregroundStyle(.secondary) }
+                    .frame(width: 36, height: 44).accessibilityLabel("Clear place search")
             }
-        }
-        .padding(.horizontal, 12)
-        .frame(minHeight: 44)
-        .background(Color.pivotSurface, in: RoundedRectangle(cornerRadius: 12))
-    }
-    private var filters: some View {
-        HStack(spacing: 6) {
-            categoryButton(nil, title: "All places")
-            ForEach(ParkMapCategory.allCases) { value in categoryButton(value, title: value.title) }
-        }
-    }
-    private func categoryButton(_ value: ParkMapCategory?, title: String) -> some View {
-        let count = allPoints.filter { value == nil || $0.category == value }.count
-        return Button { category = value } label: {
-            VStack(spacing: 2) {
-                Text(title).font(.caption.weight(.semibold))
-                Text("\(count)").font(.caption2).foregroundStyle(Color.pivotMuted)
+            Menu {
+                Picker("Places", selection: $category) {
+                    Text("All places").tag(Optional<ParkMapCategory>.none)
+                    ForEach(ParkMapCategory.allCases) { Text($0.title).tag(Optional($0)) }
+                }
+                if category == .ride { Toggle("Open rides only", isOn: $openOnly) }
+            } label: { Image(systemName: "line.3.horizontal.decrease").frame(width: 44, height: 44) }
+                .accessibilityLabel("Filter map places").accessibilityIdentifier("Filter map places")
+                .accessibilityValue(category?.title ?? "All places")
+            Button {
+                searchFocused = false
+                isFullScreen.toggle()
+            } label: {
+                Image(systemName: isFullScreen ? "xmark" : "arrow.up.left.and.arrow.down.right")
+                    .frame(width: 44, height: 44)
             }
-            .frame(maxWidth: .infinity, minHeight: 46)
-            .foregroundStyle(category == value ? accent : Color.white)
-            .background(category == value ? accent.opacity(0.12) : Color.pivotSurface, in: RoundedRectangle(cornerRadius: 12))
-            .overlay { RoundedRectangle(cornerRadius: 12).stroke(category == value ? accent : Color.pivotBorder, lineWidth: 1) }
+            .accessibilityLabel(isFullScreen ? "Close full screen map" : "Full screen map")
+            .accessibilityIdentifier(isFullScreen ? "Close full screen map" : "Full screen map")
         }
-        .buttonStyle(.plain)
-        .accessibilityLabel("\(title), \(count) places")
-        .accessibilityAddTraits(category == value ? .isSelected : [])
-        .accessibilityIdentifier("map-category-\(value?.rawValue ?? "ALL")")
+        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 16))
+        .tint(accent)
     }
-    private func isTodayAtPark(_ date: Date) -> Bool {
-        var calendar = Calendar(identifier: .gregorian)
-        calendar.timeZone = park?.timeZone ?? .current
-        return calendar.isDate(date, inSameDayAs: Date())
+    private func mapControl(_ title: String, symbol: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) { Image(systemName: symbol).font(.body.weight(.medium)).frame(width: 44, height: 44) }
+            .accessibilityLabel(title).accessibilityIdentifier(title).tint(accent)
+    }
+    private var bottomPanel: some View {
+        VStack(spacing: 0) {
+            if let point = selected {
+                ScrollView { selectedPlace(point) }.frame(maxHeight: 190).fixedSize(horizontal: false, vertical: true)
+                Divider()
+            } else if points.isEmpty {
+                Text(query.isEmpty ? "No locations match these filters." : "No matching places.")
+                    .font(.callout).foregroundStyle(.secondary).padding(12)
+            }
+            Button { searchFocused = false; showPlaces = true } label: {
+                HStack {
+                    Image(systemName: "list.bullet")
+                    Text("Browse \(points.count) \(points.count == 1 ? "place" : "places")")
+                    Spacer()
+                    Text(category?.title ?? "All").font(.caption).foregroundStyle(.secondary)
+                    Image(systemName: "chevron.up").font(.caption)
+                }.frame(minHeight: 44).padding(.horizontal, 14)
+            }.accessibilityIdentifier("Browse map places")
+        }
+        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 18)).tint(accent)
     }
     private func status(_ point: ParkMapPoint) -> String {
         if point.category == .restaurant { return "Dining location · hours unavailable" }
         if point.category == .show {
+            var calendar = Calendar(identifier: .gregorian); calendar.timeZone = park?.timeZone ?? .current
             if let current = freshSnapshot, !current.showScheduleIsStale,
                let next = current.showList.first(where: { $0.id == point.id })?.nextShowAt,
-               next >= Date(), isTodayAtPark(next) {
+               next >= now, calendar.isDate(next, inSameDayAs: now) {
                 return "Next at \(ParkTimeFormatter.time(next, timeZone: park?.timeZone))"
             }
             return "Check Shows for today’s schedule"
@@ -329,53 +462,40 @@ struct ParkMapView: View {
         ParkMapRidePresentation.resolve(point: point, parkID: park?.id, snapshot: snapshot,
                                         refreshFailed: refreshFailed, at: now)
     }
-
     private func selectedPlace(_ point: ParkMapPoint) -> some View {
         HStack(alignment: .top, spacing: 10) {
-            Image(systemName: point.category.symbol).foregroundStyle(point.category.color)
-            VStack(alignment: .leading, spacing: 4) {
-                Text(point.name).font(.subheadline.weight(.semibold)).fixedSize(horizontal: false, vertical: true)
+            VStack(alignment: .leading, spacing: 5) {
+                Text(point.name).font(.headline)
                 if point.category == .ride {
-                    let presentation = ridePresentation(point)
-                    Text(presentation.waitMinutes == nil ? "Ride status" : "Current wait")
-                        .font(.caption).foregroundStyle(Color.pivotMuted)
-                    Text(presentation.title).font(.title2.weight(.bold)).monospacedDigit()
-                        .foregroundStyle(presentation.waitMinutes == nil ? Color.white : accent)
-                        .accessibilityIdentifier("Selected ride wait")
-                    Text(presentation.detail).font(.caption).foregroundStyle(Color.pivotMuted)
-                        .fixedSize(horizontal: false, vertical: true)
-                } else {
-                    Text(status(point)).font(.caption).foregroundStyle(Color.pivotMuted)
-                }
+                    let value = ridePresentation(point)
+                    Text(value.waitMinutes == nil ? "Ride status" : "Current wait").font(.caption).foregroundStyle(.secondary)
+                    Text(value.title).font(.title2.weight(.semibold)).monospacedDigit().accessibilityIdentifier("Selected ride wait")
+                    Text(value.detail).font(.caption).foregroundStyle(.secondary)
+                } else { Text(status(point)).font(.subheadline).foregroundStyle(.secondary) }
                 if let ride = rides.first(where: { $0.id == point.rideId }) {
-                    Button("Ride details") { selectedRide = ride }.font(.caption.weight(.semibold)).frame(minHeight: 32)
+                    Button("Ride details") { selectedRide = ride }.font(.subheadline).frame(minHeight: 44)
                 }
-            }
-            Spacer(minLength: 0)
-            Button { selectedID = nil } label: { Image(systemName: "xmark").frame(width: 36, height: 36) }
+            }.frame(maxWidth: .infinity, alignment: .leading)
+            Button { selectedID = nil } label: { Image(systemName: "xmark.circle.fill").font(.title3).foregroundStyle(.secondary).frame(width: 44, height: 44) }
                 .accessibilityLabel("Close place details")
-        }
-        .pivotCard(padding: 12)
+        }.padding(14)
     }
     private var placesSheet: some View {
         NavigationStack {
             List {
-                Section("\(points.count) places shown") {
-                    if points.isEmpty { Text("No locations match these filters.").foregroundStyle(Color.pivotMuted) }
-                    ForEach(points) { point in
+                Section("\((clusterPoints ?? points).count) places shown") {
+                    ForEach(clusterPoints ?? points) { point in
                         Button {
-                            searchFocused = false
                             selectedID = point.id
-                            position = .region(MKCoordinateRegion(center: point.coordinate, latitudinalMeters: 500, longitudinalMeters: 500))
+                            command = .init(action: .focus(point.coordinate))
                             showPlaces = false
                         } label: {
-                            HStack(spacing: 12) {
-                                Image(systemName: point.category.symbol).foregroundStyle(point.category.color)
+                            Label {
                                 VStack(alignment: .leading, spacing: 4) {
-                                    Text(point.name).foregroundStyle(.white)
-                                    Text(status(point)).font(.caption).foregroundStyle(Color.pivotMuted)
+                                    Text(point.name).foregroundStyle(.primary)
+                                    Text(status(point)).font(.caption).foregroundStyle(.secondary)
                                 }
-                            }.padding(.vertical, 4)
+                            } icon: { Image(systemName: point.category.symbol).foregroundStyle(point.category.color) }
                         }
                     }
                 }
@@ -383,34 +503,15 @@ struct ParkMapView: View {
                     Link("Locations by ThemeParks.wiki", destination: URL(string: "https://www.themeparks.wiki/")!)
                     Text("Catalog checked \(String(catalog?.generatedAt.prefix(10) ?? "Unknown")). \(parkData?.missing.count ?? 0) places omitted because coordinates are unavailable or outside the park area.")
                     Text("Provider listings may be incomplete, seasonal, or closed. A pin does not confirm operation. Restaurant hours and menus are unavailable. Check Shows for today’s performances. Follow posted paths; this map is for orientation.")
-                }.font(.caption).foregroundStyle(Color.pivotMuted)
+                }.font(.caption).foregroundStyle(.secondary)
             }
-            .navigationTitle(park?.name ?? "Park places")
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle(park?.name ?? "Park places").navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { showPlaces = false } } }
         }
-        .preferredColorScheme(.dark)
     }
     private func loadCatalog() {
         do { catalog = try catalogOverride ?? ParkMapCatalog.load(); loadFailed = false }
         catch { loadFailed = true }
-    }
-    private func setFullScreen(_ value: Bool) {
-        searchFocused = false
-        if let lastCamera { position = .camera(lastCamera) }
-        isFullScreen = value
-    }
-    private func recenter() {
-        guard let park else { return }
-        let all = allPoints
-        if let minLat = all.map(\.latitude).min(), let maxLat = all.map(\.latitude).max(),
-           let minLon = all.map(\.longitude).min(), let maxLon = all.map(\.longitude).max() {
-            position = .region(MKCoordinateRegion(
-                center: CLLocationCoordinate2D(latitude: (minLat + maxLat) / 2, longitude: (minLon + maxLon) / 2),
-                span: MKCoordinateSpan(latitudeDelta: max(0.004, (maxLat-minLat)*1.25), longitudeDelta: max(0.004, (maxLon-minLon)*1.25))))
-        } else if let center = ParkLocationDetector.coordinates[park] {
-            position = .region(MKCoordinateRegion(center: center, latitudinalMeters: 1400, longitudinalMeters: 1400))
-        }
     }
 }
 
@@ -430,11 +531,15 @@ struct NativeParkMapUITestScreen: View {
             ("Old wait ride", "OPEN", 80, -901), ("Stale ride", "STALE", 99, 0),
             ("Unknown ride", "NEW_STATUS", 99, 0), ("Unmapped ride", "OPEN", 10, 0)
         ]
-        let points = cases.enumerated().map { index, value in
+        var points = cases.enumerated().map { index, value in
             ParkMapPoint(id: "fixture-\(index + 1)", name: value.0, category: .ride,
                 latitude: 28.4177 + Double(index / 4) * 0.001,
                 longitude: -81.5812 + Double(index % 4) * 0.001, rideId: index + 1)
         }
+        points += [
+            ParkMapPoint(id: "fixture-food-a", name: "North counter", category: .restaurant, latitude: 28.4177, longitude: -81.5812, rideId: nil),
+            ParkMapPoint(id: "fixture-food-b", name: "South counter", category: .restaurant, latitude: 28.4177, longitude: -81.5812, rideId: nil)
+        ]
         catalog = ParkMapCatalog(generatedAt: "2026-10-30", parks: ["6": ParkMapPark(name: "Magic Kingdom Park", points: points, missing: [])])
         let rides: [[String: Any]] = cases.dropLast().enumerated().map { index, value in
             let offset = index == 0 && ProcessInfo.processInfo.arguments.contains("--map-wait-expiring") ? -880 : value.3
@@ -460,11 +565,38 @@ struct NativeParkMapUITestScreen: View {
         snapshot = try! decoder.decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: payload))
     }
 
+    static func rootSnapshot() -> LiveParkSnapshot {
+        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .secondsSince1970
+        let base = NativeParkMapUITestScreen().snapshot
+        var payload = try! JSONSerialization.jsonObject(with: encoder.encode(base)) as! [String: Any]
+        let points = try! ParkMapCatalog.load().parks["6"]!.points.filter { $0.rideId != nil }
+        let selected = points.filter { [138, 137, 131].contains($0.rideId!) }
+        let original = (payload["rides"] as! [[String: Any]])[0]
+        payload["rides"] = selected.enumerated().map { index, point -> [String: Any] in
+            var ride = original
+            ride["id"] = point.rideId!; ride["name"] = point.name; ride["waitTime"] = 35 + index * 5
+            ride["location"] = ["latitude": point.latitude, "longitude": point.longitude]
+            return ride
+        }
+        let now = Date().timeIntervalSince1970
+        payload["shows"] = [["id": "apple-ui-show", "name": "Castle afternoon performance", "sourceUpdatedAt": now,
+            "nextShowAt": now + 7200, "showtimes": [["startTime": now + 7200, "endTime": now + 9000]]]]
+        payload["showsSourceUpdatedAt"] = now
+        payload["parkHours"] = ["parkId": 6, "parkName": "Magic Kingdom Park", "timezone": "America/New_York",
+            "date": ParkHoursSnapshot.localDate(for: .magicKingdom, at: Date()), "fetchedAt": now,
+            "cacheAgeSeconds": 0, "cacheHit": false, "stale": false,
+            "regular": ["openingTime": now - 3600, "closingTime": now + 28800, "label": "Park open", "type": "OPERATING"],
+            "earlyEntry": ["openingTime": now - 5400, "closingTime": now - 3600, "label": "Early entry", "type": "EXTRA_HOURS"],
+            "source": ["name": "UI fixture", "label": "UI fixture", "url": "https://example.invalid", "termsUrl": "https://example.invalid", "updateCadenceMinutes": 5]]
+        let decoder = JSONDecoder(); decoder.dateDecodingStrategy = .secondsSince1970
+        return try! decoder.decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: payload))
+    }
+
     var body: some View {
         NavigationStack {
             ParkMapView(park: .magicKingdom, snapshot: snapshot, onChoosePark: {},
                         refreshFailed: refreshFailed, catalogOverride: catalog)
-                .padding(16).background(Color.pivotBackground)
+                .background(Color.pivotBackground)
                 .navigationTitle("Map test park").navigationBarTitleDisplayMode(.inline)
         }
     }

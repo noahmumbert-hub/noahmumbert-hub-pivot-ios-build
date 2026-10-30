@@ -18,11 +18,20 @@ struct PIVOTApp: App {
                 .environmentObject(store)
                 .environment(\.pivotAccent, PivotAccent.resolve(selectedAccent).color)
                 .tint(PivotAccent.resolve(selectedAccent).color)
-                .preferredColorScheme(.dark)
+                .preferredColorScheme(testColorScheme)
+                .modifier(PivotUITestTypeSize())
                 .onChange(of: selectedAccent) { _, _ in
                     store.synchronizeLiveActivity()
                 }
         }
+    }
+
+    private var testColorScheme: ColorScheme? {
+#if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("--ui-dark") { return .dark }
+        if ProcessInfo.processInfo.arguments.contains("--ui-light") { return .light }
+#endif
+        return nil
     }
 
     @ViewBuilder
@@ -62,3 +71,14 @@ final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCent
     }
 }
 #endif
+
+private struct PivotUITestTypeSize: ViewModifier {
+    @ViewBuilder func body(content: Content) -> some View {
+#if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("--ui-large-type") { content.dynamicTypeSize(.accessibility2) }
+        else { content }
+#else
+        content
+#endif
+    }
+}

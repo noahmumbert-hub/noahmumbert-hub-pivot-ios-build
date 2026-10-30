@@ -36,7 +36,7 @@ struct RootView: View {
                 .tabItem { Label("Plan", systemImage: "point.topleft.down.to.point.bottomright.curvepath") }
                 .tag(DashboardSection.today)
 
-            dashboardTab(.shows)
+            showsTab
                 .tabItem { Label("Shows", systemImage: "sparkles") }
                 .tag(DashboardSection.shows)
 
@@ -44,7 +44,7 @@ struct RootView: View {
                 .tabItem { Label("Map", systemImage: "map") }
                 .tag(DashboardSection.map)
 
-            dashboardTab(.data)
+            moreTab
                 .tabItem { Label("More", systemImage: "ellipsis") }
                 .tag(DashboardSection.data)
         }
@@ -85,17 +85,106 @@ struct RootView: View {
 
     private var mapTab: some View {
         NavigationStack {
-            VStack(spacing: 10) {
-                parkSwitch
-                ParkMapView(park: store.selectedPark, snapshot: store.snapshot,
-                            onChoosePark: { showParkPicker = true }, refreshFailed: store.errorMessage != nil)
-                    .id(store.selectedPark?.id)
-            }
-            .padding(.horizontal, 16).padding(.top, 8).padding(.bottom, 4)
-            .background(Color.pivotBackground)
-            .navigationTitle("Explore the park")
-            .navigationBarTitleDisplayMode(.inline)
+            ParkMapView(park: store.selectedPark, snapshot: store.snapshot,
+                        onChoosePark: { showParkPicker = true }, refreshFailed: store.errorMessage != nil)
+                .id(store.selectedPark?.id)
+                .navigationTitle("Map")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        Button { showParkPicker = true } label: {
+                            HStack(spacing: 4) {
+                                Text(store.selectedPark?.name ?? "Choose a park").font(.headline).lineLimit(1)
+                                Image(systemName: "chevron.down").font(.caption2)
+                            }
+                        }.accessibilityLabel("Change park. Current park: \(store.selectedPark?.name ?? "none")")
+                    }
+                }
         }
+    }
+
+    private var showsTab: some View {
+        NavigationStack {
+            List {
+                Section {
+                    Button { showParkPicker = true } label: {
+                        Label(store.selectedPark?.name ?? "Choose a park", systemImage: "mappin.and.ellipse")
+                    }.accessibilityLabel("Change park. Current park: \(store.selectedPark?.name ?? "none")")
+                } footer: { Text("Today’s entertainment, all in one place.") }
+                if store.selectedPark != nil {
+                    Section("Today’s shows") {
+                        if let shows = store.snapshot?.showList, !shows.isEmpty {
+                            ForEach(shows) { show in showScheduleRow(show, referenceDate: Date()) }
+                        } else {
+                            VStack(alignment: .leading, spacing: 6) {
+                                Text(store.snapshot?.showSchedulePresentation().headline ?? "Updating today’s schedule").font(.headline)
+                                Text(store.snapshot?.showSchedulePresentation().detail ?? "Checking the daily entertainment provider.").foregroundStyle(.secondary)
+                            }
+                        }
+                    }
+                    Section { Text(showScheduleSourceText(store.snapshot)).font(.caption).foregroundStyle(.secondary) }
+                } else {
+                    Button("Choose a park for showtimes") { showParkPicker = true }
+                }
+            }
+            .navigationTitle("Shows")
+            .refreshable { await store.refreshNow() }
+            .onChange(of: store.selectedPark?.id) { _, _ in expandedShowIDs.removeAll() }
+            .onChange(of: store.snapshot?.showList.map(\.id)) { _, ids in expandedShowIDs.formIntersection(ids ?? []) }
+        }
+    }
+
+    private var moreTab: some View {
+        NavigationStack {
+            Form {
+                Section {
+                    Button { showSettings = true } label: { Label("Settings", systemImage: "gearshape") }
+                    Button { showParkPicker = true } label: { Label("Park & location", systemImage: "mappin.and.ellipse") }
+                    Button { showAlertSettings = true } label: { Label("Ride alerts & Live Activity", systemImage: "bell") }
+                } header: { Text("PIVOT") } footer: { Text("Manage your park, alerts, and app.") }
+                Section("Park information") {
+                    NavigationLink {
+                        ScrollView { parkHoursCard.padding(16) }
+                            .navigationTitle("Park hours & early entry").navigationBarTitleDisplayMode(.inline)
+                    } label: { Label("Park hours & early entry", systemImage: "calendar.badge.clock") }
+                    NavigationLink { closuresScreen } label: { Label("Closures & park weather", systemImage: "cloud.sun") }
+                    NavigationLink {
+                        ScrollView { dataMethod.padding(16) }.navigationTitle("Data & methods").navigationBarTitleDisplayMode(.inline)
+                    } label: { Label("Data & methods", systemImage: "info.circle") }
+                }
+                Section("Current source") {
+                    Text(store.feedHealth().status).foregroundStyle(.secondary)
+                    Button("Refresh ride data now") { Task { await store.refreshNow() } }
+                        .disabled(store.selectedPark == nil || store.isRefreshing)
+                }
+                Section { attributionFooter }
+            }
+            .navigationTitle("More")
+        }
+    }
+
+    private var closuresScreen: some View {
+        ScrollViewReader { proxy in
+            ScrollView {
+                LazyVStack(spacing: 16) {
+                    RetainedSnapshotNotice()
+                    radarSelection
+                    radarCard { withAnimation { proxy.scrollTo("down-rides", anchor: .top) } }
+                    if store.selectedPark != nil {
+                        weatherStrip
+                        if let estimate = store.snapshot?.weather.lightningDeparture {
+                            NativeLightningDepartureCard(estimate: estimate,
+                                timeZone: store.selectedPark?.timeZone ?? .current,
+                                refreshFailed: store.errorMessage != nil || store.snapshot?.feedHealthy != true)
+                        }
+                        sourceStrip
+                        rideList(radarOnly: true).id("down-rides")
+                    }
+                }.padding(16)
+            }.refreshable { await store.refreshNow() }
+        }
+        .background(Color.pivotBackground)
+        .navigationTitle("Closures & weather").navigationBarTitleDisplayMode(.inline)
     }
 
     private func dashboardTab(_ section: DashboardSection) -> some View {
@@ -106,8 +195,19 @@ struct RootView: View {
                 ScrollViewReader { scrollProxy in
                   ScrollView {
                     LazyVStack(spacing: 20) {
-                        header
-                        parkSwitch
+                        Button { showParkPicker = true } label: {
+                            Label(store.selectedPark?.name ?? "Choose a park", systemImage: "mappin.and.ellipse")
+                                .font(.subheadline).frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                        .accessibilityLabel("Change park. Current park: \(store.selectedPark?.name ?? "none")")
+                        if let park = store.selectedPark, let hours = store.parkHours(for: park) {
+                            VStack(alignment: .leading, spacing: 3) {
+                                Text(parkHoursLine(hours))
+                                Text(earlyEntryLine(hours))
+                                if hours.stale { Text("Saved schedule · refresh pending").foregroundStyle(.orange) }
+                            }.font(.caption).foregroundStyle(.secondary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
                         RetainedSnapshotNotice()
 
                         if store.selectedPark?.id == 65, store.snapshot?.parkId == 65,
@@ -138,11 +238,8 @@ struct RootView: View {
                             }
 
                         case .shows:
-                            tabIntro(
-                                eyebrow: "",
-                                title: "Shows",
-                                detail: "Today’s entertainment, all in one place."
-                            )
+                            Text("Today’s entertainment, all in one place.").font(.subheadline).foregroundStyle(.secondary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
 
                             if store.selectedPark != nil {
                                 showsCard
@@ -197,8 +294,8 @@ struct RootView: View {
 
                         attributionFooter
                     }
-                    .padding(.horizontal, 20)
-                    .padding(.top, 4)
+                    .padding(.horizontal, 16)
+                    .padding(.top, 8)
                     .padding(.bottom, 18)
                 }
                 .scrollDismissesKeyboard(.interactively)
@@ -207,9 +304,18 @@ struct RootView: View {
                 }
                 }
             }
-#if os(iOS)
-            .toolbar(.hidden, for: .navigationBar)
-#endif
+            .navigationTitle(section == .today ? "Your day" : section == .waits ? "Wait times" : section == .shows ? "Shows" : "More")
+            .navigationBarTitleDisplayMode(.large)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) { Text("PIVOT").font(.caption.weight(.bold)).foregroundStyle(accent) }
+                ToolbarItemGroup(placement: .topBarTrailing) {
+                    Button { showAlertSettings = true } label: { Image(systemName: "bell") }
+                        .accessibilityLabel("Ride alerts")
+                    Button { Task { await store.refreshNow() } } label: { Image(systemName: "arrow.clockwise") }
+                        .accessibilityLabel("Refresh ride data now")
+                        .disabled(store.selectedPark == nil || store.isRefreshing)
+                }
+            }
         }
     }
 
@@ -288,7 +394,7 @@ struct RootView: View {
         HStack(spacing: 14) {
             Image(systemName: icon).font(.title3).foregroundStyle(accent).frame(width: 28)
             VStack(alignment: .leading, spacing: 4) {
-                Text(title).font(.subheadline.weight(.semibold)).foregroundStyle(.white)
+                Text(title).font(.subheadline.weight(.semibold)).foregroundStyle(.primary)
                 Text(detail).font(.caption).foregroundStyle(Color.pivotMuted)
             }
             Spacer(minLength: 4)
@@ -308,7 +414,7 @@ struct RootView: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(title)
                         .font(.headline)
-                        .foregroundStyle(.white)
+                        .foregroundStyle(.primary)
                     Text(detail)
                         .font(.subheadline)
                         .foregroundStyle(Color.pivotMuted)
@@ -348,7 +454,7 @@ struct RootView: View {
             Button { showAlertSettings = true } label: {
                 Image(systemName: store.alertsEnabled ? "bell.badge.fill" : "bell")
                     .font(.system(size: 16, weight: .medium))
-                    .foregroundStyle(store.alertsEnabled ? Color.pivotMint : .white)
+                    .foregroundStyle(store.alertsEnabled ? Color.pivotMint : Color.primary)
                     .frame(width: 44, height: 44)
             }
             .pivotNativeGlassIconButton()
@@ -386,7 +492,7 @@ struct RootView: View {
                 VStack(alignment: .leading, spacing: 3) {
                     Text(store.selectedPark?.name ?? "No park selected")
                         .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(.primary)
                         .fixedSize(horizontal: false, vertical: true)
                     if store.locationStatus == .searching {
                         Label("Finding nearby supported park…", systemImage: "location")
@@ -397,19 +503,19 @@ struct RootView: View {
                        let hours = store.parkHours(for: selectedPark) {
                         Text(parkHoursLine(hours))
                             .font(.caption)
-                            .foregroundStyle(.white)
+                            .foregroundStyle(.primary)
                             .fixedSize(horizontal: false, vertical: true)
                         Text(earlyEntryLine(hours))
                             .font(.caption)
-                            .foregroundStyle(.white)
+                            .foregroundStyle(.primary)
                             .fixedSize(horizontal: false, vertical: true)
                     } else if store.selectedPark != nil {
                         Text("Park hours updating")
                             .font(.caption2)
-                            .foregroundStyle(.white)
+                            .foregroundStyle(.primary)
                         Text("Early entry · Updating")
                             .font(.caption2)
-                            .foregroundStyle(.white)
+                            .foregroundStyle(.primary)
                     }
                 }
                 Spacer()
@@ -469,7 +575,7 @@ struct RootView: View {
                 PivotStatusDot(color: health.isLive ? .pivotMint : .orange)
                 Text(health.status)
                     .font(.caption.weight(.semibold))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(.primary)
                     .lineLimit(2)
                 Spacer(minLength: 8)
                 Image(systemName: "arrow.triangle.2.circlepath")
@@ -709,7 +815,7 @@ struct RootView: View {
             } else {
                 Text(fallback)
                     .font(.subheadline.weight(.semibold))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(.primary)
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -727,7 +833,7 @@ struct RootView: View {
             if shows.isEmpty {
                 VStack(alignment: .leading, spacing: 8) {
                     Text(presentation?.headline ?? "Updating today’s schedule")
-                        .font(.headline).foregroundStyle(.white)
+                        .font(.headline).foregroundStyle(.primary)
                     Text(presentation?.detail ?? "Checking the daily entertainment provider.")
                         .font(.subheadline).foregroundStyle(Color.pivotMuted)
                 }
@@ -741,8 +847,7 @@ struct RootView: View {
                 }
                 ForEach(shows) { show in
                     showScheduleRow(show, referenceDate: Date())
-                        .background(Color.pivotSurface, in: RoundedRectangle(cornerRadius: 16))
-                        .overlay { RoundedRectangle(cornerRadius: 16).stroke(Color.pivotBorder, lineWidth: 1) }
+                        .background(Color.pivotSurface, in: RoundedRectangle(cornerRadius: 12))
                 }
             }
             Text(showScheduleSourceText(snapshot))
@@ -784,18 +889,18 @@ struct RootView: View {
                     VStack(alignment: .leading, spacing: 3) {
                         Text(show.name)
                             .font(.body.weight(.semibold))
-                            .foregroundStyle(.white)
+                            .foregroundStyle(.primary)
                             .fixedSize(horizontal: false, vertical: true)
                         Text(statusLabel)
                             .font(.caption)
-                            .foregroundStyle(.white)
+                            .foregroundStyle(.primary)
                             .fixedSize(horizontal: false, vertical: true)
                     }
 
                     Spacer(minLength: 4)
                     Image(systemName: "chevron.down")
                         .font(.caption.weight(.bold))
-                        .foregroundStyle(isExpanded ? accent : Color.white.opacity(0.62))
+                        .foregroundStyle(isExpanded ? accent : Color.secondary)
                         .rotationEffect(isExpanded ? .degrees(180) : .zero)
                         .animation(reduceMotion ? nil : .easeInOut(duration: 0.18), value: isExpanded)
                         .accessibilityHidden(true)
@@ -815,7 +920,7 @@ struct RootView: View {
                 if show.sortedShowtimes.isEmpty {
                     Text("No timed performances in today’s published schedule")
                         .font(.caption)
-                        .foregroundStyle(.white)
+                        .foregroundStyle(.primary)
                         .padding(.leading, 16)
                         .padding(.trailing, 14)
                         .padding(.bottom, 13)
@@ -840,7 +945,7 @@ struct RootView: View {
                                 .buttonStyle(.plain)
                                 .disabled(showtime.startTime <= referenceDate)
                                 .font(.caption.weight(.semibold).monospacedDigit())
-                                .foregroundStyle(.white)
+                                .foregroundStyle(.primary)
                                 .lineLimit(1)
                                 .padding(.horizontal, 9)
                                 .padding(.vertical, 6)
@@ -933,7 +1038,7 @@ struct RootView: View {
         } label: {
             Label("Data source & estimation method", systemImage: "cylinder.split.1x2")
                 .font(.headline)
-                .foregroundStyle(.white)
+                .foregroundStyle(.primary)
         }
         .tint(accent)
         .pivotCard()
@@ -967,7 +1072,7 @@ struct RootView: View {
             Text(title).foregroundStyle(Color.pivotMuted)
             Spacer()
             Text(value)
-                .foregroundStyle(.white)
+                .foregroundStyle(.primary)
                 .multilineTextAlignment(.trailing)
         }
     }
@@ -1050,7 +1155,7 @@ private struct DayPlannerView: View {
                         VStack(alignment: .leading, spacing: 4) {
                             Text("Choose a park to build your day")
                                 .font(.headline)
-                                .foregroundStyle(.white)
+                                .foregroundStyle(.primary)
                             Text("Your route updates automatically as conditions change.")
                                 .font(.subheadline)
                                 .foregroundStyle(Color.pivotMuted)
@@ -1160,7 +1265,7 @@ private struct DayPlannerView: View {
                         .foregroundStyle(accent)
                     Text(favoriteRideIDs.isEmpty ? "What do you want to ride?" : "\(favoriteRideIDs.count) ride\(favoriteRideIDs.count == 1 ? "" : "s") selected")
                         .font(.headline)
-                        .foregroundStyle(.white)
+                        .foregroundStyle(.primary)
                     Text(favoriteRides.isEmpty
                          ? "PIVOT plans only the rides you choose."
                          : favoriteRides.map(\.name).joined(separator: " · "))
@@ -1243,7 +1348,7 @@ private struct DayPlannerView: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(12)
-        .background(Color.white.opacity(0.035))
+        .background(Color.pivotSurfaceRaised)
         .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
         .overlay {
             RoundedRectangle(cornerRadius: 14, style: .continuous)
@@ -1337,7 +1442,7 @@ private struct DayPlannerView: View {
                 HStack(alignment: .top, spacing: 11) {
                     Text(stop.map { "\($0.sequence)" } ?? (cut.contains(ride.id) ? "–" : "!"))
                         .font(.caption.weight(.bold).monospacedDigit())
-                        .foregroundStyle(stop != nil ? Color.pivotBackground : .white)
+                        .foregroundStyle(stop != nil ? Color.pivotBackground : Color.primary)
                         .frame(width: 28, height: 28)
                         .background(stop != nil ? Color.pivotMint : cut.contains(ride.id) ? Color.orange.opacity(0.7) : Color.pivotPink.opacity(0.7))
                         .clipShape(Circle())
@@ -1345,7 +1450,7 @@ private struct DayPlannerView: View {
                     VStack(alignment: .leading, spacing: 3) {
                         Text(ride.name)
                             .font(.subheadline.weight(.semibold))
-                            .foregroundStyle(.white)
+                            .foregroundStyle(.primary)
                             .fixedSize(horizontal: false, vertical: true)
                         Text("\(ride.land) · \(recommendation)")
                             .font(.caption2)
@@ -1443,7 +1548,7 @@ private struct DayPlannerView: View {
                             .foregroundStyle(Color.pivotMuted)
                         Text(stop.rideName)
                             .font(.headline)
-                            .foregroundStyle(.white)
+                            .foregroundStyle(.primary)
                         Text(stop.expectedWaitMinutes == 0 ? "Walk-on" : "\(stop.expectedWaitMinutes) min wait")
                             .font(.caption2.weight(.bold).monospacedDigit())
                             .foregroundStyle(stop.expectedWaitMinutes <= 20 ? Color.pivotMint : stop.expectedWaitMinutes <= 50 ? Color.orange : Color.pivotPink)
@@ -1460,7 +1565,7 @@ private struct DayPlannerView: View {
                     Spacer(minLength: 8)
                     Text(ParkTimeFormatter.time(stop.completeAt, timeZone: park?.timeZone))
                         .font(.caption.weight(.bold).monospacedDigit())
-                        .foregroundStyle(.white)
+                        .foregroundStyle(.primary)
                 }
                 .padding(14)
 
@@ -1636,7 +1741,7 @@ private struct FavoriteRidePickerSheet: View {
                                 VStack(alignment: .leading, spacing: 3) {
                                     Text(ride.name)
                                         .font(.body.weight(.semibold))
-                                        .foregroundStyle(.white)
+                                        .foregroundStyle(.primary)
                                     Text("\(ride.land) · \(statusLabel(for: ride))")
                                         .font(.caption)
                                         .foregroundStyle(Color.pivotMuted)
@@ -1679,7 +1784,7 @@ private struct FavoriteRidePickerSheet: View {
                     .background(.ultraThinMaterial)
             }
         }
-        .preferredColorScheme(.dark)
+
         .presentationDetents([.large])
     }
 

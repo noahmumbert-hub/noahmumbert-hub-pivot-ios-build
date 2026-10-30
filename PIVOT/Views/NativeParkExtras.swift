@@ -157,18 +157,18 @@ extension HorrorNightPresentation {
 }
 
 private enum HorrorNightTheme {
-    static let amber = Color(red: 1, green: 0.72, blue: 0.40)
-    static let lavender = Color(red: 0.79, green: 0.70, blue: 1)
-    static let surface = Color(red: 0.095, green: 0.080, blue: 0.125)
-    static let muted = Color(red: 0.73, green: 0.70, blue: 0.79)
+    static let amber = PivotAccent.orange.color
+    static let lavender = PivotAccent.purple.color
+    static let surface = Color.pivotSurface
+    static let muted = Color.secondary
     static let border = lavender.opacity(0.18)
 }
 
 private extension View {
     func horrorNightCard(padding: CGFloat = 16) -> some View {
         self.padding(padding)
-            .background(HorrorNightTheme.surface, in: RoundedRectangle(cornerRadius: 20))
-            .overlay { RoundedRectangle(cornerRadius: 20).stroke(HorrorNightTheme.border, lineWidth: 1) }
+            .background(HorrorNightTheme.surface, in: RoundedRectangle(cornerRadius: 12))
+            .overlay { RoundedRectangle(cornerRadius: 12).stroke(Color.clear, lineWidth: 0) }
     }
 }
 
@@ -196,7 +196,7 @@ struct NativeHorrorNightPanel: View {
                         if showHouses { checklist(now: context.date) }
                     }
                 }
-                .foregroundStyle(.white)
+                .foregroundStyle(.primary)
             }
         }
         .onChange(of: event.night.date) { _, _ in previewExpanded = false }
@@ -245,12 +245,7 @@ struct NativeHorrorNightPanel: View {
         }
         .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background {
-            RoundedRectangle(cornerRadius: 18)
-                .fill(LinearGradient(colors: [Color(red: 0.18, green: 0.10, blue: 0.27), HorrorNightTheme.surface],
-                                     startPoint: .topLeading, endPoint: .bottomTrailing))
-        }
-        .overlay { RoundedRectangle(cornerRadius: 18).stroke(HorrorNightTheme.lavender.opacity(0.25), lineWidth: 1) }
+        .background(Color.pivotSurface, in: RoundedRectangle(cornerRadius: 12))
     }
 
     private var eventDate: some View {
@@ -760,7 +755,7 @@ struct NativeLightningDepartureCard: View {
                 }
                 .font(.subheadline).tint(.orange)
             }
-            .foregroundStyle(.white)
+            .foregroundStyle(.primary)
             .frame(maxWidth: .infinity, alignment: .leading)
             .pivotCard()
             .accessibilityIdentifier("experimental-storm-departure")
@@ -769,7 +764,7 @@ struct NativeLightningDepartureCard: View {
 
     private func evidence(_ title: String, _ value: String) -> some View {
         VStack(alignment: .leading, spacing: 3) {
-            Text(title).fontWeight(.semibold).foregroundStyle(.white)
+            Text(title).fontWeight(.semibold).foregroundStyle(.primary)
             Text(value).fixedSize(horizontal: false, vertical: true)
         }
     }

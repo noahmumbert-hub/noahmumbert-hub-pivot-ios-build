@@ -9,6 +9,185 @@ final class PIVOTUITests: XCTestCase {
         return app
     }
 
+    private func chooseMapCategory(_ category: String, app: XCUIApplication) {
+        app.buttons["Filter map places"].tap()
+        let choice = app.buttons[category].firstMatch
+        XCTAssertTrue(choice.waitForExistence(timeout: 3))
+        choice.tap()
+    }
+
+    private func rootFixture(_ extra: [String] = []) -> XCUIApplication {
+        let app = XCUIApplication()
+        app.launchArguments = ["--apple-ui-test", "--apple-ui-fixtures", "--ui-light"] + extra
+        app.launch()
+        XCTAssertTrue(app.staticTexts["Wait times"].waitForExistence(timeout: 10))
+        return app
+    }
+
+    private func camera(_ app: XCUIApplication) -> [Double] {
+        app.staticTexts["Map camera state"].label.split(separator: ",").compactMap { Double($0) }
+    }
+
+    private func waitForCamera(_ app: XCUIApplication, _ condition: @escaping ([Double]) -> Bool,
+                               timeout: TimeInterval = 5, file: StaticString = #filePath, line: UInt = #line) {
+        let predicate = NSPredicate { _, _ in
+            let values = self.camera(app)
+            return values.count == 3 && condition(values)
+        }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: predicate, object: nil)], timeout: timeout), .completed, file: file, line: line)
+    }
+
+    func testNativeMapFillsWindowAndSupportsPinchPanZoomWithoutCameraReset() {
+        let app = rootFixture()
+        app.tabBars.buttons["Map"].tap()
+        app.buttons["Full screen map"].tap()
+        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
+        let map = app.maps["Park map"]
+        XCTAssertTrue(map.waitForExistence(timeout: 5))
+        XCTAssertEqual(map.frame.minX, app.frame.minX, accuracy: 1)
+        XCTAssertEqual(map.frame.minY, app.frame.minY, accuracy: 1)
+        XCTAssertEqual(map.frame.width, app.frame.width, accuracy: 1)
+        XCTAssertEqual(map.frame.height, app.frame.height, accuracy: 1)
+        waitForCamera(app) { $0[2] > 0 }
+        let initial = camera(app)
+        // Real two-finger gesture over the dense native annotation area.
+        map.pinch(withScale: 2, velocity: 1)
+        waitForCamera(app) { $0[2] < initial[2] * 0.85 }
+        let pinched = camera(app)
+        map.pinch(withScale: 0.5, velocity: -1)
+        waitForCamera(app) { $0[2] > pinched[2] * 1.15 }
+        app.buttons["Zoom in"].tap()
+        waitForCamera(app) { $0[2] < initial[2] * 0.8 }
+        let beforePan = camera(app)
+        map.coordinate(withNormalizedOffset: CGVector(dx: 0.35, dy: 0.5))
+            .press(forDuration: 0.05, thenDragTo: map.coordinate(withNormalizedOffset: CGVector(dx: 0.65, dy: 0.6)))
+        waitForCamera(app) { abs($0[0] - beforePan[0]) + abs($0[1] - beforePan[1]) > 0.0002 }
+        let panned = camera(app)
+        // Wait through the visible map's 15-second status refresh; camera must remain user-owned.
+        let tick = expectation(description: "Map freshness tick")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 16) { tick.fulfill() }
+        wait(for: [tick], timeout: 18)
+        XCTAssertEqual(camera(app)[0], panned[0], accuracy: 0.0001)
+        XCTAssertEqual(camera(app)[1], panned[1], accuracy: 0.0001)
+        XCTAssertEqual(camera(app)[2], panned[2], accuracy: panned[2] * 0.05)
+        screenshot("Native edge-to-edge map after pinch and pan", app: app)
+        app.buttons["Close full screen map"].tap()
+        XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 5))
+        waitForCamera(app) { abs($0[0] - panned[0]) < 0.0002 && abs($0[1] - panned[1]) < 0.0002 }
+        app.buttons["Full screen map"].tap()
+        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
+        waitForCamera(app) { abs($0[0] - panned[0]) < 0.0002 && abs($0[1] - panned[1]) < 0.0002 }
+        app.buttons["Zoom out"].tap()
+        waitForCamera(app) { $0[2] > panned[2] * 1.3 }
+        app.buttons["Show whole park"].tap()
+        waitForCamera(app) { abs($0[0] - initial[0]) < 0.0002 && abs($0[1] - initial[1]) < 0.0002 }
+        chooseMapCategory("Food", app: app)
+        app.buttons["Show whole park"].tap()
+        XCTAssertFalse(app.buttons["map-pin-b2260923-9315-40fd-9c6b-44dd811dbe64"].exists)
+        screenshot("Native full-screen food map and Apple attribution", app: app)
+    }
+
+    func testNativeClustersZoomAndCoLocatedPlacesRemainSelectable() {
+        let app = mapFixtureApp()
+        app.buttons["Full screen map"].tap()
+        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
+        chooseMapCategory("Rides", app: app)
+        app.buttons["Zoom out"].tap()
+        app.buttons["Zoom out"].tap()
+        let cluster = app.buttons["Map place cluster"].firstMatch
+        XCTAssertTrue(cluster.waitForExistence(timeout: 5))
+        let before = camera(app)
+        cluster.tap()
+        waitForCamera(app) { $0[2] < before[2] * 0.85 }
+        chooseMapCategory("Food", app: app)
+        app.buttons["Show whole park"].tap()
+        XCTAssertTrue(cluster.waitForExistence(timeout: 5)); cluster.tap()
+        let member = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'North counter'")).firstMatch
+        XCTAssertTrue(member.waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'South counter'")).firstMatch.exists)
+        screenshot("Co-located map places native member list", app: app)
+        member.tap()
+        XCTAssertTrue(app.staticTexts["North counter"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["Dining location · hours unavailable"].exists)
+    }
+
+    func testNativeBrowseFocusesRideAndRootWaitDetailsStayCurrent() {
+        let app = rootFixture()
+        app.tabBars.buttons["Map"].tap()
+        app.buttons["Full screen map"].tap()
+        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
+        let map = app.maps["Park map"]
+        map.coordinate(withNormalizedOffset: CGVector(dx: 0.2, dy: 0.4))
+            .press(forDuration: 0.1, thenDragTo: map.coordinate(withNormalizedOffset: CGVector(dx: 0.8, dy: 0.5)))
+        let search = app.textFields["Search park places"]
+        search.tap(); search.typeText("Space Mountain\n")
+        app.buttons["Browse map places"].tap()
+        let ride = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Space Mountain'")).firstMatch
+        XCTAssertTrue(ride.waitForExistence(timeout: 5)); ride.tap()
+        XCTAssertTrue(app.staticTexts["Selected ride wait"].waitForExistence(timeout: 5))
+        XCTAssertEqual(app.staticTexts["Selected ride wait"].label, "45 min")
+        XCTAssertTrue(app.staticTexts["Selected ride wait"].isHittable)
+        XCTAssertTrue(app.buttons["map-pin-b2260923-9315-40fd-9c6b-44dd811dbe64"].isHittable)
+        screenshot("Native production full-screen selected current ride", app: app)
+        app.buttons["Ride details"].tap()
+        XCTAssertTrue(app.staticTexts["Current wait"].waitForExistence(timeout: 5))
+        screenshot("Native ride detail sheet", app: app)
+    }
+
+    func testNativeSurfacesPreserveHoursShowsAlertsAndPlanProgress() {
+        let app = rootFixture()
+        screenshot("Native Waits light", app: app)
+        app.tabBars.buttons["Shows"].tap()
+        let show = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Castle afternoon performance'")).firstMatch
+        XCTAssertTrue(show.waitForExistence(timeout: 5)); show.tap()
+        screenshot("Native Shows light", app: app)
+        app.tabBars.buttons["Plan"].tap()
+        let favorites = app.buttons["native-day-favorites"]
+        reveal(favorites, in: app); favorites.tap()
+        let toggle = app.switches["Space Mountain"]
+        XCTAssertTrue(toggle.waitForExistence(timeout: 5))
+        if toggle.value as? String != "1" { toggle.tap() }
+        app.buttons["Done"].tap()
+        let progress = app.buttons["All favorites & progress"]
+        reveal(progress, in: app); progress.tap()
+        let undo = app.buttons["Undo Space Mountain"]
+        if undo.exists { reveal(undo, in: app); undo.tap() }
+        let done = app.buttons["Mark Space Mountain done"]
+        reveal(done, in: app); done.tap()
+        reveal(undo, in: app); undo.tap()
+        let skip = app.buttons["Skip Space Mountain today"]
+        reveal(skip, in: app); skip.tap()
+        reveal(undo, in: app); undo.tap()
+        screenshot("Native Plan light with retained progress controls", app: app)
+        app.tabBars.buttons["More"].tap()
+        app.buttons["Park hours & early entry"].tap()
+        XCTAssertTrue(app.staticTexts["Early entry"].waitForExistence(timeout: 5))
+        screenshot("Native park hours and early entry", app: app)
+        app.navigationBars.buttons.firstMatch.tap()
+        app.buttons["Ride alerts & Live Activity"].tap()
+        XCTAssertTrue(app.switches["Alerts favorites only"].waitForExistence(timeout: 5))
+        screenshot("Native alert settings Form", app: app)
+    }
+
+    func testNativeDarkAndLargeTextSurfacesRemainReachable() {
+        let app = rootFixture(["--ui-dark", "--ui-large-type"])
+        screenshot("Native Waits dark accessibility text", app: app)
+        app.tabBars.buttons["More"].tap()
+        screenshot("Native More dark accessibility text", app: app)
+        app.buttons["Settings"].tap()
+        reveal(app.buttons["accent-mint"], in: app)
+        app.buttons["accent-mint"].tap()
+        screenshot("Native Settings dark accessibility text", app: app)
+        app.buttons["Done"].tap()
+        app.tabBars.buttons["Map"].tap()
+        XCTAssertTrue(app.buttons["Full screen map"].waitForExistence(timeout: 5))
+        app.buttons["Full screen map"].tap()
+        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["Zoom in"].isHittable)
+        XCTAssertTrue(app.buttons["Browse map places"].isHittable)
+        screenshot("Native map dark accessibility text", app: app)
+    }
+
     private func selectMapFixture(_ name: String, id: Int, app: XCUIApplication) {
         if app.buttons["Clear place search"].exists { app.buttons["Clear place search"].tap() }
         let search = app.textFields["Search park places"]
@@ -23,14 +202,14 @@ final class PIVOTUITests: XCTestCase {
 
     func testMapFullScreenPreservesSelectionFiltersAndCurrentWait() {
         let app = mapFixtureApp()
-        app.buttons["map-category-RIDE"].tap()
+        chooseMapCategory("Rides", app: app)
         selectMapFixture("Current wait ride", id: 1, app: app)
         XCTAssertEqual(app.staticTexts["Selected ride wait"].label, "35 min")
         screenshot("Map current ride wait", app: app)
         app.buttons["Full screen map"].tap()
         XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
         XCTAssertEqual(app.textFields["Search park places"].value as? String, "Current wait ride")
-        XCTAssertTrue(app.buttons["map-category-RIDE"].isSelected)
+        XCTAssertEqual(app.buttons["Filter map places"].value as? String, "Rides")
         XCTAssertEqual(app.staticTexts["Selected ride wait"].label, "35 min")
         XCTAssertTrue(app.staticTexts["Selected ride wait"].isHittable)
         app.buttons["Show whole park"].tap()
@@ -39,7 +218,7 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(app.buttons["Full screen map"].waitForExistence(timeout: 5))
         XCTAssertEqual(app.textFields["Search park places"].value as? String, "Current wait ride")
         XCTAssertEqual(app.staticTexts["Selected ride wait"].label, "35 min")
-        XCTAssertTrue(app.buttons["map-category-RIDE"].isSelected)
+        XCTAssertEqual(app.buttons["Filter map places"].value as? String, "Rides")
     }
 
     func testMapFullScreenRideStatesDoNotInventWaits() {
@@ -303,7 +482,7 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["More"].tap()
         app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Settings'")).firstMatch.tap()
         XCTAssertEqual(app.buttons["accent-purple"].value as? String, "Selected")
-        XCTAssertTrue(app.staticTexts["PIVOT 1.16.1"].exists)
+        XCTAssertTrue(app.staticTexts["PIVOT 1.17.0"].exists)
         app.buttons["accent-mint"].tap()
     }
 
@@ -379,7 +558,7 @@ final class PIVOTUITests: XCTestCase {
         map.tap()
         let search = app.textFields["Search park places"]
         XCTAssertTrue(search.waitForExistence(timeout: 5))
-        app.buttons["map-category-RESTAURANT"].tap()
+        chooseMapCategory("Food", app: app)
         XCTAssertTrue(app.buttons["Browse map places"].exists)
         search.tap()
         search.typeText("zz-no-such-place")
@@ -390,7 +569,7 @@ final class PIVOTUITests: XCTestCase {
         app.buttons["Browse map places"].tap()
         XCTAssertTrue(app.staticTexts["Map coverage & sources"].exists || app.buttons["Done"].exists)
         app.buttons["Done"].tap()
-        app.buttons["map-category-RIDE"].tap()
+        chooseMapCategory("Rides", app: app)
         search.tap()
         search.typeText("Space Mountain\n")
         let pin = app.buttons["map-pin-b2260923-9315-40fd-9c6b-44dd811dbe64"]

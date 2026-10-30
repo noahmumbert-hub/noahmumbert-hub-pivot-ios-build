@@ -353,6 +353,15 @@ final class DashboardStore: ObservableObject {
     }
 
     func bootstrap() async {
+#if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("--apple-ui-fixtures") {
+            selectedPark = .magicKingdom
+            snapshot = NativeParkMapUITestScreen.rootSnapshot()
+            errorMessage = nil
+            alertsEnabled = false
+            return
+        }
+#endif
         await notificationService.refreshAuthorizationStatus()
         if alertsEnabled,
            notificationService.authorizationStatus != .authorized,
@@ -456,6 +465,9 @@ final class DashboardStore: ObservableObject {
     }
 
     func refreshNow() async {
+#if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("--apple-ui-fixtures") { return }
+#endif
         guard let selectedPark else { return }
         await refresh(expectedPark: selectedPark)
     }
@@ -530,6 +542,9 @@ final class DashboardStore: ObservableObject {
     }
 
     private func restartMonitoring() {
+#if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("--apple-ui-fixtures") { return }
+#endif
         monitoringTask?.cancel()
         monitoringTask = nil
         monitoringGeneration &+= 1

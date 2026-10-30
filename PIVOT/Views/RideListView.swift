@@ -24,7 +24,7 @@ struct RideListView: View {
             } else {
                 VStack(alignment: .leading, spacing: 12) {
                     HStack(alignment: .firstTextBaseline) {
-                        Text("Wait times").font(.largeTitle.weight(.bold)).tracking(-1.2)
+                        Text("Current rides").font(.headline)
                         Spacer(minLength: 8)
                         TimelineView(.periodic(from: .now, by: 1)) { context in
                             let health = store.feedHealth(at: context.date)
@@ -85,36 +85,23 @@ struct RideListView: View {
                         .frame(width: 46, height: 46)
                         .background(Color.pivotSurface, in: RoundedRectangle(cornerRadius: 13))
                 }
-                .foregroundStyle(.white)
+                .foregroundStyle(.primary)
                 .accessibilityLabel("Sort rides. Current sort: \(sort.rawValue)")
                 .accessibilityIdentifier("ride-sort-menu")
             }
 
             if !radarOnly {
-                HStack(spacing: 4) {
+                Picker("Filter rides", selection: $filter) {
                     ForEach(RideListFilter.allCases) { option in
-                        Button {
-                            filter = option
-                        } label: {
-                            Text(option == .all ? "All rides" : option == .radar ? "Down" : "Open")
-                                .font(.subheadline.weight(filter == option ? .semibold : .medium))
-                                .frame(maxWidth: .infinity, minHeight: 40)
-                                .foregroundStyle(filter == option ? Color.pivotBackground : Color.pivotMuted)
-                                .background(filter == option ? accent : .clear, in: RoundedRectangle(cornerRadius: 10))
-                        }
-                        .buttonStyle(.plain)
-                        .accessibilityAddTraits(filter == option ? .isSelected : [])
+                        Text(option == .all ? "All rides" : option == .radar ? "Down" : "Open").tag(option)
                     }
-                }
-                .padding(4)
-                .background(Color.pivotSurface, in: RoundedRectangle(cornerRadius: 13))
-                .accessibilityLabel("Filter rides")
+                }.pickerStyle(.segmented)
             }
 
-            LazyVStack(spacing: 8) {
+            LazyVStack(spacing: 0) {
                 if store.isLoading && store.snapshot == nil {
                     HStack(spacing: 10) {
-                        ProgressView().tint(.white)
+                        ProgressView().tint(.primary)
                         Text("Loading current rides…").font(.subheadline)
                     }
                     .frame(maxWidth: .infinity)
@@ -123,17 +110,18 @@ struct RideListView: View {
                     ContentUnavailableView {
                         Label(emptyTitle, systemImage: effectiveFilter == .radar ? (store.canAssertNoClosures() ? "checkmark.circle" : "questionmark.circle") : "magnifyingglass")
                     } description: { Text(emptyDetail) }
-                    .foregroundStyle(.white)
+                    .foregroundStyle(.primary)
                     .frame(maxWidth: .infinity)
                     .pivotCard()
                 } else {
                     ForEach(rides) { ride in
                         RideRowView(ride: ride, timeZone: store.selectedPark?.timeZone ?? ParkTimeFormatter.selectedParkTimeZone) { selectedRide = ride }
+                        if ride.id != rides.last?.id { Divider().padding(.leading, 16) }
                     }
                 }
             }
         }
-        .fullScreenCover(item: $selectedRide) { ride in
+        .sheet(item: $selectedRide) { ride in
             RideDetailScreenView(initialRide: ride, timeZone: store.selectedPark?.timeZone ?? ParkTimeFormatter.selectedParkTimeZone)
         }
     }
@@ -183,14 +171,14 @@ private struct RideInformationView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("About this ride").font(.subheadline.weight(.semibold)).foregroundStyle(.white)
+            Text("About this ride").font(.subheadline.weight(.semibold)).foregroundStyle(.primary)
             LazyVGrid(columns: dynamicTypeSize.isAccessibilitySize
                 ? [GridItem(.flexible(minimum: 0), alignment: .leading)]
                 : [GridItem(.adaptive(minimum: 180), alignment: .leading)], alignment: .leading, spacing: 14) {
                 ForEach(details.facts) { fact in
                     VStack(alignment: .leading, spacing: 3) {
                         Text(fact.label).font(.subheadline).foregroundStyle(Color.pivotMuted)
-                        Text(fact.value).font(.title3.weight(.medium)).foregroundStyle(.white)
+                        Text(fact.value).font(.title3.weight(.medium)).foregroundStyle(.primary)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .fixedSize(horizontal: false, vertical: true)
@@ -203,7 +191,7 @@ private struct RideInformationView: View {
             Text(details.riderNote)
             ForEach(details.sources) { source in
                 Link(destination: source.url) {
-                    Label(source.label, systemImage: "arrow.up.right").foregroundStyle(.white)
+                    Label(source.label, systemImage: "arrow.up.right").foregroundStyle(.primary)
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 .padding(.vertical, 4)
@@ -254,7 +242,7 @@ struct RideDetailScreenView: View {
                     }
                     VStack(alignment: .leading, spacing: 10) {
                         Text(store.selectedPark?.name ?? "Ride information").font(.subheadline).foregroundStyle(Color.pivotMuted)
-                        Text(ride.name).font(.largeTitle.weight(.bold)).foregroundStyle(.white)
+                        Text(ride.name).font(.largeTitle.weight(.bold)).foregroundStyle(.primary)
                             .fixedSize(horizontal: false, vertical: true)
                         if !ride.land.isEmpty { Text(ride.land).font(.subheadline).foregroundStyle(Color.pivotMuted) }
                     }
@@ -293,7 +281,7 @@ struct RideDetailScreenView: View {
                             }
                             Text("Waits & status from ThemeParks.wiki").font(.caption).foregroundStyle(Color.pivotMuted)
                         }
-                        .font(.subheadline).foregroundStyle(.white)
+                        .font(.subheadline).foregroundStyle(.primary)
                         .frame(maxWidth: .infinity, alignment: .leading).pivotCard()
                     }
                     NativeWaitHistoryView(ride: ride, timeZone: timeZone, initiallyExpanded: true).pivotCard()
@@ -306,9 +294,9 @@ struct RideDetailScreenView: View {
             .background(Color.pivotBackground)
             .navigationTitle("Ride information")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar { ToolbarItem(placement: .topBarTrailing) { Button("Done") { dismiss() }.foregroundStyle(.white) } }
+            .toolbar { ToolbarItem(placement: .topBarTrailing) { Button("Done") { dismiss() }.foregroundStyle(.primary) } }
         }
-        .preferredColorScheme(.dark)
+
     }
 }
 
@@ -329,7 +317,7 @@ private struct RideRowView: View {
                         VStack(alignment: .leading, spacing: 6) {
                             Text(ride.name)
                                 .font(.body.weight(.semibold))
-                                .foregroundStyle(.white)
+                                .foregroundStyle(.primary)
                                 .fixedSize(horizontal: false, vertical: true)
                             HStack(alignment: .firstTextBaseline, spacing: 5) {
                                 Circle().fill(statusColor).frame(width: 5, height: 5).accessibilityHidden(true)
@@ -338,7 +326,7 @@ private struct RideRowView: View {
                             if let downtime = ride.downTimePresentation {
                                 Text(downtime.text)
                                     .font(.caption.weight(.medium))
-                                    .foregroundStyle(.white)
+                                    .foregroundStyle(.primary)
                                     .accessibilityLabel(downtime.accessibilityLabel)
                             }
                         }
@@ -365,8 +353,8 @@ private struct RideRowView: View {
                         Image(systemName: ride.hasWeatherHold ? "cloud.bolt" : "arrow.uturn.forward")
                             .foregroundStyle(statusColor)
                         VStack(alignment: .leading, spacing: 4) {
-                            Text(guidance.headline).font(.caption.weight(.semibold)).foregroundStyle(.white)
-                            if let range = guidance.range { Text(range).font(.caption.weight(.semibold)).foregroundStyle(.white) }
+                            Text(guidance.headline).font(.caption.weight(.semibold)).foregroundStyle(.primary)
+                            if let range = guidance.range { Text(range).font(.caption.weight(.semibold)).foregroundStyle(.primary) }
                             if let best = guidance.bestGuess { Text("Best guess \(best)").font(.caption).foregroundStyle(Color.pivotMuted) }
                             Text(guidance.detail).font(.caption).foregroundStyle(Color.pivotMuted)
                         }
@@ -377,8 +365,7 @@ private struct RideRowView: View {
 
             }
             .padding(16)
-            .background(Color.pivotSurface, in: RoundedRectangle(cornerRadius: 16))
-            .overlay { RoundedRectangle(cornerRadius: 16).stroke(Color.pivotBorder, lineWidth: 1) }
+            .background(Color.pivotSurface)
         }
     }
 
