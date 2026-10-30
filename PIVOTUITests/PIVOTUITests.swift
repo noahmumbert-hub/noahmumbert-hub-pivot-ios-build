@@ -51,7 +51,7 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertEqual(map.frame.minY, app.frame.minY, accuracy: 1)
         XCTAssertEqual(map.frame.width, app.frame.width, accuracy: 1)
         XCTAssertEqual(map.frame.height, app.frame.height, accuracy: 1)
-        waitForCamera(app) { $0[2] > 0 }
+        waitForCamera(app) { abs($0[0] - 28.419) < 0.006 && abs($0[1] + 81.581) < 0.006 && $0[2] > 0 && $0[2] < 10_000 }
         let initial = camera(app)
         XCTAssertEqual(initial[0], 28.419, accuracy: 0.006)
         XCTAssertEqual(initial[1], -81.581, accuracy: 0.006)
@@ -85,15 +85,19 @@ final class PIVOTUITests: XCTestCase {
         screenshot("Native edge-to-edge map after pinch and pan", app: app)
         app.buttons["Close full screen map"].tap()
         XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 5))
-        waitForCamera(app) { abs($0[0] - panned[0]) < 0.0002 && abs($0[1] - panned[1]) < 0.0002 }
+        waitForCamera(app) { abs($0[0] - panned[0]) < 0.0002 && abs($0[1] - panned[1]) < 0.0002 && abs($0[2] - panned[2]) < panned[2] * 0.05 }
         app.buttons["Full screen map"].tap()
         XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
-        waitForCamera(app) { abs($0[0] - panned[0]) < 0.0002 && abs($0[1] - panned[1]) < 0.0002 }
+        waitForCamera(app) { abs($0[0] - panned[0]) < 0.0002 && abs($0[1] - panned[1]) < 0.0002 && abs($0[2] - panned[2]) < panned[2] * 0.05 }
         app.buttons["Zoom out"].tap()
         waitForCamera(app) { $0[2] > panned[2] * 1.3 }
         app.buttons["Show whole park"].tap()
         waitForCamera(app) { abs($0[0] - initial[0]) < 0.0002 && abs($0[1] - initial[1]) < 0.0002 }
+        let beforeFilter = camera(app)
         chooseMapCategory("Food", app: app)
+        XCTAssertEqual(camera(app)[0], beforeFilter[0], accuracy: 0.0001)
+        XCTAssertEqual(camera(app)[1], beforeFilter[1], accuracy: 0.0001)
+        XCTAssertEqual(camera(app)[2], beforeFilter[2], accuracy: beforeFilter[2] * 0.05)
         app.buttons["Show whole park"].tap()
         XCTAssertFalse(app.buttons["map-pin-b2260923-9315-40fd-9c6b-44dd811dbe64"].exists)
         screenshot("Native full-screen food map and Apple attribution", app: app)
@@ -104,8 +108,11 @@ final class PIVOTUITests: XCTestCase {
         app.buttons["Full screen map"].tap()
         XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
         chooseMapCategory("Rides", app: app)
+        waitForCamera(app) { $0[2] > 0 && $0[2] < 10_000 }
+        let initialAltitude = camera(app)[2]
         app.buttons["Zoom out"].tap()
         app.buttons["Zoom out"].tap()
+        waitForCamera(app) { $0[2] > initialAltitude * 3 }
         let cluster = app.buttons["Map place cluster"].firstMatch
         XCTAssertTrue(cluster.waitForExistence(timeout: 5))
         let before = camera(app)
@@ -144,6 +151,12 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(legal.isHittable, "Apple attribution must remain reachable above the selected-place panel")
         XCTAssertLessThan(legal.frame.maxY, app.staticTexts["Selected place name"].frame.minY)
         screenshot("Native production full-screen selected current ride", app: app)
+        app.buttons["Close place details"].tap()
+        let pin = app.buttons["map-pin-b2260923-9315-40fd-9c6b-44dd811dbe64"]
+        XCTAssertGreaterThanOrEqual(pin.frame.width, 44)
+        XCTAssertGreaterThanOrEqual(pin.frame.height, 44)
+        pin.coordinate(withNormalizedOffset: CGVector(dx: 0.08, dy: 0.5)).tap()
+        XCTAssertTrue(app.staticTexts["Selected ride wait"].waitForExistence(timeout: 3), "The edge of the native marker’s 44-point target must select the ride")
         app.buttons["Ride details"].tap()
         XCTAssertTrue(app.staticTexts["Current wait"].waitForExistence(timeout: 5))
         screenshot("Native ride detail sheet", app: app)
@@ -292,7 +305,7 @@ final class PIVOTUITests: XCTestCase {
         app.staticTexts["Hourly estimates"].tap()
         app.swipeUp()
         XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "same weekday")).count > 0)
-        let screenshot = XCTAttachment(screenshot: app.screenshot()); screenshot.name = "Wait forecasts and park crowd meter"; screenshot.lifetime = .keepAlways
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); screenshot.name = "Wait forecasts and park crowd meter"; screenshot.lifetime = .keepAlways
         add(screenshot)
     }
 
@@ -353,7 +366,7 @@ final class PIVOTUITests: XCTestCase {
     }
 
     private func screenshot(_ name: String, app: XCUIApplication) {
-        let attachment = XCTAttachment(screenshot: app.screenshot())
+        let attachment = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
         attachment.name = name
         attachment.lifetime = .keepAlways
         add(attachment)

@@ -390,7 +390,7 @@ private struct RideRowView: View {
                 Text("\(wait)").font(.system(.largeTitle, design: .rounded).weight(.semibold)).monospacedDigit().tracking(-1.5)
                 Text("min").font(.caption)
             }
-            .foregroundStyle(wait <= 20 ? Color.pivotMint : wait <= 50 ? Color.orange : Color.pivotPink)
+            .foregroundStyle(wait <= 20 ? Color.pivotMint : wait <= 50 ? PivotAccent.orange.color : Color.pivotPink)
             .frame(minWidth: 48)
             .accessibilityHidden(true)
         } else {

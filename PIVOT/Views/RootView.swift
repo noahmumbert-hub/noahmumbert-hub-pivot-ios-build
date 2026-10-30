@@ -96,7 +96,7 @@ struct RootView: View {
                             HStack(spacing: 4) {
                                 Text(store.selectedPark?.name ?? "Choose a park").font(.headline).lineLimit(1)
                                 Image(systemName: "chevron.down").font(.caption2)
-                            }
+                            }.frame(minHeight: 44)
                         }.accessibilityLabel("Change park. Current park: \(store.selectedPark?.name ?? "none")")
                     }
                 }
@@ -198,7 +198,7 @@ struct RootView: View {
                     LazyVStack(spacing: 20) {
                         Button { showParkPicker = true } label: {
                             Label(store.selectedPark?.name ?? "Choose a park", systemImage: "mappin.and.ellipse")
-                                .font(.subheadline).frame(maxWidth: .infinity, alignment: .leading)
+                                .font(.subheadline).frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
                         }
                         .accessibilityLabel("Change park. Current park: \(store.selectedPark?.name ?? "none")")
                         if let park = store.selectedPark, let hours = store.parkHours(for: park) {

@@ -250,6 +250,7 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
                 view.glyphText = "\(cluster.memberAnnotations.count)"
                 view.glyphTintColor = UIColor { $0.userInterfaceStyle == .dark ? .black : .white }
                 view.titleVisibility = .hidden
+                view.subtitleVisibility = .hidden
                 view.isAccessibilityElement = true
                 view.accessibilityTraits = .button
                 view.accessibilityLabel = "\(cluster.memberAnnotations.count) places. Zoom in"
@@ -290,7 +291,7 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
     }
 }
 private struct MapBottomHeightKey: PreferenceKey {
-    static var defaultValue: CGFloat = 60
+    static var defaultValue: CGFloat = 0
     static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) { value = nextValue() }
 }
 
@@ -401,7 +402,11 @@ struct ParkMapView: View {
                     } actions: { Button("Try again", action: loadCatalog) }
                 } else { ProgressView("Loading park locations…") }
             }
-            .onPreferenceChange(MapBottomHeightKey.self) { bottomHeight = $0 }
+            .onPreferenceChange(MapBottomHeightKey.self) { height in
+                // Removing the embedded tree during fullscreen presentation emits
+                // the preference default; it must not erase the visible panel's inset.
+                if height > 0 { bottomHeight = height }
+            }
         }
         .background(Color.pivotBackground)
         .task {
@@ -463,7 +468,7 @@ struct ParkMapView: View {
                 Text(query.isEmpty ? "No locations match these filters." : "No matching places.")
                     .font(.callout).foregroundStyle(.secondary).padding(12)
             }
-            Button { searchFocused = false; showPlaces = true } label: {
+            Button { searchFocused = false; clusterPoints = nil; showPlaces = true } label: {
                 HStack {
                     Image(systemName: "list.bullet")
                     Text("Browse \(points.count) \(points.count == 1 ? "place" : "places")")
