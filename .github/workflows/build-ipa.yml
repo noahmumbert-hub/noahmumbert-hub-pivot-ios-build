@@ -24,6 +24,7 @@ jobs:
     timeout-minutes: 30
     env:
       DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
+      PIVOT_SIMULATOR_NAME: iPhone 16 Pro
     steps:
       - name: Check out iOS source
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -63,5 +64,42 @@ jobs:
             build/native-tests.log
             build/native-tests.xcresult
             build/ui-screenshots
+            build/simulator-selection.json
+          if-no-files-found: ignore
+          retention-days: 7
+
+  iphone-regression:
+    name: iPhone regression (${{ matrix.simulator }})
+    runs-on: macos-15
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        simulator: ['iPhone SE (3rd generation)', 'iPhone 16 Pro Max']
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
+      PIVOT_SIMULATOR_NAME: ${{ matrix.simulator }}
+    steps:
+      - name: Check out iOS source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Confirm Xcode toolchain
+        run: xcodebuild -version
+
+      - name: Run native regression on selected iPhone
+        run: bash scripts/test-native.sh
+
+      - name: Upload iPhone regression results
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: PIVOT-iPhone-${{ matrix.simulator }}-${{ github.run_number }}-${{ github.run_attempt }}
+          path: |
+            build/native-tests.log
+            build/native-tests.xcresult
+            build/ui-screenshots
+            build/simulator-selection.json
           if-no-files-found: ignore
           retention-days: 7
