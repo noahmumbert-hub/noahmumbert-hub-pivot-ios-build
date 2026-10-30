@@ -49,12 +49,43 @@ print(record['identifier'])
 PY
 )"
 cat build/simulator-selection.json
+test_selection=()
+case "${PIVOT_TEST_SCOPE:-all}" in
+  all) ;;
+  native-design)
+    test_selection=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testNativeMapFillsWindowAndSupportsPinchPanZoomWithoutCameraReset
+      -only-testing:PIVOTUITests/PIVOTUITests/testNativeBrowseFocusesRideAndRootWaitDetailsStayCurrent
+      -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
+      -only-testing:PIVOTUITests/PIVOTUITests/testNativeSurfacesPreserveHoursShowsAlertsAndPlanProgress
+      -only-testing:PIVOTUITests/PIVOTUITests/testNativeDarkAndLargeTextSurfacesRemainReachable
+    ) ;;
+  large-text)
+    test_selection=(-only-testing:PIVOTUITests/PIVOTUITests/testNativeDarkAndLargeTextSurfacesRemainReachable) ;;
+  map-gestures)
+    test_selection=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testNativeMapFillsWindowAndSupportsPinchPanZoomWithoutCameraReset
+      -only-testing:PIVOTUITests/PIVOTUITests/testNativeBrowseFocusesRideAndRootWaitDetailsStayCurrent
+      -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
+    ) ;;
+  *)
+    echo 'Unsupported PIVOT_TEST_SCOPE; use all, native-design, large-text, or map-gestures.' >&2
+    exit 1 ;;
+esac
+python3 - <<'PY'
+import json, os
+scope = os.environ.get('PIVOT_TEST_SCOPE', 'all')
+with open('build/test-scope.json', 'w') as f:
+    json.dump(dict(scope=scope, completeRegression=scope == 'all'), f, indent=2)
+    f.write('\n')
+PY
 test_exit=0
 xcodebuild -project PIVOT.xcodeproj -scheme PIVOT \
   -destination "platform=iOS Simulator,id=$simulator_id" \
   -derivedDataPath build/TestDerivedData \
   -resultBundlePath build/native-tests.xcresult \
   -parallel-testing-enabled NO -jobs 3 \
+  "${test_selection[@]}" \
   CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO DEVELOPMENT_TEAM= \
   test 2>&1 | tee build/native-tests.log || test_exit=$?
 export_exit=0

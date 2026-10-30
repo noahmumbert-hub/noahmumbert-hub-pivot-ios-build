@@ -2,6 +2,19 @@ name: Build SideStore IPA
 
 on:
   workflow_dispatch:
+    inputs:
+      scope:
+        description: Full release regression or focused diagnostics without an IPA
+        type: choice
+        default: all
+        options: [all, native-design, large-text, map-gestures]
+        required: true
+      simulator:
+        description: iPhone used for focused diagnostics only
+        type: choice
+        default: iPhone 16 Pro Max
+        options: ['iPhone SE (3rd generation)', 'iPhone 16 Pro', 'iPhone 16 Pro Max']
+        required: true
   push:
     branches: [main]
     paths:
@@ -15,11 +28,12 @@ permissions:
   contents: read
 
 concurrency:
-  group: ipa-${{ github.ref }}
+  group: ipa-${{ github.ref }}-${{ inputs.scope || 'all' }}
   cancel-in-progress: true
 
 jobs:
   build:
+    if: github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all'
     runs-on: macos-15
     timeout-minutes: 30
     env:
@@ -65,10 +79,12 @@ jobs:
             build/native-tests.xcresult
             build/ui-screenshots
             build/simulator-selection.json
+            build/test-scope.json
           if-no-files-found: ignore
           retention-days: 7
 
   iphone-regression:
+    if: github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all'
     name: iPhone regression (${{ matrix.simulator }})
     runs-on: macos-15
     timeout-minutes: 30
@@ -101,5 +117,41 @@ jobs:
             build/native-tests.xcresult
             build/ui-screenshots
             build/simulator-selection.json
+            build/test-scope.json
+          if-no-files-found: ignore
+          retention-days: 7
+
+  diagnose:
+    name: Focused UI diagnostics
+    if: github.event_name == 'workflow_dispatch' && inputs.scope != '' && inputs.scope != 'all'
+    runs-on: macos-15
+    timeout-minutes: 25
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
+      PIVOT_SIMULATOR_NAME: ${{ inputs.simulator }}
+      PIVOT_TEST_SCOPE: ${{ inputs.scope }}
+    steps:
+      - name: Check out candidate source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Confirm Xcode toolchain
+        run: xcodebuild -version
+
+      - name: Run focused UI diagnostics
+        run: bash scripts/test-native.sh
+
+      - name: Upload diagnostic evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: PIVOT-diagnostics-${{ inputs.simulator }}-${{ inputs.scope }}-${{ github.run_number }}-${{ github.run_attempt }}
+          path: |
+            build/native-tests.log
+            build/native-tests.xcresult
+            build/ui-screenshots
+            build/simulator-selection.json
+            build/test-scope.json
           if-no-files-found: ignore
           retention-days: 7
