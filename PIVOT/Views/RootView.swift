@@ -25,6 +25,7 @@ struct RootView: View {
     @State private var rideQuery = ""
     @State private var selectedDockSection: DashboardSection = .waits
     @State private var expandedShowIDs: Set<String> = []
+    @State private var showsHasRetainedWarning = false
 
     var body: some View {
         TabView(selection: $selectedDockSection) {
@@ -112,7 +113,9 @@ struct RootView: View {
                         Label(store.selectedPark?.name ?? "Choose a park", systemImage: "mappin.and.ellipse")
                     }.accessibilityLabel("Change park. Current park: \(store.selectedPark?.name ?? "none")")
                 } footer: { Text("Today’s entertainment, all in one place.") }
-                Section { RetainedSnapshotNotice() }
+                if showsHasRetainedWarning, store.feedHealth().retainedGuidance != nil {
+                    Section { RetainedSnapshotNotice() }
+                }
                 if store.selectedPark != nil {
                     Section("Today’s shows") {
                         if let shows = store.snapshot?.showList, !shows.isEmpty {
@@ -133,6 +136,16 @@ struct RootView: View {
             .refreshable { await store.refreshNow() }
             .onChange(of: store.selectedPark?.id) { _, _ in expandedShowIDs.removeAll() }
             .onChange(of: store.snapshot?.showList.map(\.id)) { _, ids in expandedShowIDs.formIntersection(ids ?? []) }
+            .task(id: selectedDockSection) {
+                guard selectedDockSection == .shows else { return }
+                // Only a health-state boundary changes the List structure. Time can
+                // expire a saved schedule without leaving an empty native section.
+                while !Task.isCancelled {
+                    let retained = store.feedHealth().retainedGuidance != nil
+                    if showsHasRetainedWarning != retained { showsHasRetainedWarning = retained }
+                    do { try await Task.sleep(nanoseconds: 1_000_000_000) } catch { break }
+                }
+            }
         }
     }
 

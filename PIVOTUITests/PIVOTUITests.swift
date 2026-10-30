@@ -41,7 +41,7 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testNativeMapFillsWindowAndSupportsPinchPanZoomWithoutCameraReset() {
-        let app = rootFixture()
+        let app = rootFixture(["--map-gesture-test"])
         app.tabBars.buttons["Map"].tap()
         app.buttons["Full screen map"].tap()
         XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
@@ -62,7 +62,12 @@ final class PIVOTUITests: XCTestCase {
         let gestureArea = app.descendants(matching: .any)["Map gesture area"]
         XCTAssertTrue(gestureArea.waitForExistence(timeout: 5))
         XCTAssertTrue(map.frame.contains(gestureArea.frame))
-        gestureArea.pinch(withScale: 2, velocity: 1)
+        XCTAssertFalse(gestureArea.frame.intersects(app.textFields["Search park places"].frame))
+        XCTAssertFalse(gestureArea.frame.intersects(app.buttons["Browse map places"].frame))
+        XCTAssertFalse(gestureArea.frame.intersects(app.buttons["Zoom in"].frame))
+        // A substantial physical span avoids a tiny14pt→28pt gesture entirely
+        // inside a marker's44pt touch target. The actual native camera must zoom.
+        gestureArea.pinch(withScale: 6, velocity: 1)
         waitForCamera(app) { $0[2] < initial[2] * 0.85 }
         let pinched = camera(app)
         gestureArea.pinch(withScale: 0.5, velocity: -1)
