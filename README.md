@@ -4,17 +4,11 @@ Add this source in SideStore → Sources → +:
 
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 
-Current update: **1.16.0 / build 100.36.1**, iOS 17.0+.
+Current update: **1.16.1 / build 100.39.1**, iOS 17.0+.
 
-PIVOT 1.16.0 — A simpler Plan and park maps
+Expand the park map to full screen and return with Done while keeping your search, filters, selected place, and map position. Tap rides to see current wait times, including walk-ons, or a clear closed or unavailable status when current data is missing or stale. Map pins are more compact while retaining large tap targets.
 
-Plan now leads with your remaining route and a compact favorites/visit setup. Mark a ride Done or Skip today directly from the route. Fixed stops, full progress, crowd predictions, and offline packs remain available in expandable sections; timing and availability warnings stay visible.
-
-Map replaces Radar in the tab bar. Explore every supported park, filter rides, food, and shows, search places, browse the list, and check fresh ride status. Restaurant pins are locations, not published operating hours. Closures, selected-ride reopening guidance, and park weather remain under More.
-
-This update preserves the existing app identity, saved favorites/progress, manual starts, fixed show stops, offline packs, smart alerts, Live Activities, and the reliability/performance fixes in 1.15.6. The bundled source-backed map catalog was checked October 30. Retired rides remain excluded from active map browsing. Website and backend deployments are separate.
-
-IPA SHA-256: `22aa2f25e7b68120b69a530153b7cd4ac59b3efe01215968cba3e9b4d9b58a7c`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/41112611079).
+IPA SHA-256: `6cb049ffd55fd54f74b139ee0305b7af0487e4a213e67f5f7719a2fba71bf129`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/41122869793).
 The unsigned IPA preserves `com.noahmumbert.PIVOT` and its Live Activity extension.
 Install as an update using the same signing identity; keep the existing app installed to retain saved data.
 Native unit and simulator UI tests passed for this build. Physical SideStore installation remains untested.
