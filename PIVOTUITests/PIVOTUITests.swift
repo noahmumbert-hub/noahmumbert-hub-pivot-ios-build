@@ -25,7 +25,10 @@ final class PIVOTUITests: XCTestCase {
     }
 
     private func camera(_ app: XCUIApplication) -> [Double] {
-        app.staticTexts["Map camera state"].label.split(separator: ",").compactMap { Double($0) }
+        let probe = app.staticTexts["Map camera state"]
+        guard probe.exists else { return [.nan, .nan, .nan] }
+        let values = probe.label.split(separator: ",").compactMap { Double($0) }
+        return values.count == 3 ? values : [.nan, .nan, .nan]
     }
 
     private func waitForCamera(_ app: XCUIApplication, _ condition: @escaping ([Double]) -> Bool,
@@ -56,6 +59,12 @@ final class PIVOTUITests: XCTestCase {
         let pinched = camera(app)
         map.pinch(withScale: 0.5, velocity: -1)
         waitForCamera(app) { $0[2] > pinched[2] * 1.15 }
+        let beforeDoubleTap = camera(app)
+        map.coordinate(withNormalizedOffset: CGVector(dx: 0.2, dy: 0.55)).doubleTap()
+        waitForCamera(app) { $0[2] < beforeDoubleTap[2] * 0.85 }
+        let doubled = camera(app)
+        app.buttons["Zoom out"].tap()
+        waitForCamera(app) { $0[2] > doubled[2] * 1.3 }
         app.buttons["Zoom in"].tap()
         waitForCamera(app) { $0[2] < initial[2] * 0.8 }
         let beforePan = camera(app)

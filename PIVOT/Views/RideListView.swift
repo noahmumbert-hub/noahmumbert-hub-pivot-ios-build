@@ -252,6 +252,7 @@ struct RideDetailScreenView: View {
                             if let mapPoint {
                                 let status = ParkMapRidePresentation.resolve(point: mapPoint, parkID: store.selectedPark?.id,
                                     snapshot: store.snapshot, refreshFailed: store.errorMessage != nil, at: context.date)
+                                Text(status.waitMinutes == nil ? "Ride status" : "Current wait").font(.caption).foregroundStyle(.secondary)
                                 Text(status.title).font(.title2.weight(.semibold))
                                 Text(status.detail).font(.caption).foregroundStyle(Color.pivotMuted)
                             } else {

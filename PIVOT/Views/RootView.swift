@@ -111,6 +111,7 @@ struct RootView: View {
                         Label(store.selectedPark?.name ?? "Choose a park", systemImage: "mappin.and.ellipse")
                     }.accessibilityLabel("Change park. Current park: \(store.selectedPark?.name ?? "none")")
                 } footer: { Text("Today’s entertainment, all in one place.") }
+                Section { RetainedSnapshotNotice() }
                 if store.selectedPark != nil {
                     Section("Today’s shows") {
                         if let shows = store.snapshot?.showList, !shows.isEmpty {
