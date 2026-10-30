@@ -35,7 +35,7 @@ jobs:
   build:
     if: github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all'
     runs-on: macos-15
-    timeout-minutes: 30
+    timeout-minutes: 35
     env:
       DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
       PIVOT_SIMULATOR_NAME: iPhone 16 Pro
@@ -87,7 +87,7 @@ jobs:
     if: github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all'
     name: iPhone regression (${{ matrix.simulator }})
     runs-on: macos-15
-    timeout-minutes: 30
+    timeout-minutes: 35
     strategy:
       fail-fast: false
       matrix:
@@ -125,7 +125,7 @@ jobs:
     name: Focused UI diagnostics
     if: github.event_name == 'workflow_dispatch' && inputs.scope != '' && inputs.scope != 'all'
     runs-on: macos-15
-    timeout-minutes: 25
+    timeout-minutes: 35
     env:
       DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
       PIVOT_SIMULATOR_NAME: ${{ inputs.simulator }}

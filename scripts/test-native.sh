@@ -49,7 +49,12 @@ print(record['identifier'])
 PY
 )"
 cat build/simulator-selection.json
-test_options=(-parallel-testing-enabled NO)
+test_options=(
+  -parallel-testing-enabled NO
+  -test-timeouts-enabled YES
+  -default-test-execution-time-allowance 180
+  -maximum-test-execution-time-allowance 240
+)
 case "${PIVOT_TEST_SCOPE:-all}" in
   all) ;;
   native-design)
