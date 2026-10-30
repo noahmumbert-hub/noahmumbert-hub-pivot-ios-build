@@ -49,11 +49,11 @@ print(record['identifier'])
 PY
 )"
 cat build/simulator-selection.json
-test_selection=()
+test_options=(-parallel-testing-enabled NO)
 case "${PIVOT_TEST_SCOPE:-all}" in
   all) ;;
   native-design)
-    test_selection=(
+    test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeMapFillsWindowAndSupportsPinchPanZoomWithoutCameraReset
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeBrowseFocusesRideAndRootWaitDetailsStayCurrent
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
@@ -61,9 +61,9 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeDarkAndLargeTextSurfacesRemainReachable
     ) ;;
   large-text)
-    test_selection=(-only-testing:PIVOTUITests/PIVOTUITests/testNativeDarkAndLargeTextSurfacesRemainReachable) ;;
+    test_options+=(-only-testing:PIVOTUITests/PIVOTUITests/testNativeDarkAndLargeTextSurfacesRemainReachable) ;;
   map-gestures)
-    test_selection=(
+    test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeMapFillsWindowAndSupportsPinchPanZoomWithoutCameraReset
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeBrowseFocusesRideAndRootWaitDetailsStayCurrent
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
@@ -84,8 +84,7 @@ xcodebuild -project PIVOT.xcodeproj -scheme PIVOT \
   -destination "platform=iOS Simulator,id=$simulator_id" \
   -derivedDataPath build/TestDerivedData \
   -resultBundlePath build/native-tests.xcresult \
-  -parallel-testing-enabled NO -jobs 3 \
-  "${test_selection[@]}" \
+  "${test_options[@]}" -jobs 3 \
   CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO DEVELOPMENT_TEAM= \
   test 2>&1 | tee build/native-tests.log || test_exit=$?
 export_exit=0
