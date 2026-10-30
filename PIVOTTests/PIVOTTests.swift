@@ -2,6 +2,22 @@ import XCTest
 @testable import PIVOT
 
 final class PIVOTTests: XCTestCase {
+    func testBundledMapCatalogCoversEveryParkWithValidUniquePlaces() throws {
+        let catalog = try ParkMapCatalog.load()
+        XCTAssertEqual(Set(catalog.parks.keys), Set(FloridaPark.allCases.map { String($0.id) }))
+        for park in catalog.parks.values {
+            XCTAssertFalse(park.points.isEmpty)
+            XCTAssertEqual(Set(park.points.map(\.id)).count, park.points.count)
+            for point in park.points {
+                XCTAssertNotNil(UUID(uuidString: point.id))
+                XCTAssertTrue(point.latitude.isFinite && (-90...90).contains(point.latitude))
+                XCTAssertTrue(point.longitude.isFinite && (-180...180).contains(point.longitude))
+                if point.category == .ride { XCTAssertNotNil(point.rideId) }
+            }
+        }
+    }
+
+
     // Frozen 1.15.5 decoder for reproducible same-process comparisons.
     private func baselineDateDecoder() -> JSONDecoder {
         let decoder = JSONDecoder()

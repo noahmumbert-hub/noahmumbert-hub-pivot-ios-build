@@ -34,6 +34,9 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertFalse(app.buttons["plan-predicted-waits"].exists)
         app.tabBars.buttons["Plan"].tap()
         XCTAssertTrue(app.staticTexts["Your day"].waitForExistence(timeout: 5))
+        let forecastSection = app.buttons["native-day-forecasts"]
+        reveal(forecastSection, in: app)
+        forecastSection.tap()
         let forecasts = app.buttons["plan-predicted-waits"]
         reveal(forecasts, in: app)
         XCTAssertTrue(app.descendants(matching: .any)["park-crowd-meter"].exists)
@@ -241,13 +244,13 @@ final class PIVOTUITests: XCTestCase {
         let today = tabBar.buttons["Plan"]
         let waits = tabBar.buttons["Waits"]
         let shows = tabBar.buttons["Shows"]
-        let radar = tabBar.buttons["Radar"]
+        let map = tabBar.buttons["Map"]
         let data = tabBar.buttons["More"]
 
         XCTAssertTrue(today.exists)
         XCTAssertTrue(waits.exists)
         XCTAssertTrue(shows.exists)
-        XCTAssertTrue(radar.exists)
+        XCTAssertTrue(map.exists)
         XCTAssertTrue(data.exists)
         XCTAssertTrue(waits.isSelected)
         XCTAssertTrue(app.staticTexts["Wait times"].exists)
@@ -263,18 +266,39 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(shows.isSelected)
         XCTAssertTrue(app.staticTexts["Today’s entertainment, all in one place."].waitForExistence(timeout: 3))
 
-        radar.tap()
-        XCTAssertTrue(radar.isSelected)
-        XCTAssertTrue(app.staticTexts["Reopen Radar"].waitForExistence(timeout: 3))
+        map.tap()
+        XCTAssertTrue(map.isSelected)
+        XCTAssertTrue(app.staticTexts["Choose a park to see rides, food, and shows."].waitForExistence(timeout: 3))
 
         data.tap()
         XCTAssertTrue(data.isSelected)
         XCTAssertTrue(app.staticTexts["Manage your park, alerts, and app."].waitForExistence(timeout: 3))
 
-        for item in [today, waits, shows, radar, data] {
+        for item in [today, waits, shows, map, data] {
             XCTAssertGreaterThanOrEqual(item.frame.width, 44)
             XCTAssertGreaterThanOrEqual(item.frame.height, 44)
         }
+    }
+
+    func testMapSearchAndCategoryWorkWithBundledLocations() {
+        let app = XCUIApplication()
+        app.launchArguments = ["-pivot.selectedPark", "6"]
+        app.launch()
+        let map = app.tabBars.firstMatch.buttons["Map"]
+        XCTAssertTrue(map.waitForExistence(timeout: 5))
+        map.tap()
+        let search = app.textFields["Search park places"]
+        XCTAssertTrue(search.waitForExistence(timeout: 5))
+        app.buttons["map-category-RESTAURANT"].tap()
+        XCTAssertTrue(app.buttons["Browse map places"].exists)
+        search.tap()
+        search.typeText("zz-no-such-place")
+        XCTAssertTrue(app.staticTexts["No matching places."].waitForExistence(timeout: 3))
+        screenshot("Map search empty state", app: app)
+        app.buttons["Clear place search"].tap()
+        screenshot("Map food category", app: app)
+        app.buttons["Browse map places"].tap()
+        XCTAssertTrue(app.staticTexts["Map coverage & sources"].exists || app.buttons["Done"].exists)
     }
 
     func testNativeTabBarStaysFixedWhileContentScrolls() {

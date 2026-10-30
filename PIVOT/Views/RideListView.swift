@@ -216,7 +216,7 @@ private struct RideInformationView: View {
     }
 }
 
-private struct RideDetailScreenView: View {
+struct RideDetailScreenView: View {
     @Environment(\.dismiss) private var dismiss
     @EnvironmentObject private var store: DashboardStore
     let initialRide: LiveRide

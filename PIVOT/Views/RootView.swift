@@ -4,7 +4,7 @@ private enum DashboardSection: String {
     case today
     case waits
     case shows
-    case radar
+    case map
     case data
 }
 
@@ -40,9 +40,9 @@ struct RootView: View {
                 .tabItem { Label("Shows", systemImage: "sparkles") }
                 .tag(DashboardSection.shows)
 
-            dashboardTab(.radar)
-                .tabItem { Label("Radar", systemImage: "scope") }
-                .tag(DashboardSection.radar)
+            mapTab
+                .tabItem { Label("Map", systemImage: "map") }
+                .tag(DashboardSection.map)
 
             dashboardTab(.data)
                 .tabItem { Label("More", systemImage: "ellipsis") }
@@ -81,12 +81,20 @@ struct RootView: View {
         .onChange(of: scenePhase) { _, newPhase in
             store.setSceneActive(newPhase == .active)
         }
-        .onChange(of: selectedDockSection) { _, section in
-            if section == .radar {
-                rideFilter = .radar
-            } else if section == .waits, rideFilter == .radar {
-                rideFilter = .all
+    }
+
+    private var mapTab: some View {
+        NavigationStack {
+            VStack(spacing: 10) {
+                parkSwitch
+                ParkMapView(park: store.selectedPark, snapshot: store.feedHealth().isLive ? store.snapshot : nil,
+                            onChoosePark: { showParkPicker = true })
+                    .id(store.selectedPark?.id)
             }
+            .padding(.horizontal, 16).padding(.top, 8).padding(.bottom, 4)
+            .background(Color.pivotBackground)
+            .navigationTitle("Explore the park")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 
@@ -145,31 +153,8 @@ struct RootView: View {
                                 )
                             }
 
-                        case .radar:
-                            tabIntro(
-                                eyebrow: "",
-                                title: "Reopen Radar",
-                                detail: "Closures, reopening windows, and park weather."
-                            )
-                            radarSelection
-                            radarCard {
-                                withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.2)) {
-                                    scrollProxy.scrollTo("down-rides", anchor: .top)
-                                }
-                            }
-                            if store.selectedPark != nil {
-                                weatherStrip
-                                if let estimate = store.snapshot?.weather.lightningDeparture {
-                                    NativeLightningDepartureCard(estimate: estimate,
-                                        timeZone: store.selectedPark?.timeZone ?? ParkTimeFormatter.selectedParkTimeZone,
-                                        refreshFailed: store.errorMessage != nil || store.snapshot?.feedHealthy != true)
-                                }
-                            }
-
-                            if store.selectedPark != nil {
-                                sourceStrip
-                                rideList(radarOnly: true).id("down-rides")
-                            }
+                        case .map:
+                            EmptyView()
 
                         case .data:
                             tabIntro(
@@ -178,6 +163,30 @@ struct RootView: View {
                                 detail: "Manage your park, alerts, and app."
                             )
                             moreActions
+                            DisclosureGroup("Closures & park weather") {
+                                VStack(spacing: 16) {
+                                    radarSelection
+                                    radarCard {
+                                        withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.2)) {
+                                            scrollProxy.scrollTo("down-rides", anchor: .top)
+                                        }
+                                    }
+                                    if store.selectedPark != nil {
+                                        weatherStrip
+                                        if let estimate = store.snapshot?.weather.lightningDeparture {
+                                            NativeLightningDepartureCard(estimate: estimate,
+                                                timeZone: store.selectedPark?.timeZone ?? ParkTimeFormatter.selectedParkTimeZone,
+                                                refreshFailed: store.errorMessage != nil || store.snapshot?.feedHealthy != true)
+                                        }
+                                    }
+
+                                    if store.selectedPark != nil {
+                                        sourceStrip
+                                        rideList(radarOnly: true).id("down-rides")
+                                    }
+
+                                }.padding(.top, 12)
+                            }.tint(accent)
                             sourceStrip
                             DisclosureGroup("Data & methods") {
                                 dataMethod.padding(.top, 12)

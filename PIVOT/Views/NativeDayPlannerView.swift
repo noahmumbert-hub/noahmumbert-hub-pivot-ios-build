@@ -23,12 +23,10 @@ struct NativeDayPlannerView: View {
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Your day").font(.largeTitle.bold()).tracking(-1.2)
                         .accessibilityIdentifier("Today planner title")
-                    Text("Favorite rides, fixed stops, and what’s still ahead.")
+                    Text("Your favorites, in a better order.")
                         .font(.subheadline).foregroundStyle(Color.pivotMuted)
                 }
                 if let park {
-                    NativeParkCrowdOverview()
-                    NativePlanWaitForecasts()
                     content(park: park, now: context.date)
                 } else {
                     Button(action: onChoosePark) {
@@ -58,29 +56,31 @@ struct NativeDayPlannerView: View {
         let pack = experience.pack(for: park)
 
         VStack(alignment: .leading, spacing: 18) {
-            HStack {
-                Text("\(favorites.count) favorite rides").font(.headline)
-                Spacer()
-                Button("Choose / edit") { showFavorites = true }.font(.subheadline.bold())
-                    .disabled(current == nil && pack == nil && favorites.isEmpty)
-                    .accessibilityIdentifier("native-day-favorites")
-            }.pivotCard()
-            VStack(alignment: .leading, spacing: 12) {
+            VStack(spacing: 0) {
                 HStack {
-                    Text("Visit window").font(.headline)
+                    Label("\(favorites.count) favorite rides", systemImage: "star").font(.subheadline.bold())
                     Spacer()
-                    Button("Edit") { showWindow = true }
-                }
-                Text("\(time(window.start, park)) – \(time(window.end, park))")
-                    .font(.title3.weight(.semibold))
-                Text("\(NativeDayPlanning.localDay(park: park, at: now)) · \(park.timeZone.identifier)")
-                    .font(.caption).foregroundStyle(Color.pivotMuted)
-                startPicker(park: park, rides: current?.rides ?? [], day: day, now: now)
-                Text("Manual starting point. Ride coordinates are reviewed; land centers and walking times are approximate. No location tracking is used.")
-                    .font(.caption).foregroundStyle(Color.pivotMuted)
-            }.pivotCard()
-            commitments(park: park, day: day, route: route, window: window, now: now)
-            progress(park: park, rides: current?.rides ?? [], savedRides: pack?.rides ?? [], favorites: favorites, day: day, now: now)
+                    Button(favorites.isEmpty ? "Choose" : "Edit") { showFavorites = true }
+                        .disabled(current == nil && pack == nil && favorites.isEmpty)
+                        .accessibilityIdentifier("native-day-favorites")
+                }.frame(minHeight: 44)
+                Divider()
+                DisclosureGroup {
+                    VStack(alignment: .leading, spacing: 12) {
+                        Button("Edit visit times") { showWindow = true }.frame(minHeight: 44)
+                        startPicker(park: park, rides: current?.rides ?? [], day: day, now: now)
+                        Text("Times use \(park.timeZone.identifier). Manual starting point; land centers and walking times are approximate.")
+                            .font(.caption).foregroundStyle(Color.pivotMuted)
+                    }.padding(.top, 8)
+                } label: {
+                    HStack {
+                        Text("Visit & starting point")
+                        Spacer()
+                        Text("\(time(window.start, park))–\(time(window.end, park))")
+                            .font(.caption).foregroundStyle(Color.pivotMuted)
+                    }.font(.subheadline).frame(minHeight: 44)
+                }.accessibilityIdentifier("native-day-setup")
+            }.tint(accent).pivotCard(padding: 14)
 
             if let route {
                 routeCard(route, park: park, rides: current?.rides ?? [], now: now)
@@ -90,7 +90,26 @@ struct NativeDayPlannerView: View {
                 Text("Live planning resumes after a fresh park update. Your day progress and fixed stops remain editable. Open a saved day pack below for its saved route and reference details.")
                     .font(.subheadline).foregroundStyle(Color.pivotMuted)
             }
-            offlineCard(park: park, snapshot: current, route: route, pack: pack, sourceIsLive: fresh, now: now)
+            if let route {
+                ForEach(route.commitments) { stop in
+                    ForEach(stop.warnings, id: \.self) { warning in
+                        Label("\(stop.commitment.title): \(warning)", systemImage: "exclamationmark.triangle")
+                            .font(.caption).foregroundStyle(.orange)
+                    }
+                }
+            }
+            DisclosureGroup("Fixed stops · \(day.commitments.count)") {
+                commitments(park: park, day: day, route: route, window: window, now: now).padding(.top, 8)
+            }.accessibilityIdentifier("native-day-fixed-stops")
+            DisclosureGroup("All favorites & progress") {
+                progress(park: park, rides: current?.rides ?? [], savedRides: pack?.rides ?? [], favorites: favorites, day: day, now: now).padding(.top, 8)
+            }.accessibilityIdentifier("native-day-all-progress")
+            DisclosureGroup("Crowds & predicted waits") {
+                VStack(spacing: 14) { NativeParkCrowdOverview(); NativePlanWaitForecasts() }.padding(.top, 8)
+            }.accessibilityIdentifier("native-day-forecasts")
+            DisclosureGroup("Offline day pack") {
+                offlineCard(park: park, snapshot: current, route: route, pack: pack, sourceIsLive: fresh, now: now).padding(.top, 8)
+            }.accessibilityIdentifier("native-day-offline")
             if let message {
                 Text(message).font(.callout).foregroundStyle(accent).accessibilityAddTraits(.updatesFrequently)
             }
@@ -248,11 +267,20 @@ struct NativeDayPlannerView: View {
                         .font(.subheadline)
                     Text("\(stop.walkMinutes) min walk · done about \(time(stop.completeAt, park))")
                         .font(.caption).foregroundStyle(Color.pivotMuted)
+                    HStack {
+                        Button("Done") { perform { try experience.setProgress(.done, rideID: stop.rideID, park: park, now: now) } }
+                            .accessibilityLabel("Mark \(stop.rideName) done")
+                        Spacer()
+                        Button("Skip today") { perform { try experience.setProgress(.skip, rideID: stop.rideID, park: park, now: now) } }
+                            .accessibilityLabel("Skip \(stop.rideName) today")
+                    }.buttonStyle(.bordered).controlSize(.regular).padding(.top, 6)
                 }
                 if stop.id != route.stops.last?.id { Divider() }
             }
-            Text("Approximate walking and ride times. Fixed stops reserve walking plus arrival buffers; unknown stop locations reserve at least 15 minutes of walking. Follow park signs and check posted return requirements.")
-                .font(.caption).foregroundStyle(Color.pivotMuted)
+            DisclosureGroup("How this route works") {
+                Text("Approximate walking and ride times. Fixed stops reserve walking plus arrival buffers; unknown stop locations reserve at least 15 minutes of walking. Follow park signs and check posted return requirements.")
+                    .font(.caption).foregroundStyle(Color.pivotMuted).padding(.top, 6)
+            }.font(.caption)
         }.pivotCard().accessibilityIdentifier("native-day-route")
     }
 
