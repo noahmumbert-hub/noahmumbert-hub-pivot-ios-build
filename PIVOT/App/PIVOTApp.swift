@@ -28,7 +28,9 @@ struct PIVOTApp: App {
     @ViewBuilder
     private var appContent: some View {
 #if DEBUG
-        if ProcessInfo.processInfo.arguments.contains("--wait-forecast-ui-test") {
+        if ProcessInfo.processInfo.arguments.contains("--park-map-ui-test") {
+            NativeParkMapUITestScreen()
+        } else if ProcessInfo.processInfo.arguments.contains("--wait-forecast-ui-test") {
             NativeWaitForecastUITestScreen()
         } else if ProcessInfo.processInfo.arguments.contains("--hhn-ui-test") {
             NativeHorrorNightUITestScreen()

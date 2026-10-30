@@ -18,6 +18,86 @@ final class PIVOTTests: XCTestCase {
     }
 
 
+    func testMapRideWaitStatesNeverInventAWait() {
+        let point = ParkMapPoint(id: "map-1", name: "Map ride", category: .ride,
+                                 latitude: 28.4, longitude: -81.5, rideId: 1)
+        let cases: [(RideStatus, Int?, String, Int?)] = [
+            (.open, 35, "35 min", 35), (.open, 0, "0 min · walk-on", 0),
+            (.open, nil, "Open · wait not posted", nil), (.open, -1, "Open · wait not posted", nil),
+            (.down, 99, "Temporarily closed", nil), (.scheduled, 99, "Not operating now", nil),
+            (.parkInactive, 99, "Park inactive", nil), (.stale, 99, "Wait unavailable", nil),
+            (.unknown("NEW_STATUS"), 99, "Wait unavailable", nil)
+        ]
+        for (status, wait, title, expected) in cases {
+            var ride = makeRide(id: 1, status: status, waitTime: wait)
+            ride.waitTime = wait // A bad provider value must not leak from a closed ride.
+            let value = ParkMapRidePresentation.resolve(point: point, parkID: 6,
+                snapshot: makeSnapshot(sourceOffset: 0, ride: ride), refreshFailed: false, at: start)
+            XCTAssertEqual(value.title, title)
+            XCTAssertEqual(value.waitMinutes, expected)
+        }
+    }
+
+    func testMapRideWaitRequiresExactRideParkAndHealthyRecentFeed() {
+        let point = ParkMapPoint(id: "map-1", name: "Same name", category: .ride,
+                                 latitude: 28.4, longitude: -81.5, rideId: 1)
+        let ride = makeRide(id: 1, name: "Same name", status: .open, waitTime: 35)
+        func resolve(_ snapshot: LiveParkSnapshot?, parkID: Int = 6, failed: Bool = false, now: Date? = nil) -> ParkMapRidePresentation {
+            ParkMapRidePresentation.resolve(point: point, parkID: parkID, snapshot: snapshot,
+                refreshFailed: failed, at: now ?? start)
+        }
+        let good = makeSnapshot(sourceOffset: 0, ride: ride)
+        XCTAssertEqual(resolve(good).waitMinutes, 35)
+        XCTAssertNil(resolve(nil).waitMinutes)
+        XCTAssertNil(resolve(good, parkID: 5).waitMinutes)
+        XCTAssertNil(resolve(good, failed: true).waitMinutes)
+        XCTAssertNil(resolve(makeSnapshot(sourceOffset: 0, ride: makeRide(id: 2, name: "Same name", status: .open))).waitMinutes)
+        XCTAssertNil(resolve(makeSnapshot(sourceOffset: 0, feedHealthy: false, ride: ride)).waitMinutes)
+        XCTAssertNil(resolve(makeSnapshot(sourceOffset: 0, themeParksWiki: makeThemeParksWikiSummary(cacheStale: true), ride: ride)).waitMinutes)
+        XCTAssertNil(resolve(makeSnapshot(sourceOffset: 0, themeParksWiki: makeThemeParksWikiSummary(available: false), ride: ride)).waitMinutes)
+        XCTAssertNil(resolve(makeSnapshot(sourceOffset: 0, themeParksWiki: makeThemeParksWikiSummary(fetchedAt: start.addingTimeInterval(-901)), ride: ride)).waitMinutes)
+        XCTAssertNil(resolve(good, now: start.addingTimeInterval(901)).waitMinutes)
+        XCTAssertNil(resolve(makeSnapshot(sourceOffset: 121, ride: ride)).waitMinutes)
+    }
+
+    func testMapWaitAgesWhileFreshClosureRemainsClosed() {
+        let point = ParkMapPoint(id: "map-1", name: "Ride", category: .ride,
+                                 latitude: 28.4, longitude: -81.5, rideId: 1)
+        let later = start.addingTimeInterval(901)
+        for status in [RideStatus.open, .down] {
+            let snapshot = makeSnapshot(sourceOffset: 901, ride: makeRide(id: 1, status: status))
+            let value = ParkMapRidePresentation.resolve(point: point, parkID: 6,
+                snapshot: snapshot, refreshFailed: false, at: later)
+            XCTAssertNil(value.waitMinutes)
+            XCTAssertEqual(value.title, status == .open ? "Open · wait unavailable" : "Temporarily closed")
+        }
+        let future = ParkMapRidePresentation.resolve(point: point, parkID: 6,
+            snapshot: makeSnapshot(sourceOffset: -121, ride: makeRide(id: 1, status: .open)),
+            refreshFailed: false, at: start.addingTimeInterval(-121))
+        XCTAssertNil(future.waitMinutes)
+    }
+
+    func testMapWaitUsesProviderTimestampBeforeFallbackAndRequiresATimestamp() throws {
+        let point = ParkMapPoint(id: "map-1", name: "Ride", category: .ride,
+                                 latitude: 28.4, longitude: -81.5, rideId: 1)
+        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .secondsSince1970
+        let decoder = JSONDecoder(); decoder.dateDecodingStrategy = .secondsSince1970
+        let encoded = try encoder.encode(makeRide(id: 1, status: .open, waitTime: 35))
+        var row = try XCTUnwrap(JSONSerialization.jsonObject(with: encoded) as? [String: Any])
+        row["themeParksWikiStatus"] = ["entityId": "map-1", "entityName": "Ride", "status": "OPERATING",
+            "sourceUpdatedAt": start.addingTimeInterval(-901).timeIntervalSince1970, "matchedBy": "ID"]
+        var ride = try decoder.decode(LiveRide.self, from: JSONSerialization.data(withJSONObject: row))
+        var result = ParkMapRidePresentation.resolve(point: point, parkID: 6,
+            snapshot: makeSnapshot(sourceOffset: 0, ride: ride), refreshFailed: false, at: start)
+        XCTAssertNil(result.waitMinutes, "A fresh row timestamp must not replace an old provider wait timestamp")
+        row.removeValue(forKey: "themeParksWikiStatus"); row.removeValue(forKey: "lastUpdated")
+        ride = try decoder.decode(LiveRide.self, from: JSONSerialization.data(withJSONObject: row))
+        result = ParkMapRidePresentation.resolve(point: point, parkID: 6,
+            snapshot: makeSnapshot(sourceOffset: 0, ride: ride), refreshFailed: false, at: start)
+        XCTAssertNil(result.waitMinutes)
+        XCTAssertEqual(result.detail, "Wait update time unavailable")
+    }
+
     // Frozen 1.15.5 decoder for reproducible same-process comparisons.
     private func baselineDateDecoder() -> JSONDecoder {
         let decoder = JSONDecoder()

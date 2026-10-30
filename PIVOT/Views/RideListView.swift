@@ -221,6 +221,7 @@ struct RideDetailScreenView: View {
     @EnvironmentObject private var store: DashboardStore
     let initialRide: LiveRide
     let timeZone: TimeZone
+    var mapPoint: ParkMapPoint? = nil
     private var ride: LiveRide { store.snapshot?.rides.first(where: { $0.id == initialRide.id }) ?? initialRide }
 
     var body: some View {
@@ -260,9 +261,16 @@ struct RideDetailScreenView: View {
                     if ride.details?.photo == nil { Text("A verified ride photo isn’t available yet.").font(.subheadline).foregroundStyle(Color.pivotMuted) }
                     TimelineView(.periodic(from: .now, by: 15)) { context in
                         VStack(alignment: .leading, spacing: 10) {
-                            Text(ride.statusDescription).font(.headline)
-                            if ride.status == .open {
-                                Text(ride.waitTime.map { "\($0) min wait" } ?? "Wait not posted").font(.title2.weight(.semibold))
+                            if let mapPoint {
+                                let status = ParkMapRidePresentation.resolve(point: mapPoint, parkID: store.selectedPark?.id,
+                                    snapshot: store.snapshot, refreshFailed: store.errorMessage != nil, at: context.date)
+                                Text(status.title).font(.title2.weight(.semibold))
+                                Text(status.detail).font(.caption).foregroundStyle(Color.pivotMuted)
+                            } else {
+                                Text(ride.statusDescription).font(.headline)
+                                if ride.status == .open {
+                                    Text(ride.waitTime.map { "\($0) min wait" } ?? "Wait not posted").font(.title2.weight(.semibold))
+                                }
                             }
                             if let downtime = ride.downTimePresentation { Text(downtime.text).accessibilityLabel(downtime.accessibilityLabel) }
                             if ride.hasWeatherHold, let clearance = ride.delayEvidence?.rideWeatherClearanceDescription {

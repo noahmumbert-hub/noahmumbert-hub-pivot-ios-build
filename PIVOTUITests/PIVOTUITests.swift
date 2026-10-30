@@ -1,6 +1,76 @@
 import XCTest
 
 final class PIVOTUITests: XCTestCase {
+    private func mapFixtureApp(_ arguments: [String] = []) -> XCUIApplication {
+        let app = XCUIApplication()
+        app.launchArguments = ["--park-map-ui-test"] + arguments
+        app.launch()
+        XCTAssertTrue(app.buttons["Full screen map"].waitForExistence(timeout: 10))
+        return app
+    }
+
+    private func selectMapFixture(_ name: String, id: Int, app: XCUIApplication) {
+        if app.buttons["Clear place search"].exists { app.buttons["Clear place search"].tap() }
+        let search = app.textFields["Search park places"]
+        search.tap()
+        search.typeText(name + "\n")
+        // The fixture's stable identifier is separate from the displayed ride name.
+        let fixturePin = app.buttons["map-pin-fixture-\(id)"]
+        XCTAssertTrue(fixturePin.waitForExistence(timeout: 5))
+        fixturePin.tap()
+        XCTAssertTrue(app.staticTexts["Selected ride wait"].waitForExistence(timeout: 3))
+    }
+
+    func testMapFullScreenPreservesSelectionFiltersAndCurrentWait() {
+        let app = mapFixtureApp()
+        app.buttons["map-category-RIDE"].tap()
+        selectMapFixture("Current wait ride", id: 1, app: app)
+        XCTAssertEqual(app.staticTexts["Selected ride wait"].label, "35 min")
+        screenshot("Map current ride wait", app: app)
+        app.buttons["Full screen map"].tap()
+        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
+        XCTAssertEqual(app.textFields["Search park places"].value as? String, "Current wait ride")
+        XCTAssertTrue(app.buttons["map-category-RIDE"].isSelected)
+        XCTAssertEqual(app.staticTexts["Selected ride wait"].label, "35 min")
+        XCTAssertTrue(app.staticTexts["Selected ride wait"].isHittable)
+        app.buttons["Show whole park"].tap()
+        screenshot("Full screen map current ride wait", app: app)
+        app.buttons["Close full screen map"].tap()
+        XCTAssertTrue(app.buttons["Full screen map"].waitForExistence(timeout: 5))
+        XCTAssertEqual(app.textFields["Search park places"].value as? String, "Current wait ride")
+        XCTAssertEqual(app.staticTexts["Selected ride wait"].label, "35 min")
+        XCTAssertTrue(app.buttons["map-category-RIDE"].isSelected)
+    }
+
+    func testMapFullScreenRideStatesDoNotInventWaits() {
+        let app = mapFixtureApp()
+        app.buttons["Full screen map"].tap()
+        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
+        let cases: [(String, Int, String)] = [
+            ("Walk-on ride", 2, "0 min · walk-on"), ("Unposted wait ride", 3, "Open · wait not posted"),
+            ("Closed ride", 4, "Temporarily closed"), ("Scheduled ride", 5, "Not operating now"),
+            ("Inactive ride", 6, "Park inactive"), ("Old wait ride", 7, "Open · wait unavailable"),
+            ("Stale ride", 8, "Wait unavailable"), ("Unknown ride", 9, "Wait unavailable"),
+            ("Unmapped ride", 10, "Wait unavailable")
+        ]
+        for (name, id, expected) in cases {
+            selectMapFixture(name, id: id, app: app)
+            XCTAssertEqual(app.staticTexts["Selected ride wait"].label, expected)
+            XCTAssertTrue(app.staticTexts["Selected ride wait"].isHittable)
+            if id == 4 { screenshot("Full screen map closed ride", app: app) }
+        }
+        screenshot("Full screen map unavailable ride", app: app)
+    }
+
+    func testMapFailedRefreshDoesNotPresentCachedWaitAsCurrent() {
+        let app = mapFixtureApp(["--map-refresh-failed"])
+        selectMapFixture("Current wait ride", id: 1, app: app)
+        XCTAssertEqual(app.staticTexts["Selected ride wait"].label, "Wait unavailable")
+        XCTAssertTrue(app.staticTexts["Refresh failed · waiting for a current update"].exists)
+        XCTAssertFalse(app.staticTexts["35 min"].exists)
+        screenshot("Map refresh failure", app: app)
+    }
+
     func testWaitForecastShowsHourlyPlanCrowdAndLearningState() {
         let app = XCUIApplication()
         app.launchArguments = ["--wait-forecast-ui-test"]
@@ -220,7 +290,7 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["More"].tap()
         app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Settings'")).firstMatch.tap()
         XCTAssertEqual(app.buttons["accent-purple"].value as? String, "Selected")
-        XCTAssertTrue(app.staticTexts["PIVOT 1.16.0"].exists)
+        XCTAssertTrue(app.staticTexts["PIVOT 1.16.1"].exists)
         app.buttons["accent-mint"].tap()
     }
 

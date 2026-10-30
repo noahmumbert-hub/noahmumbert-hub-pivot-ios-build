@@ -87,8 +87,8 @@ struct RootView: View {
         NavigationStack {
             VStack(spacing: 10) {
                 parkSwitch
-                ParkMapView(park: store.selectedPark, snapshot: store.feedHealth().isLive ? store.snapshot : nil,
-                            onChoosePark: { showParkPicker = true })
+                ParkMapView(park: store.selectedPark, snapshot: store.snapshot,
+                            onChoosePark: { showParkPicker = true }, refreshFailed: store.errorMessage != nil)
                     .id(store.selectedPark?.id)
             }
             .padding(.horizontal, 16).padding(.top, 8).padding(.bottom, 4)
