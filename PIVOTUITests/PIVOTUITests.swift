@@ -62,6 +62,19 @@ final class PIVOTUITests: XCTestCase {
         screenshot("Full screen map unavailable ride", app: app)
     }
 
+    func testMapWaitExpiresWhileFullScreenStaysOpen() {
+        let app = mapFixtureApp(["--map-wait-expiring"])
+        selectMapFixture("Current wait ride", id: 1, app: app)
+        XCTAssertEqual(app.staticTexts["Selected ride wait"].label, "35 min")
+        app.buttons["Full screen map"].tap()
+        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
+        let expired = NSPredicate(format: "label == %@", "Open · wait unavailable")
+        let expectation = XCTNSPredicateExpectation(predicate: expired, object: app.staticTexts["Selected ride wait"])
+        XCTAssertEqual(XCTWaiter.wait(for: [expectation], timeout: 40), .completed)
+        XCTAssertFalse(app.staticTexts["35 min"].exists)
+        screenshot("Full screen map wait expires", app: app)
+    }
+
     func testMapFailedRefreshDoesNotPresentCachedWaitAsCurrent() {
         let app = mapFixtureApp(["--map-refresh-failed"])
         selectMapFixture("Current wait ride", id: 1, app: app)

@@ -138,13 +138,6 @@ struct ParkMapView: View {
             if isFullScreen { Color.clear } else { mapContent }
         }
         .task(id: park?.id) { loadCatalog(); recenter() }
-        .task {
-            while !Task.isCancelled {
-                now = Date()
-                do { try await Task.sleep(nanoseconds: 15_000_000_000) }
-                catch { break }
-            }
-        }
         .onChange(of: category) { _, _ in openOnly = false; selectedID = nil }
         .fullScreenCover(isPresented: $isFullScreen, onDismiss: {
             searchFocused = false
@@ -253,6 +246,13 @@ struct ParkMapView: View {
                     }.font(.subheadline.weight(.semibold)).frame(minHeight: 44)
                 }
                 .accessibilityIdentifier("Browse map places")
+            }
+        }
+        .task {
+            while !Task.isCancelled {
+                now = Date()
+                do { try await Task.sleep(nanoseconds: 15_000_000_000) }
+                catch { break }
             }
         }
         .sheet(isPresented: $showPlaces) { placesSheet }
@@ -435,8 +435,9 @@ struct NativeParkMapUITestScreen: View {
         }
         catalog = ParkMapCatalog(generatedAt: "2026-10-30", parks: ["6": ParkMapPark(name: "Magic Kingdom Park", points: points, missing: [])])
         let rides: [[String: Any]] = cases.dropLast().enumerated().map { index, value in
+            let offset = index == 0 && ProcessInfo.processInfo.arguments.contains("--map-wait-expiring") ? -880 : value.3
             var ride: [String: Any] = ["id": index + 1, "name": value.0, "land": "Fixture land",
-                "status": value.1, "isOpen": value.1 == "OPEN", "lastUpdated": now + value.3,
+                "status": value.1, "isOpen": value.1 == "OPEN", "lastUpdated": now + offset,
                 "weatherExposure": "INDOOR", "radarEligible": true, "radarCategory": "RIDE",
                 "reopenPending": false, "trend": [99]]
             if let wait = value.2 { ride["waitTime"] = wait }
