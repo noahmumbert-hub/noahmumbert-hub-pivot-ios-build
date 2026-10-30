@@ -124,16 +124,28 @@ private final class ParkMarkerView: MKMarkerAnnotationView {
 /// preserve geographic position rather than allowing MapKit to shift it implicitly.
 private final class ParkNativeMapView: MKMapView {
     var pendingCameraChange: (() -> Void)?
+    private var cameraChangeScheduled = false
     func enqueueCameraChange(_ operation: @escaping () -> Void) {
         pendingCameraChange = operation
         setNeedsLayout()
     }
     override func layoutSubviews() {
         super.layoutSubviews()
-        guard window != nil, bounds.width > 0, bounds.height > 0,
-              let operation = pendingCameraChange else { return }
-        pendingCameraChange = nil
-        operation()
+        guard !cameraChangeScheduled, pendingCameraChange != nil,
+              window != nil, bounds.width > 0, bounds.height > 0 else { return }
+        cameraChangeScheduled = true
+        // MapKit can call its delegate synchronously from a camera setter. Apply
+        // after UIKit finishes layout/presentation, never reenter that layout pass.
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            self.cameraChangeScheduled = false
+            guard self.window != nil, self.bounds.width > 0, self.bounds.height > 0,
+                  let operation = self.pendingCameraChange else { return }
+            // Read the latest coalesced operation, not a stale closure captured
+            // before SwiftUI delivered a newer command or inset update.
+            self.pendingCameraChange = nil
+            operation()
+        }
     }
     override func didMoveToWindow() {
         super.didMoveToWindow()
@@ -214,7 +226,10 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
             map.selectedAnnotations.forEach { map.deselectAnnotation($0, animated: false) }
         }
     }
-    static func dismantleUIView(_ map: ParkNativeMapView, coordinator: Coordinator) { map.delegate = nil }
+    static func dismantleUIView(_ map: ParkNativeMapView, coordinator: Coordinator) {
+        map.delegate = nil
+        map.pendingCameraChange = nil
+    }
     final class Coordinator: NSObject, MKMapViewDelegate {
         var parent: NativeParkMapCanvas
         var lastCommand: UUID?
@@ -240,7 +255,12 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
             parent.session.camera = mapView.camera.copy() as? MKMapCamera
 #if DEBUG
             let c = mapView.centerCoordinate
-            parent.session.telemetry = "\(c.latitude),\(c.longitude),\(mapView.camera.altitude)"
+            let value = "\(c.latitude),\(c.longitude),\(mapView.camera.altitude)"
+            DispatchQueue.main.async { [weak self, weak mapView] in
+                guard let self, let mapView, mapView.delegate === self,
+                      self.parent.session.telemetry != value else { return }
+                self.parent.session.telemetry = value
+            }
 #endif
         }
         func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {

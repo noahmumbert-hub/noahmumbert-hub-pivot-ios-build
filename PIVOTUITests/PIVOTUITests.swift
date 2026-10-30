@@ -45,8 +45,9 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["Map"].tap()
         app.buttons["Full screen map"].tap()
         XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
-        let map = app.otherElements["Park map"]
+        let map = app.maps.firstMatch
         XCTAssertTrue(map.waitForExistence(timeout: 5))
+        XCTAssertEqual(app.maps.count, 1, "Measure the actual native Map accessibility element")
         XCTAssertEqual(map.frame.minX, app.frame.minX, accuracy: 1)
         XCTAssertEqual(map.frame.minY, app.frame.minY, accuracy: 1)
         XCTAssertEqual(map.frame.width, app.frame.width, accuracy: 1)
@@ -135,7 +136,7 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["Map"].tap()
         app.buttons["Full screen map"].tap()
         XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
-        let map = app.otherElements["Park map"]
+        let map = app.maps.firstMatch
         map.coordinate(withNormalizedOffset: CGVector(dx: 0.2, dy: 0.4))
             .press(forDuration: 0.1, thenDragTo: map.coordinate(withNormalizedOffset: CGVector(dx: 0.8, dy: 0.5)))
         let search = app.textFields["Search park places"]
