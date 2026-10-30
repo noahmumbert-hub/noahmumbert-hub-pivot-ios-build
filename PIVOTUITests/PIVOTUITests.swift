@@ -34,7 +34,7 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertFalse(app.buttons["plan-predicted-waits"].exists)
         app.tabBars.buttons["Plan"].tap()
         XCTAssertTrue(app.staticTexts["Your day"].waitForExistence(timeout: 5))
-        let forecastSection = app.buttons["native-day-forecasts"]
+        let forecastSection = app.buttons["Crowds & predicted waits"]
         reveal(forecastSection, in: app)
         forecastSection.tap()
         let forecasts = app.buttons["plan-predicted-waits"]
@@ -220,7 +220,7 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["More"].tap()
         app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Settings'")).firstMatch.tap()
         XCTAssertEqual(app.buttons["accent-purple"].value as? String, "Selected")
-        XCTAssertTrue(app.staticTexts["PIVOT 1.15.6"].exists)
+        XCTAssertTrue(app.staticTexts["PIVOT 1.16.0"].exists)
         app.buttons["accent-mint"].tap()
     }
 
@@ -236,6 +236,12 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["PIVOT"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.buttons.matching(NSPredicate(format: "label CONTAINS[c] 'Change park'")).firstMatch.exists)
         XCTAssertTrue(app.buttons["Refresh ride data now"].exists)
+        // Clear persisted selection through the same control a person uses.
+        app.buttons.matching(NSPredicate(format: "label CONTAINS[c] 'Change park'")).firstMatch.tap()
+        let noPark = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'No park'")).firstMatch
+        XCTAssertTrue(noPark.waitForExistence(timeout: 5))
+        noPark.tap()
+        XCTAssertTrue(app.buttons["Change park. Current park: none"].waitForExistence(timeout: 5))
 
         let tabBar = app.tabBars.firstMatch
         XCTAssertTrue(tabBar.waitForExistence(timeout: 5))
@@ -269,6 +275,7 @@ final class PIVOTUITests: XCTestCase {
         map.tap()
         XCTAssertTrue(map.isSelected)
         XCTAssertTrue(app.staticTexts["Choose a park to see rides, food, and shows."].waitForExistence(timeout: 3))
+        XCTAssertTrue(app.buttons["Choose park"].exists)
 
         data.tap()
         XCTAssertTrue(data.isSelected)

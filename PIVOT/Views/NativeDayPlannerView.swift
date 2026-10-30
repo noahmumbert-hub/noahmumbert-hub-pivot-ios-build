@@ -79,7 +79,7 @@ struct NativeDayPlannerView: View {
                         Text("\(time(window.start, park))–\(time(window.end, park))")
                             .font(.caption).foregroundStyle(Color.pivotMuted)
                     }.font(.subheadline).frame(minHeight: 44)
-                }.accessibilityIdentifier("native-day-setup")
+                }
             }.tint(accent).pivotCard(padding: 14)
 
             if let route {
@@ -100,16 +100,16 @@ struct NativeDayPlannerView: View {
             }
             DisclosureGroup("Fixed stops · \(day.commitments.count)") {
                 commitments(park: park, day: day, route: route, window: window, now: now).padding(.top, 8)
-            }.accessibilityIdentifier("native-day-fixed-stops")
+            }
             DisclosureGroup("All favorites & progress") {
                 progress(park: park, rides: current?.rides ?? [], savedRides: pack?.rides ?? [], favorites: favorites, day: day, now: now).padding(.top, 8)
-            }.accessibilityIdentifier("native-day-all-progress")
+            }
             DisclosureGroup("Crowds & predicted waits") {
                 VStack(spacing: 14) { NativeParkCrowdOverview(); NativePlanWaitForecasts() }.padding(.top, 8)
-            }.accessibilityIdentifier("native-day-forecasts")
+            }
             DisclosureGroup("Offline day pack") {
                 offlineCard(park: park, snapshot: current, route: route, pack: pack, sourceIsLive: fresh, now: now).padding(.top, 8)
-            }.accessibilityIdentifier("native-day-offline")
+            }
             if let message {
                 Text(message).font(.callout).foregroundStyle(accent).accessibilityAddTraits(.updatesFrequently)
             }
