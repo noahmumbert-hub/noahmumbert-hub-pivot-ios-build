@@ -7,7 +7,7 @@
   "localizedDescription": "PIVOT updates for SideStore. Uses the existing PIVOT app identity.",
   "website": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
   "websiteURL": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
-  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/90b4cfe2be02f0c668f7270c7e844587fa17934f/icon.png",
+  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ad4ce8848579ea2758743ebbd624214378070eb7/icon.png",
   "tintColor": "70DFC0",
   "apps": [
     {
@@ -16,14 +16,23 @@
       "developerName": "Noah Mumbert",
       "subtitle": "Theme park companion",
       "localizedDescription": "Park wait times, ride status, weather observations, planning, shows and Live Activities.",
-      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/90b4cfe2be02f0c668f7270c7e844587fa17934f/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ad4ce8848579ea2758743ebbd624214378070eb7/icon.png",
       "tintColor": "70DFC0",
-      "version": "1.15.6",
-      "versionDate": "2026-10-18T15:57:59Z",
-      "versionDescription": "Loading and responsiveness improvements\n\nPIVOT reuses timestamp parsers during live-response decoding and reuses time-label formatters during view updates. Switching parks can start the new park request while an older request finishes. Crowd browsing shares an overlapping selected-park refresh, with its loading indicator preserved.\n\nFreshness rules, the five-second foreground refresh cadence, last-good data, and failure labels remain unchanged. This release includes the Supercharged permanent-retirement removal and EPCOT opening-hours fixes from 1.15.5 and 1.15.4. Saved preferences and app identity are preserved. Backend and website deployment are separate.",
-      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/90b4cfe2be02f0c668f7270c7e844587fa17934f/PIVOT-1.15.6-100.34.1.ipa",
-      "size": 2989135,
+      "version": "1.16.0",
+      "versionDate": "2026-10-30T19:24:44Z",
+      "versionDescription": "PIVOT 1.16.0 — A simpler Plan and park maps\n\nPlan now leads with your remaining route and a compact favorites/visit setup. Mark a ride Done or Skip today directly from the route. Fixed stops, full progress, crowd predictions, and offline packs remain available in expandable sections; timing and availability warnings stay visible.\n\nMap replaces Radar in the tab bar. Explore every supported park, filter rides, food, and shows, search places, browse the list, and check fresh ride status. Restaurant pins are locations, not published operating hours. Closures, selected-ride reopening guidance, and park weather remain under More.\n\nThis update preserves the existing app identity, saved favorites/progress, manual starts, fixed show stops, offline packs, smart alerts, Live Activities, and the reliability/performance fixes in 1.15.6. The bundled source-backed map catalog was checked October 30. Retired rides remain excluded from active map browsing. Website and backend deployments are separate.",
+      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ad4ce8848579ea2758743ebbd624214378070eb7/PIVOT-1.16.0-100.36.1.ipa",
+      "size": 3251419,
       "versions": [
+        {
+          "version": "1.16.0",
+          "buildVersion": "100.36.1",
+          "date": "2026-10-30T19:24:44Z",
+          "localizedDescription": "PIVOT 1.16.0 — A simpler Plan and park maps\n\nPlan now leads with your remaining route and a compact favorites/visit setup. Mark a ride Done or Skip today directly from the route. Fixed stops, full progress, crowd predictions, and offline packs remain available in expandable sections; timing and availability warnings stay visible.\n\nMap replaces Radar in the tab bar. Explore every supported park, filter rides, food, and shows, search places, browse the list, and check fresh ride status. Restaurant pins are locations, not published operating hours. Closures, selected-ride reopening guidance, and park weather remain under More.\n\nThis update preserves the existing app identity, saved favorites/progress, manual starts, fixed show stops, offline packs, smart alerts, Live Activities, and the reliability/performance fixes in 1.15.6. The bundled source-backed map catalog was checked October 30. Retired rides remain excluded from active map browsing. Website and backend deployments are separate.",
+          "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ad4ce8848579ea2758743ebbd624214378070eb7/PIVOT-1.16.0-100.36.1.ipa",
+          "size": 3251419,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.15.6",
           "buildVersion": "100.34.1",

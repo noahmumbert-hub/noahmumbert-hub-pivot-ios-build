@@ -4,15 +4,17 @@ Add this source in SideStore → Sources → +:
 
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 
-Current update: **1.15.6 / build 100.34.1**, iOS 17.0+.
+Current update: **1.16.0 / build 100.36.1**, iOS 17.0+.
 
-Loading and responsiveness improvements
+PIVOT 1.16.0 — A simpler Plan and park maps
 
-PIVOT reuses timestamp parsers during live-response decoding and reuses time-label formatters during view updates. Switching parks can start the new park request while an older request finishes. Crowd browsing shares an overlapping selected-park refresh, with its loading indicator preserved.
+Plan now leads with your remaining route and a compact favorites/visit setup. Mark a ride Done or Skip today directly from the route. Fixed stops, full progress, crowd predictions, and offline packs remain available in expandable sections; timing and availability warnings stay visible.
 
-Freshness rules, the five-second foreground refresh cadence, last-good data, and failure labels remain unchanged. This release includes the Supercharged permanent-retirement removal and EPCOT opening-hours fixes from 1.15.5 and 1.15.4. Saved preferences and app identity are preserved. Backend and website deployment are separate.
+Map replaces Radar in the tab bar. Explore every supported park, filter rides, food, and shows, search places, browse the list, and check fresh ride status. Restaurant pins are locations, not published operating hours. Closures, selected-ride reopening guidance, and park weather remain under More.
 
-IPA SHA-256: `b82d0d24ea8f2f04e6dd554f75996a20b4be7f8597cb2b5d9c755356dd7c8cad`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/39141813803).
+This update preserves the existing app identity, saved favorites/progress, manual starts, fixed show stops, offline packs, smart alerts, Live Activities, and the reliability/performance fixes in 1.15.6. The bundled source-backed map catalog was checked October 30. Retired rides remain excluded from active map browsing. Website and backend deployments are separate.
+
+IPA SHA-256: `22aa2f25e7b68120b69a530153b7cd4ac59b3efe01215968cba3e9b4d9b58a7c`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/41112611079).
 The unsigned IPA preserves `com.noahmumbert.PIVOT` and its Live Activity extension.
 Install as an update using the same signing identity; keep the existing app installed to retain saved data.
 Native unit and simulator UI tests passed for this build. Physical SideStore installation remains untested.
