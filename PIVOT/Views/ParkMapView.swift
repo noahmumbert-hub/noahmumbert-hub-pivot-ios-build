@@ -116,10 +116,31 @@ private final class ParkMarkerView: MKMarkerAnnotationView {
     }
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool { minimumTarget(bounds).contains(point) }
     override var accessibilityFrame: CGRect {
-        get { minimumTarget(super.accessibilityFrame) }
+        get { isHidden || alpha == 0 ? super.accessibilityFrame : minimumTarget(super.accessibilityFrame) }
         set { super.accessibilityFrame = newValue }
     }
 }
+/// Camera operations wait until UIKit has assigned the final viewport. Inset changes
+/// preserve geographic position rather than allowing MapKit to shift it implicitly.
+private final class ParkNativeMapView: MKMapView {
+    var pendingCameraChange: (() -> Void)?
+    func enqueueCameraChange(_ operation: @escaping () -> Void) {
+        pendingCameraChange = operation
+        setNeedsLayout()
+    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        guard window != nil, bounds.width > 0, bounds.height > 0,
+              let operation = pendingCameraChange else { return }
+        pendingCameraChange = nil
+        operation()
+    }
+    override func didMoveToWindow() {
+        super.didMoveToWindow()
+        if window != nil { setNeedsLayout() }
+    }
+}
+
 private struct NativeParkMapCanvas: UIViewRepresentable {
     let points: [ParkMapPoint]
     let allPoints: [ParkMapPoint]
@@ -132,8 +153,8 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
     let onCluster: ([ParkMapPoint]) -> Void
 
     func makeCoordinator() -> Coordinator { Coordinator(self) }
-    func makeUIView(context: Context) -> MKMapView {
-        let map = MKMapView()
+    func makeUIView(context: Context) -> ParkNativeMapView {
+        let map = ParkNativeMapView()
         map.delegate = context.coordinator
         map.accessibilityIdentifier = "Park map"
         map.isZoomEnabled = true
@@ -146,15 +167,21 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
         map.register(ParkMarkerView.self, forAnnotationViewWithReuseIdentifier: "place")
         map.register(ParkMarkerView.self, forAnnotationViewWithReuseIdentifier: "cluster")
         if let camera = session.camera {
-            map.setCamera(camera, animated: false)
+            map.enqueueCameraChange { [weak map] in map?.setCamera(camera, animated: false) }
             context.coordinator.lastCommand = command.id
         }
         return map
     }
-    func updateUIView(_ map: MKMapView, context: Context) {
+    func updateUIView(_ map: ParkNativeMapView, context: Context) {
         let coordinator = context.coordinator
         coordinator.parent = self
-        map.layoutMargins = margins
+        if map.layoutMargins != margins {
+            let retained = map.camera.copy() as! MKMapCamera
+            let alreadyPending = map.pendingCameraChange
+            map.layoutMargins = margins
+            // An initial restore or explicit command has priority over inset preservation.
+            map.enqueueCameraChange(alreadyPending ?? { [weak map] in map?.setCamera(retained, animated: false) })
+        }
         coordinator.updatingSelection = true
         defer { coordinator.updatingSelection = false }
         let desired = Set(points.map(\.id))
@@ -164,15 +191,19 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
         map.addAnnotations(points.filter { !present.contains($0.id) }.map(ParkPlaceAnnotation.init))
         if coordinator.lastCommand != command.id {
             coordinator.lastCommand = command.id
-            switch command.action {
-            case .fit:
-                coordinator.fit(allPoints.map(\.coordinate), on: map, animated: false)
-            case .focus(let coordinate):
-                map.setRegion(MKCoordinateRegion(center: coordinate, latitudinalMeters: 500, longitudinalMeters: 500), animated: true)
-            case .zoom(let factor):
-                let camera = map.camera.copy() as! MKMapCamera
-                camera.altitude = min(100_000, max(35, camera.altitude * factor))
-                map.setCamera(camera, animated: true)
+            let action = command.action
+            map.enqueueCameraChange { [weak map, weak coordinator] in
+                guard let map, let coordinator else { return }
+                switch action {
+                case .fit:
+                    coordinator.fit(coordinator.parent.allPoints.map(\.coordinate), on: map, animated: false)
+                case .focus(let coordinate):
+                    map.setRegion(MKCoordinateRegion(center: coordinate, latitudinalMeters: 500, longitudinalMeters: 500), animated: true)
+                case .zoom(let factor):
+                    let camera = map.camera.copy() as! MKMapCamera
+                    camera.altitude = min(100_000, max(35, camera.altitude * factor))
+                    map.setCamera(camera, animated: true)
+                }
             }
         }
         if let selectedID,
@@ -183,7 +214,7 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
             map.selectedAnnotations.forEach { map.deselectAnnotation($0, animated: false) }
         }
     }
-    static func dismantleUIView(_ map: MKMapView, coordinator: Coordinator) { map.delegate = nil }
+    static func dismantleUIView(_ map: ParkNativeMapView, coordinator: Coordinator) { map.delegate = nil }
     final class Coordinator: NSObject, MKMapViewDelegate {
         var parent: NativeParkMapCanvas
         var lastCommand: UUID?
@@ -465,7 +496,7 @@ struct ParkMapView: View {
     private func selectedPlace(_ point: ParkMapPoint) -> some View {
         HStack(alignment: .top, spacing: 10) {
             VStack(alignment: .leading, spacing: 5) {
-                Text(point.name).font(.headline)
+                Text(point.name).font(.headline).accessibilityIdentifier("Selected place name")
                 if point.category == .ride {
                     let value = ridePresentation(point)
                     Text(value.waitMinutes == nil ? "Ride status" : "Current wait").font(.caption).foregroundStyle(.secondary)

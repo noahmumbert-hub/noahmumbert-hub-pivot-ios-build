@@ -310,7 +310,6 @@ struct RootView: View {
             .navigationTitle(section == .today ? "Your day" : section == .waits ? "Wait times" : section == .shows ? "Shows" : "More")
             .navigationBarTitleDisplayMode(.large)
             .toolbar {
-                ToolbarItem(placement: .topBarLeading) { Text("PIVOT").font(.caption.weight(.bold)).foregroundStyle(accent) }
                 ToolbarItemGroup(placement: .topBarTrailing) {
                     Button { showAlertSettings = true } label: { Image(systemName: "bell") }
                         .accessibilityLabel("Ride alerts")

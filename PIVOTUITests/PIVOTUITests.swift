@@ -37,7 +37,7 @@ final class PIVOTUITests: XCTestCase {
             let values = self.camera(app)
             return values.count == 3 && condition(values)
         }
-        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: predicate, object: nil)], timeout: timeout), .completed, file: file, line: line)
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: predicate, object: nil)], timeout: timeout), .completed, "Last measured camera: \(camera(app))", file: file, line: line)
     }
 
     func testNativeMapFillsWindowAndSupportsPinchPanZoomWithoutCameraReset() {
@@ -45,7 +45,7 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["Map"].tap()
         app.buttons["Full screen map"].tap()
         XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
-        let map = app.maps["Park map"]
+        let map = app.otherElements["Park map"]
         XCTAssertTrue(map.waitForExistence(timeout: 5))
         XCTAssertEqual(map.frame.minX, app.frame.minX, accuracy: 1)
         XCTAssertEqual(map.frame.minY, app.frame.minY, accuracy: 1)
@@ -53,6 +53,9 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertEqual(map.frame.height, app.frame.height, accuracy: 1)
         waitForCamera(app) { $0[2] > 0 }
         let initial = camera(app)
+        XCTAssertEqual(initial[0], 28.419, accuracy: 0.006)
+        XCTAssertEqual(initial[1], -81.581, accuracy: 0.006)
+        XCTAssertLessThan(initial[2], 10_000, "Whole-park fit must frame the park, not the surrounding region")
         // Real two-finger gesture over the dense native annotation area.
         map.pinch(withScale: 2, velocity: 1)
         waitForCamera(app) { $0[2] < initial[2] * 0.85 }
@@ -125,7 +128,7 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["Map"].tap()
         app.buttons["Full screen map"].tap()
         XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
-        let map = app.maps["Park map"]
+        let map = app.otherElements["Park map"]
         map.coordinate(withNormalizedOffset: CGVector(dx: 0.2, dy: 0.4))
             .press(forDuration: 0.1, thenDragTo: map.coordinate(withNormalizedOffset: CGVector(dx: 0.8, dy: 0.5)))
         let search = app.textFields["Search park places"]
@@ -137,6 +140,9 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertEqual(app.staticTexts["Selected ride wait"].label, "45 min")
         XCTAssertTrue(app.staticTexts["Selected ride wait"].isHittable)
         XCTAssertTrue(app.buttons["map-pin-b2260923-9315-40fd-9c6b-44dd811dbe64"].isHittable)
+        let legal = app.links["Legal"]
+        XCTAssertTrue(legal.isHittable, "Apple attribution must remain reachable above the selected-place panel")
+        XCTAssertLessThan(legal.frame.maxY, app.staticTexts["Selected place name"].frame.minY)
         screenshot("Native production full-screen selected current ride", app: app)
         app.buttons["Ride details"].tap()
         XCTAssertTrue(app.staticTexts["Current wait"].waitForExistence(timeout: 5))
@@ -155,7 +161,10 @@ final class PIVOTUITests: XCTestCase {
         reveal(favorites, in: app); favorites.tap()
         let toggle = app.switches["Space Mountain"]
         XCTAssertTrue(toggle.waitForExistence(timeout: 5))
-        if toggle.value as? String != "1" { toggle.tap() }
+        if toggle.value as? String != "1" {
+            toggle.coordinate(withNormalizedOffset: CGVector(dx: 0.92, dy: 0.5)).tap()
+        }
+        XCTAssertEqual(toggle.value as? String, "1", "The actual favorite switch must be on before leaving the editor")
         app.buttons["Done"].tap()
         let progress = app.buttons["All favorites & progress"]
         reveal(progress, in: app); progress.tap()
@@ -504,7 +513,7 @@ final class PIVOTUITests: XCTestCase {
         app.launchArguments = ["-pivot.selectedPark", "-1"]
         app.launch()
 
-        XCTAssertTrue(app.staticTexts["PIVOT"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.navigationBars["Wait times"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.buttons.matching(NSPredicate(format: "label CONTAINS[c] 'Change park'")).firstMatch.exists)
         XCTAssertTrue(app.buttons["Refresh ride data now"].exists)
         // Clear persisted selection through the same control a person uses.
