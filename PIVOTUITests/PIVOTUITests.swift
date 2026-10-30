@@ -142,7 +142,7 @@ final class PIVOTUITests: XCTestCase {
         let search = app.textFields["Search park places"]
         search.tap(); search.typeText("Space Mountain\n")
         app.buttons["Browse map places"].tap()
-        let ride = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Space Mountain'")).firstMatch
+        let ride = app.buttons["map-place-row-b2260923-9315-40fd-9c6b-44dd811dbe64"]
         XCTAssertTrue(ride.waitForExistence(timeout: 5)); ride.tap()
         XCTAssertTrue(app.staticTexts["Selected ride wait"].waitForExistence(timeout: 5))
         XCTAssertEqual(app.staticTexts["Selected ride wait"].label, "45 min")
@@ -182,12 +182,12 @@ final class PIVOTUITests: XCTestCase {
         app.buttons["Done"].tap()
         let progress = app.buttons["All favorites & progress"]
         reveal(progress, in: app); progress.tap()
-        let undo = app.buttons["Undo Space Mountain"]
+        let undo = app.buttons["progress-undo-138"]
         if undo.exists { reveal(undo, in: app); undo.tap() }
-        let done = app.buttons["Mark Space Mountain done"]
+        let done = app.buttons["progress-done-138"]
         reveal(done, in: app); done.tap()
         reveal(undo, in: app); undo.tap()
-        let skip = app.buttons["Skip Space Mountain today"]
+        let skip = app.buttons["progress-skip-138"]
         reveal(skip, in: app); skip.tap()
         reveal(undo, in: app); undo.tap()
         screenshot("Native Plan light with retained progress controls", app: app)

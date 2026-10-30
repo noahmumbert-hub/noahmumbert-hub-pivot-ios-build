@@ -205,7 +205,7 @@ struct NativeDayPlannerView: View {
         let done = ids.filter { day.progress[$0] == .done }.count
         let skipped = ids.filter { day.progress[$0] == .skip }.count
         return VStack(alignment: .leading, spacing: 12) {
-            Text("Today’s progress").font(.headline)
+            Text("Today’s progress").font(.headline).accessibilityIdentifier("native-day-progress")
             Text("\(done) done · \(skipped) skipped · \(ids.count - done - skipped) remaining")
                 .font(.subheadline).foregroundStyle(accent)
             Text("Done and Skip affect this park’s local day only. Your permanent favorites stay selected. Undo brings a ride back into the remaining plan.")
@@ -221,18 +221,21 @@ struct NativeDayPlannerView: View {
                             Spacer()
                             Button("Undo") { perform { try experience.setProgress(nil, rideID: id, park: park, now: now) } }
                                 .accessibilityLabel("Undo \(names[id] ?? "favorite")")
+                                .accessibilityIdentifier("progress-undo-\(id)")
                         } else {
                             Button("Done") { perform { try experience.setProgress(.done, rideID: id, park: park, now: now) } }
                                 .accessibilityLabel("Mark \(names[id] ?? "favorite") done")
+                                .accessibilityIdentifier("progress-done-\(id)")
                             Spacer()
                             Button("Skip today") { perform { try experience.setProgress(.skip, rideID: id, park: park, now: now) } }
                                 .accessibilityLabel("Skip \(names[id] ?? "favorite") today")
+                                .accessibilityIdentifier("progress-skip-\(id)")
                         }
                     }.buttonStyle(.bordered).controlSize(.regular)
                 }.padding(.vertical, 4)
                 if id != ids.last { Divider() }
             }
-        }.pivotCard().accessibilityIdentifier("native-day-progress")
+        }.pivotCard()
     }
 
     private func routeCard(_ route: NativeDayRoute, park: FloridaPark, rides: [LiveRide], now: Date) -> some View {

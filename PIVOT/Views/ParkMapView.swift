@@ -120,29 +120,43 @@ private final class ParkMarkerView: MKMarkerAnnotationView {
         set { super.accessibilityFrame = newValue }
     }
 }
-/// Camera operations wait until UIKit has assigned the final viewport. Inset changes
-/// preserve geographic position rather than allowing MapKit to shift it implicitly.
-private final class ParkNativeMapView: MKMapView {
+/// Own the native map without subclassing MKMapView. Camera commands run after
+/// the container and child have the final SwiftUI viewport, outside layout itself.
+private final class ParkMapContainer: UIView {
+    let map = MKMapView()
+    var expectedSize = CGSize.zero
     var pendingCameraChange: (() -> Void)?
     private var cameraChangeScheduled = false
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        addSubview(map)
+    }
+    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     func enqueueCameraChange(_ operation: @escaping () -> Void) {
         pendingCameraChange = operation
         setNeedsLayout()
     }
+    private var viewportIsReady: Bool {
+        guard window != nil, expectedSize.width > 0, expectedSize.height > 0,
+              abs(bounds.width - expectedSize.width) < 1,
+              abs(bounds.height - expectedSize.height) < 1 else { return false }
+        var ancestor: UIView? = self
+        while let view = ancestor {
+            if view.isHidden { return false }
+            ancestor = view.superview
+        }
+        return true
+    }
     override func layoutSubviews() {
         super.layoutSubviews()
-        guard !cameraChangeScheduled, pendingCameraChange != nil,
-              window != nil, bounds.width > 0, bounds.height > 0 else { return }
+        map.frame = bounds
+        guard !cameraChangeScheduled, pendingCameraChange != nil, viewportIsReady else { return }
         cameraChangeScheduled = true
-        // MapKit can call its delegate synchronously from a camera setter. Apply
-        // after UIKit finishes layout/presentation, never reenter that layout pass.
         DispatchQueue.main.async { [weak self] in
             guard let self else { return }
             self.cameraChangeScheduled = false
-            guard self.window != nil, self.bounds.width > 0, self.bounds.height > 0,
+            guard self.viewportIsReady, self.map.bounds.size == self.bounds.size,
                   let operation = self.pendingCameraChange else { return }
-            // Read the latest coalesced operation, not a stale closure captured
-            // before SwiftUI delivered a newer command or inset update.
             self.pendingCameraChange = nil
             operation()
         }
@@ -161,12 +175,15 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
     let session: ParkMapSession
     let command: ParkMapCameraCommand
     let margins: UIEdgeInsets
+    let viewportSize: CGSize
     let accent: Color
     let onCluster: ([ParkMapPoint]) -> Void
 
     func makeCoordinator() -> Coordinator { Coordinator(self) }
-    func makeUIView(context: Context) -> ParkNativeMapView {
-        let map = ParkNativeMapView()
+    func makeUIView(context: Context) -> ParkMapContainer {
+        let container = ParkMapContainer()
+        container.expectedSize = viewportSize
+        let map = container.map
         map.delegate = context.coordinator
         map.accessibilityIdentifier = "Park map"
         map.isZoomEnabled = true
@@ -179,20 +196,26 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
         map.register(ParkMarkerView.self, forAnnotationViewWithReuseIdentifier: "place")
         map.register(ParkMarkerView.self, forAnnotationViewWithReuseIdentifier: "cluster")
         if let camera = session.camera {
-            map.enqueueCameraChange { [weak map] in map?.setCamera(camera, animated: false) }
+            container.enqueueCameraChange { [weak map, weak coordinator = context.coordinator] in
+                coordinator?.cameraInitialized = true
+                map?.setCamera(camera, animated: false)
+            }
             context.coordinator.lastCommand = command.id
         }
-        return map
+        return container
     }
-    func updateUIView(_ map: ParkNativeMapView, context: Context) {
+    func updateUIView(_ container: ParkMapContainer, context: Context) {
+        let map = container.map
+        container.expectedSize = viewportSize
+        container.setNeedsLayout()
         let coordinator = context.coordinator
         coordinator.parent = self
         if map.layoutMargins != margins {
             let retained = map.camera.copy() as! MKMapCamera
-            let alreadyPending = map.pendingCameraChange
+            let alreadyPending = container.pendingCameraChange
             map.layoutMargins = margins
             // An initial restore or explicit command has priority over inset preservation.
-            map.enqueueCameraChange(alreadyPending ?? { [weak map] in map?.setCamera(retained, animated: false) })
+            container.enqueueCameraChange(alreadyPending ?? { [weak map] in map?.setCamera(retained, animated: false) })
         }
         coordinator.updatingSelection = true
         defer { coordinator.updatingSelection = false }
@@ -204,8 +227,9 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
         if coordinator.lastCommand != command.id {
             coordinator.lastCommand = command.id
             let action = command.action
-            map.enqueueCameraChange { [weak map, weak coordinator] in
+            container.enqueueCameraChange { [weak map, weak coordinator] in
                 guard let map, let coordinator else { return }
+                coordinator.cameraInitialized = true
                 switch action {
                 case .fit:
                     coordinator.fit(coordinator.parent.allPoints.map(\.coordinate), on: map, animated: false)
@@ -226,14 +250,15 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
             map.selectedAnnotations.forEach { map.deselectAnnotation($0, animated: false) }
         }
     }
-    static func dismantleUIView(_ map: ParkNativeMapView, coordinator: Coordinator) {
-        map.delegate = nil
-        map.pendingCameraChange = nil
+    static func dismantleUIView(_ container: ParkMapContainer, coordinator: Coordinator) {
+        container.map.delegate = nil
+        container.pendingCameraChange = nil
     }
     final class Coordinator: NSObject, MKMapViewDelegate {
         var parent: NativeParkMapCanvas
         var lastCommand: UUID?
         var updatingSelection = false
+        var cameraInitialized = false
         init(_ parent: NativeParkMapCanvas) { self.parent = parent }
         func fit(_ coordinates: [CLLocationCoordinate2D], on map: MKMapView, animated: Bool, paddingMeters: Double = 250) {
             guard let first = coordinates.first ?? ParkLocationDetector.coordinates[parent.park] else { return }
@@ -244,7 +269,11 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
             }
             let minimum = MKMapPointsPerMeterAtLatitude(first.latitude) * paddingMeters
             rect = rect.insetBy(dx: -max(minimum, rect.width * 0.08), dy: -max(minimum, rect.height * 0.08))
-            map.setVisibleMapRect(rect, edgePadding: parent.margins, animated: animated)
+#if DEBUG
+            print("Map fit viewport=\(map.bounds.size) margins=\(map.layoutMargins) rect=\(rect)")
+#endif
+            // Overlay space is already represented by the map's layout margins.
+            map.setVisibleMapRect(rect, animated: animated)
         }
         func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
             guard !updatingSelection, let annotation = view.annotation as? ParkPlaceAnnotation,
@@ -252,6 +281,7 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
             parent.selectedID = nil
         }
         func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+            guard cameraInitialized else { return }
             parent.session.camera = mapView.camera.copy() as? MKMapCamera
 #if DEBUG
             let c = mapView.centerCoordinate
@@ -376,7 +406,10 @@ struct ParkMapView: View {
                     NativeParkMapCanvas(points: points, allPoints: allPoints, park: park, selectedID: $selectedID,
                         session: session, command: command,
                         margins: UIEdgeInsets(top: geometry.safeAreaInsets.top + 72, left: 12,
-                                              bottom: geometry.safeAreaInsets.bottom + bottomHeight + 16, right: 12), accent: accent,
+                                              bottom: geometry.safeAreaInsets.bottom + bottomHeight + 16, right: 12),
+                        viewportSize: CGSize(width: geometry.size.width,
+                            height: geometry.size.height + (isFullScreen ? geometry.safeAreaInsets.top + geometry.safeAreaInsets.bottom : 0)),
+                        accent: accent,
                         onCluster: { clusterPoints = $0; showPlaces = true })
                         .ignoresSafeArea(edges: isFullScreen ? .all : [])
                     VStack {
@@ -552,7 +585,7 @@ struct ParkMapView: View {
                                     Text(status(point)).font(.caption).foregroundStyle(.secondary)
                                 }
                             } icon: { Image(systemName: point.category.symbol).foregroundStyle(point.category.color) }
-                        }
+                        }.accessibilityIdentifier("map-place-row-\(point.id)")
                     }
                 }
                 Section("Map coverage & sources") {

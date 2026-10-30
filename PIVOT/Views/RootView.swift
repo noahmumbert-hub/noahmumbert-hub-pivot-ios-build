@@ -167,7 +167,7 @@ struct RootView: View {
     private var closuresScreen: some View {
         ScrollViewReader { proxy in
             ScrollView {
-                LazyVStack(spacing: 16) {
+                VStack(spacing: 16) {
                     RetainedSnapshotNotice()
                     radarSelection
                     radarCard { withAnimation { proxy.scrollTo("down-rides", anchor: .top) } }
@@ -195,7 +195,7 @@ struct RootView: View {
 
                 ScrollViewReader { scrollProxy in
                   ScrollView {
-                    LazyVStack(spacing: 20) {
+                    VStack(spacing: 20) {
                         Button { showParkPicker = true } label: {
                             Label(store.selectedPark?.name ?? "Choose a park", systemImage: "mappin.and.ellipse")
                                 .font(.subheadline).frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
