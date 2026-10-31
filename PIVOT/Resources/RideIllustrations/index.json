@@ -4578,6 +4578,174 @@
     },
     {
       "parkId": 60,
+      "rideId": 30802770948992,
+      "rideName": "Character Carousel",
+      "alt": "Illustrated Character Carousel at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:32:41.786740+00:00",
+      "originalSHA256": "2ff26bc96328a7dc6b9ecfacc02afb52410cf766427f664f96da37254e07c2e7",
+      "review": "Accepted: inspected Character Carousel against genuine Kings Island photograph. Blue/light-blue canopy, turquoise/gold scalloped fascia, white horses on poles, blue fence and red elevated rail remain; park Eiffel Tower appears behind. Distinct from Grand Carousel. No copied central sign or UI.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F16a329fc043c129c48951e522b4d087f0699ca11-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/character-carousel",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A children's ride at an amusement park.",
+          "sha256": "9db92d1e6e99f04840396d85c1f92ec22de3a332b6e8f5a8997a73850e2c8176",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Kings Island page and actual pixels identify the Character Carousel: blue/light-blue striped conical canopy, turquoise scalloped fascia with raised gold scrollwork, white carousel horses on vertical brass-colored poles, blue surrounding fence and red elevated rail behind; Kings Island Eiffel Tower is partly visible. Distinguish it from the park's Grand Carousel. No need to reproduce the central character sign, wording, or crowds."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-30802770948992-thumbnail.jpg",
+      "thumbnailSHA256": "da93f46a46fdfdb1b16bbff42ea1e24b370ffa0a6d6b82fbfd269a5f214fe948",
+      "thumbnailBytes": 28195,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-30802770948992-detail.jpg",
+      "detailSHA256": "486b6beaa6d7007da6baf9d07f629b8c30b2178fd88c7cdec6206fd8af4da52e",
+      "detailBytes": 228008,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 37327814712838,
+      "rideName": "Delirium",
+      "alt": "Illustrated Delirium at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:16:59.748999+00:00",
+      "originalSHA256": "fabaa1d713265efa94adedab0594cdecd56bf97b55d4198e66a84c4e89de5021",
+      "review": "Accepted: inspected realistic Delirium portrait against actual Kings Island photo. Yellow pendulum beam and three-spoke ring structure, attached outward-facing seats/red restraints, and the Kings Island Eiffel observation deck remain recognizable. No invented unseen base. Blue-purple dusk surfaces stay photographic.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F46edeb6c4f887b0e8d900005682e82e5a5492dd0-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/delirium",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A giant swinging pendulum thrill ride at an amusement park.",
+          "sha256": "8de0b73848e3234adb3276b98bcb83ab31d8bfd2bc573a76c1b4b1a6bc2f7918",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kings Island Delirium hero verifies yellow steel pendulum arm, yellow three-spoke underside/ring frame, outward-facing seats with red/dark restraints and dangling legs; the Kings Island Eiffel observation tower is visible behind. Keep this specific yellow hardware and attached gondola, distinct from Cedar Point maXair; no invented support layout beyond crop."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-37327814712838-thumbnail.jpg",
+      "thumbnailSHA256": "06f63b4ee5f990269f582ad40b4dca64d3227a175b02253bb210a76e7b2f6993",
+      "thumbnailBytes": 21126,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-37327814712838-detail.jpg",
+      "detailSHA256": "621200059d768c05e5fc527754dbcd33c5c7dbde61b82a4a39b30f329a964b02",
+      "detailBytes": 147329,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 41494567644762,
+      "rideName": "Snoopy's Junction",
+      "alt": "Illustrated Snoopy's Junction at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:33:12.731142+00:00",
+      "originalSHA256": "f81ec82de2f7a45b262a696dfad24e04378239488d46dc2f121ff79d6d8e0b67",
+      "review": "Accepted: inspected Snoopy Junction against genuine Kings Island locomotive photo. Green curved cab and boiler, yellow riveted trim/bands/cylinders, open cab windows, brown/gold lamp and doorway chain retained in the close view. Does not invent a full train consist or full wheel layout.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fd58acdcdb7b97d7c9c42578437190e9f24492bf2-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/snoopys-junction",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A children's ride at an amusement park.",
+          "sha256": "9bfc16ebe6c3d92a2a3d0410afc16465df41f7642bda887b63058d95e812ce97",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Kings Island page identifies the child-sized locomotive loop. Viewed genuine hero shows a green replica locomotive with bright yellow riveted trim, curved green cab roof, large open cab windows, yellow boiler band and side cylinders, chain across the side doorway, and a brown/gold lamp above the boiler. Use this close locomotive angle; the wheels and complete consist are cropped and must not be invented. Number 5 is visible but no added lettering is required."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-41494567644762-thumbnail.jpg",
+      "thumbnailSHA256": "cf00d2383b2eff1a55184cee6d010cb52b40d262e9ff6bf6e0255b8bb907a8dd",
+      "thumbnailBytes": 25380,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-41494567644762-detail.jpg",
+      "detailSHA256": "bfdde341e62bbf77cfb93d110a2f0f41e4af82bd341d44e38f63fffe4d249484",
+      "detailBytes": 144783,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 50600529964802,
+      "rideName": "Zephyr",
+      "alt": "Illustrated Zephyr at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:16:33.864648+00:00",
+      "originalSHA256": "08e31e5e4c688bc0d9426eaff01083326234cd16b3cb06e1e49a1279259811b3",
+      "review": "Accepted: inspected Zephyr portrait against actual seat-and-chain photo. Red/blue individual swing chairs, silver tubular frames/front bar, black center strap and paired suspension chains remain in an honest close view. Upper canopy remains outside the frame; no invented canopy decoration.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F606879622a66fd4d14e370f9f57ff0154309d815-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/zephyr",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A classic swing ride at an amusement park.",
+          "sha256": "45e2ec5c5f6abd03b4ddc865dcc7884433c1fd8fa32d3c4a6719b33b9169aa51",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Zephyr hero is a close low-angle view of individual red/blue swing seats with silver tubular frames, paired metal chains and front safety bar/black center strap, with riders against sky. Upper carousel canopy is not visible; keep an honest seat-and-chain close view instead of inventing its decoration."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-50600529964802-thumbnail.jpg",
+      "thumbnailSHA256": "5988b442665316ba53f386deee7e9db854b39ccf4257e117092f5e87422ed5d8",
+      "thumbnailBytes": 20614,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-50600529964802-detail.jpg",
+      "detailSHA256": "6b0abbeee95bb97e916c7ebb24a235e275230c7b2d9f19a35ab834555801abda",
+      "detailBytes": 122349,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 57576942788064,
       "rideName": "The Racer (Red)",
       "alt": "Illustrated The Racer (Red) at Kings Island",
@@ -4613,6 +4781,132 @@
       "detailFile": "60-57576942788064-detail.jpg",
       "detailSHA256": "f916c413bd4cbaa17a3627c9a8d6cc1ed314487869d756730a9d7e2a549e2ced",
       "detailBytes": 216242,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 62222009469816,
+      "rideName": "The Great Pumpkin Coaster",
+      "alt": "Illustrated The Great Pumpkin Coaster at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:34:39.696284+00:00",
+      "originalSHA256": "fa17045c8606b68fd2406053405eb377b03590bb46329b42f625943c53275543",
+      "review": "Accepted: inspected Great Pumpkin Coaster against genuine Kings Island train/track photo. Yellow/green box cars with pumpkin motifs and dark lap bars are physically on purple track/supports beside the low blue-roof station. No giant pumpkin lead car or unrelated ride course.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5ca344870075d117740023c59413d208e69944c4-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/the-great-pumpkin-coaster",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on a kids roller coaster at an amusement park.",
+          "sha256": "9794d1ac79ce7b837aa7270c1a59d523caa809c4f2e4c3167ddffc731e55a487",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Kings Island coaster page identifies this ride; actual hero shows the small steel coaster on purple track and purple supports, yellow and green box-shaped cars with pumpkin motifs, dark seats and individual black lap bars, a low blue-roof station and shrubs. Preserve the actual train sitting on its connected track; no orange pumpkin-shaped lead car or unseen layout. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-62222009469816-thumbnail.jpg",
+      "thumbnailSHA256": "dab244dcdd593895d6cdddb31e7133c358403634988dc1e038dd79f8458c775c",
+      "thumbnailBytes": 29919,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-62222009469816-detail.jpg",
+      "detailSHA256": "286fb3307f4d3c90dc7d92ccd17ed7c86d9d1739171f43add1cadfd6159a131a",
+      "detailBytes": 205485,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 67934912831519,
+      "rideName": "Woodstock's Air Rail",
+      "alt": "Illustrated Woodstock's Air Rail at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:17:25.861351+00:00",
+      "originalSHA256": "66b12468f94600049dfc41bd4b97d3493036b79d6ea656803b561dd3995e965e",
+      "review": "Accepted: inspected Woodstock Air Rail portrait against actual green-track/brown-support reference. Green tubular rail/cross-tie structure, brown columns and elevated brake/station walkway remain. Preserves the supported hardware view without inventing a train or seat layout.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe3db2217a57349de6cbe53821b797d048036ac55-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/woodstock-s-air-rail",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on a kids roller coaster at an amusement park.",
+          "sha256": "acb73e961063241f5acf444d9d37e7c75c485c460774704ca03cdbc55befce8e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Woodstock's Air Rail hero verifies green tubular running rails/cross-ties with brown steel columns and station/brake walkway amid trees. Actual train is not visible in this photograph apart from partial overhead wheel hardware; do not invent a full inverted train or seat details from the image alt. A green-track/brown-support portrait is supported."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-67934912831519-thumbnail.jpg",
+      "thumbnailSHA256": "ee684d71f9241fa39fc00017d2c3875310f2649161e760e7ba8acd0cd49e6987",
+      "thumbnailBytes": 30297,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-67934912831519-detail.jpg",
+      "detailSHA256": "6692b6320fd57970422f6faee861490842ddeacf289d7dce8c86a7f2b43a1bcc",
+      "detailBytes": 217667,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 68634840402965,
+      "rideName": "Shake, Rattle & Roll",
+      "alt": "Illustrated Shake, Rattle & Roll at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:17:50.593692+00:00",
+      "originalSHA256": "87b009922a65f5362dbd126c949f66ac1bf3a464f312ea0b31451189827ca558",
+      "review": "Accepted: inspected Shake Rattle and Roll portrait against actual red/cream Troika reference. Red star-wheel arms with light strips, physically attached suspended red/cream gondolas and round orange lamp accents remain distinct from Cedar Point Troika paint. Realistic material and connected geometry retained.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F363a157d3fd9811ba67457ec7c2e05dc69f4558f-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/shake-rattle-roll",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A spinning amusement park ride.",
+          "sha256": "3efc4277fb78428a67e0aec83c7bff24987ca74c8afbbec7f8cd89255e2032da",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Shake, Rattle & Roll photo shows the red steel seven-spoke star/arms with rows of white lamps and red/cream suspended two-seat pods with round orange lamp accents, more stars behind and trees below. Preserve genuine HUSS Troika geometry and red/cream scheme, distinct from Cedar Point's teal/yellow/orange Troika."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-68634840402965-thumbnail.jpg",
+      "thumbnailSHA256": "a84b76fd374e0d019b774949912ee3a043e22bff4fd46eadf1e1059a7426e35b",
+      "thumbnailBytes": 28906,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-68634840402965-detail.jpg",
+      "detailSHA256": "8571ccea39319489d118d78d5daf6a617b6c2715a19894746dec572d7af73a44",
+      "detailBytes": 207533,
       "detailPixels": [
         768,
         960
@@ -4662,6 +4956,90 @@
     },
     {
       "parkId": 60,
+      "rideId": 90000667675737,
+      "rideName": "WindSeeker",
+      "alt": "Illustrated WindSeeker at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:19:26.815033+00:00",
+      "originalSHA256": "c9fae1c9cd7afb88264cf739c446c675215f9a82db09e100358c98a7aa429640",
+      "review": "Accepted: inspected WindSeeker against the exact Kings Island photograph. Blue/yellow/white banded tower, red upper ring and cap, rigid red/yellow hangers and attached paired red chairs remain visible. No cable-swing substitution or invented tower base.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2183866f44ed502f1d16127f80bb1baf7ab111f6-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/windseeker",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A giant, towering swing ride at an amusement park.",
+          "sha256": "2f0508ac8404aa22c426ad7f9b940b82e101503272d1fe778e996b908591ad53",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Kings Island WindSeeker hero pixels show blue/yellow/white banded tower, red circular frame and red cap, long rigid red/yellow seat-hanger rods and red paired chairs with actual physical top ring/arm connections. Keep this photographed shared ride design; no unsupported tower base or invented cable swing chairs."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-90000667675737-thumbnail.jpg",
+      "thumbnailSHA256": "7e7d8ae1db2fa4cb02c36ed371f59882680faf502efe33964a81e2f1b0f2ba51",
+      "thumbnailBytes": 20042,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-90000667675737-detail.jpg",
+      "detailSHA256": "ceac4e41bb011513acf410638eb22734b232714a82b6061fa1d8190e197c9cf6",
+      "detailBytes": 149456,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 109422025715493,
+      "rideName": "Congo Falls",
+      "alt": "Illustrated Congo Falls at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:20:22.927931+00:00",
+      "originalSHA256": "6f912543bc0cd08d1f473b5859692e19ad0ee1bdebac0c3876b7272cbc7cc107",
+      "review": "Accepted: inspected Congo Falls against genuine broad chute-boat photo. Orange-brown wide hull, gray textured bow, rows of four-across benches with black shared lap bars, silver side rails and bow rub strips remain in the concrete splash chute. No log-canoe substitution.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbe32d4e5e483f2f8ca97d281abc29582f86f6f86-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/congo-falls",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "",
+          "sha256": "514d04f9a870db4d194388bd8bbe2143556a7ffb9970b2443ba695c898996b9a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Congo Falls photo verifies large orange-brown broad boat with gray textured bow cover, multiple four-across benches, black shared lap restraints, silver side rails and black vertical bow rub strips in a white-water concrete splash chute bordered by reeds/greenery. Keep actual broad chute boat, not a log canoe."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-109422025715493-thumbnail.jpg",
+      "thumbnailSHA256": "e1f02d919e7dd96aa64e74c580835bb107cab409c7ec48de180acf862ce36a95",
+      "thumbnailBytes": 30536,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-109422025715493-detail.jpg",
+      "detailSHA256": "b9387c9ee8f29f9a8f254676479962ec09808781487dd0b443ad0691d943bc9d",
+      "detailBytes": 238313,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 121851005781476,
       "rideName": "Woodstock Express",
       "alt": "Illustrated Woodstock Express at Kings Island",
@@ -4697,6 +5075,90 @@
       "detailFile": "60-121851005781476-detail.jpg",
       "detailSHA256": "aa9592b192a1777d1df12d57a6d9bedb2c9ba358ea005ef76b23685e4d4da8d9",
       "detailBytes": 164970,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 122353106152509,
+      "rideName": "Kings Mills Antique Autos",
+      "alt": "Illustrated Kings Mills Antique Autos at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:20:57.216418+00:00",
+      "originalSHA256": "87268943c2a3a59f587f4848ddce113e9c8e48cbe88cdc8329497cda40060dc9",
+      "review": "Accepted: inspected Kings Mills Antique Autos against genuine course photo. Tan/gold touring car with black roof and round lamps, thin wheels, blue car behind, central guide rail, concrete lane, white fence and Racer backdrop remain. No invented free-driving layout.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F31f0ac168dc273f84a953936ec504853bb5894b7-4032x3024.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/kings-mills-antique-autos",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "An antique car ride at an amusement park.",
+          "sha256": "b1e3a47505a63c32633506fd7107ea8bacae40216877188d09a12055e2e31155",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kings Mills Antique Autos photo verifies a tan/gold early touring car with black roof, two round silver headlamps, thin black tires/silver spokes and black bumper, plus blue rear-view car, on a concrete lane with central low metal guide rail, white fence, landscaping and white Racer structure behind. Preserve real small guided touring cars and current course."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-122353106152509-thumbnail.jpg",
+      "thumbnailSHA256": "b629d8608db38d0ad2d6cdb527be646aca340bd2afd55676af045179117984cd",
+      "thumbnailBytes": 31671,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-122353106152509-detail.jpg",
+      "detailSHA256": "eed504a5e300ed1d840d15e2d0c7c81740e055595ad6a98c5a201a30558ecc06",
+      "detailBytes": 241869,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 122849777851843,
+      "rideName": "Drop Tower",
+      "alt": "Illustrated Drop Tower at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:19:52.235494+00:00",
+      "originalSHA256": "5bfa6190554711ba3335edba150775818cfdd490e2c5848adb38b9700efac86e",
+      "review": "Accepted: inspected Drop Tower against genuine low-angle photo. Red main shaft, yellow annular seat ring, burgundy structural underside, dark outward seats/restraints and broad white patterned top housing remain physically connected.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F276bf770abf0070564a68a37b117f55bc3616eb9-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/drop-tower",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A towering free-fall drop ride at an amusement park.",
+          "sha256": "2707af6b4c7c6742eb907c092d8539bb3f1370167f9108d39a769a15855886ec",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Drop Tower hero shows red cylindrical main shaft, yellow annular lift/drop seat carriage, dark outward-facing individual seats/restraints, burgundy underside structure and broad white patterned tower-top housing in a very low-angle view. Keep exact photographed shaft/ring and connected seats, no invented base or swing rods."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-122849777851843-thumbnail.jpg",
+      "thumbnailSHA256": "e0f4435836f7e401e930b76ce56c607af6f5da83528f90efbf9a1339e042b87e",
+      "thumbnailBytes": 26001,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-122849777851843-detail.jpg",
+      "detailSHA256": "296bd43fd6263ed2140d0aa1470b95cc84be4e5ef306045e451d8615a7264a66",
+      "detailBytes": 185125,
       "detailPixels": [
         768,
         960
@@ -4746,6 +5208,48 @@
     },
     {
       "parkId": 60,
+      "rideId": 128153794855631,
+      "rideName": "Surf Dog",
+      "alt": "Illustrated Surf Dog at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:22:24.125587+00:00",
+      "originalSHA256": "4807a517c19b1fbca4faf5bdfee8445e4382849eab6b8eca38cbf457cbb7bdba",
+      "review": "Accepted: inspected Surf Dog portrait against genuine Kings Island photo. Rectangular teal/green board with high dividers, purple underside/yellow trim, silver rails and blue rising track end retained. Preserves board-to-track connection without substituting a circular disc or unseen whole course.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2855ab59f7680495323992b18f73784e43d4f151-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/surf-dog",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on a spinning family roller coaster at an amusement park.",
+          "sha256": "12811e91c4680166bbcc6218deb969ecf31e81ee4c340d6eebac47379234766d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Surf Dog photo verifies a purple-bottomed/teal-green rectangular spinning surfboard platform with rows of outward-facing riders, green high dividers/silver rails, yellow panel trim and a blue steel rising track/spine beneath, with a small blue end framework. Keep this distinctive inspected board and track end; no invented whole course, round disc substitution or unrelated Pipe Scream geometry."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-128153794855631-thumbnail.jpg",
+      "thumbnailSHA256": "02a8c9c7ddf50aa45a592b38691dd55b889cbf917a0eb8e29bcbde80c4780513",
+      "thumbnailBytes": 22555,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-128153794855631-detail.jpg",
+      "detailSHA256": "2a07c60c1b5ef2e76ced776d723135d384744ba3f58f766537125110d992f2b6",
+      "detailBytes": 145162,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 148671185954835,
       "rideName": "The Racer (Blue)",
       "alt": "Illustrated The Racer (Blue) at Kings Island",
@@ -4781,6 +5285,48 @@
       "detailFile": "60-148671185954835-detail.jpg",
       "detailSHA256": "dcf549024fdd322603d44776ccaca02ea44cacd279cfb36e0d81a371e1724ade",
       "detailBytes": 218872,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 156564230770494,
+      "rideName": "Monster",
+      "alt": "Illustrated Monster at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:23:16.958291+00:00",
+      "originalSHA256": "b3d49dd1312b2f82d8fd9f1166a9eb2ed12696d387692cb272147fe39c35bf4b",
+      "review": "Accepted: inspected Monster against genuine black/orange ride photo. Rounded black pods, curved connected black arms, orange accent strips/yellow bulbs, central housing and white Racer backdrop remain recognizable. Realistic amusement hardware without a fantasy creature.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbe3ee293438a755c3c75dbe3c57c8fe7f3fa3669-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/monster",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A spinning octopus ride at an amusement park.",
+          "sha256": "83585b8d2d717ac13856f5cc4438ccfe7a3c311fed984ffced623155e216e59f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Monster hero verifies black rounded pods on curved black octopus-style steel arms with orange strips and yellow lamp rows, black central cone and support housing, with white/red Racer track behind. Preserve this actual black/orange amusement machine, not a literal monster creature or a generic differently colored ride."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-156564230770494-thumbnail.jpg",
+      "thumbnailSHA256": "d1c3ba61fedeec35ae2b7518181c9cac87550ac6db36d7c3efdc7395978d93d4",
+      "thumbnailBytes": 28624,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-156564230770494-detail.jpg",
+      "detailSHA256": "55345b5c7d27d3d38641d9cc4f0f9d6c19ae56e04d7afcc39fa88687bad5976f",
+      "detailBytes": 206988,
       "detailPixels": [
         768,
         960
@@ -4830,6 +5376,90 @@
     },
     {
       "parkId": 60,
+      "rideId": 170475150455588,
+      "rideName": "Grand Carousel",
+      "alt": "Illustrated Grand Carousel at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:23:44.306632+00:00",
+      "originalSHA256": "618cb17913f866601b76f30bcd29e0cff4023935d19388f8e37b9c68f4abd086",
+      "review": "Accepted: inspected Grand Carousel close portrait against genuine horse detail photo. White carved mane/head, orange/silver bridle with blue ornament, pink patterned saddle pad and silver pole remain. Full horse body and unknown canopy structure are not invented; people are indistinct background.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7c808a567f920b67ad4aba1113d02be034d3037d-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/grand-carousel",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A mother and daughter riding a classic carousel at an amusement park.",
+          "sha256": "0ab2e60a99a77b4a9856bf49cb034f49334b81f3840a316b967d2c0d4bff2486",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Grand Carousel photograph is a close white carved horse head/neck with orange/silver bridle, blue round ornament, pink patterned saddle pad and silver vertical pole, riders in a covered carousel interior. Full horse body and canopy layout are unseen; keep honest inspected horse/pole close composition rather than borrow Cedar Point's different horse shapes."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-170475150455588-thumbnail.jpg",
+      "thumbnailSHA256": "35fb908d6203254cdad1c1e14f802cdd6697381510d1891749f24b35ad6681eb",
+      "thumbnailBytes": 21543,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-170475150455588-detail.jpg",
+      "detailSHA256": "f27637681adcc5b00bf48f15db5a2682425e6cee4af02561c7cba852a16c7c0a",
+      "detailBytes": 121730,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 204094609944113,
+      "rideName": "White Water Canyon",
+      "alt": "Illustrated White Water Canyon at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:33:37.687481+00:00",
+      "originalSHA256": "c9c7cc3debec29a7a7debc53f55be690a06af5be20fd974ceac88ade00cd8184",
+      "review": "Accepted: inspected corrected White Water Canyon portrait against original draft and genuine raft photograph. Proper 4:5 framing retains all six dark-blue seat backs, brown body, central handhold and multi-ring bumper in the same water scene. Original visually reviewed draft was rejected by thumbnail aspect-ratio validation and preserved; correction used built-in ImageGen.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa3fea07eb7fecbe577cf5bdf6803b9ee0121019b-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/white-water-canyon",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A family getting soaked on a large river raft ride at an amusement park.",
+          "sha256": "7e9b334ee69d6ed0f58cbd3b60206b9d32b447b41b23f4a44bfec8a505361240",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual White Water Canyon photo verifies a brown circular six-seat raft with tall dark-blue molded seat backs, black multi-ring rubber outer bumper, central round dark handhold, white support edge and brown/green river water surrounded by leafy vegetation. Preserve the genuine raft seating/bumper geometry, distinct from Cedar Point Thunder Canyon; no invented flume drop or waterfall."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-204094609944113-thumbnail.jpg",
+      "thumbnailSHA256": "ef7c3f72b42a8a12d1b4975b8e1fe52a25ba61fb4e6263f6d0d9ef8dee35c258",
+      "thumbnailBytes": 32804,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-204094609944113-detail.jpg",
+      "detailSHA256": "15a3b4b8dd520a52bb1b7e7ddb9be730f244bc0df46a35e1775a5f111d0c4b8b",
+      "detailBytes": 250438,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 217175995369859,
       "rideName": "The Beast",
       "alt": "Illustrated The Beast at Kings Island",
@@ -4865,6 +5495,48 @@
       "detailFile": "60-217175995369859-detail.jpg",
       "detailSHA256": "63bee371fd0f70e7bd16259c20983a57894ebc83d7b565835a3601ace9c975e5",
       "detailBytes": 181086,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 222245827099016,
+      "rideName": "Scrambler",
+      "alt": "Illustrated Scrambler at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:27:05.917474+00:00",
+      "originalSHA256": "1ab81548118a31b776958e1d4336e0d30457b8879c712255d035dc75aae97b66",
+      "review": "Accepted: inspected Scrambler against genuine Kings Island photograph. Blue triangular/radial arms, riveted silver car shells with colorful decals, shared black padded lap bars and upright fan-like light array remain connected on the real platform. Distinct from Cedar Point Atomic Scrambler.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbac4d8a007717a1d7f78c62199eca50996f9a023-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/scrambler",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A spinning amusement park ride.",
+          "sha256": "7e122411156d5abaa869b279cf9459ba99288bbccdb8a41ab271edc4dcb93997",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kings Island Scrambler photo shows blue steel radial/triangular arms, silver box-shaped ride cars with colorful floral decals and black padded shared lap restraints, large white lamp strips on arm edges and upright central fan-like light array. Preserve the real blue/silver hardware and ground platform, distinct from Cedar Point Atomic Scrambler."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-222245827099016-thumbnail.jpg",
+      "thumbnailSHA256": "2b5fce7352be37ea127e8666dbd89895425717e0346b8e3abf79c1833ea2dd35",
+      "thumbnailBytes": 28459,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-222245827099016-detail.jpg",
+      "detailSHA256": "d479cceae4b6b5fae39604e9011f0df749d8406e920c023f662a0c1d7963a645",
+      "detailBytes": 215531,
       "detailPixels": [
         768,
         960
@@ -4956,6 +5628,90 @@
     },
     {
       "parkId": 60,
+      "rideId": 226002051819945,
+      "rideName": "Sol Spin",
+      "alt": "Illustrated Sol Spin at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:26:17.436795+00:00",
+      "originalSHA256": "27a10b05d4d1fc9198a779a3fedbd287d288b89b1080c894c92ac27d83941949",
+      "review": "Accepted: inspected Sol Spin against genuine Kings Island photo. Yellow-green polygonal wheel and triangular truss spokes, attached outward-facing seats/red restraints and red lifting column retained. No ferris-wheel cabins or unrelated ride geometry.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa583f1136a82cf7ed28e029b6fa7e97f00282b03-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/sol-spin",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A giant spinning thrill ride at an amusement park.",
+          "sha256": "d4680cd13fb7c09b7faa40b5f53e949f15ddeed0b1048cb9ea8f6902a19aa837",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Sol Spin photo verifies yellow-green steel wheel with triangular truss spokes/polygonal outer ring, outward-facing paired yellow-green chair frames with red/dark seats and restraints, red main lifting column and matching slanted support frame, trees and distant blue coaster hill. Keep actual round wheel and attached chairs; no gondola cabins or ferris-wheel baskets."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-226002051819945-thumbnail.jpg",
+      "thumbnailSHA256": "5906e07d3806764059323199f800e83a7141ce136cf18fe5268b1aa14a365b87",
+      "thumbnailBytes": 26332,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-226002051819945-detail.jpg",
+      "detailSHA256": "a783a6951312e86b11062b7c3b70ee31a206bbac781b76012d2c8c982d080fc3",
+      "detailBytes": 200940,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 235264810509818,
+      "rideName": "Eiffel Tower",
+      "alt": "Illustrated Eiffel Tower at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:27:29.585823+00:00",
+      "originalSHA256": "a7a17a8fb0d30a058eebe991e7251544337f2400d64423aa93fb7c49fc87e3a3",
+      "review": "Accepted: inspected Eiffel Tower against genuine Kings Island replica photograph. Green-gray tapered lattice, cross-bracing, broad upper observation deck and enclosed top room/antenna match the park-specific structure. Ground feet remain cropped; does not substitute the Paris tower.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4eb142aaa31c3589c3639d17e737f6f6e67caf2c-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/eiffel-tower",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A replica of the Eiffel Tower at Kings Island amusement park.",
+          "sha256": "f8b4807e8a5eb7cee51734c0eb113c67d5de5d48279517f04968fe065195582d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kings Island Eiffel Tower hero shows the park's green-gray lattice observation tower replica, straight tapered steel legs, angular cross-bracing, enclosed broad upper observation deck with railings, box-like upper room/antenna. Ground feet are cropped; retain this park-specific observation tower and sky view, not the Paris tower or invented ground architecture."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-235264810509818-thumbnail.jpg",
+      "thumbnailSHA256": "c3454a1b9d78365510b7fbf013f7de893c54cd8e172078045f9b5899d351e815",
+      "thumbnailBytes": 20103,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-235264810509818-detail.jpg",
+      "detailSHA256": "4357acaa5031bac05f48e324fedd56157404df4c4640515127b700adcf88f887",
+      "detailBytes": 153573,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 235289499425598,
       "rideName": "Adventure Express",
       "alt": "Illustrated Adventure Express at Kings Island",
@@ -4991,6 +5747,48 @@
       "detailFile": "60-235289499425598-detail.jpg",
       "detailSHA256": "335003504a9b172dcdd08b1efe648bb30402e06db33dd647c5735b0f8e03a968",
       "detailBytes": 176169,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 239172141691320,
+      "rideName": "Cargo Loco",
+      "alt": "Illustrated Cargo Loco at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:27:59.366582+00:00",
+      "originalSHA256": "9a98f88cd6950692afab81bb777b56429abf39c526f5bf8efc02154e657f554c",
+      "review": "Accepted: inspected Cargo Loco against genuine Kings Island barrel-ride photograph. Brown staved open tubs with dark hoops/rivets sit on the low platform; timber/rope decor and beige shade canopy remain. Interior hardware stays occluded rather than invented; source wording is omitted.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffa09969a7b5b5ed866fc24d26c93579d12f66c4e-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/cargo-loco",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A spinning barrel ride at an amusement park.",
+          "sha256": "64db40c49404a6540391def241fbd4e2cc362701341f75e56fc910065b4d2b92",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Cargo Loco photo verifies large brown wood-stave barrel-shaped spinning tubs with dark metal hoops/rivets on a low flat circular platform, open tops with riders, white rectangular cargo labels, timber post/rope decor and beige square shade canopy behind. Interior central hand wheel is mostly occluded; do not invent unseen seats/mechanics or make floating real barrels."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-239172141691320-thumbnail.jpg",
+      "thumbnailSHA256": "429dfc94d82cae8dcbdb238220b590b8c494a167ce062c7869a17e12dd812fc4",
+      "thumbnailBytes": 22718,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-239172141691320-detail.jpg",
+      "detailSHA256": "0dae3694c6f468f0e9c4a650814eb861d3b3ba710606e2deac2758b7538b7ee1",
+      "detailBytes": 157732,
       "detailPixels": [
         768,
         960

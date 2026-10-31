@@ -364,10 +364,10 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 138,
-    "pendingIllustrations": 986,
-    "acceptedForRequestedStyle": 137,
-    "unfinishedForRequestedStyle": 987,
+    "acceptedIllustrations": 157,
+    "pendingIllustrations": 967,
+    "acceptedForRequestedStyle": 156,
+    "unfinishedForRequestedStyle": 968,
     "blocked": 5
   },
   "parks": [
@@ -21089,10 +21089,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-37327814712838",
@@ -21118,10 +21118,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-41494567644762",
@@ -21147,10 +21147,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-50600529964802",
@@ -21176,10 +21176,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-57576942788064",
@@ -21229,10 +21229,10 @@
           "url": "https://rcdb.com/74.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-65632811144593",
@@ -21282,10 +21282,10 @@
           "url": "https://rcdb.com/1037.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-68634840402965",
@@ -21311,10 +21311,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-73296304457273",
@@ -21451,10 +21451,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-91189459187120",
@@ -21567,10 +21567,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-110451745261016",
@@ -21707,10 +21707,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-122849777851843",
@@ -21731,10 +21731,10 @@
           "url": "https://www.sixflags.com/kingsisland/attractions/drop-tower"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-124375875871315",
@@ -21784,10 +21784,10 @@
           "url": "https://www.sixflags.com/kingsisland/attractions/surf-dog"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-135340096992067",
@@ -21953,10 +21953,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-167475122343258",
@@ -22011,10 +22011,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-180229968278102",
@@ -22175,10 +22175,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-207169586400889",
@@ -22334,10 +22334,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-223438162163113",
@@ -22421,10 +22421,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-226999413458817",
@@ -22474,10 +22474,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-235289499425598",
@@ -22561,10 +22561,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-240190456045853",
