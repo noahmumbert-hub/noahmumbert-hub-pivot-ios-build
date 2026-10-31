@@ -1388,6 +1388,48 @@
     },
     {
       "parkId": 50,
+      "rideId": 25057831394965,
+      "rideName": "Corkscrew",
+      "alt": "Illustrated Corkscrew at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:22:32.439241+00:00",
+      "originalSHA256": "933a2247869ca030374a4ca6c603494c75a952ced4d3adc968d1e34963ad20ef",
+      "review": "Accepted: blue successive corkscrew track, white overhead arched truss and red-white-blue sit-down train preserve the actual Corkscrew photograph and connected running-wheel geometry.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F57f06786394d85e74221d1d59e64e43d7fb8f6e3-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/corkscrew",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on Corkscrew flipping upside down.",
+          "sha256": "c308b5bcbd4a8a9504b7f86257db25ea1ce8f0f4f40ade2e32a445f86426015e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Corkscrew photo: blue tubular corkscrew inversions, white overhead arch/truss supports and red-white-blue sit-down train with connected wheels. Preserve two successive twists and midway viewpoint; do not turn the train into an inverted coaster."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-25057831394965-thumbnail.jpg",
+      "thumbnailSHA256": "de171149ed33f611d9f7f3ceb4a6a253fc22d9f1c6cb8f21b92b210a0b8cb184",
+      "thumbnailBytes": 28211,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-25057831394965-detail.jpg",
+      "detailSHA256": "db82d77b84d9a8b71e721d4f2f2fa4ebeb613b4fb593385222dfb48af094b2fb",
+      "detailBytes": 207272,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
       "rideId": 43756735222831,
       "rideName": "WindSeeker",
       "alt": "Illustrated WindSeeker at Cedar Point",
@@ -1423,6 +1465,48 @@
       "detailFile": "50-43756735222831-detail.jpg",
       "detailSHA256": "ed2b073c1acc78d5c875c915924a4840afe446e07e7ab1dcb9aaedc4f6c0fdbb",
       "detailBytes": 160613,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 76658400585603,
+      "rideName": "Rougarou",
+      "alt": "Illustrated Rougarou at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:23:49.404313+00:00",
+      "originalSHA256": "65a7d3707ca417dc2deddeb391c66766cd3889f9a154374f9579039627db9ff7",
+      "review": "Accepted: orange dive-loop rail, teal supports and above-rail floorless train with four-across lime-green restraint shells preserve Rougarou's actual close inverted orientation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5eba223d0552e9392d802d706640154f516daac2-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/rougarou",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Rougarou flipping riders upside down as it soars trough its dive loop.",
+          "sha256": "9d8c525361348bd45c8e57429fb598bb6cf4da62e2d0c2e7811bdd7a3d748394",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Rougarou photo: orange dive-loop track, teal tubular supports, floorless train seated above the rails, four across with lime-green restraint shells. Retain photographed inverted orientation while keeping wheels on the rail; not a below-track suspended train."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-76658400585603-thumbnail.jpg",
+      "thumbnailSHA256": "3a088b1e22e80cc88eb116bd51cd9b9dcc1f7263f92c1e679f0a59390c213010",
+      "thumbnailBytes": 19120,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-76658400585603-detail.jpg",
+      "detailSHA256": "2ee515d18a987023bf7c1dbd915f73c9988a9d45d5d72d46e7d8abe486ef63f4",
+      "detailBytes": 121657,
       "detailPixels": [
         768,
         960
@@ -1512,6 +1596,90 @@
     },
     {
       "parkId": 50,
+      "rideId": 92584416781544,
+      "rideName": "Magnum XL-200",
+      "alt": "Illustrated Magnum XL-200 at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:22:57.143592+00:00",
+      "originalSHA256": "1b4c286343dca8269606c2ed0344fdaa6ae41e3050fb23df42c9dc1a6ae94f0a",
+      "review": "Accepted: red tubular Arrow crest/descent, dense white/silver lattice and lit maintenance catwalk preserve Magnum XL-200's real architecture without inventing unseen train details or tower base.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F112da4d8813bea8558bafe1e3e9ca53e1bd851ff-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/magnum-xl-200",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Magnum XL-200 ascending its massive 200 foot hill toward the first drop.",
+          "sha256": "6abb7506ecb37b4e3f797c6fc7b95f8b49cb1e9cbd46fa562e30481f83e133a8",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Magnum XL-200 photo: red tubular Arrow track with broad white/silver cross-braced lattice supports, shallow rounded crest leading to steep drop, white catwalk railings and lights. No close train hardware is visible; keep architecture as the subject rather than inventing train details."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-92584416781544-thumbnail.jpg",
+      "thumbnailSHA256": "05b63542674a16544a674a7d0dbe0e009dc0e575d2b4d6f7eb742236ab0d12ea",
+      "thumbnailBytes": 22359,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-92584416781544-detail.jpg",
+      "detailSHA256": "cd66e8e6d081b130fbbe53990862d4bc7fc27c1d2b996c3ecfcbfb6162b79c03",
+      "detailBytes": 176934,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 94936943828172,
+      "rideName": "Blue Streak",
+      "alt": "Illustrated Blue Streak at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:23:22.563935+00:00",
+      "originalSHA256": "30eeeabe0b2db2aaedd5db24a9a1cd0d51a5fe04ee62d83e0debd1ccb1bd1910",
+      "review": "Accepted: pale-blue wooden lattice, teal handrails, brown running rails, square shingled crest shelter and foreground conifers retain Blue Streak's actual modest wooden-coaster identity.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb08c5afc96f6b4c15fc7cfd8e544882702688fa0-1440x690.jpg%3Frect%3D164%2C0%2C1243%2C690%26w%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/blue-streak",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Blue Steak classic wooden roller coaster at Cedar Point",
+          "sha256": "3a5d0e4fb4f46a0dc045ea6e6c93c944c888130e9b17b3e3c84679deb1b03e94",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Blue Streak photo: pale-blue painted wooden lattice supports, darker teal handrails, narrow brown running rails and small shingled square shelter at the crest, foreground conifers. Preserve wooden out-and-back hill and shelter, not a steel loop."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-94936943828172-thumbnail.jpg",
+      "thumbnailSHA256": "b07fa64f4b0b3ad2e9587245d2dd9f763ef09f3f28a65f357559bacea4e97230",
+      "thumbnailBytes": 25487,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-94936943828172-detail.jpg",
+      "detailSHA256": "62c59e0ca6e194e57d4fcfbb0774469cbe60e7651ee3533fcaed9145768a97cd",
+      "detailBytes": 216666,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
       "rideId": 110329653714338,
       "rideName": "Raptor",
       "alt": "Illustrated Raptor at Cedar Point",
@@ -1547,6 +1715,48 @@
       "detailFile": "50-110329653714338-detail.jpg",
       "detailSHA256": "30292f0a4fd6916a5c1b9153c69ff865c609cf8b61a6dc840e7ac68d346836be",
       "detailBytes": 149846,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 124787999325203,
+      "rideName": "Wild Mouse",
+      "alt": "Illustrated Wild Mouse at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:25:46.673965+00:00",
+      "originalSHA256": "797f2d0acc7681d1746594ce32ffecfd6d8e78929d54783d7a39d5dfcb554358",
+      "review": "Accepted: yellow cheese-themed four-passenger car with orange holes, black lap bars, attached spinning chassis, orange running rail and yellow support bents preserve Cedar Point Wild Mouse's actual vehicle.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F91231765a8e456fcd21d47785545f16c23c8a8dd-2048x1365.jpg%3Frect%3D0%2C211%2C2048%2C1137%26w%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/wild-mouse",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Wild Mouse spinning riders as they make their chase through the twisted track.",
+          "sha256": "4ef9a0e57b9f91a2329334b918241f65907d5e1fdf8ba6ab9d469571a2ef9449",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Wild Mouse photo: yellow cheese-themed four-person spinning vehicle with orange hole markings, orange running rail and yellow rectangular support bents; wheels attached beneath vehicle. Preserve this photographed cheese car instead of inventing an unverified mouse vehicle."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-124787999325203-thumbnail.jpg",
+      "thumbnailSHA256": "e26f4841e7861e2c88a1654c050318f46577d178e654d1e08c49957fc8d0bf85",
+      "thumbnailBytes": 21812,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-124787999325203-detail.jpg",
+      "detailSHA256": "e9bb54aae591e7336188901ab94962cc9eca29c35936b909a2da5b21b304fec9",
+      "detailBytes": 129686,
       "detailPixels": [
         768,
         960
@@ -1673,6 +1883,48 @@
       "detailFile": "50-146600727393618-detail.jpg",
       "detailSHA256": "90ec5e81ff7641161638074573a4dcad2f5aef3b93aeeeff614f3b59048b979e",
       "detailBytes": 205853,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 151722405799627,
+      "rideName": "Valravn",
+      "alt": "Illustrated Valravn at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:24:40.696994+00:00",
+      "originalSHA256": "d4b3d43867d322162569ebf70525a99e747489279ea539600efa909602cf22cc",
+      "review": "Accepted: orange vertical-drop brink rail, dark-blue catwalk/support structure and wide eight-across blue floorless train preserve the inspected Valravn photograph and wheel connections.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa021ba76d8e80fca426f2acef12afa15fcfd02fd-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/valravn",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on Valravn are dangled over the edge of its 223 foot vertical drop.",
+          "sha256": "3edc6fa49a1a546ce0825f6838f6756d4a2bdfcc29c5473843bba231a805dfbb",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Valravn photo: broad orange box-spine rail at nearly vertical drop, dark-blue support tubes and maintenance stairs/platforms, wide floorless blue train with eight riders across held above the drop. Preserve this identifying brink view rather than adding unseen inversions."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-151722405799627-thumbnail.jpg",
+      "thumbnailSHA256": "2c6966d659d629601fdfe9d268e15c96d9da5ef9f51002532c6aec10407003c7",
+      "thumbnailBytes": 23249,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-151722405799627-detail.jpg",
+      "detailSHA256": "371f44095d12b06523a1cbef356c885cc91d946a026f2d8f2b613185dfd39dfc",
+      "detailBytes": 160537,
       "detailPixels": [
         768,
         960
@@ -1841,6 +2093,90 @@
       "detailFile": "50-224947465344457-detail.jpg",
       "detailSHA256": "3174d423030e505ac769ff9769a3d3cb0c1ff3ffcbcece73b509d71abec2aba2",
       "detailBytes": 206273,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 259350884300997,
+      "rideName": "Cedar Creek Mine Ride",
+      "alt": "Illustrated Cedar Creek Mine Ride at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:25:25.053578+00:00",
+      "originalSHA256": "ae437944f0896172086af066111aed623ca99ee42a9586013e61d52b9e0518d0",
+      "review": "Accepted: brown plank-look mine-car sides, black riveted frames, two-across seats and attached wheels on dark tubular rails over timber trestles retain the real Cedar Creek Mine Ride train and wooded setting.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbc29363a0519a9ace20bf2608aed8a6428b6ce73-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/cedar-creek-mine-ride",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Cedar Creek Mine Ride at Cedar Point",
+          "sha256": "0a7fdc38b431d87f93ce9de98ce5234a1b0e81e84103dc9b10f480ea65ca0d79",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Cedar Creek Mine Ride photo: brown plank-look mine-car sides in black metal frames, dark tubular rails on weathered timber supports and two-across seating, descending amid deciduous trees. Preserve physical chassis/wheel connections and restrained mine-train styling."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-259350884300997-thumbnail.jpg",
+      "thumbnailSHA256": "b963480e2164f87ab345830ae25e96ad6df819e9866682184cf9a5fcdf0bbe83",
+      "thumbnailBytes": 29143,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-259350884300997-detail.jpg",
+      "detailSHA256": "c8c3dad3a65007a21fa649cfd474c1c1cae39a54a5d2cf634e5bb5a10ce0561c",
+      "detailBytes": 217853,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 263985800924714,
+      "rideName": "Gemini",
+      "alt": "Illustrated Gemini at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:26:45.058810+00:00",
+      "originalSHA256": "f321fe4ad2e96bc2a3e37e8f775e72145b105231e869ab23ff59cf1f9f423a4f",
+      "review": "Accepted: weathered wood lattice supporting gray steel running rails, real red/yellow train and parallel crest-side rail paths preserve Gemini's actual hybrid racing-coaster structure without invented close blue-train details.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc6a1ad2213367345ea44709075eef7d5174b036b-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/gemini",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Gemini racing wooden roller coaster at Cedar Point.",
+          "sha256": "9122741f83a26c651cebf771e56fa9a624ab59f96ceb079482fde8549e67afaa",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Gemini photo and official description: gray steel tubular running rails over a dense weathered wood support structure, red/yellow train cresting the hill, two parallel racing lanes and handrails. The photographed train is red; do not invent a close blue-car design or all-wood running rails."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-263985800924714-thumbnail.jpg",
+      "thumbnailSHA256": "98c9c37ac81e6456eb7d2a1ccefcbfe4944214511e26fc2b30f8ebbd259a2294",
+      "thumbnailBytes": 32787,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-263985800924714-detail.jpg",
+      "detailSHA256": "7db0caaaa854de9f3128aadaf86376e4040808e047a999bff82eee8a880104f1",
+      "detailBytes": 267667,
       "detailPixels": [
         768,
         960
