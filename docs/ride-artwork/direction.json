@@ -9,8 +9,8 @@
     "Keep attraction geometry, vehicles and park identity faithful to inspected real photos.",
     "Continue labeling images as AI-generated, never as real photographs."
   ],
-  "existingAssetStatus": "All currently bundled images were generated under the earlier painterly direction. They require review and revision as needed before being considered accepted for style revision 2.",
-  "acceptedForRequestedStyle": 0,
+  "existingAssetStatus": "Bundled records with styleRevision 2 have been reviewed for the requested direction. Earlier records require review/revision; a missing styleRevision means original style 1.",
+  "acceptedForRequestedStyle": 9,
   "continuationModel": "GPT-6.1 Sol",
   "continuationReasoning": "high",
   "publicationAuthorized": false

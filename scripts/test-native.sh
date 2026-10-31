@@ -60,6 +60,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
   all) ;;
   reference-ui)
     test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testGeneratedRideIllustrationLoadsWithCreditsAndPreservesWaits
       -only-testing:PIVOTUITests/PIVOTUITests/testReferenceEPCOTCardsSearchFiltersAndPhotoCredits
       -only-testing:PIVOTUITests/PIVOTUITests/testReferenceCardsKeepEachParksIdentityAndNativeTabs
       -only-testing:PIVOTUITests/PIVOTUITests/testAccentSettingsPersistAfterRelaunch

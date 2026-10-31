@@ -2,10 +2,10 @@
 
 **Latest direction:** Noah requested slightly more realistic imagery after the
 first examples. `direction.json` records this second style revision. The current
-bundled illustrations belong to the earlier painterly direction and all require
-review/revision for the new treatment. The accepted counts in the initial
-provenance describe the earlier pixel review; **zero assets have yet been
-accepted for the updated direction**. Continue on GPT-6.1 Sol, high reasoning.
+bundled illustrations are being revised for the new treatment. Each revised
+record has `styleRevision: 2`; older records remain explicitly due for revision.
+`direction.json` and `coverage.json` give the current accepted count for the
+requested direction. Work continues on GPT-6.1 Sol, high reasoning.
 
 The artwork request covers every ride, not just the assets currently bundled.
 `coverage.json` records 1,124 unique park/ride IDs across 32 parks: 1,123 live

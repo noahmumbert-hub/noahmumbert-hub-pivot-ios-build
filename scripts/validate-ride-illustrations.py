@@ -43,6 +43,7 @@ def main():
         assert record["kind"] == "ai-generated-illustration" and record["generator"] == "built-in-imagegen"
         assert record["review"].startswith("Accepted:") and proof[key]["review"] == record["review"]
         assert proof[key]["originalSHA256"] == record["originalSHA256"]
+        assert proof[key].get("styleRevision", 1) == record.get("styleRevision", 1)
         assert hashlib.sha256(proof[key]["prompt"].encode()).hexdigest() == proof[key]["promptSHA256"]
         assert record["originalSHA256"] not in hashes, f"Artwork reused across distinct ride IDs: {key}"
         hashes.add(record["originalSHA256"])
@@ -68,10 +69,16 @@ def main():
     assert expected_files == {p.name for p in folder.iterdir()}, "Untracked/missing bundle resources"
     assert len(rides) == coverage["counts"]["unionEntries"]
     assert len(keys) == coverage["counts"]["acceptedIllustrations"]
-    pending = [key for key, ride in rides.items() if key not in keys and ride["catalogStatus"] != "excluded-retired"]
+    direction = json.loads((ROOT / "docs/ride-artwork/direction.json").read_text())
+    current_keys = {f"{r['parkId']}-{r['rideId']}" for r in manifest["records"] if r.get("styleRevision", 1) == direction["requestedStyleRevision"]}
+    assert len(current_keys) == direction["acceptedForRequestedStyle"]
+    assert len(current_keys) == coverage["counts"]["acceptedForRequestedStyle"]
+    blocked_keys = {r["key"] for r in json.loads((ROOT / "docs/ride-artwork/blocked-rides.json").read_text())["records"]}
+    assert not current_keys & blocked_keys, "Blocked artwork cannot count as accepted"
+    pending = [key for key, ride in rides.items() if key not in current_keys and ride["catalogStatus"] != "excluded-retired"]
     summary = {"validatedIllustrations": len(keys), "catalogEntries": len(rides), "unfinishedEntries": len(pending),
                "parksWithArtwork": len({r["parkId"] for r in manifest["records"]}), "packagedBytes": total_bytes,
-               "complete": not pending}
+               "acceptedForRequestedStyle": len(current_keys), "complete": not pending}
     print(json.dumps(summary, indent=2))
     if args.require_complete and pending:
         raise SystemExit(f"Artwork coverage incomplete: {len(pending)} entries remain; see docs/ride-artwork/coverage.json")

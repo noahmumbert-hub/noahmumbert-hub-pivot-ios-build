@@ -27,15 +27,24 @@ def main():
     rides = {r["key"]: r for r in inventory["rides"]}
     photos = {r["key"]: r for r in json.loads((work / "photo-fetch-results.json").read_text())}
     accepted = []
+    docs = REPO / "docs/ride-artwork"
+    direction = json.loads((docs / "direction.json").read_text())
+    active_style = direction["requestedStyleRevision"]
+    blocked = json.loads((docs / "blocked-rides.json").read_text())["records"]
+    blocked_keys = {r["key"] for r in blocked}
     for path in sorted(work.glob("accepted-*.json")):
-        accepted.extend(json.loads(path.read_text())["records"])
+        accepted.extend(r for r in json.loads(path.read_text())["records"] if r.get("styleRevision", 1) == active_style)
     assert len({r["key"] for r in accepted}) == len(accepted), "Duplicate reviewed ride IDs"
     output = REPO / "PIVOT/Resources/RideIllustrations"
     output.mkdir(exist_ok=True)
     originals = work / "originals"; originals.mkdir(exist_ok=True)
-    records, provenance = [], []
+    # Retain existing bundled assets while updating reviewed rides individually.
+    # Earlier unbundled drafts must never be imported under the new direction.
+    records = json.loads((output / "index.json").read_text())["records"] if (output / "index.json").exists() else []
+    provenance = json.loads((docs / "provenance.json").read_text())["records"] if (docs / "provenance.json").exists() else []
     for item in sorted(accepted, key=lambda r: tuple(map(int, r["key"].split("-")))):
         key = item["key"]; ride = rides[key]
+        assert key not in blocked_keys, f"Generation remains blocked; do not import or retry: {key}"
         assert item["review"].startswith("Accepted:") and item["prompt"], f"Missing pixel review or prompt: {key}"
         source = Path(item["generatedPath"])
         sha = digest(source)
@@ -51,6 +60,7 @@ def main():
             "alt": f"Illustrated {ride['rideName']} at {ride['parkName']}",
             "kind": "ai-generated-illustration", "generator": "built-in-imagegen", "generatedAt": generated_at,
             "originalSHA256": sha, "review": item["review"],
+            "styleRevision": active_style,
             "references": [dict(reference, sha256=photo["sha256"], pixelReviewed=True)],
             "license": reference["license"], "licenseURL": reference["licenseURL"],
         }
@@ -63,18 +73,25 @@ def main():
             record[variant + "SHA256"] = digest(destination)
             record[variant + "Bytes"] = destination.stat().st_size
             record[variant + "Pixels"] = [width, height]
-        records.append(record)
-        provenance.append(dict(record, key=key, prompt=item["prompt"], promptSHA256=hashlib.sha256(item["prompt"].encode()).hexdigest()))
+        records = [r for r in records if (r["parkId"], r["rideId"]) != (ride["parkID"], ride["rideID"])] + [record]
+        provenance = [r for r in provenance if r["key"] != key] + [dict(record, key=key, prompt=item["prompt"], promptSHA256=hashlib.sha256(item["prompt"].encode()).hexdigest())]
+    records.sort(key=lambda r: (r["parkId"], r["rideId"]))
+    provenance.sort(key=lambda r: (r["parkId"], r["rideId"]))
     (output / "index.json").write_text(json.dumps({"schemaVersion": 1, "records": records}, indent=2, ensure_ascii=False) + "\n")
     docs = REPO / "docs/ride-artwork"; docs.mkdir(exist_ok=True)
     (docs / "provenance.json").write_text(json.dumps({"schemaVersion": 1,
         "styleReferenceSHA256": "b2a32c5ec68fca0b95303a250bf888072ad15588740e16a9f1e24213f179aa4f",
         "records": provenance}, indent=2, ensure_ascii=False) + "\n")
-    keys = {r["key"] for r in accepted}
+    keys = {f"{r['parkId']}-{r['rideId']}" for r in records}
+    current_keys = {f"{r['parkId']}-{r['rideId']}" for r in records if r.get("styleRevision", 1) == active_style}
     for ride in inventory["rides"]:
         if ride["key"] in keys:
             ride.update(referenceReview="pixels-reviewed", generationStatus="accepted", integrationStatus="bundled")
-    inventory["counts"].update(acceptedIllustrations=len(keys), pendingIllustrations=len(rides) - len(keys))
+        ride["requestedStyleStatus"] = "accepted" if ride["key"] in current_keys else "blocked" if ride["key"] in blocked_keys else "needs-revision" if ride["key"] in keys else "pending"
+    inventory["counts"].update(acceptedIllustrations=len(keys), pendingIllustrations=len(rides) - len(keys),
+                              acceptedForRequestedStyle=len(current_keys), unfinishedForRequestedStyle=len(rides)-len(current_keys), blocked=len(blocked_keys))
+    direction["acceptedForRequestedStyle"] = len(current_keys)
+    (docs / "direction.json").write_text(json.dumps(direction, indent=2) + "\n")
     (docs / "coverage.json").write_text(json.dumps(inventory, indent=2, ensure_ascii=False) + "\n")
     print(json.dumps({"accepted": len(records), "pending": len(rides)-len(records),
                       "packagedBytes": sum(r["thumbnailBytes"] + r["detailBytes"] for r in records)}, indent=2))

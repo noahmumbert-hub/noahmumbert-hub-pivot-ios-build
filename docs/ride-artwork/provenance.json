@@ -9,9 +9,10 @@
       "alt": "Illustrated Journey Into Imagination With Figment at EPCOT",
       "kind": "ai-generated-illustration",
       "generator": "built-in-imagegen",
-      "generatedAt": "2026-10-31T16:00:27.977484+00:00",
-      "originalSHA256": "8dd276cccbb2bb389b916d5ce8ec9fc731065871dffad452ffc5e2909f45f8fc",
-      "review": "Accepted: Imagination Institute sense emblems on blue walls and rounded red ride car match the inspected real ride interior; text simplified, lighting illustrated.",
+      "generatedAt": "2026-10-31T16:25:45.117801+00:00",
+      "originalSHA256": "51cf2d496ffde1245d31226c996c069968ba4517b96e8c573b0bada8f0dedcc8",
+      "review": "Accepted: actual Imagination Institute sense emblems, teal wall and red vehicle preserved with natural wall texture and practical dark-ride lighting; realistic materials reduce the painted treatment.",
+      "styleRevision": 2,
       "references": [
         {
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Journey_Into_Imagination_Epcot.jpg/1280px-Journey_Into_Imagination_Epcot.jpg",
@@ -27,22 +28,22 @@
       "license": "CC BY-SA 4.0",
       "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
       "thumbnailFile": "5-155-thumbnail.jpg",
-      "thumbnailSHA256": "ceeaa7dc05b9a7f6b53ff1f1b2de2f2def6c2f7ef49768574e17d9704ed59c35",
-      "thumbnailBytes": 19791,
+      "thumbnailSHA256": "3906588a800d737b4b492fbe8f88589c9edfb13f8cfe0aa97db305a2c1157d8b",
+      "thumbnailBytes": 16989,
       "thumbnailPixels": [
         256,
         320
       ],
       "detailFile": "5-155-detail.jpg",
-      "detailSHA256": "00324f15fe55a76fd1f36ebfadd8327a98025966ca8491e7fb363df7cd394bf4",
-      "detailBytes": 126403,
+      "detailSHA256": "15a8e840b755d732bfb52a42239804f953cb372d0904a9402508c32460d21d11",
+      "detailBytes": 110812,
       "detailPixels": [
         768,
         960
       ],
       "key": "5-155",
-      "prompt": "Create ONE original portrait 4:5 premium digitally painted ride-card illustration for PIVOT, based on actual ride photo reference image 1. Reference image 2 is only the UI style reference: rich deep blue-purple tones and warm amber illumination with highly recognizable realistic ride features, crisp at small thumbnail size. Do not reproduce screenshot UI, borders, titles, logos or watermarks. Visually an illustration, not documentary photography. Center all important identifying features within the middle 80% and fill the image edge to edge. Lighting and viewpoint can be interpreted but attraction geometry must remain accurate. Journey Into Imagination With Figment at EPCOT, specifically the actual Imagination Institute interior shown. Compose a view past the distinctive rounded bright red ride car towards teal-blue walls with golden-orange serrated sunburst medallions representing the senses; the large eye with black-and-white concentric rings and orange iris is the foreground focal point, with a nose/smell emblem further away. Preserve this actual scene, no invented Figment character or unrelated castle. Optional only a few distant indistinct riders.",
-      "promptSHA256": "d1949bfa1481c6008e1d2bb19c175357f725bc8dac988e4910bc7d1df8800e92"
+      "prompt": "Create one portrait 4:5 realistic generated ride visualization for PIVOT based on actual ride photo image 1; image 2 is the UI mood reference only. Slightly more realistic than painted illustrations: photographic textures, plausible perspective and lighting, subtle blue-violet evening tones with restrained warm highlights, natural contrast. No visible brushwork, excessive orange glow, wet pavement or oversaturated fantasy sky. Keep the authentic ride-specific features clear and central at thumbnail size. No interface, border, overlaid labels, watermark or text logos. Journey Into Imagination With Figment at EPCOT, the real Imagination Institute interior: rounded red ride car, teal-blue walls and large golden-orange sunburst sense medallions. Preserve the prominent eye with concentric rings, nose/smell emblem and other sense emblems in their real arrangement. Natural painted wall materials, practical dark-ride lighting. Do not invent characters or scenes.",
+      "promptSHA256": "a78d2750600eeeb81f2ef44c1bf000cf77c952c0f8054b486afad72e2c92c277"
     },
     {
       "parkId": 5,
@@ -51,9 +52,10 @@
       "alt": "Illustrated Living with the Land at EPCOT",
       "kind": "ai-generated-illustration",
       "generator": "built-in-imagegen",
-      "generatedAt": "2026-10-31T16:01:08.258161+00:00",
-      "originalSHA256": "a499fc78f13677fa12f9775e8e1869e17f69afcb982232fa87843958a15e7c43",
-      "review": "Accepted: agricultural greenhouse, triangular roof glazing, tropical crops and concrete-edged canal match the inspected Living with the Land photo; twilight lighting illustrated.",
+      "generatedAt": "2026-10-31T16:24:43.060886+00:00",
+      "originalSHA256": "cf02ed05554b2bbf4d7661310af51f2e72e8963b21fec836400e90ea72bab451",
+      "review": "Accepted: real greenhouse glazing, agricultural plants and concrete canal preserved with natural foliage and water texture; evening illumination remains interpretive and generated.",
+      "styleRevision": 2,
       "references": [
         {
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Living_with_the_Land_10.jpg/1280px-Living_with_the_Land_10.jpg",
@@ -69,22 +71,22 @@
       "license": "CC BY-SA 4.0",
       "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
       "thumbnailFile": "5-156-thumbnail.jpg",
-      "thumbnailSHA256": "e3774ca513d98cf4eaea3dec7c3a4dea7878ce64fc0d0b53efa31f325f8dad36",
-      "thumbnailBytes": 34088,
+      "thumbnailSHA256": "2537ed9e4114b71c7c3e0cb0313b084d84c90ba83d30f7ce77c137c60df9e9d4",
+      "thumbnailBytes": 31468,
       "thumbnailPixels": [
         256,
         320
       ],
       "detailFile": "5-156-detail.jpg",
-      "detailSHA256": "fed892fd2695f72191b7e5f685d25d47ff6d8c559973db6e3186724fa41df651",
-      "detailBytes": 280765,
+      "detailSHA256": "5ef20c3b8cbb65468536be16febf1a7ca5b540207d97be5096d1638f00e42f57",
+      "detailBytes": 244893,
       "detailPixels": [
         768,
         960
       ],
       "key": "5-156",
-      "prompt": "Create ONE original portrait 4:5 premium digitally painted ride-card illustration for PIVOT, based on actual ride photo reference image 1. Reference image 2 is only the UI style reference: rich deep blue-purple tones and warm amber illumination with highly recognizable realistic ride features, crisp at small thumbnail size. Do not reproduce screenshot UI, borders, titles, logos or watermarks. Visually an illustration, not documentary photography. Center all important identifying features within the middle 80% and fill the image edge to edge. Lighting and viewpoint can be interpreted but attraction geometry must remain accurate. Living with the Land at EPCOT, specifically its actual lush greenhouse beside the narrow gently curving concrete-edged boat canal shown. Keep white triangular geodesic greenhouse roof framing, banana leaves and pandan-like plants growing in pale sand, rippling water lower-left. Use a low boat-rider viewpoint without adding a boat not visible in the photo. Make this recognizable agricultural greenhouse with healthy real plants, not an outdoor jungle or fantasy forest. Blue-violet evening light through glass, subtle warm light on the plants.",
-      "promptSHA256": "4c82b3972a427b29936cd3f6ef304751fd3b0d4fa4ef8ac00005a84e33d1832c"
+      "prompt": "Create one portrait 4:5 realistic generated ride visualization for PIVOT based on actual ride photo image 1; image 2 is the UI mood reference only. Slightly more realistic than painted illustrations: photographic textures, plausible perspective and lighting, subtle blue-violet evening tones with restrained warm highlights, natural contrast. No visible brushwork, excessive orange glow, wet pavement or oversaturated fantasy sky. Keep the authentic ride-specific features clear and central at thumbnail size. No interface, border, overlaid labels, watermark or text logos. Living with the Land at EPCOT: the real agricultural greenhouse with white triangular roof glazing, banana leaves, pandan-like crops in pale sandy beds and the gently curving concrete-edged water canal shown. Preserve the real plants and greenhouse structure, photographically natural foliage and water. Soft late-day light through glass; do not invent tropical jungle scenery or boats.",
+      "promptSHA256": "be2f2e6a5f46b02cad19715f8cb7e5f8431761bf63dfbfa6aefa88800c350bdb"
     },
     {
       "parkId": 5,
@@ -93,9 +95,10 @@
       "alt": "Illustrated Mission: SPACE at EPCOT",
       "kind": "ai-generated-illustration",
       "generator": "built-in-imagegen",
-      "generatedAt": "2026-10-31T16:01:57.918850+00:00",
-      "originalSHA256": "9edab3166e98f18f39ed1c9696bdf21b733c207e17af57164715ddfd084f80bf",
-      "review": "Accepted: large copper planetary sphere, blue Earth, smaller copper sphere and sweeping orbital pavilion match Mission: SPACE; foreground sign omitted, lighting illustrated.",
+      "generatedAt": "2026-10-31T16:26:26.794397+00:00",
+      "originalSHA256": "7b823b148963ef9459475df477a54088e07918b3d2198355053442fa5155e1ac",
+      "review": "Accepted: copper spheres, blue Earth sculpture and sweeping pavilion arcs match the photo; plausible materials, perspective and subdued twilight improve realism.",
+      "styleRevision": 2,
       "references": [
         {
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Mission_Space_Epcot.jpg/960px-Mission_Space_Epcot.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20220522003736",
@@ -111,22 +114,22 @@
       "license": "CC BY-SA 4.0",
       "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
       "thumbnailFile": "5-158-thumbnail.jpg",
-      "thumbnailSHA256": "b266b8ec9382b458320e04af6df58c32f5720dda618991550641e004014f531e",
-      "thumbnailBytes": 30523,
+      "thumbnailSHA256": "71d30fbc76a3f4472725aa1596fcbf7487a59d35bdd9fcda8aadc4ae96f27bbb",
+      "thumbnailBytes": 23066,
       "thumbnailPixels": [
         256,
         320
       ],
       "detailFile": "5-158-detail.jpg",
-      "detailSHA256": "c4c70b022a938e088abd46406ba6be7c003c625bb5805321b1ce4ace3c4d192d",
-      "detailBytes": 229039,
+      "detailSHA256": "4249ced8d4d77cb41094f66cadf40e7c0d979a0a117d2e66c4762ad754180e99",
+      "detailBytes": 172289,
       "detailPixels": [
         768,
         960
       ],
       "key": "5-158",
-      "prompt": "Create ONE original portrait 4:5 premium digitally painted ride-card illustration for PIVOT, based on actual ride photo reference image 1. Reference image 2 is only the UI style reference: rich deep blue-purple tones and warm amber illumination with highly recognizable realistic ride features, crisp at small thumbnail size. Do not reproduce screenshot UI, borders, titles, logos or watermarks. Visually an illustration, not documentary photography. Center all important identifying features within the middle 80% and fill the image edge to edge. Lighting and viewpoint can be interpreted but attraction geometry must remain accurate. Mission: SPACE at EPCOT. Preserve the actual curved low pavilion facade, massive central copper-orange planetary sphere, a smaller copper sphere to its right, a blue Earth sphere to its left and huge sweeping metallic orbital arc rising above. Use low frontal view with planted foreground. The spheres are solid architectural features on the ground; do not make this a space scene or floating planets. No rocket ship or imagined coaster.",
-      "promptSHA256": "522665efcfa36c36c9247fe8c78b51cc648517eae5fd5ea03fbce9f737c9b670"
+      "prompt": "Create one portrait 4:5 realistic generated ride visualization for PIVOT based on actual ride photo image 1; image 2 is the UI mood reference only. Slightly more realistic than painted illustrations: photographic textures, plausible perspective and lighting, subtle blue-violet evening tones with restrained warm highlights, natural contrast. No visible brushwork, excessive orange glow, wet pavement or oversaturated fantasy sky. Keep the authentic ride-specific features clear and central at thumbnail size. No interface, border, overlaid labels, watermark or text logos. Mission: SPACE at EPCOT: the real curved low pavilion with massive copper-orange central architectural sphere, smaller copper sphere to the right, blue Earth sculpture to the left and sweeping silver orbital arcs. Exact believable architectural proportions from the photo, natural brushed metal and painted surfaces, subtle blue-purple evening sky and actual warm pavilion light. Do not depict actual floating planets, spaceships or unrelated coaster hardware.",
+      "promptSHA256": "356d4bcd6e784624b6ff3b51e2d0b3d6e7ae4b9591590a8ee7e1477d193fa612"
     },
     {
       "parkId": 5,
@@ -135,9 +138,10 @@
       "alt": "Illustrated Spaceship Earth at EPCOT",
       "kind": "ai-generated-illustration",
       "generator": "built-in-imagegen",
-      "generatedAt": "2026-10-31T15:55:02.029070+00:00",
-      "originalSHA256": "746d6dc52b5b12f88d2e8c8201bcdbc41c09a073bb0a32707d1cbc92801209b0",
-      "review": "Accepted: recognizable silver geodesic sphere with triangular facets and angled supports. Original proportions preserved; sunset lighting and landscaping simplified for the illustration.",
+      "generatedAt": "2026-10-31T16:23:24.195610+00:00",
+      "originalSHA256": "916248f884d6502ed20e3685d8c37f29f7474e07eabd7cde5864af4c9f22867f",
+      "review": "Accepted: realistic silver triangular facets, angled supports and natural foreground plants match the inspected Spaceship Earth photo; restrained twilight improves realism while retaining UI colors.",
+      "styleRevision": 2,
       "references": [
         {
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Spaceship_Earth_2.jpg/1280px-Spaceship_Earth_2.jpg",
@@ -153,22 +157,22 @@
       "license": "CC BY-SA 4.0",
       "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
       "thumbnailFile": "5-159-thumbnail.jpg",
-      "thumbnailSHA256": "320a7abb8139448f9ffe8d120b3ebef1cdee86fb95741cfbd7d58d39e45a2787",
-      "thumbnailBytes": 27365,
+      "thumbnailSHA256": "a0a9dd69c44f24368ad1e183a086688e453d68e0ebdb63b0bb10a8552afd8a65",
+      "thumbnailBytes": 24899,
       "thumbnailPixels": [
         256,
         320
       ],
       "detailFile": "5-159-detail.jpg",
-      "detailSHA256": "7758ce9d85de92b8e2e88534cc9270a46f9ec3cb972f75faddc41887ffe2e726",
-      "detailBytes": 217434,
+      "detailSHA256": "a5cb7108c9379ba6e2e8845a18f70907a4f376767f670c79bf2630999b4f121c",
+      "detailBytes": 204162,
       "detailPixels": [
         768,
         960
       ],
       "key": "5-159",
-      "prompt": "Create ONE original polished digital illustration as a portrait 4:5 ride-card asset for the PIVOT theme-park app, based on the actual ride photo in reference image 1. Reference image 2 is a UI style guide only: use its rich blue/purple twilight palette, warm amber practical lighting and clear recognizable ride subject. DO NOT reproduce any UI, text labels, screenshot border, status bar, or logo. The result must read as carefully painted illustrative artwork, not a claimed real photograph. Edge-to-edge composition, crisp forms at small thumbnail size, clear centered subject inside the middle 80%, realistic attraction geometry, subtle cinematic atmosphere rather than invented scenery. No watermark or decorative lettering. Spaceship Earth at EPCOT in Florida. Preserve the complete gigantic silver geodesic sphere with its small triangular facets and tall angled structural supports. Low visitor viewpoint with the sphere dominant and fully inside the frame. Keep subtle palms, greenery and the pavilion base, but omit the dated foreground stone plaques and close-up people. Do not add stars, outer-space objects or another Disney castle.",
-      "promptSHA256": "182fd84c7fad797e7aa7c11965e5e20fed689fd2d045229f69cc7671213e8455"
+      "prompt": "Create one portrait 4:5 generated realistic ride visualization for PIVOT, based on real ride photo image 1. Image 2 supplies the app's evening mood only. Noah requests slightly more realistic imagery than the previous painted illustrations: natural photographic textures, believable perspective, soft physically plausible evening light, restrained blue-violet shadows and sparse warm practical highlights. No visible brushwork, excessive orange glow, oversaturated fantasy sky or wet reflective surfaces. Keep recognizable authentic attraction details central and clear at small thumbnail size. Edge-to-edge, no text, interface, logo, watermark or border. Spaceship Earth at EPCOT, the exact enormous silver geodesic sphere, fine triangular metal facets, angled white supports and garden in the real reference photo. Show the whole recognizable sphere and its base. Keep natural aluminum texture and realistic structural proportions. No outer-space scenery.",
+      "promptSHA256": "b3ef2dcfff11ed05a800474fe4e101282a3b6137519d4d3c4ac62e195a047680"
     },
     {
       "parkId": 5,
@@ -219,9 +223,10 @@
       "alt": "Illustrated Guardians of the Galaxy: Cosmic Rewind at EPCOT",
       "kind": "ai-generated-illustration",
       "generator": "built-in-imagegen",
-      "generatedAt": "2026-10-31T15:45:31.379181+00:00",
-      "originalSHA256": "4d0c1901aa7fdcf10bd9579afe2dbeb8ea953a94734868b42af0912016e42f2d",
-      "review": "Accepted: recognizable five-point gold-and-blue Starblaster on the tall angled plinth, Wonders of Xandar pavilion and Spaceship Earth; blue-purple twilight treatment. Illumination is illustrative.",
+      "generatedAt": "2026-10-31T16:21:57.942060+00:00",
+      "originalSHA256": "49a62a678c51325193779522b9f51361bc27e4ec5a27460f0b83b14f1a2fe71c",
+      "review": "Accepted: reviewed against real Starblaster photo and earlier draft. Natural panel surfaces, softer sky and restrained lighting improve realism while retaining the blue-violet UI treatment and recognizable plinth, five-point ship and pavilion. Generated visualization, not a real photograph.",
+      "styleRevision": 2,
       "references": [
         {
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Guardians_of_the_Galaxy_Cosmic_Rewind_at_EPCOT.jpg/1280px-Guardians_of_the_Galaxy_Cosmic_Rewind_at_EPCOT.jpg",
@@ -237,22 +242,22 @@
       "license": "CC BY-SA 4.0",
       "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
       "thumbnailFile": "5-10916-thumbnail.jpg",
-      "thumbnailSHA256": "c238a6151e2662a0eedda55607b88b0694344a9227e3970c20563eb794c43319",
-      "thumbnailBytes": 24986,
+      "thumbnailSHA256": "74eadc5c6bbe24632ffc479df0119fcdd04eb9bff046af0ed4aaa7be215e6e6d",
+      "thumbnailBytes": 22276,
       "thumbnailPixels": [
         256,
         320
       ],
       "detailFile": "5-10916-detail.jpg",
-      "detailSHA256": "25fd7ab20ebec47311ba11270841285df705bae334fc961af1f86bef5c2ee962",
-      "detailBytes": 180556,
+      "detailSHA256": "72ab32811f13614c9482c61277d8f1816cc2c5c49392ac153fa663dee883b13a",
+      "detailBytes": 169657,
       "detailPixels": [
         768,
         960
       ],
       "key": "5-10916",
-      "prompt": "Create one original AI-generated ride illustration for PIVOT, a theme park companion. Subject: Guardians of the Galaxy: Cosmic Rewind at EPCOT, park ID 5, ride ID 10916. Use the FIRST supplied image as the authentic visual reference: preserve the recognizable gold and dark blue Nova Corps Starblaster, its sharply tapered five-point wing silhouette, tall tilted support plinth, and low angular Wonders of Xandar pavilion. Use the SECOND image ONLY for the small ride thumbnail's cinematic blue-violet twilight lighting and rich warm highlights. Do not reproduce the screen, UI, typography, logos, wait times, or app icon. Compose a clean portrait 4:5 image with the Starblaster as the dominant central focal point, readable as a 64 by 76 point thumbnail. An original slightly low three-quarter composition, deep cobalt and violet evening sky, restrained amber lighting on the ship and planting, premium detailed digital illustration with subtly painted surfaces. It must read as an illustration rather than a real documentary photograph. No people close-ups, no invented roller coaster track, no space scene, no spacecraft from another attraction, no unnecessary text, no border, no rounded corners. Leave a small safe margin around the ship silhouette for cropping by the app.",
-      "promptSHA256": "42800b8933ffc5c1c9819dbdda462259811774e335916c8ff58118ab73a6ca1a"
+      "prompt": "Revise the Guardians of the Galaxy: Cosmic Rewind ride image for PIVOT to be slightly more realistic. Image 1 is the real EPCOT photograph and defines the exact Starblaster shape, gold and dark-blue painted metal panels, five pointed wings, tilted plinth, pavilion and distant Spaceship Earth. Image 2 is the previous generated draft: retain its attractive portrait composition but reduce its overtly painted surfaces, excessive orange glow, wet-looking pavement and dramatic oversaturation. Image 3 is the UI mood reference only. Produce ONE portrait 4:5 image with natural photographic material textures, physically plausible soft evening lighting, subtle blue-violet shadows and restrained warm practical light. Keep believable scale and perspective and authentic ride-specific details. A polished realistic generated visualization, still suitable for the UI artwork treatment, with no visible brush strokes. No text, logo, watermark, interface or border. No fantasy objects or invented ride hardware. Keep the Starblaster recognizable and as fully in frame as the portrait allows.",
+      "promptSHA256": "3d0571bf90f2f9ed8ec4f5291fb2f56b72d784b993c0bfc7a43a03343ff0291a"
     },
     {
       "parkId": 6,
@@ -261,9 +266,10 @@
       "alt": "Illustrated Seven Dwarfs Mine Train at Magic Kingdom Park",
       "kind": "ai-generated-illustration",
       "generator": "built-in-imagegen",
-      "generatedAt": "2026-10-31T15:56:19.042270+00:00",
-      "originalSHA256": "c3697dad2449dd7d02142b85e29a3bea8ee53e95a5af4ab20fe8d3ec4b7e92e6",
-      "review": "Accepted: distinctive barrel-shaped mine cars with dark bands on a modest curved steel track in wooded rockwork. Painted passengers, warmer lights and twilight are illustrative.",
+      "generatedAt": "2026-10-31T16:22:47.426973+00:00",
+      "originalSHA256": "2433ba3bbb07020457e9e6eff2b0bdaddb78295aafa5d74b17f7a691e68121b0",
+      "review": "Accepted: natural weathered wood and metal textures, recognizable barrel-shaped mine cars and modest curved steel track match the real reference. Soft twilight and indistinct distant riders reduce the painted look.",
+      "styleRevision": 2,
       "references": [
         {
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Seven_Dwarfs_Mine_Train_%28Magic_Kingdom%29_1.jpg/1280px-Seven_Dwarfs_Mine_Train_%28Magic_Kingdom%29_1.jpg",
@@ -279,22 +285,22 @@
       "license": "CC BY 2.0",
       "licenseURL": "https://creativecommons.org/licenses/by/2.0",
       "thumbnailFile": "6-129-thumbnail.jpg",
-      "thumbnailSHA256": "295bf9584b728576e370fd70170cbcc6a4c69833d7435f421abfe46fc2906065",
-      "thumbnailBytes": 29255,
+      "thumbnailSHA256": "fa3c3d278ea74235ca967fb52e5df32d39f2702dd88960b16cc2a637290cc41d",
+      "thumbnailBytes": 26945,
       "thumbnailPixels": [
         256,
         320
       ],
       "detailFile": "6-129-detail.jpg",
-      "detailSHA256": "0eae1110003ccf91340b344e29b2575787c37b557fa75dda2cc016a9e5110951",
-      "detailBytes": 213180,
+      "detailSHA256": "d21d1f6a92cb2cedb4325e7c312580b7c979d19f373d3479697e5c1cb5461ef0",
+      "detailBytes": 200405,
       "detailPixels": [
         768,
         960
       ],
       "key": "6-129",
-      "prompt": "Create ONE original polished digital illustration as a portrait 4:5 ride-card asset for the PIVOT theme-park app, based on the actual ride photo in reference image 1. Reference image 2 is a UI style guide only: use its rich blue/purple twilight palette, warm amber practical lighting and clear recognizable ride subject. DO NOT reproduce any UI, text labels, screenshot border, status bar, or logo. The result must read as carefully painted illustrative artwork, not a claimed real photograph. Edge-to-edge composition, crisp forms at small thumbnail size, clear centered subject inside the middle 80%, realistic attraction geometry, subtle cinematic atmosphere rather than invented scenery. No watermark or decorative lettering. Seven Dwarfs Mine Train at Magic Kingdom in Florida. Preserve the distinctive rounded wood-grain barrel-shaped mine cars with dark metal bands, curved high ends and side decorative wheel details, on a modest rust-brown steel coaster track curving through a wooded rocky hillside. Three connected cars with the front car centered and fully visible. Small indistinct passengers are optional; do not copy identifiable people. Preserve real ride design and the lantern posts. No locomotives, oversized drops, fantasy castles, or unrelated roller-coaster loops.",
-      "promptSHA256": "6de90142be64f4a08b7ac31bdf6bd35477fa6950e0c2d22aa6b799d8caa308a6"
+      "prompt": "Create one portrait 4:5 generated realistic ride visualization for PIVOT, based on real ride photo image 1. Image 2 supplies the app's evening mood only. Noah requests slightly more realistic imagery than the previous painted illustrations: natural photographic textures, believable perspective, soft physically plausible evening light, restrained blue-violet shadows and sparse warm practical highlights. No visible brushwork, excessive orange glow, oversaturated fantasy sky or wet reflective surfaces. Keep recognizable authentic attraction details central and clear at small thumbnail size. Edge-to-edge, no text, interface, logo, watermark or border. Seven Dwarfs Mine Train at Magic Kingdom: accurately retain the real reference's barrel-shaped wood-grain mine cars, black metal bands and modest steel track curving through rocks and conifers. Natural weathered materials and believable mechanics. Omit close recognizable people; distant indistinct riders are optional. No locomotive, invented loops or exaggerated drop.",
+      "promptSHA256": "62c0d3f68b776e47b5de4577d57ea4e3c13cbb0316f907b53ee09846c8e4b804"
     },
     {
       "parkId": 6,
@@ -379,6 +385,135 @@
       "key": "6-134",
       "prompt": "Create ONE original portrait 4:5 premium digitally painted ride-card illustration for PIVOT, based on actual ride photo reference image 1. Reference image 2 is only the UI style reference: deep blue-purple tones with warm amber highlights and recognizable authentic attraction features, crisp at small thumbnail size. Do not reproduce screenshot UI, labels, borders, text logos or watermarks. Visually an illustration, not documentary photography. Center identifying features within the middle 80% and fill the image edge to edge; do not invent ride hardware. Jungle Cruise at Magic Kingdom, Florida: an intimate view from aboard the real wooden river launch under its orange-tan scalloped canvas canopy, with the wooden multi-spoke pilot wheel and dark canopy poles as the recognizable main features. A fictional indistinct skipper in plain khaki stands off-center, facing the river, without reproducing the reference person's face. Dense riverside vegetation and pale rockwork through the open bow, subdued blue-purple twilight and warm boat lantern tones. Keep the actual ride's modest river-launch design, not a pirate ship or cruise liner. Remove close-up passenger heads from the foreground.",
       "promptSHA256": "5cb85017c47e9a7122348d58dc88ed09dbffdb6dc64dd5285cacbcaffe844788"
+    },
+    {
+      "parkId": 21,
+      "rideId": 250622806424631,
+      "rideName": "Mako®",
+      "alt": "Illustrated Mako® at SeaWorld Orlando",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:25:43.369775+00:00",
+      "originalSHA256": "f9dd3fd4882d50a0201ec2a53bf73dd80569c11343ad4214a0836ad30014173d",
+      "review": "Accepted: photo-matched Mako lift hill, teal supports and low lakeside banked curve; natural water and track materials, restrained evening treatment, no added inversion.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Mako_%28SeaWorld_Orlando%29_1.jpg/1280px-Mako_%28SeaWorld_Orlando%29_1.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Mako_(SeaWorld_Orlando)_1.jpg",
+          "credit": "Jeremy Thompson",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+          "alt": "Mako at SeaWorld Orlando",
+          "sha256": "c7ac94e0d6f06e07507c8f1c7f03a288f25e270fee59005e8fd71b4f19fe40dd",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+      "thumbnailFile": "21-250622806424631-thumbnail.jpg",
+      "thumbnailSHA256": "60dcdefe497319e98b4b58fcb94a0880fc1afceabcafb355612fca105a935f3a",
+      "thumbnailBytes": 20961,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "21-250622806424631-detail.jpg",
+      "detailSHA256": "03411e7e30138f9451ef2e6f8c50851f9c62b2ca94a49a72852e2e0a3289dfd1",
+      "detailBytes": 168838,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "21-250622806424631",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT using actual attraction photo image 1 for accurate physical details and image 2 only for the UI's subtle blue-purple evening mood. Natural photographic textures, plausible perspective, soft light with restrained highlights, clear identifiable subject at thumbnail size. Slightly realistic cinematic treatment, no painted brushwork, exaggerated orange sky, cartoon materials or fantasy scenery. No UI, borders, logos, text or watermark. Mako at SeaWorld Orlando. The real lakeside view in the reference defines dark purple/charcoal coaster track, teal support columns, very tall straight lift hill on the left and broad low banked curve around the water. Preserve the real track alignment without invented inversions, loops or extra towers. Natural lake ripples and palms. Compose the tall hill and low sweeping track clearly in portrait framing.",
+      "promptSHA256": "36ee074017710dffac3823047dd81074adb7887e67b3e01cd341347cc01e2d86"
+    },
+    {
+      "parkId": 50,
+      "rideId": 85197605068999,
+      "rideName": "Iron Dragon",
+      "alt": "Illustrated Iron Dragon at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:26:13.582220+00:00",
+      "originalSHA256": "4f86358adaebadbaedb29c89dc46ca50bfedfe6f57019d0e3c45ab73c275a9b5",
+      "review": "Accepted: Iron Dragon train visibly hangs below red-orange track with yellow supports over lagoon. Unrelated coasters/pipes omitted; natural steel, foliage and water improve realism.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Iron_Dragon_%28Cedar_Point%29_1.jpg/1280px-Iron_Dragon_%28Cedar_Point%29_1.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Iron_Dragon_(Cedar_Point)_1.jpg",
+          "credit": "Jeremy Thompson",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+          "alt": "Iron Dragon at Cedar Point",
+          "sha256": "2a045b679cfa6a35a9edcc0392c7aa3ba84f3d15be3481710100c9d5f635304d",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+      "thumbnailFile": "50-85197605068999-thumbnail.jpg",
+      "thumbnailSHA256": "73053549c213187556964a3e134645b76ff51867e8fd7088ac62889219d432e1",
+      "thumbnailBytes": 22825,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-85197605068999-detail.jpg",
+      "detailSHA256": "6c2d0c31ec483c3a41e960293f6759ddb11f620f53bec542ec549f9e227890ce",
+      "detailBytes": 174047,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-85197605068999",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT using actual attraction photo image 1 for accurate physical details and image 2 only for the UI's subtle blue-purple evening mood. Natural photographic textures, plausible perspective, soft light with restrained highlights, clear identifiable subject at thumbnail size. Slightly realistic cinematic treatment, no painted brushwork, exaggerated orange sky, cartoon materials or fantasy scenery. No UI, borders, logos, text or watermark. Iron Dragon at Cedar Point. Precisely show the real suspended coaster: dark swinging enclosed-bottom cars hanging BELOW the red-orange overhead track, with yellow/orange supports beside a small lagoon and trees. Keep hanging cars physically attached to their real track. Avoid turning it into a conventional seated-on-top coaster. Omit the unrelated large coaster towers and large utility pipes from the background/foreground; emphasize only Iron Dragon's identifiable train, track and lagoon.",
+      "promptSHA256": "8b57ac9da831a34cd8f8dd45ae302af0a8a5d8e2f5ccd42ebf2b2db3bd16cc71"
+    },
+    {
+      "parkId": 64,
+      "rideId": 6004,
+      "rideName": "The Incredible Hulk Coaster®",
+      "alt": "Illustrated The Incredible Hulk Coaster® at Islands of Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:26:43.434629+00:00",
+      "originalSHA256": "194c2b8564f6f2052d0e29c939971cc542c6bc5366716076286ead2d3ea16e17",
+      "review": "Accepted: recognizable photographed Hulk cobra-roll geometry, green track and pale supports over lagoon retained. Green floodlight and realistic materials preserve ride identity with subtle twilight grading.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Incredible_Hulk_Roller_Coaster_at_Night.jpg/1280px-Incredible_Hulk_Roller_Coaster_at_Night.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Incredible_Hulk_Roller_Coaster_at_Night.jpg",
+          "credit": "Railfan99",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "alt": "The Incredible Hulk Coaster at Islands of Adventure",
+          "sha256": "bc4853f0d176616578676a55d63c7d10a5a76e82081c1deb65b00e0931fde0b9",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "thumbnailFile": "64-6004-thumbnail.jpg",
+      "thumbnailSHA256": "408be1f6f83c69e6ecc68ca79588181c7a0928a0bfa6cd9a6e060ff87d794a1f",
+      "thumbnailBytes": 24474,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "64-6004-detail.jpg",
+      "detailSHA256": "54413cab270f698237e43e7512020ce4206e4e3abf2964d2ad983ee52c9114a5",
+      "detailBytes": 193912,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "64-6004",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT using actual attraction photo image 1 for accurate physical details and image 2 only for the UI's subtle blue-purple evening mood. Natural photographic textures, plausible perspective, soft light with restrained highlights, clear identifiable subject at thumbnail size. Slightly realistic cinematic treatment, no painted brushwork, exaggerated orange sky, cartoon materials or fantasy scenery. No UI, borders, logos, text or watermark. The Incredible Hulk Coaster at Islands of Adventure, the actual cobra-roll track element over the lagoon in the reference photo. Preserve green steel track, tall pale-grey supports and authentic two-inversion cobra-roll geometry with its connecting upper section, viewed from waterside. Real green floodlighting against a subtle blue-purple evening sky, believable water reflections and distant buildings. Do not add Hulk characters, invented extra track loops or unsupported steel.",
+      "promptSHA256": "261f069f5c014f6c9c041810d8d96cc43642a458863c7dad61783b5580245f30"
     }
   ]
 }

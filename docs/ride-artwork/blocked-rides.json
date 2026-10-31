@@ -1,0 +1,13 @@
+{
+  "records": [
+    {
+      "key": "7-117",
+      "rideName": "Toy Story Mania!",
+      "status": "blocked",
+      "tool": "built-in-imagegen",
+      "error": "HTTP 400 moderation_blocked; output stage; category other",
+      "requestID": "f2fedf86-df4e-4c79-a315-9a2875357cc3",
+      "action": "Do not retry or work around this block. No generated image returned."
+    }
+  ]
+}
