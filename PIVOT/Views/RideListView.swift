@@ -12,6 +12,7 @@ struct RideListView: View {
     var nativeHeader: AnyView? = nil
     var nativeFooter: AnyView? = nil
     @State private var selectedRide: LiveRide?
+    @FocusState private var searchFocused: Bool
 
     private var rides: [LiveRide] {
         store.visibleRides(query: query, filter: radarOnly ? .radar : filter, sort: sort)
@@ -154,6 +155,9 @@ struct RideListView: View {
                     TextField("Search rides or lands", text: $query)
                         .font(.body)
                         .accessibilityIdentifier("Ride search")
+                        .focused($searchFocused)
+                        .submitLabel(.search)
+                        .onSubmit { searchFocused = false }
 #if os(iOS)
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled()

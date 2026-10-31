@@ -65,8 +65,10 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(source.isHittable)
         app.buttons["Done"].tap()
         let search = app.textFields["Ride search"]
-        reveal(search, in: app); search.tap(); search.typeText("Guardians")
-        app.swipeUp() // Dismiss the keyboard and reveal results on compact phones.
+        reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
+        let keyboardGone = NSPredicate { _, _ in !app.keyboards.firstMatch.exists }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: keyboardGone, object: nil)], timeout: 5), .completed,
+                       "Submitting a ride search must dismiss the keyboard so results remain reachable on compact phones")
         let guardians = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Guardians of the Galaxy'")).firstMatch
         reveal(guardians, in: app)
         XCTAssertTrue(guardians.exists)

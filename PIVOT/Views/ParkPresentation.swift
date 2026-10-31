@@ -117,6 +117,12 @@ struct ParkBannerView: View {
                         Image(artwork.assetName).resizable().scaledToFill()
                             .frame(width: geometry.size.width * 0.78, height: geometry.size.height)
                             .clipped()
+                            .mask {
+                                LinearGradient(stops: [.init(color: .clear, location: 0),
+                                                       .init(color: .white, location: 0.3),
+                                                       .init(color: .white, location: 1)],
+                                               startPoint: .leading, endPoint: .trailing)
+                            }
                     } else {
                         VStack(alignment: .trailing, spacing: 6) {
                             Image(systemName: ParkArtworkCatalog.symbol(for: park)).font(.system(size: 100, weight: .ultraLight))
