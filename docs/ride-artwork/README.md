@@ -1,5 +1,12 @@
 # Ride illustrations — work in progress
 
+**Latest direction:** Noah requested slightly more realistic imagery after the
+first examples. `direction.json` records this second style revision. The current
+bundled illustrations belong to the earlier painterly direction and all require
+review/revision for the new treatment. The accepted counts in the initial
+provenance describe the earlier pixel review; **zero assets have yet been
+accepted for the updated direction**. Continue on GPT-6.1 Sol, high reasoning.
+
 The artwork request covers every ride, not just the assets currently bundled.
 `coverage.json` records 1,124 unique park/ride IDs across 32 parks: 1,123 live
 entries plus Kumba, which occurs only in the bundled map and needs a catalog

@@ -1,0 +1,17 @@
+{
+  "requestedStyleRevision": 2,
+  "requestedAt": "2026-10-31",
+  "direction": "Slightly more realistic than the first illustrations, retaining the UI reference's overall visual treatment and authentic ride-specific details.",
+  "renderingGuidance": [
+    "Use natural photographic material textures and believable perspective.",
+    "Keep the blue-purple palette restrained; use realistic warm practical lights.",
+    "Reduce visible painted brushwork, excessive amber glow and oversaturation.",
+    "Keep attraction geometry, vehicles and park identity faithful to inspected real photos.",
+    "Continue labeling images as AI-generated, never as real photographs."
+  ],
+  "existingAssetStatus": "All currently bundled images were generated under the earlier painterly direction. They require review and revision as needed before being considered accepted for style revision 2.",
+  "acceptedForRequestedStyle": 0,
+  "continuationModel": "GPT-6.1 Sol",
+  "continuationReasoning": "high",
+  "publicationAuthorized": false
+}
