@@ -133,9 +133,11 @@ final class NativeWaitForecastTests: XCTestCase {
                     "usedForOperationalTraining": true,
                     "source": ["name": "ThemeParks.wiki", "label": "Waits", "url": "https://themeparks.wiki",
                         "termsUrl": "https://themeparks.wiki", "updateCadenceMinutes": 5]]
-                if let versionAt {
-                    var rides = json["rides"] as! [[String: Any]]
-                    rides[0]["lastUpdated"] = versionAt.timeIntervalSince1970; json["rides"] = rides
+                let ride = (json["rides"] as! [[String: Any]])[0]
+                json["rides"] = (1...6).map { id -> [String: Any] in
+                    var row = ride; row["id"] = id
+                    row["lastUpdated"] = (versionAt ?? now).timeIntervalSince1970
+                    return row
                 }
             }
         }
@@ -146,8 +148,11 @@ final class NativeWaitForecastTests: XCTestCase {
         let checkedAt = now.addingTimeInterval(-300)
         XCTAssertEqual(resolve(try snapshot(checkedAt: checkedAt)).sourceCheckedAt, checkedAt,
                        "A new API response cannot make the upstream check newer")
+        XCTAssertTrue(resolve(try snapshot(checkedAt: checkedAt)).points.allSatisfy(\.crowdAdjusted))
         for offset in [TimeInterval(-900), 121] {
-            XCTAssertNil(resolve(try snapshot(checkedAt: now.addingTimeInterval(offset))).window)
+            let invalidSource = resolve(try snapshot(checkedAt: now.addingTimeInterval(offset)))
+            XCTAssertNil(invalidSource.window)
+            XCTAssertTrue(invalidSource.points.allSatisfy { !$0.crowdAdjusted }, "An invalid source check cannot adjust the history chart")
             XCTAssertNil(resolve(try snapshot(checkedAt: now, versionAt: now.addingTimeInterval(offset))).window)
         }
     }

@@ -116,7 +116,9 @@ struct WaitLearningHistory: Codable, Equatable, Sendable {
     static func validWait(_ wait: Double) -> Bool { wait.isFinite && wait >= 0 && wait <= 1440 }
 
     static func usable(_ snapshot: LiveParkSnapshot?, park: FloridaPark, failed: Bool, now: Date) -> Bool {
-        guard let snapshot, snapshot.parkId == park.rawValue, !failed else { return false }
+        guard let snapshot, snapshot.parkId == park.rawValue, !failed,
+              fresh(snapshot.fetchedAt, now: now),
+              snapshot.themeParksWiki?.fetchedAt.map({ fresh($0, now: now) }) != false else { return false }
         return snapshot.parkActive && DashboardFeedHealth.presentation(parkSelected: true,
             snapshot: snapshot, isLoading: false, refreshFailed: failed, at: now).isLive
     }
