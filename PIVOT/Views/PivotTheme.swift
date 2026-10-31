@@ -83,7 +83,11 @@ struct PivotSettingsView: View {
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
-        }.tint(accent)
+        }
+        .tint(accent)
+#if DEBUG
+        .modifier(PivotUITestTypeSize(probeIdentifier: "Settings body size"))
+#endif
     }
 }
 

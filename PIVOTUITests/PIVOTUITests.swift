@@ -73,7 +73,25 @@ final class PIVOTUITests: XCTestCase {
         gestureArea.pinch(withScale: 0.5, velocity: -1)
         waitForCamera(app) { $0[2] > pinched[2] * 1.15 }
         let beforeDoubleTap = camera(app)
-        map.coordinate(withNormalizedOffset: CGVector(dx: 0.2, dy: 0.55)).doubleTap()
+        // A marker consumes a double-tap as selection. Measure empty native map
+        // pixels rather than assuming a fixed coordinate stays empty after zooming.
+        let pins = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH 'map-pin-' OR identifier == 'Map place cluster'"))
+        XCTAssertGreaterThan(pins.count, 0)
+        let occupied = app.buttons.allElementsBoundByIndex.map { $0.frame.insetBy(dx: -24, dy: -24) }
+            + app.links.allElementsBoundByIndex.map { $0.frame.insetBy(dx: -12, dy: -12) }
+        let top = app.textFields["Search park places"].frame.maxY + 24
+        let bottom = app.buttons["Browse map places"].frame.minY - 24
+        let area = CGRect(x: map.frame.minX + 24, y: top, width: map.frame.width - 48, height: bottom - top)
+        XCTAssertGreaterThan(area.height, 0)
+        let fractions: [CGFloat] = (1...19).map { CGFloat($0) / 20 }
+        let candidates = fractions.flatMap { y in
+            fractions.map { x in CGPoint(x: area.minX + area.width * x, y: area.minY + area.height * y) }
+        }
+        guard let empty = candidates.first(where: { point in !occupied.contains { $0.contains(point) } }) else {
+            XCTFail("No clear map pixels available for the native double-tap gesture"); return
+        }
+        map.coordinate(withNormalizedOffset: .zero)
+            .withOffset(CGVector(dx: empty.x - map.frame.minX, dy: empty.y - map.frame.minY)).doubleTap()
         waitForCamera(app) { $0[2] < beforeDoubleTap[2] * 0.85 }
         let doubled = camera(app)
         app.buttons["Zoom out"].tap()
@@ -158,6 +176,8 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Selected ride wait"].isHittable)
         XCTAssertTrue(app.buttons["map-pin-b2260923-9315-40fd-9c6b-44dd811dbe64"].isHittable)
         let legal = app.links["Legal"]
+        print("Map Legal frame=\(legal.frame), selected name frame=\(app.staticTexts["Selected place name"].frame)")
+        screenshot("Native selected ride and Apple attribution before hit test", app: app)
         XCTAssertTrue(legal.isHittable, "Apple attribution must remain reachable above the selected-place panel")
         XCTAssertLessThan(legal.frame.maxY, app.staticTexts["Selected place name"].frame.minY)
         screenshot("Native production full-screen selected current ride", app: app)
@@ -216,6 +236,9 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["More"].tap()
         screenshot("Native More dark accessibility text", app: app)
         app.buttons["Settings"].tap()
+        let settingsBody = app.staticTexts["Settings body size"]
+        XCTAssertTrue(settingsBody.waitForExistence(timeout: 5))
+        XCTAssertGreaterThanOrEqual(settingsBody.frame.height, 35, "Settings must actually render accessibility-size body text")
         reveal(app.buttons["accent-mint"], in: app)
         app.buttons["accent-mint"].tap()
         screenshot("Native Settings dark accessibility text", app: app)
@@ -224,6 +247,9 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(app.buttons["Full screen map"].waitForExistence(timeout: 5))
         app.buttons["Full screen map"].tap()
         XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
+        let mapBody = app.staticTexts["Map body size"]
+        XCTAssertTrue(mapBody.waitForExistence(timeout: 5))
+        XCTAssertGreaterThanOrEqual(mapBody.frame.height, 35, "The fullscreen map must actually render accessibility-size body text")
         XCTAssertTrue(app.buttons["Zoom in"].isHittable)
         XCTAssertTrue(app.buttons["Browse map places"].isHittable)
         screenshot("Native map dark accessibility text", app: app)
@@ -361,9 +387,15 @@ final class PIVOTUITests: XCTestCase {
 
     private func reveal(_ element: XCUIElement, in app: XCUIApplication) {
         for _ in 0..<10 {
-            if element.exists && element.isHittable { return }
-            if element.exists && element.frame.minY < app.frame.minY {
-                app.swipeDown()
+            if element.exists {
+                let frame = element.frame
+                if frame.isEmpty { app.swipeUp(); continue }
+                let viewport = app.frame.insetBy(dx: 0, dy: 80)
+                // XCTest can throw instead of returning false for an offscreen
+                // accessibility frame. Scroll it into the viewport before hit-testing.
+                let center = CGPoint(x: frame.midX, y: frame.midY)
+                if !frame.isEmpty && viewport.contains(center) && element.isHittable { return }
+                if center.y < viewport.minY { app.swipeDown() } else { app.swipeUp() }
             } else {
                 app.swipeUp()
             }

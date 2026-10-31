@@ -227,17 +227,31 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
         if coordinator.lastCommand != command.id {
             coordinator.lastCommand = command.id
             let action = command.action
+            // Accumulate rapid presses against the requested destination, not an
+            // intermediate animation frame. Coalescing layout work must not drop zoom.
+            let zoomAltitude: Double?
+            if case .zoom(let factor) = action {
+                let base = coordinator.zoomTargetAltitude ?? map.camera.altitude
+                zoomAltitude = min(100_000, max(35, base * factor))
+                coordinator.zoomTargetAltitude = zoomAltitude
+            } else {
+                zoomAltitude = nil
+                coordinator.zoomTargetAltitude = nil
+            }
             container.enqueueCameraChange { [weak map, weak coordinator] in
                 guard let map, let coordinator else { return }
                 coordinator.cameraInitialized = true
+                coordinator.applyingCameraCommand = true
+                defer { coordinator.applyingCameraCommand = false }
                 switch action {
                 case .fit:
                     coordinator.fit(coordinator.parent.allPoints.map(\.coordinate), on: map, animated: false)
                 case .focus(let coordinate):
                     map.setRegion(MKCoordinateRegion(center: coordinate, latitudinalMeters: 500, longitudinalMeters: 500), animated: true)
-                case .zoom(let factor):
+                case .zoom:
+                    guard let zoomAltitude else { return }
                     let camera = map.camera.copy() as! MKMapCamera
-                    camera.altitude = min(100_000, max(35, camera.altitude * factor))
+                    camera.altitude = zoomAltitude
                     map.setCamera(camera, animated: true)
                 }
             }
@@ -259,8 +273,11 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
         var lastCommand: UUID?
         var updatingSelection = false
         var cameraInitialized = false
+        var zoomTargetAltitude: Double?
+        var applyingCameraCommand = false
         init(_ parent: NativeParkMapCanvas) { self.parent = parent }
         func fit(_ coordinates: [CLLocationCoordinate2D], on map: MKMapView, animated: Bool, paddingMeters: Double = 250) {
+            zoomTargetAltitude = nil
             guard let first = coordinates.first ?? ParkLocationDetector.coordinates[parent.park] else { return }
             var rect = MKMapRect.null
             for coordinate in coordinates.isEmpty ? [first] : coordinates {
@@ -280,8 +297,15 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
                   parent.selectedID == annotation.point.id else { return }
             parent.selectedID = nil
         }
+        func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
+            // A native user gesture takes ownership from an unfinished button animation.
+            if !applyingCameraCommand { zoomTargetAltitude = nil }
+        }
         func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
             guard cameraInitialized else { return }
+            if let target = zoomTargetAltitude, abs(mapView.camera.altitude - target) < max(1, target * 0.01) {
+                zoomTargetAltitude = nil
+            }
             parent.session.camera = mapView.camera.copy() as? MKMapCamera
 #if DEBUG
             let c = mapView.centerCoordinate
@@ -397,7 +421,13 @@ struct ParkMapView: View {
         }
         .task(id: park?.id) { loadCatalog() }
         .onChange(of: category) { _, _ in openOnly = false; selectedID = nil }
-        .fullScreenCover(isPresented: $isFullScreen) { mapScreen }
+        .fullScreenCover(isPresented: $isFullScreen) {
+#if DEBUG
+            mapScreen.modifier(PivotUITestTypeSize(probeIdentifier: "Map body size"))
+#else
+            mapScreen
+#endif
+        }
     }
     private var mapScreen: some View {
         GeometryReader { geometry in
@@ -414,30 +444,6 @@ struct ParkMapView: View {
                         accent: accent,
                         onCluster: { clusterPoints = $0; showPlaces = true })
                         .ignoresSafeArea(edges: isFullScreen ? .all : [])
-                    VStack {
-                        mapToolbar
-                        Spacer(minLength: 0)
-                    }.padding(10)
-                    VStack {
-                        Spacer(minLength: 76)
-                        HStack {
-                            Spacer()
-                            VStack(spacing: 0) {
-                                mapControl("Zoom in", symbol: "plus") { command = .init(action: .zoom(0.5)) }
-                                Divider().frame(width: 32)
-                                mapControl("Zoom out", symbol: "minus") { command = .init(action: .zoom(2)) }
-                                Divider().frame(width: 32)
-                                mapControl("Show whole park", symbol: "location") { command = .init(action: .fit) }
-                            }
-                            .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 14))
-                        }
-                        Spacer(minLength: bottomHeight + 30)
-                    }.padding(.trailing, 10).allowsHitTesting(true)
-                    VStack {
-                        Spacer(minLength: 0)
-                        bottomPanel
-                            .background(GeometryReader { proxy in Color.clear.preference(key: MapBottomHeightKey.self, value: proxy.size.height) })
-                    }.padding(.horizontal, 10).padding(.bottom, 8)
 #if DEBUG
                     if ProcessInfo.processInfo.arguments.contains("--park-map-ui-test") || ProcessInfo.processInfo.arguments.contains("--apple-ui-test") {
                         if ProcessInfo.processInfo.arguments.contains("--map-gesture-test") {
@@ -469,6 +475,30 @@ struct ParkMapView: View {
                     } description: { Text("The park catalog could not load.")
                     } actions: { Button("Try again", action: loadCatalog) }
                 } else { ProgressView("Loading park locations…") }
+            }
+            .frame(width: geometry.size.width, height: geometry.size.height)
+            .overlay(alignment: .top) {
+                if park != nil, parkData != nil { mapToolbar.padding(10) }
+            }
+            .overlay(alignment: .trailing) {
+                if park != nil, parkData != nil {
+                    VStack(spacing: 0) {
+                        mapControl("Zoom in", symbol: "plus") { command = .init(action: .zoom(0.5)) }
+                        Divider().frame(width: 32)
+                        mapControl("Zoom out", symbol: "minus") { command = .init(action: .zoom(2)) }
+                        Divider().frame(width: 32)
+                        mapControl("Show whole park", symbol: "location") { command = .init(action: .fit) }
+                    }
+                    .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 14))
+                    .padding(.trailing, 10)
+                }
+            }
+            .overlay(alignment: .bottom) {
+                if park != nil, parkData != nil {
+                    bottomPanel
+                        .background(GeometryReader { proxy in Color.clear.preference(key: MapBottomHeightKey.self, value: proxy.size.height) })
+                        .padding(.horizontal, 10).padding(.bottom, 8)
+                }
             }
             .onPreferenceChange(MapBottomHeightKey.self) { height in
                 // Removing the embedded tree during fullscreen presentation emits

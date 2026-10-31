@@ -72,11 +72,24 @@ final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCent
 }
 #endif
 
-private struct PivotUITestTypeSize: ViewModifier {
+struct PivotUITestTypeSize: ViewModifier {
+    var probeIdentifier: String? = nil
+
     @ViewBuilder func body(content: Content) -> some View {
 #if DEBUG
-        if ProcessInfo.processInfo.arguments.contains("--ui-large-type") { content.dynamicTypeSize(.accessibility2) }
-        else { content }
+        if ProcessInfo.processInfo.arguments.contains("--ui-large-type") {
+            content
+                .overlay(alignment: .topLeading) {
+                    if let probeIdentifier {
+                        // Measure a real body-font line in the presented hierarchy.
+                        // The corner probe never handles touches or covers map pins.
+                        Text("A").font(.body).fixedSize().opacity(0.02)
+                            .accessibilityIdentifier(probeIdentifier)
+                            .allowsHitTesting(false)
+                    }
+                }
+                .dynamicTypeSize(.accessibility2)
+        } else { content }
 #else
         content
 #endif

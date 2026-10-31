@@ -2,6 +2,7 @@ import SwiftUI
 
 struct RideListView: View {
     @Environment(\.pivotAccent) private var accent
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @EnvironmentObject private var store: DashboardStore
     @Binding var query: String
     @Binding var filter: RideListFilter
@@ -33,9 +34,15 @@ struct RideListView: View {
                                 .foregroundStyle(health.isLive ? Color.pivotMint : Color.orange)
                         }
                     }
-                    ViewThatFits(in: .horizontal) {
-                        HStack { rideCounts; Spacer(minLength: 8); freshness }
+                    if dynamicTypeSize.isAccessibilitySize {
+                        // Choose one stable layout at accessibility sizes. Probing
+                        // competing multiline layouts can oscillate as a tab hides.
                         VStack(alignment: .leading, spacing: 6) { rideCounts; freshness }
+                    } else {
+                        ViewThatFits(in: .horizontal) {
+                            HStack { rideCounts; Spacer(minLength: 8); freshness }
+                            VStack(alignment: .leading, spacing: 6) { rideCounts; freshness }
+                        }
                     }
                 }
                 .padding(.top, 4)
