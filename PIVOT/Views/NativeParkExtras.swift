@@ -581,21 +581,22 @@ enum WaitHistoryPresentation {
 
     static func samples(_ source: [WaitHistorySample]?, at now: Date) -> [WaitHistorySample] {
         let start = now.addingTimeInterval(-window)
-        var seen = Set<Date>()
-        let valid = (source ?? []).filter {
-            $0.waitTime.isFinite && $0.waitTime >= 0 &&
-            $0.observedAt >= start && $0.observedAt <= now &&
-            seen.insert($0.observedAt).inserted
+        let valid = Dictionary(grouping: source ?? [], by: \.observedAt).compactMap { time, values -> WaitHistorySample? in
+            guard time.timeIntervalSince1970.isFinite, time >= start, time <= now,
+                  let sample = values.first, WaitLearningHistory.validWait(sample.waitTime),
+                  values.allSatisfy({ $0.waitTime == sample.waitTime }) else { return nil }
+            return sample
         }.sorted { $0.observedAt < $1.observedAt }
         return Array(valid.suffix(maximumSamples))
     }
 }
 
 /// Insert as a disclosure below a row's main button, and as its own detail card.
-/// Dots use real observation time on a continuous six-hour axis; no connecting
-/// line, interpolated point, trend timestamp, or prediction is generated.
+/// Every dot retains its observed time and value. Samples use equal horizontal
+/// spacing so clustered polling times never obscure labels; no values are interpolated.
 struct NativeWaitHistoryView: View {
     @Environment(\.pivotAccent) private var accent
+    @Environment(\.dynamicTypeSize) private var typeSize
     let ride: LiveRide
     let timeZone: TimeZone
     var initiallyExpanded: Bool = false
@@ -618,17 +619,20 @@ struct NativeWaitHistoryView: View {
                             .font(.subheadline).foregroundStyle(Color.pivotMuted)
                     } else {
                         chart(samples: samples, now: context.date)
-                        Text("Up to 12 PIVOT observations in the last 6 hours. Dots preserve collection gaps; these are posted waits, not predictions.")
+                        Text("Up to 12 observations from the last 6 hours, in time order. Swipe for all samples. Dots are evenly spaced for readable labels; time gaps can vary. These are observed posted waits, not predictions.")
                             .font(.caption).foregroundStyle(Color.pivotMuted)
                         DisclosureGroup("Sample times") {
                             VStack(alignment: .leading, spacing: 8) {
-                                ForEach(samples) { sample in
+                                ForEach(Array(samples.enumerated()), id: \.element.id) { index, sample in
                                     Text("\(NativeExtrasFormatting.timestamp(sample.observedAt, timeZone: timeZone)) · \(NativeExtrasFormatting.number(sample.waitTime)) min")
                                         .font(.caption).fixedSize(horizontal: false, vertical: true)
+                                        .accessibilityIdentifier("wait-sample-row-\(ride.id)-\(index)")
                                 }
                             }.frame(maxWidth: .infinity, alignment: .leading).padding(.top, 8)
                         }.font(.caption)
                     }
+                    Divider()
+                    NativeRideLowWaitSummary(ride: ride, timeZone: timeZone)
                 }.padding(.top, 12)
             } label: {
                 Label("Recent observed waits · \(samples.count) \(samples.count == 1 ? "sample" : "samples")", systemImage: "chart.bar.fill")
@@ -640,22 +644,29 @@ struct NativeWaitHistoryView: View {
     }
 
     private func chart(samples: [WaitHistorySample], now: Date) -> some View {
-        let start = now.addingTimeInterval(-WaitHistoryPresentation.window)
         let maximum = max(10, samples.map(\.waitTime).max() ?? 10)
-        return Chart(samples) { sample in
-            PointMark(x: .value("Observed at", sample.observedAt), y: .value("Posted wait", sample.waitTime))
+        return GeometryReader { geometry in
+          ScrollView(.horizontal) {
+            Chart(Array(samples.enumerated()), id: \.element.id) { index, sample in
+            PointMark(x: .value("Observation", index), y: .value("Posted wait", sample.waitTime))
                 .foregroundStyle(accent).symbolSize(36)
+                .annotation(position: .top, spacing: 4) {
+                    Text("\(NativeExtrasFormatting.number(sample.waitTime)) m")
+                        .font(.caption2.weight(.semibold)).fixedSize()
+                        .accessibilityIdentifier("wait-sample-value-\(ride.id)-\(index)")
+                }
                 .accessibilityLabel(NativeExtrasFormatting.timestamp(sample.observedAt, timeZone: timeZone))
                 .accessibilityValue("\(NativeExtrasFormatting.number(sample.waitTime)) minutes")
-        }
-        .chartXScale(domain: start...now)
-        .chartYScale(domain: 0...(maximum * 1.1))
+            }
+        .chartXScale(domain: -0.5...max(0.5, Double(samples.count) - 0.5))
+        .chartYScale(domain: 0...(maximum * 1.3))
         .chartXAxis {
-            AxisMarks(values: [start, now]) { value in
+            AxisMarks(values: Array(samples.indices)) { value in
                 AxisGridLine()
                 AxisValueLabel {
-                    if let date = value.as(Date.self) {
-                        Text(NativeExtrasFormatting.clock(date, timeZone: timeZone))
+                    if let index = value.as(Int.self), samples.indices.contains(index) {
+                        Text(NativeExtrasFormatting.clock(samples[index].observedAt, timeZone: timeZone))
+                            .font(.caption2)
                     }
                 }
             }
@@ -668,8 +679,14 @@ struct NativeWaitHistoryView: View {
                 }
             }
         }
-        .frame(height: 145)
-        .accessibilityLabel("Observed posted wait samples for \(ride.name), last six hours. Gaps have no observations.")
+        .frame(width: max(geometry.size.width, CGFloat(samples.count) * (typeSize.isAccessibilitySize ? 140 : 76)),
+               height: typeSize.isAccessibilitySize ? 215 : 145)
+          }.defaultScrollAnchor(.trailing)
+                .accessibilityElement(children: .contain)
+                .accessibilityIdentifier("observed-wait-chart-\(ride.id)")
+        }
+        .frame(height: typeSize.isAccessibilitySize ? 235 : 165)
+        .accessibilityLabel("Observed posted wait samples for \(ride.name), last six hours. Each labeled dot is one observation, equally spaced in time order; time gaps can vary.")
     }
 }
 

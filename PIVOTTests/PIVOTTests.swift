@@ -2420,10 +2420,13 @@ final class PIVOTTests: XCTestCase {
         let supported = try reopeningFixture()
         XCTAssertNotNil(reopeningGuidance(supported).range)
         XCTAssertNil(reopeningGuidance(supported).bestGuess)
+        XCTAssertEqual(reopeningGuidance(supported).bestPredictionLabel, "Best prediction unavailable")
         let calibration: [String: Any] = ["version": "PIVOT-ONLINE-CALIBRATION-v4", "basis": "same-ride residuals", "sampleSize": 25,
             "effectiveSampleSize": 20, "distinctRideCount": 1, "distinctParkCount": 1, "historicalCoverage": 0.8,
             "medianAdjustmentMinutes": 0, "intervalPaddingMinutes": 0, "trainedThrough": "2026-10-12T18:00:00Z"]
-        XCTAssertNotNil(reopeningGuidance(try reopeningFixture(estimate: ["calibration": calibration])).bestGuess)
+        let calibrated = reopeningGuidance(try reopeningFixture(estimate: ["calibration": calibration]))
+        XCTAssertNotNil(calibrated.bestGuess)
+        XCTAssertEqual(calibrated.bestPredictionLabel, "Best prediction · \(calibrated.bestGuess!)")
         var poor = calibration
         poor["historicalCoverage"] = 0.3
         XCTAssertNil(reopeningGuidance(try reopeningFixture(estimate: ["calibration": poor])).range)

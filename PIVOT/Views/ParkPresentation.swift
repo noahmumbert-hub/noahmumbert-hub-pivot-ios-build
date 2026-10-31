@@ -259,10 +259,59 @@ enum ReferenceParkUITestFixture {
             else { ride["waitTime"] = index == 0 ? 45 : 30 }
             ride["location"] = ["latitude": point.latitude, "longitude": point.longitude]
             ride["waitHistory"] = [["observedAt": Date().timeIntervalSince1970, "waitTime": index == 0 ? 45 : 30]]
+            if ProcessInfo.processInfo.arguments.contains("--ride-history-ui-test") {
+                ride["waitHistory"] = (0..<12).map { sample in
+                    ["observedAt": Date().timeIntervalSince1970 - Double(11 - sample) * 30,
+                     "waitTime": [20, 20, 15, 15, 0, 15, 25, 20, 15, 10, 15, 15][sample]] as [String: Any]
+                }
+            }
+            if index == 2 && ProcessInfo.processInfo.arguments.contains("--reopening-ui-test") {
+                ride["downSince"] = Date().timeIntervalSince1970 - 2580
+                ride["estimate"] = reopeningEstimate(at: Date())
+            }
             return ride
         }
         let decoder = JSONDecoder(); decoder.dateDecodingStrategy = .secondsSince1970
         return try! decoder.decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: payload))
+    }
+
+    static func learningHistory(park: FloridaPark, at now: Date = Date()) -> WaitLearningHistory {
+        var history = WaitLearningHistory()
+        let calendar = WaitLearningHistory.calendar(for: park)
+        let bestHour = (calendar.component(.hour, from: now) + 1) % 24
+        for offset in 1...3 {
+            let day = calendar.date(byAdding: .day, value: -offset, to: now)!
+            let key = WaitLearningHistory.dayKey(day, park: park)
+            for hour in 0..<24 {
+                let bin = WaitLearningBin(parkID: park.id, rideID: 10916, day: key,
+                    weekday: calendar.component(.weekday, from: day), hour: hour,
+                    quarters: [0: hour == bestHour ? 10 : 30], lastSeen: day)
+                history.bins["\(key)-\(hour)"] = bin
+            }
+        }
+        return history
+    }
+
+    private static func reopeningEstimate(at date: Date) -> [String: Any] {
+        let now = date.timeIntervalSince1970
+        let trained = ISO8601DateFormatter().string(from: date.addingTimeInterval(-86400))
+        var result: [String: Any] = ["modelVersion": "UI fixture", "estimateKind": "OPERATIONAL",
+            "windowStart": now + 300, "historicalMedianAt": now + 900, "windowEnd": now + 2100,
+            "evidenceStrength": "Moderate", "sampleSize": 12, "effectiveSampleSize": 12,
+            "distinctDayCount": 4, "recentSampleSize": 12, "distinctRideCount": 1, "distinctParkCount": 1,
+            "censoredSampleSize": 0, "sameRideSampleSize": 12, "sameRideCensoredSampleSize": 0,
+            "basis": "same-ride", "intervalCoverage": "historical", "method": "UI fixture", "priorVersion": "fixture",
+            "startQuality": "observed", "closureSignal": "confirmed", "issuedAt": now,
+            "anchorAt": now - 2580, "episodeAnchorAt": now - 2580, "forecastPhase": "UPCOMING",
+            "lateMinutes": 0, "revision": 0, "revisionReason": "INITIAL", "lockedForOutage": true,
+            "historyProvenance": ["trainedThrough": trained, "confirmedTransitionCount": 12,
+                "forecastLifecycleCount": 12, "activeCensoredCount": 0, "legacyCount": 0]]
+        if !ProcessInfo.processInfo.arguments.contains("--reopening-unsupported") {
+            result["calibration"] = ["version": "PIVOT-ONLINE-CALIBRATION-v4", "basis": "same-ride residuals",
+                "sampleSize": 25, "effectiveSampleSize": 20, "distinctRideCount": 1, "distinctParkCount": 1,
+                "historicalCoverage": 0.8, "medianAdjustmentMinutes": 0, "intervalPaddingMinutes": 0, "trainedThrough": trained]
+        }
+        return result
     }
 }
 #endif

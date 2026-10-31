@@ -360,6 +360,11 @@ final class DashboardStore: ObservableObject {
             selectedPark = referenceID.flatMap(FloridaPark.init(rawValue:)) ?? .magicKingdom
             snapshot = referenceID == nil ? NativeParkMapUITestScreen.rootSnapshot()
                 : ReferenceParkUITestFixture.snapshot(for: selectedPark!)
+            if ProcessInfo.processInfo.arguments.contains("--ride-history-supported"), let selectedPark {
+                waitLearning = ReferenceParkUITestFixture.learningHistory(park: selectedPark)
+            } else if ProcessInfo.processInfo.arguments.contains("--ride-history-ui-test") {
+                waitLearning = WaitLearningHistory()
+            }
             errorMessage = nil
             alertsEnabled = false
             return

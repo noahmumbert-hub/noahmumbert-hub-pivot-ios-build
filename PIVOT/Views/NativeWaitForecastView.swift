@@ -121,7 +121,7 @@ struct NativeParkCrowdBrowser: View {
     }
 }
 
-/// Plan owns forecast navigation; Waits retains only posted waits and history.
+/// Plan collects forecast navigation; ride history also offers its own summary.
 struct NativePlanWaitForecasts: View {
     @EnvironmentObject private var store: DashboardStore
     @State private var presenting = false
@@ -201,6 +201,61 @@ struct NativeRideWaitForecast: View {
                         : "Learning this ride’s pattern. Hourly estimates need at least three previous observed days. Keep using PIVOT to build its history.")
             }
         }.pivotCard()
+    }
+}
+
+struct NativeRideLowWaitSummary: View {
+    @EnvironmentObject private var store: DashboardStore
+    let ride: LiveRide
+    let timeZone: TimeZone
+    @State private var showForecast = false
+
+    var body: some View {
+        TimelineView(.periodic(from: .now, by: 60)) { context in
+            VStack(alignment: .leading, spacing: 6) {
+                Label("Lowest-wait prediction", systemImage: "clock.arrow.circlepath").font(.subheadline.weight(.semibold))
+                if let park = store.selectedPark {
+                    let prediction = LowestWaitPrediction.resolve(history: store.waitLearning, rideID: ride.id, park: park,
+                        hours: store.parkHours(for: park), snapshot: store.snapshot,
+                        failed: store.errorMessage != nil, now: context.date)
+                    if let best = prediction.window {
+                        Text("\(ParkTimeFormatter.time(best.start, timeZone: timeZone))–\(ParkTimeFormatter.time(best.end, timeZone: timeZone)) · about \(best.minutes) min")
+                            .font(.subheadline.weight(.medium)).fixedSize(horizontal: false, vertical: true)
+                            .accessibilityIdentifier("ride-lowest-wait-window")
+                        Text("Observed variation \(best.lower)–\(best.upper) min; not a guaranteed interval.")
+                            .font(.caption).foregroundStyle(Color.pivotMuted)
+                        Text(prediction.detail).font(.caption).foregroundStyle(Color.pivotMuted)
+                            .fixedSize(horizontal: false, vertical: true)
+                        if let snapshot = store.snapshot {
+                            Text("Forecast checked \(ParkTimeFormatter.age(snapshot.fetchedAt, relativeTo: context.date)). Based on local observed history\(best.crowdAdjusted ? " and today’s crowd pressure" : "").")
+                                .font(.caption2).foregroundStyle(Color.pivotMuted)
+                        }
+                    } else {
+                        Text("Prediction unavailable").font(.subheadline.weight(.medium))
+                        Text(prediction.detail).font(.caption).foregroundStyle(Color.pivotMuted)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    Button("See hourly estimates") { showForecast = true }
+                        .font(.caption).frame(minHeight: 44)
+                        .accessibilityIdentifier("ride-history-hourly-estimates")
+                } else {
+                    Text("Prediction unavailable · choose a park").font(.caption)
+                }
+            }.frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .accessibilityIdentifier("ride-lowest-wait-summary")
+        .sheet(isPresented: $showForecast) {
+            NavigationStack {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 16) {
+                        Text(ride.name).font(.title2.weight(.semibold))
+                        NativeRideWaitForecast(ride: ride, timeZone: timeZone)
+                    }.padding(20)
+                }
+                .navigationTitle("Predicted waits").navigationBarTitleDisplayMode(.inline)
+                .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { showForecast = false } } }
+            }
+        }
     }
 }
 

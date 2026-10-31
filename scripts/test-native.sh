@@ -60,6 +60,14 @@ case "${PIVOT_TEST_SCOPE:-all}" in
   all) ;;
   reference-ui)
     test_options+=(
+      -only-testing:PIVOTTests/NativeParkExtrasTests/testHistoryWithholdsConflictingAndImpossibleSampleValues
+      -only-testing:PIVOTTests/NativeParkExtrasTests/testHistoryPreservesGapsAndSingleObservationAndSixHourBoundary
+      -only-testing:PIVOTTests/NativeWaitForecastTests/testLowestWaitSummaryUsesSupportedWindowAndWithholdsUnavailableStates
+      -only-testing:PIVOTTests/PIVOTTests/testReopeningRangeNeedsHistoryAndPointNeedsScoredSameRideSupport
+      -only-testing:PIVOTTests/PIVOTTests/testFailedExpiredAndFutureDataWithholdReopeningGuidance
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedWaitDotsKeepEveryValueAndOpenLowestWaitForecast
+      -only-testing:PIVOTUITests/PIVOTUITests/testHistoryLowestWaitPredictionWithholdsMissingAndStaleEvidence
+      -only-testing:PIVOTUITests/PIVOTUITests/testReopeningWindowShowsSupportedBestPredictionAndUnavailableStates
       -only-testing:PIVOTTests/PIVOTTests/testRideSearchWaitsFollowLatestSnapshotAndOperatingStates
       -only-testing:PIVOTTests/PIVOTTests/testRideSearchWithholdsStaleFailedMissingAndWrongParkWaits
       -only-testing:PIVOTTests/PIVOTTests/testRideSearchRetainsQueryAcrossLiveWaitUpdatesAndFailures

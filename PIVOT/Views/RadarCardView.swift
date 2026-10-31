@@ -97,9 +97,8 @@ struct RadarCardView: View {
                     if let range = guidance.range {
                         Text(range).font(.title2.weight(.bold)).monospacedDigit()
                     }
-                    if let best = guidance.bestGuess {
-                        Text("Best guess \(best)").font(.subheadline)
-                    }
+                    Text(guidance.bestPredictionLabel).font(.subheadline)
+                        .fixedSize(horizontal: false, vertical: true)
                     Text(guidance.detail).font(.subheadline).foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                 }

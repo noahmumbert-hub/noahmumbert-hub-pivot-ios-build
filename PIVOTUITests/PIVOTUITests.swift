@@ -113,6 +113,66 @@ final class PIVOTUITests: XCTestCase {
         }
     }
 
+    func testObservedWaitDotsKeepEveryValueAndOpenLowestWaitForecast() {
+        let app = rootFixture(["--reference-ui-park=5", "--ride-history-ui-test", "--ride-history-supported"])
+        let search = app.textFields["Ride search"]
+        reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
+        let history = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Recent observed waits'")).firstMatch
+        reveal(history, in: app); history.tap()
+        let chart = app.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
+        reveal(chart, in: app); XCTAssertTrue(chart.isHittable)
+        screenshot("Every observed wait dot labeled latest samples", app: app)
+        chart.swipeRight()
+        screenshot("Every observed wait dot labeled earlier samples", app: app)
+        let sampleTimes = app.staticTexts["Sample times"].firstMatch
+        reveal(sampleTimes, in: app); sampleTimes.tap()
+        XCTAssertEqual(app.staticTexts.matching(NSPredicate(format: "identifier BEGINSWITH 'wait-sample-row-10916-'")).count, 12)
+        XCTAssertTrue(app.staticTexts["wait-sample-row-10916-4"].label.contains("0 min"), "A supplied zero is preserved")
+        let lowest = app.staticTexts["ride-lowest-wait-window"]
+        reveal(lowest, in: app); XCTAssertTrue(lowest.label.contains("about 10 min"))
+        screenshot("Supported lowest wait prediction beside observed history", app: app)
+        let hourly = app.buttons["ride-history-hourly-estimates"]
+        reveal(hourly, in: app); hourly.tap()
+        XCTAssertTrue(app.staticTexts["Lowest estimated wait"].waitForExistence(timeout: 5))
+        app.buttons["Done"].tap()
+    }
+
+    func testHistoryLowestWaitPredictionWithholdsMissingAndStaleEvidence() {
+        for expired in [false, true] {
+            let args = ["--reference-ui-park=5", "--ride-history-ui-test"] + (expired ? ["--ride-history-supported", "--ride-search-expired"] : [])
+            let app = rootFixture(args)
+            let search = app.textFields["Ride search"]
+            reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
+            let history = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Recent observed waits'")).firstMatch
+            reveal(history, in: app); history.tap()
+            let unavailable = app.staticTexts["Prediction unavailable"].firstMatch
+            reveal(unavailable, in: app); XCTAssertTrue(unavailable.isHittable)
+            XCTAssertFalse(app.staticTexts["ride-lowest-wait-window"].exists)
+            screenshot(expired ? "Stale source withholds lowest wait prediction" : "Insufficient history has no invented prediction", app: app)
+            app.terminate()
+        }
+    }
+
+    func testReopeningWindowShowsSupportedBestPredictionAndUnavailableStates() {
+        for mode in ["supported", "uncalibrated", "expired"] {
+            let extra = mode == "uncalibrated" ? ["--reopening-unsupported"] : mode == "expired" ? ["--ride-search-expired"] : []
+            let app = rootFixture(["--reference-ui-park=5", "--reopening-ui-test"] + extra)
+            let search = app.textFields["Ride search"]
+            reveal(search, in: app); search.tap(); search.typeText("Spaceship\n")
+            let best = mode == "supported"
+                ? app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH 'Best prediction ·'")).firstMatch
+                : app.staticTexts["Best prediction unavailable"].firstMatch
+            reveal(best, in: app); XCTAssertTrue(best.isHittable)
+            if mode != "expired" { XCTAssertTrue(app.staticTexts["Historical reopening range"].exists) }
+            else { XCTAssertFalse(app.staticTexts["Historical reopening range"].exists) }
+            screenshot("Reopening best prediction \(mode)", app: app)
+            let ride = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Spaceship Earth'")).firstMatch
+            reveal(ride, in: app); ride.tap()
+            reveal(best, in: app); XCTAssertTrue(best.isHittable)
+            app.buttons["Done"].tap(); app.terminate()
+        }
+    }
+
     func testFavoriteRideSearchConnectsWaitsAndSupportsLargeText() {
         for mode in ["default", "large", "expired"] {
             let extra = mode == "large" ? ["--ui-large-type"] : mode == "expired" ? ["--ride-search-expired"] : []

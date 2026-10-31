@@ -370,7 +370,7 @@ struct RideDetailScreenView: View {
                                     feedHealth: store.feedHealth(at: date), at: date, timeZone: timeZone)
                                 Text(guidance.headline).font(.headline)
                                 if let range = guidance.range { Text(range).font(.headline) }
-                                if let best = guidance.bestGuess { Text("Best guess \(best)") }
+                                Text(guidance.bestPredictionLabel)
                                 Text(guidance.detail).foregroundStyle(Color.pivotMuted)
                             }
                             if ride.status == .scheduled {
@@ -459,7 +459,8 @@ private struct RideRowView: View {
                         VStack(alignment: .leading, spacing: 4) {
                             Text(guidance.headline).font(.caption.weight(.semibold)).foregroundStyle(.primary)
                             if let range = guidance.range { Text(range).font(.caption.weight(.semibold)).foregroundStyle(.primary) }
-                            if let best = guidance.bestGuess { Text("Best guess \(best)").font(.caption).foregroundStyle(Color.pivotMuted) }
+                            Text(guidance.bestPredictionLabel).font(.caption.weight(.medium))
+                                .fixedSize(horizontal: false, vertical: true)
                             Text(guidance.detail).font(.caption).foregroundStyle(Color.pivotMuted)
                         }
                     }

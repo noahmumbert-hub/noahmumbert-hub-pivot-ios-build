@@ -25,6 +25,36 @@ struct WaitForecastPoint: Identifiable, Equatable, Sendable {
     var id: Date { start }
 }
 
+/// A lowest-wait window is supported only among hours with enough observed days.
+/// It is never a prediction that a closed ride will reopen.
+struct LowestWaitPrediction: Equatable {
+    let window: WaitForecastPoint?
+    let supportedHours: Int
+    let detail: String
+
+    static func resolve(history: WaitLearningHistory, rideID: Int, park: FloridaPark,
+                        hours: ParkHoursSnapshot?, snapshot: LiveParkSnapshot?, failed: Bool, now: Date) -> Self {
+        let current = RideWaitPresentation.resolve(rideID: rideID, parkID: park.id,
+            snapshot: snapshot, refreshFailed: failed, at: now)
+        guard current.isCurrent, current.waitMinutes != nil else {
+            return Self(window: nil, supportedHours: 0,
+                        detail: "A fresh posted wait for an operating ride is required. This does not predict reopening.")
+        }
+        guard WaitLearningHistory.interval(hours, park: park, now: now) != nil else {
+            return Self(window: nil, supportedHours: 0, detail: "Fresh operating hours are unavailable, or today’s session has ended.")
+        }
+        let points = history.forecast(rideID: rideID, park: park, hours: hours,
+            snapshot: snapshot, failed: failed, now: now)
+        let best = points.min { a, b in a.minutes == b.minutes ? a.start < b.start : a.minutes < b.minutes }
+        guard let best else {
+            return Self(window: nil, supportedHours: 0,
+                        detail: "Learning this ride’s pattern. At least three previous observed days per hour are needed; missing hours are not filled in.")
+        }
+        return Self(window: best, supportedHours: points.count,
+                    detail: "Limited confidence · \(best.days) observed days · lowest among \(points.count) supported remaining \(points.count == 1 ? "hour" : "hours"). Unobserved hours are excluded.")
+    }
+}
+
 struct ParkCrowdEstimate: Equatable, Sendable {
     let typicalWait: Int
     let rideCount: Int

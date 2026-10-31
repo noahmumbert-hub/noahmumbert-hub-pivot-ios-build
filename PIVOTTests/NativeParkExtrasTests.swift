@@ -213,6 +213,15 @@ final class NativeParkExtrasTests: XCTestCase {
         XCTAssertEqual(WaitHistoryPresentation.samples([samples[1]], at: now), [samples[1]])
     }
 
+    func testHistoryWithholdsConflictingAndImpossibleSampleValues() {
+        let good = WaitHistorySample(observedAt: now, waitTime: 15)
+        let conflict = now.addingTimeInterval(-60)
+        let values = [good, good, WaitHistorySample(observedAt: conflict, waitTime: 10),
+                      WaitHistorySample(observedAt: conflict, waitTime: 20),
+                      WaitHistorySample(observedAt: now.addingTimeInterval(-120), waitTime: 1441)]
+        XCTAssertEqual(WaitHistoryPresentation.samples(values, at: now), [good])
+    }
+
     func testLegacyRideDecodesWithNoHistoryAndNewTimestampHistoryDecodes() throws {
         let legacy = #"{"id":1,"name":"Test Ride","land":"Test","status":"OPEN","isOpen":true,"weatherExposure":"INDOOR","radarEligible":true,"radarCategory":"RIDE","reopenPending":false,"trend":[10,20]}"#
         let ride = try PivotAPIClient.makeDecoder().decode(LiveRide.self, from: Data(legacy.utf8))
