@@ -318,6 +318,9 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
         var cameraInitialized = false
         var zoomTargetAltitude: Double?
         var applyingCameraCommand = false
+#if DEBUG
+        private var lastGestureGeometry = ""
+#endif
         init(_ parent: NativeParkMapCanvas) { self.parent = parent }
         func fit(_ coordinates: [CLLocationCoordinate2D], on map: MKMapView, animated: Bool, paddingMeters: Double = 250) {
             zoomTargetAltitude = nil
@@ -391,12 +394,23 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
                     bottom: map.layoutMargins.bottom + 12, right: 84))
                 var target: CGRect?
                 if safe.width >= 140 && safe.height >= 140 {
-                    search: for y in stride(from: safe.minY, through: safe.maxY - 140, by: 20) {
-                        for x in stride(from: safe.minX, through: safe.maxX - 140, by: 20) {
+                    // A fixed grid can miss a valid strip at the bottom/right edge.
+                    // Test exact safe boundaries and annotation edges instead.
+                    let xs = Set([safe.minX, safe.maxX - 140] + occupied.flatMap { [$0.minX - 141, $0.maxX + 1] })
+                        .filter { $0.isFinite && $0 >= safe.minX && $0 <= safe.maxX - 140 }.sorted()
+                    let ys = Set([safe.minY, safe.maxY - 140] + occupied.flatMap { [$0.minY - 141, $0.maxY + 1] })
+                        .filter { $0.isFinite && $0 >= safe.minY && $0 <= safe.maxY - 140 }.sorted()
+                    search: for y in ys {
+                        for x in xs {
                             let candidate = CGRect(x: x, y: y, width: 140, height: 140)
                             if !occupied.contains(where: { $0.intersects(candidate) }) { target = candidate; break search }
                         }
                     }
+                }
+                let geometry = "gesture target safe=\(safe) occupied=\(occupied.count) selected=\(String(describing: target))"
+                if self.lastGestureGeometry != geometry {
+                    self.lastGestureGeometry = geometry
+                    self.parent.session.record(geometry)
                 }
                 if self.parent.session.gestureRect != target { self.parent.session.gestureRect = target }
             }

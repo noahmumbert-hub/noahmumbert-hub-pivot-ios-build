@@ -152,7 +152,11 @@ final class PIVOTUITests: XCTestCase {
         let initialAltitude = camera(app)[2]
         app.buttons["Zoom out"].tap()
         app.buttons["Zoom out"].tap()
-        waitForCamera(app) { $0[2] > initialAltitude * 3 }
+        // The loaded simulator took13.8s to finish this consecutive MapKit
+        // animation. Require its actual settled camera, with the same scale gate.
+        waitForCamera(app, { $0[2] > initialAltitude * 3 }, timeout: 20)
+        XCTAssertEqual(camera(app)[2], initialAltitude * 4, accuracy: initialAltitude * 0.4,
+                       "Two zoom-out presses must settle near four times the original altitude")
         let cluster = app.buttons["Map place cluster"].firstMatch
         XCTAssertTrue(cluster.waitForExistence(timeout: 5))
         let before = camera(app)
