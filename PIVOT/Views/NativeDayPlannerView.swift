@@ -382,6 +382,9 @@ private struct NativeFavoriteSelectionView: View {
             .navigationTitle("Favorite rides")
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
         }
+#if DEBUG
+        .modifier(PivotUITestTypeSize(probeIdentifier: "Favorite search body size"))
+#endif
     }
 }
 

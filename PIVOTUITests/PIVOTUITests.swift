@@ -120,6 +120,11 @@ final class PIVOTUITests: XCTestCase {
             app.tabBars.buttons["Plan"].tap()
             let choose = app.buttons["native-day-favorites"]
             reveal(choose, in: app); choose.tap()
+            if mode == "large" {
+                let bodySize = app.staticTexts["Favorite search body size"]
+                XCTAssertTrue(bodySize.waitForExistence(timeout: 5))
+                XCTAssertGreaterThanOrEqual(bodySize.frame.height, 35, "The favorite sheet must actually render accessibility-size body text")
+            }
             let search = app.searchFields.firstMatch
             XCTAssertTrue(search.waitForExistence(timeout: 5))
             search.tap(); search.typeText("World Discovery\n")
