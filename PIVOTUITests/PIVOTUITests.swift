@@ -376,12 +376,35 @@ final class PIVOTUITests: XCTestCase {
     }
 
     private func selectDownRides(in app: XCUIApplication) {
-        // On compact phones at accessibility size, the Picker container can
-        // be non-hittable even while its individual segments are visible.
+        // Full-screen swipes can jump between either side of this compact
+        // control on SE at accessibility size. Move it toward the actual
+        // content center with short drags and tap the segment itself.
         let down = app.segmentedControls["ride-status-filter"].buttons["Down"]
-        reveal(down, in: app)
-        XCTAssertTrue(down.isHittable)
-        down.tap()
+        var lastFrame = CGRect.zero
+        for _ in 0..<16 {
+            let window = app.frame
+            let bottom = app.tabBars.firstMatch.frame.minY
+            let viewport = CGRect(x: window.minX, y: window.minY + 24,
+                width: window.width, height: bottom - window.minY - 24)
+            var movement: CGFloat = 110
+            if down.exists {
+                lastFrame = down.frame
+                if !lastFrame.isEmpty, viewport.contains(lastFrame), down.isHittable {
+                    down.tap()
+                    return
+                }
+                if !lastFrame.isEmpty {
+                    let offset = lastFrame.midY - viewport.midY
+                    movement = min(110, max(30, abs(offset))) * (offset < 0 ? -1 : 1)
+                }
+            }
+            let start = app.coordinate(withNormalizedOffset: .zero)
+                .withOffset(CGVector(dx: viewport.midX, dy: viewport.midY))
+            let end = start.withOffset(CGVector(dx: 0, dy: -movement))
+            start.press(forDuration: 0.05, thenDragTo: end)
+        }
+        screenshot("Down filter could not be reached", app: app)
+        XCTFail("Could not reveal Down segment. Last frame: \(lastFrame)")
     }
 
     func testFavoriteRideSearchConnectsWaitsAndSupportsLargeText() {
