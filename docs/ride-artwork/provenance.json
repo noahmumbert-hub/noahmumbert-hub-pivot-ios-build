@@ -309,9 +309,10 @@
       "alt": "Illustrated Big Thunder Mountain Railroad at Magic Kingdom Park",
       "kind": "ai-generated-illustration",
       "generator": "built-in-imagegen",
-      "generatedAt": "2026-10-31T16:04:12.025643+00:00",
-      "originalSHA256": "56251b01445c500dbd4cf536ca315d7088501d4a84ad07aea9b7ab9cb8a1929d",
-      "review": "Accepted: Magic Kingdom orange rock spires, low mine train, dark green locomotive and foreground rib bones match the reference. Based on a 2014 photograph; illustration is not evidence of current train hardware.",
+      "generatedAt": "2026-10-31T16:29:12.052599+00:00",
+      "originalSHA256": "0e0a98321f35d661e006f632105147fa83e07827969b83761949efce10e0972b",
+      "review": "Accepted: real Magic Kingdom rock spire, green locomotive, ochre cars and foreground ribs retained; natural weathered rock and subdued lighting improve realism.",
+      "styleRevision": 2,
       "references": [
         {
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Big_Thunder_Mountain_Railroad_2.jpg/1280px-Big_Thunder_Mountain_Railroad_2.jpg",
@@ -327,22 +328,22 @@
       "license": "CC BY-SA 4.0",
       "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
       "thumbnailFile": "6-130-thumbnail.jpg",
-      "thumbnailSHA256": "8ad6e4d4ea40b5d0eb5022e748e7ea75e4667aa8362f18bc3aa00148aa46ef84",
-      "thumbnailBytes": 27787,
+      "thumbnailSHA256": "16931d9b448e434fa0832e49f90724f006066d064c374e4d080e7450da8f21b7",
+      "thumbnailBytes": 23328,
       "thumbnailPixels": [
         256,
         320
       ],
       "detailFile": "6-130-detail.jpg",
-      "detailSHA256": "d32d778ea3d9cd240618d4656919d6f6a6487bfa29c3369743a6345db22d7e76",
-      "detailBytes": 217122,
+      "detailSHA256": "9413cf811b9d75e018d808a741d9716a46b0ad3148fda2f6f8721b6ce2f5b54b",
+      "detailBytes": 190053,
       "detailPixels": [
         768,
         960
       ],
       "key": "6-130",
-      "prompt": "Create ONE original portrait 4:5 premium digitally painted ride-card illustration for PIVOT, based on actual ride photo reference image 1. Reference image 2 is only the UI style reference: deep blue-purple tones with warm amber highlights and recognizable authentic attraction features, crisp at small thumbnail size. Do not reproduce screenshot UI, labels, borders, text logos or watermarks. Visually an illustration, not documentary photography. Center identifying features within the middle 80% and fill the image edge to edge; do not invent ride hardware. Big Thunder Mountain Railroad at Magic Kingdom, Florida, using the exact orange-red desert rock mountain silhouette and tall narrow central spire shown in the real reference photograph. Include the low curving mine-train track weaving through orange rockwork, a small dark-green locomotive with ochre passenger cars, and the pale exposed animal rib-bones low in the foreground. Emphasize the real mountain more than the train. No loops, no enormous steel coaster tower, no other park's version. Twilight lighting with glowing warm canyon rock against deep blue-purple sky.",
-      "promptSHA256": "a841f00fb3b002717e8f4ad29d21b976b73a7f2aed0f0f76cc0c4180e987adf4"
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT using actual photo image 1 for accurate physical details. Image 2 is only the UI's blue-purple evening mood reference. Slightly more realistic than previous painted art: photographic materials, believable perspective, soft light and restrained highlights, natural contrast. No brushwork, oversaturated orange glow or fantasy scenery. Authentic subject should be clear in the central 80% at small thumbnail size. No UI, border, text labels, logo or watermark. Big Thunder Mountain Railroad at Magic Kingdom Florida: real orange-red desert rockwork with the tall narrow central spire, low curving mine train with dark green locomotive and ochre cars, pale animal rib bones in foreground. Match the photographed silhouette and track alignment; natural weathered rock and timber, soft evening tones. No invented coaster loops or huge drops.",
+      "promptSHA256": "f3a690c8f357de0a13e02558dd3d338e358a7bf93ea2300e6909d6a754de444d"
     },
     {
       "parkId": 6,
@@ -351,9 +352,10 @@
       "alt": "Illustrated Jungle Cruise at Magic Kingdom Park",
       "kind": "ai-generated-illustration",
       "generator": "built-in-imagegen",
-      "generatedAt": "2026-10-31T16:05:12.054783+00:00",
-      "originalSHA256": "d72cfbb1ec2d568d1126052dfef4d863fa8ffa8d8092096b0c354db091264169",
-      "review": "Accepted: scalloped tan canopy, wooden launch and pilot wheel match the actual Jungle Cruise boat. The skipper, jungle background and illumination are illustrated.",
+      "generatedAt": "2026-10-31T16:29:43.664989+00:00",
+      "originalSHA256": "14e9a7f68f1580e0476f0ad5adc01fc0b86f6520c2c4575c2cfce151543e0790",
+      "review": "Accepted: actual scalloped canopy, wooden launch and pilot wheel retained with natural canvas/wood textures, believable evening light and non-identifiable skipper.",
+      "styleRevision": 2,
       "references": [
         {
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Jungle_Cruise_at_Magic_Kingdom.jpg/500px-Jungle_Cruise_at_Magic_Kingdom.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20081228134520",
@@ -369,22 +371,22 @@
       "license": "CC BY-SA 2.0",
       "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0/deed.en",
       "thumbnailFile": "6-134-thumbnail.jpg",
-      "thumbnailSHA256": "9b174c74525b73a6ef59035f9ea1d6bba6b8e1b53b7fd90b5f24a1c5e791ad03",
-      "thumbnailBytes": 27438,
+      "thumbnailSHA256": "428a8720af255398283d4dc30d7580e8606e7aadaf90b1859513eb19301e1793",
+      "thumbnailBytes": 23105,
       "thumbnailPixels": [
         256,
         320
       ],
       "detailFile": "6-134-detail.jpg",
-      "detailSHA256": "e3f954bcf1225248db37af58eb292bddf00b5cef5ca121cf8e9910c2867fae5e",
-      "detailBytes": 186412,
+      "detailSHA256": "137d0fb8ea0b81b2b718ec2b6b637ca02048f7219fdcd7b0912c11d911a4c7c4",
+      "detailBytes": 159042,
       "detailPixels": [
         768,
         960
       ],
       "key": "6-134",
-      "prompt": "Create ONE original portrait 4:5 premium digitally painted ride-card illustration for PIVOT, based on actual ride photo reference image 1. Reference image 2 is only the UI style reference: deep blue-purple tones with warm amber highlights and recognizable authentic attraction features, crisp at small thumbnail size. Do not reproduce screenshot UI, labels, borders, text logos or watermarks. Visually an illustration, not documentary photography. Center identifying features within the middle 80% and fill the image edge to edge; do not invent ride hardware. Jungle Cruise at Magic Kingdom, Florida: an intimate view from aboard the real wooden river launch under its orange-tan scalloped canvas canopy, with the wooden multi-spoke pilot wheel and dark canopy poles as the recognizable main features. A fictional indistinct skipper in plain khaki stands off-center, facing the river, without reproducing the reference person's face. Dense riverside vegetation and pale rockwork through the open bow, subdued blue-purple twilight and warm boat lantern tones. Keep the actual ride's modest river-launch design, not a pirate ship or cruise liner. Remove close-up passenger heads from the foreground.",
-      "promptSHA256": "5cb85017c47e9a7122348d58dc88ed09dbffdb6dc64dd5285cacbcaffe844788"
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT using actual photo image 1 for accurate physical details. Image 2 is only the UI's blue-purple evening mood reference. Slightly more realistic than previous painted art: photographic materials, believable perspective, soft light and restrained highlights, natural contrast. No brushwork, oversaturated orange glow or fantasy scenery. Authentic subject should be clear in the central 80% at small thumbnail size. No UI, border, text labels, logo or watermark. Jungle Cruise at Magic Kingdom Florida: inside the photographed modest wooden launch under its tan-orange scalloped canvas canopy. Preserve wooden pilot wheel, dark canopy poles and actual boat dimensions; a distant non-identifiable khaki skipper faces the river. Natural canvas/wood textures, riverside vegetation and pale rocks, soft blue-violet dusk and sparse warm boat lights. Omit close passenger heads, no pirate ship or ocean.",
+      "promptSHA256": "ce44cba5aef2d30ee4432d3409457428bef8d11967d2cadeef2284bfcc86faf7"
     },
     {
       "parkId": 21,

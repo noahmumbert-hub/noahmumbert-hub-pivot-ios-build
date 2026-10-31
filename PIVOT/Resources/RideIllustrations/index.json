@@ -287,9 +287,10 @@
       "alt": "Illustrated Big Thunder Mountain Railroad at Magic Kingdom Park",
       "kind": "ai-generated-illustration",
       "generator": "built-in-imagegen",
-      "generatedAt": "2026-10-31T16:04:12.025643+00:00",
-      "originalSHA256": "56251b01445c500dbd4cf536ca315d7088501d4a84ad07aea9b7ab9cb8a1929d",
-      "review": "Accepted: Magic Kingdom orange rock spires, low mine train, dark green locomotive and foreground rib bones match the reference. Based on a 2014 photograph; illustration is not evidence of current train hardware.",
+      "generatedAt": "2026-10-31T16:29:12.052599+00:00",
+      "originalSHA256": "0e0a98321f35d661e006f632105147fa83e07827969b83761949efce10e0972b",
+      "review": "Accepted: real Magic Kingdom rock spire, green locomotive, ochre cars and foreground ribs retained; natural weathered rock and subdued lighting improve realism.",
+      "styleRevision": 2,
       "references": [
         {
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Big_Thunder_Mountain_Railroad_2.jpg/1280px-Big_Thunder_Mountain_Railroad_2.jpg",
@@ -305,15 +306,15 @@
       "license": "CC BY-SA 4.0",
       "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
       "thumbnailFile": "6-130-thumbnail.jpg",
-      "thumbnailSHA256": "8ad6e4d4ea40b5d0eb5022e748e7ea75e4667aa8362f18bc3aa00148aa46ef84",
-      "thumbnailBytes": 27787,
+      "thumbnailSHA256": "16931d9b448e434fa0832e49f90724f006066d064c374e4d080e7450da8f21b7",
+      "thumbnailBytes": 23328,
       "thumbnailPixels": [
         256,
         320
       ],
       "detailFile": "6-130-detail.jpg",
-      "detailSHA256": "d32d778ea3d9cd240618d4656919d6f6a6487bfa29c3369743a6345db22d7e76",
-      "detailBytes": 217122,
+      "detailSHA256": "9413cf811b9d75e018d808a741d9716a46b0ad3148fda2f6f8721b6ce2f5b54b",
+      "detailBytes": 190053,
       "detailPixels": [
         768,
         960
@@ -326,9 +327,10 @@
       "alt": "Illustrated Jungle Cruise at Magic Kingdom Park",
       "kind": "ai-generated-illustration",
       "generator": "built-in-imagegen",
-      "generatedAt": "2026-10-31T16:05:12.054783+00:00",
-      "originalSHA256": "d72cfbb1ec2d568d1126052dfef4d863fa8ffa8d8092096b0c354db091264169",
-      "review": "Accepted: scalloped tan canopy, wooden launch and pilot wheel match the actual Jungle Cruise boat. The skipper, jungle background and illumination are illustrated.",
+      "generatedAt": "2026-10-31T16:29:43.664989+00:00",
+      "originalSHA256": "14e9a7f68f1580e0476f0ad5adc01fc0b86f6520c2c4575c2cfce151543e0790",
+      "review": "Accepted: actual scalloped canopy, wooden launch and pilot wheel retained with natural canvas/wood textures, believable evening light and non-identifiable skipper.",
+      "styleRevision": 2,
       "references": [
         {
           "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Jungle_Cruise_at_Magic_Kingdom.jpg/500px-Jungle_Cruise_at_Magic_Kingdom.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20081228134520",
@@ -344,15 +346,15 @@
       "license": "CC BY-SA 2.0",
       "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0/deed.en",
       "thumbnailFile": "6-134-thumbnail.jpg",
-      "thumbnailSHA256": "9b174c74525b73a6ef59035f9ea1d6bba6b8e1b53b7fd90b5f24a1c5e791ad03",
-      "thumbnailBytes": 27438,
+      "thumbnailSHA256": "428a8720af255398283d4dc30d7580e8606e7aadaf90b1859513eb19301e1793",
+      "thumbnailBytes": 23105,
       "thumbnailPixels": [
         256,
         320
       ],
       "detailFile": "6-134-detail.jpg",
-      "detailSHA256": "e3f954bcf1225248db37af58eb292bddf00b5cef5ca121cf8e9910c2867fae5e",
-      "detailBytes": 186412,
+      "detailSHA256": "137d0fb8ea0b81b2b718ec2b6b637ca02048f7219fdcd7b0912c11d911a4c7c4",
+      "detailBytes": 159042,
       "detailPixels": [
         768,
         960

@@ -366,9 +366,9 @@
     "photoCandidates": 28,
     "acceptedIllustrations": 12,
     "pendingIllustrations": 1112,
-    "acceptedForRequestedStyle": 9,
-    "unfinishedForRequestedStyle": 1115,
-    "blocked": 1
+    "acceptedForRequestedStyle": 11,
+    "unfinishedForRequestedStyle": 1113,
+    "blocked": 2
   },
   "parks": [
     {
@@ -872,7 +872,7 @@
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
       "integrationStatus": "bundled",
-      "requestedStyleStatus": "needs-revision"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "5-10914",
@@ -1108,7 +1108,7 @@
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
       "integrationStatus": "bundled",
-      "requestedStyleStatus": "needs-revision"
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "6-131",
@@ -1231,7 +1231,7 @@
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
       "integrationStatus": "bundled",
-      "requestedStyleStatus": "needs-revision"
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "6-135",
