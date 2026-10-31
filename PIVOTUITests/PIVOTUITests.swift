@@ -134,6 +134,7 @@ final class PIVOTUITests: XCTestCase {
             XCTAssertTrue(closed.label.contains(mode == "expired" ? "Wait unavailable" : "Temporarily closed"))
             XCTAssertGreaterThanOrEqual(closed.frame.height, 44)
             screenshot("Favorite search \(mode) waits and status", app: app)
+            app.buttons["Cancel"].tap()
             app.buttons["Done"].tap(); app.terminate()
         }
     }

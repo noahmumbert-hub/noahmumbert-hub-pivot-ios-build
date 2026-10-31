@@ -174,6 +174,7 @@ struct RideListView: View {
                 .frame(minHeight: 46)
                 .background(Color.pivotBackground.opacity(0.7), in: Capsule())
                 .overlay { Capsule().strokeBorder(Color.pivotBorder, lineWidth: 1).allowsHitTesting(false) }
+                .accessibilityElement(children: .contain)
                 .accessibilityIdentifier("ride-search-control")
 
                 Menu {
