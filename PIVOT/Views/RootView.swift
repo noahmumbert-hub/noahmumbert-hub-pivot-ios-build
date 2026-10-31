@@ -152,6 +152,7 @@ struct RootView: View {
                         Text("Shows").font(.largeTitle.bold())
                         Text("Today’s entertainment, all in one place.").font(.subheadline).foregroundStyle(.secondary)
                     }
+                    .padding(.bottom, 16)
                     .listRowInsets(EdgeInsets())
                     .listRowBackground(Color.clear)
                 }
@@ -200,7 +201,7 @@ struct RootView: View {
                     VStack(alignment: .leading, spacing: 16) {
                         header
                         Text("More").font(.largeTitle.bold())
-                    }.listRowInsets(EdgeInsets()).listRowBackground(Color.clear)
+                    }.padding(.bottom, 16).listRowInsets(EdgeInsets()).listRowBackground(Color.clear)
                 }
                 Section {
                     Button { showSettings = true } label: { Label("Settings", systemImage: "gearshape") }
