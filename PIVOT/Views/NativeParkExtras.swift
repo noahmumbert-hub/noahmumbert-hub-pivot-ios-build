@@ -651,6 +651,7 @@ struct NativeWaitHistoryView: View {
             }
             .tint(accent)
         }
+        .accessibilityElement(children: .contain)
         .accessibilityIdentifier("wait-history-\(ride.id)")
     }
 
@@ -678,10 +679,10 @@ struct NativeWaitHistoryView: View {
                 .chartXAxis {
                     AxisMarks(values: Array(samples.indices)) { value in
                         AxisGridLine()
-                        AxisValueLabel {
+                        AxisValueLabel(anchor: .top) {
                             if let index = value.as(Int.self), samples.indices.contains(index) {
                                 Text(ParkTimeFormatter.time(samples[index].observedAt, timeZone: timeZone))
-                                    .font(.caption2)
+                                    .font(.caption2).fixedSize()
                             }
                         }
                     }

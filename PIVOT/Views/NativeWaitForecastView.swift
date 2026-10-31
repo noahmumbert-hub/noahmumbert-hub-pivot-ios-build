@@ -243,6 +243,7 @@ struct NativeRideLowWaitSummary: View {
                 }
             }.frame(maxWidth: .infinity, alignment: .leading)
         }
+        .accessibilityElement(children: .contain)
         .accessibilityIdentifier("ride-lowest-wait-summary")
         .sheet(isPresented: $showForecast) {
             NavigationStack {

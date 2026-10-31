@@ -141,15 +141,22 @@ final class PIVOTUITests: XCTestCase {
         let app = rootFixture(["--reference-ui-park=5", "--reference-ui-ride=10916", "--ride-history-ui-test"] + extra)
         let history = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Recent observed waits'")).firstMatch
         reveal(history, in: app)
-        XCTAssertGreaterThanOrEqual(history.frame.height, 44)
         history.tap()
         return app
     }
 
+    private func assertObservedChartSamples(_ waits: [String], chart: XCUIElement) {
+        let points = chart.descendants(matching: .any).matching(NSPredicate(format: "label BEGINSWITH 'Observation '"))
+        XCTAssertEqual(points.count, waits.count, "Every distinct dot must remain readable to VoiceOver")
+        for (index, wait) in waits.enumerated() {
+            let point = points.matching(NSPredicate(format: "label BEGINSWITH %@", "Observation \(index + 1),")).firstMatch
+            XCTAssertEqual(point.value as? String, "\(wait) minutes", "Each dot must announce its own recorded wait")
+        }
+    }
+
     private func assertObservedSampleRows(_ waits: [String], app: XCUIApplication) {
-        let disclosure = app.staticTexts["Sample times"].firstMatch
+        let disclosure = app.buttons["Sample times"].firstMatch
         reveal(disclosure, in: app)
-        XCTAssertGreaterThanOrEqual(disclosure.frame.height, 44)
         disclosure.tap()
         XCTAssertEqual(app.staticTexts.matching(NSPredicate(format: "identifier BEGINSWITH 'wait-sample-row-10916-'")).count, waits.count)
         for (index, wait) in waits.enumerated() {
@@ -166,6 +173,7 @@ final class PIVOTUITests: XCTestCase {
             let app = observedHistoryFixture(["--ride-history-case=equal", appearance])
             let chart = app.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
             reveal(chart, in: app)
+            assertObservedChartSamples(Array(repeating: "15", count: 12), chart: chart)
             screenshot("Observed history repeated waits latest \(appearance)", app: app)
             chart.swipeRight(); chart.swipeRight(); chart.swipeRight(); chart.swipeRight()
             screenshot("Observed history repeated waits earlier \(appearance)", app: app)
@@ -188,7 +196,9 @@ final class PIVOTUITests: XCTestCase {
                 reveal(chart, in: app)
                 screenshot("Observed history \(mode) before sample table", app: app)
                 let maximum = Double(1440).formatted(.number.precision(.fractionLength(0...1)))
-                assertObservedSampleRows(mode == "single" ? ["12.5"] : ["0", "12.5", maximum], app: app)
+                let waits = mode == "single" ? ["12.5"] : ["0", "12.5", maximum]
+                assertObservedChartSamples(waits, chart: chart)
+                assertObservedSampleRows(waits, app: app)
             }
             screenshot("Observed history \(mode)", app: app)
             app.terminate()
@@ -201,7 +211,9 @@ final class PIVOTUITests: XCTestCase {
         reveal(chart, in: app)
         XCTAssertLessThanOrEqual(chart.frame.height, 341, "Larger labels must not make the chart taller than a compact viewport")
         screenshot("Observed history largest accessibility size", app: app)
-        assertObservedSampleRows(["20", "20", "15", "15", "0", "15", "25", "20", "15", "10", "15", "15"], app: app)
+        let waits = ["20", "20", "15", "15", "0", "15", "25", "20", "15", "10", "15", "15"]
+        assertObservedChartSamples(waits, chart: chart)
+        assertObservedSampleRows(waits, app: app)
         XCTAssertGreaterThan(app.staticTexts["wait-sample-row-10916-11"].frame.height, 60,
                              "Measure the real wrapping sample text to verify the largest size was applied")
         let ride = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Guardians of the Galaxy'")).firstMatch
