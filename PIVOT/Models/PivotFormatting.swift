@@ -184,10 +184,6 @@ struct ReopeningGuidance: Equatable, Sendable {
         return "\(title) · \(prediction) (estimate)"
     }
 
-    var bestPredictionLabel: String {
-        bestGuess.map { "Best prediction · \($0)" } ?? "Best prediction unavailable"
-    }
-
     static func presentation(ride: LiveRide, snapshot: LiveParkSnapshot?, feedHealth: DashboardFeedHealth,
                              at now: Date, timeZone: TimeZone) -> Self {
         func uncertain(_ detail: String, title: String = "Reopening time uncertain") -> Self {
