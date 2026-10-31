@@ -1,0 +1,128 @@
+name: Verify published SideStore release
+
+on:
+  push:
+    branches: [diagnostics/apple-native-redesign]
+    paths: ['.github/workflows/verify-sidestore-release.yml']
+
+permissions:
+  contents: read
+
+jobs:
+  verify-public-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      PIVOT_FEED_COMMIT: dd73bb5f80ae809451d4d5296af35f70b986ae2e
+      PIVOT_ASSET_COMMIT: 35feda747429492969d2349b8adb944c70786660
+    steps:
+      - name: Verify canonical feed and downloaded device IPA
+        run: |
+          python - <<'PY'
+          import datetime, hashlib, io, json, os, plistlib, struct, subprocess, time, urllib.request, zipfile
+          repo = "noahmumbert-hub/noahmumbert-hub-pivot-ios-build"
+          root = "https://raw.githubusercontent.com/" + repo
+          feed_url = root + "/ipa-builds/source.json"
+          feed_commit = os.environ["PIVOT_FEED_COMMIT"]
+          asset = os.environ["PIVOT_ASSET_COMMIT"]
+          filename = "PIVOT-1.17.0-100.55.1.ipa"
+          expected_sha = "ac5902c1e4e4685f938eda5cd8e1406cd39748fd6cc7428800c828810faeb334"
+          source = "38c8ffa5cfbecdb12828de5a88ade106f0770960"
+          def fetch(url):
+              req = urllib.request.Request(url, headers={"User-Agent":"PIVOT-release-verification", "Cache-Control":"no-cache", "Accept-Encoding":"identity"})
+              with urllib.request.urlopen(req, timeout=30) as response:
+                  assert response.status == 200
+                  return response.read(), {"status":response.status, "url":response.url, "etag":response.headers.get("ETag")}
+          def blob_sha(raw):
+              return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
+          for attempt in range(40):
+              try:
+                  raw, feed_http = fetch(feed_url)
+                  feed = json.loads(raw)
+                  if feed["apps"][0]["versions"][0]["buildVersion"] == "100.55.1":
+                      break
+                  print("Waiting for authorized feed publication/cache propagation", attempt, flush=True)
+              except Exception as exc:
+                  print("Waiting for public feed availability", type(exc).__name__, flush=True)
+              time.sleep(10)
+          else:
+              raise RuntimeError("Canonical feed did not serve the expected published version")
+          assert blob_sha(raw) == "56b3b77dc9bab5109a963b87c4fbf18400dcd1ba"
+          head = subprocess.check_output(["git","ls-remote","https://github.com/"+repo+".git","refs/heads/ipa-builds"]).decode().split()[0]
+          assert head == feed_commit
+          assert feed["identifier"] == "com.noahmumbert.PIVOT.Source" and feed["sourceURL"] == feed_url
+          app = feed["apps"][0]
+          version = app["versions"][0]
+          download_url = root + "/" + asset + "/" + filename
+          assert app["bundleIdentifier"] == "com.noahmumbert.PIVOT"
+          assert app["version"] == version["version"] == "1.17.0"
+          assert version["buildVersion"] == "100.55.1" and version["minOSVersion"] == "17.0"
+          assert app["downloadURL"] == version["downloadURL"] == download_url
+          assert app["size"] == version["size"] == 3317570
+          old_raw, _ = fetch(root+"/6f0714a506e5060766bca97c5ef8305c2fe21c81/source.json")
+          old = json.loads(old_raw)
+          assert app["versions"][1:] == old["apps"][0]["versions"] and len(app["versions"]) == 13
+          payload, ipa_http = fetch(download_url)
+          assert len(payload) == 3317570 and hashlib.sha256(payload).hexdigest() == expected_sha
+          assert blob_sha(payload) == "89c960f85f41acbdfbbfee073b8dbfa8b60b93ab"
+          metadata_raw, _ = fetch(root+"/"+asset+"/build-info-1.17.0-100.55.1.json")
+          info = json.loads(metadata_raw)
+          assert info["filename"] == filename and info["sha256"] == expected_sha and info["size"] == len(payload)
+          assert info["commit"] == source and info["run"] == "41168198135" and info["signed"] is False
+          assert info["version"] == "1.17.0" and info["build"] == "100.55.1" and info["minimumOSVersion"] == "17.0"
+          checksum, _ = fetch(root+"/"+asset+"/SHA256SUMS-1.17.0-100.55.1")
+          assert checksum.decode() == expected_sha+"  "+filename+"\n"
+          assert app["iconURL"] == root+"/"+asset+"/icon.png"
+          icon, icon_http = fetch(app["iconURL"])
+          assert blob_sha(icon) == "9f218ad887984a2639ed95f8c96d6cc8f04a5ea3"
+          markers = [b"--park-map-ui-test", b"NativeParkMapUITestScreen", b"Current wait ride", b"--apple-ui-test", b"--apple-ui-fixtures", b"Map camera state", b"Map event trace", b"gesture target safe=", b"Map gesture area", b"--map-gesture-test", b"Settings body size", b"Map body size", b"--ui-light", b"--ui-dark", b"--ui-large-type", b"North counter", b"Castle afternoon performance"]
+          bundles = []
+          privacy = {}
+          with zipfile.ZipFile(io.BytesIO(payload)) as archive:
+              assert archive.testzip() is None
+              names = archive.namelist()
+              assert not any("_CodeSignature/" in n or n.endswith("embedded.mobileprovision") or ".xctest/" in n for n in names)
+              for path, identity in [("Payload/PIVOT.app/Info.plist","com.noahmumbert.PIVOT"),("Payload/PIVOT.app/PlugIns/PIVOTLiveActivityWidget.appex/Info.plist","com.noahmumbert.PIVOT.LiveActivityWidget")]:
+                  meta = plistlib.loads(archive.read(path))
+                  assert meta["CFBundleIdentifier"] == identity and meta["CFBundleShortVersionString"] == "1.17.0" and meta["CFBundleVersion"] == "100.55.1"
+                  assert meta["CFBundleSupportedPlatforms"] == ["iPhoneOS"] and meta["MinimumOSVersion"] == "17.0"
+                  executable = path.rsplit("/",1)[0]+"/"+meta["CFBundleExecutable"]
+                  binary = archive.read(executable)
+                  magic, cpu, subtype, kind, count, size, flags, reserved = struct.unpack_from("<8I",binary)
+                  assert magic == 0xfeedfacf and cpu == 0x0100000c and kind == 2
+                  cursor = 32
+                  platforms = []
+                  for _ in range(count):
+                      command, length = struct.unpack_from("<2I",binary,cursor)
+                      assert length >= 8 and cursor+length <= len(binary)
+                      if command == 0x32:
+                          platform, minimum, sdk, tools = struct.unpack_from("<4I",binary,cursor+8)
+                          assert platform == 2 and minimum == (17 << 16)
+                          platforms.append({"platform":"iOS","minimum":"17.0","sdk":str(sdk >> 16)+"."+str((sdk >> 8)&255)+"."+str(sdk&255)})
+                      cursor += length
+                  assert platforms
+                  for marker in markers:
+                      assert marker not in binary, (identity, marker)
+                  privacy.update({k:v for k,v in meta.items() if k.startswith("NS") and k.endswith("UsageDescription")})
+                  bundles.append({"identity":identity,"architecture":"arm64","version":"1.17.0","build":"100.55.1","native":platforms})
+              assert len(json.loads(archive.read("Payload/PIVOT.app/park-map-catalog.json"))["parks"]) == 32
+          assert app["appPermissions"] == {"entitlements":[],"privacy":privacy}
+          result = {"published":True,"deliveryState":"public-feed-and-IPA-verified","verifiedAt":datetime.datetime.now(datetime.timezone.utc).isoformat(),"version":"1.17.0","build":"100.55.1","sourceCommit":source,"workflowRun":"41168198135","feedCommit":feed_commit,"assetCommit":asset,"sourceURL":feed_url,"downloadURL":download_url,"sha256":expected_sha,"size":len(payload),"feedSHA256":hashlib.sha256(raw).hexdigest(),"publicDownloadMatchesVerifiedIPA":True,"debugFixturesAbsent":True,"catalogParks":32,"priorVersionsRetained":12,"bundles":bundles,"feedHTTP":feed_http,"ipaHTTP":ipa_http,"iconHTTP":icon_http,"physicalDeviceInstallation":"unverified"}
+          open("release-verification.json","w").write(json.dumps(result,indent=2)+"\n")
+          open("public-source.json","wb").write(raw)
+          open("public-build-info.json","wb").write(metadata_raw)
+          print("PUBLIC_RELEASE_VERIFIED")
+          print(json.dumps(result,indent=2))
+          
+          PY
+
+      - name: Preserve public delivery verification
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: PIVOT-public-release-verification-1.17.0-100.55.1
+          path: |
+            release-verification.json
+            public-source.json
+            public-build-info.json
+          if-no-files-found: error
+          retention-days: 90
