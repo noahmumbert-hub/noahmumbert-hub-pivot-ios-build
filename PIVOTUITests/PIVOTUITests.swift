@@ -178,7 +178,22 @@ final class PIVOTUITests: XCTestCase {
         let legal = app.links["Legal"]
         print("Map Legal frame=\(legal.frame), selected name frame=\(app.staticTexts["Selected place name"].frame)")
         screenshot("Native selected ride and Apple attribution before hit test", app: app)
-        XCTAssertTrue(legal.isHittable, "Apple attribution must remain reachable above the selected-place panel")
+        let legalWasHittable = legal.isHittable
+        if !legalWasHittable {
+            // Diagnose the native MapKit link with a real touch at its measured
+            // frame. Retain the failing assertion until the navigation is verified.
+            legal.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5)).tap()
+            let transition = expectation(description: "Native attribution transition")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) { transition.fulfill() }
+            wait(for: [transition], timeout: 4)
+            screenshot("Native Apple attribution after actual link tap", app: app)
+            let hierarchy = XCTAttachment(string: app.debugDescription)
+            hierarchy.name = "Native attribution hierarchy after actual link tap"
+            hierarchy.lifetime = .keepAlways
+            add(hierarchy)
+            print("Attribution tap app state=\(app.state.rawValue), Safari state=\(XCUIApplication(bundleIdentifier: "com.apple.mobilesafari").state.rawValue)")
+        }
+        XCTAssertTrue(legalWasHittable, "Apple attribution must remain reachable above the selected-place panel")
         XCTAssertLessThan(legal.frame.maxY, app.staticTexts["Selected place name"].frame.minY)
         screenshot("Native production full-screen selected current ride", app: app)
         app.buttons["Close place details"].tap()

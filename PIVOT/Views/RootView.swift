@@ -29,7 +29,7 @@ struct RootView: View {
 
     var body: some View {
         TabView(selection: $selectedDockSection) {
-            dashboardTab(.waits)
+            waitsTab
                 .tabItem { Label("Waits", systemImage: "clock") }
                 .tag(DashboardSection.waits)
 
@@ -82,6 +82,65 @@ struct RootView: View {
         }
         .onChange(of: scenePhase) { _, newPhase in
             store.setSceneActive(newPhase == .active)
+        }
+    }
+
+    private var waitsTab: some View {
+        NavigationStack {
+            Group {
+                if store.selectedPark != nil {
+                    RideListView(query: $rideQuery, filter: $rideFilter, sort: $rideSort,
+                        radarOnly: false, usesNativeList: true,
+                        nativeHeader: AnyView(waitsHeader), nativeFooter: AnyView(attributionFooter))
+                } else {
+                    List {
+                        Section {
+                            Text("Choose your park to see current rides and waits.")
+                                .foregroundStyle(.secondary)
+                            Button("Choose a park") { showParkPicker = true }
+                                .frame(minHeight: 44)
+                                .accessibilityLabel("Change park. Current park: none")
+                        }
+                    }
+                    .listStyle(.insetGrouped)
+                    .refreshable { await store.refreshNow() }
+                }
+            }
+            .navigationTitle("Wait times")
+            .navigationBarTitleDisplayMode(.large)
+            .toolbar {
+                ToolbarItemGroup(placement: .topBarTrailing) {
+                    Button { showAlertSettings = true } label: { Image(systemName: "bell") }
+                        .accessibilityLabel("Ride alerts")
+                    Button { Task { await store.refreshNow() } } label: { Image(systemName: "arrow.clockwise") }
+                        .accessibilityLabel("Refresh ride data now")
+                        .disabled(store.selectedPark == nil || store.isRefreshing)
+                }
+            }
+        }
+        .environment(\.pivotScreenIsActive, selectedDockSection == .waits)
+    }
+
+    private var waitsHeader: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Button { showParkPicker = true } label: {
+                Label(store.selectedPark?.name ?? "Choose a park", systemImage: "mappin.and.ellipse")
+                    .font(.subheadline).frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
+            }
+            .accessibilityLabel("Change park. Current park: \(store.selectedPark?.name ?? "none")")
+            .buttonStyle(.plain)
+            if let park = store.selectedPark, let hours = store.parkHours(for: park) {
+                VStack(alignment: .leading, spacing: 3) {
+                    Text(parkHoursLine(hours))
+                    Text(earlyEntryLine(hours))
+                    if hours.stale { Text("Saved schedule · refresh pending").foregroundStyle(.orange) }
+                }.font(.caption).foregroundStyle(.secondary)
+            }
+            RetainedSnapshotNotice()
+            if store.selectedPark?.id == 65, store.snapshot?.parkId == 65,
+               let event = store.snapshot?.halloweenHorrorNights {
+                horrorNightSection(event, showHouses: true)
+            }
         }
     }
 

@@ -8,6 +8,9 @@ struct RideListView: View {
     @Binding var filter: RideListFilter
     @Binding var sort: RideSort
     let radarOnly: Bool
+    var usesNativeList = false
+    var nativeHeader: AnyView? = nil
+    var nativeFooter: AnyView? = nil
     @State private var selectedRide: LiveRide?
 
     private var rides: [LiveRide] {
@@ -15,6 +18,82 @@ struct RideListView: View {
     }
 
     var body: some View {
+        Group {
+            if usesNativeList {
+                nativeList
+            } else {
+                VStack(alignment: .leading, spacing: 16) {
+                    controls
+                    LazyVStack(spacing: 0) {
+                        if store.isLoading && store.snapshot == nil {
+                            HStack(spacing: 10) {
+                                ProgressView().tint(.primary)
+                                Text("Loading current rides…").font(.subheadline)
+                            }
+                            .frame(maxWidth: .infinity)
+                            .pivotCard()
+                        } else if rides.isEmpty {
+                            ContentUnavailableView {
+                                Label(emptyTitle, systemImage: effectiveFilter == .radar ? (store.canAssertNoClosures() ? "checkmark.circle" : "questionmark.circle") : "magnifyingglass")
+                            } description: { Text(emptyDetail) }
+                            .foregroundStyle(.primary)
+                            .frame(maxWidth: .infinity)
+                            .pivotCard()
+                        } else {
+                            ForEach(rides) { ride in
+                                RideRowView(ride: ride, timeZone: store.selectedPark?.timeZone ?? ParkTimeFormatter.selectedParkTimeZone) { selectedRide = ride }
+                                if ride.id != rides.last?.id { Divider().padding(.leading, 16) }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sheet(item: $selectedRide) { ride in
+            RideDetailScreenView(initialRide: ride, timeZone: store.selectedPark?.timeZone ?? ParkTimeFormatter.selectedParkTimeZone)
+        }
+    }
+
+    // Let the native List own the Waits viewport and cell virtualization. A
+    // SwiftUI LazyVStack measuring inside a hidden tab's ScrollView can oscillate.
+    private var nativeList: some View {
+        List {
+            if let nativeHeader {
+                Section { nativeHeader }
+            }
+            Section { controls.buttonStyle(.plain) }
+            Section {
+                if store.isLoading && store.snapshot == nil {
+                    HStack(spacing: 10) {
+                        ProgressView().tint(.primary)
+                        Text("Loading current rides…").font(.subheadline)
+                    }.frame(maxWidth: .infinity)
+                } else if rides.isEmpty {
+                    ContentUnavailableView {
+                        Label(emptyTitle, systemImage: effectiveFilter == .radar ? (store.canAssertNoClosures() ? "checkmark.circle" : "questionmark.circle") : "magnifyingglass")
+                    } description: { Text(emptyDetail) }
+                } else {
+                    ForEach(rides) { ride in
+                        RideRowView(ride: ride, timeZone: store.selectedPark?.timeZone ?? ParkTimeFormatter.selectedParkTimeZone) { selectedRide = ride }
+                            .listRowInsets(EdgeInsets())
+                            .listRowBackground(Color.pivotSurface)
+                    }
+                }
+            }
+            if let nativeFooter {
+                Section { nativeFooter }
+                    .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
+            }
+        }
+        .listStyle(.insetGrouped)
+        .scrollContentBackground(.hidden)
+        .background(Color.pivotBackground)
+        .scrollDismissesKeyboard(.interactively)
+        .refreshable { await store.refreshNow() }
+    }
+
+    private var controls: some View {
         VStack(alignment: .leading, spacing: 16) {
             if radarOnly {
                 HStack {
@@ -80,7 +159,7 @@ struct RideListView: View {
                 }
                 .padding(.horizontal, 13)
                 .frame(minHeight: 46)
-                .background(Color.pivotSurface, in: RoundedRectangle(cornerRadius: 13))
+                .background(usesNativeList ? Color.pivotBackground : Color.pivotSurface, in: RoundedRectangle(cornerRadius: 13))
 
                 Menu {
                     Picker("Sort rides", selection: $sort) {
@@ -90,7 +169,7 @@ struct RideListView: View {
                     Image(systemName: "arrow.up.arrow.down")
                         .font(.subheadline.weight(.semibold))
                         .frame(width: 46, height: 46)
-                        .background(Color.pivotSurface, in: RoundedRectangle(cornerRadius: 13))
+                        .background(usesNativeList ? Color.pivotBackground : Color.pivotSurface, in: RoundedRectangle(cornerRadius: 13))
                 }
                 .foregroundStyle(.primary)
                 .accessibilityLabel("Sort rides. Current sort: \(sort.rawValue)")
@@ -104,32 +183,6 @@ struct RideListView: View {
                     }
                 }.pickerStyle(.segmented)
             }
-
-            LazyVStack(spacing: 0) {
-                if store.isLoading && store.snapshot == nil {
-                    HStack(spacing: 10) {
-                        ProgressView().tint(.primary)
-                        Text("Loading current rides…").font(.subheadline)
-                    }
-                    .frame(maxWidth: .infinity)
-                    .pivotCard()
-                } else if rides.isEmpty {
-                    ContentUnavailableView {
-                        Label(emptyTitle, systemImage: effectiveFilter == .radar ? (store.canAssertNoClosures() ? "checkmark.circle" : "questionmark.circle") : "magnifyingglass")
-                    } description: { Text(emptyDetail) }
-                    .foregroundStyle(.primary)
-                    .frame(maxWidth: .infinity)
-                    .pivotCard()
-                } else {
-                    ForEach(rides) { ride in
-                        RideRowView(ride: ride, timeZone: store.selectedPark?.timeZone ?? ParkTimeFormatter.selectedParkTimeZone) { selectedRide = ride }
-                        if ride.id != rides.last?.id { Divider().padding(.leading, 16) }
-                    }
-                }
-            }
-        }
-        .sheet(item: $selectedRide) { ride in
-            RideDetailScreenView(initialRide: ride, timeZone: store.selectedPark?.timeZone ?? ParkTimeFormatter.selectedParkTimeZone)
         }
     }
 
