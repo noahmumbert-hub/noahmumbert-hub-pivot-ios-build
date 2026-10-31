@@ -661,6 +661,94 @@
       "generationSteps": []
     },
     {
+      "parkId": 7,
+      "rideId": 123,
+      "rideName": "The Twilight Zone™ Tower of Terror",
+      "alt": "Illustrated The Twilight Zone™ Tower of Terror at Disney’s Hollywood Studios",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:01:38.745432+00:00",
+      "originalSHA256": "3e0e08e5dedcc3997886b355599d4e32bd662bb7f7dc819f8d22f13b3925b91a",
+      "review": "Accepted: recognizable Florida Hollywood Tower Hotel silhouette, stucco, tiled upper towers, ruined central elevator facade and palms match the real photo; natural materials and believable evening lighting.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Hollywood_Tower_Hotel.jpg/1280px-Hollywood_Tower_Hotel.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Hollywood_Tower_Hotel.jpg",
+          "credit": "Benjamin D. Esham (bdesham)",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "alt": "The Twilight Zone Tower of Terror at Disney’s Hollywood Studios",
+          "sha256": "56d3b0cc420f9a6bbc712e8f779e4664ef890a6d6822a153253d7cc8ec716f7c",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "thumbnailFile": "7-123-thumbnail.jpg",
+      "thumbnailSHA256": "bb9c6f62fb34bdd7721aad89c1db04f523ebe7f82526a6f420200138f6207465",
+      "thumbnailBytes": 27939,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "7-123-detail.jpg",
+      "detailSHA256": "94156a43308d154bc672f44ab01bf4a59a4e81a0899781d1e4c64c3076b35e11",
+      "detailBytes": 242701,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "7-123",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT, accurately based on real attraction photo image 1. Image 2 supplies only the UI's restrained blue-purple evening mood. Natural photographic materials, believable physical perspective and softly balanced practical lighting, slight cinematic realism rather than painted brushwork or excessive orange glow. Keep authentic identifying ride features clear and central at thumbnail size. No screenshot UI, frame, border, overlaid labels or watermark. The Twilight Zone Tower of Terror at Disney's Hollywood Studios Florida: preserve the actual salmon-pink Hollywood Tower Hotel, asymmetrical upper Spanish-style towers and terracotta roofs, ruined dark central elevator facade and palms framing the avenue. Natural stucco texture and subtle warm windows, recognizably the Florida version. Main physical building sign may read HOLLYWOOD TOWER Hotel; no invented ghosts, lightning or close-up visitors.",
+      "promptSHA256": "1dfdebac784ce38076f926ff6fb3da167100648703d094b3391c896d41b92b0e",
+      "generationSteps": []
+    },
+    {
+      "parkId": 7,
+      "rideId": 5476,
+      "rideName": "Slinky Dog Dash",
+      "alt": "Illustrated Slinky Dog Dash at Disney’s Hollywood Studios",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:00:16.216298+00:00",
+      "originalSHA256": "426193bba7a2b1198a5d8c5a5e0ddb3221f0987f73fd9be0fd01c6bae4edbe98",
+      "review": "Accepted: real Slinky-shaped yellow/orange train sits on red rolling track with yellow columns and physical toy launch hoops; natural molded/steel textures preserve the actual ride design.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Slinky_Dog_Dash.jpg/1280px-Slinky_Dog_Dash.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Slinky_Dog_Dash.jpg",
+          "credit": "Freddo",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "alt": "Slinky Dog Dash at Disney’s Hollywood Studios",
+          "sha256": "9ac947fa7978312241f2f9648b7cdbe50c091c0d2c5788d1ad4173b933861414",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "thumbnailFile": "7-5476-thumbnail.jpg",
+      "thumbnailSHA256": "2b9d8e7d20aa064d91265af5a028416e80f174cf19dfb88fdaea609456b9ba45",
+      "thumbnailBytes": 26718,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "7-5476-detail.jpg",
+      "detailSHA256": "5f2a6dcb95771174cc5b5cbf19c6ea5a6e35b20c7d2b7e085412d7fd6881a90a",
+      "detailBytes": 194806,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "7-5476",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT, accurately based on real attraction photo image 1. Image 2 supplies only the UI's restrained blue-purple evening mood. Natural photographic materials, believable physical perspective and softly balanced practical lighting, slight cinematic realism rather than painted brushwork or excessive orange glow. Keep authentic identifying ride features clear and central at thumbnail size. No screenshot UI, frame, border, overlaid labels or watermark. Slinky Dog Dash at Disney's Hollywood Studios Florida: the actual dog-headed yellow/orange coaster train with silver spring-like bands, riding ON the red tubular truss track with yellow columns. Match the photographed low rolling track and toy-themed launch hoops with colorful arrow patterns below. Preserve physical train design and plausible wheels/track connections. No invented loops, exaggerated drops or unrelated ride hardware.",
+      "promptSHA256": "215ed5ae3bc45b7d037d62470cdd20d7d6b0c37d5a1ddc34bacf67b50d9f0155",
+      "generationSteps": []
+    },
+    {
       "parkId": 8,
       "rideId": 110,
       "rideName": "Expedition Everest - Legend of the Forbidden Mountain",
@@ -941,6 +1029,50 @@
       "key": "64-6004",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT using actual attraction photo image 1 for accurate physical details and image 2 only for the UI's subtle blue-purple evening mood. Natural photographic textures, plausible perspective, soft light with restrained highlights, clear identifiable subject at thumbnail size. Slightly realistic cinematic treatment, no painted brushwork, exaggerated orange sky, cartoon materials or fantasy scenery. No UI, borders, logos, text or watermark. The Incredible Hulk Coaster at Islands of Adventure, the actual cobra-roll track element over the lagoon in the reference photo. Preserve green steel track, tall pale-grey supports and authentic two-inversion cobra-roll geometry with its connecting upper section, viewed from waterside. Real green floodlighting against a subtle blue-purple evening sky, believable water reflections and distant buildings. Do not add Hulk characters, invented extra track loops or unsupported steel.",
       "promptSHA256": "261f069f5c014f6c9c041810d8d96cc43642a458863c7dad61783b5580245f30",
+      "generationSteps": []
+    },
+    {
+      "parkId": 65,
+      "rideId": 12107,
+      "rideName": "Illumination's Villain-Con Minion Blast",
+      "alt": "Illustrated Illumination's Villain-Con Minion Blast at Universal Studios Florida",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:03:13.966698+00:00",
+      "originalSHA256": "9784f61a3db10e27b027206bc9beb9b460f21205a193b93eb86116ca213b7e01",
+      "review": "Accepted: photographed yellow stepped soundstage, orange eye-pattern canopy, character banners and yellow Minion-crossing sign retain this attraction's identity; realistic building/sign materials and interpreted evening light.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Villain-Con_Minion_Blast_1.jpg/960px-Villain-Con_Minion_Blast_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20240128171020",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Villain-Con_Minion_Blast_1.jpg",
+          "credit": "Jeremy Thompson",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0/deed.en",
+          "alt": "Villain-Con Minion Blast building exterior at Universal Studios Florida",
+          "sha256": "1996245b2d1a52040403aefff8a648d0a53cd5dc2dd0a5048fb619e49c6b92f2",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/deed.en",
+      "thumbnailFile": "65-12107-thumbnail.jpg",
+      "thumbnailSHA256": "370749d0629449de3b429354a559d19e6471662b0e11f5b28215d7945b375a93",
+      "thumbnailBytes": 24891,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "65-12107-detail.jpg",
+      "detailSHA256": "3ae1182ee7634774a5de30436713dfcbb36f2f16c6d7a39925b98fbbacf31f47",
+      "detailBytes": 181619,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "65-12107",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT, accurately based on real attraction photo image 1. Image 2 supplies only the UI's restrained blue-purple evening mood. Natural photographic materials, believable physical perspective and softly balanced practical lighting, slight cinematic realism rather than painted brushwork or excessive orange glow. Keep authentic identifying ride features clear and central at thumbnail size. No screenshot UI, frame, border, overlaid labels or watermark. Illumination's Villain-Con Minion Blast at Universal Studios Florida: exact cream/yellow stepped soundstage facade with tall colorful character banners and a central Vicious 6 poster, orange/black eye-pattern entrance canopy, and yellow Minion-crossing road sign in the foreground with simple one-eyed Minion silhouette. Preserve the actual photographed attraction exterior, realistic building and sign materials. Omit small lettering and close-up visitors; no invented roller coaster or unrelated Minion ride.",
+      "promptSHA256": "909067956c492dc197ebe003ba7589e7fa8017c33ec500d4ebd359b37877ead2",
       "generationSteps": []
     }
   ]

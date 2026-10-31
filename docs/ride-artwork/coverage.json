@@ -364,11 +364,11 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 21,
-    "pendingIllustrations": 1103,
-    "acceptedForRequestedStyle": 20,
-    "unfinishedForRequestedStyle": 1104,
-    "blocked": 2
+    "acceptedIllustrations": 24,
+    "pendingIllustrations": 1100,
+    "acceptedForRequestedStyle": 23,
+    "unfinishedForRequestedStyle": 1101,
+    "blocked": 5
   },
   "parks": [
     {
@@ -908,7 +908,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "5-10916",
@@ -1753,10 +1753,10 @@
           "url": "https://darkridedatabase.com/rides/twilight-zone-tower-of-terror-2/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "7-5476",
@@ -1789,10 +1789,10 @@
           "url": "https://rcdb.com/13377.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "7-5477",
@@ -1828,7 +1828,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "7-6361",
@@ -1864,7 +1864,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "7-6368",
@@ -26302,10 +26302,10 @@
           "url": "https://www.thedeluxegroup.com/villian-con"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "65-13605",

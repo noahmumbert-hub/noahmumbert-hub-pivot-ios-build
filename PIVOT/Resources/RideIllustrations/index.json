@@ -601,6 +601,86 @@
       ]
     },
     {
+      "parkId": 7,
+      "rideId": 123,
+      "rideName": "The Twilight Zone™ Tower of Terror",
+      "alt": "Illustrated The Twilight Zone™ Tower of Terror at Disney’s Hollywood Studios",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:01:38.745432+00:00",
+      "originalSHA256": "3e0e08e5dedcc3997886b355599d4e32bd662bb7f7dc819f8d22f13b3925b91a",
+      "review": "Accepted: recognizable Florida Hollywood Tower Hotel silhouette, stucco, tiled upper towers, ruined central elevator facade and palms match the real photo; natural materials and believable evening lighting.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Hollywood_Tower_Hotel.jpg/1280px-Hollywood_Tower_Hotel.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Hollywood_Tower_Hotel.jpg",
+          "credit": "Benjamin D. Esham (bdesham)",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "alt": "The Twilight Zone Tower of Terror at Disney’s Hollywood Studios",
+          "sha256": "56d3b0cc420f9a6bbc712e8f779e4664ef890a6d6822a153253d7cc8ec716f7c",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "thumbnailFile": "7-123-thumbnail.jpg",
+      "thumbnailSHA256": "bb9c6f62fb34bdd7721aad89c1db04f523ebe7f82526a6f420200138f6207465",
+      "thumbnailBytes": 27939,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "7-123-detail.jpg",
+      "detailSHA256": "94156a43308d154bc672f44ab01bf4a59a4e81a0899781d1e4c64c3076b35e11",
+      "detailBytes": 242701,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 7,
+      "rideId": 5476,
+      "rideName": "Slinky Dog Dash",
+      "alt": "Illustrated Slinky Dog Dash at Disney’s Hollywood Studios",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:00:16.216298+00:00",
+      "originalSHA256": "426193bba7a2b1198a5d8c5a5e0ddb3221f0987f73fd9be0fd01c6bae4edbe98",
+      "review": "Accepted: real Slinky-shaped yellow/orange train sits on red rolling track with yellow columns and physical toy launch hoops; natural molded/steel textures preserve the actual ride design.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Slinky_Dog_Dash.jpg/1280px-Slinky_Dog_Dash.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Slinky_Dog_Dash.jpg",
+          "credit": "Freddo",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "alt": "Slinky Dog Dash at Disney’s Hollywood Studios",
+          "sha256": "9ac947fa7978312241f2f9648b7cdbe50c091c0d2c5788d1ad4173b933861414",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "thumbnailFile": "7-5476-thumbnail.jpg",
+      "thumbnailSHA256": "2b9d8e7d20aa064d91265af5a028416e80f174cf19dfb88fdaea609456b9ba45",
+      "thumbnailBytes": 26718,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "7-5476-detail.jpg",
+      "detailSHA256": "5f2a6dcb95771174cc5b5cbf19c6ea5a6e35b20c7d2b7e085412d7fd6881a90a",
+      "detailBytes": 194806,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
       "parkId": 8,
       "rideId": 110,
       "rideName": "Expedition Everest - Legend of the Forbidden Mountain",
@@ -835,6 +915,46 @@
       "detailFile": "64-6004-detail.jpg",
       "detailSHA256": "54413cab270f698237e43e7512020ce4206e4e3abf2964d2ad983ee52c9114a5",
       "detailBytes": 193912,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 65,
+      "rideId": 12107,
+      "rideName": "Illumination's Villain-Con Minion Blast",
+      "alt": "Illustrated Illumination's Villain-Con Minion Blast at Universal Studios Florida",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:03:13.966698+00:00",
+      "originalSHA256": "9784f61a3db10e27b027206bc9beb9b460f21205a193b93eb86116ca213b7e01",
+      "review": "Accepted: photographed yellow stepped soundstage, orange eye-pattern canopy, character banners and yellow Minion-crossing sign retain this attraction's identity; realistic building/sign materials and interpreted evening light.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Villain-Con_Minion_Blast_1.jpg/960px-Villain-Con_Minion_Blast_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20240128171020",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Villain-Con_Minion_Blast_1.jpg",
+          "credit": "Jeremy Thompson",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0/deed.en",
+          "alt": "Villain-Con Minion Blast building exterior at Universal Studios Florida",
+          "sha256": "1996245b2d1a52040403aefff8a648d0a53cd5dc2dd0a5048fb619e49c6b92f2",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/deed.en",
+      "thumbnailFile": "65-12107-thumbnail.jpg",
+      "thumbnailSHA256": "370749d0629449de3b429354a559d19e6471662b0e11f5b28215d7945b375a93",
+      "thumbnailBytes": 24891,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "65-12107-detail.jpg",
+      "detailSHA256": "3ae1182ee7634774a5de30436713dfcbb36f2f16c6d7a39925b98fbbacf31f47",
+      "detailBytes": 181619,
       "detailPixels": [
         768,
         960
