@@ -27,9 +27,24 @@ inspected. These results apply to that source revision.
 
 Full run 41221950134 tests exactly
 `37c039990060d9550aad3d3b2e59d02ddcc44a23`, including the portrait-fit change
-and twenty reviewed realistic images. It was still in progress at the last
-check. Its complete three-device and archive results must be verified before
-describing that revision as fully validated. Subsequent artwork-only commits
-need their own resource validation and must not be confused with this SHA.
+and twenty reviewed realistic images. SE passed 198 unit and 26 UI tests,
+including the original Legal attribution journey. Pro Max passed 198 unit and
+25 of 26 UI tests; its sole failure was keyboard focus in the production map
+search test after returning from the places sheet and selecting Rides. The
+recording shows the category menu still present, and XCTest's subsequent search
+tap computed hit point {-1, -1} before typing failed. The cause of the failed
+menu interaction is unresolved; this does not establish an artwork regression
+or a map product defect. Production map code and the failing test are unchanged.
+The Pro build/archive job was still finishing at the last check. This full run
+must not be described as a pass.
+
+Focused artwork run 41222941027 on exact source
+`d5462c7c5d261fda48ecbe6b5d4f120c723f09e6` passed three unit and four UI tests.
+Actual screenshots were inspected: the portrait-fit view preserves the original
+Starblaster tip and base, and generated-image disclosure, reference attribution,
+current waits and planning remain exercised. These results precede the new
+optional adaptation-license handling and sixteen further resources. The final
+native change needs its own full three-device and archive gate; do not carry a
+prior SHA's pass forward as validation of a newer artifact.
 Any release requires current authorization and validation of its actual final
 artifact/revision; this artwork request has not authorized publication.

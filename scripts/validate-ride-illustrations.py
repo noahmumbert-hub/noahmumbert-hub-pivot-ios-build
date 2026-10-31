@@ -51,6 +51,9 @@ def main():
         assert record["originalSHA256"] not in hashes, f"Artwork reused across distinct ride IDs: {key}"
         hashes.add(record["originalSHA256"])
         assert record["references"], f"Missing real-photo reference: {key}"
+        assert bool(record.get("license")) == bool(record.get("licenseURL")), f"Incomplete artwork license: {key}"
+        if record.get("licenseURL"):
+            assert record["licenseURL"].startswith("https://")
         for ref in record["references"]:
             assert ref["pixelReviewed"] and ref["credit"] and ref["license"]
             assert ref["sourceURL"].startswith("https://") and ref["licenseURL"].startswith("https://")

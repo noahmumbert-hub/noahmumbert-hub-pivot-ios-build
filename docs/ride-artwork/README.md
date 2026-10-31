@@ -30,6 +30,12 @@ marked as AI art in ride cards and AI-generated illustrations in ride details;
 original photographers are credited as references rather than as the creators
 of the generated images.
 
+Reference-photo rights remain distinct from any generated-artwork license.
+Publisher-owned references link to the publisher and its retained-rights terms;
+they do not receive an invented Creative Commons grant. These source photos
+remain outside the app bundle and public repository. Where a verified reference
+specifies CC adaptation terms, the artwork continues to carry that attribution.
+
 The app bundles 256×320 thumbnails and 768×960 detail copies. Larger generated
 originals remain preserved outside the app bundle. ImageMagick performs only
 mechanical downsampling/JPEG encoding during packaging, not artwork generation

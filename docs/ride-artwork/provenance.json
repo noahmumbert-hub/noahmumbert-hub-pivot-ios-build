@@ -944,6 +944,420 @@
       "generationSteps": []
     },
     {
+      "parkId": 32,
+      "rideId": 6173967272242,
+      "rideName": "WONDER WOMAN™ Flight of Courage",
+      "alt": "Illustrated WONDER WOMAN™ Flight of Courage at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:16:34.623517+00:00",
+      "originalSHA256": "9045490be774b7f21aac9c4b6527e13156eb5fd7037b35d2c9249c9e524e7959",
+      "review": "Accepted: yellow single box rail, red columns, blue single-file train with red nose, visible wheel assemblies and Magic Mountain palms retain the reference identity; natural metal and evening light.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe8e85b17f040f6b825fb1db9c6675060d01f65e5-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/wonder-woman-flight-of-courage",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "WONDER WOMAN™ Flight of Courage at Six Flags Magic Mountain with riders on a high turn.",
+          "sha256": "c73808a896484faf0e81e4122dd1a698da0a3deab02864002ab347be1e256c5c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official attraction page and viewed photo identify Magic Mountain single-rail coaster: yellow rail, red supports, blue single-file train/red nose and palms."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-6173967272242-thumbnail.jpg",
+      "thumbnailSHA256": "8f728a203656f9144877fc0694275b7e6aa2d8846523a05892eea5f1da01227f",
+      "thumbnailBytes": 28268,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-6173967272242-detail.jpg",
+      "detailSHA256": "5cc6b3d50575cf8e4a713d3f83acb36cc810b69f6201e4e24b78ef612ad504c9",
+      "detailBytes": 169020,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-6173967272242",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based closely on real attraction photo image 1. Image 2 supplies only restrained blue-purple evening mood. Natural photographic materials, believable physical perspective and softly balanced practical lighting; more realistic than a painted illustration. Preserve authentic identifying ride hardware, geometry and colors; center the subject clearly for thumbnail use. No screenshot UI, frames, borders, overlaid labels, watermark or invented lettering. WONDER WOMAN Flight of Courage at Six Flags Magic Mountain: yellow SINGLE narrow box rail on red columns, blue single-file train with red nose and one seat across as photographed, realistic wheel bogies connected to the yellow rail. Preserve this elevated sloping track scene with palm trees. No character portrait or invented double-wide coaster train.",
+      "promptSHA256": "d34a1f6ace62c83dc0fb01727d15ad4fa292b69513099568fee5b59b998edfff",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
+      "rideId": 35625520485518,
+      "rideName": "Swashbuckler",
+      "alt": "Illustrated Swashbuckler at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:15:16.986297+00:00",
+      "originalSHA256": "40892e192825ce1f24200f2e667c181573e3888986ef0af56017b2f7867f3ea1",
+      "review": "Accepted: blue lattice mast, yellow radial arms, thin chain suspension and gray individual swing chairs match the real Swashbuckler photo, with realistic steel and wooded surroundings.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbf36b282edafe431343d4e00ccfbac6f972708f8-1400x350.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/swashbuckler",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Swashbuckler swing ride in motion at Six Flags Magic Mountain, featuring rows of suspended seats.",
+          "sha256": "79c26deca7224fc78658e51fda4c240fe2a64a93a2363881b07b27b3ac120a7b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Swashbuckler page and viewed photo: blue mast, yellow radial arms, metal chain swing chairs against wooded slope. Photo is a narrow crop; avoid inventing canopy."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-35625520485518-thumbnail.jpg",
+      "thumbnailSHA256": "7631f56d802a92cb44d57f61223bfb0df01dfd7ef89dad2fe1869acde9919461",
+      "thumbnailBytes": 28380,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-35625520485518-detail.jpg",
+      "detailSHA256": "b6961f14367d80f6b3c57bc14429ce06ccde55c40429f8ab13e1e293d8b21f01",
+      "detailBytes": 249996,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-35625520485518",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based closely on real attraction photo image 1. Image 2 supplies only restrained blue-purple evening mood. Natural photographic materials, believable physical perspective and softly balanced practical lighting; more realistic than a painted illustration. Preserve authentic identifying ride hardware, geometry and colors; center the subject clearly for thumbnail use. No screenshot UI, frames, borders, overlaid labels, watermark or invented lettering. Swashbuckler at Six Flags Magic Mountain: preserve the photo's actual blue central lattice mast, yellow radial arms, many thin steel chains, gray individual swing chairs and wooded hillside. Recompose as a portrait showing the central mast and suspended chairs; authentic steel and cable textures, no invented ornate carousel canopy.",
+      "promptSHA256": "7e54cf61d54d05be5be1bddcdac11d5aeb12790f65cc848d6fbd1ea1a26bb78f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 33,
+      "rideId": 19192107735555,
+      "rideName": "Congo Queen",
+      "alt": "Illustrated Congo Queen at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:18:41.233335+00:00",
+      "originalSHA256": "ea50261adc5039892eb8a8dca6c1c4d24cdb1da6d1fd9184463e263733d3d9b5",
+      "review": "Accepted: small brown tugboat with gray wheelhouse, colored lifebuoys, round red-edged Congo Queen sign, mechanical track and pine setting match the actual Discovery Kingdom reference; realistic fiberglass and timber.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb5bb9c75978c1bdaecf5b00268048517afea53f2-716x470.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/congo-queen",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Close-up of the Congo Queen boat at Six Flags Discovery Kingdom, showcasing the ride's design and sign.",
+          "sha256": "a1fe7d915d51935b6edcecac48a63cc8be1b2c6a67bd36336b48034c6054b70e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official page and viewed photo identify Congo Queen small tugboat ride: brown hull, gray wheelhouse, colored lifebuoys, circular red-edged sign and wooded site."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-19192107735555-thumbnail.jpg",
+      "thumbnailSHA256": "15cd776e6e774b4dc2fe74bd06c60ac28b8a8d835a75f4e4a7e63cd954c63cb9",
+      "thumbnailBytes": 29081,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-19192107735555-detail.jpg",
+      "detailSHA256": "6f9b9c50c991ec67049085eff9d030bcf08c71806318506ffd09f51c62dfd20b",
+      "detailBytes": 210571,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "33-19192107735555",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based on actual attraction photo image 1. Image 2 supplies only restrained blue-purple dusk atmosphere. Believable physical perspective, natural photographic materials and moderate practical lights; slightly cinematic, not painted or cartoon. Preserve identifying real hardware, colors and layout. Center the attraction for thumbnail readability. No UI, frame, border, watermark or overlaid caption. Avoid small illegible text. Congo Queen at Six Flags Discovery Kingdom: preserve actual small brown cartoon-shaped tugboat ride on its shallow mechanical track, gray arch-window wheelhouse with brown roof and blue/yellow details, red/yellow/blue lifebuoys, wood/rope fence and pine trees. The physical round red-edged Congo Queen sign in foreground may read CONGO QUEEN clearly; retain pictured boat layout rather than invent a full-size riverboat. Show realistic painted fiberglass and weathered timber.",
+      "promptSHA256": "969216bd3b4b53be0ed16ece174210ac3711a20f8b9900d95277fd49f7438e25",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 6240016210695,
+      "rideName": "Runaway Mine Train",
+      "alt": "Illustrated Runaway Mine Train at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:20:02.870424+00:00",
+      "originalSHA256": "fd1ef865a7759b6584eb945bb11d025752c7f52aa930f5c649ed68455fa0e35c",
+      "review": "Accepted: rustic timber mine building, rusty corrugated roof, wooden railings, small gray mine cars and low curved steel rails amid trees match the real Over Texas ride photo.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F6e5f92eb6b034732753f4912b86d24ee07b227a4-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/runaway-mine-train",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders experiencing the excitement of the Runaway Mine Train roller coaster at Six Flags Over Texas.",
+          "sha256": "04237beafa2f2bf664d9f095e2b5de29f7b8b828d71089f7d7aea52ae9edd06c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official page and viewed photo identify Runaway Mine Train at Over Texas: rustic timber mine building, rusty roof, small dark mine cars on low curved steel track in woods."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-6240016210695-thumbnail.jpg",
+      "thumbnailSHA256": "925fab06085688591c6b04faa954da430924b0311a2287734e2f5519653ee58c",
+      "thumbnailBytes": 30074,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-6240016210695-detail.jpg",
+      "detailSHA256": "9dd160e4c87bbd5fbcb4583aa137c99d0d9328d3688619952d17b248f154c7d2",
+      "detailBytes": 241107,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-6240016210695",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based on actual attraction photo image 1. Image 2 supplies only restrained blue-purple dusk atmosphere. Believable physical perspective, natural photographic materials and moderate practical lights; slightly cinematic, not painted or cartoon. Preserve identifying real hardware, colors and layout. Center the attraction for thumbnail readability. No UI, frame, border, watermark or overlaid caption. Avoid small illegible text. Runaway Mine Train at Six Flags Over Texas: match the actual rustic brown timber mine building, corrugated rusty red roof, wooden railings and mine-car train on low curved brown steel rails emerging from the structure among dense green trees. Preserve small gray/black mine cars and real woodland setting. No huge mountain, fantasy mine, giant drop or unrelated Disney design. Omit small station lettering and focus on hardware rather than close-up people.",
+      "promptSHA256": "06356be9e01019501927f0430aaaba43aee57e24fea20db04b69a00a127b0d41",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 355690524725,
+      "rideName": "Twisted Cyclone",
+      "alt": "Illustrated Twisted Cyclone at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:19:08.085690+00:00",
+      "originalSHA256": "40f719e7a51522c016971bd8c2011e3b22eb24ce07a33b8875062048a054d5d7",
+      "review": "Accepted: blue I-box steep drop, white wood lattice, silver train with sports-car front and physical Twisted Cyclone sign preserve the photographed hybrid coaster's identity.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2b183feadfd08ce9be4d178f4518dcca3a95cf1f-4096x2731.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/twisted-cyclone",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders with their arms up as they ride the Twisted Cyclone roller coaster at Six Flags Over Georgia.",
+          "sha256": "059951c0ebf1103938a10c592ae5c2be76e14b782e26e4527f5ce7427611dd61",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official page and viewed photo identify Twisted Cyclone: bright blue I-box drop, white wood lattice, silver train with sports-car front and mounted name sign."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-355690524725-thumbnail.jpg",
+      "thumbnailSHA256": "db4fe83d573763026ffb7f2bda53d91c6909ad72490e5a8f211af26cb2e9e36c",
+      "thumbnailBytes": 31193,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-355690524725-detail.jpg",
+      "detailSHA256": "f1264df748590ae114cdf18c3eef7c1428f0207f865d63bfaa7a3756640e1238",
+      "detailBytes": 233167,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-355690524725",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based on actual attraction photo image 1. Image 2 supplies only restrained blue-purple dusk atmosphere. Believable physical perspective, natural photographic materials and moderate practical lights; slightly cinematic, not painted or cartoon. Preserve identifying real hardware, colors and layout. Center the attraction for thumbnail readability. No UI, frame, border, watermark or overlaid caption. Avoid small illegible text. Twisted Cyclone at Six Flags Over Georgia: preserve this photo's authentic blue I-box track with steep curved first drop, dense white-painted wood lattice supports and silver/gray train with classic sports-car front descending ON the track. Low sweeping blue track in foreground. Full recognizable drop in portrait, natural wood/steel details. The physical mounted sign may read TWISTED CYCLONE; no invented track intersections, loops or floating cars.",
+      "promptSHA256": "8f57af639c25a8069fbcaabb45e1ef93974947a8502a9d635ced3221de77a83d",
+      "generationSteps": []
+    },
+    {
+      "parkId": 37,
+      "rideId": 10024564956838,
+      "rideName": "Jersey Devil Coaster",
+      "alt": "Illustrated Jersey Devil Coaster at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:20:34.538932+00:00",
+      "originalSHA256": "b579c1ddaddab1872e673c15d409f0ca2a2ab4ccfc026580a3861fadaedcd3b5",
+      "review": "Accepted: orange single box rail, dark gray columns, red single-file train with visible wheel assemblies and leafy framing match the actual Jersey Devil airtime crest photograph.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F61c24c915533f8020611e3d1cfeda640a3b9f500-2400x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/jersey-devil-coaster",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Jersey Devil Coaster at Six Flags Great Adventure",
+          "sha256": "5df00da82d4042dc771ce0df81f1e3eed391acc606dd6c407080ca45ccb4b846",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official page and viewed photo identify Jersey Devil: orange single rail, red single-file train with black wheel bogies, dark gray supports and leafy framing."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-10024564956838-thumbnail.jpg",
+      "thumbnailSHA256": "3b593359424428a11b978335ae1fb14583aee7c85b848d3021c6562cc91f5ce3",
+      "thumbnailBytes": 22991,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-10024564956838-detail.jpg",
+      "detailSHA256": "488deeda806258f42405e10924f8db6fd1422145a8acf58fd60248b5582005b9",
+      "detailBytes": 138144,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "37-10024564956838",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based on actual attraction photo image 1. Image 2 supplies only restrained blue-purple dusk atmosphere. Believable physical perspective, natural photographic materials and moderate practical lights; slightly cinematic, not painted or cartoon. Preserve identifying real hardware, colors and layout. Center the attraction for thumbnail readability. No UI, frame, border, watermark or overlaid caption. Avoid small illegible text. Jersey Devil Coaster at Six Flags Great Adventure: exact photographed orange SINGLE narrow box rail over rounded airtime crest, dark gray tubular support columns, red SINGLE-FILE articulated train with one seat across on rail and visible black wheel bogies. Leaves frame the view. Keep continuous physical rail and authentic profile, no double-wide train or unrelated coaster. Real metal details and dusk lighting.",
+      "promptSHA256": "0dc75d3a80386308ce79b9a0a01dab1d005af650ab231d15ea17c73784a0e0b8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 222079749455837,
+      "rideName": "Raging Bull",
+      "alt": "Illustrated Raging Bull at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:21:30.903814+00:00",
+      "originalSHA256": "8b9523583620ee88882937399e771d2a9b7f19b572d744577d8f7b350907bff8",
+      "review": "Accepted: coral track, purple columns, dark red four-across train with yellow lap restraints, bull-decorated nose and adjacent gray lift preserve the real Raging Bull installation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F3502f5c54f0f777f6dd0864579fe07eefb1af237-7952x5304.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/raging-bull",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on Six Flags Great America's Raging Bull roller coaster during a steep drop, with trees in the foreground.",
+          "sha256": "93a3e064e60bc9626e0ee84de4d9e7d921384b3c78f38fd62ec4ff51a3cd9bb8",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official page and viewed photo identify Raging Bull: coral/orange track, purple columns, four-across dark red train with yellow lap restraints and dark gray adjacent lift."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-222079749455837-thumbnail.jpg",
+      "thumbnailSHA256": "fc7a84994f7411282918edcc0aa12e40d3b9a9e7ae865660fd9ba34d09078717",
+      "thumbnailBytes": 29396,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-222079749455837-detail.jpg",
+      "detailSHA256": "a729bbb0e9e957190b49b766a48e8604cf9dd1f937b0b7f37c7366f48aa285d3",
+      "detailBytes": 183617,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-222079749455837",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based closely on actual attraction photo image 1. Image 2 supplies only restrained blue-purple dusk atmosphere. Believable physical perspective, natural photographic materials and moderate practical lights; slightly cinematic, not painted or cartoon. Preserve identifying real hardware, colors and layout. Center the attraction for thumbnail readability. No UI, frame, border, watermark or overlaid caption. Avoid small illegible text. Raging Bull at Six Flags Great America: match photo's actual orange/coral track on purple/mauve support columns, dark red train with four seats across and yellow lap restraints descending a steep bend. Nearby dark gray lift track as photographed and green foliage below. Plausible bogies ON rails, real metal surfaces; no inversions, invented hanging seats or unrelated ride.",
+      "promptSHA256": "5fbd9398f3edf3ef933d5daf0ac70f10bbc7601393d48567b0b2b28d4213821e",
+      "generationSteps": []
+    },
+    {
+      "parkId": 39,
+      "rideId": 3962859292030,
+      "rideName": "Grand Carousel",
+      "alt": "Illustrated Grand Carousel at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:20:33.814915+00:00",
+      "originalSHA256": "acdd59cecab6b0b1858973704ecd9b8c2b33a9fd7d8c85847d0c2a48052991e5",
+      "review": "Accepted: turquoise scalloped pavilion, red/orange columns, gold star medallions, blue/gold Grand Carousel sign and physical carousel inside match Fiesta Texas rather than a generic carousel.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2fd9fd3d56df1116022fa89789442d78c98904fa-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/fiestatexas/attractions/grand-carousel",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Six Flags Fiesta Texas' Grand Carousel, a beautifully decorated carousel for kids in San Antonio.",
+          "sha256": "2c655fc67b6dba888cf41c069f2657731e32614d25bd52199df57f809d67f978",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official page and viewed photo identify Fiesta Texas Grand Carousel: turquoise scalloped fascia, red/orange columns, gold star medallions, blue/gold entrance sign and lit carousel."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-3962859292030-thumbnail.jpg",
+      "thumbnailSHA256": "d63174a6584fe50d4e0382b880aed1ec9e79e98473ffbc6e71e3a207e92f9745",
+      "thumbnailBytes": 32355,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-3962859292030-detail.jpg",
+      "detailSHA256": "145abc606a5fcab98b3e107a22b2e61a00e90c6e8761eba68ac50f71b6f1c4f3",
+      "detailBytes": 215440,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "39-3962859292030",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based closely on actual attraction photo image 1. Image 2 supplies only restrained blue-purple dusk atmosphere. Believable physical perspective, natural photographic materials and moderate practical lights; slightly cinematic, not painted or cartoon. Preserve identifying real hardware, colors and layout. Center the attraction for thumbnail readability. No UI, frame, border, watermark or overlaid caption. Avoid small illegible text. Grand Carousel at Six Flags Fiesta Texas: match photographed turquoise/teal scalloped pavilion fascia and roof, red columns with orange capitals and round gold star decorations, ornate carousel with carved animals inside and warm carnival bulbs. Preserve the physical blue and gold GRAND CAROUSEL entrance sign clearly readable and authentic location design. Natural painted metal/wood, no fantasy palace or extra carousel towers.",
+      "promptSHA256": "e79378ad23bf66f32f0b38964b301d61c9f420dea0165f4cfc2f67d004b861a2",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 9103657575778,
+      "rideName": "1909 Illions Grand Carousel",
+      "alt": "Illustrated 1909 Illions Grand Carousel at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:19:48.750221+00:00",
+      "originalSHA256": "9624bc2b3671dc57ee55cf922c891c77f4c95f273d9aedd43c7f7ad069c9c280",
+      "review": "Accepted: pale sage/cream Victorian pavilion, rose roof, stained-glass clerestory, teal cupola, black fence and warm-lit carousel match New England's 1909 Illions Grand Carousel.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F410759db246d4ad519da89fac8ad989bc1efc467-1920x1371.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/1909-illions-carousel",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "The 1909 Illions Grand Carousel at Six Flags New England with a charming historic pavilion structure.",
+          "sha256": "7e0d14875f28002ebb9c6291424d05d125190cdfb6fd9ead871752e20205c9cc",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official page and viewed photo identify New England 1909 Illions Grand Carousel: pale sage/cream Victorian pavilion, rose roof, stained-glass clerestory, teal cupola and black iron fence."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-9103657575778-thumbnail.jpg",
+      "thumbnailSHA256": "c8498535fb8c925ec17299b970df95ee2d58bf1b23032b1f918a1065864baa3c",
+      "thumbnailBytes": 24666,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-9103657575778-detail.jpg",
+      "detailSHA256": "69006ababc905d127eff2bbbfbd4de45278049888025b22332947b088fec5530",
+      "detailBytes": 222284,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-9103657575778",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based closely on actual attraction photo image 1. Image 2 supplies only restrained blue-purple dusk atmosphere. Believable physical perspective, natural photographic materials and moderate practical lights; slightly cinematic, not painted or cartoon. Preserve identifying real hardware, colors and layout. Center the attraction for thumbnail readability. No UI, frame, border, watermark or overlaid caption. Avoid small illegible text. 1909 Illions Grand Carousel at Six Flags New England: match the actual octagonal pale sage/cream Victorian pavilion, broad rose-red shingle roof, upper clerestory with stained-glass panels and small teal cupola, white ornate columns and black wrought-iron fence, lit carousel inside. Preserve whole pavilion identity and flowerbeds in portrait, natural wood textures, no invented towers or close-up characters; omit small signage rather than invent text.",
+      "promptSHA256": "12b8b3cf40cc444b02af3294ff4abff5f5be4c4984fb724550dca2ab2a0cf8e8",
+      "generationSteps": []
+    },
+    {
       "parkId": 50,
       "rideId": 85197605068999,
       "rideName": "Iron Dragon",
@@ -985,6 +1399,328 @@
       "key": "50-85197605068999",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT using actual attraction photo image 1 for accurate physical details and image 2 only for the UI's subtle blue-purple evening mood. Natural photographic textures, plausible perspective, soft light with restrained highlights, clear identifiable subject at thumbnail size. Slightly realistic cinematic treatment, no painted brushwork, exaggerated orange sky, cartoon materials or fantasy scenery. No UI, borders, logos, text or watermark. Iron Dragon at Cedar Point. Precisely show the real suspended coaster: dark swinging enclosed-bottom cars hanging BELOW the red-orange overhead track, with yellow/orange supports beside a small lagoon and trees. Keep hanging cars physically attached to their real track. Avoid turning it into a conventional seated-on-top coaster. Omit the unrelated large coaster towers and large utility pipes from the background/foreground; emphasize only Iron Dragon's identifiable train, track and lagoon.",
       "promptSHA256": "8b57ac9da831a34cd8f8dd45ae302af0a8a5d8e2f5ccd42ebf2b2db3bd16cc71",
+      "generationSteps": []
+    },
+    {
+      "parkId": 58,
+      "rideId": 3530125666214,
+      "rideName": "Drop Tower",
+      "alt": "Illustrated Drop Tower at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:18:15.852982+00:00",
+      "originalSHA256": "54111aa5b41a7ac7ecae34ac631e1969505b83b5b6503d010a39807c7578fb69",
+      "review": "Accepted: purple/pink tower, silver guide rails, separate black outward-facing gondolas and circular top cap match the photographed Canada's Wonderland Drop Tower.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7ffb552b5c63b15cbefeaae436b1708eaa5ccfe1-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/drop-tower",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A view of guests going up Drop Tower",
+          "sha256": "9f26a16f8504535de7c6a981fc67330283ec90d3a514406cef4c59f6031ba9b3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Drop Tower page and viewed photo: purple/pink mast, silver guide rails, separate black gondolas and circular top cap."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-3530125666214-thumbnail.jpg",
+      "thumbnailSHA256": "8e470e13e75324b167942bacf926297786c7a67938f794b638679f5ce6984534",
+      "thumbnailBytes": 19198,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-3530125666214-detail.jpg",
+      "detailSHA256": "b8b17a7c1d723372ae6a4cc9ba681903132b7f5c197e111b10176b6741400e03",
+      "detailBytes": 126994,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "58-3530125666214",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based closely on real attraction photo image 1. Image 2 supplies only restrained blue-purple evening mood. Natural photographic materials, believable physical perspective and softly balanced practical lighting; more realistic than a painted illustration. Preserve authentic identifying ride hardware, geometry and colors; center the subject clearly for thumbnail use. No screenshot UI, frames, borders, overlaid labels, watermark or invented lettering. Drop Tower at Canada's Wonderland: low angle view up the photo's actual purple/pink vertical drop tower with parallel silver guide rails, separate small black outward-facing gondolas with dangling feet and circular dark cap. Natural metal details and grounded scale, no circular ring gondola or fantasy tower.",
+      "promptSHA256": "ce8f7f67823acb6ef05bdf5138ae925b4c42a3b4cdc57f23477f4afba6ea141c",
+      "generationSteps": []
+    },
+    {
+      "parkId": 58,
+      "rideId": 3561804630704,
+      "rideName": "Behemoth",
+      "alt": "Illustrated Behemoth at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:17:35.304405+00:00",
+      "originalSHA256": "15574bdc07ce515b831086eb32b2f22139db4ffc91296745a273ba9a8a82ab6c",
+      "review": "Accepted: tall yellow-orange non-inverting hypercoaster track on deep blue columns, red train on the crest/drop and rolling hills preserve Behemoth geometry and colors.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff97092fcf59ad4af41f476e94af224303713a168-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/behemoth",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "The Blue and Yellow large rollercoaster, Behemoth.",
+          "sha256": "5a5004f52648f37b465b5292795ee09ce0f0b1a83b62d00c4e4cdd5bd2d338fd",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Behemoth page and viewed photo: yellow-orange track, deep blue columns, red train on tall crest/drop with non-inverting hills."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-3561804630704-thumbnail.jpg",
+      "thumbnailSHA256": "b5f3a8e86ded17e2062d82b9bfcf4362a1428c4ec8e0edaa918fa1ba82d04358",
+      "thumbnailBytes": 25020,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-3561804630704-detail.jpg",
+      "detailSHA256": "0bdd7ff2e940347337ffdbc8f4673c531feae232bb38c6af8fe48b90c9d007b9",
+      "detailBytes": 195544,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "58-3561804630704",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based closely on real attraction photo image 1. Image 2 supplies only restrained blue-purple evening mood. Natural photographic materials, believable physical perspective and softly balanced practical lighting; more realistic than a painted illustration. Preserve authentic identifying ride hardware, geometry and colors; center the subject clearly for thumbnail use. No screenshot UI, frames, borders, overlaid labels, watermark or invented lettering. Behemoth at Canada's Wonderland: the photo's tall yellow-orange steel hypercoaster track with deep blue supports, rounded crest and steep drop, red train visibly ON the track near the crest; lower rolling hills and trees. Preserve plausible continuous track geometry; no inversions or invented loops.",
+      "promptSHA256": "ff4b39d299d3bd5b36ee16417cb3c20cd468f97228f5d1e491afa645cd6b23a7",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 22859144152735,
+      "rideName": "Boogie Board Racer",
+      "alt": "Illustrated Boogie Board Racer at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:15:49.146837+00:00",
+      "originalSHA256": "e1be3374266de49dd4c9da20995772217d7aca24d5a606324be22c654c62d1f3",
+      "review": "Accepted: six colored tube mouths and mat-slide lanes, separate shallow runout channels, gray framework and turquoise side building match the real Boogie Board Racer reference; realistic water and fiberglass.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5e9917c60b6d1a3b093e218f2347bd2d4dc46fb4-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/boogie-board-racer",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Boogie Board Racer at Carowinds",
+          "sha256": "388e6ee4d326ca5fb6cc42f853258e107f3d38c55c7df84b87db8b89b7f30222",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Boogie Board Racer page and viewed photo: six mat racing slide lanes, multicolored tube exits and blue mats in individual runout channels."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-22859144152735-thumbnail.jpg",
+      "thumbnailSHA256": "3b60e353715eb6cbe38247b3b504fbc8ae721de350f1a54bbabd54ec8b53e720",
+      "thumbnailBytes": 30102,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-22859144152735-detail.jpg",
+      "detailSHA256": "575f7b283f12b4f44ea28b34708b1d8733429284217e231f9f22ff432e423f73",
+      "detailBytes": 234996,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-22859144152735",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based closely on real attraction photo image 1. Image 2 supplies only restrained blue-purple evening mood. Natural photographic materials, believable physical perspective and softly balanced practical lighting; more realistic than a painted illustration. Preserve authentic identifying ride hardware, geometry and colors; center the subject clearly for thumbnail use. No screenshot UI, frames, borders, overlaid labels, watermark or invented lettering. Boogie Board Racer at Carowinds Carolina Harbor: preserve the actual six parallel mat-racing water slide exits in photo, multicolor enclosed tube mouths leading to open racing lanes and six separate shallow runout channels, gray support framework, turquoise side building and blue mats. Recompose from slightly higher/longer view to show all six lanes in portrait. Natural water foam and fiberglass, no invented vertical tower, no close-up identifiable people.",
+      "promptSHA256": "854a7001f4eb4535d679737125f899dc5bcd4fcb5f46746c609bf07fc679092d",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 39475357863823,
+      "rideName": "Tidal Wave Bay",
+      "alt": "Illustrated Tidal Wave Bay at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:15:00.238025+00:00",
+      "originalSHA256": "8c6a69923ea8046ac6b14dd5b72b17ad694037bdce05be324cf424c4a98ba18d",
+      "review": "Accepted: yellow building with red roof and three white gables, broad turquoise pool, blue umbrellas and two foreground fountain jets match the actual Tidal Wave Bay photograph; natural evening water reflections.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9770e14854dbf7a86494aa3a33d8a5c1e61fc572-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/tidal-wave-bay",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Tidal Wave Bay at Carowinds' Carolina Harbor",
+          "sha256": "015591fcacf42a262ab8e619b9fe2b531a369eb5341d5f09104a04006853e654",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Tidal Wave Bay page and viewed photo: broad wave pool, yellow building with red roof and three white gables, blue umbrellas, foreground jets."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-39475357863823-thumbnail.jpg",
+      "thumbnailSHA256": "6b5f94ca3a2772f4f454bc1da0cec3515f49bbd47baaeb14ee342704c70167bf",
+      "thumbnailBytes": 22949,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-39475357863823-detail.jpg",
+      "detailSHA256": "6fb4323a3fc0fc9cc127c77ced812b3412f8d4d9dfd19bdbc3d235004d77475e",
+      "detailBytes": 183046,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-39475357863823",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based closely on real attraction photo image 1. Image 2 supplies only restrained blue-purple evening mood. Natural photographic materials, believable physical perspective and softly balanced practical lighting; more realistic than a painted illustration. Preserve authentic identifying ride hardware, geometry and colors; center the subject clearly for thumbnail use. No screenshot UI, frames, borders, overlaid labels, watermark or invented lettering. Tidal Wave Bay at Carowinds Carolina Harbor: actual wide turquoise wave pool, yellow rear building with red metal roof and three white gabled trims, blue umbrellas and white rails on sides, two small foreground fountain jets. Preserve the photographed pool/building arrangement. Calm blue-hour water with subtle warm building lights. Omit all signage rather than invent lettering; no unrelated water slides or giant surf waves.",
+      "promptSHA256": "af72b572c39afc0fcf515097991f42f29b08b16471654972770562c5dd890131",
+      "generationSteps": []
+    },
+    {
+      "parkId": 60,
+      "rideId": 9600564880643,
+      "rideName": "K.I. & Miami Valley Railroad",
+      "alt": "Illustrated K.I. & Miami Valley Railroad at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:16:58.039873+00:00",
+      "originalSHA256": "89c693b583ea2bd8d2f646baa01a073623a20d3c45a7c6c30f5a24cd5a220757",
+      "review": "Accepted: green/gold No.19 locomotive, black flared smokestack, brass bell, round headlamp, slatted cowcatcher, open green coaches and red-roofed station preserve the actual Kings Island train; natural metal, steam and timber.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/0c30dd89e30c433896321ef000d2317acfc3116d-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/ki-miami-valley-railroad",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Green No. 19 locomotive at K.I. & Miami Valley Railroad",
+          "sha256": "a15c1452f908d0f2767812ccb808b6e9342ec313f04fd4dacbe6f0acf887bf1d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official railroad page explicitly identifies Green No.19 locomotive; viewed social-preview photo confirms green/gold engine with black smokestack, number19, green open coaches and red-roofed station."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-9600564880643-thumbnail.jpg",
+      "thumbnailSHA256": "2c4754ab28e073f3f6caa00d42c42414afd90f366db9b2c35517f9d25eb4ee95",
+      "thumbnailBytes": 27920,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-9600564880643-detail.jpg",
+      "detailSHA256": "bea9475f62f48a0ca9c0f32bc40c45471a4acf8f8c5970a5a4349ad931fbeb6a",
+      "detailBytes": 206299,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "60-9600564880643",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based closely on real attraction photo image 1. Image 2 supplies only restrained blue-purple evening mood. Natural photographic materials, believable physical perspective and softly balanced practical lighting; more realistic than a painted illustration. Preserve authentic identifying ride hardware, geometry and colors; center the subject clearly for thumbnail use. No screenshot UI, frames, borders, overlaid labels, watermark or invented lettering. K.I. & Miami Valley Railroad at Kings Island: accurate Green No.19 steam locomotive from photo, green boiler and cab with gold trim, large black flared smokestack, brass bell, round headlamp, black circular smokebox with small gold number 19, green slatted cowcatcher, green open passenger coaches, steam near wheels and wooded setting beside red-roof timber station. Preserve realistic rail wheels, rods, track and scale, slight cinematic dusk. Omit small tender lettering rather than generate gibberish; no unrelated train livery.",
+      "promptSHA256": "4b4b772391265b3006100afd80e7ea7c933fba637ef6a667ceeacf4a7f8b3f70",
+      "generationSteps": []
+    },
+    {
+      "parkId": 60,
+      "rideId": 12010934181385,
+      "rideName": "Viking Fury",
+      "alt": "Illustrated Viking Fury at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:17:25.776272+00:00",
+      "originalSHA256": "8c7967c8686b5aae6521ba3a2ac0936bcbfbb43034fdc749dc3bb2167a8fe986",
+      "review": "Accepted: brown Viking ship, cream A-frame suspension, blue booth, timber platform and wooded pond match Viking Fury's actual photographed installation; realistic timber and steel.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffe21114f4ccadc2b13a0ddf19f063387bde6486c-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/viking-fury",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A swinging Viking ship ride at an amusement park.",
+          "sha256": "3716dfb7fed25802fe915db805ecc523bc501a46a37f577e3f8d18f7ebb5d3d1",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Viking Fury page and viewed photo: brown ship on cream A-frame supports over water, wooded surroundings and blue booth."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-12010934181385-thumbnail.jpg",
+      "thumbnailSHA256": "cb796ba7fb320c52bcf66a5d0e1901c81d5423e021b0930b1092772c83f0f697",
+      "thumbnailBytes": 27760,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-12010934181385-detail.jpg",
+      "detailSHA256": "3bbc285aa3760dd97382c90911af5d6bdd374c2aab53bce515ba151ad8b302f6",
+      "detailBytes": 225499,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "60-12010934181385",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based closely on real attraction photo image 1. Image 2 supplies only restrained blue-purple evening mood. Natural photographic materials, believable physical perspective and softly balanced practical lighting; more realistic than a painted illustration. Preserve authentic identifying ride hardware, geometry and colors; center the subject clearly for thumbnail use. No screenshot UI, frames, borders, overlaid labels, watermark or invented lettering. Viking Fury at Kings Island: photograph's actual brown wood-textured Viking ship with high carved prow swinging on cream white A-frame steel supports over a small green pond, woods around it, blue-roofed operators booth and dark timber boarding platform. Show full ship and suspension pivot in portrait, plausible mechanical attachment and authentic scale; no seafaring fantasy ship or sails.",
+      "promptSHA256": "c72905454fcec2745015076573356747ed711cd276de0516db0f149db63dd5db",
+      "generationSteps": []
+    },
+    {
+      "parkId": 61,
+      "rideId": 29294961210363,
+      "rideName": "Xcelerator The Ride®",
+      "alt": "Illustrated Xcelerator The Ride® at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:22:05.524300+00:00",
+      "originalSHA256": "826d07b84ae835751272fa57a34c63a1aba9ec8b90a5e5a6fdb8937822a2a7ec",
+      "review": "Accepted: pale coral truss track, turquoise columns and red/purple two-across hot-rod train with chrome headlights and stars-and-stripes nose match the real Xcelerator reference.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F67b6629aa63a5fd1aa50cc93e6e6f6d896b1b47c-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/xcelerator-the-ride-",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Xcelerator The Ride® roller coaster at Knott's Berry Farm",
+          "sha256": "097bc2ff53b7aed36f823147b45b9d2ffa6ed9a9b306dc17a0c36f4e352925b3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official page and viewed photo identify Xcelerator: pale coral track, turquoise columns, purple/red hot-rod train with chrome lamps and stars-and-stripes nose; two seats across."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-29294961210363-thumbnail.jpg",
+      "thumbnailSHA256": "334e7f9b89023565f4b5c61b38ff664665a71bff75c12474309b6ccf24372ac6",
+      "thumbnailBytes": 28121,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-29294961210363-detail.jpg",
+      "detailSHA256": "6be0ab281a1c63f559ac1335f14ddd7f72aad8d9376e1e05f95778db6eb406db",
+      "detailBytes": 177072,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-29294961210363",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based closely on actual attraction photo image 1. Image 2 supplies only restrained blue-purple dusk atmosphere. Believable physical perspective, natural photographic materials and moderate practical lights; slightly cinematic, not painted or cartoon. Preserve identifying real hardware, colors and layout. Center the attraction for thumbnail readability. No UI, frame, border, watermark or overlaid caption. Avoid small illegible text. Xcelerator at Knott's Berry Farm: match actual photo's pale coral/pink truss track on turquoise support columns, red/purple hot-rod-styled coaster train with chrome headlights, blue stars-and-stripes nose and black two-across seats. Preserve banked descending train ON rails, wheels realistically attached, authentic 1950s car details and metal materials, no fantasy loop or invented wings.",
+      "promptSHA256": "7d1123add6502a05432f3a374bed1c0bacf688ccf4a76d739237f82847fa577d",
       "generationSteps": []
     },
     {

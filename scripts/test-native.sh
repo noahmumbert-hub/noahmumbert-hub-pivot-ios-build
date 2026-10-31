@@ -64,6 +64,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTTests/PIVOTTests/testGeneratedIllustrationsRequireAnExactParkAndRideMatch
       -only-testing:PIVOTTests/PIVOTTests/testIllustrationCacheLoadsPackagedFilesAndHandlesMissingFiles
       -only-testing:PIVOTUITests/PIVOTUITests/testGeneratedRideIllustrationLoadsWithCreditsAndPreservesWaits
+      -only-testing:PIVOTUITests/PIVOTUITests/testGeneratedRideWithReservedPhotoRightsKeepsAccurateCredits
       -only-testing:PIVOTUITests/PIVOTUITests/testReferenceEPCOTCardsSearchFiltersAndPhotoCredits
       -only-testing:PIVOTUITests/PIVOTUITests/testReferenceCardsKeepEachParksIdentityAndNativeTabs
       -only-testing:PIVOTUITests/PIVOTUITests/testAccentSettingsPersistAfterRelaunch
@@ -82,6 +83,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
     test_options+=(-only-testing:PIVOTUITests/PIVOTUITests/testNativeDarkAndLargeTextSurfacesRemainReachable) ;;
   map-gestures)
     test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testMapSearchAndCategoryWorkWithBundledLocations
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeMapFillsWindowAndSupportsPinchPanZoomWithoutCameraReset
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeBrowseFocusesRideAndRootWaitDetailsStayCurrent
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable

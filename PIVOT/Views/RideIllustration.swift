@@ -18,8 +18,8 @@ struct RideIllustration: Decodable, Identifiable {
     let detailFile: String
     let alt: String
     let references: [Reference]
-    let license: String
-    let licenseURL: URL
+    let license: String?
+    let licenseURL: URL?
 
     var id: String { "\(parkId)-\(rideId)" }
 
@@ -111,9 +111,11 @@ struct RideIllustrationCredit: View {
             Text("Inspired by real ride photography. Composition and lighting are illustrated.")
             ForEach(Array(artwork.references.enumerated()), id: \.offset) { _, reference in
                 Link("Reference photo: \(reference.credit)", destination: reference.sourceURL)
-                Link("Reference license: \(reference.license)", destination: reference.licenseURL)
+                Link("Reference rights: \(reference.license)", destination: reference.licenseURL)
             }
-            Link("Illustration adaptation: \(artwork.license)", destination: artwork.licenseURL)
+            if let license = artwork.license, let url = artwork.licenseURL {
+                Link("Illustration adaptation: \(license)", destination: url)
+            }
         }
         .font(.caption).foregroundStyle(Color.pivotMuted)
         .fixedSize(horizontal: false, vertical: true)

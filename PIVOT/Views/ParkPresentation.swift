@@ -242,7 +242,9 @@ enum ReferenceParkUITestFixture {
         hours["date"] = ParkHoursSnapshot.localDate(for: park, at: Date())
         payload["parkHours"] = hours
         let points = try! ParkMapCatalog.load().parks[String(park.id)]!.points.filter { $0.rideId != nil }
-        let featuredIDs = park == .epcot ? [10916, 10914, 159] : []
+        let requestedRideID = ProcessInfo.processInfo.arguments.first { $0.hasPrefix("--reference-ui-ride=") }
+            .flatMap { Int($0.replacingOccurrences(of: "--reference-ui-ride=", with: "")) }
+        let featuredIDs = requestedRideID.map { [$0] } ?? (park == .epcot ? [10916, 10914, 159] : [])
         let selected = featuredIDs.isEmpty ? Array(points.prefix(3)) : featuredIDs.compactMap { id in points.first { $0.rideId == id } }
         let base = (payload["rides"] as! [[String: Any]])[0]
         payload["rides"] = selected.enumerated().map { index, point -> [String: Any] in

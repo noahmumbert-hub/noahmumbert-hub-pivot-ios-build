@@ -1,0 +1,16 @@
+{
+  "records": [
+    {
+      "key": "60-22030429369577",
+      "sourceURL": "https://www.sixflags.com/kingsisland/attractions/dodgem",
+      "image": {
+        "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffb436a04329204ef09f63e5a3288b186984d34f1-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+        "kind": "image",
+        "alt": "Riders in colorful dodgem bumper car vehicles at Cedar Point."
+      },
+      "sha256": "3c34183c9f1b0985f2086b87fcc82bab9aae6c230ef99c01eaff13503d21e78e",
+      "status": "rejected-reference",
+      "reason": "Kings Island page image alt identifies Cedar Point; exact park identity is inconsistent. Do not generate from this candidate. Seek a verified Kings Island photo."
+    }
+  ]
+}

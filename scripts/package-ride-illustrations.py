@@ -60,7 +60,15 @@ def main():
         else: shutil.copyfile(source, preserved)
         photo = photos[key]
         reference = photo["photo"]
+        # Source-photo rights are distinct from the generated image's license.
+        # Preserve CC adaptation terms; never invent a CC grant for an official
+        # publisher's copyright-reserved reference photograph.
+        adaptation_license = photo.get("adaptationLicense", reference["license"] if reference["license"].startswith("CC ") else None)
+        adaptation_license_url = photo.get("adaptationLicenseURL", reference["licenseURL"] if adaptation_license else None)
         assert digest(Path(photo["path"])) == photo["sha256"], f"Reference changed: {key}"
+        reference_proof = dict(reference, sha256=photo["sha256"], pixelReviewed=True)
+        if photo.get("sourceReviewed"):
+            reference_proof.update(sourceReviewed=True, review=photo["review"])
         generated_at = datetime.datetime.fromtimestamp(source.stat().st_mtime, datetime.timezone.utc).isoformat()
         record = {
             "parkId": ride["parkID"], "rideId": ride["rideID"], "rideName": ride["rideName"],
@@ -68,8 +76,8 @@ def main():
             "kind": "ai-generated-illustration", "generator": "built-in-imagegen", "generatedAt": generated_at,
             "originalSHA256": sha, "review": item["review"],
             "styleRevision": active_style,
-            "references": [dict(reference, sha256=photo["sha256"], pixelReviewed=True)],
-            "license": reference["license"], "licenseURL": reference["licenseURL"],
+            "references": [reference_proof],
+            "license": adaptation_license, "licenseURL": adaptation_license_url,
         }
         for variant, bounds, quality in [("thumbnail", "256x320", "82"), ("detail", "768x960", "84")]:
             filename = f"{key}-{variant}.jpg"; destination = output / filename

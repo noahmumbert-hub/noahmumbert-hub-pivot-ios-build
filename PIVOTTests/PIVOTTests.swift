@@ -12,8 +12,12 @@ final class PIVOTTests: XCTestCase {
             XCTAssertNotNil(FloridaPark(rawValue: record.parkId))
             XCTAssertFalse(record.rideName.isEmpty)
             XCTAssertFalse(record.references.isEmpty)
-            XCTAssertFalse(record.license.isEmpty)
-            XCTAssertEqual(record.licenseURL.scheme, "https")
+            if let license = record.license {
+                XCTAssertFalse(license.isEmpty)
+                XCTAssertEqual(record.licenseURL?.scheme, "https")
+            } else {
+                XCTAssertNil(record.licenseURL)
+            }
             for reference in record.references {
                 XCTAssertFalse(reference.credit.isEmpty)
                 XCTAssertFalse(reference.license.isEmpty)
