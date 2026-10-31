@@ -297,13 +297,23 @@ final class PIVOTUITests: XCTestCase {
         let fixturePin = app.buttons["map-pin-fixture-\(id)"]
         XCTAssertTrue(fixturePin.waitForExistence(timeout: 5))
         // Dismissing the keyboard and the previous ride card changes map insets.
+        // Give keyboard dismissal its own condition; repeatedly querying the
+        // keyboard's AX tree must not consume the pin's stability interval.
+        let keyboardGone = NSPredicate { _, _ in !app.keyboards.firstMatch.exists }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: keyboardGone, object: nil)], timeout: 5), .completed,
+                       "The search keyboard must dismiss before selecting the map pin")
         // Wait for the visible pin to stop moving, then perform one real tap.
-        var previousFrame = CGRect.null
+        let windowFrame = app.frame
+        var previousFrame = fixturePin.exists ? fixturePin.frame : CGRect.null
         var stableSince = Date()
         let stablePin = NSPredicate { _, _ in
-            guard fixturePin.exists, !app.keyboards.firstMatch.exists else { return false }
+            guard fixturePin.exists else {
+                previousFrame = .null; stableSince = Date(); return false
+            }
             let frame = fixturePin.frame
-            guard !frame.isEmpty, app.frame.contains(CGPoint(x: frame.midX, y: frame.midY)) else { return false }
+            guard !frame.isEmpty, windowFrame.contains(CGPoint(x: frame.midX, y: frame.midY)) else {
+                previousFrame = .null; stableSince = Date(); return false
+            }
             if previousFrame.isNull || abs(frame.midX - previousFrame.midX) > 1 || abs(frame.midY - previousFrame.midY) > 1 {
                 previousFrame = frame; stableSince = Date(); return false
             }
