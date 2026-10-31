@@ -113,6 +113,67 @@ final class PIVOTUITests: XCTestCase {
         }
     }
 
+    func testReopeningWindowShowsSupportedBestPredictionAndUnavailableStates() {
+        for mode in ["supported", "uncalibrated", "stale", "missing", "ended", "failed", "passed"] {
+            let extra: [String]
+            switch mode {
+            case "uncalibrated": extra = ["--reopening-unsupported"]
+            case "stale": extra = ["--ride-search-expired"]
+            case "missing": extra = ["--reopening-missing"]
+            case "ended": extra = ["--reopening-window-ended"]
+            case "failed": extra = ["--reopening-refresh-failed"]
+            case "passed": extra = ["--reopening-point-passed"]
+            default: extra = []
+            }
+            let app = rootFixture(["--reference-ui-park=5", "--reopening-ui-test", "--ui-dark"] + extra)
+            let filters = app.segmentedControls["ride-status-filter"]
+            reveal(filters, in: app); filters.buttons["Down"].tap()
+            let prediction = app.staticTexts["reopening-best-prediction-159"].firstMatch
+            let window = app.staticTexts["reopening-window-159"].firstMatch
+            let hasPrediction = mode == "supported" || mode == "passed"
+            func checkPrediction() {
+                reveal(prediction, in: app)
+                XCTAssertTrue(prediction.isHittable)
+                if hasPrediction {
+                    XCTAssertTrue(prediction.label.hasPrefix(mode == "passed" ? "Earlier best prediction ·" : "Best prediction ·"))
+                    XCTAssertTrue(prediction.label.hasSuffix("(estimate)"))
+                } else {
+                    XCTAssertEqual(prediction.label, "Best prediction unavailable")
+                }
+                XCTAssertEqual(window.exists, hasPrediction || mode == "uncalibrated")
+            }
+            checkPrediction()
+            screenshot("Reopening best prediction \(mode) row", app: app)
+            let ride = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Spaceship Earth'")).firstMatch
+            reveal(ride, in: app); ride.tap()
+            XCTAssertTrue(app.navigationBars["Ride information"].waitForExistence(timeout: 5))
+            checkPrediction()
+            if mode == "supported" || mode == "stale" { screenshot("Reopening best prediction \(mode) detail", app: app) }
+            app.buttons["Done"].tap(); app.terminate()
+        }
+    }
+
+    func testReopeningPredictionRemainsReadableAtAccessibilitySizeAndInRadar() {
+        let app = rootFixture(["--reference-ui-park=5", "--reopening-ui-test", "--ui-large-type", "--ui-dark"])
+        let filters = app.segmentedControls["ride-status-filter"]
+        reveal(filters, in: app); filters.buttons["Down"].tap()
+        let prediction = app.staticTexts["reopening-best-prediction-159"].firstMatch
+        reveal(prediction, in: app)
+        XCTAssertTrue(prediction.isHittable)
+        XCTAssertTrue(prediction.label.hasPrefix("Best prediction ·"))
+        XCTAssertGreaterThanOrEqual(prediction.frame.minX, 0)
+        XCTAssertLessThanOrEqual(prediction.frame.maxX, app.frame.width)
+        screenshot("Reopening best prediction accessibility row", app: app)
+        app.tabBars.buttons["More"].tap()
+        let closures = app.buttons["Closures & park weather"]
+        reveal(closures, in: app); closures.tap()
+        reveal(prediction, in: app)
+        XCTAssertTrue(prediction.isHittable)
+        XCTAssertTrue(prediction.label.hasSuffix("(estimate)"))
+        XCTAssertTrue(app.staticTexts["reopening-window-159"].firstMatch.exists)
+        screenshot("Reopening best prediction accessibility radar", app: app)
+    }
+
     func testFavoriteRideSearchConnectsWaitsAndSupportsLargeText() {
         for mode in ["default", "large", "expired"] {
             let extra = mode == "large" ? ["--ui-large-type"] : mode == "expired" ? ["--ride-search-expired"] : []

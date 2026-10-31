@@ -360,7 +360,8 @@ final class DashboardStore: ObservableObject {
             selectedPark = referenceID.flatMap(FloridaPark.init(rawValue:)) ?? .magicKingdom
             snapshot = referenceID == nil ? NativeParkMapUITestScreen.rootSnapshot()
                 : ReferenceParkUITestFixture.snapshot(for: selectedPark!)
-            errorMessage = nil
+            errorMessage = ProcessInfo.processInfo.arguments.contains("--reopening-refresh-failed")
+                ? "Fixture refresh failed" : nil
             alertsEnabled = false
             return
         }

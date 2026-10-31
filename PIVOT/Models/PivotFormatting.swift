@@ -163,6 +163,13 @@ struct ReopeningGuidance: Equatable, Sendable {
     let range: String?
     let bestGuess: String?
     let detail: String
+    var bestPredictionHasPassed = false
+
+    var bestPredictionLabel: String {
+        guard let bestGuess else { return "Best prediction unavailable" }
+        let title = bestPredictionHasPassed ? "Earlier best prediction" : "Best prediction"
+        return "\(title) · \(bestGuess) (estimate)"
+    }
 
     static func presentation(ride: LiveRide, snapshot: LiveParkSnapshot?, feedHealth: DashboardFeedHealth,
                              at now: Date, timeZone: TimeZone) -> Self {
@@ -244,7 +251,8 @@ struct ReopeningGuidance: Equatable, Sendable {
             recent(calibration?.trainedThrough) && estimate.reliability?.showBestGuess != false
         return Self(headline: "Historical reopening range", range: range,
                     bestGuess: showBest ? ParkTimeFormatter.time(estimate.historicalMedianAt, timeZone: timeZone) : nil,
-                    detail: "Based on comparable observed closures. The park has not announced a reopening time.")
+                    detail: "Based on comparable observed closures. The park has not announced a reopening time.",
+                    bestPredictionHasPassed: showBest && now > estimate.historicalMedianAt)
     }
 }
 struct DownTimePresentation: Equatable, Sendable {

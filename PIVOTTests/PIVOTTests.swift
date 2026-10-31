@@ -2340,7 +2340,8 @@ final class PIVOTTests: XCTestCase {
         return try PivotAPIClient.makeDecoder().decode(LiveParkSnapshot.self, from: data)
     }
 
-    private func reopeningFixture(estimate changes: [String: Any] = [:], lightning: [String: Any]? = nil) throws -> LiveParkSnapshot {
+    private func reopeningFixture(estimate changes: [String: Any] = [:], lightning: [String: Any]? = nil,
+                                  ride rideChanges: [String: Any] = [:], snapshot snapshotChanges: [String: Any] = [:]) throws -> LiveParkSnapshot {
         var json = try XCTUnwrap(JSONSerialization.jsonObject(with: Data(Self.productionV6SnapshotJSON.utf8)) as? [String: Any])
         let now = Self.isoDate("2026-10-13T18:00:00.000Z")
         func iso(_ offset: TimeInterval) -> String { ISO8601DateFormatter().string(from: now.addingTimeInterval(offset)) }
@@ -2392,9 +2393,17 @@ final class PIVOTTests: XCTestCase {
         }
         estimate.merge(changes) { _, new in new }
         ride["estimate"] = estimate
+        ride.merge(rideChanges) { _, new in new }
         rows[0] = ride
         json["rides"] = rows
+        json.merge(snapshotChanges) { _, new in new }
         return try PivotAPIClient.makeDecoder().decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: json))
+    }
+
+    private var reopeningCalibration: [String: Any] {
+        ["version": "PIVOT-ONLINE-CALIBRATION-v4", "basis": "same-ride residuals", "sampleSize": 25,
+         "effectiveSampleSize": 20, "distinctRideCount": 1, "distinctParkCount": 1, "historicalCoverage": 0.8,
+         "medianAdjustmentMinutes": 0, "intervalPaddingMinutes": 0, "trainedThrough": "2026-10-12T18:00:00Z"]
     }
 
     private func reopeningGuidance(_ snapshot: LiveParkSnapshot, at date: Date? = nil, failed: Bool = false) -> ReopeningGuidance {
@@ -2420,10 +2429,11 @@ final class PIVOTTests: XCTestCase {
         let supported = try reopeningFixture()
         XCTAssertNotNil(reopeningGuidance(supported).range)
         XCTAssertNil(reopeningGuidance(supported).bestGuess)
-        let calibration: [String: Any] = ["version": "PIVOT-ONLINE-CALIBRATION-v4", "basis": "same-ride residuals", "sampleSize": 25,
-            "effectiveSampleSize": 20, "distinctRideCount": 1, "distinctParkCount": 1, "historicalCoverage": 0.8,
-            "medianAdjustmentMinutes": 0, "intervalPaddingMinutes": 0, "trainedThrough": "2026-10-12T18:00:00Z"]
-        XCTAssertNotNil(reopeningGuidance(try reopeningFixture(estimate: ["calibration": calibration])).bestGuess)
+        XCTAssertEqual(reopeningGuidance(supported).bestPredictionLabel, "Best prediction unavailable")
+        let calibration = reopeningCalibration
+        let calibrated = reopeningGuidance(try reopeningFixture(estimate: ["calibration": calibration]))
+        XCTAssertNotNil(calibrated.bestGuess)
+        XCTAssertEqual(calibrated.bestPredictionLabel, "Best prediction · \(calibrated.bestGuess!) (estimate)")
         var poor = calibration
         poor["historicalCoverage"] = 0.3
         XCTAssertNil(reopeningGuidance(try reopeningFixture(estimate: ["calibration": poor])).range)
@@ -2433,6 +2443,66 @@ final class PIVOTTests: XCTestCase {
         poor = calibration
         poor["basis"] = "network residuals"
         XCTAssertNil(reopeningGuidance(try reopeningFixture(estimate: ["calibration": poor])).bestGuess)
+    }
+
+    func testBestReopeningPredictionUsesForecastMedianAndParkLocalTime() throws {
+        let snapshot = try reopeningFixture(estimate: ["calibration": reopeningCalibration,
+            "historicalMedianAt": "2026-10-13T18:17:00Z"])
+        let now = snapshot.fetchedAt
+        let health = DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot,
+            isLoading: false, refreshFailed: false, at: now)
+        for (zone, expectedTime, expectedRange) in [
+            ("America/New_York", "2:17 PM", "2:05 PM–2:40 PM"),
+            ("America/Los_Angeles", "11:17 AM", "11:05 AM–11:40 AM")
+        ] {
+            let guidance = ReopeningGuidance.presentation(ride: snapshot.rides[0], snapshot: snapshot,
+                feedHealth: health, at: now, timeZone: try XCTUnwrap(TimeZone(identifier: zone)))
+            XCTAssertEqual(guidance.range, expectedRange)
+            XCTAssertEqual(guidance.bestPredictionLabel, "Best prediction · \(expectedTime) (estimate)")
+            XCTAssertFalse(guidance.bestPredictionHasPassed)
+            XCTAssertTrue(guidance.detail.contains("The park has not announced a reopening time"))
+        }
+    }
+
+    func testBestReopeningPredictionMarksPassedPointWithinCurrentWindow() throws {
+        let snapshot = try reopeningFixture(estimate: ["calibration": reopeningCalibration,
+            "windowStart": "2026-10-13T18:02:00Z", "historicalMedianAt": "2026-10-13T18:05:00Z"])
+        let result = reopeningGuidance(snapshot, at: snapshot.fetchedAt.addingTimeInterval(600))
+        XCTAssertNotNil(result.range)
+        XCTAssertTrue(result.bestPredictionHasPassed)
+        XCTAssertEqual(result.bestPredictionLabel, "Earlier best prediction · 2:05 PM (estimate)")
+    }
+
+    func testBestReopeningPredictionWithholdsUnavailableAndUnverifiedTimes() throws {
+        let supported = try reopeningFixture(estimate: ["calibration": reopeningCalibration])
+        var unavailable = [
+            reopeningGuidance(supported, failed: true),
+            reopeningGuidance(supported, at: supported.fetchedAt.addingTimeInterval(901)),
+            reopeningGuidance(try reopeningFixture(ride: ["estimate": NSNull()])),
+            reopeningGuidance(try reopeningFixture(snapshot: ["parkActive": false])),
+            reopeningGuidance(try reopeningFixture(snapshot: ["feedHealthy": false])),
+            reopeningGuidance(try reopeningFixture(ride: ["status": "STALE"])),
+            reopeningGuidance(try reopeningFixture(lightning: [:]))
+        ]
+        let changes: [[String: Any]] = [
+            ["sameRideSampleSize": 3], ["startQuality": "unknown"], ["closureSignal": "first-seen"],
+            ["historicalMedianAt": "2026-10-13T19:00:00Z"],
+            ["issuedAt": "2026-10-14T18:00:00Z"],
+            ["reliability": ["status": "UNCERTAIN", "showRange": false, "showBestGuess": false, "reason": "Unavailable"]],
+            ["reliability": ["status": "HISTORICAL_RANGE", "showRange": true, "showBestGuess": false, "reason": "Range only"]],
+            ["windowStart": "2026-10-13T17:10:00Z", "historicalMedianAt": "2026-10-13T17:15:00Z",
+             "windowEnd": "2026-10-13T17:30:00Z", "issuedAt": "2026-10-13T17:00:00Z"]
+        ]
+        for change in changes {
+            var estimate: [String: Any] = ["calibration": reopeningCalibration]
+            estimate.merge(change) { _, new in new }
+            unavailable.append(reopeningGuidance(try reopeningFixture(estimate: estimate)))
+        }
+        for result in unavailable {
+            XCTAssertNil(result.bestGuess)
+            XCTAssertEqual(result.bestPredictionLabel, "Best prediction unavailable")
+            XCTAssertFalse(result.bestPredictionHasPassed)
+        }
     }
 
     func testExpiredReopeningWindowCannotRemainUpcomingBetweenRefreshes() throws {

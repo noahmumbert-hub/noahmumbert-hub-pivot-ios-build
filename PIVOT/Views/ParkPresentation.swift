@@ -259,10 +259,48 @@ enum ReferenceParkUITestFixture {
             else { ride["waitTime"] = index == 0 ? 45 : 30 }
             ride["location"] = ["latitude": point.latitude, "longitude": point.longitude]
             ride["waitHistory"] = [["observedAt": Date().timeIntervalSince1970, "waitTime": index == 0 ? 45 : 30]]
+            if index == 2 && ProcessInfo.processInfo.arguments.contains("--reopening-ui-test") {
+                ride["downSince"] = Date().timeIntervalSince1970 - 2580
+                if !ProcessInfo.processInfo.arguments.contains("--reopening-missing") {
+                    ride["estimate"] = reopeningEstimate(at: Date())
+                }
+            }
             return ride
         }
         let decoder = JSONDecoder(); decoder.dateDecodingStrategy = .secondsSince1970
         return try! decoder.decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: payload))
+    }
+
+    private static func reopeningEstimate(at date: Date) -> [String: Any] {
+        let now = date.timeIntervalSince1970
+        let trained = ISO8601DateFormatter().string(from: date.addingTimeInterval(-86400))
+        var result: [String: Any] = ["modelVersion": "UI fixture", "estimateKind": "OPERATIONAL",
+            "windowStart": now + 300, "historicalMedianAt": now + 900, "windowEnd": now + 2100,
+            "evidenceStrength": "Moderate", "sampleSize": 12, "effectiveSampleSize": 12,
+            "distinctDayCount": 4, "recentSampleSize": 12, "distinctRideCount": 1, "distinctParkCount": 1,
+            "censoredSampleSize": 0, "sameRideSampleSize": 12, "sameRideCensoredSampleSize": 0,
+            "basis": "same-ride", "intervalCoverage": "historical", "method": "UI fixture", "priorVersion": "fixture",
+            "startQuality": "observed", "closureSignal": "confirmed", "issuedAt": now,
+            "anchorAt": now - 2580, "episodeAnchorAt": now - 2580, "forecastPhase": "UPCOMING",
+            "lateMinutes": 0, "revision": 0, "revisionReason": "INITIAL", "lockedForOutage": true,
+            "historyProvenance": ["trainedThrough": trained, "confirmedTransitionCount": 12,
+                "forecastLifecycleCount": 12, "activeCensoredCount": 0, "legacyCount": 0]]
+        if !ProcessInfo.processInfo.arguments.contains("--reopening-unsupported") {
+            result["calibration"] = ["version": "PIVOT-ONLINE-CALIBRATION-v4", "basis": "same-ride residuals",
+                "sampleSize": 25, "effectiveSampleSize": 20, "distinctRideCount": 1, "distinctParkCount": 1,
+                "historicalCoverage": 0.8, "medianAdjustmentMinutes": 0, "intervalPaddingMinutes": 0, "trainedThrough": trained]
+        }
+        if ProcessInfo.processInfo.arguments.contains("--reopening-window-ended") {
+            result["windowStart"] = now - 2100
+            result["historicalMedianAt"] = now - 1500
+            result["windowEnd"] = now - 300
+            result["issuedAt"] = now - 2400
+        } else if ProcessInfo.processInfo.arguments.contains("--reopening-point-passed") {
+            result["windowStart"] = now - 600
+            result["historicalMedianAt"] = now - 300
+            result["issuedAt"] = now - 900
+        }
+        return result
     }
 }
 #endif
