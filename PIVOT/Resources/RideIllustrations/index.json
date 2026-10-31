@@ -4872,6 +4872,48 @@
     },
     {
       "parkId": 60,
+      "rideId": 65632811144593,
+      "rideName": "Rendezvous Run",
+      "alt": "Illustrated Rendezvous Run at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:01:37.467327+00:00",
+      "originalSHA256": "28617656bcc70d3f349e3d9eec9a5c02cc47806b26272a1c658c23d5c31941be",
+      "review": "Accepted: actual saved PNG inspected against genuine official photo. Blue open mat-racer lane, high wavy fiberglass dividers, curled blue foam mat with two white fasteners and water spray retained in a close portrait. Full tower, lane count and course remain outside the image; realistic generated imagery is disclosed.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1e101f5d21c7f1485f68c62c1947aa95b568e30c-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/rendezvous-run",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A guest going down a mat racer waterslide at a water park.",
+          "sha256": "00a794863144ed1c1aed1a48759036bb032935a42aa59697d168877322ca7ebd",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Kings Island Rendezvous Run page identifies the mat racer. Actual hero pixels show a prone mat rider in a blue open fiberglass lane with high wavy blue lane dividers, water spray and a blue foam mat whose front curls upward with two white circular fasteners. Only this close lane/mat section is documented. Frame the real blue lane crest and mat closely; do not invent full tower, lane count, course or supports. Guests may remain incidental or indistinct; no new ride hardware."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-65632811144593-thumbnail.jpg",
+      "thumbnailSHA256": "878080dcc9052f5a170d4820ab566e31013359152d15776ad45e44dd709b968f",
+      "thumbnailBytes": 23190,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-65632811144593-detail.jpg",
+      "detailSHA256": "9aa7223d309afb64577e4db6f0ea1f30304d456b517a67316ef3040f6fb2adf7",
+      "detailBytes": 168008,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 67934912831519,
       "rideName": "Woodstock's Air Rail",
       "alt": "Illustrated Woodstock's Air Rail at Kings Island",
@@ -5082,6 +5124,48 @@
     },
     {
       "parkId": 60,
+      "rideId": 88856159660549,
+      "rideName": "Tidal Wave Bay",
+      "alt": "Illustrated Tidal Wave Bay at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:02:33.292823+00:00",
+      "originalSHA256": "472bc843caba00edf2d500cb6af8e071c1e025784994b1a82a77b7bc1afa5585",
+      "review": "Accepted: actual saved PNG inspected against genuine official wave-pool photo. Shallow aqua water and breaking white wave remain the supported context, without an invented full pool boundary, slide or wave wall. Source-based guests remain foreground context; this is disclosed generated imagery, not a new real photograph.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa74be35ffad03c0162bc8b24def9a1420e39ff17-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/tidal-wave-bay",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Guests splashing around in a wave pool at a waterpark.",
+          "sha256": "6cea0c0ce893ac8da1da86d0a66a0800a9fa6062d111e8c0c5301dfd265aa935",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Kings Island Tidal Wave Bay page identifies this wave pool. Actual hero shows a close aqua-water white breaking wave and guests in shallow water with a thin tan edge, without distinctive buildings or the full pool boundary. Use the observed breaking wave/water as the foreground focus and indistinct guests behind; do not invent a wave wall, slides, pool shape or park architecture. This close photograph does not establish a full layout or its capture date."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-88856159660549-thumbnail.jpg",
+      "thumbnailSHA256": "0b8893aaa9d5f92c8366d51fe5f47d74ec163f3cc750111b057b17e82cebddb6",
+      "thumbnailBytes": 24223,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-88856159660549-detail.jpg",
+      "detailSHA256": "e3cb29fd079ff2a5bcd5f1c7c75b991a100f06379dc4ac6bc1e9e2b6af00b1f6",
+      "detailBytes": 171605,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 90000667675737,
       "rideName": "WindSeeker",
       "alt": "Illustrated WindSeeker at Kings Island",
@@ -5117,6 +5201,48 @@
       "detailFile": "60-90000667675737-detail.jpg",
       "detailSHA256": "ceac4e41bb011513acf410638eb22734b232714a82b6061fa1d8190e197c9cf6",
       "detailBytes": 149456,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 91189459187120,
+      "rideName": "Zoom Flume",
+      "alt": "Illustrated Zoom Flume at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:01:12.199014+00:00",
+      "originalSHA256": "5f55f88b83c5b888bf276bd815b013ae0fb88533dbd95d00f5831b697bca5c5a",
+      "review": "Accepted: actual saved PNG inspected against genuine official raft photo. Close blue-and-beige circular inflatable raft, black handgrips, four riders and heavy splash retained; no invented complete slide route, tower or different vehicle. Natural water/material treatment fits the requested realistic style.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5cb08a9babab763df7e62af38cbaed7e5d9cdedd-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/zoom-flume",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A group of friends in a raft getting splashed on a waterslide.",
+          "sha256": "f047c53f3efbcf349c6bced0f35fe334890d9dbf9a386fd0e61cdfa3bc092d76",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Kings Island Zoom Flume page identifies this raft slide. Actual hero is a close photograph of four riders in a blue-and-beige circular inflatable raft with black handgrips, blue inner panels and heavy splash; no full slide course or tube geometry is visible. Use a close crop of the documented raft, black handles and spray, keeping guests incidental. Do not invent a drop, tower, slide routing or different raft shape."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-91189459187120-thumbnail.jpg",
+      "thumbnailSHA256": "675294353c2d01ed8f58d0961adaa49e36e82e3e9e8d2d7d37885ba49bd8b6db",
+      "thumbnailBytes": 27077,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-91189459187120-detail.jpg",
+      "detailSHA256": "04482fdea1b3ce1e3a4f75a2ff3455d6a815f54027d3e0dda1b865032076189a",
+      "detailBytes": 194251,
       "detailPixels": [
         768,
         960
@@ -5243,6 +5369,48 @@
       "detailFile": "60-109422025715493-detail.jpg",
       "detailSHA256": "b9387c9ee8f29f9a8f254676479962ec09808781487dd0b443ad0691d943bc9d",
       "detailBytes": 238313,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 110451745261016,
+      "rideName": "Bluegill Lagoon",
+      "alt": "Illustrated Bluegill Lagoon at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:02:05.692382+00:00",
+      "originalSHA256": "05b38f5196a4d46b87a5934deda8946ecaccd3ee1b8d73bc72bd3770d17bc72d",
+      "review": "Accepted: actual saved PNG inspected against genuine official photo. Pale-green wood-effect tank, dark metal hoops, conical silver roof, connected orange frame and brown water spout retained above the aqua shallow splash pool. Partial green bridge and white perimeter remain source-based; no new slide or full pool layout added.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F6b4f5a060fef7c0a75acf9b1c61bef7a7a42e29e-8640x5760.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/bluegill-lagoon",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Children enjoying kid-friendly splash zone and zero depth entry pool at a waterpark.",
+          "sha256": "d6c30889cfe8044c85621fb83646342091bdb2a977209bb3ebbdfe38ce22cc2a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Kings Island Bluegill Lagoon page identifies this Splash River Junction zero-depth pool. Actual pixels show pale-aqua shallow water with small ground geysers, a large pale-green wood-effect cylindrical tank with dark hoops and silver conical roof on an orange timber-like frame, a brown pouring spout, partial green footbridge left and white pergola/fence right. Emphasize the verified green tank/orange support and splash pool; guests can be indistinct background. Do not add unseen slides, new plumbing or a complete pool layout. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-110451745261016-thumbnail.jpg",
+      "thumbnailSHA256": "423b82c60eb2e7ced02fa641e9f770ce12fe76bb9a2a0ddb3feb043cad280f0f",
+      "thumbnailBytes": 26014,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-110451745261016-detail.jpg",
+      "detailSHA256": "f909fbfb024b5dc0d4ae59fae1835358cdf44eecacc843dbc24f19b3317a66de",
+      "detailBytes": 191224,
       "detailPixels": [
         768,
         960
@@ -5544,6 +5712,90 @@
     },
     {
       "parkId": 60,
+      "rideId": 135340096992067,
+      "rideName": "Salamander Sliders",
+      "alt": "Illustrated Salamander Sliders at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:08:09.441944+00:00",
+      "originalSHA256": "c8f6c5be057a8752a3a6727c9b19ac571ec018d36473a0321fd474553e78eaf5",
+      "review": "Accepted: original saved generation pixels inspected against genuine official photo. Actual adjacent pale-blue/cream central lanes, tall dividers, low runouts, partial red/yellow/green side slides, tan triangular shade and rope fencing retained with realistic wet surfaces. No unseen full layout or vehicle invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa7ad2c041413f988fb6a98c14b3846412af79c32-8640x5760.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/salamander-sliders",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A child going down a kids' waterslide at a water park.",
+          "sha256": "4128993c08c0de7db1d8360cce055618d0325d0d978919a69a450715962941df",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Kings Island photograph shows the real Salamander Sliders children's area under a beige triangular shade sail on brown posts. Center has adjacent pale-blue and cream open straight slide lanes with tall cream dividers and short runouts; a red open curved slide is left, yellow open slide right and green enclosed tubes farther right. Rope fencing and gray pebbled banks are visible. Use a close central-lane portrait with the actual shade and dividers; do not invent a full complex layout, extra lanes or vehicles. Guests may be incidental or omitted. The page identifies seven slides overall; do not infer unseen geometry from that number. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-135340096992067-thumbnail.jpg",
+      "thumbnailSHA256": "86cca53b4ebee14656e3094f223cc221af49cb3b234346df766647ceb4764e8d",
+      "thumbnailBytes": 26088,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-135340096992067-detail.jpg",
+      "detailSHA256": "c573fa17291f52ebb8c09fc8b82c606cf70fb216d2d034c17048593bfe35041f",
+      "detailBytes": 202866,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 143888827067607,
+      "rideName": "Tropical Plunge - Tube Slides",
+      "alt": "Illustrated Tropical Plunge - Tube Slides at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:12:58.869844+00:00",
+      "originalSHA256": "95be78da09b8a466acb62cb831f0ec2cdde4dc0c8eb23aa22de7648a90f5fae8",
+      "review": "Accepted: corrected saved PNG inspected against actual Tropical Plunge photograph. Two documented blue drop sections, real gray columns and cross-braces, source-supported raft and adjoining visible tubes retained. The unverified foreground pool and bottom runout are excluded by close portrait framing. Original draft and exact built-in framing edit are preserved.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F74ecf6bcec127d9536830db0764f3acd7eed1499-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/tropical-plunge",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A giant waterslide complex at a water park.",
+          "sha256": "122a71f8d7be7dcdba635722669c73d3df8a747a49a7bd50e0fdd28e176a5372",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Tropical Plunge photo documents this complex shared by two catalog IDs. For this Tube Slides ID emphasize the two actual blue open raft-slide drop/runout lanes at left foreground, their real smooth curves and galvanized gray support columns, with only a small part of the visible purple enclosed tube behind. A raft is visible in the source's left blue lane. Preserve a tight front view of the documented pair without inventing a route, extra drop, tower top or crossing geometry. The other catalog ID will use a different visible section of this same physical complex. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-143888827067607-thumbnail.jpg",
+      "thumbnailSHA256": "e79bed184952ae6da90ae618c5465884065155450511eafc7cce357d9e3aaa16",
+      "thumbnailBytes": 28913,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-143888827067607-detail.jpg",
+      "detailSHA256": "248e5a9d7b1dc76defabbb948805f60a3c62c24892984b954097d435afdc6a65",
+      "detailBytes": 213703,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 145675263846755,
       "rideName": "Snoopy vs. Red Baron",
       "alt": "Illustrated Snoopy vs. Red Baron at Kings Island",
@@ -5796,6 +6048,90 @@
     },
     {
       "parkId": 60,
+      "rideId": 180229968278102,
+      "rideName": "Mondo Monsoon",
+      "alt": "Illustrated Mondo Monsoon at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:08:31.262234+00:00",
+      "originalSHA256": "b118f955ccb1068513b73d356f53713740281dee53fa0c8d8b38738552d9cb7c",
+      "review": "Accepted: original saved generation pixels inspected against genuine official photo. Yellow four-person clover raft and blue handles follow the photographed seating arrangement on the orange-and-blue funnel wall, with natural water detail. Full exterior funnel, tower and entry route remain outside the image.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F0205af442ef019ad5a82c11c4df40d39a61a8646-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/mondo-monsoon",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A group of four careening into a waterslide funnel.",
+          "sha256": "f138c5f808050fdb6e2ae124e6ee1a2fb6ab3c14bd765c7d661d017cfb35f477",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Mondo Monsoon photograph shows a close view inside the large orange funnel with a blue side panel and a yellow four-person inflatable clover-shaped raft, blue grab handles and water flowing down the curved wall. Keep the actual raft shape, four seating positions and orange/blue curved funnel surface in a tight portrait, with riders incidental. Do not invent the unseen funnel exterior, support structure, entry tube or complete slide layout. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-180229968278102-thumbnail.jpg",
+      "thumbnailSHA256": "4d306fdeb542041d061325c2d0070e3f89ade6219a18169d826b3f26610dd8b5",
+      "thumbnailBytes": 21640,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-180229968278102-detail.jpg",
+      "detailSHA256": "f6422c43c20493aa87cc9e38996cc0a79d998b77cb99cff28fd059091236a12b",
+      "detailBytes": 156861,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 184642581137824,
+      "rideName": "Paradise Plunge",
+      "alt": "Illustrated Paradise Plunge at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:13:26.074193+00:00",
+      "originalSHA256": "90b1d7483f62470b03d137c68ef83e8c5e13fe10dfb3c6a58a34b4f81e1801c9",
+      "review": "Accepted: corrected saved PNG inspected against actual Paradise Plunge photograph. Tight portrait keeps the teal chute edges, incidental rider and foamy splash; the unverified tall upper drop, skyline and extended route are excluded. Realistic wet fiberglass and spray retained; original draft and exact built-in framing edit are preserved.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2c9a11484033f4dc6581a6fcea8f827ae3263a34-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/paradise-plunge",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A guest going down a waterslide at a water park.",
+          "sha256": "31691b6f0051d59730775789eca1c04434f739dd96fc6c111fb9aab1ec81644a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Paradise Plunge photograph shows a close rider splashdown in a narrow teal-blue open fiberglass chute with raised curved sidewalls and white spray; no raft is present. Only this short chute/runout is documented. Use the real teal chute edges and water in a close portrait with an incidental rider or water as focus. Do not invent the slide's height, tower, complete course, extra tube or different color. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-184642581137824-thumbnail.jpg",
+      "thumbnailSHA256": "a21ad78bb0e8f6af0bcb44e8d6c7d84f052dcccf4f40318db4f8da650dcfc57a",
+      "thumbnailBytes": 24879,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-184642581137824-detail.jpg",
+      "detailSHA256": "56421484178ebaf38d0aa05289bb00f5f13619846917928192f3700ff7286101",
+      "detailBytes": 175433,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 188953268790521,
       "rideName": "Charlie Brown's Wind Up",
       "alt": "Illustrated Charlie Brown's Wind Up at Kings Island",
@@ -5838,6 +6174,90 @@
     },
     {
       "parkId": 60,
+      "rideId": 189692497481889,
+      "rideName": "Snow Flake Lake Ice Skating",
+      "alt": "Illustrated Snow Flake Lake Ice Skating at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:11:12.572445+00:00",
+      "originalSHA256": "f08c22d39694c032ea58a42fbb5e1b4fc214545214553910a7b103c2180a6b45",
+      "review": "Accepted: generated pixels inspected against genuine official skating photo. Actual ice, black rental skates with orange buckles, blue rink rail, blue-lit trees/white hanging lights and warm cone lights retained under authentic winter-night illumination. No full rink layout, snow cover or current operating claim added.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fdf7eb8860cdcd60147e1a63ddd033e19865f9128-2000x1333.webp%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/winterfest/ice-skating",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Ice Skating family",
+          "sha256": "21999e0e266968ec52048ae6b324d26cb9d2a0f5bada51056e080151e3957374",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Snow Flake Lake photograph shows skaters on real pale ice wearing black rental skates with bright orange buckles, a blue waist-high perimeter rail, trees lit blue and hung with white string lights, and warm golden cone trees farther back. Use a realistic close portrait of the ice, skates and white/blue festive light canopy, with guests incidental. Keep authentic winter-night lighting; do not invent a complete rink shape, Eiffel Tower position, extra rides, snow cover or operating dates. This is a seasonal attraction, not evidence of current operation; source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-189692497481889-thumbnail.jpg",
+      "thumbnailSHA256": "7b30823b10d3715f9e7cad024032b2c6c6166f0811ad73bfb81f1df0a7e79ca8",
+      "thumbnailBytes": 30817,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-189692497481889-detail.jpg",
+      "detailSHA256": "629043b4bd072d5d5db106b3c1068a57157bf6f78f78ebafaf69f4ec129b24d7",
+      "detailBytes": 206506,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 200408303046547,
+      "rideName": "Pineapple Pipeline",
+      "alt": "Illustrated Pineapple Pipeline at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:12:06.217141+00:00",
+      "originalSHA256": "5addef2e20a8560744693f9c07bc06c49637dcae8af1a686a21d4db7242e98d7",
+      "review": "Accepted: generated pixels inspected against genuine official Pineapple Pipeline close photo. The narrow dark-teal open chute, rounded wet edges, seated body-slide rider and white splash remain the focus, with no raft, tower or full route shown. Realistic surfaces and restrained evening treatment retained.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa3538e62b3c36770d1ae16a129323303d0acaaf0-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/pineapple-pipeline",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A guest going down a waterslide at a water park.",
+          "sha256": "156af96d098633b976a1591caaf90d028b9de4507ac694c4ee6a847cd45e7cae",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Pineapple Pipeline photograph shows a close frontal splashdown in a narrow dark teal-blue open fiberglass body-slide chute with rounded raised edges, foamy white water and one seated rider, without a tube or raft. Preserve the honest short chute view. Keep the frame tightly within this documented close section; no tall drop, extended upstream course, tower, new curves, raft or pool boundary should appear. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-200408303046547-thumbnail.jpg",
+      "thumbnailSHA256": "3cc0a70df9fb946beb32b8f5212d46e6c18dc7ab966045e88d9dfd2b9fd727dc",
+      "thumbnailBytes": 22091,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-200408303046547-detail.jpg",
+      "detailSHA256": "6616d82cb2f5a39e9f576c793a970eef2a45c447e9dad626e4b97f16a70279dc",
+      "detailBytes": 133189,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 204094609944113,
       "rideName": "White Water Canyon",
       "alt": "Illustrated White Water Canyon at Kings Island",
@@ -5873,6 +6293,174 @@
       "detailFile": "60-204094609944113-detail.jpg",
       "detailSHA256": "15a3b4b8dd520a52bb1b7e7ddb9be730f244bc0df46a35e1775a5f111d0c4b8b",
       "detailBytes": 250438,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 207169586400889,
+      "rideName": "Breakers Bay",
+      "alt": "Illustrated Breakers Bay at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:12:32.765501+00:00",
+      "originalSHA256": "d448e7f1174af94e58afb5a249d65e00ed8e27cdf3968c1ae9fa3aae241e542e",
+      "review": "Accepted: generated pixels inspected against genuine official Breakers Bay close photo. Pale-aqua shallow water and small breaking white wave preserve the photographed context without an invented full pool boundary, wave wall, slide or landmark. Distinct generated image and source from Tidal Wave Bay; AI disclosure retained.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4fc75b48839f03a13ef6e74e8c75606aa6b6e77f-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/breakers-bay",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Guests splashing around in a wave pool at a waterpark.",
+          "sha256": "f8ceb907392f3ff580665e7a70ff1c66da4f10492bab9ce0a31884e204bde776",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Breakers Bay photograph shows shallow pale-aqua water with small white waves and spray around guests, with no distinctive buildings or full pool edge visible. Use a close low view of the documented pale water and small breaking wave, keeping any guests incidental and indistinct. No added wave wall, invented slide, full pool shape, architecture or fabricated landmarks. This distinct source differs from Tidal Wave Bay's photo. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-207169586400889-thumbnail.jpg",
+      "thumbnailSHA256": "db3e0e3c1f8f2eb2208ba0d802306f0da71eb2aae753ab50beb3afe61111f312",
+      "thumbnailBytes": 21930,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-207169586400889-detail.jpg",
+      "detailSHA256": "a34023b085e7002a5abf7da7b37126d3d153b693ef6f78ad2e7163a32d8f370d",
+      "detailBytes": 149150,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 207775311620634,
+      "rideName": "Splash River",
+      "alt": "Illustrated Splash River at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:11:45.392870+00:00",
+      "originalSHA256": "878a5ed3cf0dfebf7433c995aaa20a58f48b569f3f61058a6c58d5259ada046e",
+      "review": "Accepted: generated pixels inspected against genuine official Splash River photo. Documented river bend, blue single/double tubes, tan edge, gray rocks, blue rope posts, red-topped mushroom water curtain and overhead green flume on timber supports retained in their source-relative positions. No whole river loop or new crossing invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbd1b674c337809cf1bc5cc3035de2a6e879883a1-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/splash-river",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Guests in a lazy river at a waterpark.",
+          "sha256": "ff2aa1b74631dd6a7ff14815253b5c6ae3754bbd4e1d98a4010d5d99b67baf39",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Splash River photograph shows a winding pale-aqua lazy river with blue translucent single and double inner tubes and dark-blue handles, a tan concrete edge, gray rocks and blue rope-fence posts left, a wooded mulched bank right, and a real red-capped white mushroom water curtain farther back. A green open flume curves overhead on weathered timber supports. Use only this photographed bend, blue tubes, mushroom and overhead green section. Preserve real relative placement and connected supports; do not invent the complete river loop, new crossings, tunnel or slide outlet. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-207775311620634-thumbnail.jpg",
+      "thumbnailSHA256": "87ddcf2a432b9baa3dd23a59a6d3b8947025d4194151f4091f2a36da11b6090d",
+      "thumbnailBytes": 29305,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-207775311620634-detail.jpg",
+      "detailSHA256": "ddd3a264fd3b9ef387e3d821c30ec00b023ca839d6fa02966c2bcf84e734890a",
+      "detailBytes": 232922,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 209165250916808,
+      "rideName": "Riverbank Slide Out",
+      "alt": "Illustrated Riverbank Slide Out at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:21:04.717256+00:00",
+      "originalSHA256": "81b23d3a1df1bce7fdd8595839454e1363ec7116c3e93219635b4b9c68bf99e3",
+      "review": "Accepted: saved PNG inspected against genuine Riverbank Slide Out photograph. Actual green raised deck and rails, tan columns, source-supported white/blue low chutes, gray tipping-water framework, tan rocks and rope fences retained. Overhead text excluded; no invented full course or additional slide tower. Realistic materials and practical evening treatment retained.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F945ff555c99f52895ee58b4b573d46c2563efc2e-2048x1366.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/riverbank-slide-out",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Children enjoying kid-friendly waterslides at a waterpark.",
+          "sha256": "33b6afe7582e85785825f6d1b508e991eb296f670ac0d899ff2beacaf8b44361",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Riverbank Slide Out photograph shows a bright-green elevated rectangular deck/railings on tan columns, white and blue low water chutes between tan artificial rocks, a shallow aqua splash area, rope-and-net fences and pebbled banks. At left is the documented mechanical tipping-water feature with gray metal framework. Use a close portrait of the actual green deck and one documented white low chute with tan rocks, keeping the view within the source, without the overhead logo/sign or unseen layout. Do not invent extra slides, routing or structures. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-209165250916808-thumbnail.jpg",
+      "thumbnailSHA256": "f36c4232044de143a90d5500adb23a4924ffac107bb476b98c02a1ce0ebe48f8",
+      "thumbnailBytes": 25931,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-209165250916808-detail.jpg",
+      "detailSHA256": "882ff251b41671f59db82fa6de5166048e7e58566a4fd5c91aaf7cd1a7ac2cfe",
+      "detailBytes": 205785,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 212422380518207,
+      "rideName": "Tropical Plunge",
+      "alt": "Illustrated Tropical Plunge at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:24:26.832291+00:00",
+      "originalSHA256": "6b55d14ab708ca67193956c0ed0abd4380c1b7ddafd5427236b945aca9eb31e7",
+      "review": "Accepted: corrected generated pixels inspected against genuine Tropical Plunge photograph. Close view retains only source-supported short green/pale-gray/orange tube bends, real black joint flanges and adjacent galvanized brackets/column. Unverified lower green return routing and tower base are excluded. Distinct from the Tube Slides image; original draft and exact built-in crop edit preserved.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F74ecf6bcec127d9536830db0764f3acd7eed1499-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/tropical-plunge",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A giant waterslide complex at a water park.",
+          "sha256": "122a71f8d7be7dcdba635722669c73d3df8a747a49a7bd50e0fdd28e176a5372",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Tropical Plunge photograph documents the same physical slide complex as the separate Tube Slides catalog ID. For this general ID use a distinct close composition of the upper visible green and pale-gray enclosed tube bends attached to the actual galvanized steel support columns and tower cross-bracing. A small orange tube section may remain where seen. Keep the view limited to this real photographed tube/support section; exclude the blue open drop lanes that feature in the other artwork, and do not invent a full routing, new crossing, launch capsule, tower crown or pool. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-212422380518207-thumbnail.jpg",
+      "thumbnailSHA256": "3ba189a8713afc1c6ba17f3194b33699a73e5dcdbc635ff2653ec5ef5fb28d01",
+      "thumbnailBytes": 22616,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-212422380518207-detail.jpg",
+      "detailSHA256": "8ba0be673f8699f44673bb6fd2c13fcdcefe73ba1d8c428b36e144999661f35d",
+      "detailBytes": 157492,
       "detailPixels": [
         768,
         960
@@ -6090,6 +6678,48 @@
     },
     {
       "parkId": 60,
+      "rideId": 226999413458817,
+      "rideName": "Coconut Cove",
+      "alt": "Illustrated Coconut Cove at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:16:49.700752+00:00",
+      "originalSHA256": "ae40678ba6775bf462e4cc284a033c548026f1c5fc6db5777a856a77c51bba6d",
+      "review": "Accepted: saved generation inspected against genuine Coconut Cove photograph. Documented tan/brown textured rock waterfall and aqua splash foreground retained in a close portrait. Complete pool edge, extra slide and unverified landmarks remain outside the image; realistic water/material treatment and AI disclosure retained.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1258bb172b02f41aac8254a5a3d2c4767059c7a5-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/coconut-cove",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A father and son splashing around in a pool at a waterpark.",
+          "sha256": "2cf5cecfd468fecdef9df924b5dbeca12cbce46f12e019cfd27949feacf8671e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Coconut Cove photograph shows aqua pool water in front of a tan/brown artificial rock wall with a broad curtain of falling white water and a close family splash scene. Use the actual textured rock waterfall and aqua foreground as the focus in a portrait, with people incidental or omitted. Preserve the photographed close view; no invented complete pool edge, extra waterfall structure, slide, building or distant park landmark. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-226999413458817-thumbnail.jpg",
+      "thumbnailSHA256": "f723c29c8a60a1b3e017e49c82627b204936dce294d7972f2299a3305b9687c9",
+      "thumbnailBytes": 28915,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-226999413458817-detail.jpg",
+      "detailSHA256": "afbbda7132d57b905aa5b2f19f573c884d9c8ab30dd0c38eb78dc35631282451",
+      "detailBytes": 213329,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 235264810509818,
       "rideName": "Eiffel Tower",
       "alt": "Illustrated Eiffel Tower at Kings Island",
@@ -6258,6 +6888,90 @@
     },
     {
       "parkId": 60,
+      "rideId": 240190456045853,
+      "rideName": "RiverRacers",
+      "alt": "Illustrated RiverRacers at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:17:30.029252+00:00",
+      "originalSHA256": "1e13c8ae4563e203bcff6300f7f75350e8a4d794492567aa63969208897fde7d",
+      "review": "Accepted: saved generation inspected against genuine operational RiverRacers aerial photograph. Actual cyan/cream dual first-drop section, connected galvanized tower and cream shade, green two-person rafts and source-supported conveyor retained as the portrait focus. Wider tube course stays cropped instead of inventing its complete routing.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F04560ac4bc8fa8758f405067f964d6400cb60e86-5083x3806.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/riverracers",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A racing uphill water coaster at a waterpark.",
+          "sha256": "f21026184c4d54329b9dbbc307e844d835666ebfec4aef9237fa441ff381ea9b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official RiverRacers aerial photograph shows the real racing water coaster with cyan-blue/cream side-by-side steep first-drop channels from a galvanized gray tower under a cream shade sail, cyan closed tube bends on gray columns, visible blue open banked turns and green two-person inflatable rafts. For a clear portrait isolate the photographed side-by-side first-drop section and its connected tower/shade, preserving both cream-separated blue channels and actual support structure. Keep the surrounding course cropped; do not invent a whole route, extra channels, loop, new tower or crossing. Reference is a real operational aerial photo, not the older concept rendering; capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-240190456045853-thumbnail.jpg",
+      "thumbnailSHA256": "688139d13021b119690bbce0ab0d541a257bb6eea6a12e340f9867f65ed71b2d",
+      "thumbnailBytes": 27985,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-240190456045853-detail.jpg",
+      "detailSHA256": "509948ca0a0640c51c2780af32466a02750dbbbbb148d63bbaea753b9ee22da7",
+      "detailBytes": 205541,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 240898912096063,
+      "rideName": "Phantom Theater: Opening Nightmare",
+      "alt": "Illustrated Phantom Theater: Opening Nightmare at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:23:15.775287+00:00",
+      "originalSHA256": "bda072345e0349a5a2c3bd2fbca51c66f1ca8ebf63120b9e2e64b251a4dcc97c",
+      "review": "Accepted: actual generated pixels inspected against genuine official gallery photograph rather than the rejected marketing composite. Physical Maestro figure's blue manufactured face, white hair, white cravat, black suit, purple satin cape and roses retained beside actual red stage curtain/gold trim and theater-mask crest, with practical indoor lighting. No invented organ, new ghost or outdoor setting.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F93835dd18b436ba43aee2cf0d5fdeb906c802b94-2000x1334.webp%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/phantom-theater-opening-nightmare",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Actual Phantom Theater ride vehicle beside the Maestro figure and red stage curtains",
+          "sha256": "81215d24818e25bcd9a7a149e0c2e91be509459e4261673a74e847bd2a4f123a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "A genuine official gallery photograph, separate from the rejected promotional composite hero, shows the physical Phantom Theater: Opening Nightmare ride: deep red opera-box vehicle with rounded charcoal hood, gold ornamental front, and the actual blue-faced white-haired Maestro figure in a black outfit, white cravat and purple satin cape beside red velvet stage curtains with gold trim and a theater-mask crest. For this portrait focus on the photographed physical Maestro upper body and the immediately adjacent red curtain and gold trim. Keep the real manufactured face/sculpture and practical indoor red-purple lighting; no outdoor sky, new organ, extra effects, invented ghost characters, unseen vehicle geometry or promotional text. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-240898912096063-thumbnail.jpg",
+      "thumbnailSHA256": "9c206269309e200ed327bb51716f234e6020ecfcdc2b5a499fea3fe5555d9686",
+      "thumbnailBytes": 18363,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-240898912096063-detail.jpg",
+      "detailSHA256": "8aad8dc545c1ce1ec60d05476b53d64c39002b1d9b1bb37b57127ac3bb4559ad",
+      "detailBytes": 110498,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 242969173414907,
       "rideName": "Queen City Stunt Coaster",
       "alt": "Illustrated Queen City Stunt Coaster at Kings Island",
@@ -6342,6 +7056,48 @@
     },
     {
       "parkId": 60,
+      "rideId": 250161569049463,
+      "rideName": "Thunder Falls",
+      "alt": "Illustrated Thunder Falls at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:23:37.727610+00:00",
+      "originalSHA256": "38afe7d9265c8e318d6fa052a03f633acc5beb114ae43698fbfa5a0e143bbb13",
+      "review": "Accepted: generated pixels inspected against genuine Thunder Falls close photograph. Actual blue open exit, pale-yellow translucent single inner tube with blue handles, incidental rider and white splash retained. No complete slide route, tower or different raft invented; natural material/water detail preserved.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2a1ff5cb5eb887838675901ec8ca82df2d7f6438-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/thunder-falls",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A guest going down a waterslide at a water park.",
+          "sha256": "a6352eb319cf86ee64b31e4ea1d986289b59aa39e97c1ac905478b6fe631b9e4",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Thunder Falls photograph shows a blue open fiberglass slide exit spilling white spray into aqua water, with a pale-yellow translucent single inner tube and dark-blue handles, carrying an incidental rider. Use a tight portrait of this real source-documented blue exit, tube and splash. Preserve the single circular inflatable ring and real chute edges; do not invent a complete course, tower, extra slope or different raft. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-250161569049463-thumbnail.jpg",
+      "thumbnailSHA256": "410c7203160fcd10c196c247d012ee936ac2f35812d68969ad5b400c66482d88",
+      "thumbnailBytes": 23316,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-250161569049463-detail.jpg",
+      "detailSHA256": "c6f74045b711d7fbd19ac53e4b07a1d6f8eb12a7d3a464770e038c21ad38a9c3",
+      "detailBytes": 158085,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 251988769908587,
       "rideName": "Kite Eating Tree",
       "alt": "Illustrated Kite Eating Tree at Kings Island",
@@ -6377,6 +7133,48 @@
       "detailFile": "60-251988769908587-detail.jpg",
       "detailSHA256": "3933cdfb6380ca007d9082f55502456615c3d57525f18eac1715c3d682103180",
       "detailBytes": 146562,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 257992635550773,
+      "rideName": "Tropical Twister",
+      "alt": "Illustrated Tropical Twister at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:24:05.023996+00:00",
+      "originalSHA256": "18391c1c9e08c69a60cc42c051256746f78dce961470122a53d9ed3ab1baefa0",
+      "review": "Accepted: generated pixels inspected against genuine Tropical Twister close photograph. Real narrow dark-teal runout, rounded wet edges, incidental body-slide rider and foamy white water retained in a close portrait. No raft, full routing, tall tower or new slide color introduced.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fad0b7a71ff2dd04eee6e4d22d53bdbab594fe015-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/tropical-twister",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A guest going down a waterslide at a water park.",
+          "sha256": "fbdb506b10c150369a5fc9999dd974dc21770153b871f8d0bb834019fe7f404e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Tropical Twister photograph shows a close splashdown on a narrow dark teal-blue open body-slide runout with rounded raised edges, white splash and an incidental rider with outstretched arms. Keep the artwork framed within this short photographed chute section. No raft, extra tube, tall drop, extended upstream routing, tower or complete pool edge is documented; do not add them. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-257992635550773-thumbnail.jpg",
+      "thumbnailSHA256": "35ed075c695951951438100975351ea389d5a49685749fe60608b6ece6ba2d90",
+      "thumbnailBytes": 24671,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-257992635550773-detail.jpg",
+      "detailSHA256": "86b81ae3116531bfcfc72e05541cc3194f860210aa6001bc10a3a320705ab7ac",
+      "detailBytes": 150251,
       "detailPixels": [
         768,
         960
@@ -6468,6 +7266,48 @@
     },
     {
       "parkId": 60,
+      "rideId": 273047813023452,
+      "rideName": "Snow Works",
+      "alt": "Illustrated Snow Works at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:25:23.481093+00:00",
+      "originalSHA256": "e026d449630d6bd55335cb93c44b7d011284f292656bbac70224d0eb76cf5ee8",
+      "review": "Accepted: generated pixels inspected against the genuine Brad Perdue 2025 photograph. Real low prepared white lanes/rounded dividers, blue sled tubes with black rims, white perimeter and blue/white festive tree lights retained from the downhill side angle. Unrelated coaster skyline excluded, no natural mountain/lift/snowfall invented. Historical 2025 source limit and source credit retained; no claim of current operation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://kicentral.com/wp-content/uploads/2025/11/PXL_20251128_223449273.MP_-scaled.jpg",
+          "sourceURL": "https://kicentral.com/photos/winterfest-2025/",
+          "credit": "Brad Perdue (2025) / KICentral.com",
+          "license": "Copyright Brad Perdue / Kings Island Central; source rights retained",
+          "licenseURL": "https://kicentral.com/photos/winterfest-2025/",
+          "alt": "Snow Works white sledding lanes and blue inner tubes at Kings Island WinterFest, photographed by Brad Perdue in 2025",
+          "sha256": "030628788bde4fb3a1db2773038131b205060a84f23e864317f8dafc2aa1b666",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "A genuine Kings Island Central WinterFest 2025 photograph, visibly credited Brad Perdue 25 and dated by its archive filename to 2025-11-28, shows Snow Works' low white prepared sled hill, parallel lanes separated by rounded white low dividers, blue circular sled tubes with black lower rims, white picket perimeter and blue/white festive tree lights. The official WinterFest ride list identifies Snow Works, and a first-person trip report corroborates this inner-tube hill. For the portrait use only a close source-supported lane and its actual blue/black sled tube from the original downhill side angle. Background lights may remain; crop away the unrelated coaster skyline. No natural mountain, chairlift, ski equipment, new lane count, invented tower, full hill extension, snowfall or current operation claim. Appearance beyond this 2025 source is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-273047813023452-thumbnail.jpg",
+      "thumbnailSHA256": "73a9db2b9510bd6a153a22613ace3e1aa7680faa18782d48252e3e9be010f3b4",
+      "thumbnailBytes": 25334,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-273047813023452-detail.jpg",
+      "detailSHA256": "1083399b01e41886b8706d29cde824282a7832bc88c593f05e6b1c722f9de8d4",
+      "detailBytes": 169331,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 279237452600851,
       "rideName": "Flight of Fear",
       "alt": "Illustrated Flight of Fear at Kings Island",
@@ -6503,6 +7343,48 @@
       "detailFile": "60-279237452600851-detail.jpg",
       "detailSHA256": "13ca34b566e9cc3e1074f2ef71b5da1c2310bff77b6c04d4c23c048df2da566b",
       "detailBytes": 170312,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 281142087827253,
+      "rideName": "Beagle Scout Acres",
+      "alt": "Illustrated Beagle Scout Acres at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:24:32.296368+00:00",
+      "originalSHA256": "68af6d550570aba15daee195a1ef92c95358ce5cf7dad76a574333ac11d0df63",
+      "review": "Accepted: generated pixels inspected against genuine Beagle Scout Acres photograph. Documented low yellow slide/green mound, flat blue ground-path motif, green hanging foliage, corrugated pavilion roof, tan columns, red wall and blue mountain mural retained with realistic materials. The painted ground path remains dry; no invented water river or coaster.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe4dbeba2d4bdf5b20e4e713e637d772b36ec9a39-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/beagle-scout-acres",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A shaded Camp Snoopy-themed kids area at an amusement park.",
+          "sha256": "c4138f8c2c6dc72e495476e353af6daa38b154e39af607face8031a3b583046a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Beagle Scout Acres photograph shows the actual covered children's play area: green artificial turf with a winding flat blue river motif, tan log-like roof columns, corrugated metal canopy with large hanging green tree-foliage panels, red perimeter wall with distant blue-mountain mural, and small tan/yellow climbing slides, dark-green mound/tunnel elements and round stepping stumps. For a clear portrait frame one photographed low yellow slide on a green mound, the blue ground path and hanging green foliage. Preserve the documented pavilion setting, without inventing roller-coaster hardware, extra play towers, a real water river or new characters. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-281142087827253-thumbnail.jpg",
+      "thumbnailSHA256": "34aeaf69eee6d931d98f84006f4adac8413425cdb71335cec94b099cb4036939",
+      "thumbnailBytes": 23675,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-281142087827253-detail.jpg",
+      "detailSHA256": "d0ca75f77e46f1e53d01d552fef0ad267abf2fb50c9b0a4db5bbea26de423dec",
+      "detailBytes": 183611,
       "detailPixels": [
         768,
         960

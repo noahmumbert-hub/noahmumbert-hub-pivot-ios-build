@@ -364,10 +364,10 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 171,
-    "pendingIllustrations": 953,
-    "acceptedForRequestedStyle": 170,
-    "unfinishedForRequestedStyle": 954,
+    "acceptedIllustrations": 192,
+    "pendingIllustrations": 932,
+    "acceptedForRequestedStyle": 191,
+    "unfinishedForRequestedStyle": 933,
     "blocked": 5
   },
   "parks": [
@@ -21253,10 +21253,10 @@
           "url": "https://www.sixflags.com/kingsisland/attractions/rendezvous-run"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-67934912831519",
@@ -21422,10 +21422,10 @@
           "url": "https://www.sixflags.com/kingsisland/attractions/tidal-wave-bay"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-90000667675737",
@@ -21480,10 +21480,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-92458557111555",
@@ -21591,10 +21591,10 @@
           "url": "https://www.sixflags.com/kingsisland/attractions/bluegill-lagoon"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-112988495476515",
@@ -21808,10 +21808,10 @@
           "url": "https://www.sixflags.com/kingsisland/attractions/salamander-sliders"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-143888827067607",
@@ -21842,10 +21842,10 @@
           "url": "https://www.whitewaterwest.com/insights-and-events/news/cedar-fair-reopens-carowinds-waterpark-carolina-harbor-double-slides-interactive-play/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-145675263846755",
@@ -22040,10 +22040,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-184642581137824",
@@ -22064,10 +22064,10 @@
           "url": "https://www.sixflags.com/kingsisland/attractions/paradise-plunge"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-188953268790521",
@@ -22122,10 +22122,10 @@
           "url": "https://www.sixflags.com/kingsisland/winterfest/ice-skating"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-200408303046547",
@@ -22146,10 +22146,10 @@
           "url": "https://www.sixflags.com/kingsisland/attractions/pineapple-pipeline"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-204094609944113",
@@ -22199,10 +22199,10 @@
           "url": "https://www.sixflags.com/kingsisland/attractions/breakers-bay"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-207775311620634",
@@ -22223,10 +22223,10 @@
           "url": "https://www.sixflags.com/kingsisland/attractions/splash-river"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-209165250916808",
@@ -22247,10 +22247,10 @@
           "url": "https://www.sixflags.com/kingsisland/attractions/riverbank-slide-out"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-212422380518207",
@@ -22276,10 +22276,10 @@
           "url": "https://www.whitewaterwest.com/insights-and-events/news/cedar-fair-reopens-carowinds-waterpark-carolina-harbor-double-slides-interactive-play/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-217175995369859",
@@ -22445,10 +22445,10 @@
           "url": "https://www.sixflags.com/kingsisland/attractions/coconut-cove"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-235264810509818",
@@ -22590,10 +22590,10 @@
           "url": "https://coasterpedia.net/wiki/Kings_Island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-240898912096063",
@@ -22614,10 +22614,10 @@
           "url": "https://www.sixflags.com/kingsisland/attractions/phantom-theater-opening-nightmare"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-242969173414907",
@@ -22696,10 +22696,10 @@
           "url": "https://www.sixflags.com/kingsisland/attractions/thunder-falls"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-251988769908587",
@@ -22749,10 +22749,10 @@
           "url": "https://www.sixflags.com/kingsisland/attractions/tropical-twister"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-263102270473903",
@@ -22831,10 +22831,10 @@
           "url": "https://api.themeparks.wiki/v1/entity/e67212f7-e01e-43a6-858e-28aeb3cef17d"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "60-279237452600851",
@@ -22884,10 +22884,10 @@
           "url": "https://www.sixflags.com/kingsisland/attractions/beagle-scout-acres"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "61-4722725130618",
