@@ -226,8 +226,12 @@ final class PIVOTUITests: XCTestCase {
         let ride = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Guardians of the Galaxy'")).firstMatch
         reveal(ride, in: app); ride.tap()
         XCTAssertTrue(app.navigationBars["Ride information"].waitForExistence(timeout: 5))
+        let bodySize = app.staticTexts["Ride information body size"]
+        XCTAssertTrue(bodySize.waitForExistence(timeout: 5))
+        XCTAssertGreaterThanOrEqual(bodySize.frame.height, 50, "Ride details must actually render the largest accessibility text size")
         reveal(chart, in: app)
         XCTAssertTrue(chart.isHittable, "Ride details must use the same labeled chart")
+        assertObservedChartSamples(waits, chart: chart)
         screenshot("Observed history largest accessibility size in ride details", app: app)
         let done = app.buttons["Done"]
         XCTAssertTrue(done.isHittable)

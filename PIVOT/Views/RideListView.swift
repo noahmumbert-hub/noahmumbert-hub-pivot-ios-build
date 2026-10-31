@@ -397,7 +397,7 @@ struct RideDetailScreenView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .topBarTrailing) { Button("Done") { dismiss() }.foregroundStyle(.primary) } }
         }
-
+        .modifier(PivotUITestTypeSize(probeIdentifier: "Ride information body size"))
     }
 }
 
