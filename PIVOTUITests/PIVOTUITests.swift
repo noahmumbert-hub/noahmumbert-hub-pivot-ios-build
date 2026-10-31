@@ -124,7 +124,7 @@ final class PIVOTUITests: XCTestCase {
         screenshot("Every observed wait dot labeled latest samples", app: app)
         chart.swipeRight()
         screenshot("Every observed wait dot labeled earlier samples", app: app)
-        let sampleTimes = app.staticTexts["Sample times"].firstMatch
+        let sampleTimes = app.buttons["Sample times"].firstMatch
         reveal(sampleTimes, in: app); sampleTimes.tap()
         XCTAssertEqual(history.value as? String, "Expanded", "A child disclosure must keep ride history open")
         XCTAssertTrue(app.staticTexts["wait-sample-row-10916-0"].waitForExistence(timeout: 5))
@@ -137,6 +137,8 @@ final class PIVOTUITests: XCTestCase {
         reveal(hourly, in: app); hourly.tap()
         XCTAssertTrue(app.staticTexts["Lowest estimated wait"].waitForExistence(timeout: 5))
         app.buttons["Done"].tap()
+        XCTAssertEqual(history.value as? String, "Expanded", "Opening hourly estimates must keep observed history expanded")
+        XCTAssertTrue(chart.exists)
     }
 
     private func observedHistoryFixture(_ extra: [String] = []) -> XCUIApplication {
@@ -160,6 +162,9 @@ final class PIVOTUITests: XCTestCase {
         let disclosure = app.buttons["Sample times"].firstMatch
         reveal(disclosure, in: app)
         disclosure.tap()
+        let history = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Recent observed waits'")).firstMatch
+        XCTAssertEqual(history.value as? String, "Expanded", "Opening sample times must not toggle the parent disclosure")
+        XCTAssertTrue(app.staticTexts["wait-sample-row-10916-0"].waitForExistence(timeout: 5))
         XCTAssertEqual(app.staticTexts.matching(NSPredicate(format: "identifier BEGINSWITH 'wait-sample-row-10916-'")).count, waits.count)
         for (index, wait) in waits.enumerated() {
             let row = app.staticTexts["wait-sample-row-10916-\(index)"]
