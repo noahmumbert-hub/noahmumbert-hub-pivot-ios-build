@@ -15,7 +15,7 @@ final class PIVOTTests: XCTestCase {
         XCTAssertEqual(present(makeRide(status: .open, waitTime: nil)).title, "Open · wait not posted")
         XCTAssertNil(present(makeRide(status: .open, waitTime: -1)).waitMinutes)
         for (state, title) in [(RideStatus.down, "Temporarily closed"), (.scheduled, "Not operating now"),
-                               (.parkInactive, "Park not active"), (.stale, "Wait unavailable"), (.unknown, "Wait unavailable")] {
+                               (.parkInactive, "Park not active"), (.stale, "Wait unavailable"), (.unknown("UNREPORTED"), "Wait unavailable")] {
             let value = present(makeRide(status: state))
             XCTAssertEqual(value.title, title)
             XCTAssertNil(value.waitMinutes)
