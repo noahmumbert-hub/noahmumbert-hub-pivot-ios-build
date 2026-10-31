@@ -65,18 +65,22 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertFalse(gestureArea.frame.intersects(app.textFields["Search park places"].frame))
         XCTAssertFalse(gestureArea.frame.intersects(app.buttons["Browse map places"].frame))
         XCTAssertFalse(gestureArea.frame.intersects(app.buttons["Zoom in"].frame))
+        let initialPins = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH 'map-pin-' OR identifier == 'Map place cluster'"))
+        XCTAssertGreaterThan(initialPins.count, 0, "The initial park fit must contain its loaded annotations")
+        let pinchTouchBounds = gestureArea.frame.insetBy(dx: 24, dy: 24)
+        XCTAssertFalse(initialPins.allElementsBoundByIndex.contains { $0.frame.intersects(pinchTouchBounds) },
+                       "Both physical fingers must begin and move through empty map pixels")
         // A substantial physical span avoids a tiny14pt→28pt gesture entirely
         // inside a marker's44pt touch target. The actual native camera must zoom.
         gestureArea.pinch(withScale: 6, velocity: 1)
         waitForCamera(app) { $0[2] < initial[2] * 0.85 }
         let pinched = camera(app)
+        XCTAssertTrue(gestureArea.waitForExistence(timeout: 5))
         gestureArea.pinch(withScale: 0.5, velocity: -1)
         waitForCamera(app) { $0[2] > pinched[2] * 1.15 }
         let beforeDoubleTap = camera(app)
         // A marker consumes a double-tap as selection. Measure empty native map
         // pixels rather than assuming a fixed coordinate stays empty after zooming.
-        let pins = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH 'map-pin-' OR identifier == 'Map place cluster'"))
-        XCTAssertGreaterThan(pins.count, 0)
         let occupied = app.buttons.allElementsBoundByIndex.map { $0.frame.insetBy(dx: -24, dy: -24) }
             + app.links.allElementsBoundByIndex.map { $0.frame.insetBy(dx: -12, dy: -12) }
         let top = app.textFields["Search park places"].frame.maxY + 24
@@ -265,6 +269,10 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertGreaterThanOrEqual(mapBody.frame.height, 35, "The fullscreen map must actually render accessibility-size body text")
         XCTAssertTrue(app.buttons["Zoom in"].isHittable)
         XCTAssertTrue(app.buttons["Browse map places"].isHittable)
+        let legal = app.links["Legal"]
+        XCTAssertTrue(legal.waitForExistence(timeout: 5))
+        XCTAssertLessThanOrEqual(legal.frame.maxY, app.buttons["Browse map places"].frame.minY - 4,
+                                 "Large-text Browse must leave the native attribution completely visible")
         screenshot("Native map dark accessibility text", app: app)
     }
 
@@ -403,12 +411,15 @@ final class PIVOTUITests: XCTestCase {
             if element.exists {
                 let frame = element.frame
                 if frame.isEmpty { app.swipeUp(); continue }
-                let viewport = app.frame.insetBy(dx: 0, dy: 80)
+                let viewport = app.frame.insetBy(dx: 1, dy: 1)
                 // XCTest can throw instead of returning false for an offscreen
                 // accessibility frame. Scroll it into the viewport before hit-testing.
                 let center = CGPoint(x: frame.midX, y: frame.midY)
                 if !frame.isEmpty && viewport.contains(center) && element.isHittable { return }
-                if center.y < viewport.minY { app.swipeDown() } else { app.swipeUp() }
+                // A real hittable control near the bottom is valid. If occluded,
+                // move it toward the actual window center rather than excluding
+                // a fixed80pt band that makes compact-phone scrolling oscillate.
+                if center.y < viewport.midY { app.swipeDown() } else { app.swipeUp() }
             } else {
                 app.swipeUp()
             }

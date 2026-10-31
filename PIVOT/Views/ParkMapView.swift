@@ -97,6 +97,7 @@ final class ParkMapSession: ObservableObject {
     var camera: MKMapCamera?
 #if DEBUG
     @Published var telemetry = ""
+    @Published var gestureRect: CGRect?
 #endif
 }
 struct ParkMapCameraCommand {
@@ -308,6 +309,7 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
             }
             parent.session.camera = mapView.camera.copy() as? MKMapCamera
 #if DEBUG
+            updateGestureTarget(on: mapView)
             let c = mapView.centerCoordinate
             let value = "\(c.latitude),\(c.longitude),\(mapView.camera.altitude)"
             DispatchQueue.main.async { [weak self, weak mapView] in
@@ -317,6 +319,34 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
             }
 #endif
         }
+#if DEBUG
+        func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView]) {
+            updateGestureTarget(on: mapView)
+        }
+        private func updateGestureTarget(on map: MKMapView) {
+            guard ProcessInfo.processInfo.arguments.contains("--map-gesture-test") else { return }
+            // XCTest needs an element rectangle for a two-finger gesture. Choose
+            // real empty map pixels, rather than centering touches among clusters.
+            // No production gesture recognizer or annotation is altered.
+            DispatchQueue.main.async { [weak self, weak map] in
+                guard let self, let map, map.delegate === self else { return }
+                let occupied = map.annotations.compactMap { map.view(for: $0) }.filter { !$0.isHidden && $0.alpha > 0 }
+                    .map { $0.convert($0.bounds, to: map).insetBy(dx: -24, dy: -24) }
+                let safe = map.bounds.inset(by: UIEdgeInsets(top: map.layoutMargins.top + 12, left: 20,
+                    bottom: map.layoutMargins.bottom + 12, right: 84))
+                var target: CGRect?
+                if safe.width >= 140 && safe.height >= 140 {
+                    search: for y in stride(from: safe.minY, through: safe.maxY - 140, by: 20) {
+                        for x in stride(from: safe.minX, through: safe.maxX - 140, by: 20) {
+                            let candidate = CGRect(x: x, y: y, width: 140, height: 140)
+                            if !occupied.contains(where: { $0.intersects(candidate) }) { target = candidate; break search }
+                        }
+                    }
+                }
+                if self.parent.session.gestureRect != target { self.parent.session.gestureRect = target }
+            }
+        }
+#endif
         func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
             if let cluster = annotation as? MKClusterAnnotation {
                 let view = mapView.dequeueReusableAnnotationView(withIdentifier: "cluster", for: cluster) as! MKMarkerAnnotationView
@@ -366,7 +396,7 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
 }
 private struct MapBottomHeightKey: PreferenceKey {
     static var defaultValue: CGFloat = 0
-    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) { value = nextValue() }
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) { value = max(value, nextValue()) }
 }
 
 struct ParkMapView: View {
@@ -438,7 +468,9 @@ struct ParkMapView: View {
                         margins: UIEdgeInsets(top: geometry.safeAreaInsets.top + 72, left: 12,
                                               // The selected card has a190pt content limit plus its44pt Browse row.
                                               // Reserve that complete resting height immediately, before preferences update.
-                                              bottom: geometry.safeAreaInsets.bottom + max(bottomHeight, selected == nil ? 60 : 250) + 16, right: 12),
+                                              // Keep the native Legal text clear even when Browse
+                                              // wraps to two accessibility-size lines on compact phones.
+                                              bottom: geometry.safeAreaInsets.bottom + max(bottomHeight, selected == nil ? 60 : 250) + 32, right: 12),
                         viewportSize: CGSize(width: geometry.size.width,
                             height: geometry.size.height + (isFullScreen ? geometry.safeAreaInsets.top + geometry.safeAreaInsets.bottom : 0)),
                         accent: accent,
@@ -446,14 +478,13 @@ struct ParkMapView: View {
                         .ignoresSafeArea(edges: isFullScreen ? .all : [])
 #if DEBUG
                     if ProcessInfo.processInfo.arguments.contains("--park-map-ui-test") || ProcessInfo.processInfo.arguments.contains("--apple-ui-test") {
-                        if ProcessInfo.processInfo.arguments.contains("--map-gesture-test") {
+                        if ProcessInfo.processInfo.arguments.contains("--map-gesture-test"), let rect = session.gestureRect {
                             // XCTest's whole-window pinch begins over the floating controls.
-                            // This transparent, noninteractive target only supplies a central
+                            // This transparent, noninteractive target only supplies an empty
                             // rectangle; synthesized touches still reach the real MKMapView.
                             Rectangle().fill(Color.black.opacity(0.001))
-                                .frame(width: max(120, geometry.size.width - 120),
-                                       height: min(300, max(120, geometry.size.height - bottomHeight - 170)))
-                                .position(x: geometry.size.width / 2 - 20, y: geometry.size.height / 2)
+                                .frame(width: rect.width, height: rect.height)
+                                .position(x: rect.midX, y: rect.midY - (isFullScreen ? geometry.safeAreaInsets.top : 0))
                                 .accessibilityElement(children: .ignore)
                                 .accessibilityLabel("Map gesture area")
                                 .accessibilityIdentifier("Map gesture area")
