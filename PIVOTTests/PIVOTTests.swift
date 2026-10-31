@@ -25,6 +25,18 @@ final class PIVOTTests: XCTestCase {
         }
     }
 
+    func testMapZoomCommandsPreserveCoalescedPressesAndResetAfterFit() {
+        let fit = ParkMapCameraCommand(action: .fit)
+        let once = fit.zoomed(by: 1)
+        let twice = once.zoomed(by: 1)
+        XCTAssertEqual(twice.zoomFactor(since: fit), 4, "Two presses before a SwiftUI update must both be applied")
+        XCTAssertEqual(twice.zoomFactor(since: once), 2, "An already consumed press must not be repeated")
+        let cancelled = once.zoomed(by: -1)
+        XCTAssertEqual(cancelled.zoomFactor(since: fit), 1, "Opposite coalesced presses cancel")
+        let refit = ParkMapCameraCommand(action: .fit)
+        XCTAssertEqual(refit.zoomed(by: -1).zoomFactor(since: twice), 0.5, "A new fit starts a fresh command sequence")
+    }
+
     func testBundledMapCatalogCoversEveryParkWithValidUniquePlaces() throws {
         let catalog = try ParkMapCatalog.load()
         XCTAssertEqual(Set(catalog.parks.keys), Set(FloridaPark.allCases.map { String($0.id) }))

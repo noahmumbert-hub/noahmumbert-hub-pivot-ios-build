@@ -98,12 +98,42 @@ final class ParkMapSession: ObservableObject {
 #if DEBUG
     @Published var telemetry = ""
     @Published var gestureRect: CGRect?
+    @Published var eventTrace = ""
+    private var events: [String] = []
+    func record(_ event: String) {
+        let line = String(format: "%.2f", Date.timeIntervalSinceReferenceDate) + " " + event
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            self.events.append(line)
+            self.events = Array(self.events.suffix(16))
+            self.eventTrace = self.events.joined(separator: " | ")
+        }
+    }
 #endif
 }
 struct ParkMapCameraCommand {
-    enum Action { case fit, zoom(Double), focus(CLLocationCoordinate2D) }
+    enum Action { case fit, zoom, focus(CLLocationCoordinate2D) }
     let id = UUID()
     let action: Action
+    private let zoomEpoch: UUID
+    private let zoomSteps: Int
+    init(action: Action) {
+        self.action = action
+        zoomEpoch = UUID()
+        zoomSteps = 0
+    }
+    private init(zoomEpoch: UUID, zoomSteps: Int) {
+        action = .zoom
+        self.zoomEpoch = zoomEpoch
+        self.zoomSteps = zoomSteps
+    }
+    func zoomed(by steps: Int) -> Self {
+        Self(zoomEpoch: zoomEpoch, zoomSteps: zoomSteps + steps)
+    }
+    func zoomFactor(since previous: Self?) -> Double {
+        let consumed = previous?.zoomEpoch == zoomEpoch ? previous?.zoomSteps ?? 0 : 0
+        return pow(2, Double(zoomSteps - consumed))
+    }
 }
 private final class ParkPlaceAnnotation: NSObject, MKAnnotation {
     let point: ParkMapPoint
@@ -202,6 +232,7 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
                 map?.setCamera(camera, animated: false)
             }
             context.coordinator.lastCommand = command.id
+            context.coordinator.lastZoomCommand = command
         }
         return container
     }
@@ -211,7 +242,11 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
         container.setNeedsLayout()
         let coordinator = context.coordinator
         coordinator.parent = self
-        if map.layoutMargins != margins {
+        if coordinator.lastRequestedMargins != margins {
+            coordinator.lastRequestedMargins = margins
+#if DEBUG
+            session.record("margins requested=\(margins) native=\(map.layoutMargins)")
+#endif
             let retained = map.camera.copy() as! MKMapCamera
             let alreadyPending = container.pendingCameraChange
             map.layoutMargins = margins
@@ -231,14 +266,19 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
             // Accumulate rapid presses against the requested destination, not an
             // intermediate animation frame. Coalescing layout work must not drop zoom.
             let zoomAltitude: Double?
-            if case .zoom(let factor) = action {
+            if case .zoom = action {
+                let factor = command.zoomFactor(since: coordinator.lastZoomCommand)
                 let base = coordinator.zoomTargetAltitude ?? map.camera.altitude
                 zoomAltitude = min(100_000, max(35, base * factor))
                 coordinator.zoomTargetAltitude = zoomAltitude
+#if DEBUG
+                session.record("zoom id=\(command.id) current=\(map.camera.altitude) base=\(base) factor=\(factor) target=\(zoomAltitude!)")
+#endif
             } else {
                 zoomAltitude = nil
                 coordinator.zoomTargetAltitude = nil
             }
+            coordinator.lastZoomCommand = command
             container.enqueueCameraChange { [weak map, weak coordinator] in
                 guard let map, let coordinator else { return }
                 coordinator.cameraInitialized = true
@@ -272,6 +312,8 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
     final class Coordinator: NSObject, MKMapViewDelegate {
         var parent: NativeParkMapCanvas
         var lastCommand: UUID?
+        var lastZoomCommand: ParkMapCameraCommand?
+        var lastRequestedMargins: UIEdgeInsets?
         var updatingSelection = false
         var cameraInitialized = false
         var zoomTargetAltitude: Double?
@@ -294,13 +336,25 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
             map.setVisibleMapRect(rect, animated: animated)
         }
         func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
+#if DEBUG
+            parent.session.record("deselect id=\((view.annotation as? ParkPlaceAnnotation)?.point.id ?? "cluster") updating=\(updatingSelection)")
+#endif
             guard !updatingSelection, let annotation = view.annotation as? ParkPlaceAnnotation,
                   parent.selectedID == annotation.point.id else { return }
             parent.selectedID = nil
         }
         func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
-            // A native user gesture takes ownership from an unfinished button animation.
-            if !applyingCameraCommand { zoomTargetAltitude = nil }
+            // An animated programmatic callback can arrive after setCamera returns.
+            // Only a real active UIKit gesture takes ownership from its destination.
+            let userGesture = hasActiveGesture(in: mapView)
+            if !applyingCameraCommand && userGesture { zoomTargetAltitude = nil }
+#if DEBUG
+            parent.session.record("regionWill animated=\(animated) gesture=\(userGesture) applying=\(applyingCameraCommand) current=\(mapView.camera.altitude)")
+#endif
+        }
+        private func hasActiveGesture(in view: UIView) -> Bool {
+            (view.gestureRecognizers ?? []).contains { $0.state == .began || $0.state == .changed }
+                || view.subviews.contains { hasActiveGesture(in: $0) }
         }
         func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
             guard cameraInitialized else { return }
@@ -309,6 +363,7 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
             }
             parent.session.camera = mapView.camera.copy() as? MKMapCamera
 #if DEBUG
+            parent.session.record("regionDid animated=\(animated) current=\(mapView.camera.altitude) target=\(zoomTargetAltitude.map { String($0) } ?? "nil")")
             updateGestureTarget(on: mapView)
             let c = mapView.centerCoordinate
             let value = "\(c.latitude),\(c.longitude),\(mapView.camera.altitude)"
@@ -377,6 +432,9 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
             return view
         }
         func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+#if DEBUG
+            parent.session.record("select id=\((view.annotation as? ParkPlaceAnnotation)?.point.id ?? "cluster") updating=\(updatingSelection)")
+#endif
             if let cluster = view.annotation as? MKClusterAnnotation {
                 mapView.deselectAnnotation(cluster, animated: false)
                 let members = cluster.memberAnnotations.compactMap { ($0 as? ParkPlaceAnnotation)?.point }
@@ -493,6 +551,9 @@ struct ParkMapView: View {
                         Text(session.telemetry).font(.system(size: 1)).opacity(0.02)
                             .accessibilityIdentifier("Map camera state")
                             .frame(width: 1, height: 1).allowsHitTesting(false)
+                        Text(session.eventTrace).font(.system(size: 1)).opacity(0.02)
+                            .accessibilityIdentifier("Map event trace")
+                            .frame(width: 1, height: 1).allowsHitTesting(false)
                     }
 #endif
                 } else if park == nil {
@@ -514,9 +575,9 @@ struct ParkMapView: View {
             .overlay(alignment: .trailing) {
                 if park != nil, parkData != nil {
                     VStack(spacing: 0) {
-                        mapControl("Zoom in", symbol: "plus") { command = .init(action: .zoom(0.5)) }
+                        mapControl("Zoom in", symbol: "plus") { command = command.zoomed(by: -1) }
                         Divider().frame(width: 32)
-                        mapControl("Zoom out", symbol: "minus") { command = .init(action: .zoom(2)) }
+                        mapControl("Zoom out", symbol: "minus") { command = command.zoomed(by: 1) }
                         Divider().frame(width: 32)
                         mapControl("Show whole park", symbol: "location") { command = .init(action: .fit) }
                     }

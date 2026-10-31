@@ -78,10 +78,18 @@ jobs:
           path: |
             build/xcodebuild.log
             build/native-tests.log
-            build/native-tests.xcresult
             build/ui-screenshots
             build/simulator-selection.json
             build/test-scope.json
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Preserve complete native test result bundle
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: PIVOT-xcresult-${{ github.run_number }}-${{ github.run_attempt }}
+          path: build/native-tests.xcresult
           if-no-files-found: ignore
           retention-days: 7
 
@@ -116,10 +124,18 @@ jobs:
           name: PIVOT-iPhone-${{ matrix.simulator }}-${{ github.run_number }}-${{ github.run_attempt }}
           path: |
             build/native-tests.log
-            build/native-tests.xcresult
             build/ui-screenshots
             build/simulator-selection.json
             build/test-scope.json
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Preserve complete native test result bundle
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: PIVOT-iPhone-xcresult-${{ matrix.simulator }}-${{ github.run_number }}-${{ github.run_attempt }}
+          path: build/native-tests.xcresult
           if-no-files-found: ignore
           retention-days: 7
 
@@ -151,9 +167,17 @@ jobs:
           name: PIVOT-diagnostics-${{ inputs.simulator || 'iPhone 16 Pro Max' }}-${{ inputs.scope || 'native-design' }}-${{ github.run_number }}-${{ github.run_attempt }}
           path: |
             build/native-tests.log
-            build/native-tests.xcresult
             build/ui-screenshots
             build/simulator-selection.json
             build/test-scope.json
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Preserve complete native test result bundle
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: PIVOT-diagnostics-xcresult-${{ inputs.simulator || 'iPhone 16 Pro Max' }}-${{ github.run_number }}-${{ github.run_attempt }}
+          path: build/native-tests.xcresult
           if-no-files-found: ignore
           retention-days: 7

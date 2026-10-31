@@ -37,7 +37,15 @@ final class PIVOTUITests: XCTestCase {
             let values = self.camera(app)
             return values.count == 3 && condition(values)
         }
-        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: predicate, object: nil)], timeout: timeout), .completed, "Last measured camera: \(camera(app))", file: file, line: line)
+        let result = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: predicate, object: nil)], timeout: timeout)
+        if result != .completed {
+            XCTFail("Last measured camera: \(camera(app)); events: \(mapEvents(app))", file: file, line: line)
+        }
+    }
+
+    private func mapEvents(_ app: XCUIApplication) -> String {
+        let trace = app.staticTexts["Map event trace"]
+        return trace.exists ? trace.label : "No map events available"
     }
 
     func testNativeMapFillsWindowAndSupportsPinchPanZoomWithoutCameraReset() {
@@ -99,9 +107,9 @@ final class PIVOTUITests: XCTestCase {
         waitForCamera(app) { $0[2] < beforeDoubleTap[2] * 0.85 }
         let doubled = camera(app)
         app.buttons["Zoom out"].tap()
-        waitForCamera(app) { $0[2] > doubled[2] * 1.3 }
+        waitForCamera(app) { abs($0[2] - doubled[2] * 2) < doubled[2] * 0.2 }
         app.buttons["Zoom in"].tap()
-        waitForCamera(app) { $0[2] < initial[2] * 0.8 }
+        waitForCamera(app) { abs($0[2] - doubled[2]) < doubled[2] * 0.1 }
         let beforePan = camera(app)
         map.coordinate(withNormalizedOffset: CGVector(dx: 0.35, dy: 0.5))
             .press(forDuration: 0.05, thenDragTo: map.coordinate(withNormalizedOffset: CGVector(dx: 0.65, dy: 0.6)))
@@ -284,8 +292,23 @@ final class PIVOTUITests: XCTestCase {
         // The fixture's stable identifier is separate from the displayed ride name.
         let fixturePin = app.buttons["map-pin-fixture-\(id)"]
         XCTAssertTrue(fixturePin.waitForExistence(timeout: 5))
+        // Dismissing the keyboard and the previous ride card changes map insets.
+        // Wait for the visible pin to stop moving, then perform one real tap.
+        var previousFrame = CGRect.null
+        var stableSince = Date()
+        let stablePin = NSPredicate { _, _ in
+            guard fixturePin.exists, !app.keyboards.firstMatch.exists else { return false }
+            let frame = fixturePin.frame
+            guard !frame.isEmpty, app.frame.contains(CGPoint(x: frame.midX, y: frame.midY)) else { return false }
+            if previousFrame.isNull || abs(frame.midX - previousFrame.midX) > 1 || abs(frame.midY - previousFrame.midY) > 1 {
+                previousFrame = frame; stableSince = Date(); return false
+            }
+            return Date().timeIntervalSince(stableSince) >= 1 && fixturePin.isHittable
+        }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: stablePin, object: nil)], timeout: 5), .completed,
+                       "The native pin must settle after keyboard/card layout changes before the physical tap")
         fixturePin.tap()
-        XCTAssertTrue(app.staticTexts["Selected ride wait"].waitForExistence(timeout: 3))
+        XCTAssertTrue(app.staticTexts["Selected ride wait"].waitForExistence(timeout: 3), mapEvents(app))
     }
 
     func testMapFullScreenPreservesSelectionFiltersAndCurrentWait() {
