@@ -364,10 +364,10 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 53,
-    "pendingIllustrations": 1071,
-    "acceptedForRequestedStyle": 52,
-    "unfinishedForRequestedStyle": 1072,
+    "acceptedIllustrations": 67,
+    "pendingIllustrations": 1057,
+    "acceptedForRequestedStyle": 66,
+    "unfinishedForRequestedStyle": 1058,
     "blocked": 5
   },
   "parks": [
@@ -13790,10 +13790,10 @@
           "url": "https://rcdb.com/3570.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "50-14945016141497",
@@ -14022,10 +14022,10 @@
           "url": "https://coasterpedia.net/wiki/Cedar_Point"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "50-49491882490452",
@@ -14401,10 +14401,10 @@
           "url": "https://rcdb.com/15411.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "50-92584416781544",
@@ -14575,10 +14575,10 @@
           "url": "https://rcdb.com/1.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "50-122518816389047",
@@ -14720,10 +14720,10 @@
           "url": "https://coasterpedia.net/wiki/Cedar_Point"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "50-138276926872217",
@@ -14807,10 +14807,10 @@
           "url": "https://rcdb.com/10891.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "50-146600727393618",
@@ -14836,10 +14836,10 @@
           "url": "https://rcdb.com/594.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "50-151722405799627",
@@ -14894,10 +14894,10 @@
           "url": "https://coasterpedia.net/wiki/Cedar_Point"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "50-161458161168350",
@@ -15208,10 +15208,10 @@
           "url": "https://coasterpedia.net/wiki/Cedar_Point"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "50-208912424027236",
@@ -15261,10 +15261,10 @@
           "url": "https://www.sixflags.com/cedarpoint/attractions/top-thrill-2"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "50-224947465344457",
@@ -15290,10 +15290,10 @@
           "url": "https://coasterpedia.net/wiki/Cedar_Point"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "50-231925981202737",
@@ -30764,10 +30764,10 @@
           "url": "https://www.universalorlando.com/webdata/k2/en/us/files/Documents/epic-universe-guide-for-safety-and-accessibility.pdf#page=34"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "334-14692",
@@ -30793,10 +30793,10 @@
           "url": "https://rcdb.com/20551.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "334-14693",
@@ -30880,10 +30880,10 @@
           "url": "https://rcdb.com/20550.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-7461499888841",

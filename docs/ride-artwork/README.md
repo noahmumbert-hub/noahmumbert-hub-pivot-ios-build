@@ -5,7 +5,7 @@ first examples. `direction.json` records this second style revision. The current
 bundled illustrations are being revised for the new treatment. Each revised
 record has `styleRevision: 2`; older records remain explicitly due for revision.
 `direction.json` and `coverage.json` give the current accepted count for the
-requested direction. Work continues on GPT-6.1 Sol, high reasoning.
+requested direction. Work continues on GPT-6.1 Sol, max reasoning.
 
 The artwork request covers every ride, not just the assets currently bundled.
 `coverage.json` records 1,124 unique park/ride IDs across 32 parks: 1,123 live

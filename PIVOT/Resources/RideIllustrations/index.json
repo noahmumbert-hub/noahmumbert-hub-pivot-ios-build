@@ -1346,6 +1346,90 @@
     },
     {
       "parkId": 50,
+      "rideId": 12421435756943,
+      "rideName": "Maverick",
+      "alt": "Illustrated Maverick at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T18:58:35.434365+00:00",
+      "originalSHA256": "90920d82e749b1f6f03456cd80c4e595cde7fb642c26fe201899b2a29ee3c9ed",
+      "review": "Accepted: red triangular-spine track, cream supports, weathered dark Maverick car fronts, two-across orange/yellow restraints and attached wheel assemblies retain the real banked/inverted sit-down train.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1f236ecc541e618e02e306aa7a9069a7a31cf23c-2000x1333.webp%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/maverick",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Maverick riders plummeting down the beyond-vertical drop.",
+          "sha256": "e60fa115234956b3259714a1af7b0d94613dc823b91ceb7674b8f4de4b750be7",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Pixel and official page reviewed: red triangular-spine track, cream supports, two-across yellow/orange restraint seats, weathered dark Maverick nameplate train. Actual photo shows banked/inverted train close-up; do not describe this crop as entire drop."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-12421435756943-thumbnail.jpg",
+      "thumbnailSHA256": "ba638701ae907fae243c707d16f0e0f5106bcb41a801af69c6c56800ba96a470",
+      "thumbnailBytes": 26006,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-12421435756943-detail.jpg",
+      "detailSHA256": "f57e3d577a4386e9f015c7c8bed65a06318ae52250839d4af9d3eee7834a6b69",
+      "detailBytes": 160549,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 43756735222831,
+      "rideName": "WindSeeker",
+      "alt": "Illustrated WindSeeker at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:02:36.505536+00:00",
+      "originalSHA256": "7b49629c35362e4f10555713db709309c549d46a71931079ebb7799ede9a4c2f",
+      "review": "Accepted: paired dark-blue high-back seats, rigid red suspension arms, silver lap bars/orange straps and elevated Lake Erie beach perspective match the real WindSeeker photograph.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff7adc2167ef221eeaa1d4b39a89afa46bc1ac18b-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/windseeker",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A male and female rider high above the Cedar Point beach while riding WindSeeker.",
+          "sha256": "c6b523f8f637e42ade8ad7697251d8b165dad905a15e2edea6dba072c01e811d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual WindSeeker photo: paired dark-blue high-back swing seats suspended from rigid red arms, silver lap bars and orange seatbelt/lap block, riders high over Cedar Point beach/Lake Erie. Central mast/canopy not visible; do not invent unseen hardware."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-43756735222831-thumbnail.jpg",
+      "thumbnailSHA256": "fcdfe18a716c8a167dd2d155ad78dcb792b57ee09a06377e0ff1a722a64f4073",
+      "thumbnailBytes": 25396,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-43756735222831-detail.jpg",
+      "detailSHA256": "ed2b073c1acc78d5c875c915924a4840afe446e07e7ab1dcb9aaedc4f6c0fdbb",
+      "detailBytes": 160613,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
       "rideId": 85197605068999,
       "rideName": "Iron Dragon",
       "alt": "Illustrated Iron Dragon at Cedar Point",
@@ -1379,6 +1463,384 @@
       "detailFile": "50-85197605068999-detail.jpg",
       "detailSHA256": "6c2d0c31ec483c3a41e960293f6759ddb11f620f53bec542ec549f9e227890ce",
       "detailBytes": 174047,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 92569537563592,
+      "rideName": "Steel Vengeance",
+      "alt": "Illustrated Steel Vengeance at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T18:59:19.690977+00:00",
+      "originalSHA256": "d602c84698ed8b6827286bed256c7d284cf1db55a440a2ad5d67a5fc31c53683",
+      "review": "Accepted: maroon steel rail, pale timber lattice/gray bracing, riveted locomotive-style silver boiler nose and red marker lights preserve Steel Vengeance's real hybrid train and support geometry.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F36858c2e24f4ad864a3ced3968abc899baf0fb8c-2000x1333.webp%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/steel-vengeance",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on Steel Vengeance hybrid roller coaster at Cedar Point.",
+          "sha256": "b782d7430aa584d46a12147f7a4b020c07419b3a8f56bb9326762c38f7b84c65",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Pixel and official page reviewed: maroon steel track on pale natural wood lattice and steel braces, weathered riveted train with silver boiler nose and red circular marker, two-across seating."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-92569537563592-thumbnail.jpg",
+      "thumbnailSHA256": "ad225713db168174a1fad4ce8808f99c1394807b49c0b63d143a1d9b67a47c30",
+      "thumbnailBytes": 30988,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-92569537563592-detail.jpg",
+      "detailSHA256": "b12682dd2bb11d155395aeedc8bc79790077aeaa35f07f0ffd403e47c183e844",
+      "detailBytes": 188034,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 110329653714338,
+      "rideName": "Raptor",
+      "alt": "Illustrated Raptor at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:00:15.531734+00:00",
+      "originalSHA256": "c79ad84469fcc195f92dc97e68474408619af76c2f942d6934c880be61674454",
+      "review": "Accepted: bright green loop, dark-green supports and four-across inverted train with magenta/yellow restraints preserve Raptor's hardware; the small real Sky Ride gondolas remain below.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fdc83516bea77f9e79b583bc7b5b311bbfbb02095-1440x690.jpg%3Frect%3D197%2C0%2C1243%2C690%26w%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/raptor",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Raptor soars through its vertical loop, flipping riders upside down.",
+          "sha256": "3acd50df12fea30f5a75cd1eecc2d987f402a4904437a5ae9dbd78e8823a7b38",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Pixel and official page reviewed: bright-green inverted loop, dark-green supports, four-across hanging seats, magenta/pink and yellow-green restraint shells; Sky Ride gondolas below."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-110329653714338-thumbnail.jpg",
+      "thumbnailSHA256": "99c92376b3431001eac7f9668534f0d3e8020885422f06c087e54e7d4332d0f8",
+      "thumbnailBytes": 23429,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-110329653714338-detail.jpg",
+      "detailSHA256": "30292f0a4fd6916a5c1b9153c69ff865c609cf8b61a6dc840e7ac68d346836be",
+      "detailBytes": 149846,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 131471686902602,
+      "rideName": "Skyhawk",
+      "alt": "Illustrated Skyhawk at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:01:12.076484+00:00",
+      "originalSHA256": "0d7baed232ea709340114e55cc64dbc4bc8f41abe0c1a56be6c6c250732dde0b",
+      "review": "Accepted: two separate long red swing arms, cream/silver crosshead, navy tapered legs with gold bands, cable connections and bench gondolas preserve Skyhawk's real twin-swing mechanism.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/197ff4eee4a0a0ed044df9b6ef4888fe141ede45-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/skyhawk",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Skyhawk official attraction photo",
+          "sha256": "d4da99e3810fffa2e02e457a2614da13e7317c892df906c366aed44464563cc9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Skyhawk photo: two independent long red swing arms from silver/cream crosshead, dark navy tapered tower legs with gold bands, long seat benches with red/yellow restraints and visible support cables."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-131471686902602-thumbnail.jpg",
+      "thumbnailSHA256": "ed289153e6351ceb4a5736e6b77b3eebc319e2dd2ccbc7185176d8ab7d6d35f9",
+      "thumbnailBytes": 22160,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-131471686902602-detail.jpg",
+      "detailSHA256": "343a1c7de2bd8ca46f7cd3d34779b705cf190eba67f86fef2608256885c265e7",
+      "detailBytes": 172627,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 142108128065973,
+      "rideName": "GateKeeper",
+      "alt": "Illustrated GateKeeper at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T18:59:41.247273+00:00",
+      "originalSHA256": "203d2f9a861add8ad17cbca4d3385d6170613758811769a0a8924befd6026d5a",
+      "review": "Accepted: aqua/deep-blue wing-over curve, large white tubular supports and gold griffon wing train with seats on both sides retain the inspected GateKeeper low-angle photograph.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9da35121b60d0aaec1955e897ce5d305794e5615-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/gatekeeper",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "GateKeeper flipping riders upside down as it drops down its first hill.",
+          "sha256": "90e2a568f7811ec47f6b0290ede4f0cba954b42a022685108334f50c31e57d3a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Pixel and official page reviewed: aqua/blue box track in high wing-over drop, large white tubular supports, gold wing train with paired seats on both sides of rail. Low-angle photo."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-142108128065973-thumbnail.jpg",
+      "thumbnailSHA256": "0d17f36085d4351a7c831af5e75016506609b76ef7cedda5ddb6090cc5b90e4e",
+      "thumbnailBytes": 20673,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-142108128065973-detail.jpg",
+      "detailSHA256": "e0a01f47b4ffbd283f011bebae91c9dad447395bc857bacf6d426a9e205b34dc",
+      "detailBytes": 125688,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 146600727393618,
+      "rideName": "Millennium Force",
+      "alt": "Illustrated Millennium Force at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:00:04.003579+00:00",
+      "originalSHA256": "3c217dac9a0dff5bc13b9539d2bda79428e3375e9c5cd8aa60fc84718c3dd4c1",
+      "review": "Accepted: blue non-inverting truss rail, tall rounded crest/drop, gray lattice supports, trees and Lake Erie rock shoreline remain faithful to the actual Millennium Force setting.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9c5549347988051fe7b242e1e259ed06c6290107-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/millennium-force",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Millennium Force towers over the Lake Erie shoreline.",
+          "sha256": "18a5cac3c47151f60f607762fe6b2eca4553db40ff8fd2459f4ddc616ea9a4e6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Pixel and official page reviewed: blue Intamin truss rail, very tall crest/drop with dense light-gray lattice supports directly along Lake Erie shoreline, red train on distant hill. Keep non-inverting layout and waterfront."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-146600727393618-thumbnail.jpg",
+      "thumbnailSHA256": "d7808a5b3c95b0e649848492aba8777492839ac78987001e4b419f3c31265fc2",
+      "thumbnailBytes": 21556,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-146600727393618-detail.jpg",
+      "detailSHA256": "90ec5e81ff7641161638074573a4dcad2f5aef3b93aeeeff614f3b59048b979e",
+      "detailBytes": 205853,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 153203594641959,
+      "rideName": "maXair",
+      "alt": "Illustrated maXair at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:05:23.135595+00:00",
+      "originalSHA256": "e7201dca16e8b2bc108548717fc1235946e2716cd200e89fa509fc3d0d2cc6ff",
+      "review": "Accepted: blue A-frame supports with orange/yellow/red bands, connected yellow-orange pendulum and raised outward-facing circular gondola match maXair. ImageGen correction replaced inaccurate palm vegetation with Ohio deciduous trees while preserving the photographed ride hardware.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/13b1b39a3063aacb96dcef0a85b8ef1f5feb5727-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/maxair",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "maXair official attraction photo",
+          "sha256": "a15bf89fce10e1a3b936c11b75871ac00097448b1bc7855d32e5d544aeff1c96",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual maXair photo: dark-blue tall tubular A-frame legs with orange/yellow and red bands near base, yellow/orange pendulum beam and circular outward-facing red/black gondola ring. Low-angle view."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-153203594641959-thumbnail.jpg",
+      "thumbnailSHA256": "03f33b3bc7ee07fb4c6a0277fcc4ea95cdd58b86e6b08d21be40fd84759d5861",
+      "thumbnailBytes": 21814,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-153203594641959-detail.jpg",
+      "detailSHA256": "f3b5091c1154e85eb067de36eb3c5683d8ec15a3e8eae13959aa9055e4e6cde2",
+      "detailBytes": 144915,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 194530731098332,
+      "rideName": "Power Tower",
+      "alt": "Illustrated Power Tower at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:01:21.244595+00:00",
+      "originalSHA256": "72331f9d7efaf586c169d134434fa422fc825ea4fc396ff2d4e3f9d93eab8fb1",
+      "review": "Accepted: multiple white lattice shafts, connected rectangular top crosshead, separate outward-facing seat rows and leafy framing preserve Cedar Point Power Tower's photographed structure.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/152033283c25bc7c90c552a818675872b697685e-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/power-tower",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Power Tower official attraction photo",
+          "sha256": "8c1f08d2a4ecf0bdcaad21582a0103677bf6fa4c6e2289b6abb9dd6997ece2bf",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Power Tower photo: multiple tall white lattice towers connected across top, rows of open seats around each shaft, foliage framing from below. Keep individual shafts rather than invent one circular drop tower."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-194530731098332-thumbnail.jpg",
+      "thumbnailSHA256": "c20a91ab9dc3c1e6c2f939bdaf9daf6edccec7cddbf0e81a4041b1be4dd6abb3",
+      "thumbnailBytes": 34218,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-194530731098332-detail.jpg",
+      "detailSHA256": "35c1988a6016a9573466cb1783f9589fb5c6697ed48ee25c3c69b6e713216b74",
+      "detailBytes": 257953,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 209325387768784,
+      "rideName": "Top Thrill 2",
+      "alt": "Illustrated Top Thrill 2 at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T18:59:35.767199+00:00",
+      "originalSHA256": "890aec6aa0f86fcda0ed59c7d0e41db40da60abecaf6b628f2f7fa533a555b24",
+      "review": "Accepted: red vertical spike rail within dark-gray tubular lattice, correctly attached blue train, bright-blue foreground support and motorsport flags match the actual Top Thrill 2 photograph; unseen tower tip remains outside the frame.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F333fd102e38f1ea384c28a27ceb3a20211cd2d22-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/top-thrill-2",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Top Thrill 2 launching backward up its 420 spike.",
+          "sha256": "68bf4b727f6963fb590328692fa929a37acf37ba9157e245074b9c06fb05e40b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Pixel and official page reviewed: red vertical spike rail, tall gray tubular/lattice supports, blue train climbing backward; near blue support and red/white flags. Crop excludes spike tip; need wider source if full tip geometry is requested."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-209325387768784-thumbnail.jpg",
+      "thumbnailSHA256": "2d0a892c264fab6a1f7cedfcf4007b9d9e9236b7459a2dbda285be08470be53d",
+      "thumbnailBytes": 20594,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-209325387768784-detail.jpg",
+      "detailSHA256": "2f1becccc82730000b2c248425a64e5c577170acd6af24c9827bec4bc195254a",
+      "detailBytes": 127412,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 224947465344457,
+      "rideName": "Giant Wheel",
+      "alt": "Illustrated Giant Wheel at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:02:08.101178+00:00",
+      "originalSHA256": "5b8c2f8b2cbdf1f5794362aebee664c25db8a36dfb865b172dacbcf6d9d345e9",
+      "review": "Accepted: pink/red rim, orange/yellow spokes and roofed open-sided green/blue gondolas preserve the actual Giant Wheel upper arc; unseen base geometry remains outside the crop.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc9f663514a8334a1d2b8646feb84392f4cf4e940-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/giant-wheel",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Cedar Point's Giant Wheel Ferris wheel towers above.",
+          "sha256": "f9bc2338443f0305aa7fb9bed28a45a9ad62943c0f4128078790eea2ddbf1fdd",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Giant Wheel photo: pink/red wheel rim, orange/yellow radial spokes, open-sided blue/green roofed gondolas with decorative oval panels. Lower axle/base outside crop; avoid inventing unrelated wheel support."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-224947465344457-thumbnail.jpg",
+      "thumbnailSHA256": "a3066ae1211ec26a5c1bb16fb326a9025eb83a7b9195fb05b46623d8390de5ed",
+      "thumbnailBytes": 27731,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-224947465344457-detail.jpg",
+      "detailSHA256": "3174d423030e505ac769ff9769a3d3cb0c1ff3ffcbcece73b509d71abec2aba2",
+      "detailBytes": 206273,
       "detailPixels": [
         768,
         960
@@ -2131,6 +2593,132 @@
       "detailFile": "334-14690-detail.jpg",
       "detailSHA256": "8e92e53818fb0056ca7590377e5ea88cef0bcd44198f674c3ed996854987fe34",
       "detailBytes": 210182,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 334,
+      "rideId": 14691,
+      "rideName": "Fyre Drill",
+      "alt": "Illustrated Fyre Drill at Epic Universe",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:03:51.982475+00:00",
+      "originalSHA256": "b70631f31aa94f5186b039f1e69d1dfb5a6e1d82b33792ab1ba5f711df2ba661",
+      "review": "Accepted: green wood-effect cannons, dark riveted brackets, silver crank handles, reddish timber rails and cream rope netting retain the actual Fyre Drill onboard deck. Splashing channel water, horned target and canvas-roof shore structure remain grounded in the inspected photograph; no unseen full hull or prow was invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/ueu-httyd-isle-of-berk-fyre-drill-teens-laughing-smiling-b.jpg",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/fyre-drill",
+          "credit": "Universal Orlando Resort (reference publisher)",
+          "license": "Copyright Universal Studios; source rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/terms-of-service/copyright",
+          "alt": "Two teens in Viking helmets operate green water cannons on Fyre Drill at Epic Universe.",
+          "sha256": "6d22b4fab1c4e652196ffbedc14d4b045ace9acd764295a39669dd697c31b7b7",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official attraction page identifies Fyre Drill. New actual photo pixels show two green wood-effect water cannons with dark riveted metal hardware/silver cranks, wood rails and rope-net guards on the onboard deck, red/green horned dragon target and canvas-roof building. Use this closer deck view only; full boat hull remains unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "334-14691-thumbnail.jpg",
+      "thumbnailSHA256": "8a928ac1b367bfa1ac41806145fc1ffce7cf1b2354fc621866eba10c10f2ee8b",
+      "thumbnailBytes": 27416,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "334-14691-detail.jpg",
+      "detailSHA256": "a4275b6163d053a084feba9bafc6d527cac2fcfb1e90cfee8f2b28635a5512e5",
+      "detailBytes": 210608,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 334,
+      "rideId": 14692,
+      "rideName": "Curse of the Werewolf",
+      "alt": "Illustrated Curse of the Werewolf at Epic Universe",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:01:45.556877+00:00",
+      "originalSHA256": "9846fa85d084993df6b9738d6d9bdbfa8a3431c06f579961ccd5232d7c2e77c7",
+      "review": "Accepted: black high-back spinning-car seats/lap restraints, weathered bronze seat trim, gray track and tall dark safety-net fence retain the authentic Curse of the Werewolf close view.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/pt/br/files/Images/gds/ueu-dark-universe-curse-of-the-werewolf-screaming-drop-b.jpg",
+          "sourceURL": "https://www.universalorlando.com/web/pt/br/things-to-do/rides-attractions/curse-of-the-werewolf",
+          "credit": "Universal Orlando Resort (reference publisher)",
+          "license": "Copyright Universal Studios; source rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/terms-of-service/copyright",
+          "alt": "Curse of the Werewolf official attraction photo",
+          "sha256": "d154cfc7bad718dc4c2525a0b49c3ed06d2ce6b2707e355407ffa413d8a4ad98",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Pixel reviewed: real black seats/lap bars, weathered bronze outer trim, rotating two-across seating and gray track with tall dark safety net. Close crop; use train-seat perspective or obtain wider reference."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "334-14692-thumbnail.jpg",
+      "thumbnailSHA256": "059ba5379f6affe338e51f95761d11dc1b8cb1c92848a1ef119842353015bb34",
+      "thumbnailBytes": 23888,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "334-14692-detail.jpg",
+      "detailSHA256": "3c1dbcca4bfccef4e1aed0bb003d41ef09e09e5712526c029e59899540bb3bc2",
+      "detailBytes": 151904,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 334,
+      "rideId": 14695,
+      "rideName": "Hiccup's Wing Gliders",
+      "alt": "Illustrated Hiccup's Wing Gliders at Epic Universe",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:03:27.706176+00:00",
+      "originalSHA256": "046154c6065124152dd4327e5bc922d110a4715df8fdc0883b025cabb3eab957",
+      "review": "Accepted: green/gold Viking train with red/yellow shield panels and curved prow, dark-gray track/orange supports over water, and the actual Berk timber buildings/rock spire remain faithful to the photo.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/ueu-httyd-isle-of-berk-hiccups-wing-gliders-guests-riding-b.jpg",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/hiccups-wing-gliders",
+          "credit": "Universal Orlando Resort (reference publisher)",
+          "license": "Copyright Universal Studios; source rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/terms-of-service/copyright",
+          "alt": "Hiccup's Wing Gliders official attraction photo",
+          "sha256": "f9d4981dcf33793e1a116a470ca68f44947c8913169d6fd71ac9f04ea3c0a35d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Pixel reviewed: real banked green/gold dragon-boat train, red/yellow shield side panels, dark-gray track and orange supports over lagoon, Berk buildings/rock spire behind. Suitable hardware and setting reference."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "334-14695-thumbnail.jpg",
+      "thumbnailSHA256": "c7e8fbad29da0aff36838c0ed9dec24f167a6ee868e67058d426fbfc70a942a2",
+      "thumbnailBytes": 30852,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "334-14695-detail.jpg",
+      "detailSHA256": "ba6bc3c03f2f3a9ca4336042578ed91f176769e4f92a31775c4d59034265495b",
+      "detailBytes": 241911,
       "detailPixels": [
         768,
         960
