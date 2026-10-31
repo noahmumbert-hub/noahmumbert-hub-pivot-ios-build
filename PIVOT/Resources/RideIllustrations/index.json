@@ -7392,6 +7392,90 @@
     },
     {
       "parkId": 61,
+      "rideId": 16553919317749,
+      "rideName": "Butterfield Stagecoach",
+      "alt": "Illustrated Butterfield Stagecoach at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:54:34.887063+00:00",
+      "originalSHA256": "9223fad6252ed9947cb38840470a39d983c299cfc6a8b5743c92e256185ff6f7",
+      "review": "Accepted: corrected generated pixels inspected against the genuine official Butterfield Stagecoach photo. Tighter portrait retains the two hat-wearing attendants, red leather upper bench, reins, wood/black iron arm rails and source-supported passenger bench behind. Unverified lower coach front, partial wheel and underbody excluded. Original draft and exact built-in framing edit preserved.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F24a930a17a2d86d5e6040e524c7f2e5724198af0-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/butterfield-stagecoach",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Butterfield Stagecoach at Knott's Berry Farm",
+          "sha256": "ff59b28cce54546d34b8adbb49ef417ac194464468a900071403d78039004284",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Butterfield Stagecoach photograph is a close view of the coach's upper front bench, worn red leather cushions, dark wood coach panels, black iron side/arm rails, leather reins held by a cowboy-hatted driver, a second hat-wearing attendant and a passenger bench behind. No horse team, full coach body, wheels or undercarriage is visible. Keep this honest close coach-bench/reins view rather than inventing unseen horses or a complete carriage. Preserve the real attached rails and leather/wood materials; guests/drivers may be incidental. No new lettering, badges, signs or vehicle geometry. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-16553919317749-thumbnail.jpg",
+      "thumbnailSHA256": "f22c6eea4493b3b2f86939d27707c4cdd53d8bb4c0aabe73dd2b5a3cc4d9bfb7",
+      "thumbnailBytes": 25869,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-16553919317749-detail.jpg",
+      "detailSHA256": "46846ac0635b7a722445bae7cb39074ed57e96414db8082706f197564347dda7",
+      "detailBytes": 161426,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 61,
+      "rideId": 25394808302147,
+      "rideName": "Sol Spin",
+      "alt": "Illustrated Sol Spin at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:01:11.852953+00:00",
+      "originalSHA256": "209abe6ad9405b893d48247a1d92b3e29a7a7274efceab1b09b98569d0500494",
+      "review": "Accepted: generated pixels inspected against genuine official Knott’s Sol Spin photo. Actual six-arm gray/red assembly, orange/yellow seats with black restraints, green hexagonal hub and tan/green decorated inclined support retained. Source-supported connections and palms preserved; distinct from Kings Island’s machine.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fdad13769aebc48f9435d67d62e124f12c3c1ee2b-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/sol-spin",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Sol Spin at Knott's Berry Farm",
+          "sha256": "3c55294441c3b44ef1239e36a31bc08dd44e115c870412b18fb340c2a697b392",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official photograph shows Knott's actual SIX-ARM Sol Spin, a different machine from the Kings Island ride of the same name. Six radial gray arms with red seat beams, yellow/orange seats and black restraints connect to a green hexagonal central hub. The large inclined rectangular support/arm is decorated in tan/green geometric stone-like motifs. Preserve this attached six-spoke assembly and actual colors/materials in a source-supported close/medium view, with only the photographed palms behind. Do not replace it with an Enterprise wheel, dangling enclosed cars, a coaster, or the Kings Island Sol Spin. Do not extend unseen base hardware. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-25394808302147-thumbnail.jpg",
+      "thumbnailSHA256": "ec47042f8f18e9cff49ebb2dea33029721704dfd33329af01f3e77bc5d3b31f1",
+      "thumbnailBytes": 28886,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-25394808302147-detail.jpg",
+      "detailSHA256": "b6c479d9b60a167ad779f2cb98c335f31a8d829d54fed48131658df06fc3ed33",
+      "detailBytes": 206776,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 61,
       "rideId": 29294961210363,
       "rideName": "Xcelerator The Ride®",
       "alt": "Illustrated Xcelerator The Ride® at Knott’s Berry Farm",
@@ -7427,6 +7511,594 @@
       "detailFile": "61-29294961210363-detail.jpg",
       "detailSHA256": "6be0ab281a1c63f559ac1335f14ddd7f72aad8d9376e1e05f95778db6eb406db",
       "detailBytes": 177072,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 61,
+      "rideId": 41954770845330,
+      "rideName": "Coast Rider",
+      "alt": "Illustrated Coast Rider at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:30:19.688902+00:00",
+      "originalSHA256": "3512f19ef03184606fa3cd5f4eb50617f115e0c006dd3dc0d58308971c3a5dfa",
+      "review": "Accepted: actual generated pixels inspected against genuine official Coast Rider photograph. Real red/yellow-orange car, gray restraints, attached yellow wheel/chassis hardware, yellow curved rails and cream rectangular supports retained in a close portrait. Source-lettering omitted; full mouse-course routing remains cropped.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2b5bfb0465dee76bd35199f13a591eb4ed7ec0ca-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/coast-rider",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Coast Rider Thrill Ride at Knott's Berry Farm in Buena Park, CA",
+          "sha256": "20110dd51c3d183537b277c793175ce2361faa7de5508642d10e8c8c387e5108",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Coast Rider photograph shows the actual compact red car with yellow/orange wave-stripe trim, dark-gray seatbacks/restraints and visible yellow wheel/chassis assembly attached to yellow ladder-style curved rails on cream rectangular steel supports. Use a close portrait of this actual car rounding the documented curve, preserving its attached wheel bogies and paired front seats; keep any unverified rear geometry cropped. No invented full mouse-course layout, extra train, different color supports or inversion. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-41954770845330-thumbnail.jpg",
+      "thumbnailSHA256": "85ddd3101e9ff6fdda38a1d827ee368f56be4b5077cd87381f90459a52c7ac27",
+      "thumbnailBytes": 20044,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-41954770845330-detail.jpg",
+      "detailSHA256": "e8e44331f013cc204e72873cf2d07a1b4742d18fc2fb2b59fc23e53678fe70bb",
+      "detailBytes": 113748,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 61,
+      "rideId": 52035568535322,
+      "rideName": "GhostRider",
+      "alt": "Illustrated GhostRider at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:29:06.435978+00:00",
+      "originalSHA256": "676942c248e9ee7f62e1622b07b3c1f7f85cd13ff9b255ac6f06a1009d60b4d0",
+      "review": "Accepted: actual generated pixels inspected against genuine official GhostRider photograph. Documented gray wood-grain mine-car front/black rim, tan sides, paired seats/lap bars, banked wooden rails, dense timber lattice and roofed lift crest retained. Source-logo lettering is omitted for the clean artwork treatment; no extra inversion or complete route invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F952cbb89b07e7c553f4b3627e929121dc7e03e4d-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/ghostrider",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "GhostRider, Knott's Berry Farm's Wooden Roller Coaster.",
+          "sha256": "48f35f30847858129635d35287f6aae7f93c96b1c2f6d68574f5e5f002c3539b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official GhostRider photograph shows the documented mine-car train on a banked wooden curve: gray wood-grain front with black flared rim and red central crest, tan/brown car sides, paired black seats/lap bars, dense weathered brown timber lattice and brown rails, with the documented gray-roofed lift crest behind. Preserve the source's front train/track connection and paired seats, in a close portrait crop centered on the actual banked curve and timber. Do not invent a whole route, new inversions, additional structure or unsupported seat geometry. Keep riders incidental; omit lettering. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-52035568535322-thumbnail.jpg",
+      "thumbnailSHA256": "27ba22e8bb861f5878050b27b92b26fbab2e9cf21110400a998f619c1934a712",
+      "thumbnailBytes": 26234,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-52035568535322-detail.jpg",
+      "detailSHA256": "855d44eed2e1e37afa963059641e10376edddeec2540dc1d6e4f72b544ac8abf",
+      "detailBytes": 209435,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 61,
+      "rideId": 54110793648478,
+      "rideName": "La Revolucion",
+      "alt": "Illustrated La Revolucion at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:01:36.377264+00:00",
+      "originalSHA256": "a971bbf2c53775335f7bbfc0fe3ce187978e135eca2f5a7d3716c473432efa6e",
+      "review": "Accepted: generated pixels inspected against genuine official La Revolucion photo. Actual cropped multicolored turquoise/blue gondola section, black restraints, attached painted arm edge and nearby tan support/palms retained; large source sign excluded. No unpictured full pendulum or base reconstructed.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fd39f983841209acd55426662dc3d1c5415b76316-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/la-revolucion",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "La Revolucion swinging ride at Knott's Berry Farm",
+          "sha256": "52fa0c74ceccc21c59a9250fc92fa7e2c8b9bddd1cbd82ba39f048bcca4d2b14",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official La Revolucion photo shows a partially cropped turquoise/blue multicolored gondola segment on the LEFT with black restraints and incidental riders, an attached painted arm edge, nearby tan support and palms. Its large wooden sign fills the right part and should be cropped out. Make a tight portrait of ONLY the documented gondola segment, seats/restraints and immediately attached arm edge, retaining real physical connections. The complete pendulum, whole gondola and base are outside this source framing; do not reconstruct or invent them. No sign, new lettering, unrelated full thrill ride or unseen vehicle geometry. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-54110793648478-thumbnail.jpg",
+      "thumbnailSHA256": "77f50aeac641193c8d542e5baaaf892a68449f8c7da1dbe00fa99a5c7094fe1d",
+      "thumbnailBytes": 23734,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-54110793648478-detail.jpg",
+      "detailSHA256": "4daf6730a989e815f2e5c236510478ce33b22230bfafe3fdc7599c027c23e259",
+      "detailBytes": 154577,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 61,
+      "rideId": 63701732902598,
+      "rideName": "Sierra Sidewinder",
+      "alt": "Illustrated Sierra Sidewinder at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:53:30.005887+00:00",
+      "originalSHA256": "7c2750fd7906ff8770313816ae0879c6a98f51d062c53f5b8f009faa153ffce4",
+      "review": "Accepted: generated pixels inspected against Jeremy Thompson’s genuine 2025 Sierra Sidewinder photo. Orange/yellow circular spinning pods, silver bands, black seats, connected under-track wheel hardware and reddish-brown track/ochre supports retained; front lettering omitted. No invented full routing.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Sierra_Sidewinder_%28Knott%27s_Berry_Farm%29_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Sierra_Sidewinder_(Knott%27s_Berry_Farm)_2.jpg",
+          "credit": "Jeremy Thompson (2025)",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+          "alt": "Sierra Sidewinder's orange/yellow spinning train at Knott's Berry Farm, photographed by Jeremy Thompson on 6 January 2025",
+          "sha256": "8947b2f77d1a17dd8c223b060d6b35d45a3e47a032f19dade23cd3322c324fca",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Jeremy Thompson's genuine 2025-01-06 train photograph shows the real orange/yellow circular spinning car bodies with silver bands/diamond-plate, black high-backed seat/headrest shapes and lap restraints, coupled cars oriented differently along a reddish-brown steel curve on ochre-orange cylindrical supports. Use a close portrait of the actual lead spinning pod and documented track/wheel connection with a little of the following car, preserving the real body shape and seating orientations. Do not turn it into a four-across bench train, add an inversion, invent unseen full routing or replace the ride's real colors. The 2025 source date and CC BY 2.0 credit remain explicit; current operation is not inferred."
+        }
+      ],
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+      "thumbnailFile": "61-63701732902598-thumbnail.jpg",
+      "thumbnailSHA256": "88b85efc462bb1eca58748be0cdd185f0b4b5dbd7f7451d25fa0913701eed662",
+      "thumbnailBytes": 25133,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-63701732902598-detail.jpg",
+      "detailSHA256": "aad8fb0b01ba6057d6a6af53cedf7cfe553b87c4b3aba7d0d777e3733c590596",
+      "detailBytes": 156933,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 61,
+      "rideId": 78525795655660,
+      "rideName": "MonteZOOMa: The Forbidden Fortress",
+      "alt": "Illustrated MonteZOOMa: The Forbidden Fortress at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:42:42.860416+00:00",
+      "originalSHA256": "6e198891fe240f9bf57b32f01f5b040a04b096ca3db7412440b4f967325bef4f",
+      "review": "Accepted: generated pixels inspected against genuine current official MonteZOOMa photograph. Actual two-across gray/black train with red restraints, turquoise/gold leading mask, connected red steep track and adjacent textured stone ruin retained. Source-supported palms and foliage preserved; no invented full shuttle layout or live operating claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fd1682b0402d7394fdc29ba27edf4320eeaa11f8c-2880x1600.avif%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/montezooma-the-forbidden-fortress",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "MonteZOOMa: The Forbidden Fortress",
+          "sha256": "46ad06e582868632447ca5651bbc77e15430668ae5c2d4f0d013fec3ba94cf9a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine current official MonteZOOMa: The Forbidden Fortress page identifies the reopened design and its hero is a real photograph: a two-across gray/black train with red shoulder restraints on a red steep spike/loop section beside tall tan-gray carved stone ruins, palms and green foliage. Its visible leading decorative face is turquoise/teal and gold. Preserve this exact photographed train, red track connection and adjacent textured ruin in a close vertical portrait; keep the unseen course and tower top cropped. No invented whole shuttle layout, different colors, unattached free-flying train or extra inversion. Source capture date is unverified; this artwork does not supply live operating status."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-78525795655660-thumbnail.jpg",
+      "thumbnailSHA256": "2a4bcf11188218d33dbaf3ee1b2b57dd542ff5c8b0e9c81bbbb780006d2628d6",
+      "thumbnailBytes": 28130,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-78525795655660-detail.jpg",
+      "detailSHA256": "4df4ca0a61be07809aad65e0d1e45f77428d7e81bdffee404933bef28f04d563",
+      "detailBytes": 203942,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 61,
+      "rideId": 112141378512287,
+      "rideName": "Calico Mine Ride",
+      "alt": "Illustrated Calico Mine Ride at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:54:35.759076+00:00",
+      "originalSHA256": "ea4e0234b14e7560b1f8d70ca1f3b2e6a59104a906b38feaea48549d62b78dd8",
+      "review": "Accepted: generated pixels inspected against the genuine official Calico Mine Ride photo. Ochre/orange rock facade, cave openings, waterfall, shingled loading canopy and blue/silver small mine locomotive/ore cars retained in a source-supported close view. Foreground carts, queue and unrelated skyline excluded.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F43463dac745ecd6b673c4ef0451ebdedf958903a-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/calico-mine-ride",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Calico Mine Ride at Knott's Berry Farm",
+          "sha256": "1da8d64d883b329ddaa204f0a4fe7b8f9400590c21968e314925d529d5f1a135",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Calico Mine Ride photograph shows the actual ochre-orange artificial rock mountain with cave openings, narrow waterfall, rustic brown shingled loading canopy and the small blue/silver mine locomotive and ore cars at the station. Choose a close section of this documented station and rock facade with the actual blue/silver train, keeping the decorative foreground mine-company display, popcorn cart, queue and unrelated coaster skyline cropped away. Do not invent a full underground layout, new train type, extra cars or fantasy cave geometry. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-112141378512287-thumbnail.jpg",
+      "thumbnailSHA256": "75cff0ca5560e8b26fc3626889af4fcc07f75b06c980984bf6512cbb5ff567b2",
+      "thumbnailBytes": 25878,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-112141378512287-detail.jpg",
+      "detailSHA256": "65c69fdb88ff61ebf39bae0b4f1a2ad9d52ec93fe2a38166356be5c82949b7f8",
+      "detailBytes": 216643,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 61,
+      "rideId": 130805263535364,
+      "rideName": "Supreme Scream",
+      "alt": "Illustrated Supreme Scream at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:02:02.345607+00:00",
+      "originalSHA256": "2c36f5ecc0ccf210218c9954bc802132acf1ea35ca2c53be5ff138550c440a62",
+      "review": "Accepted: generated pixels inspected against the genuine official Supreme Scream photo. Close elevated row of black/gray shoulder restraints, silver handholds, white steel frame and yellow panel retained with distant city. Whole towers/base and source sign remain outside the frame.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F30e492fcb66d8f222b9f67ba3801e6b865379484-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/supreme-scream",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Supreme Scream thrill ride at Knott's Berry Farm",
+          "sha256": "49afd678b76e07a3841180de0a275ad0d6bf94afee4b6d47f665541cd3921e29",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected genuine official photograph is an elevated close onboard view of Supreme Scream: a row of black/gray over-the-shoulder restraints and seats, silver handholds, white steel frame/back structure and yellow platform/panel, with distant city far below. Keep this honest close row/frame/elevation perspective. The source does not establish all three towers, their full height or the ground/base layout; do not invent those. Crop out lettering on the background panel; preserve the connected real restraints and frame. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-130805263535364-thumbnail.jpg",
+      "thumbnailSHA256": "7fb0d71716f24501de61538625174123304c375235223663deb1969a27ebe1aa",
+      "thumbnailBytes": 19037,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-130805263535364-detail.jpg",
+      "detailSHA256": "cb206127feaa2fecfd43e811db9d1c35f977b5a223589a0018913363411ba8a2",
+      "detailBytes": 122973,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 61,
+      "rideId": 144123460122888,
+      "rideName": "Dragon Swing",
+      "alt": "Illustrated Dragon Swing at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:02:51.874257+00:00",
+      "originalSHA256": "8f593950c57bdfb189ec5d8e755626c5d4f8b61cba92c46c459003d32cff7520",
+      "review": "Accepted: generated pixels inspected against genuine official Dragon Swing photo. Actual purple/orange/green boat, molded dragon neck/head, orange benches, silver lap bars and connected dark-blue suspension braces retained in a close view. Only photographed orange coaster/turquoise columns and palms remain behind.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fef71eeac198592c907a221f4f00d05d431d85114-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/dragon-swing",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Dragon Swinging Boat Ride at Knott's Berry Farm",
+          "sha256": "de3d0892a5a4e5f81250e60c54143395a1c89a01dd3836fe4060e047de9f0e07",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Dragon Swing photo shows a physical purple/orange/green decorated swinging boat with a long purple sculpted dragon neck/head, orange raised rows/benches, silver lap bars, dark blue steel suspension beams and diagonal braces. Preserve this actual manufactured boat, dragon ornament, seating and connected suspension in a close source-supported portrait. The photographed orange coaster/turquoise columns and palms can remain subtle background, never expanded. No living dragon, fantasy ship, unpictured full base or invented swing route. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-144123460122888-thumbnail.jpg",
+      "thumbnailSHA256": "455dfe1571149bdf9f03f152e09e820c0f536f61dc75e7caf26d7d3e44d2297e",
+      "thumbnailBytes": 25962,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-144123460122888-detail.jpg",
+      "detailSHA256": "b70c2e73166f4efb3aeb771a0fa86aafb52c40a1c1abe0058c21ec8f5a12c811",
+      "detailBytes": 166179,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 61,
+      "rideId": 185294703143363,
+      "rideName": "HangTime",
+      "alt": "Illustrated HangTime at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:29:27.544252+00:00",
+      "originalSHA256": "25a4538a79ed5417b14b04b32ddf3b44a0bdf6729374344d467d70619881cf60",
+      "review": "Accepted: actual generated pixels inspected against genuine official HangTime photograph. Orange-front blue/gray train with four seats across remains attached to the turquoise steep drop, beside the real cream support columns and access platform. Turquoise foreground track matches the documented section; no invented full layout or extra train.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4c2cef5c3431ec643fb50026d96d3a244bd0444a-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/hangtime",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "HangTime, the first dive coaster in California, at Knott's Berry Farm!",
+          "sha256": "e5ef0c84d2592c2f43675be0a6397383152af34d23650c75bba8aac6667b0238",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official HangTime photograph shows the actual orange-nosed train descending the steep turquoise steel drop on cream/tan support columns with gray access platform/handrails; turquoise triangular-spine track curves across the foreground. The broad train has four seats across, with blue seats/restraints and gray frame. Use a tight portrait around the actual steep drop, front train and documented platform/columns, keeping rear train rows cropped where necessary instead of inventing a seat or row count. No new route, extra inversion, unsupported car or tower. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-185294703143363-thumbnail.jpg",
+      "thumbnailSHA256": "9c24b5c5c796493a37b9aabdd08f9d00d9822d5296bd88ff5d5edce8d6649196",
+      "thumbnailBytes": 22111,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-185294703143363-detail.jpg",
+      "detailSHA256": "1a97a991c62a948eb3456eedb5aed42e8d6e9859d68a45723cdad7c127c57c81",
+      "detailBytes": 149054,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 61,
+      "rideId": 205633148338432,
+      "rideName": "Pony Express",
+      "alt": "Illustrated Pony Express at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:30:44.685218+00:00",
+      "originalSHA256": "2b0accd7c16348f16081342a351cb12b9f98a646931b8e37ea48851f8bdbbaef",
+      "review": "Accepted: actual generated pixels inspected against genuine official Pony Express photograph. The supported medium view retains the brown horse-shaped saddle train on a black chassis attached to the real orange banked rails above a shingled timber roof and trees. No free-running horses, invented close restraint model or new full route added.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7fa03c35f360cb0a951683f743ba0ab82fc73838-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/pony-express",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Pony Express coaster at Knott's Berry Farm",
+          "sha256": "76c36b9da40dd4d78fd762c0e8aa3499a6abf8d2c923daeda54e0707ef11ade7",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Pony Express photograph shows a distant train of brown horse-shaped saddle vehicles on black chassis rolling along a real orange banked steel curve above a gray-brown shingled wooden roof, with green trees. The actual photograph supports the distant horse-train/track context rather than a newly invented close vehicle model. Preserve that honest medium/distant view of the passing brown horse train on the orange curve, roof edge and trees; crop away the large sign and do not add lettering. No invented close-up horse restraint details, full route, new inversion or unattached free-running horses. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-205633148338432-thumbnail.jpg",
+      "thumbnailSHA256": "ab85997b9201997af3e0330e29f1be8e4c5401771bc0b73c8f835953390086f3",
+      "thumbnailBytes": 19920,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-205633148338432-detail.jpg",
+      "detailSHA256": "2d543841f6bb178447350042d5a3263d26447a77467d1bfea62245c195c45186",
+      "detailBytes": 153973,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 61,
+      "rideId": 222623375082118,
+      "rideName": "Jaguar!",
+      "alt": "Illustrated Jaguar! at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:41:50.867684+00:00",
+      "originalSHA256": "965c0d960300b6e0e4c331e12ea51d18be30e1c205ea29808a59468236dab954",
+      "review": "Accepted: generated pixels inspected against genuine official Jaguar! onboard photo. Paired front seats, black lap bar, silver handrail, gray textured front/side edges and orange body detail retained with the following train and real Fiesta Village/palms context. Unseen undercarriage and full route remain outside the frame.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F54fe1f6ea8f9dbd98f946f0032a848fa0742c39f-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/jaguar",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Jaguar! themed coaster at Knott's Berry Farm",
+          "sha256": "3136a9bde18310a61a00ad0929b098f6f6d1f41172ebd1501dcc809c2248c7c9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Jaguar! photograph is an on-ride close view: two riders abreast behind a black horizontal lap bar and a silver handrail, gray textured metal/stone-effect car front/side edges with a little orange bodywork, and a long following train bending behind above the colorful Fiesta Village plaza and real palms. Keep the honest close onboard paired-seat view and only the photographed background. The car underframe, wheel bogies and full track course are not shown; keep them cropped. Do not invent a jaguar sculpture, jungle temple, different restraint, new cars or a full exterior layout. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-222623375082118-thumbnail.jpg",
+      "thumbnailSHA256": "38347254eb5eefe62f2071d160ee4ac935b9f686a22191a28bdad8c18b5badcb",
+      "thumbnailBytes": 26929,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-222623375082118-detail.jpg",
+      "detailSHA256": "785cc41790ad6b97f2773d7e1b349c6564a72a312b6633cdbd24548766262c20",
+      "detailBytes": 169535,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 61,
+      "rideId": 253293205904722,
+      "rideName": "Timber Mountain Log Ride",
+      "alt": "Illustrated Timber Mountain Log Ride at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:54:13.422668+00:00",
+      "originalSHA256": "475f34e38f7886e043ad748aa22fc910d232fc8b4dcf99dce05b900af32d832d",
+      "review": "Accepted: generated pixels inspected against genuine official Timber Mountain Log Ride photo. Brown hollow log boat with flat cut-log nose and tandem passengers retained in the documented concrete-sided wet chute, tan rock and pine-tree setting. No invented upper crest, pool, mountain or full route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7ef6b0340bb67a5e8fe44b6ed2499483944fe6ad-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/timber-mountain-log-ride",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Timber Mountain Log Ride at Knott's Berry Farm",
+          "sha256": "d4ee427ba34091e95238fef1d3ecaba0f3c758ac1ea287c6b15f4229f277bbe9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Timber Mountain Log Ride photograph shows an actual hollow brown wood-effect log boat with flat cut-log nose descending a narrow gray/concrete-sided wet chute, tan artificial rock banks and dense blue-green pine trees. Use the documented close downhill perspective, vehicle and tandem passenger arrangement, keeping riders incidental. Preserve wet wood grain, chute edges, water and flanking rock/conifers; do not invent a complete mountain, upper drop crest, extra boat, wide side-by-side bench, new pool or unseen course. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-253293205904722-thumbnail.jpg",
+      "thumbnailSHA256": "cc7b71126b960355873a0696334db2de0147cdeecdf3040e13bd9d33e165b6cd",
+      "thumbnailBytes": 29587,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-253293205904722-detail.jpg",
+      "detailSHA256": "2a2245016b7192e35246b5e57bcd8ed28e6bb4c803cc2076f6011320b51473c1",
+      "detailBytes": 227839,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 61,
+      "rideId": 264354836305229,
+      "rideName": "Snoopy’s Tenderpaw Twister Coaster",
+      "alt": "Illustrated Snoopy’s Tenderpaw Twister Coaster at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:53:58.630417+00:00",
+      "originalSHA256": "be4b2eb3446bf5291b0b2d17c750e3ca08b1b7af2f4553eaad382cdf0df3b581",
+      "review": "Accepted: generated pixels inspected against the genuine 2024 Theme Park Archive photo. Physical Snoopy lead sculpture, green hat/yellow band, red scarf, steering wheel, orange/brown vehicle side, molded shovel/decorative wheels, green track and actual park rockwork retained. Source watermark and lettering excluded; historical appearance explicitly documented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.themeparkarchive.com/photo/xl/snoopys-tenderpaw-twister-coaster-knotts-berry-farm-2024-86489.jpg",
+          "sourceURL": "https://www.themeparkarchive.com/parks/knott%27s-berry-farm/snoopy%27s-tenderpaw-twister-coaster",
+          "credit": "Theme Park Archive (2024 reference publisher)",
+          "license": "Copyright Theme Park Archive; source rights retained",
+          "licenseURL": "https://www.themeparkarchive.com/about",
+          "alt": "Actual Snoopy lead vehicle of Tenderpaw Twister Coaster at Knott's Berry Farm, photographed in September 2024",
+          "sha256": "229551ce33c157f44c564ab269166bea241db3accfa910f40ab9fa7a039f0a3d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Theme Park Archive photograph dated 2024-09-01 shows the physical lead vehicle, replacing the rejected concept-rendering hero: white manufactured Snoopy figure with black ears/nose, green ranger hat/yellow band and red neckerchief, seated at a real small black steering wheel in a terracotta/orange camp jeep-style coaster vehicle. It has small silver decorative wheels, brown panels and actual molded tools on the side; lime-green track, gray supports, trees and rockwork are visible behind. Keep a close source-supported portrait of the real sculpture/steering wheel and visible vehicle side, without expanding the unseen front/underframe, course or passengers. Preserve manufactured plastic/paint/metal materials instead of a live animal or free-standing character. Source watermark, signs and new lettering must not appear. Historical 2024 appearance only; current operation is not inferred."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-264354836305229-thumbnail.jpg",
+      "thumbnailSHA256": "1814df801919b1498fae722e1ce8592f4e5ac6d61608812cde364d91447df324",
+      "thumbnailBytes": 21831,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-264354836305229-detail.jpg",
+      "detailSHA256": "0709f6c4bc473e5669710d3a60d5f2543c2b02df51dc9a0c8fc93bc36615abb6",
+      "detailBytes": 130272,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 61,
+      "rideId": 267625826972162,
+      "rideName": "Silver Bullet",
+      "alt": "Illustrated Silver Bullet at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T22:41:25.375307+00:00",
+      "originalSHA256": "2747a102012c0005a2173ab7d539eafff9cf09e6b9ad46ee1e0eb39e190734e9",
+      "review": "Accepted: generated pixels inspected against genuine official Silver Bullet photograph. Red rails/yellow spine, silver-gray columns on lake footings, reflecting water and source-supported inverted train with dangling feet retained in an honest medium view. No on-top train, extra detached gondola or invented complete course.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F547553f6a5d9d78900dc527198467fe462ec40c0-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/silver-bullet",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Silver Bullet Inverted Roller Coaster at Knott's Berry Farm",
+          "sha256": "cf14ffd67f810a0c3c639f4e2d5cb5527bca44eab2869ee7bbf41e6ab0a9b767",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Silver Bullet photograph shows red rails with a yellow track spine, silver-gray tubular supports on concrete pads in a reflecting lake, and an inverted train hanging below the distant steep drop, riders' feet dangling. Preserve the actual red/yellow track, silver columns, water reflection and source-supported below-track train in an honest medium view. Frame one documented track/support section with the distant train instead of inventing a whole compact route or a close-up seat model. No on-top coaster train, flying loose gondola, new inversion or changed park architecture. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-267625826972162-thumbnail.jpg",
+      "thumbnailSHA256": "8d692c8e6e451c8e30d73638c30a20cf2284f94f8a1780de3a2148a3bcf511ad",
+      "thumbnailBytes": 25907,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-267625826972162-detail.jpg",
+      "detailSHA256": "9dd6df4cf96b2eecb97dfeddd6d1e07f2d45461b37c0561324dd328fa83407cd",
+      "detailBytes": 188594,
       "detailPixels": [
         768,
         960
