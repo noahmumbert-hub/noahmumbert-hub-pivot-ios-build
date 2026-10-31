@@ -60,6 +60,9 @@ case "${PIVOT_TEST_SCOPE:-all}" in
   all) ;;
   reference-ui)
     test_options+=(
+      -only-testing:PIVOTTests/PIVOTTests/testGeneratedIllustrationsAreBundledBoundedAndAttributed
+      -only-testing:PIVOTTests/PIVOTTests/testGeneratedIllustrationsRequireAnExactParkAndRideMatch
+      -only-testing:PIVOTTests/PIVOTTests/testIllustrationCacheLoadsPackagedFilesAndHandlesMissingFiles
       -only-testing:PIVOTUITests/PIVOTUITests/testGeneratedRideIllustrationLoadsWithCreditsAndPreservesWaits
       -only-testing:PIVOTUITests/PIVOTUITests/testReferenceEPCOTCardsSearchFiltersAndPhotoCredits
       -only-testing:PIVOTUITests/PIVOTUITests/testReferenceCardsKeepEachParksIdentityAndNativeTabs
