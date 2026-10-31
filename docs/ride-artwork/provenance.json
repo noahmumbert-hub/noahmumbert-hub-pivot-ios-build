@@ -1635,6 +1635,98 @@
     },
     {
       "parkId": 50,
+      "rideId": 49491882490452,
+      "rideName": "Kiddy Kingdom Carousel",
+      "alt": "Illustrated Kiddy Kingdom Carousel at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:33:52.533736+00:00",
+      "originalSHA256": "584228bf52c883c2e4a0e5aae467ffaa7d1fa7878e1f6063f6dcc8a0053589eb",
+      "review": "Accepted: carved dark horse and gray long-eared donkey, colorful saddles, polished vertical poles and red carousel posts preserve the corrected real Kiddy Kingdom Carousel reference.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F6edad06fafa0495bf1e9e897cf81394044a92360-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/kiddy-kingdom-carousel",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Children riding a carousel at Cedar Point.",
+          "sha256": "b8bc560f489d6587c430af27a3829f8a80e5849a9b53f86f547a537f4f16df30",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Corrected official Kiddy Kingdom Carousel hero photo: carved dark horse head and long-eared gray donkey, polished vertical poles, red structural posts and bright painted saddles. This real menagerie carousel photo replaces an unrelated Space Age vehicle candidate; keep the inspected animal close-up."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-49491882490452-thumbnail.jpg",
+      "thumbnailSHA256": "268591a0034debd5fa5116a10b85208ea0f0bd0a7fe34fb0e2d956c00d7c7cd4",
+      "thumbnailBytes": 25905,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-49491882490452-detail.jpg",
+      "detailSHA256": "558748945ecf0ca42739213d6531fb5ef51393dbad03a26ee6b6af22e77f88e5",
+      "detailBytes": 156016,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-49491882490452",
+      "prompt": "Create ONE portrait 4:5 realistic generated attraction image for PIVOT. Image 1 is a verified real photograph of the exact attraction: faithfully retain its actual hardware, carved or painted details, vehicle colors, perspective and physical connections. Image 2 supplies ONLY subtle blue-purple dusk lighting from the UI example; ignore all text, logos, UI and unrelated park scenery. Use photographic material textures and restrained warm practical lights, more realistic than painted illustration, no heavy brushwork or excessive amber glow. Actual attraction remains recognizable at thumbnail size. No interface, border, watermark or text overlay. Generic incidental guests may remain secondary. Kiddy Kingdom Carousel at Cedar Point: use this corrected real menagerie-carousel photograph, keeping the carved dark horse head with open mouth, gray long-eared donkey behind, colorful saddles, polished vertical poles and red structural posts. Compose an authentic close view of the actual animals under the carousel canopy; do not replace them with generic rockets, invented animals or another park's carousel. Preserve carved wood and glossy painted surfaces.",
+      "promptSHA256": "6a477be79ea1caf44074c7c80508ed30fc7c753769ff476647759107efb01577",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 68308409717449,
+      "rideName": "Lake Erie Eagles",
+      "alt": "Illustrated Lake Erie Eagles at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:28:29.484783+00:00",
+      "originalSHA256": "c70cbe7f3dfb6370f7fedb14b58c529fec50bef118afc9ef34e8d4c171a1a678",
+      "review": "Accepted: brown suspended tub, white steerable eagle-face vane with yellow beak/blue eye, real cable/hand-control connections and Gemini timber backdrop preserve the actual Lake Erie Eagles close view.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/2950cc7deada56dccd6a4ce4fabef2afab4fefbe-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/lake-erie-eagles",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "",
+          "sha256": "9d3eaaf15614a9a067f6dada9e9a0537d97ff22bd15ad4aa63351dc69a51c931",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Lake Erie Eagles photo: close brown suspended tub, large white control vane painted with a yellow beak and blue eagle eye, cable attachment and wood-coaster lattice behind deciduous trees. The central spinning hub is outside the photo; keep the close vehicle perspective rather than inventing it."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-68308409717449-thumbnail.jpg",
+      "thumbnailSHA256": "5d5465f86ce388bd445bdb2418dabc7bbdfa4d63e8ec771d86a39cf7e301fadd",
+      "thumbnailBytes": 27127,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-68308409717449-detail.jpg",
+      "detailSHA256": "57d832b66a4dc42538ba2300c5f51e614e538cc2ae1871cf9b07004f6234f8f9",
+      "detailBytes": 161056,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-68308409717449",
+      "prompt": "Create ONE portrait 4:5 realistic generated attraction visualization for PIVOT. Image 1 is a verified photograph of this exact ride; preserve its actual materials, mechanism, vehicle colors and park setting. Image 2 is ONLY a restrained blue-purple evening lighting reference: ignore its logo, text and UI. Natural photographic wood, painted steel and water textures, believable physical connections and a subtle dusk treatment with modest practical lights. More realistic than painted illustration; no heavy brushwork, excessive orange glow, fantasy objects, interface, border, watermark or text overlay. Prioritize the ride hardware over incidental generic guests and make it readable as a small thumbnail. Lake Erie Eagles at Cedar Point: retain the close view of the brown suspended passenger tub, large white steerable vane painted as an eagle face with yellow beak and blue eye, real cable attachments and hand-operated control. Preserve the nearby leafy trees and weathered Gemini timber supports. Keep this verified close vehicle perspective; the central ride hub is outside the photograph, so do not invent it, extra wings or a real flying bird.",
+      "promptSHA256": "2a08a2b12bef713506b0a35607a031a8274e585a142e618ff1217e6d93376227",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
       "rideId": 76658400585603,
       "rideName": "Rougarou",
       "alt": "Illustrated Rougarou at Cedar Point",
@@ -1721,6 +1813,52 @@
       "key": "50-85197605068999",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT using actual attraction photo image 1 for accurate physical details and image 2 only for the UI's subtle blue-purple evening mood. Natural photographic textures, plausible perspective, soft light with restrained highlights, clear identifiable subject at thumbnail size. Slightly realistic cinematic treatment, no painted brushwork, exaggerated orange sky, cartoon materials or fantasy scenery. No UI, borders, logos, text or watermark. Iron Dragon at Cedar Point. Precisely show the real suspended coaster: dark swinging enclosed-bottom cars hanging BELOW the red-orange overhead track, with yellow/orange supports beside a small lagoon and trees. Keep hanging cars physically attached to their real track. Avoid turning it into a conventional seated-on-top coaster. Omit the unrelated large coaster towers and large utility pipes from the background/foreground; emphasize only Iron Dragon's identifiable train, track and lagoon.",
       "promptSHA256": "8b57ac9da831a34cd8f8dd45ae302af0a8a5d8e2f5ccd42ebf2b2db3bd16cc71",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 90563804177870,
+      "rideName": "Thunder Canyon",
+      "alt": "Illustrated Thunder Canyon at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:28:05.320191+00:00",
+      "originalSHA256": "07841d1367ae795a63384944363dafc898b91896bc379e1ff2502f7511384319",
+      "review": "Accepted: white onboard circular raft, tall black paired seat backs, red lap belts, stainless central grab railing and shallow wooded rapids preserve Thunder Canyon's inspected raft interior without invented exterior hardware.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/7c33b91e9d54c4b4cd8972317d7a89f60eb83e6e-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/thunder-canyon",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "",
+          "sha256": "365fee319bb19eca7c809f02cea705c2987b3ddd29e9d19b958b79c3fd40a80e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Thunder Canyon photo: onboard white circular raft, tall black paired seat backs, red lap belts and stainless central circular grab railing over shallow rapids beneath deciduous trees. Keep the verified interior perspective; full outer bumper and waterfalls are not established by this crop."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-90563804177870-thumbnail.jpg",
+      "thumbnailSHA256": "9d74b333cfee4b1b2bbadb052414c51f6c0adb7cad85e2d0b3df226ec40d6d4c",
+      "thumbnailBytes": 27464,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-90563804177870-detail.jpg",
+      "detailSHA256": "c6575f67ddb8c797018d2c78aaf2a1957d3f3cdb000e96ae38bc4058da9abfbf",
+      "detailBytes": 214593,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-90563804177870",
+      "prompt": "Create ONE portrait 4:5 realistic generated attraction visualization for PIVOT. Image 1 is a verified photograph of this exact ride; preserve its actual materials, mechanism, vehicle colors and park setting. Image 2 is ONLY a restrained blue-purple evening lighting reference: ignore its logo, text and UI. Natural photographic wood, painted steel and water textures, believable physical connections and a subtle dusk treatment with modest practical lights. More realistic than painted illustration; no heavy brushwork, excessive orange glow, fantasy objects, interface, border, watermark or text overlay. Prioritize the ride hardware over incidental generic guests and make it readable as a small thumbnail. Thunder Canyon at Cedar Point: match the real onboard circular white raft interior, tall BLACK paired seat backs, red lap belts and stainless circular central grab railing. Show a few generic incidental riders seated around the verified raft while shallow rapids and dense Ohio deciduous trees pass behind. Keep the photographed interior viewpoint; do not invent unseen exterior bumper/hull features, huge waterfalls or a log-flume boat.",
+      "promptSHA256": "464d707da376eca24246dde32c495226f417b43cc1c11bbe0ffee3c91e070016",
       "generationSteps": []
     },
     {
@@ -1813,6 +1951,52 @@
       "key": "50-92584416781544",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is a verified real photo of this exact attraction; faithfully preserve its identifying physical geometry, rail connections, vehicles and colors. Image 2 supplies ONLY the restrained blue-purple evening atmosphere from the user's UI example: ignore all its logos, interface, lettering and unrelated attractions. Use natural photographic wood/steel textures, credible camera perspective and subtle practical lights; slightly more realistic than illustration, with no heavy brushwork, excessive orange glow or fantasy decoration. Clear recognizable ride subject at thumbnail size. No UI, border, watermark or added lettering. Magnum XL-200 at Cedar Point: the verified reference shows the distinctive red tubular Arrow rail at the tall rounded lift crest and steep first descent, dense white/silver cross-braced lattice, white maintenance catwalk railings and small lights. Make an architectural portrait of this actual crest and descending rail, keeping the unseen tower base outside the crop as in the photo. Do not invent close train details, inversions, an Intamin blue truss or other unseen features.",
       "promptSHA256": "0ad72ccaf52e19841a7f389b7b0efa12bf2fc2b953b8fd98e16f1d1369d6b04b",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 92906994014481,
+      "rideName": "Calypso",
+      "alt": "Illustrated Calypso at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:31:37.847828+00:00",
+      "originalSHA256": "0bf097e2b17257bb87773f2c66c54c3c4a1f4095d236624cd1e5275beb073012",
+      "review": "Accepted: compact lime/yellow two-person tubs with circular lamps and black lap bars, attached salmon-pink rotating arms and blue wooden deck preserve the inspected Calypso photograph.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa8263d8dc302ef3851fa66f69e344f259c86069e-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/calypso",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders laughing and smiling while riding the spinning Calypso ride at Cedar Point.",
+          "sha256": "0dccc034cdcd1b572ad1a09e601b8544b245d0d7e514c7c9389125501d34faa3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Calypso photo: round lime-green/yellow two-person tubs with circular red/white lamps and black lap bars, attached to salmon-colored rotating arms over a blue wooden platform. Preserve physical pivot connections and the real compact vehicle proportions."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-92906994014481-thumbnail.jpg",
+      "thumbnailSHA256": "c37227ae9a4e75e138bea4d5972f6f592fb2b5d3fd170149e7c4c40b126209bc",
+      "thumbnailBytes": 27334,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-92906994014481-detail.jpg",
+      "detailSHA256": "e184868a269698586892752edc678c444796eccf5c0f5c53ce971ef2207f1172",
+      "detailBytes": 186943,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-92906994014481",
+      "prompt": "Create ONE portrait 4:5 realistic generated attraction visualization for PIVOT. Image 1 is an inspected authentic photograph of this exact attraction; preserve its actual mechanism, materials, colors and park context. Image 2 supplies ONLY restrained blue-purple evening lighting; ignore its UI, text and logos. Photographic material texture and credible engineering perspective, subtle warm practical lights, slightly more realistic than illustration, no brushwork or excessive orange glow. Keep the attraction readable at small thumbnail size. No interface, frame, border, watermark, overlaid text or invented fantasy setting. Calypso at Cedar Point: match the real lime-green and yellow rounded two-person tubs with round red/white lamps and black lap bars, connected to salmon-pink rotating arms over a blue wooden platform. Show a believable close vehicle view with a few generic incidental riders and the physical pivot connections. Preserve compact tub proportions and actual color palette; do not substitute bumper cars or teacups.",
+      "promptSHA256": "154a44892e6c8625e77adb529d48fd194a6d7025796043b3f3281e9fe125fda0",
       "generationSteps": []
     },
     {
@@ -2194,6 +2378,249 @@
     },
     {
       "parkId": 50,
+      "rideId": 165889847370145,
+      "rideName": "Wave Swinger",
+      "alt": "Illustrated Wave Swinger at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:30:00.154316+00:00",
+      "originalSHA256": "1ce5435c451888e35887dc3672640ff07de57a87f2d1e9f18c1132a2c7920fe7",
+      "review": "Accepted: ornate yellow mural canopy, radial bulbs, pink/teal diamond tower panels and green seats on paired chains preserve the actual Wave Swinger low-angle hardware and decoration.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/5898a72168ab66f8baa6d0a25025ee5d0af7d93a-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/wave-swinger",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "",
+          "sha256": "bcd17d7c658e4b19936fc85c9ae3ec8708dee10f82cc1d055459801c09bf88fd",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Wave Swinger photo: ornate yellow canopy underside with framed classical murals, lightbulb ribs, yellow central tower with pink/teal diamond patterns, chain-suspended green seats with metal frames. Low-angle image supports this canopy/seat perspective, not a tall WindSeeker mast."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-165889847370145-thumbnail.jpg",
+      "thumbnailSHA256": "eb12745866bfe6f5b61b89edffa7053c98a70e9c47d7727df1508960508cad78",
+      "thumbnailBytes": 27341,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-165889847370145-detail.jpg",
+      "detailSHA256": "211ed9acb7f10eb248f794c969ff00e160de4506fe6a55688712d287a30925a4",
+      "detailBytes": 215629,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-165889847370145",
+      "prompt": "Create ONE portrait 4:5 realistic generated attraction visualization for PIVOT. Image 1 is an inspected authentic photograph of this exact attraction; preserve its actual mechanism, materials, colors and park context. Image 2 supplies ONLY restrained blue-purple evening lighting; ignore its UI, text and logos. Photographic material texture and credible engineering perspective, subtle warm practical lights, slightly more realistic than illustration, no brushwork or excessive orange glow. Keep the attraction readable at small thumbnail size. No interface, frame, border, watermark, overlaid text or invented fantasy setting. Wave Swinger at Cedar Point: keep the actual low-angle view under the ornate yellow carousel-style canopy, framed classical painted murals and radial rows of small bulbs, yellow central tower with pink and teal diamond panels, and green metal-framed seats suspended by real paired chains. Preserve the source's connected chair suspension and decorated canopy. Do not make it a tall WindSeeker tower or add different park landmarks.",
+      "promptSHA256": "d50e661a87ee3e2592f3616994398b8272d2ec8e26939dc6d7aa6a6d8f5d359d",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 178618022357886,
+      "rideName": "Matterhorn",
+      "alt": "Illustrated Matterhorn at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:30:22.710679+00:00",
+      "originalSHA256": "4c734ea06e577ab3d458b1642d190171a28f5008cb302b12cf3661bfc2fd7566",
+      "review": "Accepted: blue canopy with snowy-mountain trim, cream posts, pointed central scenery, blue undulating two-person cars and purple booth retain Cedar Point Matterhorn; Giant Wheel remains secondary.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fd414d88757fcba7982d4c72567c1396adde3b89a-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/matterhorn",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A colorful, Matterhorn mountain themed thrill ride at Cedar Point.",
+          "sha256": "0d1131fec1200b688a0c3b5831d44172dcc7d51c69db6fd197c122e64c14bb0e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Cedar Point Matterhorn photo: circular blue canopy edged with painted snowy-mountain panels and white lights, pointed blue central scenery, blue two-person cars on undulating arms, cream canopy posts, purple booth and nearby Giant Wheel. Do not substitute a mountain roller coaster."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-178618022357886-thumbnail.jpg",
+      "thumbnailSHA256": "1bf120f20cbac61d2040b8069ba2cf8254175c16af40e3f4f18039b5bebc7013",
+      "thumbnailBytes": 25265,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-178618022357886-detail.jpg",
+      "detailSHA256": "747bfdede1acb178cc17206931e2f7ce3baa8d14f974ac2a591695512d25f633",
+      "detailBytes": 205387,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-178618022357886",
+      "prompt": "Create ONE portrait 4:5 realistic generated attraction visualization for PIVOT. Image 1 is an inspected authentic photograph of this exact attraction; preserve its actual mechanism, materials, colors and park context. Image 2 supplies ONLY restrained blue-purple evening lighting; ignore its UI, text and logos. Photographic material texture and credible engineering perspective, subtle warm practical lights, slightly more realistic than illustration, no brushwork or excessive orange glow. Keep the attraction readable at small thumbnail size. No interface, frame, border, watermark, overlaid text or invented fantasy setting. Matterhorn at Cedar Point: accurately retain the circular blue canopy edged with painted snowy-mountain silhouette panels, cream posts, pointed blue central scenery, blue two-person swinging cars on undulating arms and purple operator booth. Keep the real Matterhorn attraction in the foreground; the nearby Giant Wheel is only a secondary background detail. This is a compact rotating flat ride, not a roller coaster inside a real Alpine mountain. No real snowy landscape.",
+      "promptSHA256": "48997ec89c502c1f1932c939081dcc888f4ff254c45a731cf24dd105b9622dcf",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 184061272261581,
+      "rideName": "Atomic Scrambler",
+      "alt": "Illustrated Atomic Scrambler at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:31:06.079355+00:00",
+      "originalSHA256": "868f4b1969f8f826e3d8823c68b5a1782d1e57c7e46093d66f745ad68edfd0c9",
+      "review": "Accepted: orange mast and splayed light rods, purple rotating arms, yellow braces and low purple/aqua/white cars retain Atomic Scrambler's real mechanism, with Wild Mouse secondary behind.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F155775eb63a450a81f1780d8883f63ef4488dc13-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/atomic-scrambler",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A colorful Scrambler classic fair ride at Cedar Point",
+          "sha256": "6348c28a7511d3f8ae61b3bd9d839ba9236513f6e388024dc4ef1948632103a6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Atomic Scrambler photo: orange central mast and tall splayed orange light rods, purple main arms, yellow braces, low purple/aqua/white cars inside white fencing, orange/yellow Wild Mouse track behind. Keep scrambler hardware as subject rather than mistaking background coaster for this ride."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-184061272261581-thumbnail.jpg",
+      "thumbnailSHA256": "03d53f606005f070fe11522f23cdb1b10b865365f1e971f141a0de04575639f3",
+      "thumbnailBytes": 29928,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-184061272261581-detail.jpg",
+      "detailSHA256": "fcbd3fe8b7dd9d54cd7e2dfd51e4a038c3245f9aa7af4f1cc76cea4464399b86",
+      "detailBytes": 194869,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-184061272261581",
+      "prompt": "Create ONE portrait 4:5 realistic generated attraction visualization for PIVOT. Image 1 is an inspected authentic photograph of this exact attraction; preserve its actual mechanism, materials, colors and park context. Image 2 supplies ONLY restrained blue-purple evening lighting; ignore its UI, text and logos. Photographic material texture and credible engineering perspective, subtle warm practical lights, slightly more realistic than illustration, no brushwork or excessive orange glow. Keep the attraction readable at small thumbnail size. No interface, frame, border, watermark, overlaid text or invented fantasy setting. Atomic Scrambler at Cedar Point: preserve orange central mast with tall splayed orange light rods, purple rotating arms, yellow braces and low purple/aqua/white passenger cars within white safety fencing. The orange/yellow Wild Mouse track behind is only background. Portrait composition focused on the real colorful scrambler mechanism and its connected low cars. Do not substitute the background roller coaster or turn the flat ride into a Ferris wheel.",
+      "promptSHA256": "77761b35a57d65509f30f81c57c0c5e3d32e2bd31cabdbd3ac0af55c96aa9249",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 187439858632815,
+      "rideName": "Ocean Motion",
+      "alt": "Illustrated Ocean Motion at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:29:14.361542+00:00",
+      "originalSHA256": "a2109d06b801985433c000111162c11b90970479c685db883ba3826fcfefdc43",
+      "review": "Accepted: partial brown plank-effect swinging ship, riveted trim/yellow restraint tops, white support tubes and rock-mounted teal Ocean Motion sign retain the actual reference crop; GateKeeper remains secondary behind.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fef8151433bb36c2e4b733d0edbdc69608c096cc3-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/ocean-motion",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Swinging ship ride with the Ocean Motion I.D. sign.",
+          "sha256": "91bd36f3aeec221d2f5ebe9127b05603819147f4994e45f6cbf707b3b4da38de",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Ocean Motion photo: brown plank-look swinging ship with yellow restraint tops, white support tubes, rock-mounted teal sign and GateKeeper blue track behind. Ship is partially cropped; preserve a supported partial hull view or obtain a wider reference before depicting the full hull."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-187439858632815-thumbnail.jpg",
+      "thumbnailSHA256": "324d09a173b52d60cc72fdcdeaa3f9195d1e144b0df6214016deab3bd21f5141",
+      "thumbnailBytes": 29824,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-187439858632815-detail.jpg",
+      "detailSHA256": "d0daa61bcf806aad4276f6138e97aaeb32d551f8bd20418269b285923eef490b",
+      "detailBytes": 224086,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-187439858632815",
+      "prompt": "Create ONE portrait 4:5 realistic generated attraction visualization for PIVOT. Image 1 is a verified photograph of this exact ride; preserve its actual materials, mechanism, vehicle colors and park setting. Image 2 is ONLY a restrained blue-purple evening lighting reference: ignore its logo, text and UI. Natural photographic wood, painted steel and water textures, believable physical connections and a subtle dusk treatment with modest practical lights. More realistic than painted illustration; no heavy brushwork, excessive orange glow, fantasy objects, interface, border, watermark or text overlay. Prioritize the ride hardware over incidental generic guests and make it readable as a small thumbnail. Ocean Motion at Cedar Point: match the brown plank-effect swinging ship with riveted dark trim and yellow restraint tops, white pendulum support tubes and large rock sign with teal physical Ocean Motion lettering below. The photograph shows only part of the raised ship; keep this honest partial-hull crop, with GateKeeper's blue track/white supports secondary in the distance. Do not invent an unseen ship stern, sails, fantasy ocean waves or a generic roller coaster as the main ride.",
+      "promptSHA256": "3e186d9559576e3ffb14400caa0de1c5348601649d71f3b887a40cb4881ce9d2",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 190951249116977,
+      "rideName": "Pipe Scream",
+      "alt": "Illustrated Pipe Scream at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:34:30.390237+00:00",
+      "originalSHA256": "8b9ad71a3a67a7f274954d46d80d373b35d50084101a916ea66332c034cfcf80",
+      "review": "Accepted: tight platform view retains Pipe Scream's green patterned center box/dome, orange outward seats, blue deck and short connected chassis. ImageGen edits remove an unverified long foreground track/chain-lift extension; actual Gemini timber remains behind.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F95267d08afac73bd25ef015bb282ed19ba6b0f9f-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/pipe-scream",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on Pipe Scream spin while cresting gentle hills on this family roller coaster.",
+          "sha256": "6e23ed53ce1bbd621da8e147041ee129caada015fcd7e1bf5f46e97832747d38",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Pipe Scream photo: green rectangular skateboard-like rotating platform with patterned green center box and hemispherical dome, orange seat backs facing outward, blue floor/chassis and undulating blue track structure, Gemini wood lattice behind. Retain rectangular outline and genuine seating layout."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-190951249116977-thumbnail.jpg",
+      "thumbnailSHA256": "fdfb7a636cfe0f5c2747fde9d49497a5b7ad549564822769aec746ef94b3c802",
+      "thumbnailBytes": 27317,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-190951249116977-detail.jpg",
+      "detailSHA256": "929d726d38b476fab230498947ebd24c87a614876b462db1a3deb22a695a0bee",
+      "detailBytes": 169153,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-190951249116977",
+      "prompt": "Edit image 1, the generated Pipe Scream artwork, using image 2 as the factual hardware reference. Make a TIGHT PORTRAIT CLOSE-UP OF THE PASSENGER PLATFORM: the green patterned center box and dome, orange outward-facing seats, blue deck and only a short glimpse of the attached blue chassis. The platform and green dome must fill the portrait. It is fine to crop the outer platform ends rather than show the entire ride. Put the LOWER IMAGE EDGE immediately below the blue deck/short chassis. REMOVE the entire long foreground descending blue rail/support run from the composition; no long track extension, chain-lift or tall foreground structures should be visible. Fill the upper background with the real Gemini timber lattice and subtle sky. Keep the real rectangular platform, realistic material textures, connected hardware and current blue-purple dusk treatment. Do not invent a replacement track layout. No UI, border, watermark or text overlay.",
+      "promptSHA256": "7a65a16ea8a675c8247a9208c6307a4e687fc51714fc521838ca7ce8e91d7194",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated attraction visualization for PIVOT. Image 1 is a verified photograph of this exact ride; preserve its actual materials, mechanism, vehicle colors and park setting. Image 2 is ONLY a restrained blue-purple evening lighting reference: ignore its logo, text and UI. Natural photographic wood, painted steel and water textures, believable physical connections and a subtle dusk treatment with modest practical lights. More realistic than painted illustration; no heavy brushwork, excessive orange glow, fantasy objects, interface, border, watermark or text overlay. Prioritize the ride hardware over incidental generic guests and make it readable as a small thumbnail. Pipe Scream at Cedar Point: preserve the actual green rectangular skateboard-like rotating platform, patterned green center box topped by a green hemispherical dome, orange outward-facing seat backs, blue deck/chassis and the blue track structure beneath, with Gemini timber lattice behind. Keep the rectangular outline, real paired outward seats and support connections; do not change it to a round disk, roller-coaster train or pirate ship.",
+          "outputSHA256": "ad3ffe24b1dd971cb12e5f2e876e3949403cce24bad1af0f84aadfff71058cfc"
+        },
+        {
+          "prompt": "Edit image 1, the generated Pipe Scream portrait. Preserve the verified green rectangular passenger platform, orange outward-facing seat backs, blue deck/chassis, green patterned center box and dome, riders, Ohio deciduous trees, Gemini wooden lattice background, photographic dusk texture and 4:5 format. Correct the unsupported foreground: the generated image extended a long steep chain-lift-looking track run into the lower foreground, outside the actual photographed crop. Reframe the portrait more tightly around the REAL PLATFORM and its short visible blue underside exactly as established by image 2, the authentic Pipe Scream photograph. Remove that invented long foreground chain-lift extension; keep only the track/chassis portions actually visible in the real photo. Do not guess a new track layout. Preserve the original rectangular ride and connected hardware. No UI, border, watermark or text overlay.",
+          "outputSHA256": "12e3a3f21703171201d8ad220c084d76deedc7ff7982a0db7c8749287392fecd"
+        },
+        {
+          "prompt": "Edit image 1, the generated Pipe Scream artwork, using image 2 as the factual hardware reference. Make a TIGHT PORTRAIT CLOSE-UP OF THE PASSENGER PLATFORM: the green patterned center box and dome, orange outward-facing seats, blue deck and only a short glimpse of the attached blue chassis. The platform and green dome must fill the portrait. It is fine to crop the outer platform ends rather than show the entire ride. Put the LOWER IMAGE EDGE immediately below the blue deck/short chassis. REMOVE the entire long foreground descending blue rail/support run from the composition; no long track extension, chain-lift or tall foreground structures should be visible. Fill the upper background with the real Gemini timber lattice and subtle sky. Keep the real rectangular platform, realistic material textures, connected hardware and current blue-purple dusk treatment. Do not invent a replacement track layout. No UI, border, watermark or text overlay.",
+          "outputSHA256": "8b9ad71a3a67a7f274954d46d80d373b35d50084101a916ea66332c034cfcf80"
+        }
+      ]
+    },
+    {
+      "parkId": 50,
       "rideId": 194530731098332,
       "rideName": "Power Tower",
       "alt": "Illustrated Power Tower at Cedar Point",
@@ -2328,6 +2755,52 @@
       "key": "50-224947465344457",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Use image 1 as the authentic ride photograph and preserve visible identifying hardware, materials, colors and physical connections. Image 2 supplies only subtle blue-purple dusk treatment; ignore all UI, lettering and logo. Photographic natural textures, believable perspective, softly balanced practical lighting; slightly cinematic rather than painted. Keep the attraction readable at thumbnail size. No interface, border, watermark or overlaid lettering. Giant Wheel at Cedar Point: match the real pink/red wheel rim, orange/yellow radial spokes, and alternating open-sided BLUE and GREEN roofed gondolas with decorative oval side panels. Focus the portrait on the photographed upper wheel arc and hanging gondolas against twilight sky; lower axle/base can remain outside the frame because it is not in the reference. Natural painted steel and subtle bulbs, no enclosed glass capsules or an invented central support/base.",
       "promptSHA256": "da2333fd017bd72938c98d812744d996226f6c6bbde88eb2e189a7e2b2c7b0d7",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 241626445268273,
+      "rideName": "Cedar Downs Racing Derby",
+      "alt": "Illustrated Cedar Downs Racing Derby at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:32:48.012855+00:00",
+      "originalSHA256": "15ccd2773ccec559f669c54e506573cab6c0f57092231c8e53700afba7c28cc3",
+      "review": "Accepted: brown/gray carved racing horses, black neck hand grips, yellow/red saddles and low yellow canopy preserve Cedar Downs Racing Derby; no conventional vertical horse poles were added.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa2db2bc937dedc0e9f106e9b3110c3a465bb0bf5-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/cedar-downs-racing-derby",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders smiling while riding on carousel horses.",
+          "sha256": "70d59965d6689876ee233e5d094783c49cee2320f200e0bfbe4627b4a0e893ce",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Corrected official Cedar Downs Racing Derby hero photo: carved racing horses with open mouths, black hand grips behind their necks, yellow/red saddles and low yellow canopy roof. These are racing carousel horses without vertical horse poles; photo replaces a wrongly selected Calypso image. Keep close horse/rider perspective."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-241626445268273-thumbnail.jpg",
+      "thumbnailSHA256": "7db2556c0e8da46b57b071b1d19d59ef4a0b2bea333de3d69474b48c07703834",
+      "thumbnailBytes": 24970,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-241626445268273-detail.jpg",
+      "detailSHA256": "1c6848d9ea4443e120679fd6b63eda567ef885768b330d3e3c5459ef16778c44",
+      "detailBytes": 152177,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-241626445268273",
+      "prompt": "Create ONE portrait 4:5 realistic generated attraction image for PIVOT. Image 1 is a verified real photograph of the exact attraction: faithfully retain its actual hardware, carved or painted details, vehicle colors, perspective and physical connections. Image 2 supplies ONLY subtle blue-purple dusk lighting from the UI example; ignore all text, logos, UI and unrelated park scenery. Use photographic material textures and restrained warm practical lights, more realistic than painted illustration, no heavy brushwork or excessive amber glow. Actual attraction remains recognizable at thumbnail size. No interface, border, watermark or text overlay. Generic incidental guests may remain secondary. Cedar Downs Racing Derby at Cedar Point: keep the verified carved brown and gray RACING HORSES, expressive open mouths, black hand grips behind their necks, yellow/red saddles and the low yellow canopy. These racing carousel horses have NO vertical horse poles: do not add conventional carousel poles through their bodies. Preserve the actual close horse/rider perspective and hand-carved textures rather than inventing a complete unseen platform layout or using Calypso cars.",
+      "promptSHA256": "123c0f18c08dca7cbc2324af66a09d6eb6961acab7e5be8f39edea4552dd01c7",
       "generationSteps": []
     },
     {
@@ -2742,6 +3215,374 @@
       "key": "60-12010934181385",
       "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based closely on real attraction photo image 1. Image 2 supplies only restrained blue-purple evening mood. Natural photographic materials, believable physical perspective and softly balanced practical lighting; more realistic than a painted illustration. Preserve authentic identifying ride hardware, geometry and colors; center the subject clearly for thumbnail use. No screenshot UI, frames, borders, overlaid labels, watermark or invented lettering. Viking Fury at Kings Island: photograph's actual brown wood-textured Viking ship with high carved prow swinging on cream white A-frame steel supports over a small green pond, woods around it, blue-roofed operators booth and dark timber boarding platform. Show full ship and suspension pivot in portrait, plausible mechanical attachment and authentic scale; no seafaring fantasy ship or sails.",
       "promptSHA256": "c72905454fcec2745015076573356747ed711cd276de0516db0f149db63dd5db",
+      "generationSteps": []
+    },
+    {
+      "parkId": 60,
+      "rideId": 77189767080838,
+      "rideName": "Mystic Timbers",
+      "alt": "Illustrated Mystic Timbers at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:36:09.039513+00:00",
+      "originalSHA256": "122e589f2d5ff27557b3ea7da251f011d982d367051d7bec8c7b749982b60594",
+      "review": "Accepted: weathered light-blue pickup-style nose with silver bumper/grille, low black lap-bar seats and banked timber running structure retain Mystic Timbers' actual forest train, rather than the rejected merchandise candidate.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2aa29194b784648e7f891a6033a93da266075df4-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/mystic-timbers",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on a family wooden roller coaster at an amusement park.",
+          "sha256": "c6031ec4cf2f5e437e122d61bf2cff2b26ad6717532758bf7e3d786bca1ba3ab",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Mystic Timbers official hero photo replaces merchandise candidate: light-blue weathered pickup-truck-style nose and silver bumper/grille, low black seats/lap bars, banked wood running structure with timber handrails amid dense deciduous woods. Keep train/wood details, not the plush toy selected by keyword scoring."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-77189767080838-thumbnail.jpg",
+      "thumbnailSHA256": "1d76bc6a62190e8dfcc307992a814f5457d481cb9067c0f91f11ee142c63eb4c",
+      "thumbnailBytes": 31597,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-77189767080838-detail.jpg",
+      "detailSHA256": "e4c6ca086553cb90828ddc6268c03222808f12aea0b566034304bcfb523915cb",
+      "detailBytes": 215606,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "60-77189767080838",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected actual attraction photograph, not merchandise: keep its identifying hardware, material, vehicle colors, rail connections and believable perspective. Image 2 is only a restrained blue-purple evening lighting guide; ignore all UI, text and logos. Natural photographic wood/steel textures, modest warm practical lights, slightly more realistic than illustration, with no heavy painted brushwork, excessive amber glow or invented fantasy decoration. Clear ride identity at thumbnail size. No interface, border, watermark or text overlay. Mystic Timbers at Kings Island: preserve the weathered light-blue pickup-truck-inspired train nose, silver bumper/grille, low black seats and lap bars, and banked WOODEN running structure with real timber handrails in dense deciduous forest. Keep the truck nose correctly attached to a coaster train on the rails, not a road vehicle. Match the source's approaching banked curve and natural wood. No plush toy, guessed shed interior or magical forest creatures.",
+      "promptSHA256": "bf0ca4bba6051afd03f98ea2cbd3843aac91b735b56039cf1b7f83b46653a124",
+      "generationSteps": []
+    },
+    {
+      "parkId": 60,
+      "rideId": 124375875871315,
+      "rideName": "Diamondback",
+      "alt": "Illustrated Diamondback at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:33:29.225415+00:00",
+      "originalSHA256": "68fe5fdf3107966c65ada4e173e264fd40b7a6ddfb6a388b14503ecae77daf00",
+      "review": "Accepted: yellow/green fanged snake-head nose, red high-back staggered two-across seats, orange clamshell restraints, burgundy box-spine rail and cream supports retain Diamondback's actual train and rail connections.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5dd4ed7aae3a00364afb657218e17667314a5b67-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/diamondback",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on a snake-themed roller coaster at an amusement park.",
+          "sha256": "755a3a6de35486bae984c3a8aac8b0483446f26b4fefa67772fef3865c8085bf",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Diamondback official hero photo: yellow/green snake-head train nose with fangs and slit-pupil eyes, red high-back seats, orange clamshell lap restraints, staggered two-across open seating, burgundy box-spine rail on cream support tube. Keep the train above the rail and this frontal descending viewpoint."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-124375875871315-thumbnail.jpg",
+      "thumbnailSHA256": "82013a27ced0a8d2f95512b1e62b1aa1d903c44c2d3a97572a2f85f5e5c84bf5",
+      "thumbnailBytes": 24962,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-124375875871315-detail.jpg",
+      "detailSHA256": "a04c5e6045fe3ac3cdf84cce102e66e51487e79195e83569b933953dd3a5e187",
+      "detailBytes": 156635,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "60-124375875871315",
+      "prompt": "Create ONE portrait 4:5 realistic generated attraction image for PIVOT. Image 1 is a verified real photograph of the exact attraction: faithfully retain its actual hardware, carved or painted details, vehicle colors, perspective and physical connections. Image 2 supplies ONLY subtle blue-purple dusk lighting from the UI example; ignore all text, logos, UI and unrelated park scenery. Use photographic material textures and restrained warm practical lights, more realistic than painted illustration, no heavy brushwork or excessive amber glow. Actual attraction remains recognizable at thumbnail size. No interface, border, watermark or text overlay. Generic incidental guests may remain secondary. Diamondback at Kings Island: preserve the real yellow/green snake-head nose with fangs and slit-pupil eyes, red high-back seats, orange clamshell lap restraints and staggered two-across open seating. The train sits above its burgundy box-spine rail on cream support tubes. Use the source's frontal descending viewpoint with visible connected wheels and snake nose, not a wing coaster, suspended train or actual giant snake.",
+      "promptSHA256": "6699fe00e8007dabf53a6cadc6dc5201c7d9be9e5f0264ad04a88676aed7e758",
+      "generationSteps": []
+    },
+    {
+      "parkId": 60,
+      "rideId": 167475122343258,
+      "rideName": "Invertigo",
+      "alt": "Illustrated Invertigo at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:37:08.976279+00:00",
+      "originalSHA256": "bb3ddce426b9c84f395c0e0af6caa9f784cead1dfc56edb77e8a0f8f4e76944d",
+      "review": "Accepted: aqua/teal inverted-loop rail, deep-blue frames and blue/gray face-to-face suspended cars with yellow restraint details preserve Invertigo's actual running-wheel connections and inverted train.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa1d5becafc8cb0093c9f16b332f1f9c02fe1bb90-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/invertigo",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "An inverted boomerang roller coaster at an amusement park.",
+          "sha256": "40b590bda8f48bb410320ea13d54fa914d487f6968e1261ff36e04b26328bbd5",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Invertigo official hero photo: aqua/teal inverted loop rail, dark-blue tubular support frames, blue/gray face-to-face suspended cars with yellow restraint accents and visible dangling legs. Preserve connected wheel assembly and compact inverted shuttle hardware, not a sit-down train."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-167475122343258-thumbnail.jpg",
+      "thumbnailSHA256": "45552cd01788e31bdff7a9c8e43a5c35f7436c071c3f3fa65a49acfbcb38e997",
+      "thumbnailBytes": 26696,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-167475122343258-detail.jpg",
+      "detailSHA256": "28734f4f37f8111753ae7b53ff016544b3ed4bd27520a2ef2f424d7003fef75b",
+      "detailBytes": 171300,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "60-167475122343258",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected actual attraction photograph, not merchandise: keep its identifying hardware, material, vehicle colors, rail connections and believable perspective. Image 2 is only a restrained blue-purple evening lighting guide; ignore all UI, text and logos. Natural photographic wood/steel textures, modest warm practical lights, slightly more realistic than illustration, with no heavy painted brushwork, excessive amber glow or invented fantasy decoration. Clear ride identity at thumbnail size. No interface, border, watermark or text overlay. Invertigo at Kings Island: preserve the actual aqua/teal inverted loop rail, dark-blue tubular support frames and blue/gray face-to-face suspended cars with yellow restraint accents and dangling legs. Keep the photographed train attached below the real loop rail by its running-wheel assemblies, matching this close upward view. Do not substitute a sit-down train, different coaster color scheme or generic huge loop layout.",
+      "promptSHA256": "7232bbb9a9b692d4fa302ddb5e731266734cc87679a1b452be162a11c013e6c7",
+      "generationSteps": []
+    },
+    {
+      "parkId": 60,
+      "rideId": 217175995369859,
+      "rideName": "The Beast",
+      "alt": "Illustrated The Beast at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:36:42.391943+00:00",
+      "originalSHA256": "b9f51f5d3f60e55d3a5edd6fdfc5ef2666444b07eeeedfd40e00f6638f2fde75",
+      "review": "Accepted: red rectangular two-across PTC train, dark lap-bar seats, silver trim/diamondplate and physical Beast nose plate preserve the actual steep wooden drop and weathered supporting lattice.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Faeb5dcdb9ed70fdef208f33c22f0058d1464deff-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/the-beast",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on a family wooden roller coaster at an amusement park.",
+          "sha256": "8e45634af9c57b0eacfc27d14147b671de98a9116efecb92f2867d4fbea3dea2",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual The Beast official hero photo replaces wooden model train candidate: red rectangular PTC train fronts, dark seats, lap bars and two-across riders, silver trim/diamondplate step and physical Beast nameplate, steep timber track with high wood lattice. Use this verified drop crop rather than inventing complete tunnel layout."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-217175995369859-thumbnail.jpg",
+      "thumbnailSHA256": "c87743054da6b371f94f9a9afbd00a7d6ae122218d5e4d193ad0ea13594f7fab",
+      "thumbnailBytes": 26886,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-217175995369859-detail.jpg",
+      "detailSHA256": "63bee371fd0f70e7bd16259c20983a57894ebc83d7b565835a3601ace9c975e5",
+      "detailBytes": 181086,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "60-217175995369859",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected actual attraction photograph, not merchandise: keep its identifying hardware, material, vehicle colors, rail connections and believable perspective. Image 2 is only a restrained blue-purple evening lighting guide; ignore all UI, text and logos. Natural photographic wood/steel textures, modest warm practical lights, slightly more realistic than illustration, with no heavy painted brushwork, excessive amber glow or invented fantasy decoration. Clear ride identity at thumbnail size. No interface, border, watermark or text overlay. The Beast at Kings Island: accurately retain the real red rectangular PTC train front, two-across dark seats and lap bars, silver trim/diamondplate step and small physical Beast nameplate, descending steep timber running track through high weathered wood lattice. Focus on the inspected frontal drop perspective and attached running wheels. Do not invent the unseen tunnel/complete ride layout, wooden model toy or an actual monster.",
+      "promptSHA256": "24d24ae0ea1fcd89b3c3090fcb217d88e4f7228b84722d77208b3b1139d890de",
+      "generationSteps": []
+    },
+    {
+      "parkId": 60,
+      "rideId": 223438162163113,
+      "rideName": "Orion®",
+      "alt": "Illustrated Orion® at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:34:21.286116+00:00",
+      "originalSHA256": "8e8968690afd791824f66ce1eb487a4e84b0cfa98cb07d57dd35041b1c422acf",
+      "review": "Accepted: bright-blue non-inverting banked crest, pale-gray tubular supports, blue aerodynamic nose with red/white accents and four-across lap-bar seating preserve Orion's inspected real train.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff93e66b842277f8717e5fa4d4a4557338ae510f3-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/orion",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on Orion roller coaster soar over a banked hill.",
+          "sha256": "69e8a5311c5f5cb513a935e3c3e3c7352d39d9085ea42c7db143511167353019",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Orion official hero photo: broad blue box-spine banked hill, pale-gray tubular supports, blue aerodynamic nose with red/white accents, four-across open seats with lap restraints and attached wheel sets. Preserve non-inverting crest and side view instead of adding an unverified tower or loop."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-223438162163113-thumbnail.jpg",
+      "thumbnailSHA256": "042656e2e89392ad81f76c19e1b22af4900e3222187c3d9a1574104fdb5c5a46",
+      "thumbnailBytes": 18532,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-223438162163113-detail.jpg",
+      "detailSHA256": "9b52c2d50389fe737f547fdf05b500cfecd788660cd8846a688dadc7910aaa51",
+      "detailBytes": 116801,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "60-223438162163113",
+      "prompt": "Create ONE portrait 4:5 realistic generated attraction image for PIVOT. Image 1 is a verified real photograph of the exact attraction: faithfully retain its actual hardware, carved or painted details, vehicle colors, perspective and physical connections. Image 2 supplies ONLY subtle blue-purple dusk lighting from the UI example; ignore all text, logos, UI and unrelated park scenery. Use photographic material textures and restrained warm practical lights, more realistic than painted illustration, no heavy brushwork or excessive amber glow. Actual attraction remains recognizable at thumbnail size. No interface, border, watermark or text overlay. Generic incidental guests may remain secondary. Orion at Kings Island: match the real bright-blue box-spine banked hill, pale-gray tubular supports, blue aerodynamic train nose with red/white accents, four-across open seats and lap restraints. Preserve the above-rail train and photographed NON-INVERTING banked crest, with correctly attached wheel assemblies. Do not add a loop, unverified tall tower, fantasy outer-space scenery or substitute Diamondback's snake train.",
+      "promptSHA256": "a5452bada6e7ac769f62f13517b96c63e86c720eb4b968a1850676b802f9acad",
+      "generationSteps": []
+    },
+    {
+      "parkId": 60,
+      "rideId": 225692255651793,
+      "rideName": "The Bat",
+      "alt": "Illustrated The Bat at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:38:48.545503+00:00",
+      "originalSHA256": "70b529babc43aba962f65fd3acf51783616135c706dd54d30b35aa9184e55931",
+      "review": "Accepted: orange overhead tubular track on gray columns, pivot-hung orange/black enclosed cars with red seats/yellow restraints and bat emblem retain The Bat's actual suspended-tub geometry; riders' feet stay inside.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe262fb9ff3a005101bc59bb67fe27f55f3d2b006-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/the-bat",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on a suspended family roller coaster at an amusement park.",
+          "sha256": "c0c3afbd38d1707aa57e006aed3cb1ab6467a082c55c1a4b23ff50b922d6dac2",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual The Bat official hero photo: orange overhead tubular track on thick gray supports, orange/black enclosed suspended cars swung sideways on pivot hangers, red seats/yellow restraints and dark bat emblem, dense woodland. Riders feet stay inside the suspended tubs; do not substitute floorless dangling-leg seats."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-225692255651793-thumbnail.jpg",
+      "thumbnailSHA256": "77988cda751d39f203f7c019cc5f9f7a18b544b44282c0ed467301af099e601b",
+      "thumbnailBytes": 29937,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-225692255651793-detail.jpg",
+      "detailSHA256": "465054bc724d6dcb5f62f99ae72ff087307bf5070c0d9106844716c705ccb2c7",
+      "detailBytes": 207170,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "60-225692255651793",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected actual attraction photograph, not merchandise: keep its identifying hardware, material, vehicle colors, rail connections and believable perspective. Image 2 is only a restrained blue-purple evening lighting guide; ignore all UI, text and logos. Natural photographic wood/steel textures, modest warm practical lights, slightly more realistic than illustration, with no heavy painted brushwork, excessive amber glow or invented fantasy decoration. Clear ride identity at thumbnail size. No interface, border, watermark or text overlay. The Bat at Kings Island: retain the actual ORANGE overhead tubular running track, thick gray steel columns, orange/black enclosed suspended cars swung sideways on pivot hangers, red seats with yellow restraints and a small physical bat emblem. Riders' feet stay INSIDE these suspended tubs. Keep the close banked woodland view with attached overhead wheels/hangers; do not turn it into a floorless dangling-leg inverted coaster or a real flying bat.",
+      "promptSHA256": "f69c11e49b87c07198960e5b4d6ab6df9543bc13a9253e0c69056da41d0c67fc",
+      "generationSteps": []
+    },
+    {
+      "parkId": 60,
+      "rideId": 235289499425598,
+      "rideName": "Adventure Express",
+      "alt": "Illustrated Adventure Express at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:39:21.581907+00:00",
+      "originalSHA256": "320297d5049ec8581959f832522fa51dd17fed8d457a185610df800056e97e09",
+      "review": "Accepted: brown plank-like two-across mine cars, black riveted frames/shared lap bars, brown tubular running rail and timber structures preserve Adventure Express's inspected banked forest train.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F33eb732f8bfd616816969830b6d9100ef425e337-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/adventure-express",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on a runaway mine train roller coaster at an amusement park.",
+          "sha256": "c45f237c4c29608a13158117cb3327d4b791182e5e73343705e303cd92367260",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Adventure Express official hero photo: brown plank-like two-across mine-car sides with black riveted frames and shared dark lap bars, brown tubular rails among heavy wood rails/posts and timber building, banked forest setting. Preserve mine train proportions and attached wheels; no unrelated log-flume hull."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-235289499425598-thumbnail.jpg",
+      "thumbnailSHA256": "d5911ef1c2015172e0b11dccf17c98cc2c2280207830adedf66f6c466bbe52d7",
+      "thumbnailBytes": 27911,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-235289499425598-detail.jpg",
+      "detailSHA256": "335003504a9b172dcdd08b1efe648bb30402e06db33dd647c5735b0f8e03a968",
+      "detailBytes": 176169,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "60-235289499425598",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected actual attraction photograph, not merchandise: keep its identifying hardware, material, vehicle colors, rail connections and believable perspective. Image 2 is only a restrained blue-purple evening lighting guide; ignore all UI, text and logos. Natural photographic wood/steel textures, modest warm practical lights, slightly more realistic than illustration, with no heavy painted brushwork, excessive amber glow or invented fantasy decoration. Clear ride identity at thumbnail size. No interface, border, watermark or text overlay. Adventure Express at Kings Island: match the brown plank-like two-across mine-train car sides with black riveted frames, shared dark lap bars, brown tubular running rail, heavy timber posts/railings and real wooden building in the forest. Recompose the source's close banked train view for portrait, with wheels attached and natural weathered wood textures. Do not invent a mine interior, steam locomotive or log-flume boat.",
+      "promptSHA256": "806f5024e094c8810de24fd6c9b7d9864e3a7555017a6e7187bb77821531799e",
+      "generationSteps": []
+    },
+    {
+      "parkId": 60,
+      "rideId": 263102270473903,
+      "rideName": "Banshee",
+      "alt": "Illustrated Banshee at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T19:37:31.852563+00:00",
+      "originalSHA256": "ffbae40226fec3b90d4f670253607e4c7d52d2948bcebd44ea0d54fecf9a71a4",
+      "review": "Accepted: magenta/purple inverted rail, vivid-blue columns, photographed loop/crest geometry and small hanging train retain Banshee's rolling wooded setting with Kings Island's Eiffel Tower behind.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F20d93b12f77c75e9cd32780db5a259076ccc0996-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/banshee",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A large, looping inverted roller coaster with a replica Eiffel Tower in the background.",
+          "sha256": "16ebd4a0007b73682e9670a723eabd6ff2c077732b5afb219f3ebeaa22030b59",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Banshee official hero photo replaces merchandise candidate: magenta/purple inverted-coaster rails, vivid-blue steel columns, multiple loop shapes across grassy rolling terrain, hanging train on far loop and Kings Island Eiffel Tower in the background. Distant train lacks close seat detail; emphasize verified track/terrain skyline."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-263102270473903-thumbnail.jpg",
+      "thumbnailSHA256": "269017fb4d43a64184984913097311780fef66691d8f04aab3da596079d21189",
+      "thumbnailBytes": 27447,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-263102270473903-detail.jpg",
+      "detailSHA256": "2311ce9c4749a78847b00ed6b00544670f238fdc1afc5e764c24fcb942d19ea2",
+      "detailBytes": 233191,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "60-263102270473903",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected actual attraction photograph, not merchandise: keep its identifying hardware, material, vehicle colors, rail connections and believable perspective. Image 2 is only a restrained blue-purple evening lighting guide; ignore all UI, text and logos. Natural photographic wood/steel textures, modest warm practical lights, slightly more realistic than illustration, with no heavy painted brushwork, excessive amber glow or invented fantasy decoration. Clear ride identity at thumbnail size. No interface, border, watermark or text overlay. Banshee at Kings Island: retain the real magenta/purple inverted-coaster rail, vivid BLUE tubular columns and multiple photographed loop shapes over grassy rolling Ohio terrain. Keep the hanging train small on the far loop and the actual Kings Island Eiffel Tower visible in the background as in the source. Recompose the near purple loop and real distant tower for portrait while preserving connected bracing. Do not invent close train details absent from this photo, ghost figures or a wooden model.",
+      "promptSHA256": "8a692212c6f5c88b241f7c24c3b724c186d53ede131cbd2ab40514a283e7ed30",
       "generationSteps": []
     },
     {
