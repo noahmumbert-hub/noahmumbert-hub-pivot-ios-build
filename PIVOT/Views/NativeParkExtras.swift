@@ -591,6 +591,31 @@ enum WaitHistoryPresentation {
     }
 }
 
+/// Keep the disclosure's toggle inside its header. The default List disclosure
+/// hit region can also receive taps intended for controls in expanded content.
+private struct WaitHistoryDisclosureStyle: DisclosureGroupStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        VStack(alignment: .leading, spacing: 0) {
+            Button {
+                withAnimation { configuration.isExpanded.toggle() }
+            } label: {
+                HStack(alignment: .firstTextBaseline, spacing: 8) {
+                    configuration.label
+                    Spacer(minLength: 8)
+                    Image(systemName: configuration.isExpanded ? "chevron.down" : "chevron.right")
+                        .font(.caption.weight(.semibold)).foregroundStyle(.tint)
+                        .accessibilityHidden(true)
+                }
+                .frame(minHeight: 44, alignment: .leading)
+                .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .accessibilityValue(configuration.isExpanded ? "Expanded" : "Collapsed")
+            if configuration.isExpanded { configuration.content }
+        }
+    }
+}
+
 /// Insert as a disclosure below a row's main button, and as its own detail card.
 /// Every dot retains its observed time and value. Samples use equal horizontal
 /// spacing so clustered polling times never obscure labels; no values are interpolated.
@@ -639,6 +664,7 @@ struct NativeWaitHistoryView: View {
                     .font(.caption.weight(.medium)).foregroundStyle(Color.pivotMuted)
             }
             .tint(accent)
+            .disclosureGroupStyle(WaitHistoryDisclosureStyle())
         }
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("wait-history-\(ride.id)")

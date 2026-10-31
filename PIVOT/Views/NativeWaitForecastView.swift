@@ -239,6 +239,7 @@ struct NativeRideLowWaitSummary: View {
                     }
                     Button("See hourly estimates") { showForecast = true }
                         .font(.caption).frame(minHeight: 44)
+                        .buttonStyle(.plain).foregroundStyle(.tint)
                         .accessibilityIdentifier("ride-history-hourly-estimates")
                 } else {
                     Text("Prediction unavailable · choose a park").font(.caption)

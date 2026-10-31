@@ -126,6 +126,8 @@ final class PIVOTUITests: XCTestCase {
         screenshot("Every observed wait dot labeled earlier samples", app: app)
         let sampleTimes = app.buttons["Sample times"].firstMatch
         reveal(sampleTimes, in: app); sampleTimes.tap()
+        XCTAssertEqual(history.value as? String, "Expanded", "A child disclosure must keep ride history open")
+        XCTAssertTrue(app.staticTexts["wait-sample-row-10916-0"].waitForExistence(timeout: 5))
         XCTAssertEqual(app.staticTexts.matching(NSPredicate(format: "identifier BEGINSWITH 'wait-sample-row-10916-'")).count, 12)
         XCTAssertTrue(app.staticTexts["wait-sample-row-10916-4"].label.contains("0 min"), "A supplied zero is preserved")
         let lowest = app.staticTexts["ride-lowest-wait-window"]
