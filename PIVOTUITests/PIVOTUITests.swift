@@ -59,14 +59,20 @@ final class PIVOTUITests: XCTestCase {
         screenshot("Reference EPCOT dark overview", app: app)
         app.buttons["Photo credit"].tap()
         XCTAssertTrue(app.navigationBars["Photo credit"].waitForExistence(timeout: 5))
-        XCTAssertTrue(app.links["Original photo"].exists)
+        // SwiftUI Link inside a native List is exposed as a Button on iOS 26.
+        let source = app.descendants(matching: .any).matching(NSPredicate(format: "label == 'Original photo'")).firstMatch
+        XCTAssertTrue(source.waitForExistence(timeout: 5))
+        XCTAssertTrue(source.isHittable)
         app.buttons["Done"].tap()
         let search = app.textFields["Ride search"]
         reveal(search, in: app); search.tap(); search.typeText("Guardians")
-        XCTAssertTrue(app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Guardians of the Galaxy'")).firstMatch.exists)
+        app.swipeUp() // Dismiss the keyboard and reveal results on compact phones.
+        let guardians = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Guardians of the Galaxy'")).firstMatch
+        reveal(guardians, in: app)
+        XCTAssertTrue(guardians.exists)
         XCTAssertFalse(app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Remy'")).firstMatch.exists)
+        reveal(app.buttons["Clear ride search"], in: app)
         app.buttons["Clear ride search"].tap()
-        app.swipeUp() // Dismiss the search keyboard through the normal list gesture.
         let filters = app.segmentedControls["ride-status-filter"]
         reveal(filters, in: app); filters.buttons["Down"].tap()
         let down = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Spaceship Earth'")).firstMatch
@@ -85,6 +91,8 @@ final class PIVOTUITests: XCTestCase {
             XCTAssertTrue(park.waitForExistence(timeout: 5))
             XCTAssertTrue(app.staticTexts["Current rides"].exists)
             XCTAssertEqual(app.tabBars.firstMatch.buttons.count, 5)
+            returnToTop(app)
+            XCTAssertTrue(app.descendants(matching: .any)["PIVOT header"].isHittable)
             screenshot("Reference park \(id) overview", app: app)
             app.tabBars.buttons["Plan"].tap()
             XCTAssertTrue(park.waitForExistence(timeout: 5))
@@ -665,7 +673,9 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["More"].tap()
         app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Settings'")).firstMatch.tap()
         XCTAssertEqual(app.buttons["accent-purple"].value as? String, "Selected")
+        reveal(app.staticTexts["PIVOT 1.17.0"], in: app)
         XCTAssertTrue(app.staticTexts["PIVOT 1.17.0"].exists)
+        reveal(app.buttons["accent-mint"], in: app)
         app.buttons["accent-mint"].tap()
     }
 

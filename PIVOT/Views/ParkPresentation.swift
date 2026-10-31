@@ -90,7 +90,7 @@ struct ParkBannerView: View {
                     scheduleLine(hours?.earlyEntry?.label ?? "Early entry",
                                  value: hours?.earlyEntry.map { timeRange($0, park: park) } ?? (hours == nil ? "Updating" : "Not posted"),
                                  icon: "ticket")
-                }
+                }.padding(.trailing, artwork == nil ? 0 : 28)
                 if hours?.stale == true {
                     Label("Saved schedule · refresh pending", systemImage: "clock.arrow.circlepath")
                         .font(.caption).foregroundStyle(Color(red: 1, green: 0.78, blue: 0.52))
@@ -106,7 +106,6 @@ struct ParkBannerView: View {
         }
         .foregroundStyle(.white)
         .padding(18)
-        .padding(.bottom, artwork == nil ? 0 : 20)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background {
             GeometryReader { geometry in
@@ -135,10 +134,10 @@ struct ParkBannerView: View {
         .overlay(alignment: .bottomTrailing) {
             if artwork != nil {
                 Button { showPhotoCredit = true } label: {
-                    Label("Photo credit", systemImage: "info.circle")
-                        .font(.caption2).foregroundStyle(.white.opacity(0.9))
-                        .padding(.horizontal, 12).frame(minHeight: 44)
-                }.buttonStyle(.plain)
+                    Image(systemName: "info.circle")
+                        .font(.subheadline).foregroundStyle(.white.opacity(0.9))
+                        .frame(width: 44, height: 44)
+                }.buttonStyle(.plain).accessibilityLabel("Photo credit")
             }
         }
         .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
@@ -163,7 +162,7 @@ struct ParkBannerView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(title).foregroundStyle(.white.opacity(0.85))
                 Text(value)
-            }.font(.subheadline).fixedSize(horizontal: false, vertical: true)
+            }.font(.caption).fixedSize(horizontal: false, vertical: true)
         }
     }
 }
@@ -199,7 +198,7 @@ struct RideThumbnailView: View {
                 }
             } else { placeholder }
         }
-        .frame(width: 66, height: 82)
+        .frame(width: 64, height: 76)
         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         .overlay { RoundedRectangle(cornerRadius: 16).strokeBorder(Color.pivotBorder, lineWidth: 1) }
         .accessibilityHidden(true)

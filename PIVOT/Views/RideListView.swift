@@ -64,7 +64,7 @@ struct RideListView: View {
                     .listRowBackground(Color.clear)
                     .listRowSeparator(.hidden)
             }
-            Section { controls.buttonStyle(.plain).pivotCard() }
+            Section { controls.buttonStyle(.plain).pivotCard(padding: 14) }
                 .listRowInsets(EdgeInsets())
                 .listRowBackground(Color.clear)
                 .listRowSeparator(.hidden)
@@ -104,7 +104,7 @@ struct RideListView: View {
     }
 
     private var controls: some View {
-        VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .leading, spacing: 12) {
             if radarOnly {
                 HStack {
                     Text("All down rides").font(.title3.weight(.semibold))
@@ -112,7 +112,7 @@ struct RideListView: View {
                     Text("\(rides.count) rides").font(.caption).foregroundStyle(Color.pivotMuted)
                 }
             } else {
-                VStack(alignment: .leading, spacing: 12) {
+                VStack(alignment: .leading, spacing: 8) {
                     HStack(alignment: .firstTextBaseline) {
                         Text("Current rides").font(.title3.bold()).accessibilityAddTraits(.isHeader)
                         Spacer(minLength: 8)
@@ -134,7 +134,6 @@ struct RideListView: View {
                         }
                     }
                 }
-                .padding(.top, 4)
             }
 
             if let error = store.errorMessage, store.snapshot == nil {
@@ -168,7 +167,7 @@ struct RideListView: View {
                     }
                 }
                 .padding(.horizontal, 13)
-                .frame(minHeight: 46)
+                .frame(minHeight: 44)
                 .background(Color.pivotBackground.opacity(0.7), in: Capsule())
                 .overlay { Capsule().strokeBorder(Color.pivotBorder, lineWidth: 1).allowsHitTesting(false) }
 
@@ -179,7 +178,7 @@ struct RideListView: View {
                 } label: {
                     Image(systemName: "arrow.up.arrow.down")
                         .font(.subheadline.weight(.semibold))
-                        .frame(width: 46, height: 46)
+                        .frame(width: 44, height: 44)
                         .background(Color.pivotBackground.opacity(0.5), in: RoundedRectangle(cornerRadius: 14))
                         .overlay { RoundedRectangle(cornerRadius: 14).strokeBorder(Color.pivotBorder, lineWidth: 1).allowsHitTesting(false) }
                 }
@@ -207,7 +206,7 @@ struct RideListView: View {
             Text("\(store.reviewedRides.filter { $0.status == .open }.count) open")
             Text("\(store.reviewedRides.filter(\.isRadarDown).count) down")
         }
-        .font(.subheadline)
+        .font(.caption)
         .foregroundStyle(Color.pivotMuted)
     }
 
@@ -215,7 +214,7 @@ struct RideListView: View {
         ActiveScreenTimeline { date in
             let health = store.feedHealth(at: date)
             Text(health.status)
-                .font(.caption)
+                .font(.caption2)
                 .foregroundStyle(Color.pivotMuted)
         }
     }
@@ -428,7 +427,7 @@ private struct RideRowView: View {
                 .accessibilityHint("Double tap to open the ride information screen")
 
                 NativeWaitHistoryView(ride: ride, timeZone: timeZone)
-                    .padding(.horizontal, 12).padding(.vertical, 10)
+                    .padding(.horizontal, 12).padding(.vertical, 8)
                     .background(Color.pivotSurfaceRaised.opacity(0.42), in: RoundedRectangle(cornerRadius: 14))
                     .overlay { RoundedRectangle(cornerRadius: 14).strokeBorder(Color.pivotBorder.opacity(0.6), lineWidth: 0.75).allowsHitTesting(false) }
                     .padding(.top, 12)
@@ -451,14 +450,14 @@ private struct RideRowView: View {
                 }
 
             }
-            .padding(16)
+            .padding(14)
             .background(Color.pivotSurface)
         }
     }
 
     private var rideDescription: some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text(ride.name).font(.body.weight(.semibold)).foregroundStyle(.primary)
+            Text(ride.name).font(.subheadline.weight(.semibold)).foregroundStyle(.primary)
                 .fixedSize(horizontal: false, vertical: true)
             if !ride.land.isEmpty {
                 Label(ride.land, systemImage: "globe.americas.fill")
