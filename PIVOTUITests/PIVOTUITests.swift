@@ -303,7 +303,19 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testReopeningWindowShowsSupportedBestPredictionAndUnavailableStates() {
-        for mode in ["supported", "v3", "uncalibrated", "range-only", "stale", "missing", "ended", "failed", "passed"] {
+        checkReopeningPredictions(in: ["supported", "v3", "uncalibrated"])
+    }
+
+    func testReopeningWindowWithholdsRangeOnlyStaleAndMissingPoints() {
+        checkReopeningPredictions(in: ["range-only", "stale", "missing"])
+    }
+
+    func testReopeningWindowDistinguishesEndedFailedAndPassedPredictions() {
+        checkReopeningPredictions(in: ["ended", "failed", "passed"])
+    }
+
+    private func checkReopeningPredictions(in modes: [String]) {
+        for mode in modes {
             let extra: [String]
             switch mode {
             case "uncalibrated": extra = ["--reopening-unsupported"]
@@ -317,8 +329,7 @@ final class PIVOTUITests: XCTestCase {
             default: extra = []
             }
             let app = rootFixture(["--reference-ui-park=5", "--reopening-ui-test", "--ui-dark"] + extra)
-            let filters = app.segmentedControls["ride-status-filter"]
-            reveal(filters, in: app); filters.buttons["Down"].tap()
+            selectDownRides(in: app)
             let prediction = app.staticTexts["reopening-best-prediction-159"].firstMatch
             let window = app.staticTexts["reopening-window-159"].firstMatch
             let hasPrediction = ["supported", "v3", "uncalibrated", "passed"].contains(mode)
@@ -346,8 +357,7 @@ final class PIVOTUITests: XCTestCase {
 
     func testReopeningPredictionRemainsReadableAtAccessibilitySizeAndInRadar() {
         let app = rootFixture(["--reference-ui-park=5", "--reopening-ui-test", "--ui-large-type", "--ui-dark"])
-        let filters = app.segmentedControls["ride-status-filter"]
-        reveal(filters, in: app); filters.buttons["Down"].tap()
+        selectDownRides(in: app)
         let prediction = app.staticTexts["reopening-best-prediction-159"].firstMatch
         reveal(prediction, in: app)
         XCTAssertTrue(prediction.isHittable)
@@ -363,6 +373,15 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(prediction.label.hasSuffix("(estimate)"))
         XCTAssertTrue(app.staticTexts["reopening-window-159"].firstMatch.exists)
         screenshot("Reopening best prediction accessibility radar", app: app)
+    }
+
+    private func selectDownRides(in app: XCUIApplication) {
+        // On compact phones at accessibility size, the Picker container can
+        // be non-hittable even while its individual segments are visible.
+        let down = app.segmentedControls["ride-status-filter"].buttons["Down"]
+        reveal(down, in: app)
+        XCTAssertTrue(down.isHittable)
+        down.tap()
     }
 
     func testFavoriteRideSearchConnectsWaitsAndSupportsLargeText() {
@@ -915,7 +934,8 @@ final class PIVOTUITests: XCTestCase {
         return app
     }
 
-    private func reveal(_ element: XCUIElement, in app: XCUIApplication) {
+    private func reveal(_ element: XCUIElement, in app: XCUIApplication,
+                        file: StaticString = #filePath, line: UInt = #line) {
         for _ in 0..<10 {
             if element.exists {
                 let frame = element.frame
@@ -933,7 +953,7 @@ final class PIVOTUITests: XCTestCase {
                 app.swipeUp()
             }
         }
-        XCTFail("Could not reveal \(element.identifier)")
+        XCTFail("Could not reveal the requested element", file: file, line: line)
     }
 
     private func returnToTop(_ app: XCUIApplication) {

@@ -92,6 +92,8 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTTests/PIVOTTests/testMappedClearanceNeedsCurrentSupportedRestartEvidence
       -only-testing:PIVOTTests/PIVOTTests/testLiveActivityRetainsRangeWithoutUnsupportedPointAndMarksItsContract
       -only-testing:PIVOTUITests/PIVOTUITests/testReopeningWindowShowsSupportedBestPredictionAndUnavailableStates
+      -only-testing:PIVOTUITests/PIVOTUITests/testReopeningWindowWithholdsRangeOnlyStaleAndMissingPoints
+      -only-testing:PIVOTUITests/PIVOTUITests/testReopeningWindowDistinguishesEndedFailedAndPassedPredictions
       -only-testing:PIVOTUITests/PIVOTUITests/testReopeningPredictionRemainsReadableAtAccessibilitySizeAndInRadar
     ) ;;
   reference-ui)
