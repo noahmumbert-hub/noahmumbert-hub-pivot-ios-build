@@ -70,7 +70,13 @@ class SourceValidationTests(unittest.TestCase):
         for version, build in [("1.13.0", "100.4.1"), ("1.14.1", "100.3.1"), ("1.15.0", "22")]:
             with self.subTest(version=version, build=build), self.assertRaises(ValueError):
                 publisher.assert_advances({"version": version, "build": build}, previous)
-        publisher.assert_advances({"version": "1.14.1", "build": "100.4.1"}, previous)
+        publisher.assert_advances({"version": "1.14.2", "build": "100.4.1"}, previous)
+
+    def test_rejects_build_only_updates_that_sidestore_opens_instead_of_updating(self):
+        previous = {"version": "1.17.0", "buildVersion": "100.55.1"}
+        with self.assertRaisesRegex(ValueError, "advance both"):
+            publisher.assert_advances({"version": "1.17.0", "build": "100.61.1"}, previous)
+        publisher.assert_advances({"version": "1.17.1", "build": "100.61.1"}, previous)
 
     def test_compares_numeric_versions(self):
         self.assertEqual(publisher.numeric_version("1.14"), publisher.numeric_version("1.14.0"))

@@ -91,6 +91,12 @@ python3 scripts/publish-sidestore.py --ipa /path/to/PIVOT-new-version.ipa --info
 
 Add `--publish` when publication is authorized. The helper checks checksum, device platform, app and extension identity/version, successful build/test provenance, and version continuity. It appends immutable downloads and updates only the `ipa-builds` branch, preserving the source checkout and existing version history. New entitlements require an explicit permissions review before the helper can publish.
 
+Advance both `MARKETING_VERSION` and the build number for every SideStore release.
+SideStore 0.6.4 and 0.7.0-alpha compare the visible semantic version when choosing
+Update or Open, so a higher build with the same visible version can be missed.
+The publisher rejects these build-only updates. Keep app and extension versions
+aligned and rebuild the IPA; never change only the feed's version string.
+
 ## Halloween Horror Nights update
 
 **1.14.2 / 100.8.1** improves the native HHN layout with a purple/amber event header, readable house cards, larger waits, search, Favorites/To do filters and favorite completion progress. Existing preferences and app/widget identity are preserved. Stale, missing and preview waits stay unknown.

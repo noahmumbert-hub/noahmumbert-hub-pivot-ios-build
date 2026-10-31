@@ -85,6 +85,9 @@ struct PivotSettingsView: View {
                 }
                 Section("About") {
                     Text("PIVOT \(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "Unknown")")
+                    Text("Build \(Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? "Unknown")")
+                        .font(.footnote).foregroundStyle(.secondary)
+                        .accessibilityIdentifier("PIVOT build number")
                     Text("App updates are available in SideStore through the PIVOT source.").foregroundStyle(.secondary)
                 }
             }

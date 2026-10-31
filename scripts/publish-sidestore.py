@@ -64,9 +64,12 @@ def verify_ipa(ipa, info):
 
 
 def assert_advances(info, previous):
-    if previous and (numeric_version(info["version"]) < numeric_version(previous["version"])
+    # SideStore 0.6.4/0.7.0-alpha's InstalledApp.hasUpdate compares the visible
+    # semantic version and ignores CFBundleVersion for stable releases. A build
+    # only update can therefore leave the app banner showing Open, not Update.
+    if previous and (numeric_version(info["version"]) <= numeric_version(previous["version"])
                      or numeric_version(info["build"]) <= numeric_version(previous["buildVersion"])):
-        raise ValueError("Refusing a downgrade or an already-published build")
+        raise ValueError("SideStore releases must advance both the app version and build number")
 
 
 def main():
