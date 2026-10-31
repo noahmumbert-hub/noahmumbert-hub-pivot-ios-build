@@ -61,7 +61,8 @@ and `15875cf75b2ba70faed8fe810ba3ef48dffc5d9d`. Native test corrections are
 `078ac919abc904b512ee8a335655e2d382cbe222`. Apply these when integrating
 onto the illustration base, or inspect the combined patch if integrating
 alongside other checkpoint changes. Documentation-only commits do not change
-the tested source; the final native code SHA is `078ac91`.
+the native code. Reopening-specific native code was tested at `078ac91`;
+the shared Safari harness correction described below is `b7ef7af`.
 
 ## Corrections after native evidence review
 
@@ -140,15 +141,36 @@ map and above the selected-ride card. The evidence supports a Safari cold
 launch/page-loading dependency rather than a reopening or attribution-layout
 regression; it does not prove that the remote credits successfully loaded.
 
-The full matrix therefore remains **failed**, with successful complete SE and
-Pro runs and a blocked Pro Max Legal browser journey. No app code, Legal
+Before the common correction, the full matrix remained **failed**, with
+successful complete SE and Pro runs and a blocked Pro Max Legal browser
+journey. No app code, Legal
 assertion, or required scenario was removed or weakened. No additional blind
-retry was requested. Coordinate one common harness correction with the chart
-owner: prepare and verify Safari readiness before the actual native Legal
-tap, retain the real OpenStreetMap and Apple credit assertions, and diagnose
-the external page load separately with a bounded wait and URL/load-state
-attachments. That proposed correction has not been implemented here, avoiding
-conflicting shared-test changes. Nothing has been published or merged.
+retry was requested. The shared diagnosis called for preparing Safari before
+the actual native Legal tap, retaining the real OpenStreetMap and Apple credit
+assertions, and diagnosing external document loading separately.
+
+## Common Safari harness correction
+
+The chart owner's commit `d683c1b84c24c873da801bad15a4ec4817be0574`
+implements that common correction. Its [SE focused check](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/41247757967)
+and [Pro Max focused check](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/41247761973)
+both passed on that exact source. The native Legal tap, both real destination
+credit assertions, and the return to the selected ride remain required. Safari
+startup is prepared without preloading the credits; after termination the
+actual Legal tap must launch it again. Separate bounded waits and failure
+attachments identify startup, handoff, and document-loading failures. This
+journey uses the suite's existing 240-second hard maximum rather than its
+180-second default. Complete CI jobs allow 45 minutes to finish tests,
+unsigned archive packaging, and evidence uploads.
+
+The single shared repair was cherry-picked with provenance as
+`b7ef7afde9c2ea3d6c1e7e6b2c94a064c332624a`. Conflict resolution only combines
+the `map-attribution` selector with this branch's existing reopening selectors;
+it does not import the chart branch's unrelated history/lowest-wait selectors.
+The complete Safari helpers and Legal journey match the source commit exactly.
+Fresh reopening-focused and full three-device checks of the combined revision
+are required; the preceding failed receipts do not establish its final status.
+Nothing has been published or merged.
 
 A generic live API probe was initially denied with HTTP 403 (Cloudflare code
 1010). Matching the existing native client's `Accept: application/json` and
