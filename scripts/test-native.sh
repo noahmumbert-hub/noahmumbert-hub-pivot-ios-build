@@ -2,6 +2,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 mkdir -p build
+python3 scripts/validate-ride-illustrations.py
 xcrun simctl list devices available -j > build/simulators.json
 xcrun simctl list runtimes -j > build/simulator-runtimes.json
 xcrun simctl list devicetypes -j > build/simulator-device-types.json

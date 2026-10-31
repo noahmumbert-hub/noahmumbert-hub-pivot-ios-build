@@ -193,9 +193,12 @@ private struct ParkPhotoCreditView: View {
 struct RideThumbnailView: View {
     let ride: LiveRide
     let parkID: Int?
+    private var illustration: RideIllustration? { RideIllustrationCatalog.ride(parkID: parkID, rideID: ride.id) }
     var body: some View {
         Group {
-            if let artwork = ParkArtworkCatalog.ride(parkID: parkID, rideID: ride.id) {
+            if let illustration {
+                RideIllustrationImage(artwork: illustration)
+            } else if let artwork = ParkArtworkCatalog.ride(parkID: parkID, rideID: ride.id) {
                 Image(artwork.assetName).resizable().scaledToFill()
             } else if let photo = ride.details?.photo {
                 AsyncImage(url: photo.url) { phase in
@@ -205,6 +208,13 @@ struct RideThumbnailView: View {
             } else { placeholder }
         }
         .frame(width: 64, height: 76)
+        .overlay(alignment: .bottomLeading) {
+            if illustration != nil {
+                Text("AI art").font(.system(size: 9, weight: .semibold))
+                    .foregroundStyle(.white).padding(.horizontal, 5).padding(.vertical, 3)
+                    .background(.black.opacity(0.78), in: Capsule()).padding(4)
+            }
+        }
         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         .overlay { RoundedRectangle(cornerRadius: 16).strokeBorder(Color.pivotBorder, lineWidth: 1) }
         .accessibilityHidden(true)

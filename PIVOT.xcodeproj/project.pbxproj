@@ -42,6 +42,8 @@
 		B00000000000000000000017 /* park-map-catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000017 /* park-map-catalog.json */; };
 		B00000000000000000000018 /* ParkPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000018; };
 		B00000000000000000000019 /* park-artwork.json in Resources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000019; };
+		B0000000000000000000001A /* RideIllustration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000001A; };
+		B0000000000000000000001B /* RideIllustrations in Resources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000001B; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,8 @@
 		F00000000000000000000017 /* park-map-catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "park-map-catalog.json"; sourceTree = "<group>"; };
 		F00000000000000000000018 /* ParkPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkPresentation.swift; sourceTree = "<group>"; };
 		F00000000000000000000019 /* park-artwork.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "park-artwork.json"; sourceTree = "<group>"; };
+		F0000000000000000000001A /* RideIllustration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideIllustration.swift; sourceTree = "<group>"; };
+		F0000000000000000000001B /* RideIllustrations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RideIllustrations; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,10 +174,10 @@
 		C00000000000000000000006 /* Networking */ = {isa = PBXGroup; children = (F00000000000000000000004 /* PivotAPIClient.swift */,); path = Networking; sourceTree = "<group>"; };
 		C00000000000000000000007 /* Services */ = {isa = PBXGroup; children = (F00000000000000000000005 /* NotificationService.swift */, F00000000000000000000006 /* RideTransitionEngine.swift */, F00000000000000000000012 /* LiveActivityService.swift */,); path = Services; sourceTree = "<group>"; };
 		C00000000000000000000008 /* Store */ = {isa = PBXGroup; children = (F00000000000000000000007 /* DashboardStore.swift */,); path = Store; sourceTree = "<group>"; };
-		C00000000000000000000009 /* Views */ = {isa = PBXGroup; children = (F00000000000000000000018, F00000000000000000000016, F00000000000000000000098 /* NativeWaitForecastView.swift */, F00000000000000000000008 /* PivotTheme.swift */, F00000000000000000000009 /* RootView.swift */, F0000000000000000000000A /* RadarCardView.swift */, F0000000000000000000000B /* ParkPickerView.swift */, F0000000000000000000000C /* AlertSettingsView.swift */, F0000000000000000000000D /* RideListView.swift */, F00000000000000000000092 /* NativeDayPlannerView.swift */, F00000000000000000000093 /* NativeParkExtras.swift */,); path = Views; sourceTree = "<group>"; };
+		C00000000000000000000009 /* Views */ = {isa = PBXGroup; children = (F0000000000000000000001A, F00000000000000000000018, F00000000000000000000016, F00000000000000000000098 /* NativeWaitForecastView.swift */, F00000000000000000000008 /* PivotTheme.swift */, F00000000000000000000009 /* RootView.swift */, F0000000000000000000000A /* RadarCardView.swift */, F0000000000000000000000B /* ParkPickerView.swift */, F0000000000000000000000C /* AlertSettingsView.swift */, F0000000000000000000000D /* RideListView.swift */, F00000000000000000000092 /* NativeDayPlannerView.swift */, F00000000000000000000093 /* NativeParkExtras.swift */,); path = Views; sourceTree = "<group>"; };
 		C0000000000000000000000A /* PIVOTTests */ = {isa = PBXGroup; children = (F00000000000000000000099 /* NativeWaitForecastTests.swift */, F0000000000000000000000F /* PIVOTTests.swift */, F00000000000000000000094 /* NativeDayExperienceTests.swift */, F00000000000000000000095 /* NativeParkExtrasTests.swift */, F00000000000000000000096 /* NativeSmartAlertTests.swift */,); path = PIVOTTests; sourceTree = "<group>"; };
 		C0000000000000000000000B /* PIVOTUITests */ = {isa = PBXGroup; children = (F00000000000000000000010 /* PIVOTUITests.swift */,); path = PIVOTUITests; sourceTree = "<group>"; };
-		C0000000000000000000000C /* Resources */ = {isa = PBXGroup; children = (F00000000000000000000019, F00000000000000000000017, F0000000000000000000000E /* Assets.xcassets */,); path = Resources; sourceTree = "<group>"; };
+		C0000000000000000000000C /* Resources */ = {isa = PBXGroup; children = (F0000000000000000000001B, F00000000000000000000019, F00000000000000000000017, F0000000000000000000000E /* Assets.xcassets */,); path = Resources; sourceTree = "<group>"; };
 		C0000000000000000000000D /* PIVOTLiveActivityWidget */ = {isa = PBXGroup; children = (F00000000000000000000013 /* PIVOTLiveActivityWidget.swift */, F00000000000000000000014 /* Info.plist */,); path = PIVOTLiveActivityWidget; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
@@ -252,7 +256,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C00000000000000000000121 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (B00000000000000000000019, B00000000000000000000017, B0000000000000000000000E /* Assets.xcassets in Resources */,); runOnlyForDeploymentPostprocessing = 0; };
+		C00000000000000000000121 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (B0000000000000000000001B, B00000000000000000000019, B00000000000000000000017, B0000000000000000000000E /* Assets.xcassets in Resources */,); runOnlyForDeploymentPostprocessing = 0; };
 		C00000000000000000000122 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
 		C00000000000000000000123 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
 		C00000000000000000000124 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
@@ -262,7 +266,7 @@
 		C00000000000000000000111 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
-			files = (B00000000000000000000018, B00000000000000000000016, B00000000000000000000097, B00000000000000000000098, B00000000000000000000001, B00000000000000000000002, B00000000000000000000003, B00000000000000000000004, B00000000000000000000005, B00000000000000000000006, B00000000000000000000007, B00000000000000000000008, B00000000000000000000009, B0000000000000000000000A, B0000000000000000000000B, B0000000000000000000000C, B0000000000000000000000D, B00000000000000000000011, B00000000000000000000012, B00000000000000000000090, B00000000000000000000091, B00000000000000000000092, B00000000000000000000093,);
+			files = (B0000000000000000000001A, B00000000000000000000018, B00000000000000000000016, B00000000000000000000097, B00000000000000000000098, B00000000000000000000001, B00000000000000000000002, B00000000000000000000003, B00000000000000000000004, B00000000000000000000005, B00000000000000000000006, B00000000000000000000007, B00000000000000000000008, B00000000000000000000009, B0000000000000000000000A, B0000000000000000000000B, B0000000000000000000000C, B0000000000000000000000D, B00000000000000000000011, B00000000000000000000012, B00000000000000000000090, B00000000000000000000091, B00000000000000000000092, B00000000000000000000093,);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C00000000000000000000112 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (B00000000000000000000099, B0000000000000000000000F, B00000000000000000000094, B00000000000000000000095, B00000000000000000000096,); runOnlyForDeploymentPostprocessing = 0; };

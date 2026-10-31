@@ -4,6 +4,56 @@ import UIKit
 @testable import PIVOT
 
 final class PIVOTTests: XCTestCase {
+    func testGeneratedIllustrationsAreBundledBoundedAndAttributed() throws {
+        let records = RideIllustrationCatalog.records
+        XCTAssertGreaterThanOrEqual(records.count, 6)
+        XCTAssertEqual(Set(records.map(\.id)).count, records.count)
+        for record in records {
+            XCTAssertNotNil(FloridaPark(rawValue: record.parkId))
+            XCTAssertFalse(record.rideName.isEmpty)
+            XCTAssertFalse(record.references.isEmpty)
+            XCTAssertFalse(record.license.isEmpty)
+            XCTAssertEqual(record.licenseURL.scheme, "https")
+            for reference in record.references {
+                XCTAssertFalse(reference.credit.isEmpty)
+                XCTAssertFalse(reference.license.isEmpty)
+                XCTAssertEqual(reference.sourceURL.scheme, "https")
+                XCTAssertEqual(reference.licenseURL.scheme, "https")
+            }
+            for detail in [false, true] {
+                let url = try XCTUnwrap(record.fileURL(detail: detail), record.id)
+                let image = try XCTUnwrap(UIImage(contentsOfFile: url.path), record.id)
+                let pixels = try XCTUnwrap(image.cgImage)
+                XCTAssertLessThanOrEqual(pixels.width, detail ? 768 : 256)
+                XCTAssertLessThanOrEqual(pixels.height, detail ? 960 : 320)
+                XCTAssertGreaterThan(pixels.width, 0)
+                XCTAssertEqual(Double(pixels.width) / Double(pixels.height), 0.8, accuracy: 0.01)
+            }
+        }
+    }
+
+    func testGeneratedIllustrationsRequireAnExactParkAndRideMatch() throws {
+        let record = try XCTUnwrap(RideIllustrationCatalog.ride(parkID: 5, rideID: 10916))
+        XCTAssertEqual(record.rideName, "Guardians of the Galaxy: Cosmic Rewind")
+        XCTAssertNil(RideIllustrationCatalog.ride(parkID: nil, rideID: 10916))
+        XCTAssertNil(RideIllustrationCatalog.ride(parkID: 6, rideID: 10916))
+        XCTAssertNil(RideIllustrationCatalog.ride(parkID: 5, rideID: -1))
+        // A photo remains available independently of illustration coverage.
+        XCTAssertNotNil(ParkArtworkCatalog.ride(parkID: 5, rideID: 10916))
+    }
+
+    func testIllustrationCacheLoadsPackagedFilesAndHandlesMissingFiles() async throws {
+        let record = try XCTUnwrap(RideIllustrationCatalog.ride(parkID: 5, rideID: 10916))
+        let url = try XCTUnwrap(record.fileURL(detail: false))
+        let cache = RideIllustrationImageCache()
+        let first = await cache.image(at: url)
+        let repeated = await cache.image(at: url)
+        XCTAssertNotNil(first)
+        XCTAssertTrue(first === repeated, "Repeated rows should reuse a decoded thumbnail")
+        let missing = await cache.image(at: url.deletingLastPathComponent().appendingPathComponent("missing-illustration.jpg"))
+        XCTAssertNil(missing)
+    }
+
     func testReferenceArtworkIsBundledAttributedAndNeverCrossesParks() throws {
         XCTAssertEqual(ParkArtworkCatalog.records.count, 11)
         for record in ParkArtworkCatalog.records {

@@ -84,6 +84,37 @@ final class PIVOTUITests: XCTestCase {
         screenshot("Reference EPCOT down filter", app: app)
     }
 
+    func testGeneratedRideIllustrationLoadsWithCreditsAndPreservesWaits() {
+        let app = rootFixture(["--reference-ui-park=5", "--ui-dark"])
+        let search = app.textFields["Ride search"]
+        reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
+        let guardians = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Guardians of the Galaxy'")).firstMatch
+        reveal(guardians, in: app)
+        screenshot("Illustration Guardians ride card", app: app)
+        guardians.tap()
+        let artwork = app.descendants(matching: .any)["ride-illustration-5-10916"].firstMatch
+        XCTAssertTrue(artwork.waitForExistence(timeout: 5))
+        let loaded = NSPredicate { _, _ in artwork.value as? String == "Loaded" }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: loaded, object: nil)], timeout: 5), .completed)
+        screenshot("Illustration Guardians detail artwork", app: app)
+        let credit = app.descendants(matching: .any)["ride-illustration-credit"].firstMatch
+        reveal(credit, in: app)
+        XCTAssertTrue(credit.isHittable)
+        XCTAssertTrue(app.staticTexts["AI-generated illustration"].exists)
+        let reference = app.descendants(matching: .any).matching(NSPredicate(format: "label == 'Reference photo: Jedi94'")).firstMatch
+        reveal(reference, in: app)
+        XCTAssertTrue(reference.isHittable)
+        let wait = app.staticTexts["45 min wait"]
+        reveal(wait, in: app)
+        XCTAssertTrue(wait.isHittable)
+        screenshot("Illustration credits and current wait", app: app)
+        app.buttons["Done"].tap()
+        XCTAssertTrue(app.tabBars.buttons["Plan"].waitForExistence(timeout: 5))
+        app.tabBars.buttons["Plan"].tap()
+        reveal(app.buttons["native-day-favorites"], in: app)
+        XCTAssertTrue(app.buttons["native-day-favorites"].isHittable)
+    }
+
     func testReferenceCardsKeepEachParksIdentityAndNativeTabs() {
         // Photo, fallback, water park, Canadian park, and long-name coverage.
         for (id, name) in [(65, "Universal Studios Florida"), (50, "Cedar Point"),

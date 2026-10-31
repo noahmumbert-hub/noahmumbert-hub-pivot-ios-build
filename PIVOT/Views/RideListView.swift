@@ -289,6 +289,7 @@ struct RideDetailScreenView: View {
     var mapPoint: ParkMapPoint? = nil
     private var ride: LiveRide { store.snapshot?.rides.first(where: { $0.id == initialRide.id }) ?? initialRide }
     private var artwork: ParkArtwork? { ParkArtworkCatalog.ride(parkID: store.selectedPark?.id, rideID: ride.id) }
+    private var illustration: RideIllustration? { RideIllustrationCatalog.ride(parkID: store.selectedPark?.id, rideID: ride.id) }
 
     var body: some View {
         NavigationStack {
@@ -296,7 +297,15 @@ struct RideDetailScreenView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
                     RetainedSnapshotNotice()
-                    if let photo = artwork?.photo ?? ride.details?.photo {
+                    if let illustration {
+                        VStack(alignment: .leading, spacing: 8) {
+                            RideIllustrationImage(artwork: illustration, detail: true)
+                                .frame(width: max(0, geometry.size.width - 40), height: min(440, max(0, geometry.size.width - 40) * 1.25))
+                                .clipped().clipShape(RoundedRectangle(cornerRadius: 20))
+                                .accessibilityIdentifier("ride-illustration-\(illustration.id)")
+                            RideIllustrationCredit(artwork: illustration)
+                        }
+                    } else if let photo = artwork?.photo ?? ride.details?.photo {
                         VStack(alignment: .leading, spacing: 8) {
                             Group {
                                 if let artwork {
@@ -332,7 +341,7 @@ struct RideDetailScreenView: View {
                             .fixedSize(horizontal: false, vertical: true)
                         if !ride.land.isEmpty { Text(ride.land).font(.subheadline).foregroundStyle(Color.pivotMuted) }
                     }
-                    if ride.details?.photo == nil && ParkArtworkCatalog.ride(parkID: store.selectedPark?.id, rideID: ride.id) == nil {
+                    if illustration == nil && ride.details?.photo == nil && artwork == nil {
                         Text("A verified ride photo isn’t available yet.").font(.subheadline).foregroundStyle(Color.pivotMuted)
                     }
                     ActiveScreenTimeline(every: 15) { date in

@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 1,
+  "styleReferenceSHA256": "b2a32c5ec68fca0b95303a250bf888072ad15588740e16a9f1e24213f179aa4f",
+  "records": [
+    {
+      "parkId": 5,
+      "rideId": 155,
+      "rideName": "Journey Into Imagination With Figment",
+      "alt": "Illustrated Journey Into Imagination With Figment at EPCOT",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:00:27.977484+00:00",
+      "originalSHA256": "8dd276cccbb2bb389b916d5ce8ec9fc731065871dffad452ffc5e2909f45f8fc",
+      "review": "Accepted: Imagination Institute sense emblems on blue walls and rounded red ride car match the inspected real ride interior; text simplified, lighting illustrated.",
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Journey_Into_Imagination_Epcot.jpg/1280px-Journey_Into_Imagination_Epcot.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Journey_Into_Imagination_Epcot.jpg",
+          "credit": "Freddo",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "alt": "Journey Into Imagination With Figment at EPCOT",
+          "sha256": "9098660993196c99cba1ce2589cb4fcd770fb2d7d341adb4062b343ba66e366b",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "thumbnailFile": "5-155-thumbnail.jpg",
+      "thumbnailSHA256": "ceeaa7dc05b9a7f6b53ff1f1b2de2f2def6c2f7ef49768574e17d9704ed59c35",
+      "thumbnailBytes": 19791,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "5-155-detail.jpg",
+      "detailSHA256": "00324f15fe55a76fd1f36ebfadd8327a98025966ca8491e7fb363df7cd394bf4",
+      "detailBytes": 126403,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "5-155",
+      "prompt": "Create ONE original portrait 4:5 premium digitally painted ride-card illustration for PIVOT, based on actual ride photo reference image 1. Reference image 2 is only the UI style reference: rich deep blue-purple tones and warm amber illumination with highly recognizable realistic ride features, crisp at small thumbnail size. Do not reproduce screenshot UI, borders, titles, logos or watermarks. Visually an illustration, not documentary photography. Center all important identifying features within the middle 80% and fill the image edge to edge. Lighting and viewpoint can be interpreted but attraction geometry must remain accurate. Journey Into Imagination With Figment at EPCOT, specifically the actual Imagination Institute interior shown. Compose a view past the distinctive rounded bright red ride car towards teal-blue walls with golden-orange serrated sunburst medallions representing the senses; the large eye with black-and-white concentric rings and orange iris is the foreground focal point, with a nose/smell emblem further away. Preserve this actual scene, no invented Figment character or unrelated castle. Optional only a few distant indistinct riders.",
+      "promptSHA256": "d1949bfa1481c6008e1d2bb19c175357f725bc8dac988e4910bc7d1df8800e92"
+    },
+    {
+      "parkId": 5,
+      "rideId": 156,
+      "rideName": "Living with the Land",
+      "alt": "Illustrated Living with the Land at EPCOT",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:01:08.258161+00:00",
+      "originalSHA256": "a499fc78f13677fa12f9775e8e1869e17f69afcb982232fa87843958a15e7c43",
+      "review": "Accepted: agricultural greenhouse, triangular roof glazing, tropical crops and concrete-edged canal match the inspected Living with the Land photo; twilight lighting illustrated.",
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Living_with_the_Land_10.jpg/1280px-Living_with_the_Land_10.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Living_with_the_Land_10.jpg",
+          "credit": "Michael Rivera",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "alt": "Living with the Land at EPCOT",
+          "sha256": "8f4e8bc2a0997987e32946baedf102d8bede4ab23cbc6c47d4a3d2f9e6b933ce",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "thumbnailFile": "5-156-thumbnail.jpg",
+      "thumbnailSHA256": "e3774ca513d98cf4eaea3dec7c3a4dea7878ce64fc0d0b53efa31f325f8dad36",
+      "thumbnailBytes": 34088,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "5-156-detail.jpg",
+      "detailSHA256": "fed892fd2695f72191b7e5f685d25d47ff6d8c559973db6e3186724fa41df651",
+      "detailBytes": 280765,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "5-156",
+      "prompt": "Create ONE original portrait 4:5 premium digitally painted ride-card illustration for PIVOT, based on actual ride photo reference image 1. Reference image 2 is only the UI style reference: rich deep blue-purple tones and warm amber illumination with highly recognizable realistic ride features, crisp at small thumbnail size. Do not reproduce screenshot UI, borders, titles, logos or watermarks. Visually an illustration, not documentary photography. Center all important identifying features within the middle 80% and fill the image edge to edge. Lighting and viewpoint can be interpreted but attraction geometry must remain accurate. Living with the Land at EPCOT, specifically its actual lush greenhouse beside the narrow gently curving concrete-edged boat canal shown. Keep white triangular geodesic greenhouse roof framing, banana leaves and pandan-like plants growing in pale sand, rippling water lower-left. Use a low boat-rider viewpoint without adding a boat not visible in the photo. Make this recognizable agricultural greenhouse with healthy real plants, not an outdoor jungle or fantasy forest. Blue-violet evening light through glass, subtle warm light on the plants.",
+      "promptSHA256": "4c82b3972a427b29936cd3f6ef304751fd3b0d4fa4ef8ac00005a84e33d1832c"
+    },
+    {
+      "parkId": 5,
+      "rideId": 158,
+      "rideName": "Mission: SPACE",
+      "alt": "Illustrated Mission: SPACE at EPCOT",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:01:57.918850+00:00",
+      "originalSHA256": "9edab3166e98f18f39ed1c9696bdf21b733c207e17af57164715ddfd084f80bf",
+      "review": "Accepted: large copper planetary sphere, blue Earth, smaller copper sphere and sweeping orbital pavilion match Mission: SPACE; foreground sign omitted, lighting illustrated.",
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Mission_Space_Epcot.jpg/960px-Mission_Space_Epcot.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20220522003736",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Mission_Space_Epcot.jpg",
+          "credit": "Jedi94",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "alt": "Mission: SPACE at EPCOT",
+          "sha256": "e6a3f9c4e2caae557128bd38e72bc024015768d106aa8977c69d79d8e0e49a01",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "thumbnailFile": "5-158-thumbnail.jpg",
+      "thumbnailSHA256": "b266b8ec9382b458320e04af6df58c32f5720dda618991550641e004014f531e",
+      "thumbnailBytes": 30523,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "5-158-detail.jpg",
+      "detailSHA256": "c4c70b022a938e088abd46406ba6be7c003c625bb5805321b1ce4ace3c4d192d",
+      "detailBytes": 229039,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "5-158",
+      "prompt": "Create ONE original portrait 4:5 premium digitally painted ride-card illustration for PIVOT, based on actual ride photo reference image 1. Reference image 2 is only the UI style reference: rich deep blue-purple tones and warm amber illumination with highly recognizable realistic ride features, crisp at small thumbnail size. Do not reproduce screenshot UI, borders, titles, logos or watermarks. Visually an illustration, not documentary photography. Center all important identifying features within the middle 80% and fill the image edge to edge. Lighting and viewpoint can be interpreted but attraction geometry must remain accurate. Mission: SPACE at EPCOT. Preserve the actual curved low pavilion facade, massive central copper-orange planetary sphere, a smaller copper sphere to its right, a blue Earth sphere to its left and huge sweeping metallic orbital arc rising above. Use low frontal view with planted foreground. The spheres are solid architectural features on the ground; do not make this a space scene or floating planets. No rocket ship or imagined coaster.",
+      "promptSHA256": "522665efcfa36c36c9247fe8c78b51cc648517eae5fd5ea03fbce9f737c9b670"
+    },
+    {
+      "parkId": 5,
+      "rideId": 159,
+      "rideName": "Spaceship Earth",
+      "alt": "Illustrated Spaceship Earth at EPCOT",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T15:55:02.029070+00:00",
+      "originalSHA256": "746d6dc52b5b12f88d2e8c8201bcdbc41c09a073bb0a32707d1cbc92801209b0",
+      "review": "Accepted: recognizable silver geodesic sphere with triangular facets and angled supports. Original proportions preserved; sunset lighting and landscaping simplified for the illustration.",
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Spaceship_Earth_2.jpg/1280px-Spaceship_Earth_2.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Spaceship_Earth_2.jpg",
+          "credit": "Katie Rommel-Esham (contact via bdesham)",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "alt": "Spaceship Earth at EPCOT",
+          "sha256": "36829b6b3093720c6a852c6a3bc937f52e6fb955caca45555526d9003d224d94",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "thumbnailFile": "5-159-thumbnail.jpg",
+      "thumbnailSHA256": "320a7abb8139448f9ffe8d120b3ebef1cdee86fb95741cfbd7d58d39e45a2787",
+      "thumbnailBytes": 27365,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "5-159-detail.jpg",
+      "detailSHA256": "7758ce9d85de92b8e2e88534cc9270a46f9ec3cb972f75faddc41887ffe2e726",
+      "detailBytes": 217434,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "5-159",
+      "prompt": "Create ONE original polished digital illustration as a portrait 4:5 ride-card asset for the PIVOT theme-park app, based on the actual ride photo in reference image 1. Reference image 2 is a UI style guide only: use its rich blue/purple twilight palette, warm amber practical lighting and clear recognizable ride subject. DO NOT reproduce any UI, text labels, screenshot border, status bar, or logo. The result must read as carefully painted illustrative artwork, not a claimed real photograph. Edge-to-edge composition, crisp forms at small thumbnail size, clear centered subject inside the middle 80%, realistic attraction geometry, subtle cinematic atmosphere rather than invented scenery. No watermark or decorative lettering. Spaceship Earth at EPCOT in Florida. Preserve the complete gigantic silver geodesic sphere with its small triangular facets and tall angled structural supports. Low visitor viewpoint with the sphere dominant and fully inside the frame. Keep subtle palms, greenery and the pavilion base, but omit the dated foreground stone plaques and close-up people. Do not add stars, outer-space objects or another Disney castle.",
+      "promptSHA256": "182fd84c7fad797e7aa7c11965e5e20fed689fd2d045229f69cc7671213e8455"
+    },
+    {
+      "parkId": 5,
+      "rideId": 2679,
+      "rideName": "Frozen Ever After",
+      "alt": "Illustrated Frozen Ever After at EPCOT",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:05:59.443579+00:00",
+      "originalSHA256": "e1ee5dac28c09f6bd3bce9d7cae3e75b67756c2d3ff77778d008e736ad7c3bb5",
+      "review": "Accepted: Elsa on an icy raised balcony, diamond railing and blue pointed snowflake panels preserve the photographed EPCOT scene; painted lighting and figure detail are interpretive.",
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Frozen_Ever_After_Epcot_02.jpg/1280px-Frozen_Ever_After_Epcot_02.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Frozen_Ever_After_Epcot_02.jpg",
+          "credit": "Jeremy Thompson",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "alt": "Frozen Ever After at EPCOT",
+          "sha256": "b101880e0ee1cf2235b82dcc8039f94bcb3d9c0220a005745214e2a1092eb8b6",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "thumbnailFile": "5-2679-thumbnail.jpg",
+      "thumbnailSHA256": "41be689c356ec7079848322f4e6ec036ba22fa75754aef018aa4229a205f5a48",
+      "thumbnailBytes": 26182,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "5-2679-detail.jpg",
+      "detailSHA256": "cf3921884b332f6de7785560d67e5ac39fcd5906dcaf9d11d49d4b5f02dbeeb9",
+      "detailBytes": 201165,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "5-2679",
+      "prompt": "Create ONE original portrait 4:5 premium digitally painted ride-card illustration for PIVOT, based on actual ride photo reference image 1. Reference image 2 is only the UI style reference: deep blue-purple tones with warm amber highlights and recognizable authentic attraction features, crisp at small thumbnail size. Do not reproduce screenshot UI, labels, borders, text logos or watermarks. Visually an illustration, not documentary photography. Center identifying features within the middle 80% and fill the image edge to edge; do not invent ride hardware. Frozen Ever After at EPCOT, specifically the real indoor ice-palace scene in the reference. Preserve Elsa in her pale blue dress on the raised balcony behind the diagonal diamond-pattern icy railing, framed by the tall blue pointed arches and glowing snowflake panels. Clearly a themed dark-ride scene with sculpted architecture and figure, not a movie screenshot or invented outdoor castle. Painterly stylized finish, crisp recognizable subject. Put Elsa and balcony near center-left and keep the snowflake panel to the right.",
+      "promptSHA256": "e5ae10865df01b9dc8d142358d82c8746f53206d9ade460127b32434070aa323"
+    },
+    {
+      "parkId": 5,
+      "rideId": 10916,
+      "rideName": "Guardians of the Galaxy: Cosmic Rewind",
+      "alt": "Illustrated Guardians of the Galaxy: Cosmic Rewind at EPCOT",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T15:45:31.379181+00:00",
+      "originalSHA256": "4d0c1901aa7fdcf10bd9579afe2dbeb8ea953a94734868b42af0912016e42f2d",
+      "review": "Accepted: recognizable five-point gold-and-blue Starblaster on the tall angled plinth, Wonders of Xandar pavilion and Spaceship Earth; blue-purple twilight treatment. Illumination is illustrative.",
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Guardians_of_the_Galaxy_Cosmic_Rewind_at_EPCOT.jpg/1280px-Guardians_of_the_Galaxy_Cosmic_Rewind_at_EPCOT.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Guardians_of_the_Galaxy_Cosmic_Rewind_at_EPCOT.jpg",
+          "credit": "Jedi94",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "alt": "Guardians of the Galaxy: Cosmic Rewind at EPCOT",
+          "sha256": "731c7b9f87dc795e09d68fe6545e4ff3d0fb1c2aabce38e839f8ecb6b7d2f78e",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "thumbnailFile": "5-10916-thumbnail.jpg",
+      "thumbnailSHA256": "c238a6151e2662a0eedda55607b88b0694344a9227e3970c20563eb794c43319",
+      "thumbnailBytes": 24986,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "5-10916-detail.jpg",
+      "detailSHA256": "25fd7ab20ebec47311ba11270841285df705bae334fc961af1f86bef5c2ee962",
+      "detailBytes": 180556,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "5-10916",
+      "prompt": "Create one original AI-generated ride illustration for PIVOT, a theme park companion. Subject: Guardians of the Galaxy: Cosmic Rewind at EPCOT, park ID 5, ride ID 10916. Use the FIRST supplied image as the authentic visual reference: preserve the recognizable gold and dark blue Nova Corps Starblaster, its sharply tapered five-point wing silhouette, tall tilted support plinth, and low angular Wonders of Xandar pavilion. Use the SECOND image ONLY for the small ride thumbnail's cinematic blue-violet twilight lighting and rich warm highlights. Do not reproduce the screen, UI, typography, logos, wait times, or app icon. Compose a clean portrait 4:5 image with the Starblaster as the dominant central focal point, readable as a 64 by 76 point thumbnail. An original slightly low three-quarter composition, deep cobalt and violet evening sky, restrained amber lighting on the ship and planting, premium detailed digital illustration with subtly painted surfaces. It must read as an illustration rather than a real documentary photograph. No people close-ups, no invented roller coaster track, no space scene, no spacecraft from another attraction, no unnecessary text, no border, no rounded corners. Leave a small safe margin around the ship silhouette for cropping by the app.",
+      "promptSHA256": "42800b8933ffc5c1c9819dbdda462259811774e335916c8ff58118ab73a6ca1a"
+    },
+    {
+      "parkId": 6,
+      "rideId": 129,
+      "rideName": "Seven Dwarfs Mine Train",
+      "alt": "Illustrated Seven Dwarfs Mine Train at Magic Kingdom Park",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T15:56:19.042270+00:00",
+      "originalSHA256": "c3697dad2449dd7d02142b85e29a3bea8ee53e95a5af4ab20fe8d3ec4b7e92e6",
+      "review": "Accepted: distinctive barrel-shaped mine cars with dark bands on a modest curved steel track in wooded rockwork. Painted passengers, warmer lights and twilight are illustrative.",
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Seven_Dwarfs_Mine_Train_%28Magic_Kingdom%29_1.jpg/1280px-Seven_Dwarfs_Mine_Train_%28Magic_Kingdom%29_1.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Seven_Dwarfs_Mine_Train_(Magic_Kingdom)_1.jpg",
+          "credit": "Carter Johnson",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "alt": "Seven Dwarfs Mine Train at Magic Kingdom Park",
+          "sha256": "1a6e15922f266e3b2b5bc27c86d3534e8612e7fad2f61c0b3dab1337177bf33d",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "thumbnailFile": "6-129-thumbnail.jpg",
+      "thumbnailSHA256": "295bf9584b728576e370fd70170cbcc6a4c69833d7435f421abfe46fc2906065",
+      "thumbnailBytes": 29255,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "6-129-detail.jpg",
+      "detailSHA256": "0eae1110003ccf91340b344e29b2575787c37b557fa75dda2cc016a9e5110951",
+      "detailBytes": 213180,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "6-129",
+      "prompt": "Create ONE original polished digital illustration as a portrait 4:5 ride-card asset for the PIVOT theme-park app, based on the actual ride photo in reference image 1. Reference image 2 is a UI style guide only: use its rich blue/purple twilight palette, warm amber practical lighting and clear recognizable ride subject. DO NOT reproduce any UI, text labels, screenshot border, status bar, or logo. The result must read as carefully painted illustrative artwork, not a claimed real photograph. Edge-to-edge composition, crisp forms at small thumbnail size, clear centered subject inside the middle 80%, realistic attraction geometry, subtle cinematic atmosphere rather than invented scenery. No watermark or decorative lettering. Seven Dwarfs Mine Train at Magic Kingdom in Florida. Preserve the distinctive rounded wood-grain barrel-shaped mine cars with dark metal bands, curved high ends and side decorative wheel details, on a modest rust-brown steel coaster track curving through a wooded rocky hillside. Three connected cars with the front car centered and fully visible. Small indistinct passengers are optional; do not copy identifiable people. Preserve real ride design and the lantern posts. No locomotives, oversized drops, fantasy castles, or unrelated roller-coaster loops.",
+      "promptSHA256": "6de90142be64f4a08b7ac31bdf6bd35477fa6950e0c2d22aa6b799d8caa308a6"
+    },
+    {
+      "parkId": 6,
+      "rideId": 130,
+      "rideName": "Big Thunder Mountain Railroad",
+      "alt": "Illustrated Big Thunder Mountain Railroad at Magic Kingdom Park",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:04:12.025643+00:00",
+      "originalSHA256": "56251b01445c500dbd4cf536ca315d7088501d4a84ad07aea9b7ab9cb8a1929d",
+      "review": "Accepted: Magic Kingdom orange rock spires, low mine train, dark green locomotive and foreground rib bones match the reference. Based on a 2014 photograph; illustration is not evidence of current train hardware.",
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Big_Thunder_Mountain_Railroad_2.jpg/1280px-Big_Thunder_Mountain_Railroad_2.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Big_Thunder_Mountain_Railroad_2.jpg",
+          "credit": "AmaryllisGardener",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "alt": "Big Thunder Mountain Railroad at Magic Kingdom Park",
+          "sha256": "8ba1776b4930bc9cf37027591b3081511351c6c23226002dd6546953e0d9d9b4",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "thumbnailFile": "6-130-thumbnail.jpg",
+      "thumbnailSHA256": "8ad6e4d4ea40b5d0eb5022e748e7ea75e4667aa8362f18bc3aa00148aa46ef84",
+      "thumbnailBytes": 27787,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "6-130-detail.jpg",
+      "detailSHA256": "d32d778ea3d9cd240618d4656919d6f6a6487bfa29c3369743a6345db22d7e76",
+      "detailBytes": 217122,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "6-130",
+      "prompt": "Create ONE original portrait 4:5 premium digitally painted ride-card illustration for PIVOT, based on actual ride photo reference image 1. Reference image 2 is only the UI style reference: deep blue-purple tones with warm amber highlights and recognizable authentic attraction features, crisp at small thumbnail size. Do not reproduce screenshot UI, labels, borders, text logos or watermarks. Visually an illustration, not documentary photography. Center identifying features within the middle 80% and fill the image edge to edge; do not invent ride hardware. Big Thunder Mountain Railroad at Magic Kingdom, Florida, using the exact orange-red desert rock mountain silhouette and tall narrow central spire shown in the real reference photograph. Include the low curving mine-train track weaving through orange rockwork, a small dark-green locomotive with ochre passenger cars, and the pale exposed animal rib-bones low in the foreground. Emphasize the real mountain more than the train. No loops, no enormous steel coaster tower, no other park's version. Twilight lighting with glowing warm canyon rock against deep blue-purple sky.",
+      "promptSHA256": "a841f00fb3b002717e8f4ad29d21b976b73a7f2aed0f0f76cc0c4180e987adf4"
+    },
+    {
+      "parkId": 6,
+      "rideId": 134,
+      "rideName": "Jungle Cruise",
+      "alt": "Illustrated Jungle Cruise at Magic Kingdom Park",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:05:12.054783+00:00",
+      "originalSHA256": "d72cfbb1ec2d568d1126052dfef4d863fa8ffa8d8092096b0c354db091264169",
+      "review": "Accepted: scalloped tan canopy, wooden launch and pilot wheel match the actual Jungle Cruise boat. The skipper, jungle background and illumination are illustrated.",
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Jungle_Cruise_at_Magic_Kingdom.jpg/500px-Jungle_Cruise_at_Magic_Kingdom.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20081228134520",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Jungle_Cruise_at_Magic_Kingdom.jpg",
+          "credit": "tommy.lan",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0/deed.en",
+          "alt": "Jungle Cruise at Magic Kingdom",
+          "sha256": "2df166b38c6d902434b3ce0d1b9011283698ff55b6ebd7c8ece4cdecf8f814eb",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0/deed.en",
+      "thumbnailFile": "6-134-thumbnail.jpg",
+      "thumbnailSHA256": "9b174c74525b73a6ef59035f9ea1d6bba6b8e1b53b7fd90b5f24a1c5e791ad03",
+      "thumbnailBytes": 27438,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "6-134-detail.jpg",
+      "detailSHA256": "e3f954bcf1225248db37af58eb292bddf00b5cef5ca121cf8e9910c2867fae5e",
+      "detailBytes": 186412,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "6-134",
+      "prompt": "Create ONE original portrait 4:5 premium digitally painted ride-card illustration for PIVOT, based on actual ride photo reference image 1. Reference image 2 is only the UI style reference: deep blue-purple tones with warm amber highlights and recognizable authentic attraction features, crisp at small thumbnail size. Do not reproduce screenshot UI, labels, borders, text logos or watermarks. Visually an illustration, not documentary photography. Center identifying features within the middle 80% and fill the image edge to edge; do not invent ride hardware. Jungle Cruise at Magic Kingdom, Florida: an intimate view from aboard the real wooden river launch under its orange-tan scalloped canvas canopy, with the wooden multi-spoke pilot wheel and dark canopy poles as the recognizable main features. A fictional indistinct skipper in plain khaki stands off-center, facing the river, without reproducing the reference person's face. Dense riverside vegetation and pale rockwork through the open bow, subdued blue-purple twilight and warm boat lantern tones. Keep the actual ride's modest river-launch design, not a pirate ship or cruise liner. Remove close-up passenger heads from the foreground.",
+      "promptSHA256": "5cb85017c47e9a7122348d58dc88ed09dbffdb6dc64dd5285cacbcaffe844788"
+    }
+  ]
+}
