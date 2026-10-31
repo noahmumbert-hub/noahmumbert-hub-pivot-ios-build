@@ -7,7 +7,7 @@
   "localizedDescription": "PIVOT updates for SideStore. Uses the existing PIVOT app identity.",
   "website": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
   "websiteURL": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
-  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/35feda747429492969d2349b8adb944c70786660/icon.png",
+  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/d48b814aa60a4c35428679f6f84cf9fa1456985b/icon.png",
   "tintColor": "70DFC0",
   "apps": [
     {
@@ -16,14 +16,23 @@
       "developerName": "Noah Mumbert",
       "subtitle": "Theme park companion",
       "localizedDescription": "Park wait times, ride status, weather observations, planning, shows and Live Activities.",
-      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/35feda747429492969d2349b8adb944c70786660/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/d48b814aa60a4c35428679f6f84cf9fa1456985b/icon.png",
       "tintColor": "70DFC0",
       "version": "1.17.0",
-      "versionDate": "2026-10-31T12:05:59Z",
-      "versionDescription": "Refreshed iOS navigation, lists and controls, with a cleaner Plan page.\n\nThe park map fills the screen and supports native pinch, pan and zoom controls, with rides, food and show filters. Ride cards show current posted waits, including walk-ons, and clear closed or unavailable states when current data is missing.\n\nImproved large-text layouts, visible Apple map attribution, and preservation of map selection and zoom when entering or leaving full screen.",
-      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/35feda747429492969d2349b8adb944c70786660/PIVOT-1.17.0-100.55.1.ipa",
-      "size": 3317570,
+      "versionDate": "2026-10-31T14:48:04Z",
+      "versionDescription": "Refreshed park and ride screens across all 32 parks, with the original PIVOT title restored at the top.\n\nA dark layout with rounded cards, park and ride photos where available, clearer wait times, and convenient search, sorting and open/down filters. Park hours, early entry and ride details remain specific to each park.\n\nNative map gestures, zoom and full-screen controls are retained, along with planning, favorites and progress controls. Light/System appearance and large-text layouts remain available.",
+      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/d48b814aa60a4c35428679f6f84cf9fa1456985b/PIVOT-1.17.0-100.61.1.ipa",
+      "size": 7743631,
       "versions": [
+        {
+          "version": "1.17.0",
+          "buildVersion": "100.61.1",
+          "date": "2026-10-31T14:48:04Z",
+          "localizedDescription": "Refreshed park and ride screens across all 32 parks, with the original PIVOT title restored at the top.\n\nA dark layout with rounded cards, park and ride photos where available, clearer wait times, and convenient search, sorting and open/down filters. Park hours, early entry and ride details remain specific to each park.\n\nNative map gestures, zoom and full-screen controls are retained, along with planning, favorites and progress controls. Light/System appearance and large-text layouts remain available.",
+          "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/d48b814aa60a4c35428679f6f84cf9fa1456985b/PIVOT-1.17.0-100.61.1.ipa",
+          "size": 7743631,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.17.0",
           "buildVersion": "100.55.1",
