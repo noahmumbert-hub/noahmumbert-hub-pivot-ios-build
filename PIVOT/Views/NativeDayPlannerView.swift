@@ -114,7 +114,7 @@ struct NativeDayPlannerView: View {
             }
         }
         .sheet(isPresented: $showFavorites) {
-            NativeFavoriteSelectionView(park: park, liveRides: current?.rides ?? [], savedRides: pack?.rides ?? [], experience: experience)
+            NativeFavoriteSelectionView(park: park, savedRides: pack?.rides ?? [], experience: experience)
         }
         .sheet(isPresented: $showCommitment) {
             NativeCommitmentEditor(park: park, rides: current?.rides ?? [], now: now, experience: experience)
@@ -331,32 +331,51 @@ struct NativeDayPlannerView: View {
 
 private struct NativeFavoriteSelectionView: View {
     @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject private var store: DashboardStore
     let park: FloridaPark
-    let liveRides: [LiveRide]
     let savedRides: [NativeOfflineRide]
     @ObservedObject var experience: NativeDayExperienceStore
     @State private var query = ""
 
-    private var options: [(id: Int, name: String)] {
-        var names: [Int: String] = [:]
-        for ride in savedRides { names[ride.id] = ride.name }
-        for ride in liveRides where ride.radarEligible { names[ride.id] = ride.name }
-        for id in experience.favorites(for: park) where names[id] == nil { names[id] = "Saved favorite #\(id) · not in current feed" }
-        return names.map { (id: $0.key, name: $0.value) }.filter { query.isEmpty || $0.name.localizedCaseInsensitiveContains(query) }
+    private var options: [(id: Int, name: String, land: String)] {
+        var rides: [Int: (id: Int, name: String, land: String)] = [:]
+        for ride in savedRides { rides[ride.id] = (ride.id, ride.name, ride.land) }
+        if store.snapshot?.parkId == park.id {
+            for ride in store.reviewedRides { rides[ride.id] = (ride.id, ride.name, ride.land) }
+        }
+        for id in experience.favorites(for: park) where rides[id] == nil {
+            rides[id] = (id, "Saved favorite #\(id) · not in current feed", "")
+        }
+        let trimmed = query.trimmingCharacters(in: .whitespacesAndNewlines)
+        return rides.values.filter { trimmed.isEmpty || "\($0.name) \($0.land)".localizedCaseInsensitiveContains(trimmed) }
             .sorted { $0.name < $1.name }
     }
 
     var body: some View {
         NavigationStack {
-            List {
-                Section {
-                    Text("Favorites stay saved until you deselect them. Missing feed entries are kept. Mark rides Done or Skip on the Plan tab for today only.")
-                        .font(.caption).foregroundStyle(Color.pivotMuted)
-                }
-                ForEach(options, id: \.id) { ride in
-                    Toggle(ride.name, isOn: Binding(get: { experience.favorites(for: park).contains(ride.id) }, set: {
-                        experience.setFavorite($0, rideID: ride.id, park: park)
-                    }))
+            ActiveScreenTimeline(every: 15) { date in
+                List {
+                    Section {
+                        Text("Favorites stay saved until you deselect them. Missing feed entries are kept. Mark rides Done or Skip on the Plan tab for today only.")
+                            .font(.caption).foregroundStyle(Color.pivotMuted)
+                    }
+                    ForEach(options, id: \.id) { ride in
+                        let current = RideWaitPresentation.resolve(rideID: ride.id, parkID: park.id,
+                            snapshot: store.snapshot, refreshFailed: store.errorMessage != nil, at: date)
+                        Toggle(isOn: Binding(get: { experience.favorites(for: park).contains(ride.id) }, set: {
+                            experience.setFavorite($0, rideID: ride.id, park: park)
+                        })) {
+                            VStack(alignment: .leading, spacing: 3) {
+                                Text(ride.name).font(.body.weight(.semibold)).fixedSize(horizontal: false, vertical: true)
+                                Text([ride.land, current.title].filter { !$0.isEmpty }.joined(separator: " · "))
+                                    .font(.caption).foregroundStyle(Color.pivotMuted)
+                                    .fixedSize(horizontal: false, vertical: true)
+                            }
+                        }
+                        .frame(minHeight: 44)
+                        .accessibilityIdentifier("favorite-ride-\(ride.id)")
+                        .accessibilityLabel([ride.name, ride.land, current.title].filter { !$0.isEmpty }.joined(separator: ". "))
+                    }
                 }
             }
             .searchable(text: $query, prompt: "Find a ride")

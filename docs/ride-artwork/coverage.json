@@ -364,10 +364,10 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 40,
-    "pendingIllustrations": 1084,
-    "acceptedForRequestedStyle": 39,
-    "unfinishedForRequestedStyle": 1085,
+    "acceptedIllustrations": 51,
+    "pendingIllustrations": 1073,
+    "acceptedForRequestedStyle": 50,
+    "unfinishedForRequestedStyle": 1074,
     "blocked": 5
   },
   "parks": [
@@ -2909,10 +2909,10 @@
           "url": "https://rcdb.com/9456.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-66123251959045",
@@ -11640,10 +11640,10 @@
           "url": "https://www.sixflags.com/magicmountain/attractions/black-snake-summit"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "41-119442780371544",
@@ -13218,10 +13218,10 @@
           "url": "https://www.sixflags.com/greatadventure/attractions/hurricane-mountain"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "44-12964809535981",
@@ -15812,10 +15812,10 @@
           "url": "https://rcdb.com/80.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "57-24958977288293",
@@ -23956,10 +23956,10 @@
           "url": "https://rcdb.com/21885.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "62-17970922764622",
@@ -26394,10 +26394,10 @@
           "url": "https://blog.discoveruniversal.com/guides-and-tips/the-ultimate-thrill-seekers-guide-to-universal-orlando-resort/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "67-16596",
@@ -26911,10 +26911,10 @@
           "url": "https://rcdb.com/21085.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "69-30950747630874",
@@ -28426,10 +28426,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Darien_Lake"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-42599836482641",
@@ -29589,10 +29589,10 @@
           "url": "https://www.sixflags.com/frontiercity/attractions/prairie-schooner"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "282-37680069812368",
@@ -30248,10 +30248,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Hurricane_Harbor_Phoenix"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "295-35039795864383",
@@ -31005,10 +31005,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/bahnzai-pipeline"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-45881653371486",

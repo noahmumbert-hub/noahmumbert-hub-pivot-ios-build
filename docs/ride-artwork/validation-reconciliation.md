@@ -35,8 +35,8 @@ recording shows the category menu still present, and XCTest's subsequent search
 tap computed hit point {-1, -1} before typing failed. The cause of the failed
 menu interaction is unresolved; this does not establish an artwork regression
 or a map product defect. Production map code and the failing test are unchanged.
-The Pro build/archive job was still finishing at the last check. This full run
-must not be described as a pass.
+The Pro build/archive job passed 198 unit and 26 UI tests and produced an IPA.
+The overall run must not be described as a pass.
 
 Focused artwork run 41222941027 on exact source
 `d5462c7c5d261fda48ecbe6b5d4f120c723f09e6` passed three unit and four UI tests.
@@ -48,3 +48,21 @@ native change needs its own full three-device and archive gate; do not carry a
 prior SHA's pass forward as validation of a newer artifact.
 Any release requires current authorization and validation of its actual final
 artifact/revision; this artwork request has not authorized publication.
+
+
+Focused map run 41224561086 on exact source
+`5eaf95b9d7e42505060540928cbc9573fc3e7b55` passed all four UI tests,
+including the production-map search test that failed on 37c0399. Actual pixels
+show the queried Space Mountain selected with the native tab bar and map
+controls present. No map runtime change or failing-test workaround was added.
+This is a non-reproduction, not a proven root cause or retroactive green result.
+Focused artwork run 41224557856 on the same source passed three unit and five
+UI tests. Actual railroad detail pixels show the exact green No. 19 artwork,
+AI disclosure and retained publisher rights without an invented CC license.
+
+Full run 41224611310 on 5eaf95b failed in its Pro job: all 198 unit tests passed;
+21 of 27 UI tests passed. Five failures were simulator background-assertion
+acquisition timeouts during app launch; the sixth was the Safari Legal link
+assertion. Pro Max succeeded, while SE was still finishing at this checkpoint.
+No product defect or common root cause is established. This run is not a pass.
+The combined search/50-image milestone needs its own complete native gate.

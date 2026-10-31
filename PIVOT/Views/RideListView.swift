@@ -171,9 +171,10 @@ struct RideListView: View {
                     }
                 }
                 .padding(.horizontal, 13)
-                .frame(minHeight: 44)
+                .frame(minHeight: 46)
                 .background(Color.pivotBackground.opacity(0.7), in: Capsule())
                 .overlay { Capsule().strokeBorder(Color.pivotBorder, lineWidth: 1).allowsHitTesting(false) }
+                .accessibilityIdentifier("ride-search-control")
 
                 Menu {
                     Picker("Sort rides", selection: $sort) {
@@ -182,7 +183,7 @@ struct RideListView: View {
                 } label: {
                     Image(systemName: "arrow.up.arrow.down")
                         .font(.subheadline.weight(.semibold))
-                        .frame(width: 44, height: 44)
+                        .frame(width: 46, height: 46)
                         .background(Color.pivotBackground.opacity(0.5), in: RoundedRectangle(cornerRadius: 14))
                         .overlay { RoundedRectangle(cornerRadius: 14).strokeBorder(Color.pivotBorder, lineWidth: 1).allowsHitTesting(false) }
                 }
@@ -354,10 +355,10 @@ struct RideDetailScreenView: View {
                                 Text(status.title).font(.title2.weight(.semibold))
                                 Text(status.detail).font(.caption).foregroundStyle(Color.pivotMuted)
                             } else {
-                                Text(ride.statusDescription).font(.headline)
-                                if ride.status == .open {
-                                    Text(ride.waitTime.map { "\($0) min wait" } ?? "Wait not posted").font(.title2.weight(.semibold))
-                                }
+                                let current = RideWaitPresentation.resolve(rideID: ride.id, parkID: store.selectedPark?.id,
+                                    snapshot: store.snapshot, refreshFailed: store.errorMessage != nil, at: date)
+                                Text(current.waitMinutes == nil ? "Ride status" : "Current wait").font(.caption).foregroundStyle(.secondary)
+                                Text(current.title).font(.title2.weight(.semibold))
                             }
                             if let downtime = ride.downTimePresentation { Text(downtime.text).accessibilityLabel(downtime.accessibilityLabel) }
                             if ride.hasWeatherHold, let clearance = ride.delayEvidence?.rideWeatherClearanceDescription {
@@ -409,6 +410,8 @@ private struct RideRowView: View {
 
     var body: some View {
         ActiveScreenTimeline(every: 15) { date in
+            let current = RideWaitPresentation.resolve(rideID: ride.id, parkID: store.selectedPark?.id,
+                snapshot: store.snapshot, refreshFailed: store.errorMessage != nil, at: date)
             VStack(alignment: .leading, spacing: 0) {
                 Button {
                     onSelect()
@@ -416,10 +419,10 @@ private struct RideRowView: View {
                     Group {
                         if typeSize.isAccessibilitySize {
                             VStack(alignment: .leading, spacing: 12) {
-                                rideDescription
+                                rideDescription(current)
                                 HStack(spacing: 12) {
                                     RideThumbnailView(ride: ride, parkID: store.selectedPark?.id)
-                                    waitDisplay
+                                    waitDisplay(current)
                                     Spacer(minLength: 0)
                                     disclosureArrow
                                 }
@@ -427,8 +430,8 @@ private struct RideRowView: View {
                         } else {
                             HStack(alignment: .center, spacing: 10) {
                                 RideThumbnailView(ride: ride, parkID: store.selectedPark?.id)
-                                rideDescription
-                                waitDisplay
+                                rideDescription(current)
+                                waitDisplay(current)
                                 disclosureArrow
                             }
                         }
@@ -437,7 +440,7 @@ private struct RideRowView: View {
                     .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
-                .accessibilityLabel(accessibilitySummary)
+                .accessibilityLabel(accessibilitySummary(current))
                 .accessibilityHint("Double tap to open the ride information screen")
 
                 NativeWaitHistoryView(ride: ride, timeZone: timeZone)
@@ -469,7 +472,7 @@ private struct RideRowView: View {
         }
     }
 
-    private var rideDescription: some View {
+    private func rideDescription(_ current: RideWaitPresentation) -> some View {
         VStack(alignment: .leading, spacing: 6) {
             Text(ride.name).font(.subheadline.weight(.semibold)).foregroundStyle(.primary)
                 .fixedSize(horizontal: false, vertical: true)
@@ -480,7 +483,7 @@ private struct RideRowView: View {
             }
             HStack(alignment: .firstTextBaseline, spacing: 7) {
                 PivotStatusDot(color: statusColor)
-                Text(subtitle).font(.caption).foregroundStyle(Color.pivotMuted)
+                Text(current.isCurrent ? subtitle : current.title).font(.caption).foregroundStyle(Color.pivotMuted)
             }
             if let downtime = ride.downTimePresentation {
                 Text(downtime.text).font(.caption.weight(.medium)).foregroundStyle(.primary)
@@ -508,8 +511,8 @@ private struct RideRowView: View {
     }
 
     @ViewBuilder
-    private var waitDisplay: some View {
-        if ride.status == .open, let wait = ride.waitTime {
+    private func waitDisplay(_ current: RideWaitPresentation) -> some View {
+        if let wait = current.waitMinutes {
             VStack(spacing: 0) {
                 Text("\(wait)").font(.system(.largeTitle, design: .rounded).weight(.bold)).monospacedDigit().tracking(-1.5)
                 Text("min").font(.caption)
@@ -518,7 +521,7 @@ private struct RideRowView: View {
             .frame(minWidth: 48)
             .accessibilityHidden(true)
         } else {
-            Text(ride.status == .down ? "Down" : ride.status == .scheduled || ride.status == .parkInactive ? "Closed" : "—")
+            Text(!current.isCurrent ? "—" : current.title == "Park not active" ? "Closed" : ride.status == .down ? "Down" : ride.status == .scheduled ? "Closed" : "—")
                 .font(.caption.weight(.semibold))
                 .foregroundStyle(statusColor)
                 .padding(.horizontal, 9)
@@ -537,9 +540,11 @@ private struct RideRowView: View {
         }
     }
 
-    private var accessibilitySummary: String {
-        var parts = [ride.name, ride.land, ride.statusDescription]
-        if ride.status == .open, let wait = ride.waitTime { parts.append("\(wait) minute wait") }
+    private func accessibilitySummary(_ current: RideWaitPresentation) -> String {
+        var parts = [ride.name, ride.land]
+        if current.isCurrent { parts.append(ride.statusDescription) }
+        if let wait = current.waitMinutes { parts.append("\(wait) minute wait") }
+        else { parts.append(current.title) }
         if let downtime = ride.downTimePresentation { parts.append(downtime.accessibilityLabel) }
         return parts.joined(separator: ". ")
     }

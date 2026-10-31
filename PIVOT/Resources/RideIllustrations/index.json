@@ -841,6 +841,48 @@
       ]
     },
     {
+      "parkId": 24,
+      "rideId": 62020843059756,
+      "rideName": "Cheetah Hunt",
+      "alt": "Illustrated Cheetah Hunt at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:43:39.706422+00:00",
+      "originalSHA256": "6a7cbd0b755a8d2420f540f72d5f75241cd409cf076a5f1fea9e81a8b7ae5c7b",
+      "review": "Accepted: green truss track, tan branching tree-shaped supports with pointed posts/perforated triangular decorations, elevated train and trees preserve the real Cheetah Hunt treetop element.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://buschgardens.com/tampa/-/media/migrated-media/busch-gardens-tampa/page-banners/1024x530/rides-and-kid-friendly-attractions/2017_buschgardenstampabay_rollercoasters_cheetah_hunt_sunset_1024x530.jpg?h=530&w=1024&la=en&hash=63ACC84EF1F9ADEF68744F95C4ED90F7",
+          "sourceURL": "https://buschgardens.com/tampa/roller-coasters/cheetah-hunt/",
+          "credit": "Busch Gardens / United Parks & Resorts (reference publisher)",
+          "license": "Copyright United Parks & Resorts; source rights retained",
+          "licenseURL": "https://unitedparks.com/policies/terms-and-conditions/",
+          "alt": "A long distance view of the yellow and green Cheetah Hunt roller coaster ride at Busch Gardens Tampa Bay, located in Florida.",
+          "sha256": "5a1154ceba55043cf1a068ce4882aa310cd60bb60ea60e34e3e9ba963ee4481e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Cheetah Hunt page and viewed photo identify Tampa green truss track on tan tree-shaped branching supports with perforated triangular decorations and elevated train; usable full scene replaces narrow Serengeti candidate."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-62020843059756-thumbnail.jpg",
+      "thumbnailSHA256": "1e7c478b7d90c24c77f0ecf80b41cddc990c826cda10e8984128735c407436d9",
+      "thumbnailBytes": 27538,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-62020843059756-detail.jpg",
+      "detailSHA256": "2860dd00b60ea33aebed2a7add13da3ab8e05eb4e2f0d9b19f61c9b444f19574",
+      "detailBytes": 209301,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
       "parkId": 32,
       "rideId": 6173967272242,
       "rideName": "WONDER WOMAN™ Flight of Courage",
@@ -1177,6 +1219,48 @@
       ]
     },
     {
+      "parkId": 41,
+      "rideId": 118203199791868,
+      "rideName": "Black Snake Summit",
+      "alt": "Illustrated Black Snake Summit at Hurricane Harbor Los Angeles",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:34:00.019301+00:00",
+      "originalSHA256": "ad4414b19627d285f0fbe7c8e36d539c6678248e832a4bb138c310742773af8c",
+      "review": "Accepted: real black enclosed spiral tubes, navy lattice columns, right-side stair tower, bamboo and palms match Black Snake Summit; physically connected fiberglass/steel rendered naturally.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc6038d25f24316e72678624b12323b225bfbfff8-1920x1281.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/black-snake-summit",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "View of Black Snake Summit's thrilling water slides with tall black tubes against a clear blue sky.",
+          "sha256": "996a9fbfe3a5d98d452fc30ea4d3b43fe9dcebc6b6944029cc8809daa3165cd5",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official page identifies Hurricane Harbor Los Angeles. Viewed real photo: dark enclosed spiraling fiberglass tubes, navy columns/lattice, timber/metal stair tower, bamboo/palms; no substitute park."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "41-118203199791868-thumbnail.jpg",
+      "thumbnailSHA256": "d1239b96077760dd65bb014dfe3cb81b65b8feea52a3a4e4965e37e94d3fa3f0",
+      "thumbnailBytes": 31635,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "41-118203199791868-detail.jpg",
+      "detailSHA256": "f9b2488f357c5ec92965686555864c894d803ccfaf67d7e850ae703458750ce4",
+      "detailBytes": 249732,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
       "parkId": 43,
       "rideId": 9103657575778,
       "rideName": "1909 Illions Grand Carousel",
@@ -1219,6 +1303,48 @@
       ]
     },
     {
+      "parkId": 44,
+      "rideId": 3285667514807,
+      "rideName": "Hurricane Mountain",
+      "alt": "Illustrated Hurricane Mountain at Hurricane Harbor New Jersey",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:35:01.256124+00:00",
+      "originalSHA256": "3d48978a6cacdb1ba8cc229501a18c51e844bed0a818bd29c00a2dfec1333df8",
+      "review": "Accepted: six-slide complex, purple tube and blue/green chutes, yellow/red/orange slides, weathered timber tower, inclined yellow conveyor and turquoise pool preserve the real Hurricane Mountain reference.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F785615db7e8bb1e08d49da4c48e0de064f1811fb-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/hurricane-mountain",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders enjoying a thrilling descent on the yellow slide of Hurricane Mountain at Hurricane Harbor New Jersey.",
+          "sha256": "53f23b81a108fdcd7569420789f974d986fc273f0c4d3ea57244097f634034a0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Hurricane Mountain page and viewed photo identify New Jersey six-slide complex: purple tube, blue/green chutes, yellow/red/orange slides, central timber tower and yellow raft conveyor, turquoise pool."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "44-3285667514807-thumbnail.jpg",
+      "thumbnailSHA256": "14a20a233f4651f66ace650d62251612f152ba56a3fe570f635525bc78ea12e2",
+      "thumbnailBytes": 27970,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "44-3285667514807-detail.jpg",
+      "detailSHA256": "b947dcf5cd4d675bcb2db17b10ef49edaad93a97ab193b9b708d017a28863a3a",
+      "detailBytes": 218642,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
       "parkId": 50,
       "rideId": 85197605068999,
       "rideName": "Iron Dragon",
@@ -1253,6 +1379,48 @@
       "detailFile": "50-85197605068999-detail.jpg",
       "detailSHA256": "6c2d0c31ec483c3a41e960293f6759ddb11f620f53bec542ec549f9e227890ce",
       "detailBytes": 174047,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 21923171352176,
+      "rideName": "Flight Deck",
+      "alt": "Illustrated Flight Deck at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:36:16.641094+00:00",
+      "originalSHA256": "138804baf841c89b3f08e8e8315b7a2728b8f77b16784479cd149d15ea51da8b",
+      "review": "Accepted: red inverted track, gray columns and upper wheel covers, four-across black/yellow seats hanging below rail match California Flight Deck rather than a generic above-track coaster.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F0479a8d80aedaade259688d6644545d89555300c-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/flight-deck",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A corkscrew on Flight Deck",
+          "sha256": "c4d5c363ca75c6db8e53bd1faa43ef276948a6d25d69c04a5096cfa46b5f0f33",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Flight Deck page and viewed photo identify California Great America inverted coaster: red track, gray columns and wheel covers, four-across suspended black/yellow seats under rail."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-21923171352176-thumbnail.jpg",
+      "thumbnailSHA256": "1779fa762e3767c0936a9ebd14ea3683a42c9612c8414ded2815a74fbc41a61e",
+      "thumbnailBytes": 26855,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-21923171352176-detail.jpg",
+      "detailSHA256": "cc914cda42d6c4d02cca06f63efafea3c78ebb15333d72a17ad5af58b67b3a51",
+      "detailBytes": 163079,
       "detailPixels": [
         768,
         960
@@ -1553,6 +1721,48 @@
       ]
     },
     {
+      "parkId": 62,
+      "rideId": 2757390716801,
+      "rideName": "Rapterra",
+      "alt": "Illustrated Rapterra at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:35:35.996558+00:00",
+      "originalSHA256": "ffbd6a7b06458b13eb087761b88a780ed17a386267ba218abc4bf524f1217ef9",
+      "review": "Accepted: teal rail, gray support, copper-orange faceted wing train and paired seats on both sides match the photographed Rapterra banked turn.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F46b7744550d191bd478dd1fa55bd66367bd3fea8-2048x1366.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/rapterra",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Rapterra at Kings Dominion",
+          "sha256": "86b119f2dae332f23aa10fc9978d84b432ddf71120eb56d533effda42bf8fa51",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Rapterra page and viewed photo identify Kings Dominion launched wing coaster: teal rail, gray columns, copper-orange faceted train, paired wing seats on both sides."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-2757390716801-thumbnail.jpg",
+      "thumbnailSHA256": "ea2ac8178460c1c5189cd9a80b58c3df36d7f24131a120f48c4e2b218a6b2083",
+      "thumbnailBytes": 22230,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-2757390716801-detail.jpg",
+      "detailSHA256": "2b95a799ce477b5364d62a35aec22b6df34dde69b3b6f05c310fb309fce9be41",
+      "detailBytes": 142364,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
       "parkId": 64,
       "rideId": 6004,
       "rideName": "The Incredible Hulk Coaster®",
@@ -1627,6 +1837,258 @@
       "detailFile": "65-12107-detail.jpg",
       "detailSHA256": "3ae1182ee7634774a5de30436713dfcbb36f2f16c6d7a39925b98fbbacf31f47",
       "detailBytes": 181619,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 67,
+      "rideId": 16595,
+      "rideName": "Krakatau™ Aqua Coaster",
+      "alt": "Illustrated Krakatau™ Aqua Coaster at Volcano Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:44:13.626806+00:00",
+      "originalSHA256": "773165233a4ea02978b591fda1c7132a4e880bf02f051928304cc90b8c1a9ab7",
+      "review": "Accepted: lime-green trough with clear upper side panels, magenta/yellow canoe raft, purple supports and craggy volcano opening/wood bridges retain the actual Krakatau watercoaster geometry.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/vb-krakatau-ride-three-riders-b.jpg",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/krakatau-aqua-coaster",
+          "credit": "Universal Orlando Resort (reference publisher)",
+          "license": "Copyright Universal Studios; source rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/terms-of-service/copyright",
+          "alt": "Canoe raft on lime-green Krakatau Aqua Coaster beside the Volcano Bay volcano",
+          "sha256": "f30e33062822368550506776914f7968627859ea1f0cdcd35e340e1dd8a6196a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Krakatau attraction page identifies Volcano Bay; viewed page-linked real photo shows lime-green watercoaster trough with clear upper panels, magenta/yellow canoe, volcano opening, timber bridges and purple supports."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "67-16595-thumbnail.jpg",
+      "thumbnailSHA256": "a9aa114f583947d279e2c787593b547cec088934cec2b3dc8b0f1a0b0d61c345",
+      "thumbnailBytes": 30564,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "67-16595-detail.jpg",
+      "detailSHA256": "08ff6b5b2e27ed4df988dee8884f38e582c51df7c56c5dbbe09bcf43ed79fb6a",
+      "detailBytes": 232589,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 69,
+      "rideId": 29967439346153,
+      "rideName": "Iron Menace",
+      "alt": "Illustrated Iron Menace at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:34:41.067868+00:00",
+      "originalSHA256": "84342e1cb2d16500f33b844a300f005355427d6adc544773570a1357afcedc05",
+      "review": "Accepted: rust-orange dive-coaster track, gray supports and short seven-across train with dark seats/orange restraints match Iron Menace's distinctive real hardware.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fab2004a2d026e85806ea9060e4e31e80446d0574-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/iron-menace",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on Iron Menace dive coaster soar through an inversion.",
+          "sha256": "f8bdea5005db16c0f3acc7a91069ec51ff8a7a01d77fdeb033dfd42c6dbb1d56",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Iron Menace page and viewed photo identify Dorney dive coaster: orange rail, dark gray support, short wide seven-across train, dark seats/orange restraints, industrial nose."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-29967439346153-thumbnail.jpg",
+      "thumbnailSHA256": "fddd2631fd2daddd099c8e78b9d892fd7087da630a97a8b9e6323977d8eb9e03",
+      "thumbnailBytes": 23713,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-29967439346153-detail.jpg",
+      "detailSHA256": "0d4f5066552203bbd218992701e69ff5c00a7f244073337837e59a5016f5e386",
+      "detailBytes": 145933,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 29292884721301,
+      "rideName": "Silver Bullet",
+      "alt": "Illustrated Silver Bullet at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:35:09.520218+00:00",
+      "originalSHA256": "ca61364720993dad33e57ac25e9d6c378cecae177fb3c6e4c833c26725f01e09",
+      "review": "Accepted: tilted blue Enterprise wheel and raising arm, silver enclosed gondolas, red-white-blue bulbs and physical Silver Bullet sign match Darien Lake; natural materials replace the reference's compression artifacts.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F37906eb6b0e4fa601e616a19685f2522c6b31ac7-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/silver-bullet",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Six Flags Darien Lake Silver Bullet spinning ride in motion.",
+          "sha256": "f0583e4597c992390cce03f6188e4528697bb3acdc0f10186fcb64617229b3c3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Darien Lake Silver Bullet page and viewed photo identify Enterprise spinner: blue radial wheel/raising arm, silver enclosed gondolas and red-white-blue bulbs. Source has posterized compression; actual hardware still clear."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-29292884721301-thumbnail.jpg",
+      "thumbnailSHA256": "bf10c478c2c91fc22a76421b2553aa0ae99e57484f77d890093e51c91b5525b8",
+      "thumbnailBytes": 29165,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-29292884721301-detail.jpg",
+      "detailSHA256": "91246ce71842f940ab7bf6f78814a4e77c0c0bf124a76527acf88a2e879fc8bb",
+      "detailBytes": 207128,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 282,
+      "rideId": 28884639662751,
+      "rideName": "Prairie Schooner",
+      "alt": "Illustrated Prairie Schooner at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:36:09.745003+00:00",
+      "originalSHA256": "f5530d1f097532313e566926cab6588affa46aa41db07eabf7a177d5756f4cf4",
+      "review": "Accepted: pink A-frame, yellow lattice suspension, brown/red ship, rustic boarding platform and foreground cannon match Frontier City's Prairie Schooner.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9254d0b160895d285263fed0f70618090e17e06b-6530x4353.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/prairie-schooner",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Prairie Schooner attraction at Frontier City, viewed from a side angle to show the entire ride.",
+          "sha256": "e1d292c9d606804fad456965dbd28ef26393bc08ca9783b592833b174fe8314a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Prairie Schooner page and viewed photo identify Frontier City ship: pink A-frame, yellow suspension lattice, brown/red ship, rustic platform and cannon in foreground."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-28884639662751-thumbnail.jpg",
+      "thumbnailSHA256": "9d97982bb348f7984e8fa361706892ad9e9348d162c62fdab11f759832df3966",
+      "thumbnailBytes": 30529,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-28884639662751-detail.jpg",
+      "detailSHA256": "d509bcb82fd1740359d3549c7fae120f1745e37be3fb0532fe783196efa033bd",
+      "detailBytes": 241026,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 295,
+      "rideId": 34253384203120,
+      "rideName": "Tornado",
+      "alt": "Illustrated Tornado at Hurricane Harbor Phoenix",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:36:40.909410+00:00",
+      "originalSHA256": "2af58bddbda7f1f8da59f78191f087b457ceb594f9fd001cd17dd6e47084fe47",
+      "review": "Accepted: alternating orange/blue funnel panels, yellow cloverleaf raft, wet fiberglass, shallow water splash and circular outlet match Phoenix Tornado's actual photograph.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fd2dd15c36e7b3af1f2df9e951e350d8b0631672f-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/phoenix/attractions/tornado",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Guests riding a yellow raft on the Tornado waterslide at Hurricane Harbor Phoenix, inside the orange and blue funnel.",
+          "sha256": "0ecfb01964880ce52166c15328563d21f673ba5fae4ec29e5ddcfc9b0c91e827",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Tornado page and viewed photo identify Hurricane Harbor Phoenix orange/blue funnel, yellow cloverleaf raft, shallow water and small circular exit."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "295-34253384203120-thumbnail.jpg",
+      "thumbnailSHA256": "b105a6edea2dc3e4ceaa7a64204fab1b607a6c6d6bc4837f4209099c5a317299",
+      "thumbnailBytes": 21584,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "295-34253384203120-detail.jpg",
+      "detailSHA256": "5254874c14d98fdc30d2402c4ff83f36fb70a57ef760a0ca94f8b08efa2cf9be",
+      "detailBytes": 150101,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 33209166214222,
+      "rideName": "Bahnzai Pipeline",
+      "alt": "Illustrated Bahnzai Pipeline at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:43:07.042039+00:00",
+      "originalSHA256": "c2719e1f721a2c843aa136a8a9b71b68a9b1a040deb4adcd72496ffb89bdd7b6",
+      "review": "Accepted: yellow/cream and green/cream enclosed tubes, teal columns/bracing, left stair tower and nearby waterplay structure match Bahnzai Pipeline's actual photo.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F0735adbc9fafa380943a622800c0d0973801e3c9-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/bahnzai-pipeline",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Bahnzai Pipeline at Schlitterbahn Waterpark New Braunfels",
+          "sha256": "e4f07547896f8440d1d31bb6fe057e975578a751746e4d9e9ca733163433ff88",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Bahnzai page and viewed photo identify New Braunfels yellow/cream and green/cream enclosed tubes on teal supports, stairs on left and small adjacent waterplay structure."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-33209166214222-thumbnail.jpg",
+      "thumbnailSHA256": "7a5f5de4f563a92fe91ce97f1d257dbfebdf05a2260cfd7b1e383a64167cc6d4",
+      "thumbnailBytes": 25046,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-33209166214222-detail.jpg",
+      "detailSHA256": "e79e92d950f976b76ce7c70b5bba1dcb39af1ef063962024815e13279876996f",
+      "detailBytes": 195598,
       "detailPixels": [
         768,
         960

@@ -4,6 +4,68 @@ import UIKit
 @testable import PIVOT
 
 final class PIVOTTests: XCTestCase {
+    func testRideSearchWaitsFollowLatestSnapshotAndOperatingStates() {
+        func present(_ ride: LiveRide) -> RideWaitPresentation {
+            RideWaitPresentation.resolve(rideID: ride.id, parkID: 6,
+                snapshot: makeSnapshot(sourceOffset: 0, ride: ride), refreshFailed: false, at: start)
+        }
+        XCTAssertEqual(present(makeRide(status: .open, waitTime: 45)).waitMinutes, 45)
+        XCTAssertEqual(present(makeRide(status: .open, waitTime: 5)).waitMinutes, 5)
+        XCTAssertEqual(present(makeRide(status: .open, waitTime: 0)).title, "0 min wait · walk-on")
+        XCTAssertEqual(present(makeRide(status: .open, waitTime: nil)).title, "Open · wait not posted")
+        XCTAssertNil(present(makeRide(status: .open, waitTime: -1)).waitMinutes)
+        for (state, title) in [(RideStatus.down, "Temporarily closed"), (.scheduled, "Not operating now"),
+                               (.parkInactive, "Park not active"), (.stale, "Wait unavailable"), (.unknown, "Wait unavailable")] {
+            let value = present(makeRide(status: state))
+            XCTAssertEqual(value.title, title)
+            XCTAssertNil(value.waitMinutes)
+        }
+    }
+
+    func testRideSearchWithholdsStaleFailedMissingAndWrongParkWaits() {
+        let ride = makeRide(status: .open, waitTime: 45)
+        let fresh = makeSnapshot(sourceOffset: 0, ride: ride)
+        func resolve(_ snapshot: LiveParkSnapshot?, id: Int = 126, park: Int? = 6,
+                     failed: Bool = false, now: Date? = nil) -> RideWaitPresentation {
+            RideWaitPresentation.resolve(rideID: id, parkID: park, snapshot: snapshot,
+                refreshFailed: failed, at: now ?? start)
+        }
+        for value in [resolve(nil), resolve(fresh, id: -1), resolve(fresh, park: 5), resolve(fresh, park: nil),
+                      resolve(fresh, failed: true), resolve(fresh, now: start.addingTimeInterval(900)),
+                      resolve(fresh, now: start.addingTimeInterval(-121)),
+                      resolve(makeSnapshot(sourceOffset: 0, feedHealthy: false, ride: ride)),
+                      resolve(makeSnapshot(sourceOffset: 901, ride: ride), now: start.addingTimeInterval(901))] {
+            XCTAssertNil(value.waitMinutes)
+            XCTAssertFalse(value.isCurrent)
+            XCTAssertEqual(value.title, "Wait unavailable")
+        }
+    }
+
+    @MainActor
+    func testRideSearchRetainsQueryAcrossLiveWaitUpdatesAndFailures() async throws {
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: "ride-search-\(UUID())"))
+        defaults.set(6, forKey: "pivot.selectedPark")
+        let config = URLSessionConfiguration.ephemeral; config.protocolClasses = [AuditURLProtocol.self]
+        let client = PivotAPIClient(baseURL: URL(string: "https://audit.invalid")!, session: URLSession(configuration: config))
+        let store = DashboardStore(apiClient: client, defaults: defaults)
+        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601
+        let payload = try encoder.encode(makeSnapshot(sourceOffset: 0, ride: makeRide(status: .open, waitTime: 45)))
+        AuditURLProtocol.response = { _ in payload }
+        defer { AuditURLProtocol.response = nil }
+        await store.refreshNow()
+        XCTAssertEqual(store.visibleRides(query: "  space  ", filter: .all, sort: .shortest).first?.waitTime, 45)
+        let updated = try encoder.encode(makeSnapshot(sourceOffset: 1, ride: makeRide(status: .open, waitTime: 5)))
+        AuditURLProtocol.response = { _ in updated }
+        await store.refreshNow()
+        XCTAssertEqual(store.visibleRides(query: "SPACE", filter: .all, sort: .shortest).first?.waitTime, 5)
+        XCTAssertEqual(store.visibleRides(query: "Tomorrowland", filter: .all, sort: .shortest).first?.id, 126)
+        AuditURLProtocol.response = { _ in throw URLError(.notConnectedToInternet) }
+        await store.refreshNow()
+        XCTAssertNotNil(store.visibleRides(query: "Space", filter: .all, sort: .shortest).first)
+        XCTAssertNil(RideWaitPresentation.resolve(rideID: 126, parkID: 6, snapshot: store.snapshot,
+            refreshFailed: store.errorMessage != nil, at: start.addingTimeInterval(1)).waitMinutes)
+    }
+
     func testGeneratedIllustrationsAreBundledBoundedAndAttributed() throws {
         let records = RideIllustrationCatalog.records
         XCTAssertGreaterThanOrEqual(records.count, 6)

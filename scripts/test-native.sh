@@ -60,6 +60,12 @@ case "${PIVOT_TEST_SCOPE:-all}" in
   all) ;;
   reference-ui)
     test_options+=(
+      -only-testing:PIVOTTests/PIVOTTests/testRideSearchWaitsFollowLatestSnapshotAndOperatingStates
+      -only-testing:PIVOTTests/PIVOTTests/testRideSearchWithholdsStaleFailedMissingAndWrongParkWaits
+      -only-testing:PIVOTTests/PIVOTTests/testRideSearchRetainsQueryAcrossLiveWaitUpdatesAndFailures
+      -only-testing:PIVOTUITests/PIVOTUITests/testRideSearchKeepsHistoricalSizeAndCurrentWaits
+      -only-testing:PIVOTUITests/PIVOTUITests/testFavoriteRideSearchConnectsWaitsAndSupportsLargeText
+      -only-testing:PIVOTUITests/PIVOTUITests/testNativeSurfacesPreserveHoursShowsAlertsAndPlanProgress
       -only-testing:PIVOTTests/PIVOTTests/testGeneratedIllustrationsAreBundledBoundedAndAttributed
       -only-testing:PIVOTTests/PIVOTTests/testGeneratedIllustrationsRequireAnExactParkAndRideMatch
       -only-testing:PIVOTTests/PIVOTTests/testIllustrationCacheLoadsPackagedFilesAndHandlesMissingFiles
