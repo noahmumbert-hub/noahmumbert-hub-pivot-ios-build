@@ -124,7 +124,7 @@ final class PIVOTUITests: XCTestCase {
         screenshot("Every observed wait dot labeled latest samples", app: app)
         chart.swipeRight()
         screenshot("Every observed wait dot labeled earlier samples", app: app)
-        let sampleTimes = app.staticTexts["Sample times"].firstMatch
+        let sampleTimes = app.buttons["Sample times"].firstMatch
         reveal(sampleTimes, in: app); sampleTimes.tap()
         XCTAssertEqual(app.staticTexts.matching(NSPredicate(format: "identifier BEGINSWITH 'wait-sample-row-10916-'")).count, 12)
         XCTAssertTrue(app.staticTexts["wait-sample-row-10916-4"].label.contains("0 min"), "A supplied zero is preserved")
@@ -170,7 +170,12 @@ final class PIVOTUITests: XCTestCase {
                 let lowest = app.staticTexts["ride-lowest-wait-window"]
                 reveal(lowest, in: app); XCTAssertTrue(lowest.isHittable)
                 XCTAssertTrue(lowest.label.contains("about 10 min"))
-                XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH 'Park time'")).firstMatch.exists)
+                let parkTime = app.staticTexts["lowest-wait-park-time"]
+                reveal(parkTime, in: app); XCTAssertTrue(parkTime.isHittable)
+                XCTAssertGreaterThan(parkTime.frame.height, 40, "Park time and zone must wrap at accessibility size")
+                let variation = app.staticTexts["lowest-wait-variation"]
+                reveal(variation, in: app); XCTAssertTrue(variation.isHittable)
+                XCTAssertGreaterThan(variation.frame.height, 40, "The complete uncertainty label must wrap")
                 let source = app.staticTexts["lowest-wait-source-time"]
                 reveal(source, in: app); XCTAssertTrue(source.isHittable)
                 XCTAssertTrue(source.label.contains("Wait source checked"))

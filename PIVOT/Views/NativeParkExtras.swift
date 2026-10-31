@@ -640,6 +640,7 @@ struct NativeWaitHistoryView: View {
             }
             .tint(accent)
         }
+        .accessibilityElement(children: .contain)
         .accessibilityIdentifier("wait-history-\(ride.id)")
     }
 
