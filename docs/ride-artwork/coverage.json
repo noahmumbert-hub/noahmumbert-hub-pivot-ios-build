@@ -364,10 +364,10 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 12,
-    "pendingIllustrations": 1112,
-    "acceptedForRequestedStyle": 11,
-    "unfinishedForRequestedStyle": 1113,
+    "acceptedIllustrations": 21,
+    "pendingIllustrations": 1103,
+    "acceptedForRequestedStyle": 20,
+    "unfinishedForRequestedStyle": 1104,
     "blocked": 2
   },
   "parks": [
@@ -1322,10 +1322,10 @@
           "url": "https://darkridedatabase.com/rides/pirates-of-the-caribbean-2/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "6-138",
@@ -1358,10 +1358,10 @@
           "url": "https://rcdb.com/267.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "6-140",
@@ -1394,10 +1394,10 @@
           "url": "https://darkridedatabase.com/rides/haunted-mansion-4/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "6-141",
@@ -1488,10 +1488,10 @@
           "url": "https://disneyworld.disney.go.com/faq/parks/height-requirements/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "6-161",
@@ -1553,10 +1553,10 @@
           "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/astro-orbiter/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "6-1190",
@@ -1618,10 +1618,10 @@
           "url": "https://rcdb.com/15286.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "6-13630",
@@ -1984,10 +1984,10 @@
           "url": "https://rcdb.com/2389.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "8-112",
@@ -2025,10 +2025,10 @@
           "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/kali-river-rapids/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "8-113",
@@ -2356,10 +2356,10 @@
           "url": "https://seaworld.com/orlando/rides/sky-tower/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "21-175908667835056",

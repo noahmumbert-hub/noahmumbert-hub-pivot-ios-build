@@ -26,6 +26,13 @@ def main():
     inventory = json.loads((work / "inventory.json").read_text())
     rides = {r["key"]: r for r in inventory["rides"]}
     photos = {r["key"]: r for r in json.loads((work / "photo-fetch-results.json").read_text())}
+    additional_references = work / "verified-photo-references.json"
+    if additional_references.exists():
+        for reference in json.loads(additional_references.read_text())["records"]:
+            assert reference["pixelReviewed"] and reference["sourceReviewed"], "Additional references require individual source and pixel review"
+            assert reference["key"] not in photos, "Do not silently replace an existing verified reference"
+            assert reference["key"] in rides and reference["review"], "Missing ride identity or reference review"
+            photos[reference["key"]] = reference
     accepted = []
     docs = REPO / "docs/ride-artwork"
     direction = json.loads((docs / "direction.json").read_text())
@@ -74,7 +81,7 @@ def main():
             record[variant + "Bytes"] = destination.stat().st_size
             record[variant + "Pixels"] = [width, height]
         records = [r for r in records if (r["parkId"], r["rideId"]) != (ride["parkID"], ride["rideID"])] + [record]
-        provenance = [r for r in provenance if r["key"] != key] + [dict(record, key=key, prompt=item["prompt"], promptSHA256=hashlib.sha256(item["prompt"].encode()).hexdigest())]
+        provenance = [r for r in provenance if r["key"] != key] + [dict(record, key=key, prompt=item["prompt"], promptSHA256=hashlib.sha256(item["prompt"].encode()).hexdigest(), generationSteps=item.get("generationSteps", []))]
     records.sort(key=lambda r: (r["parkId"], r["rideId"]))
     provenance.sort(key=lambda r: (r["parkId"], r["rideId"]))
     (output / "index.json").write_text(json.dumps({"schemaVersion": 1, "records": records}, indent=2, ensure_ascii=False) + "\n")

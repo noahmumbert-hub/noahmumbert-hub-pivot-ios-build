@@ -43,7 +43,8 @@
       ],
       "key": "5-155",
       "prompt": "Create one portrait 4:5 realistic generated ride visualization for PIVOT based on actual ride photo image 1; image 2 is the UI mood reference only. Slightly more realistic than painted illustrations: photographic textures, plausible perspective and lighting, subtle blue-violet evening tones with restrained warm highlights, natural contrast. No visible brushwork, excessive orange glow, wet pavement or oversaturated fantasy sky. Keep the authentic ride-specific features clear and central at thumbnail size. No interface, border, overlaid labels, watermark or text logos. Journey Into Imagination With Figment at EPCOT, the real Imagination Institute interior: rounded red ride car, teal-blue walls and large golden-orange sunburst sense medallions. Preserve the prominent eye with concentric rings, nose/smell emblem and other sense emblems in their real arrangement. Natural painted wall materials, practical dark-ride lighting. Do not invent characters or scenes.",
-      "promptSHA256": "a78d2750600eeeb81f2ef44c1bf000cf77c952c0f8054b486afad72e2c92c277"
+      "promptSHA256": "a78d2750600eeeb81f2ef44c1bf000cf77c952c0f8054b486afad72e2c92c277",
+      "generationSteps": []
     },
     {
       "parkId": 5,
@@ -86,7 +87,8 @@
       ],
       "key": "5-156",
       "prompt": "Create one portrait 4:5 realistic generated ride visualization for PIVOT based on actual ride photo image 1; image 2 is the UI mood reference only. Slightly more realistic than painted illustrations: photographic textures, plausible perspective and lighting, subtle blue-violet evening tones with restrained warm highlights, natural contrast. No visible brushwork, excessive orange glow, wet pavement or oversaturated fantasy sky. Keep the authentic ride-specific features clear and central at thumbnail size. No interface, border, overlaid labels, watermark or text logos. Living with the Land at EPCOT: the real agricultural greenhouse with white triangular roof glazing, banana leaves, pandan-like crops in pale sandy beds and the gently curving concrete-edged water canal shown. Preserve the real plants and greenhouse structure, photographically natural foliage and water. Soft late-day light through glass; do not invent tropical jungle scenery or boats.",
-      "promptSHA256": "be2f2e6a5f46b02cad19715f8cb7e5f8431761bf63dfbfa6aefa88800c350bdb"
+      "promptSHA256": "be2f2e6a5f46b02cad19715f8cb7e5f8431761bf63dfbfa6aefa88800c350bdb",
+      "generationSteps": []
     },
     {
       "parkId": 5,
@@ -129,7 +131,8 @@
       ],
       "key": "5-158",
       "prompt": "Create one portrait 4:5 realistic generated ride visualization for PIVOT based on actual ride photo image 1; image 2 is the UI mood reference only. Slightly more realistic than painted illustrations: photographic textures, plausible perspective and lighting, subtle blue-violet evening tones with restrained warm highlights, natural contrast. No visible brushwork, excessive orange glow, wet pavement or oversaturated fantasy sky. Keep the authentic ride-specific features clear and central at thumbnail size. No interface, border, overlaid labels, watermark or text logos. Mission: SPACE at EPCOT: the real curved low pavilion with massive copper-orange central architectural sphere, smaller copper sphere to the right, blue Earth sculpture to the left and sweeping silver orbital arcs. Exact believable architectural proportions from the photo, natural brushed metal and painted surfaces, subtle blue-purple evening sky and actual warm pavilion light. Do not depict actual floating planets, spaceships or unrelated coaster hardware.",
-      "promptSHA256": "356d4bcd6e784624b6ff3b51e2d0b3d6e7ae4b9591590a8ee7e1477d193fa612"
+      "promptSHA256": "356d4bcd6e784624b6ff3b51e2d0b3d6e7ae4b9591590a8ee7e1477d193fa612",
+      "generationSteps": []
     },
     {
       "parkId": 5,
@@ -172,7 +175,8 @@
       ],
       "key": "5-159",
       "prompt": "Create one portrait 4:5 generated realistic ride visualization for PIVOT, based on real ride photo image 1. Image 2 supplies the app's evening mood only. Noah requests slightly more realistic imagery than the previous painted illustrations: natural photographic textures, believable perspective, soft physically plausible evening light, restrained blue-violet shadows and sparse warm practical highlights. No visible brushwork, excessive orange glow, oversaturated fantasy sky or wet reflective surfaces. Keep recognizable authentic attraction details central and clear at small thumbnail size. Edge-to-edge, no text, interface, logo, watermark or border. Spaceship Earth at EPCOT, the exact enormous silver geodesic sphere, fine triangular metal facets, angled white supports and garden in the real reference photo. Show the whole recognizable sphere and its base. Keep natural aluminum texture and realistic structural proportions. No outer-space scenery.",
-      "promptSHA256": "b3ef2dcfff11ed05a800474fe4e101282a3b6137519d4d3c4ac62e195a047680"
+      "promptSHA256": "b3ef2dcfff11ed05a800474fe4e101282a3b6137519d4d3c4ac62e195a047680",
+      "generationSteps": []
     },
     {
       "parkId": 5,
@@ -257,7 +261,8 @@
       ],
       "key": "5-10916",
       "prompt": "Revise the Guardians of the Galaxy: Cosmic Rewind ride image for PIVOT to be slightly more realistic. Image 1 is the real EPCOT photograph and defines the exact Starblaster shape, gold and dark-blue painted metal panels, five pointed wings, tilted plinth, pavilion and distant Spaceship Earth. Image 2 is the previous generated draft: retain its attractive portrait composition but reduce its overtly painted surfaces, excessive orange glow, wet-looking pavement and dramatic oversaturation. Image 3 is the UI mood reference only. Produce ONE portrait 4:5 image with natural photographic material textures, physically plausible soft evening lighting, subtle blue-violet shadows and restrained warm practical light. Keep believable scale and perspective and authentic ride-specific details. A polished realistic generated visualization, still suitable for the UI artwork treatment, with no visible brush strokes. No text, logo, watermark, interface or border. No fantasy objects or invented ride hardware. Keep the Starblaster recognizable and as fully in frame as the portrait allows.",
-      "promptSHA256": "3d0571bf90f2f9ed8ec4f5291fb2f56b72d784b993c0bfc7a43a03343ff0291a"
+      "promptSHA256": "3d0571bf90f2f9ed8ec4f5291fb2f56b72d784b993c0bfc7a43a03343ff0291a",
+      "generationSteps": []
     },
     {
       "parkId": 6,
@@ -300,7 +305,8 @@
       ],
       "key": "6-129",
       "prompt": "Create one portrait 4:5 generated realistic ride visualization for PIVOT, based on real ride photo image 1. Image 2 supplies the app's evening mood only. Noah requests slightly more realistic imagery than the previous painted illustrations: natural photographic textures, believable perspective, soft physically plausible evening light, restrained blue-violet shadows and sparse warm practical highlights. No visible brushwork, excessive orange glow, oversaturated fantasy sky or wet reflective surfaces. Keep recognizable authentic attraction details central and clear at small thumbnail size. Edge-to-edge, no text, interface, logo, watermark or border. Seven Dwarfs Mine Train at Magic Kingdom: accurately retain the real reference's barrel-shaped wood-grain mine cars, black metal bands and modest steel track curving through rocks and conifers. Natural weathered materials and believable mechanics. Omit close recognizable people; distant indistinct riders are optional. No locomotive, invented loops or exaggerated drop.",
-      "promptSHA256": "62c0d3f68b776e47b5de4577d57ea4e3c13cbb0316f907b53ee09846c8e4b804"
+      "promptSHA256": "62c0d3f68b776e47b5de4577d57ea4e3c13cbb0316f907b53ee09846c8e4b804",
+      "generationSteps": []
     },
     {
       "parkId": 6,
@@ -343,7 +349,8 @@
       ],
       "key": "6-130",
       "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT using actual photo image 1 for accurate physical details. Image 2 is only the UI's blue-purple evening mood reference. Slightly more realistic than previous painted art: photographic materials, believable perspective, soft light and restrained highlights, natural contrast. No brushwork, oversaturated orange glow or fantasy scenery. Authentic subject should be clear in the central 80% at small thumbnail size. No UI, border, text labels, logo or watermark. Big Thunder Mountain Railroad at Magic Kingdom Florida: real orange-red desert rockwork with the tall narrow central spire, low curving mine train with dark green locomotive and ochre cars, pale animal rib bones in foreground. Match the photographed silhouette and track alignment; natural weathered rock and timber, soft evening tones. No invented coaster loops or huge drops.",
-      "promptSHA256": "f3a690c8f357de0a13e02558dd3d338e358a7bf93ea2300e6909d6a754de444d"
+      "promptSHA256": "f3a690c8f357de0a13e02558dd3d338e358a7bf93ea2300e6909d6a754de444d",
+      "generationSteps": []
     },
     {
       "parkId": 6,
@@ -386,7 +393,423 @@
       ],
       "key": "6-134",
       "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT using actual photo image 1 for accurate physical details. Image 2 is only the UI's blue-purple evening mood reference. Slightly more realistic than previous painted art: photographic materials, believable perspective, soft light and restrained highlights, natural contrast. No brushwork, oversaturated orange glow or fantasy scenery. Authentic subject should be clear in the central 80% at small thumbnail size. No UI, border, text labels, logo or watermark. Jungle Cruise at Magic Kingdom Florida: inside the photographed modest wooden launch under its tan-orange scalloped canvas canopy. Preserve wooden pilot wheel, dark canopy poles and actual boat dimensions; a distant non-identifiable khaki skipper faces the river. Natural canvas/wood textures, riverside vegetation and pale rocks, soft blue-violet dusk and sparse warm boat lights. Omit close passenger heads, no pirate ship or ocean.",
-      "promptSHA256": "ce44cba5aef2d30ee4432d3409457428bef8d11967d2cadeef2284bfcc86faf7"
+      "promptSHA256": "ce44cba5aef2d30ee4432d3409457428bef8d11967d2cadeef2284bfcc86faf7",
+      "generationSteps": []
+    },
+    {
+      "parkId": 6,
+      "rideId": 137,
+      "rideName": "Pirates of the Caribbean",
+      "alt": "Illustrated Pirates of the Caribbean at Magic Kingdom Park",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:45:38.275231+00:00",
+      "originalSHA256": "1b02f73929b0b2a02a08b82032dbd589acd9df273e3ae2803a12c445f882d103",
+      "review": "Accepted: actual broad tan-bench flume boat, black boarding gates, fort walls and timber lantern-lit loading dock retained; natural textures replace the earlier painted treatment.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Embarquement_dans_Pirates_of_the_Caribbean_at_Magic_Kingdom.jpg/1280px-Embarquement_dans_Pirates_of_the_Caribbean_at_Magic_Kingdom.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Embarquement_dans_Pirates_of_the_Caribbean_at_Magic_Kingdom.jpg",
+          "credit": "Freddo",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "alt": "Pirates of the Caribbean at Magic Kingdom Park",
+          "sha256": "796a230ea82e10cfe718fe28818d341faa53e73fb85d0c0bdb738f86dd3c1350",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "thumbnailFile": "6-137-thumbnail.jpg",
+      "thumbnailSHA256": "c0c1610c4ed762771f5acce5ebcdb3cac5c44dcb11769ef188cade2b12231d16",
+      "thumbnailBytes": 22973,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "6-137-detail.jpg",
+      "detailSHA256": "1c0e6e87f9c1a0f193ba191372a641dc4e28815635bb2f69574fa61a9faa3be9",
+      "detailBytes": 161714,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "6-137",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Actual photo image 1 defines accurate physical attraction features. Image 2 supplies only the UI's blue-purple evening mood. Natural photographic textures and believable perspective, soft plausible light with restrained warm practical highlights; slight cinematic realism without brushwork, excessive orange glow, fantasy scenery or wet reflective pavement. Keep the real ride clearly recognizable at small thumbnail size. No interface, border, overlay labels, logo or watermark. Pirates of the Caribbean at Magic Kingdom Florida, the real indoor loading dock pictured: a broad low flume boat with multiple rows of plain tan bench seats, black boarding gates, heavy timber posts and rafters, stucco/stone fort walls and amber hanging lanterns. Center the boat and dock, omit close-up passengers. No pirate ship, sails or ocean; preserve the actual modest ride vehicle.",
+      "promptSHA256": "b782a4aae2fa4478a57a42ea550ceb9433082de2b3e702e030dfcf9b116ecc8f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 6,
+      "rideId": 138,
+      "rideName": "Space Mountain",
+      "alt": "Illustrated Space Mountain at Magic Kingdom Park",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:40:09.026427+00:00",
+      "originalSHA256": "a56a60732b938d7002d212dfd56b517483e7393ea8bbd7f175c7edc327747f0e",
+      "review": "Accepted: photo-matched Florida ribbed white dome, antenna spires and round gear/clock facade retained with natural materials and realistic evening illumination.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Space_Mountain_in_the_Magic_Kingdom_in_2021.png",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Space_Mountain_in_the_Magic_Kingdom_in_2021.png",
+          "credit": "Kaleeb18",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "alt": "Space Mountain at Magic Kingdom Park",
+          "sha256": "d1757712b68901087e02a705f28f2ab75520db428aecc9ca8a860406d4969016",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "thumbnailFile": "6-138-thumbnail.jpg",
+      "thumbnailSHA256": "bfc57ef98f0ecf26bc6b88e005e9e58f8322be7186e903d19425e8d190304a71",
+      "thumbnailBytes": 20155,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "6-138-detail.jpg",
+      "detailSHA256": "e50983d31982f23ffedb1c253590a35d286e938e59c1c98cc41c6ef7a54f1c50",
+      "detailBytes": 163792,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "6-138",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT using actual real attraction photo image 1 for accurate physical details. Image 2 supplies only the UI's restrained blue-purple evening treatment. Natural photographic textures, believable perspective, softly lit materials, sparse warm practical highlights. Slightly realistic cinematic finish with no painted brushwork, oversaturated orange glow, wet pavement or fantasy scenery. Important ride features must be clear and central at thumbnail size. Edge-to-edge, no interface, border, text labels, logo or watermark. Space Mountain at Magic Kingdom Florida: exact white ribbed conical building with slender spires and tall central antenna, and the adjacent round-topped glass facade with gears and clock. Preserve the Florida architecture. No planets, rockets, invented hardware or close-up visitors.",
+      "promptSHA256": "bf398ec0fdd33aa1d5209ca6a58b0ef588f5dd64812218a76f67c40edcf118e3",
+      "generationSteps": []
+    },
+    {
+      "parkId": 6,
+      "rideId": 140,
+      "rideName": "Haunted Mansion",
+      "alt": "Illustrated Haunted Mansion at Magic Kingdom Park",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:41:30.135754+00:00",
+      "originalSHA256": "6b40a2453c4c8b7d21c3f8ccd7e9da7074e3aae9bd68b93ecdb6a5e2458a4bab",
+      "review": "Accepted: red-brick Florida manor, green-domed tower, tan trim, gables and green conservatory match the inspected reference; natural masonry and foliage improve realism.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/The_Haunted_Mansion.jpg/1280px-The_Haunted_Mansion.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:The_Haunted_Mansion.jpg",
+          "credit": "Benjamin D. Esham (bdesham)",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "alt": "Haunted Mansion at Magic Kingdom Park",
+          "sha256": "48e599a5c687276724e1446e3c69343485d25c74ebd0ae89269eebd26a11daea",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "thumbnailFile": "6-140-thumbnail.jpg",
+      "thumbnailSHA256": "fd547d8518a657b133c55abf9bddb75fb319eb18d695bcc8266438cd90103aea",
+      "thumbnailBytes": 25834,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "6-140-detail.jpg",
+      "detailSHA256": "5b8d1055d8bcf053dee6c9932ec6ca6e787e43cbcf8064dc6de50329d9b32081",
+      "detailBytes": 245212,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "6-140",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT using actual real attraction photo image 1 for accurate physical details. Image 2 supplies only the UI's restrained blue-purple evening treatment. Natural photographic textures, believable perspective, softly lit materials, sparse warm practical highlights. Slightly realistic cinematic finish with no painted brushwork, oversaturated orange glow, wet pavement or fantasy scenery. Important ride features must be clear and central at thumbnail size. Edge-to-edge, no interface, border, text labels, logo or watermark. Haunted Mansion at Magic Kingdom Florida: exact red-brick Gothic manor, tan stone trim, dark gables, tall chimneys, central octagonal tower with green copper dome and weather vane, green-glass conservatory at lower right and drooping foreground trees. Preserve Florida's manor, no other park facade, ghosts or invented gravestones.",
+      "promptSHA256": "933890088b131562a4bfff4577255172d9bb3d88aab23b2b65b1d28c6b8d1dee",
+      "generationSteps": []
+    },
+    {
+      "parkId": 6,
+      "rideId": 143,
+      "rideName": "Tomorrowland Speedway",
+      "alt": "Illustrated Tomorrowland Speedway at Magic Kingdom Park",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:46:26.343828+00:00",
+      "originalSHA256": "4933256a3044a446026252744d0420b232097c89bb97ad83be342da3f972f572",
+      "review": "Accepted: small guided racing cars, blue/orange-striped front hood, pit railings, checkered flags and narrow center guide beam match the real Speedway reference; natural materials and evening lighting.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/-SPEEDWAY-MAGIC_KINGDOM-WALT_DISNEY_WORLD_-_panoramio.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:-SPEEDWAY-MAGIC_KINGDOM-WALT_DISNEY_WORLD_-_panoramio.jpg",
+          "credit": "Ivan Curra",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "alt": "Tomorrowland Speedway at Magic Kingdom Park",
+          "sha256": "7c0afcd3e36f79505789e02b4cd9481d08e60710339b60a1cfd0fbb24e376a1a",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "thumbnailFile": "6-143-thumbnail.jpg",
+      "thumbnailSHA256": "7255b6a847ec83be1b8ff2f7ababd95900413e2eb4d4eec0c099d3a5fb85583a",
+      "thumbnailBytes": 24194,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "6-143-detail.jpg",
+      "detailSHA256": "c9a0dd219a5e96d1e4d3a9e86fd597f3d4a77a9135fdecb90b65ac2f2eb22cee",
+      "detailBytes": 176233,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "6-143",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Actual photo image 1 defines accurate physical attraction features. Image 2 supplies only the UI's blue-purple evening mood. Natural photographic textures and believable perspective, soft plausible light with restrained warm practical highlights; slight cinematic realism without brushwork, excessive orange glow, fantasy scenery or wet reflective pavement. Keep the real ride clearly recognizable at small thumbnail size. No interface, border, overlay labels, logo or watermark. Tomorrowland Speedway at Magic Kingdom Florida: actual small open two-seat guided racing cars, foremost dark-blue car with two orange-red hood stripes and black rubber bumper, green and red cars behind in narrow asphalt pit lanes with the real center guide rails. Pit railings and checkered flags in the background. Maintain the real rail-guided car mechanism; do not invent railway tracks, full-size Formula One cars or steep track. Omit construction cranes and recognizable guests.",
+      "promptSHA256": "7cd21b2de2c795cda01959a7d248a29f32c62123a969bc04641ca6dd85f687f9",
+      "generationSteps": []
+    },
+    {
+      "parkId": 6,
+      "rideId": 248,
+      "rideName": "Astro Orbiter",
+      "alt": "Illustrated Astro Orbiter at Magic Kingdom Park",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:44:50.582608+00:00",
+      "originalSHA256": "8805d16a67077655f1ce28e12750ccdd3e25efaa40281d53cf16a91a5bc55049",
+      "review": "Accepted: actual Astro Orbiter mechanical sculpture, gold orbital beam, red-orange globe, armillary sphere and central ringed spire retained; physical metal textures and realistic evening treatment.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Astro_Orbiter_%2828581637303%29.jpg/960px-Astro_Orbiter_%2828581637303%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20160830181714",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Astro_Orbiter_(28581637303).jpg",
+          "credit": "Theme Park Tourist",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0/deed.en",
+          "alt": "Astro Orbiter at Magic Kingdom",
+          "sha256": "9034b63b7bb7af366e58139dee2a63e13c74e7281688420ac70aef89f3f5bc39",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/deed.en",
+      "thumbnailFile": "6-248-thumbnail.jpg",
+      "thumbnailSHA256": "d1d7169ba38b4c3f1bd2ec03ab23223e0d96b6ccd7985c3831f4ac09372399cd",
+      "thumbnailBytes": 21262,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "6-248-detail.jpg",
+      "detailSHA256": "151faaaaf668aa01ea4f903577328f8cd06637cd4a58ad3c7d3963c890036f4f",
+      "detailBytes": 172104,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "6-248",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Actual photo image 1 defines accurate physical attraction features. Image 2 supplies only the UI's blue-purple evening mood. Natural photographic textures and believable perspective, soft plausible light with restrained warm practical highlights; slight cinematic realism without brushwork, excessive orange glow, fantasy scenery or wet reflective pavement. Keep the real ride clearly recognizable at small thumbnail size. No interface, border, overlay labels, logo or watermark. Astro Orbiter at Magic Kingdom Florida: actual silver-and-gold central spire with orbital rings, tilted gold beam carrying the large red-orange planet at upper right and open golden armillary sphere at lower left, smaller colored planet globes on rods, circular elevated platform below. Preserve the actual mechanical sculpture and structure shown. Natural painted metal surfaces and modest practical lighting. Physical theme-park attraction viewed from below, no real outer-space planets or invented ride hardware.",
+      "promptSHA256": "c33596ad577490d90cba1815329d39d9f38330c556984a7bb93b31855d0fb7bc",
+      "generationSteps": []
+    },
+    {
+      "parkId": 6,
+      "rideId": 11527,
+      "rideName": "TRON Lightcycle / Run",
+      "alt": "Illustrated TRON Lightcycle / Run at Magic Kingdom Park",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:43:04.393156+00:00",
+      "originalSHA256": "310c0ea1b06914d06d92cedab5f6b91d6aeb89d52293d2e127aea7c77043c2cf",
+      "review": "Accepted: real undulating TRON canopy, triangular lattice, supports, cyan-lit train and approach composition retained; photographic material detail and natural evening treatment match requested style.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Tron_Lightcycle_Run.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Tron_Lightcycle_Run.jpg",
+          "credit": "Paigeboyd02",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "alt": "TRON Lightcycle / Run at Magic Kingdom Park",
+          "sha256": "855b1b766a7c27c3f972273faf2c82b8637a66ed4f229d7f2267ee4e14d27e00",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "thumbnailFile": "6-11527-thumbnail.jpg",
+      "thumbnailSHA256": "d46e1326cb090d9258cfd24745e5099c5c0787e0aa877e154df721fd377f0686",
+      "thumbnailBytes": 19192,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "6-11527-detail.jpg",
+      "detailSHA256": "f30e957fe440a304a2324164ee72d09ecb1bff8e3d8927ae7ce121f3f376023f",
+      "detailBytes": 164086,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "6-11527",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT using actual real attraction photo image 1 for accurate physical details. Image 2 supplies only the UI's restrained blue-purple evening treatment. Natural photographic textures, believable perspective, softly lit materials, sparse warm practical highlights. Slightly realistic cinematic finish with no painted brushwork, oversaturated orange glow, wet pavement or fantasy scenery. Important ride features must be clear and central at thumbnail size. Edge-to-edge, no interface, border, text labels, logo or watermark. TRON Lightcycle / Run at Magic Kingdom Florida: smooth white undulating canopy, triangular steel lattice underneath, angled supports and dark track curving through its high arch with cyan lightcycle train. Center the recognizable full arch with realistic canopy material. No motorcycles on pedestrian paths, futuristic fantasy city or invented coaster loops.",
+      "promptSHA256": "7bbda71e89ce1d87ffbb1af7adb57ed365b1ccd35c15e6fe89d780f9761fc5f9",
+      "generationSteps": []
+    },
+    {
+      "parkId": 8,
+      "rideId": 110,
+      "rideName": "Expedition Everest - Legend of the Forbidden Mountain",
+      "alt": "Illustrated Expedition Everest - Legend of the Forbidden Mountain at Disney’s Animal Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:42:06.400312+00:00",
+      "originalSHA256": "9d504874c984003d9a68f642b09d7958219b4c5f1e08bd27e16c6ad443e4157b",
+      "review": "Accepted: actual Expedition Everest mountain silhouette, snow/rock textures, left lift track and ruined tower match the real reference. Lagoon and foliage remain natural; no invented ride layout.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Expedition_Everest.jpg/1280px-Expedition_Everest.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Expedition_Everest.jpg",
+          "credit": "Benjamin D. Esham (bdesham)",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "alt": "Expedition Everest - Legend of the Forbidden Mountain at Disney’s Animal Kingdom",
+          "sha256": "aa2c5a45fe0403e9877c1d785279cd9ccd47b5c21769a2c53e17b3af18a9dd67",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "thumbnailFile": "8-110-thumbnail.jpg",
+      "thumbnailSHA256": "09c356301ef2dbb37dfc5d6670b73786125a663b75d929ac4f0190ec16063adc",
+      "thumbnailBytes": 22332,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "8-110-detail.jpg",
+      "detailSHA256": "c9a359691ffd4da533a4b909e926ec56ed7b6fb80f38c2ec7629941b1c3150b6",
+      "detailBytes": 191030,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "8-110",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT using actual real attraction photo image 1 for accurate physical details. Image 2 supplies only the UI's restrained blue-purple evening treatment. Natural photographic textures, believable perspective, softly lit materials, sparse warm practical highlights. Slightly realistic cinematic finish with no painted brushwork, oversaturated orange glow, wet pavement or fantasy scenery. Important ride features must be clear and central at thumbnail size. Edge-to-edge, no interface, border, text labels, logo or watermark. Expedition Everest at Disney's Animal Kingdom: preserve the actual artificial Himalayan mountain silhouette, tall pale snow-covered central peaks, reddish lower rockwork, dark lift track ascending from the left out of the old ruined tower, and lagoon/trees in foreground. It must clearly depict this theme-park ride, not a real Himalayan expedition. Natural rock texture and subtle snowy details, no invented loops or huge drops.",
+      "promptSHA256": "7888783c540c113290d1fc548bf15897518d4ebdb33552276106dd19442206d9",
+      "generationSteps": []
+    },
+    {
+      "parkId": 8,
+      "rideId": 112,
+      "rideName": "Kali River Rapids",
+      "alt": "Illustrated Kali River Rapids at Disney’s Animal Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:52:36.532283+00:00",
+      "originalSHA256": "d80fde56edd1ef067668d03beef1b17a925bc5414fa15f8f5b866cc877c3e415",
+      "review": "Accepted: plain lifebuoy and weathered grey hull, no distorted lettering; real circular raft, cream seats, orange rails, channel and natural water preserved.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Disney-Animal-Kingdom-Kali-River-Ride-8319.jpg/1280px-Disney-Animal-Kingdom-Kali-River-Ride-8319.jpg",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Disney-Animal-Kingdom-Kali-River-Ride-8319.jpg",
+          "credit": "Loadmaster (David R. Tribble) This image was made by Loadmaster (David R. Tribble). Email the author: David R. Tribble Also see my personal gallery at Google Photos",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "alt": "Kali River Rapids at Disney’s Animal Kingdom",
+          "sha256": "d27252a1eb2ac86913e40cfa90d64919ca0d5b4608040346abfe77cc4ee933f7",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "thumbnailFile": "8-112-thumbnail.jpg",
+      "thumbnailSHA256": "f4dee676edb9efcb155a381cc4b3798efe4c8b0f92342544817d80a2db3734c0",
+      "thumbnailBytes": 32018,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "8-112-detail.jpg",
+      "detailSHA256": "fa9234094779e10ed6033f34a366ead2d9997c611fe6245535729ff996431ea6",
+      "detailBytes": 230331,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "8-112",
+      "prompt": "Make a precise cleanup edit to this generated raft image. Erase EVERY remaining letter or word on the dark-grey outer hull band immediately above the black rubber bumper, including the faint white lettering at the lower-left/front of the raft. Replace the entire grey band with plain weathered grey material. Keep the lifebuoy plain white as it is. Preserve all other pixels as closely as possible: circular orange raft, cream seats, orange rails, blue center, water, plants, perspective, lighting, portrait format. Do not create any letters, writing, logos, watermark or symbols anywhere.",
+      "promptSHA256": "1f792a193d556cbe540e65ab4c7611453430454e07b4e00410c9e1ecdff997a0",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT using actual real attraction photo image 1 for accurate physical details. Image 2 supplies only the UI's restrained blue-purple evening treatment. Natural photographic textures, believable perspective, softly lit materials, sparse warm practical highlights. Slightly realistic cinematic finish with no painted brushwork, oversaturated orange glow, wet pavement or fantasy scenery. Important ride features must be clear and central at thumbnail size. Edge-to-edge, no interface, border, text labels, logo or watermark. Kali River Rapids at Disney's Animal Kingdom: actual round orange-and-grey raft with black rubber outer ring, inward-facing tall cream seats, orange handrails and central blue equipment/lifebuoy section, floating in the narrow whitewater channel amid lush plants and low artificial rock banks. Preserve the circular raft geometry. Omit identifiable passengers, no invented flume drops or boats.",
+          "review": "Needs revision: distorted lettering on lifebuoy and hull.",
+          "outputSHA256": "46f63b638b110530360b9df9f438c5624b3fa2995951e2559e2c462acb265d0f",
+          "outputFile": "exec-e9d2e84b-dd2c-4033-9e7b-e70f85c28825.png"
+        },
+        {
+          "prompt": "Edit this generated Kali River Rapids ride visualization only to remove all lettering and all text from the lifebuoy and outer raft rim, replacing those areas with clean plain white lifebuoy material and weathered grey/orange raft material. The current lettering is distorted. Preserve the actual circular orange raft, black rubber ring, tall cream inward-facing seats, orange rails, realistic water, foliage, lighting, composition and portrait aspect ratio. Do not add text, logos, labels, people, interface, border or watermark. This remains explicitly generated ride artwork.",
+          "review": "Needs revision: lifebuoy corrected; faint hull lettering remains.",
+          "outputSHA256": "c09408ff9ac2e54384608bb7f04f75459409e4918c72de3e7f33d048478005b9",
+          "outputFile": "exec-7009d62d-8a8c-443f-b219-3aa65d49577b.png"
+        },
+        {
+          "prompt": "Make a precise cleanup edit to this generated raft image. Erase EVERY remaining letter or word on the dark-grey outer hull band immediately above the black rubber bumper, including the faint white lettering at the lower-left/front of the raft. Replace the entire grey band with plain weathered grey material. Keep the lifebuoy plain white as it is. Preserve all other pixels as closely as possible: circular orange raft, cream seats, orange rails, blue center, water, plants, perspective, lighting, portrait format. Do not create any letters, writing, logos, watermark or symbols anywhere.",
+          "review": "Accepted: plain lifebuoy and weathered grey hull, no distorted lettering; real circular raft, cream seats, orange rails, channel and natural water preserved.",
+          "outputSHA256": "d80fde56edd1ef067668d03beef1b17a925bc5414fa15f8f5b866cc877c3e415",
+          "outputFile": "exec-73a1d1c2-2318-4ccb-8874-447bce2f4e39.png"
+        }
+      ]
+    },
+    {
+      "parkId": 21,
+      "rideId": 161007786566085,
+      "rideName": "Sky Tower",
+      "alt": "Illustrated Sky Tower at SeaWorld Orlando",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T16:43:47.121742+00:00",
+      "originalSHA256": "25270d9331cc44814d0cfd7ead20989e42dffd55ddf0118438486895c2b66476",
+      "review": "Accepted: slender SeaWorld Sky Tower, diagonal seams, dark blue/gold cabin and landscaped lagoon base match inspected real photo. Full tower remains visible, with realistic materials and interpreted evening light.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Seaworld-Orlando-Tower-1473.jpg/500px-Seaworld-Orlando-Tower-1473.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20100128231807",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Seaworld-Orlando-Tower-1473.jpg",
+          "credit": "David R. Tribble (Loadmaster)",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "alt": "Sky Tower at SeaWorld Orlando; source image rotated 0.2° clockwise",
+          "sha256": "f9b45103b40a806b2abe9c04fa3ce49d3076b68d7a782eb761c3d0ab302aa063",
+          "pixelReviewed": true
+        }
+      ],
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+      "thumbnailFile": "21-161007786566085-thumbnail.jpg",
+      "thumbnailSHA256": "f68384ffa2e9ca7247f4328e63dea9c86cdfce7874e9d0a9b7e4f8b9d5d7f4b3",
+      "thumbnailBytes": 15636,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "21-161007786566085-detail.jpg",
+      "detailSHA256": "93d5bee4a1a62b429a0e864f94aa6364f6d198b562dc680ccc5135aca361335d",
+      "detailBytes": 116553,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "21-161007786566085",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT using actual real attraction photo image 1 for accurate physical details. Image 2 supplies only the UI's restrained blue-purple evening treatment. Natural photographic textures, believable perspective, softly lit materials, sparse warm practical highlights. Slightly realistic cinematic finish with no painted brushwork, oversaturated orange glow, wet pavement or fantasy scenery. Important ride features must be clear and central at thumbnail size. Edge-to-edge, no interface, border, text labels, logo or watermark. Sky Tower at SeaWorld Orlando: exact very slender pale cylindrical tower with diagonal seam pattern, dark blue circular windowed observation cabin with yellow/gold horizontal trim near the top, thin flagpole above, lagoon and low landscaped island/buildings at its base. Full tower and base inside portrait with realistic proportions; do not invent an external drop ride or gigantic city skyscraper.",
+      "promptSHA256": "51df6c0e68a47bce73873b088f5d40106e31d4e3c998b20a20b32fd140479e36",
+      "generationSteps": []
     },
     {
       "parkId": 21,
@@ -429,7 +852,8 @@
       ],
       "key": "21-250622806424631",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT using actual attraction photo image 1 for accurate physical details and image 2 only for the UI's subtle blue-purple evening mood. Natural photographic textures, plausible perspective, soft light with restrained highlights, clear identifiable subject at thumbnail size. Slightly realistic cinematic treatment, no painted brushwork, exaggerated orange sky, cartoon materials or fantasy scenery. No UI, borders, logos, text or watermark. Mako at SeaWorld Orlando. The real lakeside view in the reference defines dark purple/charcoal coaster track, teal support columns, very tall straight lift hill on the left and broad low banked curve around the water. Preserve the real track alignment without invented inversions, loops or extra towers. Natural lake ripples and palms. Compose the tall hill and low sweeping track clearly in portrait framing.",
-      "promptSHA256": "36ee074017710dffac3823047dd81074adb7887e67b3e01cd341347cc01e2d86"
+      "promptSHA256": "36ee074017710dffac3823047dd81074adb7887e67b3e01cd341347cc01e2d86",
+      "generationSteps": []
     },
     {
       "parkId": 50,
@@ -472,7 +896,8 @@
       ],
       "key": "50-85197605068999",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT using actual attraction photo image 1 for accurate physical details and image 2 only for the UI's subtle blue-purple evening mood. Natural photographic textures, plausible perspective, soft light with restrained highlights, clear identifiable subject at thumbnail size. Slightly realistic cinematic treatment, no painted brushwork, exaggerated orange sky, cartoon materials or fantasy scenery. No UI, borders, logos, text or watermark. Iron Dragon at Cedar Point. Precisely show the real suspended coaster: dark swinging enclosed-bottom cars hanging BELOW the red-orange overhead track, with yellow/orange supports beside a small lagoon and trees. Keep hanging cars physically attached to their real track. Avoid turning it into a conventional seated-on-top coaster. Omit the unrelated large coaster towers and large utility pipes from the background/foreground; emphasize only Iron Dragon's identifiable train, track and lagoon.",
-      "promptSHA256": "8b57ac9da831a34cd8f8dd45ae302af0a8a5d8e2f5ccd42ebf2b2db3bd16cc71"
+      "promptSHA256": "8b57ac9da831a34cd8f8dd45ae302af0a8a5d8e2f5ccd42ebf2b2db3bd16cc71",
+      "generationSteps": []
     },
     {
       "parkId": 64,
@@ -515,7 +940,8 @@
       ],
       "key": "64-6004",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT using actual attraction photo image 1 for accurate physical details and image 2 only for the UI's subtle blue-purple evening mood. Natural photographic textures, plausible perspective, soft light with restrained highlights, clear identifiable subject at thumbnail size. Slightly realistic cinematic treatment, no painted brushwork, exaggerated orange sky, cartoon materials or fantasy scenery. No UI, borders, logos, text or watermark. The Incredible Hulk Coaster at Islands of Adventure, the actual cobra-roll track element over the lagoon in the reference photo. Preserve green steel track, tall pale-grey supports and authentic two-inversion cobra-roll geometry with its connecting upper section, viewed from waterside. Real green floodlighting against a subtle blue-purple evening sky, believable water reflections and distant buildings. Do not add Hulk characters, invented extra track loops or unsupported steel.",
-      "promptSHA256": "261f069f5c014f6c9c041810d8d96cc43642a458863c7dad61783b5580245f30"
+      "promptSHA256": "261f069f5c014f6c9c041810d8d96cc43642a458863c7dad61783b5580245f30",
+      "generationSteps": []
     }
   ]
 }

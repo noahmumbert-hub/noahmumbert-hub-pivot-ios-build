@@ -45,6 +45,9 @@ def main():
         assert proof[key]["originalSHA256"] == record["originalSHA256"]
         assert proof[key].get("styleRevision", 1) == record.get("styleRevision", 1)
         assert hashlib.sha256(proof[key]["prompt"].encode()).hexdigest() == proof[key]["promptSHA256"]
+        if proof[key].get("generationSteps"):
+            assert proof[key]["generationSteps"][-1]["outputSHA256"] == record["originalSHA256"]
+            assert proof[key]["generationSteps"][-1]["prompt"] == proof[key]["prompt"]
         assert record["originalSHA256"] not in hashes, f"Artwork reused across distinct ride IDs: {key}"
         hashes.add(record["originalSHA256"])
         assert record["references"], f"Missing real-photo reference: {key}"

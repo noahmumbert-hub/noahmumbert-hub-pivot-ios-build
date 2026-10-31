@@ -73,6 +73,7 @@ final class RideIllustrationImageCache: @unchecked Sendable {
 struct RideIllustrationImage: View {
     let artwork: RideIllustration
     var detail = false
+    var contentMode: ContentMode = .fill
     @State private var loadedURL: URL?
     @State private var image: UIImage?
     private var url: URL? { artwork.fileURL(detail: detail) }
@@ -80,7 +81,7 @@ struct RideIllustrationImage: View {
     var body: some View {
         Group {
             if loadedURL == url, let image {
-                Image(uiImage: image).resizable().scaledToFill()
+                Image(uiImage: image).resizable().aspectRatio(contentMode: contentMode)
             } else {
                 Rectangle().fill(Color.pivotSurfaceRaised)
                     .overlay { Image(systemName: "photo").foregroundStyle(Color.pivotMuted) }

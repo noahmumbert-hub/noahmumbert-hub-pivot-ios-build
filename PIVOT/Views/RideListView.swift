@@ -299,9 +299,10 @@ struct RideDetailScreenView: View {
                     RetainedSnapshotNotice()
                     if let illustration {
                         VStack(alignment: .leading, spacing: 8) {
-                            RideIllustrationImage(artwork: illustration, detail: true)
-                                .frame(width: max(0, geometry.size.width - 40), height: min(440, max(0, geometry.size.width - 40) * 1.25))
+                            RideIllustrationImage(artwork: illustration, detail: true, contentMode: .fit)
+                                .frame(width: min(352, max(0, geometry.size.width - 40)), height: min(440, max(0, geometry.size.width - 40) * 1.25))
                                 .clipped().clipShape(RoundedRectangle(cornerRadius: 20))
+                                .frame(maxWidth: .infinity)
                                 .accessibilityIdentifier("ride-illustration-\(illustration.id)")
                             RideIllustrationCredit(artwork: illustration)
                         }
