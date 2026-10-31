@@ -1346,6 +1346,90 @@
     },
     {
       "parkId": 50,
+      "rideId": 6395670964916,
+      "rideName": "Super Himalaya",
+      "alt": "Illustrated Super Himalaya at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:14:35.988449+00:00",
+      "originalSHA256": "6c4289b42f6cee7cb5373da1e8e6dfca76289d860473101eb40fe6a497d03d61",
+      "review": "Accepted: compared generated image with actual hero pixels; linked white/red chariots, red benches, blue deck and crown, pink wavy canopy edge, blue stars/yellow rails and bulbs preserve the specific Super Himalaya hardware. Photographic fiberglass/metal and restrained evening treatment, distinguishable from Matterhorn.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa59a27ecf9d0fe979624ffba636b91472192e25b-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/super-himalaya",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A round, spinning amusement park ride with red and white chariots.",
+          "sha256": "fb8ae6cfdd66fd886ce9f7ea388195eb0098df5cd0a851d3acedadf5cd253343",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Super Himalaya hero: linked white/red chariots with red bench backs, blue deck and blue inner shell, crowned blue/white center, blue canopy with pink wavy trim, blue stars/yellow rails and rows of bulbs. Distinct from blue Matterhorn, preserve this real canopy, car chain and crown geometry."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-6395670964916-thumbnail.jpg",
+      "thumbnailSHA256": "0fc87380b76edf9445dbf5a6701cfc9e9722ddd407ab4e66021691a5bbde7a0c",
+      "thumbnailBytes": 31966,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-6395670964916-detail.jpg",
+      "detailSHA256": "f623f695afcec357bf29fa96b6d9030aec72989145be201d8240bf62f403fb4c",
+      "detailBytes": 240649,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 7951370809341,
+      "rideName": "Dodgem",
+      "alt": "Illustrated Dodgem at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:14:13.508185+00:00",
+      "originalSHA256": "864f28a8bc79cc022f458e070aa9609c603622eeb3918480a3d33ce33cb5c523",
+      "review": "Accepted: inspected realistic generated Cedar Point Dodgem portrait; blue/orange/green glitter cars, thick rubber bumpers, padded crossbars, steering wheels, pickup poles and dark glossy floor follow verified Cedar Point photo. Clear foreground car and realistic material detail.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F47b7b2dc04b05bb3cf5fd44ba2028f65e4cbdc44-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/dodgem",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders in colorful dodgem bumper car vehicles at Cedar Point.",
+          "sha256": "8dbab6c65b0125575fd776aeea3fcb9fd43970372683b77d5331092873f24b80",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Cedar Point Dodgem hero: glitter-finish blue/orange/green bumper cars, thick black circular bumpers, black steering wheels, gray padded crossbars and upright electrical pickup poles over a glossy dark floor. The official image explicitly identifies Cedar Point; do not reuse it to claim Kings Island hardware."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-7951370809341-thumbnail.jpg",
+      "thumbnailSHA256": "413b43efaa5f9dcbb190da2cf76cc62c10f909a8881f3098bbcfb5f13e1de546",
+      "thumbnailBytes": 27361,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-7951370809341-detail.jpg",
+      "detailSHA256": "7583aae9d86d5872fbbd447865cb087484332490bafae8f906429b890d45bcd4",
+      "detailBytes": 186902,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 50,
       "rideId": 12421435756943,
       "rideName": "Maverick",
       "alt": "Illustrated Maverick at Cedar Point",
@@ -2814,6 +2898,48 @@
     },
     {
       "parkId": 60,
+      "rideId": 3820054936351,
+      "rideName": "Snoopy's Soap Box Racers",
+      "alt": "Illustrated Snoopy's Soap Box Racers at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:10:55.829758+00:00",
+      "originalSHA256": "d3d372a7941bd015fb570b727df0973ab19728250487dac24646630ed6948768",
+      "review": "Accepted: inspected realistic generated close ride view against genuine photo; retains tan two-across partitions, black shared lap bars, red plank nose/blue-red edges, banked brown track and trees. Natural material detail, portrait framing and blue-purple evening treatment; no invented full layout.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff9032a3781f6418d9331eae59b230a14feecf40e-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/snoopys-soap-box-racers",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on a family roller coaster at an amusement park.",
+          "sha256": "3a4a89245481d9ad65bb85c9506a8d460d055f33a813444d3d500df35b6586d6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Snoopy Soap Box Racers official hero: close banked two-across tan seats with black lap bars, red plank-painted doghouse-style car front, blue side trim and tan/brown overhead/foreground track structure, deciduous trees. Keep this photographed car detail; no full unseen layout or unverified character statue."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-3820054936351-thumbnail.jpg",
+      "thumbnailSHA256": "5bf137feed2a20315ff4369a78f4babbb47f584d1708cc9ed692532cfb92fc92",
+      "thumbnailBytes": 26676,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-3820054936351-detail.jpg",
+      "detailSHA256": "110e83ceb03c547f8b2d9d4bc8675d5d390c42a6fcaf13c22107f583c07b7a93",
+      "detailBytes": 157642,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 9600564880643,
       "rideName": "K.I. & Miami Valley Railroad",
       "alt": "Illustrated K.I. & Miami Valley Railroad at Kings Island",
@@ -2898,6 +3024,48 @@
     },
     {
       "parkId": 60,
+      "rideId": 57576942788064,
+      "rideName": "The Racer (Red)",
+      "alt": "Illustrated The Racer (Red) at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:11:17.082024+00:00",
+      "originalSHA256": "0401a33979e4cd68540de8a3843417c1ce20eaafb1e260915cf81cc9e4671db6",
+      "review": "Accepted: inspected realistic generated Racer Red view against genuine shared-ride photograph; white wood lattice, blue handrail tops and red running beds retained, twin lift/drop and overlapping hills readable. No unsupported lane-colored train. Distinct composition from Blue entry; not a lane-specific station photograph.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F83843afc9648883349511385bbd5cc3aa6ffde84-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/the-racer-red",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on a racing wooden roller coaster at an amusement park.",
+          "sha256": "0711076d953b133673dff14306cf1e12aca67458a12d9e99976493f728ed50e2",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual The Racer Red official hero: twin wooden out-and-back lift/drop and foreground hills, bright white timber lattice, blue handrail tops, red-painted running-track structure with dark running strips. No train is visible: use verified twin-track architecture, do not invent red train details or recolor a lane solely from its name."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-57576942788064-thumbnail.jpg",
+      "thumbnailSHA256": "e5e9232735ee75ecc910ee40ecffa517a9514286f42ce37d010f3dc15aa39e0f",
+      "thumbnailBytes": 28720,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-57576942788064-detail.jpg",
+      "detailSHA256": "f916c413bd4cbaa17a3627c9a8d6cc1ed314487869d756730a9d7e2a549e2ced",
+      "detailBytes": 216242,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 77189767080838,
       "rideName": "Mystic Timbers",
       "alt": "Illustrated Mystic Timbers at Kings Island",
@@ -2940,6 +3108,48 @@
     },
     {
       "parkId": 60,
+      "rideId": 121851005781476,
+      "rideName": "Woodstock Express",
+      "alt": "Illustrated Woodstock Express at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:12:32.518954+00:00",
+      "originalSHA256": "dc23b01d0f7314deccbf09184fcf42af356fe6562de878c110690ebb7840916a",
+      "review": "Accepted: inspected realistic generated Kings Island Woodstock Express view; yellow two-across cars, black shared restraints, metal side hardware and pale-blue wooden running structure match genuine reference. Natural painted wood and photographic lighting, distinct from Cedar Point steel coaster.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F8e37bae2cbdc6ab161e435c13585a250076c5fc2-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/woodstock-express",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on a kids roller coaster at an amusement park.",
+          "sha256": "ed70f78bc70ecbd65cd8ba4c71ede4f08554caeb83e3a12626763c2700a75178",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kings Island Woodstock Express hero: yellow rectangular two-across train cars with black seats/shared lap bars and silver side hardware descending pale-blue painted wooden running structure/handrails. Distinct from Cedar Point Woodstock Express; preserve this park-specific wooden train photo."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-121851005781476-thumbnail.jpg",
+      "thumbnailSHA256": "526f191628187aba85336cd36af4e3d185e7218cb3a367be3b1cfa0cc79773a5",
+      "thumbnailBytes": 25683,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-121851005781476-detail.jpg",
+      "detailSHA256": "aa9592b192a1777d1df12d57a6d9bedb2c9ba358ea005ef76b23685e4d4da8d9",
+      "detailBytes": 164970,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 124375875871315,
       "rideName": "Diamondback",
       "alt": "Illustrated Diamondback at Kings Island",
@@ -2975,6 +3185,48 @@
       "detailFile": "60-124375875871315-detail.jpg",
       "detailSHA256": "a04c5e6045fe3ac3cdf84cce102e66e51487e79195e83569b933953dd3a5e187",
       "detailBytes": 156635,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 148671185954835,
+      "rideName": "The Racer (Blue)",
+      "alt": "Illustrated The Racer (Blue) at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:12:10.878687+00:00",
+      "originalSHA256": "d826498608481d71fe5f0cd000a5e14a64e1dbc6be0233e383d72e2d3acecbb3",
+      "review": "Accepted: inspected realistic generated Racer Blue view against genuine shared-ride photograph; foreground paired hills, white wood lattice, blue handrails and red beds retain actual hardware, without inventing a blue train. Distinct generated composition and bytes from Red entry; the reference verifies shared ride rather than lane-specific station.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F83843afc9648883349511385bbd5cc3aa6ffde84-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/the-racer-blue",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on a racing wooden roller coaster at an amusement park.",
+          "sha256": "0711076d953b133673dff14306cf1e12aca67458a12d9e99976493f728ed50e2",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual The Racer Blue official hero is byte-identical to the Red page hero and shows the real twin-track architecture: white wood lattice, blue handrails and red-painted running-track beds with dark running strips. No blue train is visible. Generate a distinct verified architecture composition or obtain another real photo before attempting close blue-car details; never reuse the generated Red image."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-148671185954835-thumbnail.jpg",
+      "thumbnailSHA256": "9fbb93ec7aa777ed9c94bf6fa3ce9aff3cf468364a9a2d41614f66be7842b5b7",
+      "thumbnailBytes": 30324,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-148671185954835-detail.jpg",
+      "detailSHA256": "dcf549024fdd322603d44776ccaca02ea44cacd279cfb36e0d81a371e1724ade",
+      "detailBytes": 218872,
       "detailPixels": [
         768,
         960
@@ -3192,6 +3444,48 @@
     },
     {
       "parkId": 60,
+      "rideId": 242969173414907,
+      "rideName": "Queen City Stunt Coaster",
+      "alt": "Illustrated Queen City Stunt Coaster at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:13:45.707853+00:00",
+      "originalSHA256": "9523f3a3ca66f846b44dcba4e93108dbcd7b8ad8b90bbef72dca0e61d212693a",
+      "review": "Accepted: genuine photo and generated pixels inspected; three connected red convertible-style cars, tall black seats, silver decorative wheels and separate bogies over gray steel rails/truss remain recognizable. Natural dusk material detail and portrait composition, no legacy brand or invented full course.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb2071bab396ad6f31eaeeced91bb75c71f8f61f0-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/queen-city-stunt-coaster",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Riders on a family roller coaster at an amusement park.",
+          "sha256": "2c9ff1d9090515b4ea7986b5ed8475da8074b5211195c46cb1d6947762cfabf6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Queen City Stunt Coaster current official page uses this red convertible-style three-car train on gray truss/tubular steel track with gray columns, silver decorative car wheels and separate real running bogies. Current page H1/body identify Queen City Stunt Coaster while HTML title retains Backlot Stunt Coaster. Use current catalog name and exact photographed hardware, not guessed legacy Mini branding."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-242969173414907-thumbnail.jpg",
+      "thumbnailSHA256": "46a96df3528a06067766345369596ee64292b47bad7d6b9d9c8e342f6674b3dc",
+      "thumbnailBytes": 21034,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-242969173414907-detail.jpg",
+      "detailSHA256": "c2ee4db7ec34ebfc44306f44df7d433265c1f349f07233eceae29b2b8ea86cf7",
+      "detailBytes": 131322,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 263102270473903,
       "rideName": "Banshee",
       "alt": "Illustrated Banshee at Kings Island",
@@ -3227,6 +3521,48 @@
       "detailFile": "60-263102270473903-detail.jpg",
       "detailSHA256": "2311ce9c4749a78847b00ed6b00544670f238fdc1afc5e764c24fcb942d19ea2",
       "detailBytes": 233191,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 279237452600851,
+      "rideName": "Flight of Fear",
+      "alt": "Illustrated Flight of Fear at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:15:00.812752+00:00",
+      "originalSHA256": "cabdf9359726a3707822d3236bfceed50f450bb662224dab3756192088579c1c",
+      "review": "Accepted: inspected realistic generated Flight of Fear queue/set portrait against actual photo. Silver UFO disc, polygonal pink windows, green/blue lighting, hangar roof/scaffold/ducts and queue rails retained; honestly depicts the verified indoor set without inventing a coaster train.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbb10ff80cd23b0b89022cf45be2048d7f5253bdf-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/flight-of-fear",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A giant UFO inside a warehouse.",
+          "sha256": "7f432f1539e2b25e2a6b703aeb4c65b63e1bc511f18d4468a9b41a80e900e1b9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Flight of Fear official hero shows the attraction's large silver UFO set inside a warehouse: polygonal pink-lit cockpit windows, broad disk rim, green/blue theatrical light, scaffolding, overhead roof trusses, ducts and queue railing. This verifies the themed set/queue environment, not the unseen coaster train or track. Depict that real set honestly or obtain another reference for ride vehicle details."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-279237452600851-thumbnail.jpg",
+      "thumbnailSHA256": "caab9e748a9609055ead17b6bcfee23472d70a3d7219593061cca6b0ab5b9621",
+      "thumbnailBytes": 23400,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-279237452600851-detail.jpg",
+      "detailSHA256": "13ca34b566e9cc3e1074f2ef71b5da1c2310bff77b6c04d4c23c048df2da566b",
+      "detailBytes": 170312,
       "detailPixels": [
         768,
         960
