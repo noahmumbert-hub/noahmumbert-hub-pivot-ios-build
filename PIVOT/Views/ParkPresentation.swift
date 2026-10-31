@@ -290,6 +290,15 @@ enum ReferenceParkUITestFixture {
                 "sampleSize": 25, "effectiveSampleSize": 20, "distinctRideCount": 1, "distinctParkCount": 1,
                 "historicalCoverage": 0.8, "medianAdjustmentMinutes": 0, "intervalPaddingMinutes": 0, "trainedThrough": trained]
         }
+        if ProcessInfo.processInfo.arguments.contains("--reopening-v3") {
+            var calibration = result["calibration"] as! [String: Any]
+            calibration["version"] = "PIVOT-ONLINE-CALIBRATION-v3"
+            result["calibration"] = calibration
+        }
+        if ProcessInfo.processInfo.arguments.contains("--reopening-range-only") {
+            result["reliability"] = ["status": "HISTORICAL_RANGE", "showRange": true,
+                "showBestGuess": false, "reason": "Range only"]
+        }
         if ProcessInfo.processInfo.arguments.contains("--reopening-window-ended") {
             result["windowStart"] = now - 2100
             result["historicalMedianAt"] = now - 1500

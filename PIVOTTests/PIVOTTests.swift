@@ -2429,7 +2429,7 @@ final class PIVOTTests: XCTestCase {
         let supported = try reopeningFixture()
         XCTAssertNotNil(reopeningGuidance(supported).range)
         XCTAssertNil(reopeningGuidance(supported).bestGuess)
-        XCTAssertEqual(reopeningGuidance(supported).bestPredictionLabel, "Best prediction unavailable")
+        XCTAssertEqual(reopeningGuidance(supported).bestPredictionLabel, "Best prediction · 2:20 PM (estimate)")
         let calibration = reopeningCalibration
         let calibrated = reopeningGuidance(try reopeningFixture(estimate: ["calibration": calibration]))
         XCTAssertNotNil(calibrated.bestGuess)
@@ -2473,6 +2473,21 @@ final class PIVOTTests: XCTestCase {
         XCTAssertEqual(result.bestPredictionLabel, "Earlier best prediction · 2:05 PM (estimate)")
     }
 
+    func testBestReopeningPredictionUsesReleasedV3ForecastWithoutPromotingActivityGuidance() throws {
+        var calibration = reopeningCalibration
+        calibration["version"] = "PIVOT-ONLINE-CALIBRATION-v3"
+        let snapshot = try reopeningFixture(estimate: ["calibration": calibration,
+            "historicalMedianAt": "2026-10-13T18:17:00Z"])
+        let guidance = reopeningGuidance(snapshot)
+        XCTAssertEqual(guidance.estimatedBestPrediction, "2:17 PM")
+        XCTAssertEqual(guidance.bestPredictionLabel, "Best prediction · 2:17 PM (estimate)")
+        XCTAssertNil(guidance.bestGuess)
+        let target = try XCTUnwrap(PIVOTLiveActivityTargetBuilder.makeTarget(selectedPark: .magicKingdom,
+            snapshot: snapshot, featuredRide: snapshot.rides[0]))
+        XCTAssertNil(target.state.bestGuess)
+        XCTAssertNotNil(target.state.windowStart)
+    }
+
     func testBestReopeningPredictionWithholdsUnavailableAndUnverifiedTimes() throws {
         let supported = try reopeningFixture(estimate: ["calibration": reopeningCalibration])
         var unavailable = [
@@ -2500,6 +2515,7 @@ final class PIVOTTests: XCTestCase {
         }
         for result in unavailable {
             XCTAssertNil(result.bestGuess)
+            XCTAssertNil(result.estimatedBestPrediction)
             XCTAssertEqual(result.bestPredictionLabel, "Best prediction unavailable")
             XCTAssertFalse(result.bestPredictionHasPassed)
         }

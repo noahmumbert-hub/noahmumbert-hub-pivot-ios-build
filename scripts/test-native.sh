@@ -64,6 +64,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTTests/PIVOTTests/testReopeningRangeNeedsHistoryAndPointNeedsScoredSameRideSupport
       -only-testing:PIVOTTests/PIVOTTests/testBestReopeningPredictionUsesForecastMedianAndParkLocalTime
       -only-testing:PIVOTTests/PIVOTTests/testBestReopeningPredictionMarksPassedPointWithinCurrentWindow
+      -only-testing:PIVOTTests/PIVOTTests/testBestReopeningPredictionUsesReleasedV3ForecastWithoutPromotingActivityGuidance
       -only-testing:PIVOTTests/PIVOTTests/testBestReopeningPredictionWithholdsUnavailableAndUnverifiedTimes
       -only-testing:PIVOTTests/PIVOTTests/testExpiredReopeningWindowCannotRemainUpcomingBetweenRefreshes
       -only-testing:PIVOTTests/PIVOTTests/testFailedExpiredAndFutureDataWithholdReopeningGuidance

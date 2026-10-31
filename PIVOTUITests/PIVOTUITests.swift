@@ -114,10 +114,12 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testReopeningWindowShowsSupportedBestPredictionAndUnavailableStates() {
-        for mode in ["supported", "uncalibrated", "stale", "missing", "ended", "failed", "passed"] {
+        for mode in ["supported", "v3", "uncalibrated", "range-only", "stale", "missing", "ended", "failed", "passed"] {
             let extra: [String]
             switch mode {
             case "uncalibrated": extra = ["--reopening-unsupported"]
+            case "v3": extra = ["--reopening-v3"]
+            case "range-only": extra = ["--reopening-range-only"]
             case "stale": extra = ["--ride-search-expired"]
             case "missing": extra = ["--reopening-missing"]
             case "ended": extra = ["--reopening-window-ended"]
@@ -130,7 +132,7 @@ final class PIVOTUITests: XCTestCase {
             reveal(filters, in: app); filters.buttons["Down"].tap()
             let prediction = app.staticTexts["reopening-best-prediction-159"].firstMatch
             let window = app.staticTexts["reopening-window-159"].firstMatch
-            let hasPrediction = mode == "supported" || mode == "passed"
+            let hasPrediction = ["supported", "v3", "uncalibrated", "passed"].contains(mode)
             func checkPrediction() {
                 reveal(prediction, in: app)
                 XCTAssertTrue(prediction.isHittable)
@@ -140,7 +142,7 @@ final class PIVOTUITests: XCTestCase {
                 } else {
                     XCTAssertEqual(prediction.label, "Best prediction unavailable")
                 }
-                XCTAssertEqual(window.exists, hasPrediction || mode == "uncalibrated")
+                XCTAssertEqual(window.exists, hasPrediction || mode == "range-only")
             }
             checkPrediction()
             screenshot("Reopening best prediction \(mode) row", app: app)
