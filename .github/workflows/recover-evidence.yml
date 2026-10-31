@@ -1,0 +1,55 @@
+name: Recover oversized diagnostic evidence
+
+on:
+  push:
+    branches: [diagnostics/apple-native-redesign]
+    paths: ['.github/workflows/recover-evidence.yml']
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Retrieve and verify original run 51 Pro Max evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          curl --fail --location --silent --show-error \
+            --header "Authorization: Bearer $GH_TOKEN" \
+            --header 'Accept: application/vnd.github+json' \
+            'https://api.github.com/repos/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/artifacts/13027022261/zip' \
+            --output original.zip
+          echo '5de513599965ae8ba0e06a44d1e4ddf20fae7db421be8bef05e253d390f1b58a  original.zip' | sha256sum --check
+          split --bytes=256M --numeric-suffixes=1 original.zip run51-promax.zip.part-
+
+      - name: Preserve first evidence part
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: run51-promax-evidence-part-01
+          path: run51-promax.zip.part-01
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+      - name: Preserve second evidence part
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: run51-promax-evidence-part-02
+          path: run51-promax.zip.part-02
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+      - name: Preserve remaining evidence part
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: run51-promax-evidence-part-03
+          path: run51-promax.zip.part-03
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
