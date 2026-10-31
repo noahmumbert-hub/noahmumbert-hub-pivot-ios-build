@@ -77,6 +77,23 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testHistoryLowestWaitPredictionWithholdsMissingAndStaleEvidence
       -only-testing:PIVOTUITests/PIVOTUITests/testLowestWaitEvidenceAndHourlySheetStayConsistentAtAccessibilityTextSize
     ) ;;
+  reopening)
+    test_options+=(
+      -only-testing:PIVOTTests/PIVOTTests/testSparseReopeningHistoryCannotShowAnExactGuess
+      -only-testing:PIVOTTests/PIVOTTests/testReopeningRangeNeedsHistoryAndPointNeedsScoredSameRideSupport
+      -only-testing:PIVOTTests/PIVOTTests/testBestReopeningPredictionUsesForecastMedianAndParkLocalTime
+      -only-testing:PIVOTTests/PIVOTTests/testBestReopeningPredictionMarksPassedPointWithinCurrentWindow
+      -only-testing:PIVOTTests/PIVOTTests/testBestReopeningPredictionUsesReleasedV3ForecastWithoutPromotingActivityGuidance
+      -only-testing:PIVOTTests/PIVOTTests/testBestReopeningPredictionWithholdsUnavailableAndUnverifiedTimes
+      -only-testing:PIVOTTests/PIVOTTests/testExpiredReopeningWindowCannotRemainUpcomingBetweenRefreshes
+      -only-testing:PIVOTTests/PIVOTTests/testFailedExpiredAndFutureDataWithholdReopeningGuidance
+      -only-testing:PIVOTTests/PIVOTTests/testOctober17FigmentRevisionWaitsForSameEpisodeObservation
+      -only-testing:PIVOTTests/PIVOTTests/testActiveAndUnobservedLightningCannotPromiseAReopening
+      -only-testing:PIVOTTests/PIVOTTests/testMappedClearanceNeedsCurrentSupportedRestartEvidence
+      -only-testing:PIVOTTests/PIVOTTests/testLiveActivityRetainsRangeWithoutUnsupportedPointAndMarksItsContract
+      -only-testing:PIVOTUITests/PIVOTUITests/testReopeningWindowShowsSupportedBestPredictionAndUnavailableStates
+      -only-testing:PIVOTUITests/PIVOTUITests/testReopeningPredictionRemainsReadableAtAccessibilitySizeAndInRadar
+    ) ;;
   reference-ui)
     test_options+=(
       -only-testing:PIVOTTests/NativeParkExtrasTests/testHistoryWithholdsConflictingAndImpossibleSampleValues
@@ -123,7 +140,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
     ) ;;
   *)
-    echo 'Unsupported PIVOT_TEST_SCOPE; use all, map-attribution, wait-history, lowest-waits, reference-ui, native-design, large-text, or map-gestures.' >&2
+    echo 'Unsupported PIVOT_TEST_SCOPE; use all, map-attribution, wait-history, lowest-waits, reopening, reference-ui, native-design, large-text, or map-gestures.' >&2
     exit 1 ;;
 esac
 python3 - <<'PY'

@@ -174,6 +174,15 @@ struct ReopeningGuidance: Equatable, Sendable {
     let range: String?
     let bestGuess: String?
     let detail: String
+    // On-screen model estimate; bestGuess keeps the stricter ActivityKit contract.
+    var estimatedBestPrediction: String? = nil
+    var bestPredictionHasPassed = false
+
+    var bestPredictionLabel: String {
+        guard let prediction = estimatedBestPrediction ?? bestGuess else { return "Best prediction unavailable" }
+        let title = bestPredictionHasPassed ? "Earlier best prediction" : "Best prediction"
+        return "\(title) · \(prediction) (estimate)"
+    }
 
     var bestPredictionLabel: String {
         bestGuess.map { "Best prediction · \($0)" } ?? "Best prediction unavailable"
@@ -226,8 +235,11 @@ struct ReopeningGuidance: Equatable, Sendable {
                   abs(estimateClearance.timeIntervalSince(clearance)) < 60 else {
                 return uncertain("Mapped lightning has cleared. Waiting for the park to confirm reopening; comparable restart history is limited.", title: "Waiting for ride confirmation")
             }
+            let showPrediction = estimate.reliability?.showBestGuess == true
             return Self(headline: "Historical restart range", range: range, bestGuess: nil,
-                        detail: "Based on observed restarts after mapped lightning clearance. The park decides when the ride reopens.")
+                        detail: "Based on observed restarts after mapped lightning clearance. The park decides when the ride reopens.",
+                        estimatedBestPrediction: showPrediction ? ParkTimeFormatter.time(estimate.historicalMedianAt, timeZone: timeZone) : nil,
+                        bestPredictionHasPassed: showPrediction && now > estimate.historicalMedianAt)
         }
         guard estimate.startQuality == "observed", estimate.closureSignal == "confirmed" else {
             return uncertain("The closure start or a second closed observation is not confirmed yet.")
@@ -257,9 +269,12 @@ struct ReopeningGuidance: Equatable, Sendable {
             calibration?.basis == "same-ride residuals" && (calibration?.sampleSize ?? 0) >= 20 &&
             (calibration?.effectiveSampleSize ?? 0) >= 12 && (calibration?.historicalCoverage ?? 0) >= 0.7 &&
             recent(calibration?.trainedThrough) && estimate.reliability?.showBestGuess != false
+        let showPrediction = estimate.reliability?.showBestGuess != false
         return Self(headline: "Historical reopening range", range: range,
                     bestGuess: showBest ? ParkTimeFormatter.time(estimate.historicalMedianAt, timeZone: timeZone) : nil,
-                    detail: "Based on comparable observed closures. The park has not announced a reopening time.")
+                    detail: "Based on comparable observed closures. The park has not announced a reopening time.",
+                    estimatedBestPrediction: showPrediction ? ParkTimeFormatter.time(estimate.historicalMedianAt, timeZone: timeZone) : nil,
+                    bestPredictionHasPassed: showPrediction && now > estimate.historicalMedianAt)
     }
 }
 struct DownTimePresentation: Equatable, Sendable {

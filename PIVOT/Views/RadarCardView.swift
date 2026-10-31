@@ -96,9 +96,11 @@ struct RadarCardView: View {
                     Text(guidance.headline).font(.headline)
                     if let range = guidance.range {
                         Text(range).font(.title2.weight(.bold)).monospacedDigit()
+                            .accessibilityIdentifier("reopening-window-\(ride.id)")
                     }
                     Text(guidance.bestPredictionLabel).font(.subheadline)
                         .fixedSize(horizontal: false, vertical: true)
+                        .accessibilityIdentifier("reopening-best-prediction-\(ride.id)")
                     Text(guidance.detail).font(.subheadline).foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                 }

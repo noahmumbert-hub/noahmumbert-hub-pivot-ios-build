@@ -365,7 +365,8 @@ final class DashboardStore: ObservableObject {
             } else if ProcessInfo.processInfo.arguments.contains("--ride-history-ui-test") {
                 waitLearning = WaitLearningHistory()
             }
-            errorMessage = nil
+            errorMessage = ProcessInfo.processInfo.arguments.contains("--reopening-refresh-failed")
+                ? "Fixture refresh failed" : nil
             alertsEnabled = false
             return
         }

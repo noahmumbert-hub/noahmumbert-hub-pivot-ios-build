@@ -369,8 +369,13 @@ struct RideDetailScreenView: View {
                                 let guidance = ReopeningGuidance.presentation(ride: ride, snapshot: store.snapshot,
                                     feedHealth: store.feedHealth(at: date), at: date, timeZone: timeZone)
                                 Text(guidance.headline).font(.headline)
-                                if let range = guidance.range { Text(range).font(.headline) }
+                                if let range = guidance.range {
+                                    Text(range).font(.headline)
+                                        .accessibilityIdentifier("reopening-window-\(ride.id)")
+                                }
                                 Text(guidance.bestPredictionLabel)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .accessibilityIdentifier("reopening-best-prediction-\(ride.id)")
                                 Text(guidance.detail).foregroundStyle(Color.pivotMuted)
                             }
                             if ride.status == .scheduled {
@@ -458,9 +463,13 @@ private struct RideRowView: View {
                             .foregroundStyle(statusColor)
                         VStack(alignment: .leading, spacing: 4) {
                             Text(guidance.headline).font(.caption.weight(.semibold)).foregroundStyle(.primary)
-                            if let range = guidance.range { Text(range).font(.caption.weight(.semibold)).foregroundStyle(.primary) }
+                            if let range = guidance.range {
+                                Text(range).font(.caption.weight(.semibold)).foregroundStyle(.primary)
+                                    .accessibilityIdentifier("reopening-window-\(ride.id)")
+                            }
                             Text(guidance.bestPredictionLabel).font(.caption.weight(.medium))
                                 .fixedSize(horizontal: false, vertical: true)
+                                .accessibilityIdentifier("reopening-best-prediction-\(ride.id)")
                             Text(guidance.detail).font(.caption).foregroundStyle(Color.pivotMuted)
                         }
                     }
