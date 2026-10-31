@@ -20,7 +20,7 @@ final class PIVOTUITests: XCTestCase {
         let app = XCUIApplication()
         app.launchArguments = ["--apple-ui-test", "--apple-ui-fixtures", "--ui-light"] + extra
         app.launch()
-        XCTAssertTrue(app.staticTexts["Wait times"].waitForExistence(timeout: 10))
+        XCTAssertTrue(app.descendants(matching: .any)["PIVOT header"].waitForExistence(timeout: 10))
         return app
     }
 
@@ -46,6 +46,52 @@ final class PIVOTUITests: XCTestCase {
     private func mapEvents(_ app: XCUIApplication) -> String {
         let trace = app.staticTexts["Map event trace"]
         return trace.exists ? trace.label : "No map events available"
+    }
+
+    func testReferenceEPCOTCardsSearchFiltersAndPhotoCredits() {
+        let app = rootFixture(["--reference-ui-park=5", "--ui-dark"])
+        let header = app.descendants(matching: .any)["PIVOT header"]
+        let park = app.buttons["Change park. Current park: EPCOT"]
+        XCTAssertTrue(park.waitForExistence(timeout: 5))
+        XCTAssertLessThan(header.frame.maxY, park.frame.minY)
+        XCTAssertLessThan(header.frame.minX, app.frame.width / 2)
+        XCTAssertTrue(app.buttons["Refresh ride data now"].isHittable)
+        screenshot("Reference EPCOT dark overview", app: app)
+        app.buttons["Photo credit"].tap()
+        XCTAssertTrue(app.navigationBars["Photo credit"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.links["Original photo"].exists)
+        app.buttons["Done"].tap()
+        let search = app.textFields["Ride search"]
+        reveal(search, in: app); search.tap(); search.typeText("Guardians")
+        XCTAssertTrue(app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Guardians of the Galaxy'")).firstMatch.exists)
+        XCTAssertFalse(app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Remy'")).firstMatch.exists)
+        app.buttons["Clear ride search"].tap()
+        app.swipeUp() // Dismiss the search keyboard through the normal list gesture.
+        let filters = app.segmentedControls["ride-status-filter"]
+        reveal(filters, in: app); filters.buttons["Down"].tap()
+        let down = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Spaceship Earth'")).firstMatch
+        reveal(down, in: app)
+        XCTAssertTrue(down.exists)
+        XCTAssertFalse(app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Guardians of the Galaxy'")).firstMatch.exists)
+        screenshot("Reference EPCOT down filter", app: app)
+    }
+
+    func testReferenceCardsKeepEachParksIdentityAndNativeTabs() {
+        // Photo, fallback, water park, Canadian park, and long-name coverage.
+        for (id, name) in [(65, "Universal Studios Florida"), (50, "Cedar Point"),
+                           (58, "Canada’s Wonderland"), (41, "Hurricane Harbor Los Angeles")] {
+            let app = rootFixture(["--reference-ui-park=\(id)", "--ui-dark"])
+            let park = app.buttons["Change park. Current park: \(name)"]
+            XCTAssertTrue(park.waitForExistence(timeout: 5))
+            XCTAssertTrue(app.staticTexts["Current rides"].exists)
+            XCTAssertEqual(app.tabBars.firstMatch.buttons.count, 5)
+            screenshot("Reference park \(id) overview", app: app)
+            app.tabBars.buttons["Plan"].tap()
+            XCTAssertTrue(park.waitForExistence(timeout: 5))
+            reveal(app.buttons["native-day-favorites"], in: app)
+            XCTAssertTrue(app.buttons["native-day-favorites"].isHittable)
+            app.terminate()
+        }
     }
 
     func testNativeMapFillsWindowAndSupportsPinchPanZoomWithoutCameraReset() {
@@ -226,7 +272,7 @@ final class PIVOTUITests: XCTestCase {
         screenshot("Native Waits light", app: app)
         app.tabBars.buttons["Shows"].tap()
         let show = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Castle afternoon performance'")).firstMatch
-        XCTAssertTrue(show.waitForExistence(timeout: 5)); show.tap()
+        reveal(show, in: app); XCTAssertTrue(show.waitForExistence(timeout: 5)); show.tap()
         screenshot("Native Shows light", app: app)
         app.tabBars.buttons["Plan"].tap()
         let favorites = app.buttons["native-day-favorites"]
@@ -250,10 +296,12 @@ final class PIVOTUITests: XCTestCase {
         reveal(undo, in: app); undo.tap()
         screenshot("Native Plan light with retained progress controls", app: app)
         app.tabBars.buttons["More"].tap()
+        reveal(app.buttons["Park hours & early entry"], in: app)
         app.buttons["Park hours & early entry"].tap()
         XCTAssertTrue(app.staticTexts["Early entry"].waitForExistence(timeout: 5))
         screenshot("Native park hours and early entry", app: app)
         app.navigationBars.buttons.firstMatch.tap()
+        reveal(app.buttons["Ride alerts & Live Activity"], in: app)
         app.buttons["Ride alerts & Live Activity"].tap()
         XCTAssertTrue(app.switches["Alerts favorites only"].waitForExistence(timeout: 5))
         screenshot("Native alert settings Form", app: app)
@@ -264,6 +312,7 @@ final class PIVOTUITests: XCTestCase {
         screenshot("Native Waits dark accessibility text", app: app)
         app.tabBars.buttons["More"].tap()
         screenshot("Native More dark accessibility text", app: app)
+        reveal(app.buttons["Settings"], in: app)
         app.buttons["Settings"].tap()
         let settingsBody = app.staticTexts["Settings body size"]
         XCTAssertTrue(settingsBody.waitForExistence(timeout: 5))
@@ -416,7 +465,7 @@ final class PIVOTUITests: XCTestCase {
         let app = XCUIApplication()
         app.launchArguments = ["-pivot.selectedPark", "6"]
         app.launch()
-        XCTAssertTrue(app.staticTexts["Wait times"].waitForExistence(timeout: 10))
+        XCTAssertTrue(app.descendants(matching: .any)["PIVOT header"].waitForExistence(timeout: 10))
         XCTAssertFalse(app.descendants(matching: .any)["park-crowd-meter"].exists)
         XCTAssertFalse(app.buttons["plan-predicted-waits"].exists)
         app.tabBars.buttons["Plan"].tap()
@@ -430,7 +479,7 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(app.buttons["browse-park-crowds"].exists)
         screenshot("Crowd meter and predicted waits on Plan", app: app)
         app.tabBars.buttons["Waits"].tap()
-        XCTAssertTrue(app.staticTexts["Wait times"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.descendants(matching: .any)["PIVOT header"].waitForExistence(timeout: 5))
         XCTAssertFalse(app.buttons["plan-predicted-waits"].exists)
         XCTAssertFalse(app.descendants(matching: .any)["park-crowd-meter"].exists)
     }
@@ -629,7 +678,7 @@ final class PIVOTUITests: XCTestCase {
         app.launchArguments = ["-pivot.selectedPark", "-1"]
         app.launch()
 
-        XCTAssertTrue(app.navigationBars["Wait times"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.descendants(matching: .any)["PIVOT header"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.buttons.matching(NSPredicate(format: "label CONTAINS[c] 'Change park'")).firstMatch.exists)
         XCTAssertTrue(app.buttons["Refresh ride data now"].exists)
         // Clear persisted selection through the same control a person uses.
@@ -655,14 +704,14 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(map.exists)
         XCTAssertTrue(data.exists)
         XCTAssertTrue(waits.isSelected)
-        XCTAssertTrue(app.staticTexts["Wait times"].exists)
+        XCTAssertTrue(app.descendants(matching: .any)["PIVOT header"].exists)
         today.tap()
         XCTAssertTrue(app.staticTexts["Your day"].waitForExistence(timeout: 3))
         XCTAssertFalse(app.staticTexts["Today’s entertainment, all in one place."].exists)
 
         waits.tap()
         XCTAssertTrue(waits.isSelected)
-        XCTAssertTrue(app.staticTexts["Wait times"].waitForExistence(timeout: 3))
+        XCTAssertTrue(app.descendants(matching: .any)["PIVOT header"].waitForExistence(timeout: 3))
 
         shows.tap()
         XCTAssertTrue(shows.isSelected)

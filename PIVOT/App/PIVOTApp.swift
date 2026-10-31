@@ -11,6 +11,7 @@ struct PIVOTApp: App {
 #endif
     @StateObject private var store = DashboardStore()
     @AppStorage(PivotAccent.storageKey) private var selectedAccent = PivotAccent.mint.rawValue
+    @AppStorage("pivot:appearance") private var appearance = "dark"
 
     var body: some Scene {
         WindowGroup {
@@ -31,7 +32,11 @@ struct PIVOTApp: App {
         if ProcessInfo.processInfo.arguments.contains("--ui-dark") { return .dark }
         if ProcessInfo.processInfo.arguments.contains("--ui-light") { return .light }
 #endif
-        return nil
+        switch appearance {
+        case "light": return .light
+        case "system": return nil
+        default: return .dark
+        }
     }
 
     @ViewBuilder

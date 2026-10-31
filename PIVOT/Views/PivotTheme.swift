@@ -52,10 +52,18 @@ struct PivotSettingsView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.pivotAccent) private var accent
     @AppStorage(PivotAccent.storageKey) private var selectedAccent = PivotAccent.mint.rawValue
+    @AppStorage("pivot:appearance") private var appearance = "dark"
 
     var body: some View {
         NavigationStack {
             Form {
+                Section("Appearance") {
+                    Picker("Appearance", selection: $appearance) {
+                        Text("Dark").tag("dark")
+                        Text("Light").tag("light")
+                        Text("System").tag("system")
+                    }
+                }
                 Section {
                     ForEach(PivotAccent.allCases) { option in
                         let selected = PivotAccent.resolve(selectedAccent) == option
@@ -73,7 +81,7 @@ struct PivotSettingsView: View {
                         .accessibilityIdentifier("accent-\(option.rawValue)")
                     }
                 } header: { Text("Accent color") } footer: {
-                    Text("Applies to PIVOT and its Live Activities. Status colors retain their meanings. Appearance follows your iPhone’s Light or Dark setting.")
+                    Text("Applies to PIVOT and its Live Activities. Status colors retain their meanings. Choose Dark, Light, or System appearance above.")
                 }
                 Section("About") {
                     Text("PIVOT \(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "Unknown")")
@@ -92,10 +100,18 @@ struct PivotSettingsView: View {
 }
 
 extension Color {
-    static let pivotBackground = Color(uiColor: .systemGroupedBackground)
-    static let pivotSurface = Color(uiColor: .secondarySystemGroupedBackground)
-    static let pivotSurfaceRaised = Color(uiColor: .tertiarySystemGroupedBackground)
-    static let pivotBorder = Color(uiColor: .separator).opacity(0.45)
+    private static func pivotAdaptive(dark: UInt32, light: UInt32) -> Color {
+        Color(uiColor: UIColor { traits in
+            let value = traits.userInterfaceStyle == .dark ? dark : light
+            return UIColor(red: CGFloat((value >> 16) & 255) / 255,
+                           green: CGFloat((value >> 8) & 255) / 255,
+                           blue: CGFloat(value & 255) / 255, alpha: 1)
+        })
+    }
+    static let pivotBackground = pivotAdaptive(dark: 0x05080D, light: 0xF1F3F8)
+    static let pivotSurface = pivotAdaptive(dark: 0x121820, light: 0xFFFFFF)
+    static let pivotSurfaceRaised = pivotAdaptive(dark: 0x212936, light: 0xE8EDF5)
+    static let pivotBorder = Color.primary.opacity(0.12)
     static let pivotMuted = Color.secondary
     static let pivotPurple = PivotAccent.mint.color
     static let pivotPink = Color.red
@@ -107,7 +123,16 @@ struct PivotCardModifier: ViewModifier {
     var padding: CGFloat = 16
     func body(content: Content) -> some View {
         content.padding(padding)
-            .background(Color.pivotSurface, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+            .background {
+                RoundedRectangle(cornerRadius: 24, style: .continuous)
+                    .fill(LinearGradient(colors: [Color.pivotSurfaceRaised.opacity(0.7), Color.pivotSurface],
+                                         startPoint: .topLeading, endPoint: .bottomTrailing))
+            }
+            .overlay {
+                RoundedRectangle(cornerRadius: 24, style: .continuous)
+                    .strokeBorder(Color.pivotBorder, lineWidth: 0.75)
+                    .allowsHitTesting(false)
+            }
     }
 }
 extension View {

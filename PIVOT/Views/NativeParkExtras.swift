@@ -631,7 +631,8 @@ struct NativeWaitHistoryView: View {
                     }
                 }.padding(.top, 12)
             } label: {
-                Text("Recent observed waits · \(samples.count) samples").font(.caption.weight(.medium))
+                Label("Recent observed waits · \(samples.count) \(samples.count == 1 ? "sample" : "samples")", systemImage: "chart.bar.fill")
+                    .font(.caption.weight(.medium)).foregroundStyle(Color.pivotMuted)
             }
             .tint(accent)
         }

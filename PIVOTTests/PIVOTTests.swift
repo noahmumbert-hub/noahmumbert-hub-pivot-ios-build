@@ -4,6 +4,34 @@ import UIKit
 @testable import PIVOT
 
 final class PIVOTTests: XCTestCase {
+    func testReferenceArtworkIsBundledAttributedAndNeverCrossesParks() throws {
+        XCTAssertEqual(ParkArtworkCatalog.records.count, 11)
+        for record in ParkArtworkCatalog.records {
+            XCTAssertNotNil(FloridaPark(rawValue: record.parkId))
+            XCTAssertNotNil(UIImage(named: record.assetName), "Missing bundled image: \(record.assetName)")
+            XCTAssertFalse(record.credit.isEmpty)
+            XCTAssertFalse(record.license.isEmpty)
+            XCTAssertEqual(record.sourceURL.scheme, "https")
+            XCTAssertEqual(record.licenseURL.scheme, "https")
+            XCTAssertNil(ParkArtworkCatalog.ride(parkID: -1, rideID: record.rideId))
+        }
+        let catalog = try ParkMapCatalog.load()
+        for park in FloridaPark.allCases {
+            XCTAssertNotNil(UIImage(systemName: ParkArtworkCatalog.symbol(for: park)))
+            if let hero = ParkArtworkCatalog.hero(for: park) {
+                XCTAssertEqual(hero.parkId, park.id)
+                XCTAssertTrue(catalog.parks[String(park.id)]!.points.contains { $0.rideId == hero.rideId })
+            }
+            let fixture = ReferenceParkUITestFixture.snapshot(for: park)
+            XCTAssertEqual(fixture.parkId, park.id)
+            XCTAssertEqual(fixture.park.name, park.name)
+            XCTAssertFalse(fixture.rides.isEmpty)
+            XCTAssertTrue(fixture.rides.allSatisfy { ride in
+                catalog.parks[String(park.id)]!.points.contains { $0.rideId == ride.id }
+            })
+        }
+    }
+
     func testAdaptiveAccentTextMeetsContrastInBothSystemAppearances() {
         func luminance(_ color: UIColor, traits: UITraitCollection) -> Double {
             var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0

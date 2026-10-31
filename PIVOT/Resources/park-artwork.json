@@ -1,0 +1,125 @@
+{
+  "records": [
+    {
+      "parkId": 5,
+      "rideId": 159,
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Spaceship_Earth_2.jpg/1280px-Spaceship_Earth_2.jpg",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Spaceship_Earth_2.jpg",
+      "credit": "Katie Rommel-Esham (contact via bdesham)",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alt": "Spaceship Earth at EPCOT",
+      "assetName": "ParkPhoto-5-159"
+    },
+    {
+      "parkId": 5,
+      "rideId": 10914,
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Epcot_-_52636023101.jpg/1280px-Epcot_-_52636023101.jpg",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Epcot_-_52636023101.jpg",
+      "credit": "Jeremy Thompson",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "alt": "Remy's Ratatouille Adventure at EPCOT",
+      "assetName": "ParkPhoto-5-10914"
+    },
+    {
+      "parkId": 5,
+      "rideId": 10916,
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Guardians_of_the_Galaxy_Cosmic_Rewind_at_EPCOT.jpg/1280px-Guardians_of_the_Galaxy_Cosmic_Rewind_at_EPCOT.jpg",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Guardians_of_the_Galaxy_Cosmic_Rewind_at_EPCOT.jpg",
+      "credit": "Jedi94",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alt": "Guardians of the Galaxy: Cosmic Rewind at EPCOT",
+      "assetName": "ParkPhoto-5-10916"
+    },
+    {
+      "parkId": 6,
+      "rideId": 129,
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Seven_Dwarfs_Mine_Train_%28Magic_Kingdom%29_1.jpg/1280px-Seven_Dwarfs_Mine_Train_%28Magic_Kingdom%29_1.jpg",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Seven_Dwarfs_Mine_Train_(Magic_Kingdom)_1.jpg",
+      "credit": "Carter Johnson",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "alt": "Seven Dwarfs Mine Train at Magic Kingdom Park",
+      "assetName": "ParkPhoto-6-129"
+    },
+    {
+      "parkId": 6,
+      "rideId": 138,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Space_Mountain_in_the_Magic_Kingdom_in_2021.png",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Space_Mountain_in_the_Magic_Kingdom_in_2021.png",
+      "credit": "Kaleeb18",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alt": "Space Mountain at Magic Kingdom Park",
+      "assetName": "ParkPhoto-6-138"
+    },
+    {
+      "parkId": 7,
+      "rideId": 123,
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Hollywood_Tower_Hotel.jpg/1280px-Hollywood_Tower_Hotel.jpg",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Hollywood_Tower_Hotel.jpg",
+      "credit": "Benjamin D. Esham (bdesham)",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alt": "The Twilight Zone Tower of Terror at Disney\u2019s Hollywood Studios",
+      "assetName": "ParkPhoto-7-123"
+    },
+    {
+      "parkId": 8,
+      "rideId": 110,
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Expedition_Everest.jpg/1280px-Expedition_Everest.jpg",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Expedition_Everest.jpg",
+      "credit": "Benjamin D. Esham (bdesham)",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alt": "Expedition Everest - Legend of the Forbidden Mountain at Disney\u2019s Animal Kingdom",
+      "assetName": "ParkPhoto-8-110"
+    },
+    {
+      "parkId": 64,
+      "rideId": 6004,
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Incredible_Hulk_Roller_Coaster_at_Night.jpg/1280px-Incredible_Hulk_Roller_Coaster_at_Night.jpg",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Incredible_Hulk_Roller_Coaster_at_Night.jpg",
+      "credit": "Railfan99",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "alt": "The Incredible Hulk Coaster at Islands of Adventure",
+      "assetName": "ParkPhoto-64-6004"
+    },
+    {
+      "parkId": 21,
+      "rideId": 250622806424631,
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Mako_%28SeaWorld_Orlando%29_1.jpg/1280px-Mako_%28SeaWorld_Orlando%29_1.jpg",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Mako_(SeaWorld_Orlando)_1.jpg",
+      "credit": "Jeremy Thompson",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+      "alt": "Mako at SeaWorld Orlando",
+      "assetName": "ParkPhoto-21-250622806424631"
+    },
+    {
+      "parkId": 50,
+      "rideId": 85197605068999,
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Iron_Dragon_%28Cedar_Point%29_1.jpg/1280px-Iron_Dragon_%28Cedar_Point%29_1.jpg",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Iron_Dragon_(Cedar_Point)_1.jpg",
+      "credit": "Jeremy Thompson",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+      "alt": "Iron Dragon at Cedar Point",
+      "assetName": "ParkPhoto-50-85197605068999"
+    },
+    {
+      "parkId": 65,
+      "rideId": 12107,
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Villain-Con_Minion_Blast_1.jpg/960px-Villain-Con_Minion_Blast_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20240128171020",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Villain-Con_Minion_Blast_1.jpg",
+      "credit": "Jeremy Thompson",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/deed.en",
+      "alt": "Villain-Con Minion Blast building exterior at Universal Studios Florida",
+      "assetName": "ParkPhoto-65-12107"
+    }
+  ]
+}

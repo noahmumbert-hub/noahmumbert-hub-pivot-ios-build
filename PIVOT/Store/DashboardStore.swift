@@ -355,8 +355,11 @@ final class DashboardStore: ObservableObject {
     func bootstrap() async {
 #if DEBUG
         if ProcessInfo.processInfo.arguments.contains("--apple-ui-fixtures") {
-            selectedPark = .magicKingdom
-            snapshot = NativeParkMapUITestScreen.rootSnapshot()
+            let referenceID = ProcessInfo.processInfo.arguments.first { $0.hasPrefix("--reference-ui-park=") }
+                .flatMap { Int($0.split(separator: "=").last ?? "") }
+            selectedPark = referenceID.flatMap(FloridaPark.init(rawValue:)) ?? .magicKingdom
+            snapshot = referenceID == nil ? NativeParkMapUITestScreen.rootSnapshot()
+                : ReferenceParkUITestFixture.snapshot(for: selectedPark!)
             errorMessage = nil
             alertsEnabled = false
             return

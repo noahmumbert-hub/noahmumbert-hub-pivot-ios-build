@@ -93,49 +93,27 @@ struct RootView: View {
                         radarOnly: false, usesNativeList: true,
                         nativeHeader: AnyView(waitsHeader), nativeFooter: AnyView(attributionFooter))
                 } else {
-                    List {
-                        Section {
+                    ScrollView {
+                        VStack(alignment: .leading, spacing: 18) {
+                            header
+                            parkSwitch
+                            Text("Wait times").font(.title2.bold())
                             Text("Choose your park to see current rides and waits.")
                                 .foregroundStyle(.secondary)
-                            Button("Choose a park") { showParkPicker = true }
-                                .frame(minHeight: 44)
-                                .accessibilityLabel("Change park. Current park: none")
-                        }
-                    }
-                    .listStyle(.insetGrouped)
-                    .refreshable { await store.refreshNow() }
+                        }.padding(.horizontal, 14).padding(.top, 8)
+                    }.background(Color.pivotBackground)
+                        .refreshable { await store.refreshNow() }
                 }
             }
-            .navigationTitle("Wait times")
-            .navigationBarTitleDisplayMode(.large)
-            .toolbar {
-                ToolbarItemGroup(placement: .topBarTrailing) {
-                    Button { showAlertSettings = true } label: { Image(systemName: "bell") }
-                        .accessibilityLabel("Ride alerts")
-                    Button { Task { await store.refreshNow() } } label: { Image(systemName: "arrow.clockwise") }
-                        .accessibilityLabel("Refresh ride data now")
-                        .disabled(store.selectedPark == nil || store.isRefreshing)
-                }
-            }
+            .toolbar(.hidden, for: .navigationBar)
         }
         .environment(\.pivotScreenIsActive, selectedDockSection == .waits)
     }
 
     private var waitsHeader: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Button { showParkPicker = true } label: {
-                Label(store.selectedPark?.name ?? "Choose a park", systemImage: "mappin.and.ellipse")
-                    .font(.subheadline).frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
-            }
-            .accessibilityLabel("Change park. Current park: \(store.selectedPark?.name ?? "none")")
-            .buttonStyle(.plain)
-            if let park = store.selectedPark, let hours = store.parkHours(for: park) {
-                VStack(alignment: .leading, spacing: 3) {
-                    Text(parkHoursLine(hours))
-                    Text(earlyEntryLine(hours))
-                    if hours.stale { Text("Saved schedule · refresh pending").foregroundStyle(.orange) }
-                }.font(.caption).foregroundStyle(.secondary)
-            }
+        VStack(alignment: .leading, spacing: 16) {
+            header
+            parkSwitch
             RetainedSnapshotNotice()
             if store.selectedPark?.id == 65, store.snapshot?.parkId == 65,
                let event = store.snapshot?.halloweenHorrorNights {
@@ -168,10 +146,15 @@ struct RootView: View {
         NavigationStack {
             List {
                 Section {
-                    Button { showParkPicker = true } label: {
-                        Label(store.selectedPark?.name ?? "Choose a park", systemImage: "mappin.and.ellipse")
-                    }.accessibilityLabel("Change park. Current park: \(store.selectedPark?.name ?? "none")")
-                } footer: { Text("Today’s entertainment, all in one place.") }
+                    VStack(alignment: .leading, spacing: 16) {
+                        header
+                        parkSwitch
+                        Text("Shows").font(.largeTitle.bold())
+                        Text("Today’s entertainment, all in one place.").font(.subheadline).foregroundStyle(.secondary)
+                    }
+                    .listRowInsets(EdgeInsets())
+                    .listRowBackground(Color.clear)
+                }
                 if showsHasRetainedWarning, store.feedHealth().retainedGuidance != nil {
                     Section { RetainedSnapshotNotice() }
                 }
@@ -191,7 +174,9 @@ struct RootView: View {
                     Button("Choose a park for showtimes") { showParkPicker = true }
                 }
             }
-            .navigationTitle("Shows")
+            .scrollContentBackground(.hidden)
+            .background(Color.pivotBackground)
+            .toolbar(.hidden, for: .navigationBar)
             .refreshable { await store.refreshNow() }
             .onChange(of: store.selectedPark?.id) { _, _ in expandedShowIDs.removeAll() }
             .onChange(of: store.snapshot?.showList.map(\.id)) { _, ids in expandedShowIDs.formIntersection(ids ?? []) }
@@ -211,6 +196,12 @@ struct RootView: View {
     private var moreTab: some View {
         NavigationStack {
             Form {
+                Section {
+                    VStack(alignment: .leading, spacing: 16) {
+                        header
+                        Text("More").font(.largeTitle.bold())
+                    }.listRowInsets(EdgeInsets()).listRowBackground(Color.clear)
+                }
                 Section {
                     Button { showSettings = true } label: { Label("Settings", systemImage: "gearshape") }
                     Button { showParkPicker = true } label: { Label("Park & location", systemImage: "mappin.and.ellipse") }
@@ -233,7 +224,11 @@ struct RootView: View {
                 }
                 Section { attributionFooter }
             }
+            .scrollContentBackground(.hidden)
+            .background(Color.pivotBackground)
             .navigationTitle("More")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar(.hidden, for: .navigationBar)
         }
     }
 
@@ -263,134 +258,31 @@ struct RootView: View {
 
     private func dashboardTab(_ section: DashboardSection) -> some View {
         NavigationStack {
-            ZStack {
-                Color.pivotBackground.ignoresSafeArea()
-
-                ScrollViewReader { scrollProxy in
-                  ScrollView {
-                    VStack(spacing: 20) {
-                        Button { showParkPicker = true } label: {
-                            Label(store.selectedPark?.name ?? "Choose a park", systemImage: "mappin.and.ellipse")
-                                .font(.subheadline).frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
-                        }
-                        .accessibilityLabel("Change park. Current park: \(store.selectedPark?.name ?? "none")")
-                        if let park = store.selectedPark, let hours = store.parkHours(for: park) {
-                            VStack(alignment: .leading, spacing: 3) {
-                                Text(parkHoursLine(hours))
-                                Text(earlyEntryLine(hours))
-                                if hours.stale { Text("Saved schedule · refresh pending").foregroundStyle(.orange) }
-                            }.font(.caption).foregroundStyle(.secondary)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                        }
-                        RetainedSnapshotNotice()
-
-                        if store.selectedPark?.id == 65, store.snapshot?.parkId == 65,
-                           let event = store.snapshot?.halloweenHorrorNights {
-                            horrorNightSection(event, showHouses: section == .waits)
-                        }
-
-                        switch section {
-                        case .today:
-                            NativeDayPlannerView(
-                                park: store.selectedPark,
-                                snapshot: store.snapshot,
-                                isRefreshing: store.isRefreshing,
-                                feedIsLive: store.feedHealth().isLive,
-                                experience: dayExperience,
-                                onChoosePark: { showParkPicker = true }
-                            )
-
-                        case .waits:
-                            if store.selectedPark != nil {
-                                rideList(radarOnly: false)
-                            } else {
-                                Text("Choose your park to see current rides and waits.")
-                                    .font(.subheadline).foregroundStyle(.secondary)
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                                chooseParkCard(
-                                    title: "Where are you heading?",
-                                    detail: "Search parks or use your location."
-                                )
-                            }
-
-                        case .shows:
-                            Text("Today’s entertainment, all in one place.").font(.subheadline).foregroundStyle(.secondary)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-
-                            if store.selectedPark != nil {
-                                showsCard
-                            } else {
-                                chooseParkCard(
-                                    title: "Choose a park for showtimes",
-                                    detail: "PIVOT will load the selected park’s live entertainment schedule."
-                                )
-                            }
-
-                        case .map:
-                            EmptyView()
-
-                        case .data:
-                            tabIntro(
-                                eyebrow: "",
-                                title: "More",
-                                detail: "Manage your park, alerts, and app."
-                            )
-                            moreActions
-                            DisclosureGroup("Closures & park weather") {
-                                VStack(spacing: 16) {
-                                    radarSelection
-                                    radarCard {
-                                        withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.2)) {
-                                            scrollProxy.scrollTo("down-rides", anchor: .top)
-                                        }
-                                    }
-                                    if store.selectedPark != nil {
-                                        weatherStrip
-                                        if let estimate = store.snapshot?.weather.lightningDeparture {
-                                            NativeLightningDepartureCard(estimate: estimate,
-                                                timeZone: store.selectedPark?.timeZone ?? ParkTimeFormatter.selectedParkTimeZone,
-                                                refreshFailed: store.errorMessage != nil || store.snapshot?.feedHealthy != true)
-                                        }
-                                    }
-
-                                    if store.selectedPark != nil {
-                                        sourceStrip
-                                        rideList(radarOnly: true).id("down-rides")
-                                    }
-
-                                }.padding(.top, 12)
-                            }.tint(accent)
-                            sourceStrip
-                            DisclosureGroup("Data & methods") {
-                                dataMethod.padding(.top, 12)
-                            }
-                            .font(.subheadline.weight(.semibold))
-                            .tint(accent)
-                        }
-
-                        attributionFooter
+            ScrollView {
+                VStack(alignment: .leading, spacing: 18) {
+                    header
+                    parkSwitch
+                    RetainedSnapshotNotice()
+                    Text("Your day").font(.largeTitle.bold()).accessibilityAddTraits(.isHeader)
+                    if store.selectedPark?.id == 65, store.snapshot?.parkId == 65,
+                       let event = store.snapshot?.halloweenHorrorNights {
+                        horrorNightSection(event, showHouses: false)
                     }
-                    .padding(.horizontal, 16)
-                    .padding(.top, 8)
-                    .padding(.bottom, 18)
-                }
-                .scrollDismissesKeyboard(.interactively)
-                .refreshable {
-                    await store.refreshNow()
-                }
-                }
+                    NativeDayPlannerView(
+                        park: store.selectedPark,
+                        snapshot: store.snapshot,
+                        isRefreshing: store.isRefreshing,
+                        feedIsLive: store.feedHealth().isLive,
+                        experience: dayExperience,
+                        onChoosePark: { showParkPicker = true }
+                    )
+                    attributionFooter
+                }.padding(.horizontal, 14).padding(.top, 8).padding(.bottom, 18)
             }
-            .navigationTitle(section == .today ? "Your day" : section == .waits ? "Wait times" : section == .shows ? "Shows" : "More")
-            .navigationBarTitleDisplayMode(.large)
-            .toolbar {
-                ToolbarItemGroup(placement: .topBarTrailing) {
-                    Button { showAlertSettings = true } label: { Image(systemName: "bell") }
-                        .accessibilityLabel("Ride alerts")
-                    Button { Task { await store.refreshNow() } } label: { Image(systemName: "arrow.clockwise") }
-                        .accessibilityLabel("Refresh ride data now")
-                        .disabled(store.selectedPark == nil || store.isRefreshing)
-                }
-            }
+            .scrollDismissesKeyboard(.interactively)
+            .refreshable { await store.refreshNow() }
+            .background(Color.pivotBackground)
+            .toolbar(.hidden, for: .navigationBar)
         }
         .environment(\.pivotScreenIsActive, selectedDockSection == section)
     }
@@ -524,6 +416,7 @@ struct RootView: View {
             }
             .accessibilityElement(children: .combine)
             .accessibilityLabel("PIVOT")
+            .accessibilityIdentifier("PIVOT header")
 
             Spacer()
 
@@ -533,7 +426,7 @@ struct RootView: View {
                     .foregroundStyle(store.alertsEnabled ? Color.pivotMint : Color.primary)
                     .frame(width: 44, height: 44)
             }
-            .pivotNativeGlassIconButton()
+            .buttonStyle(PivotIconButtonStyle())
             .accessibilityLabel(store.alertsEnabled ? "Ride alerts on" : "Set up ride alerts")
 
             Button {
@@ -550,60 +443,17 @@ struct RootView: View {
                         value: store.isRefreshing
                     )
             }
-            .pivotNativeGlassIconButton()
+            .buttonStyle(PivotIconButtonStyle())
             .disabled(store.selectedPark == nil || store.isRefreshing)
             .accessibilityLabel("Refresh ride data now")
         }
     }
 
     private var parkSwitch: some View {
-        Button { showParkPicker = true } label: {
-            HStack(spacing: 12) {
-                Image(systemName: "mappin.and.ellipse")
-                    .font(.system(size: 19, weight: .medium))
-                    .foregroundStyle(accent)
-                    .frame(width: 36, height: 40)
-                    .background(accent.opacity(0.08), in: RoundedRectangle(cornerRadius: 12))
-
-                VStack(alignment: .leading, spacing: 3) {
-                    Text(store.selectedPark?.name ?? "No park selected")
-                        .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(.primary)
-                        .fixedSize(horizontal: false, vertical: true)
-                    if store.locationStatus == .searching {
-                        Label("Finding nearby supported park…", systemImage: "location")
-                            .font(.caption2.weight(.semibold))
-                            .foregroundStyle(accent)
-                    }
-                    if let selectedPark = store.selectedPark,
-                       let hours = store.parkHours(for: selectedPark) {
-                        Text(parkHoursLine(hours))
-                            .font(.caption)
-                            .foregroundStyle(.primary)
-                            .fixedSize(horizontal: false, vertical: true)
-                        Text(earlyEntryLine(hours))
-                            .font(.caption)
-                            .foregroundStyle(.primary)
-                            .fixedSize(horizontal: false, vertical: true)
-                    } else if store.selectedPark != nil {
-                        Text("Park hours updating")
-                            .font(.caption2)
-                            .foregroundStyle(.primary)
-                        Text("Early entry · Updating")
-                            .font(.caption2)
-                            .foregroundStyle(.primary)
-                    }
-                }
-                Spacer()
-                Image(systemName: "chevron.down")
-                    .font(.subheadline.weight(.semibold))
-                    .foregroundStyle(Color.pivotMuted)
-            }
-            .contentShape(Rectangle())
-            .pivotCard(padding: 14)
-        }
-        .buttonStyle(.plain)
-        .accessibilityLabel("Change park. Current park: \(store.selectedPark?.name ?? "none")")
+        ParkBannerView(park: store.selectedPark,
+                       hours: store.selectedPark.flatMap { store.parkHours(for: $0) },
+                       isLocating: store.locationStatus == .searching,
+                       onChoosePark: { showParkPicker = true })
     }
 
     private func parkHoursLine(_ hours: ParkHoursSnapshot) -> String {

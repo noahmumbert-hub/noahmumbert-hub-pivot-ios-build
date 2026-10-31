@@ -60,8 +60,14 @@ struct RideListView: View {
         List {
             if let nativeHeader {
                 Section { nativeHeader }
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 4, trailing: 0))
+                    .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
             }
-            Section { controls.buttonStyle(.plain) }
+            Section { controls.buttonStyle(.plain).pivotCard() }
+                .listRowInsets(EdgeInsets())
+                .listRowBackground(Color.clear)
+                .listRowSeparator(.hidden)
             Section {
                 if store.isLoading && store.snapshot == nil {
                     HStack(spacing: 10) {
@@ -77,6 +83,7 @@ struct RideListView: View {
                         RideRowView(ride: ride, timeZone: store.selectedPark?.timeZone ?? ParkTimeFormatter.selectedParkTimeZone) { selectedRide = ride }
                             .listRowInsets(EdgeInsets())
                             .listRowBackground(Color.pivotSurface)
+                            .listRowSeparatorTint(Color.pivotBorder)
                     }
                 }
             }
@@ -87,6 +94,9 @@ struct RideListView: View {
             }
         }
         .listStyle(.insetGrouped)
+        .contentMargins(.horizontal, 14, for: .scrollContent)
+        .contentMargins(.top, 8, for: .scrollContent)
+        .listSectionSpacing(12)
         .scrollContentBackground(.hidden)
         .background(Color.pivotBackground)
         .scrollDismissesKeyboard(.interactively)
@@ -104,7 +114,7 @@ struct RideListView: View {
             } else {
                 VStack(alignment: .leading, spacing: 12) {
                     HStack(alignment: .firstTextBaseline) {
-                        Text("Current rides").font(.headline)
+                        Text("Current rides").font(.title3.bold()).accessibilityAddTraits(.isHeader)
                         Spacer(minLength: 8)
                         ActiveScreenTimeline { date in
                             let health = store.feedHealth(at: date)
@@ -159,7 +169,8 @@ struct RideListView: View {
                 }
                 .padding(.horizontal, 13)
                 .frame(minHeight: 46)
-                .background(usesNativeList ? Color.pivotBackground : Color.pivotSurface, in: RoundedRectangle(cornerRadius: 13))
+                .background(Color.pivotBackground.opacity(0.7), in: Capsule())
+                .overlay { Capsule().strokeBorder(Color.pivotBorder, lineWidth: 1).allowsHitTesting(false) }
 
                 Menu {
                     Picker("Sort rides", selection: $sort) {
@@ -169,7 +180,8 @@ struct RideListView: View {
                     Image(systemName: "arrow.up.arrow.down")
                         .font(.subheadline.weight(.semibold))
                         .frame(width: 46, height: 46)
-                        .background(usesNativeList ? Color.pivotBackground : Color.pivotSurface, in: RoundedRectangle(cornerRadius: 13))
+                        .background(Color.pivotBackground.opacity(0.5), in: RoundedRectangle(cornerRadius: 14))
+                        .overlay { RoundedRectangle(cornerRadius: 14).strokeBorder(Color.pivotBorder, lineWidth: 1).allowsHitTesting(false) }
                 }
                 .foregroundStyle(.primary)
                 .accessibilityLabel("Sort rides. Current sort: \(sort.rawValue)")
@@ -182,6 +194,8 @@ struct RideListView: View {
                         Text(option == .all ? "All rides" : option == .radar ? "Down" : "Open").tag(option)
                     }
                 }.pickerStyle(.segmented)
+                    .frame(minHeight: 36)
+                    .accessibilityIdentifier("ride-status-filter")
             }
         }
     }
@@ -271,6 +285,7 @@ struct RideDetailScreenView: View {
     let timeZone: TimeZone
     var mapPoint: ParkMapPoint? = nil
     private var ride: LiveRide { store.snapshot?.rides.first(where: { $0.id == initialRide.id }) ?? initialRide }
+    private var artwork: ParkArtwork? { ParkArtworkCatalog.ride(parkID: store.selectedPark?.id, rideID: ride.id) }
 
     var body: some View {
         NavigationStack {
@@ -278,17 +293,25 @@ struct RideDetailScreenView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
                     RetainedSnapshotNotice()
-                    if let photo = ride.details?.photo {
+                    if let photo = artwork?.photo ?? ride.details?.photo {
                         VStack(alignment: .leading, spacing: 8) {
-                            AsyncImage(url: photo.url) { phase in
-                                if let image = phase.image {
-                                    image.resizable().scaledToFill()
+                            Group {
+                                if let artwork {
+                                    Image(artwork.assetName).resizable().scaledToFill()
                                         .frame(width: max(0, geometry.size.width - 40), height: min(280, max(0, geometry.size.width - 40) * 0.75)).clipped()
                                         .accessibilityLabel(photo.alt)
-                                } else if phase.error != nil {
-                                    Text("The ride photo couldn’t load.").foregroundStyle(Color.pivotMuted).frame(maxWidth: .infinity, minHeight: 100)
                                 } else {
-                                    ProgressView().frame(maxWidth: .infinity, minHeight: 280)
+                                    AsyncImage(url: photo.url) { phase in
+                                        if let image = phase.image {
+                                            image.resizable().scaledToFill()
+                                                .frame(width: max(0, geometry.size.width - 40), height: min(280, max(0, geometry.size.width - 40) * 0.75)).clipped()
+                                                .accessibilityLabel(photo.alt)
+                                        } else if phase.error != nil {
+                                            Text("The ride photo couldn’t load.").foregroundStyle(Color.pivotMuted).frame(maxWidth: .infinity, minHeight: 100)
+                                        } else {
+                                            ProgressView().frame(maxWidth: .infinity, minHeight: 280)
+                                        }
+                                    }
                                 }
                             }
                             .clipShape(RoundedRectangle(cornerRadius: 20))
@@ -306,7 +329,9 @@ struct RideDetailScreenView: View {
                             .fixedSize(horizontal: false, vertical: true)
                         if !ride.land.isEmpty { Text(ride.land).font(.subheadline).foregroundStyle(Color.pivotMuted) }
                     }
-                    if ride.details?.photo == nil { Text("A verified ride photo isn’t available yet.").font(.subheadline).foregroundStyle(Color.pivotMuted) }
+                    if ride.details?.photo == nil && ParkArtworkCatalog.ride(parkID: store.selectedPark?.id, rideID: ride.id) == nil {
+                        Text("A verified ride photo isn’t available yet.").font(.subheadline).foregroundStyle(Color.pivotMuted)
+                    }
                     ActiveScreenTimeline(every: 15) { date in
                         VStack(alignment: .leading, spacing: 10) {
                             if let mapPoint {
@@ -363,6 +388,7 @@ struct RideDetailScreenView: View {
 
 private struct RideRowView: View {
     @Environment(\.pivotAccent) private var accent
+    @Environment(\.dynamicTypeSize) private var typeSize
     @EnvironmentObject private var store: DashboardStore
     let ride: LiveRide
     let timeZone: TimeZone
@@ -374,28 +400,25 @@ private struct RideRowView: View {
                 Button {
                     onSelect()
                 } label: {
-                    HStack(alignment: .center, spacing: 12) {
-                        VStack(alignment: .leading, spacing: 6) {
-                            Text(ride.name)
-                                .font(.body.weight(.semibold))
-                                .foregroundStyle(.primary)
-                                .fixedSize(horizontal: false, vertical: true)
-                            HStack(alignment: .firstTextBaseline, spacing: 5) {
-                                Circle().fill(statusColor).frame(width: 5, height: 5).accessibilityHidden(true)
-                                Text(subtitle).font(.caption).foregroundStyle(Color.pivotMuted)
+                    Group {
+                        if typeSize.isAccessibilitySize {
+                            VStack(alignment: .leading, spacing: 12) {
+                                rideDescription
+                                HStack(spacing: 12) {
+                                    RideThumbnailView(ride: ride, parkID: store.selectedPark?.id)
+                                    waitDisplay
+                                    Spacer(minLength: 0)
+                                    disclosureArrow
+                                }
                             }
-                            if let downtime = ride.downTimePresentation {
-                                Text(downtime.text)
-                                    .font(.caption.weight(.medium))
-                                    .foregroundStyle(.primary)
-                                    .accessibilityLabel(downtime.accessibilityLabel)
+                        } else {
+                            HStack(alignment: .center, spacing: 10) {
+                                RideThumbnailView(ride: ride, parkID: store.selectedPark?.id)
+                                rideDescription
+                                waitDisplay
+                                disclosureArrow
                             }
                         }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        waitDisplay
-                        Image(systemName: "chevron.right")
-                            .font(.system(size: 10, weight: .semibold))
-                            .foregroundStyle(Color.pivotMuted.opacity(0.7))
                     }
                     .frame(minHeight: 48)
                     .contentShape(Rectangle())
@@ -405,6 +428,9 @@ private struct RideRowView: View {
                 .accessibilityHint("Double tap to open the ride information screen")
 
                 NativeWaitHistoryView(ride: ride, timeZone: timeZone)
+                    .padding(.horizontal, 12).padding(.vertical, 10)
+                    .background(Color.pivotSurfaceRaised.opacity(0.42), in: RoundedRectangle(cornerRadius: 14))
+                    .overlay { RoundedRectangle(cornerRadius: 14).strokeBorder(Color.pivotBorder.opacity(0.6), lineWidth: 0.75).allowsHitTesting(false) }
                     .padding(.top, 12)
 
                 if ride.status == .down {
@@ -430,6 +456,31 @@ private struct RideRowView: View {
         }
     }
 
+    private var rideDescription: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Text(ride.name).font(.body.weight(.semibold)).foregroundStyle(.primary)
+                .fixedSize(horizontal: false, vertical: true)
+            if !ride.land.isEmpty {
+                Label(ride.land, systemImage: "globe.americas.fill")
+                    .font(.caption).foregroundStyle(Color.pivotMuted)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            HStack(alignment: .firstTextBaseline, spacing: 7) {
+                PivotStatusDot(color: statusColor)
+                Text(subtitle).font(.caption).foregroundStyle(Color.pivotMuted)
+            }
+            if let downtime = ride.downTimePresentation {
+                Text(downtime.text).font(.caption.weight(.medium)).foregroundStyle(.primary)
+                    .accessibilityLabel(downtime.accessibilityLabel)
+            }
+        }.frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    private var disclosureArrow: some View {
+        Image(systemName: "chevron.right").font(.caption.weight(.semibold))
+            .foregroundStyle(Color.pivotMuted).accessibilityHidden(true)
+    }
+
     private var subtitle: String {
         let state: String
         switch ride.status {
@@ -440,14 +491,14 @@ private struct RideRowView: View {
         case .parkInactive: state = "Park not active"
         case .unknown: state = "Status unavailable"
         }
-        return ride.land.isEmpty ? state : "\(ride.land) · \(state)"
+        return state
     }
 
     @ViewBuilder
     private var waitDisplay: some View {
         if ride.status == .open, let wait = ride.waitTime {
             VStack(spacing: 0) {
-                Text("\(wait)").font(.system(.largeTitle, design: .rounded).weight(.semibold)).monospacedDigit().tracking(-1.5)
+                Text("\(wait)").font(.system(.largeTitle, design: .rounded).weight(.bold)).monospacedDigit().tracking(-1.5)
                 Text("min").font(.caption)
             }
             .foregroundStyle(wait <= 20 ? Color.pivotMint : wait <= 50 ? PivotAccent.orange.color : Color.pivotPink)
