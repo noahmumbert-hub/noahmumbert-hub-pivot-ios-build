@@ -396,10 +396,22 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
                 if safe.width >= 140 && safe.height >= 140 {
                     // A fixed grid can miss a valid strip at the bottom/right edge.
                     // Test exact safe boundaries and annotation edges instead.
-                    let xs = Set([safe.minX, safe.maxX - 140] + occupied.flatMap { [$0.minX - 141, $0.maxX + 1] })
-                        .filter { $0.isFinite && $0 >= safe.minX && $0 <= safe.maxX - 140 }.sorted()
-                    let ys = Set([safe.minY, safe.maxY - 140] + occupied.flatMap { [$0.minY - 141, $0.maxY + 1] })
-                        .filter { $0.isFinite && $0 >= safe.minY && $0 <= safe.maxY - 140 }.sorted()
+                    let maxX: CGFloat = safe.maxX - 140
+                    let maxY: CGFloat = safe.maxY - 140
+                    var xOrigins: Set<CGFloat> = [safe.minX, maxX]
+                    var yOrigins: Set<CGFloat> = [safe.minY, maxY]
+                    for obstacle in occupied {
+                        xOrigins.insert(obstacle.minX - 141)
+                        xOrigins.insert(obstacle.maxX + 1)
+                        yOrigins.insert(obstacle.minY - 141)
+                        yOrigins.insert(obstacle.maxY + 1)
+                    }
+                    var xs: [CGFloat] = []
+                    var ys: [CGFloat] = []
+                    for x in xOrigins where x.isFinite && x >= safe.minX && x <= maxX { xs.append(x) }
+                    for y in yOrigins where y.isFinite && y >= safe.minY && y <= maxY { ys.append(y) }
+                    xs.sort()
+                    ys.sort()
                     search: for y in ys {
                         for x in xs {
                             let candidate = CGRect(x: x, y: y, width: 140, height: 140)
