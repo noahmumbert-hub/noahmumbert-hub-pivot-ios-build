@@ -1635,6 +1635,144 @@
     },
     {
       "parkId": 50,
+      "rideId": 14945016141497,
+      "rideName": "Sky Fighters",
+      "alt": "Illustrated Sky Fighters at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:27:01.160082+00:00",
+      "originalSHA256": "f3d3e79997a289040e915a67061c50bc034d23944eb3ff628f81cb6322413544",
+      "review": "Accepted: generated portrait inspected against actual Sky Fighters photo; yellow/red rounded rocket pods, nose lamps, blue seats, silver rails, tail fins and navy radial arms/hub retained. Empty foreground vehicle keeps specific hardware legible, photographic dusk materials, no invented propeller aircraft.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fee3ce5c6fcb8513b899cc36013d59dcc1b5a2192-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/sky-fighters",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A rocket ship-themed kids' ride at Cedar Point's Kiddy Kingdom.",
+          "sha256": "b2cec9c1b5b9f244ea1d9c6c1850ed0734b51168c2478dd24a3f8054ac580f87",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual official Sky Fighters photograph shows red/yellow rounded rocket pods with circular nose lamps, dark-blue seats, silver grab rails, short side wings/red tail fins, black upright cockpit sticks, navy steel radial arms and central navy housing over asphalt/red perimeter fence. Text describes planes, but these inspected pixels support the pictured rocket hardware; do not invent propeller biplanes."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-14945016141497-thumbnail.jpg",
+      "thumbnailSHA256": "cade9e43624405c7fa98ca4157e64b910ece675dfa417f2618abeae0db780684",
+      "thumbnailBytes": 24156,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-14945016141497-detail.jpg",
+      "detailSHA256": "22ca41ca69c2bee562c9333fe5b158842e058b0e70cf1cde428b765d6b7c4e89",
+      "detailBytes": 186245,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-14945016141497",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Sky Fighters at Cedar Point using the exact inspected photo. Preserve rounded red/yellow rocket pods with circular nose lamps, dark-blue seats, silver grab rails, short side wings/red tail fins and black upright cockpit sticks, attached to navy steel radial arms and central navy housing over asphalt with red perimeter fence. A close yellow pod in portrait is focal with red pod and arms behind. The prose page calls these planes but the verified hardware looks like these rounded rockets: follow photo pixels, do not invent propellers or biplanes, or depict actual flight.",
+      "promptSHA256": "0c64bed00a8d4176ae4d9d94909f9fbf611176f63b636aec1fe6a189bad69c02",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 19708058195489,
+      "rideName": "4x4's",
+      "alt": "Illustrated 4x4's at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:27:56.284834+00:00",
+      "originalSHA256": "14aafcac43bb23fc5f5492da50cc913b4b6f8857cfd55f6a2080ab49474be4f9",
+      "review": "Accepted: generated portrait inspected against genuine 4x4's photo; child-sized red/yellow/black/purple/green trucks, tread tires, squared silver grilles, roof lights and step plates preserved on a low concrete guided course. Realistic metal/plastic finish and distinct park setting, no full-size off-road vehicle substitution.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fee1b3422b5818e981c6aa0684c73f4de3b066982-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/4x4-s",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Colorful truck-themed ride vehicles at Cedar Point's Kiddy Kingdom.",
+          "sha256": "2d4ab57bebc46035fc165d841415f04b328aad81eb521ef13f688253db91a62c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual 4x4's photograph shows separate small open-top pickup trucks in red, yellow, black, purple and green, large black treaded tires, silver squared grilles/headlamps, two roof-bar spot lamps, silver side step plates on a concrete guide course. Preserve the real child-sized trucks and low course, not off-road terrain or full-size vehicle proportions."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-19708058195489-thumbnail.jpg",
+      "thumbnailSHA256": "e0f87e23651940df7d53ed77a96d863e8d409c950e15f2130b00d6a14afcda74",
+      "thumbnailBytes": 34847,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-19708058195489-detail.jpg",
+      "detailSHA256": "86241cbed9d095f25c111a88c956dc3e66ffc72ceb89ffa7fb4436657b0bf5f5",
+      "detailBytes": 251442,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-19708058195489",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict 4x4's at Cedar Point using the genuine photograph: a line of small open-top red, yellow, black, purple and green pickup trucks on the real concrete guided course. Keep oversized black treaded tires, squared silver grilles/headlamps, pair of roof-bar spot lamps, silver side step plates and child-sized proportions. A red truck near front with the yellow one behind is focal, real park/fence background; no off-road desert or full-size road vehicles.",
+      "promptSHA256": "d12f0688edffe7381e6e971b74a485d2999f9fbe1194f35c678166d3a13dcff0",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 22556587659050,
+      "rideName": "Roto Whip",
+      "alt": "Illustrated Roto Whip at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:28:26.585310+00:00",
+      "originalSHA256": "e4e29b440c28fb903314ede63015fc95323ea5853e944e4338142bbd404e0773",
+      "review": "Accepted: compared generated Roto Whip pixels with actual photo; red tub/maroon bench, black lap bar and silver grab rails, casters/linked arms, purple-green hub and circular silver runner plate remain coherent. Realistic ride scale and photographic dusk lighting.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F3836ee1d1b79b3f86767cb2294239561c3129424-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/roto-whip",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A small child riding a kids' ride at Cedar Point's Kiddy Kingdom.",
+          "sha256": "b35f707b6318318bf269d870f76328e713862854b69bc875f8e539b0175f4b7b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Roto Whip photograph shows low red/green rounded tub cars, maroon padded bench/back, silver perimeter grab bar and black lap bar, small casters and metal connecting arms around a purple hub with green top, over a circular silver runner plate. Keep connected ground hardware and child-scale tubs; no unseen coaster track."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-22556587659050-thumbnail.jpg",
+      "thumbnailSHA256": "0760320d11f4d543763d782999d64e49f134c8d861f7249c8f56537c79830a5d",
+      "thumbnailBytes": 26396,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-22556587659050-detail.jpg",
+      "detailSHA256": "4068ed76dd055d79ed262378d3f457b12bc790265035e054b39ab3a9a7ecf4cf",
+      "detailBytes": 183362,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-22556587659050",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Roto Whip at Cedar Point. Preserve inspected low rounded red and green tub cars with maroon padded bench backs, silver perimeter grab bars, black lap bars, small casters, metal connecting arms around the purple hub with green top, and silver circular runner plate over concrete. Portrait close to a red tub and connected metal ground hardware, red perimeter fence and trees behind. No unseen track, roller coaster, floating seat or generic teacup substitution.",
+      "promptSHA256": "cc61990a4d8c798385715916109dfb80da894e2e7e0fd1f94e0f950b9ef25056",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
       "rideId": 25057831394965,
       "rideName": "Corkscrew",
       "alt": "Illustrated Corkscrew at Cedar Point",
@@ -1677,6 +1815,157 @@
       "key": "50-25057831394965",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is a verified real photo of this exact attraction; faithfully preserve its identifying physical geometry, rail connections, vehicles and colors. Image 2 supplies ONLY the restrained blue-purple evening atmosphere from the user's UI example: ignore all its logos, interface, lettering and unrelated attractions. Use natural photographic wood/steel textures, credible camera perspective and subtle practical lights; slightly more realistic than illustration, with no heavy brushwork, excessive orange glow or fantasy decoration. Clear recognizable ride subject at thumbnail size. No UI, border, watermark or added lettering. Corkscrew at Cedar Point: preserve the real successive blue tubular corkscrew inversions and white overhead arch/truss supports with the red, white and blue sit-down Arrow train twisting through the near inversion. Match connected running wheels and two-across enclosed seats; riders remain inside the sit-down cars. Favor the first blue twist, white arch and train centrally in portrait, with the following blue twist behind. No inverted hanging train or invented new loop layout.",
       "promptSHA256": "11cc3c9146956b4fa4f709e64b4be1560ad04b67d8159af9545f6e7eca754cec",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 25175706769271,
+      "rideName": "Camp Bus",
+      "alt": "Illustrated Camp Bus at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:28:50.685679+00:00",
+      "originalSHA256": "d31b529204e7bf4c8066504deb8e2ab951ee8d8f3de65875db5fe25227e6d98a",
+      "review": "Accepted: inspected realistic generated Camp Bus cabin portrait against genuine close reference. Yellow posts/door panels, black strips, red-orange roof and benches, hinged silver gates retained. Honest close cabin composition avoids inventing unseen full bus exterior, support arms or driver statue.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F01343f0c8968dd23a1e329d63d58694e7ea0b27c-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/camp-bus",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Children and adults riding a gentle kids' ride at Cedar Point.",
+          "sha256": "e9140500ac32478a4ebaa3e9c9c5a7bc48a01f0194f668393b8ed51b3104aa43",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Camp Bus photograph is a tight interior/side view of the yellow bus wall posts and doors, orange-red roof/ceiling, red bench seats, silver hinged safety gates and black horizontal strips. It does not verify the full exterior bus, support arms or Snoopy driver statue; retain an honest close cabin composition."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-25175706769271-thumbnail.jpg",
+      "thumbnailSHA256": "08a5857bba38a3bdef8d9280ee07889f46056443effcd8c345730feb2cddfda4",
+      "thumbnailBytes": 20904,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-25175706769271-detail.jpg",
+      "detailSHA256": "dcc69237b1ed9211684c09ca06be25b910c7159b2f5e67818f6aba7ef18c7ac6",
+      "detailBytes": 126902,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-25175706769271",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Camp Bus at Cedar Point as the honest close cabin/side view supported by the inspected photo. Preserve yellow wall posts/door panels with black horizontal strips, orange-red roof/ceiling, red bench seats and silver hinged safety gates between seats, with leafy surroundings visible through the open windows. Portrait close to a seat and gate with the real adjacent panels. Do not invent an unseen full exterior bus, its support arms, driver statue, road course or new lettering.",
+      "promptSHA256": "db2afff9b24ea632094e1048ba25421ab839376edac4fb225990da8143d5c5a8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 38277740278659,
+      "rideName": "Cedar Point and Lake Erie Railroad - Frontier",
+      "alt": "Illustrated Cedar Point and Lake Erie Railroad - Frontier at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:25:06.542486+00:00",
+      "originalSHA256": "66293dc8a8d9dc6ee10cb28fd7d756e3aaf858d4554a99bc604e06f1129abc7b",
+      "review": "Accepted: final corrected Frontier railroad portrait inspected against genuine photograph. Unclear dome numerals and lamp lettering are removed; black smokebox, green-roof lamp, navy/gold boiler, red/gold domes, red slatted pilot, flags, steam and timber water tower match verified hardware. Distinct from the separately generated close engine-detail entry; no invented station layout.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa376262cc13be8754b77904dcbfc7fa95f941597-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/cedar-point-and-lake-erie-railroad",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Steam billowing from a passenger steam engine at Cedar Point.",
+          "sha256": "c9eca7831f71bf0925e204aa882439e5a07f82de12f91556bb4f60a36f27520d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Cedar Point & Lake Erie Railroad hero, applicable to the railroad ride serving the Frontier catalog entry: black round smokebox and square lamp housing with green roof, navy boiler/gold bands, red/gold domes, red slatted pilot, white steam, timber water tower/barn behind. Engine markings are only partly clear; do not invent a name/number or claim this image establishes the precise Frontier boarding-platform layout."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-38277740278659-thumbnail.jpg",
+      "thumbnailSHA256": "c8534c4f49dd2c34137140f64184cbe114f5178ae21fc61a633f45c0d811f8bc",
+      "thumbnailBytes": 26446,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-38277740278659-detail.jpg",
+      "detailSHA256": "5c3b7fced87231bb29b58ff99ca0bc333a61bff2b132689dcd97b8d897c9ecd0",
+      "detailBytes": 174933,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-38277740278659",
+      "prompt": "Correct this generated railroad image's remaining numbering. In image 1, the SMALL RED DOME immediately behind the shiny silver bell still has a clearly visible GOLD '44' marking on its right side, near the upper-middle right of the engine. ERASE BOTH GOLD NUMBER-4 GLYPHS COMPLETELY, leaving a plain red painted dome surface in that entire marked region, with no numerals or letters. Remove the small adjacent gold scroll decoration too if needed, so there can be no number-like mark. Also keep the headlamp side and red front pilot free of any engine name or numbers. Image 2 is the genuine photograph for the other hardware. Preserve the rest of this realistic portrait engine, navy/gold boiler, black smokebox, green-roof lamp, red/gold domes, red slatted pilot, flags, steam, track, water tower and dusk lighting exactly. Do not replace the marking with a different name, number, logo, or added text; do not add UI or watermark.",
+      "promptSHA256": "18e05561fc0ac941011d5c5ad6f6b836b403470f993aa847221a240fe72442b1",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict the Cedar Point and Lake Erie Railroad for the Frontier catalog ride entry. Use a close three-quarter engine-front portrait matching the actual photograph: black round smokebox, square headlamp housing with green roof, navy boiler/gold bands, red/gold domes and red slatted pilot, believable steel wheels and real rails, white steam, timber water tower/barn only where visible. Do not guess a name or number from indistinct markings, add lettering or invent a Frontier station layout. Keep focal crop on the verified engine front and steam.",
+          "outputSHA256": "3cab3b7c9b218d05da8c77444b2288f3902de1b66043c52a479d42e9fec7b25b"
+        },
+        {
+          "prompt": "Edit image 1, the existing generated Cedar Point railroad artwork. Image 2 is the genuine exact-ride photograph used for hardware verification. Keep portrait framing, real locomotive geometry, navy/gold boiler, black round smokebox, square green-roofed lamp, red/gold domes, red slatted pilot, steam, flags, track and photographic blue-purple dusk lighting. Accuracy correction only: remove all engine numerals and all name/lettering from the dome, lamp side plaque and pilot. Leave plain painted surfaces or decorative gold scrollwork with NO legible letters/numerals; the reference markings are too indistinct to reproduce accurately. Do not replace them with a guessed number, word, logo or plaque text. No UI, watermark, frame, extra ride or other changes.",
+          "outputSHA256": "3804dcd3ec41d32bf5890859624507f745240de1d4a4e33f2a95b9a99cf70388"
+        },
+        {
+          "prompt": "Correct this generated railroad image's remaining numbering. In image 1, the SMALL RED DOME immediately behind the shiny silver bell still has a clearly visible GOLD '44' marking on its right side, near the upper-middle right of the engine. ERASE BOTH GOLD NUMBER-4 GLYPHS COMPLETELY, leaving a plain red painted dome surface in that entire marked region, with no numerals or letters. Remove the small adjacent gold scroll decoration too if needed, so there can be no number-like mark. Also keep the headlamp side and red front pilot free of any engine name or numbers. Image 2 is the genuine photograph for the other hardware. Preserve the rest of this realistic portrait engine, navy/gold boiler, black smokebox, green-roof lamp, red/gold domes, red slatted pilot, flags, steam, track, water tower and dusk lighting exactly. Do not replace the marking with a different name, number, logo, or added text; do not add UI or watermark.",
+          "outputSHA256": "66293dc8a8d9dc6ee10cb28fd7d756e3aaf858d4554a99bc604e06f1129abc7b"
+        }
+      ]
+    },
+    {
+      "parkId": 50,
+      "rideId": 39637880975340,
+      "rideName": "Woodstock's Airmail",
+      "alt": "Illustrated Woodstock's Airmail at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:31:34.235896+00:00",
+      "originalSHA256": "cbf14fe647155de72296a6d259e7d54595c5ec14c372ae90059612173d4f30ed",
+      "review": "Accepted: inspected realistic generated Woodstock's Airmail portrait against actual photo. Six blue seats, blue shared padded restraint, orange belts, silver side rails and white envelope/stamp backboard retain specific visible hardware. Portrait emphasizes the verified seat bank; the reference does not establish a full tower layout.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F056aaa5aa051c94aaf56fc96aae7db7b8583b496-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/woodstocks-airmail",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Children laughing and smiling while riding a bounding kids' ride at Cedar Point's Camp Snoopy.",
+          "sha256": "ea5ca274b0ef55dbe4a12014a083335c24fd2e4abad43aa20a8e1092c4acf243",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Woodstock's Airmail official photo verifies six blue molded seats across a white envelope-shaped backboard, long blue padded shared restraint with orange lap belt straps, silver side grab rails and printed postal/mailbox styling, backed by trees. Full tower/top not visible; show this verified seat bank and envelope panel rather than invent support structure."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-39637880975340-thumbnail.jpg",
+      "thumbnailSHA256": "e20cebbedfe5d58c9fd71a9143e3b146c58edf72c55c6037eaff639f486a9753",
+      "thumbnailBytes": 27157,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-39637880975340-detail.jpg",
+      "detailSHA256": "aac4f0d3cb6d136e8486700dacaefe760804256fc8e15a03ce9e4cdb825b5ed1",
+      "detailBytes": 178552,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-39637880975340",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Woodstock's Airmail at Cedar Point. Carefully follow these individually inspected photo facts and limits: Actual Woodstock's Airmail official photo verifies six blue molded seats across a white envelope-shaped backboard, long blue padded shared restraint with orange lap belt straps, silver side grab rails and printed postal/mailbox styling, backed by trees. Full tower/top not visible; show this verified seat bank and envelope panel rather than invent support structure. Use a clean portrait composition emphasizing the visible actual ride hardware and its physical connections; if the photograph is tightly cropped, retain an honest close view rather than invent unseen parts. Preserve actual vehicle scale and credible seats/restraints shown. Do not add lettering or make the generated image look like a UI screenshot.",
+      "promptSHA256": "09132a176a37b36c528de51e3b2a9498ee7864aebd37ec03d6e2ab24b768b84a",
       "generationSteps": []
     },
     {
@@ -1769,6 +2058,144 @@
       "key": "50-49491882490452",
       "prompt": "Create ONE portrait 4:5 realistic generated attraction image for PIVOT. Image 1 is a verified real photograph of the exact attraction: faithfully retain its actual hardware, carved or painted details, vehicle colors, perspective and physical connections. Image 2 supplies ONLY subtle blue-purple dusk lighting from the UI example; ignore all text, logos, UI and unrelated park scenery. Use photographic material textures and restrained warm practical lights, more realistic than painted illustration, no heavy brushwork or excessive amber glow. Actual attraction remains recognizable at thumbnail size. No interface, border, watermark or text overlay. Generic incidental guests may remain secondary. Kiddy Kingdom Carousel at Cedar Point: use this corrected real menagerie-carousel photograph, keeping the carved dark horse head with open mouth, gray long-eared donkey behind, colorful saddles, polished vertical poles and red structural posts. Compose an authentic close view of the actual animals under the carousel canopy; do not replace them with generic rockets, invented animals or another park's carousel. Preserve carved wood and glossy painted surfaces.",
       "promptSHA256": "6a477be79ea1caf44074c7c80508ed30fc7c753769ff476647759107efb01577",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 50829383022397,
+      "rideName": "Wilderness Run",
+      "alt": "Illustrated Wilderness Run at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:31:03.995494+00:00",
+      "originalSHA256": "7a6bfb26bdfab5d95281ada92334ed507629cf366061e637ca82d7b06e16a7dc",
+      "review": "Accepted: compared generated Wilderness Run pixels with genuine photo; orange lower cars/yellow upper cowls, white following-car stripes, tall black backs, shared black lap bars and silver steps retained on the small steel coaster. Coherent attached rails/wheels and photographic dusk finish.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7303c3753a94241a41e4378cff64961b9161eed6-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/wilderness-run",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Children screaming on Wilderness Run at Cedar Point's Camp Snoopy.",
+          "sha256": "7467d99b25423d958db2c00ee479f4182f9f83ea1b437a5a63cd64eeb751fc0f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Wilderness Run photograph shows orange lower car bodies, yellow upper cowls with white stripes on following cars, black tall seat backs/shared black lap bars, silver diamond-plate steps, modest tubular steel rail and treed setting. Preserve this real small steel coaster and front-car composition, distinct from Woodstock Express wooden coaster at Kings Island."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-50829383022397-thumbnail.jpg",
+      "thumbnailSHA256": "083db97dc9b50508382f692c5a93faa0f9c01071a3a9c5ead43d217fe50e33f5",
+      "thumbnailBytes": 24912,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-50829383022397-detail.jpg",
+      "detailSHA256": "bbed4462a74f9b8a7caf1a65eba390e97719824d7336db0bd51ef193dec4bffe",
+      "detailBytes": 147130,
+      "detailPixels": [
+        767,
+        960
+      ],
+      "key": "50-50829383022397",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Wilderness Run at Cedar Point. Carefully follow these individually inspected photo facts and limits: Actual Wilderness Run photograph shows orange lower car bodies, yellow upper cowls with white stripes on following cars, black tall seat backs/shared black lap bars, silver diamond-plate steps, modest tubular steel rail and treed setting. Preserve this real small steel coaster and front-car composition, distinct from Woodstock Express wooden coaster at Kings Island. Use a clean portrait composition emphasizing the visible actual ride hardware and its physical connections; if the photograph is tightly cropped, retain an honest close view rather than invent unseen parts. Preserve actual vehicle scale and credible seats/restraints shown. Do not add lettering or make the generated image look like a UI screenshot.",
+      "promptSHA256": "709468c217aeb1572580fd477bfc45af37a69927c0316bf93e9f1d2afbb0928b",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 58015046146639,
+      "rideName": "Snoopy's Express Railroad",
+      "alt": "Illustrated Snoopy's Express Railroad at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:30:38.407156+00:00",
+      "originalSHA256": "5cdc0e6e8e43861a12fd887e3f64ea839241de05fe61884e105a421c79b27055",
+      "review": "Accepted: generated Snoopy's Express Railroad portrait inspected; orange-red grooved car side, yellow window trim, bolts and pale bench match the genuine tight photo. Honest window/cabin close-up with natural painted material; no invented locomotive, wheels or course.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F792e345117fffcaae81ad4fadeedfea3847d4fd6-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/snoopys-express-railroad",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A child smiling while riding a kids' ride at Cedar Point.",
+          "sha256": "d7197e174f3e87ca6aa6fc7079a7e0700b703f3f977781f3de2383cbb8bbe15b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Snoopy's Express Railroad hero is a tight orange-red vertically grooved train-car side with yellow rectangular window trim, visible metal bolts and pale interior bench, leafy setting. It does not show locomotive, wheels, roof or layout; keep honest window/cabin detail or acquire wider real photograph first."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-58015046146639-thumbnail.jpg",
+      "thumbnailSHA256": "7266f39905ccd50d8c2e0e6668e79cd1fa7ec83ca77979c0f6aeeb6ba0ccf3be",
+      "thumbnailBytes": 20614,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-58015046146639-detail.jpg",
+      "detailSHA256": "b17ac0248e7e048210725aeb1d75d0272b4561c42ed71827a2b803c9bde09986",
+      "detailBytes": 127046,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-58015046146639",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Snoopy's Express Railroad at Cedar Point. Carefully follow these individually inspected photo facts and limits: Actual Snoopy's Express Railroad hero is a tight orange-red vertically grooved train-car side with yellow rectangular window trim, visible metal bolts and pale interior bench, leafy setting. It does not show locomotive, wheels, roof or layout; keep honest window/cabin detail or acquire wider real photograph first. Use a clean portrait composition emphasizing the visible actual ride hardware and its physical connections; if the photograph is tightly cropped, retain an honest close view rather than invent unseen parts. Preserve actual vehicle scale and credible seats/restraints shown. Do not add lettering or make the generated image look like a UI screenshot.",
+      "promptSHA256": "df323ce0182c066c84e85675ea6d23536a66c025618888f148c6dd7e852056f9",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 58188744571772,
+      "rideName": "Flying Ace Balloon Race",
+      "alt": "Illustrated Flying Ace Balloon Race at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:31:58.720213+00:00",
+      "originalSHA256": "e6dbefba0c401b29630f3482b7b2a6bd48bc4f872fe823baf9287e63f0423038",
+      "review": "Accepted: inspected generated Flying Ace Balloon Race pixels against actual hardware photo. Rigid striped balloon canopies, bulb rows, silver poles, red/gold sack-trim baskets and black hand wheels, yellow radial trusses and gray central housing remain connected and recognizable. Distinct from Camp Snoopy Balloon Race.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F469fb9f501300afd374e3b30fa15c0e5bfc7a626-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/flying-ace-balloon-race",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A hot air balloon-themed kids' ride at Cedar Point's Planet Snoopy.",
+          "sha256": "ce6e474960b336c986c875e892002daea72eadd0c1dce5b7d98f54bb427db1f8",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Flying Ace Balloon Race photo shows large rigid red-white-blue, red-white-green and red-yellow-black balloon-shaped canopies edged with bulbs, silver vertical poles down to red/gold basket tubs with scalloped sack decoration, black hand wheels, yellow steel radial trusses and gray central faux rock/tree housing. Preserve connected ride support, not free-flying balloons."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-58188744571772-thumbnail.jpg",
+      "thumbnailSHA256": "b66b6282eb46ef52f601f6213014bc6813664731382de208513ec3d812ca092f",
+      "thumbnailBytes": 28920,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-58188744571772-detail.jpg",
+      "detailSHA256": "1f45933361864e2ce3d5ac9c27210f66f97b8b25d6cc139dbc4e7cfa54701e66",
+      "detailBytes": 213770,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-58188744571772",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Flying Ace Balloon Race at Cedar Point. Carefully follow these individually inspected photo facts and limits: Actual Flying Ace Balloon Race photo shows large rigid red-white-blue, red-white-green and red-yellow-black balloon-shaped canopies edged with bulbs, silver vertical poles down to red/gold basket tubs with scalloped sack decoration, black hand wheels, yellow steel radial trusses and gray central faux rock/tree housing. Preserve connected ride support, not free-flying balloons. Use a clean portrait composition emphasizing the visible actual ride hardware and its physical connections; if the photograph is tightly cropped, retain an honest close view rather than invent unseen parts. Preserve actual vehicle scale and credible seats/restraints shown. Do not add lettering or make the generated image look like a UI screenshot.",
+      "promptSHA256": "57646a5bf8664d888d2ab9b17984358e4c734d1b10d3a24d9cb0c834eda9a1a2",
       "generationSteps": []
     },
     {
@@ -1905,6 +2332,52 @@
       "key": "50-85197605068999",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT using actual attraction photo image 1 for accurate physical details and image 2 only for the UI's subtle blue-purple evening mood. Natural photographic textures, plausible perspective, soft light with restrained highlights, clear identifiable subject at thumbnail size. Slightly realistic cinematic treatment, no painted brushwork, exaggerated orange sky, cartoon materials or fantasy scenery. No UI, borders, logos, text or watermark. Iron Dragon at Cedar Point. Precisely show the real suspended coaster: dark swinging enclosed-bottom cars hanging BELOW the red-orange overhead track, with yellow/orange supports beside a small lagoon and trees. Keep hanging cars physically attached to their real track. Avoid turning it into a conventional seated-on-top coaster. Omit the unrelated large coaster towers and large utility pipes from the background/foreground; emphasize only Iron Dragon's identifiable train, track and lagoon.",
       "promptSHA256": "8b57ac9da831a34cd8f8dd45ae302af0a8a5d8e2f5ccd42ebf2b2db3bd16cc71",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 89174659861007,
+      "rideName": "Sky Ride West",
+      "alt": "Illustrated Sky Ride West at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:22:43.124326+00:00",
+      "originalSHA256": "96d935147b76c37eba2c7327834d9e5768f903b8da607f5e77e84da5217428c2",
+      "review": "Accepted: actual reference and generated pixels compared; purple/yellow roofed bucket cabins, rigid hangers and cable clamps, blue support tower and green Raptor rail preserve the verified shared cable ride. Natural metallic surfaces and dusk portrait; no invented West-station architecture or reused image.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F6f22df58f0289faf1d464d180dff5a6701798da3-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/sky-ride",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "The colorful cabins of Cedar Point's Skyride attraction.",
+          "sha256": "e73b60d4795ecc1870dfa1b8a094125a83ec7d731a6f11a53518c7c16f98e085",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Sky Ride hero applicable to the shared cable ride and West catalog entry: purple/yellow/green/red roofed bucket gondolas on rigid overhead hangers/cables, light-blue tower and green Raptor rail behind. Photo verifies this real cable vehicle system, not West-station architecture. Keep a cable/gondola view instead of inventing a station."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-89174659861007-thumbnail.jpg",
+      "thumbnailSHA256": "332121510f2322b8f0e3b11ba381c4c3d9ded286f0b9999e5baaa5c385cb254c",
+      "thumbnailBytes": 20988,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-89174659861007-detail.jpg",
+      "detailSHA256": "5ceabc7d838f54faf8e24d3f34a29901e8fef8c514c544d418882fea1a5ec22a",
+      "detailBytes": 119683,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-89174659861007",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Sky Ride for the West catalog entry at Cedar Point. Genuine photograph verifies purple, yellow, green and red roofed bucket gondolas, rigid overhead hangers and cable clamps, real taut cables and a light-blue support tower, with green Raptor track behind. Create an honest close portrait emphasizing a purple roofed cabin and neighboring yellow cabin on the cable, preserving actual cabin openness, rail and hangers with credible physical cable connections. The photo does NOT establish West station architecture, so do not invent a station or label one. Blue-purple dusk with natural materials.",
+      "promptSHA256": "bd4ea8ac0d272c2874dcc3ce08be4dd878f55dee46bbcb144e46441ae1505cf0",
       "generationSteps": []
     },
     {
@@ -2231,6 +2704,61 @@
     },
     {
       "parkId": 50,
+      "rideId": 129761156552250,
+      "rideName": "Cedar Point & Lake Erie Railroad",
+      "alt": "Illustrated Cedar Point & Lake Erie Railroad at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:21:07.022686+00:00",
+      "originalSHA256": "205ddd3095599fd314efa2a0a248dc111d5666795c41312d936e92e9dee7131e",
+      "review": "Accepted: inspected corrected railroad detail against actual photo; now a distinct headlamp/smokebox/boiler portrait with verified green-roof lamp, navy/gold boiler, red/gold domes and steam. All unclear numbers/names removed. Realistic metal and dusk treatment; does not invent station architecture.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa376262cc13be8754b77904dcbfc7fa95f941597-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/cedar-point-and-lake-erie-railroad",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Steam billowing from a passenger steam engine at Cedar Point.",
+          "sha256": "c9eca7831f71bf0925e204aa882439e5a07f82de12f91556bb4f60a36f27520d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Cedar Point & Lake Erie Railroad hero, byte-identical to the Frontier-entry reference: black smokebox, navy boiler/gold bands, red/gold domes and red slatted pilot amid white steam. Preserve actual train details; use a distinct generated vehicle composition or obtain another photograph rather than reuse another ride ID's generated bytes. No station-specific layout is verified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-129761156552250-thumbnail.jpg",
+      "thumbnailSHA256": "d84b23f92b85ff96098b00d437750044d8377e631663fc96a462a519c1d44c9e",
+      "thumbnailBytes": 24134,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-129761156552250-detail.jpg",
+      "detailSHA256": "a37f637a907a28609c89d1f59d316b7d964836c72f5544a78ac3cee4e941f541",
+      "detailBytes": 155556,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-129761156552250",
+      "prompt": "Edit image 1, the existing generated Cedar Point railroad artwork. Image 2 is the genuine exact-ride photograph. Make a substantially different portrait composition: a tight tactile detail view of the verified square green-roofed headlamp at upper left, black smokebox edge below and navy blue boiler with gold bands and red/gold domes extending to the right, with steam and the timber water tower softly behind. Crop OUT the whole red slatted pilot, track foreground and most of the cab; show engine hardware detail, not a second near-identical full-engine portrait. Keep photographic metal/paint, physically coherent existing details and restrained blue-purple dusk. Remove all legible engine numbers, names and lettering from every visible part, replacing with plain painted surface or decorative gold scrollwork only, since reference markings are indistinct. Do not invent unseen machinery, add UI, logos, border or watermark.",
+      "promptSHA256": "359b3cf6a7427527a34cf91cba74bd1b481a8a37a4ce038c6385b8058e82a132",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Cedar Point & Lake Erie Railroad using this genuine shared-railroad photograph. Create a distinct portrait emphasizing the navy boiler side, gold bands, red/gold domes and black smokebox with square lamp housing/green roof, with red slatted pilot partly below and white steam receding past the actual timber barn. Preserve visible running gear and rails and truthful steam-engine geometry. This should be a different generated close composition from the Frontier entry; never reuse another generated image, guess indistinct engine name/number, add lettering or invent station architecture.",
+          "outputSHA256": "30c805fb7cc91aedfafea472f883dca37c5bbbebc33fd4b01246e9a309bb5e7a"
+        },
+        {
+          "prompt": "Edit image 1, the existing generated Cedar Point railroad artwork. Image 2 is the genuine exact-ride photograph. Make a substantially different portrait composition: a tight tactile detail view of the verified square green-roofed headlamp at upper left, black smokebox edge below and navy blue boiler with gold bands and red/gold domes extending to the right, with steam and the timber water tower softly behind. Crop OUT the whole red slatted pilot, track foreground and most of the cab; show engine hardware detail, not a second near-identical full-engine portrait. Keep photographic metal/paint, physically coherent existing details and restrained blue-purple dusk. Remove all legible engine numbers, names and lettering from every visible part, replacing with plain painted surface or decorative gold scrollwork only, since reference markings are indistinct. Do not invent unseen machinery, add UI, logos, border or watermark.",
+          "outputSHA256": "205ddd3095599fd314efa2a0a248dc111d5666795c41312d936e92e9dee7131e"
+        }
+      ]
+    },
+    {
+      "parkId": 50,
       "rideId": 131471686902602,
       "rideName": "Skyhawk",
       "alt": "Illustrated Skyhawk at Cedar Point",
@@ -2273,6 +2801,52 @@
       "key": "50-131471686902602",
       "prompt": "Create ONE portrait 4:5 realistic generated attraction image for PIVOT. Image 1 is an inspected real photograph of this exact ride: retain its identifying geometry, colors, vehicles and physically connected supports. Image 2 is only a restrained dusk color/lighting reference: ignore its UI and logo. Natural photographic textures, believable perspective, subtle blue-purple twilight and realistic warm practical highlights. More realistic than painted illustration, no heavy brushwork or exaggerated orange glow. Ride remains readable at thumbnail size. No UI, border, watermark or added text. Skyhawk at Cedar Point: preserve two INDEPENDENT long red swing arms from the cream/silver crosshead, navy tapered tower legs with gold bands, and wide bench gondolas with red/yellow restraints. One long arm swings high left while the other is down right, exactly as the inspected photo; retain visible support cables and the small physical Skyhawk sign at the pivot. Portrait composition showing both mechanisms and their real tower supports, trees and modest park buildings below. No circular pendulum gondola, ship or invented third swing.",
       "promptSHA256": "cac84d18432f0c018c9e548e2221a5a95ec8f4e0a05b7ddd6653777c41830f0e",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 138276926872217,
+      "rideName": "Cadillac Cars",
+      "alt": "Illustrated Cadillac Cars at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:16:23.073738+00:00",
+      "originalSHA256": "2ea2952748a70a2f569554f083e4d0c52f3527def2c02674d7310be071fa1cec",
+      "review": "Accepted: compared actual and generated Cadillac Cars close cockpit pixels. Black three-spoke wheel/thin column, dark bench and red side frame retained in photographic dusk portrait. Honest reference-limited cockpit view; no invented full antique body, fenders or guide layout.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9ca2eee232fb9e5dc03726bec5b934b69db24866-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/cadillac-cars",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A father and son driving a replica Cadillac Car at Cedar Point.",
+          "sha256": "f495917d44ce83c7ebc6d8e097642caa3e98a672081139c237068bd62106a628",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Cadillac Cars official close cockpit view: black three-spoke steering wheel on thin column, dark bench with red side frame, leafy park background. The photo does not verify full antique-car body, fenders or wheels. Retain the honest cockpit crop or obtain another real wide photo before depicting unseen body geometry."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-138276926872217-thumbnail.jpg",
+      "thumbnailSHA256": "4399d3179d38103b77a7e85d4de35f6f8e2932e8aa066022cb720dae115ffe82",
+      "thumbnailBytes": 21653,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-138276926872217-detail.jpg",
+      "detailSHA256": "f0464e32c483f1e1e8bc8804b34c5f1e7630021dbd98405dbff653dec2d1283d",
+      "detailBytes": 128910,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-138276926872217",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Cadillac Cars at Cedar Point using the genuine tight cockpit photo only. Keep a close portrait of the thin black steering column, black three-spoke wheel, dark bench and red side frame against a leafy park background; two naturally posed riders may be shown without copying identities. This image does not verify full vehicle body, fenders, wheels or the guide course, so do NOT invent these unseen parts. An honest tactile cockpit close-up, photographic material and subtle blue-purple dusk.",
+      "promptSHA256": "fada4d31b0aae8e4d5d4a0dbc7849ea993c1b7392a6519a54ea7cce762a54317",
       "generationSteps": []
     },
     {
@@ -2562,6 +3136,52 @@
     },
     {
       "parkId": 50,
+      "rideId": 180231803409059,
+      "rideName": "Sky Ride",
+      "alt": "Illustrated Sky Ride at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:24:20.781830+00:00",
+      "originalSHA256": "5fb6e09029d42b90939dd1afc31d75df235ec62a59fc7c96b3dc38e52ab186c2",
+      "review": "Accepted: actual reference and generated pixels compared; distinct wider receding-cabin portrait retains real purple/yellow/green/red gondolas, hangers, cables, tower and nearby green Raptor rail. Reference numbers on several cabins match the source, while no station layout is claimed. Distinct output from West entry.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F6f22df58f0289faf1d464d180dff5a6701798da3-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/sky-ride",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "The colorful cabins of Cedar Point's Skyride attraction.",
+          "sha256": "e73b60d4795ecc1870dfa1b8a094125a83ec7d731a6f11a53518c7c16f98e085",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Sky Ride hero is byte-identical to the West-entry reference and verifies colorful roofed bucket gondolas, real cable clamps/hangers and light-blue support tower near Raptor. Keep actual cabin geometry, never invent station architecture or reuse the other ID's generated image. Seek another real angle if separate station imagery is needed."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-180231803409059-thumbnail.jpg",
+      "thumbnailSHA256": "98a5ee0bbe0dc6b89fbe90b074990ee7b1d4fdbdc47585988543712c3e6ae99f",
+      "thumbnailBytes": 22636,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-180231803409059-detail.jpg",
+      "detailSHA256": "e8d51070630c5a55f00ec60bff45125c1cfe461d987aff2e1b8ce8e6e8439366",
+      "detailBytes": 143162,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-180231803409059",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Cedar Point Sky Ride using this genuine cable ride photograph. Make a distinct portrait emphasizing the line of colorful yellow/green/red roofed bucket gondolas receding along real cables toward the light-blue support tower, with the nearer purple cabin secondary at the edge. Preserve actual bucket geometry, overhead rigid hanger/clamp system, taut cables and green Raptor rail behind. Different generated composition from the West entry, not a duplicate. No invented station layout, impossible cable intersections, rail-coaster cabins, UI or new signage.",
+      "promptSHA256": "1da419440c60ebb1ac5311eea016e58f5888759865a133672b7ad9cc904975e8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
       "rideId": 184061272261581,
       "rideName": "Atomic Scrambler",
       "alt": "Illustrated Atomic Scrambler at Cedar Point",
@@ -2759,6 +3379,52 @@
     },
     {
       "parkId": 50,
+      "rideId": 208912424027236,
+      "rideName": "Midway Carousel",
+      "alt": "Illustrated Midway Carousel at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:17:19.478405+00:00",
+      "originalSHA256": "4ede79d22eb6e5d2e904a89172900586384116dbef4c0c52d3a20c98eeedbad9",
+      "review": "Accepted: inspected realistic generated Midway Carousel close-up against genuine photograph. Gray horse/blue bridle and tan horse/green bridle, sculpted painted saddles, gold spiral poles and brown/gold canopy remain identifiable. Photographic carved surfaces, clear portrait and blue-purple evening beyond practical bulbs.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa045c188d3bd4d8e1a290033b474b52a7dd6621c-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cedarpoint/attractions/midway-carousel",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A mother and daughter riding the Midway Carousel at Cedar Point.",
+          "sha256": "4ffca67d87313d5f151ca7ab43ab789842d6daf5b791fd41b355249cf54fdd5d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Midway Carousel hero: carved gray horse with blue bridle and tan horse with green bridle, gold spiral poles, painted saddles and muted brown/gold canopy. Use these inspected horse details and conventional poles, distinct from Kiddy Kingdom menagerie and pole-free Cedar Downs racing horses."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "50-208912424027236-thumbnail.jpg",
+      "thumbnailSHA256": "296a466402076dfb914a59c6c51f94a727799864888a808ceeaeb777e323f000",
+      "thumbnailBytes": 26632,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-208912424027236-detail.jpg",
+      "detailSHA256": "f66ab06e9e353e9a40713a7dac5cd76967063817d7087a794990233df54bb2ab",
+      "detailBytes": 163577,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-208912424027236",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Midway Carousel at Cedar Point. Focus on the real carved gray horse with blue bridle and the tan horse with green bridle, sculpted painted saddles, gold spiral poles connected through the horses to carousel floor and canopy, and muted brown/gold canopy details. Keep inspected conventional horse-and-pole structure and warm practical bulbs against blue-purple evening ambience. Distinct from Kiddy Kingdom's other animals and Cedar Downs pole-free racing mechanism.",
+      "promptSHA256": "f84d257783b83ad8daea3719930a03d65e8fee5233ed7592fd57a6ed5c296705",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
       "rideId": 209325387768784,
       "rideName": "Top Thrill 2",
       "alt": "Illustrated Top Thrill 2 at Cedar Point",
@@ -2893,6 +3559,52 @@
       "key": "50-241626445268273",
       "prompt": "Create ONE portrait 4:5 realistic generated attraction image for PIVOT. Image 1 is a verified real photograph of the exact attraction: faithfully retain its actual hardware, carved or painted details, vehicle colors, perspective and physical connections. Image 2 supplies ONLY subtle blue-purple dusk lighting from the UI example; ignore all text, logos, UI and unrelated park scenery. Use photographic material textures and restrained warm practical lights, more realistic than painted illustration, no heavy brushwork or excessive amber glow. Actual attraction remains recognizable at thumbnail size. No interface, border, watermark or text overlay. Generic incidental guests may remain secondary. Cedar Downs Racing Derby at Cedar Point: keep the verified carved brown and gray RACING HORSES, expressive open mouths, black hand grips behind their necks, yellow/red saddles and the low yellow canopy. These racing carousel horses have NO vertical horse poles: do not add conventional carousel poles through their bodies. Preserve the actual close horse/rider perspective and hand-carved textures rather than inventing a complete unseen platform layout or using Calypso cars.",
       "promptSHA256": "123c0f18c08dca7cbc2324af66a09d6eb6961acab7e5be8f39edea4552dd01c7",
+      "generationSteps": []
+    },
+    {
+      "parkId": 50,
+      "rideId": 248447972861654,
+      "rideName": "Siren's Curse",
+      "alt": "Illustrated Siren's Curse at Cedar Point",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T20:23:28.953060+00:00",
+      "originalSHA256": "6e954b7f9b13641c17c7ee04ba5707da1e98c12514aaa0a3cab8034f3df0c569",
+      "review": "Accepted: actual 2026 photograph and generated pixels inspected; pointed teal-gray train nose, dark cars, lime-green two-across lap bars, silver running wheels, red drop rail and gray lattice/platform tower remain identifiable with coherent physical connections. Realistic generated dusk portrait, not a real photo; no invented tilt interface. Photographer ThrillZing and CC BY 4.0 provenance retained.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/A_Siren%27s_Curse_train_pulling_out_of_the_vertical_drop_with_riders%27_arms_up_2026_-_ThrillZing.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:A_Siren%27s_Curse_train_pulling_out_of_the_vertical_drop_with_riders%27_arms_up_2026_-_ThrillZing.jpg",
+          "credit": "ThrillZing",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+          "alt": "A Siren's Curse train pulling out of the vertical drop with riders' arms up at Cedar Point, September 2026.",
+          "sha256": "5cd97e9352d6841218ae0819018a02e8045a83725d1b4f0a4c3044e5c5cdef0c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual September 2026 photograph by ThrillZing: Siren's Curse gray/dark train with pointed teal-gray decorated nose, lime-green lap restraints and two-across seats, attached silver running wheels on red rail pulling out of its vertical drop. Dense gray tubular tilt-tower supports/platforms at right and Top Thrill 2 white/gray tower behind. Verified real photo replaces the rejected artist rendering. Preserve this photographed train/drop crop rather than inventing the unseen moving tilt interface."
+        }
+      ],
+      "license": "CC BY 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+      "thumbnailFile": "50-248447972861654-thumbnail.jpg",
+      "thumbnailSHA256": "14bf869a0ffcadd6c4e6ad739c68c55cc1016136f6f22f97950e9e01dc8b62f6",
+      "thumbnailBytes": 22715,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "50-248447972861654-detail.jpg",
+      "detailSHA256": "f264dfac89f1f59e6dbaeb18514cfe38619d83226a592aca7ea99708d99dd3f1",
+      "detailBytes": 157623,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "50-248447972861654",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Siren's Curse at Cedar Point, using the genuine 2026 photographer's ride photograph in image 1, NOT an artist rendering. Preserve actual pointed teal-gray decorated train nose, gray/dark train cars, two-across seats with lime-green lap bars and attached silver running wheels, pulling out of a steep drop on RED tubular running rails. Keep the actual gray tubular/lattice tilt-tower/platform structure at the side and distant gray/white tower only as visible. Compose a dramatic but physically credible tight train-and-red-drop portrait, matching real seat/running-wheel relationships and gray tower. The unseen moving tilt interface is NOT verified; do not invent its mechanics or a new full track layout. Natural photographic surfaces with restrained blue-purple evening treatment, no lettering or UI.",
+      "promptSHA256": "0b33f0e188ebe06329b6d7de7fcd7b4ece388784fb09a4b291998cffb9ba4510",
       "generationSteps": []
     },
     {
