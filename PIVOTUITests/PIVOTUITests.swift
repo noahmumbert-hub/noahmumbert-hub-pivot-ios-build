@@ -506,7 +506,48 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Dining location · hours unavailable"].exists)
     }
 
+    private func mapAttributionCredit(in safari: XCUIApplication) -> XCUIElement {
+        safari.links.matching(NSPredicate(format: "label CONTAINS[c] %@", "openstreetmap.org/copyright")).firstMatch
+    }
+
+    private func recordSafariAttributionFailure(_ phase: String, safari: XCUIApplication) {
+        screenshot("Native map attribution failure · \(phase)", app: safari)
+        let hierarchy = XCTAttachment(string: "Safari state: \(safari.state.rawValue)\n\(safari.debugDescription)")
+        hierarchy.name = "Safari attribution hierarchy · \(phase)"
+        hierarchy.lifetime = .keepAlways
+        add(hierarchy)
+    }
+
+    private func prepareSafariForMapAttribution() -> XCUIApplication {
+        let safari = XCUIApplication(bundleIdentifier: "com.apple.mobilesafari")
+        XCTContext.runActivity(named: "Prepare Safari startup before the native Legal journey") { _ in
+            // Full-suite SE evidence showed an unloaded Start Page and a lost
+            // WebKit process; Pro Max also stalled on Safari's launch screen.
+            // Initialize browser chrome without opening or priming any credits.
+            safari.launch()
+            let foreground = safari.wait(for: .runningForeground, timeout: 45)
+            if !foreground { recordSafariAttributionFailure("startup foreground", safari: safari) }
+            XCTAssertTrue(foreground, "Safari must finish starting before testing the map's Legal handoff")
+            let address = safari.textFields.matching(NSPredicate(
+                format: "identifier == 'TabBarItemTitle' OR identifier == 'URL' OR label == 'Address'")).firstMatch
+            let chromeReady = address.waitForExistence(timeout: 15)
+            if !chromeReady { recordSafariAttributionFailure("startup chrome", safari: safari) }
+            XCTAssertTrue(chromeReady, "Safari's address control must be ready, beyond its launch screen")
+            XCTAssertFalse(mapAttributionCredit(in: safari).exists,
+                           "The Legal journey must not start with an already loaded attribution document")
+            // Closing it makes a fresh foreground transition part of the actual
+            // Legal tap. Browser startup readiness cannot stand in for that tap.
+            safari.terminate()
+            XCTAssertTrue(safari.wait(for: .notRunning, timeout: 10))
+        }
+        return safari
+    }
+
     func testNativeBrowseFocusesRideAndRootWaitDetailsStayCurrent() {
+        // The external browser/document phases have separate bounded waits;
+        // retain the suite's existing hard maximum for this complete journey.
+        executionTimeAllowance = 240
+        let safari = prepareSafariForMapAttribution()
         let app = rootFixture()
         app.tabBars.buttons["Map"].tap()
         app.buttons["Full screen map"].tap()
@@ -531,11 +572,16 @@ final class PIVOTUITests: XCTestCase {
         // MapKit's virtual Legal accessibility element reports isHittable=false
         // even though its real link opens Safari. Verify the actual user journey.
         legal.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5)).tap()
-        let safari = XCUIApplication(bundleIdentifier: "com.apple.mobilesafari")
-        XCTAssertTrue(safari.wait(for: .runningForeground, timeout: 15))
-        let openStreetMapCredit = safari.links.matching(NSPredicate(format: "label CONTAINS[c] %@", "openstreetmap.org/copyright")).firstMatch
-        XCTAssertTrue(openStreetMapCredit.waitForExistence(timeout: 20), "The native Legal link must open the actual map-data attribution page")
-        XCTAssertTrue(safari.links["Apple Inc."].exists)
+        XCTContext.runActivity(named: "Open real Apple map-data attribution through native Legal") { _ in
+            let foreground = safari.wait(for: .runningForeground, timeout: 45)
+            if !foreground { recordSafariAttributionFailure("Legal foreground handoff", safari: safari) }
+            XCTAssertTrue(foreground, "The native Legal tap must bring Safari to the foreground")
+            let documentReady = mapAttributionCredit(in: safari).waitForExistence(timeout: 90)
+            if !documentReady { recordSafariAttributionFailure("Apple attribution document", safari: safari) }
+            XCTAssertTrue(documentReady, "The native Legal link must open the actual map-data attribution page")
+            XCTAssertTrue(safari.links["Apple Inc."].waitForExistence(timeout: 10),
+                          "The loaded document must retain the actual Apple attribution")
+        }
         screenshot("Native Apple map attribution reached from the map", app: safari)
         app.activate()
         XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 10))
