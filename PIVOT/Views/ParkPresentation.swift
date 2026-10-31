@@ -260,10 +260,7 @@ enum ReferenceParkUITestFixture {
             ride["location"] = ["latitude": point.latitude, "longitude": point.longitude]
             ride["waitHistory"] = [["observedAt": Date().timeIntervalSince1970, "waitTime": index == 0 ? 45 : 30]]
             if ProcessInfo.processInfo.arguments.contains("--ride-history-ui-test") {
-                ride["waitHistory"] = (0..<12).map { sample in
-                    ["observedAt": Date().timeIntervalSince1970 - Double(11 - sample) * 30,
-                     "waitTime": [20, 20, 15, 15, 0, 15, 25, 20, 15, 10, 15, 15][sample]] as [String: Any]
-                }
+                ride["waitHistory"] = historySamples(at: Date())
             }
             if index == 2 && ProcessInfo.processInfo.arguments.contains("--reopening-ui-test") {
                 ride["downSince"] = Date().timeIntervalSince1970 - 2580
@@ -273,6 +270,25 @@ enum ReferenceParkUITestFixture {
         }
         let decoder = JSONDecoder(); decoder.dateDecodingStrategy = .secondsSince1970
         return try! decoder.decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: payload))
+    }
+
+    private static func historySamples(at now: Date) -> [[String: Any]] {
+        func sample(_ age: TimeInterval, _ wait: Double) -> [String: Any] {
+            ["observedAt": now.addingTimeInterval(-age).timeIntervalSince1970, "waitTime": wait]
+        }
+        let arguments = ProcessInfo.processInfo.arguments
+        if arguments.contains("--ride-history-case=empty") { return [] }
+        if arguments.contains("--ride-history-case=single") { return [sample(10, 12.5)] }
+        if arguments.contains("--ride-history-case=sparse") {
+            return [sample(5 * 3600, 0), sample(3 * 3600, 12.5), sample(10, 1440)]
+        }
+        if arguments.contains("--ride-history-case=invalid") {
+            return [sample(10, -1), sample(20, 1441), sample(-3600, 15),
+                    sample(6 * 3600 + 60, 20), sample(30, 10), sample(30, 20)]
+        }
+        let equalWaits = arguments.contains("--ride-history-case=equal")
+        let waits: [Double] = [20, 20, 15, 15, 0, 15, 25, 20, 15, 10, 15, 15]
+        return (0..<12).map { sample(Double(11 - $0) * 30 + 1, equalWaits ? 15 : waits[$0]) }
     }
 
     static func learningHistory(park: FloridaPark, at now: Date = Date()) -> WaitLearningHistory {

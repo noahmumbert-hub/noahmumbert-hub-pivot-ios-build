@@ -137,6 +137,84 @@ final class PIVOTUITests: XCTestCase {
         app.buttons["Done"].tap()
     }
 
+    private func observedHistoryFixture(_ extra: [String] = []) -> XCUIApplication {
+        let app = rootFixture(["--reference-ui-park=5", "--reference-ui-ride=10916", "--ride-history-ui-test"] + extra)
+        let history = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Recent observed waits'")).firstMatch
+        reveal(history, in: app)
+        XCTAssertGreaterThanOrEqual(history.frame.height, 44)
+        history.tap()
+        return app
+    }
+
+    private func assertObservedSampleRows(_ waits: [String], app: XCUIApplication) {
+        let disclosure = app.staticTexts["Sample times"].firstMatch
+        reveal(disclosure, in: app)
+        XCTAssertGreaterThanOrEqual(disclosure.frame.height, 44)
+        disclosure.tap()
+        XCTAssertEqual(app.staticTexts.matching(NSPredicate(format: "identifier BEGINSWITH 'wait-sample-row-10916-'")).count, waits.count)
+        for (index, wait) in waits.enumerated() {
+            let row = app.staticTexts["wait-sample-row-10916-\(index)"]
+            reveal(row, in: app)
+            XCTAssertTrue(row.label.hasSuffix("· \(wait) min"), "Observation \(index + 1) must retain its own wait")
+            XCTAssertGreaterThanOrEqual(row.frame.minX, app.frame.minX)
+            XCTAssertLessThanOrEqual(row.frame.maxX, app.frame.maxX)
+        }
+    }
+
+    func testObservedHistoryLabelsKeepTwelveRepeatedDotsInBothAppearances() {
+        for appearance in ["--ui-light", "--ui-dark"] {
+            let app = observedHistoryFixture(["--ride-history-case=equal", appearance])
+            let chart = app.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
+            reveal(chart, in: app)
+            screenshot("Observed history repeated waits latest \(appearance)", app: app)
+            chart.swipeRight(); chart.swipeRight(); chart.swipeRight(); chart.swipeRight()
+            screenshot("Observed history repeated waits earlier \(appearance)", app: app)
+            assertObservedSampleRows(Array(repeating: "15", count: 12), app: app)
+            app.terminate()
+        }
+    }
+
+    func testObservedHistoryHandlesSingleSparseAndUnavailableSamples() {
+        for mode in ["single", "sparse", "empty", "invalid"] {
+            let app = observedHistoryFixture(["--ride-history-case=\(mode)"])
+            let chart = app.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
+            if mode == "empty" || mode == "invalid" {
+                let empty = app.staticTexts["wait-history-empty-10916"]
+                reveal(empty, in: app)
+                XCTAssertTrue(empty.isHittable)
+                XCTAssertFalse(chart.exists, "Unavailable observations must not become zero-minute dots")
+                XCTAssertFalse(app.staticTexts["Sample times"].exists)
+            } else {
+                reveal(chart, in: app)
+                screenshot("Observed history \(mode) before sample table", app: app)
+                let maximum = Double(1440).formatted(.number.precision(.fractionLength(0...1)))
+                assertObservedSampleRows(mode == "single" ? ["12.5"] : ["0", "12.5", maximum], app: app)
+            }
+            screenshot("Observed history \(mode)", app: app)
+            app.terminate()
+        }
+    }
+
+    func testObservedHistoryRemainsReadableAtLargestAccessibilitySizeInRowsAndDetails() {
+        let app = observedHistoryFixture(["--ui-largest-type", "--ui-dark"])
+        let chart = app.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
+        reveal(chart, in: app)
+        XCTAssertLessThanOrEqual(chart.frame.height, 341, "Larger labels must not make the chart taller than a compact viewport")
+        screenshot("Observed history largest accessibility size", app: app)
+        assertObservedSampleRows(["20", "20", "15", "15", "0", "15", "25", "20", "15", "10", "15", "15"], app: app)
+        XCTAssertGreaterThan(app.staticTexts["wait-sample-row-10916-11"].frame.height, 60,
+                             "Measure the real wrapping sample text to verify the largest size was applied")
+        let ride = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Guardians of the Galaxy'")).firstMatch
+        reveal(ride, in: app); ride.tap()
+        XCTAssertTrue(app.navigationBars["Ride information"].waitForExistence(timeout: 5))
+        reveal(chart, in: app)
+        XCTAssertTrue(chart.isHittable, "Ride details must use the same labeled chart")
+        screenshot("Observed history largest accessibility size in ride details", app: app)
+        let done = app.buttons["Done"]
+        XCTAssertTrue(done.isHittable)
+        done.tap()
+    }
+
     func testHistoryLowestWaitPredictionWithholdsMissingAndStaleEvidence() {
         for expired in [false, true] {
             let args = ["--reference-ui-park=5", "--ride-history-ui-test"] + (expired ? ["--ride-history-supported", "--ride-search-expired"] : [])

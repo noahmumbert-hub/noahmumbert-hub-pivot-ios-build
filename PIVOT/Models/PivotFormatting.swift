@@ -403,6 +403,10 @@ enum ParkTimeFormatter {
         return displayFormatter("h:mm:ss a z", timeZone: timeZone).string(from: date)
     }
 
+    static func waitHistoryTimestamp(_ date: Date, timeZone: TimeZone) -> String {
+        displayFormatter("MMM d h:mm:ss a z", timeZone: timeZone).string(from: date)
+    }
+
     static func parkDate(_ date: Date = Date(), timeZone: TimeZone? = nil) -> String {
         displayFormatter("EEEE MMMM d", timeZone: timeZone).string(from: date).uppercased()
     }

@@ -222,6 +222,50 @@ final class NativeParkExtrasTests: XCTestCase {
         XCTAssertEqual(WaitHistoryPresentation.samples(values, at: now), [good])
     }
 
+    func testHistoryPreservesEveryClusteredWaitIncludingZeroFractionsAndMaximum() {
+        let waits: [Double] = [20, 20, 15, 15, 0, 12.5, 25, 20, 15, 10, 15, 1440]
+        let samples = waits.enumerated().map { index, wait in
+            WaitHistorySample(observedAt: now.addingTimeInterval(Double(index - 11) * 0.25), waitTime: wait)
+        }
+        let result = WaitHistoryPresentation.samples(Array(samples.reversed()), at: now)
+        XCTAssertEqual(result, samples, "Clustering and repeated waits must not collapse distinct observations")
+        XCTAssertEqual(result.map(\.waitTime), waits, "Labels must use each dot's supplied value rather than the maximum")
+    }
+
+    func testHistoryDoesNotInventDotsFromMissingInvalidExpiredOrConflictingObservations() {
+        let invalid = [
+            WaitHistorySample(observedAt: now, waitTime: .nan),
+            WaitHistorySample(observedAt: now.addingTimeInterval(-1), waitTime: -.infinity),
+            WaitHistorySample(observedAt: now.addingTimeInterval(-2), waitTime: .infinity),
+            WaitHistorySample(observedAt: now.addingTimeInterval(-3), waitTime: -0.1),
+            WaitHistorySample(observedAt: now.addingTimeInterval(-4), waitTime: 1440.1),
+            WaitHistorySample(observedAt: now.addingTimeInterval(0.001), waitTime: 0),
+            WaitHistorySample(observedAt: now.addingTimeInterval(-6 * 3600 - 0.001), waitTime: 0),
+            WaitHistorySample(observedAt: now.addingTimeInterval(-5), waitTime: 10),
+            WaitHistorySample(observedAt: now.addingTimeInterval(-5), waitTime: 20)
+        ]
+        XCTAssertEqual(WaitHistoryPresentation.samples(invalid, at: now), [])
+        XCTAssertEqual(WaitHistoryPresentation.samples([], at: now), [])
+        XCTAssertEqual(WaitHistoryPresentation.samples(nil, at: now), [])
+        let walkOn = WaitHistorySample(observedAt: now, waitTime: 0)
+        XCTAssertEqual(WaitHistoryPresentation.samples([walkOn] + Array(invalid.dropFirst()), at: now), [walkOn])
+    }
+
+    func testHistoryTimestampDistinguishesSameMinuteSamplesAndParkDates() {
+        let later = now.addingTimeInterval(30)
+        let eastern = TimeZone(identifier: "America/New_York")!
+        let pacific = TimeZone(identifier: "America/Los_Angeles")!
+        let first = ParkTimeFormatter.waitHistoryTimestamp(now, timeZone: eastern)
+        let second = ParkTimeFormatter.waitHistoryTimestamp(later, timeZone: eastern)
+        XCTAssertNotEqual(first, second, "Sub-minute polls need distinct exact sample times")
+        XCTAssertTrue(first.contains("1:00:00"))
+        XCTAssertTrue(second.contains("1:00:30"))
+        XCTAssertTrue(first.contains("Oct 5"))
+        XCTAssertTrue(ParkTimeFormatter.waitHistoryTimestamp(now, timeZone: pacific).contains("Oct 4"))
+        XCTAssertEqual(ParkTimeFormatter.waitHistoryTimestamp(now, timeZone: eastern), first,
+                       "Formatting a different park must not mutate the cached formatter")
+    }
+
     func testLegacyRideDecodesWithNoHistoryAndNewTimestampHistoryDecodes() throws {
         let legacy = #"{"id":1,"name":"Test Ride","land":"Test","status":"OPEN","isOpen":true,"weatherExposure":"INDOOR","radarEligible":true,"radarCategory":"RIDE","reopenPending":false,"trend":[10,20]}"#
         let ride = try PivotAPIClient.makeDecoder().decode(LiveRide.self, from: Data(legacy.utf8))

@@ -82,7 +82,8 @@ struct PivotUITestTypeSize: ViewModifier {
 
     @ViewBuilder func body(content: Content) -> some View {
 #if DEBUG
-        if ProcessInfo.processInfo.arguments.contains("--ui-large-type") {
+        if ProcessInfo.processInfo.arguments.contains("--ui-large-type") ||
+           ProcessInfo.processInfo.arguments.contains("--ui-largest-type") {
             content
                 .overlay(alignment: .topLeading) {
                     if let probeIdentifier {
@@ -93,7 +94,7 @@ struct PivotUITestTypeSize: ViewModifier {
                             .allowsHitTesting(false)
                     }
                 }
-                .dynamicTypeSize(.accessibility2)
+                .dynamicTypeSize(ProcessInfo.processInfo.arguments.contains("--ui-largest-type") ? .accessibility5 : .accessibility2)
         } else { content }
 #else
         content
