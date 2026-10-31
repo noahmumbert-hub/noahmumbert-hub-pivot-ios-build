@@ -22,6 +22,7 @@ struct WaitForecastPoint: Identifiable, Equatable, Sendable {
     let days: Int
     let sameWeekday: Bool
     let crowdAdjusted: Bool
+    var latestObservationAt: Date? = nil
     var id: Date { start }
 }
 
@@ -29,29 +30,39 @@ struct WaitForecastPoint: Identifiable, Equatable, Sendable {
 /// It is never a prediction that a closed ride will reopen.
 struct LowestWaitPrediction: Equatable {
     let window: WaitForecastPoint?
-    let supportedHours: Int
+    let points: [WaitForecastPoint]
+    let sourceCheckedAt: Date?
     let detail: String
+    var supportedHours: Int { points.count }
 
     static func resolve(history: WaitLearningHistory, rideID: Int, park: FloridaPark,
                         hours: ParkHoursSnapshot?, snapshot: LiveParkSnapshot?, failed: Bool, now: Date) -> Self {
-        let current = RideWaitPresentation.resolve(rideID: rideID, parkID: park.id,
-            snapshot: snapshot, refreshFailed: failed, at: now)
-        guard current.isCurrent, current.waitMinutes != nil else {
-            return Self(window: nil, supportedHours: 0,
-                        detail: "A fresh posted wait for an operating ride is required. This does not predict reopening.")
-        }
-        guard WaitLearningHistory.interval(hours, park: park, now: now) != nil else {
-            return Self(window: nil, supportedHours: 0, detail: "Fresh operating hours are unavailable, or today’s session has ended.")
-        }
         let points = history.forecast(rideID: rideID, park: park, hours: hours,
             snapshot: snapshot, failed: failed, now: now)
+        func unavailable(_ detail: String) -> Self {
+            Self(window: nil, points: points, sourceCheckedAt: nil, detail: detail)
+        }
+        let current = RideWaitPresentation.resolve(rideID: rideID, parkID: park.id,
+            snapshot: snapshot, refreshFailed: failed, at: now)
+        guard current.isCurrent, let wait = current.waitMinutes, WaitLearningHistory.validWait(Double(wait)),
+              let snapshot, WaitLearningHistory.fresh(snapshot.fetchedAt, now: now),
+              snapshot.themeParksWiki?.fetchedAt.map({ WaitLearningHistory.fresh($0, now: now) }) != false,
+              snapshot.rides.filter({ $0.id == rideID }).count == 1,
+              let ride = snapshot.rides.first(where: { $0.id == rideID }), ride.isOpen,
+              let version = ride.themeParksWikiStatus?.sourceUpdatedAt ?? ride.lastUpdated,
+              version <= min(now, snapshot.fetchedAt).addingTimeInterval(120) else {
+            return unavailable("A fresh posted wait for an operating ride is required. This does not predict reopening.")
+        }
+        guard WaitLearningHistory.interval(hours, park: park, now: now) != nil else {
+            return unavailable("Fresh operating hours are unavailable, or today’s session has ended.")
+        }
         let best = points.min { a, b in a.minutes == b.minutes ? a.start < b.start : a.minutes < b.minutes }
         guard let best else {
-            return Self(window: nil, supportedHours: 0,
-                        detail: "Learning this ride’s pattern. At least three previous observed days per hour are needed; missing hours are not filled in.")
+            return unavailable("Learning this ride’s pattern. At least three previous observed days per hour are needed; missing hours are not filled in.")
         }
-        return Self(window: best, supportedHours: points.count,
-                    detail: "Limited confidence · \(best.days) observed days · lowest among \(points.count) supported remaining \(points.count == 1 ? "hour" : "hours"). Unobserved hours are excluded.")
+        return Self(window: best, points: points,
+                    sourceCheckedAt: min(snapshot.fetchedAt, snapshot.themeParksWiki?.fetchedAt ?? snapshot.fetchedAt),
+                    detail: "Preliminary · limited confidence · \(best.days) observed days (\(best.sameWeekday ? "same weekday" : "recent days")) · lowest among \(points.count) supported remaining \(points.count == 1 ? "hour" : "hours"). Unobserved hours are excluded.")
     }
 }
 
@@ -308,7 +319,8 @@ struct WaitLearningHistory: Codable, Equatable, Sendable {
                 points.append(WaitForecastPoint(start: start, end: end,
                     minutes: min(1440, Int((median / 5).rounded()) * 5),
                     lower: Int(floor(low / 5)) * 5, upper: Int(ceil(high / 5)) * 5,
-                    days: count, sameWeekday: history.allSatisfy { $0.weekday == weekday }, crowdAdjusted: adjusted))
+                    days: count, sameWeekday: history.allSatisfy { $0.weekday == weekday }, crowdAdjusted: adjusted,
+                    latestObservationAt: history.map(\.lastSeen).max()))
             }
             guard end > start else { break }
             start = end

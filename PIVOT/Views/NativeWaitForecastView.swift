@@ -190,15 +190,12 @@ struct NativeRideWaitForecast: View {
     var body: some View {
         TimelineView(.periodic(from: .now, by: 60)) { context in
             if let park = store.selectedPark {
-                let points = store.waitLearning.forecast(rideID: ride.id, park: park,
-                    hours: store.parkHours(for: park), snapshot: store.snapshot,
+                let prediction = LowestWaitPrediction.resolve(history: store.waitLearning, rideID: ride.id, park: park,
+                    hours: store.parkHours(for: park, at: context.date), snapshot: store.snapshot,
                     failed: store.errorMessage != nil, now: context.date)
-                WaitForecastTimeline(points: points, timeZone: timeZone,
-                    canRecommend: ride.status == .open && store.feedHealth(at: context.date).isLive
-                        && store.snapshot?.rides.contains(where: { $0.id == ride.id }) == true,
-                    learningText: WaitLearningHistory.interval(store.parkHours(for: park), park: park, now: context.date) == nil
-                        ? "Fresh operating hours aren’t available, or today’s session has ended."
-                        : "Learning this ride’s pattern. Hourly estimates need at least three previous observed days. Keep using PIVOT to build its history.")
+                WaitForecastTimeline(points: prediction.points, timeZone: timeZone,
+                    canRecommend: prediction.window != nil, learningText: prediction.detail,
+                    sourceCheckedAt: prediction.sourceCheckedAt, now: context.date)
             }
         }.pivotCard()
     }
@@ -216,20 +213,20 @@ struct NativeRideLowWaitSummary: View {
                 Label("Lowest-wait prediction", systemImage: "clock.arrow.circlepath").font(.subheadline.weight(.semibold))
                 if let park = store.selectedPark {
                     let prediction = LowestWaitPrediction.resolve(history: store.waitLearning, rideID: ride.id, park: park,
-                        hours: store.parkHours(for: park), snapshot: store.snapshot,
+                        hours: store.parkHours(for: park, at: context.date), snapshot: store.snapshot,
                         failed: store.errorMessage != nil, now: context.date)
                     if let best = prediction.window {
                         Text("\(ParkTimeFormatter.time(best.start, timeZone: timeZone))–\(ParkTimeFormatter.time(best.end, timeZone: timeZone)) · about \(best.minutes) min")
                             .font(.subheadline.weight(.medium)).fixedSize(horizontal: false, vertical: true)
                             .accessibilityIdentifier("ride-lowest-wait-window")
+                        Text("Park time · \(ParkTimeFormatter.dateTime(best.start, timeZone: timeZone))")
+                            .font(.caption).foregroundStyle(Color.pivotMuted)
                         Text("Observed variation \(best.lower)–\(best.upper) min; not a guaranteed interval.")
                             .font(.caption).foregroundStyle(Color.pivotMuted)
                         Text(prediction.detail).font(.caption).foregroundStyle(Color.pivotMuted)
                             .fixedSize(horizontal: false, vertical: true)
-                        if let snapshot = store.snapshot {
-                            Text("Forecast checked \(ParkTimeFormatter.age(snapshot.fetchedAt, relativeTo: context.date)). Based on local observed history\(best.crowdAdjusted ? " and today’s crowd pressure" : "").")
-                                .font(.caption2).foregroundStyle(Color.pivotMuted)
-                        }
+                        WaitPredictionEvidence(point: best, sourceCheckedAt: prediction.sourceCheckedAt,
+                            timeZone: timeZone, now: context.date)
                     } else {
                         Text("Prediction unavailable").font(.subheadline.weight(.medium))
                         Text(prediction.detail).font(.caption).foregroundStyle(Color.pivotMuted)
@@ -244,6 +241,7 @@ struct NativeRideLowWaitSummary: View {
             }.frame(maxWidth: .infinity, alignment: .leading)
         }
         .accessibilityIdentifier("ride-lowest-wait-summary")
+        .onChange(of: store.selectedPark) { _, _ in showForecast = false }
         .sheet(isPresented: $showForecast) {
             NavigationStack {
                 ScrollView {
@@ -252,6 +250,7 @@ struct NativeRideLowWaitSummary: View {
                         NativeRideWaitForecast(ride: ride, timeZone: timeZone)
                     }.padding(20)
                 }
+                .background(Color.pivotBackground)
                 .navigationTitle("Predicted waits").navigationBarTitleDisplayMode(.inline)
                 .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { showForecast = false } } }
             }
@@ -264,7 +263,11 @@ struct WaitForecastTimeline: View {
     let timeZone: TimeZone
     let canRecommend: Bool
     let learningText: String
-    private var best: WaitForecastPoint? { canRecommend ? points.min { $0.minutes < $1.minutes } : nil }
+    var sourceCheckedAt: Date? = nil
+    var now: Date = Date()
+    private var best: WaitForecastPoint? {
+        canRecommend ? points.min { a, b in a.minutes == b.minutes ? a.start < b.start : a.minutes < b.minutes } : nil
+    }
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             Label("Predicted waits", systemImage: "chart.xyaxis.line").font(.headline)
@@ -279,6 +282,7 @@ struct WaitForecastTimeline: View {
                         Text("\(clock(best.start))–\(clock(best.end)) · about \(best.minutes) min")
                             .font(.subheadline.weight(.semibold)).accessibilityIdentifier("lowest-predicted-wait")
                         Text("Among the remaining hours with enough history").font(.caption2).foregroundStyle(Color.pivotMuted)
+                        WaitPredictionEvidence(point: best, sourceCheckedAt: sourceCheckedAt, timeZone: timeZone, now: now)
                     }
                 } else {
                     Text("History only · a current operating ride and healthy feed are required for a ride-now suggestion.")
@@ -315,6 +319,29 @@ struct WaitForecastTimeline: View {
         }.accessibilityIdentifier("ride-wait-forecast")
     }
     private func clock(_ date: Date) -> String { ParkTimeFormatter.time(date, timeZone: timeZone) }
+}
+
+private struct WaitPredictionEvidence: View {
+    let point: WaitForecastPoint
+    let sourceCheckedAt: Date?
+    let timeZone: TimeZone
+    let now: Date
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            if let sourceCheckedAt {
+                Text("Wait source checked \(ParkTimeFormatter.dateTime(sourceCheckedAt, timeZone: timeZone)) (\(ParkTimeFormatter.age(sourceCheckedAt, relativeTo: now))).")
+                    .accessibilityIdentifier("lowest-wait-source-time")
+            }
+            if let latest = point.latestObservationAt {
+                Text("History last observed \(ParkTimeFormatter.dateTime(latest, timeZone: timeZone)).")
+                    .accessibilityIdentifier("lowest-wait-history-time")
+            }
+            Text("Based on observations saved on this device\(point.crowdAdjusted ? " and today’s posted-wait crowd pressure" : "; no current crowd adjustment"). Waits can change with weather, events, and operations.")
+        }
+        .font(.caption2).foregroundStyle(Color.pivotMuted)
+        .fixedSize(horizontal: false, vertical: true)
+    }
 }
 
 #if DEBUG

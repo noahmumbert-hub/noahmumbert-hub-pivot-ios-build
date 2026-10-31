@@ -153,6 +153,48 @@ final class PIVOTUITests: XCTestCase {
         }
     }
 
+    func testLowestWaitEvidenceAndHourlySheetStayConsistentAtAccessibilityTextSize() {
+        for expired in [false, true] {
+            let app = rootFixture(["--reference-ui-park=5", "--ride-history-ui-test", "--ride-history-supported", "--ui-large-type"]
+                + (expired ? ["--ride-search-expired"] : []))
+            let search = app.textFields["Ride search"]
+            reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
+            let history = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Recent observed waits'")).firstMatch
+            reveal(history, in: app); history.tap()
+            if expired {
+                let unavailable = app.staticTexts["Prediction unavailable"].firstMatch
+                reveal(unavailable, in: app); XCTAssertTrue(unavailable.isHittable)
+                XCTAssertFalse(app.staticTexts["ride-lowest-wait-window"].exists)
+                XCTAssertFalse(app.staticTexts["lowest-wait-source-time"].exists)
+            } else {
+                let lowest = app.staticTexts["ride-lowest-wait-window"]
+                reveal(lowest, in: app); XCTAssertTrue(lowest.isHittable)
+                XCTAssertTrue(lowest.label.contains("about 10 min"))
+                XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH 'Park time'")).firstMatch.exists)
+                let source = app.staticTexts["lowest-wait-source-time"]
+                reveal(source, in: app); XCTAssertTrue(source.isHittable)
+                XCTAssertTrue(source.label.contains("Wait source checked"))
+                let observed = app.staticTexts["lowest-wait-history-time"]
+                reveal(observed, in: app); XCTAssertTrue(observed.isHittable)
+                XCTAssertTrue(observed.label.contains("History last observed"))
+            }
+            screenshot(expired ? "Lowest wait unavailable at accessibility size" : "Lowest wait evidence at accessibility size", app: app)
+            let hourly = app.buttons["ride-history-hourly-estimates"]
+            reveal(hourly, in: app); hourly.tap()
+            XCTAssertTrue(app.navigationBars["Predicted waits"].waitForExistence(timeout: 5))
+            if expired {
+                XCTAssertFalse(app.staticTexts["lowest-predicted-wait"].exists)
+                XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH 'History only'")).firstMatch.exists)
+            } else {
+                let lowest = app.staticTexts["lowest-predicted-wait"]
+                reveal(lowest, in: app); XCTAssertTrue(lowest.label.contains("about 10 min"))
+                XCTAssertTrue(app.staticTexts["lowest-wait-source-time"].exists)
+            }
+            screenshot(expired ? "Hourly sheet withholds stale lowest wait" : "Hourly sheet retains supported lowest wait", app: app)
+            app.buttons["Done"].tap(); app.terminate()
+        }
+    }
+
     func testReopeningWindowShowsSupportedBestPredictionAndUnavailableStates() {
         for mode in ["supported", "uncalibrated", "expired"] {
             let extra = mode == "uncalibrated" ? ["--reopening-unsupported"] : mode == "expired" ? ["--ride-search-expired"] : []

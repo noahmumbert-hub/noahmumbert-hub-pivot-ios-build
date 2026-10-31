@@ -29,6 +29,19 @@ final class NativeWaitForecastTests: XCTestCase {
         return history
     }
 
+    @MainActor
+    private func liveSnapshot(edit: (inout [String: Any]) -> Void = { _ in }) throws -> LiveParkSnapshot {
+        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .secondsSince1970
+        var json = try XCTUnwrap(JSONSerialization.jsonObject(with: encoder.encode(NativeParkMapUITestScreen.rootSnapshot())) as? [String: Any])
+        json["fetchedAt"] = now.timeIntervalSince1970
+        json["rides"] = [["id": 1, "name": "Test Ride", "land": "Test", "status": "OPEN", "isOpen": true,
+                           "waitTime": 20, "lastUpdated": now.timeIntervalSince1970, "weatherExposure": "INDOOR",
+                           "radarEligible": true, "radarCategory": "RIDE", "reopenPending": false, "trend": []]]
+        edit(&json)
+        let decoder = JSONDecoder(); decoder.dateDecodingStrategy = .secondsSince1970
+        return try decoder.decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: json))
+    }
+
     func testHourlyPatternAndLowestRemainingHourUseSameWeekdayDays() {
         let points = seeded().forecast(rideID: 1, park: park, hours: hours(), snapshot: nil, failed: false, now: now)
         XCTAssertEqual(points.map(\.minutes), [40, 20, 60])
@@ -40,14 +53,7 @@ final class NativeWaitForecastTests: XCTestCase {
 
     @MainActor
     func testLowestWaitSummaryUsesSupportedWindowAndWithholdsUnavailableStates() throws {
-        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .secondsSince1970
-        var json = try XCTUnwrap(JSONSerialization.jsonObject(with: encoder.encode(NativeParkMapUITestScreen.rootSnapshot())) as? [String: Any])
-        json["fetchedAt"] = now.timeIntervalSince1970
-        json["rides"] = [["id": 1, "name": "Test Ride", "land": "Test", "status": "OPEN", "isOpen": true,
-                           "waitTime": 20, "lastUpdated": now.timeIntervalSince1970, "weatherExposure": "INDOOR",
-                           "radarEligible": true, "radarCategory": "RIDE", "reopenPending": false, "trend": []]]
-        let decoder = JSONDecoder(); decoder.dateDecodingStrategy = .secondsSince1970
-        let snapshot = try decoder.decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: json))
+        let snapshot = try liveSnapshot()
         func resolve(_ value: LiveParkSnapshot?, failed: Bool = false, history: WaitLearningHistory? = nil,
                      schedule: ParkHoursSnapshot? = nil, at: Date? = nil) -> LowestWaitPrediction {
             LowestWaitPrediction.resolve(history: history ?? seeded(), rideID: 1, park: park,
@@ -58,7 +64,9 @@ final class NativeWaitForecastTests: XCTestCase {
         XCTAssertEqual(current.window?.start, date("2026-10-13T15:00:00Z"))
         XCTAssertEqual(current.window?.lower, 15)
         XCTAssertEqual(current.supportedHours, 3)
-        XCTAssertTrue(current.detail.contains("Limited confidence"))
+        XCTAssertTrue(current.detail.contains("limited confidence"))
+        XCTAssertEqual(current.sourceCheckedAt, now)
+        XCTAssertEqual(current.window?.latestObservationAt, date("2026-10-06T20:00:00Z"))
         for value in [resolve(nil), resolve(snapshot, failed: true), resolve(snapshot, at: now.addingTimeInterval(901)),
                       resolve(snapshot, history: seeded(days: ["2026-10-06"])),
                       resolve(snapshot, schedule: hours(at: now.addingTimeInterval(-36 * 3600)))] {
@@ -69,6 +77,79 @@ final class NativeWaitForecastTests: XCTestCase {
         let sparse = resolve(snapshot, history: seeded(waits: [12: 30]))
         XCTAssertEqual(sparse.supportedHours, 1)
         XCTAssertTrue(sparse.detail.contains("Unobserved hours are excluded"))
+    }
+
+    @MainActor
+    func testLowestWaitPredictionRejectsAmbiguousInvalidAndNonOperatingRides() throws {
+        let snapshot = try liveSnapshot()
+        func resolve(_ value: LiveParkSnapshot) -> LowestWaitPrediction {
+            LowestWaitPrediction.resolve(history: seeded(), rideID: 1, park: park,
+                hours: hours(), snapshot: value, failed: false, now: now)
+        }
+        var duplicate = snapshot; duplicate.rides.append(snapshot.rides[0])
+        var inconsistent = snapshot; inconsistent.rides[0].isOpen = false
+        var missing = snapshot; missing.rides = []
+        var noWait = snapshot; noWait.rides[0].waitTime = nil
+        var invalid = snapshot; invalid.rides[0].waitTime = 1441
+        var negative = snapshot; negative.rides[0].waitTime = -1
+        var stale = snapshot; stale.rides[0].status = .stale
+        for value in [duplicate, inconsistent, missing, noWait, invalid, negative, stale] {
+            let result = resolve(value)
+            XCTAssertNil(result.window)
+            XCTAssertNil(result.sourceCheckedAt)
+            XCTAssertEqual(result.points.count, 3, "Historical chart may remain available without a current recommendation")
+        }
+        for field in ["parkActive", "feedHealthy"] {
+            XCTAssertNil(resolve(try liveSnapshot { $0[field] = false }).window)
+        }
+        XCTAssertNil(resolve(try liveSnapshot { $0["parkId"] = 5 }).window)
+    }
+
+    @MainActor
+    func testLowestWaitPredictionKeepsZeroTiesAndOnlyTheRemainingOperatingWindow() throws {
+        var snapshot = try liveSnapshot(); snapshot.rides[0].waitTime = 0
+        let history = seeded(waits: [10: 0, 11: 0, 12: 20])
+        func resolve(at: Date, schedule: ParkHoursSnapshot? = nil) -> LowestWaitPrediction {
+            LowestWaitPrediction.resolve(history: history, rideID: 1, park: park,
+                hours: schedule ?? hours(), snapshot: snapshot, failed: false, now: at)
+        }
+        let current = resolve(at: now)
+        XCTAssertEqual(current.window?.minutes, 0, "An observed zero is usable evidence")
+        XCTAssertEqual(current.window?.start, now, "Equal minima choose the first remaining slot")
+        XCTAssertEqual(current.window?.end, date("2026-10-13T15:00:00Z"))
+        let clipped = resolve(at: now, schedule: hours(close: "2026-10-13T14:45:00Z"))
+        XCTAssertEqual(clipped.window?.end, date("2026-10-13T14:45:00Z"))
+        XCTAssertEqual(clipped.supportedHours, 1)
+        XCTAssertNil(resolve(at: now, schedule: hours(close: "2026-10-13T14:30:00Z")).window)
+    }
+
+    @MainActor
+    func testLowestWaitPredictionUsesProviderCheckTimeAndRejectsExpiredOrFutureEvidence() throws {
+        func snapshot(checkedAt: Date, versionAt: Date? = nil) throws -> LiveParkSnapshot {
+            try liveSnapshot { json in
+                json["themeParksWiki"] = ["available": true, "cacheStale": false,
+                    "fetchedAt": checkedAt.timeIntervalSince1970, "matchedRideCount": 1, "unmatchedRides": [],
+                    "role": "PRIMARY", "statusSemantics": "RAW_PROVIDER_STATUS", "usedForWaitTimes": true,
+                    "usedForOperationalTraining": true,
+                    "source": ["name": "ThemeParks.wiki", "label": "Waits", "url": "https://themeparks.wiki",
+                        "termsUrl": "https://themeparks.wiki", "updateCadenceMinutes": 5]]
+                if let versionAt {
+                    var rides = json["rides"] as! [[String: Any]]
+                    rides[0]["lastUpdated"] = versionAt.timeIntervalSince1970; json["rides"] = rides
+                }
+            }
+        }
+        func resolve(_ value: LiveParkSnapshot) -> LowestWaitPrediction {
+            LowestWaitPrediction.resolve(history: seeded(), rideID: 1, park: park,
+                hours: hours(), snapshot: value, failed: false, now: now)
+        }
+        let checkedAt = now.addingTimeInterval(-300)
+        XCTAssertEqual(resolve(try snapshot(checkedAt: checkedAt)).sourceCheckedAt, checkedAt,
+                       "A new API response cannot make the upstream check newer")
+        for offset in [TimeInterval(-900), 121] {
+            XCTAssertNil(resolve(try snapshot(checkedAt: now.addingTimeInterval(offset))).window)
+            XCTAssertNil(resolve(try snapshot(checkedAt: now, versionAt: now.addingTimeInterval(offset))).window)
+        }
     }
 
     func testOneDayAndUnknownHoursProduceNoInventedPredictions() {
