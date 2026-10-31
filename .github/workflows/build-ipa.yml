@@ -7,7 +7,7 @@ on:
         description: Full release regression or focused diagnostics without an IPA
         type: choice
         default: all
-        options: [all, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures]
+        options: [all, map-attribution, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures]
         required: true
       simulator:
         description: iPhone used for focused diagnostics only
@@ -30,14 +30,17 @@ permissions:
   contents: read
 
 concurrency:
-  group: ipa-${{ github.ref }}-${{ inputs.scope || 'all' }}
+  # Focused SE and Pro Max checks must not cancel each other. Full runs keep one matrix.
+  group: ipa-${{ github.ref }}-${{ inputs.scope || 'all' }}-${{ inputs.scope != 'all' && inputs.simulator || 'matrix' }}
   cancel-in-progress: true
 
 jobs:
   build:
     if: (github.ref != 'refs/heads/diagnostics/apple-native-redesign' || contains(github.event.head_commit.message, '[full-regression]') || inputs.scope == 'all') && (github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all')
     runs-on: macos-15
-    timeout-minutes: 35
+    # The measured complete test/archive run exceeded 35m after ARCHIVE SUCCEEDED,
+    # before IPA packaging and evidence uploads could finish. Keep every gate.
+    timeout-minutes: 45
     env:
       DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
       PIVOT_SIMULATOR_NAME: iPhone 16 Pro
@@ -97,7 +100,7 @@ jobs:
     if: (github.ref != 'refs/heads/diagnostics/apple-native-redesign' || contains(github.event.head_commit.message, '[full-regression]') || inputs.scope == 'all') && (github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all')
     name: iPhone regression (${{ matrix.simulator }})
     runs-on: macos-15
-    timeout-minutes: 35
+    timeout-minutes: 45
     strategy:
       fail-fast: false
       matrix:

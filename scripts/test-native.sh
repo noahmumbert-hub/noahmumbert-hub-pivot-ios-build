@@ -58,6 +58,10 @@ test_options=(
 )
 case "${PIVOT_TEST_SCOPE:-all}" in
   all) ;;
+  map-attribution)
+    test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testNativeBrowseFocusesRideAndRootWaitDetailsStayCurrent
+    ) ;;
   reopening-accessibility)
     test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testReopeningPredictionRemainsReadableAtAccessibilitySizeAndInRadar
@@ -118,7 +122,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
     ) ;;
   *)
-    echo 'Unsupported PIVOT_TEST_SCOPE; use all, reopening, reopening-accessibility, reference-ui, native-design, large-text, or map-gestures.' >&2
+    echo 'Unsupported PIVOT_TEST_SCOPE; use all, map-attribution, reopening, reopening-accessibility, reference-ui, native-design, large-text, or map-gestures.' >&2
     exit 1 ;;
 esac
 python3 - <<'PY'
