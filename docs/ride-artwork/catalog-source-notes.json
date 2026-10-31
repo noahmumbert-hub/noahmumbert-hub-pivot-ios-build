@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "key": "32-54316865275675",
+      "rideName": "X2",
+      "reviewedOn": "2026-10-31",
+      "catalogPresence": "Present in the captured live-provider and map catalogs; ID retained for transparent artwork coverage.",
+      "operatorSourceURL": "https://www.sixflags.com/blog/retiring-x2-magic-mountain",
+      "operatorSourceFinding": "The current operator notice states that X2 is permanently retired.",
+      "oldRideURL": "https://www.sixflags.com/magicmountain/attractions/x2-coaster",
+      "oldRideURLFinding": "Redirects to the general attractions page. Its generic blue-coaster photo is rejected as an X2 reference.",
+      "artworkTreatment": "Use a verified, explicitly dated historical photograph; do not imply present operation. Research remains in progress at milestone 227.",
+      "runtimeStatusChanged": false,
+      "catalogIDRemoved": false
+    }
+  ]
+}

@@ -8235,6 +8235,52 @@
     },
     {
       "parkId": 61,
+      "rideId": 4722725130618,
+      "rideName": "Wheeler Dealer Bumper Cars",
+      "alt": "Illustrated Wheeler Dealer Bumper Cars at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:06:59.149341+00:00",
+      "originalSHA256": "ce4d4ff6f0ffff142a92d7aeab51f8c56d5e26cd165c25eff53b0cd8fd217a89",
+      "review": "Accepted: generated pixels inspected against genuine official Wheeler Dealer photo. Actual glitter red-brown body, silver-gray padded dashboard, black steering wheel and padded bench with electrical pickup pole retained inside the pavilion; documented neighboring teal/red cars remain incidental. No invented tires or undercarriage.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F542ffcd8dd1a3b7e86dbafd52a1c4bf7f71635a5-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/wheeler-dealer-bumper-cars",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Wheeler Dealer Bumper Cars at Knott's Berry Farm",
+          "sha256": "8bcfa52540d573f9990fa775859982596cc2f1990652b8786920c7670fef2c63",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Wheeler Dealer Bumper Cars photograph shows glossy glitter-painted red/brown and teal car shells, black padded bench/seat backs, black steering wheels, broad silver-gray padded dashboard/handrail shapes and vertical electrical pickup poles inside the indoor pavilion. Use a close portrait of one actual red-brown car, wheel/dashboard and black seat, with only documented neighboring teal cars and poles. Guests may remain incidental but vehicle hardware is the focus; do not invent a visible undercarriage, tires, outdoor road or a complete pavilion. Source capture date is unverified; artwork does not establish current operation."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-4722725130618-thumbnail.jpg",
+      "thumbnailSHA256": "d995ea0a771066e254a3813b5e84b4d829e3259ab2fbd09f386f2e4817127289",
+      "thumbnailBytes": 23777,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-4722725130618-detail.jpg",
+      "detailSHA256": "2af8392f55b7e2d744a0568c9fdf03508e64282e94a06f38c5ca9654c05b0e8e",
+      "detailBytes": 159758,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-4722725130618",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Wheeler Dealer Bumper Cars at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: Genuine official Wheeler Dealer Bumper Cars photograph shows glossy glitter-painted red/brown and teal car shells, black padded bench/seat backs, black steering wheels, broad silver-gray padded dashboard/handrail shapes and vertical electrical pickup poles inside the indoor pavilion. Use a close portrait of one actual red-brown car, wheel/dashboard and black seat, with only documented neighboring teal cars and poles. Guests may remain incidental but vehicle hardware is the focus; do not invent a visible undercarriage, tires, outdoor road or a complete pavilion. Source capture date is unverified; artwork does not establish current operation. Choose only a documented source section for the 4:5 portrait; never expand unseen hardware. Preserve photographic materials, authentic vehicle colors and physically attached connections. Keep restrained blue-purple evening mood, without new text, logo, UI, watermark, copied faces or invented route.",
+      "promptSHA256": "a6b218e7439e781300a18ce0c710cad62b512dae6acf2dd5e862f1d3e080830a",
+      "generationSteps": []
+    },
+    {
+      "parkId": 61,
       "rideId": 16553919317749,
       "rideName": "Butterfield Stagecoach",
       "alt": "Illustrated Butterfield Stagecoach at Knott’s Berry Farm",
@@ -8382,6 +8428,52 @@
     },
     {
       "parkId": 61,
+      "rideId": 36677140242096,
+      "rideName": "Carrusel de California",
+      "alt": "Illustrated Carrusel de California at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:12:24.422597+00:00",
+      "originalSHA256": "fe757dd3048f9a7f145398f3b2bd69c6156216d157b153327a3944556264dfa5",
+      "review": "Accepted: generated pixels inspected against Gtccoasters’ genuine April 2024 own-work CC0 photo. Actual light-gray carved horse head/neck, black sculpted mane, blue-and-gold bridle, purple faceted cheek jewel, glossy brown eye and open red mouth/white teeth retained. Close framing excludes unseen body/legs and avoids a living animal; historical appearance and source credit preserved.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.coasterpedia.net/2/2e/Carrusel_de_California_horse.jpg",
+          "sourceURL": "https://coasterpedia.net/wiki/File:Carrusel_de_California_horse.jpg",
+          "credit": "Gtccoasters (2024, own-work reference photograph)",
+          "license": "CC0 1.0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "alt": "Carrusel de California carved horse at Knott's Berry Farm, photographed 3 April 2024",
+          "sha256": "1200f00d74d5de280d875779ce73bc1880f0d5f53c856311fda7e70e69e6fa56",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Gtccoasters' genuine own-work photograph dated 2024-04-03 on Coasterpedia clearly shows the actual white/light-gray carved carousel horse head and neck, black sculpted mane, bright blue bridle with gold edging/buckle, purple faceted jewel at the cheek, brown glossy eye, open red mouth/white teeth, and the real vertical brass pole/other carved animals softly behind. Keep an honest close head-and-neck portrait of this exact manufactured wooden horse with worn painted finish. Do not create a live animal, unseen legs/body/saddle, extra ornaments, a whole canopy or a different carousel. Historical 2024 appearance; current operation is not inferred."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-36677140242096-thumbnail.jpg",
+      "thumbnailSHA256": "cda6fd1d835a5862d272366a9ae72f3ca394aa7236a1a7b91b07420519e84072",
+      "thumbnailBytes": 19171,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-36677140242096-detail.jpg",
+      "detailSHA256": "d87ea990eeefa7a9560a3485a075b2e57361e4bb4bfc7ab14cf23f573fc6494f",
+      "detailBytes": 119866,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-36677140242096",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Carrusel de California at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: Gtccoasters' genuine own-work photograph dated 2024-04-03 on Coasterpedia clearly shows the actual white/light-gray carved carousel horse head and neck, black sculpted mane, bright blue bridle with gold edging/buckle, purple faceted jewel at the cheek, brown glossy eye, open red mouth/white teeth, and the real vertical brass pole/other carved animals softly behind. Keep an honest close head-and-neck portrait of this exact manufactured wooden horse with worn painted finish. Do not create a live animal, unseen legs/body/saddle, extra ornaments, a whole canopy or a different carousel. Historical 2024 appearance; current operation is not inferred. Choose only a documented source section for this 4:5 portrait. Preserve authentic manufactured materials, real colors and physically attached connections; never expand unseen hardware. Keep restrained blue-purple evening mood. No new text, logo, UI, watermark, copied faces, invented vehicle or route.",
+      "promptSHA256": "e015f3b4d4e4fb7e7c8a6d40a8bd5e9cb86c7168e946b6ea7c908c71c85218b1",
+      "generationSteps": []
+    },
+    {
+      "parkId": 61,
       "rideId": 41954770845330,
       "rideName": "Coast Rider",
       "alt": "Illustrated Coast Rider at Knott’s Berry Farm",
@@ -8520,6 +8612,52 @@
     },
     {
       "parkId": 61,
+      "rideId": 59463164807458,
+      "rideName": "Sally's Swing Along",
+      "alt": "Illustrated Sally's Swing Along at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:12:52.723045+00:00",
+      "originalSHA256": "3cb7bd2b5adbd7ab338fddf01667356c7cdbf9976705850fc72270138de63b3e",
+      "review": "Accepted: generated pixels inspected against genuine MouseInfo September 2024 on-site photo. Actual orange-brown A-frame, dark-green cross-pipe, attached dark suspension arms and tan/yellow bench with black lap rails retained. Foreground crowd/safety signs and top lettering excluded; real trees/fence/rustic roof remain source-supported. Rejected concept rendering was never used.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://photos.smugmug.com/Other-Parks/Knotts-Berry-Farm-News-and-Inf/2024-09-22-Knotts-Berry-Farm-News-and-Info/i-TNdzVnC/0/LdQntww56KNdMhc73RxVG4HfHZrknJ2S8LkXmKQhQ/L/20240922_110159-Th.jpg",
+          "sourceURL": "https://mouseinfo.com/2024/09/guide-sallys-swing-along-simple-thrills-at-knotts-camp-snoopy/",
+          "credit": "MouseInfo (2024 reference publisher; article by Joey Inigo)",
+          "license": "Copyright MouseInfo; source rights retained",
+          "licenseURL": "https://mouseinfo.com/terms-of-use/",
+          "alt": "Real Sally's Swing Along bench and A-frame at Knott's Berry Farm, MouseInfo September 2024",
+          "sha256": "103d28795726d9f80b80c5f92d7eb3dc3c2516c0132c801366adfb432e15fb3b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine MouseInfo on-site photograph in its dated 2024-09-22 guide replaces the rejected concept rendering. It shows the actual large orange-brown wood-effect A-frame, dark green steel cross-pipe, long dark suspended side arms, and double-sided swing bench with individual tan/yellow seat backs and black lap restraints. Preserve the source-supported connected swing/frame and bench in an honest close-to-medium portrait; incidental riders may remain. Crop out the foreground people, safety signs and all lettering on the top wood signboard; keep only actual nearby fence, trees and rustic station roof from this photo. Do not invent a playground chain swing, different seat model, full unseen base, new character statue or a live wait display. Historical September 2024 appearance, not evidence of current operation."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-59463164807458-thumbnail.jpg",
+      "thumbnailSHA256": "a1e566f027e7fb6012e4bdce8e302af0644c1ef43926d7926104e79ed3cf369c",
+      "thumbnailBytes": 25341,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-59463164807458-detail.jpg",
+      "detailSHA256": "89461eeae018243f421c62762504ef90214ad4d35ae140625c587c43b73cdd41",
+      "detailBytes": 206831,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-59463164807458",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Sally's Swing Along at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: The genuine MouseInfo on-site photograph in its dated 2024-09-22 guide replaces the rejected concept rendering. It shows the actual large orange-brown wood-effect A-frame, dark green steel cross-pipe, long dark suspended side arms, and double-sided swing bench with individual tan/yellow seat backs and black lap restraints. Preserve the source-supported connected swing/frame and bench in an honest close-to-medium portrait; incidental riders may remain. Crop out the foreground people, safety signs and all lettering on the top wood signboard; keep only actual nearby fence, trees and rustic station roof from this photo. Do not invent a playground chain swing, different seat model, full unseen base, new character statue or a live wait display. Historical September 2024 appearance, not evidence of current operation. Choose only a documented source section for this 4:5 portrait. Preserve authentic manufactured materials, real colors and physically attached connections; never expand unseen hardware. Keep restrained blue-purple evening mood. No new text, logo, UI, watermark, copied faces, invented vehicle or route.",
+      "promptSHA256": "c2f31dfc1854a1170b083e5be14e259cb24df9ffa6095888e1f236e0325c48fb",
+      "generationSteps": []
+    },
+    {
+      "parkId": 61,
       "rideId": 63701732902598,
       "rideName": "Sierra Sidewinder",
       "alt": "Illustrated Sierra Sidewinder at Knott’s Berry Farm",
@@ -8566,6 +8704,166 @@
     },
     {
       "parkId": 61,
+      "rideId": 68375968905823,
+      "rideName": "Balloon Race",
+      "alt": "Illustrated Balloon Race at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:07:23.081636+00:00",
+      "originalSHA256": "f0f78b166a7cd234c273177c8fcbc2f74216ebdd4ff2ea7914559deb14188d71",
+      "review": "Accepted: generated pixels inspected against genuine official Balloon Race photo. Actual green lower balloon body, brown wicker-effect basket with beige rim, attached suspension cables, neighboring colored paw-print balloons and real blue radial machinery retained. Presented as the documented mechanical ride, without free flight or invented route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F54b5b9bf90bb353aab96e8446771ed9350871d36-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/balloon-race",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Hot Air Balloon Race Ride at Knott's Berry Farm",
+          "sha256": "239f0fbcaa30c5cd6d5ac1384e33f402b184b11cb30c0cb20144e2f3a611b3e7",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Balloon Race photograph shows rigid colorful green/blue/orange/yellow balloon-shaped ride decorations with dark paw prints, brown wicker-effect rectangular gondola baskets with beige rim/seats suspended on real cables, and blue radial support arms/central machinery with orange panels. Use one documented green balloon's lower body and its attached basket/cables in a close portrait, with a little source-supported blue structure behind. This is a fixed mechanical ride, not free-flying hot-air balloons. Do not invent a sky course, flame/burner, unseen whole base or extra cable geometry. Source capture date is unverified; artwork does not establish current operation."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-68375968905823-thumbnail.jpg",
+      "thumbnailSHA256": "eac01844aa5dd39f44fdfd3f93ff3f520e157b8bfaa18c94392ef3491de1b1f8",
+      "thumbnailBytes": 22980,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-68375968905823-detail.jpg",
+      "detailSHA256": "80717791c6159748c2fa65eff812287093aecb72dfc647d9352a0dfc030a61fd",
+      "detailBytes": 157375,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-68375968905823",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Balloon Race at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: Genuine official Balloon Race photograph shows rigid colorful green/blue/orange/yellow balloon-shaped ride decorations with dark paw prints, brown wicker-effect rectangular gondola baskets with beige rim/seats suspended on real cables, and blue radial support arms/central machinery with orange panels. Use one documented green balloon's lower body and its attached basket/cables in a close portrait, with a little source-supported blue structure behind. This is a fixed mechanical ride, not free-flying hot-air balloons. Do not invent a sky course, flame/burner, unseen whole base or extra cable geometry. Source capture date is unverified; artwork does not establish current operation. Choose only a documented source section for the 4:5 portrait; never expand unseen hardware. Preserve photographic materials, authentic vehicle colors and physically attached connections. Keep restrained blue-purple evening mood, without new text, logo, UI, watermark, copied faces or invented route.",
+      "promptSHA256": "34dd3c93a430e301930330533d2026e9f83ce3538600113c1b4ef6c28d115da8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 61,
+      "rideId": 68925799844484,
+      "rideName": "Rapid River Run",
+      "alt": "Illustrated Rapid River Run at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:33:39.569256+00:00",
+      "originalSHA256": "7149cae4d8def514fee2448953e37b9a9ec86c907a035abe89c33f76ee071605",
+      "review": "Accepted: final corrected generated pixels inspected against genuine official Rapid River Run photo. Very close source-supported boat section retains orange/yellow panels, actual white fenders/crossed ropes, teal benches, silver lap rails and the documented short blue support/gray track edge continuing through the lower crop. Both ends and unseen extended routing excluded; boat no longer appears detached. Original draft and both exact built-in framing edits/output SHA steps preserved.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fff2787ea8f92e7edfc31a9cbe2fbd6cf51c413ed-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/rapid-river-run",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Rapid River Run at Knott's Berry Farm",
+          "sha256": "67621a4be978f580663139a03579de1108cd724e49875854de095f10cfa05332",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Rapid River Run photograph shows an orange/yellow tugboat-shaped mechanical ride vehicle with white circular fenders on crossed ropes, teal-green benches/dividers, silver handrails/lap bars and a documented visible blue/gray under-track section beside the teal wood station building and real trees. Make a close portrait of the photographed boat side and end, attached rails and visible supporting track. Do not create an actual river, floating boat, water splash, expanded full track or unseen station layout. Source capture date is unverified; artwork does not establish current operation."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-68925799844484-thumbnail.jpg",
+      "thumbnailSHA256": "29ce048cf161428e6186ad03f7d226ce9325ad0f640872396f2262d7824cb8d2",
+      "thumbnailBytes": 28229,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-68925799844484-detail.jpg",
+      "detailSHA256": "78c508b5e7a8460f6f202fa5e2b2cf3ae963f1f2443f96d7add9b38c0588850d",
+      "detailBytes": 166933,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-68925799844484",
+      "prompt": "Correct the framing of image 1, the generated Rapid River Run artwork, using image 2 as the exact real hardware reference. Make a VERY CLOSE 4:5 portrait of only the boat's middle/right seating section: three actual white circular fenders on crossed ropes, orange/yellow panels, teal benches, silver lap bars/rails and small incidental riders. Fill almost the entire frame with this source-supported vehicle section. Crop both boat ends out. At the VERY BOTTOM retain only the short actual blue support/gray track edge that is visible immediately beneath the hull in image 2, and let that support continue through the bottom edge of the image. Do not leave any empty forest or sky underneath the boat; the composition must make its documented mechanical support apparent without reconstructing a whole route. Exclude extended racks, long new track, full undercarriage or new station floor. Preserve the actual tilt, attached rails, painted fiberglass/metal texture and restrained realistic dusk lighting. No floating boat, real river, new mechanism, text, logos, UI or watermark.",
+      "promptSHA256": "612cbdffa657eb2361bf37b13ac0f044410b89a7b57849e44b084f5c03b89993",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Rapid River Run at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: Genuine official Rapid River Run photograph shows an orange/yellow tugboat-shaped mechanical ride vehicle with white circular fenders on crossed ropes, teal-green benches/dividers, silver handrails/lap bars and a documented visible blue/gray under-track section beside the teal wood station building and real trees. Make a close portrait of the photographed boat side and end, attached rails and visible supporting track. Do not create an actual river, floating boat, water splash, expanded full track or unseen station layout. Source capture date is unverified; artwork does not establish current operation. Choose only a documented source section for the 4:5 portrait; never expand unseen hardware. Preserve photographic materials, authentic vehicle colors and physically attached connections. Keep restrained blue-purple evening mood, without new text, logo, UI, watermark, copied faces or invented route.",
+          "outputSHA256": "c9396185953e7a1ee5a385a4fb46cb0b9ad64ce14e1a089d7c4c9fb519ecec1b"
+        },
+        {
+          "prompt": "Make a framing-only accuracy edit of image 1, the generated Rapid River Run portrait. Image 2 is the genuine official photo. Tighten the 4:5 view around the documented orange/yellow boat side/end, white circular rope-hung fenders, teal benches, silver rails and immediately visible blue support edge. Crop out ALL extended lower straight track, rack/gears and station floor below the boat, because image 1 expanded this hardware beyond the photographed section. Preserve only the source-supported boat and a very small connected blue support edge, actual nearby teal building/trees and restrained photographic dusk style. No river, pool, new vehicle, extra routing, lettering, logo, UI or watermark.",
+          "outputSHA256": "670630f2bbbafb66b114f7de9b22efe7db577146f8ff259bf1030a81f05558b6"
+        },
+        {
+          "prompt": "Correct the framing of image 1, the generated Rapid River Run artwork, using image 2 as the exact real hardware reference. Make a VERY CLOSE 4:5 portrait of only the boat's middle/right seating section: three actual white circular fenders on crossed ropes, orange/yellow panels, teal benches, silver lap bars/rails and small incidental riders. Fill almost the entire frame with this source-supported vehicle section. Crop both boat ends out. At the VERY BOTTOM retain only the short actual blue support/gray track edge that is visible immediately beneath the hull in image 2, and let that support continue through the bottom edge of the image. Do not leave any empty forest or sky underneath the boat; the composition must make its documented mechanical support apparent without reconstructing a whole route. Exclude extended racks, long new track, full undercarriage or new station floor. Preserve the actual tilt, attached rails, painted fiberglass/metal texture and restrained realistic dusk lighting. No floating boat, real river, new mechanism, text, logos, UI or watermark.",
+          "outputSHA256": "7149cae4d8def514fee2448953e37b9a9ec86c907a035abe89c33f76ee071605"
+        }
+      ]
+    },
+    {
+      "parkId": 61,
+      "rideId": 71569575844046,
+      "rideName": "Camp Snoopy's Off-Road Rally",
+      "alt": "Illustrated Camp Snoopy's Off-Road Rally at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:09:12.994976+00:00",
+      "originalSHA256": "05b68f6a990ac012d43189a9ddd3393995aed4b0c4cb6b2077663e287baa364c",
+      "review": "Accepted: corrected generated pixels inspected against genuine official Off-Road Rally photo. Tight upper-jeep portrait retains the actual yellow body/hood stripe, windshield, dual small steering wheels, black roll bar/seat backs and documented partial grille/headlights. All expanded lower bumper, wheels/arches and underbody excluded. Original draft and exact built-in framing edit preserved.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe2f8bb032272945587482f5e9052483dbfc1e0f8-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/camp-snoopys-off-road-rally",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Camp Snoopy's Off-Road Rally at Knott's Berry Farm",
+          "sha256": "6c5192ab03a1c551886b7e74a715bd481be0f0ce8fbbe260b4d26f3113c90096",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Camp Snoopy's Off-Road Rally photograph shows a bright yellow small jeep-style vehicle close from the front, gray rectangular grille and round headlights, clear windshield in yellow/black surround, black roll bar, dark hood stripe, two small black steering wheels and tall gray/black front seat backs, with a rear adult seat and dense green plants behind. Preserve the photographed front/upper side and hardware in a tight portrait. Wheels, bumper/underbody and full guided course extend outside the source crop; keep them out instead of inventing them. Omit lettering or number badges. Source capture date is unverified; artwork does not establish current operation."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-71569575844046-thumbnail.jpg",
+      "thumbnailSHA256": "5926d23d8ea03d9c3430d63964d6b85cf926713d2cc31eb4ab14dd10a5c18f25",
+      "thumbnailBytes": 24500,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-71569575844046-detail.jpg",
+      "detailSHA256": "751ead5fb5156a927d7017d7bf9baeec8c1576ccac74de76dcba0eefb16399ff",
+      "detailBytes": 159365,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-71569575844046",
+      "prompt": "Make a framing-only accuracy edit of image 1, the generated Camp Snoopy Off-Road Rally portrait. Image 2 is the genuine official close jeep photograph. Use a MUCH tighter 4:5 portrait around the documented upper yellow jeep front, clear windshield, dual small steering wheels, black roll bar, tall black/gray seat backs and the source-supported gray grille/headlight section. Crop out the ENTIRE lower bumper, ALL wheels/wheel arches, lower side panel and every underbody extension beyond the source crop. Do not expand unseen vehicle hardware. Preserve the actual yellow body, dark hood stripe, silver grille, physically connected windshield/roll bar and real foliage in restrained realistic dusk light. No new badges, numbers, lettering, logo, UI, watermark or invented road.",
+      "promptSHA256": "05b1a914aad4d24863e37aa651c6c3507a0d625a16a14df1cb44322d118480b1",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Camp Snoopy's Off-Road Rally at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: Genuine official Camp Snoopy's Off-Road Rally photograph shows a bright yellow small jeep-style vehicle close from the front, gray rectangular grille and round headlights, clear windshield in yellow/black surround, black roll bar, dark hood stripe, two small black steering wheels and tall gray/black front seat backs, with a rear adult seat and dense green plants behind. Preserve the photographed front/upper side and hardware in a tight portrait. Wheels, bumper/underbody and full guided course extend outside the source crop; keep them out instead of inventing them. Omit lettering or number badges. Source capture date is unverified; artwork does not establish current operation. Choose only a documented source section for the 4:5 portrait; never expand unseen hardware. Preserve photographic materials, authentic vehicle colors and physically attached connections. Keep restrained blue-purple evening mood, without new text, logo, UI, watermark, copied faces or invented route.",
+          "outputSHA256": "9d03c5cd92578d327c4a22e1d846bb08fe0adfc5c1084ef35d57b39802d09800"
+        },
+        {
+          "prompt": "Make a framing-only accuracy edit of image 1, the generated Camp Snoopy Off-Road Rally portrait. Image 2 is the genuine official close jeep photograph. Use a MUCH tighter 4:5 portrait around the documented upper yellow jeep front, clear windshield, dual small steering wheels, black roll bar, tall black/gray seat backs and the source-supported gray grille/headlight section. Crop out the ENTIRE lower bumper, ALL wheels/wheel arches, lower side panel and every underbody extension beyond the source crop. Do not expand unseen vehicle hardware. Preserve the actual yellow body, dark hood stripe, silver grille, physically connected windshield/roll bar and real foliage in restrained realistic dusk light. No new badges, numbers, lettering, logo, UI, watermark or invented road.",
+          "outputSHA256": "05b68f6a990ac012d43189a9ddd3393995aed4b0c4cb6b2077663e287baa364c"
+        }
+      ]
+    },
+    {
+      "parkId": 61,
       "rideId": 78525795655660,
       "rideName": "MonteZOOMa: The Forbidden Fortress",
       "alt": "Illustrated MonteZOOMa: The Forbidden Fortress at Knott’s Berry Farm",
@@ -8608,6 +8906,282 @@
       "key": "61-78525795655660",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict MonteZOOMa: The Forbidden Fortress at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: Genuine current official MonteZOOMa: The Forbidden Fortress page identifies the reopened design and its hero is a real photograph: a two-across gray/black train with red shoulder restraints on a red steep spike/loop section beside tall tan-gray carved stone ruins, palms and green foliage. Its visible leading decorative face is turquoise/teal and gold. Preserve this exact photographed train, red track connection and adjacent textured ruin in a close vertical portrait; keep the unseen course and tower top cropped. No invented whole shuttle layout, different colors, unattached free-flying train or extra inversion. Source capture date is unverified; this artwork does not supply live operating status. Choose only a documented close or medium source section to create the 4:5 portrait; never expand unseen hardware. Use believable photographic materials and restrained blue-purple dusk light. Preserve attached physical ride geometry. No new text, logos, UI, watermark, copied faces or invented background landmarks.",
       "promptSHA256": "0a27bde5a8b4e736493ca0b5d8bfd2cd49cf97182877a54ad216c2aadd553de2",
+      "generationSteps": []
+    },
+    {
+      "parkId": 61,
+      "rideId": 83856323679046,
+      "rideName": "Wipeout",
+      "alt": "Illustrated Wipeout at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:13:41.859793+00:00",
+      "originalSHA256": "6f33396587515ac9c30c970f164b01d6aaae88a54cbc8c9705ea63649a9685f1",
+      "review": "Accepted: generated pixels inspected against genuine official Wipeout photograph. Source-supported tilted disk section, inward-facing teal seats/silver lap rails, blue-and-white radial panels, silver spokes and red/yellow bulb-covered white central hub retained. No unpictured underside/new support machinery; unrelated coaster and source sign excluded.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb28138bbc68bdaff41ba59a4fcebdb423278c538-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/wipeout",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Wipeout circular spinning ride at Knott's Berry Farm",
+          "sha256": "f137d0c48055dd506bd0dc96e31c5defdfd258ba4bcaaba05bdc9221fb27bbad",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Wipeout photograph shows the actual tilted circular disk with inward-facing teal padded seats and silver lap bars along its rim, alternating blue/white striped radial panels, silver spokes decorated in red/yellow lights and a rounded white central hub with rows of red/yellow bulbs. Choose the documented hub plus one connected rim/seating section in a close portrait, preserving the real mechanics and seating direction. Keep the source sign/lamp post and unrelated background coaster cropped out. Do not invent a free-standing Ferris wheel, flying cars, new support column or whole unseen underside. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-83856323679046-thumbnail.jpg",
+      "thumbnailSHA256": "f784e4b6e2b969549095d746259a2a795d5774878522fddf7d0f654cbbc98a93",
+      "thumbnailBytes": 31576,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-83856323679046-detail.jpg",
+      "detailSHA256": "ea5709706c6a33c3f6be4769c17fbbdb46ca58d8c03d61e959cf09274adb0e67",
+      "detailBytes": 209238,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-83856323679046",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Wipeout at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: The genuine official Wipeout photograph shows the actual tilted circular disk with inward-facing teal padded seats and silver lap bars along its rim, alternating blue/white striped radial panels, silver spokes decorated in red/yellow lights and a rounded white central hub with rows of red/yellow bulbs. Choose the documented hub plus one connected rim/seating section in a close portrait, preserving the real mechanics and seating direction. Keep the source sign/lamp post and unrelated background coaster cropped out. Do not invent a free-standing Ferris wheel, flying cars, new support column or whole unseen underside. Source capture date is unverified. Choose only a documented source section for this 4:5 portrait. Preserve authentic manufactured materials, real colors and physically attached connections; never expand unseen hardware. Keep restrained blue-purple evening mood. No new text, logo, UI, watermark, copied faces, invented vehicle or route.",
+      "promptSHA256": "c973959ab89580bbf79984a4524524ea418b4240a467b863bd4387161fbff6a8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 61,
+      "rideId": 93539202645619,
+      "rideName": "Pig-Pen's Mud Buggies",
+      "alt": "Illustrated Pig-Pen's Mud Buggies at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:14:09.900205+00:00",
+      "originalSHA256": "383c268e2b1eecef1d12f1a0e4e57f35e7c7235080d726cbe0b6389cba52998b",
+      "review": "Accepted: generated pixels inspected against genuine official Pig-Pen’s Mud Buggies photo. Actual yellow/brown buggy, black tires/yellow rims, red coil springs, silver diamond-plate running board and physically attached yellow arm retained with documented central column/Pig-Pen ornament. Tire lettering/numbers omitted; no road-driving or invented mud pit.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F3bc7fd8b9f030adcfacd43c32654169f8ee7e7fc-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/pig-pens-mud-buggies",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Pig Pen's Mud Buggies at Knott's Berry Farms",
+          "sha256": "88a2bc4c99b8fb5bad2159891fe0627548c895cf468cf9f796b0ab1af33773a3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Pig-Pen's Mud Buggies photograph shows actual yellow/orange dune-buggy bodies with painted brown mud patterns, black tires/yellow rims, silver diamond-plate running board, visible red coil springs, black steering wheels/silver restraint rails, mechanically attached yellow radial arms and a yellow-brown central column topped by the physical Pig-Pen sculpture holding a checkered flag. Use a close view of the documented yellow buggy and a little of the attached arm/column, preserving real tire/spring/body geometry and small incidental riders. Keep lettering and car numbers omitted. Do not create a free-driving road car, a real mud pit, a different wheel model or new support geometry. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-93539202645619-thumbnail.jpg",
+      "thumbnailSHA256": "5dc7a5a3b1c1a8ad5e649a48b15f47a1115e2bf86f97d3cf8a2fbbefb32bbb68",
+      "thumbnailBytes": 25897,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-93539202645619-detail.jpg",
+      "detailSHA256": "e6548e1636dcaa21bdf5ec650853feafee2e52bc852b9fe9bf69cbc47ffb5bbd",
+      "detailBytes": 162762,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-93539202645619",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Pig-Pen's Mud Buggies at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: The genuine official Pig-Pen's Mud Buggies photograph shows actual yellow/orange dune-buggy bodies with painted brown mud patterns, black tires/yellow rims, silver diamond-plate running board, visible red coil springs, black steering wheels/silver restraint rails, mechanically attached yellow radial arms and a yellow-brown central column topped by the physical Pig-Pen sculpture holding a checkered flag. Use a close view of the documented yellow buggy and a little of the attached arm/column, preserving real tire/spring/body geometry and small incidental riders. Keep lettering and car numbers omitted. Do not create a free-driving road car, a real mud pit, a different wheel model or new support geometry. Source capture date is unverified. Choose only a documented source section for this 4:5 portrait. Preserve authentic manufactured materials, real colors and physically attached connections; never expand unseen hardware. Keep restrained blue-purple evening mood. No new text, logo, UI, watermark, copied faces, invented vehicle or route.",
+      "promptSHA256": "a4c2ca0c0cc9774632d3055445aeb8606e97ed03039eeb89626d9ac2f4acfed7",
+      "generationSteps": []
+    },
+    {
+      "parkId": 61,
+      "rideId": 93543269696566,
+      "rideName": "Knott's Bear-y Tales: Return to the Fair",
+      "alt": "Illustrated Knott's Bear-y Tales: Return to the Fair at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:20:31.405320+00:00",
+      "originalSHA256": "2fab40de0afb04fc1b560baf92d7d2b32c22f1d482fd94f0398e3d57ce191a4f",
+      "review": "Accepted: generated pixels inspected against genuine official Bear-y Tales photo. Actual ochre-orange/black seats, glossy maroon front rail, purple jar-shaped cabled controllers with gray/silver rims and incidental guests in 3-D glasses retained. Source-supported indoor flat fair scenery remains a background set; no new exterior or unpictured vehicle route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2db84dc65a97c774036d691cc7ad8c3e86dd98f9-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/knotts-beary-tales-return-to-the-fair",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Bear-y Tales: Return to the Fair, a 4-D Interactive Dark Ride, at Knott's Berry Farm",
+          "sha256": "4c0a8dc78f047999560878aa05ac1c308bce98d495252b922348d832183490ea",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official photograph documents the physical Bear-y Tales ride vehicle and guests: high ochre-orange seat surround with black padded seat backs, glossy maroon/brown front rail with warm yellow trim, and actual purple jar-shaped interactive controllers with silver/gray handle/nozzle rims and attached cables. Use a close portrait of this real vehicle/controller/seat section with incidental 3-D-glasses-wearing guests. Keep only the source's flat projected/painted country-fair scenery softly behind, as an indoor attraction set rather than a real forest. Crop all signs/controller lettering. Do not invent a new exterior, full route, live fantasy animals, different weapons or unpictured undercarriage. Preserve indoor practical blue/purple lighting instead of adding an outdoor sky. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-93543269696566-thumbnail.jpg",
+      "thumbnailSHA256": "342da43306d55980f9f8314cb880c211503eb197eff52bead700fc99c7e1ae83",
+      "thumbnailBytes": 22339,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-93543269696566-detail.jpg",
+      "detailSHA256": "5745084976f984617ecda7ae57b6b51e5552985e82765bb3a10b23e09ce569e0",
+      "detailBytes": 124855,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-93543269696566",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Knott's Bear-y Tales: Return to the Fair at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: The genuine official photograph documents the physical Bear-y Tales ride vehicle and guests: high ochre-orange seat surround with black padded seat backs, glossy maroon/brown front rail with warm yellow trim, and actual purple jar-shaped interactive controllers with silver/gray handle/nozzle rims and attached cables. Use a close portrait of this real vehicle/controller/seat section with incidental 3-D-glasses-wearing guests. Keep only the source's flat projected/painted country-fair scenery softly behind, as an indoor attraction set rather than a real forest. Crop all signs/controller lettering. Do not invent a new exterior, full route, live fantasy animals, different weapons or unpictured undercarriage. Preserve indoor practical blue/purple lighting instead of adding an outdoor sky. Source capture date is unverified. Choose only a documented section for this 4:5 portrait; do not expand unseen hardware. Preserve authentic photographic materials, paint, texture and physical connections. Use restrained blue-purple mood with appropriate practical light. No new text, logos, UI, watermark, copied faces, invented vehicles or route.",
+      "promptSHA256": "cba839efe65dd710d432430f85c797688667d0c8808ee61547000cb12519672f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 61,
+      "rideId": 106574419593998,
+      "rideName": "Linus Launcher",
+      "alt": "Illustrated Linus Launcher at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:15:17.721194+00:00",
+      "originalSHA256": "fbee7a9d67ed73a602d4b41f7164226aeda5ddd40c5f32ba00f16c352489f4c9",
+      "review": "Accepted: generated pixels inspected against genuine official Knott’s Linus Launcher photo. Actual green/blue prone bed, tubular restraint frame, attached blue suspension/trusses, bulb strips, green hub and physical white Snoopy topper retained with riders face-down. Distinct from the Kings Island ride; no invented flight or new hub decoration.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F17beda42f8ca4ee24b226cce3b76cfead5e938d6-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/linus-launcher",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Linus Launcher at Knott's Berry Farm.",
+          "sha256": "42a9ae3bc03945f7a3d4f0e005e0c6beca74cc9a763307a083d8a1844a3110b7",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Linus Launcher photograph shows Knott's actual prone flying ride: green/blue padded beds holding two riders face-down side-by-side within silver tubular restraint frames, long blue suspension members connected to bulb-lined blue radial trusses, and a bright green/blue central column with the physical white Snoopy sculpture above. Use one documented green prone bed and its real attached blue members beside a source-supported portion of the green hub. Keep the actual riders' prone orientation and real restraint geometry. Do not replace it with ordinary swing chairs, a free-flying aircraft, the differently painted Kings Island ride, or invented full hub/base decoration. Source capture date is unverified; no current operating claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-106574419593998-thumbnail.jpg",
+      "thumbnailSHA256": "ce5a9d5e9340749b07a039bcd575cb7d8ac482b1625648edc93a3dd19cec1d58",
+      "thumbnailBytes": 29449,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-106574419593998-detail.jpg",
+      "detailSHA256": "c78b2f3c89aa30635909a550f4219c342f4c6df4e6678d1c39216536d351ef28",
+      "detailBytes": 179025,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-106574419593998",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Linus Launcher at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: Genuine official Linus Launcher photograph shows Knott's actual prone flying ride: green/blue padded beds holding two riders face-down side-by-side within silver tubular restraint frames, long blue suspension members connected to bulb-lined blue radial trusses, and a bright green/blue central column with the physical white Snoopy sculpture above. Use one documented green prone bed and its real attached blue members beside a source-supported portion of the green hub. Keep the actual riders' prone orientation and real restraint geometry. Do not replace it with ordinary swing chairs, a free-flying aircraft, the differently painted Kings Island ride, or invented full hub/base decoration. Source capture date is unverified; no current operating claim. Choose only a documented source section for the 4:5 portrait. Preserve believable photographic materials and real attached geometry; never expand unseen vehicle parts or supports. Use restrained blue-purple evening mood. No new text, logos, UI, watermark, copied faces or invented route.",
+      "promptSHA256": "a6fc7cd99f5e9eed7b25c648ec954011a83c3d17b77c88a658f4afb932d081f8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 61,
+      "rideId": 106720591445588,
+      "rideName": "Flying Ace",
+      "alt": "Illustrated Flying Ace at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:15:44.365556+00:00",
+      "originalSHA256": "239bc6fe31f6cdd0c0898151e692cfa40ad518aa4d425668b8d88637f223af6c",
+      "review": "Accepted: generated pixels inspected against genuine official Flying Ace photo. Tight actual dark-red tandem cockpit, black/gray padded seats, visible black lap belt/buckle, tail edge and photographed mechanical arms retained. Unseen propeller, full wings, wheels and course remain outside the frame.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F138225a83fb4b89a0a4202337cf0bdf7655d5c53-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/flying-ace",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Snoopy's Flying Ace Ride at Knott's Berry Farm",
+          "sha256": "9b9f6fce3deadfb4f1dc39ec75365f4cdc74a812a34e5724549b341a166bd207",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Flying Ace photograph shows a close tandem cockpit view of a glossy dark-red miniature aircraft body, black/gray padded seats, visible black lap belt/buckle, a red/black tail edge with white trim behind, and the photographed red/silver mechanical ride arms softly in the background. Keep a tight source-supported cockpit/upper fuselage portrait with incidental passengers, not a complete aircraft. Nose, propeller, full wings, wheels and unseen hub are outside the crop; do not invent them. Preserve molded paint/metal and the actual seat arrangement, without military lettering, new symbols, real flight or expanded park landmarks. Source capture date is unverified; no current operating claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-106720591445588-thumbnail.jpg",
+      "thumbnailSHA256": "84221db4fa4f3e4c9d1df842e88d0216551af1f2ecc1767def78e77e5730a432",
+      "thumbnailBytes": 19736,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-106720591445588-detail.jpg",
+      "detailSHA256": "3e1dfea3de87fc7a15727825ead8eca73583d6df963faa6590771e5477465110",
+      "detailBytes": 107429,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-106720591445588",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Flying Ace at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: Genuine official Flying Ace photograph shows a close tandem cockpit view of a glossy dark-red miniature aircraft body, black/gray padded seats, visible black lap belt/buckle, a red/black tail edge with white trim behind, and the photographed red/silver mechanical ride arms softly in the background. Keep a tight source-supported cockpit/upper fuselage portrait with incidental passengers, not a complete aircraft. Nose, propeller, full wings, wheels and unseen hub are outside the crop; do not invent them. Preserve molded paint/metal and the actual seat arrangement, without military lettering, new symbols, real flight or expanded park landmarks. Source capture date is unverified; no current operating claim. Choose only a documented source section for the 4:5 portrait. Preserve believable photographic materials and real attached geometry; never expand unseen vehicle parts or supports. Use restrained blue-purple evening mood. No new text, logos, UI, watermark, copied faces or invented route.",
+      "promptSHA256": "e3b92d5001eab2016ff5a6e2b816226d85dcf7eae00faa43ae099c249640465b",
+      "generationSteps": []
+    },
+    {
+      "parkId": 61,
+      "rideId": 109133209424079,
+      "rideName": "Charlie Brown's Kite Flyer",
+      "alt": "Illustrated Charlie Brown's Kite Flyer at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:16:32.150203+00:00",
+      "originalSHA256": "0de87f19412a017be7ecaaa54d5548fdb670f032bcbee20f6d26731d77bf328f",
+      "review": "Accepted: generated pixels inspected against genuine official Charlie Brown’s Kite Flyer photo. Actual yellow seats, silver tubular frames/lap rails, attached chains/red protective sleeves, brown manufactured wood-grain trunk and green flat canopy panels retained. No invented upper mechanism or new character.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffbec2a426fa5999130926c41c19dd67eac88472e-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/charlie-browns-kite-flyer",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Charlie Brown's Kite Flyer at Knott's Berry Farm",
+          "sha256": "6f04db9a391d1c1bcf1181683a13725d6c5b4e35995b1e368f1ca80006deca9c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Charlie Brown's Kite Flyer photograph shows actual yellow single and paired bucket swing seats with silver tubular seat frames/lap rails, chains with long red protective sleeves, a central brown wood-grain tree-trunk column and flat bright-green kite-eating-tree canopy panels above. Use a documented yellow seat/paired seat and its attached chains next to the real trunk/canopy section. Preserve real metal chains, restraint rails and the actual manufactured tree texture. Do not invent living trees holding disconnected chairs, new characters, a whole unpictured upper mechanism, or a different park's swing. Source capture date is unverified; no current operating claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-109133209424079-thumbnail.jpg",
+      "thumbnailSHA256": "bc29225344f33e9b795ba2a89c015ddde350107d2d23adb5ab84da21033edd84",
+      "thumbnailBytes": 26812,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-109133209424079-detail.jpg",
+      "detailSHA256": "8df791c8f90fc561f5ed5e864abdffe3ad97e165cedb297ad0f4f13ab17a4b75",
+      "detailBytes": 184890,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-109133209424079",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Charlie Brown's Kite Flyer at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: Genuine official Charlie Brown's Kite Flyer photograph shows actual yellow single and paired bucket swing seats with silver tubular seat frames/lap rails, chains with long red protective sleeves, a central brown wood-grain tree-trunk column and flat bright-green kite-eating-tree canopy panels above. Use a documented yellow seat/paired seat and its attached chains next to the real trunk/canopy section. Preserve real metal chains, restraint rails and the actual manufactured tree texture. Do not invent living trees holding disconnected chairs, new characters, a whole unpictured upper mechanism, or a different park's swing. Source capture date is unverified; no current operating claim. Choose only a documented source section for the 4:5 portrait. Preserve believable photographic materials and real attached geometry; never expand unseen vehicle parts or supports. Use restrained blue-purple evening mood. No new text, logos, UI, watermark, copied faces or invented route.",
+      "promptSHA256": "fe20edc8d075a2342407a9a4f0ee0555cd29991240760a8048c9ced3f1d47c07",
       "generationSteps": []
     },
     {
@@ -8704,6 +9278,52 @@
     },
     {
       "parkId": 61,
+      "rideId": 140816247348696,
+      "rideName": "Pacific Scrambler",
+      "alt": "Illustrated Pacific Scrambler at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:16:09.329891+00:00",
+      "originalSHA256": "95a678b8260748728c62ddf8ea7dd1630eafdbeb10c9fd7875de8737cb4d928f",
+      "review": "Accepted: generated pixels inspected against genuine official Pacific Scrambler photo. Actual pale-blue/yellow car, black/silver rail edges, connected blue arm trusses/sub-hub and central blue column/silver rod fan retained. Source lettering omitted; no detached car, expanded whole layout or different park ride.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4cf109d72582555ebf9189f9d3c3527a37258f2d-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/pacific-scrambler",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Pacific Scrambler at Knott's Berry Farm",
+          "sha256": "7a412d35966f0e89648fc2a90e3f963c36e6ee7c11249d06bafc4a6cc7b49df9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Genuine official Pacific Scrambler photograph shows the actual pale-blue curved gondola cars with yellow/orange-red upper front panels, black/silver lap rails, blue triangular steel arm trusses connected to blue radial hubs, and a central blue column with a fan/burst of thin silver rods above. Use a close section of a documented pale-blue/yellow car and its attached blue sub-hub/trusses with a little central column. Omit ride-name lettering/numbers and foreground fence; keep source-supported paint, silver edges and physical joints. Do not invent a whole different Scrambler layout, free-driving cars, extra supports or new ride machinery. Source capture date is unverified; no current operating claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-140816247348696-thumbnail.jpg",
+      "thumbnailSHA256": "1e33ad50052174f12f2a34225a5af3f7b159569d52286d7f00eb960379eb512e",
+      "thumbnailBytes": 25829,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-140816247348696-detail.jpg",
+      "detailSHA256": "88b961c86a9269bd36f99bc2fa574e5ebb9f62b7e6f7c69872ab75bcb70aca01",
+      "detailBytes": 171381,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-140816247348696",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Pacific Scrambler at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: Genuine official Pacific Scrambler photograph shows the actual pale-blue curved gondola cars with yellow/orange-red upper front panels, black/silver lap rails, blue triangular steel arm trusses connected to blue radial hubs, and a central blue column with a fan/burst of thin silver rods above. Use a close section of a documented pale-blue/yellow car and its attached blue sub-hub/trusses with a little central column. Omit ride-name lettering/numbers and foreground fence; keep source-supported paint, silver edges and physical joints. Do not invent a whole different Scrambler layout, free-driving cars, extra supports or new ride machinery. Source capture date is unverified; no current operating claim. Choose only a documented source section for the 4:5 portrait. Preserve believable photographic materials and real attached geometry; never expand unseen vehicle parts or supports. Use restrained blue-purple evening mood. No new text, logos, UI, watermark, copied faces or invented route.",
+      "promptSHA256": "8d40b638b5b3a58875ccba05a99a4f845e86a4cc4ca2313c61f0f22bc67c5eca",
+      "generationSteps": []
+    },
+    {
+      "parkId": 61,
       "rideId": 144123460122888,
       "rideName": "Dragon Swing",
       "alt": "Illustrated Dragon Swing at Knott’s Berry Farm",
@@ -8750,6 +9370,107 @@
     },
     {
       "parkId": 61,
+      "rideId": 150801282714618,
+      "rideName": "Calico River Rapids",
+      "alt": "Illustrated Calico River Rapids at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:19:31.884559+00:00",
+      "originalSHA256": "b4d271394cea350c6cf0db67ff49f511a398c604dc0ea7851e05330edd95a59c",
+      "review": "Accepted: generated pixels inspected against genuine official Calico River Rapids photo. Actual tan raft shell/silver rim, wide black ribbed bumper ring, inward-facing high-backed seats/handholds and documented narrow white-water channel, concrete banks, boulders and trees retained. No invented full river route or raft type.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fce7276ee5ab5a6b7b527ba5c75ad102ade0914fa-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/calico-river-rapids",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Calico River Rapids at Knott's Berry Farm",
+          "sha256": "1a218bde34bea1d9e38c6c3a29bcd8ad09295cd4c01244494681da8d65b09f71",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Calico River Rapids photograph shows an actual circular raft with tan/beige molded shell and silver outer rim above a very wide black ribbed rubber bumper ring, black high-backed inward-facing seats and center handholds, with incidental riders. It floats in a narrow white-water channel with ochre concrete banks, actual gray/tan boulders and conifers. Keep this documented close raft-and-channel view, preserving the real seat/bumper geometry and flowing water. Do not invent a full river layout, giant waterfall, different raft capacity, raft canopy or fantasy terrain. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-150801282714618-thumbnail.jpg",
+      "thumbnailSHA256": "30c56a331472a69ff3997c5cf1f3846ed3b30f4b9e6275eea2e5a631578e3554",
+      "thumbnailBytes": 27952,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-150801282714618-detail.jpg",
+      "detailSHA256": "7f6f5c57d50412cf1b3866fce00876134c6047cfbb56bedcec016bfe15942c74",
+      "detailBytes": 211473,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-150801282714618",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Calico River Rapids at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: The genuine official Calico River Rapids photograph shows an actual circular raft with tan/beige molded shell and silver outer rim above a very wide black ribbed rubber bumper ring, black high-backed inward-facing seats and center handholds, with incidental riders. It floats in a narrow white-water channel with ochre concrete banks, actual gray/tan boulders and conifers. Keep this documented close raft-and-channel view, preserving the real seat/bumper geometry and flowing water. Do not invent a full river layout, giant waterfall, different raft capacity, raft canopy or fantasy terrain. Source capture date is unverified. Choose only a documented section for this 4:5 portrait; do not expand unseen hardware. Preserve authentic photographic materials, paint, texture and physical connections. Use restrained blue-purple mood with appropriate practical light. No new text, logos, UI, watermark, copied faces, invented vehicles or route.",
+      "promptSHA256": "ad5faaa792723a6bdfc4e1fb1086db84229a8c367318df40aa2a6aa1ceaa1738",
+      "generationSteps": []
+    },
+    {
+      "parkId": 61,
+      "rideId": 153489795208989,
+      "rideName": "Beagle Express Railroad",
+      "alt": "Illustrated Beagle Express Railroad at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:23:48.319759+00:00",
+      "originalSHA256": "1c939f50b0ebe220ede3d5d8ea7016a76e48e35ee210aeaea0656b650f2dc9be",
+      "review": "Accepted: corrected generated pixels inspected against genuine MouseInfo June 2024 photo. Tight view retains actual green boiler/brass bands, copper-brown dome, yellow zigzag chimney, black front side, green lamp and only source-supported upper wheel/rod section. Expanded full pilot, low green cylinder, lower wheel halves, underframe and foreground rails excluded. Original draft and exact built-in framing edit preserved.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://photos.smugmug.com/Other-Parks/Knotts-Berry-Farm-News-and-Inf/2024-06-27---Knotts-Berry-Farm-News-and-Info---Camp-Snoopy-R/i-fvjJsmX/0/KcV4Z7tc28xsQV3bhtRK5jQmtPbRmTvS5mFb6ps58/L/knott%27s%20camp%20snoopy%20beagle%20express%20railway%2020240627_093402-Th.jpg",
+          "sourceURL": "https://mouseinfo.com/2024/07/guide-beagle-express-railway-adds-peanuts-charm-at-knotts-camp-snoopy/",
+          "credit": "MouseInfo (2024 reference publisher; article by Joey Inigo)",
+          "license": "Copyright MouseInfo; source rights retained",
+          "licenseURL": "https://mouseinfo.com/terms-of-use/",
+          "alt": "Real Beagle Express green/yellow locomotive at Knott's Berry Farm, MouseInfo June 2024",
+          "sha256": "765706e244ab2d152a8f78c170babc0d2f89cb17a6d47bf5cffe15385636194b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine MouseInfo on-site photo in its 2024 guide, labeled 2024-06-27 in the dated gallery and filename, shows the real refreshed Beagle Express locomotive from the side: glossy green boiler/body with brass/gold bands and rails, black round front/smokebox, tall yellow chimney with a black zigzag band, green rectangular front lamp housing, green spoked wheel with yellow rim and actual gray metal connecting rod/running gear, copper-brown capped green domes, and the documented rails/ties/green foliage. Use a close source-supported side section including the real chimney, front wheel and rod. Keep the cab, full pilot, carriage train and route cropped where not shown; do not invent them or substitute the earlier retired train or Calico Railroad engine. Exclude the foreground sign and lettering. Historical June 2024 appearance; no live operation or unsupported mechanical power claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-153489795208989-thumbnail.jpg",
+      "thumbnailSHA256": "11eff3d27bffe47af6334ea6032121d02921fd4f3ac8a835a201dd475956de3a",
+      "thumbnailBytes": 25816,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-153489795208989-detail.jpg",
+      "detailSHA256": "8cd69f10f79a72a9a4f187e315caf73c8dc034f82de410e9df00571e5acd867f",
+      "detailBytes": 161375,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-153489795208989",
+      "prompt": "Make a framing-only accuracy edit of image 1, the generated Beagle Express locomotive portrait. Image 2 is the genuine MouseInfo June 2024 photo. Tighten the 4:5 portrait to ONLY the documented upper green boiler, brass bands/rails, copper-brown-capped green dome, black smokebox side, yellow zigzag chimney and green rectangular lamp housing. The bottom crop should intersect the source-supported main green wheel near its center so only its photographed upper arc/upper spokes can remain. Exclude the ENTIRE newly exposed full front pilot, green low cylinder, lower wheel halves, extra underframe and foreground rails/ballast that image 1 expanded beyond the close photo. Do not reconstruct any unseen locomotive part or new support. Preserve source-supported proportions, real painted metal, mechanical connections and restrained dusk style. No cab/carriages, smoke plumes, new text, number, logo, UI, watermark or invented route.",
+      "promptSHA256": "99170e67f38aa12aa39dac60cb71670acfb9cfbf00cefca8207cbe3da783a06e",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Beagle Express Railroad at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: The genuine MouseInfo on-site photo in its 2024 guide, labeled 2024-06-27 in the dated gallery and filename, shows the real refreshed Beagle Express locomotive from the side: glossy green boiler/body with brass/gold bands and rails, black round front/smokebox, tall yellow chimney with a black zigzag band, green rectangular front lamp housing, green spoked wheel with yellow rim and actual gray metal connecting rod/running gear, copper-brown capped green domes, and the documented rails/ties/green foliage. Use a close source-supported side section including the real chimney, front wheel and rod. Keep the cab, full pilot, carriage train and route cropped where not shown; do not invent them or substitute the earlier retired train or Calico Railroad engine. Exclude the foreground sign and lettering. Historical June 2024 appearance; no live operation or unsupported mechanical power claim. Choose only a documented section for this 4:5 portrait; do not expand unseen hardware. Preserve authentic photographic materials, paint, texture and physical connections. Use restrained blue-purple mood with appropriate practical light. No new text, logos, UI, watermark, copied faces, invented vehicles or route.",
+          "outputSHA256": "0256194358dd30f14a39a202ff9309f1b198db9fd855b77b9bbcb4e0dca493b7"
+        },
+        {
+          "prompt": "Make a framing-only accuracy edit of image 1, the generated Beagle Express locomotive portrait. Image 2 is the genuine MouseInfo June 2024 photo. Tighten the 4:5 portrait to ONLY the documented upper green boiler, brass bands/rails, copper-brown-capped green dome, black smokebox side, yellow zigzag chimney and green rectangular lamp housing. The bottom crop should intersect the source-supported main green wheel near its center so only its photographed upper arc/upper spokes can remain. Exclude the ENTIRE newly exposed full front pilot, green low cylinder, lower wheel halves, extra underframe and foreground rails/ballast that image 1 expanded beyond the close photo. Do not reconstruct any unseen locomotive part or new support. Preserve source-supported proportions, real painted metal, mechanical connections and restrained dusk style. No cab/carriages, smoke plumes, new text, number, logo, UI, watermark or invented route.",
+          "outputSHA256": "1c939f50b0ebe220ede3d5d8ea7016a76e48e35ee210aeaea0656b650f2dc9be"
+        }
+      ]
+    },
+    {
+      "parkId": 61,
       "rideId": 185294703143363,
       "rideName": "HangTime",
       "alt": "Illustrated HangTime at Knott’s Berry Farm",
@@ -8792,6 +9513,52 @@
       "key": "61-185294703143363",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict HangTime at Knott's Berry Farm. Follow these actual source- and pixel-reviewed facts and limits: Genuine official HangTime photograph shows the actual orange-nosed train descending the steep turquoise steel drop on cream/tan support columns with gray access platform/handrails; turquoise triangular-spine track curves across the foreground. The broad train has four seats across, with blue seats/restraints and gray frame. Use a tight portrait around the actual steep drop, front train and documented platform/columns, keeping rear train rows cropped where necessary instead of inventing a seat or row count. No new route, extra inversion, unsupported car or tower. Source capture date is unverified. Choose a documented close or medium source section to make the 4:5 portrait, without expanding unseen ride hardware. Keep exactly the referenced park's actual vehicles, connected rails and supports, believable photographic materials and restrained blue-purple dusk light. No new lettering, signs, logos, UI, watermark, copied faces or invented ride geometry.",
       "promptSHA256": "49de873d1852cb8ad38e43205dd14dd23993c2a5aba8b2de9fcebef518f26314",
+      "generationSteps": []
+    },
+    {
+      "parkId": 61,
+      "rideId": 187688217041250,
+      "rideName": "Calico Railroad",
+      "alt": "Illustrated Calico Railroad at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:21:08.913796+00:00",
+      "originalSHA256": "599dc095c4c15fa1f429e78c0a0f65f6465062d613926eb3a94a3811acce8be9",
+      "review": "Accepted: generated pixels inspected against genuine official Calico Railroad photograph. Actual round riveted black/gray smokebox, lit headlamp, chimney, attached piping/rails and vertical-bar pilot retained with photographed timber water tower/spout and shingled station context. Source number/sign lettering and unrelated coaster excluded; unseen side/wheels/cars not added.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Feadb1f60d97807823c954d69947706694d434877-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/calico-railroad",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Calico Railroad at Knott's Berry Farm",
+          "sha256": "83388d96441c2176d748a5cca8683277616854240b8953ba7f1f5bfc1e0bbbff",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Calico Railroad photograph shows the front of the actual black/dark-gray steam locomotive at its rustic station: large round riveted smokebox, round lit headlamp, cylindrical chimney, attached brass/black piping/handrails and black vertical-bar pilot, steam around its lower front, with an old timber water tower/spout and shingled station building. Use a close front portrait of the photographed locomotive, retaining only these source-supported connected components and station context. Incidental cowboy-hatted attendants may remain small. Crop source signs/number plate lettering and unrelated background coaster; do not invent unseen wheels, passenger cars, engine side, full rails or new station architecture. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-187688217041250-thumbnail.jpg",
+      "thumbnailSHA256": "9f27d2f720a44e629769214eface7795192ac0191832d141fb7f5a7d6a0cabe5",
+      "thumbnailBytes": 24160,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-187688217041250-detail.jpg",
+      "detailSHA256": "e25874f7ee81b990722e2d19238292e56e0420288457fe56dabfc5a9bc89deac",
+      "detailBytes": 166208,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-187688217041250",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Calico Railroad at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: The genuine official Calico Railroad photograph shows the front of the actual black/dark-gray steam locomotive at its rustic station: large round riveted smokebox, round lit headlamp, cylindrical chimney, attached brass/black piping/handrails and black vertical-bar pilot, steam around its lower front, with an old timber water tower/spout and shingled station building. Use a close front portrait of the photographed locomotive, retaining only these source-supported connected components and station context. Incidental cowboy-hatted attendants may remain small. Crop source signs/number plate lettering and unrelated background coaster; do not invent unseen wheels, passenger cars, engine side, full rails or new station architecture. Source capture date is unverified. Choose only a documented section for this 4:5 portrait; do not expand unseen hardware. Preserve authentic photographic materials, paint, texture and physical connections. Use restrained blue-purple mood with appropriate practical light. No new text, logos, UI, watermark, copied faces, invented vehicles or route.",
+      "promptSHA256": "9597e48ea217ad8c31917df0e7931a2f7badbde21159c2db66f6a934abc6f8f8",
       "generationSteps": []
     },
     {
@@ -8842,6 +9609,52 @@
     },
     {
       "parkId": 61,
+      "rideId": 221607746788667,
+      "rideName": "Hat Dance",
+      "alt": "Illustrated Hat Dance at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:23:19.559401+00:00",
+      "originalSHA256": "aa7cc22178015fb3d4e55ff7c2fa8c4dab92c2d2b59076f3dc7eb438029e6815",
+      "review": "Accepted: generated pixels inspected against genuine official Hat Dance photo. Actual yellow gondola with red recess/light accents, geometric paint, black entry gate/backrest and connected brass-colored center pole/flower-painted sombrero canopy retained. Documented neighboring painted gondolas remain background; no new hub or detached hats.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F48427d06e12d7f8cb6af42c8398d98044cf22c32-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/hat-dance",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Hat Dance spinning ride at Knott's Berry Farm",
+          "sha256": "07ffb2e9257d27db8a1126e99b98df32bf65b1f898074e85809663c74941545d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Hat Dance photograph shows the actual bright cup-like gondolas with yellow/red/blue/green geometric bands and round red light/recess accents, black padded backrest/metal hoops and real black entry gate. Each has a large painted sombrero canopy on a vertical brass-colored center pole, with flower/leaf motifs under the brim. Use a close source-supported section of the documented yellow gondola and its pole/sombrero brim, with incidental riders. Keep the actual connected ride hardware; do not turn the hats into free-flying objects, add a teapot, invent a new hub/full base or expand unseen lower vehicle parts. Source capture date is unverified; no current operating claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-221607746788667-thumbnail.jpg",
+      "thumbnailSHA256": "e21e32a7f55b068d0a4aa816702f88e7546d680abc7ea0f932f94aa5cf0acce3",
+      "thumbnailBytes": 29861,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-221607746788667-detail.jpg",
+      "detailSHA256": "33d06e3759112ef9ca3d3f01f19a5e691ef22b24ffa8642a5542ab718227417d",
+      "detailBytes": 180344,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-221607746788667",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Hat Dance at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: The genuine official Hat Dance photograph shows the actual bright cup-like gondolas with yellow/red/blue/green geometric bands and round red light/recess accents, black padded backrest/metal hoops and real black entry gate. Each has a large painted sombrero canopy on a vertical brass-colored center pole, with flower/leaf motifs under the brim. Use a close source-supported section of the documented yellow gondola and its pole/sombrero brim, with incidental riders. Keep the actual connected ride hardware; do not turn the hats into free-flying objects, add a teapot, invent a new hub/full base or expand unseen lower vehicle parts. Source capture date is unverified; no current operating claim. Choose only a documented section to make the 4:5 portrait; never expand unseen hardware or a hidden ride base. Preserve authentic photographic materials, connected physical geometry and actual paint. Keep restrained blue-purple evening light. No new text, logo, UI, watermark, copied faces or invented route.",
+      "promptSHA256": "86338f975d98777b8cb84679674f9c59373cc573b85f11f2868c10350654bdaf",
+      "generationSteps": []
+    },
+    {
+      "parkId": 61,
       "rideId": 222623375082118,
       "rideName": "Jaguar!",
       "alt": "Illustrated Jaguar! at Knott’s Berry Farm",
@@ -8888,6 +9701,52 @@
     },
     {
       "parkId": 61,
+      "rideId": 246427858842189,
+      "rideName": "Los Voladores",
+      "alt": "Illustrated Los Voladores at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:25:05.404706+00:00",
+      "originalSHA256": "0ee866eee584915b6d1c14a552b1489351d564fa79b26154b6b4e1bfd3dbcf13",
+      "review": "Accepted: generated pixels inspected against genuine official Los Voladores photo. Real green/cream/gold mural canopy with warm bulb rows, decorated column section and red chairs/silver frames on attached chains retained in a close view. Foreground entrance/sign excluded; hidden full base not reconstructed.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb4d8b84221c256ae56505f3277614bd78223415b-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/los-voladores",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Los Voladores classic swing ride at Knott's Berry Farm",
+          "sha256": "8066415e9597db6568e029abbe241055d158376a3eddf312ca403ef58ae7d21b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Los Voladores photograph shows the actual decorated classic wave-swing canopy with green/cream/gold painted mural panels and rows of warm bulbs, a painted central column and red bucket chairs in silver frames suspended by real long chains. A blue/yellow stucco entrance and red-tile roof obscure much of the lower ride. Use a close portrait of ONLY the photographed canopy/chains and red chair section with a source-supported piece of the decorated column; crop out the foreground entrance/sign instead of reconstructing the hidden full base. Preserve all actual attached suspension. Do not invent a full unobstructed carousel, different chairs, new base architecture or added lettering. Source capture date is unverified; no current operating claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-246427858842189-thumbnail.jpg",
+      "thumbnailSHA256": "5329699af2ebc5f4e0bd5c0b5e899cdf5341cd6892e8e9feeaa90255545d47b2",
+      "thumbnailBytes": 35933,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-246427858842189-detail.jpg",
+      "detailSHA256": "dc415d9217ca1ed28fd5a478fb35b694f8692026dcb77e1b8ee3674686ec24ef",
+      "detailBytes": 235800,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-246427858842189",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Los Voladores at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: The genuine official Los Voladores photograph shows the actual decorated classic wave-swing canopy with green/cream/gold painted mural panels and rows of warm bulbs, a painted central column and red bucket chairs in silver frames suspended by real long chains. A blue/yellow stucco entrance and red-tile roof obscure much of the lower ride. Use a close portrait of ONLY the photographed canopy/chains and red chair section with a source-supported piece of the decorated column; crop out the foreground entrance/sign instead of reconstructing the hidden full base. Preserve all actual attached suspension. Do not invent a full unobstructed carousel, different chairs, new base architecture or added lettering. Source capture date is unverified; no current operating claim. Choose only a documented section to make the 4:5 portrait; never expand unseen hardware or a hidden ride base. Preserve authentic photographic materials, connected physical geometry and actual paint. Keep restrained blue-purple evening light. No new text, logo, UI, watermark, copied faces or invented route.",
+      "promptSHA256": "7a2a73f9073592807a1e78c3e275e07086d032e8b2228df9fb12af0a7020efb9",
+      "generationSteps": []
+    },
+    {
+      "parkId": 61,
       "rideId": 253293205904722,
       "rideName": "Timber Mountain Log Ride",
       "alt": "Illustrated Timber Mountain Log Ride at Knott’s Berry Farm",
@@ -8930,6 +9789,52 @@
       "key": "61-253293205904722",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Timber Mountain Log Ride at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: Genuine official Timber Mountain Log Ride photograph shows an actual hollow brown wood-effect log boat with flat cut-log nose descending a narrow gray/concrete-sided wet chute, tan artificial rock banks and dense blue-green pine trees. Use the documented close downhill perspective, vehicle and tandem passenger arrangement, keeping riders incidental. Preserve wet wood grain, chute edges, water and flanking rock/conifers; do not invent a complete mountain, upper drop crest, extra boat, wide side-by-side bench, new pool or unseen course. Source capture date is unverified. Use only an actual documented source section to make the 4:5 portrait; no expansion of unseen ride geometry. Keep believable photographic materials, practical highlights and restrained blue-purple evening light. No new text, logos, UI, watermark, copied faces or invented route.",
       "promptSHA256": "6d23748546534aba8b4fff5d0869872db9362c2ffa885f452543138e81550bb6",
+      "generationSteps": []
+    },
+    {
+      "parkId": 61,
+      "rideId": 255972976335537,
+      "rideName": "Sky Cabin",
+      "alt": "Illustrated Sky Cabin at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:25:29.244998+00:00",
+      "originalSHA256": "409c6e839ef7e94f7716d87112763ccf0939c4801419826032462c5fc4c07028",
+      "review": "Accepted: generated pixels inspected against genuine official Sky Cabin photo. Real white circular windowed cabin/flag-pattern ring, red-white central shaft and blue upper star housing retained. Top letter sign and unrelated coaster remain cropped; no invented ground base, full tower height or second cabin.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5aae844c950a4ce47cc30a18b1cae27162c0d317-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/sky-cabin",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Sky Cabin at Knott's Berry Farm",
+          "sha256": "33ade63212a5e227d967350bdbe7676bb9d09ef62dcc5a5496faee9a6324dff9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Sky Cabin photograph documents the real circular white observation cabin with dark rounded-rectangle windows and a red/white/blue American-flag pattern around its lower ring, supported around the actual red/white-striped central shaft below a blue cylindrical upper housing with white stars. Use this photographed cabin/shaft and a source-supported portion of the blue star housing in a close vertical portrait. Keep the top large letter sign entirely outside the frame and omit the unrelated coaster edge. Do not invent a full tower height, ground base, drop-tower seats, extra cabin or unpictured park skyline. Source capture date is unverified; no current operating claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-255972976335537-thumbnail.jpg",
+      "thumbnailSHA256": "5848d1b9c30cec613fb55763d832f8920fd747bee190d5325b8769220ad6544a",
+      "thumbnailBytes": 16232,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-255972976335537-detail.jpg",
+      "detailSHA256": "c1fe603b9c1c17652fed47f16cbc77e7ee4e7f0340ba394684f43716ab3881fb",
+      "detailBytes": 110638,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-255972976335537",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Sky Cabin at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: The genuine official Sky Cabin photograph documents the real circular white observation cabin with dark rounded-rectangle windows and a red/white/blue American-flag pattern around its lower ring, supported around the actual red/white-striped central shaft below a blue cylindrical upper housing with white stars. Use this photographed cabin/shaft and a source-supported portion of the blue star housing in a close vertical portrait. Keep the top large letter sign entirely outside the frame and omit the unrelated coaster edge. Do not invent a full tower height, ground base, drop-tower seats, extra cabin or unpictured park skyline. Source capture date is unverified; no current operating claim. Choose only a documented section to make the 4:5 portrait; never expand unseen hardware or a hidden ride base. Preserve authentic photographic materials, connected physical geometry and actual paint. Keep restrained blue-purple evening light. No new text, logo, UI, watermark, copied faces or invented route.",
+      "promptSHA256": "712f56803ed501853684b69cffca62dd2e71916a566e7b618fc6f6629a4aad14",
       "generationSteps": []
     },
     {
@@ -9023,6 +9928,61 @@
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Silver Bullet at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: Genuine official Silver Bullet photograph shows red rails with a yellow track spine, silver-gray tubular supports on concrete pads in a reflecting lake, and an inverted train hanging below the distant steep drop, riders' feet dangling. Preserve the actual red/yellow track, silver columns, water reflection and source-supported below-track train in an honest medium view. Frame one documented track/support section with the distant train instead of inventing a whole compact route or a close-up seat model. No on-top coaster train, flying loose gondola, new inversion or changed park architecture. Source capture date is unverified. Choose only a documented close or medium source section to create the 4:5 portrait; never expand unseen hardware. Use believable photographic materials and restrained blue-purple dusk light. Preserve attached physical ride geometry. No new text, logos, UI, watermark, copied faces or invented background landmarks.",
       "promptSHA256": "d56132750a24777f6f527fc72aa98fe16ea2ba9ef806d35e0f6bc307aca617dc",
       "generationSteps": []
+    },
+    {
+      "parkId": 61,
+      "rideId": 275504983296418,
+      "rideName": "Surfside Gliders",
+      "alt": "Illustrated Surfside Gliders at Knott’s Berry Farm",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:27:52.391740+00:00",
+      "originalSHA256": "374c78660beaaec43f23354bd5a40f072e20f92d8409b0bf68a63c4769f1820e",
+      "review": "Accepted: corrected generated pixels inspected against genuine official Surfside Gliders close photo. Actual upper turquoise gondola, control handle, incidental riders, attached wave-painted fin sections and documented hinges/bolts retained. Expanded pointed lower shell/full bottom silhouette and unpictured hardware are cropped out. Original draft and exact built-in framing edit preserved.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1bc41f2a847dc04ce52aa90516f41d82eaf3a1e1-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/knotts/attractions/surfside-gliders",
+          "credit": "Six Flags / Knott's Berry Farm (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Surfside Gliders at Knott's Berry Farm",
+          "sha256": "5bc7ec79a3939b072b071ba3082f3dc4df236b7ee2fe63993db50afa4c929584",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Surfside Gliders photograph is a close view of the actual turquoise/light-blue gondola body, two mounted large rounded vertical fin/rudder panels with dark-blue/white wave stripes, metal hinges/poles and a turquoise steering/control handle held by an incidental passenger. Keep the photographed close gondola/fin assembly and actual seating view; preserve real manufactured paint, bolts and attached hardware with the documented soft trees/roof background. Full radial arm/hub, lower shell and complete motion path are outside the source crop; do not reconstruct or invent them. No real aircraft, detached panels or different park ride. Source capture date is unverified; no current operating claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "61-275504983296418-thumbnail.jpg",
+      "thumbnailSHA256": "5e090c3369f43db8544567d50223724ea5d486b69c507a88aaeb0cce48ada445",
+      "thumbnailBytes": 16119,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "61-275504983296418-detail.jpg",
+      "detailSHA256": "4ea7c8603c77bf0c9e4455d9ce68586b513a6c6aa79b3846f76d8bca5eb40cc8",
+      "detailBytes": 83408,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "61-275504983296418",
+      "prompt": "Make a framing-only accuracy edit of image 1, the generated Surfside Gliders portrait. Image 2 is the genuine official close photo. Use a MUCH TIGHTER 4:5 portrait of the actual upper turquoise gondola opening, incidental passengers, visible steering/control handle and immediately attached wave-painted vertical fin sections/hinges. Crop out the ENTIRE pointed lower gondola corner, all exposed lower hull/shell edges and bottom hardware that image 1 expanded beyond the original photo. Let the lower crop cut across the visible blue side panel so no new full bottom silhouette is shown. Do not redesign the ride, expand the unseen radial arm/hub, add a new support, or create an aircraft. Preserve the real painted fiberglass/bolts, actual source framing limits, physically attached panels and restrained realistic blue-purple evening mood. No new text, logo, UI, watermark or invented route.",
+      "promptSHA256": "40d710d00d5f168c3b1e5a4d8d4d8451fdae9fb5706b52b08a48aeb3e60094ce",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Surfside Gliders at Knott's Berry Farm. Follow these source- and pixel-reviewed facts and limits: The genuine official Surfside Gliders photograph is a close view of the actual turquoise/light-blue gondola body, two mounted large rounded vertical fin/rudder panels with dark-blue/white wave stripes, metal hinges/poles and a turquoise steering/control handle held by an incidental passenger. Keep the photographed close gondola/fin assembly and actual seating view; preserve real manufactured paint, bolts and attached hardware with the documented soft trees/roof background. Full radial arm/hub, lower shell and complete motion path are outside the source crop; do not reconstruct or invent them. No real aircraft, detached panels or different park ride. Source capture date is unverified; no current operating claim. Choose only a documented section to make the 4:5 portrait; never expand unseen hardware or a hidden ride base. Preserve authentic photographic materials, connected physical geometry and actual paint. Keep restrained blue-purple evening light. No new text, logo, UI, watermark, copied faces or invented route.",
+          "outputSHA256": "19d49d3f910560d3d4f67e0f533d1e1c10853c309f395a43d4b78570fd0c8a93"
+        },
+        {
+          "prompt": "Make a framing-only accuracy edit of image 1, the generated Surfside Gliders portrait. Image 2 is the genuine official close photo. Use a MUCH TIGHTER 4:5 portrait of the actual upper turquoise gondola opening, incidental passengers, visible steering/control handle and immediately attached wave-painted vertical fin sections/hinges. Crop out the ENTIRE pointed lower gondola corner, all exposed lower hull/shell edges and bottom hardware that image 1 expanded beyond the original photo. Let the lower crop cut across the visible blue side panel so no new full bottom silhouette is shown. Do not redesign the ride, expand the unseen radial arm/hub, add a new support, or create an aircraft. Preserve the real painted fiberglass/bolts, actual source framing limits, physically attached panels and restrained realistic blue-purple evening mood. No new text, logo, UI, watermark or invented route.",
+          "outputSHA256": "374c78660beaaec43f23354bd5a40f072e20f92d8409b0bf68a63c4769f1820e"
+        }
+      ]
     },
     {
       "parkId": 62,
