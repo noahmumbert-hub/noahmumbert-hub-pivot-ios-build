@@ -244,6 +244,9 @@ enum ReferenceParkUITestFixture {
         if ProcessInfo.processInfo.arguments.contains("--ride-search-expired") {
             payload["fetchedAt"] = Date().timeIntervalSince1970 - 901
         }
+        if ProcessInfo.processInfo.arguments.contains("--ride-search-unavailable") {
+            payload["feedHealthy"] = false
+        }
         let points = try! ParkMapCatalog.load().parks[String(park.id)]!.points.filter { $0.rideId != nil }
         let requestedRideID = ProcessInfo.processInfo.arguments.first { $0.hasPrefix("--reference-ui-ride=") }
             .flatMap { Int($0.replacingOccurrences(of: "--reference-ui-ride=", with: "")) }

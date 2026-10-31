@@ -59,26 +59,37 @@ struct RideWaitPresentation: Equatable {
     static func resolve(rideID: Int, parkID: Int?, snapshot: LiveParkSnapshot?,
                         refreshFailed: Bool, at now: Date) -> Self {
         func unavailable() -> Self { Self(title: "Wait unavailable", waitMinutes: nil, isCurrent: false) }
-        guard let parkID, let snapshot, snapshot.parkId == parkID,
-              DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot,
-                  isLoading: false, refreshFailed: refreshFailed, at: now).isLive,
+        func stale() -> Self { Self(title: "Wait stale", waitMinutes: nil, isCurrent: false) }
+        guard let parkID, let snapshot, snapshot.parkId == parkID, !refreshFailed,
               let ride = snapshot.rides.first(where: { $0.id == rideID && $0.radarEligible }) else {
             return unavailable()
         }
+        let fetchedAt = min(snapshot.fetchedAt, snapshot.themeParksWiki?.fetchedAt ?? snapshot.fetchedAt)
+        let snapshotAge = now.timeIntervalSince(fetchedAt)
+        guard snapshotAge.isFinite, snapshotAge >= -120 else { return unavailable() }
+        if snapshotAge >= DashboardFeedHealth.maximumAge || snapshot.themeParksWiki?.cacheStale == true {
+            return stale()
+        }
+        guard DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot,
+            isLoading: false, refreshFailed: false, at: now).isLive else { return unavailable() }
         guard snapshot.parkActive else { return Self(title: "Park not active", waitMinutes: nil, isCurrent: true) }
         switch ride.status {
         case .open:
+            if let provider = ride.themeParksWikiStatus, provider.status != "OPERATING" { return unavailable() }
             guard let observed = ride.themeParksWikiStatus?.sourceUpdatedAt ?? ride.lastUpdated else { return unavailable() }
             let age = now.timeIntervalSince(observed)
-            guard age.isFinite, age >= -120, age < DashboardFeedHealth.maximumAge else { return unavailable() }
-            guard let wait = ride.waitTime, wait >= 0 else {
+            guard age.isFinite, age >= -120 else { return unavailable() }
+            guard age < DashboardFeedHealth.maximumAge else { return stale() }
+            guard let wait = ride.waitTime else {
                 return Self(title: "Open · wait not posted", waitMinutes: nil, isCurrent: true)
             }
+            guard wait >= 0 else { return unavailable() }
             return Self(title: wait == 0 ? "0 min wait · walk-on" : "\(wait) min wait", waitMinutes: wait, isCurrent: true)
         case .down: return Self(title: "Temporarily closed", waitMinutes: nil, isCurrent: true)
         case .scheduled: return Self(title: "Not operating now", waitMinutes: nil, isCurrent: true)
         case .parkInactive: return Self(title: "Park not active", waitMinutes: nil, isCurrent: true)
-        case .stale, .unknown: return unavailable()
+        case .stale: return stale()
+        case .unknown: return unavailable()
         }
     }
 }

@@ -361,7 +361,7 @@ struct RideDetailScreenView: View {
                                 Text(current.waitMinutes == nil ? "Ride status" : "Current wait").font(.caption).foregroundStyle(.secondary)
                                 Text(current.title).font(.title2.weight(.semibold))
                             }
-                            if let downtime = ride.downTimePresentation { Text(downtime.text).accessibilityLabel(downtime.accessibilityLabel) }
+                            if store.feedHealth(at: date).isLive, let downtime = ride.downTimePresentation { Text(downtime.text).accessibilityLabel(downtime.accessibilityLabel) }
                             if ride.hasWeatherHold, let clearance = ride.delayEvidence?.rideWeatherClearanceDescription {
                                 Label(clearance, systemImage: "bolt.shield.fill").foregroundStyle(Color.pivotWeather)
                             }
@@ -483,10 +483,10 @@ private struct RideRowView: View {
                     .fixedSize(horizontal: false, vertical: true)
             }
             HStack(alignment: .firstTextBaseline, spacing: 7) {
-                PivotStatusDot(color: statusColor)
+                PivotStatusDot(color: current.isCurrent ? statusColor : Color.pivotMuted)
                 Text(current.isCurrent ? subtitle : current.title).font(.caption).foregroundStyle(Color.pivotMuted)
             }
-            if let downtime = ride.downTimePresentation {
+            if current.isCurrent, let downtime = ride.downTimePresentation {
                 Text(downtime.text).font(.caption.weight(.medium)).foregroundStyle(.primary)
                     .accessibilityLabel(downtime.accessibilityLabel)
             }
@@ -524,7 +524,7 @@ private struct RideRowView: View {
         } else {
             Text(!current.isCurrent ? "—" : current.title == "Park not active" ? "Closed" : ride.status == .down ? "Down" : ride.status == .scheduled ? "Closed" : "—")
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(statusColor)
+                .foregroundStyle(current.isCurrent ? statusColor : Color.pivotMuted)
                 .padding(.horizontal, 9)
                 .padding(.vertical, 6)
                 .background(statusColor.opacity(0.08), in: Capsule())
@@ -546,7 +546,7 @@ private struct RideRowView: View {
         if current.isCurrent { parts.append(ride.statusDescription) }
         if let wait = current.waitMinutes { parts.append("\(wait) minute wait") }
         else { parts.append(current.title) }
-        if let downtime = ride.downTimePresentation { parts.append(downtime.accessibilityLabel) }
+        if current.isCurrent, let downtime = ride.downTimePresentation { parts.append(downtime.accessibilityLabel) }
         return parts.joined(separator: ". ")
     }
 }

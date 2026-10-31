@@ -62,6 +62,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
     test_options+=(
       -only-testing:PIVOTTests/PIVOTTests/testRideSearchWaitsFollowLatestSnapshotAndOperatingStates
       -only-testing:PIVOTTests/PIVOTTests/testRideSearchWithholdsStaleFailedMissingAndWrongParkWaits
+      -only-testing:PIVOTTests/PIVOTTests/testRideSearchRejectsContradictoryProviderStatusAndInvalidWaits
       -only-testing:PIVOTTests/PIVOTTests/testRideSearchRetainsQueryAcrossLiveWaitUpdatesAndFailures
       -only-testing:PIVOTUITests/PIVOTUITests/testRideSearchKeepsHistoricalSizeAndCurrentWaits
       -only-testing:PIVOTUITests/PIVOTUITests/testFavoriteRideSearchConnectsWaitsAndSupportsLargeText
