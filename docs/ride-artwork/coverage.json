@@ -364,10 +364,10 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 51,
-    "pendingIllustrations": 1073,
-    "acceptedForRequestedStyle": 50,
-    "unfinishedForRequestedStyle": 1074,
+    "acceptedIllustrations": 53,
+    "pendingIllustrations": 1071,
+    "acceptedForRequestedStyle": 52,
+    "unfinishedForRequestedStyle": 1072,
     "blocked": 5
   },
   "parks": [
@@ -30682,10 +30682,10 @@
           "url": "https://coasterpedia.net/wiki/Constellation_Carousel"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "334-14689",
@@ -30740,10 +30740,10 @@
           "url": "https://rcdb.com/20549.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "334-14691",

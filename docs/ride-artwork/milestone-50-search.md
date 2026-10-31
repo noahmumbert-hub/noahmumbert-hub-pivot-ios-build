@@ -44,6 +44,6 @@ present. The former Pro Max failure did not reproduce; no production map fix or
 change to the failing test was made. Full run 41224611310 on that older revision
 remains failed: its Pro job passed 198 unit tests but failed six of 27 UI tests,
 five during simulator background assertion acquisition and one Safari Legal
-attribution assertion. Other job results must be recorded separately when final.
+attribution assertion. Pro Max and SE each passed 198 unit and 27 UI tests; the failed Pro job skipped the archive, so that run produced no IPA.
 These older results do not validate the new search code or eleven resources.
 No PR or publication was made.

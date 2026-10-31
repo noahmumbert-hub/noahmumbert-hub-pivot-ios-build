@@ -63,6 +63,6 @@ AI disclosure and retained publisher rights without an invented CC license.
 Full run 41224611310 on 5eaf95b failed in its Pro job: all 198 unit tests passed;
 21 of 27 UI tests passed. Five failures were simulator background-assertion
 acquisition timeouts during app launch; the sixth was the Safari Legal link
-assertion. Pro Max succeeded, while SE was still finishing at this checkpoint.
+assertion. Pro Max and SE each passed 198 unit and 27 UI tests. The Pro job failed, so no IPA was produced for that run.
 No product defect or common root cause is established. This run is not a pass.
 The combined search/50-image milestone needs its own complete native gate.

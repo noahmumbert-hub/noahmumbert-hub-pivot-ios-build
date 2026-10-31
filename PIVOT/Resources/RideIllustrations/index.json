@@ -2053,6 +2053,90 @@
       ]
     },
     {
+      "parkId": 334,
+      "rideId": 14688,
+      "rideName": "Constellation Carousel",
+      "alt": "Illustrated Constellation Carousel at Epic Universe",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:59:28.193162+00:00",
+      "originalSHA256": "43fdbfa6a99b6564142ddfeecfebc9872bf12b35332c4644ef74010afd593c3c",
+      "review": "Accepted: the full low blue-and-gold dome, sweeping gold external ribs to lagoon edge, purple scalloped canopy, small central spire and fountain reflections preserve Constellation Carousel's photographed architecture.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/ueu-cp-constellation-carousel-lake-exterior-a.jpg",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/epic-universe/worlds/celestial-park",
+          "credit": "Universal Orlando Resort (reference publisher)",
+          "license": "Copyright Universal Studios; source rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/terms-of-service/copyright",
+          "alt": "Constellation Carousel at Universal Epic Universe, official attraction photograph",
+          "sha256": "14d185468c6b0d85bfe2514c1dc267e62aa9c7b4b56d8dc409903379865abe99",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual official photograph pixels show gold sweeping external ribs, low blue/gold dome, purple scalloped canopy and lagoon fountains."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "334-14688-thumbnail.jpg",
+      "thumbnailSHA256": "0e56ffd681a43ae1edfba9ceb3c72b55eaf4f20b084c779254affe91dc0ab849",
+      "thumbnailBytes": 25992,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "334-14688-detail.jpg",
+      "detailSHA256": "f0a2072fb38c462e62e0bf4d37824a5ccc83c760b948d3b894bb6a311276e239",
+      "detailBytes": 201005,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 334,
+      "rideId": 14690,
+      "rideName": "Stardust Racers",
+      "alt": "Illustrated Stardust Racers at Epic Universe",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T17:58:56.396742+00:00",
+      "originalSHA256": "204fb417186d4002ba427b640f709e076832c6b22eeb184f1956f35860ef6389",
+      "review": "Accepted: yellow truss rails, sage supports, banked red-seat/purple-gold comet trains, silver armillary sphere, curved rings/gold tail and green station roof match the actual Stardust Racers exterior photo.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/ueu-celestial-park-stardust-racers-exterior-front-zoomed-out-b.jpg",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/epic-universe/worlds/celestial-park",
+          "credit": "Universal Orlando Resort (reference publisher)",
+          "license": "Copyright Universal Studios; source rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/terms-of-service/copyright",
+          "alt": "Stardust Racers at Universal Epic Universe, official attraction photograph",
+          "sha256": "f6ddcb296e07b20c106ae8f726291596b6901008ee6d606e5cb9e555f915ce27",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual official photograph pixels show yellow truss rails, sage supports, red seats/purple-gold comet trains, armillary silver sphere/gold comet tail and green curved station roof."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "334-14690-thumbnail.jpg",
+      "thumbnailSHA256": "02f1dd3125f6b5ac710e1d1fa4ebd87467235c966395f08fc83e5eb9fc983d30",
+      "thumbnailBytes": 25499,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "334-14690-detail.jpg",
+      "detailSHA256": "8e92e53818fb0056ca7590377e5ea88cef0bcd44198f674c3ed996854987fe34",
+      "detailBytes": 210182,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
       "parkId": 339,
       "rideId": 33209166214222,
       "rideName": "Bahnzai Pipeline",
