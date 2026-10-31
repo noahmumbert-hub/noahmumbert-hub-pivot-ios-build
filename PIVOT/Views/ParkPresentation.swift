@@ -127,7 +127,7 @@ struct ParkBannerView: View {
                     LinearGradient(stops: [
                         .init(color: Color(red: 0.05, green: 0.09, blue: 0.18).opacity(0.97), location: 0),
                         .init(color: Color(red: 0.05, green: 0.09, blue: 0.18).opacity(typeSize.isAccessibilitySize ? 0.86 : 0.82), location: 0.49),
-                        .init(color: .black.opacity(typeSize.isAccessibilitySize ? 0.68 : 0.18), location: 1)
+                        .init(color: .black.opacity(typeSize.isAccessibilitySize ? 0.72 : 0.60), location: 1)
                     ], startPoint: .leading, endPoint: .trailing)
                 }.frame(width: geometry.size.width, height: geometry.size.height).accessibilityHidden(true)
             }
@@ -161,7 +161,7 @@ struct ParkBannerView: View {
         HStack(alignment: .top, spacing: 12) {
             Image(systemName: icon).font(.body).frame(width: 22).padding(.top, 2)
             VStack(alignment: .leading, spacing: 2) {
-                Text(title).foregroundStyle(.white.opacity(0.75))
+                Text(title).foregroundStyle(.white.opacity(0.85))
                 Text(value)
             }.font(.subheadline).fixedSize(horizontal: false, vertical: true)
         }
