@@ -4578,6 +4578,48 @@
     },
     {
       "parkId": 60,
+      "rideId": 22030429369577,
+      "rideName": "Dodgem",
+      "alt": "Illustrated Dodgem at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:52:51.648731+00:00",
+      "originalSHA256": "68a429eb7d86d1f3c1896d1eae4466118dea51cb10b4c06bf8c60e598b83d068",
+      "review": "Accepted: inspected adult Kings Island Dodgem against Brad Perdue 2023 genuine hardware photo. Broad angular blue/silver car with yellow stripes, two ribbed black seats, real headlamp/indicator style, wraparound black bumper and attached ceiling-contact power pole retained. Distinct from junior Dodgem and Cedar Point. Historical source date/credit and retained rights are explicit; source watermark and crowds omitted.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://kicentral.com/wp-content/uploads/2018/11/PXL_20230722_163300323.NIGHT_.jpg",
+          "sourceURL": "https://kicentral.com/photos/dodgems/",
+          "credit": "Brad Perdue / KICentral.com",
+          "license": "Copyright Brad Perdue / Kings Island Central; source rights retained",
+          "licenseURL": "https://kicentral.com/photos/dodgems/",
+          "alt": "Kings Island Dodgem bumper cars in the covered pavilion, photographer credit visible as Brad Perdue 23.",
+          "sha256": "da4da5470dda807804a14a13f35fa50427ca08bc1b5a4dd60763b73ce201530b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kings Island Central photo, visibly credited Brad Perdue 23, shows the adult Dodgem in its covered pavilion: broad angular sports-car shells in blue, lime, orange, purple and silver, two side-by-side high black ribbed seats, angular silver/cream headlamp panels with orange indicators, low black wraparound bumpers, upright black power poles touching the ceiling mesh, reflective dark metal floor, gray-blue pavilion columns and open sides. Use one actual documented car and connected pole; no imported Cedar Point body shape or miniature Joe Cool car. Do not reproduce the watermark, crowds or signs. Current appearance beyond this 2023 photograph is not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-22030429369577-thumbnail.jpg",
+      "thumbnailSHA256": "547967920eb13b74d80144b764dd91ab7e4e7c706c68918700388408762059cc",
+      "thumbnailBytes": 21219,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-22030429369577-detail.jpg",
+      "detailSHA256": "0700a00bf0ee5b36ebaf437147edadd1de05eac5ea1edda1bba4258028b84e97",
+      "detailBytes": 149842,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 30802770948992,
       "rideName": "Character Carousel",
       "alt": "Illustrated Character Carousel at Kings Island",
@@ -4914,6 +4956,48 @@
     },
     {
       "parkId": 60,
+      "rideId": 73296304457273,
+      "rideName": "PEANUTS™ 500",
+      "alt": "Illustrated PEANUTS™ 500 at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:42:33.722125+00:00",
+      "originalSHA256": "08b958d59dd6711c20560c146cf3298261ee41ba166c7e70e392efec01883d42",
+      "review": "Accepted: inspected corrected Kings Island PEANUTS 500 close portrait against genuine yellow-car photo and original generated draft. Two adjacent steering wheels, molded yellow upper hood and cockpit remain; all lower tire and wheel-arch area is excluded because it was unverified by source. Prior expanded draft preserved. Realistic dusk generated illustration, not a real photograph.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F469f1fd811252ac8129e8f9d3c4f344dd0a2660b-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/peanuts-500",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A children's ride at an amusement park.",
+          "sha256": "1e7fccf3baccc9bb3b9e8c18d4bb4aff9683015bd78cf1c08c2913971a2c5c92",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kings Island hero shows a close yellow low-bodied stock-car-shaped kiddie vehicle with two adjacent black steering wheels, curved molded hood, black lower edge and character decals; a yellow second car and partial blue car appear behind. Keep this observed cockpit/body crop; track and full wheels are outside the photo. Do not borrow Cedar Point's different PEANUTS 500 vehicle or invent unseen course geometry."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-73296304457273-thumbnail.jpg",
+      "thumbnailSHA256": "23a42fa5df29509d69e5a74988dedded20001bc15a9e1458ef7eb3710f9eb845",
+      "thumbnailBytes": 19214,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-73296304457273-detail.jpg",
+      "detailSHA256": "b152d788a3a70df3fcf63663b32fce16e3c38c70ef9ebbd92eef64e55ac8ec42",
+      "detailBytes": 111837,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 77189767080838,
       "rideName": "Mystic Timbers",
       "alt": "Illustrated Mystic Timbers at Kings Island",
@@ -4949,6 +5033,48 @@
       "detailFile": "60-77189767080838-detail.jpg",
       "detailSHA256": "e4c6ca086553cb90828ddc6268c03222808f12aea0b566034304bcfb523915cb",
       "detailBytes": 215606,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 77949860824838,
+      "rideName": "Franklin's Flyers",
+      "alt": "Illustrated Franklin's Flyers at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:43:20.186702+00:00",
+      "originalSHA256": "74d0803afaaf8fbf3bd8f66097e8ecb73d311b8bdff4ea91129de1d5563b1de6",
+      "review": "Accepted: inspected Franklin Flyers against genuine orange-carriage photograph. Orange two-person gondola/white stripe, silver grab handle and paired upright blue/cream patchwork flying surfaces with burgundy edges retained in an honest close view. No invented overhead hub or attachment layout.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F0b2578f75a3f875b2acfa5452e836fc79b496994-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/franklins-flyers",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A children's ride at an amusement park.",
+          "sha256": "958723d3aa1d10b41aca5e8285840717bcdd2e6bff61ecdf5830489658e66849",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Kings Island page identifies eight rider-controlled flyers. Viewed photo is a close orange two-passenger metal gondola with white stripe, dark seat and visible silver grab handle, flanked by large upright cream/blue patchwork-patterned flying surfaces edged in burgundy. Preserve this distinctive photographed carriage and surfaces; the overhead attachment/hub is cropped, so do not invent it."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-77949860824838-thumbnail.jpg",
+      "thumbnailSHA256": "24dcf24a705a289263ae1633187574fba0b0bcadf0cec78a7292c0d4f121c40c",
+      "thumbnailBytes": 17921,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-77949860824838-detail.jpg",
+      "detailSHA256": "3d37b79d3082a0bfe79a6fe3df38e3e7675aae2126bc6c81b329c9a935f84b64",
+      "detailBytes": 107855,
       "detailPixels": [
         768,
         960
@@ -4998,6 +5124,90 @@
     },
     {
       "parkId": 60,
+      "rideId": 92458557111555,
+      "rideName": "Charlie Brown's Rushing River Log Ride",
+      "alt": "Illustrated Charlie Brown's Rushing River Log Ride at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:41:17.109184+00:00",
+      "originalSHA256": "1588fa29df502dc6be9a65214e852521efd0d41af9302a1d307005b0fe4566c6",
+      "review": "Accepted: inspected Charlie Brown Rushing River Log Ride against genuine Kings Island photograph. Dark bark-textured tandem log boat with rounded bow/black front handhold sits within the gray flume and splash; no invented full course or giant waterfall.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffcb136a971359789cd83e332bb543ed96cd12def-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/charlie-browns-rushing-river-log-ride",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A family getting splashed on a log ride at an amusement park.",
+          "sha256": "2e5208b1a5512b6ac44af0ef48af0f12445a872e0ba2876fd7312f5f5995c0da",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kings Island hero shows a wet dark-brown hollow log boat carrying riders in tandem, rounded bark-textured bow, a black front handhold, water splash and a narrow gray flume trough, with a partly visible drop entering from upper left. Use the documented boat/chute close view; no unseen track, giant waterfall, or whole ride layout. Do not infer current operation from the photo."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-92458557111555-thumbnail.jpg",
+      "thumbnailSHA256": "bf0d0f664ec827ebd8429df76c425f07e12a6a937cb2833338197ad0dc44dfff",
+      "thumbnailBytes": 25063,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-92458557111555-detail.jpg",
+      "detailSHA256": "9d414d544d6d98c328685b398ff787613f7aee93b96a493c246f817a32e8fe8f",
+      "detailBytes": 181129,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 106851159228714,
+      "rideName": "PEANUTS™ Off-Road Rally",
+      "alt": "Illustrated PEANUTS™ Off-Road Rally at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:42:56.038403+00:00",
+      "originalSHA256": "6030504bcbc51faa17c29d80a20367d2179d911d151964424eba6020a228d350",
+      "review": "Accepted: inspected PEANUTS Off-Road Rally against genuine Kings Island jeep photo. Red foreground molded jeep hood/metal fittings, silver guard rail/frame, dark seat and black steering wheels remain with partial pink/blue cars behind. Preserves supported close cockpit composition.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F91b7b7a119c0196e8ca19b0d4b6297ad4b7256ae-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/peanuts-off-road-rally",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A children's ride at an amusement park.",
+          "sha256": "5d42a6c88a660af001933ab9d83ce550ab1756efba7736e4c2c0c7d37f9d8ac0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kings Island hero shows open-top red, pink and blue miniature off-road jeeps with square metal-like hoods, silver horizontal guard rails and windshield-shaped frames, black steering wheels and dark bench seats. The close red hood has molded metal fittings. Yellow fence and dark platform behind. Preserve a close actual jeep view, without inventing tires or the unseen course."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-106851159228714-thumbnail.jpg",
+      "thumbnailSHA256": "46b85ee95e1eb502fd6fefea200fbb460ae31e8b3bb0f687f96313f220088f0d",
+      "thumbnailBytes": 22192,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-106851159228714-detail.jpg",
+      "detailSHA256": "2af8f570b36b4e0e62b93b598c539affdb689233ce690f0a15f438c76ee41492",
+      "detailBytes": 124988,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 109422025715493,
       "rideName": "Congo Falls",
       "alt": "Illustrated Congo Falls at Kings Island",
@@ -5033,6 +5243,90 @@
       "detailFile": "60-109422025715493-detail.jpg",
       "detailSHA256": "b9387c9ee8f29f9a8f254676479962ec09808781487dd0b443ad0691d943bc9d",
       "detailBytes": 238313,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 112988495476515,
+      "rideName": "Joe Cool's Dodgem School",
+      "alt": "Illustrated Joe Cool's Dodgem School at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:42:08.873816+00:00",
+      "originalSHA256": "ef9c8126d6dfcf9b7b2936a8708ab68ec0533e0ba1d60e3eff09498f217bd891",
+      "review": "Accepted: inspected Joe Cool Dodgem School against genuine Kings Island mini-bumper-car photograph. Blue/teal/purple/orange rounded single-seat cars with silver edging/hood stripe, round lamps, thick black bumpers and ceiling-contact power poles remain in the correct blue/yellow/red pavilion. Distinct from adult Dodgem and Cedar Point junior cars.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F28a115ce3fb48c87d57da9b175ce5a9332212eb0-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/joe-cools-dodgem-school",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Children driving pint-sized bumper cars at Joe Cool's Dodgem School.",
+          "sha256": "eb9a525a355d5b804e04eeebfefdd65ac8641d9a4d203faaa1b3713f196f533c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Kings Island page and pixels show single-seat miniature bumper cars in a covered pavilion with metal floor and overhead power mesh. Cars have blue, teal, purple or orange rounded body shells, silver top edging, thick black perimeter bumpers, silver vertical stripe on the blue hood, small round lamps and tall black power poles. Black shoulder/lap belts visible; use only evidenced restraints. Distinct from Cedar Point's cars. Blue pavilion walls, yellow fence and red columns identify this setting."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-112988495476515-thumbnail.jpg",
+      "thumbnailSHA256": "fcfe402610e6cafcd8de56ffb9c9a0dcfed463d62b89bdc60d3e582af3319fda",
+      "thumbnailBytes": 24865,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-112988495476515-detail.jpg",
+      "detailSHA256": "c5b47f6b03b802af5166003e2f7b075139f8463c466f5df278670c32f38ee826",
+      "detailBytes": 177150,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 115902859999020,
+      "rideName": "Woodstock Whirlybirds",
+      "alt": "Illustrated Woodstock Whirlybirds at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:47:08.071489+00:00",
+      "originalSHA256": "ec10e77fe3894c08178aabd6081fdcd6f044005f2778617d429ab2ae6730461b",
+      "review": "Accepted: inspected Woodstock Whirlybirds against actual Kings Island helicopter photo. Blue enclosed egg-shaped pod, dark windshield/silver side louvers, orange pontoons and underbody wheels remain physically on the red elevated rail. Distinct from Cedar Point spinning cups; no invented full interior.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5bb57a556fb9bb5d90c7f93164a237f9c8b935d1-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/woodstock-whirlybirds",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A children's ride at an amusement park.",
+          "sha256": "e1577bc70ab382fa4fe4473fcd30707dc770eda3e93b9d2f3665e8ac050f28a2",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Official Kings Island page identifies an elevated helicopter tour; actual hero shows an enclosed blue egg-shaped helicopter pod with a rounded dark windshield, silver horizontal louvers over its side window, orange pontoons, small orange circular nose detail, and underbody wheels riding on red elevated rails with yellow center guide. Keep the pod physically seated on the rails. This is not Cedar Point's spinning teacup ride with the same name; no invented rotor or interior seating beyond visible crop."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-115902859999020-thumbnail.jpg",
+      "thumbnailSHA256": "a7cec7f0fa07d70a686499bffd28fa0b052eb38a24645533228605772a0946ce",
+      "thumbnailBytes": 25696,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-115902859999020-detail.jpg",
+      "detailSHA256": "606dfc5d236a95ca0219ef755471be55650578e723b2fbd14a6c04a4d181d554",
+      "detailBytes": 170235,
       "detailPixels": [
         768,
         960
@@ -5250,6 +5544,48 @@
     },
     {
       "parkId": 60,
+      "rideId": 145675263846755,
+      "rideName": "Snoopy vs. Red Baron",
+      "alt": "Illustrated Snoopy vs. Red Baron at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:47:34.943985+00:00",
+      "originalSHA256": "72d95c5db08bed5bf24bc8a553f5c828782087de4e3fe3503a2575f9fd082193",
+      "review": "Accepted: inspected Snoopy vs Red Baron against actual Kings Island ride photograph. Red double-cockpit biplane shells, stacked black-edged wings, silver struts/side grab rail, green support arms and photographed central doghouse sculpture retained. Not a free-flying airplane.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4ed4336f32072982b7db3ee7f73df1dfb357da16-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/snoopy-vs-red-baron",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A children's ride at an amusement park.",
+          "sha256": "76cf5fdc03861b7a5358ec534351cc83b29879e993d4e4f80902d051354682ea",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kings Island hero shows red miniature two-cockpit biplanes with two stacked red wings edged black, thin silver wing struts, black cockpit edges, silver side grab handle and green supporting arms. Plane fronts have circular light bulbs; a Snoopy-on-doghouse sculpture sits at the central hub. Preserve the actual ride hardware; no invented propeller or free-flying full-size aircraft. Use plain red wing surfaces if decals are omitted; no added signage."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-145675263846755-thumbnail.jpg",
+      "thumbnailSHA256": "29bad6be16b4a01b555737d4e4c3adeda169792f56d485a57a10a53d29d97164",
+      "thumbnailBytes": 28079,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-145675263846755-detail.jpg",
+      "detailSHA256": "087b593f9e52dc00dbe2b18d7c0b2fca46e2bf0733b2113f28a8bbf06662beba",
+      "detailBytes": 185349,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 148671185954835,
       "rideName": "The Racer (Blue)",
       "alt": "Illustrated The Racer (Blue) at Kings Island",
@@ -5285,6 +5621,48 @@
       "detailFile": "60-148671185954835-detail.jpg",
       "detailSHA256": "dcf549024fdd322603d44776ccaca02ea44cacd279cfb36e0d81a371e1724ade",
       "detailBytes": 218872,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 149867283421980,
+      "rideName": "Linus' Beetle Bugs",
+      "alt": "Illustrated Linus' Beetle Bugs at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:48:05.004484+00:00",
+      "originalSHA256": "138a4ad3b60b26f5f03cd90f63a14eec0b79ef1be777d9e6ae199172412e6666",
+      "review": "Accepted: inspected Kings Island Linus Beetle Bugs against Brad Perdue archive hardware photo. Low red/teal rounded cylindrical spotted whip cars, black seats/padded lap bars, silver tubular rims/front rails and low wheels remain on the oval floor/platform. Distinct from Cedar Point tall-canopy Tilt-A-Whirl. Source is historical; full current body paint not independently established.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://kicentral.com/wp-content/uploads/2017/03/IMG_20130825_105200_487.jpg",
+          "sourceURL": "https://kicentral.com/photos/linus-beetle-bugs/",
+          "credit": "Brad Perdue / KICentral.com",
+          "license": "Copyright Brad Perdue / Kings Island Central; source rights retained",
+          "licenseURL": "https://kicentral.com/photos/linus-beetle-bugs/",
+          "alt": "Archive photograph of the Kings Island Linus Beetle Bugs whip ride, from its 2009–2013 gallery.",
+          "sha256": "234150e1a50329585bc7be5d32e864ec960e4acfe460e7b43ce2bfb3d0044cc9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Viewed actual 2013-named archive photograph, attributed by the gallery to Brad Perdue, shows Kings Island's low whip cars: upright red and turquoise rounded cylindrical bodies with black spots, black interior seats and padded lap bars, silver tubular top edging and front grab rail, low dark wheels under each car, and a low oval floor/platform within green fence under a roof. This differs from Cedar Point's high-backed Tilt-A-Whirl pods. Use this historical photographed hardware and honest close view; do not invent insect antennae, beetle faces, canopy roofs on individual cars or unseen track. Current official page still identifies an oval whip ride, and its viewed hero corroborates the black lap bar/silver rails but not full current body paint. Exact current paint and photo EXIF date are unverified. No copied people, text, logos or watermark."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-149867283421980-thumbnail.jpg",
+      "thumbnailSHA256": "1029abb3bd10bfc8b92971817c534dd548d153de85c779f8ff2f531cac2e1904",
+      "thumbnailBytes": 23134,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-149867283421980-detail.jpg",
+      "detailSHA256": "00058096ad3411f6d0be91336d13fb4fc671c25f769cc7569592db79cac70e2a",
+      "detailBytes": 160392,
       "detailPixels": [
         768,
         960
@@ -5411,6 +5789,48 @@
       "detailFile": "60-170475150455588-detail.jpg",
       "detailSHA256": "f27637681adcc5b00bf48f15db5a2682425e6cee4af02561c7cba852a16c7c0a",
       "detailBytes": 121730,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 188953268790521,
+      "rideName": "Charlie Brown's Wind Up",
+      "alt": "Illustrated Charlie Brown's Wind Up at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:48:51.225247+00:00",
+      "originalSHA256": "196c4d5e076cd08bf24fbc2a1e7c1b7619fecd4a084e80dfc9254e8ddf0c6f33",
+      "review": "Accepted: inspected Charlie Brown Wind Up against actual Kings Island swing-chair detail photograph. Yellow/light-blue individual chairs, silver front safety bar and chain, black suspension rods/straps and orange fence retained in close framing. Unseen canopy/hub is not invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F83c1647525444cd592d7f7fa722e713018b858a5-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/charlie-browns-wind-up",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A children's ride at an amusement park.",
+          "sha256": "6c624738af735ae5e192fad063df425023970f1c9783491fe49cd3d2283a1103",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kings Island hero is a close view of suspended yellow and light-blue single-person bucket swing chairs, silver tubular front safety bars and short chains, four black suspension rods/straps rising out of frame; orange fence and concrete platform behind. Main canopy/hub is not shown, so use the documented chair close view without inventing the unseen structure or importing Cedar Point's differently colored swing ride."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-188953268790521-thumbnail.jpg",
+      "thumbnailSHA256": "f9b095afd94096403d6e3fe41248786894560000429f4689c9cbfe497b558daf",
+      "thumbnailBytes": 26536,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-188953268790521-detail.jpg",
+      "detailSHA256": "e1cc99354bd76aa6d39cde463037b7998f8c8ba08ffbe0316e021cca298551b7",
+      "detailBytes": 155682,
       "detailPixels": [
         768,
         960
@@ -5754,6 +6174,48 @@
     },
     {
       "parkId": 60,
+      "rideId": 238400959337483,
+      "rideName": "Linus Launcher",
+      "alt": "Illustrated Linus Launcher at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:56:55.683888+00:00",
+      "originalSHA256": "c530aaeebb0d110955b296f6902b258b10ba395c566c4f3fddd7b26900172ed1",
+      "review": "Accepted: inspected corrected Linus Launcher crop against genuine source. Blue paired prone bed, black restraints/silver handholds, connected turquoise arm and blue/turquoise wavy column retained. Unverified decoration above the hub and unseen base excluded. Original expanded draft preserved; correction used built-in ImageGen.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fed0635ccd45e796ae83a84920c06ba1d58741d55-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/linus-launcher",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A children's ride at an amusement park.",
+          "sha256": "6e5b4438ad8825707df11fac873e6bbd549c1b128f3b6fc2fb6078a19c130235",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kings Island hero shows blue two-person prone flying beds, black over-back restraint shapes and silver handholds, attached by turquoise square steel arms to a blue/turquoise central column with wavy stripe panels and a green top. The paired riders lie face down side by side with feet extending beyond the bed. Preserve this geometry; no seated gondola or unsupported free flight. Kings Island Eiffel structure partly visible behind."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-238400959337483-thumbnail.jpg",
+      "thumbnailSHA256": "3d0133b312214b900206b8f45e29d18cdb16f5c547cd03ee4d5b54034d18947a",
+      "thumbnailBytes": 27768,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-238400959337483-detail.jpg",
+      "detailSHA256": "58c267898e17d37d5ade035a254a742053ba3bd74bac88f4a6f7ed6fbaa84e5c",
+      "detailBytes": 168608,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 239172141691320,
       "rideName": "Cargo Loco",
       "alt": "Illustrated Cargo Loco at Kings Island",
@@ -5838,6 +6300,90 @@
     },
     {
       "parkId": 60,
+      "rideId": 245008797691071,
+      "rideName": "Sally's Sea Plane",
+      "alt": "Illustrated Sally's Sea Plane at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:51:28.007594+00:00",
+      "originalSHA256": "51f21dbece83a86acff468e76d26a51273b71318c231761de541d5f022cb3761",
+      "review": "Accepted: inspected Sally Sea Plane against a fresh original-resolution view of the genuine source. The actual car has SIX side openings and SIX hinged half doors, separate from the small front windshield; generated output correctly has six. Earlier prepared reference prose counted five incorrectly and is corrected without rewriting the exact generation prompt. Yellow hull/orange underside, upper wing, tall tail and dark-blue support arms match the source.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F3dd9bf978366274fdf54c0842b0f3909c7065e8b-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/sallys-sea-plane",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A children's ride at an amusement park.",
+          "sha256": "ff104cb7569b3ab776013a8117f8efa3e43205c57d16a62161ecdd60d0b889df",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kings Island hero shows a long yellow cartoon seaplane-shaped gondola with orange underside, rounded nose, six large open rectangular side windows, six half-height side doors with silver hinges, high wing and tall rear tail, carried by dark-blue mechanical arms below. Maintain the visible window count and side shape. Other side and full support linkage are cropped; no invented pontoons, propellers, or aircraft flight. Original-resolution recount on 2026-10-31 confirms six side openings and six separate hinged doors, excluding the small front windshield. Earlier prepared wording five was an inspection error; the original generation prompt remains preserved unchanged."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-245008797691071-thumbnail.jpg",
+      "thumbnailSHA256": "be06205a56102b20d2a1cc92aeba60c175eca081b141606521b27f32abcad54b",
+      "thumbnailBytes": 21385,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-245008797691071-detail.jpg",
+      "detailSHA256": "da0f61429d178b8eb01b0a2b16f74884e78f5e752f92e0f7d4d74beeff19df1a",
+      "detailBytes": 134859,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 251988769908587,
+      "rideName": "Kite Eating Tree",
+      "alt": "Illustrated Kite Eating Tree at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:52:18.608279+00:00",
+      "originalSHA256": "08aea22326547fb26e8d0e3881a719691b0e33c41c649f10412d1aa0b028c0f5",
+      "review": "Accepted: inspected Kings Island Kite Eating Tree against genuine source. Exactly six yellow seats with dark over-shoulder restraints/orange buckle straps, yellow connected drop carriage, flat green smiling crown and red/yellow/blue kite decorations retained. Distinct from Cedar Point paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb09c71734f6f423065dc09d271dee15d11019673-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/kite-eating-tree",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A children's ride at an amusement park.",
+          "sha256": "664f8b908f90ee5a30a38a2e6c549b8790be53e1b00e9ed124cfc1dd2c972752",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kings Island hero verifies a single six-seat bright-yellow ride bank with dark over-shoulder restraints and orange buckle straps, lifted in front of a yellow tower with red/yellow/blue kite decorations and a flat green smiling tree crown above. Preserve exactly six seats and a physically connected drop-tower carriage. Do not reuse Cedar Point's differently painted Kite Eating Tree."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-251988769908587-thumbnail.jpg",
+      "thumbnailSHA256": "3cd1446e392221ef3290903613304c8519f31062cf47dcc134314650adaf1bc3",
+      "thumbnailBytes": 24209,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-251988769908587-detail.jpg",
+      "detailSHA256": "3933cdfb6380ca007d9082f55502456615c3d57525f18eac1715c3d682103180",
+      "detailBytes": 146562,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
       "rideId": 263102270473903,
       "rideName": "Banshee",
       "alt": "Illustrated Banshee at Kings Island",
@@ -5873,6 +6419,48 @@
       "detailFile": "60-263102270473903-detail.jpg",
       "detailSHA256": "2311ce9c4749a78847b00ed6b00544670f238fdc1afc5e764c24fcb942d19ea2",
       "detailBytes": 233191,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 60,
+      "rideId": 267221594670324,
+      "rideName": "Snoopy's Space Buggies",
+      "alt": "Illustrated Snoopy's Space Buggies at Kings Island",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T21:57:19.356174+00:00",
+      "originalSHA256": "4884009e6a91bdc694e95faac80a11399b5cf5b075bdea7e6552ce7be3bdebff",
+      "review": "Accepted: inspected corrected Snoopy Space Buggies crop against genuine source. Yellow tandem egg-shaped pod, red interior edging, round silver lamp and black lap belt retained with partial silver center cone. Expanded lower platform and unverified underbody/track are excluded. Original expanded draft preserved; built-in ImageGen correction.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff866f796096902c07283737a718fe5559711dccb-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/kingsisland/attractions/snoopys-space-buggies",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A children's ride at an amusement park.",
+          "sha256": "d50af1ee28da45aa7b546f6a52e339c80c3d354acb84a3dc3b9b38dc358a83cc",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kings Island hero shows close yellow egg/space-buggy pods with rounded pointed noses, silver circular front lamp, deep red interior edge, individual black lap belts and tandem riders; other red/gray pods partly visible on the circular platform. Central silver conical hub is cropped at left with green platform below. Preserve the actual yellow pod close view; do not invent the full mechanism, lunar scenery or unseen ride path. Distinct from Cedar Point's Snoopy's Space Race."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "60-267221594670324-thumbnail.jpg",
+      "thumbnailSHA256": "cc25a1039fb21180e4590083f2f6e6e44f87b2ff45627a9f74514633e69feaa8",
+      "thumbnailBytes": 20177,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "60-267221594670324-detail.jpg",
+      "detailSHA256": "a02d3401da7bde7edcb19757677f581329fff53a65b921d5fdae9ca39791d3ae",
+      "detailBytes": 112342,
       "detailPixels": [
         768,
         960
