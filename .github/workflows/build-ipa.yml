@@ -35,7 +35,7 @@ concurrency:
 
 jobs:
   build:
-    if: github.ref != 'refs/heads/diagnostics/apple-native-redesign' && (github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all')
+    if: (github.ref != 'refs/heads/diagnostics/apple-native-redesign' || contains(github.event.head_commit.message, '[full-regression]') || inputs.scope == 'all') && (github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all')
     runs-on: macos-15
     timeout-minutes: 35
     env:
@@ -86,7 +86,7 @@ jobs:
           retention-days: 7
 
   iphone-regression:
-    if: github.ref != 'refs/heads/diagnostics/apple-native-redesign' && (github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all')
+    if: (github.ref != 'refs/heads/diagnostics/apple-native-redesign' || contains(github.event.head_commit.message, '[full-regression]') || inputs.scope == 'all') && (github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all')
     name: iPhone regression (${{ matrix.simulator }})
     runs-on: macos-15
     timeout-minutes: 35
@@ -125,7 +125,7 @@ jobs:
 
   diagnose:
     name: Focused UI diagnostics
-    if: (github.event_name == 'workflow_dispatch' && inputs.scope != '' && inputs.scope != 'all') || (github.event_name == 'push' && github.ref == 'refs/heads/diagnostics/apple-native-redesign')
+    if: (github.event_name == 'workflow_dispatch' && inputs.scope != '' && inputs.scope != 'all') || (github.event_name == 'push' && github.ref == 'refs/heads/diagnostics/apple-native-redesign' && !contains(github.event.head_commit.message, '[full-regression]'))
     runs-on: macos-15
     timeout-minutes: 35
     env:

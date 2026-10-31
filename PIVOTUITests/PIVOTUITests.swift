@@ -176,26 +176,24 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Selected ride wait"].isHittable)
         XCTAssertTrue(app.buttons["map-pin-b2260923-9315-40fd-9c6b-44dd811dbe64"].isHittable)
         let legal = app.links["Legal"]
-        print("Map Legal frame=\(legal.frame), selected name frame=\(app.staticTexts["Selected place name"].frame)")
-        screenshot("Native selected ride and Apple attribution before hit test", app: app)
-        let legalWasHittable = legal.isHittable
-        if !legalWasHittable {
-            // Diagnose the native MapKit link with a real touch at its measured
-            // frame. Retain the failing assertion until the navigation is verified.
-            legal.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5)).tap()
-            let transition = expectation(description: "Native attribution transition")
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) { transition.fulfill() }
-            wait(for: [transition], timeout: 4)
-            screenshot("Native Apple attribution after actual link tap", app: app)
-            let hierarchy = XCTAttachment(string: app.debugDescription)
-            hierarchy.name = "Native attribution hierarchy after actual link tap"
-            hierarchy.lifetime = .keepAlways
-            add(hierarchy)
-            print("Attribution tap app state=\(app.state.rawValue), Safari state=\(XCUIApplication(bundleIdentifier: "com.apple.mobilesafari").state.rawValue)")
-        }
-        XCTAssertTrue(legalWasHittable, "Apple attribution must remain reachable above the selected-place panel")
+        XCTAssertTrue(legal.exists)
+        XCTAssertTrue(map.frame.contains(legal.frame), "Native Apple attribution must remain inside the map window")
         XCTAssertLessThan(legal.frame.maxY, app.staticTexts["Selected place name"].frame.minY)
         screenshot("Native production full-screen selected current ride", app: app)
+        // MapKit's virtual Legal accessibility element reports isHittable=false
+        // even though its real link opens Safari. Verify the actual user journey.
+        legal.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5)).tap()
+        let safari = XCUIApplication(bundleIdentifier: "com.apple.mobilesafari")
+        XCTAssertTrue(safari.wait(for: .runningForeground, timeout: 15))
+        let openStreetMapCredit = safari.links.matching(NSPredicate(format: "label CONTAINS[c] %@", "openstreetmap.org/copyright")).firstMatch
+        XCTAssertTrue(openStreetMapCredit.waitForExistence(timeout: 20), "The native Legal link must open the actual map-data attribution page")
+        XCTAssertTrue(safari.links["Apple Inc."].exists)
+        screenshot("Native Apple map attribution reached from the map", app: safari)
+        app.activate()
+        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 10))
+        XCTAssertEqual(app.staticTexts["Selected place name"].label, "Space Mountain")
+        XCTAssertEqual(app.staticTexts["Selected ride wait"].label, "45 min")
+        XCTAssertTrue(app.staticTexts["Selected ride wait"].isHittable)
         app.buttons["Close place details"].tap()
         let pin = app.buttons["map-pin-b2260923-9315-40fd-9c6b-44dd811dbe64"]
         XCTAssertGreaterThanOrEqual(pin.frame.width, 44)
