@@ -210,7 +210,8 @@ struct NativeRideLowWaitSummary: View {
     var body: some View {
         TimelineView(.periodic(from: .now, by: 60)) { context in
             VStack(alignment: .leading, spacing: 6) {
-                Label("Lowest-wait prediction", systemImage: "clock.arrow.circlepath").font(.subheadline.weight(.semibold))
+                Label("Lowest-wait prediction", systemImage: "clock.arrow.circlepath")
+                    .font(.subheadline.weight(.semibold)).fixedSize(horizontal: false, vertical: true)
                 if let park = store.selectedPark {
                     let prediction = LowestWaitPrediction.resolve(history: store.waitLearning, rideID: ride.id, park: park,
                         hours: store.parkHours(for: park, at: context.date), snapshot: store.snapshot,
@@ -221,8 +222,12 @@ struct NativeRideLowWaitSummary: View {
                             .accessibilityIdentifier("ride-lowest-wait-window")
                         Text("Park time · \(ParkTimeFormatter.dateTime(best.start, timeZone: timeZone))")
                             .font(.caption).foregroundStyle(Color.pivotMuted)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .accessibilityIdentifier("lowest-wait-park-time")
                         Text("Observed variation \(best.lower)–\(best.upper) min; not a guaranteed interval.")
                             .font(.caption).foregroundStyle(Color.pivotMuted)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .accessibilityIdentifier("lowest-wait-variation")
                         Text(prediction.detail).font(.caption).foregroundStyle(Color.pivotMuted)
                             .fixedSize(horizontal: false, vertical: true)
                         WaitPredictionEvidence(point: best, sourceCheckedAt: prediction.sourceCheckedAt,
@@ -273,16 +278,19 @@ struct WaitForecastTimeline: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             Label("Predicted waits", systemImage: "chart.xyaxis.line").font(.headline)
+                .fixedSize(horizontal: false, vertical: true)
             if points.isEmpty {
                 Text(learningText).font(.subheadline).foregroundStyle(Color.pivotMuted)
             } else {
                 Text("From \(ParkTimeFormatter.dateTime(points[0].start, timeZone: timeZone))")
                     .font(.caption).foregroundStyle(Color.pivotMuted)
+                    .fixedSize(horizontal: false, vertical: true)
                 if let best {
                     VStack(alignment: .leading, spacing: 4) {
                         Text("Lowest estimated wait").font(.caption.weight(.medium)).foregroundStyle(Color.pivotMint)
                         Text("\(clock(best.start))–\(clock(best.end)) · about \(best.minutes) min")
-                            .font(.subheadline.weight(.semibold)).accessibilityIdentifier("lowest-predicted-wait")
+                            .font(.subheadline.weight(.semibold)).fixedSize(horizontal: false, vertical: true)
+                            .accessibilityIdentifier("lowest-predicted-wait")
                         Text("Among the remaining hours with enough history").font(.caption2).foregroundStyle(Color.pivotMuted)
                         WaitPredictionEvidence(point: best, sourceCheckedAt: sourceCheckedAt, timeZone: timeZone, now: now)
                     }
@@ -318,7 +326,9 @@ struct WaitForecastTimeline: View {
                 Text("Ranges describe observed variation, not a guaranteed interval. Waits can change with weather, events, and operations. Missing hours stay blank; this does not predict reopening.")
                     .font(.caption2).foregroundStyle(Color.pivotMuted)
             }
-        }.accessibilityIdentifier("ride-wait-forecast")
+        }
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier("ride-wait-forecast")
     }
     private func clock(_ date: Date) -> String { ParkTimeFormatter.time(date, timeZone: timeZone) }
 }

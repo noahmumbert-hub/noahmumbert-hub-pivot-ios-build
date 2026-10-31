@@ -272,7 +272,12 @@ final class PIVOTUITests: XCTestCase {
                 let lowest = app.staticTexts["ride-lowest-wait-window"]
                 reveal(lowest, in: app); XCTAssertTrue(lowest.isHittable)
                 XCTAssertTrue(lowest.label.contains("about 10 min"))
-                XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH 'Park time'")).firstMatch.exists)
+                let parkTime = app.staticTexts["lowest-wait-park-time"]
+                reveal(parkTime, in: app); XCTAssertTrue(parkTime.isHittable)
+                XCTAssertGreaterThan(parkTime.frame.height, 40, "Park time and zone must wrap at accessibility size")
+                let variation = app.staticTexts["lowest-wait-variation"]
+                reveal(variation, in: app); XCTAssertTrue(variation.isHittable)
+                XCTAssertGreaterThan(variation.frame.height, 40, "The complete uncertainty label must wrap")
                 let source = app.staticTexts["lowest-wait-source-time"]
                 reveal(source, in: app); XCTAssertTrue(source.isHittable)
                 XCTAssertTrue(source.label.contains("Wait source checked"))
