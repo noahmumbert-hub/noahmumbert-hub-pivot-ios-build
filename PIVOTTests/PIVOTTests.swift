@@ -15,7 +15,7 @@ final class PIVOTTests: XCTestCase {
         XCTAssertEqual(present(makeRide(status: .open, waitTime: nil)).title, "Open · wait not posted")
         XCTAssertNil(present(makeRide(status: .open, waitTime: -1)).waitMinutes)
         for (state, title) in [(RideStatus.down, "Temporarily closed"), (.scheduled, "Not operating now"),
-                               (.parkInactive, "Park not active"), (.stale, "Wait unavailable"), (.unknown("UNREPORTED"), "Wait unavailable")] {
+                               (.parkInactive, "Park not active"), (.stale, "Wait stale"), (.unknown("UNREPORTED"), "Wait unavailable")] {
             let value = present(makeRide(status: state))
             XCTAssertEqual(value.title, title)
             XCTAssertNil(value.waitMinutes)
@@ -31,14 +31,41 @@ final class PIVOTTests: XCTestCase {
                 refreshFailed: failed, at: now ?? start)
         }
         for value in [resolve(nil), resolve(fresh, id: -1), resolve(fresh, park: 5), resolve(fresh, park: nil),
-                      resolve(fresh, failed: true), resolve(fresh, now: start.addingTimeInterval(900)),
+                      resolve(fresh, failed: true),
                       resolve(fresh, now: start.addingTimeInterval(-121)),
-                      resolve(makeSnapshot(sourceOffset: 0, feedHealthy: false, ride: ride)),
-                      resolve(makeSnapshot(sourceOffset: 901, ride: ride), now: start.addingTimeInterval(901))] {
+                      resolve(makeSnapshot(sourceOffset: 0, feedHealthy: false, ride: ride))] {
             XCTAssertNil(value.waitMinutes)
             XCTAssertFalse(value.isCurrent)
             XCTAssertEqual(value.title, "Wait unavailable")
         }
+        for value in [resolve(fresh, now: start.addingTimeInterval(900)),
+                      resolve(makeSnapshot(sourceOffset: 901, ride: ride), now: start.addingTimeInterval(901))] {
+            XCTAssertNil(value.waitMinutes)
+            XCTAssertFalse(value.isCurrent)
+            XCTAssertEqual(value.title, "Wait stale")
+        }
+        let closure = resolve(makeSnapshot(sourceOffset: 901, ride: makeRide(status: .down)),
+            now: start.addingTimeInterval(901))
+        XCTAssertEqual(closure.title, "Temporarily closed", "Fresh snapshots confirm a continuing closure even with an old ride-version timestamp")
+        XCTAssertTrue(closure.isCurrent)
+    }
+
+    func testRideSearchRejectsContradictoryProviderStatusAndInvalidWaits() {
+        for providerState in ["DOWN", "CLOSED", "REFURBISHMENT", "UNKNOWN"] {
+            let ride = makeRide(status: .open, waitTime: 45,
+                themeParksWikiStatus: ThemeParksWikiRideStatus(entityId: "test", entityName: "Space Mountain",
+                    status: providerState, sourceUpdatedAt: start, matchedBy: "EXACT", sourceAgeSeconds: 0))
+            let value = RideWaitPresentation.resolve(rideID: ride.id, parkID: 6,
+                snapshot: makeSnapshot(sourceOffset: 0, ride: ride), refreshFailed: false, at: start)
+            XCTAssertEqual(value.title, "Wait unavailable")
+            XCTAssertNil(value.waitMinutes)
+            XCTAssertFalse(value.isCurrent)
+        }
+        let invalid = makeRide(status: .open, waitTime: -1)
+        let value = RideWaitPresentation.resolve(rideID: invalid.id, parkID: 6,
+            snapshot: makeSnapshot(sourceOffset: 0, ride: invalid), refreshFailed: false, at: start)
+        XCTAssertEqual(value.title, "Wait unavailable")
+        XCTAssertNil(value.waitMinutes)
     }
 
     @MainActor
@@ -54,10 +81,14 @@ final class PIVOTTests: XCTestCase {
         defer { AuditURLProtocol.response = nil }
         await store.refreshNow()
         XCTAssertEqual(store.visibleRides(query: "  space  ", filter: .all, sort: .shortest).first?.waitTime, 45)
+        XCTAssertEqual(RideWaitPresentation.resolve(rideID: 126, parkID: 6, snapshot: store.snapshot,
+            refreshFailed: store.errorMessage != nil, at: start).waitMinutes, 45)
         let updated = try encoder.encode(makeSnapshot(sourceOffset: 1, ride: makeRide(status: .open, waitTime: 5)))
         AuditURLProtocol.response = { _ in updated }
         await store.refreshNow()
         XCTAssertEqual(store.visibleRides(query: "SPACE", filter: .all, sort: .shortest).first?.waitTime, 5)
+        XCTAssertEqual(RideWaitPresentation.resolve(rideID: 126, parkID: 6, snapshot: store.snapshot,
+            refreshFailed: store.errorMessage != nil, at: start.addingTimeInterval(1)).waitMinutes, 5)
         XCTAssertEqual(store.visibleRides(query: "Tomorrowland", filter: .all, sort: .shortest).first?.id, 126)
         AuditURLProtocol.response = { _ in throw URLError(.notConnectedToInternet) }
         await store.refreshNow()
@@ -3011,7 +3042,8 @@ final class PIVOTTests: XCTestCase {
         weatherExposure: String = "INDOOR",
         forecastRevision: Int = 0,
         forecastRevisionReason: String = "INITIAL",
-        location: AttractionLocation? = nil
+        location: AttractionLocation? = nil,
+        themeParksWikiStatus: ThemeParksWikiRideStatus? = nil
     ) -> LiveRide {
         LiveRide(
             id: id,
@@ -3041,7 +3073,7 @@ final class PIVOTTests: XCTestCase {
             reopenPending: reopenPending,
             trend: trend,
             location: location,
-            themeParksWikiStatus: nil,
+            themeParksWikiStatus: themeParksWikiStatus,
             waitTimeSource: status == .open ? "THEMEPARKS_WIKI" : nil,
             scheduledClosure: scheduledClosure,
             statusAgreement: statusAgreement,

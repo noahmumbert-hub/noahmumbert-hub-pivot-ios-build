@@ -96,19 +96,20 @@ final class PIVOTUITests: XCTestCase {
             let result = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Guardians of the Galaxy'")).firstMatch
             reveal(result, in: app)
             XCTAssertTrue(result.isHittable)
-            XCTAssertTrue(result.label.contains(expired ? "Wait unavailable" : "45 minute wait"))
+            XCTAssertTrue(result.label.contains(expired ? "Wait stale" : "45 minute wait"))
             if expired { XCTAssertFalse(result.label.contains("45 minute wait")) }
             screenshot(expired ? "Search expired wait withheld" : "Search historical size and live wait", app: app)
             result.tap()
-            let status = app.staticTexts[expired ? "Wait unavailable" : "45 min wait"].firstMatch
+            let status = app.staticTexts[expired ? "Wait stale" : "45 min wait"].firstMatch
             reveal(status, in: app); XCTAssertTrue(status.isHittable)
             app.buttons["Done"].tap()
             reveal(app.buttons["Clear ride search"], in: app); app.buttons["Clear ride search"].tap()
             reveal(search, in: app); search.tap(); search.typeText("Spaceship\n")
             let closed = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Spaceship Earth'")).firstMatch
             reveal(closed, in: app)
-            XCTAssertTrue(closed.label.contains(expired ? "Wait unavailable" : "Temporarily closed"))
+            XCTAssertTrue(closed.label.contains(expired ? "Wait stale" : "Temporarily closed"))
             XCTAssertFalse(closed.label.contains("0 minute wait"))
+            if expired { XCTAssertFalse(closed.label.contains("Closed for")) }
             app.terminate()
         }
     }
@@ -275,8 +276,8 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testFavoriteRideSearchConnectsWaitsAndSupportsLargeText() {
-        for mode in ["default", "large", "expired"] {
-            let extra = mode == "large" ? ["--ui-large-type"] : mode == "expired" ? ["--ride-search-expired"] : []
+        for mode in ["default", "large", "expired", "unavailable"] {
+            let extra = mode == "large" ? ["--ui-large-type"] : mode == "expired" ? ["--ride-search-expired"] : mode == "unavailable" ? ["--ride-search-unavailable"] : []
             let app = rootFixture(["--reference-ui-park=5", "--ui-dark"] + extra)
             app.tabBars.buttons["Plan"].tap()
             let choose = app.buttons["native-day-favorites"]
@@ -292,12 +293,12 @@ final class PIVOTUITests: XCTestCase {
             let guardians = app.switches["favorite-ride-10916"]
             reveal(guardians, in: app)
             XCTAssertTrue(guardians.isHittable)
-            XCTAssertTrue(guardians.label.contains(mode == "expired" ? "Wait unavailable" : "45 min wait"))
+            XCTAssertTrue(guardians.label.contains(mode == "expired" ? "Wait stale" : mode == "unavailable" ? "Wait unavailable" : "45 min wait"))
             XCTAssertFalse(app.switches["favorite-ride-10914"].exists, "Land search must exclude World Showcase")
             let closed = app.switches["favorite-ride-159"]
             reveal(closed, in: app)
             XCTAssertTrue(closed.isHittable)
-            XCTAssertTrue(closed.label.contains(mode == "expired" ? "Wait unavailable" : "Temporarily closed"))
+            XCTAssertTrue(closed.label.contains(mode == "expired" ? "Wait stale" : mode == "unavailable" ? "Wait unavailable" : "Temporarily closed"))
             XCTAssertGreaterThanOrEqual(closed.frame.height, 44)
             screenshot("Favorite search \(mode) waits and status", app: app)
             let endSearch = app.buttons.matching(NSPredicate(format: "label IN %@", ["Cancel", "close"])).firstMatch
