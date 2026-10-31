@@ -2406,6 +2406,13 @@ final class PIVOTTests: XCTestCase {
          "medianAdjustmentMinutes": 0, "intervalPaddingMinutes": 0, "trainedThrough": "2026-10-12T18:00:00Z"]
     }
 
+    // ICU may use nonbreaking spacing before AM/PM. Keep clock values and
+    // park time zones exact while accepting that display-only variation.
+    private func normalizedDisplaySpaces(_ value: String?) -> String? {
+        value?.replacingOccurrences(of: "\u{202F}", with: " ")
+            .replacingOccurrences(of: "\u{00A0}", with: " ")
+    }
+
     private func reopeningGuidance(_ snapshot: LiveParkSnapshot, at date: Date? = nil, failed: Bool = false) -> ReopeningGuidance {
         let now = date ?? snapshot.fetchedAt
         return ReopeningGuidance.presentation(ride: snapshot.rides[0], snapshot: snapshot,
@@ -2429,7 +2436,7 @@ final class PIVOTTests: XCTestCase {
         let supported = try reopeningFixture()
         XCTAssertNotNil(reopeningGuidance(supported).range)
         XCTAssertNil(reopeningGuidance(supported).bestGuess)
-        XCTAssertEqual(reopeningGuidance(supported).bestPredictionLabel, "Best prediction · 2:20 PM (estimate)")
+        XCTAssertEqual(normalizedDisplaySpaces(reopeningGuidance(supported).bestPredictionLabel), "Best prediction · 2:20 PM (estimate)")
         let calibration = reopeningCalibration
         let calibrated = reopeningGuidance(try reopeningFixture(estimate: ["calibration": calibration]))
         XCTAssertNotNil(calibrated.bestGuess)
@@ -2457,8 +2464,8 @@ final class PIVOTTests: XCTestCase {
         ] {
             let guidance = ReopeningGuidance.presentation(ride: snapshot.rides[0], snapshot: snapshot,
                 feedHealth: health, at: now, timeZone: try XCTUnwrap(TimeZone(identifier: zone)))
-            XCTAssertEqual(guidance.range, expectedRange)
-            XCTAssertEqual(guidance.bestPredictionLabel, "Best prediction · \(expectedTime) (estimate)")
+            XCTAssertEqual(normalizedDisplaySpaces(guidance.range), expectedRange)
+            XCTAssertEqual(normalizedDisplaySpaces(guidance.bestPredictionLabel), "Best prediction · \(expectedTime) (estimate)")
             XCTAssertFalse(guidance.bestPredictionHasPassed)
             XCTAssertTrue(guidance.detail.contains("The park has not announced a reopening time"))
         }
@@ -2470,7 +2477,7 @@ final class PIVOTTests: XCTestCase {
         let result = reopeningGuidance(snapshot, at: snapshot.fetchedAt.addingTimeInterval(600))
         XCTAssertNotNil(result.range)
         XCTAssertTrue(result.bestPredictionHasPassed)
-        XCTAssertEqual(result.bestPredictionLabel, "Earlier best prediction · 2:05 PM (estimate)")
+        XCTAssertEqual(normalizedDisplaySpaces(result.bestPredictionLabel), "Earlier best prediction · 2:05 PM (estimate)")
     }
 
     func testBestReopeningPredictionUsesReleasedV3ForecastWithoutPromotingActivityGuidance() throws {
@@ -2479,8 +2486,8 @@ final class PIVOTTests: XCTestCase {
         let snapshot = try reopeningFixture(estimate: ["calibration": calibration,
             "historicalMedianAt": "2026-10-13T18:17:00Z"])
         let guidance = reopeningGuidance(snapshot)
-        XCTAssertEqual(guidance.estimatedBestPrediction, "2:17 PM")
-        XCTAssertEqual(guidance.bestPredictionLabel, "Best prediction · 2:17 PM (estimate)")
+        XCTAssertEqual(normalizedDisplaySpaces(guidance.estimatedBestPrediction), "2:17 PM")
+        XCTAssertEqual(normalizedDisplaySpaces(guidance.bestPredictionLabel), "Best prediction · 2:17 PM (estimate)")
         XCTAssertNil(guidance.bestGuess)
         let target = try XCTUnwrap(PIVOTLiveActivityTargetBuilder.makeTarget(selectedPark: .magicKingdom,
             snapshot: snapshot, featuredRide: snapshot.rides[0]))
