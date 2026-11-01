@@ -1678,6 +1678,51 @@
       "generationSteps": []
     },
     {
+      "parkId": 8,
+      "rideId": 4439,
+      "rideName": "Avatar Flight of Passage",
+      "alt": "Illustrated Avatar Flight of Passage at Disney’s Animal Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:44:31.407155+00:00",
+      "originalSHA256": "84b14476cf9306dea9ce0ad416610b24260537e04a001d33fbbb23a910222ddf",
+      "review": "Accepted: Actually viewed official Avatar.com queue-wall photograph and full generated portrait. Real textured red/tan physical cave panels, blue painted banshee motifs/dots, roots and warm practical fixtures remain recognizable with restrained blue-purple interior shadows. No invented ride vehicle, film scene, guests or full fictional environment; a representative real Flight of Passage queue detail, clearly generated rather than documentary.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://lumiere-a.akamaihd.net/v1/images/woa_-_flight_of_passage_cave_art_56e6c809.jpeg?region=0%2C189%2C2016%2C1134",
+          "sourceURL": "https://www.avatar.com/experiences/world-of-avatar",
+          "credit": "Disney / 20th Century Studios, official Avatar.com gallery",
+          "license": "Copyright Disney / 20th Century Studios; reference only, rights retained",
+          "licenseURL": "https://www.avatar.com/experiences/world-of-avatar",
+          "sha256": "c5ba7d87901bb0ffe56d414b5b07659841d8474f4e40b48e4c1f8267719962f0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed both genuine official Avatar.com gallery photographs and read the gallery captions/body. Selected image is explicitly captioned Flight of Passage Cave Art, with actual textured reddish/tan cave-wall panels, blue/black banshee wing motifs, pale-blue dotted marks, restrained real amber practical light and a source root/branch at left. This is a representative real physical queue detail of this exact Florida attraction, not a rendering, ride film or an invented full flight scene. Compose this actual painted/sculpted wall section in realistic materials and subtle blue-purple interior shadows while retaining its warm practical lights; no flying real creature, hidden link chair, laboratory tank, guests, extra room or invented ride vehicle. Capture date/current paint not verified. Earlier unrelated failed photo downloads are not retried; this independent official gallery downloaded successfully."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "8-4439-thumbnail.jpg",
+      "thumbnailSHA256": "94618a91674c6718a8485393897635bedbe22bd34ad7577c34d1869bef216566",
+      "thumbnailBytes": 22869,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "8-4439-detail.jpg",
+      "detailSHA256": "2242d2f06a95bbe010b11b0ac3a042096d1a408ef05b9bf4bb3d5b812cbc06c7",
+      "detailBytes": 189232,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "8-4439",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Avatar Flight of Passage at Disney’s Animal Kingdom at Walt Disney World. Source- and pixel-reviewed facts and limits: Actually viewed both genuine official Avatar.com gallery photographs and read the gallery captions/body. Selected image is explicitly captioned Flight of Passage Cave Art, with actual textured reddish/tan cave-wall panels, blue/black banshee wing motifs, pale-blue dotted marks, restrained real amber practical light and a source root/branch at left. This is a representative real physical queue detail of this exact Florida attraction, not a rendering, ride film or an invented full flight scene. Compose this actual painted/sculpted wall section in realistic materials and subtle blue-purple interior shadows while retaining its warm practical lights; no flying real creature, hidden link chair, laboratory tank, guests, extra room or invented ride vehicle. Capture date/current paint not verified. Earlier unrelated failed photo downloads are not retried; this independent official gallery downloaded successfully. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "3f27884d0d8725febeb4786160b8aba424e5bcfe64e4a65e0fb2d1b9dbda68bc",
+      "generationSteps": []
+    },
+    {
       "parkId": 21,
       "rideId": 41297957342255,
       "rideName": "Pipeline: The Surf Coaster",
@@ -2189,6 +2234,265 @@
     },
     {
       "parkId": 24,
+      "rideId": 4498153166281,
+      "rideName": "Congo River Rapids",
+      "alt": "Illustrated Congo River Rapids at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:30:43.994464+00:00",
+      "originalSHA256": "e007c858050146e6adfb6cbd73321bace2ecbd7fbde859984a02abc6d6b58cfa",
+      "review": "Accepted: Viewed the genuine official photograph and full generated portrait; yellow circular raft, black rubber perimeter, high-backed seats, central silver handrail, ordinary clothed guests and whitewater/rockwork are recognizable with realistic wet materials. Only representative documented river section shown.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://buschgardens.com/tampa/-/media/migrated-media/busch-gardens-tampa/media-modules/750x422/rides/congo-river-rapids/2017_buschgardenstampabay_rides_congoriverrapids2_750x422.png?h=422&w=750&la=en&hash=BD8CDB1528BA0C952A8EC0903B908947",
+          "kind": "image",
+          "alt": "Ride Congo River Rapids at Busch Gardens Tampa Bay",
+          "sourceURL": "https://buschgardens.com/tampa/rides/congo-river-rapids/",
+          "credit": "Busch Gardens Tampa Bay (official photographic reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://buschgardens.com/tampa/",
+          "sha256": "76fc5667a4161f2f20d4b32a309c0314d530a8ced496960d227efeaa6a8aadf3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected genuine official photo shows Congo River Rapids' yellow circular raft with a thick black rubber perimeter, actual black high-backed individual seats, a silver central circular handrail and ordinary clothed source riders. White rapids water churns around the raft beside dark textured rockwork and real foliage. Preserve the actual raft/seat/handrail layout and photographed water section, with realistic wet plastic/rubber surfaces; do not invent an entire river course, unseen waterfall or elevator."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-4498153166281-thumbnail.jpg",
+      "thumbnailSHA256": "47d5fc224d7007e342cdde5c6f3b0e76ee59d916e91815bef2618b979b813f77",
+      "thumbnailBytes": 27042,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-4498153166281-detail.jpg",
+      "detailSHA256": "b47ca1c73edff7860a7f8d3fc32f7da726d5e6a9bf6d6449a74de32753505814",
+      "detailBytes": 179662,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-4498153166281",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Congo River Rapids at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: The inspected genuine official photo shows Congo River Rapids' yellow circular raft with a thick black rubber perimeter, actual black high-backed individual seats, a silver central circular handrail and ordinary clothed source riders. White rapids water churns around the raft beside dark textured rockwork and real foliage. Preserve the actual raft/seat/handrail layout and photographed water section, with realistic wet plastic/rubber surfaces; do not invent an entire river course, unseen waterfall or elevator. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "f6d02a340f1dbaf711c8b77d9fe6b7458c869149e36510221e788807e82709d7",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 12794577221212,
+      "rideName": "Serengeti Flyer",
+      "alt": "Illustrated Serengeti Flyer at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:30:19.026134+00:00",
+      "originalSHA256": "b7e413ceb8ddcdca39d92d4cfca80f189501b1c922292a9f640642b6d499bb86",
+      "review": "Accepted: Actually viewed source and full generated portrait. Magenta back-to-back swing gondola, realistic seats/lap restraints and source-connected lime-green arm remain recognizable. No invented second arm, full swing mechanism or inversion.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://buschgardens.com/tampa/-/media/commercial/busch-gardens-tampa-bay/images/rides/serengeti-flyer/1900x263_bgt_ride_serengeti_flyer.jpg?h=263&w=1900&la=en&hash=61E134218467365E2C6E1367E80B66B4",
+          "kind": "image",
+          "alt": "Serengeti Flyer at Busch Gardens Tampa Bay",
+          "sourceURL": "https://buschgardens.com/tampa/rides/serengeti-flyer/",
+          "credit": "Busch Gardens Tampa Bay (official photographic reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://buschgardens.com/tampa/",
+          "sha256": "c3937440c7911d4c855a3e83020ff91fbce8b102161e37a39338913f4715bcb3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected official narrow photograph shows one real Serengeti Flyer gondola section: magenta/pink steel seat frame and individual seats with actual lap restraints, ordinary clothed riders sitting back-to-back, and part of the connected lime-green swing arm. Current official body identifies the twin-arm Screamin' Swing and rows of ten. Compose the photographed gondola/arm connection only with realistic steel and seat materials; do not invent a complete second arm, full tower, hidden mechanism or vertical inversion beyond the source."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-12794577221212-thumbnail.jpg",
+      "thumbnailSHA256": "d6100586a90dded64b4cb0c756809679b003b42b9a449b4e06a646647a9308a0",
+      "thumbnailBytes": 22513,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-12794577221212-detail.jpg",
+      "detailSHA256": "4ee02c1c745ac84324ef1358e58d2a1b639141e9e82f362a3639fdb769f775d2",
+      "detailBytes": 137247,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-12794577221212",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Serengeti Flyer at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: The inspected official narrow photograph shows one real Serengeti Flyer gondola section: magenta/pink steel seat frame and individual seats with actual lap restraints, ordinary clothed riders sitting back-to-back, and part of the connected lime-green swing arm. Current official body identifies the twin-arm Screamin' Swing and rows of ten. Compose the photographed gondola/arm connection only with realistic steel and seat materials; do not invent a complete second arm, full tower, hidden mechanism or vertical inversion beyond the source. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "9ca2dc5e5f4e38360e1a46235d45e1f5d40d65235ffa22467c6e156e87d645fc",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 18900576089094,
+      "rideName": "Air Grover",
+      "alt": "Illustrated Air Grover at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:32:24.804278+00:00",
+      "originalSHA256": "b10a6785a71c0166ad318da5caf57f4463eb2b52d106cbff9b9b06d080a5573a",
+      "review": "Accepted: Viewed the genuine Air Grover photo and full generated portrait. Red/cream junior train with green chassis, molded blue aviator nose figure, black headrests/lap bars, connected rails and ordinary clothed source-style family riders retain real manufactured materials and recognizable geometry.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://buschgardens.com/tampa/-/media/migrated-media/busch-gardens-tampa/media-modules/740x442/rides/air-grover/2017_buschgardenstampabay_kidfriendlyrides_airgrover2_740x442.jpg?h=442&w=740&la=en&hash=328C093ED2C2FD2318D7C50F9551ABB6",
+          "kind": "image",
+          "alt": "Ride Air Grover at Busch Gardens Tampa Bay",
+          "sourceURL": "https://buschgardens.com/tampa/roller-coasters/air-grover/",
+          "credit": "Busch Gardens Tampa Bay (official photographic reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://buschgardens.com/tampa/",
+          "sha256": "11bad2a63dfcebea4be84a84b7b36e16b75cdd9ea6880245d48fcaefbaf70d42",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected genuine official Air Grover photo shows a red/cream junior coaster train with green lower chassis, real black headrests and source lap bars, ordinary clothed family riders and the molded blue Grover aviator figure wearing a brown flying cap/goggles at the nose. Real track/supports and brown themed props/railings surround the source banked section. Preserve the actual connected train/wheel/rail geometry and manufactured figure materials; not a live puppet, flying aircraft, different park's Grover coaster or full hidden track layout."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-18900576089094-thumbnail.jpg",
+      "thumbnailSHA256": "512f9fea65e9faabaf2823212654aaf7fd4c4ed74f920b8343ac63786feb3f1e",
+      "thumbnailBytes": 27387,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-18900576089094-detail.jpg",
+      "detailSHA256": "b256c6c33968f029492abd8cb773079702741359aaee306b7a5f6ea916f2f88a",
+      "detailBytes": 152999,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-18900576089094",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Air Grover at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: The inspected genuine official Air Grover photo shows a red/cream junior coaster train with green lower chassis, real black headrests and source lap bars, ordinary clothed family riders and the molded blue Grover aviator figure wearing a brown flying cap/goggles at the nose. Real track/supports and brown themed props/railings surround the source banked section. Preserve the actual connected train/wheel/rail geometry and manufactured figure materials; not a live puppet, flying aircraft, different park's Grover coaster or full hidden track layout. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "75df88213e7777d2bbd5a92e6ce1fb1aa1e3daa3f78b30cced2fc42cd9eeffde",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 28011971629002,
+      "rideName": "Skyride (Egypt Station)",
+      "alt": "Illustrated Skyride (Egypt Station) at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:31:29.387053+00:00",
+      "originalSHA256": "8e81d457d4249caa5f8879347402878ae37c5226f7d4ca09117a0fd4451a8da7",
+      "review": "Accepted: Viewed source and full generated portrait. Actual blue open-sided SkyRide cabin, canopy, hanger/wheel/cable connection, support tower and source landscape remain recognizable. Representative shared-system vehicle for Egypt Station; exact station location and current operation are not asserted.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://buschgardens.com/tampa/-/media/migrated-media/busch-gardens-tampa/page-banners/1900x700/rides-and-kid-friendly-attractions/2017_buschgardenstampabay_rides_skyride_1900x700.jpg?h=700&w=1900&la=en&hash=A03CC1642FB87C41CB490A2DFCBFF805",
+          "kind": "image",
+          "alt": "Skyride at Busch Gardens  Tampa Bay",
+          "sourceURL": "https://buschgardens.com/tampa/rides/skyride/",
+          "credit": "Busch Gardens Tampa Bay (official photographic reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://buschgardens.com/tampa/",
+          "sha256": "3fb5a284e9e459770df28761110523c4b978c75b010b4c32ef035dfcbfc90a1c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected genuine own-page SkyRide photo documents a blue open-sided cable gondola with a flat blue canopy frame, dark perimeter handrails, real bench/ordinary source guests, metal hanger and wheel attachment to the continuous overhead cable. Gray support tower, park trees and source distant ride silhouettes are visible. This is a representative cabin of the same Busch Gardens Tampa SkyRide system for the Egypt Station catalog entry, not a photo proving that this exact view is from Egypt Station. No station building/location is invented, and current official annual-maintenance closure is not contradicted by an operating-status claim in the artwork. Preserve actual suspended cabin/cable geometry."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-28011971629002-thumbnail.jpg",
+      "thumbnailSHA256": "2aabe9681cda5c7b1b57e0f6300cc3735028d88dc8a60abf290e1beb2d3efa44",
+      "thumbnailBytes": 23222,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-28011971629002-detail.jpg",
+      "detailSHA256": "dfa46e651a8003a65894d242e4c91f5f2a0f924c429611ca0d2c18f6119f9cc1",
+      "detailBytes": 186267,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-28011971629002",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Skyride (Egypt Station) at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: The inspected genuine own-page SkyRide photo documents a blue open-sided cable gondola with a flat blue canopy frame, dark perimeter handrails, real bench/ordinary source guests, metal hanger and wheel attachment to the continuous overhead cable. Gray support tower, park trees and source distant ride silhouettes are visible. This is a representative cabin of the same Busch Gardens Tampa SkyRide system for the Egypt Station catalog entry, not a photo proving that this exact view is from Egypt Station. No station building/location is invented, and current official annual-maintenance closure is not contradicted by an operating-status claim in the artwork. Preserve actual suspended cabin/cable geometry. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "00145cab560b8b75caf6f35e4b0e62cdae3ba22e0486bee2e2eaf90a9a18124a",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 54228505557825,
+      "rideName": "Phoenix Rising",
+      "alt": "Illustrated Phoenix Rising at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:41:50.372886+00:00",
+      "originalSHA256": "89fe81d9619dd75b1b36bec0f0a82b602c48428df8ffdfceae97d50a1995f53a",
+      "review": "Accepted: Actually viewed the official source, first portrait and corrected full portrait. Corrected version depicts only the real textured orange-red entrance columns, manufactured phoenix ornaments, dark oval plaque and source landscape with realistic evening materials. All train and track are outside the frame, avoiding the ambiguous low-angle perspective that could suggest an unsupported inversion. No invented mechanical layout or current-operation claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://buschgardens.com/tampa/-/media/commercial/busch-gardens-tampa-bay/images/rides/phoenix-rising/hero/bgt_phoenix_rising_hero_3.jpg?h=1200&w=2400&la=en&hash=69789C207898F9F2241FE39B8DB23E10",
+          "kind": "image",
+          "alt": "Phoenix Rising at Busch Gardens Tampa Bay",
+          "sourceURL": "https://buschgardens.com/tampa/roller-coasters/phoenix-rising/",
+          "credit": "Busch Gardens Tampa Bay (official photographic reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://buschgardens.com/tampa/",
+          "sha256": "77ecb3ec8bb8f226e3a0edb51686f6d7065435d8a7096308c8677f1eea790778",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected own-page hero is the actual Phoenix Rising entrance/overhead-train photograph, distinct from the separate Rendering image link that is not selected. It shows textured yellow-orange/red entrance columns with physical phoenix wing/flame ornaments, dark oval plaque frame, safety netting and the real blue banked overhead rail with visible red/yellow suspended train hardware viewed from below. Current operator body identifies it as a suspended family coaster. Preserve the manufactured entrance, source banked section and attached train geometry; do not turn the source perspective into a vertical loop or full inversion. Ignore the white empty image margin and omit plaque/queue lettering. No invented hidden course or unrelated rendering."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-54228505557825-thumbnail.jpg",
+      "thumbnailSHA256": "7fba583398cfcb90e3d29df13b55fc8bfc9cb4da6ad5facdbe382dcde29bf184",
+      "thumbnailBytes": 25594,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-54228505557825-detail.jpg",
+      "detailSHA256": "05711b428d8daae3cf0608d388c58de67d427eb0ef70d66fecaf3c59a81c3939",
+      "detailBytes": 202966,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-54228505557825",
+      "prompt": "Edit the first generated PIVOT portrait to correct its ambiguous coaster geometry. The second image is the actual official Phoenix Rising entrance photograph. Make ONE 4:5 realistic portrait focused only on the documented LOWER ENTRANCE: the textured orange/red columns, manufactured phoenix wing/flame ornaments, central dark oval plaque and source palms/stonework. Frame the top edge below the overhead blue rail and train so NO coaster train, people or track is visible; do not invent a different ride course or unsupported mechanical geometry. Preserve the source-supported entrance shapes, warm real textured materials and realistic restrained blue-purple evening sky. Omit all plaque/queue words and UI. This is generated representative entrance artwork, not a documentary photograph; no claim of present operation or actual current paint. No extra lettering, logos, watermark, fantasy flames or invented buildings.",
+      "promptSHA256": "8a0f4d0ff376f8470f3f82772894429959ed313e83b205abb1d0443576b689a9",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Phoenix Rising at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: The inspected own-page hero is the actual Phoenix Rising entrance/overhead-train photograph, distinct from the separate Rendering image link that is not selected. It shows textured yellow-orange/red entrance columns with physical phoenix wing/flame ornaments, dark oval plaque frame, safety netting and the real blue banked overhead rail with visible red/yellow suspended train hardware viewed from below. Current operator body identifies it as a suspended family coaster. Preserve the manufactured entrance, source banked section and attached train geometry; do not turn the source perspective into a vertical loop or full inversion. Ignore the white empty image margin and omit plaque/queue lettering. No invented hidden course or unrelated rendering. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+          "promptSHA256": "af9e7d92a8d0060715b977ca2726f83cae7c0234322fbf8c75af744aa19c3b19",
+          "outputSHA256": "e84d7b277c346b1f99e39420ea12ed64d295efaa292fcbe57b543f444cb59411",
+          "outputFile": "/workspace/generated_images/exec-14c8f2cb-ae71-453b-aa5f-def67f34a2ed.png",
+          "generationReferences": [
+            "/workspace/pivot-ride-artwork/candidate-photos/24-54228505557825.jpg",
+            "/workspace/pivot-design-reference/reference.jpeg"
+          ],
+          "review": "First portrait reviewed; ambiguous low-angle train geometry rejected in favor of documented entrance framing."
+        },
+        {
+          "prompt": "Edit the first generated PIVOT portrait to correct its ambiguous coaster geometry. The second image is the actual official Phoenix Rising entrance photograph. Make ONE 4:5 realistic portrait focused only on the documented LOWER ENTRANCE: the textured orange/red columns, manufactured phoenix wing/flame ornaments, central dark oval plaque and source palms/stonework. Frame the top edge below the overhead blue rail and train so NO coaster train, people or track is visible; do not invent a different ride course or unsupported mechanical geometry. Preserve the source-supported entrance shapes, warm real textured materials and realistic restrained blue-purple evening sky. Omit all plaque/queue words and UI. This is generated representative entrance artwork, not a documentary photograph; no claim of present operation or actual current paint. No extra lettering, logos, watermark, fantasy flames or invented buildings.",
+          "promptSHA256": "8a0f4d0ff376f8470f3f82772894429959ed313e83b205abb1d0443576b689a9",
+          "outputSHA256": "89fe81d9619dd75b1b36bec0f0a82b602c48428df8ffdfceae97d50a1995f53a",
+          "outputFile": "/workspace/generated_images/exec-96e94adb-bce6-45c9-aa33-e03a9800c7e7.png",
+          "generationReferences": [
+            "/workspace/generated_images/exec-14c8f2cb-ae71-453b-aa5f-def67f34a2ed.png",
+            "/workspace/pivot-ride-artwork/candidate-photos/24-54228505557825.jpg",
+            "/workspace/pivot-design-reference/reference.jpeg"
+          ],
+          "review": "Accepted: Actually viewed the official source, first portrait and corrected full portrait. Corrected version depicts only the real textured orange-red entrance columns, manufactured phoenix ornaments, dark oval plaque and source landscape with realistic evening materials. All train and track are outside the frame, avoiding the ambiguous low-angle perspective that could suggest an unsupported inversion. No invented mechanical layout or current-operation claim."
+        }
+      ]
+    },
+    {
+      "parkId": 24,
       "rideId": 62020843059756,
       "rideName": "Cheetah Hunt",
       "alt": "Illustrated Cheetah Hunt at Busch Gardens Tampa Bay",
@@ -2231,6 +2535,637 @@
       "key": "24-62020843059756",
       "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT, accurately based on actual attraction photo image 1. Image 2 supplies only restrained blue-purple evening treatment. Natural photographic materials, believable physical perspective and softly balanced practical lighting, slightly cinematic rather than painted. Preserve identifying real ride hardware and colors; clear central subject at thumbnail size. No UI, frame, border, watermark or overlaid lettering. Cheetah Hunt at Busch Gardens Tampa: faithfully match real photographed green steel truss track twisting around the distinctive tall tan tree-shaped tubular support structure, with pointed branching posts and triangular perforated sail decorations, train ON the elevated track, green trees below. Center full treetop element and sweeping banked curve. Natural steel and evening sky, no live cheetah, invented loop or different coaster.",
       "promptSHA256": "83928a0b8cf4b46267c71a97aebb4ae7aa7b290d0488033a28c4438119f124f2",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 66123251959045,
+      "rideName": "Cobra's Curse",
+      "alt": "Illustrated Cobra's Curse at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:33:29.541387+00:00",
+      "originalSHA256": "5f9abe9f7ac917746b53294468765ea9a5ae398fb8e03e4e86b864d20451a191",
+      "review": "Accepted: Viewed original Cobra's Curse photograph and full generated portrait. Physical gold/brown cobra statue, gray/green elevator structure/platforms and source blue crest with purple train remain recognizable and mechanically connected. No living snake or fabricated full route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://buschgardens.com/tampa/-/media/migrated-media/busch-gardens-tampa/images/rides/cobras-curse/bgt_rides_cobrascurse_banner_mobile.png?h=241&w=563&la=en&hash=D331E2E783BAC65961FA3928BE690F05",
+          "kind": "image",
+          "alt": "Cobra's Curse Roller Coaster",
+          "sourceURL": "https://buschgardens.com/tampa/roller-coasters/cobras-curse/",
+          "credit": "Busch Gardens Tampa Bay (official photographic reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://buschgardens.com/tampa/",
+          "sha256": "7d429c6e22043c92268002eb49cc00afda9aaad9205c27c1a51a517a45ef96eb",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected genuine official Cobra's Curse photograph shows the actual giant gold/brown sculpted cobra head/neck beside the tall gray/green vertical elevator structure with a small roof/ornament and real maintenance stairs/platforms. A blue steel rail crests at right with the actual small purple/magenta train, surrounded by brown support columns, stone-themed walls and safety fencing. The current operator body confirms the snake-king statue and vertical lift. Preserve this documented stationary statue, lift and visible crest section with physically connected rail/support geometry; not a living snake, fantasy flight or invented full course."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-66123251959045-thumbnail.jpg",
+      "thumbnailSHA256": "3670896078239df311d793cb7a670763d7e8c2e270d2d0e89e18a98fc3b01524",
+      "thumbnailBytes": 24951,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-66123251959045-detail.jpg",
+      "detailSHA256": "c9364304348102786feb7884180d773501ad69661bd378541945738029dbc87c",
+      "detailBytes": 194400,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-66123251959045",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Cobra's Curse at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: The inspected genuine official Cobra's Curse photograph shows the actual giant gold/brown sculpted cobra head/neck beside the tall gray/green vertical elevator structure with a small roof/ornament and real maintenance stairs/platforms. A blue steel rail crests at right with the actual small purple/magenta train, surrounded by brown support columns, stone-themed walls and safety fencing. The current operator body confirms the snake-king statue and vertical lift. Preserve this documented stationary statue, lift and visible crest section with physically connected rail/support geometry; not a living snake, fantasy flight or invented full course. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "054d13c1b32e19073f102a5c13fc3ff35eec2bcfbf5d81f9f8673f450d02e1fe",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 73121299912724,
+      "rideName": "Iron Gwazi",
+      "alt": "Illustrated Iron Gwazi at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:48:34.394625+00:00",
+      "originalSHA256": "88122e1a2c174d7f1b8b8f9174a35c89221120ccf62bcc93f54548c1c57a3163",
+      "review": "Accepted: Actually viewed original source and full generated portrait. Green crocodile-themed nose, teal seat backs/lap restraints, real wheel/rail connection, purple banked rail and tan trestle remain recognizable with realistic steel/wood materials.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://buschgardens.com/tampa/-/media/migrated-media/busch-gardens-tampa/images/rides/iron-gwazi/banners/1900x264_bgt_rides_irongwazi.jpg?h=261&w=1873&la=en&hash=4CAAA1A1355811EA2AC19A5CFFC9463E",
+          "kind": "image",
+          "alt": "People riding Iron Gwazi",
+          "sourceURL": "https://buschgardens.com/tampa/roller-coasters/iron-gwazi/",
+          "credit": "Busch Gardens Tampa Bay / United Parks & Resorts, official attraction photography",
+          "license": "Copyright operator; photographic reference only, rights retained",
+          "licenseURL": "https://buschgardens.com/tampa/",
+          "sha256": "bd15a66f97ec4bcb6ff9b6b650a4104dd90c8a09af8872ddea5d6e1fdd781a54",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Inspected official narrow photo shows Iron Gwazi’s green crocodile-inspired lead nose and teal/green train seats, actual lap restraints, steel wheel assemblies on purple rail, and dense tan/yellow wooden/steel support members on a banked crest. Operator body identifies this as the RMC wood/steel hybrid. Frame the documented connected lead-car, rail and trestle section; do not invent the full drop, inversion or hidden layout from the banner."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-73121299912724-thumbnail.jpg",
+      "thumbnailSHA256": "d641660d9a62fbcab4c9a7c18529379538f21b4a150a018e68822a26950570ba",
+      "thumbnailBytes": 26219,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-73121299912724-detail.jpg",
+      "detailSHA256": "e53e25899f159ca92a26a2471f202c2ee887f97d645937bec6e3126624f4f012",
+      "detailBytes": 177355,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-73121299912724",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Iron Gwazi at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Inspected official narrow photo shows Iron Gwazi’s green crocodile-inspired lead nose and teal/green train seats, actual lap restraints, steel wheel assemblies on purple rail, and dense tan/yellow wooden/steel support members on a banked crest. Operator body identifies this as the RMC wood/steel hybrid. Frame the documented connected lead-car, rail and trestle section; do not invent the full drop, inversion or hidden layout from the banner. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "18dc43c6c7151ac409c466d4b281d6399722e5cf8fc6ec1f364d386fc01f047a",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 93334705723617,
+      "rideName": "Serengeti Express (Stanleyville Station)",
+      "alt": "Illustrated Serengeti Express (Stanleyville Station) at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:47:24.033615+00:00",
+      "originalSHA256": "fabad38050d85692d46910f198740997f654b67259af9df22b80ebd7a8dc64e7",
+      "review": "Accepted: Actually viewed original source and full generated portrait. Yellow/green locomotive, yellow tender, open-sided coaches, connected running gear and source pond/trees remain recognizable. Shared-system representative train; no invented Stanleyville building or present-service claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://buschgardens.com/tampa/-/media/migrated-media/busch-gardens-tampa/page-banners/1900x700/rides-and-kid-friendly-attractions/2017_buschgardenstampabay_rides_serengetirailway1_1900x700.jpg?h=700&w=1900&la=en&hash=39FCE25467B22CD7BF8FD81C1C677BFF",
+          "kind": "image",
+          "alt": "Ride the Serengeti Railway at Busch Gardens Tampa Bay",
+          "sourceURL": "https://buschgardens.com/tampa/rides/serengeti-express-train/",
+          "credit": "Busch Gardens Tampa Bay / United Parks & Resorts, official attraction photography",
+          "license": "Copyright operator; photographic reference only, rights retained",
+          "licenseURL": "https://buschgardens.com/tampa/",
+          "sha256": "3ba97e19871cc0293f5735c8745872cb6003b4ff76019bb2cf6239367016c373",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Inspected official photo shows a yellow-and-green steam-style locomotive with yellow tender, real black wheels/connecting rods and open-sided yellow passenger coaches with pale canopies on a connected rail line beside a reflective pond, trees and source distant coaster/tower silhouettes. Compose the documented locomotive, leading coaches and pond at realistic scale. This is a representative train of the same Serengeti Express system for the Stanleyville Station catalog entry, not proof of current service at that station or of the photo's exact station location. Current operator text names Nairobi; do not invent a Stanleyville building or timetable. No invented animals or hidden route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-93334705723617-thumbnail.jpg",
+      "thumbnailSHA256": "c831940f418950854bf4beeafb1832373ce10788eaeff024e6c409dc11b0db6b",
+      "thumbnailBytes": 25374,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-93334705723617-detail.jpg",
+      "detailSHA256": "8eb1604aa7abc68951748d26b263ead3dc39dcb0ace44be133f0991898110404",
+      "detailBytes": 199995,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-93334705723617",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Serengeti Express (Stanleyville Station) at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Inspected official photo shows a yellow-and-green steam-style locomotive with yellow tender, real black wheels/connecting rods and open-sided yellow passenger coaches with pale canopies on a connected rail line beside a reflective pond, trees and source distant coaster/tower silhouettes. Compose the documented locomotive, leading coaches and pond at realistic scale. This is a representative train of the same Serengeti Express system for the Stanleyville Station catalog entry, not proof of current service at that station or of the photo's exact station location. Current operator text names Nairobi; do not invent a Stanleyville building or timetable. No invented animals or hidden route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "4bacc2815fecceb21353c0101cb22ec2488be631a0aef4440889303cc47832e6",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 107411584880664,
+      "rideName": "Zoe-Patra's Hippos of the Nile",
+      "alt": "Illustrated Zoe-Patra's Hippos of the Nile at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:57:38.539192+00:00",
+      "originalSHA256": "9db6a6b1e37ea4bb0f96334dc9a29411ef04a23f2eaaeda42098cd642645c641",
+      "review": "Accepted: Actually viewed original source and full generated portrait. Corrected portrait keeps both eyes and documented molded purple/blue hippo face, dotted lip, white teeth, mouth and lower bumper inside the thumbnail composition. Pale-aqua curving flume, real large tree/mulch and source background remain recognizable; no invented riders, hidden vehicle or live animals.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.coasterpedia.net/thumb/c/cf/Zoe-Patra_and_the_Hippos_of_the_Nile.jpg/900px-Zoe-Patra_and_the_Hippos_of_the_Nile.jpg.webp",
+          "sourceURL": "https://coasterpedia.net/wiki/Zoe-Patra_and_the_Hippos_of_the_Nile",
+          "credit": "CoasterDave / Coasterpedia original photograph gallery",
+          "license": "Photographer rights retained; reference only. File-specific license unverified, no open-license assertion.",
+          "licenseURL": "https://coasterpedia.net/wiki/Zoe-Patra_and_the_Hippos_of_the_Nile",
+          "sha256": "caa9c4e8c59cc81ab4e75cc8b3d1dc5bf7007cd4e7cbb9f286ad2ad4644aac4a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed the genuine Coasterpedia photograph, author CoasterDave, photo metadata dated23December2023, and read the current official Safari of Fun attraction description identifying this exact junior water ride. Source shows an empty purple/blue molded hippo-face boat, actual small tan seats, pale aqua water flume/channel walls around a large tree and mulched island, pink hippo statue and real fencing/foliage. Depict this documented vehicle and curved shallow waterway only with realistic molded-plastic, water and bark materials; not live animals, a new Egyptian monument, hidden drop or a different park. Historical photo metadata does not prove current paint/capture date. File-specific license could not be verified from the file-description endpoint; retain actual author credit and do not assert an unverified open license."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-107411584880664-thumbnail.jpg",
+      "thumbnailSHA256": "bcb6f8f9e4bff1bb258c8b75cea16ea788b7f55fa6bee6873764693f7314f949",
+      "thumbnailBytes": 30336,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-107411584880664-detail.jpg",
+      "detailSHA256": "39c9619d78981f9d5bf436c6909824aeef0a3594bda09cc572934a97f40062c1",
+      "detailBytes": 229486,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-107411584880664",
+      "prompt": "Refine the framing of the first generated PIVOT portrait using the second genuine photograph of Zoe-Patra and the Hippos of the Nile at Busch Gardens Tampa. Make ONE realistic 4:5 portrait centered on the documented VISIBLE FRONT FACE of the purple/blue manufactured hippo boat: both big round eyes, pale-blue dotted upper lip, two white tusk-like teeth, dark open mouth and colored lower bumper as actually visible in the source. Keep this face fully inside the frame and large enough to recognize in a small app thumbnail. Show only the source-supported shallow pale-aqua water channel curving around the real large tree/mulched island behind; the boat sides, hidden seats and full layout can remain outside the frame. Do not invent a full unphotographed vehicle, riders, live hippos, extra Egyptian scenery or a new drop. Preserve the real molded plastic/water/bark surfaces, source colors, realistic blue-purple evening shadows and restrained practical lights. Clearly generated artwork, not a documentary photograph; no UI, text, watermark or new logos.",
+      "promptSHA256": "3e43800e16e8005306d2796f11853a9c21ceb5d070e9828852fff701af18c573",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Zoe-Patra's Hippos of the Nile at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Actually viewed the genuine Coasterpedia photograph, author CoasterDave, photo metadata dated23December2023, and read the current official Safari of Fun attraction description identifying this exact junior water ride. Source shows an empty purple/blue molded hippo-face boat, actual small tan seats, pale aqua water flume/channel walls around a large tree and mulched island, pink hippo statue and real fencing/foliage. Depict this documented vehicle and curved shallow waterway only with realistic molded-plastic, water and bark materials; not live animals, a new Egyptian monument, hidden drop or a different park. Historical photo metadata does not prove current paint/capture date. File-specific license could not be verified from the file-description endpoint; retain actual author credit and do not assert an unverified open license. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+          "promptSHA256": "5ef579d626b331e945d4bb109b90f6d58bbee00dad0fe7a54c9d083f09021114",
+          "outputSHA256": "9d47557d02437a62ad135b6189aaa290a5081a678f69d6d89155405c92cdfc31",
+          "outputFile": "/workspace/generated_images/exec-1aaa7d3c-c483-4db8-a013-0158a054c301.png",
+          "generationReferences": [
+            "/workspace/pivot-ride-artwork/candidate-photos/24-107411584880664.webp",
+            "/workspace/pivot-design-reference/reference.jpeg"
+          ],
+          "review": "First portrait reviewed; the boat face was clipped at left. Corrected for recognizable thumbnail framing."
+        },
+        {
+          "prompt": "Refine the framing of the first generated PIVOT portrait using the second genuine photograph of Zoe-Patra and the Hippos of the Nile at Busch Gardens Tampa. Make ONE realistic 4:5 portrait centered on the documented VISIBLE FRONT FACE of the purple/blue manufactured hippo boat: both big round eyes, pale-blue dotted upper lip, two white tusk-like teeth, dark open mouth and colored lower bumper as actually visible in the source. Keep this face fully inside the frame and large enough to recognize in a small app thumbnail. Show only the source-supported shallow pale-aqua water channel curving around the real large tree/mulched island behind; the boat sides, hidden seats and full layout can remain outside the frame. Do not invent a full unphotographed vehicle, riders, live hippos, extra Egyptian scenery or a new drop. Preserve the real molded plastic/water/bark surfaces, source colors, realistic blue-purple evening shadows and restrained practical lights. Clearly generated artwork, not a documentary photograph; no UI, text, watermark or new logos.",
+          "promptSHA256": "3e43800e16e8005306d2796f11853a9c21ceb5d070e9828852fff701af18c573",
+          "outputSHA256": "9db6a6b1e37ea4bb0f96334dc9a29411ef04a23f2eaaeda42098cd642645c641",
+          "outputFile": "/workspace/generated_images/exec-4c12ab94-5536-4444-81d7-739434857372.png",
+          "generationReferences": [
+            "/workspace/generated_images/exec-1aaa7d3c-c483-4db8-a013-0158a054c301.png",
+            "/workspace/pivot-ride-artwork/candidate-photos/24-107411584880664.webp",
+            "/workspace/pivot-design-reference/reference.jpeg"
+          ],
+          "review": "Accepted: Actually viewed original source and full generated portrait. Corrected portrait keeps both eyes and documented molded purple/blue hippo face, dotted lip, white teeth, mouth and lower bumper inside the thumbnail composition. Pale-aqua curving flume, real large tree/mulch and source background remain recognizable; no invented riders, hidden vehicle or live animals."
+        }
+      ]
+    },
+    {
+      "parkId": 24,
+      "rideId": 110006467483838,
+      "rideName": "Falcon's Fury",
+      "alt": "Illustrated Falcon's Fury at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:47:51.758019+00:00",
+      "originalSHA256": "de8b6b97fbce4efadd5044036bfda89bd55c671ea7aab57f56a6afa3d05401fc",
+      "review": "Accepted: Actually viewed original source and full generated portrait. Orange/yellow and teal shaft, actual circular gondola, decorative entrance panel/lantern and source palms remain recognizable in a realistic low-angle view without invented close-up mechanical details.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://buschgardens.com/tampa/-/media/migrated-media/busch-gardens-tampa/media-modules/750x422/rides/falcons-fury/2017_buschgardenstampabay_rides_falconsfury4_750x422.png?h=340&w=604&la=en&hash=B5AD7803EF2BF56611B6C184FC72547B",
+          "kind": "image",
+          "alt": "Ride Falcon's Fury at Busch Gardens Tampa Bay",
+          "sourceURL": "https://buschgardens.com/tampa/rides/falcons-fury/",
+          "credit": "Busch Gardens Tampa Bay / United Parks & Resorts, official attraction photography",
+          "license": "Copyright operator; photographic reference only, rights retained",
+          "licenseURL": "https://buschgardens.com/tampa/",
+          "sha256": "dab757929d47da0c8e027b32436f5661106b9fe3755e103bd7db7b030eeb8e69",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Inspected official photo shows the real Falcon’s Fury tall orange/yellow lower tower with teal/blue upper column, actual circular gondola attached high on its shaft, palm trees and orange/teal decorative entrance panel/lantern. Operator identifies the pivoting drop tower. Preserve the source overall shaft/gondola and entrance relationships in a realistic low-angle portrait; no invented close-up seats/guests, altered platform or unsupported full mechanism. Omit sign words."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-110006467483838-thumbnail.jpg",
+      "thumbnailSHA256": "8c3b91f342e3c3d39ef36c6b5e44eea519385daaa8fb41cd998642b6d74186e7",
+      "thumbnailBytes": 24180,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-110006467483838-detail.jpg",
+      "detailSHA256": "efc56650b9d291dc527906076b2954b348b86c0d9bca7505e79e56afe6e0e843",
+      "detailBytes": 180514,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-110006467483838",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Falcon's Fury at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Inspected official photo shows the real Falcon’s Fury tall orange/yellow lower tower with teal/blue upper column, actual circular gondola attached high on its shaft, palm trees and orange/teal decorative entrance panel/lantern. Operator identifies the pivoting drop tower. Preserve the source overall shaft/gondola and entrance relationships in a realistic low-angle portrait; no invented close-up seats/guests, altered platform or unsupported full mechanism. Omit sign words. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "587204cd660805f2ed9af5c10db56138f7bb841ba8b11c37352b7a9e0d4f832a",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 124083574457229,
+      "rideName": "Gwazi Gliders",
+      "alt": "Illustrated Gwazi Gliders at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:49:29.031792+00:00",
+      "originalSHA256": "5bcc0b2aa7483c9c1cca3a57a41321143701a86034d25f58a53b3e2d8f9e402a",
+      "review": "Accepted: Actually viewed original source and full generated portrait. Magenta glider seats/arms, orange/yellow wing canopies, actual connected rods/black central support and picket fence remain recognizable. Ordinary clothed riders, no flying aircraft or disconnected vehicles.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://buschgardens.com/tampa/-/media/migrated-media/busch-gardens-tampa/images/rides/kid-friendly-rides/gwazi-gliders/1900x263_bgt_rides_gwazigliders_banner_desktop.png?h=264&w=1898&la=en&hash=919A0C4EEF19C38D64C93010F8DE5175",
+          "kind": "image",
+          "alt": "Gwazi Gliders",
+          "sourceURL": "https://buschgardens.com/tampa/rides/gwazi-gliders/",
+          "credit": "Busch Gardens Tampa Bay / United Parks & Resorts, official attraction photography",
+          "license": "Copyright operator; photographic reference only, rights retained",
+          "licenseURL": "https://buschgardens.com/tampa/",
+          "sha256": "4274f14ec4191cb8560b2087b182f28bc50ffa6e95f350b25552e28f3d04cc2b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Inspected genuine official wide banner shows Gwazi Gliders’ manufactured magenta/pink junior aerial vehicles with orange/yellow curved wing/canopy parts, actual black central support, connected radial pink arms and hanging/vertical rods, purple/pink picket fence and green trees. Ordinary clothed source children sit behind actual bars. Compose this documented vehicle/arm section with realistic molded plastic/steel, not a flying aircraft, full hidden spinning layout or unrelated ride. Ignore cropped foreground sign and background arcade text."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-124083574457229-thumbnail.jpg",
+      "thumbnailSHA256": "c239f13131111c0ebc21ef43ced78ea80b4934dff6863d2d2c5f8bb499b1748f",
+      "thumbnailBytes": 23405,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-124083574457229-detail.jpg",
+      "detailSHA256": "681c52a65b6c6b2f6a54b44194e374b3432bcb65b2d9b0d965fd07c28caf90e2",
+      "detailBytes": 160914,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-124083574457229",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Gwazi Gliders at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Inspected genuine official wide banner shows Gwazi Gliders’ manufactured magenta/pink junior aerial vehicles with orange/yellow curved wing/canopy parts, actual black central support, connected radial pink arms and hanging/vertical rods, purple/pink picket fence and green trees. Ordinary clothed source children sit behind actual bars. Compose this documented vehicle/arm section with realistic molded plastic/steel, not a flying aircraft, full hidden spinning layout or unrelated ride. Ignore cropped foreground sign and background arcade text. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "8f4272573c237b00140b402ce9abf3a43aab392cdc539ac62b3e36b2153f3961",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 134101349704354,
+      "rideName": "Grand Caravan Carousel",
+      "alt": "Illustrated Grand Caravan Carousel at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:50:27.796782+00:00",
+      "originalSHA256": "5d6405f7fa53b54c64cb12f308b5e5694c5d008a2f55debdbaf117931970efa9",
+      "review": "Accepted: Actually viewed original source and full generated portrait. Actual white lacquered horse, gold/brown mane, blue/pink bridle, spiral metal pole, ordinary clothed source-style rider and illuminated purple/gold fascia remain recognizable; no live horse or imaginary exterior.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://buschgardens.com/tampa/-/media/migrated-media/busch-gardens-tampa/listing-images/357x229/rides-and-kid-friendly-attractions/958x613_bgt_ride_grand_caravan_carousel_mobile_app_poi_listing.jpg?h=613&w=958&la=en&hash=4F3DF96382567B967A78C4EE775EBA5E",
+          "kind": "image",
+          "alt": "Grand Caravan Carousel at Busch Gardens Tampa Bay.",
+          "sourceURL": "https://buschgardens.com/tampa/rides/grand-caravan-carousel/",
+          "credit": "Busch Gardens Tampa Bay / United Parks & Resorts, official attraction photography",
+          "license": "Copyright operator; photographic reference only, rights retained",
+          "licenseURL": "https://buschgardens.com/tampa/",
+          "sha256": "20fdda7539b5747db5cdf35d1f098fe4ae4958a2ac40d5ed69dd13d75d0a963b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Inspected official Grand Caravan Carousel photo shows a white molded carousel horse with gold/brown mane, blue/pink bridle, real vertical spiral silver pole, source ordinary clothed young rider holding the pole, other manufactured horses and purple/gold inner fascia with warm round bulbs and sunset animal-silhouette panels. Operator body identifies the Pantopia classic carousel. Preserve this actual horse/pole/bulb section and realistic lacquered materials, not a living horse or an invented full exterior building. No added lettering."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-134101349704354-thumbnail.jpg",
+      "thumbnailSHA256": "b804873aefec0d94ca48c91c8dbf3dcb35d105b82f7743d839e44f1a2daf7f90",
+      "thumbnailBytes": 29577,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-134101349704354-detail.jpg",
+      "detailSHA256": "482e0fdd2282902979eef22b3ea82fd431e526b25025a0f67eb9e1e5bf5648e4",
+      "detailBytes": 174876,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-134101349704354",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Grand Caravan Carousel at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Inspected official Grand Caravan Carousel photo shows a white molded carousel horse with gold/brown mane, blue/pink bridle, real vertical spiral silver pole, source ordinary clothed young rider holding the pole, other manufactured horses and purple/gold inner fascia with warm round bulbs and sunset animal-silhouette panels. Operator body identifies the Pantopia classic carousel. Preserve this actual horse/pole/bulb section and realistic lacquered materials, not a living horse or an invented full exterior building. No added lettering. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "be67361fd099f03eeddaca3a789e66b6855bc90929f69108a5d6902182c9e207",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 148706213240245,
+      "rideName": "Serengeti Express (Nairobi Station)",
+      "alt": "Illustrated Serengeti Express (Nairobi Station) at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:51:36.949902+00:00",
+      "originalSHA256": "6fc9fe4c24f5095487b897cbc83f844318e0980dabdc723d9abc0d272edb5ec2",
+      "review": "Accepted: Actually viewed original source and full generated portrait. Yellow/green locomotive, yellow tender, actual open-sided coaches/running gear and source pond/trees remain recognizable. Closer distinct framing of the shared train; no invented station view or present timetable.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://buschgardens.com/tampa/-/media/migrated-media/busch-gardens-tampa/page-banners/1900x700/rides-and-kid-friendly-attractions/2017_buschgardenstampabay_rides_serengetirailway1_1900x700.jpg?h=700&w=1900&la=en&hash=39FCE25467B22CD7BF8FD81C1C677BFF",
+          "kind": "image",
+          "alt": "Ride the Serengeti Railway at Busch Gardens Tampa Bay",
+          "sourceURL": "https://buschgardens.com/tampa/rides/serengeti-express-train/",
+          "credit": "Busch Gardens Tampa Bay / United Parks & Resorts, official attraction photography",
+          "license": "Copyright operator; photographic reference only, rights retained",
+          "licenseURL": "https://buschgardens.com/tampa/",
+          "sha256": "3ba97e19871cc0293f5735c8745872cb6003b4ff76019bb2cf6239367016c373",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed the official Serengeti Express photo: yellow-and-green steam-style locomotive, yellow tender, black running gear, open yellow passenger coaches with pale roofs, connected rails beside a pond and trees. Current operator body names Nairobi station. Compose a closer representative view of the documented locomotive/tender and first coach beside the same pond, with actual connected running gear and realistic materials; no invented station, animal, route or present timetable. The shared-system photo also supports Stanleyville’s separate catalog entry, but this is distinct generated framing, not proof of a specific photo location."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-148706213240245-thumbnail.jpg",
+      "thumbnailSHA256": "6f2e9f009c9136b74be250a97a8b3368b228eba3ee6d3b2c1c2c92b21b550586",
+      "thumbnailBytes": 24120,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-148706213240245-detail.jpg",
+      "detailSHA256": "a1b8e80cb03a1d1bf0eb277139d391129c885fd8d6077fcfd92803e8ceb6db67",
+      "detailBytes": 182979,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-148706213240245",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Serengeti Express (Nairobi Station) at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Actually viewed the official Serengeti Express photo: yellow-and-green steam-style locomotive, yellow tender, black running gear, open yellow passenger coaches with pale roofs, connected rails beside a pond and trees. Current operator body names Nairobi station. Compose a closer representative view of the documented locomotive/tender and first coach beside the same pond, with actual connected running gear and realistic materials; no invented station, animal, route or present timetable. The shared-system photo also supports Stanleyville’s separate catalog entry, but this is distinct generated framing, not proof of a specific photo location. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "4e0cb2d12f920ec385891b17d26c322178f9667c995ba9ca33989ae008642b22",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 209348409508903,
+      "rideName": "Tigris",
+      "alt": "Illustrated Tigris at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:51:05.409405+00:00",
+      "originalSHA256": "6dfb31db2a63bab3b2282d07ac24688fd1983bc94488ce0742331b64dc61f10c",
+      "review": "Accepted: Actually viewed original source and full generated portrait. Three green/orange cars, attached wheel bogies/restraints and source inverted section of orange rail are recognizable. Documented Tigris heartline-roll orientation, no invented full course.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://buschgardens.com/tampa/-/media/migrated-media/busch-gardens-tampa/page-banners/1900x700/rides-and-kid-friendly-attractions/2019_buschgardenstampabay_rollercoasters_tigris_1900x700.jpg?h=700&w=1900&la=en&hash=82427427C6E7C666823A706C8B4210CA",
+          "kind": "image",
+          "alt": "An orange and black roller coaster called Tigris, located at Busch Gardens Tampa Bay, located in Florida",
+          "sourceURL": "https://buschgardens.com/tampa/roller-coasters/tigris/",
+          "credit": "Busch Gardens Tampa Bay / United Parks & Resorts, official attraction photography",
+          "license": "Copyright operator; photographic reference only, rights retained",
+          "licenseURL": "https://buschgardens.com/tampa/",
+          "sha256": "ea71251eca5020e7dd361cc27b7f2ba1325b6f5e208d10e6e71d82c957891d11",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Inspected official Tigris photograph shows three real green/orange coaster cars with ordinary clothed riders and actual restraints/wheel brackets attached to the underside of the orange/red rail at its source inverted heartline-roll section. Operator body explicitly confirms Tigris has an inverted heartline roll. Preserve this documented train/connected rail section and realistic steel/chassis geometry; no invented full launch tower, disconnected bogies, extra cars or hidden route. Keep source-supported inversion orientation rather than making it an unsupported different ride."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-209348409508903-thumbnail.jpg",
+      "thumbnailSHA256": "4cbe12d06c89e70f18986bd039061d30b8b9513540ba7c9b1b1f3335eebc59e2",
+      "thumbnailBytes": 19634,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-209348409508903-detail.jpg",
+      "detailSHA256": "bcb3fc8865f332d98ff8f94dce6ba97037e23a1227e05bbd945c690f833a0405",
+      "detailBytes": 122009,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-209348409508903",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Tigris at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Inspected official Tigris photograph shows three real green/orange coaster cars with ordinary clothed riders and actual restraints/wheel brackets attached to the underside of the orange/red rail at its source inverted heartline-roll section. Operator body explicitly confirms Tigris has an inverted heartline roll. Preserve this documented train/connected rail section and realistic steel/chassis geometry; no invented full launch tower, disconnected bogies, extra cars or hidden route. Keep source-supported inversion orientation rather than making it an unsupported different ride. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "0adf37774b8f9700b08be82df9bfc3f670908012a056f7321022c72f65028cc1",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 251072542612520,
+      "rideName": "SheiKra",
+      "alt": "Illustrated SheiKra at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:50:44.789062+00:00",
+      "originalSHA256": "15db5eb5bd21e3348057bb7fc4aa10dbbfad3f812eed668a54db672e3766bbe9",
+      "review": "Accepted: Actually viewed original source and full generated portrait. Wide orange/gold floorless dive train, black restraints, connected red steep rail, blue support/maintenance structure and source greenery remain recognizable with realistic materials. Source-limited drop section, no invented full course.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://buschgardens.com/tampa/-/media/migrated-media/busch-gardens-tampa/page-banners/1800x250/bgt_rides_sheikra_banner_desktop.png?h=251&w=1801&la=en&hash=68544485E04D55DB0DE5AB95918F7489",
+          "kind": "image",
+          "alt": "SheiKra",
+          "sourceURL": "https://buschgardens.com/tampa/roller-coasters/sheikra/",
+          "credit": "Busch Gardens Tampa Bay / United Parks & Resorts, official attraction photography",
+          "license": "Copyright operator; photographic reference only, rights retained",
+          "licenseURL": "https://buschgardens.com/tampa/",
+          "sha256": "1f0b1ae9623a6ce34bc32affc204b2bcac1b80bb69f6282710510ae49f742c86",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed the genuine official narrow SheiKra photo and read the current operator body. It shows the wide orange/gold floorless dive-coaster train with real black over-shoulder restraints and ordinary clothed riders descending the red steep rail beside blue support/maintenance structure, palms and greenery. Preserve this documented connected train, drop rail and blue supports only with realistic steel/chassis; do not invent the full hill, underwater section or entire layout beyond the limited reference. The operator explicitly describes a vertical dive."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-251072542612520-thumbnail.jpg",
+      "thumbnailSHA256": "3ac25d03d328be44c432dad68516103d9c84c4325f102ee7f2da7517272b99cf",
+      "thumbnailBytes": 24747,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-251072542612520-detail.jpg",
+      "detailSHA256": "772476b061e9d6a0b067cde9b516bc3156df4f11d0613116e6d1dd412293405c",
+      "detailBytes": 154711,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-251072542612520",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict SheiKra at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Actually viewed the genuine official narrow SheiKra photo and read the current operator body. It shows the wide orange/gold floorless dive-coaster train with real black over-shoulder restraints and ordinary clothed riders descending the red steep rail beside blue support/maintenance structure, palms and greenery. Preserve this documented connected train, drop rail and blue supports only with realistic steel/chassis; do not invent the full hill, underwater section or entire layout beyond the limited reference. The operator explicitly describes a vertical dive. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "3ddc62c923b82844db6d95450df2ee98095ec671bdfbf36f3672ff3bf2a9be6a",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 263287875124675,
+      "rideName": "Montu",
+      "alt": "Illustrated Montu at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:52:38.258867+00:00",
+      "originalSHA256": "52f796f19e68ec3df2342822b092bf527404d975191badb59f355a13cdcd5415",
+      "review": "Accepted: Actually viewed original source and full generated portrait. Source black suspended seats/restraints, documented ordinary clothed riders, blue/gold/red Egyptian fascia and actual connected overhead chassis/rail remain recognizable with realistic steel and harness materials.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://buschgardens.com/tampa/-/media/migrated-media/busch-gardens-tampa/page-banners/1900x700/rides-and-kid-friendly-attractions/2017_buschgardenstampabay_rollercoasters_montu_1900x700.jpg?h=700&w=1900&la=en&hash=FBE057336A15375939B5988EE5546B16",
+          "kind": "image",
+          "alt": "Ride Montu at Busch Gardens Tampa Bay",
+          "sourceURL": "https://buschgardens.com/tampa/roller-coasters/montu/",
+          "credit": "Busch Gardens Tampa Bay / United Parks & Resorts, official attraction photography",
+          "license": "Copyright operator; photographic reference only, rights retained",
+          "licenseURL": "https://buschgardens.com/tampa/",
+          "sha256": "9018a66d8161e91892cabda05cf7d627a47e79f232567df0cdd2d7ed84fdc9bc",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed official Montu close-up and read the current operator body. Source shows black inverted seats, actual black over-shoulder restraints and ordinary clothed riders hanging below the dark blue/black rail and chassis, with manufactured Egyptian blue/gold/red decorative nose panels and partial wheel/support hardware. Preserve the photographed banked suspended train/rail connection, realistic restraint materials and source number of visible seats; do not invent a full loop, hidden course or unrelated coaster. Omit name/numeric lettering."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-263287875124675-thumbnail.jpg",
+      "thumbnailSHA256": "8cceea78548193ccc85e8e47a7fbae6dd7909c8abc862bcc0a73e03a7787ed2c",
+      "thumbnailBytes": 27172,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-263287875124675-detail.jpg",
+      "detailSHA256": "787f16252e7f400169a379b3113b81ccf2939eb5ff8f9ded8d5f6dfd097c1ad3",
+      "detailBytes": 175757,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-263287875124675",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Montu at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Actually viewed official Montu close-up and read the current operator body. Source shows black inverted seats, actual black over-shoulder restraints and ordinary clothed riders hanging below the dark blue/black rail and chassis, with manufactured Egyptian blue/gold/red decorative nose panels and partial wheel/support hardware. Preserve the photographed banked suspended train/rail connection, realistic restraint materials and source number of visible seats; do not invent a full loop, hidden course or unrelated coaster. Omit name/numeric lettering. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "6cf71b9f826d3d4ced94d36ba732029c7c780c1702438ba0674bf2c2f64321ff",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 277681966364288,
+      "rideName": "Skyride (Jungala Station)",
+      "alt": "Illustrated Skyride (Jungala Station) at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:53:00.975212+00:00",
+      "originalSHA256": "1ceb3411ee9ed186baf3b344960fa548ece987c1cecec2f2e06d9d43a933270f",
+      "review": "Accepted: Actually viewed original source and full generated portrait. Blue open-sided cabin/canopy, real hanger/wheel/cable connection and source treetops remain recognizable. Distinct closer representative shared-system vehicle; no invented Jungala building, viewpoint or current-service claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://buschgardens.com/tampa/-/media/migrated-media/busch-gardens-tampa/page-banners/1900x700/rides-and-kid-friendly-attractions/2017_buschgardenstampabay_rides_skyride_1900x700.jpg?h=700&w=1900&la=en&hash=A03CC1642FB87C41CB490A2DFCBFF805",
+          "kind": "image",
+          "alt": "Skyride at Busch Gardens  Tampa Bay",
+          "sourceURL": "https://buschgardens.com/tampa/rides/skyride/",
+          "credit": "Busch Gardens Tampa Bay / United Parks & Resorts, official attraction photography",
+          "license": "Copyright operator; photographic reference only, rights retained",
+          "licenseURL": "https://buschgardens.com/tampa/",
+          "sha256": "3fb5a284e9e459770df28761110523c4b978c75b010b4c32ef035dfcbfc90a1c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own-page SkyRide photo and previously read current official SkyRide body. Blue open-sided cabin with real canopy, dark handrail, bench/source ordinary guests and metal hanger/wheels physically attached to the overhead cable; gray support tower, trees and source distant rides. This is a representative shared SkyRide-system vehicle for the Jungala Station catalog entry, not proof of the exact viewpoint or an invented station building. Compose a closer side view of only the documented blue cabin/hanger/cable and treetops, keeping source geometry and current-maintenance status separate from generated art. Do not add station architecture, new cabin paint or current service claims."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-277681966364288-thumbnail.jpg",
+      "thumbnailSHA256": "8fe4c88cd4bfbeebf578af2da17b53bfe2be5e66480dda5508646fd1a3e712fe",
+      "thumbnailBytes": 22314,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-277681966364288-detail.jpg",
+      "detailSHA256": "d7a9a05148319ad7ebcecd6326cc2e78f8be0c0fcf378db4e44d7c11cdb66fa8",
+      "detailBytes": 163442,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-277681966364288",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Skyride (Jungala Station) at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Actually viewed own-page SkyRide photo and previously read current official SkyRide body. Blue open-sided cabin with real canopy, dark handrail, bench/source ordinary guests and metal hanger/wheels physically attached to the overhead cable; gray support tower, trees and source distant rides. This is a representative shared SkyRide-system vehicle for the Jungala Station catalog entry, not proof of the exact viewpoint or an invented station building. Compose a closer side view of only the documented blue cabin/hanger/cable and treetops, keeping source geometry and current-maintenance status separate from generated art. Do not add station architecture, new cabin paint or current service claims. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "875393768f96cd2b7110ea4b2a07a44d36a9b70ba7e5e0f5731215c42509c1ae",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 280455735184698,
+      "rideName": "Big Bird's Whirly Birdie",
+      "alt": "Illustrated Big Bird's Whirly Birdie at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:53:24.039550+00:00",
+      "originalSHA256": "b18afcf0077c68d1b353fce36675deab7141f9168b619da5f50b1c542da97ae9",
+      "review": "Accepted: Actually viewed original source and full generated portrait. Actual rear view of six egg-shaped gondola shells, maroon/orange paint/yellow patches, pink central support/motor housing, connected brown radial arms/pivots and real safety fence remain recognizable. No invented figure, guests or hidden seating.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.coasterpedia.net/thumb/6/66/Big_Bird%27s_Whirly_Birdie_%28Busch_Gardens_Tampa%29_2012_01.jpg/1200px-Big_Bird%27s_Whirly_Birdie_%28Busch_Gardens_Tampa%29_2012_01.jpg.webp",
+          "sourceURL": "https://coasterpedia.net/wiki/Big_Bird%27s_Whirly_Birdie",
+          "credit": "Jeremy Thompson / Coasterpedia original photograph gallery",
+          "license": "Photographer rights retained; reference only. File-specific license unverified, no open-license assertion.",
+          "licenseURL": "https://coasterpedia.net/wiki/Big_Bird%27s_Whirly_Birdie",
+          "sha256": "4c5bf85355ae8b4966fe23bd61eeea86422d40a51aed8fdb9437d24a06a5f1ef",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed the genuine Jeremy Thompson photograph in the Coasterpedia gallery, metadata dated5March2012, and read the current official Safari of Fun ride description. Source is the BACK of Big Bird’s Whirly Birdie: six large maroon/orange egg-shaped gondola shells with yellow/green patches, a real pink central support/back motor housing, connected brown radial arms and pivots, safety fence, hedges and trees. Preserve this documented rear mechanical view and realistic painted fiberglass/steel; do not invent a front-facing Big Bird figure, visible riders, hidden seating arrangement or a giant observation wheel. Historical source, not proof of current paint. File-specific license not verified from the unavailable file-description endpoint; credit the photographer and retain rights rather than claiming an open license."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-280455735184698-thumbnail.jpg",
+      "thumbnailSHA256": "031dec72ce4b77fff7bd33fd647f83e801db528e091d4918473d53b5e73be772",
+      "thumbnailBytes": 28598,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-280455735184698-detail.jpg",
+      "detailSHA256": "994b255b68103fea0285d4bab35ef5afc41faa4825e7287f75e61291c62e4d3f",
+      "detailBytes": 201558,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-280455735184698",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Big Bird's Whirly Birdie at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Actually viewed the genuine Jeremy Thompson photograph in the Coasterpedia gallery, metadata dated5March2012, and read the current official Safari of Fun ride description. Source is the BACK of Big Bird’s Whirly Birdie: six large maroon/orange egg-shaped gondola shells with yellow/green patches, a real pink central support/back motor housing, connected brown radial arms and pivots, safety fence, hedges and trees. Preserve this documented rear mechanical view and realistic painted fiberglass/steel; do not invent a front-facing Big Bird figure, visible riders, hidden seating arrangement or a giant observation wheel. Historical source, not proof of current paint. File-specific license not verified from the unavailable file-description endpoint; credit the photographer and retain rights rather than claiming an open license. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "1e3bd59446025987e6126710f1b0678697395c8482aa5ae1e056e7303dfffd77",
       "generationSteps": []
     },
     {
