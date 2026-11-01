@@ -15109,6 +15109,780 @@
       ]
     },
     {
+      "parkId": 43,
+      "rideId": 171892165764278,
+      "rideName": "Wacky Wagons",
+      "alt": "Illustrated Wacky Wagons at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:16:55.306754+00:00",
+      "originalSHA256": "db1eac60318178735dae67decb445acb6a936a591ce0ac25fe9ac03dfdbaf6f4",
+      "review": "Accepted: the inspected portrait preserves Wacky Wagons' six colored rigid wheel arms, bulb-covered hub, pivoted wood-look covered-wagon baskets with decorative wheels, gates and actual canopy patterns. Seated source riders and connected small wheel remain believable.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7b059690751c8b1dfd9039498910713b5c74219c-4096x2731.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children enjoying the Wacky Wagons ride at Six Flags New England, featuring colorful covered wagons on a mini Ferris wheel.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/wacky-wagons",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "78414e2fba67deaa7bf8c74a1255fea92fadf3f1f7f5d34ac388a762af7c7faf",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Wacky Wagons photograph: six-spoke small vertical wheel with colored straight arms and round gold hub covered in small bulbs; rigid suspended wood-plank-look wagon gondolas with decorative black side wheels, small silver entrance gates, fabric-like blue/red/yellow/purple and cow-spotted white hoods. Source ordinary seated guests, upright gondola pivots, foliage and blue plank fence. Preserve real wheel connections and balanced wagons, not a carousel, roadway vehicle or free-floating cabins."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-171892165764278-thumbnail.jpg",
+      "thumbnailSHA256": "ef2f8e3e3b655a9ef66b74987160c41e13d195761d3c554a0611164208d137f0",
+      "thumbnailBytes": 29241,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-171892165764278-detail.jpg",
+      "detailSHA256": "759ca0412911b6f10bdf3dca308865a46cd34eabc45ae0f12507654085bcdb2e",
+      "detailBytes": 232325,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 43,
+      "rideId": 188502503098818,
+      "rideName": "Geronimo Falls and Zooma Falls",
+      "alt": "Illustrated Geronimo Falls and Zooma Falls at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:15:42.457092+00:00",
+      "originalSHA256": "fae1f30e7ab1142da7c18651b8b7949192abe7c6c1a9275f5873474648655ceb",
+      "review": "Accepted: the inspected portrait retains Geronimo/Zooma's actual blue/orange open and yellow/pink enclosed finishes, tower and supported tube connections, splashing yellow family raft and pool perspective; no unsupported additional route is introduced.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7bf468967218e4b8d64a6573bee1a851fd19ba70-2880x1600.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Four guests on Geronimo Falls",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/geronimo-falls-and-zooma-falls",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "b6077a83cef907e12719bb4fe4de804977920c9041e17b6c8dc42dc9938c4898",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photograph shows Geronimo Falls and Zooma Falls connected family-raft slide finishes: left open blue/orange-striped steep chute with black-topped water outlet; right yellow/pink enclosed winding tube opening to short wet runout; gray structural tower and stairs, visible support piers, actual yellow circular raft with four seated people in churning pool. Keep this actual splash-pool perspective and both documented finishes, no invented new route, fake additional raft or new tunnel."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-188502503098818-thumbnail.jpg",
+      "thumbnailSHA256": "7b4954ab23268c2caafb308cd80f3538ca4e673d1b8b4f3ed1e5e59269110cba",
+      "thumbnailBytes": 25173,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-188502503098818-detail.jpg",
+      "detailSHA256": "9e1ed8c1fcb818d0ad898a285e0666d53b09719535f4db3f0e64300392164da5",
+      "detailBytes": 187991,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 43,
+      "rideId": 198601426891286,
+      "rideName": "THE JOKER™ 4D Free Fly Coaster",
+      "alt": "Illustrated THE JOKER™ 4D Free Fly Coaster at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:17:21.002970+00:00",
+      "originalSHA256": "1be9ea85b6f14804bf8039f852779ac18093e793dd0b957b6e30a84403e9be2e",
+      "review": "Accepted: the inspected portrait retains Joker 4D's documented gray shoulder restraint panels and vivid green grip frames, tall purple/green-backed headrests, seat cushions and ordinary two-rider close-up. It does not invent a hidden track or different vehicle.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7e3f6bcaec348c982687469a2478e42e3cf7dc00-4096x2731.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of riders experiencing THE JOKER™ 4D Free Fly Coaster at Six Flags New England, showing their reactions.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/joker-4d-free-fly-coaster",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "95dd2914f9550d0bb1a1d2e3c40b02a3aa3d7b60f2b7668cd1d579a8bf530f01",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator gallery photograph of New England Joker 4D coaster: close-up of two ordinary riders in gray U-shaped over-shoulder rigid restraint panels edged by bright green rounded handgrip frames; tall dark headrests with purple/green shells and black seat cushions. Preserve photographed real restraint and seat connections only, with source sky behind; do not invent track layout, central Joker figure, or different ride vehicle."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-198601426891286-thumbnail.jpg",
+      "thumbnailSHA256": "7742946260ae834698ddcec2ab425b180d001bf3eaae9d654f050e8a63e5df77",
+      "thumbnailBytes": 18672,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-198601426891286-detail.jpg",
+      "detailSHA256": "534bc5881b110306246266e485f7e0b249f67266448b16b42668a7523c479368",
+      "detailBytes": 113390,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 43,
+      "rideId": 200384461042838,
+      "rideName": "Pandemonium",
+      "alt": "Illustrated Pandemonium at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:16:31.189867+00:00",
+      "originalSHA256": "6bb15daac9ca0227e70d54c6d16cd32bfc40079f0f3f19d0b0c25b236d70e5d9",
+      "review": "Accepted: the inspected portrait retains Pandemonium's green rail, orange supports/catwalks, compact yellow/green spinning car and visible gray undercarriage wheel contact, with only the source-supported layered curves. The distant tower is background, not separate generated Scream artwork.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5658643bf6a3a4facc0a7f8689af52079d2d4bff-2000x1335.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Colorful Pandemonium spinning coaster at Six Flags New England.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/pandemonium",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "7cde3ac7d262ab14765ca146b2ba501436f0294a3222a9a27d32e0bdece99cb7",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photograph of Pandemonium: green tubular truss track with orange cylindrical supports, orange maintenance stairs/catwalks, one compact yellow/orange/green four-person spinning car riding on documented gray undercarriage and bogies, dark seatbacks and two visible ordinary riders. Photograph shows layered low curves and upper bend; distant Scream lattice tower is separate background. Preserve the documented green rail/orange support geometry, visible wheel contact and compact spinning car; no invented full route or long conventional train."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-200384461042838-thumbnail.jpg",
+      "thumbnailSHA256": "e7101d5f92afb31327d0f46aa1521c9ae44b4ba1040dee051c8abcc6e7b5e9c4",
+      "thumbnailBytes": 23382,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-200384461042838-detail.jpg",
+      "detailSHA256": "41e00e46ec89a59e3d312d7cd61eca7af610afbd47abf241045799d2cfe7b8a1",
+      "detailBytes": 168712,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 43,
+      "rideId": 202269135384509,
+      "rideName": "GOTHAM CITY GAUNTLET ESCAPE FROM ARKHAM ASYLUM™",
+      "alt": "Illustrated GOTHAM CITY GAUNTLET ESCAPE FROM ARKHAM ASYLUM™ at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:16:57.414555+00:00",
+      "originalSHA256": "676534de8a54f780aac24ec983a3b4257c53eab65d628b865244da4088ca4324",
+      "review": "Accepted: the inspected portrait preserves Gotham Gauntlet's documented two-row red/green wild-mouse car with printed panels, lap bars and side rails, actual small bogies contacting pale rails and dark lattice behind. It is the photographed car section, not an invented full route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F8481157d20ea52107c06880c8202057b89bb2e73-2000x1333.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A family enjoying the GOTHAM CITY GAUNTLET ESCAPE FROM ARKHAM ASYLUM™ roller coaster at Six Flags New England.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/gotham-city-gauntlet-escape-arkham-asylum",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "56daffbaf541c90c766f3b66445e1146d205a6c37010464a7215aae14b10ba51",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Gotham City Gauntlet gallery photograph: four-person two-row wild-mouse car with red/green body, diamond graphics and actual printed Harley Quinn panels, black lap bars and tall side handrail loops; gray road-wheel-like side detail and visible small coaster bogies clamped to pale gray tubular rails. Dark lattice supports and yellow steps behind. Preserve this one photographed downhill car and its exact wheel contact, not an invented stand-up or inverted train or a whole hidden route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-202269135384509-thumbnail.jpg",
+      "thumbnailSHA256": "804770a4847dba97fd277c1dfeb147ec07e1e5120911a3a19b2dfebf81d9fa4e",
+      "thumbnailBytes": 28463,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-202269135384509-detail.jpg",
+      "detailSHA256": "13f8ad464cf7142a6b235e674b1229fe197fe8ea5c47ff3d41835c55ea898d94",
+      "detailBytes": 160932,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 43,
+      "rideId": 203329309641119,
+      "rideName": "HARLEY QUINN™ Spinsanity",
+      "alt": "Illustrated HARLEY QUINN™ Spinsanity at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:17:20.242957+00:00",
+      "originalSHA256": "63bcdd2382872cd2d1e5955c5e933325a463610a3d159966addea62076218d4d",
+      "review": "Accepted: the inspected portrait retains Harley Spinsanity's rigid red/white arm connected to circular outward-facing restrained seats in the photographed high tilt; the separate green/purple rail remains background. Physical joints, seat ring and photographic surfaces are legible.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F180934305df2134d755f9de00d7a40fc8fde1dd4-1920x1158.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "High-angle view of HARLEY QUINN™ Spinsanity at Six Flags New England, pendulum ride in full swing",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/harley-quinn-spinsanity",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f1cd7b1f0126d346b91c7db476705c074050299a3c1a84a04e13f1062033041e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photograph of Harley Quinn Spinsanity rigid pendulum: red/white long connecting arm enters from upper left into a large circular flat red/white gondola with outward-facing dark restrained seats and ordinary passengers round its edge; documented tilted high swing pose. Separate green/purple Joker rail on blue supports is right background with small separate coaster vehicle. Preserve rigid arm-to-disc attachment and realistic seats in this source section; no chains, independent flying disc or invented full frame."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-203329309641119-thumbnail.jpg",
+      "thumbnailSHA256": "73aa791b6714d853b5b0735d7e7e16a59734b8bbe60203b2dc7b26fc67abf211",
+      "thumbnailBytes": 23089,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-203329309641119-detail.jpg",
+      "detailSHA256": "76c1cb7aa22342f604978e7c2088999941f7f1a4b13466e96aaaa9a349b94cbe",
+      "detailBytes": 161662,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 43,
+      "rideId": 203790386112260,
+      "rideName": "Cannonball Falls",
+      "alt": "Illustrated Cannonball Falls at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:17:51.295503+00:00",
+      "originalSHA256": "bff6b36ee8c72efea18e452b7892a0b9464c7acbd3dffb1e21f87eb7c056d689",
+      "review": "Accepted: the inspected portrait retains Cannonball Falls' central steep lime-green body channel with one source-supported slider, gray tower and separate teal enclosed tubes/runouts on timber posts. It remains distinct from Hurricane Falls and does not add a raft.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F36a53c67037120fd046b2fc77d646470506bc07f-1440x1533.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders descending the Cannonball Falls water slide at Six Flags New England, moments from splashing into the pool below.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/cannonball-falls",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ac55ba145d39789731715a5a49105e3b27e8f15e7864ad300128a47bcef0b979",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator own-hero photograph of Cannonball Falls: central very steep open lime-green straight body slide and runout in front of gray timber stair tower, actual single body-slider with arms crossed; two separate teal enclosed twisting body tubes and their matching open outlet runouts to either side on real timber posts. Preserve the photographed visible hardware/connections and single source slider only. No raft or full hidden tube routes; keep Cannonball distinct from the yellow/orange/purple Hurricane Falls complex."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-203790386112260-thumbnail.jpg",
+      "thumbnailSHA256": "3b698231be590b12120b4419a7ff16b156efb7f45b79c0214d4e13f4723cc1c2",
+      "thumbnailBytes": 25632,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-203790386112260-detail.jpg",
+      "detailSHA256": "103d396450a0200a5ff0718a3f1f24a7f8dff029cb6fafeb607c56113c9626b5",
+      "detailBytes": 193513,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 43,
+      "rideId": 204243054042579,
+      "rideName": "Flashback",
+      "alt": "Illustrated Flashback at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:18:49.320420+00:00",
+      "originalSHA256": "fda8c263048139e9c7f6af78bcb4ea2457f1a42b6c5f0b476bab83411da4d758",
+      "review": "Accepted: the inspected portrait retains Flashback's empty burgundy rails, tan supports, documented foreground loop/cobra-roll arcs, catwalk and rear spike, with fence and parasols. It preserves the photographed connected layout section and adds no train.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F38133f87359f78e86746e7348de64b3084675c69-6240x4160.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The Flashback roller coaster at Six Flags New England features multiple loops and thrilling twists.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/flashback",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "287e2e4fa697bc04098fa919bbff79493afb0b446dab0e9a85e83b2a071dea47",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Flashback photograph: dusty burgundy/red tubular rail, pale tan cylindrical supports, actual foreground vertical loop and cobra-roll arcs with catwalk, tall rear spike, no train visible. Keep this empty documented Vekoma boomerang section and connected rail geometry, gray fence and low red parasols; far right SkyScreamer is separate distant background. No invented riders, generic random coaster loops or unsupported additional track."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-204243054042579-thumbnail.jpg",
+      "thumbnailSHA256": "ffadb9dfc699fa10068921861136d41f4e7c44063d66ff166901e4545f82ea89",
+      "thumbnailBytes": 21256,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-204243054042579-detail.jpg",
+      "detailSHA256": "1aa7d7ed1c0427aa15f8cbb03ade103385069a8586232595afb9a4a6bfba5813",
+      "detailBytes": 164830,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 43,
+      "rideId": 206966657531822,
+      "rideName": "Wile E. Coyote Speed Trap",
+      "alt": "Illustrated Wile E. Coyote Speed Trap at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:18:29.800107+00:00",
+      "originalSHA256": "a929c8d542b56996b19708f3005a218e4f342b09fdffacdc72ef75d3a1c4c2af",
+      "review": "Accepted: the inspected portrait retains Wile E. Coyote Speed Trap's low numbered colorful cars, ordinary seated riders, actual fixed central Wile E. sculpture and inert printed pedestal, yellow plank/desert backdrop and black fence. No living character or explosion is introduced.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fee99289d4c8df393698af4a53f112477700762d8-1920x1440.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Willey Coyote Speed Trap",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/wile-e-coyote-speed-trap",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "cbc81451ac7acd9fc3765493e1842e8b2beec09159416588d33bfff792151916",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Wile E. Coyote Speed Trap photograph: compact numbered open-top race cars in green/white, blue/white, pink/purple and orange following a narrow flat oval arena, ordinary source seated guests. Central fixed Wile E. Coyote sculpture on a black TNT-labelled pedestal, yellow plank fence and painted desert flats, black steel railing. This is a small low car/whip ride with center fixed decoration, not the blocked Magic Mountain Daffy jeep or another blocked target. Keep actual small car hardware/setting, no explosions, living character or new route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-206966657531822-thumbnail.jpg",
+      "thumbnailSHA256": "3201a144bc9baf1778a24289acdb53484a7b8ba8936eda331b58961bcef95864",
+      "thumbnailBytes": 25117,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-206966657531822-detail.jpg",
+      "detailSHA256": "7368e207d4e89dc7883cb60c5cba9294725bbe92b9964bbf646fb97dc0809490",
+      "detailBytes": 151691,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 43,
+      "rideId": 217810475481142,
+      "rideName": "Krazy Kars",
+      "alt": "Illustrated Krazy Kars at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:19:11.312777+00:00",
+      "originalSHA256": "40fda3581bf69f5e8d4347abbb9dc35d0df75290860caf5c599228329567093a",
+      "review": "Accepted: the inspected portrait retains Krazy Kars' yellow/purple/green four-seat body, small steering wheels, family seats, tires and visible center guide apparatus on the actual concrete route section; documented road signs and planting remain background.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fdc124644b212313949d41b1e3b5c2eb3ab1e9de1-4096x2731.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Family enjoying a ride on Krazy Kars at Six Flags New England with colorful car and road signs.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/krazy-kars",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "660f59867610c63935c3bec301cac55fa59f18aaea650d1635d5d97aee21d6f2",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Krazy Kars own-hero photograph: chunky four-seat open-top car with yellow hood/doors, purple fenders/frame, green round hubcaps, green two-round headlamps and ribbed rear, four black steering wheels, actual seated family and orange lap belts. Visible metal front guide apparatus runs on center steel guide rail in a pale concrete winding channel, actual playful yellow and purple road signs, landscaping and black fence. Preserve source vehicle proportions and rail engagement; no invented jeep character or unseen full route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-217810475481142-thumbnail.jpg",
+      "thumbnailSHA256": "d8f81d86956a1d81be18217d0875409ef54d420c8de244633ea01b782a9616da",
+      "thumbnailBytes": 27798,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-217810475481142-detail.jpg",
+      "detailSHA256": "42cfef316910867a3c8b1b8931daf2f2f6e89b6eefd22b9f2f51ad0df03e3fc4",
+      "detailBytes": 177814,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 43,
+      "rideId": 222643790658692,
+      "rideName": "Rock N Rodeo",
+      "alt": "Illustrated Rock N Rodeo at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:21:00.870428+00:00",
+      "originalSHA256": "75f46d05ca5dc5c6b11abba6183c4dd43dbc99b70b88ea5f3e2292f50682492d",
+      "review": "Accepted: the inspected portrait preserves Rock N Rodeo's actual timber entry arch and weathered corrugated roof, low queue rails, planting and visible tan cow-pattern cars beneath the photographed polygonal canopy. It does not invent the hidden mechanism.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc2fcbae65b30ae21d1f8c0604e28420fb35a3fa3-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Rock N Rodeo",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/rock-n-rodeo",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "1017b5653851f9350b413984fd3b76b4e1fa3696b9ef874297e312584ac0b51b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Rock N Rodeo photograph: natural timber entry arch with small weathered corrugated metal roof and brown western ride sign; gray plank fence, low empty metal queue rails, mature tree and shrub beds. The actual rotating wagon-like tan cow-pattern cars and dark polygonal canopy are visible behind at left. Preserve this documented exterior with only visible cars; no invented full ride mechanism, highway vehicles or unsupported people."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-222643790658692-thumbnail.jpg",
+      "thumbnailSHA256": "45e2fcd2c8b7e2942d1c1c70c768847db33471af13c0e9741e34dc0b204e0aa4",
+      "thumbnailBytes": 26489,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-222643790658692-detail.jpg",
+      "detailSHA256": "5ad733fa493bae3ebfa133cf235b05eb908b9e0c02435c7232ccecd504a20aa4",
+      "detailBytes": 241352,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 43,
+      "rideId": 232716463470719,
+      "rideName": "Zinger Swings",
+      "alt": "Illustrated Zinger Swings at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:22:38.439823+00:00",
+      "originalSHA256": "4f1b746a4c4483ffde1d669673dc915cdf11634fd37b40cc813659a87943ef17",
+      "review": "Accepted: the inspected portrait retains Zinger Swings' small blue flower-trimmed carrier, yellow center drum and broad bench swings on chains, turquoise/purple base and musical graphics, documented pastel globe lamp and source guests. It remains distinct from Crime Wave.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fdade1add674379e0eb7a734dafa77d0d8c7cc2a2-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Six Flags New England Zinger Swings amusement park ride with flower decorations.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/zinger-swings",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "bc85fbf777aabdfe48e6abf17e7d25eef39d8fcc90603cdbf0f6ae0cdaf42794",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Zinger Swings photo: small blue radial carrier edged in warm bulbs and blue daisy flowers with pink centers, yellow center drum over turquoise base cone and purple circular platform with source musical-note graphics; short chains suspend broad yellow bench swings with ordinary seated guests. Blue/purple physical entry sign, black fence and pastel three-globe lamp, foliage. Preserve this documented small swing with connected chairs, distinct from the blocked tall New England Scream and separately blocked Crime Wave canopy. No villain canopy, tall tower or invented ride hardware."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-232716463470719-thumbnail.jpg",
+      "thumbnailSHA256": "ec9590423bd65878bdb51c71c54997de87a2bb8c85200ab8f5bf6b72720c3ecb",
+      "thumbnailBytes": 30356,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-232716463470719-detail.jpg",
+      "detailSHA256": "1d22d7a04fbcd594c229a71932af67c4c74ecd910a661d959c559df972c5b59b",
+      "detailBytes": 232051,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 43,
+      "rideId": 237304776330057,
+      "rideName": "Krazy Kups",
+      "alt": "Illustrated Krazy Kups at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:22:17.831532+00:00",
+      "originalSHA256": "d781b98fbc0a13c7a60ba28f8566c9b968b9963ef379c3b2312104465a8f375c",
+      "review": "Accepted: the inspected portrait retains Krazy Kups' small uncovered pink teacups/saucers with latched gates and black steering disks, turquoise deck and tall illuminated pink ornamental teapot, with ordinary seated children from the source scene.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff56fe5878ae896f29cf63acb53b5b18090193ef0-4096x2731.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children spinning in pink teacups on the Krazy Kups ride at Six Flags New England.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/krazy-kups",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "9f3e23e9e89a02d3de4fb993fe7c3b98806075d23a66f40762e5736be2165ae6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Krazy Kups photograph: small pink/lavender teacups with pink handles and saucers, small silver latched entry gates, short black central steering disks; source seated children on low turquoise circular deck. Tall pink/white ornamental teapot center with rows of bulbs and lavender painted scroll pattern, black perimeter fence and ordinary booth. Keep this outdoor small uncovered pink ride distinct from the larger gold/blue canopy Tea Cups; preserve all actual hardware and ordinary source family scene."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-237304776330057-thumbnail.jpg",
+      "thumbnailSHA256": "c108189b9fdd5fefc0b7a1d980b98d9e1fcf0f5bd7f6070dfeb706e4de7822a7",
+      "thumbnailBytes": 27034,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-237304776330057-detail.jpg",
+      "detailSHA256": "a516c474ce470a0a2079c875273f1ee015a9a50b7ebb0bfde0d7cd475372cc58",
+      "detailBytes": 211821,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 43,
+      "rideId": 247694646236926,
+      "rideName": "Houdini - The Great Escape",
+      "alt": "Illustrated Houdini - The Great Escape at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:21:48.175115+00:00",
+      "originalSHA256": "096b9e574614cea2f4d9f6886581e3cc84c8cfb931de0543b7be690f5610a5e2",
+      "review": "Accepted: the inspected portrait retains Houdini's empty documented riveted glass cabinet with cracked decorative silhouette, chained crates, empty iron cage and hanging cloth, worn floor and patterned Victorian wall. It adds no person, ghost, injury or unseen ride mechanism.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F0dccc6c24eb38a3bb4eeaba8eca57bd8bda6b210-1920x1281.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "HoudiniA display of Houdini The Great Escape ride at Six Flags New England featuring chained boxes and cages. - The Great Escape",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/houdini-great-escape",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "23a2c865c57e2fe2dfb693d65551fc5b1cdcf39152665fa8e803b7df4722b548",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Houdini The Great Escape photograph shows empty indoor exhibit props only: large riveted brass/dark metal-framed glass escape cabinet with pre-existing cracked silhouette design, faded wooden shipping crates and chains, empty cylindrical iron cage with hanging cloth straitjacket, burgundy/gold vertically patterned Victorian wallpaper and wooden floor. Keep photographed static empty props and realistic worn materials/low indoor light. Do not invent a person, injury, escape stunt, ghost, unseen ride seats or rotating room layout."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-247694646236926-thumbnail.jpg",
+      "thumbnailSHA256": "ecdc67b28132f1c0602ae173c8aa8d4fffe9c0483084438ebb490908ec63209e",
+      "thumbnailBytes": 19925,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-247694646236926-detail.jpg",
+      "detailSHA256": "7e0d410abe01d673ea240613906eb3dd484ed7054d146f323a6253c2c73bd5f3",
+      "detailBytes": 156986,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 43,
+      "rideId": 256151392969598,
+      "rideName": "Tornado",
+      "alt": "Illustrated Tornado at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:23:27.456507+00:00",
+      "originalSHA256": "f0f49788c417ff56bfbc54a9a761dd0611968d873def034eee23cb0d0fdac8ad",
+      "review": "Accepted: the inspected portrait retains Tornado's wet blue/yellow funnel bands, blue tube mouth, yellow clover raft with four source-supported ordinary riders and water spray, preserving contact with the real funnel rather than an airborne or invented route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F06106312e11c91cbe265f98b3c45e5d65180cf7a-1920x1371.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders enjoying the Tornado waterslide at Six Flags New England, speeding down in a yellow raft.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/tornado",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ce8902caec6f5366266fa2f0dd73d1727a9f792375bcc7a6ece5959ba313dcf6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Tornado photograph: close view of actual wet giant funnel interior with broad alternating blue/yellow fiberglass bands, large blue tube mouth in upper right, yellow circular four-person clover raft with ordinary seated riders holding dark handles, white water spray; actual pale support pieces at edge. Preserve photographed banked raft against connected funnel surface, no airborne raft, invented full exterior or unsupported loop/route. Use photographic water and fiberglass with natural purple-blue evening ambience."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-256151392969598-thumbnail.jpg",
+      "thumbnailSHA256": "ecdd200f0e88a09bd2f71a907fa052ac4c57620712d69df6d1f1aa47e33077cc",
+      "thumbnailBytes": 26619,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-256151392969598-detail.jpg",
+      "detailSHA256": "c9cb73d72d243ff043694f3cb7707ee517fccdbffb48d86da73ea135dfacd766",
+      "detailBytes": 219911,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 43,
+      "rideId": 262826539333313,
+      "rideName": "Dino Off Road Adventure",
+      "alt": "Illustrated Dino Off Road Adventure at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:24:49.145601+00:00",
+      "originalSHA256": "ce08c398312800cfdb9b3c06a8934976083ef20684f4cf20a945c9c83e792aaf",
+      "review": "Accepted: the inspected portrait preserves Dino Off Road Adventure's manufactured T-rex prop, landscaped bones/rocks/barrels and real guided vehicle/rail curve with ordinary seated guests. It depicts a theme-park scene rather than a living dinosaur encounter or invented route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1c987b70c07354bcb01a2f86705d56541a2b4546-1920x1080.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests on Dino ride going close to a T-Rex",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/dino-off-road-adventure",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "8f80d1b9abc47f092c3fbff2a121dd07996e4569ef2ffaa1fded6cae6af0dc6f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Dino Off Road Adventure photograph: large fixed gray/tan T-rex animatronic prop with open pink mouth, small forearms and long tail, landscaped ground with planted shrubs, prop bones/rocks and barrels; actual pale guided safari vehicle with ordinary seated guests visible lower right. Concrete path carries central guide rail curving behind the prop. Preserve this photographed manufactured dinosaur and ride/landscape section as a theme-park prop, no living creature, chase, danger, injury or unsupported route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-262826539333313-thumbnail.jpg",
+      "thumbnailSHA256": "f04acf04addbb95361597be24686b921105c1f13a6ea1a7a62f299f69a081213",
+      "thumbnailBytes": 28982,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-262826539333313-detail.jpg",
+      "detailSHA256": "9cad42624cf66e8787ce14bf5b25d23b708c3024836a323ee15ad7141bc7884b",
+      "detailBytes": 236705,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 43,
+      "rideId": 263165555937179,
+      "rideName": "SUPERMAN™ The Ride",
+      "alt": "Illustrated SUPERMAN™ The Ride at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:24:04.781010+00:00",
+      "originalSHA256": "f8d6341c2e8e703d14da1b7ad3a02beda801dc3efddc936036533ced20e4c720",
+      "review": "Accepted: the inspected portrait retains Superman The Ride's actual river-side red rail/blue lattice lift and steep drop, climbing train and documented next hill/return rail. The source aerial proportions and fixed foreground building remain recognizable, with no invented inversion or superhero.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F32e6a97294ecfcd59e4efbfeb913096696cc08a3-4096x2720.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "An aerial view of SUPERMAN™ The Ride at Six Flags New England, with the coaster climbing a steep incline.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/superman-ride",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a65841d57dc30915432093eed7bc836b9590408ce0eef2b2ad6587568b230e48",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Superman The Ride aerial photograph at New England beside the river: red Intamin tubular rail, blue lattice support towers, blue lift catwalk, very tall rounded lift crest into near-vertical drop, documented next airtime hill and low crossing return rail. A small actual multirow train climbs left lift. Foreground existing Justice League building and separate green rail remain background. Preserve actual source aerial geometry and train wheel contact, no invented inversions, tower ride, flying superhero or full hidden route. This is independent red/blue roller coaster, not the blocked Texas Superman drop tower."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-263165555937179-thumbnail.jpg",
+      "thumbnailSHA256": "27eca9eabeea42c487be3680bab75e9ed02904576e5215295f003a9b16d21306",
+      "thumbnailBytes": 22032,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-263165555937179-detail.jpg",
+      "detailSHA256": "3730d199e77b1f34a5263da9d111f800b82139c4fd29f9a0fac74b1c51c651a7",
+      "detailBytes": 189681,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 43,
+      "rideId": 269337852649433,
+      "rideName": "Ships Ahoy!",
+      "alt": "Illustrated Ships Ahoy! at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:25:31.550171+00:00",
+      "originalSHA256": "45b13a8d6c84c5f00ab6f4e068c04b18a256a3a0e2b50f62d27a8e160907edb5",
+      "review": "Accepted: the inspected portrait retains Ships Ahoy's small blue/peach/yellow rocking boat with visible silver restraint/side rails and source guests, tilted left above the hedge, actual anchor entry sign, booth and black queue railing. It adds no large pirate-ship frame or unseen mechanism.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F8ef2d8c8b43fb45ac1ccbe3aea694438a569bbaa-6240x4160.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Ships Ahoy! ride at Six Flags New England with families enjoying the pirate-themed attraction.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/ships-ahoy",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "417e7507f8b7c39d492cf585eb0496a9145288ccd28912faa33b2b278517477a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Ships Ahoy photograph: small long boat-shaped rocking/shuttle gondola with pale blue hull, peach row panels and yellow-green padded tops, silver side rails and ordinary seated guests; boat tilted upward on left with understructure partly screened by hedge. Foreground physical blue/purple entry sign with green anchor, black queue rail and low blue-roof booth, source trees behind. Preserve this documented small mechanical rocking boat and visible hardware only; no giant overhead pirate-ship A-frame, ocean, wreck or invented unseen mechanism."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-269337852649433-thumbnail.jpg",
+      "thumbnailSHA256": "05f1a4688c2fdceae84b2eeef636c7c067861a72501bba48c218cd96702d0264",
+      "thumbnailBytes": 31270,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-269337852649433-detail.jpg",
+      "detailSHA256": "2a5a6adc123e8529eb9174d6e66b26529552bd93efdf46c96b6ec93694451cca",
+      "detailBytes": 241015,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
       "parkId": 44,
       "rideId": 3285667514807,
       "rideName": "Hurricane Mountain",

@@ -364,11 +364,11 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 550,
-    "pendingIllustrations": 574,
-    "acceptedForRequestedStyle": 549,
-    "unfinishedForRequestedStyle": 575,
-    "blocked": 14
+    "acceptedIllustrations": 568,
+    "pendingIllustrations": 556,
+    "acceptedForRequestedStyle": 567,
+    "unfinishedForRequestedStyle": 557,
+    "blocked": 17
   },
   "parks": [
     {
@@ -12631,10 +12631,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_New_England"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-173711916451594",
@@ -12658,7 +12658,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "43-188502503098818",
@@ -12679,10 +12679,10 @@
           "url": "https://www.sixflags.com/newengland/attractions/geronimo-falls-and-zooma-falls"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-198601426891286",
@@ -12708,10 +12708,10 @@
           "url": "https://rcdb.com/14189.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-200384461042838",
@@ -12737,10 +12737,10 @@
           "url": "https://rcdb.com/3031.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-201853394465730",
@@ -12769,7 +12769,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "43-202269135384509",
@@ -12795,10 +12795,10 @@
           "url": "https://rcdb.com/9431.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-203329309641119",
@@ -12819,10 +12819,10 @@
           "url": "https://www.sixflags.com/newengland/attractions/harley-quinn-spinsanity"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-203790386112260",
@@ -12843,10 +12843,10 @@
           "url": "https://www.sixflags.com/newengland/attractions/cannonball-falls"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-204243054042579",
@@ -12872,10 +12872,10 @@
           "url": "https://rcdb.com/629.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-206966657531822",
@@ -12896,10 +12896,10 @@
           "url": "https://www.sixflags.com/newengland/attractions/wile-e-coyote-speed-trap"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-217810475481142",
@@ -12920,10 +12920,10 @@
           "url": "https://www.sixflags.com/newengland/attractions/krazy-kars"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-222643790658692",
@@ -12944,10 +12944,10 @@
           "url": "https://www.sixflags.com/newengland/attractions/rock-n-rodeo"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-224520076735759",
@@ -12976,7 +12976,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "43-232317719821764",
@@ -13021,10 +13021,10 @@
           "url": "https://www.sixflags.com/newengland/attractions/zinger-swings"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-237304776330057",
@@ -13045,10 +13045,10 @@
           "url": "https://www.sixflags.com/newengland/attractions/krazy-kups"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-247694646236926",
@@ -13069,10 +13069,10 @@
           "url": "https://www.sixflags.com/newengland/attractions/houdini-great-escape"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-256151392969598",
@@ -13093,10 +13093,10 @@
           "url": "https://www.sixflags.com/newengland/attractions/tornado"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-257901768120457",
@@ -13141,10 +13141,10 @@
           "url": "https://www.sixflags.com/newengland/attractions/dino-off-road-adventure"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-263165555937179",
@@ -13170,10 +13170,10 @@
           "url": "https://rcdb.com/628.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-269337852649433",
@@ -13194,10 +13194,10 @@
           "url": "https://www.sixflags.com/newengland/attractions/ships-ahoy"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "44-3285667514807",

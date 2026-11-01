@@ -125,6 +125,33 @@
       "error": "HTTP 400 moderation_blocked; output stage; category other",
       "requestID": "d4ee203a-ab59-4820-86ce-069c6ea9ad75",
       "action": "Do not retry or work around this block. No generated image returned."
+    },
+    {
+      "key": "43-173711916451594",
+      "rideName": "GOTHAM CITY™ Crime Wave",
+      "status": "blocked",
+      "tool": "built-in-imagegen",
+      "error": "HTTP 400 moderation_blocked; output stage; category other",
+      "requestID": "6b19cef5-cdad-4c69-8237-c45fb50762a5",
+      "action": "Do not retry or work around this block. No generated image returned."
+    },
+    {
+      "key": "43-201853394465730",
+      "rideName": "THE RIDDLER™ Revenge",
+      "status": "blocked",
+      "tool": "built-in-imagegen",
+      "error": "HTTP 400 moderation_blocked; output stage; category other",
+      "requestID": "6324ad0d-7913-4d0c-b850-6a2079390d63",
+      "action": "Do not retry or work around this block. No generated image returned."
+    },
+    {
+      "key": "43-224520076735759",
+      "rideName": "BATMAN THE DARK KNIGHT™",
+      "status": "blocked",
+      "tool": "built-in-imagegen",
+      "error": "HTTP 400 moderation_blocked; output stage; category other",
+      "requestID": "8eaf44fe-c5bf-4c24-831d-63c7fbeef29b",
+      "action": "Do not retry or work around this block. No generated image returned."
     }
   ]
 }
