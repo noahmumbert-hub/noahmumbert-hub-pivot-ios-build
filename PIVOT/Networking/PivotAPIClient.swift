@@ -67,7 +67,17 @@ enum PivotAPIError: LocalizedError, Equatable {
     }
 }
 actor PivotAPIClient {
-    static let shared = PivotAPIClient()
+    static let shared: PivotAPIClient = {
+#if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("--map-refresh-network-test") {
+            let config = URLSessionConfiguration.ephemeral
+            config.protocolClasses = [MapRefreshTestURLProtocol.self]
+            return PivotAPIClient(baseURL: URL(string: "https://map-refresh-test.invalid")!,
+                session: URLSession(configuration: config))
+        }
+#endif
+        return PivotAPIClient()
+    }()
 
     private let baseURL: URL
     private let session: URLSession
@@ -212,3 +222,62 @@ actor PivotAPIClient {
         return decoder
     }
 }
+
+#if DEBUG
+/// Deterministic HTTP responses for the real RootView → DashboardStore → API
+/// refresh journey. No synthetic transport or payload is compiled into Release.
+private final class MapRefreshTestURLProtocol: URLProtocol, @unchecked Sendable {
+    @MainActor private static var requestCount = 0
+    override class func canInit(with request: URLRequest) -> Bool { true }
+    override class func canonicalRequest(for request: URLRequest) -> URLRequest { request }
+    override func startLoading() {
+        Task { @MainActor in
+            do {
+                guard let url = request.url, url.path == "/api/live" else { throw URLError(.badURL) }
+                Self.requestCount += 1
+                let count = Self.requestCount
+                let parkID = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems?
+                    .first(where: { $0.name == "park" })?.value.flatMap(Int.init) ?? 6
+                let manual = ProcessInfo.processInfo.arguments.contains("--map-refresh-manual-test")
+                let status = manual && count == 3 ? 503 : 200
+                let data: Data
+                if status == 503 { data = Data(#"{"error":"Synthetic refresh outage"}"#.utf8) }
+                else if manual && count == 7 { data = Data("invalid JSON".utf8) }
+                else {
+                    let now = Date()
+                    let base = parkID == 6 ? NativeParkMapUITestScreen.rootSnapshot(at: now)
+                        : ReferenceParkUITestFixture.snapshot(for: FloridaPark(rawValue: parkID)!, at: now)
+                    let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .secondsSince1970
+                    var payload = try JSONSerialization.jsonObject(with: encoder.encode(base)) as! [String: Any]
+                    let stamp = now.timeIntervalSince1970
+                    payload["themeParksWiki"] = ["available": true, "cacheStale": false,
+                        "fetchedAt": stamp - (manual && count == 5 ? 901 : 0), "sourceUpdatedAt": stamp - 3600,
+                        "matchedRideCount": 3, "unmatchedRides": [], "usedForWaitTimes": true,
+                        "role": "PRIMARY", "statusSemantics": "Synthetic current provider status",
+                        "usedForOperationalTraining": false,
+                        "source": ["name": "Synthetic map transport", "label": "Synthetic map transport",
+                            "url": "https://example.invalid", "termsUrl": "https://example.invalid", "updateCadenceMinutes": 5]]
+                    let wait = manual ? (count == 1 ? 35 : count == 2 ? 5 : count == 4 ? 0 : 15) : 35 + count
+                    payload["rides"] = (payload["rides"] as! [[String: Any]]).map { original in
+                        var row = original
+                        row["status"] = "OPEN"; row["isOpen"] = true; row["waitTime"] = wait
+                        row["lastUpdated"] = stamp - 3600
+                        row["themeParksWikiStatus"] = ["entityId": "synthetic-\(row["id"]!)",
+                            "entityName": row["name"]!, "status": "OPERATING",
+                            "sourceUpdatedAt": stamp - 3600, "matchedBy": "ID", "sourceAgeSeconds": 3600]
+                        return row
+                    }
+                    data = try JSONSerialization.data(withJSONObject: payload)
+                }
+                print("MAP_REFRESH_SYNTHETIC request=\(count) park=\(parkID) http=\(status) bytes=\(data.count)")
+                let response = HTTPURLResponse(url: url, statusCode: status, httpVersion: "HTTP/1.1",
+                    headerFields: ["Content-Type": "application/json"])!
+                client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)
+                client?.urlProtocol(self, didLoad: data)
+                client?.urlProtocolDidFinishLoading(self)
+            } catch { client?.urlProtocol(self, didFailWithError: error) }
+        }
+    }
+    override func stopLoading() {}
+}
+#endif

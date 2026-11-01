@@ -68,8 +68,13 @@ case "${PIVOT_TEST_SCOPE:-all}" in
     ) ;;
   map-refresh)
     test_options+=(
-      -only-testing:PIVOTTests/PIVOTTests/testMapRefreshKeepsUnchangedWaitFromCurrentProviderSnapshot
+      -only-testing:PIVOTTests/PIVOTTests
       -only-testing:PIVOTUITests/PIVOTUITests/testMapRefreshKeepsUnchangedProviderWaitOnActualMap
+      -only-testing:PIVOTUITests/PIVOTUITests/testMapNetworkRefreshRepeatFullScreenFailureRecoveryAndNavigation
+      -only-testing:PIVOTUITests/PIVOTUITests/testMapNetworkAutoRefreshContinuesInFullScreenAndAfterForegroundReturn
+      -only-testing:PIVOTUITests/PIVOTUITests/testLiveMapRefreshReportsRealProviderStatus
+      -only-testing:PIVOTUITests/PIVOTUITests/testMapFailedRefreshDoesNotPresentCachedWaitAsCurrent
+      -only-testing:PIVOTUITests/PIVOTUITests/testNativeMapFillsWindowAndSupportsPinchPanZoomWithoutCameraReset
     ) ;;
   map-attribution)
     test_options+=(
@@ -187,7 +192,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
     ) ;;
   *)
-    echo 'Unsupported PIVOT_TEST_SCOPE; use all, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, or map-gestures.' >&2
+    echo 'Unsupported PIVOT_TEST_SCOPE; use all, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, or map-refresh.' >&2
     exit 1 ;;
 esac
 python3 - <<'PY'

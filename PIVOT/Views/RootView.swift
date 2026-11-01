@@ -125,7 +125,8 @@ struct RootView: View {
     private var mapTab: some View {
         NavigationStack {
             ParkMapView(park: store.selectedPark, snapshot: store.snapshot,
-                        onChoosePark: { showParkPicker = true }, refreshFailed: store.errorMessage != nil)
+                        onChoosePark: { showParkPicker = true }, refreshFailed: store.errorMessage != nil,
+                        isRefreshing: store.isRefreshing, onRefresh: { await store.refreshNow() })
                 .id(store.selectedPark?.id)
                 .navigationTitle("Map")
                 .navigationBarTitleDisplayMode(.inline)

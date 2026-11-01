@@ -354,6 +354,10 @@ final class DashboardStore: ObservableObject {
 
     func bootstrap() async {
 #if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("--map-refresh-network-test") {
+            await refreshNow()
+            return
+        }
         if ProcessInfo.processInfo.arguments.contains("--apple-ui-fixtures") {
             let fixtureNow = Date()
             let referenceID = ProcessInfo.processInfo.arguments.first { $0.hasPrefix("--reference-ui-park=") }
@@ -555,6 +559,9 @@ final class DashboardStore: ObservableObject {
 
     private func restartMonitoring() {
 #if DEBUG
+        // Manual transport tests drive each HTTP outcome through the map button;
+        // the companion automatic test uses the production monitoring loop.
+        if ProcessInfo.processInfo.arguments.contains("--map-refresh-manual-test") { return }
         if ProcessInfo.processInfo.arguments.contains("--apple-ui-fixtures") { return }
 #endif
         monitoringTask?.cancel()
