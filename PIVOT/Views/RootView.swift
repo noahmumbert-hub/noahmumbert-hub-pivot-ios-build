@@ -76,12 +76,12 @@ struct RootView: View {
                     }
             }
         }
-        .task {
-            await store.bootstrap()
+        .task { await store.bootstrap() }
+        .task(id: scenePhase) {
+            // Bootstrap can suspend while the scene becomes active. Keep scene
+            // ownership separate so its captured launch phase cannot later
+            // cancel the current foreground polling generation.
             store.setSceneActive(scenePhase == .active)
-        }
-        .onChange(of: scenePhase) { _, newPhase in
-            store.setSceneActive(newPhase == .active)
         }
     }
 
