@@ -214,6 +214,7 @@ final class PIVOTUITests: XCTestCase {
         for identifier in ["park-hours-value", "park-early-entry-value"] {
             let matches = app.descendants(matching: .any).matching(identifier: identifier)
             let value = matches.firstMatch
+            if !value.exists { print("COMPACT_WAITS_INITIAL_ACCESSIBILITY \(capture) \(identifier)\n" + app.debugDescription) }
             centerFullyVisible(value, in: app, file: file, line: line)
             XCTAssertEqual(matches.count, 1, "The schedule value must have a unique accessibility identity", file: file, line: line)
             XCTAssertTrue(value.label.contains(" – "), "Both complete schedule endpoints must remain available", file: file, line: line)
