@@ -315,9 +315,15 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(label.waitForExistence(timeout: 5), "A genuine displayed time label must exist", file: file, line: line)
         let contentViewport = safeContentViewport(in: app)
         let appFrame = app.frame
-        for _ in 0..<14 {
+        var trace: [String] = []
+        // Measure once more after the final permitted pan. Largest observation
+        // columns can begin several viewports away from the requested quarter.
+        for attempt in 0...24 {
             let viewport = scrollView.frame.intersection(contentViewport).insetBy(dx: 4, dy: 0)
             let frame = label.frame
+            let offset = frame.minX < viewport.minX
+                ? viewport.minX - frame.minX + 12 : viewport.maxX - frame.maxX - 12
+            trace.append("attempt \(attempt): label=\(frame), viewport=\(viewport), horizontalOffset=\(offset)")
             guard !frame.isEmpty, frame.width <= viewport.width + 1 else {
                 XCTFail("A complete time label must fit its scroll viewport. Frame \(frame); viewport \(viewport)", file: file, line: line)
                 return
@@ -331,15 +337,15 @@ final class PIVOTUITests: XCTestCase {
                 assertContained(label.frame, in: currentViewport, "The entire time label must be inside the horizontal viewport", file: file, line: line)
                 return
             }
-            let offset = frame.minX < viewport.minX
-                ? viewport.minX - frame.minX + 12 : viewport.maxX - frame.maxX - 12
-            let movement = min(viewport.width * 0.65, max(20, abs(offset))) * (offset < 0 ? -1 : 1)
+            guard attempt < 24 else { break }
+            let movement = min(viewport.width * 0.85, max(20, abs(offset))) * (offset < 0 ? -1 : 1)
             let start = app.coordinate(withNormalizedOffset: .zero)
                 .withOffset(CGVector(dx: viewport.midX - movement / 2 - appFrame.minX, dy: viewport.midY - appFrame.minY))
             start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: movement, dy: 0)),
                         withVelocity: .slow, thenHoldForDuration: 0.2)
         }
-        XCTFail("Could not bring the complete time label into its horizontal viewport", file: file, line: line)
+        XCTFail("Could not bring the complete time label into its horizontal viewport. Actual pan trace: \(trace.joined(separator: "; "))",
+                file: file, line: line)
     }
 
     private func assertHistoryHeaderLayout(_ header: XCUIElement, chart: XCUIElement, app: XCUIApplication,
@@ -406,17 +412,18 @@ final class PIVOTUITests: XCTestCase {
     }
 
     private func assertForecastTimeLabels(in forecast: XCUIElement, app: XCUIApplication,
-                                         earlier: Bool, capture: String) {
+                                         quarter: Int, capture: String) {
         let chart = forecast.descendants(matching: .any)["wait-forecast-chart"].firstMatch
         centerFullyVisible(chart, in: app)
         let times = chart.staticTexts.matching(NSPredicate(format: "identifier BEGINSWITH 'wait-forecast-time-'"))
         let count = times.count
         XCTAssertGreaterThan(count, 1, "A multi-hour forecast must display its actual time labels")
         XCTAssertLessThanOrEqual(count, 25)
-        // Review disjoint halves in separate cases so compact-device gestures
-        // retain the same per-test time limit while still inspecting every clock.
-        let midpoint = (count + 1) / 2
-        let indices = earlier ? 0..<midpoint : midpoint..<count
+        XCTAssertEqual(count, 8, "The supported fixture must retain all eight ordinary forecast clocks")
+        XCTAssertTrue((0..<4).contains(quarter))
+        // Two clocks per case leave room for a cold native app launch while
+        // preserving every clock, font, and whole-viewport assertion.
+        let indices = (quarter * 2)..<(quarter * 2 + 2)
         for index in indices.reversed() {
             let time = chart.staticTexts["wait-forecast-time-\(index)"].firstMatch
             centerHorizontally(time, in: chart, app: app)
@@ -590,15 +597,23 @@ final class PIVOTUITests: XCTestCase {
         checkLowestWaitEvidenceAndHourlySheet(expired: true)
     }
 
-    func testHourlyForecastShowsEarlierCompleteTimesAtAccessibilityTextSize() {
-        checkHourlyForecastTimesAtAccessibilityTextSize(earlier: true)
+    func testHourlyForecastShowsFirstTwoCompleteTimesAtAccessibilityTextSize() {
+        checkHourlyForecastTimesAtAccessibilityTextSize(quarter: 0)
     }
 
-    func testHourlyForecastShowsLaterCompleteTimesAtAccessibilityTextSize() {
-        checkHourlyForecastTimesAtAccessibilityTextSize(earlier: false)
+    func testHourlyForecastShowsSecondTwoCompleteTimesAtAccessibilityTextSize() {
+        checkHourlyForecastTimesAtAccessibilityTextSize(quarter: 1)
     }
 
-    private func checkHourlyForecastTimesAtAccessibilityTextSize(earlier: Bool) {
+    func testHourlyForecastShowsThirdTwoCompleteTimesAtAccessibilityTextSize() {
+        checkHourlyForecastTimesAtAccessibilityTextSize(quarter: 2)
+    }
+
+    func testHourlyForecastShowsLastTwoCompleteTimesAtAccessibilityTextSize() {
+        checkHourlyForecastTimesAtAccessibilityTextSize(quarter: 3)
+    }
+
+    private func checkHourlyForecastTimesAtAccessibilityTextSize(quarter: Int) {
         let app = observedHistoryFixture(["--ride-history-supported", "--ui-large-type"])
         let summary = app.otherElements["ride-lowest-wait-summary"].firstMatch
         let hourly = summary.buttons["ride-history-hourly-estimates"]
@@ -610,7 +625,7 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(bodySize.waitForExistence(timeout: 5))
         XCTAssertGreaterThanOrEqual(bodySize.frame.height, 35,
                                     "Clock glyphs must be reviewed in the genuinely enlarged modal")
-        assertForecastTimeLabels(in: forecast, app: app, earlier: earlier, capture: "Accessibility hourly sheet")
+        assertForecastTimeLabels(in: forecast, app: app, quarter: quarter, capture: "Accessibility hourly sheet")
         let done = app.buttons["Done"]
         XCTAssertTrue(done.isHittable)
         done.tap(); app.terminate()

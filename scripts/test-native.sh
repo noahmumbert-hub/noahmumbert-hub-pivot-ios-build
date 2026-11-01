@@ -62,7 +62,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
     test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryHandlesSparseSamples
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestDetailsKeepFirstThreeLabelsReadable
-      -only-testing:PIVOTUITests/PIVOTUITests/testHourlyForecastShowsEarlierCompleteTimesAtAccessibilityTextSize
+      -only-testing:PIVOTUITests/PIVOTUITests/testHourlyForecastShowsFirstTwoCompleteTimesAtAccessibilityTextSize
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedSampleTimesRemainReadableAtLargestAccessibilitySize
       -only-testing:PIVOTUITests/PIVOTUITests/testMapFailedRefreshDoesNotPresentCachedWaitAsCurrent
     ) ;;
@@ -96,8 +96,10 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testHistoryLowestWaitPredictionWithholdsMissingAndStaleEvidence
       -only-testing:PIVOTUITests/PIVOTUITests/testLowestWaitEvidenceAndHourlySheetStayConsistentAtAccessibilityTextSize
       -only-testing:PIVOTUITests/PIVOTUITests/testStaleLowestWaitHourlySheetWithholdsRecommendationAtAccessibilityTextSize
-      -only-testing:PIVOTUITests/PIVOTUITests/testHourlyForecastShowsEarlierCompleteTimesAtAccessibilityTextSize
-      -only-testing:PIVOTUITests/PIVOTUITests/testHourlyForecastShowsLaterCompleteTimesAtAccessibilityTextSize
+      -only-testing:PIVOTUITests/PIVOTUITests/testHourlyForecastShowsFirstTwoCompleteTimesAtAccessibilityTextSize
+      -only-testing:PIVOTUITests/PIVOTUITests/testHourlyForecastShowsSecondTwoCompleteTimesAtAccessibilityTextSize
+      -only-testing:PIVOTUITests/PIVOTUITests/testHourlyForecastShowsThirdTwoCompleteTimesAtAccessibilityTextSize
+      -only-testing:PIVOTUITests/PIVOTUITests/testHourlyForecastShowsLastTwoCompleteTimesAtAccessibilityTextSize
     ) ;;
   reopening-accessibility)
     test_options+=(
