@@ -126,6 +126,8 @@ struct RideListView: View {
                             Label(health.badgeLabel, systemImage: "circle.fill")
                                 .font(.caption.weight(.medium))
                                 .foregroundStyle(health.isLive ? Color.pivotMint : Color.orange)
+                                .accessibilityElement(children: .ignore)
+                                .accessibilityLabel(health.badgeLabel)
                                 .accessibilityIdentifier("waits-feed-health")
                         }
                     }
@@ -227,6 +229,7 @@ struct RideListView: View {
             Text(health.status)
                 .font(.caption2)
                 .foregroundStyle(Color.pivotMuted)
+                .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
                 .accessibilityIdentifier("waits-feed-freshness")
         }
     }

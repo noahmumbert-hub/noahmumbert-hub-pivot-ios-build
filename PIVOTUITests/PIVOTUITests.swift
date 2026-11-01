@@ -191,6 +191,10 @@ final class PIVOTUITests: XCTestCase {
         screenshot("Waits shared group enlarged heading", app: app)
         let search = app.textFields["Ride search"]
         reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
+        let freshness = app.staticTexts["waits-feed-freshness"].firstMatch
+        centerFullyVisible(freshness, in: app)
+        screenshot("Waits shared group enlarged full freshness", app: app)
+        assertFullTextLayout(freshness, style: .caption2, category: .accessibilityLarge)
         assertWaitsControlsJoinedToResult(app, rideID: 10916)
         XCTAssertTrue(app.buttons["ride-row-action-10916"].label.contains("45 minute wait"))
         XCTAssertGreaterThanOrEqual(search.frame.height, 35)
@@ -202,15 +206,14 @@ final class PIVOTUITests: XCTestCase {
         let search = app.textFields["Ride search"]
         reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
         assertWaitsControlsJoinedToResult(app, rideID: 10916)
-        let health = app.descendants(matching: .any)["waits-feed-health"].firstMatch
-        let freshness = app.descendants(matching: .any)["waits-feed-freshness"].firstMatch
-        XCTAssertTrue(health.label.contains("Live"), "The matched provider response must be fresh in this scenario")
-        XCTAssertTrue(freshness.label.hasPrefix("Live · auto 5s"))
-        let result = app.buttons["ride-row-action-10916"]
-        XCTAssertTrue(result.label.contains("45 minute wait"), "The fresh provider response confirms its unchanged posted wait")
-        XCTAssertFalse(result.label.contains("Wait stale"))
-        XCTAssertFalse(result.label.contains("0 minute wait"))
         screenshot("Waits shared group fresh provider unchanged current wait", app: app)
+        let state = waitsFeedAccessibilityState(app, rideID: 10916)
+        XCTAssertEqual(state.matches, 1, state.diagnostic)
+        XCTAssertEqual(state.badge, "Live", state.diagnostic)
+        XCTAssertTrue(state.freshness.hasPrefix("Live · auto 5s"), state.diagnostic)
+        XCTAssertTrue(state.ride.contains("45 minute wait"), state.diagnostic)
+        XCTAssertFalse(state.ride.contains("Wait stale"), state.diagnostic)
+        XCTAssertFalse(state.ride.contains("0 minute wait"), state.diagnostic)
     }
 
     func testWaitsSharedGroupWithholdsWaitFromExpiredProviderFetch() {
@@ -218,15 +221,34 @@ final class PIVOTUITests: XCTestCase {
         let search = app.textFields["Ride search"]
         reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
         assertWaitsControlsJoinedToResult(app, rideID: 10916)
-        let health = app.descendants(matching: .any)["waits-feed-health"].firstMatch
-        let freshness = app.descendants(matching: .any)["waits-feed-freshness"].firstMatch
-        XCTAssertFalse(health.label.contains("Live"), "A fresh app fetch cannot hide an expired provider response")
-        XCTAssertTrue(freshness.label.contains("Source too old"))
-        let result = app.buttons["ride-row-action-10916"]
-        XCTAssertTrue(result.label.contains("Wait stale"))
-        XCTAssertFalse(result.label.contains("45 minute wait"))
-        XCTAssertFalse(result.label.contains("0 minute wait"))
         screenshot("Waits shared group expired provider wait withheld", app: app)
+        let state = waitsFeedAccessibilityState(app, rideID: 10916)
+        XCTAssertEqual(state.matches, 1, state.diagnostic)
+        XCTAssertEqual(state.badge, "Saved", state.diagnostic)
+        XCTAssertTrue(state.freshness.contains("Source too old"), state.diagnostic)
+        XCTAssertTrue(state.ride.contains("Wait stale"), state.diagnostic)
+        XCTAssertFalse(state.ride.contains("45 minute wait"), state.diagnostic)
+        XCTAssertFalse(state.ride.contains("0 minute wait"), state.diagnostic)
+    }
+
+    private func waitsFeedAccessibilityState(_ app: XCUIApplication, rideID: Int)
+        -> (matches: Int, badge: String, freshness: String, ride: String, diagnostic: String) {
+        let health = app.descendants(matching: .any).matching(identifier: "waits-feed-health")
+        let exists = health.firstMatch.waitForExistence(timeout: 5)
+        let count = health.count
+        let badge = exists && count == 1 ? health.firstMatch.label : "<missing or ambiguous>"
+        let freshness = app.staticTexts["waits-feed-freshness"].firstMatch
+        let ride = app.buttons["ride-row-action-\(rideID)"]
+        let freshnessExists = freshness.exists
+        let rideExists = ride.exists
+        let freshnessValue = freshnessExists ? freshness.label : "<missing>"
+        let rideValue = rideExists ? ride.label : "<missing>"
+        let badgeFrame = exists ? String(describing: health.firstMatch.frame) : "<missing>"
+        let freshnessFrame = freshnessExists ? String(describing: freshness.frame) : "<missing>"
+        let rideFrame = rideExists ? String(describing: ride.frame) : "<missing>"
+        let diagnostic = "badge matches=\(count), label=\(badge), frame=\(badgeFrame); freshness=\(freshnessValue), frame=\(freshnessFrame); ride=\(rideValue), frame=\(rideFrame)"
+        print("Waits feed accessibility state: \(diagnostic)")
+        return (count, badge, freshnessValue, rideValue, diagnostic)
     }
 
     func testObservedWaitDotsKeepEveryValueAndOpenLowestWaitForecast() {

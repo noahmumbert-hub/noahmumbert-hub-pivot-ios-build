@@ -2,6 +2,8 @@
 
 Noah’s screenshot showed the Waits tab with search and filters in a large separate card above the ride list. The previous search work restored the 46-point search/sort controls and current wait subtitles; it had not joined that card to the native list. This correction places those same compact controls as the first row of the inset-grouped section containing ride results, loading and empty states. The native List still owns scrolling and virtualization. Search, sort, status filters, current wait/status labels, favorites and ride details retain their behavior.
 
+At enlarged text sizes, freshness supporting copy reserves its full wrapped height. The Live/Saved/Updating badge exposes one explicit accessibility label for its state.
+
 The visible “AI art” capsule is removed from illustrated thumbnails. No image pixels are modified. Ride detail screens still identify generated illustrations accurately and retain reference credits, rights and source links; generated illustrations are not described as photographs.
 
 ## Provider freshness semantics
@@ -12,7 +14,7 @@ The repair is limited to the current-wait presentation resolver. An unchanged wa
 
 ## Regression and release evidence
 
-New native UI cases assert that search, sort, filters and a matching result remain fully visible together, that the real native control/result cells touch without a separate section gap, and that this holds with enlarged accessibility text. Current-open and filtered-closed results are exercised. Separate cases distinguish an unchanged wait confirmed by a fresh provider fetch from an expired provider fetch that must withhold the wait.
+New native UI cases assert that search, sort, filters and a matching result remain fully visible together, that the real native control/result cells touch without a separate section gap, and that this holds with enlarged accessibility text. Freshness copy is checked against the rendered caption font and actual available width, allowing one or more lines as needed, with its full frame visible. Current-open and filtered-closed results are exercised. Separate cases distinguish an unchanged wait confirmed by a fresh provider fetch from an expired provider fetch that must withhold the wait.
 
 The two existing generated-illustration journeys still verify current waits and truthful detail provenance. They additionally recognize text in the actual native ride-action screenshot to reject the removed badge. A synthetic copy carrying the former small badge calibrates that detector; it is never exported as native evidence and never changes app rendering. Actual native captures remain the visual review evidence.
 
