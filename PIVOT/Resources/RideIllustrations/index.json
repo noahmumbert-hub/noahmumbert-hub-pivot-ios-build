@@ -7218,6 +7218,135 @@
     },
     {
       "parkId": 37,
+      "rideId": 39617351067,
+      "rideName": "Jolly Roger",
+      "alt": "Illustrated Jolly Roger at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:56:44.106833+00:00",
+      "originalSHA256": "83dc0c2321a31ade7431c5ce3ede7f605767d8a6d6d7993afd4a55f555565835",
+      "review": "Accepted: Preserves the actual gray-blue rock skull on its brown circular hub, orange/brown radial arms, empty brown wood-panel tubs with gold riveted bands, black padding/bars and pale bone-hand decoration. The red plank enclosure, orange station and trees remain local. The portrait foreground tubs are still mechanical ride cars; there is no invented ship, sea or living skeleton.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffc323191fd75699431c029d49052ef1c5e19db40-1751x973.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Six Flags Great Adventure Jolly Roger pirate-themed ride entrance.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/jolly-roger",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "465acd849feea0e8f7f44b5a514aaebc8cbb5590941481337e3817973292a0d0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page, actual close hero and wide gallery photograph inspected. Despite the entrance alt label, the hero shows the real ride itself: gray-blue rock-textured open-mouthed skull sculpture above a circular brown hub, orange/brown rectangular radial arms, small brown wood-panel tubs with riveted gold bands, black padded seat interiors/silver bars, and large pale bone-hand decorations wrapped around the tubs. Empty source cars sit over a dark circular mechanical deck bounded by rope/wood-post fencing, red plank enclosure and orange station building beneath trees. Choose the documented skull hub and nearby empty right-hand tub with its connected radial arm, without inventing a pirate ship, seawater, living skeleton or hidden ride route. Wider gallery confirms same hardware and setting. Capture date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-39617351067-thumbnail.jpg",
+      "thumbnailSHA256": "37efac958e0a72800b56424c3636e21b864a0fc35c78f029bea1216a74f75408",
+      "thumbnailBytes": 23403,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-39617351067-detail.jpg",
+      "detailSHA256": "0021020b055e0e911d8b1429658b1cc37b0bb9aebf1a0f00bf99af43d993edab",
+      "detailBytes": 159057,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 6045396311921,
+      "rideName": "Air Safari",
+      "alt": "Illustrated Air Safari at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:57:30.759496+00:00",
+      "originalSHA256": "cd27727bfcf68592965b4fa6afc11d09b9151136af08308453d53f8fc0843958",
+      "review": "Accepted: Retains the independently identified Air Safari plane 14: actual red body and wings, yellow propeller, purple nose ring, blue cockpit seats, black decorative wheels and numbered tail. The source occupants remain incidental above the attached yellow cloud-decorated arm and blue cloud/globe hub, with visible radial actuator structure. It represents the documented mechanical plane ride rather than free flight or the separately labeled Barnstormer.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffdd2c15fb901682100a6807665ffe48563eff614-1500x350.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Air Safari ride at Six Flags Great Adventure",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/air-safari",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "56c8c2f51773e2515f1590ea872ea3d5d9b8f3e0695e2c402f535cc026856928",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual Air Safari gallery strip inspected. Reject the page hero alt-labeled Barnstormer and the face-only alternate for hardware reference. The selected gallery shows the actual red cartoon propeller planes with yellow propellers, purple nose rings, blue/yellow cockpit seats, black decorative wheels, red wings and numbered tails. Long yellow/orange/green radial arms with flat white cloud decorations and visible mechanical links attach them to a blue cylindrical cloud-painted hub topped by a globe. Focus on the documented upper-right red plane 14, its yellow arm and visible cloud-painted hub section; keep source occupants incidental. Do not invent a complete hidden lower base or free-flying aircraft. Identity is independently corroborated by Great Adventure History's original Big Red Planes article, which describes the 2007 family Zamperla planes with cloud arms and globe, and its children's ride history explicitly lists Big Red Planes renamed Air Safari. Source capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-6045396311921-thumbnail.jpg",
+      "thumbnailSHA256": "a48f4b6fcdd93f4154aa62025d170e19ddb5a0c9afc515c1ba5194cf5e058701",
+      "thumbnailBytes": 22680,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-6045396311921-detail.jpg",
+      "detailSHA256": "4a4d0760b5849041914bcb28977bdd3d293fac00e9d356dd053b0c4699bced60",
+      "detailBytes": 134049,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 8371495746021,
+      "rideName": "JUSTICE LEAGUE™: Battle for METROPOLIS",
+      "alt": "Illustrated JUSTICE LEAGUE™: Battle for METROPOLIS at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:58:00.851892+00:00",
+      "originalSHA256": "1ab37953bb2249227217fb7da23d4caee3812c22aef95489fa331596ee8e372d",
+      "review": "Accepted: Matches the selected local entrance photograph's black mesh/scroll arch, white piers, globe lamps, blue/silver physical shield placard and stars, silver queue rails and black fence. The actual adjacent marble-pattern facade, bronze fins/relief, blue insets, stars and hanging banners remain. Physical signs stay source decoration, with no transplanted Georgia arch or invented dark-ride interior.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4e98a91634ede340a1188af13ef5ecbb1b2bcc04-8192x5464.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Entrance to JUSTICE LEAGUE™: Battle For Metropolis at Six Flags Great Adventure.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/justice-league-battle-metropolis",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "8b8e300e58e9bee3a0f0e93bd196438db5545b88e44b778589c4dee783115902",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page, actual angled hero and selected wider local entry photograph inspected. Hero is an exterior despite its inaccurate interior alt. The real local entrance has a black arched mesh/scroll gateway on white piers and round globe lamps, a blue/silver shield-shaped physical Justice League/Battle for Metropolis placard and stars, silver queue railings and black fence. Behind are white/gray marble-pattern facade columns with bronze angular reliefs/vertical fins, blue inset panels, silver stars and red/blue hanging banners; trees and red flowers frame the entry. Compose this photographed entry gateway and adjoining local facade, without importing the complete Over Georgia facade, inventing hidden interior vehicles or adding live superheroes. Source sign lettering may remain physical decoration, not new UI. Capture date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-8371495746021-thumbnail.jpg",
+      "thumbnailSHA256": "0c0eec61c016059e2bf4beff714ef662645c034c38ebbd16bb06cb5428a314c9",
+      "thumbnailBytes": 21903,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-8371495746021-detail.jpg",
+      "detailSHA256": "b82163523f237a51b54ede81ceb03f865fe6b6d10096f40238c38d2c1183f5ce",
+      "detailBytes": 188776,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
       "rideId": 10024564956838,
       "rideName": "Jersey Devil Coaster",
       "alt": "Illustrated Jersey Devil Coaster at Six Flags Great Adventure",
@@ -7253,6 +7382,864 @@
       "detailFile": "37-10024564956838-detail.jpg",
       "detailSHA256": "488deeda806258f42405e10924f8db6fd1422145a8acf58fd60248b5582005b9",
       "detailBytes": 138144,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 28250270144895,
+      "rideName": "Wile E. Coyote Canyon Blaster",
+      "alt": "Illustrated Wile E. Coyote Canyon Blaster at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:04:58.649341+00:00",
+      "originalSHA256": "4c949058a285f40669750a2bff1c93a5a32044814437e4b6bd368eab7dcdfb81",
+      "review": "Accepted: Preserves the source's linked teal open tubs, tan wood-grain inserts with pale trim, large red rocket-arrow decorations, black padded lap bars and teal benches. The actual front adult/child and adjacent families remain beside the red/white center cone, physical red rocket decoration, white deck/fence and desert scenic wall. It remains the documented circular family ride without invented coaster rails or firing rockets.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F8d1dd63fed3e03132f4f42bf5d60099ec215e640-600x400.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Parents and their children sitting together on the Wile E. Coyote Canyon Blaster",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/wile-e-coyote-canyon-blaster",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "4ec22a6fd87f8157706c98f82adb8803d3efe92a1c9ccfa9a2cf8e64e7bb273d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual 600x400 ride photograph inspected. This is the local circular family ride: connected teal open passenger tubs have tan wood-grain side inserts edged in silver/white, large red rocket-arrow decorations on their sides, black padded lap bars and teal bench frames. A low red-and-white striped center cone with a physical red rocket decoration sits inside the ring; white platform/outer fence and desert/cactus painted scenic wall are visible. Choose the actual front teal tub with photographed adult/child, adjacent connected tub and the nearby center cover, preserving the documented mechanical deck relationship. Do not turn it into a roller-coaster train, live cartoon, firing rocket, highway vehicle or invent unseen rails and ride course. Source is modest resolution but paint and visible hardware are clear; capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-28250270144895-thumbnail.jpg",
+      "thumbnailSHA256": "d76fc523ee26bb216e183e1ce5589eb3ba1f2dd60e55afa0cc2e9abe2091687a",
+      "thumbnailBytes": 27749,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-28250270144895-detail.jpg",
+      "detailSHA256": "a077d54ff8f446ee15013a9e55383e87461a110b8d49c81c268e4206dff34738",
+      "detailBytes": 166776,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 30442416196088,
+      "rideName": "Slingshot",
+      "alt": "Illustrated Slingshot at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:05:40.393865+00:00",
+      "originalSHA256": "7270973e27daadf1b051b10377cf9a5c5d49e3b76d65098b607db3a76ac01191",
+      "review": "Accepted: Matches the actual loading capsule's blue padded restraints/seats, orange U-yoke with bulbs, silver grips and clear side panels. Its end links remain attached to both black launch cables and the source loading pedestals/pivot over the red/yellow pad, beside the yellow spring tower. Source riders/operators remain in their documented positions; it does not invent an airborne launch or disconnected restraints.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbb6c4f5125c7bdc85b906585920f10ea4e0b2ec4-1370x914.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders prepare to launch on the Slingshot ride at Six Flags Great Adventure.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/slingshot",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "6565748db6ab1f903c8fbc146d8a2f975c350420ffce8fb2417ff1f0495aa827",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual loading photograph inspected. The two-person Slingshot capsule has blue padded over-shoulder restraints/seats in an orange U-shaped support yoke with white bulbs and a central gray pivot, small clear side panels, silver handgrips and actual source riders. Cable attachment blocks/links connect at the two yoke ends to the black launch cables rising out of frame. The capsule is at its source loading position on gray floor pedestals above a low red/yellow round pad; the yellow lattice tower at right contains rows of gray springs and real lower pulley hardware. Compose this local capsule, cable connections, pad and near tower section, retaining source operators only as small context. No invented airborne free fall, detached cables, hidden full towers or substitute coaster track. Capture date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-30442416196088-thumbnail.jpg",
+      "thumbnailSHA256": "ef03c9f8a958bea211446368d4c0ae069f1839df5f1e2b12180319dd93c0e3b7",
+      "thumbnailBytes": 27275,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-30442416196088-detail.jpg",
+      "detailSHA256": "6e35aaacc7d2908852ab507c0a99c91b61c2794b978c15a37a7afee8f5260b2b",
+      "detailBytes": 176295,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 37376888450308,
+      "rideName": "Lil' Devil Coaster",
+      "alt": "Illustrated Lil' Devil Coaster at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:03:45.340400+00:00",
+      "originalSHA256": "681948be3e31ea09cfb6610a0ab79b2c3c0d00c3f4dadf744e81013506ac5821",
+      "review": "Accepted: Preserves the local small coaster's dark square cars, pale riveted trim, red seats, black lap bars and silver handles, with pale wheels/dark guide hardware on the low orange curve and short supports. The source families remain seated, and the front's small devil/fire illustration is printed ride decoration. Gray/orange picket fence and autumn setting remain local; no inversion or live creature was invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F43ad26f094d8828712f8d1e3e3e501aa48de775e-2400x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Lil Devil Coaster at Six Flags Great Adventure",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/lil-devil-coaster",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "164a76f98a5f43b0493d9050b71ad519713a9035c34d8a5526977c470bb73727",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual close banked-train photo inspected. This real small coaster has linked dark brown/black square cars with pale-gray riveted upper/side trim, bright red seats, black lap bars and small silver handles, pale running wheels and dark guide hardware gripping low ORANGE track with shiny gray running tops, red/orange short columns on concrete pads. The leading square front panel bears physical printed red bat/devil/fire art and ride lettering; behind are gray picket fence with orange posts, actual families and autumn leaves. Keep the documented leading three connected cars on this small banked curve, riders restrained as source; no adult thrill-coaster scale, invented inversion, free-running carts or live devil creature. Source photo date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-37376888450308-thumbnail.jpg",
+      "thumbnailSHA256": "958d2db8cc9f71c1346d308cb6c0c70fe87f8ba1effd09013aaff0313a9a3728",
+      "thumbnailBytes": 31691,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-37376888450308-detail.jpg",
+      "detailSHA256": "a11efc39b5ac52a59bd40c568b7076f9f1c4054b8cb173e0a118eb5d6b45942b",
+      "detailBytes": 222060,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 45195660856559,
+      "rideName": "Sky Zooma",
+      "alt": "Illustrated Sky Zooma at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:04:07.468687+00:00",
+      "originalSHA256": "ed7e585637b0dc077a61716d4a3e2dc37a31d7d9f7cf524b3efcf5f390c640f7",
+      "review": "Accepted: Retains the separate Sky Zooma ride's foreground tan wicker basket with teal padded rim/bag decorations, brown bands, silver gate, black handwheel and gray rod attached to blue arms. Source adult/child and operator remain at the photographed loading position, with central blue mechanism, green skirt and partial colored rigid caps. It does not substitute another park's character mast or depict free flight.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F986a38b07267efe621830fa0c7e9863bc61609e9-7821x5216.jpg%3Fw%3D1408%26h%3D1192%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Families enjoy the Sky Zooma ride at Six Flags Great Adventure in hot air balloon baskets.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/sky-zooma",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "6e8c4ba61b28a3fd1065c17051bee6c0e95fe192bd7afe185b91c8c2ab62c1f6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page, actual wide hero and selected higher-resolution close loading photograph inspected. This independently cataloged Sky Zooma ride has tan wicker-textured round baskets with teal/turquoise padded rim and molded bag decorations, brown vertical bands, silver gates, black circular handwheel and straight gray vertical support rod. Blue/turquoise radial steel arms and central mechanism carry red/white bulbs; rigid lime/blue/purple/yellow/orange balloon-shaped decorations are partly visible above. Select the actual foreground teal basket with source adult and child, black handwheel/rod, attached blue arm and visible central blue hub with green faux-rock skirt; preserve photographed loading scale and keep the operator incidental. Do not invent a complete unseen balloon canopy or full hidden mechanism, free flight, another park's orange mast or Daffy lookout figure. No character figure is present on this separate local ride. Capture date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-45195660856559-thumbnail.jpg",
+      "thumbnailSHA256": "8c5cbb0ee73b62db85b4a0999fa5fa596647e9652002b46ba5af2d4bee6f70ad",
+      "thumbnailBytes": 24973,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-45195660856559-detail.jpg",
+      "detailSHA256": "8fd5d8215d8e808bb43d84962ae900d9d1f9e9702945d67197a41a37fdb3e248",
+      "detailBytes": 173584,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 45595336890628,
+      "rideName": "Hypno Twister",
+      "alt": "Illustrated Hypno Twister at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:17:12.876264+00:00",
+      "originalSHA256": "625854aee37ed46b27cad9621099ecbdc5d97c3140c40ca9c11603038f1306b9",
+      "review": "Accepted: Corrected against the inspected 2026 local IAAPA original photograph. Retains blue mast, orange/purple lower panels, gears/pipes/crown, orange rectangular arms with white triangular accents, actual blue pivots and silver/star gimbal rings with orange seats and black restraints. White fence, right-side blue booth/green building and distant left red track reflect the current local source; the former-park right-side coaster backdrop is absent. Superseded source and first draft remain preserved privately.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://iaapa-web.s3.us-west-2.amazonaws.com/public/styles/16_9_1200/public/2026-07/six-flags-great-adventure-shoreline-pier-hypno-twister.jpg.webp?VersionId=2ls1SrAHnUEQ6bfSYJ0s_zlHLbQPbCBJ&h=f1ee6957&itok=EvXLWtQN",
+          "sourceURL": "https://iaapa.org/news-funworld/six-flags-nj-shoreline-pier",
+          "credit": "Zachary Laks / IAAPA (original photographer)",
+          "license": "Copyright Zachary Laks / IAAPA; rights retained",
+          "licenseURL": "https://iaapa.org/news-funworld/six-flags-nj-shoreline-pier",
+          "sha256": "bd2473f0f6cf8daa6936fdfba13e381b1d13cb0cf43825a967c4bb34fa161878",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual current operator page and IAAPA June 2026 opening article with Zachary Laks original photo inspected, together with both image pixels. Operator hero still depicts the former park background; do not accept that setting. Current Great Adventure photo shows the same blue mast with orange/purple lower panels, gold gears/pipes/crown and orange rectangular arms with white triangular accents and bulb rows; blue end pivots carry orange seats and black over-shoulder restraints inside silver circular/star gimbal frames. Local white picket fence, blue booth and green building are documented; distant red track is at far left. Compose the center mast and documented upper/side arms and connected gondolas, above most foreground sign/people. Keep actual connected visible mechanics and restrained source riders; no old-park tall blue coaster columns or invented base/hidden route. Article publication is June 2026, exact photograph capture date not independently verified. Original copyright/watermark source file retained privately."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-45595336890628-thumbnail.jpg",
+      "thumbnailSHA256": "187ee006db1404a6ecba341dfefb28c48dd43535ed3ac4698f0e2811bd8be32a",
+      "thumbnailBytes": 27601,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-45595336890628-detail.jpg",
+      "detailSHA256": "e2580098044619f7b4b094306cb6b455126d1ffe8dd20994dfd86a0965db2399",
+      "detailBytes": 194942,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 49391381335279,
+      "rideName": "THE DARK KNIGHT™ Coaster",
+      "alt": "Illustrated THE DARK KNIGHT™ Coaster at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:08:54.668582+00:00",
+      "originalSHA256": "25faa10daccc26726ae6a46756c647d40041d097916e9a40b49a0e3bff505770",
+      "review": "Accepted: Retains the actual blue-gray corrugated building and projecting charcoal Art Deco entry tower with rounded radial fanlight, vertical window ribs, block pilasters and dark entrance doors. The source queue, shrubs, globe lights and small bat flag remain exterior context. The small GCR header lettering was omitted; no unseen interior or exposed coaster was invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7cd2c8af4faa95f89841d3b73f598fcf1786c3da-1440x1533.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "THE DARK KNIGHT™ Coaster Exterior at Six Flags Great Adventure",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/the-dark-knight-coaster",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "0cc87ea4672f322f8d99597819db266bd95c81824e4ce4cb69e9084f8638fad6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual portrait photograph inspected at its real .webp path. The enclosed-coaster exterior is a very large pale blue-gray corrugated-metal building with a projecting dark-gray Art Deco entry tower: tall rounded fanlight with radial ribs over straight vertical window-grid ribs, blocky side pilasters, dark GCR/Gotham City Rail door header, central double entrance doors. Silver queue rails, black fence, conical shrubs, small globe lights and a photographed purple bat-emblem flag complete the actual approach. Compose this documented entrance tower against the actual metal building, without inventing exposed track, a subway vehicle or unseen interior scene. Source visitors remain tiny optional context; physical header/flag may remain small decoration. Capture date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-49391381335279-thumbnail.jpg",
+      "thumbnailSHA256": "6f2daf3e4cb8f3312843295b90dab4004357c6ada977fd4191b176efec51001b",
+      "thumbnailBytes": 19813,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-49391381335279-detail.jpg",
+      "detailSHA256": "dfdb171597d3f9c4b11ffae5bee1da3e2e9ce19bd5a61d3a950df73ecacfa528",
+      "detailBytes": 182336,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 52525530465158,
+      "rideName": "Medusa",
+      "alt": "Illustrated Medusa at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:08:22.043886+00:00",
+      "originalSHA256": "7d67da915b3924bec7cddec9b7c02a155983cb77f58af21493755380e7e17447",
+      "review": "Accepted: Matches the local green box-spine cobra-roll rails and ties, orange columns and bolted joints, with a small inverted source train retaining orange/yellow shells and green restraint context. Train stays distant and physically aligned with the source arc; no other park paint or invented close-up vehicle was substituted.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1bd7fa6a1d380bc0fce26115c6fefdb98c7d3fad-6513x4342.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "View from Medusa roller coaster with riders upside down.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/medusa",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "520bfb81f4f57eb4052238625879fa87ce7a816256a520ef43e06c7ff995fb28",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page, actual wide hero and two mounted-camera rider gallery stills inspected. Choose the hero as it shows the actual local structure: GREEN B&M box-spine rails with rectangular ties and shiny running tops form the documented symmetric cobra-roll/inversion section, held by ORANGE cylindrical columns and bolted steel brackets. A small real source train with orange/yellow shells and green restraints runs inverted along the lower arc, riders distant; two gallery stills independently confirm the green restraints and orange structural context. Compose the source inversion section and actual nearby orange supports with train remaining small, not a newly invented close-up train or complete coaster route. Do not import the identically named Discovery Kingdom ride's gold/blue paint or former Bizarro purple paint. No mythical living gorgon. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-52525530465158-thumbnail.jpg",
+      "thumbnailSHA256": "07beff9ca746975de07e39fd77a97dc050d378fb3362f08832c22045fa777ccd",
+      "thumbnailBytes": 20406,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-52525530465158-detail.jpg",
+      "detailSHA256": "51d2c42266afa7329d30a73aa65d6c54e448f3f224a72c1021d6685d5e73d047",
+      "detailBytes": 142895,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 54920830676756,
+      "rideName": "Scrambler",
+      "alt": "Illustrated Scrambler at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:09:24.437291+00:00",
+      "originalSHA256": "e809222394379d64f6e1613a56bd6d22dff4178e6873c6c354f3040c6b06ebf2",
+      "review": "Accepted: Preserves current red triangular lattice arms and secondary hubs, silver brushed tubs with red padding and silver safety bars, red/white bulbs, source family and actual bamboo/picket/iron perimeter. Foreground foliage still partly obscures the right/front tub, as documented by the source; unseen concealed hardware was not invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1e4173c93a6bc12dafc0f7e23831706c668d08de-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The Scrambler ride sign at Six Flags Great Adventure",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/scrambler",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2a3ac27f4a3fcae908cdf33aa4c0ee3553744c8ae6b219483006b09657eecd18",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual current hero photograph inspected. Real Scrambler is visible despite misleading sign alt: burgundy/red triangular lattice radial arms and secondary hubs connect boxy silver/brushed-metal tubs, red bench/inner padding, silver latch/safety bars and riveted side panels with the physical Scrambler placards. Red/white bulb strips run along the arms and small vertical light stacks. Source riders sit in a front/left silver tub; bamboo, weathered picket fence and black iron perimeter fence frame the concrete pad. Focus on the documented right/front silver tub and its attached red secondary hub/arms, retaining actual connections and keeping source leaves only at frame edges. Older gallery alt still says Deja Vu; do not blend unverified old paint into this served hero or invent concealed geometry. Capture date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-54920830676756-thumbnail.jpg",
+      "thumbnailSHA256": "7ecaa276602abaca64dfefd1f8442a518daf9e9d56cb674be1788a727537a926",
+      "thumbnailBytes": 25049,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-54920830676756-detail.jpg",
+      "detailSHA256": "125e4277b430e00f015d22564fd6502bc717434bf1ae8d4a8b46480e71ba6bd2",
+      "detailBytes": 200871,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 64566989908132,
+      "rideName": "HARLEY QUINN™ Crazy Train",
+      "alt": "Illustrated HARLEY QUINN™ Crazy Train at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:18:00.476897+00:00",
+      "originalSHA256": "4cc63a81c7b1a010fcef031d98eb9a2eb21f00a4b2b7608a9a98a4c907f5b386",
+      "review": "Accepted: Retains the genuine side-view red linked cars with white riveted borders, black diamond panel motifs, small physical graphics, black padded seating, actual source riders and gray running wheels on red rails/black truss. Foreground dark columns still occlude portions of the train, with the actual pale roof below. No unseen front vehicle or full course was invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Feeb4974be8aedb8f7e7207764806982af3add8dd-1371x1036.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "HARLEY QUINN™ Crazy Train ascending a hill at Six Flags Great Adventure.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/harley-quinn-crazy-train",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "5abd21ef6c4d48c15ebaf83e4710b0b338c67bcae115e032c153005f310e4ef6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page, queue hero and chosen ascending-train gallery photograph inspected. Choose the genuine gallery showing actual linked red rectangular cars with white/silver riveted borders, black diamond motifs, black padded seats/lap bars and source riders, on RED rails atop a BLACK triangular truss with gray/black columns. Physical printed Harley graphics stay tiny panel decoration. Source viewpoint is a side view of the middle of the train climbing from lower-left to upper-right; foreground dark columns occlude some cars. Compose the documented unobstructed middle cars between columns, retaining actual small gray running wheels on red rails, pale station roof below and trees. Do not invent an unseen locomotive/nose, full route, character figure or another park's spinning coaster. Capture date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-64566989908132-thumbnail.jpg",
+      "thumbnailSHA256": "8dff2abb4dc6ee30969b00c9ffd6671f2de5e93dd5e78c9352bec6608182377c",
+      "thumbnailBytes": 21198,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-64566989908132-detail.jpg",
+      "detailSHA256": "2fc3e89b3b9373f34c96e86b175e372e21318d09d1c0500a2605801820746e41",
+      "detailBytes": 148639,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 68496675986288,
+      "rideName": "Skull Mountain",
+      "alt": "Illustrated Skull Mountain at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:18:25.445228+00:00",
+      "originalSHA256": "2d503b4466180566e5dca432ab4b728f98aa47a9919362a28591f69ff66bc113",
+      "review": "Accepted: Preserves the documented tan/pink weathered rock skull facade, recessed eyes/nose/mouth, jagged layered cliff and lower rock wall. The small upper roof/steel edge remains exterior context; no hidden indoor coaster, invented vehicle or living creature was depicted.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1f5d6d8f6ab4b825c2e3bb58d821450a85ace8fb-1751x973.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The entrance to Skull Mountain at Six Flags Great Adventure features a towering rock facade with a giant skull and dark windows.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/skull-mountain",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "1e0156aa24b7eb0419fb5c70a12b0c55a51b88f3cd45b2b89d2daae6559847aa",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual exterior photograph inspected. This enclosed coaster is represented by its documented weathered tan/pink artificial rock cliff with a monumental stone skull face: dark recessed eye sockets, nasal opening and horizontal toothed mouth recess, jagged surrounding strata and lower rock retaining wall. Sparse actual trees and a small roof/steel rail edge appear above the cliff. Compose that real local skull facade and rockwork with photographic surface texture; do not turn the mouth into a new giant operating portal or invent indoor coaster track, vehicle, caves or living skeleton. This is distinct from the nearby Jolly Roger ride's gray central skull. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-68496675986288-thumbnail.jpg",
+      "thumbnailSHA256": "87eb0ad6d4334984965111cb232558d6e0d8de5a908625bc9553165f2848dcd9",
+      "thumbnailBytes": 17793,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-68496675986288-detail.jpg",
+      "detailSHA256": "7a5d768806864da3fed1314906c7d828d84876bc7ea6d244ca3b8f0fe04170b4",
+      "detailBytes": 135376,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 72126154701048,
+      "rideName": "El Toro",
+      "alt": "Illustrated El Toro at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:19:13.757859+00:00",
+      "originalSHA256": "5e88c7f0fbca27e70962e3cdefddfde8a11fd927d5b0fa0c41cb7bec9119af5a",
+      "review": "Accepted: Matches brown plank cars with cream braces, maroon seat backs, black lap bars/orange assemblies, small round side placards and front horn decoration. Actual riders, front yellow wheel detail, low curved timber track and dense wood bracing remain, with the source walkway/fence partly concealing the running gear. No concealed bogies or full route invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb835a8c28eedcf79c62845df19de4f959c1b19f7-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "El Toro wooden roller coaster at Six Flags Great Adventure, awarded Best Roller Coaster by USA Today.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/el-toro",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "0fd985561632cfdb5dff4aa8c4dc7a89cb4ece3b2ec070732f633c78a1274bc1",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual close action photograph inspected. Preserve the real wooden coaster's brown plank-sided connected cars with cream cross braces and small round side placards, maroon seat backs, black lap bars with orange hardware and the leading car's brown horn-shaped decorative front. Train follows the source low descending/banked curve on actual steel-topped timber track among dense unpainted wooden bents; a horizontal wooden walkway/fence crosses in front, partly hiding wheels. Keep source adults restrained in the documented leading cars and the actual small yellow wheel detail, preserving honest occlusion instead of inventing hidden bogies or full course. No living bull or steel-coaster substitution. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-72126154701048-thumbnail.jpg",
+      "thumbnailSHA256": "7bb7a7b002d47ca3075daaa0edaa0f4022594fc5d40d3b6551956a2148078c61",
+      "thumbnailBytes": 27268,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-72126154701048-detail.jpg",
+      "detailSHA256": "26f6bd62a6a644ce026f993db1c26aa555448f351ba8ce5f8b59858445ce4672",
+      "detailBytes": 189799,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 72202613791408,
+      "rideName": "THE FLASH™: Vertical Velocity",
+      "alt": "Illustrated THE FLASH™: Vertical Velocity at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:19:51.114344+00:00",
+      "originalSHA256": "0f3e1ea540ebfe73c867d3810025780a0df93f7dcb51d02acf1ded25a070ca12",
+      "review": "Accepted: Matches the local red angular train/nose, yellow lightning/headrest details, gray/black restraints, silver bars and exposed dark bogies with pale green wheels on yellow rails and red support. The actual source front/coupled seating arrangement and restrained adults remain aligned on the banked track. No invented launch layout or another park vehicle was used.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9dd2117597421e437475c60c2b0bfbd9f5efbf9d-4013x2676.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests riding THE FLASH™ Vertical Velocity",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/the-flash-vertical-velocity",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "597c724a7b832be30713b153a2bea56baed321d17a540fad7d664b0144779ddf",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual canted close train photograph inspected. This Great Adventure ride has red angular leading/coupled cars with yellow lightning accents and a small physical Flash emblem, yellow headrests, dark gray/black padded restraints, silver grab bars and exposed dark bogies with pale green running wheels, on YELLOW tubular-spine track with red columns. Preserve the actual photographed row arrangement and source seated riders, wheels gripping the banked yellow rails. Compose the documented front and adjacent coupled rows at source scale; do not invent unseen spike/launch route, extra rows, superhero figure or Great America's differently configured inverted impulse coaster. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-72202613791408-thumbnail.jpg",
+      "thumbnailSHA256": "611347a8315246e4f9e1c83ee77529dbfad1425861993db1458e5994f9b309a6",
+      "thumbnailBytes": 24128,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-72202613791408-detail.jpg",
+      "detailSHA256": "5c384b8b96e450503e8740d361db3c3c0ae27ac7f769b1c0bc382ef399c39cda",
+      "detailBytes": 166781,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 79944854595414,
+      "rideName": "Fender Benders",
+      "alt": "Illustrated Fender Benders at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:20:58.723206+00:00",
+      "originalSHA256": "52615074b7bb9c4eb541b1e880b76b3cd3f7ddff29c3de4b00e83e92d35da741",
+      "review": "Accepted: Retains green number 18 car, yellow flame graphics, silver retro fins/grille, round lamps, thick black bumper, black steering and seated source adult. The actual pickup pole continues toward the pavilion ceiling mesh, with source blue 14/red cars, blue fence and gray trusses behind. Front/right extremity is cropped by the portrait; the ride stays on its conductive floor.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4c292e8b6ae1db4a9c8ace34615540c0fb2eaddb-7678x5121.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "People enjoying the Fender Benders bumper cars at Six Flags Great Adventure.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/fender-benders",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "df83325b4775dec978babbd1f4c2c417b2d8b47b4093ae670f8c544bb3bb2fd7",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual local bumper-car photograph inspected. Foreground vehicle is glossy GREEN with yellow flame graphics, silver 1950s-style side fins/grille, circular headlamps, black bench/backrest and steering wheel, small yellow number 18 and a thick continuous black rubber bumper. A red/black electrical pickup pole connects upward toward the pavilion's wire-mesh ceiling. Source adult is seated at the wheel; blue number 14 and red/green cars remain background. Compose the actual green car on its gray conductive floor, retaining pickup-pole connection and source blue perimeter fence, cream/blue posts and exposed gray roof trusses. No street roadway, free-roaming motor car or invented vehicle geometry. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-79944854595414-thumbnail.jpg",
+      "thumbnailSHA256": "5fe4018d24e6991cb8fe44469dc519ba2a40cc9d60297b7f30c6471e38b1d7a5",
+      "thumbnailBytes": 25980,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-79944854595414-detail.jpg",
+      "detailSHA256": "ae6cab2c59c58f564454aa5234d6700bab8a0400257918633eb7d6c79b2f44d8",
+      "detailBytes": 176287,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 81627743561939,
+      "rideName": "Enchanted Teacups",
+      "alt": "Illustrated Enchanted Teacups at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:21:26.667549+00:00",
+      "originalSHA256": "8bc7e7efdd701f4a5602cf007803152c9d73eda85717a0734cd42e689181fc86",
+      "review": "Accepted: Preserves the distinctive foreground teal cup with white pointed panels/gold teardrops, thick gold rim/handle and petal saucer, adjacent red cup and actual central cream/gold/blue teapot. Red radial roof framing, white panels and black/red deck remain recognizable; the selected foreground cup stays empty with source guests farther back.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1d124c62dccf1e3cf827e9760bc71b7a3dc46cce-8097x5401.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders spinning in ornate teacups at Six Flags Great Adventure's Enchanted Teacups ride.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/enchanted-teacups",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2415a47ef1fc7d2bcafa267f9740bf6896d4cfb38bb547e6c791222e31532e65",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual wide ride photograph inspected. Local cups are cream/white with large pointed white panels over TEAL, RED, BLACK or BLUE fields, gold teardrop details, thick gold rims and curled gold handles, on matching petal-pattern round saucers. Select the large empty teal cup at left-front and adjacent red cup; source riders stay in more distant cups. A cream giant central teapot has gold spout/handle, blue/gold crown-like lid and small real bulbs; the actual pavilion is red steel radial beams under white roof panels. Preserve these distinctive local shapes, cup gates/handwheel where visible and black/red circular rotating deck sections. No unrelated Disney cup paint, invented airborne cups or hidden drive mechanism. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-81627743561939-thumbnail.jpg",
+      "thumbnailSHA256": "5d41f1c2e513d723894beb4a77ed35d037abb27e5c701386e380202fbcc3188a",
+      "thumbnailBytes": 24509,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-81627743561939-detail.jpg",
+      "detailSHA256": "c0630e5369707c6efaca1866c9c3954f6a3844f96ae0bd828e548f078b785138",
+      "detailBytes": 172162,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 82900063288541,
+      "rideName": "BATMAN™ The Ride",
+      "alt": "Illustrated BATMAN™ The Ride at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:22:15.552179+00:00",
+      "originalSHA256": "181d40a73968f0f3c5626acde199d879fe56e0eb6e36edab6358166447293770",
+      "review": "Accepted: Retains the actual gold/yellow overhead box-spine curve, suspended black train, yellow restraints, source four-across rows and attached bogies, with feet dangling and dark near columns. The distant lift remains separate background context; no other park paint or unseen complete route was substituted.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F04c9e3510d167d1462eacd56ae432be20f793d6a-8192x5464.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "BATMAN™ The Ride at Six Flags Great Adventure, riders experiencing high-speed inversions.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/batman-the-ride",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f2f2b79b87befb18ec113c89ca523426d63fe999716ba89af16f63aaf38fe4b0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual banked-train photograph inspected. The local B&M inverted train hangs below GOLD/YELLOW box-spine track on visible wheel bogies; source rows are four across with YELLOW over-shoulder restraints, black seats, metal seat frames and feet dangling. Near supports for this track are black/charcoal tubes; a separate distant yellow lift hill on BLUE columns belongs to another coaster and must not be substituted for the foreground ride. Compose the documented front/right banked rows under the curved overhead yellow rails with actual source restrained riders, dark support and modest foliage; avoid inventing concealed wheels or complete layout. Do not use another park's purple train/blue track paint. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-82900063288541-thumbnail.jpg",
+      "thumbnailSHA256": "8639fcd0767e08b30420d8b5e072a7bb4255d7aa9c8efdea9ffa757612f43a70",
+      "thumbnailBytes": 24784,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-82900063288541-detail.jpg",
+      "detailSHA256": "352e5bbf18ea13f4cc3b32e4b2f92f8161ebc8e9c69dc032d9d7e19fa413877a",
+      "detailBytes": 145880,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 90102601869532,
+      "rideName": "Bugaboo",
+      "alt": "Illustrated Bugaboo at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:26:47.728358+00:00",
+      "originalSHA256": "190806105d13a2c07f9a57fc7a261d793d217443d616a5147cfb3215a5ca4a3d",
+      "review": "Accepted: Accuracy correction retains the documented orange/yellow bug shell, burgundy spots, painted face, black antennae and two steering wheels with the actual two seated source children. Unsupported palm scenery is gone; wooden fence, source booth and leafy background replace it. The closer crop conceals the undocumented underside and retains the real leaf-pattern platform edge. Superseded draft remains private and unaccepted.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F43d03ac47f6519dcd3524bbe0dc4d4e5f362ed4b-1440x800.png%3Fw%3D1408%26h%3D1192%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children smiling and riding the Bugaboo at Six Flags Great Adventure, having fun on the critter-themed ride.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/bugaboo",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "cff9d282a6cd14e10cf179d7dfc49644f39494b9c4e6d8e20cc7fdbd176b3961",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual close family-ride photograph inspected. The molded orange/yellow BUG-SHAPED two-seat tub has large burgundy spots, a yellow front face with painted blue/white eyes, round red nose and two thin black antennae; two separate small black steering wheels face the documented seated children. Source neighboring identical orange bugs, adult helper at far right, green leaf-painted circular platform, low gray/black underbody support and magenta leafy decoration are visible. Compose only the photographed front tub and its visible platform/support with source children seated as shown; this is real molded kiddie-ride hardware, not a living insect or new roller coaster. Do not invent unseen rails, wheels, full mechanism or adult thrill restraints. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-90102601869532-thumbnail.jpg",
+      "thumbnailSHA256": "2f0187fe1a6654f8912d9cc64a6e8499aa1f043e42bfa9fb36aee871799b57bc",
+      "thumbnailBytes": 23636,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-90102601869532-detail.jpg",
+      "detailSHA256": "bfa1339661b645ec863d7f8b335b06f94af5773a645f350fcfec7f486d1cff89",
+      "detailBytes": 133328,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 93227107235609,
+      "rideName": "Super Round Up",
+      "alt": "Illustrated Super Round Up at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:26:24.884021+00:00",
+      "originalSHA256": "94558ff5e7e02c9571b240c8333ace9daa2187b5df0ad771e458793a632d1d9a",
+      "review": "Accepted: Retains the current green tilted standing cage, wire-mesh rim, alternating upright red/yellow padded back panels, diamond-plate floor and connected green lattice/hub. Actual white decorative fence and shrubs still obscure lower mechanics, with no seated chairs or invented lift drive.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/5c43a74d4391553c7a21987d1825932f48a35ef2-680x800.jpg?rect=0,223,680,355&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/super-round-up",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "81a67b63c294528fd11a5926efceb5c76f3e8c9b56c80d984184619deffa0df9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator current page and actual hero pixels inspected. Current hero shows the local GREEN circular standing-rider cage/wheel, green triangular radial lattice braces and vertical central hub, with alternating RED/YELLOW upright padded back panels around the wire-mesh rim, silver diamond-plate narrow standing floor, and a real white ornamental perimeter fence across the foreground. The wheel is tilted as photographed; no people are present. Source alt/page title still references former Swashbuckler and galleries mention old red/yellow structure, so retain only this served green hero's actual paint. Compose the empty documented cage section, hub and attached lattice above/behind the fence without inventing lift hydraulics hidden below, seated chairs or a coaster loop. Current operator locates it in Shoreline Pier; exact photo capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-93227107235609-thumbnail.jpg",
+      "thumbnailSHA256": "9866a323542448590cdc97144d756a3a780c9d706abda13983184ab3e4dc89e6",
+      "thumbnailBytes": 30093,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-93227107235609-detail.jpg",
+      "detailSHA256": "0607af17ecef2a662aa913880fd7eccb82b4185f5137e769a7e6625a426e1326",
+      "detailBytes": 238435,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 98847806839120,
+      "rideName": "Tree Top Hopper",
+      "alt": "Illustrated Tree Top Hopper at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:25:10.762386+00:00",
+      "originalSHA256": "88150cbe9d2da2f6383d4f00ae8b9f59b244c0fdf313a3389ed6a297dec67e48",
+      "review": "Accepted: Matches the current tree-painted tan/yellow tower panels and guide rails, green numbered bench back, six white molded seats, orange/yellow lower shell and single black padded lap bar/silver end hardware. The six source children remain seated in winter clothes against pines; no held Sylvester figure/concept or unseen tower machinery was added.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe780fd368b61a33f456f8ea3048735f0665828d2-2560x1704.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Kids smiling and throwing their hands up while on a tree themed drop tower",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/tree-top-hopper",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2780decf10a8f6f296cad52a3ff15da60fdbf90699d79fe15813c109d5e283fb",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual close tower photograph inspected. This separately cataloged CURRENT TREE-THEMED children's tower has yellow/tan panels painted with brown wood-grain stripes and metal vertical guide rails; its straight six-place bench has WHITE molded seats, a GREEN numbered back panel, yellow/orange lower shell and a single long BLACK padded lap bar with silver end brackets. Six actual source children wear winter coats/hats and sit beneath that bar. Compose the documented bench and visible trunk/guide rails with actual pines behind; preserve source riders and safety hardware. This local source has no Sylvester figure, no green/yellow lattice mast and is not either held Sylvester concept; do not add a character, unseen tower top or unverified machinery. Capture date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-98847806839120-thumbnail.jpg",
+      "thumbnailSHA256": "9bb84487407dd3515676230c9af308e6af7b6eddfae9169d40f43bbdaec6b3a7",
+      "thumbnailBytes": 26217,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-98847806839120-detail.jpg",
+      "detailSHA256": "6f9ccb0960f830465acfdaf24faf1c1fa12f6cfb8b5022aa98a23d476edbcc08",
+      "detailBytes": 156407,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 141541031972546,
+      "rideName": "Wave Swinger",
+      "alt": "Illustrated Wave Swinger at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:27:07.228701+00:00",
+      "originalSHA256": "2a0bf90a3d406f31cb3f0594cb182cefec91594c721bfe069085e839b113f6df",
+      "review": "Accepted: Preserves the source pastel turquoise/mint mast, gold panel borders, pink radial canopy underside, scalloped collars and practical bulbs. Empty colored metal chairs remain suspended from visible paired chains at canopy brackets, with foreground pink foliage kept at the edge. Current Shoreline full-ride photo corroborates this paint; no full hidden top/base invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/565ceeedd57fed94b41119d7c72767a006c10080-680x800.jpg?rect=0,223,680,355&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/wave-swinger",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "83ed63aaa74c37100d654341f3d15798abded26e8057a5ecef172c47bdef1a2f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Current operator page and actual close hardware photograph inspected. The ornate Wave Swinger has a TURQUOISE/MINT center mast with orange/gold outlined panels, pale pink rings, cream/mint/gold scalloped collar and a broad PINK radial-ribbed canopy underside with real bulb strips. Empty small metal frame chairs with blue/red/yellow/green seat inserts hang from long paired steel chains attached at the actual canopy brackets. Choose the photographed canopy edge, mast and near empty hanging chairs, retaining real chain connections and some source foliage only at edges. Do not invent unseen complete canopy top, passenger action or hidden base; source capture date and background location not independently dated, so avoid adding park-specific scenery beyond the documented hardware."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-141541031972546-thumbnail.jpg",
+      "thumbnailSHA256": "b2afa85b65f6d0e23227e1d88d763d7cd30cc61d924f4d46d2c19642fa2481af",
+      "thumbnailBytes": 24560,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-141541031972546-detail.jpg",
+      "detailSHA256": "4fc484e6364b8850fdbfb7adcc3cc4b6cca8bffcf47725ac5d066a755749f059",
+      "detailBytes": 180148,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 37,
+      "rideId": 143555884814703,
+      "rideName": "Carousel",
+      "alt": "Illustrated Carousel at Six Flags Great Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T03:25:59.763237+00:00",
+      "originalSHA256": "948601e84ede6ee9c5b5595486815c4b8431518ea60e1d6d7463a42964044cec",
+      "review": "Accepted: Preserves the actual carved white horse, gray mane, pink bridle flower, turquoise/gold neck and scroll details, red saddle/orange safety strap and adjacent cobalt rooster with red comb. Spiraled poles, dark mounted foot braces, mirror panels and bulb rings remain actual carousel hardware, with photographic painted-wood texture.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7ad1a04b426e4186c63c029d10ed0eb7ead389cd-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Carousel at Six Flags Great Adventure",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/carousel",
+          "credit": "Six Flags / Great Adventure (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "4039724184f9c0b9b3a4ca7bb648349483d91e4d5dae3e9fb9cf100ea575eabd",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual close carousel photograph inspected. The documented CARVED WHITE HORSE has a gray mane, pink bridle/flower, blue neck insert, raised cream/gold scrollwork, red saddle and visible orange safety strap on a spiraled gold pole, above its dark metal foot brace. Immediately behind is a distinct carved COBALT-BLUE ROOSTER with red comb/wattle, pale beak and gold/red saddle; small horses and roosters, mirrored oval panels ringed with red/white bulbs and actual yellow/red roof framing repeat behind. Compose the real front white horse and adjacent blue rooster, retaining mounted poles/foot hardware and painted wood texture. No live animals, invented generic carousel figures or riders. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "37-143555884814703-thumbnail.jpg",
+      "thumbnailSHA256": "958ceb93fee28f637b50a61b52bb1d7b1af9af8f01b4da31be44f8cd8228085a",
+      "thumbnailBytes": 30546,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "37-143555884814703-detail.jpg",
+      "detailSHA256": "dfc8bf66786eaa7003195221089bc01f12113951e1ac0f4b1dd77cf98ce85362",
+      "detailBytes": 204014,
       "detailPixels": [
         768,
         960

@@ -364,11 +364,11 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 371,
-    "pendingIllustrations": 753,
-    "acceptedForRequestedStyle": 370,
-    "unfinishedForRequestedStyle": 754,
-    "blocked": 9
+    "acceptedIllustrations": 394,
+    "pendingIllustrations": 730,
+    "acceptedForRequestedStyle": 393,
+    "unfinishedForRequestedStyle": 731,
+    "blocked": 10
   },
   "parks": [
     {
@@ -7566,10 +7566,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Great_Adventure"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-1803018357908",
@@ -7593,7 +7593,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "37-6045396311921",
@@ -7619,10 +7619,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Great_Adventure"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-8371495746021",
@@ -7643,10 +7643,10 @@
           "url": "https://www.sixflags.com/greatadventure/attractions/justice-league-battle-metropolis"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-10024564956838",
@@ -7701,10 +7701,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Great_Adventure"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-30442416196088",
@@ -7730,10 +7730,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Great_Adventure"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-37376888450308",
@@ -7759,10 +7759,10 @@
           "url": "https://rcdb.com/19460.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-45195660856559",
@@ -7788,10 +7788,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Great_Adventure"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-45595336890628",
@@ -7817,10 +7817,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Great_Adventure"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-49391381335279",
@@ -7846,10 +7846,10 @@
           "url": "https://rcdb.com/4047.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-49876850241583",
@@ -7899,10 +7899,10 @@
           "url": "https://rcdb.com/502.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-54920830676756",
@@ -7923,10 +7923,10 @@
           "url": "https://www.sixflags.com/greatadventure/attractions/scrambler"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-64566989908132",
@@ -7952,10 +7952,10 @@
           "url": "https://rcdb.com/567.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-68496675986288",
@@ -7981,10 +7981,10 @@
           "url": "https://rcdb.com/35.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-72126154701048",
@@ -8010,10 +8010,10 @@
           "url": "https://rcdb.com/3183.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-72202613791408",
@@ -8039,10 +8039,10 @@
           "url": "https://rcdb.com/21088.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-79944854595414",
@@ -8068,10 +8068,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Great_Adventure"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-81627743561939",
@@ -8097,10 +8097,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Great_Adventure"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-82900063288541",
@@ -8126,10 +8126,10 @@
           "url": "https://rcdb.com/32.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-90102601869532",
@@ -8155,10 +8155,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Great_Adventure"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-93227107235609",
@@ -8184,10 +8184,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Great_Adventure"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-98847806839120",
@@ -8213,10 +8213,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Great_Adventure"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-141541031972546",
@@ -8242,10 +8242,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Great_Adventure"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-143555884814703",
@@ -8271,10 +8271,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Great_Adventure"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "37-147147615369397",
