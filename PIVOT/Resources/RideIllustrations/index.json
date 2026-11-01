@@ -25082,6 +25082,49 @@
     },
     {
       "parkId": 59,
+      "rideId": 12873372054499,
+      "rideName": "Kite Eating Tree",
+      "alt": "Illustrated Kite Eating Tree at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:26:16.404323+00:00",
+      "originalSHA256": "a6ccae8c1ecc01bfd02b8590eb760c022a9f822ae1c8dcc19bafdacf5ac8cb1a",
+      "review": "Accepted: Actually viewed generated PNG: documented yellow carriage/backboard, blue seat bottoms and shared orange padded bar with ordinary clothed children, silver handrails and visible partial green/yellow mast, source kite decoration; connected short-drop section retained.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa48a80ecb38ec99fb07aa7b62be83c7d3df8d6d5-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Kite Eating Tree at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/kite-eating-tree",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f83ca3cb0204104e204adff6e28ef55648b04970311708d426732b765b6df0bb",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Kite Eating Tree photo and mini-drop ride body. Yellow multi-seat carriage with blue molded seat bottoms and common orange padded lap bar, ordinary clothed children, silver end handrails; yellow dotted physical kite-panel backboard and partial green tree structure/central mast. Preserve documented short-drop carriage and source crop; no invented complete tree or tall tower."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-12873372054499-thumbnail.jpg",
+      "thumbnailSHA256": "9de3c2646f8ae6a3d79f278daf9f41e305918e781cea5aa3562448bd4610f8f4",
+      "thumbnailBytes": 25545,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-12873372054499-detail.jpg",
+      "detailSHA256": "c5a74d5f9660c45b72cb24c994607afa6f356ef7c5e2bcc123faf5df883c4e33",
+      "detailBytes": 157478,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
       "rideId": 22859144152735,
       "rideName": "Boogie Board Racer",
       "alt": "Illustrated Boogie Board Racer at Carowinds",
@@ -25159,6 +25202,995 @@
       "detailFile": "59-39475357863823-detail.jpg",
       "detailSHA256": "6fb4323a3fc0fc9cc127c77ced812b3412f8d4d9dfd19bdbc3d235004d77475e",
       "detailBytes": 183046,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 39891228108462,
+      "rideName": "Gyro Force",
+      "alt": "Illustrated Gyro Force at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:28:00.045682+00:00",
+      "originalSHA256": "016b21c5cf94e088db9b569b8cd00b05df8bf9b5ba451069db88c88465802246",
+      "review": "Accepted: Actually viewed generated PNG: source yellow/silver riveted two-person car bodies, black seats and polished lap bars, ordinary restrained passengers and pale ribbed center panels; tight documented car/platform geometry.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fec2f1d87e1572d89c9b2e38d9f2d121a8cad5ddd-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Gyro Force at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/gyro-force",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "683548e99ed07932ea30f6ea4791f31b40a98b004ae2f54bedf8b279bc5ce087",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Gyro Force photo and target page. Tilted yellow/silver riveted two-person ride cars with black upholstered backrests, polished steel common lap bars and numbered yellow side panels, ordinary clothed seated passengers; documented pale center deck panels with black ribs and outer queue rail. Preserve source-only car/platform section and real restraint layout; no invented hidden spinning mechanism."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-39891228108462-thumbnail.jpg",
+      "thumbnailSHA256": "0c6abf34d8bc70ca521b72a2ddc0de22c7eafc77fc2b4d8ecc5708c4bfdab322",
+      "thumbnailBytes": 24719,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-39891228108462-detail.jpg",
+      "detailSHA256": "f82dc8bec8ad91d420294e76da1ae2b21a5744b5cdfae7763ec99f476d62ba62",
+      "detailBytes": 148765,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 41132420423813,
+      "rideName": "Pelican Plunge",
+      "alt": "Illustrated Pelican Plunge at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:27:38.969407+00:00",
+      "originalSHA256": "b75550bcc2cba92167f5f3dd6a66996644821a5c772b0222a618e99eb94571cf",
+      "review": "Accepted: Actually viewed generated PNG: actual adjacent low yellow/orange open flumes and wet seams, shallow flowing water, wave-painted fence, palms/grasses and partial pink tube; no invented riders or full tower.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Faa78b2d1a58d2a2518a74a0a24fa8f42e6344eb0-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Pelican Plunge at Carowinds' Carolina Harbor",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/pelican-plunge",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "4a4342076a1f4d3082e5d6e8c60f404cacd9620003d07748e6e6a372271e7ada",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Pelican Plunge photo and paired open-slide body. Two adjacent gently curving yellow/orange open fiberglass flumes supported low over grass, flowing shallow water, tall split wave-painted pale-blue perimeter fence, palms and real landscaped grasses; partial bright-pink tube at source edge. Preserve actual paired channel curves and seams; no invented riders or complete hidden tower."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-41132420423813-thumbnail.jpg",
+      "thumbnailSHA256": "729ce6e2af23f58a97b191af6cf4557a15e2e452f273d1fdaeddc0c11b8f104a",
+      "thumbnailBytes": 24700,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-41132420423813-detail.jpg",
+      "detailSHA256": "65200693ba6fa56ca8438ec872525a397cdba86f83aaf1bfa883a566d42f0d8a",
+      "detailBytes": 179986,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 51185841283696,
+      "rideName": "Afterburn",
+      "alt": "Illustrated Afterburn at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:29:03.894501+00:00",
+      "originalSHA256": "3831b9473880f426ce05147065e22a3aaf3ef3b9b5be7187c119e042ae64f6c3",
+      "review": "Accepted: Actually viewed generated PNG: source pale overhead rails, blue columns/braces, silver rounded chassis shells and red inverted seats with ordinary secured riders on loop crest, empty foreground track and tree; one train.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F81d49f3780b0504312d98e1c8a0dbe758a77075f-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Afterburn Roller Coaster at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/afterburn",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "40f179357cc36743e7e2177927586cb307d13f23fe69f1630a44ee9781a24b66",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Afterburn photo and inverted coaster body. Pale gray/white overhead box-spine rails with cross-ties, blue cylindrical supports and braces, silver/gray rounded undercarriage shells and red suspended seats carrying ordinary restrained riders upside down on source loop crest; leafy tree at right and foreground empty track. Single train and source-documented connections only."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-51185841283696-thumbnail.jpg",
+      "thumbnailSHA256": "c372ba51d25b3e9cd8d95be11d2f014a0bf94343dfc51c354ab65b0a6e081921",
+      "thumbnailBytes": 23755,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-51185841283696-detail.jpg",
+      "detailSHA256": "67a64ec165cad67ad59fd39f0d8cc6e1455bef2268977f391de52bbf749e0c58",
+      "detailBytes": 158764,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 52796090248800,
+      "rideName": "Carolina Goldrusher",
+      "alt": "Illustrated Carolina Goldrusher at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:27:06.532988+00:00",
+      "originalSHA256": "fc2a123e1bc13cbbb7883555cf3970ebcb8159307ec0b9cd940f69db1ac73934",
+      "review": "Accepted: Actually viewed generated PNG: source gold/black mine-train lead car, real rivets/headlamp/smokestack and linked cars, gripping guide wheels/steel station rails, timber walkway and corrugated wall; no invented smoke or riders.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4d320971af9a6b11eea070603695c53bd8a21cf2-2976x1984.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Carolina Goldrusher Roller Coaster at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/carolina-goldrusher",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "8840d0b801c98bac8e92f1844ec7f46183a880ff431ac2a526a648d783bb5001",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Carolina Goldrusher photo and mine-train ride body. Source stationary gold/black mine-train locomotive-style lead car in timber/corrugated-metal station, real rivets/black round boiler front and headlamp, gold smokestack, linked gold cars behind, visible steel rails/guide wheels, timber safety walkway. Keep source train/station section with no invented smoke, passengers or unseen route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-52796090248800-thumbnail.jpg",
+      "thumbnailSHA256": "d45cc0c39a72e5af2a210a124d7546c471c09034f3610f31ca020696fab31ed8",
+      "thumbnailBytes": 24218,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-52796090248800-detail.jpg",
+      "detailSHA256": "0d9ececf02d581724a9d6c12ecc34af11509c7e3b60d0b9a0e4fc4265cc25300",
+      "detailBytes": 160590,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 54602178982655,
+      "rideName": "PEANUTS™ Trailblazers",
+      "alt": "Illustrated PEANUTS™ Trailblazers at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:28:38.382172+00:00",
+      "originalSHA256": "7f068952270e4f1672a0a6ef69f15655a7f4635fd191290c1b35544548b0ee8a",
+      "review": "Accepted: Actually viewed generated PNG: documented red jeep-style car and safety frame, silver perforated side panel and black seat, ordinary adult/child passengers, following blue car and actual gray platform; source body crop retained.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F18676ec21fb74788e33c8f482935cfad81408a2a-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "PEANUTS™ Trailblazers at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/peanuts-tm-trailblazers",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "93971b89417dc9565340140548197fc9e67bd606a0c2f664f89907545b33c01b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator PEANUTS Trailblazers photo and target page. Tight source red open jeep-style ride car with molded red front safety frame/rail, silver perforated side panel, black seat and gray side detailing, ordinary seated adult and child; blue following car on actual visible gray platform and Peanuts wall graphic. Retain source crop, real car frame/restraints and ordinary passengers; no invented track or full layout."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-54602178982655-thumbnail.jpg",
+      "thumbnailSHA256": "57384b999c92af88c1a4b0c938528007f740222f3bde6d08cc969d348223e2e2",
+      "thumbnailBytes": 23653,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-54602178982655-detail.jpg",
+      "detailSHA256": "72030b8f7226c817db41225b44a1cf9ddb342ca8a42a3058de19fb3e71c414e4",
+      "detailBytes": 130063,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 59217670070314,
+      "rideName": "Thunder Striker",
+      "alt": "Illustrated Thunder Striker at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:30:19.935485+00:00",
+      "originalSHA256": "4f494e45a6c080b1e8a0eb637bc936df08190b233ecf66420b0930b4d401d804",
+      "review": "Accepted: Actually viewed generated PNG: documented red rails and crossing source sections, gray tall supports, single distant black train descending hill with restrained ordinary riders and service walkway; no invented close-up vehicle.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe273b327e065ba40aba27abec0ec8b014a1cafec-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Thunder Striker Roller Coaster at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/thunder-striker",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ddeb028f86d797ab6e3c29651574e89fcd9822bf913808a363d803445dd481cc",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Thunder Striker photo and hypercoaster body. Red tubular box-spine rails sweep across foreground and rise through source large hill behind, tall light-gray cylindrical supports/braces, single black train with ordinary restrained riders descending distant hill and source service catwalk. Preserve documented rail crossings and one train, no invented close-up cars or unseen full route; no current operational claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-59217670070314-thumbnail.jpg",
+      "thumbnailSHA256": "f001eae2acd69f491d50f422d960bf1eb0b6b3d2df0d6dc2cca43634f695b337",
+      "thumbnailBytes": 19469,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-59217670070314-detail.jpg",
+      "detailSHA256": "58997f6163b36bff891563bf3f933a4b571df8a6b609bed1e672bbba2280bedc",
+      "detailBytes": 118381,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 60383577407888,
+      "rideName": "Boo Blasters on Boo Hill",
+      "alt": "Illustrated Boo Blasters on Boo Hill at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:30:00.755238+00:00",
+      "originalSHA256": "e4105ad78d3be30eae42e4465585d656dbf7a968b7a6523774de300896565b6f",
+      "review": "Accepted: Actually viewed generated PNG: Carowinds-specific gray mansion, purple roof/cupola, blue balconies, maroon center balcony and source physical Boo Blasters decor, brick walls/lamp/tree framing; exterior only.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffb85565e88b2a1810d449f05b01b7d48583f54a7-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Boo Blasters on Boo Hill at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/boo-blasters-on-boo-hill",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2d36c94f3bca8434cbcfee14f82232e692ca9f3eda3d9b896d97b7e26f169dcf",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Carowinds Boo Blasters photo and body. Two-story pale-gray clapboard mansion facade with purple metal roof and central cupola, yellow/tan trim and timber posts, blue balcony rails and central maroon balcony, real yellow/purple Boo Blasters sign with flat ghost cutouts and boarded physical entrance decor. Black lamp/tree trunks and brick low walls in foreground. Source exterior only, no invented dark-ride interior or vehicle."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-60383577407888-thumbnail.jpg",
+      "thumbnailSHA256": "9421e2ca6bf0b4a8f4c3ca052f26000fff4f7dd2a75dcb40b043e68f3782ec7f",
+      "thumbnailBytes": 22980,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-60383577407888-detail.jpg",
+      "detailSHA256": "e860b5d6e50b5f3cf5743d6015b3115b1fece5467a817db3c77ec74af9ab8d51",
+      "detailBytes": 179811,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 69492717886439,
+      "rideName": "Carolina Skytower",
+      "alt": "Illustrated Carolina Skytower at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:29:32.862878+00:00",
+      "originalSHA256": "76a51e830038af4a972a0bcf483432e3c2157f632691e990372a260993a1885f",
+      "review": "Accepted: Actually viewed generated PNG: actual red/white mast and circular observation cabin with dark-blue underside, silver/glass window band, blue starred upper ring, top rail/dishes and American flag; source upper tower crop.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2aca18d2d7b8a315ee2d6706b3ac12764d590dc4-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Carolina Sky Tower at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/carolina-skytower",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "5c58d9b7db7bf1986f0e14a48138ea65e6b566f7b008d3b5bd9ad2a287938524",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Carolina Skytower photo and rotating observation-cabin body. Low-angle close source of red/white striped mast through dark-blue-bottom circular cabin, continuous silver/glass window band, blue upper ring with white stars and red/white stripe, metal top rail and small lights/dishes, original American flag and pole. Preserve documented upper tower/cabin, no invented ground entrance or passengers."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-69492717886439-thumbnail.jpg",
+      "thumbnailSHA256": "a0cbfb4fed6e520200fa0d801569af944fa8aa16a38e1935b4af1359938b45de",
+      "thumbnailBytes": 15150,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-69492717886439-detail.jpg",
+      "detailSHA256": "255b633bff9fa7cc408b3ab520d893b986d7c0be414b14fb4aa2e0be68a2a95a",
+      "detailBytes": 92997,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 77369114586326,
+      "rideName": "WP - Blackbeards Revenge Tube Slides",
+      "alt": "Illustrated WP - Blackbeards Revenge Tube Slides at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:33:03.177593+00:00",
+      "originalSHA256": "e3c76c6551622a676e6eee0aaa47444d8e77f24291064602d86e01a7849a9a69",
+      "review": "Accepted: Actually viewed generated PNG: two ordinary riders in documented yellow double tube with black handles, white runout with red edges, turquoise landing pool, water splash and actual grates/landscaping; tube-slide identity verified.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fafd90ba1b05a613832c59cca8d66cd71d85bb938-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Blackbeard’s Revenge - Cannonball Drop & Captain’s Curse",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/blackbeards-revenge-cannonball-drop-captains-curse",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "94a5b72f48ac3ed00ba376801a13360f20403d5a4251486cd2258bb90241dbc3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Blackbeards Revenge tube-slide hero and named operator attraction inventory plus waterpark anniversary description. Source shows two ordinary riders seated in yellow double tube with black handles leaving white open runout flume with red outer edges into turquoise shallow splash pool, real grates and tan landscaping. Inventory distinguishes tube Cannonball Drop/Captains Curse from Pirates Plank trapdoor body slides. Preserve this documented tube-slide splashdown, no hidden route or unsupported body-slide substitution."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-77369114586326-thumbnail.jpg",
+      "thumbnailSHA256": "0c7df5d16d881216fbdb8ddb8cfb194e8b2a7185c4eddc3cbdfe650457da8608",
+      "thumbnailBytes": 24365,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-77369114586326-detail.jpg",
+      "detailSHA256": "3914ef79aa6355b51894412e4323c37d5aa4a449b7fe097793c7efd71deaaffb",
+      "detailBytes": 188193,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 82312937249835,
+      "rideName": "Vortex",
+      "alt": "Illustrated Vortex at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:31:13.912181+00:00",
+      "originalSHA256": "29735f1d1bd37a76048e92bf74c94b08b874f5b56535d1e29688569d2d5d2d39",
+      "review": "Accepted: Actually viewed generated PNG: Carowinds-specific four-across black stand-up modules with bright-red restraints and yellow/black foot platforms, ordinary secured riders, source red rails/gray supports and tree branches; one train.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F8155c6a9abc5566a7a64628fd4a7faeaee2c2a4b-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Vortex Roller Coaster at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/vortex",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "12f9a9e00bf28ee16cb71110fb14b1f6d6205e6cef96e578325d646ca7d74b2e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Carowinds Vortex photo and stand-up coaster body. Black four-across train modules with bright-red shoulder restraints and yellow/black foot-level details carry ordinary standing restrained riders on near-vertical source track. Red/orange box-spine rails, gray cylindrical supports and leafy foreground branches. Preserve real four-across stand-up car geometry, source single train and rail/wheel connection; not Canadian suspended Vortex."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-82312937249835-thumbnail.jpg",
+      "thumbnailSHA256": "c3deaab950d6472e715eede67f8aa382f3b2718fb70d12d95262660ea7593170",
+      "thumbnailBytes": 28263,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-82312937249835-detail.jpg",
+      "detailSHA256": "2e43a1f2eec18313d02352b4281324980592b688fb4b3e42db0f66456703532b",
+      "detailBytes": 182047,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 90590312757757,
+      "rideName": "Carolina Harbor Shore Club",
+      "alt": "Illustrated Carolina Harbor Shore Club at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:32:07.868878+00:00",
+      "originalSHA256": "9cacd95bce7709372ed5fd7581094bee1cd27c8636221f969ec9606cc3aecad4",
+      "review": "Accepted: Actually viewed generated PNG: actual turquoise adults-only pool, tiled in-water circular tables, yellow umbrellas and light-blue/white swim-up bar, physical Paul Metto sign/nautical fixtures and ordinary distant adults; no invented pool feature.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9cf39437cf53ca1ecbf634887adcb64207d90355-4156x3117.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Carolina Harbor Shore Club",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/carolina-harbor-shore-club",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "21584a3e3443dfc4a88bb7523b077e459e5bbcc597f83fc787fc05d41dc8e96e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Carolina Harbor Shore Club photo and adults-only pool/bar body, confirmed opened2025 by operator anniversary article. Real turquoise pool and blue/multicolor tile border, circular tiled in-water tables/stools with yellow parasols, light-blue clapboard/white-column swim-up bar with fixed nautical decor and original physical Paul Metto Boathouse Bar sign. Source adults-only environment, only ordinary adults at distant bar; no children, extra drinks or invented pool features."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-90590312757757-thumbnail.jpg",
+      "thumbnailSHA256": "0e0fc597299d6d321169e6d0374f9a94a826541de570eff0ea1e08b58406daa4",
+      "thumbnailBytes": 25677,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-90590312757757-detail.jpg",
+      "detailSHA256": "0af0c501af33e4cf9bf37e919364a93a5aa884e4f6dfbfd0992028a5d3d8c3f1",
+      "detailBytes": 177181,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 91633337698832,
+      "rideName": "Snoopy’s Racing Railway",
+      "alt": "Illustrated Snoopy’s Racing Railway at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:33:06.777640+00:00",
+      "originalSHA256": "59cdaa9046468db951d9ea3517176619fa36be1de3b3cadd1fd412f672ae7eb6",
+      "review": "Accepted: Actually viewed generated original against inspected source. Brown crate locomotive, tall chimney/headlamp and fixed engineer Snoopy, linked family cars, gray rails and gripping bogies remain physically connected; real red neighboring track is distinct.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9d0c1d7af27c3ebdd317daef678a0bd29b50b0f2-3642x2732.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Snoopy’s Racing Railway at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/snoopys-racing-railway",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "27e59a02c5bab615d9aabef052f5d34300cbafb38963cfb31647f1896f4b5d62",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Carowinds Snoopy Racing Railway photograph and launched family-coaster body. Brown wooden-crate/locomotive styled lead car with tall dark-brown smokestack and small gold headlight, black cowcatcher, brown barrel-sided following cars with ordinary family riders and fixed blue-engineer-hat Snoopy sculpture; actual gray rails/black ties, physical bogies and red neighboring elevated track/catwalk behind. Single connected train and source section only, no smoke or invented route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-91633337698832-thumbnail.jpg",
+      "thumbnailSHA256": "5ce1ef1a1702a0f3773834aca6a109f6ea1115eae25e1ac52fcb97a1a55f9eab",
+      "thumbnailBytes": 23387,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-91633337698832-detail.jpg",
+      "detailSHA256": "bcb0b8f7f03c46227f0dc65c8db4f856561cf45c611c3e3f92bd6b8a8fcf4190",
+      "detailBytes": 137879,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 92375287439416,
+      "rideName": "Electro-Spin",
+      "alt": "Illustrated Electro-Spin at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:34:42.631520+00:00",
+      "originalSHA256": "1e069e8d8ec2bc7774c47da4ad7b0fa8498d5f832b3ac2eed3169888e4d849d5",
+      "review": "Accepted: Actually viewed generated original. White/cyan illuminated arms and blue rotating hubs connect to straight yellow five-seat banks with green shoulder restraints and ordinary secured riders; tight source mechanical section is preserved.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fd51e952715a1953d9cfbc92d463e89aef418b1f4-1440x813.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Electro-Spin at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/electro-spin",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f15ee91b06c2db22de1dd45e17a0c2ffb9fca7f1b9126ab6dcc0fddd3b8dc046",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Electro-Spin photo and target page. White/light-cyan sculpted mechanical arms with inset blue/white lamp panels and blue hubs/axles support light-cyan straight five-seat banks; yellow seats with vivid green shoulder restraints and blue back panels; ordinary clothed secured riders in tilted banks. Preserve source-connected rotation hubs and seat rows in tight mechanical crop; no invented full ride or extra arms."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-92375287439416-thumbnail.jpg",
+      "thumbnailSHA256": "b82e757539a4b51441880b50ef8d2e8c33d5602ad7e0a3deebc2a9b6778d8f41",
+      "thumbnailBytes": 25545,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-92375287439416-detail.jpg",
+      "detailSHA256": "e43f47f40fb7d7586229af03ecf702d76e6bcf954b369bf94f1d8d0ba9a094f4",
+      "detailBytes": 157682,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 96385384466589,
+      "rideName": "Air Racers",
+      "alt": "Illustrated Air Racers at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:35:20.384110+00:00",
+      "originalSHA256": "65abb8f84630a0a7c6e294a609709d08506cb8c934a7092fdc4523d6edc670f6",
+      "review": "Accepted: Actually viewed generated original. Inverted yellow airplane-shaped bank retains physical wing, fixed propeller ornament, silver plates, attached gray support arm and black restraints around ordinary riders; photographic surfaces and source geometry are legible.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa16114890ef756717cd88d02da01942497a698d0-1900x911.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Air Racers Thrill Ride at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/air-racers",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "42c75d370226da79245ce5cda9163b944194009ba5487fbb401cfc7a1b81c245",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Air Racers photo and target page. Tight low-angle view of yellow/orange airplane-shaped ride bank inverted with ordinary restrained riders, black shoulder harnesses and polished handgrips, textured silver floor plates and fixed white/yellow propeller ornament, yellow wing/body and visible attached arm at source edge. Preserve source physical structure and safety hardware, no flying aircraft or invented route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-96385384466589-thumbnail.jpg",
+      "thumbnailSHA256": "9ac5144a662d84997c7057fbceaeff7752eb4563dff08a8dc813ebcae3365322",
+      "thumbnailBytes": 23140,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-96385384466589-detail.jpg",
+      "detailSHA256": "44f3f4dcac0663a76b03b3a7af85b3d8f773dc74400068ed93bd5623430329e4",
+      "detailBytes": 143647,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 107972410061904,
+      "rideName": "Surf Club Harbor",
+      "alt": "Illustrated Surf Club Harbor at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:33:35.730433+00:00",
+      "originalSHA256": "e8bde0d77f11b9ba0643d7b97cc56ecf8b4bfc1b9fc4c464598961dbd197f3fb",
+      "review": "Accepted: Actually viewed generated original. Source-supported shallow-entry turquoise pool, ordinary family in shallow water, background bathers/lifeguard, wall and existing oval physical park sign remain; no invented huge waves or full hidden pool.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbbcffbfcf556702c72bbc1ec1d596c23846a9568-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Surf Club Harbor at Carowinds' Carolina Harbor",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/surf-club-harbor",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "baf68409916591702fa445082ad10a73916a09edaa99cf692d1cb78970f5b9e5",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Surf Club Harbor photograph and wave-pool body. Documented pale-turquoise zero-depth shallow pool edge with ordinary family seated in shallow water, distant bathers/lifeguard, actual wood/pale-green perimeter wall and oval Carowinds physical sign. Keep this source-supported shallow-entry scene and gentle ripples; no invented huge waves, pool machinery or complete hidden pool."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-107972410061904-thumbnail.jpg",
+      "thumbnailSHA256": "2b2c7d4d9d4a8774fc010e6e4b63dd239e8d6f36c987bfc368c0ee3b707e2e18",
+      "thumbnailBytes": 26926,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-107972410061904-detail.jpg",
+      "detailSHA256": "fcca70e3005f59d569dc683901fff0590ca4d3270df78a25b272dd11eefa4a27",
+      "detailBytes": 169849,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 118452874294586,
+      "rideName": "Hover & Dodge",
+      "alt": "Illustrated Hover & Dodge at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:35:49.832564+00:00",
+      "originalSHA256": "c5711172c8ee046840f8c64d6d16dc4def67226427bd4b25b229dbf631789080",
+      "review": "Accepted: Actually viewed generated original. Metallic flame-decorated bumper cars retain black bumper rims, steering wheels, pickup poles and family seating within the photographed industrial pavilion.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbeabcb845a0dc6da1cbf2ee09f44e14004570e81-1900x910.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Hover & Dodge at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/hover-and-dodge",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "85079a63a094773d90a47a1aef109cb7e5288912ecc03e822181b7f5d86396e5",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Hover and Dodge photo and target page. Colorful metallic blue/green/purple bumper cars with flame decals, white/yellow practical headlamps, black padded seat/bumper rim, steering wheels and vertical power pickup poles, ordinary family passengers within actual indoor pavilion with printed industrial wall. Preserve source enclosed bumper-car structure, no invented outdoor track or other ride."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-118452874294586-thumbnail.jpg",
+      "thumbnailSHA256": "48a2681cd7e08aaa41d2a7f1a6ace27c266366c5b5e4743a8464bf79aa6b57d3",
+      "thumbnailBytes": 24759,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-118452874294586-detail.jpg",
+      "detailSHA256": "9227bcc63257b27dfdd65b8bb3edd9a225cf5eacce6b245ea2b2ff2133a1e26a",
+      "detailBytes": 142849,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 123416943883152,
+      "rideName": "Charlie Brown's Wind-up",
+      "alt": "Illustrated Charlie Brown's Wind-up at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:34:17.651139+00:00",
+      "originalSHA256": "8d66bcfe4ab1456a6dd36e6f696e5692c86b6aea390e62c282e3aeaadf2a5d8c",
+      "review": "Accepted: Actually viewed generated original. Black numbered bucket chairs hang by chains with silver safety bars around the actual green base/yellow skirt; ordinary children and source-limited lower section remain recognizable.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9573c852ce860ef41eab2350bae34e338557dbf1-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Charlie Brown's Wind-up at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/charlie-browns-wind-up",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "9820d07af5966869ba73a096ebbf2659aeeccf7ace916ff4f6460e93564af34e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Charlie Brown Wind-up photo and chair-swing body. Black numbered individual bucket seats with silver safety bars and chains to actual small swing ride, ordinary clothed children, glossy bright-green central base with yellow lower skirt and real pale concrete/purple printed wall/yellow queue rail. Source-limited lower ride section, keep hanging chain-seat connections and do not invent unseen canopy."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-123416943883152-thumbnail.jpg",
+      "thumbnailSHA256": "6aca324a1c228414c60234363ee957a6086dea1eba1150685692b2bc51d61f52",
+      "thumbnailBytes": 27859,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-123416943883152-detail.jpg",
+      "detailSHA256": "c1606634b53929027c1d2e4f13e9418f449c008ccb934b2d9adf99fe251aac73",
+      "detailBytes": 207828,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 124427279960232,
+      "rideName": "WindSeeker",
+      "alt": "Illustrated WindSeeker at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:38:24.730826+00:00",
+      "originalSHA256": "cffa6360d6479425c980057d11e5e8e036db67d2c41dd370bca2d54de92767de",
+      "review": "Accepted: Actually viewed generated original. Silver mast with blue/yellow bands, guide ladder, red radial lattice arms and paired red restrained chairs remain source-supported and physically attached; no invented entrance.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F53231a63147162046296101630b1a664003208cc-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "WindSeeker at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/windseeker",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "6188643d08e9633b06f8fa2ff9603cdb1b5a32623a2d6b2f0558964310d5e3d0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator WindSeeker photo and tower-swing body. Low-angle tight source of tall silver mast with blue/yellow horizontal paint bands, red rigid radial lattice/support arms and red paired suspended seats carrying ordinary secured riders near top; visible guide ladder and real arm/cable connection. Partial foreground ordinary spectator at source edge can remain unobtrusive. Do not invent full ground entrance or hidden tower architecture."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-124427279960232-thumbnail.jpg",
+      "thumbnailSHA256": "1a236f290f2deadcc1fb921fa326852486072b91a527e94523015f238daaf73d",
+      "thumbnailBytes": 22784,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-124427279960232-detail.jpg",
+      "detailSHA256": "f7a2b4941428d0dd773374014d20bebbc8d0d9777be7cfa312de734a206c8c2d",
+      "detailBytes": 155745,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 130554105549832,
+      "rideName": "Charlie Brown’s River Raft Blast",
+      "alt": "Illustrated Charlie Brown’s River Raft Blast at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:37:37.162138+00:00",
+      "originalSHA256": "2531928947158be7e370b0c39a49299e526943717334b09489d04018747de50f",
+      "review": "Accepted: Actually viewed generated original. Faux-log raft retains rope/net sides, log-end front and crates in turquoise lagoon; fixed Snoopy/Charlie Brown scenery, water jets, timber fence and actual neighboring wood coaster remain distinct.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2f6bd5f33a3f2c7bb28f946e8974c91ad374bb20-1440x960.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Charlie Brown’s River Raft Blast",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/charlie-browns-river-raft-blast",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "cd6b9640a9a639c5b7527dcdce5b0783ace957e784d58cd0f9d28fccb8940abd",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Charlie Brown River Raft Blast real-photo hero and 2025 water-blaster log-raft body. Turquoise lagoon with rectangular faux-log raft, rope/net safety sides, log-end front and crate scenery, ordinary riders and actual mounted water nozzles; fixed Snoopy figure on red inflatable/duck ornaments at right, Charlie Brown figure on small platform, timber posts/rope fence and actual neighboring wood coaster. Preserve source raft/scenery, no invented rapids or full hidden route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-130554105549832-thumbnail.jpg",
+      "thumbnailSHA256": "054bde00f14d88b02c4e7a910d1e705c0b2b2efbe678294f838a591d9bb8b37d",
+      "thumbnailBytes": 29715,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-130554105549832-detail.jpg",
+      "detailSHA256": "3011bdc35877e187cf45a4fce87766d7c8764b66ff46a119b69eabafab12258b",
+      "detailBytes": 249287,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 135019573125783,
+      "rideName": "Kaleidoscope",
+      "alt": "Illustrated Kaleidoscope at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:36:15.996962+00:00",
+      "originalSHA256": "125d3e3e24e7fa5f163572521439dde092f1c2306a350c22836864f4c2e84c72",
+      "review": "Accepted: Actually viewed generated original. Silver rounded tubs/red seats, geometric physical labels, white radial braces and blue/yellow spindles retain mechanical attachment; orange canopy, fence and neighboring empty wooden coaster match the source.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb5fff6533951376842fe78c901f72bd5c3de1416-1440x960.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Kaleidoscope at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/kaleidoscope",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "8553bccc331cbd2d6c39c60d0d46f94834600b5d1b62dc9d6b02b60e4e006307",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Kaleidoscope photograph and target page. Source silver rounded two-person tubs with red interiors, multicolor geometric side decals and fixed KALEIDOSCOPE word panels, white lattice radial braces, blue/yellow central spindles and gray rotating deck; ordinary seated riders, white queue fence, long orange canopy and real wood coaster behind. Preserve source mechanical attachment and limited section, no invented complete route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-135019573125783-thumbnail.jpg",
+      "thumbnailSHA256": "54cba58dc6fdc5ae05f8a1ca1ec830f71f26e1d823e7f71209ce518185a9dad5",
+      "thumbnailBytes": 26354,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-135019573125783-detail.jpg",
+      "detailSHA256": "6b5cfd6161a9a0cb172b37cb3eb0a121fc83f6ee8dba01f5ccb9cc69bc2761b1",
+      "detailBytes": 204142,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 136246564879034,
+      "rideName": "Pig Pen's Mud Buggies",
+      "alt": "Illustrated Pig Pen's Mud Buggies at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:38:03.214517+00:00",
+      "originalSHA256": "d05486dce0918badff17857cff19df82fec0576197d878a9e57d9141baf0c5f7",
+      "review": "Accepted: Actually viewed generated original. Orange/yellow buggy retains actual separate steering wheels, polished rail seating and ordinary child/adult arrangement, with yellow neighbor car and red mesh fence; no invented road or mud.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc64e34fd24c8937bd35ddf902ed3e71254c17135-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Pig Pen's Mud Buggies at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/pig-pens-mud-buggies",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f0bccba5c9d21727b838ce327382b122097d82f8d5e2193eed2e7191d443b2f2",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Pig Pen Mud Buggies photograph and family bounce-ride body. Tight source orange/yellow buggy with twin steering wheels and polished silver safety rails, ordinary seated child in front and adult behind, yellow neighboring vehicle at source edge, real red rail/mesh perimeter fence, grass and trees. Preserve actual buggy seating and source crop; no real mud, invented road or unseen mechanism."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-136246564879034-thumbnail.jpg",
+      "thumbnailSHA256": "5ad84860f065b837d5f5f2ece15762b257fc38d222b9f70d2d10e2e1c646745b",
+      "thumbnailBytes": 21417,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-136246564879034-detail.jpg",
+      "detailSHA256": "8771ea55cad068acfe613a4e5a2b1cd470b56b68f10aa1f2aed8bfacd20f46d9",
+      "detailBytes": 115674,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 137692328476754,
+      "rideName": "Woodstock Whirlybirds",
+      "alt": "Illustrated Woodstock Whirlybirds at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:36:42.973346+00:00",
+      "originalSHA256": "6e6146744f98b66b10b4818550c6d88bda39abdee342962e45a609cb560e1a24",
+      "review": "Accepted: Actually viewed generated original. Actual Carowinds twig/leaf-painted nest tubs retain silver gate/center wheel, green platform and fixed ranger Snoopy; ordinary family and red fence remain source-specific.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2d42dc0ad34d695c57f3870ab17d46860df951a7-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Woodstock Whirlybirds at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/woodstock-whirlybirds",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "12b76f05204f2b027d8a66301b018e8fe1a086d04e9eaf76ee669bba287d8bec",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Carowinds Woodstock Whirlybirds photograph and teacup/nest ride body. Tan bowl-shaped nest tubs with brown twig/green leaf painted pattern, silver entry gate and round center steering wheel, ordinary family seated inside; bright-green deck and fixed white Snoopy sculpture in green ranger hat on small green hub, actual red/mesh perimeter fence and distant coaster. This documented Carowinds nest ride differs from Canadian physical pods; no cross-park substitution."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-137692328476754-thumbnail.jpg",
+      "thumbnailSHA256": "931fbe319ec2807266bef13a38fb938eb83f80fabd77de08245817b2579f7e5a",
+      "thumbnailBytes": 25761,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-137692328476754-detail.jpg",
+      "detailSHA256": "03f8c0e6fd38b7ba501d4e2d3885a51cee7486434c14003f6b05518925761073",
+      "detailBytes": 163871,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 59,
+      "rideId": 137907905491932,
+      "rideName": "Zephyr",
+      "alt": "Illustrated Zephyr at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:39:01.107333+00:00",
+      "originalSHA256": "d8f2248280da01a332c5060a859769e2445846829fe2d924d6f630eb28a91c6f",
+      "review": "Accepted: Actually viewed generated original. Yellow ornamental canopy and spindle with green/pink diamond panels, lamp rows, physical animal paintings and chain-hung metal chairs match the photographed swing; restrained dusk stays readable.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1eda02ea0b3f01ed81dad7e47b836aee93b017de-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Zephyr at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/zephyr",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "6f5fa856f53cda70050048f1e0ccb93dee70207fdfa70e967317503960c48802",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Zephyr photograph and ornate chair-swing body. Large yellow/orange scalloped canopy with source painted scenic/animal decorative panels and blue/green trim, bulb rows, silver chains to individual metal-framed seats with safety bars and ordinary clothed riders; actual yellow central tower with pink/green diamond panels. Preserve source canopy/chain-seat connections and tight view, no invented complete route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-137907905491932-thumbnail.jpg",
+      "thumbnailSHA256": "bc153535041ac0f68146f8a7400b569f10922a0527d438d14dc5f0608a8dc39d",
+      "thumbnailBytes": 30618,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-137907905491932-detail.jpg",
+      "detailSHA256": "ab91a83cf965782d060d00f36312efc49bbd0f6d96c9e684f45f0728a47dc6f5",
+      "detailBytes": 238718,
       "detailPixels": [
         768,
         960
