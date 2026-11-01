@@ -180,6 +180,7 @@ private struct NativePlanRideForecastBrowser: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .topBarTrailing) { Button("Done") { dismiss() } } }
         }
+        .modifier(PivotUITestTypeSize(probeIdentifier: "Hourly forecast body size"))
     }
 }
 
@@ -261,11 +262,17 @@ struct NativeRideLowWaitSummary: View {
                 .navigationTitle("Predicted waits").navigationBarTitleDisplayMode(.inline)
                 .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { showForecast = false } } }
             }
+            .modifier(PivotUITestTypeSize(probeIdentifier: "Hourly forecast body size"))
         }
     }
 }
 
 struct WaitForecastTimeline: View {
+    @ScaledMetric(relativeTo: .caption2) private var columnWidth: CGFloat = 94
+    @ScaledMetric(relativeTo: .caption2) private var axisAllowance: CGFloat = 60
+    @ScaledMetric(relativeTo: .caption2) private var timeLabelHeight: CGFloat = 24
+    @ScaledMetric(relativeTo: .caption2) private var chartHeight: CGFloat = 170
+    @ScaledMetric(relativeTo: .caption2) private var annotationAllowance: CGFloat = 24
     let points: [WaitForecastPoint]
     let timeZone: TimeZone
     let canRecommend: Bool
@@ -298,23 +305,13 @@ struct WaitForecastTimeline: View {
                     Text("History only · a current operating ride and healthy feed are required for a ride-now suggestion.")
                         .font(.caption).foregroundStyle(Color.pivotMuted)
                 }
-                Chart(points) { point in
-                    let inset = point.end.timeIntervalSince(point.start) * 0.12
-                    RectangleMark(xStart: .value("Hour start", point.start.addingTimeInterval(inset)),
-                                  xEnd: .value("Hour end", point.end.addingTimeInterval(-inset)),
-                                  yStart: .value("Zero wait", 0), yEnd: .value("Estimated wait", point.minutes))
-                        .foregroundStyle(Color.pivotMint)
-                        .annotation(position: .top) { Text("\(point.minutes)").font(.caption2).foregroundStyle(Color.pivotMuted) }
-                }
-                .chartXScale(domain: points[0].start...points[points.count - 1].end)
-                .chartYScale(domain: 0...max(15, points.map(\.upper).max() ?? 15))
-                .chartXAxis { AxisMarks(values: .stride(by: .hour, count: points.count > 8 ? 2 : 1)) { value in
-                    AxisValueLabel { if let date = value.as(Date.self) { Text(clock(date)).font(.caption2) } }
-                } }
-                .frame(height: 150)
-                .accessibilityLabel("Hourly wait estimates. Values also listed below.")
+                forecastChart
+                Text("Swipe for all supported hours. Times are in the park’s time zone.")
+                    .font(.caption2).foregroundStyle(Color.pivotMuted)
+                    .fixedSize(horizontal: false, vertical: true)
                 Text("Preliminary · limited confidence · \(points.map(\.days).min() ?? 0)+ observed days\n\(points.contains(where: \.crowdAdjusted) ? "Adjusted for today’s posted-wait crowd pressure" : "Historical pattern · no current crowd adjustment")")
                     .font(.caption).foregroundStyle(Color.pivotMuted)
+                    .fixedSize(horizontal: false, vertical: true)
                 DisclosureGroup("Hourly estimates") {
                     VStack(alignment: .leading, spacing: 10) {
                         ForEach(points) { point in
@@ -325,10 +322,79 @@ struct WaitForecastTimeline: View {
                 }.font(.subheadline).tint(Color.pivotMint)
                 Text("Ranges describe observed variation, not a guaranteed interval. Waits can change with weather, events, and operations. Missing hours stay blank; this does not predict reopening.")
                     .font(.caption2).foregroundStyle(Color.pivotMuted)
+                    .fixedSize(horizontal: false, vertical: true)
             }
         }
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("ride-wait-forecast")
+    }
+
+    private var forecastChart: some View {
+        let start = points[0].start
+        let end = points[points.count - 1].end
+        let duration = max(1, end.timeIntervalSince(start))
+        let maximum = Double(max(15, points.map(\.upper).max() ?? 15))
+        let totalHeight = min(chartHeight, 300)
+        let plotHeight = max(80, totalHeight - timeLabelHeight)
+        let padding = min(annotationAllowance, plotHeight / 3)
+        return GeometryReader { geometry in
+            let plotWidth = max(geometry.size.width - axisAllowance, columnWidth * (CGFloat(duration / 3600) + 1))
+            ScrollView(.horizontal) {
+                HStack(alignment: .top, spacing: 0) {
+                    NativeWaitChartYAxis(maximum: maximum, height: plotHeight, padding: padding)
+                        .frame(width: axisAllowance)
+                    VStack(spacing: 0) {
+                        Chart(points) { point in
+                            let inset = point.end.timeIntervalSince(point.start) * 0.12
+                            RectangleMark(xStart: .value("Hour start", point.start.addingTimeInterval(inset)),
+                                          xEnd: .value("Hour end", point.end.addingTimeInterval(-inset)),
+                                          yStart: .value("Zero wait", 0), yEnd: .value("Estimated wait", point.minutes))
+                                .foregroundStyle(Color.pivotMint)
+                                .annotation(position: .top) { Text("\(point.minutes)").font(.caption2).fixedSize().foregroundStyle(Color.pivotMuted) }
+                        }
+                        // Preserve real elapsed time and missing-hour gaps. Half
+                        // a column at each edge protects the first/last full label.
+                        .chartXScale(domain: start...end, range: .plotDimension(
+                            startPadding: columnWidth / 2, endPadding: columnWidth / 2))
+                        .chartYScale(domain: 0...maximum, range: .plotDimension(startPadding: padding, endPadding: padding))
+                        .chartXAxis(.hidden)
+                        .chartYAxis { AxisMarks(values: [0.0, maximum]) { _ in AxisGridLine() } }
+                        .frame(width: plotWidth, height: plotHeight)
+                        ZStack(alignment: .topLeading) {
+                            ForEach(Array(axisTimes.enumerated()), id: \.element) { index, time in
+                                HStack(spacing: 0) {
+                                    Text(clock(time)).font(.caption2).fixedSize()
+                                        .foregroundStyle(Color.pivotMuted)
+                                        .accessibilityIdentifier("wait-forecast-time-\(index)")
+                                }
+                                .position(x: columnWidth / 2 + CGFloat(time.timeIntervalSince(start) / duration) * (plotWidth - columnWidth),
+                                          y: timeLabelHeight / 2)
+                            }
+                        }
+                        .frame(width: plotWidth, height: timeLabelHeight)
+                    }
+                }
+            }
+            .accessibilityElement(children: .contain)
+            .accessibilityIdentifier("wait-forecast-chart")
+        }
+        .frame(height: totalHeight + 10)
+        .accessibilityLabel("Hourly wait estimates. Values and complete time ranges also listed below.")
+    }
+
+    private var axisTimes: [Date] {
+        guard let first = points.first, let last = points.last else { return [] }
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = timeZone
+        var tick = calendar.dateInterval(of: .hour, for: first.start)?.start ?? first.start
+        if tick < first.start { tick = calendar.date(byAdding: .hour, value: 1, to: tick) ?? first.start }
+        var result: [Date] = []
+        while tick <= last.end, result.count < 27 {
+            result.append(tick)
+            guard let next = calendar.date(byAdding: .hour, value: 1, to: tick), next > tick else { break }
+            tick = next
+        }
+        return result.isEmpty ? [first.start] : result
     }
     private func clock(_ date: Date) -> String { ParkTimeFormatter.time(date, timeZone: timeZone) }
 }

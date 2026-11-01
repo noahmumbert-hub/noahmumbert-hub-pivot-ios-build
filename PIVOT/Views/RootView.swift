@@ -325,20 +325,44 @@ struct RootView: View {
 
     private var radarSelection: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Picker("Featured ride", selection: Binding<Int?>(get: { store.pinnedRadarRideID }, set: { store.pinRadarRide($0) })) {
-                Text("Automatic · highest recent demand").tag(Optional<Int>.none)
-                ForEach(store.reviewedRides) { ride in
-                    Text(ride.name).tag(Optional(ride.id))
+            Menu {
+                Picker("Featured ride", selection: Binding<Int?>(get: { store.pinnedRadarRideID }, set: { store.pinRadarRide($0) })) {
+                    Text("Automatic · highest recent demand").tag(Optional<Int>.none)
+                    ForEach(store.reviewedRides) { ride in
+                        Text(ride.name).tag(Optional(ride.id))
+                    }
                 }
+            } label: {
+                HStack(spacing: 12) {
+                    Text(radarSelectionTitle)
+                        .font(.body).lineLimit(nil)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .accessibilityIdentifier("radar-featured-ride-selection")
+                    Image(systemName: "chevron.up.chevron.down")
+                        .font(.caption.weight(.semibold)).accessibilityHidden(true)
+                }
+                .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
+                .contentShape(Rectangle())
             }
-            .pickerStyle(.menu)
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("radar-featured-ride-picker")
+            .accessibilityLabel("Featured ride")
+            .accessibilityValue(radarSelectionTitle)
+            .accessibilityHint("Choose a ride or use the highest recent demand automatically")
             if let pinned = store.pinnedRadarRideID, !store.radarRides.contains(where: { $0.id == pinned }) {
                 Text("Your pinned ride is not currently down. Radar shows another eligible closure when available.")
                     .font(.caption).foregroundStyle(Color.pivotMuted)
+                    .fixedSize(horizontal: false, vertical: true)
             }
         }
         .pivotCard(padding: 14)
         .disabled(store.selectedPark == nil)
+    }
+
+    private var radarSelectionTitle: String {
+        guard let id = store.pinnedRadarRideID else { return "Automatic · highest recent demand" }
+        return store.reviewedRides.first(where: { $0.id == id })?.name ?? "Pinned ride unavailable"
     }
 
     private var moreActions: some View {

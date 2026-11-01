@@ -625,6 +625,7 @@ struct NativeWaitHistoryView: View {
     @ScaledMetric(relativeTo: .caption2) private var axisAllowance: CGFloat = 60
     @ScaledMetric(relativeTo: .caption2) private var annotationAllowance: CGFloat = 26
     @ScaledMetric(relativeTo: .caption2) private var chartHeight: CGFloat = 175
+    @ScaledMetric(relativeTo: .caption2) private var timeLabelHeight: CGFloat = 20
     let ride: LiveRide
     let timeZone: TimeZone
     var initiallyExpanded: Bool = false
@@ -647,11 +648,13 @@ struct NativeWaitHistoryView: View {
                         if samples.isEmpty {
                             Text("No recent observations yet. History appears after fresh park snapshots are collected.")
                                 .font(.subheadline).foregroundStyle(Color.pivotMuted)
+                                .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
                                 .accessibilityIdentifier("wait-history-empty-\(ride.id)")
                         } else {
                             chart(samples: samples)
                             Text("Up to 12 observations from the last 6 hours, in time order. Swipe for all samples. Dots are evenly spaced for readable labels; time gaps can vary. These are observed posted waits, not predictions.")
                                 .font(.caption).foregroundStyle(Color.pivotMuted)
+                                .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
                             DisclosureGroup {
                                 VStack(alignment: .leading, spacing: 8) {
                                     ForEach(Array(samples.enumerated()), id: \.element.id) { index, sample in
@@ -683,48 +686,51 @@ struct NativeWaitHistoryView: View {
 
     private func chart(samples: [WaitHistorySample]) -> some View {
         let maximum = max(10, samples.map(\.waitTime).max() ?? 10)
+        let plotHeight = max(80, min(chartHeight, 320) - timeLabelHeight)
+        let annotationPadding = min(annotationAllowance, plotHeight / 3)
         return GeometryReader { geometry in
+            let plotWidth = max(geometry.size.width - axisAllowance, CGFloat(samples.count) * sampleColumnWidth)
             ScrollView(.horizontal) {
-                Chart(Array(samples.enumerated()), id: \.element.id) { index, sample in
-                    PointMark(x: .value("Observation", index), y: .value("Posted wait", sample.waitTime))
-                        .foregroundStyle(accent).symbolSize(36)
-                        .annotation(position: .top, spacing: 4) {
-                            Text("\(NativeExtrasFormatting.number(sample.waitTime)) min")
-                                .font(.caption2.weight(.semibold)).monospacedDigit().fixedSize()
-                                .foregroundStyle(.primary)
-                                .accessibilityIdentifier("wait-sample-value-\(ride.id)-\(index)")
+                HStack(alignment: .top, spacing: 0) {
+                    NativeWaitChartYAxis(maximum: maximum, height: plotHeight, padding: annotationPadding)
+                        .frame(width: axisAllowance)
+                    VStack(spacing: 0) {
+                        Chart(Array(samples.enumerated()), id: \.element.id) { index, sample in
+                            PointMark(x: .value("Observation", index), y: .value("Posted wait", sample.waitTime))
+                                .foregroundStyle(accent).symbolSize(36)
+                                .annotation(position: .top, spacing: 4) {
+                                    Text("\(NativeExtrasFormatting.number(sample.waitTime)) min")
+                                        .font(.caption2.weight(.semibold)).monospacedDigit().fixedSize()
+                                        .foregroundStyle(.primary)
+                                        .accessibilityIdentifier("wait-sample-value-\(ride.id)-\(index)")
+                                }
+                                .accessibilityLabel("Observation \(index + 1), \(ParkTimeFormatter.waitHistoryTimestamp(sample.observedAt, timeZone: timeZone))")
+                                .accessibilityValue("\(NativeExtrasFormatting.number(sample.waitTime)) minutes")
                         }
-                        .accessibilityLabel("Observation \(index + 1), \(ParkTimeFormatter.waitHistoryTimestamp(sample.observedAt, timeZone: timeZone))")
-                        .accessibilityValue("\(NativeExtrasFormatting.number(sample.waitTime)) minutes")
-                }
-                .chartXScale(domain: -0.5...max(0.5, Double(samples.count) - 0.5))
-                // Reserve room in points, so even a maximum/zero annotation fits
-                // at every text size without changing the recorded wait value.
-                .chartYScale(domain: 0...maximum, range: .plotDimension(
-                    startPadding: annotationAllowance, endPadding: annotationAllowance))
-                .chartXAxis {
-                    AxisMarks(values: Array(samples.indices)) { value in
-                        AxisGridLine()
-                        AxisValueLabel(anchor: .top) {
-                            if let index = value.as(Int.self), samples.indices.contains(index) {
-                                Text(ParkTimeFormatter.time(samples[index].observedAt, timeZone: timeZone))
-                                    .font(.caption2).fixedSize()
+                        .chartXScale(domain: -0.5...max(0.5, Double(samples.count) - 0.5),
+                                     range: .plotDimension(startPadding: 0, endPadding: 0))
+                        .chartYScale(domain: 0...maximum, range: .plotDimension(
+                            startPadding: annotationPadding, endPadding: annotationPadding))
+                        .chartXAxis { AxisMarks(values: Array(samples.indices)) { _ in AxisGridLine() } }
+                        .chartYAxis { AxisMarks(values: [0.0, maximum]) { _ in AxisGridLine() } }
+                        .frame(width: plotWidth, height: plotHeight)
+                        // Real text outside Charts' virtual axes remains measurable
+                        // and keeps the full local time at every Dynamic Type size.
+                        HStack(spacing: 0) {
+                            ForEach(Array(samples.enumerated()), id: \.element.id) { index, sample in
+                                HStack(spacing: 0) {
+                                    Spacer(minLength: 0)
+                                    Text(ParkTimeFormatter.time(sample.observedAt, timeZone: timeZone))
+                                        .font(.caption2).fixedSize()
+                                        .foregroundStyle(Color.pivotMuted)
+                                        .accessibilityIdentifier("wait-sample-time-\(ride.id)-\(index)")
+                                    Spacer(minLength: 0)
+                                }
+                                .frame(width: plotWidth / CGFloat(samples.count), height: timeLabelHeight)
                             }
                         }
                     }
                 }
-                .chartYAxis {
-                    AxisMarks(position: .leading, values: [0.0, maximum]) { value in
-                        AxisGridLine()
-                        AxisValueLabel {
-                            if let minutes = value.as(Double.self) { Text("\(NativeExtrasFormatting.number(minutes)) min") }
-                        }
-                    }
-                }
-                // Both label space and axes grow with the actual caption font,
-                // including the largest accessibility sizes. At most 12 columns.
-                .frame(width: max(geometry.size.width, axisAllowance + CGFloat(samples.count) * sampleColumnWidth),
-                       height: min(chartHeight, 320))
             }
             .defaultScrollAnchor(.trailing)
             .accessibilityElement(children: .contain)
@@ -732,6 +738,30 @@ struct NativeWaitHistoryView: View {
         }
         .frame(height: min(chartHeight, 320) + 20)
         .accessibilityLabel("Observed posted wait samples for \(ride.name), last six hours. Each labeled dot is one observation, equally spaced in time order; time gaps can vary.")
+    }
+}
+
+/// A separate gutter keeps axis-label width out of the measured data columns.
+struct NativeWaitChartYAxis: View {
+    let maximum: Double
+    let height: CGFloat
+    let padding: CGFloat
+
+    var body: some View {
+        GeometryReader { geometry in
+            let labelWidth = max(0, geometry.size.width - 8)
+            ZStack {
+                Text("\(NativeExtrasFormatting.number(maximum)) min").fixedSize()
+                    .frame(width: labelWidth, alignment: .trailing)
+                    .position(x: labelWidth / 2, y: padding)
+                Text("0 min").fixedSize()
+                    .frame(width: labelWidth, alignment: .trailing)
+                    .position(x: labelWidth / 2, y: height - padding)
+            }
+        }
+        .font(.caption2).foregroundStyle(Color.pivotMuted)
+        .frame(height: height)
+        .accessibilityHidden(true)
     }
 }
 

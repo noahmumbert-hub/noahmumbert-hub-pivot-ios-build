@@ -1,4 +1,5 @@
 import XCTest
+import UIKit
 
 final class PIVOTUITests: XCTestCase {
     private func mapFixtureApp(_ arguments: [String] = []) -> XCUIApplication {
@@ -121,9 +122,10 @@ final class PIVOTUITests: XCTestCase {
         let history = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Recent observed waits'")).firstMatch
         reveal(history, in: app); history.tap()
         let chart = app.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
-        reveal(chart, in: app); XCTAssertTrue(chart.isHittable)
+        centerFullyVisible(chart, in: app)
         screenshot("Every observed wait dot labeled latest samples", app: app)
         chart.swipeRight()
+        waitForSettledFrames([chart, chart.staticTexts["wait-sample-time-10916-0"].firstMatch])
         screenshot("Every observed wait dot labeled earlier samples", app: app)
         let sampleTimes = app.buttons["Sample times"].firstMatch
         reveal(sampleTimes, in: app); sampleTimes.tap()
@@ -159,9 +161,187 @@ final class PIVOTUITests: XCTestCase {
         }
     }
 
+    private func safeContentViewport(in app: XCUIApplication) -> CGRect {
+        let window = app.frame
+        var top = window.minY + 24
+        var bottom = window.maxY - 8
+        for bar in app.statusBars.allElementsBoundByIndex + app.navigationBars.allElementsBoundByIndex {
+            let frame = bar.frame
+            if !frame.isEmpty, frame.intersects(window), frame.maxY < window.midY {
+                top = max(top, frame.maxY + 8)
+            }
+        }
+        for bar in app.tabBars.allElementsBoundByIndex + app.keyboards.allElementsBoundByIndex {
+            let frame = bar.frame
+            if !frame.isEmpty, frame.intersects(window), frame.minY > window.midY {
+                bottom = min(bottom, frame.minY - 8)
+            }
+        }
+        return CGRect(x: window.minX + 8, y: top, width: window.width - 16, height: max(1, bottom - top))
+    }
+
+    private func assertContained(_ frame: CGRect, in viewport: CGRect, _ message: String,
+                                 file: StaticString = #filePath, line: UInt = #line) {
+        XCTAssertFalse(frame.isEmpty, message, file: file, line: line)
+        XCTAssertTrue(viewport.insetBy(dx: -1, dy: -1).contains(frame),
+                      "\(message). Frame \(frame); visible area \(viewport)", file: file, line: line)
+    }
+
+    private func waitForSettledFrames(_ elements: [XCUIElement],
+                                      file: StaticString = #filePath, line: UInt = #line) {
+        var previous: [CGRect] = []
+        var unchangedSince = Date()
+        let predicate = NSPredicate { _, _ in
+            guard elements.allSatisfy({ $0.exists && !$0.frame.isEmpty }) else { return false }
+            let frames = elements.map(\.frame)
+            if frames != previous { previous = frames; unchangedSince = Date() }
+            return Date().timeIntervalSince(unchangedSince) >= 0.25
+        }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: predicate, object: nil)], timeout: 4),
+                       .completed, "Displayed glyph frames must settle before measuring or capturing them", file: file, line: line)
+    }
+
+    /// Short drags converge on the measured content viewport without the SE
+    /// overshoot caused by alternating full-screen swipes. The whole target,
+    /// including both edges of a chart, must fit above the native tab bar.
+    private func centerFullyVisible(_ element: XCUIElement, in app: XCUIApplication,
+                                     file: StaticString = #filePath, line: UInt = #line) {
+        var previous = CGRect.null
+        for _ in 0..<22 {
+            let viewport = safeContentViewport(in: app)
+            var movement: CGFloat = min(170, viewport.height * 0.4)
+            if element.exists, !element.frame.isEmpty {
+                let frame = element.frame
+                guard frame.height <= viewport.height + 1, frame.width <= viewport.width + 1 else {
+                    XCTFail("Target cannot fit the visible content area. Frame \(frame); viewport \(viewport)", file: file, line: line)
+                    return
+                }
+                if viewport.insetBy(dx: -1, dy: -1).contains(frame),
+                   abs(frame.midY - viewport.midY) <= 12 || frame == previous {
+                    waitForSettledFrames([element], file: file, line: line)
+                    assertContained(element.frame, in: safeContentViewport(in: app), "The complete target must remain visible", file: file, line: line)
+                    return
+                }
+                let offset = frame.midY - viewport.midY
+                movement = min(movement, max(30, abs(offset))) * (offset < 0 ? -1 : 1)
+                previous = frame
+            }
+            let x = viewport.maxX - 3
+            let start = app.coordinate(withNormalizedOffset: .zero)
+                .withOffset(CGVector(dx: x - app.frame.minX, dy: viewport.midY + movement / 2 - app.frame.minY))
+            let end = start.withOffset(CGVector(dx: 0, dy: -movement))
+            start.press(forDuration: 0.05, thenDragTo: end)
+        }
+        screenshot("Complete target could not fit the content viewport", app: app)
+        XCTFail("Could not place the complete target inside the visible content area", file: file, line: line)
+    }
+
+    private func assertCompleteClock(_ label: XCUIElement, category: UIContentSizeCategory,
+                                     file: StaticString = #filePath, line: UInt = #line) {
+        let text = label.label
+        let clock = text.split(whereSeparator: \.isWhitespace).joined(separator: " ")
+        XCTAssertNotNil(clock.range(of: #"\d{1,2}:\d{2}\s?[AP]M"#, options: .regularExpression), file: file, line: line)
+        XCTAssertFalse(clock.contains("…") || clock.contains("..."), "Clocks must retain their complete hour, minute and AM/PM", file: file, line: line)
+        // Accessibility labels can retain characters that were visually
+        // ellipsized. Independently require enough space for their actual
+        // caption glyphs at the requested native content-size category.
+        let font = UIFont.preferredFont(forTextStyle: .caption2,
+            compatibleWith: UITraitCollection(preferredContentSizeCategory: category))
+        let glyphs = (text as NSString).size(withAttributes: [.font: font])
+        XCTAssertGreaterThanOrEqual(label.frame.width, ceil(glyphs.width) - 2,
+                                    "The displayed time must have room for every glyph", file: file, line: line)
+        XCTAssertGreaterThanOrEqual(label.frame.height, font.lineHeight - 2,
+                                    "The displayed time must have a complete caption line", file: file, line: line)
+    }
+
+    private func expectedTextHeight(_ text: String, width: CGFloat, style: UIFont.TextStyle,
+                                    category: UIContentSizeCategory) -> CGFloat {
+        let font = UIFont.preferredFont(forTextStyle: style,
+            compatibleWith: UITraitCollection(preferredContentSizeCategory: category))
+        let bounds = (text as NSString).boundingRect(with: CGSize(width: max(1, width), height: 10_000),
+            options: [.usesLineFragmentOrigin, .usesFontLeading], attributes: [.font: font], context: nil)
+        return ceil(bounds.height)
+    }
+
+    private func assertFullTextLayout(_ text: XCUIElement, style: UIFont.TextStyle = .caption1,
+                                      file: StaticString = #filePath, line: UInt = #line) {
+        XCTAssertFalse(text.label.contains("…") || text.label.contains("..."),
+                       "Supporting text must retain its full wording", file: file, line: line)
+        let required = expectedTextHeight(text.label, width: text.frame.width, style: style, category: .accessibilityLarge)
+        XCTAssertGreaterThanOrEqual(text.frame.height, required - 3,
+                                    "The visible text frame must accommodate its entire wrapped wording", file: file, line: line)
+    }
+
+    private func centerHorizontally(_ label: XCUIElement, in scrollView: XCUIElement, app: XCUIApplication,
+                                    file: StaticString = #filePath, line: UInt = #line) {
+        XCTAssertTrue(label.waitForExistence(timeout: 5), "A genuine displayed time label must exist", file: file, line: line)
+        var previous = CGRect.null
+        for _ in 0..<14 {
+            let viewport = scrollView.frame.intersection(safeContentViewport(in: app)).insetBy(dx: 4, dy: 0)
+            let frame = label.frame
+            guard !frame.isEmpty, frame.width <= viewport.width + 1 else {
+                XCTFail("A complete time label must fit its scroll viewport. Frame \(frame); viewport \(viewport)", file: file, line: line)
+                return
+            }
+            let fullyVisible = viewport.insetBy(dx: -1, dy: -1).contains(frame)
+            // The first/last column can reach a scroll limit before the exact
+            // midpoint. Full glyph containment remains mandatory at that limit.
+            if fullyVisible && (abs(frame.midX - viewport.midX) <= 8 || frame == previous) {
+                waitForSettledFrames([scrollView, label], file: file, line: line)
+                assertContained(label.frame, in: viewport, "The entire time label must be inside the horizontal viewport", file: file, line: line)
+                return
+            }
+            previous = frame
+            let movement = min(viewport.width * 0.65, max(25, abs(frame.midX - viewport.midX))) * (frame.midX < viewport.midX ? 1 : -1)
+            let start = app.coordinate(withNormalizedOffset: .zero)
+                .withOffset(CGVector(dx: viewport.midX - movement / 2 - app.frame.minX, dy: viewport.midY - app.frame.minY))
+            start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: movement, dy: 0)))
+        }
+        XCTFail("Could not bring the complete time label into its horizontal viewport", file: file, line: line)
+    }
+
+    private func assertHistoryColumns(_ waits: [String], chart: XCUIElement, app: XCUIApplication,
+                                      category: UIContentSizeCategory = .accessibilityExtraExtraExtraLarge, capture: String) {
+        centerFullyVisible(chart, in: app)
+        assertObservedChartSamples(waits, chart: chart)
+        let times = chart.staticTexts.matching(NSPredicate(format: "identifier BEGINSWITH 'wait-sample-time-10916-'"))
+        XCTAssertEqual(times.count, waits.count, "Every dot must have a genuine displayed local-time label")
+        for index in waits.indices.reversed() {
+            let time = chart.staticTexts["wait-sample-time-10916-\(index)"].firstMatch
+            centerHorizontally(time, in: chart, app: app)
+            assertCompleteClock(time, category: category)
+            let point = chart.descendants(matching: .any).matching(NSPredicate(format: "label BEGINSWITH %@", "Observation \(index + 1),")).firstMatch
+            XCTAssertEqual(point.value as? String, "\(waits[index]) minutes")
+            let annotation = chart.staticTexts["wait-sample-value-10916-\(index)"].firstMatch
+            if annotation.exists {
+                XCTAssertEqual(annotation.label, "\(waits[index]) min")
+                assertContained(annotation.frame, in: chart.frame.intersection(safeContentViewport(in: app)), "The complete wait annotation must remain visible")
+            }
+            // Charts may expose annotations through the semantic Observation
+            // element instead of a Text node. The real time label positions the
+            // same column; each attachment also records that dot's visible glyphs.
+            assertContained(chart.frame, in: safeContentViewport(in: app), "The entire chart must be visible for every captured observation")
+            screenshot("\(capture) observation \(index + 1) value and full local time", app: app)
+        }
+    }
+
+    private func assertForecastTimeLabels(in app: XCUIApplication, capture: String) {
+        let chart = app.descendants(matching: .any)["wait-forecast-chart"].firstMatch
+        centerFullyVisible(chart, in: app)
+        let times = chart.staticTexts.matching(NSPredicate(format: "identifier BEGINSWITH 'wait-forecast-time-'"))
+        XCTAssertGreaterThan(times.count, 1, "A multi-hour forecast must display its actual time labels")
+        XCTAssertLessThanOrEqual(times.count, 25)
+        for index in (0..<times.count).reversed() {
+            let time = chart.staticTexts["wait-forecast-time-\(index)"].firstMatch
+            centerHorizontally(time, in: chart, app: app)
+            assertCompleteClock(time, category: .accessibilityLarge)
+            screenshot("\(capture) full forecast time \(index + 1)", app: app)
+        }
+    }
+
     private func assertObservedSampleRows(_ waits: [String], app: XCUIApplication) {
         let disclosure = app.buttons["Sample times"].firstMatch
-        reveal(disclosure, in: app)
+        centerFullyVisible(disclosure, in: app)
         disclosure.tap()
         let history = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Recent observed waits'")).firstMatch
         XCTAssertEqual(history.value as? String, "Expanded", "Opening sample times must not toggle the parent disclosure")
@@ -169,7 +349,7 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertEqual(app.staticTexts.matching(NSPredicate(format: "identifier BEGINSWITH 'wait-sample-row-10916-'")).count, waits.count)
         for (index, wait) in waits.enumerated() {
             let row = app.staticTexts["wait-sample-row-10916-\(index)"]
-            reveal(row, in: app)
+            centerFullyVisible(row, in: app)
             XCTAssertTrue(row.label.hasSuffix("· \(wait) min"), "Observation \(index + 1) must retain its own wait")
             XCTAssertGreaterThanOrEqual(row.frame.minX, app.frame.minX)
             XCTAssertLessThanOrEqual(row.frame.maxX, app.frame.maxX)
@@ -180,10 +360,11 @@ final class PIVOTUITests: XCTestCase {
         for appearance in ["--ui-light", "--ui-dark"] {
             let app = observedHistoryFixture(["--ride-history-case=equal", appearance])
             let chart = app.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
-            reveal(chart, in: app)
+            centerFullyVisible(chart, in: app)
             assertObservedChartSamples(Array(repeating: "15", count: 12), chart: chart)
             screenshot("Observed history repeated waits latest \(appearance)", app: app)
             chart.swipeRight(); chart.swipeRight(); chart.swipeRight(); chart.swipeRight()
+            waitForSettledFrames([chart, chart.staticTexts["wait-sample-time-10916-0"].firstMatch])
             screenshot("Observed history repeated waits earlier \(appearance)", app: app)
             assertObservedSampleRows(Array(repeating: "15", count: 12), app: app)
             app.terminate()
@@ -201,11 +382,9 @@ final class PIVOTUITests: XCTestCase {
                 XCTAssertFalse(chart.exists, "Unavailable observations must not become zero-minute dots")
                 XCTAssertFalse(app.staticTexts["Sample times"].exists)
             } else {
-                reveal(chart, in: app)
-                screenshot("Observed history \(mode) before sample table", app: app)
                 let maximum = Double(1440).formatted(.number.precision(.fractionLength(0...1)))
                 let waits = mode == "single" ? ["12.5"] : ["0", "12.5", maximum]
-                assertObservedChartSamples(waits, chart: chart)
+                assertHistoryColumns(waits, chart: chart, app: app, category: .large, capture: "Observed history \(mode)")
                 assertObservedSampleRows(waits, app: app)
             }
             screenshot("Observed history \(mode)", app: app)
@@ -213,30 +392,33 @@ final class PIVOTUITests: XCTestCase {
         }
     }
 
-    func testObservedHistoryRemainsReadableAtLargestAccessibilitySizeInRowsAndDetails() {
+    func testObservedHistoryRemainsReadableAtLargestAccessibilitySizeInRows() {
         let app = observedHistoryFixture(["--ui-largest-type", "--ui-dark"])
         let chart = app.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
-        reveal(chart, in: app)
-        XCTAssertLessThanOrEqual(chart.frame.height, 341, "Larger labels must not make the chart taller than a compact viewport")
-        screenshot("Observed history largest accessibility size", app: app)
         let waits = ["20", "20", "15", "15", "0", "15", "25", "20", "15", "10", "15", "15"]
-        assertObservedChartSamples(waits, chart: chart)
+        assertHistoryColumns(waits, chart: chart, app: app, capture: "Largest observed history row")
         assertObservedSampleRows(waits, app: app)
         XCTAssertGreaterThan(app.staticTexts["wait-sample-row-10916-11"].frame.height, 60,
                              "Measure the real wrapping sample text to verify the largest size was applied")
+        screenshot("Largest observed history sample times", app: app)
+        app.terminate()
+    }
+
+    func testObservedHistoryRemainsReadableAtLargestAccessibilitySizeInDetails() {
+        let app = observedHistoryFixture(["--ui-largest-type", "--ui-dark"])
         let ride = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Guardians of the Galaxy'")).firstMatch
         reveal(ride, in: app); ride.tap()
         XCTAssertTrue(app.navigationBars["Ride information"].waitForExistence(timeout: 5))
         let bodySize = app.staticTexts["Ride information body size"]
         XCTAssertTrue(bodySize.waitForExistence(timeout: 5))
         XCTAssertGreaterThanOrEqual(bodySize.frame.height, 50, "Ride details must actually render the largest accessibility text size")
-        reveal(chart, in: app)
-        XCTAssertTrue(chart.isHittable, "Ride details must use the same labeled chart")
-        assertObservedChartSamples(waits, chart: chart)
-        screenshot("Observed history largest accessibility size in ride details", app: app)
+        let chart = app.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
+        let waits = ["20", "20", "15", "15", "0", "15", "25", "20", "15", "10", "15", "15"]
+        assertHistoryColumns(waits, chart: chart, app: app, capture: "Largest observed history ride detail")
         let done = app.buttons["Done"]
         XCTAssertTrue(done.isHittable)
         done.tap()
+        app.terminate()
     }
 
     func testHistoryLowestWaitPredictionWithholdsMissingAndStaleEvidence() {
@@ -256,50 +438,70 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testLowestWaitEvidenceAndHourlySheetStayConsistentAtAccessibilityTextSize() {
-        for expired in [false, true] {
-            let app = rootFixture(["--reference-ui-park=5", "--ride-history-ui-test", "--ride-history-supported", "--ui-large-type"]
-                + (expired ? ["--ride-search-expired"] : []))
-            let search = app.textFields["Ride search"]
-            reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
-            let history = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Recent observed waits'")).firstMatch
-            reveal(history, in: app); history.tap()
-            if expired {
-                let unavailable = app.staticTexts["Prediction unavailable"].firstMatch
-                reveal(unavailable, in: app); XCTAssertTrue(unavailable.isHittable)
-                XCTAssertFalse(app.staticTexts["ride-lowest-wait-window"].exists)
-                XCTAssertFalse(app.staticTexts["lowest-wait-source-time"].exists)
-            } else {
-                let lowest = app.staticTexts["ride-lowest-wait-window"]
-                reveal(lowest, in: app); XCTAssertTrue(lowest.isHittable)
-                XCTAssertTrue(lowest.label.contains("about 10 min"))
-                let parkTime = app.staticTexts["lowest-wait-park-time"]
-                reveal(parkTime, in: app); XCTAssertTrue(parkTime.isHittable)
-                XCTAssertGreaterThan(parkTime.frame.height, 40, "Park time and zone must wrap at accessibility size")
-                let variation = app.staticTexts["lowest-wait-variation"]
-                reveal(variation, in: app); XCTAssertTrue(variation.isHittable)
-                XCTAssertGreaterThan(variation.frame.height, 40, "The complete uncertainty label must wrap")
-                let source = app.staticTexts["lowest-wait-source-time"]
-                reveal(source, in: app); XCTAssertTrue(source.isHittable)
-                XCTAssertTrue(source.label.contains("Wait source checked"))
-                let observed = app.staticTexts["lowest-wait-history-time"]
-                reveal(observed, in: app); XCTAssertTrue(observed.isHittable)
-                XCTAssertTrue(observed.label.contains("History last observed"))
-            }
-            screenshot(expired ? "Lowest wait unavailable at accessibility size" : "Lowest wait evidence at accessibility size", app: app)
-            let hourly = app.buttons["ride-history-hourly-estimates"]
-            reveal(hourly, in: app); hourly.tap()
-            XCTAssertTrue(app.navigationBars["Predicted waits"].waitForExistence(timeout: 5))
-            if expired {
-                XCTAssertFalse(app.staticTexts["lowest-predicted-wait"].exists)
-                XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH 'History only'")).firstMatch.exists)
-            } else {
-                let lowest = app.staticTexts["lowest-predicted-wait"]
-                reveal(lowest, in: app); XCTAssertTrue(lowest.label.contains("about 10 min"))
-                XCTAssertTrue(app.staticTexts["lowest-wait-source-time"].exists)
-            }
-            screenshot(expired ? "Hourly sheet withholds stale lowest wait" : "Hourly sheet retains supported lowest wait", app: app)
-            app.buttons["Done"].tap(); app.terminate()
+        checkLowestWaitEvidenceAndHourlySheet(expired: false)
+    }
+
+    func testStaleLowestWaitHourlySheetWithholdsRecommendationAtAccessibilityTextSize() {
+        checkLowestWaitEvidenceAndHourlySheet(expired: true)
+    }
+
+    private func checkLowestWaitEvidenceAndHourlySheet(expired: Bool) {
+        let app = rootFixture(["--reference-ui-park=5", "--ride-history-ui-test", "--ride-history-supported", "--ui-large-type"]
+            + (expired ? ["--ride-search-expired"] : []))
+        let search = app.textFields["Ride search"]
+        reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
+        let history = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Recent observed waits'")).firstMatch
+        reveal(history, in: app); history.tap()
+        if expired {
+            let unavailable = app.staticTexts["Prediction unavailable"].firstMatch
+            centerFullyVisible(unavailable, in: app)
+            XCTAssertFalse(app.staticTexts["ride-lowest-wait-window"].exists)
+            XCTAssertFalse(app.staticTexts["lowest-wait-source-time"].exists)
+        } else {
+            let lowest = app.staticTexts["ride-lowest-wait-window"]
+            centerFullyVisible(lowest, in: app)
+            XCTAssertTrue(lowest.label.contains("about 10 min"))
+            let parkTime = app.staticTexts["lowest-wait-park-time"]
+            centerFullyVisible(parkTime, in: app)
+            XCTAssertGreaterThan(parkTime.frame.height, 40, "Park time and zone must wrap at accessibility size")
+            let variation = app.staticTexts["lowest-wait-variation"]
+            centerFullyVisible(variation, in: app)
+            XCTAssertGreaterThan(variation.frame.height, 40, "The complete uncertainty label must wrap")
+            let source = app.staticTexts["lowest-wait-source-time"]
+            centerFullyVisible(source, in: app)
+            XCTAssertTrue(source.label.contains("Wait source checked"))
+            let observed = app.staticTexts["lowest-wait-history-time"]
+            centerFullyVisible(observed, in: app)
+            XCTAssertTrue(observed.label.contains("History last observed"))
         }
+        screenshot(expired ? "Lowest wait unavailable at accessibility size" : "Lowest wait evidence at accessibility size", app: app)
+        let hourly = app.buttons["ride-history-hourly-estimates"]
+        centerFullyVisible(hourly, in: app); hourly.tap()
+        XCTAssertTrue(app.navigationBars["Predicted waits"].waitForExistence(timeout: 5))
+        let bodySize = app.staticTexts["Hourly forecast body size"]
+        XCTAssertTrue(bodySize.waitForExistence(timeout: 5))
+        XCTAssertGreaterThanOrEqual(bodySize.frame.height, 35,
+                                    "The actual presented hourly sheet must render accessibility-size body text")
+        if expired {
+            XCTAssertFalse(app.staticTexts["lowest-predicted-wait"].exists)
+            XCTAssertFalse(app.staticTexts["lowest-wait-source-time"].exists)
+            let saved = app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH 'History only'")).firstMatch
+            centerFullyVisible(saved, in: app)
+            screenshot("Hourly sheet withholds stale lowest wait at measured accessibility size", app: app)
+        } else {
+            let lowest = app.staticTexts["lowest-predicted-wait"]
+            centerFullyVisible(lowest, in: app)
+            XCTAssertTrue(lowest.label.contains("about 10 min"))
+            XCTAssertGreaterThan(lowest.frame.height, 40, "The complete hourly-window text must really wrap at accessibility size")
+            let source = app.staticTexts["lowest-wait-source-time"]
+            centerFullyVisible(source, in: app)
+            XCTAssertTrue(source.label.contains("Wait source checked"))
+            screenshot("Hourly sheet retains supported lowest wait at measured accessibility size", app: app)
+            assertForecastTimeLabels(in: app, capture: "Accessibility hourly sheet")
+        }
+        let done = app.buttons["Done"]
+        XCTAssertTrue(done.isHittable)
+        done.tap(); app.terminate()
     }
 
     func testReopeningWindowShowsSupportedBestPredictionAndUnavailableStates() {
@@ -358,21 +560,71 @@ final class PIVOTUITests: XCTestCase {
     func testReopeningPredictionRemainsReadableAtAccessibilitySizeAndInRadar() {
         let app = rootFixture(["--reference-ui-park=5", "--reopening-ui-test", "--ui-large-type", "--ui-dark"])
         selectDownRides(in: app)
+        let headline = app.staticTexts["reopening-headline-159"].firstMatch
+        centerFullyVisible(headline, in: app)
+        XCTAssertEqual(headline.label, "Historical reopening range")
+        assertFullTextLayout(headline)
+        let window = app.staticTexts["reopening-window-159"].firstMatch
+        centerFullyVisible(window, in: app)
+        assertFullTextLayout(window)
         let prediction = app.staticTexts["reopening-best-prediction-159"].firstMatch
-        reveal(prediction, in: app)
-        XCTAssertTrue(prediction.isHittable)
+        centerFullyVisible(prediction, in: app)
         XCTAssertTrue(prediction.label.hasPrefix("Best prediction ·"))
-        XCTAssertGreaterThanOrEqual(prediction.frame.minX, 0)
-        XCTAssertLessThanOrEqual(prediction.frame.maxX, app.frame.width)
+        XCTAssertTrue(prediction.label.hasSuffix("(estimate)"))
+        assertFullTextLayout(prediction)
+        let detail = app.staticTexts["reopening-detail-159"].firstMatch
+        centerFullyVisible(detail, in: app)
+        XCTAssertEqual(detail.label, "Based on comparable observed closures. The park has not announced a reopening time.")
+        assertFullTextLayout(detail)
         screenshot("Reopening best prediction accessibility row", app: app)
         app.tabBars.buttons["More"].tap()
         let closures = app.buttons["Closures & park weather"]
-        reveal(closures, in: app); closures.tap()
-        reveal(prediction, in: app)
-        XCTAssertTrue(prediction.isHittable)
+        centerFullyVisible(closures, in: app); closures.tap()
+        checkRadarSelectionAtAccessibilitySize(in: app)
+        centerFullyVisible(prediction, in: app)
         XCTAssertTrue(prediction.label.hasSuffix("(estimate)"))
-        XCTAssertTrue(app.staticTexts["reopening-window-159"].firstMatch.exists)
+        assertFullTextLayout(prediction, style: .subheadline)
+        centerFullyVisible(window, in: app)
+        assertFullTextLayout(window, style: .title2)
         screenshot("Reopening best prediction accessibility radar", app: app)
+    }
+
+    private func checkRadarSelectionAtAccessibilitySize(in app: XCUIApplication) {
+        let picker = app.buttons["radar-featured-ride-picker"].firstMatch
+        centerFullyVisible(picker, in: app)
+        let automaticTitle = "Automatic · highest recent demand"
+        func choose(_ title: String) {
+            picker.tap()
+            let option = app.buttons.matching(NSPredicate(format: "label == %@", title)).firstMatch
+            XCTAssertTrue(option.waitForExistence(timeout: 5))
+            option.tap()
+            let updated = NSPredicate { _, _ in picker.value as? String == title }
+            XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: updated, object: nil)], timeout: 5), .completed)
+        }
+        if picker.value as? String != automaticTitle { choose(automaticTitle) }
+        centerFullyVisible(picker, in: app)
+        XCTAssertEqual(picker.label, "Featured ride")
+        XCTAssertEqual(picker.value as? String, automaticTitle)
+        let selection = app.staticTexts["radar-featured-ride-selection"].firstMatch
+        if selection.exists {
+            waitForSettledFrames([picker, selection])
+            XCTAssertEqual(selection.label, automaticTitle)
+            assertContained(selection.frame, in: picker.frame, "The selected ride's full two-line label must fit its control")
+            assertFullTextLayout(selection, style: .body)
+        } else {
+            // Native Menu may combine its label into the button. Check the
+            // actual control's natural height against independently measured
+            // body glyphs, without substituting a hidden layout probe.
+            let required = expectedTextHeight(automaticTitle, width: picker.frame.width - 40,
+                style: .body, category: .accessibilityLarge)
+            XCTAssertGreaterThanOrEqual(picker.frame.height, max(44, required) - 3,
+                                        "The Menu must grow enough to contain its complete wrapped title")
+        }
+        screenshot("Radar automatic selection full accessibility label", app: app)
+        choose("Spaceship Earth")
+        XCTAssertEqual(picker.value as? String, "Spaceship Earth", "The flexible label must preserve the original pin binding")
+        choose(automaticTitle)
+        XCTAssertEqual(picker.value as? String, automaticTitle, "Automatic selection must remain available after pinning")
     }
 
     private func selectDownRides(in app: XCUIApplication) {

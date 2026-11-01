@@ -94,8 +94,11 @@ struct RadarCardView: View {
                     }
 
                     Text(guidance.headline).font(.headline)
+                        .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
+                        .accessibilityIdentifier("reopening-headline-\(ride.id)")
                     if let range = guidance.range {
                         Text(range).font(.title2.weight(.bold)).monospacedDigit()
+                            .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
                             .accessibilityIdentifier("reopening-window-\(ride.id)")
                     }
                     Text(guidance.bestPredictionLabel).font(.subheadline)
@@ -103,6 +106,7 @@ struct RadarCardView: View {
                         .accessibilityIdentifier("reopening-best-prediction-\(ride.id)")
                     Text(guidance.detail).font(.subheadline).foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
+                        .accessibilityIdentifier("reopening-detail-\(ride.id)")
                 }
 
                 Spacer(minLength: 0)

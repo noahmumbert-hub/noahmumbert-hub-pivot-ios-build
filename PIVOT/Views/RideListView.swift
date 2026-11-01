@@ -369,14 +369,19 @@ struct RideDetailScreenView: View {
                                 let guidance = ReopeningGuidance.presentation(ride: ride, snapshot: store.snapshot,
                                     feedHealth: store.feedHealth(at: date), at: date, timeZone: timeZone)
                                 Text(guidance.headline).font(.headline)
+                                    .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
+                                    .accessibilityIdentifier("reopening-headline-\(ride.id)")
                                 if let range = guidance.range {
                                     Text(range).font(.headline)
+                                        .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
                                         .accessibilityIdentifier("reopening-window-\(ride.id)")
                                 }
                                 Text(guidance.bestPredictionLabel)
                                     .fixedSize(horizontal: false, vertical: true)
                                     .accessibilityIdentifier("reopening-best-prediction-\(ride.id)")
                                 Text(guidance.detail).foregroundStyle(Color.pivotMuted)
+                                    .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
+                                    .accessibilityIdentifier("reopening-detail-\(ride.id)")
                             }
                             if ride.status == .scheduled {
                                 if let closure = ride.scheduledClosure {
@@ -463,15 +468,21 @@ private struct RideRowView: View {
                             .foregroundStyle(statusColor)
                         VStack(alignment: .leading, spacing: 4) {
                             Text(guidance.headline).font(.caption.weight(.semibold)).foregroundStyle(.primary)
+                                .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
+                                .accessibilityIdentifier("reopening-headline-\(ride.id)")
                             if let range = guidance.range {
                                 Text(range).font(.caption.weight(.semibold)).foregroundStyle(.primary)
+                                    .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
                                     .accessibilityIdentifier("reopening-window-\(ride.id)")
                             }
                             Text(guidance.bestPredictionLabel).font(.caption.weight(.medium))
                                 .fixedSize(horizontal: false, vertical: true)
                                 .accessibilityIdentifier("reopening-best-prediction-\(ride.id)")
                             Text(guidance.detail).font(.caption).foregroundStyle(Color.pivotMuted)
+                                .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
+                                .accessibilityIdentifier("reopening-detail-\(ride.id)")
                         }
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
                     .padding(.top, 24)
                     .overlay(alignment: .top) { Rectangle().fill(Color.pivotBorder).frame(height: 1).padding(.top, 12) }

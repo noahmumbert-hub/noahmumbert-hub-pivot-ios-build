@@ -38,9 +38,9 @@ jobs:
   build:
     if: (github.ref != 'refs/heads/diagnostics/apple-native-redesign' || contains(github.event.head_commit.message, '[full-regression]') || inputs.scope == 'all') && (github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all')
     runs-on: macos-15
-    # The measured complete test/archive run exceeded 35m after ARCHIVE SUCCEEDED,
-    # before IPA packaging and evidence uploads could finish. Keep every gate.
-    timeout-minutes: 45
+    # The combined native suite takes up to 37m before archive. Added full-frame
+    # and modal accessibility checks need room for tests, archive and uploads.
+    timeout-minutes: 60
     env:
       DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
       PIVOT_SIMULATOR_NAME: iPhone 16 Pro
@@ -100,7 +100,7 @@ jobs:
     if: (github.ref != 'refs/heads/diagnostics/apple-native-redesign' || contains(github.event.head_commit.message, '[full-regression]') || inputs.scope == 'all') && (github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all')
     name: iPhone regression (${{ matrix.simulator }})
     runs-on: macos-15
-    timeout-minutes: 45
+    timeout-minutes: 60
     strategy:
       fail-fast: false
       matrix:

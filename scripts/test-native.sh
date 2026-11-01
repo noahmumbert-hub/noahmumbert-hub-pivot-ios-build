@@ -68,7 +68,8 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedWaitDotsKeepEveryValueAndOpenLowestWaitForecast
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLabelsKeepTwelveRepeatedDotsInBothAppearances
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryHandlesSingleSparseAndUnavailableSamples
-      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryRemainsReadableAtLargestAccessibilitySizeInRowsAndDetails
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryRemainsReadableAtLargestAccessibilitySizeInRows
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryRemainsReadableAtLargestAccessibilitySizeInDetails
     ) ;;
   lowest-waits)
     test_options+=(
@@ -76,6 +77,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedWaitDotsKeepEveryValueAndOpenLowestWaitForecast
       -only-testing:PIVOTUITests/PIVOTUITests/testHistoryLowestWaitPredictionWithholdsMissingAndStaleEvidence
       -only-testing:PIVOTUITests/PIVOTUITests/testLowestWaitEvidenceAndHourlySheetStayConsistentAtAccessibilityTextSize
+      -only-testing:PIVOTUITests/PIVOTUITests/testStaleLowestWaitHourlySheetWithholdsRecommendationAtAccessibilityTextSize
     ) ;;
   reopening-accessibility)
     test_options+=(
