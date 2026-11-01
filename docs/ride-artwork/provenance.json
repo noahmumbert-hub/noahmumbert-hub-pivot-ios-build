@@ -28815,6 +28815,1461 @@
       "generationSteps": []
     },
     {
+      "parkId": 59,
+      "rideId": 141119820887634,
+      "rideName": "PEANUTS™ Pirates",
+      "alt": "Illustrated PEANUTS™ Pirates at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:42:01.949801+00:00",
+      "originalSHA256": "810c733dd2dfa978652a84872ce31c36209ec09cbb6b3dd80d167884bcb8ed04",
+      "review": "Accepted: Actually viewed final generated original. Source boat number 4, brown faux-wood finish, white bench, common black lap bar, real mast and attached blue carrier remain, with ordinary secured children and realistic dusk.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fdbd465ebc3462776297df42703bc5458b7d831b0-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "PEANUTS™ Pirates at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/peanuts-pirates",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "11fef989a90957369cf2b31da7dc9b1ab9ad113c76929712b31ae7de3311fc8e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator PEANUTS Pirates photo and target page. Brown faux-wood small boat car number 4 has white bench, black common lap bar and ordinary children, actual vertical physical mast and blue platform/arms, with neighboring boats visible. Preserve this connected car-section only, no invented pirate ship."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-141119820887634-thumbnail.jpg",
+      "thumbnailSHA256": "0eacf09b8d3054c3e8fbf11deca5a4fae0f0a9f857718a052d34df1eb2a5fb5f",
+      "thumbnailBytes": 22759,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-141119820887634-detail.jpg",
+      "detailSHA256": "d6390a405e2074b8939e4fac4a95a06b2ef024e101259c4b5fb864a84d298fb6",
+      "detailBytes": 137907,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-141119820887634",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict PEANUTS™ Pirates at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator PEANUTS Pirates photo and target page. Brown faux-wood small boat car number 4 has white bench, black common lap bar and ordinary children, actual vertical physical mast and blue platform/arms, with neighboring boats visible. Preserve this connected car-section only, no invented pirate ship. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "8557d9ec9e1ac4deb109bcdd668c67fbcfdbe69d8569f21cab76f324f34cc7e6",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 146446109647292,
+      "rideName": "Carolina Cyclone",
+      "alt": "Illustrated Carolina Cyclone at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:43:48.147339+00:00",
+      "originalSHA256": "7d1400a9cffd2e89a5996e6d96ee2a95e8b612471867d39b26f1e38bcc196e56",
+      "review": "Accepted: Actually viewed final generated original. Yellow/orange front car and black shoulder restraints retain source seating and actual guiding wheels on teal tubular rail/ties; close support/walkway section is recognizable.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe62fb7877f300184a87aabff149c1bd183c41ab0-2048x1365.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Carolina Cyclone Roller Coaster at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/carolina-cyclone",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "627201fae10fd0939879b2a2025f9d069da4a1b2fcf2cb56a43e198dc6368bd0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Carolina Cyclone photograph and target body. Tight yellow/orange coaster front car with ordinary two-abreast secured riders in black shoulder restraints/yellow headrests, actual wheel guides attached to teal tubular rails/triangular ties, teal maintenance walkway and trees. Preserve only this source section, no invented full route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-146446109647292-thumbnail.jpg",
+      "thumbnailSHA256": "3c88abb5d18b8b0e6070ba904164618b873136892d92e37b61bee76bd5228fd1",
+      "thumbnailBytes": 26228,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-146446109647292-detail.jpg",
+      "detailSHA256": "704843bbba45887185fa7d290500a2d5798549c368c811195958265dcb702efe",
+      "detailBytes": 155867,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-146446109647292",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Carolina Cyclone at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Carolina Cyclone photograph and target body. Tight yellow/orange coaster front car with ordinary two-abreast secured riders in black shoulder restraints/yellow headrests, actual wheel guides attached to teal tubular rails/triangular ties, teal maintenance walkway and trees. Preserve only this source section, no invented full route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "21e0e8bb5bf0b7df41f85b71da4ef05599e62425e689bb49e0a7dee974873a5d",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 158738822395259,
+      "rideName": "The Flying Cobras",
+      "alt": "Illustrated The Flying Cobras at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:42:55.498611+00:00",
+      "originalSHA256": "f564d39bb05883644edd60ebfc082ef427899d2893db0702b572e51fd2234aa3",
+      "review": "Accepted: Actually viewed final generated original. Single seven-car multicolor train remains connected upside down under blue inversion rail with attached wheel chassis and ordinary restrained riders; photographed individual pilot paint remains recognizable.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffae01c11436e8c0aa7f135f3e9c90ba16b3e042f-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The Flying Cobras Roller Coaster at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/the-flying-cobras",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "944a3817e9f71be53029975998023bbc3cb34092317cb587d56a27e95cabadd5",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Flying Cobras photo and target page. Single connected multicolor seven-car train upside down on blue inversion rails, white wheel bogies grip actual rail; secured ordinary riders and individual painted pilot/USA/checker multicolor car panels. Preserve visible blue arch section and attachment, no new flags or unseen route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-158738822395259-thumbnail.jpg",
+      "thumbnailSHA256": "1705294e21fe8ce57003bd2680f24183e989809001059110092615ca0b75f382",
+      "thumbnailBytes": 21470,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-158738822395259-detail.jpg",
+      "detailSHA256": "aef74ffbf447c4fb3a90ba80c0c8562ef1587595babd7a68e913f4cc3de8a172",
+      "detailBytes": 143949,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-158738822395259",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict The Flying Cobras at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Flying Cobras photo and target page. Single connected multicolor seven-car train upside down on blue inversion rails, white wheel bogies grip actual rail; secured ordinary riders and individual painted pilot/USA/checker multicolor car panels. Preserve visible blue arch section and attachment, no new flags or unseen route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "b5c3485b5aba40709cbf4b0b87fe99637b0594db962bbb2da6879a4b887533e1",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 160059869374506,
+      "rideName": "Ripcord",
+      "alt": "Illustrated Ripcord at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:44:15.335708+00:00",
+      "originalSHA256": "3468a54a4f34a4796814a0d8053e037629267c43c85a6d98b62cb6f02204cc13",
+      "review": "Accepted: Actually viewed final generated original. Clothed prone rider remains in source blue-gray body harness with black webbing, rainbow bands, secured feet, real suspension lines and release cord; no invented tower or ground.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1d72fe0ebf141ac2614db6fc695d02a04bcab62c-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Ripcord at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/ripcord",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "bb17afe8ca87affbb3cbef481898aeabe253376e5b8aca56ffb377ede4036baa",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Ripcord photo and target body. Tight source of ordinary clothed rider horizontal/prone in blue-gray body harness, black webbing and rainbow lateral stripes, red back pad, actual black straps joining a metal ring/carabiner above, yellow release cord with orange ball below, secured feet. Source-supported harness/cables against sky only; do not invent unseen tower or ground."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-160059869374506-thumbnail.jpg",
+      "thumbnailSHA256": "12e17c91f26dca298b35cec2f1fcf0a3f37f34a1beea394194b47e4edeed2be5",
+      "thumbnailBytes": 16293,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-160059869374506-detail.jpg",
+      "detailSHA256": "3522da427866f60240af98cdd6fc9ada8b850ae95509107a8622f96bb46d9c5a",
+      "detailBytes": 92696,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-160059869374506",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Ripcord at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Ripcord photo and target body. Tight source of ordinary clothed rider horizontal/prone in blue-gray body harness, black webbing and rainbow lateral stripes, red back pad, actual black straps joining a metal ring/carabiner above, yellow release cord with orange ball below, secured feet. Source-supported harness/cables against sky only; do not invent unseen tower or ground. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "740be96a6474154d6e3057bbd201afd29b1e6b048597d92fbd2b3e0a890fb881",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 161613912711481,
+      "rideName": "Wind Star",
+      "alt": "Illustrated Wind Star at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:44:56.692266+00:00",
+      "originalSHA256": "4359c010ae6a41c6e81dfd1fbc1d09b7757421221c0a9f18013e44b9e7ea46e4",
+      "review": "Accepted: Actually viewed final generated original. Gray arms and red pivots connect paired white seats to the actual blue/orange compass hub; framed orange/yellow/gray triangular wings and ordinary secured riders preserve source hardware.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc93e4007a9338f8ded93090b185937c1cdda7f5b-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Wind Star at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/wind-star",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "450f0a7894ba3cf523042660b3b8e122e2d07a5c8f698e5edf4c427bfd287345",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Wind Star photo and target page. Actual blue/orange hub with orange compass ornament, gray rigid radial arms with red hinge plates attach white paired molded seats/ordinary restrained riders; orange/yellow/gray triangular fabric wing canopies use actual framed pivots and seat forks, source neighboring steel coaster. Keep only visible connected mechanical section."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-161613912711481-thumbnail.jpg",
+      "thumbnailSHA256": "bfffe56b84cd8ed0ed871b2fd2adfda7d6ee6133faa2e9c4a3423bb3bb27bf1c",
+      "thumbnailBytes": 26142,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-161613912711481-detail.jpg",
+      "detailSHA256": "281806f1a63a761f26ad31d1fb7f53ed1fff85faddad031ef25d179a831ad3fd",
+      "detailBytes": 173791,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-161613912711481",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Wind Star at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Wind Star photo and target page. Actual blue/orange hub with orange compass ornament, gray rigid radial arms with red hinge plates attach white paired molded seats/ordinary restrained riders; orange/yellow/gray triangular fabric wing canopies use actual framed pivots and seat forks, source neighboring steel coaster. Keep only visible connected mechanical section. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "7b551d0c299d5731163e9576a08187219becb34ba1f74ad5615af7e96c0b3fbe",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 167409566817472,
+      "rideName": "The Grand Carousel",
+      "alt": "Illustrated The Grand Carousel at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:45:23.584628+00:00",
+      "originalSHA256": "495a17318232744f062973765c9ffbb6df61a44154c96a9ef4d46fe2fca3fa67",
+      "review": "Accepted: Actually viewed final generated original. Brown hand-carved horse with black mane and pink/blue/gold tack, silver poles and neighboring dark/gray horses retain source paint and internal green/navy ornamental panels under practical bulbs.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F07e0a7d7d926374d71be49cab30cbda84a57406b-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The Grand Carousel at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/the-grand-carousel",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "68f23a512b4a2b106e3987db0c77e52584b55a923262dea24c89c93241e19a79",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Grand Carousel photograph and target page identifying hand-carved wooden horses. Close section of brown horse with black carved mane and pink/blue/gold saddle, neighboring dark and gray horses with green/red tack, polished silver vertical poles, actual dark-green/navy/gold ornamental center panels and rows of warm practical bulbs. Preserve this photographed horse/pole/inner-canopy section only; no invented full carousel or characters."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-167409566817472-thumbnail.jpg",
+      "thumbnailSHA256": "51ead0fc88d5cf4b34e9df70fc6d6da9ceaba55a037d6ab37b85039b24430469",
+      "thumbnailBytes": 26781,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-167409566817472-detail.jpg",
+      "detailSHA256": "9df52e72a0cf60d226e543822b42373c5e79b53b86b822fefe99dc5e8d3d6891",
+      "detailBytes": 159286,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-167409566817472",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict The Grand Carousel at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Grand Carousel photograph and target page identifying hand-carved wooden horses. Close section of brown horse with black carved mane and pink/blue/gold saddle, neighboring dark and gray horses with green/red tack, polished silver vertical poles, actual dark-green/navy/gold ornamental center panels and rows of warm practical bulbs. Preserve this photographed horse/pole/inner-canopy section only; no invented full carousel or characters. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "8f21c42809c7f616326122cabe8b19eeedafc9a7f197999c8abfa0096e362276",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 168908215811061,
+      "rideName": "Woodstock Express",
+      "alt": "Illustrated Woodstock Express at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:44:16.507724+00:00",
+      "originalSHA256": "0a998ff26046b4bed315513de3f7e30e0e19033864f1249c65baa52422b46b25",
+      "review": "Accepted: Actually viewed generated original. Purple wooden-coaster front number 1 with physical ride decal, ordinary family lap-bar seating, weathered running rails and purple posts remain in one connected source section.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2562cae329d68235931a287eeb6c9b8a231910cc-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Woodstock Express at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/woodstock-express",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d508bdb35585eb7452807068628b94bc40334389de418780025cfccb902f6def",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Woodstock Express photo and target body. Tight purple-front wooden-coaster car number 1 with its actual physical Woodstock Express Carowinds decal, ordinary adult/child riders secured by lap bar, weathered timber rails and purple support posts at small crest. Keep the single connected source train/track section, no invented full route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-168908215811061-thumbnail.jpg",
+      "thumbnailSHA256": "74d53903ff846064848656096a4ef5db09368114ce3485e5b624834a6e191dc6",
+      "thumbnailBytes": 22645,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-168908215811061-detail.jpg",
+      "detailSHA256": "11b8e584c02db42d86a9fd0167a2baea61882a70ab37a8c1fd649da6547d6e2a",
+      "detailBytes": 142654,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-168908215811061",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Woodstock Express at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Woodstock Express photo and target body. Tight purple-front wooden-coaster car number 1 with its actual physical Woodstock Express Carowinds decal, ordinary adult/child riders secured by lap bar, weathered timber rails and purple support posts at small crest. Keep the single connected source train/track section, no invented full route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "9e2d9f82cb9dfc2c07ca1a8ca68ff7fe37215e66463786b348aa138c08129372",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 178496811725366,
+      "rideName": "Coastal Currents",
+      "alt": "Illustrated Coastal Currents at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:44:38.432024+00:00",
+      "originalSHA256": "ced794cd89318b7f58aa34f385779036d2bd08c8c9239568ba823fe2bce66506",
+      "review": "Accepted: Actually viewed generated original. Actual checker-tile lazy-river bend, grassy palm island, small fountain island and stacked blue tubes remain source-specific; white rail/bridge and neighboring green/yellow slide preserved.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F897ef23e9f068f73931a3b56ad3fb5c64e8b87e7-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Coastal Currents at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/coastal-currents",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "5ccab4710efb77e09473ef1b8b233398e836c1ccf42ab05174ab99ca5d69a901",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Coastal Currents photograph and lazy-river body. Turquoise river curves around real grassy island with palm/trees and blue checker-tile edge; low fountain sprays from small round foreground island, stacked blue/clear inner tubes at right and white fence/bridge with actual green/yellow neighboring slide behind. Keep only documented bend, no invented riders or full route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-178496811725366-thumbnail.jpg",
+      "thumbnailSHA256": "05ba388ca79f2762c0bd5436bb7c16bac425e83de9e5d51f2a3e1ffc30219d38",
+      "thumbnailBytes": 25328,
+      "thumbnailPixels": [
+        256,
+        319
+      ],
+      "detailFile": "59-178496811725366-detail.jpg",
+      "detailSHA256": "6095552b559098c66fa5877490e46a5d4934524bc322581a485c455185ce5a26",
+      "detailBytes": 202457,
+      "detailPixels": [
+        768,
+        958
+      ],
+      "key": "59-178496811725366",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Coastal Currents at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Coastal Currents photograph and lazy-river body. Turquoise river curves around real grassy island with palm/trees and blue checker-tile edge; low fountain sprays from small round foreground island, stacked blue/clear inner tubes at right and white fence/bridge with actual green/yellow neighboring slide behind. Keep only documented bend, no invented riders or full route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "1f51c7abb2a598da3561e766bdc6982dd6e9f94b1fb9f5f275f5afb91ae818a8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 188530537147541,
+      "rideName": "Hurricane Falls",
+      "alt": "Illustrated Hurricane Falls at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:45:08.112420+00:00",
+      "originalSHA256": "236c681b8e8ce4fcdc959848bf0274a58c9f1dbc22984e447d70073343e47950",
+      "review": "Accepted: Actually viewed generated original. Single family raft remains on actual green open flume with white supports, banked curves and access tower; separate yellow tube behind is visibly distinct and source-supported.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffed0b041916387dad82561949572bc4be274bcb9-4732x3155.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Hurricane Falls at Carowinds' Carolina Harbor",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/hurricane-falls",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "92c71499eb850eaf21ddb321ac4369c010750639bff76bf7716b0f88761005bc",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Hurricane Falls photo and four-person raft-slide body. Actual broad open green fiberglass flume descends in banked turns on white supports, green/white access tower, single blue/gray round family raft with ordinary riders on foreground curve, yellow enclosed neighboring slide crosses behind. Keep source-supported connected section and real contrast of distinct slides, no invented route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-188530537147541-thumbnail.jpg",
+      "thumbnailSHA256": "3b284a14ddc0906ee6875bab36b9c0f7cb7c94003040c2f0424238d1aa1aa5ab",
+      "thumbnailBytes": 24849,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-188530537147541-detail.jpg",
+      "detailSHA256": "3c19b670b2e94ff86c322d4e4f347f106797180aa882e8e4143048b27eb0e806",
+      "detailBytes": 177121,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-188530537147541",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Hurricane Falls at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Hurricane Falls photo and four-person raft-slide body. Actual broad open green fiberglass flume descends in banked turns on white supports, green/white access tower, single blue/gray round family raft with ordinary riders on foreground curve, yellow enclosed neighboring slide crosses behind. Keep source-supported connected section and real contrast of distinct slides, no invented route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "266b1bbecee44a1e951962f385840216321d3008158bc29625ab76ac12baeecd",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 194998504386901,
+      "rideName": "Rock 'N' Roller",
+      "alt": "Illustrated Rock 'N' Roller at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:45:32.044737+00:00",
+      "originalSHA256": "81a7a37f375015ef30a96a0a4a44d26adff0408a9b17ff582a5620a9f5c9d432",
+      "review": "Accepted: Actually viewed generated original. White tubs/red padded seats with common bars, actual flower panels, sloping dark deck and radial lamp ribs remain in source pavilion with ordinary secured riders.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F231eb6127ce735d5ae5adbc3f61498767ad372ef-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Rock 'N' Roller at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/rock-n-roller",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "939706004ae0d42974c2cabb0a40c4740a3b7df6a386d09d538caca2ce0529c0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Rock N Roller photo and three-person-car circular-ride body. Connected white tubs with red padded seats and white safety bars roll around actual sloping dark deck; fixed raised colored flower/shape panels, rows of small warm bulbs along inward black radial ribs, orange timber-effect pavilion wall/green rail and ordinary secured riders. Source crop only, no invented coaster rails."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-194998504386901-thumbnail.jpg",
+      "thumbnailSHA256": "96cf3160351e8c63bc4af5d201b665a1febd7fb65b21ea355925c780adbdef23",
+      "thumbnailBytes": 24548,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-194998504386901-detail.jpg",
+      "detailSHA256": "a26b359a869fa4913acf3c4b48efbd5986a202d9b072e42a6cdb9ecbc95d175d",
+      "detailBytes": 142107,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-194998504386901",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Rock 'N' Roller at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Rock N Roller photo and three-person-car circular-ride body. Connected white tubs with red padded seats and white safety bars roll around actual sloping dark deck; fixed raised colored flower/shape panels, rows of small warm bulbs along inward black radial ribs, orange timber-effect pavilion wall/green rail and ordinary secured riders. Source crop only, no invented coaster rails. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "00aef7a65f42be1d25336a8450a2b7713ca670eee7000b1c2a5b27615486b23c",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 197118704656978,
+      "rideName": "Wilderness Run",
+      "alt": "Illustrated Wilderness Run at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:46:09.485238+00:00",
+      "originalSHA256": "c2ad94a3d7289f4621ef5342964da3f4c93e1c6031e5b13206e1fc59342b5852",
+      "review": "Accepted: Actually viewed generated original. Actual orange/yellow linked train, red stripe, physical Snoopy ride decal, black lap bars and wheel bogies on olive rails/brown trestles preserve source low banked curve.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7610dda8c4ea766f036ac08bc85db509045c1738-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Wilderness Run at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/wilderness-run",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "aeeb5ef6596c4bc9c5fbb3d016cb7187ec3a838fd898b249d8ee51fe9a88e16c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Wilderness Run photo and small family-coaster body. Actual linked orange/yellow boxy cars with red stripe and physical front Wilderness Run Snoopy decal, orange seat padding and black common lap bars around ordinary adult/child riders; black bogies and gripping wheels on olive-green low tubular rails, brown support trestles, real red mesh fence/leafy trees. Preserve source connected banked curve, no invented complete route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-197118704656978-thumbnail.jpg",
+      "thumbnailSHA256": "3a4f906d58816d9a193788ffe4d01e53f5fe2b420252db340a653efa6e9168dc",
+      "thumbnailBytes": 29718,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-197118704656978-detail.jpg",
+      "detailSHA256": "3a31640c01d74e28006b3f96b6dad5efdfc5d9544b0e467ab04edee98527443b",
+      "detailBytes": 190628,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-197118704656978",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Wilderness Run at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Wilderness Run photo and small family-coaster body. Actual linked orange/yellow boxy cars with red stripe and physical front Wilderness Run Snoopy decal, orange seat padding and black common lap bars around ordinary adult/child riders; black bogies and gripping wheels on olive-green low tubular rails, brown support trestles, real red mesh fence/leafy trees. Preserve source connected banked curve, no invented complete route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "73e293d71c6a1684dc073daa33760ba5af3535db473fae524c78e55465a44255",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 200047280506655,
+      "rideName": "Copperhead Strike",
+      "alt": "Illustrated Copperhead Strike at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:46:57.793890+00:00",
+      "originalSHA256": "70d5a4f020a4f6713a685f77ee66d16852a8b6ab8f3e08f5e40a7bb6c98ef6f9",
+      "review": "Accepted: Actually viewed generated original. Black vintage-car coaster front retains chrome grille/headlamps, small windshield, beige seats and red lap restraints; gray chassis remains attached to orange rails/triangular ties and source gray columns.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F3c30daa4f8197fa5b2dcba9f6e0e88ffe47a671b-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Copperhead Strike Roller Coaster at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/copperhead-strike",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "6b7629fefce7e58e846307dbd16cf1ea21915dfe32f4eb86ffbc14cd213dfb6c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Copperhead Strike photo and launched-coaster body. Source black vintage-car-shaped coaster front with real chrome grille/round headlamps/small windshield, beige headrests and red lap restraints with silver side handles, ordinary riders; gray wheel chassis grips orange tubular track with triangular ties and dark gray support columns. Single linked train and photographed banked section only."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-200047280506655-thumbnail.jpg",
+      "thumbnailSHA256": "3c6ac9010a17c2bbbb6bb56aab1cb9aec4e8047d9fa330f23ef32ea0c06084cb",
+      "thumbnailBytes": 27509,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-200047280506655-detail.jpg",
+      "detailSHA256": "500ee64b997a9224fbd78fa5b51da2e824b33a02828c9475348143a4f7b099d9",
+      "detailBytes": 169923,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-200047280506655",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Copperhead Strike at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Copperhead Strike photo and launched-coaster body. Source black vintage-car-shaped coaster front with real chrome grille/round headlamps/small windshield, beige headrests and red lap restraints with silver side handles, ordinary riders; gray wheel chassis grips orange tubular track with triangular ties and dark gray support columns. Single linked train and photographed banked section only. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "836d583bbe5717054c4e67bef8b7cecab41339dd878371e8c40323e15f692ef9",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 202304456263948,
+      "rideName": "WP - Blackbeard's Revenge Drop Slides",
+      "alt": "Illustrated WP - Blackbeard's Revenge Drop Slides at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:47:56.770686+00:00",
+      "originalSHA256": "170925b7fcc83b3d528f5637ef4fa0b05cf1120f980f8669f4f1d7ef377bf1fb",
+      "review": "Accepted: Actually viewed final generated original. Actual source three blue/yellow/green exit runouts and connected tube mouths below gray tower remain, with ordinary adult swimmers and distinct slides; no invented launch capsule.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9ec72696055d4e3292ff024cdc6f3f2eece2d00a-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Blackbeard's Revenge - Pirate’s Plank at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/blackbeards-revenge-pirates-plank",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "02458541ce5899dc91d6c7827af23f9769e9bea7dfc75bbd43413fa3df3f202e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Pirates Plank photo and target page, distinct from tube-slide installation. Source three parallel open blue/yellow/green splash runouts emerge from actual same-color enclosed exits below gray steel tower/colored spiral tubes; ordinary adult swimmers stand in shallow runouts, actual posts/railings. Preserve this visible connected exit section; no fabricated launch capsule, hidden route or tube rider."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-202304456263948-thumbnail.jpg",
+      "thumbnailSHA256": "aa81d90af69840ecbcbe3518e82a3161f1dc0a0ada22d235756be04f0df0b13b",
+      "thumbnailBytes": 27431,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-202304456263948-detail.jpg",
+      "detailSHA256": "a5d1507a87a3740cd37bd12a8cc3106f29389eef2f136c9f34671025cbb56205",
+      "detailBytes": 196987,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-202304456263948",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict WP - Blackbeard's Revenge Drop Slides at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Pirates Plank photo and target page, distinct from tube-slide installation. Source three parallel open blue/yellow/green splash runouts emerge from actual same-color enclosed exits below gray steel tower/colored spiral tubes; ordinary adult swimmers stand in shallow runouts, actual posts/railings. Preserve this visible connected exit section; no fabricated launch capsule, hidden route or tube rider. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "1a388fec2c4df0667222aa03bf8cc62f0607859d8886067eb7d3a77d760e6e38",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 203656642636911,
+      "rideName": "Camp Bus",
+      "alt": "Illustrated Camp Bus at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:48:24.023078+00:00",
+      "originalSHA256": "7233f25fb116d1530de9e12653553cc3d13b94c67b2b0de683a7bf7509369ac6",
+      "review": "Accepted: Actually viewed final generated original. Yellow bus side with numbered physical panels, black trim, orange interior and silver hinged gates retains source family seating and tight crop.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F77f27d67c5c0ec631c39217f2af23126fc073695-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Camp Bus at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/camp-bus",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d8cc0a4ae264473286ee9fe2fa9c35dce7d119c42028dc627a776a32caecf10e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Camp Bus photo and target body. Tight crop of yellow bus body with orange-red interior framing, black horizontal rubber trim and physical numbered panels, silver hinged entry gates, diagonal polished bars and ordinary clothed family riders. Preserve this source seating/side section only, no invented bus wheels, roads or unseen lift mechanism."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-203656642636911-thumbnail.jpg",
+      "thumbnailSHA256": "6fca073346775ba2c3dcf1802647a7347fdedcbb0dd16714abee40c52db4f3c1",
+      "thumbnailBytes": 20286,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-203656642636911-detail.jpg",
+      "detailSHA256": "d21e3c5f2e12a4600dfa0cc7e847c149463fb88a34c98034747ee2d347473bb0",
+      "detailBytes": 117276,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-203656642636911",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Camp Bus at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Camp Bus photo and target body. Tight crop of yellow bus body with orange-red interior framing, black horizontal rubber trim and physical numbered panels, silver hinged entry gates, diagonal polished bars and ordinary clothed family riders. Preserve this source seating/side section only, no invented bus wheels, roads or unseen lift mechanism. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "181eaf50ea11c0ca53eea03863058159b01c0748ba315d900c775b6ce394f905",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 208577749719523,
+      "rideName": "Kiddy Hawk",
+      "alt": "Illustrated Kiddy Hawk at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:49:13.031756+00:00",
+      "originalSHA256": "ea57c82564334e632afabda8fb7acc88c6a75844199f9e9ef37b5f7b2965c7e6",
+      "review": "Accepted: Actually viewed final generated original. Blue overhead rails with guide wheels support one linked red suspended-seat train; black shoulder bars, ordinary riders and pale-yellow columns remain physically connected.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc4404c88a555d3bf860103798103950f6f0162df-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Kiddy Hawk Roller Coaster at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/kiddy-hawk",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "7947ac7894e48da62ea28218c1bd14068ed449d2c8a4bbccc8028246ee68d961",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Kiddy Hawk photo and target suspended-coaster body. Blue overhead rails and rectangular ties on pale-yellow columns; red suspended paired seats with black shoulder restraints and ordinary secured riders, dark chassis/guide wheels gripping the source overhead rails, feet dangling. Single connected train and actual banked curve only, no invented full route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-208577749719523-thumbnail.jpg",
+      "thumbnailSHA256": "59575ecccc99abf2d207885f9651226ff3f7ea4d16bb66080266e1b9938a5ac1",
+      "thumbnailBytes": 24516,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-208577749719523-detail.jpg",
+      "detailSHA256": "574ed9c42d0e4f3a7a93d15b9fa565b58ac4c9d3e2e9d7233cfb96bd425f007d",
+      "detailBytes": 149453,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-208577749719523",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Kiddy Hawk at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Kiddy Hawk photo and target suspended-coaster body. Blue overhead rails and rectangular ties on pale-yellow columns; red suspended paired seats with black shoulder restraints and ordinary secured riders, dark chassis/guide wheels gripping the source overhead rails, feet dangling. Single connected train and actual banked curve only, no invented full route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "f638effcc418e1a8a1f48dace343231e18477b63f8e03f75356f5e4315eae5b9",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 217203371727979,
+      "rideName": "Snoopy vs. Red Baron",
+      "alt": "Illustrated Snoopy vs. Red Baron at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:49:53.008305+00:00",
+      "originalSHA256": "9a025373e0251256049914dd16b5d6d0d76f250aa1f676690164a5bc3841767f",
+      "review": "Accepted: Actually viewed final generated original. Red miniature biplane number 6 retains source wings/struts, round nose ornament, tan lap belts and front/back child seating; no new character or real aircraft.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F6b9db361fa4c8a461dae2320f4448d2388e0df18-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Snoopy vs. Red Baron at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/snoopy-vs-red-baron",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "8f8bddce92b2f7c66a67111a623549ac99d6b228dd04207e9b9b6a2607547e83",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Snoopy vs Red Baron photo and target page. Tight red fiberglass miniature biplane number 6 with round engine-nose ornament, real red wing/metal struts/tension wires, tan lap belts with metal buckles and ordinary children seated front/back, green trees behind. Preserve source ride vehicle section, not a real flying combat aircraft; no invented character or full hidden mechanism."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-217203371727979-thumbnail.jpg",
+      "thumbnailSHA256": "5bcebcc990300843f311fa38febd37a94da0ce70ed3c84ec5d8d5b02877f63c7",
+      "thumbnailBytes": 22508,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-217203371727979-detail.jpg",
+      "detailSHA256": "05acf2d4dbcadf396664b4c92e44512adb1f7b32e3325640fc60430038942c1b",
+      "detailBytes": 139986,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-217203371727979",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Snoopy vs. Red Baron at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Snoopy vs Red Baron photo and target page. Tight red fiberglass miniature biplane number 6 with round engine-nose ornament, real red wing/metal struts/tension wires, tan lap belts with metal buckles and ordinary children seated front/back, green trees behind. Preserve source ride vehicle section, not a real flying combat aircraft; no invented character or full hidden mechanism. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "33b0d23f75ab21e1968713ddd8513307dbe9de23e5abc1ac027cb13766fe79da",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 218109169399030,
+      "rideName": "Ricochet",
+      "alt": "Illustrated Ricochet at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:50:42.545234+00:00",
+      "originalSHA256": "896dd64395336cc236e58fb93462bac16d8919dbf424278c868d7a7da28703d6",
+      "review": "Accepted: Actually viewed final generated original. Actual lime-green compact car number 4, blue trim, black lap bars and orange guide-wheel bogies grip yellow-green source rails; ordinary family seating remains recognizable.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F063e7df0de9b58ebab5b0e33794f976121a21786-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Ricochet Roller Coaster at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/ricochet",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e2c74cc2cb683a41a5797bc4833ed1055e0c4bda2a78e72c9c236627d05bb650",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Ricochet photograph and target wild-mouse body. Lime-green compact car number 4 with actual blue zigzag side graphic, blue lower band, black seatbacks/lap bars and ordinary family riders; orange wheel bogies grip actual yellow-green rails/green rectangular ties, blue support columns/catwalk. Preserve source banked car-section and exact safety seating, no invented extra train."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-218109169399030-thumbnail.jpg",
+      "thumbnailSHA256": "29d96d233541787a37a4f20583a9cdc13e3c12f5b27f9c61237044d5065ab25e",
+      "thumbnailBytes": 27191,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-218109169399030-detail.jpg",
+      "detailSHA256": "9b20b4cb777db74a12291b489fc13dfd5d902af0f21d8523eb0a9422079987dd",
+      "detailBytes": 168055,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-218109169399030",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Ricochet at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Ricochet photograph and target wild-mouse body. Lime-green compact car number 4 with actual blue zigzag side graphic, blue lower band, black seatbacks/lap bars and ordinary family riders; orange wheel bogies grip actual yellow-green rails/green rectangular ties, blue support columns/catwalk. Preserve source banked car-section and exact safety seating, no invented extra train. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "658b455d1693341c36df6b747b6b47a6db5314913ff05bc3da12eb7179967504",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 223622298325595,
+      "rideName": "Do-Si-Do",
+      "alt": "Illustrated Do-Si-Do at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:51:24.489889+00:00",
+      "originalSHA256": "93b3ce550b7a3650acc9ce9d5107119a5dfc8fbaec8ea88ff2fa7c875f7d3419",
+      "review": "Accepted: Actually viewed final generated original. Red lattice arms/spindles connect yellow hanger frames and cream/red rounded tubs with amber lamps; actual neighboring blue coaster loop is distinct and source section remains mechanically connected.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb5d9c6a12688604bb1af42620eeb5bb210034b91-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Do-Si-Do at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/do-si-do",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "fa82978aeb5023ba09a5d0274f43a61625e04526d08357fb25cb343a8bad5c74",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Do-Si-Do photograph and three-arm spinning-ride body. Actual red rigid lattice arms and spindle supports carry red/cream rounded paired tubs on yellow hanger frames with small amber lamps, ordinary secured riders; source physical Do-Si-Do sign, real blue neighboring Flying Cobras loop and white columns behind. Use a tight source-visible carrier/arm section without inventing a full wheel count or route; preserve connected mechanical pivots."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-223622298325595-thumbnail.jpg",
+      "thumbnailSHA256": "232cd30b77d6d0bfa324d785a23d7009f0bc6ebf76b82c335ff963505f1ade86",
+      "thumbnailBytes": 30558,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-223622298325595-detail.jpg",
+      "detailSHA256": "c7f8940c1d7e894d4cae23f1c05eb107bd4eb7f48d98dc36acf9847824fb24f4",
+      "detailBytes": 209492,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-223622298325595",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Do-Si-Do at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Do-Si-Do photograph and three-arm spinning-ride body. Actual red rigid lattice arms and spindle supports carry red/cream rounded paired tubs on yellow hanger frames with small amber lamps, ordinary secured riders; source physical Do-Si-Do sign, real blue neighboring Flying Cobras loop and white columns behind. Use a tight source-visible carrier/arm section without inventing a full wheel count or route; preserve connected mechanical pivots. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "8534d8c9b4be942fec2d563aaeb0f0afb8712b1756c9eac36e40a77995bc2e12",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 224959481525667,
+      "rideName": "The Airwalker",
+      "alt": "Illustrated The Airwalker at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:49:54.392323+00:00",
+      "originalSHA256": "d30766387a61a4ed115c1713d33bc8da87b81c4f9c6f0d161ab3b3f3e20bca92",
+      "review": "Accepted: Actually viewed final generated original. Red multirow passenger bank retains silver riveted trim, black lap pads/handrails and source gray support, with ordinary secured riders.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2fb23bd7c35dcc31e8632ba272620e131602371e-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The Airwalker at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/the-airwalker",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "52a25b340ffef4e8da9082517a669257dfb64ca9445a5387689eaef29e1ffb2d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Airwalker photo and target page. Tight red curved-sided multirow passenger bank with brushed-silver riveted borders, black lap pads and silver handrails, ordinary clothed riders securely seated; source gray/blue structural support at edge and red physical end panel. Preserve source seating section and connected hardware only; no invented full pendulum or hidden ride."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-224959481525667-thumbnail.jpg",
+      "thumbnailSHA256": "70c50da6f447279790d8d7c4a90e0deea29a6fa49cd41c1b9b65c21264e7fa87",
+      "thumbnailBytes": 26572,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-224959481525667-detail.jpg",
+      "detailSHA256": "729d440601316a174399d5e7054f400ec3d8758528f95fdb5eae6bea15171513",
+      "detailBytes": 167310,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-224959481525667",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict The Airwalker at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Airwalker photo and target page. Tight red curved-sided multirow passenger bank with brushed-silver riveted borders, black lap pads and silver handrails, ordinary clothed riders securely seated; source gray/blue structural support at edge and red physical end panel. Preserve source seating section and connected hardware only; no invented full pendulum or hidden ride. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "821d3ea058b5aa598f1e280b3670f6fffee97c44cc210e826a5842afc182ced5",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 234332631889769,
+      "rideName": "Kiddy Hawk Cove",
+      "alt": "Illustrated Kiddy Hawk Cove at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:50:17.532819+00:00",
+      "originalSHA256": "6e4f727089a65c4d1638b42849d01d61e2cec04c23816bfb744f48c038369fa3",
+      "review": "Accepted: Actually viewed final generated original. Actual cyan gabled sheet-water roof, blue/pale-cyan connected pipes and red handwheel valves remain; no new children or slides, source neighboring structures distinct.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc35254f9b95bdcd46b966fcc886aa5a5d1c8926e-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Kiddy Hawk Cove at Carowinds' Carolina Harbor",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/kiddy-hawk-cove",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "4901173e43e9e353d25fe32c5c68087d4e28509c67c6c5481df0ee097a130911",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Kiddy Hawk Cove photo and target water-play body. Empty source blue and pale-cyan bolted pipe play structure with gabled pale-cyan sheet-water roof, real spray jets, red handwheel valves and shallow splash-pad edge; white fence, yellow building and distant green/blue neighboring slide tower. Preserve source pipe connections and visible source section, no invented children or slides."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-234332631889769-thumbnail.jpg",
+      "thumbnailSHA256": "b7f94cdab7316f392e9bc123e604fa380d6c8bbf16427cd41878e33e29f37ce5",
+      "thumbnailBytes": 25490,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-234332631889769-detail.jpg",
+      "detailSHA256": "ad794479d6fc87aec154aab9c46497ce409f28928f63ca497768ccf66d29a388",
+      "detailBytes": 204075,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-234332631889769",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Kiddy Hawk Cove at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Kiddy Hawk Cove photo and target water-play body. Empty source blue and pale-cyan bolted pipe play structure with gabled pale-cyan sheet-water roof, real spray jets, red handwheel valves and shallow splash-pad edge; white fence, yellow building and distant green/blue neighboring slide tower. Preserve source pipe connections and visible source section, no invented children or slides. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "2d650e122e0e487c350b95593eb7a3ccdb29eedd5e246f9ac72b76536851eb91",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 238515145036312,
+      "rideName": "Hurler",
+      "alt": "Illustrated Hurler at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:51:07.533630+00:00",
+      "originalSHA256": "51dca2a30facdacccb9a0d820d75afb5296c5284d016d346ac4cf4f25f52fd77",
+      "review": "Accepted: Actually viewed final generated original. Empty rounded timber coaster hill retains weathered trestles/maintenance rail and sunset silhouette, without invented train or full route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fac17e93fd9ddecf911aad82db7dd8bb310cb4428-2048x1365.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Hurler Roller Coaster at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/hurler",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "308c0977d1009f4a404ba31a41236331904efd732bf51077d2ded743fc6e44c1",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Hurler photograph and target wooden-coaster body. Actual silhouetted weathered timber lattice trestles under empty rounded hill, visible running rails and maintenance rail above against blue/purple sunset clouds. Keep this source-supported architecture, no invented train, people, paint or full hidden track route; enough natural rim light for timber thumbnail readability."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-238515145036312-thumbnail.jpg",
+      "thumbnailSHA256": "979cf646cc0e3215fb9f20b440bcb9bc081296e4600be96acc7a0b76d19cd8fa",
+      "thumbnailBytes": 30180,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-238515145036312-detail.jpg",
+      "detailSHA256": "695c6839e1e931213f61052eeb1573f0012c1738b80b14c1d6a47678ae1904e1",
+      "detailBytes": 210265,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-238515145036312",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Hurler at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Hurler photograph and target wooden-coaster body. Actual silhouetted weathered timber lattice trestles under empty rounded hill, visible running rails and maintenance rail above against blue/purple sunset clouds. Keep this source-supported architecture, no invented train, people, paint or full hidden track route; enough natural rim light for timber thumbnail readability. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "b947f57a1c5b52d7ec88e8bae78d49c673fc8f4194fe7f190126ebbc9061c887",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 242265636213488,
+      "rideName": "Beagle Scout Acres",
+      "alt": "Illustrated Beagle Scout Acres at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:50:41.641219+00:00",
+      "originalSHA256": "5fc2cd9b3e4b2cf9d8c1a97c99061f02fd9b696e3a20fffd989dbd228c9e4e46",
+      "review": "Accepted: Actually viewed final generated original. Three beige short dry slides/arch entrances, maroon posts, pale shade sail, turf mound and ordinary family preserve actual source playground; no new water or character.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9da4d75d87555da8cda9c7dd916a74ed4e3df114-1440x960.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Beagle Scout Acres at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/beagle-scout-acres",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "239149c547cd448c02a8b7f9ff9ab1bffe1f86912749531b31aceb327ac8f67e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Beagle Scout Acres photograph and target play-area body. Three short beige dry slides with separate arch-shaped entrance panels on real maroon posts beneath pale shade sail, ordinary clothed children sliding and mother standing at actual platform rail; green turf mound, green climbing arches and distant red neighboring coaster. Preserve source-specific dry playground, no water or invented character."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-242265636213488-thumbnail.jpg",
+      "thumbnailSHA256": "0686e4a4e116343f2fb0df1ea0f30073bf03268bcb73dac40d015fcd97863b59",
+      "thumbnailBytes": 20808,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-242265636213488-detail.jpg",
+      "detailSHA256": "7ec4340bc4d731af4e5a0071d9b834ba4d006586c05fc35f116f929a10183710",
+      "detailBytes": 133632,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-242265636213488",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Beagle Scout Acres at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Beagle Scout Acres photograph and target play-area body. Three short beige dry slides with separate arch-shaped entrance panels on real maroon posts beneath pale shade sail, ordinary clothed children sliding and mother standing at actual platform rail; green turf mound, green climbing arches and distant red neighboring coaster. Preserve source-specific dry playground, no water or invented character. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "00a6f2fb0b3c946f84fb32a5e4cca72978e47d3528e4420dc491560f81f5cf08",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 243361339542588,
+      "rideName": "Storm Surge Tube Slides",
+      "alt": "Illustrated Storm Surge Tube Slides at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:52:23.994757+00:00",
+      "originalSHA256": "e61e95dd22b7e7ee1ea0e3d9e792be656e21677eb00edb0dfeaa0d930e722dbc",
+      "review": "Accepted: Actually viewed final generated original. Physical wave-shaped tube-slide sign, stacked orange/clear tubes, white supports and colored flumes retain actual lower-tube complex identity; no invented individual color-name claims.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F065468570f46383a212e0aaff448804802765b0a-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Storm Surge Tube Slides at Carowinds' Carolina Harbor",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/storm-surge-tube-slides",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "116217b7e6f9d62d648959e931de7f481fb24af838321c0c76099e8acb0646ca",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Storm Surge Tube Slides photo and page distinguishing lower tube slides from higher body slides in same four-slide complex. Source physical wave/brown circular STORM SURGE TUBE SLIDES sign at left, white columns/gray stair platforms and actual blue/lime/yellow/orange enclosed flumes; stacked orange/clear tubes behind white fence. Preserve photographed source section only, no invented routing or individual color-to-name claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-243361339542588-thumbnail.jpg",
+      "thumbnailSHA256": "8d00191f97563aeeb47c31cea3036fbdad0c6c779a0bb8d586fbb2e31226100a",
+      "thumbnailBytes": 31412,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-243361339542588-detail.jpg",
+      "detailSHA256": "08fc3cde3fc132898e2e6aeec10b5c57b31935726ba93a36ef6bc30f0901f891",
+      "detailBytes": 226113,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-243361339542588",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Storm Surge Tube Slides at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Storm Surge Tube Slides photo and page distinguishing lower tube slides from higher body slides in same four-slide complex. Source physical wave/brown circular STORM SURGE TUBE SLIDES sign at left, white columns/gray stair platforms and actual blue/lime/yellow/orange enclosed flumes; stacked orange/clear tubes behind white fence. Preserve photographed source section only, no invented routing or individual color-to-name claim. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "5ca553dd9ca38259edd5747f765dccb2f2961a7d492f0e6e6a689202bc782658",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 250073311225940,
+      "rideName": "Mountain Gliders",
+      "alt": "Illustrated Mountain Gliders at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:51:34.406032+00:00",
+      "originalSHA256": "f01bce33c4de4223fa853ca9bdfcbdc1f0f0a490590783d1b9e723e59cf6331b",
+      "review": "Accepted: Actually viewed final generated original. Brown flyer tub with tan marked fins retains actual source yoke/clamps/cables and ordinary adult with lap belt; no invented full ride hub.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa8f493c5bdf8c055b76d53b4ecf2baf3a7df698e-4349x2876.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Mountain Gliders at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/mountain-gliders",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "325cf8d48798bbdbeca9b086f93df34b584c27e7bfd25b082dc68c51c60afa1f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Mountain Gliders photograph and target body. Actual brown fiberglass two-seat flyer carriage with tan fabric-like front/back fins, physical teal 10/CARO-10 markings and seams, orange lap belt and ordinary clothed adult; visible maroon frame/yoke, red top clamps and suspension cables attach source vehicle, tan/orange building and trees behind. No invented real aircraft or unseen ride hub."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-250073311225940-thumbnail.jpg",
+      "thumbnailSHA256": "73973aaac4b8ab030b54430d7decdfd8bb0fc93e4fa99f3149eef4bb85953b36",
+      "thumbnailBytes": 22569,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-250073311225940-detail.jpg",
+      "detailSHA256": "0579fd1da919f92e0ab61602ffd091b64c84029ea57aa40f72bc1feb57a90685",
+      "detailBytes": 133671,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-250073311225940",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Mountain Gliders at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Mountain Gliders photograph and target body. Actual brown fiberglass two-seat flyer carriage with tan fabric-like front/back fins, physical teal 10/CARO-10 markings and seams, orange lap belt and ordinary clothed adult; visible maroon frame/yoke, red top clamps and suspension cables attach source vehicle, tan/orange building and trees behind. No invented real aircraft or unseen ride hub. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "96fe90d3f6f7b97169d58ae6c3968763f1ca7acad36e01f95bce41cb717f32ab",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 253270896591312,
+      "rideName": "Storm Surge Body Slides",
+      "alt": "Illustrated Storm Surge Body Slides at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:55:15.993216+00:00",
+      "originalSHA256": "5428fa5df4f07f66a08d212dfbd334a7029074f1c79275a8685554a822b0d7cc",
+      "review": "Accepted: Actually viewed final generated original. Actual white stair tower/support arms and photographed orange/yellow foreground flumes with blue/lime upper curves remain; no unsupported route/color mapping or tube riders.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F57ecc4eabbacee2c6ba161b1c5ee506a74f94382-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Storm Surge Body Slides at Carowinds' Carolina Harbor",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/storm-surge-body-slides",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "60baa5980e0c126fbf6807c7beb6591a3edcbc58197adac7dd989a4391ddb506",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Storm Surge Body Slides photo and target body, distinguishing upper body from lower tube slides in same four-slide installation. Source upward view of white stair/access tower and white bolted support arms carrying orange/yellow enclosed flumes at foreground with blue/lime higher curves behind. Preserve only this photographed connected tower/curves composition; no unsupported color-to-route identity, tube riders or invented full routes."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-253270896591312-thumbnail.jpg",
+      "thumbnailSHA256": "94091c1c4e5b14f416e04bc7ec63bc01632c155145e8537c1a6467f53da8530d",
+      "thumbnailBytes": 27534,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-253270896591312-detail.jpg",
+      "detailSHA256": "216c0658147daeea5721b1e618adfa97970bb08829ba3d14a74de7d1262c0d7d",
+      "detailBytes": 201691,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-253270896591312",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Storm Surge Body Slides at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Storm Surge Body Slides photo and target body, distinguishing upper body from lower tube slides in same four-slide installation. Source upward view of white stair/access tower and white bolted support arms carrying orange/yellow enclosed flumes at foreground with blue/lime higher curves behind. Preserve only this photographed connected tower/curves composition; no unsupported color-to-route identity, tube riders or invented full routes. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "ffa7519a03b9bdeffed659c26e17265aa8c4ea749cbcc345683d871df98affe5",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 255684283139198,
+      "rideName": "Fury 325",
+      "alt": "Illustrated Fury 325 at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:56:03.497871+00:00",
+      "originalSHA256": "ac65180b9f548a6d7bdf8b809b572a465dc984dc70fe2cc9594315a46ec4e0e9",
+      "review": "Accepted: Actually viewed final generated original. Single eight-row blue/lime train retains actual wheels on teal/blue steep drop and pale supports, empty crest/maintenance rail; June photographer source appearance without current-operation claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.negative-g.com/carowinds/2026/carowinds-2026-fury-325-large-22.jpg",
+          "sourceURL": "https://www.negative-g.com/carowinds/2026/carowinds-2026-2.htm",
+          "credit": "Paul B. Drabek / Negative-G (original photographer and publisher)",
+          "license": "Copyright Paul B. Drabek; rights retained",
+          "licenseURL": "https://www.negative-g.com/carowinds/2026/carowinds-2026-2.htm",
+          "sha256": "3bc4bb93ecbd3737e3f74ef4b48598ff1aaa0c9013a5d1df4152af1cb3b2f25c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed original photographer Paul B. Drabek/Negative-G June 11, 2026 onsite Fury 325 photo and target operator page. Single actual blue-seat/lime-lap-bar eight-row coaster train descends source steep teal/blue rail with pale lime underside/white columns; ordinary restrained riders and actual wheel chassis on rails, empty crest/maintenance rail above. Source long-distance train/steep-drop section only, no invented route or second train. Cached operator hero and social preview were both promotional composites rejected before generation. Preserve source June appearance without current-operation claim; operator page currently indicates temporary closure."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-255684283139198-thumbnail.jpg",
+      "thumbnailSHA256": "a75a925646b604858c5c8a969e9ae32280e73aefb22215d8d0aeb585c15b2d6a",
+      "thumbnailBytes": 15648,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-255684283139198-detail.jpg",
+      "detailSHA256": "5ba3782a1dde43733bab3579ef77e33c228fe499c5dcfc66c97da8096e9436d1",
+      "detailBytes": 97632,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-255684283139198",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Fury 325 at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed original photographer Paul B. Drabek/Negative-G June 11, 2026 onsite Fury 325 photo and target operator page. Single actual blue-seat/lime-lap-bar eight-row coaster train descends source steep teal/blue rail with pale lime underside/white columns; ordinary restrained riders and actual wheel chassis on rails, empty crest/maintenance rail above. Source long-distance train/steep-drop section only, no invented route or second train. Cached operator hero and social preview were both promotional composites rejected before generation. Preserve source June appearance without current-operation claim; operator page currently indicates temporary closure. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "1d5415bcf735aca23c9b52c57e5d32a718abf9bf82c38fac00777d108cd1757b",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 262996191207933,
+      "rideName": "Pirate's Landing",
+      "alt": "Illustrated Pirate's Landing at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:56:28.378190+00:00",
+      "originalSHA256": "cacf0818ea4aba5034047040d2da186790ac568dcde8b79d637b7f360659c57a",
+      "review": "Accepted: Actually viewed final generated original. Actual yellow platforms/steps, cyan pipes, black posts, red water wheels and striped gabled water roof retain source connections and empty shallow play area.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F678d938ba24215c3c21f6e1d8a12a78b953396fa-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Pirate's Landing at Carowinds' Carolina Harbor",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/pirates-landing",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "302381ecc465fbf2da76fd926c792ef79fe44a929054da4ab6ec89868c5d043b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Pirates Landing photo and target water-play body. Empty source yellow stairs/platforms, cyan/blue pipes, black support posts, red/white gabled sheet-water roof and paired red water wheels on white arches with yellow troughs, actual jets/valves and white fence. Preserve this physically connected photographed play-structure section, no invented tipping bucket unseen in photo, children or routes."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-262996191207933-thumbnail.jpg",
+      "thumbnailSHA256": "43175d46656f2f7a96f81768567ea35f9b9478cf935bc632ebf14f3b832a6d73",
+      "thumbnailBytes": 27423,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-262996191207933-detail.jpg",
+      "detailSHA256": "18ccf3eeda73221b73ed492f0d24a9953589d818c74b7cd02ab4ff5eeef69a52",
+      "detailBytes": 226604,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-262996191207933",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Pirate's Landing at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Pirates Landing photo and target water-play body. Empty source yellow stairs/platforms, cyan/blue pipes, black support posts, red/white gabled sheet-water roof and paired red water wheels on white arches with yellow troughs, actual jets/valves and white fence. Preserve this physically connected photographed play-structure section, no invented tipping bucket unseen in photo, children or routes. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "bae02c9e2f4a9a26a582c6179b709fc87ccf2ac3c1857e41b7afc07ad1f46c5e",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 269443925650476,
+      "rideName": "Gear Spin",
+      "alt": "Illustrated Gear Spin at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:57:07.882735+00:00",
+      "originalSHA256": "4ad803d5c3170cbd1f1194bfc7e75b5c2a27132e928ee830a46b2616fd44d927",
+      "review": "Accepted: Actually viewed final generated original. Gray riveted beams, decorative exposed gears/radial-engine ornaments and round axle frames retain maroon secured seats; source neighboring coaster remains distinct.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe4f09f87bb60471ea160030888555274c01ae241-1900x910.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Gear Spin at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/gear-spin",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e97945ac43c7d270efc91e04b576acc9de7f1491fa30fb60933a79f8867608bd",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Gear Spin photograph and target page. Source gray riveted radial beams with exposed decorative gears and ribbed radial-engine ornaments/red center caps; dark round axle frames support paired maroon seats and black shoulder restraints with ordinary riders. Actual nearby teal coaster loop and orange shade sail remain distinct. Tight source upper arm/gear section, no invented entire ride geometry."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-269443925650476-thumbnail.jpg",
+      "thumbnailSHA256": "8c6a57e523952cce83b1979558e2cdc93c0012891dadec886a6b5a1ec81d6aa8",
+      "thumbnailBytes": 23562,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-269443925650476-detail.jpg",
+      "detailSHA256": "873fc35621c8cc3f227c12653c40eff833e236381df2ee9c812d30b87463e246",
+      "detailBytes": 163992,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-269443925650476",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Gear Spin at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Gear Spin photograph and target page. Source gray riveted radial beams with exposed decorative gears and ribbed radial-engine ornaments/red center caps; dark round axle frames support paired maroon seats and black shoulder restraints with ordinary riders. Actual nearby teal coaster loop and orange shade sail remain distinct. Tight source upper arm/gear section, no invented entire ride geometry. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "3f3002d27382e5a0f4a8efcf1d667cc6502fd339e559f3091b90ed6bfd232fc4",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 272866109768737,
+      "rideName": "Slingshot",
+      "alt": "Illustrated Slingshot at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:57:30.523039+00:00",
+      "originalSHA256": "84fdf20cb5323dda1c123abccb15e464619450a632c05116a24390871de6bbd6",
+      "review": "Accepted: Actually viewed final generated original. Pair of blue/yellow/green lattice towers retains source tiny distant cable-supported capsule and cropped white entrance/physical sign, without invented passenger close-up.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fd0b193134f2de2bc816ab4dc489dd067fe3b0849-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Slingshot at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/slingshot",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "3664f9dd0267d61945a3a47d7a80f4bea93f553a5ba0384f447a74967de870f9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Slingshot photograph and target two-passenger capsule body. Actual pair of tall lattice towers painted blue/yellow/pale-green, tiny distant central suspended capsule on two cable lines high against sky, real cropped white entrance facade with existing red/gold Slingshot sign. Preserve source scale, tower lattice and attached cable/capsule silhouette; no invented close-up passengers or full ground."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-272866109768737-thumbnail.jpg",
+      "thumbnailSHA256": "44b1cf081b8ce4169121616325abc39a874990848388b28de65571a839afd24a",
+      "thumbnailBytes": 18929,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-272866109768737-detail.jpg",
+      "detailSHA256": "419034f38ff6c76b200de154681888103c2d38e8e61a6a5a45bfd8d32a924902",
+      "detailBytes": 127806,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-272866109768737",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Slingshot at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Slingshot photograph and target two-passenger capsule body. Actual pair of tall lattice towers painted blue/yellow/pale-green, tiny distant central suspended capsule on two cable lines high against sky, real cropped white entrance facade with existing red/gold Slingshot sign. Preserve source scale, tower lattice and attached cable/capsule silhouette; no invented close-up passengers or full ground. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "08600c840f4dd36d4a4b449b92511eacbb70544d63dd5aa0c39401b099e029d5",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 273049950201991,
+      "rideName": "Flying Ace Balloon Race",
+      "alt": "Illustrated Flying Ace Balloon Race at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:57:52.199321+00:00",
+      "originalSHA256": "c2e7715efe66d972b570a37de2becf3b18f412e6ed8ea06c0d5db20149c72e11",
+      "review": "Accepted: Actually viewed final generated original. Cream wicker-textured basket, brown padding, tan suspension straps/clamps, silver entry gate and source ordinary family lap-belt arrangement remain; no invented balloon or character.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F0c6dad2efc04636b2ce3a1e842ba0248b76bd15a-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Flying Ace Balloon Race at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/flying-ace-balloon-race",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "96dcbaf321da9cc2efdce7dc2c499a65a15dcd21eb6e11b938209db4b17ad65f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Carowinds Flying Ace Balloon Race photo and target page. Tight actual cream wicker-textured rectangular basket with brown padded top/seat edges, tan vertical suspension straps and metal clamps, silver entry gate, ordinary clothed family with visible tan lap belt against green trees. Source-specific basket section only, no invented balloon canopy, character or free flight; distinct from moderated Great Adventure character ride."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-273049950201991-thumbnail.jpg",
+      "thumbnailSHA256": "d245c2c004b802e1bf24f9b0f75e037746ef4f112f65604c5b5216b0ec633269",
+      "thumbnailBytes": 23643,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-273049950201991-detail.jpg",
+      "detailSHA256": "919ed77e1b73cfd997516a24970c22a3730ce4b22e1edd2ab76cb64a7edb15bc",
+      "detailBytes": 157414,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-273049950201991",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Flying Ace Balloon Race at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Carowinds Flying Ace Balloon Race photo and target page. Tight actual cream wicker-textured rectangular basket with brown padded top/seat edges, tan vertical suspension straps and metal clamps, silver entry gate, ordinary clothed family with visible tan lap belt against green trees. Source-specific basket section only, no invented balloon canopy, character or free flight; distinct from moderated Great Adventure character ride. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "602c9bf3c9643c5191503583b6f90802dece39d1406564377d869bc3e888c3b9",
+      "generationSteps": []
+    },
+    {
+      "parkId": 59,
+      "rideId": 275034862335403,
+      "rideName": "Barracuda Blasters",
+      "alt": "Illustrated Barracuda Blasters at Carowinds",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T08:58:46.108037+00:00",
+      "originalSHA256": "5b948725c1f5cd9053a5c69c5a4b6bf00f0eec1967968c787b4d40660647dcf6",
+      "review": "Accepted: Actually viewed final generated original. Paired orange/white alternating enclosed flumes retain actual circular outlets, gray columns, access tower and shallow checker-tile pool, green tubes and white utility gate.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffbd58ba1b4f3c9118fa0c2b3565ad25000844f2c-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Barracuda Blasters at Carowinds",
+          "sourceURL": "https://www.sixflags.com/carowinds/attractions/barracuda-blasters",
+          "credit": "Six Flags / Carowinds (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "aa825e984ac9fd1084b713e297938b5e25f054b86a7ea6e76c9b5179c936f34e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Barracuda Blasters photograph and target page. Actual paired enclosed orange/white alternating tube flumes with circular exits into shallow turquoise checker-tile pool, gray supporting columns/bolted braces and real gray-roof access tower; stacked green/clear tubes at left, bushes/tree and white utility gate between outlets. Preserve source partial connected exit/curve section and empty runouts; no invented riders or full route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "59-275034862335403-thumbnail.jpg",
+      "thumbnailSHA256": "58a2908fb3292faffd797ce152581964eaebaf0d3b2c647a3b424eb20a429362",
+      "thumbnailBytes": 25405,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "59-275034862335403-detail.jpg",
+      "detailSHA256": "553465d5ff655ce8df6a272d0ae7e906cba6e568b7bc407d9a0db875ee8c0bec",
+      "detailBytes": 192625,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "59-275034862335403",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Barracuda Blasters at Carowinds. Source- and pixel-reviewed facts and limits: Actually viewed own operator Barracuda Blasters photograph and target page. Actual paired enclosed orange/white alternating tube flumes with circular exits into shallow turquoise checker-tile pool, gray supporting columns/bolted braces and real gray-roof access tower; stacked green/clear tubes at left, bushes/tree and white utility gate between outlets. Preserve source partial connected exit/curve section and empty runouts; no invented riders or full route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "0dcb8bc88be0a929c5622425cfea27fc34a8e42d1f83a32b9730dfbe66103ec6",
+      "generationSteps": []
+    },
+    {
       "parkId": 60,
       "rideId": 3820054936351,
       "rideName": "Snoopy's Soap Box Racers",
