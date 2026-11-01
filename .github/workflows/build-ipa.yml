@@ -82,7 +82,10 @@ jobs:
           path: |
             build/xcodebuild.log
             build/native-tests.log
-            build/ui-screenshots
+            build/ui-screenshots/manifest.json
+            build/ui-screenshots/*.png
+            build/native-tests.xcresult/database.sqlite3*
+            build/native-tests.xcresult/Info.plist
             build/simulator-selection.json
             build/test-scope.json
           if-no-files-found: ignore
@@ -128,7 +131,10 @@ jobs:
           name: PIVOT-iPhone-${{ matrix.simulator }}-${{ github.run_number }}-${{ github.run_attempt }}
           path: |
             build/native-tests.log
-            build/ui-screenshots
+            build/ui-screenshots/manifest.json
+            build/ui-screenshots/*.png
+            build/native-tests.xcresult/database.sqlite3*
+            build/native-tests.xcresult/Info.plist
             build/simulator-selection.json
             build/test-scope.json
           if-no-files-found: ignore
@@ -171,7 +177,10 @@ jobs:
           name: PIVOT-diagnostics-${{ inputs.simulator || 'iPhone 16 Pro Max' }}-${{ inputs.scope || 'native-design' }}-${{ github.run_number }}-${{ github.run_attempt }}
           path: |
             build/native-tests.log
-            build/ui-screenshots
+            build/ui-screenshots/manifest.json
+            build/ui-screenshots/*.png
+            build/native-tests.xcresult/database.sqlite3*
+            build/native-tests.xcresult/Info.plist
             build/simulator-selection.json
             build/test-scope.json
           if-no-files-found: ignore

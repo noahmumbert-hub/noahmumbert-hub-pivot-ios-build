@@ -174,6 +174,43 @@ final class NativeWaitForecastTests: XCTestCase {
         XCTAssertTrue(seeded().forecast(rideID: 1, park: park, hours: period, snapshot: nil, failed: false, now: date("2026-10-14T05:00:00Z")).isEmpty)
     }
 
+    @MainActor
+    func testReferenceFixtureKeepsThreePriorOperatingDaysAcrossMidnightAndDSTFallback() throws {
+        let epcot = FloridaPark.epcot
+        let cases: [(name: String, timestamp: String, openingDay: String, priorDays: [String], utcOffset: Int)] = [
+            ("Before midnight", "2026-11-01T03:57:00Z", "2026-10-31", ["2026-10-30", "2026-10-29", "2026-10-28"], -4 * 3600),
+            ("After midnight", "2026-11-01T04:07:00Z", "2026-10-31", ["2026-10-30", "2026-10-29", "2026-10-28"], -4 * 3600),
+            ("Before fallback", "2026-11-01T05:57:00Z", "2026-11-01", ["2026-10-31", "2026-10-30", "2026-10-29"], -4 * 3600),
+            ("After fallback", "2026-11-01T06:07:00Z", "2026-11-01", ["2026-10-31", "2026-10-30", "2026-10-29"], -5 * 3600)
+        ]
+        for sample in cases {
+            let fixtureNow = date(sample.timestamp)
+            let snapshot = ReferenceParkUITestFixture.snapshot(for: epcot, at: fixtureNow)
+            let schedule = try XCTUnwrap(snapshot.parkHours, sample.name)
+            let period = try XCTUnwrap(schedule.regular, sample.name)
+            let openingDay = WaitLearningHistory.dayKey(period.openingTime, park: epcot)
+            XCTAssertEqual(openingDay, sample.openingDay, sample.name)
+            XCTAssertEqual(epcot.timeZone.secondsFromGMT(for: fixtureNow), sample.utcOffset, sample.name)
+            XCTAssertEqual(snapshot.fetchedAt, fixtureNow, sample.name)
+            XCTAssertEqual(schedule.fetchedAt, fixtureNow, sample.name)
+            XCTAssertEqual(snapshot.rides.first { $0.id == 10916 }?.lastUpdated, fixtureNow, sample.name)
+
+            let history = ReferenceParkUITestFixture.learningHistory(park: epcot,
+                openingTime: period.openingTime, at: fixtureNow)
+            XCTAssertEqual(Set(history.bins.values.map(\.day)), Set(sample.priorDays), sample.name)
+            XCTAssertTrue(history.bins.values.allSatisfy { $0.day < openingDay && $0.lastSeen < period.openingTime },
+                          "\(sample.name): the current operating day must never supply a prior observation")
+            let prediction = LowestWaitPrediction.resolve(history: history, rideID: 10916, park: epcot,
+                hours: schedule, snapshot: snapshot, failed: false, now: fixtureNow)
+            let window = try XCTUnwrap(prediction.window, sample.name)
+            XCTAssertEqual(window.minutes, 10, sample.name)
+            XCTAssertGreaterThan(prediction.supportedHours, 1, sample.name)
+            XCTAssertTrue(prediction.points.allSatisfy { $0.days == 3 && $0.start >= fixtureNow && $0.end <= period.closingTime },
+                          "\(sample.name): all supported windows require three prior operating days and stay within the remaining session")
+            XCTAssertEqual(prediction.sourceCheckedAt, fixtureNow, sample.name)
+        }
+    }
+
     func testParkComparisonPreservesChosenLocalDateAcrossTimeZones() {
         let chosen = date("2026-10-14T04:00:00Z") // midnight in New York
         let converted = WaitLearningHistory.matchingDay(chosen, from: park, to: .sixFlagsMagicMountain)

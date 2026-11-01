@@ -231,18 +231,18 @@ struct RideThumbnailView: View {
 /// Synthetic observations only. Real park/ride IDs exercise the shared layout
 /// without depending on a park being open or the provider responding in CI.
 enum ReferenceParkUITestFixture {
-    static func snapshot(for park: FloridaPark) -> LiveParkSnapshot {
+    static func snapshot(for park: FloridaPark, at now: Date = Date()) -> LiveParkSnapshot {
         let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .secondsSince1970
-        var payload = try! JSONSerialization.jsonObject(with: encoder.encode(NativeParkMapUITestScreen.rootSnapshot())) as! [String: Any]
+        var payload = try! JSONSerialization.jsonObject(with: encoder.encode(NativeParkMapUITestScreen.rootSnapshot(at: now))) as! [String: Any]
         payload["parkId"] = park.id
         payload["park"] = ["name": park.name, "destination": park.destination, "operator": park.operatorName,
                            "country": park.country, "timezone": park.timeZoneIdentifier]
         var hours = payload["parkHours"] as! [String: Any]
         hours["parkId"] = park.id; hours["parkName"] = park.name; hours["timezone"] = park.timeZoneIdentifier
-        hours["date"] = ParkHoursSnapshot.localDate(for: park, at: Date())
+        hours["date"] = ParkHoursSnapshot.localDate(for: park, at: now)
         payload["parkHours"] = hours
         if ProcessInfo.processInfo.arguments.contains("--ride-search-expired") {
-            payload["fetchedAt"] = Date().timeIntervalSince1970 - 901
+            payload["fetchedAt"] = now.timeIntervalSince1970 - 901
         }
         if ProcessInfo.processInfo.arguments.contains("--ride-search-unavailable") {
             payload["feedHealthy"] = false
@@ -261,14 +261,14 @@ enum ReferenceParkUITestFixture {
             if index == 2 { ride["waitTime"] = NSNull() }
             else { ride["waitTime"] = index == 0 ? 45 : 30 }
             ride["location"] = ["latitude": point.latitude, "longitude": point.longitude]
-            ride["waitHistory"] = [["observedAt": Date().timeIntervalSince1970, "waitTime": index == 0 ? 45 : 30]]
+            ride["waitHistory"] = [["observedAt": now.timeIntervalSince1970, "waitTime": index == 0 ? 45 : 30]]
             if ProcessInfo.processInfo.arguments.contains("--ride-history-ui-test") {
-                ride["waitHistory"] = historySamples(at: Date())
+                ride["waitHistory"] = historySamples(at: now)
             }
             if index == 2 && ProcessInfo.processInfo.arguments.contains("--reopening-ui-test") {
-                ride["downSince"] = Date().timeIntervalSince1970 - 2580
+                ride["downSince"] = now.timeIntervalSince1970 - 2580
                 if !ProcessInfo.processInfo.arguments.contains("--reopening-missing") {
-                    ride["estimate"] = reopeningEstimate(at: Date())
+                    ride["estimate"] = reopeningEstimate(at: now)
                 }
             }
             return ride
@@ -296,12 +296,14 @@ enum ReferenceParkUITestFixture {
         return (0..<12).map { sample(Double(11 - $0) * 30 + 1, equalWaits ? 15 : waits[$0]) }
     }
 
-    static func learningHistory(park: FloridaPark, at now: Date = Date()) -> WaitLearningHistory {
+    static func learningHistory(park: FloridaPark, openingTime: Date, at now: Date = Date()) -> WaitLearningHistory {
         var history = WaitLearningHistory()
         let calendar = WaitLearningHistory.calendar(for: park)
         let bestHour = (calendar.component(.hour, from: now) + 1) % 24
         for offset in 1...3 {
-            let day = calendar.date(byAdding: .day, value: -offset, to: now)!
+            // An overnight session still belongs to its opening day. Seed
+            // three completed sessions, excluding the current operating day.
+            let day = calendar.date(byAdding: .day, value: -offset, to: openingTime)!
             let key = WaitLearningHistory.dayKey(day, park: park)
             for hour in 0..<24 {
                 let bin = WaitLearningBin(parkID: park.id, rideID: 10916, day: key,

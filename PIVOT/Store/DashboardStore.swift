@@ -355,13 +355,16 @@ final class DashboardStore: ObservableObject {
     func bootstrap() async {
 #if DEBUG
         if ProcessInfo.processInfo.arguments.contains("--apple-ui-fixtures") {
+            let fixtureNow = Date()
             let referenceID = ProcessInfo.processInfo.arguments.first { $0.hasPrefix("--reference-ui-park=") }
                 .flatMap { Int($0.split(separator: "=").last ?? "") }
             selectedPark = referenceID.flatMap(FloridaPark.init(rawValue:)) ?? .magicKingdom
-            snapshot = referenceID == nil ? NativeParkMapUITestScreen.rootSnapshot()
-                : ReferenceParkUITestFixture.snapshot(for: selectedPark!)
-            if ProcessInfo.processInfo.arguments.contains("--ride-history-supported"), let selectedPark {
-                waitLearning = ReferenceParkUITestFixture.learningHistory(park: selectedPark)
+            snapshot = referenceID == nil ? NativeParkMapUITestScreen.rootSnapshot(at: fixtureNow)
+                : ReferenceParkUITestFixture.snapshot(for: selectedPark!, at: fixtureNow)
+            if ProcessInfo.processInfo.arguments.contains("--ride-history-supported"), let selectedPark,
+               let openingTime = snapshot?.parkHours?.regular?.openingTime {
+                waitLearning = ReferenceParkUITestFixture.learningHistory(park: selectedPark,
+                    openingTime: openingTime, at: fixtureNow)
             } else if ProcessInfo.processInfo.arguments.contains("--ride-history-ui-test") {
                 waitLearning = WaitLearningHistory()
             }

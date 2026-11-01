@@ -774,8 +774,8 @@ struct NativeParkMapUITestScreen: View {
     private let snapshot: LiveParkSnapshot
     private let refreshFailed = ProcessInfo.processInfo.arguments.contains("--map-refresh-failed")
 
-    init() {
-        let now = Date().timeIntervalSince1970
+    init(at date: Date = Date()) {
+        let now = date.timeIntervalSince1970
         let cases: [(String, String, Int?, Double)] = [
             ("Current wait ride", "OPEN", 35, 0), ("Walk-on ride", "OPEN", 0, 0),
             ("Unposted wait ride", "OPEN", nil, 0), ("Closed ride", "DOWN", 99, -3600),
@@ -817,9 +817,9 @@ struct NativeParkMapUITestScreen: View {
         snapshot = try! decoder.decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: payload))
     }
 
-    static func rootSnapshot() -> LiveParkSnapshot {
+    static func rootSnapshot(at date: Date = Date()) -> LiveParkSnapshot {
         let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .secondsSince1970
-        let base = NativeParkMapUITestScreen().snapshot
+        let base = NativeParkMapUITestScreen(at: date).snapshot
         var payload = try! JSONSerialization.jsonObject(with: encoder.encode(base)) as! [String: Any]
         let points = try! ParkMapCatalog.load().parks["6"]!.points.filter { $0.rideId != nil }
         let selected = points.filter { [138, 137, 131].contains($0.rideId!) }
@@ -830,12 +830,12 @@ struct NativeParkMapUITestScreen: View {
             ride["location"] = ["latitude": point.latitude, "longitude": point.longitude]
             return ride
         }
-        let now = Date().timeIntervalSince1970
+        let now = date.timeIntervalSince1970
         payload["shows"] = [["id": "apple-ui-show", "name": "Castle afternoon performance", "sourceUpdatedAt": now,
             "nextShowAt": now + 7200, "showtimes": [["startTime": now + 7200, "endTime": now + 9000]]]]
         payload["showsSourceUpdatedAt"] = now
         payload["parkHours"] = ["parkId": 6, "parkName": "Magic Kingdom Park", "timezone": "America/New_York",
-            "date": ParkHoursSnapshot.localDate(for: .magicKingdom, at: Date()), "fetchedAt": now,
+            "date": ParkHoursSnapshot.localDate(for: .magicKingdom, at: date), "fetchedAt": now,
             "cacheAgeSeconds": 0, "cacheHit": false, "stale": false,
             "regular": ["openingTime": now - 3600, "closingTime": now + 28800, "label": "Park open", "type": "OPERATING"],
             "earlyEntry": ["openingTime": now - 5400, "closingTime": now - 3600, "label": "Early entry", "type": "EXTRA_HOURS"],
