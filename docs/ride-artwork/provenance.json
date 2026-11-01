@@ -1770,6 +1770,56 @@
     },
     {
       "parkId": 21,
+      "rideId": 10195714265280,
+      "rideName": "Sunny Day Carousel",
+      "alt": "Illustrated Sunny Day Carousel at SeaWorld Orlando",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:42:47.378932+00:00",
+      "originalSHA256": "523fd9c9437fd96c34a6094d335340f3380cc4f970deb4c1fc1c645e32ce8e5a",
+      "review": "Accepted: Actually inspected the complete January 2022 original photograph and full generated portrait. Real blue/teal wave fascia, green roof, blue support columns, gold/green frieze with fixed printed portraits, ornate painted mounts and vertical poles, blue/yellow barrier, real Sunny Day sign and ordinary source visitors retain recognizable documented geometry. Photographic surfaces and restrained dusk; no invented hidden mechanism or operating-status claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://themeparkreview.com/forum/uploads/monthly_2022_01/019.jpeg.d8b9ba99a5484b56c77bf61e729367d9.jpeg",
+          "alt": "Exact following caption: At the edge of Sesame Street Land, former Sea Carousel reopened as Sunny Day Carousel",
+          "sourceURL": "https://themeparkreview.com/forum/topic/21898-seaworld-orlando-swo-discussion-thread/page/267/",
+          "credit": "jedimaster1227, original on-site report posted January 22 2022, Theme Park Review",
+          "license": "Photographic reference only; original photographer rights retained",
+          "licenseURL": "https://themeparkreview.com/forum/topic/21898-seaworld-orlando-swo-discussion-thread/page/267/",
+          "sourcePostID": "1908936",
+          "sourcePostDate": "2022-01-22T18:41:47Z",
+          "sourceAuthorVerified": true,
+          "sourceCaptureDateVerified": false,
+          "sha256": "b1308cb6903b94004e6c91179b474a4eef35defd86151ae3e2b30a516e71150b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually read the original on-site Inside Look report posted January 22 2022 by jedimaster1227 and its exact caption AFTER photograph 019 (not the following construction-fence image 020), then inspected the full genuine carousel photo and current operator body. Source real round carousel has blue/teal wave fascia, green roof, blue columns, gold/green inner scrollwork with fixed printed Sesame character portraits, actual ornate painted horse/animal mounts on visible vertical poles, blue/yellow wave barrier and a real Sunny Day Carousel entrance sign at right. Ordinary clothed source visitors stand outside; actual trees and palm-shaped lamp are visible. Compose only this documented carousel front/real sign and visible mounts with realistic painted fiberglass/metal/wood at restrained blue-purple dusk, preserving roof/post/pole connections. Characters remain printed portraits/signs and fabricated mounts, not live beings. No invented hidden rotation mechanism, extra character or whole unshown rear layout. Historical capture does not establish current paint/service. Other inaccessible media URLs were not retried; this is a distinct original photographer source."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "21-10195714265280-thumbnail.jpg",
+      "thumbnailSHA256": "a1a43c462757f0970abeff52ac909c6db6aacbfb068d976a8abf7f4d193c4d54",
+      "thumbnailBytes": 27945,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "21-10195714265280-detail.jpg",
+      "detailSHA256": "5ab4825d729ee6a7d34a6af7ae49268c0d5ec6fc302f96bb246b628b17246e2f",
+      "detailBytes": 251675,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "21-10195714265280",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Sunny Day Carousel at SeaWorld Orlando, Florida. Source- and pixel-reviewed facts and limits: Actually read the original on-site Inside Look report posted January 22 2022 by jedimaster1227 and its exact caption AFTER photograph 019 (not the following construction-fence image 020), then inspected the full genuine carousel photo and current operator body. Source real round carousel has blue/teal wave fascia, green roof, blue columns, gold/green inner scrollwork with fixed printed Sesame character portraits, actual ornate painted horse/animal mounts on visible vertical poles, blue/yellow wave barrier and a real Sunny Day Carousel entrance sign at right. Ordinary clothed source visitors stand outside; actual trees and palm-shaped lamp are visible. Compose only this documented carousel front/real sign and visible mounts with realistic painted fiberglass/metal/wood at restrained blue-purple dusk, preserving roof/post/pole connections. Characters remain printed portraits/signs and fabricated mounts, not live beings. No invented hidden rotation mechanism, extra character or whole unshown rear layout. Historical capture does not establish current paint/service. Other inaccessible media URLs were not retried; this is a distinct original photographer source. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "f2259a9a79a5d19e411e71ca2e9f87079ae869052d13523707eb29795318c6aa",
+      "generationSteps": []
+    },
+    {
+      "parkId": 21,
       "rideId": 41297957342255,
       "rideName": "Pipeline: The Surf Coaster",
       "alt": "Illustrated Pipeline: The Surf Coaster at SeaWorld Orlando",
@@ -1813,6 +1863,55 @@
       "key": "21-41297957342255",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Pipeline: The Surf Coaster at SeaWorld Orlando. Source- and pixel-reviewed facts and limits: Actually inspected official photograph shows Pipeline's real orange/yellow surfboard-like flat train deck on teal tubular running rails and box spine, with gray cylindrical support, actual gray vertical dynamic seat-support arms and undercarriage/wheel bogies physically connected to the rail. Ordinary clothed standing riders have the actual orange over-the-shoulder restraints and teal seat backs. Preserve this documented banked section, standing rider posture and manufactured geometry; do not turn it into a seated, floorless or inverted coaster, or invent the hidden course. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
       "promptSHA256": "bb187eab537335c9466f4e97b5bec45b7e6e01bfc9bac98e15cab583535b9019",
+      "generationSteps": []
+    },
+    {
+      "parkId": 21,
+      "rideId": 67702520791477,
+      "rideName": "SEAQuest: Legends of the Deep",
+      "alt": "Illustrated SEAQuest: Legends of the Deep at SeaWorld Orlando",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:55:26.775017+00:00",
+      "originalSHA256": "4c2bd2e677404f8adf7b291f0a22bab1ff29b815e7937e455a1de7a1e1e89bb6",
+      "review": "Accepted: Actually inspected the official manufacturer body/gallery, all four original photos and full generated portrait. Empty yellow/blue display shell, blue bench, stainless guard rails, round front lamp, lower honeycomb grille, connected black overhead joint and two dark-blue floor stand tubes preserve source geometry. White exhibition booth, flat coral print and overhead light fascia remain display context. Source 2026 opening poster and people are excluded. No underwater world, completed ride course, motion or current operation implied. Generated representative exhibition-vehicle artwork, not a documentary photo.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.vekoma.com/public/data/image/photos/seaquest-legends-of-the-deep-ride-vehicle-204.jpeg",
+          "alt": "",
+          "sourceURL": "https://www.vekoma.com/news/new-suspended-dark-ride-launching-in-2026",
+          "credit": "Vekoma Rides Manufacturing B.V., official November 30 2025 IAAPA release; individual photographer not stated",
+          "license": "Vekoma retains original-photo rights; photographic reference only, no permission to redistribute original asserted.",
+          "licenseURL": "https://www.vekoma.com/news/new-suspended-dark-ride-launching-in-2026",
+          "sourcePublicationDate": "2025-11-30",
+          "sourcePhotographerVerified": false,
+          "depictionScope": "Actual empty exhibition display vehicle at IAAPA Expo 2025 in manufacturer booth. Not a finished, open or operating in-park attraction. No underwater scene, ride course or opening-year claim permitted.",
+          "sha256": "faf291d926d25ed08a74b8bd3002f305cdab3f15d9e3f682a4f94263d047cd2e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually read the official November 30 2025 Vekoma manufacturer release naming this exact SeaWorld Orlando vehicle and IAAPA event, inspected its actual gallery link HTML and all four original manufacturer photographs, then selected the genuine EMPTY front-view display vehicle (not the two executive/group photos or underwater concept art). Source bright yellow open-front submersible-shaped shell has dark-blue canopy interior, real blue bench, stainless front guard bars and side rails, central round yellow front lamp with blue stripe, lower dark honeycomb grille and SW-26 body identifier. Actual black rotation joint and dark-blue display gantry connect above the roof; two dark-blue tubular floor feet support the booth display. Preserve these actual visible physical connections and painted fiberglass/metal in a tight realistic portrait at restrained blue-purple practical indoor lighting. Keep the documented white exhibition booth context with any actual backdrop coral remaining a flat printed panel. The curved white overhead exhibition light fascia is NOT an operating ride rail. Crop the 2026 opening-year marketing poster and all people outside the composition; no new text, dates, people, ride route, underwater world, open/closed claim, vehicle motion or completed in-park ride. Current operator page says Coming Soon; this is representative artwork of the known exhibition vehicle, not a completed operating attraction. Earlier inaccessible publisher/photo URLs were not retried or modified; this is the manufacturers own independently published source."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "21-67702520791477-thumbnail.jpg",
+      "thumbnailSHA256": "6d639b8b64a3f28a621fe4a13d04322948d5173499bfa26884d368688b66a50b",
+      "thumbnailBytes": 19639,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "21-67702520791477-detail.jpg",
+      "detailSHA256": "e9594835fe87ea340c65b05e9eedef11edcb38b08e7a8a060a8f6ce9ac84ab2a",
+      "detailBytes": 134838,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "21-67702520791477",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict SEAQuest: Legends of the Deep at SeaWorld Orlando, Florida. Source- and pixel-reviewed facts and limits: Actually read the official November 30 2025 Vekoma manufacturer release naming this exact SeaWorld Orlando vehicle and IAAPA event, inspected its actual gallery link HTML and all four original manufacturer photographs, then selected the genuine EMPTY front-view display vehicle (not the two executive/group photos or underwater concept art). Source bright yellow open-front submersible-shaped shell has dark-blue canopy interior, real blue bench, stainless front guard bars and side rails, central round yellow front lamp with blue stripe, lower dark honeycomb grille and SW-26 body identifier. Actual black rotation joint and dark-blue display gantry connect above the roof; two dark-blue tubular floor feet support the booth display. Preserve these actual visible physical connections and painted fiberglass/metal in a tight realistic portrait at restrained blue-purple practical indoor lighting. Keep the documented white exhibition booth context with any actual backdrop coral remaining a flat printed panel. The curved white overhead exhibition light fascia is NOT an operating ride rail. Crop the 2026 opening-year marketing poster and all people outside the composition; no new text, dates, people, ride route, underwater world, open/closed claim, vehicle motion or completed in-park ride. Current operator page says Coming Soon; this is representative artwork of the known exhibition vehicle, not a completed operating attraction. Earlier inaccessible publisher/photo URLs were not retried or modified; this is the manufacturers own independently published source. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "062a636d8ce32b88dc119d52c1c929bd0799a9630eb4e9a039800c07349ec05e",
       "generationSteps": []
     },
     {
@@ -1908,6 +2007,55 @@
     },
     {
       "parkId": 21,
+      "rideId": 175908667835056,
+      "rideName": "ALL NEW! - Expedition Odyssey Fire & Ice",
+      "alt": "Illustrated ALL NEW! - Expedition Odyssey Fire & Ice at SeaWorld Orlando",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:51:52.111700+00:00",
+      "originalSHA256": "8adb51db1e6cd9c5b15a6f4c350e4500a600f6c8311618dd7c617613048f753f",
+      "review": "Accepted: Actually viewed full current original physical entrance photo and generated portrait. Wood gable, connected circular radial metal grid, raised white Expedition Odyssey/compass lettering and genuine red charred Fire & Ice plaque preserve source recognition. Tight upper facade composition excludes numeric wait board and all operational displays. Realistic representative generated facade, not theater hardware, film still or live operating evidence.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.laughingplace.com/uploads/media/2026/05/Full-POV-Expedition-Odyssey-Fire-Ice-Debuts-at-SeaWorld-Orlando.png/w2048",
+          "alt": "",
+          "sourceURL": "https://www.laughingplace.com/parks/expedition-odyssey-fire-and-ice/",
+          "credit": "Jeremiah Good, photography; Maxon Faber, article; Laughing Place, May 23 2026",
+          "license": "All rights retained by original publisher/photographer; reference only, no license to redistribute original asserted.",
+          "licenseURL": "https://www.laughingplace.com/parks/expedition-odyssey-fire-and-ice/",
+          "sourcePublicationDate": "2026-05-23",
+          "sourcePhotographerVerified": true,
+          "depictionScope": "Physical entrance facade of current Fire & Ice version; crop excludes numeric wait board and operational panels. Does not depict flying theater hardware or film imagery.",
+          "sha256": "77388a5023e37f0571be5c551e63f9909421cf373208b7969bfad1d2b249ff18",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually read the complete May 23 2026 on-site media-opening article by Maxon Faber with photography explicitly credited to Jeremiah Good; viewed all four downloaded current physical photos, then selected the genuine exterior entrance facade. Source actual dark wood gable has blue-gray circular radial metal grid, raised white EXPEDITION ODYSSEY lettering and compass-shaped O, with the real lower red charred-wood FIRE & ICE plaque suspended by rope. Compose only this documented upper facade/sign section with realistic wood grain, painted metal, raised letters and actual rope connections at restrained blue-purple dusk. The numeric wait-time board and every operational display below are OUTSIDE the crop; do not show or invent a numeric wait, open/closed indication, flying theater seats, hidden mechanism, film scene or whole unseen entrance. Rejected the 2025 original queue because the 2026 Fire & Ice story/queue changed; this current original-photo source is independently accessible after other publishers media returned403 and were not retried."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "21-175908667835056-thumbnail.jpg",
+      "thumbnailSHA256": "1a19cdda90ea85cc75fcbd7ef6c99106baad02ea5e8db637ce0b5c007e2b64be",
+      "thumbnailBytes": 25278,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "21-175908667835056-detail.jpg",
+      "detailSHA256": "3d02d4a0c5cbb902550769ba8bc217d8dded97e73d19f01a6acf1e9a46471ba9",
+      "detailBytes": 180853,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "21-175908667835056",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Expedition Odyssey Fire & Ice at SeaWorld Orlando, Florida. Source- and pixel-reviewed facts and limits: Actually read the complete May 23 2026 on-site media-opening article by Maxon Faber with photography explicitly credited to Jeremiah Good; viewed all four downloaded current physical photos, then selected the genuine exterior entrance facade. Source actual dark wood gable has blue-gray circular radial metal grid, raised white EXPEDITION ODYSSEY lettering and compass-shaped O, with the real lower red charred-wood FIRE & ICE plaque suspended by rope. Compose only this documented upper facade/sign section with realistic wood grain, painted metal, raised letters and actual rope connections at restrained blue-purple dusk. The numeric wait-time board and every operational display below are OUTSIDE the crop; do not show or invent a numeric wait, open/closed indication, flying theater seats, hidden mechanism, film scene or whole unseen entrance. Rejected the 2025 original queue because the 2026 Fire & Ice story/queue changed; this current original-photo source is independently accessible after other publishers media returned403 and were not retried. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "a9ad42d849e90b5c8f76ca9c3f2d360a2655c231b3031a205f0e76aba81ae75e",
+      "generationSteps": []
+    },
+    {
+      "parkId": 21,
       "rideId": 196344009848927,
       "rideName": "Journey to Atlantis",
       "alt": "Illustrated Journey to Atlantis at SeaWorld Orlando",
@@ -1975,6 +2123,52 @@
           "review": "Accepted: Actually viewed final factual edit and source photo. Unsupported extended tall drop/building removed, keeping the actual gray-white red-trim boat, ordinary source riders, white splash, tan rockwork, short concrete flume walls and dark rails. Source-visible section only with realistic water and dusk lighting."
         }
       ]
+    },
+    {
+      "parkId": 21,
+      "rideId": 198212415171856,
+      "rideName": "Slimey's Slider",
+      "alt": "Illustrated Slimey's Slider at SeaWorld Orlando",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:37:50.922835+00:00",
+      "originalSHA256": "e33da8a7ff73f5b1ed84273d26cde22113e7548828cddc3f12bde3255a2865fd",
+      "review": "Accepted: Actually viewed the genuine original publisher photo and full generated portrait. Empty purple/yellow/orange/green rocking boat and real seating/gates, yellow fence, shade sails and fixed printed compost-garden backdrop preserve source physical geometry. No invented hidden undercarriage or riders. Realistic generated representative art, not current-operating evidence.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://orlandoinformer.com/wp-content/uploads/2022/04/20190326-DSC09212-1024x683.jpg",
+          "alt": "Slimeys Slider at Sesame Street Land, exact adjacent caption",
+          "sourceURL": "https://orlandoinformer.com/seaworld/sesame-street-land-orlando/",
+          "credit": "Orlando Informer attraction photography; individual photographer not stated",
+          "license": "Reference only; copyright Orlando Informer/photographer retained",
+          "licenseURL": "https://orlandoinformer.com/seaworld/sesame-street-land-orlando/",
+          "sha256": "3eacff4118a4fd5e9e4a7202d06e4756c6b754e25de8edf8612d218e4998baeb",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually read the Orlando Informer original attraction body and adjacent photo caption naming Slimeys Slider, viewed the genuine exact photo, and read current operator body. Source actual EMPTY rocking-tug style elongated boat has alternating purple/yellow/orange/green rounded fiberglass panels, yellow worm-like ends, real rows of purple bench seating/metal gates, yellow queue fence, overhead orange/yellow shade sails on green posts and the actual flat Oscar/Slimey compost-garden printed backdrop. Compose only this documented boat/fence/backdrop section with realistic paint/metal/textile at restrained blue-purple dusk. Characters remain printed fixed backdrop artwork and physical boat decoration, not live cartoon creatures. Do not invent hidden undercarriage rails/mechanism, people, full arena or current operational condition."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "21-198212415171856-thumbnail.jpg",
+      "thumbnailSHA256": "ee72215afa11e61571435c3539931c48951c73b2ab2c6258842852f822d3a8d0",
+      "thumbnailBytes": 25215,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "21-198212415171856-detail.jpg",
+      "detailSHA256": "3d5162307a1f6cf8ac3a7f461317d93aff263cf9f683a70c10e86a69f5d405c2",
+      "detailBytes": 183143,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "21-198212415171856",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Slimey's Slider at SeaWorld Orlando, Florida. Source- and pixel-reviewed facts and limits: Actually read the Orlando Informer original attraction body and adjacent photo caption naming Slimeys Slider, viewed the genuine exact photo, and read current operator body. Source actual EMPTY rocking-tug style elongated boat has alternating purple/yellow/orange/green rounded fiberglass panels, yellow worm-like ends, real rows of purple bench seating/metal gates, yellow queue fence, overhead orange/yellow shade sails on green posts and the actual flat Oscar/Slimey compost-garden printed backdrop. Compose only this documented boat/fence/backdrop section with realistic paint/metal/textile at restrained blue-purple dusk. Characters remain printed fixed backdrop artwork and physical boat decoration, not live cartoon creatures. Do not invent hidden undercarriage rails/mechanism, people, full arena or current operational condition. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "94a25d393bea9a3a6eba00ced738e9fa638506e145173557cc3cea576994bf99",
+      "generationSteps": []
     },
     {
       "parkId": 21,
@@ -41300,6 +41494,52 @@
     },
     {
       "parkId": 65,
+      "rideId": 5996,
+      "rideName": "MEN IN BLACK™ Alien Attack!™",
+      "alt": "Illustrated MEN IN BLACK™ Alien Attack!™ at Universal Studios Florida",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:33:48.295167+00:00",
+      "originalSHA256": "853e88d59581a082c94030a4bf6012d7083d4d19549b572820a29ed95be93914",
+      "review": "Accepted: Actually viewed genuine original publisher source photo and full generated portrait. Real elliptical sign/base, existing blue/green lettering and source futuristic building/hedges/trees preserved as manufactured park structures; no live agents or invented interior. Realistic generated representative imagery, not a documentary photo.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://orlandoinformer.com/wp-content/uploads/2024/05/MEN-IN-BLACK-Alien-Attack-1024x683.jpg",
+          "alt": "MEN IN BLACK Alien Attack",
+          "sourceURL": "https://orlandoinformer.com/universal/men-in-black-alien-attack/",
+          "credit": "Orlando Informer attraction photography; individual photographer not stated",
+          "license": "Reference only; copyright Orlando Informer/photographer retained",
+          "licenseURL": "https://orlandoinformer.com/universal/men-in-black-alien-attack/",
+          "sha256": "ed2a347ac347a1e9534d58f83a06b336cdfbd7a8007a92a8eac3f1903580dc1c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually read the original publisher attraction body/caption and current operator guide, then viewed the genuine Orlando Informer photograph of the exact Orlando attraction sign. Source real white elliptical physical sign housing on a gray pedestal has black center, actual blue MIB/Men in Black and green Alien Attack lettering, with real low futuristic white/blue building, hedges and mature trees behind. Compose only this documented sign/building/landscape section at realistic restrained blue-purple dusk, preserving sign ellipse/thickness/base and existing typography as physical park signage. Small source ordinary visitor may remain at source scale. No live agents, movie actor, alien attack, invented ride car or unseen interior. Capture date and current paint/operation are unverified; this is generated representative artwork."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "65-5996-thumbnail.jpg",
+      "thumbnailSHA256": "09f78827c671282e12ffa2f71c55a8d6622964439dbe21f8a660c1cdcd903eac",
+      "thumbnailBytes": 25014,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "65-5996-detail.jpg",
+      "detailSHA256": "227ec7d4e006b0f9a53f0f017fcd65f76bafdda3eeeb3a1dff87b1e848dd49f7",
+      "detailBytes": 165021,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "65-5996",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict MEN IN BLACK Alien Attack at Universal Studios Florida, Orlando. Source- and pixel-reviewed facts and limits: Actually read the original publisher attraction body/caption and current operator guide, then viewed the genuine Orlando Informer photograph of the exact Orlando attraction sign. Source real white elliptical physical sign housing on a gray pedestal has black center, actual blue MIB/Men in Black and green Alien Attack lettering, with real low futuristic white/blue building, hedges and mature trees behind. Compose only this documented sign/building/landscape section at realistic restrained blue-purple dusk, preserving sign ellipse/thickness/base and existing typography as physical park signage. Small source ordinary visitor may remain at source scale. No live agents, movie actor, alien attack, invented ride car or unseen interior. Capture date and current paint/operation are unverified; this is generated representative artwork. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "2ead0dcebd83ab8bbce52ce2f7f36e198a720e4ad4c8a2fd4f2b38b403473a07",
+      "generationSteps": []
+    },
+    {
+      "parkId": 65,
       "rideId": 6000,
       "rideName": "Revenge of the Mummy™",
       "alt": "Illustrated Revenge of the Mummy™ at Universal Studios Florida",
@@ -41492,6 +41732,52 @@
       "key": "65-6018",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Race Through New York Starring Jimmy Fallon™ at Universal Studios Florida, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed operator own-gallery photo and read exact caption identifying the Race Through New York building exterior in Universal Studios Florida. Source real cream stone NBC-styled facade has blue window panels, actual metallic rounded Tonight Show/NBC Studios canopy with red/white mounted letters, round blue attraction sign and a fixed photographic Jimmy Fallon cutout mounted above the canopy. Preserve this fabricated physical signage/cutout and source building materials at realistic blue-purple dusk; it is a sign on the park building, not the celebrity physically visiting or endorsing a product. No live presenter, staged new event, actual Manhattan streets, hidden simulator or new sign text. Exact capture date/current paint or operating state are not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
       "promptSHA256": "7ea9fa245246b116a7b6b784838fb894f7fa9a1e1e0b82153096dfe321c4b466",
+      "generationSteps": []
+    },
+    {
+      "parkId": 65,
+      "rideId": 6038,
+      "rideName": "Fast & Furious - Supercharged™",
+      "alt": "Illustrated Fast & Furious - Supercharged™ at Universal Studios Florida",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:33:15.282643+00:00",
+      "originalSHA256": "ebf46d7ee18550d7bbcfad16050cf492316a0b30c62bd8b33c160ef7ef0446df",
+      "review": "Accepted: Actually viewed genuine original publisher source photo and full generated portrait. Real brick warehouse/three arched openings, painted attraction name, streetlights, green fence and practical fountain preserved. Operational panels remain too small to read; no invented current wait or operating claim. Realistic generated representative imagery, not a documentary photo.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://orlandoinformer.com/wp-content/uploads/2023/02/Fast-Furious-Supercharged-at-Universal-Studios-Florida-1024x683.jpg",
+          "alt": "Fast & Furious - Supercharged at Universal Studios Florida",
+          "sourceURL": "https://orlandoinformer.com/universal/fast-and-furious-supercharged/",
+          "credit": "Orlando Informer attraction photography; individual photographer not stated",
+          "license": "Reference only; copyright original photographer/publisher retained",
+          "licenseURL": "https://orlandoinformer.com/universal/fast-and-furious-supercharged/",
+          "sha256": "5126ae38c56393c7b0093728b53ae1f6016bd74d6c089076ea034956bfe680d1",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually read original publisher attraction body/photo caption and viewed genuine Orlando Informer exterior photo for Universal Studios Florida. Actual source red-brick warehouse has three tall arched openings, pale painted FAST & FURIOUS SUPERCHARGED lettering, source streetlamps, green wrought-iron fence, foreground practical tiered fountain, bushes, entrance umbrella and small ordinary clothed guests. Compose only this documented physical building/fountain section under restrained blue-purple dusk with real brick/metal/water. Keep entrance small operational signs/numeric wait panels outside the frame or too distant to read; no generated current waits or operating claim. Preserve source building geometry and actual painted lettering, not an actual San Francisco relocation. No live film actor, car chase, hidden ride vehicle, Hollywood coaster or invented full interior. Operator current page redirects; historical/static artwork does not establish current service."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "65-6038-thumbnail.jpg",
+      "thumbnailSHA256": "67684bdd14b887fcf2a571aed0f83293dbc4bf9d64f300bc7f14b40df02d476b",
+      "thumbnailBytes": 27012,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "65-6038-detail.jpg",
+      "detailSHA256": "d50e7dde5cdcf0b7f29862493b60cd83f3221f47049fa3ae3562584b5af1b526",
+      "detailBytes": 225128,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "65-6038",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Fast & Furious – Supercharged at Universal Studios Florida, Orlando. Source- and pixel-reviewed facts and limits: Actually read original publisher attraction body/photo caption and viewed genuine Orlando Informer exterior photo for Universal Studios Florida. Actual source red-brick warehouse has three tall arched openings, pale painted FAST & FURIOUS SUPERCHARGED lettering, source streetlamps, green wrought-iron fence, foreground practical tiered fountain, bushes, entrance umbrella and small ordinary clothed guests. Compose only this documented physical building/fountain section under restrained blue-purple dusk with real brick/metal/water. Keep entrance small operational signs/numeric wait panels outside the frame or too distant to read; no generated current waits or operating claim. Preserve source building geometry and actual painted lettering, not an actual San Francisco relocation. No live film actor, car chase, hidden ride vehicle, Hollywood coaster or invented full interior. Operator current page redirects; historical/static artwork does not establish current service. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "21b5e8d8898f9fbd2da364437fdfd36296d6f73a430c2137c6a11908e8172f2c",
       "generationSteps": []
     },
     {

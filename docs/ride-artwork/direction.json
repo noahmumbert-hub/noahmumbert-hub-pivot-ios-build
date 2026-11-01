@@ -10,8 +10,9 @@
     "Continue labeling images as AI-generated, never as real photographs."
   ],
   "existingAssetStatus": "Bundled records with styleRevision 2 have been reviewed for the requested direction. Earlier records require review/revision; a missing styleRevision means original style 1.",
-  "acceptedForRequestedStyle": 1076,
+  "acceptedForRequestedStyle": 1082,
   "continuationModel": "GPT-6.1 Sol",
   "continuationReasoning": "max",
-  "publicationAuthorized": false
+  "publicationAuthorized": false,
+  "publicationAuthorizationContext": "Noah separately authorized Florida pictures with other updates. Parent release owner owns publication and final gates; frozen artwork selection d30931a62de9d4ce618efc4488a59962a794ce4f / florida-addendum-120-2026-11-01.json. This executor has no release-branch/feed action delegated."
 }

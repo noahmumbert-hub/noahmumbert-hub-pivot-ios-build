@@ -364,11 +364,11 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 1077,
-    "pendingIllustrations": 47,
-    "acceptedForRequestedStyle": 1076,
-    "unfinishedForRequestedStyle": 48,
-    "blocked": 30
+    "acceptedIllustrations": 1083,
+    "pendingIllustrations": 41,
+    "acceptedForRequestedStyle": 1082,
+    "unfinishedForRequestedStyle": 42,
+    "blocked": 33
   },
   "parks": [
     {
@@ -2194,10 +2194,10 @@
           "url": "https://coasterpedia.net/wiki/Sunny_Day_Carousel_(SeaWorld_Orlando)"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "21-41297957342255",
@@ -2262,10 +2262,10 @@
           "url": "https://seaworld.com/orlando/blog/seaquest-legends-of-the-deep/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "21-132368262506504",
@@ -2323,7 +2323,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "21-161007786566085",
@@ -2385,10 +2385,10 @@
           "url": "https://iaapa.org/news-funworld/expedition-odyssey-seaworld-orlando"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "21-185875270501956",
@@ -2417,7 +2417,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "21-196344009848927",
@@ -2472,10 +2472,10 @@
           "url": "https://coasterpedia.net/wiki/Slimey%27s_Slider"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "21-201433938641141",
@@ -2671,7 +2671,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "21-262673904341261",
@@ -26092,10 +26092,10 @@
           "url": "https://darkridedatabase.com/rides/men-in-black-alien-attack/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "65-6000",
@@ -26266,10 +26266,10 @@
           "url": "https://coasterpedia.net/wiki/Fast_%26_Furious:_Supercharged_(Universal_Studios_Florida)"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "65-12107",
