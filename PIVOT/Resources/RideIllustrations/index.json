@@ -15925,6 +15925,692 @@
       ]
     },
     {
+      "parkId": 44,
+      "rideId": 12964809535981,
+      "rideName": "Big Bambu and Reef Runner",
+      "alt": "Illustrated Big Bambu and Reef Runner at Hurricane Harbor New Jersey",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:29:54.061597+00:00",
+      "originalSHA256": "44fb30959d572aed2b60928b48be786da62de5e968ec5a70e3a9026289c0f6e9",
+      "review": "Accepted: the inspected portrait preserves the paired Big Bambu/Reef Runner tower's orange tube into wide yellow/orange final drop, real yellow raft and central inclined raft conveyor. Actual source-supported structural connections and visible chute section remain distinct.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F6dd19e696c7dc13a5d732bb6b2f00c22dec6e95f-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests riding the Big Bambu and Reef Runner",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/big-bambu-and-reef-runner",
+          "credit": "Six Flags / Hurricane Harbor New Jersey (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d76ff75a9895bbabcc84d4e906599ef6e18be320322a44bca03e738b824ff937",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator own-hero Big Bambu/Reef Runner paired family-raft photo at Hurricane Harbor New Jersey: bright orange enclosed broad tube feeds a yellow/orange wide open final drop, actual round yellow raft with seated ordinary riders and white water; timber/steel shared tower, central inclined black raft-conveyor belt with ladder-like side guards, far-right separate red open chute mostly hidden by trees. Preserve exact documented raft/drop/conveyor and connected pipe section, no invented full route or different park. Another catalog spelling is an alias of this same physical paired ride, not a separate new attraction."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "44-12964809535981-thumbnail.jpg",
+      "thumbnailSHA256": "4b89ae503f59002ce725f883c94cd6b15512eb9ab112962ed504eec95fe892ec",
+      "thumbnailBytes": 24595,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "44-12964809535981-detail.jpg",
+      "detailSHA256": "359178b5910bf2e8a4f53c538092d6de8f5139f2f339733f5e7ffdf19da33752",
+      "detailBytes": 198890,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 44,
+      "rideId": 44784973942125,
+      "rideName": "zShark Attack",
+      "alt": "Illustrated zShark Attack at Hurricane Harbor New Jersey",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:49:08.213980+00:00",
+      "originalSHA256": "6157308adeb980611806c6d5662871f52f01f3459ba5584afe4c790db8ef3d44",
+      "review": "Accepted: Inspected generated original preserves current New Jersey purple/yellow miniature funnel, connected tube and straight open runout, rope-post fence and stacked yellow tubes. Close left-funnel composition is distinct from the paired-installation catalog alias; no pre-opening press-model colors.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?q=75&url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4b9006bd7c6119966bcffeeee684f8186c3aa8b6-8023x5351.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/splash-island",
+          "credit": "Six Flags / Hurricane Harbor New Jersey (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Observed photo candidate from named Splash Island operator page or credited 2023 press coverage",
+          "sha256": "08aea2e2104536ce0035d55be028636340abe7cdefd20e71e2603192743617cb",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual current operator Splash Island gallery shows the paired children tube-slide installation: left miniature funnel has purple and yellow fiberglass panels and a purple/yellow tube connected to its visible mouth; right neighboring open wave chute is lime green and orange, yellow one/two-person tubes are stacked behind rope-post fence and wooden shed. Current 2026 operator map explicitly names Rip Curl & Shark Attack as one complex, and this provider zShark Attack record has the exact same coordinates as the paired Shark Attack & Ripcurl record. Treat this as a catalog alias/component of the same physical pair, not a distinct new installation. Compose a close portrait of the documented LEFT purple/yellow miniature funnel and its open runout only, keeping photographed connection, timber deck and tubes; do not use the orange/white pre-opening press-model colors or invent hidden route/riders."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "44-44784973942125-thumbnail.jpg",
+      "thumbnailSHA256": "559a5c73a476759ae48773cdfd54ed68f77e2d79a077223d6c2561569b8cc51c",
+      "thumbnailBytes": 22213,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "44-44784973942125-detail.jpg",
+      "detailSHA256": "2df75dfcabdec04f3d11ac338dee1ec97f682c56017193e66f1d4c4c16a86e73",
+      "detailBytes": 164239,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 44,
+      "rideId": 45324762504288,
+      "rideName": "Big Bambu & Reef Runner",
+      "alt": "Illustrated Big Bambu & Reef Runner at Hurricane Harbor New Jersey",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:38:54.121701+00:00",
+      "originalSHA256": "edf98c78cedeaa6f570d3c8cb64db43271b6819b6e9f95b822bf18f05245d798",
+      "review": "Accepted: Inspected generated original preserves the documented orange, red and yellow banked final chute, grounded yellow round raft with three ordinary seated riders, handles and timber support lattice. This is a distinct photograph of the same paired attraction represented by its other catalog spelling.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F19fb83e29d0afa43599cfa7ee6aebd96a19380e2-5088x3392.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Slider Image",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/big-bambu-and-reef-runner",
+          "credit": "Six Flags / Hurricane Harbor New Jersey (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "4b14d28b5da4e8014443a088166f9514d0e4444332adabb29bd425e32698c4d1",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual inspected own-operator-gallery close photo of the same Big Bambu/Reef Runner physical pair, for its alternate catalog spelling: orange/red/yellow broad open final chute curves with tall sidewalls, yellow circular raft with three ordinary seated riders and dark grab handles, foaming shallow flow touching raft bottom, real timber support lattice behind. Use this intimate source crop, distinct from the other catalog key tower/conveyor view, without inventing a different attraction or a full hidden route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "44-45324762504288-thumbnail.jpg",
+      "thumbnailSHA256": "2ce61b848bd20c3c0ae13c3094d1e669ef521b6e5781409e719afb1bf7f80c1e",
+      "thumbnailBytes": 22043,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "44-45324762504288-detail.jpg",
+      "detailSHA256": "c79fe762d52bd9fd0975b291ae47e86afa23175d7d96a17a160ff7364adead7b",
+      "detailBytes": 155159,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 44,
+      "rideId": 64177074267998,
+      "rideName": "Cannonball, Wahini and Jurahnimo Falls",
+      "alt": "Illustrated Cannonball, Wahini and Jurahnimo Falls at Hurricane Harbor New Jersey",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:30:22.641965+00:00",
+      "originalSHA256": "ed2ef2fd73275841b9cebab9999e4b9af12c558ed9f7e943d471365cf61a827c",
+      "review": "Accepted: the inspected portrait preserves NJ Cannonball/Wahini/Jurahnimo's pink and cyan-blue enclosed tubes, steep segmented green body chute with single slider, real shared stair tower and matching runouts; the actual photographed repaint remains distinct from New England.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc61d9d9682b9a4ed4460b91335baea9fba59e76e-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Cannonball, Wahini and Jurahnimo Falls water slide",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/cannonball-wahini-and-jurahnimo-falls",
+          "credit": "Six Flags / Hurricane Harbor New Jersey (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e1865b0937929ec15c39a6f4564d78bdadaec5e76d1baf497dd83687715aa796",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator own-hero Cannonball/Wahini/Jurahnimo Falls New Jersey photograph: tall straight steep central open lime-green body chute with contrasting blue/pink segments and a single source slider, pink enclosed winding tube left and cyan-blue enclosed winding tube right, actual steel/timber shared stair tower with wooden rails, matching three long runout channels and real support saddles. Keep this actual NJ repaint and connected photographed geometry, not New England teal tubes or a raft ride, no invented route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "44-64177074267998-thumbnail.jpg",
+      "thumbnailSHA256": "99ef55a0797bdee40caa275e9a8b063fd2c21899f7c95ad5bb95c6d0b5f1ed33",
+      "thumbnailBytes": 26492,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "44-64177074267998-detail.jpg",
+      "detailSHA256": "d686ee3465b0a17846a099bc23f6eb9f9979bddde06371cda6f86763a4e59ca0",
+      "detailBytes": 208625,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 44,
+      "rideId": 77992680365925,
+      "rideName": "Calypso Springs",
+      "alt": "Illustrated Calypso Springs at Hurricane Harbor New Jersey",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:30:50.246324+00:00",
+      "originalSHA256": "508b5f5d87bc5dd9f79ea2cca9b271ff8ed51ddd2d9032ed4c3e508e50d8f000",
+      "review": "Accepted: the inspected portrait retains Calypso Springs' actual tan carved obelisk fountain and projecting clear water streams in turquoise pool, ordinary source bathers, lifeguard chair and blue painted wall. Photographic material and pool-view geometry remain recognizable.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fefc521b770acadd5eb1b14ea28cfc1d97fb9cc5b-1440x1532.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests swimming in Calypso Springs next to a water fountain",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/calypso-springs",
+          "credit": "Six Flags / Hurricane Harbor New Jersey (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "fd8e67a8bb59d21ea99d5cebcb8d75090f6517b3c8c602b8b8bf8b78d9799a8d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Calypso Springs photo: tan textured rectangular fountain pillar standing in pale turquoise pool, carved sun/abstract patterns and projecting upper water spouts sending several arcing clear streams down; ordinary source bathers, low white edge, actual lifeguard chair under red parasol and blue weathered wall with painted turtle/sun behind. Preserve real fountain and pool viewpoint, source-supported ordinary people and restrained evening light; no slide, invented wave machine or hidden pool layout."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "44-77992680365925-thumbnail.jpg",
+      "thumbnailSHA256": "77e3947f30584091317b291b308ae1e9619d552d8f1f40e00ae5f276846b7be9",
+      "thumbnailBytes": 28853,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "44-77992680365925-detail.jpg",
+      "detailSHA256": "41f3b218cf01e8338df88f98c79c701c066bda1f35e691e5bcc4f23ddea092a1",
+      "detailBytes": 211988,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 44,
+      "rideId": 87124302617979,
+      "rideName": "Bada Bing, Bada Bang, Bada Boom!",
+      "alt": "Illustrated Bada Bing, Bada Bang, Bada Boom! at Hurricane Harbor New Jersey",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:31:42.554985+00:00",
+      "originalSHA256": "d82d630e6bb212db1a9c3c0e21ea68d1759f4369326303551f919a7d902a7659",
+      "review": "Accepted: the inspected portrait retains the documented navy/teal/orange Bada slide outlets with crosswise water curtains, connected tubes on timber supports, shared pool and actual white tube riders. It uses actual source hues and does not invent a whole route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F53bac614a5634da72b974891b96aa2160d48a81f-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Visitors at Hurricane Harbor New Jersey enjoying the Bada Bing, Bada Bang, Bada Boom! water slide ride.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/bada-bing-bada-bang-bada-boom",
+          "credit": "Six Flags / Hurricane Harbor New Jersey (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "21e8d82f2435683a0555b890b45a41cd8674e23e2c3f6b66ae5e7178dd8a64d6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Bada Bing/Bang/Boom own-hero photo: dark navy-blue, teal-green and bright orange enclosed waterslide curves on timber posts, matching open final outlets with crosswise small water curtains into shared turquoise pool; documented white tube with black handles and seated source riders in foreground, shared timber stair tower behind. Use actual photographed hues even though page calls one slide purple; no unsupported repaint, full hidden route, generic straight body slide or fabricated raft."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "44-87124302617979-thumbnail.jpg",
+      "thumbnailSHA256": "fa6dbd01d3e1007480cf11327d6fb79c105e2df05a5d9c8c733ef849811c9298",
+      "thumbnailBytes": 26730,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "44-87124302617979-detail.jpg",
+      "detailSHA256": "db03f63bcda022c8742ff17169c4fdf8a838c5960819a566b3b22e56ba734065",
+      "detailBytes": 226975,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 44,
+      "rideId": 91757009950473,
+      "rideName": "The Winds",
+      "alt": "Illustrated The Winds at Hurricane Harbor New Jersey",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:32:07.231299+00:00",
+      "originalSHA256": "80b2f95c2ba44b217861abf1fbad79e317a65e7ca772b1a951061a1ae01142fd",
+      "review": "Accepted: the inspected portrait retains The Winds' four red/yellow/blue/green outlets, distinctive open lips and round tube mouths, actual timber stairs/supports and rushing splash water. The empty source finish view and separate connected channels are preserved.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/09038a0acd45a618d71a7726f211290fd3fdcaab-680x800.jpg?rect=0,223,680,355&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/the-winds",
+          "credit": "Six Flags / Hurricane Harbor New Jersey (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "35c23d52a0579a604699e0edff1a0f35b541b0009c876f450fd3e088609c720b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Winds own-hero photograph: four color-distinct red, yellow, blue and green tube outlets above shared splash pool. Red and blue have small transverse water-curtain lips before broad open drops, yellow has round enclosed mouth and green rounded tube mouth. Connected bright tube sections and natural timber tower/posts behind, actual low tan pool wall and rushing water, no source riders. Preserve the exact empty four-outlet finish and individual real colors, no invented people or whole unseen route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "44-91757009950473-thumbnail.jpg",
+      "thumbnailSHA256": "b9b66eaf3a7bc14445c892d5dc847578614f1b843d8ff15a852658eab25eb749",
+      "thumbnailBytes": 28248,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "44-91757009950473-detail.jpg",
+      "detailSHA256": "9ee3f5c5602a834225dd1292fb6c54b5098794264e6f44beb8fd2e1c4597fe1e",
+      "detailBytes": 217003,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 44,
+      "rideId": 118603060611344,
+      "rideName": "Shark Attack & Ripcurl",
+      "alt": "Illustrated Shark Attack & Ripcurl at Hurricane Harbor New Jersey",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:50:24.758978+00:00",
+      "originalSHA256": "5f6c1ce4cdc86c17622412c7b4c342ac9f9823c3c366a1d6e9b0f6509fd16086",
+      "review": "Accepted: Inspected generated original preserves current New Jersey paired slide finishes, with lime/orange open wave chute in foreground and purple/yellow miniature funnel behind, actual timber deck, rope fence, shed and yellow tubes. It depicts the same physical pair as the zShark Attack alias from a distinct composition.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?q=75&url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4b9006bd7c6119966bcffeeee684f8186c3aa8b6-8023x5351.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/splash-island",
+          "credit": "Six Flags / Hurricane Harbor New Jersey (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Observed photo candidate from named Splash Island operator page or credited 2023 press coverage",
+          "sha256": "08aea2e2104536ce0035d55be028636340abe7cdefd20e71e2603192743617cb",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual current operator Splash Island gallery shows both adjacent children tube-slide finishes: LEFT purple/yellow miniature funnel and connected tube/runout, RIGHT lime-green/orange open wave chute with shallow wet flow, actual timber deck, rope-post fence, stacked yellow one/two-person tubes and wood equipment shed. Current 2026 operator map explicitly names the paired Rip Curl & Shark Attack installation, and provider coordinates match its zShark Attack alias. Preserve this documented PAIR in a portrait view emphasizing the right green/orange wave chute with the left funnel visible behind; same physical installation, not a new ride. Do not copy the different orange/white or green/white pre-opening press-model colors or invent hidden full route/riders."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "44-118603060611344-thumbnail.jpg",
+      "thumbnailSHA256": "4be9aae9d1ed68304f05ea19d72ea888c4ebb186beda04dde3312c3d3886626d",
+      "thumbnailBytes": 21525,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "44-118603060611344-detail.jpg",
+      "detailSHA256": "f9c64a170010ee4c12785b49876b6c59a654c61b2a0541416034aabe60f00878",
+      "detailBytes": 164758,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 44,
+      "rideId": 187595848050022,
+      "rideName": "Blue Lagoon",
+      "alt": "Illustrated Blue Lagoon at Hurricane Harbor New Jersey",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:35:05.194267+00:00",
+      "originalSHA256": "1006332ae73b279bef146ec973770aa0fdd2e9fa48a5c133e5bf82336c8dbab9",
+      "review": "Accepted: Inspected generated original preserves the documented fixed brown and turquoise shipwreck on tan rocks, white sail, mural-backed pool and water-level swimmers. Natural wet surfaces and restrained dusk match requested treatment; no invented wave machinery.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/fbdafd5d011f91da32b21874992f587623fb7f87-680x800.jpg?rect=0,223,680,355&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/blue-lagoon",
+          "credit": "Six Flags / Hurricane Harbor New Jersey (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d814e960a99366ca030b048b418cc04d074e89ff307c56009600c5aca60fa145",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Blue Lagoon photo: wave-pool water level view with ordinary swimmers, low painted wave-and-sunset back wall and large fixed brown/turquoise decorative shipwreck perched on tan artificial rocks; tall white sail bears physical park branding, trees behind. Preserve documented decorative ship and actual pool edge/water perspective, not Discovery Bay play ship or an ocean, no invented wave machinery or giant waves beyond source."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "44-187595848050022-thumbnail.jpg",
+      "thumbnailSHA256": "5f9f95117fac738b50368c7481ce125446dd357fd8e0543d6cfe4a2891c3358a",
+      "thumbnailBytes": 25630,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "44-187595848050022-detail.jpg",
+      "detailSHA256": "ee1115197cbb85dab18e440d5f358fd769ae09ea15607e92188f69bb9cb9994d",
+      "detailBytes": 195150,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 44,
+      "rideId": 195414259720899,
+      "rideName": "Discovery Bay",
+      "alt": "Illustrated Discovery Bay at Hurricane Harbor New Jersey",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:35:29.578653+00:00",
+      "originalSHA256": "98e210a50d11d1f6b245fecc16b441e37afa03f07f35f70a21e2af3483157bec",
+      "review": "Accepted: Inspected generated original preserves the yellow tipping bucket, broad falling water curtain, tan pipe play tower and low stone-textured pool wall from this exact Discovery Bay photograph; distinct active bucket angle.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff49a12188b95332de758d40153c24e9081ff7b74-1751x973.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A large bucket of water tipping over at Discovery Bay in Hurricane Harbor New Jersey, soaking the splash pad.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/discovery-bay",
+          "credit": "Six Flags / Hurricane Harbor New Jersey (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "04b605ffcb17321dd9ebdf01a5d00a54fb78954aa5c6e14d739de9386d3e163b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Discovery Bay own hero: yellow large tipping bucket on tan/brown timber-look pipe/steel support frame dumping broad white water curtain across real multilevel water-play structure; exposed small water channels/spouts and yellow/teal panels, windmill-like prop on left, tan rock-textured low front pool wall with short falls and pale shallow pool. Preserve this photographed bucket/tower section and support connections, no invented ship beyond what this frame shows. Duplicate catalog name is the same play complex, not a new attraction."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "44-195414259720899-thumbnail.jpg",
+      "thumbnailSHA256": "0939123c37f1164d7cdb8e7bb65218813d89a6a028e5f85627f34b30c341d3d6",
+      "thumbnailBytes": 27154,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "44-195414259720899-detail.jpg",
+      "detailSHA256": "3aa55ab4659513d5859e0700fd2a3baa6bf66c1a8c8a4c0b658e662f5c43e0af",
+      "detailBytes": 221581,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 44,
+      "rideId": 204824750812251,
+      "rideName": "Discovery Bay - Pirate Ship",
+      "alt": "Illustrated Discovery Bay - Pirate Ship at Hurricane Harbor New Jersey",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:49:35.298330+00:00",
+      "originalSHA256": "fbdb3c319b389cede0042da90c7fb83a744a33b63fc50a209a3b8eb250a77a53",
+      "review": "Accepted: Inspected generated original preserves the documented partial brown/gold ship-shaped play structure, actual net mast and blue small slide at the shallow pool, tan rock edge, ordinary waders and lifeguard. It does not invent a full ship, sails or ocean beyond the source frame.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fd8be9b178d4a849a38c8a523733b627239c40081-8192x5464.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A lifeguard watching over children playing in the water at Discovery Bay in Hurricane Harbor New Jersey.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/discovery-bay",
+          "credit": "Six Flags / Hurricane Harbor New Jersey (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "267021a30bc38f15972c47bd81aad76db37ea150c73ce0d537fd35019db57f00",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Discovery Bay gallery shows the documented SMALL pirate-ship play structure at left: brown wood-look partial boat hull and bow with gold scroll decoration, upright timber masts/crossbars and actual climbing nets, small pale-blue slide into shallow pool, tan artificial rock edge and poolside lifeguard. Operator text explicitly identifies this Discovery Bay pirate ship and climbing nets; provider coordinates place this key in Discovery Bay, not the Blue Lagoon decorative shipwreck. Compose only the visible boat section and net mast, maintaining photograph geometry and shallow water; do not invent the unseen full ship, sails, ocean or extra decks."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "44-204824750812251-thumbnail.jpg",
+      "thumbnailSHA256": "240732a029024f10750216fe348d4fe40a2c5a188cbffa2e63a5efbe756cd6cd",
+      "thumbnailBytes": 24145,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "44-204824750812251-detail.jpg",
+      "detailSHA256": "2e83c60178cf331c6bcd7127910cddb0987dbc6010591e8affdc2e7a2b7c90ec",
+      "detailBytes": 189065,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 44,
+      "rideId": 239038740625247,
+      "rideName": "Tornado",
+      "alt": "Illustrated Tornado at Hurricane Harbor New Jersey",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:37:18.948335+00:00",
+      "originalSHA256": "c5061bfdf702fff33e01f613ea527f9829448a97d3eb3ac1d1cbd31479c294ce",
+      "review": "Accepted: Inspected generated original preserves the actual New Jersey blue and yellow funnel interior, yellow clover raft with blue handles, two seated riders and the photographed white water pipe. It does not invent a full exterior route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F035aef4e8583e80a8657c131d517d1d9ac915728-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Aerial view of riders on the Tornado waterslide at Hurricane Harbor New Jersey, with inflatable tubes.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/tornado",
+          "credit": "Six Flags / Hurricane Harbor New Jersey (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ca10317d77defc1a64cbcf71902e3381087d6f008b72258f39b656d46050aa6e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Hurricane Harbor New Jersey Tornado photo: giant blue/yellow fiberglass funnel interior in overhead/close angled view, actual yellow clover-shaped raft with blue handles and two ordinary seated riders contacting wet funnel side, white pipe jet sends water into photographed surface at upper left. Keep this documented NJ view and real raft/flow/contact, no different park, airborne raft or invented full exterior."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "44-239038740625247-thumbnail.jpg",
+      "thumbnailSHA256": "cf1926be53d01e5467b1207703c215f7b832fccc8470a3199c8136b232691153",
+      "thumbnailBytes": 20471,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "44-239038740625247-detail.jpg",
+      "detailSHA256": "be7e24b114222176005370aeec12c8103056f55d6a7d3d9d243a55db75ec27b7",
+      "detailBytes": 152952,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 44,
+      "rideId": 239640677610063,
+      "rideName": "Discovery Bay - Mini Waves",
+      "alt": "Illustrated Discovery Bay - Mini Waves at Hurricane Harbor New Jersey",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:50:02.774689+00:00",
+      "originalSHA256": "1ce760b040112004e2d185005dd39d674b831a0753d7409d43c4e934bdfc89f7",
+      "review": "Accepted: Inspected generated original preserves the documented very shallow mini-wave pool with small ripples, yellow spray-pipe tree and tipping pot, red crab spray, pale fountain columns, tan rock wall and brown play tower. No unsupported large waves or wave machinery.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffdae2d9d6b145232baf1323d824e5f442a11b2f2-8192x5464.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Kids and lifeguards enjoying the shallow waters and play structures at Discovery Bay in Hurricane Harbor New Jersey.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/discovery-bay",
+          "credit": "Six Flags / Hurricane Harbor New Jersey (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a60510b973947ebc2ea8afab59a92f630f5b73eef7f305cbb3651968fa71606f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Discovery Bay gallery pool view: broad pale-blue very shallow pool with SMALL white ripples, tan artificial-rock retaining wall on right, yellow bamboo-look vertical spray-pipe tree and bronze tipping pot on left, pale fountain columns with short fan sprays, red crab-shaped spray feature, lifeguard and ordinary waders, real brown play tower behind. Operator text and current 2026 operator map explicitly identify Discovery Bay Mini Waves Pool; provider coordinates are in this complex. Compose this documented shallow mini-wave-pool and small spray features, distinct from the bucket deck and pirate-ship close view; no ocean waves, invented wave generator or exaggerated depth."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "44-239640677610063-thumbnail.jpg",
+      "thumbnailSHA256": "1da2698c08ec847ee0c0065d7db03d718afb0475782825ee198797c3490d26e4",
+      "thumbnailBytes": 21826,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "44-239640677610063-detail.jpg",
+      "detailSHA256": "a7b64878cda8b059d042eda68a21e66ffffd33ce995080e5201f0c55766dbbee",
+      "detailBytes": 187316,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 44,
+      "rideId": 248687864326789,
+      "rideName": "Big Wave Racer",
+      "alt": "Illustrated Big Wave Racer at Hurricane Harbor New Jersey",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:35:57.463098+00:00",
+      "originalSHA256": "2504e046c4ff4630255a93f01375ad3f343e2fe10b01063948d6993512fcbcc2",
+      "review": "Accepted: Inspected generated original shows exactly six documented top tube mouths, six divided open racing channels and six connected runouts, with the source color sequence and headfirst mat riders; checked lane count in pixels.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc7a2439da83d06b36104c9ca1bddf6e6e2e9b299-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The thrilling Big Wave Racer water slide at Hurricane Harbor New Jersey with multiple lanes.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/big-wave-racer",
+          "credit": "Six Flags / Hurricane Harbor New Jersey (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "50fa812c0180fc89fde539339c1cd3a14346b07e34f2be2da2717b06a1c0ba79",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Big Wave Racer photograph: SIX actual parallel aqua/light-gray open racing channels with separate dividers roll down steep front into six straight runouts; top has exactly six rounded color-coded yellow/blue/white/dark-gray/blue/yellow enclosed tube sections and circular mouths, connected to shared timber stair platform. Ordinary source riders lie headfirst on actual blue racing mats in some lanes. Preserve exact six lanes and source-supported tube/runout connections, no extra lanes, raft, hidden full route or invented tube crossings."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "44-248687864326789-thumbnail.jpg",
+      "thumbnailSHA256": "f68dca2cc0e3c34a195b8e42aa9951d20bd3028a0d0f406330c131bdb1982f08",
+      "thumbnailBytes": 28171,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "44-248687864326789-detail.jpg",
+      "detailSHA256": "29124175ab29481178f38d29f49d28322900e63fdbd4fda4ae4a49c2780f0d02",
+      "detailBytes": 205547,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 44,
+      "rideId": 254322149024475,
+      "rideName": "Discovery Bay",
+      "alt": "Illustrated Discovery Bay at Hurricane Harbor New Jersey",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:38:26.429312+00:00",
+      "originalSHA256": "9f85b9d8a4e4ea77d6b582837814581ab57dd88547a69380f3a53cb29fdc1d62",
+      "review": "Accepted: Inspected generated original preserves the quiet wet splash-deck angle, small ground jets, pipe and net play structure, filled non-tipping yellow bucket, blue handwheel, hanging pot and pale teal and lime slide sections. This is the same Discovery Bay complex under its second catalog ID, with a distinct source view.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbc74da9b2e664f967d6bde6a6a05c3e976a7336c-8192x5464.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Water fountains and play structures at Discovery Bay splash pad in Hurricane Harbor New Jersey.",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/discovery-bay",
+          "credit": "Six Flags / Hurricane Harbor New Jersey (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "64079f9f77a60af87e45ba01cd907c59bc7be8f4e61802ed32f0ce60bac89318",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual inspected Discovery Bay operator-gallery photo of the same physical play complex, for its second catalog ID: ground-level wet orange/tan splash deck with small vertical fountain jets, brown/tan multilevel pipe-and-net play structure, blue handwheel, hanging bronze pots, yellow bamboo-look panel, connected pale teal and lime slide sections on right, filled yellow bucket above but not tipping in this frame. Preserve this photographed quiet play-deck angle, distinct from the other catalog key active tipping-bucket pool view; no imaginary second attraction or unsupported ship/room."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "44-254322149024475-thumbnail.jpg",
+      "thumbnailSHA256": "9e3fee6bf9ea8473f17a1801eeb2618c95781d58ef7c074d34315c0f804b0544",
+      "thumbnailBytes": 22961,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "44-254322149024475-detail.jpg",
+      "detailSHA256": "6137f0f5c34507ad01201026c264f87964dbb09bb33df83712cc1975e9f8461a",
+      "detailBytes": 200936,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 44,
+      "rideId": 274129382214486,
+      "rideName": "Taak It Eez Ee Creek",
+      "alt": "Illustrated Taak It Eez Ee Creek at Hurricane Harbor New Jersey",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:36:50.731905+00:00",
+      "originalSHA256": "1d9b76f158504fce2dfb8796d854fbcf82199ae35ce74a0cfda68eb3d4dc2caa",
+      "review": "Accepted: Inspected generated original preserves the documented narrow river bend, tan stone edge, small wooden bridge, post-and-rope fence and ordinary guests in blue and clear tubes; no unsupported river extension.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5c41dc426cea6643d0691c65a36fac4be76225bc-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests relaxing in the Taak It Eez Ee Creek",
+          "sourceURL": "https://www.sixflags.com/greatadventure/attractions/taak-it-eez-ee-creek",
+          "credit": "Six Flags / Hurricane Harbor New Jersey (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ee9e830c816e3d170ecf7640e30fbec0ab2abc5c27746507dc9352d8cfcc71dc",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Taak It Eez Ee Creek photograph: real narrow curved shallow blue lazy river with tan stone-textured edge and documented dense group of ordinary guests floating in blue and clear round inner tubes with black handles, small wooden-railed footbridge behind, grassy slope, trees, white rock bed and post/rope walkway fence. Preserve this actual photographed river bend and bridge, no new tunnel, waterfall, exotic landscape or full hidden loop."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "44-274129382214486-thumbnail.jpg",
+      "thumbnailSHA256": "26c859d5a57485e518db342ca2d871ac7880ed83a64f89c92d84de127be9329c",
+      "thumbnailBytes": 27334,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "44-274129382214486-detail.jpg",
+      "detailSHA256": "25b29f95301597fd48ec5c555105dfb0eb69ffe6c2fb7314f0b41e65b1d0853a",
+      "detailBytes": 207234,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
       "parkId": 50,
       "rideId": 6395670964916,
       "rideName": "Super Himalaya",

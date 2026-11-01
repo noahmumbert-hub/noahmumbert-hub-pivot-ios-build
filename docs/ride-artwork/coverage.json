@@ -364,10 +364,10 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 568,
-    "pendingIllustrations": 556,
-    "acceptedForRequestedStyle": 567,
-    "unfinishedForRequestedStyle": 557,
+    "acceptedIllustrations": 584,
+    "pendingIllustrations": 540,
+    "acceptedForRequestedStyle": 583,
+    "unfinishedForRequestedStyle": 541,
     "blocked": 17
   },
   "parks": [
@@ -13242,10 +13242,10 @@
           "url": "https://www.sixflags.com/greatadventure/attractions/big-bambu-and-reef-runner"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "44-38291664119772",
@@ -13290,10 +13290,10 @@
           "url": "https://api.themeparks.wiki/v1/entity/b7b835b1-85bd-498e-9466-71a9a79d534a"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "44-45324762504288",
@@ -13314,10 +13314,10 @@
           "url": "https://www.sixflags.com/greatadventure/attractions/big-bambu-and-reef-runner"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "44-64177074267998",
@@ -13338,10 +13338,10 @@
           "url": "https://www.sixflags.com/greatadventure/attractions/cannonball-wahini-and-jurahnimo-falls"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "44-77992680365925",
@@ -13362,10 +13362,10 @@
           "url": "https://www.sixflags.com/greatadventure/attractions/calypso-springs"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "44-87124302617979",
@@ -13386,10 +13386,10 @@
           "url": "https://www.sixflags.com/greatadventure/attractions/bada-bing-bada-bang-bada-boom"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "44-91757009950473",
@@ -13410,10 +13410,10 @@
           "url": "https://www.sixflags.com/greatadventure/attractions/the-winds"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "44-118603060611344",
@@ -13434,10 +13434,10 @@
           "url": "https://api.themeparks.wiki/v1/entity/576b98c7-94c2-40e2-815b-93ffa4e22711"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "44-159313949777504",
@@ -13482,10 +13482,10 @@
           "url": "https://www.sixflags.com/greatadventure/attractions/blue-lagoon"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "44-195414259720899",
@@ -13506,10 +13506,10 @@
           "url": "https://www.sixflags.com/greatadventure/attractions/discovery-bay"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "44-204824750812251",
@@ -13530,10 +13530,10 @@
           "url": "https://api.themeparks.wiki/v1/entity/d2b12697-d191-484a-8fab-cf6eeaf49a56"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "44-239038740625247",
@@ -13554,10 +13554,10 @@
           "url": "https://www.sixflags.com/greatadventure/attractions/tornado"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "44-239640677610063",
@@ -13578,10 +13578,10 @@
           "url": "https://api.themeparks.wiki/v1/entity/10c9c0c0-06a3-4a66-93bc-207b55ccec98"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "44-246468629641661",
@@ -13626,10 +13626,10 @@
           "url": "https://www.sixflags.com/greatadventure/attractions/big-wave-racer"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "44-254322149024475",
@@ -13650,10 +13650,10 @@
           "url": "https://www.sixflags.com/greatadventure/attractions/discovery-bay"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "44-274129382214486",
@@ -13674,10 +13674,10 @@
           "url": "https://www.sixflags.com/greatadventure/attractions/taak-it-eez-ee-creek"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "50-6395670964916",
