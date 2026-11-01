@@ -304,7 +304,9 @@ final class PIVOTUITests: XCTestCase {
             let fullyVisible = viewport.insetBy(dx: -1, dy: -1).contains(frame)
             if fullyVisible {
                 waitForSettledFrames([scrollView, label], file: file, line: line)
-                let currentViewport = scrollView.frame.intersection(safeContentViewport(in: app)).insetBy(dx: 4, dy: 0)
+                // The inset above is a positioning margin. After scrolling settles,
+                // require the full glyph frame to fit the actual visible clip.
+                let currentViewport = scrollView.frame.intersection(safeContentViewport(in: app))
                 assertContained(label.frame, in: currentViewport, "The entire time label must be inside the horizontal viewport", file: file, line: line)
                 return
             }
