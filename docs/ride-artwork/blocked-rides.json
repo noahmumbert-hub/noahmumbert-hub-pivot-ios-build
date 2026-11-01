@@ -44,6 +44,51 @@
       "error": "HTTP 400 moderation_blocked; output stage; category other",
       "requestID": "5a75922c-023c-4d84-b33f-f8ec055f9195",
       "action": "Do not retry or work around this block. No generated image returned."
+    },
+    {
+      "key": "5-466",
+      "rideName": "Gran Fiesta Tour Starring The Three Caballeros",
+      "status": "blocked",
+      "tool": "built-in-imagegen",
+      "error": "HTTP 400 moderation_blocked; output stage; category other",
+      "requestID": "0c78f260-fdb2-4f79-849c-715c2493e0fc",
+      "action": "Do not retry or work around this block. No generated image returned."
+    },
+    {
+      "key": "6-127",
+      "rideName": "Under the Sea - Journey of The Little Mermaid",
+      "status": "blocked",
+      "tool": "built-in-imagegen",
+      "error": "HTTP 400 moderation_blocked; input stage; category public-figure",
+      "requestID": "fbc4ae1c-c1c5-40bb-ab48-a2f839d03f6c",
+      "action": "Do not retry or work around this block. No generated image returned."
+    },
+    {
+      "key": "6-135",
+      "rideName": "Mad Tea Party",
+      "status": "blocked",
+      "tool": "built-in-imagegen",
+      "error": "HTTP 400 moderation_blocked; output stage; category other",
+      "requestID": "bad4e474-ed15-412a-90fe-f14bd0aab87a",
+      "action": "Do not retry or work around this block. No generated image returned."
+    },
+    {
+      "key": "6-136",
+      "rideName": "Peter Pan's Flight",
+      "status": "blocked",
+      "tool": "built-in-imagegen",
+      "error": "HTTP 400 moderation_blocked; output stage; category other",
+      "requestID": "2ea831b0-c323-434d-916d-3438632a93e9",
+      "action": "Do not retry or work around this block. No generated image returned."
+    },
+    {
+      "key": "6-142",
+      "rideName": "The Many Adventures of Winnie the Pooh",
+      "status": "blocked",
+      "tool": "built-in-imagegen",
+      "error": "HTTP 400 moderation_blocked; output stage; category other",
+      "requestID": "bea18158-29de-4c07-944e-5a35b5f1a92c",
+      "action": "Do not retry or work around this block. No generated image returned."
     }
   ]
 }

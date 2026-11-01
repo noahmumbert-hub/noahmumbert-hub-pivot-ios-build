@@ -131,3 +131,9 @@ aligned and rebuild the IPA; never change only the feed's version string.
 The **1.18.0** update combines native ride search, labels for every observed-wait dot, lowest-wait predictions and best reopening estimates. The selected artwork contains **29 accepted Florida ride illustrations across ten parks**, with generated-artwork labels and attribution. Coverage is partial: 116 of the 145 Florida catalog rides still lack an illustration accepted for the requested style. New non-Florida artwork and unaccepted drafts are excluded from this release; existing public reference assets remain.
 
 [Scope, source handoff and validation requirements](docs/noah-florida-update-2026-11-01.md) explain the selected asset checkpoint and release gates. Publication uses the existing SideStore source after final three-device tests and unsigned archive verification. The separate artwork branch continues the remaining work.
+
+## Additional Florida artwork
+
+The **1.18.1** candidate adds 17 accepted illustrations for EPCOT, Magic Kingdom and SeaWorld Orlando. All 29 illustrations in 1.18.0 remain unchanged, bringing the total to **46 of 145 Florida catalog rides**, with **99 remaining gaps**. Native search, observed-wait labels, lowest-wait predictions and reopening estimates retain their released behavior.
+
+[Incremental artwork scope and release gates](docs/florida-artwork-increment-2026-11-01.md) record the exact owner checkpoint, selected ride IDs and validation requirements. Publication to the existing SideStore source requires the final revision's complete three-device regression, visual/accessibility review and unsigned archive checks. Other artwork continues independently.

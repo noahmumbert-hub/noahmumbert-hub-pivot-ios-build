@@ -1,0 +1,651 @@
+{
+  "branch": "feature/ride-illustrations",
+  "baselineRevision": "0eb817b2c5be81f3b2e7dd05cfa3292c05e5c663",
+  "FloridaCatalog": 145,
+  "FloridaBundled": 47,
+  "FloridaRequestedStyle": 46,
+  "requestedStyleUnfinished": 99,
+  "catalogEntriesWithoutBundledArtwork": 98,
+  "original30RecordsAnd60JPEGBytesUnchangedFrom": "ba910085ca9a8d2484fbbbc64fa073ac85c1a645",
+  "newKeys": [
+    "5-153",
+    "5-160",
+    "5-16467",
+    "6-131",
+    "6-132",
+    "6-133",
+    "6-141",
+    "6-161",
+    "6-1190",
+    "21-41297957342255",
+    "21-132368262506504",
+    "21-196344009848927",
+    "21-201433938641141",
+    "21-213939893339792",
+    "21-226635493153383",
+    "21-253934793508041",
+    "21-262673904341261"
+  ],
+  "newAssetCount": 17,
+  "manifestRecordHashEncoding": "UTF-8 JSON; sort_keys=true, separators=comma/colon without spaces, ensure_ascii=false",
+  "localValidation": {
+    "validatedTotalRecords": 1004,
+    "newJPEGsFullyDecoded": 34,
+    "newThumbnailsActuallyViewed": 17,
+    "allPrior987RecordsAnd1974JPEGsUnchanged": true,
+    "manifestSHA256": "2ca272e8060c8853f4698ffb872843ff9d342a4cca54d316fa83c69af3876cdf",
+    "provenanceSHA256": "64e6b6abcb1025a027994e95e5e5a06377041eb7d130b7f23df5ff9b4cf1d953"
+  },
+  "nativeCoverage": "Focused SE, 6 unit + 8 UI passed; all138 manifest records/bothJPEG variants decoded. Full release revision/matrix/archive still required.",
+  "new17NativeCoverage": "None yet; full three-device regression and archive/IPA validation required on the exact combined delivery revision. Linux artwork executor has no Xcode.",
+  "releaseOwner": "parent integration task; no release branch or feed changes here",
+  "parks": [
+    {
+      "parkID": 5,
+      "parkName": "EPCOT",
+      "catalog": 11,
+      "bundled": 9,
+      "requestedStyle": 8,
+      "rides": [
+        {
+          "key": "5-153",
+          "rideName": "The Seas with Nemo & Friends",
+          "styleRevision": 2,
+          "thumbnailSHA256": "0a4712947e5095cc50030c945a536f622891964eada17305595274af932a87bd",
+          "detailSHA256": "ffbb6ff1e2b09edd6f5138ac66afe6d3c196a04e0de1c2ab6309aae2b7e32d69",
+          "thumbnailFile": "5-153-thumbnail.jpg",
+          "detailFile": "5-153-detail.jpg",
+          "originalSHA256": "5dc88e35d6b975086aed2df99a0718e54d87baa9c86f4c4e0a71ac2900be7c9c",
+          "manifestRecordSHA256": "986cdab2c037ce9ed31e0408e7ad773b6ce07d889ba886f31c2b20d5448d2694"
+        },
+        {
+          "key": "5-155",
+          "rideName": "Journey Into Imagination With Figment",
+          "styleRevision": 2,
+          "thumbnailSHA256": "3906588a800d737b4b492fbe8f88589c9edfb13f8cfe0aa97db305a2c1157d8b",
+          "detailSHA256": "15a8e840b755d732bfb52a42239804f953cb372d0904a9402508c32460d21d11",
+          "thumbnailFile": "5-155-thumbnail.jpg",
+          "detailFile": "5-155-detail.jpg",
+          "originalSHA256": "51cf2d496ffde1245d31226c996c069968ba4517b96e8c573b0bada8f0dedcc8",
+          "manifestRecordSHA256": "d251dffe85789f08249ea4457c030eba600d69949387b6d939a554ff9244c266"
+        },
+        {
+          "key": "5-156",
+          "rideName": "Living with the Land",
+          "styleRevision": 2,
+          "thumbnailSHA256": "2537ed9e4114b71c7c3e0cb0313b084d84c90ba83d30f7ce77c137c60df9e9d4",
+          "detailSHA256": "5ef20c3b8cbb65468536be16febf1a7ca5b540207d97be5096d1638f00e42f57",
+          "thumbnailFile": "5-156-thumbnail.jpg",
+          "detailFile": "5-156-detail.jpg",
+          "originalSHA256": "cf02ed05554b2bbf4d7661310af51f2e72e8963b21fec836400e90ea72bab451",
+          "manifestRecordSHA256": "5fae29c0f7a6064ea8d1a25f3ecd05de3cb8595e2d7687c41f3fe3ac20c067a7"
+        },
+        {
+          "key": "5-158",
+          "rideName": "Mission: SPACE",
+          "styleRevision": 2,
+          "thumbnailSHA256": "71d30fbc76a3f4472725aa1596fcbf7487a59d35bdd9fcda8aadc4ae96f27bbb",
+          "detailSHA256": "4249ced8d4d77cb41094f66cadf40e7c0d979a0a117d2e66c4762ad754180e99",
+          "thumbnailFile": "5-158-thumbnail.jpg",
+          "detailFile": "5-158-detail.jpg",
+          "originalSHA256": "7b823b148963ef9459475df477a54088e07918b3d2198355053442fa5155e1ac",
+          "manifestRecordSHA256": "136d9d293acb577fd4159cfbb63f8e7ba88712fed464d0638f458a7c4f565194"
+        },
+        {
+          "key": "5-159",
+          "rideName": "Spaceship Earth",
+          "styleRevision": 2,
+          "thumbnailSHA256": "a0a9dd69c44f24368ad1e183a086688e453d68e0ebdb63b0bb10a8552afd8a65",
+          "detailSHA256": "a5cb7108c9379ba6e2e8845a18f70907a4f376767f670c79bf2630999b4f121c",
+          "thumbnailFile": "5-159-thumbnail.jpg",
+          "detailFile": "5-159-detail.jpg",
+          "originalSHA256": "916248f884d6502ed20e3685d8c37f29f7474e07eabd7cde5864af4c9f22867f",
+          "manifestRecordSHA256": "259fa1455c2a003d23fb9c81b9f811351a8134f6efc26724d37b548555e115b9"
+        },
+        {
+          "key": "5-160",
+          "rideName": "Test Track",
+          "styleRevision": 2,
+          "thumbnailSHA256": "c877b911f842a22bbd2ffdcd157fc641e878d9e206cf7c815be220f3bc3a7a80",
+          "detailSHA256": "12bcde522ddacf89f22c8f6a66da34414ea0aabe29aeab6bf20b3699079d180a",
+          "thumbnailFile": "5-160-thumbnail.jpg",
+          "detailFile": "5-160-detail.jpg",
+          "originalSHA256": "16733d9b4d84f89851a927b5847f4a2197d545cc4e30a945f11ce299282cc83c",
+          "manifestRecordSHA256": "921d56213f94c2f0f19b9dca14c1c205c1b25ae5326457c7c1ae4f043bf6745d"
+        },
+        {
+          "key": "5-2679",
+          "rideName": "Frozen Ever After",
+          "styleRevision": 1,
+          "thumbnailSHA256": "41be689c356ec7079848322f4e6ec036ba22fa75754aef018aa4229a205f5a48",
+          "detailSHA256": "cf3921884b332f6de7785560d67e5ac39fcd5906dcaf9d11d49d4b5f02dbeeb9",
+          "thumbnailFile": "5-2679-thumbnail.jpg",
+          "detailFile": "5-2679-detail.jpg",
+          "originalSHA256": "e1ee5dac28c09f6bd3bce9d7cae3e75b67756c2d3ff77778d008e736ad7c3bb5",
+          "manifestRecordSHA256": "31d036e173c4799eeaeb4963fd30fd054962fcac7c750450d511083a47fdfa43"
+        },
+        {
+          "key": "5-10916",
+          "rideName": "Guardians of the Galaxy: Cosmic Rewind",
+          "styleRevision": 2,
+          "thumbnailSHA256": "74eadc5c6bbe24632ffc479df0119fcdd04eb9bff046af0ed4aaa7be215e6e6d",
+          "detailSHA256": "72ab32811f13614c9482c61277d8f1816cc2c5c49392ac153fa663dee883b13a",
+          "thumbnailFile": "5-10916-thumbnail.jpg",
+          "detailFile": "5-10916-detail.jpg",
+          "originalSHA256": "49a62a678c51325193779522b9f51361bc27e4ec5a27460f0b83b14f1a2fe71c",
+          "manifestRecordSHA256": "7dcb547da7879e01a94e25b948132db822c4098816d6c160e600397c57191cc2"
+        },
+        {
+          "key": "5-16467",
+          "rideName": "Soarin' Across America",
+          "styleRevision": 2,
+          "thumbnailSHA256": "50078c962e3339591b920ba6114a2e61f134773d2d84f070986ecd597dbe9471",
+          "detailSHA256": "d1bb937b2dc333b052166ab710e665ce9975f5bd18ee53319794cef5d849c860",
+          "thumbnailFile": "5-16467-thumbnail.jpg",
+          "detailFile": "5-16467-detail.jpg",
+          "originalSHA256": "449f84ca61a6ac4f5fabd7ba16fc98a62dfa78109520f36dfbe5393755bd5a85",
+          "manifestRecordSHA256": "dfff47a7466f062f140a787ff4450693f3a86726133865f00b0d44c2b0966fdf"
+        }
+      ]
+    },
+    {
+      "parkID": 6,
+      "parkName": "Magic Kingdom Park",
+      "catalog": 21,
+      "bundled": 15,
+      "requestedStyle": 15,
+      "rides": [
+        {
+          "key": "6-129",
+          "rideName": "Seven Dwarfs Mine Train",
+          "styleRevision": 2,
+          "thumbnailSHA256": "fa3c3d278ea74235ca967fb52e5df32d39f2702dd88960b16cc2a637290cc41d",
+          "detailSHA256": "d21d1f6a92cb2cedb4325e7c312580b7c979d19f373d3479697e5c1cb5461ef0",
+          "thumbnailFile": "6-129-thumbnail.jpg",
+          "detailFile": "6-129-detail.jpg",
+          "originalSHA256": "2433ba3bbb07020457e9e6eff2b0bdaddb78295aafa5d74b17f7a691e68121b0",
+          "manifestRecordSHA256": "f24e0dd65b577ed054b0243adb8fbd84bcde972cd348ca43a3818a97ddf88ee9"
+        },
+        {
+          "key": "6-130",
+          "rideName": "Big Thunder Mountain Railroad",
+          "styleRevision": 2,
+          "thumbnailSHA256": "16931d9b448e434fa0832e49f90724f006066d064c374e4d080e7450da8f21b7",
+          "detailSHA256": "9413cf811b9d75e018d808a741d9716a46b0ad3148fda2f6f8721b6ce2f5b54b",
+          "thumbnailFile": "6-130-thumbnail.jpg",
+          "detailFile": "6-130-detail.jpg",
+          "originalSHA256": "0e0a98321f35d661e006f632105147fa83e07827969b83761949efce10e0972b",
+          "manifestRecordSHA256": "42033601fc10b602ac5d60d51be7fd873352669764e1bb71a63123dffc91b73f"
+        },
+        {
+          "key": "6-131",
+          "rideName": "Buzz Lightyear\u2019s Space Ranger Spin",
+          "styleRevision": 2,
+          "thumbnailSHA256": "d51101d38aa180c2c1adb9513b6f08335c4b0b4f43f27873132ba0d5c251bbcc",
+          "detailSHA256": "38b11c77005896a4c66971097ed25f9d85f0f322bf5349e029bb9aed711bcd27",
+          "thumbnailFile": "6-131-thumbnail.jpg",
+          "detailFile": "6-131-detail.jpg",
+          "originalSHA256": "01ce97f137db2dc8d1c8e98b5b82dd6668335d03cbcfec6a2ba3c57c361eb7dd",
+          "manifestRecordSHA256": "e4be2643215382a248c020594f284b13f70d99ebcc9fd3bea48ab79b8bdfdbad"
+        },
+        {
+          "key": "6-132",
+          "rideName": "Dumbo the Flying Elephant",
+          "styleRevision": 2,
+          "thumbnailSHA256": "75747ee61a8541a9ac77151784da9b6a57dd00d39689f4f085dd55858c78b576",
+          "detailSHA256": "048a807375be72145aa202487505bcef70abbb103afec1dd690dec674e3f37b5",
+          "thumbnailFile": "6-132-thumbnail.jpg",
+          "detailFile": "6-132-detail.jpg",
+          "originalSHA256": "9500749527b53bb6d841732a77497e2caccf87d827d072cf5091cf1f21d2054f",
+          "manifestRecordSHA256": "8c8e4c432d29c80708c36a4f885f7daded86809ca631d8efa668c3ecd5bbc887"
+        },
+        {
+          "key": "6-133",
+          "rideName": "\"it's a small world\"",
+          "styleRevision": 2,
+          "thumbnailSHA256": "c652eba88537d6e11bef07189c8e2b69ea3e97843638c1f19702c3779d0203a3",
+          "detailSHA256": "a114235a69edbd6379cc7deeae3e542647c98cc150b1221da155c089ad0417a6",
+          "thumbnailFile": "6-133-thumbnail.jpg",
+          "detailFile": "6-133-detail.jpg",
+          "originalSHA256": "956ae6469a4d42867859c357d784317f3e6d54e9da21bc2c2da29c50ccddbcb5",
+          "manifestRecordSHA256": "597dd87eee1024cfb9b8c7a2789002f35a818905686f4ff34b15176a2bd0c350"
+        },
+        {
+          "key": "6-134",
+          "rideName": "Jungle Cruise",
+          "styleRevision": 2,
+          "thumbnailSHA256": "428a8720af255398283d4dc30d7580e8606e7aadaf90b1859513eb19301e1793",
+          "detailSHA256": "137d0fb8ea0b81b2b718ec2b6b637ca02048f7219fdcd7b0912c11d911a4c7c4",
+          "thumbnailFile": "6-134-thumbnail.jpg",
+          "detailFile": "6-134-detail.jpg",
+          "originalSHA256": "14e9a7f68f1580e0476f0ad5adc01fc0b86f6520c2c4575c2cfce151543e0790",
+          "manifestRecordSHA256": "d4af7f332069accbe4dae801119cb8e5b637b753714c024a8577c38d173631a4"
+        },
+        {
+          "key": "6-137",
+          "rideName": "Pirates of the Caribbean",
+          "styleRevision": 2,
+          "thumbnailSHA256": "c0c1610c4ed762771f5acce5ebcdb3cac5c44dcb11769ef188cade2b12231d16",
+          "detailSHA256": "1c0e6e87f9c1a0f193ba191372a641dc4e28815635bb2f69574fa61a9faa3be9",
+          "thumbnailFile": "6-137-thumbnail.jpg",
+          "detailFile": "6-137-detail.jpg",
+          "originalSHA256": "1b02f73929b0b2a02a08b82032dbd589acd9df273e3ae2803a12c445f882d103",
+          "manifestRecordSHA256": "038d8e41926c839e486a068ddf27c4c1c837ffb1f240eac2512c447302880cdb"
+        },
+        {
+          "key": "6-138",
+          "rideName": "Space Mountain",
+          "styleRevision": 2,
+          "thumbnailSHA256": "bfc57ef98f0ecf26bc6b88e005e9e58f8322be7186e903d19425e8d190304a71",
+          "detailSHA256": "e50983d31982f23ffedb1c253590a35d286e938e59c1c98cc41c6ef7a54f1c50",
+          "thumbnailFile": "6-138-thumbnail.jpg",
+          "detailFile": "6-138-detail.jpg",
+          "originalSHA256": "a56a60732b938d7002d212dfd56b517483e7393ea8bbd7f175c7edc327747f0e",
+          "manifestRecordSHA256": "9e8b4ff04e22f6a8d3aad5e3053cd337974e47c881affab1ce7487cd2bde0b01"
+        },
+        {
+          "key": "6-140",
+          "rideName": "Haunted Mansion",
+          "styleRevision": 2,
+          "thumbnailSHA256": "fd547d8518a657b133c55abf9bddb75fb319eb18d695bcc8266438cd90103aea",
+          "detailSHA256": "5b8d1055d8bcf053dee6c9932ec6ca6e787e43cbcf8064dc6de50329d9b32081",
+          "thumbnailFile": "6-140-thumbnail.jpg",
+          "detailFile": "6-140-detail.jpg",
+          "originalSHA256": "6b40a2453c4c8b7d21c3f8ccd7e9da7074e3aae9bd68b93ecdb6a5e2458a4bab",
+          "manifestRecordSHA256": "b4091b348963e5623cf5ddcaa0d33846442fc8c769df06129095266ce57dcaf0"
+        },
+        {
+          "key": "6-141",
+          "rideName": "The Magic Carpets of Aladdin",
+          "styleRevision": 2,
+          "thumbnailSHA256": "ede5c6f63151413e70a901c97c01c512af329fd1daacafec5dffea548a7e3729",
+          "detailSHA256": "008fb65b0b55894341005548950d159c9065a05bf910ca357f1d69f8e01c5dd2",
+          "thumbnailFile": "6-141-thumbnail.jpg",
+          "detailFile": "6-141-detail.jpg",
+          "originalSHA256": "5f9d60b6801a4e2c9cf864c4159cf5039014fe4372cf22b3ec98d5a67c668631",
+          "manifestRecordSHA256": "6e3d75ce840bbba9e81251ee76981c3415571458eade192f6a25bf98287812ad"
+        },
+        {
+          "key": "6-143",
+          "rideName": "Tomorrowland Speedway",
+          "styleRevision": 2,
+          "thumbnailSHA256": "7255b6a847ec83be1b8ff2f7ababd95900413e2eb4d4eec0c099d3a5fb85583a",
+          "detailSHA256": "c9a0dd219a5e96d1e4d3a9e86fd597f3d4a77a9135fdecb90b65ac2f2eb22cee",
+          "thumbnailFile": "6-143-thumbnail.jpg",
+          "detailFile": "6-143-detail.jpg",
+          "originalSHA256": "4933256a3044a446026252744d0420b232097c89bb97ad83be342da3f972f572",
+          "manifestRecordSHA256": "e12266573b6b9d9e70d158b13776dcd471ed91ea82fe122e8f57c8e24fcd4510"
+        },
+        {
+          "key": "6-161",
+          "rideName": "Prince Charming Regal Carrousel",
+          "styleRevision": 2,
+          "thumbnailSHA256": "1e55496663ece673cfb8cf51e3f1fe8bc0bc69607d31a91178891134d5f15f13",
+          "detailSHA256": "d8f124c7c294f5a7877489ca99651bde115aad32756c6de20c490820a5d97005",
+          "thumbnailFile": "6-161-thumbnail.jpg",
+          "detailFile": "6-161-detail.jpg",
+          "originalSHA256": "a5db758d91b2ae454538841d4471b106b2bda7800cbcdaee37f64ebe1f9866c5",
+          "manifestRecordSHA256": "e52f9b51d09ea61a2ddb60bd3a3d58ebf0abdbfd9cc88a577192b5b149ef1eb2"
+        },
+        {
+          "key": "6-248",
+          "rideName": "Astro Orbiter",
+          "styleRevision": 2,
+          "thumbnailSHA256": "d1d7169ba38b4c3f1bd2ec03ab23223e0d96b6ccd7985c3831f4ac09372399cd",
+          "detailSHA256": "151faaaaf668aa01ea4f903577328f8cd06637cd4a58ad3c7d3963c890036f4f",
+          "thumbnailFile": "6-248-thumbnail.jpg",
+          "detailFile": "6-248-detail.jpg",
+          "originalSHA256": "8805d16a67077655f1ce28e12750ccdd3e25efaa40281d53cf16a91a5bc55049",
+          "manifestRecordSHA256": "c2c3aacd768beb0f563fbdbfb27a337c95d1160d165bfb06ab38ff29991917c0"
+        },
+        {
+          "key": "6-1190",
+          "rideName": "Tomorrowland Transit Authority PeopleMover",
+          "styleRevision": 2,
+          "thumbnailSHA256": "4a78e3eec1674820067bdc114d094cfda15df4f95c89882c8fd46b9f42cffc55",
+          "detailSHA256": "265caebb503a6b3392020878e7e1f1074f4998c6a4079d18be981564ea092b5f",
+          "thumbnailFile": "6-1190-thumbnail.jpg",
+          "detailFile": "6-1190-detail.jpg",
+          "originalSHA256": "2db0d34292bbac60d85f41fc2e158ced18be51b43f515dc282680f62e9ca65d7",
+          "manifestRecordSHA256": "d124e13fdeadef5c1fdcb6bc58d64aab1ae029674a1e358a1c9ea930c57fc28a"
+        },
+        {
+          "key": "6-11527",
+          "rideName": "TRON Lightcycle / Run",
+          "styleRevision": 2,
+          "thumbnailSHA256": "d46e1326cb090d9258cfd24745e5099c5c0787e0aa877e154df721fd377f0686",
+          "detailSHA256": "f30e957fe440a304a2324164ee72d09ecb1bff8e3d8927ae7ce121f3f376023f",
+          "thumbnailFile": "6-11527-thumbnail.jpg",
+          "detailFile": "6-11527-detail.jpg",
+          "originalSHA256": "310c0ea1b06914d06d92cedab5f6b91d6aeb89d52293d2e127aea7c77043c2cf",
+          "manifestRecordSHA256": "cf3f501228efbadf09e63ae2de3ff02c38cdc53ecaf5edc0d5e388d9e84d76e4"
+        }
+      ]
+    },
+    {
+      "parkID": 7,
+      "parkName": "Disney\u2019s Hollywood Studios",
+      "catalog": 9,
+      "bundled": 2,
+      "requestedStyle": 2,
+      "rides": [
+        {
+          "key": "7-123",
+          "rideName": "The Twilight Zone\u2122 Tower of Terror",
+          "styleRevision": 2,
+          "thumbnailSHA256": "bb9c6f62fb34bdd7721aad89c1db04f523ebe7f82526a6f420200138f6207465",
+          "detailSHA256": "94156a43308d154bc672f44ab01bf4a59a4e81a0899781d1e4c64c3076b35e11",
+          "thumbnailFile": "7-123-thumbnail.jpg",
+          "detailFile": "7-123-detail.jpg",
+          "originalSHA256": "3e0e08e5dedcc3997886b355599d4e32bd662bb7f7dc819f8d22f13b3925b91a",
+          "manifestRecordSHA256": "ef6fc0fe8ec83cb41f5c031299bf6f11187adc3177e871f577bd7c1644267017"
+        },
+        {
+          "key": "7-5476",
+          "rideName": "Slinky Dog Dash",
+          "styleRevision": 2,
+          "thumbnailSHA256": "2b9d8e7d20aa064d91265af5a028416e80f174cf19dfb88fdaea609456b9ba45",
+          "detailSHA256": "5f2a6dcb95771174cc5b5cbf19c6ea5a6e35b20c7d2b7e085412d7fd6881a90a",
+          "thumbnailFile": "7-5476-thumbnail.jpg",
+          "detailFile": "7-5476-detail.jpg",
+          "originalSHA256": "426193bba7a2b1198a5d8c5a5e0ddb3221f0987f73fd9be0fd01c6bae4edbe98",
+          "manifestRecordSHA256": "ee341bb0d224fa4efb9d9b96199f417c84eb4b529041996f490b418743de3af2"
+        }
+      ]
+    },
+    {
+      "parkID": 8,
+      "parkName": "Disney\u2019s Animal Kingdom",
+      "catalog": 6,
+      "bundled": 2,
+      "requestedStyle": 2,
+      "rides": [
+        {
+          "key": "8-110",
+          "rideName": "Expedition Everest - Legend of the Forbidden Mountain",
+          "styleRevision": 2,
+          "thumbnailSHA256": "09c356301ef2dbb37dfc5d6670b73786125a663b75d929ac4f0190ec16063adc",
+          "detailSHA256": "c9a359691ffd4da533a4b909e926ec56ed7b6fb80f38c2ec7629941b1c3150b6",
+          "thumbnailFile": "8-110-thumbnail.jpg",
+          "detailFile": "8-110-detail.jpg",
+          "originalSHA256": "9d504874c984003d9a68f642b09d7958219b4c5f1e08bd27e16c6ad443e4157b",
+          "manifestRecordSHA256": "21375c8905a514a4a9a0a5ccfe58ab3b8ea9c216b01de138fcdce3df04d0264c"
+        },
+        {
+          "key": "8-112",
+          "rideName": "Kali River Rapids",
+          "styleRevision": 2,
+          "thumbnailSHA256": "f4dee676edb9efcb155a381cc4b3798efe4c8b0f92342544817d80a2db3734c0",
+          "detailSHA256": "fa9234094779e10ed6033f34a366ead2d9997c611fe6245535729ff996431ea6",
+          "thumbnailFile": "8-112-thumbnail.jpg",
+          "detailFile": "8-112-detail.jpg",
+          "originalSHA256": "d80fde56edd1ef067668d03beef1b17a925bc5414fa15f8f5b866cc877c3e415",
+          "manifestRecordSHA256": "c04c3747db44bcdd721a5a9b86fa12c084e4983bfc8a31597676a58c2fe255b5"
+        }
+      ]
+    },
+    {
+      "parkID": 21,
+      "parkName": "SeaWorld Orlando",
+      "catalog": 18,
+      "bundled": 10,
+      "requestedStyle": 10,
+      "rides": [
+        {
+          "key": "21-41297957342255",
+          "rideName": "Pipeline: The Surf Coaster",
+          "styleRevision": 2,
+          "thumbnailSHA256": "1d209980500f79566b8f8e48a5ad3f7080397c1dcd863af02e4b415201855b4d",
+          "detailSHA256": "c18b1a0561b6c2ec99da749d4151eca64b5abbf61d62c30d6e11581b59656797",
+          "thumbnailFile": "21-41297957342255-thumbnail.jpg",
+          "detailFile": "21-41297957342255-detail.jpg",
+          "originalSHA256": "f6185b23834b7478cfdd3f0421496a8ca5b8dc40250f9f1b823e33be2a71597d",
+          "manifestRecordSHA256": "a32eaf08a132b35c066437a9a0e0a2174ff67b7f7fae65ff6fcbc7c881966b06"
+        },
+        {
+          "key": "21-132368262506504",
+          "rideName": "Kraken\u00ae",
+          "styleRevision": 2,
+          "thumbnailSHA256": "ba22e4bc1873baf9c40e0b33058c8445e73db5ad0912f1e70f8de5e50176e9b6",
+          "detailSHA256": "bca7575e14eae379d3f19599fc12377140a713dd80f7235f5b327cf46847d484",
+          "thumbnailFile": "21-132368262506504-thumbnail.jpg",
+          "detailFile": "21-132368262506504-detail.jpg",
+          "originalSHA256": "1ef423ece6748e5a719a9306c8a352e3bd25c92c8bfa269c517388e7d7e29e1d",
+          "manifestRecordSHA256": "642533153e4d112531d36aa195f8d764a09d4451059c64962bfe33074054f80a"
+        },
+        {
+          "key": "21-161007786566085",
+          "rideName": "Sky Tower",
+          "styleRevision": 2,
+          "thumbnailSHA256": "f68384ffa2e9ca7247f4328e63dea9c86cdfce7874e9d0a9b7e4f8b9d5d7f4b3",
+          "detailSHA256": "93d5bee4a1a62b429a0e864f94aa6364f6d198b562dc680ccc5135aca361335d",
+          "thumbnailFile": "21-161007786566085-thumbnail.jpg",
+          "detailFile": "21-161007786566085-detail.jpg",
+          "originalSHA256": "25270d9331cc44814d0cfd7ead20989e42dffd55ddf0118438486895c2b66476",
+          "manifestRecordSHA256": "916a367e5074970d690803f120225e4fbb9d2791a6d5d991893a80c9573a6906"
+        },
+        {
+          "key": "21-196344009848927",
+          "rideName": "Journey to Atlantis",
+          "styleRevision": 2,
+          "thumbnailSHA256": "426d59e94394a77d248c2378b161a72ffcc998532fd5666713f5ec5c0e98de71",
+          "detailSHA256": "ec1827682e397992f77250edc9a4065b93e2cae381312a657604a2e3dc62b5c5",
+          "thumbnailFile": "21-196344009848927-thumbnail.jpg",
+          "detailFile": "21-196344009848927-detail.jpg",
+          "originalSHA256": "69bee924b5da1bd2dd24f60c82a34072867b77a52f7c4948c0cb3bcaf989acfb",
+          "manifestRecordSHA256": "cb445a66925ea1f7c6b754ffe6a3529f9c218b15ea9089474dfcaa1ab1179ac9"
+        },
+        {
+          "key": "21-201433938641141",
+          "rideName": "Flamingo Paddle Boats",
+          "styleRevision": 2,
+          "thumbnailSHA256": "440149e41b64ee9663febbe7f72cc3a95782665b03199467d3d4a920d3f24af2",
+          "detailSHA256": "4f0e2e9300554ca76f20c124194c01494e8b96b69c20107b758f8825cbd66025",
+          "thumbnailFile": "21-201433938641141-thumbnail.jpg",
+          "detailFile": "21-201433938641141-detail.jpg",
+          "originalSHA256": "8f27cde0efeb3e4e6a44c77d5c4ea1d2923930dc08869a6feb19e86f6ea56438",
+          "manifestRecordSHA256": "c8de6c9528b6066556f4950d04e449a36370ada16cb68628ae044657e4cad44d"
+        },
+        {
+          "key": "21-213939893339792",
+          "rideName": "Manta",
+          "styleRevision": 2,
+          "thumbnailSHA256": "0b7045e574efb3290d6d1aa84111ba27e7705a2ed234df48353dddf235a97a4e",
+          "detailSHA256": "c6287007373813bbb98b5b5462b9632a95caf7d41ec75f18b27368d9af7c2480",
+          "thumbnailFile": "21-213939893339792-thumbnail.jpg",
+          "detailFile": "21-213939893339792-detail.jpg",
+          "originalSHA256": "05d5486bd7f724affc2f3b14f5e64f4f418d9f092009c2507d19d810807ac81a",
+          "manifestRecordSHA256": "01d25401e2f1a107a75784c75fb6f7c6b11230a235bff489a2d70ed7c553694f"
+        },
+        {
+          "key": "21-226635493153383",
+          "rideName": "Penguin Trek",
+          "styleRevision": 2,
+          "thumbnailSHA256": "75304c2d7ec4387259e631ac31573e6040948c97eaf9dd39590959bf356afcbe",
+          "detailSHA256": "5338bdba2c6afaa76bd06d66112b8d7b794c61bd612d649f59d2483811926c89",
+          "thumbnailFile": "21-226635493153383-thumbnail.jpg",
+          "detailFile": "21-226635493153383-detail.jpg",
+          "originalSHA256": "c8a7b286294b9e841e3c5df2e9e412bd9102613a943ea6dfa1b497b778c7e543",
+          "manifestRecordSHA256": "41e05244962bc86182f343b7d136421096187d89f04492464048444951ff1e1f"
+        },
+        {
+          "key": "21-250622806424631",
+          "rideName": "Mako\u00ae",
+          "styleRevision": 2,
+          "thumbnailSHA256": "60dcdefe497319e98b4b58fcb94a0880fc1afceabcafb355612fca105a935f3a",
+          "detailSHA256": "03411e7e30138f9451ef2e6f8c50851f9c62b2ca94a49a72852e2e0a3289dfd1",
+          "thumbnailFile": "21-250622806424631-thumbnail.jpg",
+          "detailFile": "21-250622806424631-detail.jpg",
+          "originalSHA256": "f9dd3fd4882d50a0201ec2a53bf73dd80569c11343ad4214a0836ad30014173d",
+          "manifestRecordSHA256": "8d6b54043b2c6a38dd02c80973ad27c35c5d93134c59b397b9a4fd28b8841ccf"
+        },
+        {
+          "key": "21-253934793508041",
+          "rideName": "Infinity Falls\u00ae",
+          "styleRevision": 2,
+          "thumbnailSHA256": "84b20da66fce1e45b47b870c74990345a0ea61f3dad67a6e26f6a49e9f7693c8",
+          "detailSHA256": "9f43483f5783bd21d1b1ea95b2fa79a251bb8cc5ea406515fcc2c6a28b2631ff",
+          "thumbnailFile": "21-253934793508041-thumbnail.jpg",
+          "detailFile": "21-253934793508041-detail.jpg",
+          "originalSHA256": "7281295da4c7820378a2f9bcde77207d1092f8446753573f82686adcb56d7ad7",
+          "manifestRecordSHA256": "6746dded7631fc4eb875970cfc3876b71c280417d06ca2564a9e9e910b536846"
+        },
+        {
+          "key": "21-262673904341261",
+          "rideName": "Ice Breaker",
+          "styleRevision": 2,
+          "thumbnailSHA256": "40306652e10e560a1251bf718626f44c7e39d8f991d3265549249dcdf6e7371f",
+          "detailSHA256": "ec00ff13fe34efcdfc0e0fb0d061efdda595652d811522d508a1339aabfa74d7",
+          "thumbnailFile": "21-262673904341261-thumbnail.jpg",
+          "detailFile": "21-262673904341261-detail.jpg",
+          "originalSHA256": "c6cb2825e49ef83f176a6cd96b7c34cb7383e7b4eceacc8645e546c65cf1c062",
+          "manifestRecordSHA256": "35b6f0770da76785f21869ea0ede69a2434028c10216eea74677d0e4578ead5b"
+        }
+      ]
+    },
+    {
+      "parkID": 24,
+      "parkName": "Busch Gardens Tampa Bay",
+      "catalog": 25,
+      "bundled": 1,
+      "requestedStyle": 1,
+      "rides": [
+        {
+          "key": "24-62020843059756",
+          "rideName": "Cheetah Hunt",
+          "styleRevision": 2,
+          "thumbnailSHA256": "1e7c478b7d90c24c77f0ecf80b41cddc990c826cda10e8984128735c407436d9",
+          "detailSHA256": "2860dd00b60ea33aebed2a7add13da3ab8e05eb4e2f0d9b19f61c9b444f19574",
+          "thumbnailFile": "24-62020843059756-thumbnail.jpg",
+          "detailFile": "24-62020843059756-detail.jpg",
+          "originalSHA256": "6a7cbd0b755a8d2420f540f72d5f75241cd409cf076a5f1fea9e81a8b7ae5c7b",
+          "manifestRecordSHA256": "982b98d7bfe357ca21099b14fd0070b1f81e34fec7e257e412939f80c72e0cb3"
+        }
+      ]
+    },
+    {
+      "parkID": 64,
+      "parkName": "Islands of Adventure",
+      "catalog": 18,
+      "bundled": 1,
+      "requestedStyle": 1,
+      "rides": [
+        {
+          "key": "64-6004",
+          "rideName": "The Incredible Hulk Coaster\u00ae",
+          "styleRevision": 2,
+          "thumbnailSHA256": "408be1f6f83c69e6ecc68ca79588181c7a0928a0bfa6cd9a6e060ff87d794a1f",
+          "detailSHA256": "54413cab270f698237e43e7512020ce4206e4e3abf2964d2ad983ee52c9114a5",
+          "thumbnailFile": "64-6004-thumbnail.jpg",
+          "detailFile": "64-6004-detail.jpg",
+          "originalSHA256": "194c2b8564f6f2052d0e29c939971cc542c6bc5366716076286ead2d3ea16e17",
+          "manifestRecordSHA256": "f445bf5a532b24e0f7a9a413e568a06cc2071786b7ec5603e53e1ddcf41b557d"
+        }
+      ]
+    },
+    {
+      "parkID": 65,
+      "parkName": "Universal Studios Florida",
+      "catalog": 13,
+      "bundled": 1,
+      "requestedStyle": 1,
+      "rides": [
+        {
+          "key": "65-12107",
+          "rideName": "Illumination's Villain-Con Minion Blast",
+          "styleRevision": 2,
+          "thumbnailSHA256": "370749d0629449de3b429354a559d19e6471662b0e11f5b28215d7945b375a93",
+          "detailSHA256": "3ae1182ee7634774a5de30436713dfcbb36f2f16c6d7a39925b98fbbacf31f47",
+          "thumbnailFile": "65-12107-thumbnail.jpg",
+          "detailFile": "65-12107-detail.jpg",
+          "originalSHA256": "9784f61a3db10e27b027206bc9beb9b460f21205a193b93eb86116ca213b7e01",
+          "manifestRecordSHA256": "14748806659669067b52b8bb12d580c739bedbb519701ea8a2087c345dbad9e2"
+        }
+      ]
+    },
+    {
+      "parkID": 67,
+      "parkName": "Volcano Bay",
+      "catalog": 13,
+      "bundled": 1,
+      "requestedStyle": 1,
+      "rides": [
+        {
+          "key": "67-16595",
+          "rideName": "Krakatau\u2122 Aqua Coaster",
+          "styleRevision": 2,
+          "thumbnailSHA256": "a9aa114f583947d279e2c787593b547cec088934cec2b3dc8b0f1a0b0d61c345",
+          "detailSHA256": "08ff6b5b2e27ed4df988dee8884f38e582c51df7c56c5dbbe09bcf43ed79fb6a",
+          "thumbnailFile": "67-16595-thumbnail.jpg",
+          "detailFile": "67-16595-detail.jpg",
+          "originalSHA256": "773165233a4ea02978b591fda1c7132a4e880bf02f051928304cc90b8c1a9ab7",
+          "manifestRecordSHA256": "f609cf6d8a984d1acedc87f9feeb2867e5fea283f754a6f03a1e331899864777"
+        }
+      ]
+    },
+    {
+      "parkID": 334,
+      "parkName": "Epic Universe",
+      "catalog": 11,
+      "bundled": 5,
+      "requestedStyle": 5,
+      "rides": [
+        {
+          "key": "334-14688",
+          "rideName": "Constellation Carousel",
+          "styleRevision": 2,
+          "thumbnailSHA256": "0e56ffd681a43ae1edfba9ceb3c72b55eaf4f20b084c779254affe91dc0ab849",
+          "detailSHA256": "f0a2072fb38c462e62e0bf4d37824a5ccc83c760b948d3b894bb6a311276e239",
+          "thumbnailFile": "334-14688-thumbnail.jpg",
+          "detailFile": "334-14688-detail.jpg",
+          "originalSHA256": "43fdbfa6a99b6564142ddfeecfebc9872bf12b35332c4644ef74010afd593c3c",
+          "manifestRecordSHA256": "e2434dc1eaacb7326b8d64ba0bc4c7a33bedb5fa6c87cc2ab5ef2373f08574be"
+        },
+        {
+          "key": "334-14690",
+          "rideName": "Stardust Racers",
+          "styleRevision": 2,
+          "thumbnailSHA256": "02f1dd3125f6b5ac710e1d1fa4ebd87467235c966395f08fc83e5eb9fc983d30",
+          "detailSHA256": "8e92e53818fb0056ca7590377e5ea88cef0bcd44198f674c3ed996854987fe34",
+          "thumbnailFile": "334-14690-thumbnail.jpg",
+          "detailFile": "334-14690-detail.jpg",
+          "originalSHA256": "204fb417186d4002ba427b640f709e076832c6b22eeb184f1956f35860ef6389",
+          "manifestRecordSHA256": "ff1590caa4b25042a008ad200b2b6cad258fe70d829a9ee236b0fa0c57d3f0e6"
+        },
+        {
+          "key": "334-14691",
+          "rideName": "Fyre Drill",
+          "styleRevision": 2,
+          "thumbnailSHA256": "8a928ac1b367bfa1ac41806145fc1ffce7cf1b2354fc621866eba10c10f2ee8b",
+          "detailSHA256": "a4275b6163d053a084feba9bafc6d527cac2fcfb1e90cfee8f2b28635a5512e5",
+          "thumbnailFile": "334-14691-thumbnail.jpg",
+          "detailFile": "334-14691-detail.jpg",
+          "originalSHA256": "b70631f31aa94f5186b039f1e69d1dfb5a6e1d82b33792ab1ba5f711df2ba661",
+          "manifestRecordSHA256": "d9dc9712e7e80caccf7415c41838b204264fe2ffa346e2faae0a4d2d871938e1"
+        },
+        {
+          "key": "334-14692",
+          "rideName": "Curse of the Werewolf",
+          "styleRevision": 2,
+          "thumbnailSHA256": "059ba5379f6affe338e51f95761d11dc1b8cb1c92848a1ef119842353015bb34",
+          "detailSHA256": "3c1dbcca4bfccef4e1aed0bb003d41ef09e09e5712526c029e59899540bb3bc2",
+          "thumbnailFile": "334-14692-thumbnail.jpg",
+          "detailFile": "334-14692-detail.jpg",
+          "originalSHA256": "9846fa85d084993df6b9738d6d9bdbfa8a3431c06f579961ccd5232d7c2e77c7",
+          "manifestRecordSHA256": "b7991fe7b76f28072a72be70ecf86f90429b0b12483a364f18757d30f49e7e36"
+        },
+        {
+          "key": "334-14695",
+          "rideName": "Hiccup's Wing Gliders",
+          "styleRevision": 2,
+          "thumbnailSHA256": "c7e8fbad29da0aff36838c0ed9dec24f167a6ee868e67058d426fbfc70a942a2",
+          "detailSHA256": "ba6bc3c03f2f3a9ca4336042578ed91f176769e4f92a31775c4d59034265495b",
+          "thumbnailFile": "334-14695-thumbnail.jpg",
+          "detailFile": "334-14695-detail.jpg",
+          "originalSHA256": "046154c6065124152dd4327e5bc922d110a4715df8fdc0883b025cabb3eab957",
+          "manifestRecordSHA256": "ef0903238629a52e5f3f194da98dd0875c1277202b1f78aed8074fb4140ffdf5"
+        }
+      ]
+    }
+  ]
+}

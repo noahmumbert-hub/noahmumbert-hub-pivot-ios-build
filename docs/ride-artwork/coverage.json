@@ -364,11 +364,11 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 29,
-    "pendingIllustrations": 1095,
-    "acceptedForRequestedStyle": 29,
-    "unfinishedForRequestedStyle": 1095,
-    "blocked": 5
+    "acceptedIllustrations": 46,
+    "pendingIllustrations": 1078,
+    "acceptedForRequestedStyle": 46,
+    "unfinishedForRequestedStyle": 1078,
+    "blocked": 10
   },
   "parks": [
     {
@@ -621,10 +621,10 @@
           "url": "https://darkridedatabase.com/rides/seas-with-nemo-friends/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "5-155",
@@ -804,10 +804,10 @@
           "url": "https://darkridedatabase.com/rides/test-track/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "5-466",
@@ -836,7 +836,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "5-2679",
@@ -971,10 +971,10 @@
           "url": "https://darkridedatabase.com/rides/soarin-around-the-world-2/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "6-126",
@@ -1032,7 +1032,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "6-129",
@@ -1135,10 +1135,10 @@
           "url": "https://darkridedatabase.com/rides/buzz-lightyears-space-ranger-spin/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "6-132",
@@ -1164,10 +1164,10 @@
           "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/dumbo-the-flying-elephant/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "6-133",
@@ -1193,10 +1193,10 @@
           "url": "https://darkridedatabase.com/rides/its-a-small-world-2/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "6-134",
@@ -1261,7 +1261,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "6-136",
@@ -1290,7 +1290,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "6-137",
@@ -1429,10 +1429,10 @@
           "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/magic-carpets-of-aladdin/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "6-142",
@@ -1461,7 +1461,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "6-143",
@@ -1518,10 +1518,10 @@
           "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/prince-charming-regal-carrousel/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "6-248",
@@ -1583,10 +1583,10 @@
           "url": "https://darkridedatabase.com/rides/peoplemover-2/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "6-11527",
@@ -2229,10 +2229,10 @@
           "url": "https://rcdb.com/20042.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "21-67702520791477",
@@ -2292,10 +2292,10 @@
           "url": "https://rcdb.com/581.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "21-156184637344042",
@@ -2444,10 +2444,10 @@
           "url": "https://rcdb.com/1904.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "21-198212415171856",
@@ -2497,10 +2497,10 @@
           "url": "https://seaworld.com/orlando/rides/paddle-boats/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "21-213939893339792",
@@ -2531,10 +2531,10 @@
           "url": "https://rcdb.com/4190.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "21-226635493153383",
@@ -2565,10 +2565,10 @@
           "url": "https://rcdb.com/21034.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "21-250622806424631",
@@ -2635,10 +2635,10 @@
           "url": "https://www.intamin.com/project/infinity-falls/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "21-261100879756425",
@@ -2698,10 +2698,10 @@
           "url": "https://rcdb.com/17420.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-4498153166281",
@@ -31707,7 +31707,7 @@
     }
   ],
   "releaseSelection": {
-    "version": "1.18.0",
+    "version": "1.18.1",
     "region": "Florida",
     "parkIDs": [
       5,
@@ -31750,19 +31750,59 @@
       "334-14690",
       "334-14691",
       "334-14692",
-      "334-14695"
+      "334-14695",
+      "5-153",
+      "5-160",
+      "5-16467",
+      "6-131",
+      "6-132",
+      "6-133",
+      "6-141",
+      "6-161",
+      "6-1190",
+      "21-41297957342255",
+      "21-132368262506504",
+      "21-196344009848927",
+      "21-201433938641141",
+      "21-213939893339792",
+      "21-226635493153383",
+      "21-253934793508041",
+      "21-262673904341261"
     ],
-    "approvedIllustrations": 29,
+    "newKeys": [
+      "5-153",
+      "5-160",
+      "5-16467",
+      "6-131",
+      "6-132",
+      "6-133",
+      "6-141",
+      "6-161",
+      "6-1190",
+      "21-41297957342255",
+      "21-132368262506504",
+      "21-196344009848927",
+      "21-201433938641141",
+      "21-213939893339792",
+      "21-226635493153383",
+      "21-253934793508041",
+      "21-262673904341261"
+    ],
+    "approvedIllustrations": 46,
+    "newIllustrations": 17,
+    "previousPublicIllustrations": 29,
     "catalogEntries": 145,
-    "unfinishedRequestedStyle": 116,
-    "artworkHandoffCommit": "c87e4c3d6ca91da76da94f0cfd69e13ca0cfddc8",
-    "assetRevision": "ba910085ca9a8d2484fbbbc64fa073ac85c1a645",
-    "newAssetIntroduction": "a5fd40643a7470474bbf80e236177e7208042940",
+    "unfinishedRequestedStyle": 99,
+    "artworkHandoffCommit": "9b25febc23e67104b1ff3bc5f0dc3ea85017018d",
+    "assetRevision": "9b25febc23e67104b1ff3bc5f0dc3ea85017018d",
+    "handoffPath": "docs/ride-artwork/florida-addendum-47-2026-11-01.json",
+    "previousPublicSource": "3b495b1e828757144f1352e5ce9353d740eaf7ff",
+    "previousPublicFeedCommit": "4cdbb9be839a4c7f4eaab2282925af3fbb365036",
     "excludedDraftKeys": [
       "5-2679"
     ],
     "existingPublicAssetsPreserved": true,
     "ongoingWorkBranch": "feature/ride-illustrations",
-    "notes": "Only accepted Florida illustrations are bundled. Non-Florida work remains in its independent artwork branch; unaccepted and blocked drafts are excluded."
+    "notes": "Only the 17 accepted Florida additions are imported; all 29 public records and their JPEGs remain unchanged. Other artwork continues independently."
   }
 }

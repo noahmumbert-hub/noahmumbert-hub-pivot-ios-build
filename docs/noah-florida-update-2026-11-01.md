@@ -4,7 +4,7 @@ This update combines Noah’s four native changes: compact ride search connected
 
 The Radar selection, reopening descriptions, hourly clocks and largest-size history views reserve their full text height. Regression coverage includes real enlarged modal fonts, full clock glyphs, every largest-size observed label in rows and details, source-health states, nested disclosure behavior and actual Safari attribution destinations.
 
-The artwork owner’s [handoff](ride-artwork/florida-integration-2026-11-01.md) is pinned to handoff commit `c87e4c3d6ca91da76da94f0cfd69e13ca0cfddc8` and immutable asset revision `ba910085ca9a8d2484fbbbc64fa073ac85c1a645`. [The release selection](ride-artwork/florida-release-selection-2026-11-01.json) includes only the 29 Florida records accepted for style revision 2. The earlier Frozen Ever After draft is excluded. This is **29 of 145 Florida catalog rides**, with **116 remaining gaps**, not complete Florida coverage. Other park artwork continues independently.
+The artwork owner’s [handoff](ride-artwork/florida-integration-2026-11-01.md) is pinned to handoff commit `c87e4c3d6ca91da76da94f0cfd69e13ca0cfddc8` and immutable asset revision `ba910085ca9a8d2484fbbbc64fa073ac85c1a645`. [The historical 1.18.0 selection](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/blob/3b495b1e828757144f1352e5ce9353d740eaf7ff/docs/ride-artwork/florida-release-selection-2026-11-01.json) includes only the 29 Florida records accepted for style revision 2. The earlier Frozen Ever After draft is excluded. This is **29 of 145 Florida catalog rides**, with **116 remaining gaps**, not complete Florida coverage. Other park artwork continues independently.
 
 | Park | Accepted illustrations / catalog rides |
 | --- | ---: |
