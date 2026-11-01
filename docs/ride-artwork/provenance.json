@@ -6220,6 +6220,946 @@
       "generationSteps": []
     },
     {
+      "parkId": 35,
+      "rideId": 2338774209375,
+      "rideName": "Thunder River",
+      "alt": "Illustrated Thunder River at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:09:34.681890+00:00",
+      "originalSHA256": "f56f48bce534958766a7a25d5f8ad172a1ae50c55f21722ad3b015367b10f1e2",
+      "review": "Accepted: generated pixels inspected against the genuine official Georgia raft/waterfall photograph. Actual tan round hull, thick black collar/rope netting, tall slotted black seats, silver center rail and water contact retained beside the documented tan rock waterfall and trees. Source riders remain medium scale; no hidden chassis or river route invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1a3baff1088c21c1d1e1cc30addf7a38f7bbab89-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Thunder River at Six Flags Over Georgia",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/thunder-river",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "213a6b396e70cde618f909829dfe6dcf619642b1adec660eae117fc7d94bdcd5",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Thunder River photograph shows the actual round GOLD/TAN raft with thick BLACK rubber outer collar, black rope netting around the hull, tall slotted BLACK individual seat backs and a real SILVER central circular handrail/angled struts. It floats with correct water contact in the photographed foamy green-white channel beside the natural TAN rock waterfall and dense trees. Choose that documented raft, water/rock edge and connected central rail at medium scale with source riders incidental. Preserve water occlusion of the underside, actual boat proportions and manufactured seats. No guessed wheels, hidden hull, unpictured course or extra waterfall. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-2338774209375-thumbnail.jpg",
+      "thumbnailSHA256": "88f0f44a4c0a1aecf98a3060f3eefb21f1502535910f06912b4e4f5571ad9dce",
+      "thumbnailBytes": 25570,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-2338774209375-detail.jpg",
+      "detailSHA256": "167a3fcb7cbc5d54ef1e1f1e00a09a678b690e60322fe07ac7e082e2bbd7d3ec",
+      "detailBytes": 212568,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-2338774209375",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Thunder River at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official Thunder River photograph shows the actual round GOLD/TAN raft with thick BLACK rubber outer collar, black rope netting around the hull, tall slotted BLACK individual seat backs and a real SILVER central circular handrail/angled struts. It floats with correct water contact in the photographed foamy green-white channel beside the natural TAN rock waterfall and dense trees. Choose that documented raft, water/rock edge and connected central rail at medium scale with source riders incidental. Preserve water occlusion of the underside, actual boat proportions and manufactured seats. No guessed wheels, hidden hull, unpictured course or extra waterfall. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "81b45cdc1d0ad07a0b621b36c35a8487a19cbb54f8082478531affb3f552433d",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 5337543328855,
+      "rideName": "Yosemite Sam Wacky Wagons",
+      "alt": "Illustrated Yosemite Sam Wacky Wagons at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:10:52.010900+00:00",
+      "originalSHA256": "721ede4df0c14fa75e6b4c5c4d3ef0ad6c90760ff9498a3a5a24726be830b931",
+      "review": "Accepted: generated pixels inspected against the genuine official local wagon-wheel photograph. Actual empty tan covered-wagon baskets, black decorative wheels, cream horseshoe/star covers, red cage supports, silver gates and attached brown radial spokes retained against the yellow western facade. Source physical hub sign partly remains; no live wagon scene or unseen base.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa23625dc85e71f87e65764093a1c475026ef30b2-3504x2336.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Yosemite Sam's Wacky Wagons, a mini ferris wheel ride at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/yosemite-sams-wacky-wagons",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "4a91ed4e35a3cfc077ee8d3f632adba856a12149b087199d76043065cb77b758",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Yosemite Sam Wacky Wagons photograph shows the actual small SIX-gondola vertical Ferris wheel: TAN plank-textured covered-wagon baskets with BLACK decorative side wheels, CREAM arched canvas-style covers printed with purple stars or blue horseshoes, RED cage supports and real SILVER gated entrances attached to BROWN woodgrain radial spokes/central axle. The real background is a YELLOW/cream western facade with orange shutters, turquoise trim and black perimeter fence. Choose the photographed top covered wagon and its attached spoke/hub plus one adjacent actual wagon in a close/medium portrait, preserving upright pivots and the documented empty baskets. No real wagon on a road, live character, invented extra gondola or unseen drive base. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-5337543328855-thumbnail.jpg",
+      "thumbnailSHA256": "12dfe58d25d04a204230b82ccfd948d302f33d5a76d50dc6e1e9dc7aa5f47dfc",
+      "thumbnailBytes": 23686,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-5337543328855-detail.jpg",
+      "detailSHA256": "a32ac7127f8d5bdde165c2040cc85c27d42a7e031cf654f284af481e876031ac",
+      "detailBytes": 146177,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-5337543328855",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Yosemite Sam Wacky Wagons at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official Yosemite Sam Wacky Wagons photograph shows the actual small SIX-gondola vertical Ferris wheel: TAN plank-textured covered-wagon baskets with BLACK decorative side wheels, CREAM arched canvas-style covers printed with purple stars or blue horseshoes, RED cage supports and real SILVER gated entrances attached to BROWN woodgrain radial spokes/central axle. The real background is a YELLOW/cream western facade with orange shutters, turquoise trim and black perimeter fence. Choose the photographed top covered wagon and its attached spoke/hub plus one adjacent actual wagon in a close/medium portrait, preserving upright pivots and the documented empty baskets. No real wagon on a road, live character, invented extra gondola or unseen drive base. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "394531468e1de97603c364bf78f569047cfae57a9c2179e1049ebedb80775600",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 16817679541605,
+      "rideName": "Rabun Gap Railroad Station",
+      "alt": "Illustrated Rabun Gap Railroad Station at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:09:04.565496+00:00",
+      "originalSHA256": "0f1d5b0e32c368673e9efd96867f5d0e89d2eeb2addf30f57c854ca87834c5e3",
+      "review": "Accepted: generated pixels inspected against genuine official number-49 locomotive photograph. Green cone chimney/boiler/domes, red-yellow headlamp/cab, black smokebox, red pilot/wheels and attached silver rods/steel rails retained from the source front-left view. Actual physical flags remain; no station architecture or route invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F38a9ba1f3684343246296a9b52d05ff38a3e8d6f-1440x1533.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of the train on the track at Rabun Gap Railroad Station in Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/rabun-gap-railroad-station",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "fc1c919bc2ae038533ac2f575a242bdf7053459e54ace01eb5a69e0a703abe71",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Rabun Gap Railroad page photograph shows actual GREEN number-49 locomotive with a very large inverted-cone GREEN spark-arrestor chimney/gray upper cap, square RED/YELLOW headlamp housing, BLACK round smokebox, bright RED slatted pilot, GREEN boiler/domes, brass bell and real RED driving wheels/silver connecting rods, with RED cab/yellow window trim and green tender behind. Choose this photographed locomotive front/side and attached narrow-gauge rails in a close/medium portrait. Preserve real wheel/rail contact and rod geometry. The page establishes the train serving this railroad entry; do not invent station architecture, a train's precise current location or the unseen route. Source flags remain physical decoration, no new lettering. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-16817679541605-thumbnail.jpg",
+      "thumbnailSHA256": "35856b4585666bbf12eb9a52fc3e5e894a7148c3c1a26bcbaf86e9c6433c1ba4",
+      "thumbnailBytes": 28473,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-16817679541605-detail.jpg",
+      "detailSHA256": "bb2a83250cdee72d691bd81c53c3a747877b250dcf038574a9b5f55b03282f62",
+      "detailBytes": 231204,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-16817679541605",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Rabun Gap Railroad Station at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official Rabun Gap Railroad page photograph shows actual GREEN number-49 locomotive with a very large inverted-cone GREEN spark-arrestor chimney/gray upper cap, square RED/YELLOW headlamp housing, BLACK round smokebox, bright RED slatted pilot, GREEN boiler/domes, brass bell and real RED driving wheels/silver connecting rods, with RED cab/yellow window trim and green tender behind. Choose this photographed locomotive front/side and attached narrow-gauge rails in a close/medium portrait. Preserve real wheel/rail contact and rod geometry. The page establishes the train serving this railroad entry; do not invent station architecture, a train's precise current location or the unseen route. Source flags remain physical decoration, no new lettering. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "f62b06fc1f57d0e607793ff7bef2595d6fd10d6931dd1167599b17156df073b0",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 21674594585444,
+      "rideName": "Dare Devil Dive",
+      "alt": "Illustrated Dare Devil Dive at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:10:24.974551+00:00",
+      "originalSHA256": "ce86e3f653da0c429ea28f3c7e743a4277efa26f5271ea7c50aa3746d8dc1519",
+      "review": "Accepted: generated pixels inspected against genuine official Dare Devil Dive car photograph. Actual blue nose/fin-like panels with physical eagle/lightning decoration, black paired seats, silver lap handles and gray guide-wheel assemblies on red rail/yellow support retained. Source riders remain medium scale; no aircraft flight or guessed route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff4aa023544b710e4854f78d7d85cd0f320a6556f-4096x2731.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of riders with arms raised on the Dare Devil Dive roller coaster at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/dare-devil-dive",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "42b1f98643fa1b47e6414abe5a053b038155892556f51d94732c07c14555ca62",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Dare Devil Dive photograph shows the actual BLUE short six-seat coaster car with rounded blue front nose/blue fin-like side panels printed with eagle/lightning graphics, three pairs of BLACK padded bucket seats and real SILVER lap-bar handles. Visible GRAY running-wheel assemblies grip RED tube rail below; YELLOW columns support the track in the source. Choose the photographed car front/first two rows and attached gray bogies/red rail/yellow support section in a medium banked portrait with source riders at source scale. No airplane flight, inverted-seat layout, alternate park ride, invented full route or unpictured hardware. Physical printed decals can remain; no new overlay. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-21674594585444-thumbnail.jpg",
+      "thumbnailSHA256": "c4dfbb5eb872d11bcdf5ed3f60fa3044ec78429db93ae13c3d9cb53714cfc420",
+      "thumbnailBytes": 27347,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-21674594585444-detail.jpg",
+      "detailSHA256": "c784ec3c6d3950a834f8c356f558823d3d5f60fc5c00db7de02ea903dfc7669e",
+      "detailBytes": 159495,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-21674594585444",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Dare Devil Dive at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official Dare Devil Dive photograph shows the actual BLUE short six-seat coaster car with rounded blue front nose/blue fin-like side panels printed with eagle/lightning graphics, three pairs of BLACK padded bucket seats and real SILVER lap-bar handles. Visible GRAY running-wheel assemblies grip RED tube rail below; YELLOW columns support the track in the source. Choose the photographed car front/first two rows and attached gray bogies/red rail/yellow support section in a medium banked portrait with source riders at source scale. No airplane flight, inverted-seat layout, alternate park ride, invented full route or unpictured hardware. Physical printed decals can remain; no new overlay. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "790953e0247ca908e30b799cb78c0af8ba6d97835947502abe2458b662c3824f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 25356198684517,
+      "rideName": "Paradise Island",
+      "alt": "Illustrated Paradise Island at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:18:40.365947+00:00",
+      "originalSHA256": "e87ecf0715b6408d5b0565f2f36c7a1a09873d30db19e20a6454efaed53abfea",
+      "review": "Accepted: generated pixels inspected against the genuine official Paradise Island photograph and independent ADG/original-photographer identity evidence. Actual tan play tower, manufactured gray skull feature, huge central cascade and attached green/purple slide sections retained with distant source visitors. The old Skull Island foreground sign is cropped; the verified rename is not treated as a different attraction or present operating claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fd7cedfd6e3e1a2af24af490e644266e6ba95ee4d-2978x2048.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Wide view of Paradise Island water attraction at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/paradise-island",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "03d47d90e1860e2cd78565037b2e3e03bed90e1c75af3682ecc07acf31dff9f4",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Paradise Island photograph shows the actual TAN timber-look multilevel water-play structure with a GRAY pirate-skull tipping feature, real huge cascade down its center, attached bright GREEN open slide curls at left and PURPLE slide curls at right, tan support columns/stairs/net railings and shallow wet splash pad. The physical foreground sign retains its former Skull Island name: the original photographer's firsthand 2014 report confirms this local structure was renamed Paradise Island, independently supported by ADG's Over Georgia construction-project photograph. Choose the documented central skull/tower/cascade and only immediately attached source slide sections in a medium portrait; crop the foreground old-name sign and unrelated coaster. Keep source visitors distant. No live pirates, altered slide destinations, new tower, unpictured route or false claim of present operating status. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-25356198684517-thumbnail.jpg",
+      "thumbnailSHA256": "4ec574b90452957046049df4119724fb376b0f5150df0c4af5a6b94ac479e5a8",
+      "thumbnailBytes": 23220,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-25356198684517-detail.jpg",
+      "detailSHA256": "976dc65998cc9ca0765800767867af3695936170ad395e42afabcb475c63a16c",
+      "detailBytes": 173097,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-25356198684517",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Paradise Island at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official Paradise Island photograph shows the actual TAN timber-look multilevel water-play structure with a GRAY pirate-skull tipping feature, real huge cascade down its center, attached bright GREEN open slide curls at left and PURPLE slide curls at right, tan support columns/stairs/net railings and shallow wet splash pad. The physical foreground sign retains its former Skull Island name: the original photographer's firsthand 2014 report confirms this local structure was renamed Paradise Island, independently supported by ADG's Over Georgia construction-project photograph. Choose the documented central skull/tower/cascade and only immediately attached source slide sections in a medium portrait; crop the foreground old-name sign and unrelated coaster. Keep source visitors distant. No live pirates, altered slide destinations, new tower, unpictured route or false claim of present operating status. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "402de27696ded50c3d6e41e396b74ae1764dccba39df79c773f507c83a2c5706",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 26678586994616,
+      "rideName": "Marthasville Railroad Station",
+      "alt": "Illustrated Marthasville Railroad Station at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:19:29.994752+00:00",
+      "originalSHA256": "713c8200ca958bd2960af94230ca87538d6cbcf1438b89feb4d7ea23a1f25b80",
+      "review": "Accepted: generated pixels inspected against genuine official Marthasville number-49 locomotive photograph. Actual green/red/yellow engine, black smokebox, red wheels/pilot, silver rods/steel rail and photographed station-roof/post/brick section retained in the distinct right-facing view. Same railroad identity preserved without inventing a different train or station.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7c3bbd1fccb7e1edda9ddba97fd2570e16e6d2cb-1440x1533.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of the train at Marthasville Railroad Station in Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/marthasville-railroad-station",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "50fea5941553ca850cfe74188fe0edb062c8e8e16f45bbbd75b7b942d6b39d66",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Marthasville Railroad Station photograph shows the actual GREEN number-49 locomotive from the opposite side to Rabun's selected photo: BLACK smokebox at RIGHT, RED slatted pilot, large inverted-cone GREEN spark-arrestor chimney/gray cap, RED/YELLOW square lamp, GREEN boiler/domes, RED driving wheels and silver connecting rod, RED cab with yellow trim and green tender. The real station background has a gray shingled roof, white posts/arched brackets, red brick and black rails. Choose this documented RIGHT-facing front/side locomotive, running gear/track and attached source station-roof section in a medium portrait. These catalog entries are two stops on the same railroad; preserve actual train identity while using this distinct photographed viewpoint. No invented station building, hidden route, different engine number or road vehicle. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-26678586994616-thumbnail.jpg",
+      "thumbnailSHA256": "29261ae98490d5c445141f76d0f6473559f04ff2fcab4bb8bb3f4ed6c2e6d30e",
+      "thumbnailBytes": 29256,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-26678586994616-detail.jpg",
+      "detailSHA256": "285812874659a7d749b0c5fee050239927bcc509be417baf70c93cc2397bf17e",
+      "detailBytes": 213847,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-26678586994616",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Marthasville Railroad Station at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official Marthasville Railroad Station photograph shows the actual GREEN number-49 locomotive from the opposite side to Rabun's selected photo: BLACK smokebox at RIGHT, RED slatted pilot, large inverted-cone GREEN spark-arrestor chimney/gray cap, RED/YELLOW square lamp, GREEN boiler/domes, RED driving wheels and silver connecting rod, RED cab with yellow trim and green tender. The real station background has a gray shingled roof, white posts/arched brackets, red brick and black rails. Choose this documented RIGHT-facing front/side locomotive, running gear/track and attached source station-roof section in a medium portrait. These catalog entries are two stops on the same railroad; preserve actual train identity while using this distinct photographed viewpoint. No invented station building, hidden route, different engine number or road vehicle. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "15687a842f738fad1610c62258910010a99adca13fa5961fc11e5de4413eaea3",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 37195770400496,
+      "rideName": "Acrophobia",
+      "alt": "Illustrated Acrophobia at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:19:56.555183+00:00",
+      "originalSHA256": "e925997eb7d850d9a34149b0183882f4127caed4f42c13541c6f106f352ef2a9",
+      "review": "Accepted: generated pixels inspected against genuine official Acrophobia carriage photograph. Actual blue outward-facing circular ring/carriage, red restraints/dark perches, yellow-orange/blue mast guide contact and upper maintenance platform retained with source-scale riders. Both unpictured tower apex and ground/base remain outside frame.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F950ff2672e0f373e0f6b48e2113d0797315d7fc9-2880x1600.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Acrophobia drop tower in motion at Six Flags Over Georgia, with riders plunging from great heights.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/acrophobia",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "9bf9032f6ced819edbb172772dbe87183d0b0caad343195ec88cab4c06e56271",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Acrophobia gallery photograph shows the actual circular outward-facing seat/perch ring on a BLUE mechanical carriage surrounding a YELLOW/orange-and-BLUE cylindrical tower, with RED over-shoulder restraints, dark seats, feet dangling and visible dark under-ring framing. The photographed carriage has a BLUE upper support structure and real pale/yellow-railed maintenance platform, attached to the mast's vertical dark guide channels. Choose this actual ring/carriage, attached guide/mast and upper platform section in a medium portrait with source riders at the photographed scale. Keep both unseen tower top and full ground/base outside frame, preserve actual circular arrangement and mechanical contact, and add no guessed cables, superhero figure, different drop-tower hardware or full hidden mechanism. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-37195770400496-thumbnail.jpg",
+      "thumbnailSHA256": "931d67598f46ef5dbe503a4e796f42d0635c22b7de174183203b799d899cefba",
+      "thumbnailBytes": 18042,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-37195770400496-detail.jpg",
+      "detailSHA256": "2024fc50d3b45a69f9c62f19255c58f917b08f1131f3ac91ed1d4bada127c90b",
+      "detailBytes": 112881,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-37195770400496",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Acrophobia at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official Acrophobia gallery photograph shows the actual circular outward-facing seat/perch ring on a BLUE mechanical carriage surrounding a YELLOW/orange-and-BLUE cylindrical tower, with RED over-shoulder restraints, dark seats, feet dangling and visible dark under-ring framing. The photographed carriage has a BLUE upper support structure and real pale/yellow-railed maintenance platform, attached to the mast's vertical dark guide channels. Choose this actual ring/carriage, attached guide/mast and upper platform section in a medium portrait with source riders at the photographed scale. Keep both unseen tower top and full ground/base outside frame, preserve actual circular arrangement and mechanical contact, and add no guessed cables, superhero figure, different drop-tower hardware or full hidden mechanism. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "20b5c64ca1b3b8316779f325fe54b2af2ebbbd1624622d9c38886384ac2f68f1",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 52525804560422,
+      "rideName": "POISON IVY Toxic Spin",
+      "alt": "Illustrated POISON IVY Toxic Spin at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:20:23.715616+00:00",
+      "originalSHA256": "8ce1325622393b5f4f9ad9163cfe369ebaf9e3ab4afc31f818af8c424188cf00",
+      "review": "Accepted: generated pixels inspected against genuine official green scrambler photograph. Actual riveted tub/silver-latched gate, red padded top rail/black bench, pink painted flower/vines and connected green arm braces retained with source family. Unrelated overhead coaster/bridge is outside crop; no live character or invented center mechanism.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb2f686d609c093b0403450403969a6bea933da7d-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests having fun spinning on POISON IVY Toxic Spin ride at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/poison-ivy-toxic-spin",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c7dfed4507a1005bbaf50fccfbe1228edc6be729ab1e410e736f18d085d43773",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official POISON IVY Toxic Spin photograph shows the actual bright GREEN riveted scrambler tub with rectangular SILVER-latched hinged front gate, BLACK bench, RED padded top rail and a rounded green lower apron painted with PINK flowers/pale vine graphics. It is physically attached to dark/bright GREEN radial tubes and diagonal arm braces. Choose the photographed tub/front gate and visible attached arm section in a medium portrait with source family at source scale. Preserve manufactured rivets, latch and restraint geometry; crop unrelated overhead green coaster track/maintenance bridge, shop lettering and foreground exit signs. No living character, vines growing over the machine, new support mechanism, unattached flying tub or unseen full layout. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-52525804560422-thumbnail.jpg",
+      "thumbnailSHA256": "c0bfe2a958e11c086e38105bad15d2d18e764fd877b2c501c018a876a9663147",
+      "thumbnailBytes": 21907,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-52525804560422-detail.jpg",
+      "detailSHA256": "2bb89ba9f20066b87db5efa8a7ad84658a4c033c0a52afcd0fef377c2a14756c",
+      "detailBytes": 137132,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-52525804560422",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict POISON IVY Toxic Spin at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official POISON IVY Toxic Spin photograph shows the actual bright GREEN riveted scrambler tub with rectangular SILVER-latched hinged front gate, BLACK bench, RED padded top rail and a rounded green lower apron painted with PINK flowers/pale vine graphics. It is physically attached to dark/bright GREEN radial tubes and diagonal arm braces. Choose the photographed tub/front gate and visible attached arm section in a medium portrait with source family at source scale. Preserve manufactured rivets, latch and restraint geometry; crop unrelated overhead green coaster track/maintenance bridge, shop lettering and foreground exit signs. No living character, vines growing over the machine, new support mechanism, unattached flying tub or unseen full layout. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "8ec1bb461cbf983969cab94f9d30060e3ff79db771bde31270fdd2fadf03357d",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 66625039165997,
+      "rideName": "THE RIDDLER Mindbender",
+      "alt": "Illustrated THE RIDDLER Mindbender at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:24:21.907048+00:00",
+      "originalSHA256": "056ba4c822377b7006826f0ee26f0be25a4a42575294b8497af6a94ead7a4fde",
+      "review": "Accepted: generated pixels inspected against genuine official Mindbender motion photograph. Actual green/purple-question-mark nose, white lower chassis, purple paired seats/silver lap bars and attached green lattice rail/columns retained with source-scale riders. Road and parked cars are outside crop; no other RIDDLER ride or new inversion.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F86d51afc09f6ec45efc8d4dadbe598793e576858-6000x4000.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "THE RIDDLER Mindbender in motion at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/the-riddler-mindbender",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c91af89d2c9086b20543ad6b60be8b78ad6715e4a6f1982dcd0a1a4a1d00849d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official local Mindbender gallery photograph shows actual GREEN front shield with a PURPLE question-mark decoration, WHITE lower nose/side chassis and BLACK bumper, paired PURPLE high-backed seats with SILVER curved lap bars and visible side guide hardware attached to BRIGHT GREEN tube/lattice running rail and green columns. Choose the documented descending front car and first two attached rows with real rail/support connection in a medium portrait; keep source riders at source scale and crop the road/parked cars/foreground fence. Preserve this actual seated Schwarzkopf train; no stand-up RIDDLER coaster, pendulum, new inversion, guessed route or live character. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-66625039165997-thumbnail.jpg",
+      "thumbnailSHA256": "67d833bd411df4eee9f5f263f290e7bd383c557ae275aeb0779d01b516d2ecda",
+      "thumbnailBytes": 24823,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-66625039165997-detail.jpg",
+      "detailSHA256": "38a8bf7ef4f6fd7e53332f8f66cd9fb5e6b18f03a3b59a7f80594d548ccd7590",
+      "detailBytes": 145326,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-66625039165997",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict THE RIDDLER Mindbender at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official local Mindbender gallery photograph shows actual GREEN front shield with a PURPLE question-mark decoration, WHITE lower nose/side chassis and BLACK bumper, paired PURPLE high-backed seats with SILVER curved lap bars and visible side guide hardware attached to BRIGHT GREEN tube/lattice running rail and green columns. Choose the documented descending front car and first two attached rows with real rail/support connection in a medium portrait; keep source riders at source scale and crop the road/parked cars/foreground fence. Preserve this actual seated Schwarzkopf train; no stand-up RIDDLER coaster, pendulum, new inversion, guessed route or live character. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "c1d09ff9aab6aec30043baf8281949bd470dc9bb84e6205fbfbdfa368e470dd9",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 82399363810025,
+      "rideName": "Goliath",
+      "alt": "Illustrated Goliath at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:24:51.867450+00:00",
+      "originalSHA256": "86f96e0fd7071be2947e0ba348626721d4de0011a53652bdbaf335b262c1dfd3",
+      "review": "Accepted: generated pixels inspected against genuine official Georgia Goliath photograph. Actual teal/orange train nose and seats/orange lap restraints, exposed bogies on teal box-spine/silver rails and attached gray supports with source banked curve retained. Rear source cars remain connected; no different park's paint/train. Artwork does not claim operation during the source page's temporary closure.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F18ed3c8aa36e8ec0e9408a1c9fbd1bf86a3cb4ab-3000x2001.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A close-up of riders experiencing the thrill of the Goliath roller coaster at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/goliath",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "8aa37d60420f48d75c1ea71ce1454ad731b6e03e96c2f931bd8c75f7525757b2",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine current official Georgia Goliath photograph shows its actual TEAL box-spine track with SILVER running rails, GRAY tubular support columns and a TEAL/ORANGE faceted train nose, TEAL seat backs with ORANGE clamshell lap restraints and visible gray/black running-wheel hardware. Choose the photographed front three attached cars and immediate teal rail/gray support section with a source-supported banked curve behind, preserving real seating/bogie orientation. Source riders remain medium scale. Do not substitute older orange-track paint, a different park's Goliath, overhead shoulder harnesses or new route. The current operator page carries a temporary-closure notice; this undated appearance reference does not claim present operation, and app status data is untouched."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-82399363810025-thumbnail.jpg",
+      "thumbnailSHA256": "ed2a19c885c1d229a012d237e97707932723134e924f83c1da8a1dca75bf5261",
+      "thumbnailBytes": 24507,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-82399363810025-detail.jpg",
+      "detailSHA256": "fe354bcfb44e4b31095fbb2e37434183e0b3c40584f9565cea1701a7450591d8",
+      "detailBytes": 178737,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-82399363810025",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Goliath at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine current official Georgia Goliath photograph shows its actual TEAL box-spine track with SILVER running rails, GRAY tubular support columns and a TEAL/ORANGE faceted train nose, TEAL seat backs with ORANGE clamshell lap restraints and visible gray/black running-wheel hardware. Choose the photographed front three attached cars and immediate teal rail/gray support section with a source-supported banked curve behind, preserving real seating/bogie orientation. Source riders remain medium scale. Do not substitute older orange-track paint, a different park's Goliath, overhead shoulder harnesses or new route. The current operator page carries a temporary-closure notice; this undated appearance reference does not claim present operation, and app status data is untouched. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "aed7b3836bcad4818a269cb2a55931a6e23e633980764b3957725a742ebf3ddc",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 99432807411486,
+      "rideName": "THE JOKER™ Funhouse Coaster",
+      "alt": "Illustrated THE JOKER™ Funhouse Coaster at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:25:54.960299+00:00",
+      "originalSHA256": "92981be6e885b1a6141dcd38a2ec34c6d3713072531fcc6aaf6aaaaccc3dcbde",
+      "review": "Accepted: generated pixels inspected against genuine official local Funhouse Coaster photograph. Actual purple/red comic-panel cars, silver-faced wheels/black guide hardware and connected lime rail/blue columns retained with source station facade and source-scale riders. Source connected rear cars remain; no free-spin Joker or invented route substituted.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fff0e4b0d58a08c5b09bbab005bb676f55959b10f-4096x3072.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests having fun with their hands up while riding THE JOKER™ Funhouse Coaster at Six Flags Over Georgia. ",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/joker-funhouse",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "0f3a9bbc3ef877535011df4baafff69aa653ccfcf252b192bd509b82e4c523bf",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official local JOKER Funhouse Coaster photo shows the actual PURPLE rectangular open car bodies with RED lower chassis, painted yellow/orange comic panels, paired BLACK seats/SILVER lap bars, photographed silver-faced side wheels and black guide assemblies attached to LIME GREEN tubular rail on BLUE support columns. The real station behind has LIME plank walls, YELLOW window frames and PURPLE trim. Choose the photographed front two cars and their attached guide hardware/green banked rail with only a source-supported station section in a medium portrait; source riders remain incidental at that scale. No free-spin or pendulum Joker ride, live villain, added car, hidden route or invented mechanism. Physical printed decoration may remain, no overlay text. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-99432807411486-thumbnail.jpg",
+      "thumbnailSHA256": "1158e05293c25bc14882f5bf04ea5546d5e5566cd114d7654073be57186b00e4",
+      "thumbnailBytes": 27346,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-99432807411486-detail.jpg",
+      "detailSHA256": "f205b7a4b9552454b571ba40e3a248c3cc740fe1b36272ffb69f2f4eddcdbffc",
+      "detailBytes": 166160,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-99432807411486",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict THE JOKER™ Funhouse Coaster at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official local JOKER Funhouse Coaster photo shows the actual PURPLE rectangular open car bodies with RED lower chassis, painted yellow/orange comic panels, paired BLACK seats/SILVER lap bars, photographed silver-faced side wheels and black guide assemblies attached to LIME GREEN tubular rail on BLUE support columns. The real station behind has LIME plank walls, YELLOW window frames and PURPLE trim. Choose the photographed front two cars and their attached guide hardware/green banked rail with only a source-supported station section in a medium portrait; source riders remain incidental at that scale. No free-spin or pendulum Joker ride, live villain, added car, hidden route or invented mechanism. Physical printed decoration may remain, no overlay text. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "8cd75fd5a3544751ddf990cff864722afd0533489418666dfe97575c2cb86b40",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 99993863374153,
+      "rideName": "SUPERMAN™: Ultimate Flight",
+      "alt": "Illustrated SUPERMAN™: Ultimate Flight at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:25:13.419737+00:00",
+      "originalSHA256": "8fcea5b0931adadd626872ff30cebfe67987592a477dd7f7f24dc9473bfbb7bd",
+      "review": "Accepted: generated pixels inspected against genuine official Georgia flying-coaster photograph. Actual prone four-across rows, yellow/blue frames and black harnesses, silver foot loops/overhead guide assemblies on red rail and real blue support connection retained. Right column still partly occludes the source-supported row; no hidden cars reconstructed or free superhero flight.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Feeae03673dee071fef20feb321fa569cf70024e0-7008x4672.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "SUPERMAN™: Ultimate Flight roller coaster in motion at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/superman-ultimate-flight",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "0ba6dbbe094fa58145f2bfd60bb2ea8dfced7a65af305cd76934ea296298dc4e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official local SUPERMAN Ultimate Flight motion photo shows actual four-across PRONE face-down rows held under YELLOW car frames with BLUE padded seats, BLACK restraints, RED lower covers/ankle-restraint areas and SILVER foot loops. Real SILVER overhead wheel carriers grip the RED box-spine/twin rails, attached to BLUE cylindrical support columns/crossbeam. Choose the source's unobscured LEFT three rows, attached overhead bogies/red curve and a documented blue support connection in a medium portrait. Preserve actual face-down harness/body orientation and source occlusion; crop the huge foreground right column/unpictured rows rather than reconstruct hidden cars. No caped flying person, upright inverted train, other park ride, free flight, full unpictured loop or guessed cable. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-99993863374153-thumbnail.jpg",
+      "thumbnailSHA256": "1cfbd7c6d44cda2e65f7de7faa6ebc246e23eb2e6f48083150675e9a8bac6c89",
+      "thumbnailBytes": 19704,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-99993863374153-detail.jpg",
+      "detailSHA256": "92befa059cbc3513440d49ab5f895b03ae927b6154bb119b9d16a9f099ef7e32",
+      "detailBytes": 138431,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-99993863374153",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict SUPERMAN™: Ultimate Flight at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official local SUPERMAN Ultimate Flight motion photo shows actual four-across PRONE face-down rows held under YELLOW car frames with BLUE padded seats, BLACK restraints, RED lower covers/ankle-restraint areas and SILVER foot loops. Real SILVER overhead wheel carriers grip the RED box-spine/twin rails, attached to BLUE cylindrical support columns/crossbeam. Choose the source's unobscured LEFT three rows, attached overhead bogies/red curve and a documented blue support connection in a medium portrait. Preserve actual face-down harness/body orientation and source occlusion; crop the huge foreground right column/unpictured rows rather than reconstruct hidden cars. No caped flying person, upright inverted train, other park ride, free flight, full unpictured loop or guessed cable. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "7ffa5a4330575b359f3028f99a0279f1e3a2556fe1155cc8f3133091a041a045",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 105131875631474,
+      "rideName": "WONDER WOMAN™ Flight School",
+      "alt": "Illustrated WONDER WOMAN™ Flight School at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:30:55.312145+00:00",
+      "originalSHA256": "31171a771843129cd40e485ba8cbfdbeda7cfc1ce77921d427d394a0f730d752",
+      "review": "Accepted: Compared with the operator photograph: preserves the red flying-scooter tub and wings, white star decorations, gold WW emblem and printed figure, silver suspension yoke and cables, orange restraint, and the photographed woman and child. The shingled blue/red building remains plausible local context. This depicts the actual suspended mechanical ride, not a free-flying vehicle or live superhero.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Faa8f0fd4a580e19ee5f9aa619a1a8da1237459c5-4096x3072.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "An adult and a child having fun riding the WONDER WOMAN™ Flight School family ride at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/wonder-woman-flight-school",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e08b3211b7ecbdddc219d4a13a0ffff71fa8122e91754a379f3e0f4725b00360",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official local WONDER WOMAN Flight School photograph shows its actual RED flying-scooter tub with curved stationary rear wing and movable front wing, WHITE star paint, GOLD double-W emblem and a printed Wonder Woman/lasso illustration. Source riders sit on the actual red/black bench with an ORANGE lap belt and a red hand control; visible SILVER clamp/yoke hardware attaches the wing assembly to paired STEEL suspension cables leading out of the frame. Choose this documented gondola, wings and source cable connection in a medium portrait above the photographed dark-shingle/blue-red-trim building and trees. Preserve manufactured surfaces and real suspended tilt. No live superhero, free flight, invented full central pole/drive base or unsupported cable geometry. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-105131875631474-thumbnail.jpg",
+      "thumbnailSHA256": "ff11417db2327b3b0c2ee1b1fbbe4228f57c5675f8c46d03ad686ee21822a041",
+      "thumbnailBytes": 25656,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-105131875631474-detail.jpg",
+      "detailSHA256": "593babc857e1a992cf29a9d0ee0c1d9349e5cdcae4ace7d6c4d3fa0e3999f47a",
+      "detailBytes": 152177,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-105131875631474",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict WONDER WOMAN™ Flight School at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official local WONDER WOMAN Flight School photograph shows its actual RED flying-scooter tub with curved stationary rear wing and movable front wing, WHITE star paint, GOLD double-W emblem and a printed Wonder Woman/lasso illustration. Source riders sit on the actual red/black bench with an ORANGE lap belt and a red hand control; visible SILVER clamp/yoke hardware attaches the wing assembly to paired STEEL suspension cables leading out of the frame. Choose this documented gondola, wings and source cable connection in a medium portrait above the photographed dark-shingle/blue-red-trim building and trees. Preserve manufactured surfaces and real suspended tilt. No live superhero, free flight, invented full central pole/drive base or unsupported cable geometry. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "19cad5a1301d8c4cb30a717320ef0d889b49d016c60899908b1ce2e2d30b97c6",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 105868631595783,
+      "rideName": "BATMAN™ The Ride",
+      "alt": "Illustrated BATMAN™ The Ride at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:29:26.463024+00:00",
+      "originalSHA256": "01b01cb8df56b325863249eddc6ede5367194a04249865836b01dfc4107a4c5c",
+      "review": "Accepted: Compared with the selected operator action photograph: purple four-across suspended seating, black over-the-shoulder restraints and silver handgrips remain attached through gray cantilever frames and bogies to the blue box-spine track, pale running rails and navy columns. The banked train hangs beneath the track; connected rear rows remain visible. It retains this park's photographed livery rather than another BATMAN installation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fcac421effbcfbd09c6490f4adfd93df736114712-4096x2720.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of guests holding on tight as they enjoy the BATMAN-themed roller coaster at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/batman-the-ride",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "b32c81de7491c846676e81c4602da6625cd5e0f64b598e2277eb2af5f78ddce5",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Georgia BATMAN gallery photograph shows the actual four-across PURPLE bucket seats with BLACK shoulder restraints/silver hand grips, SILVER/gray cantilevered row frames, BLACK overhead wheels and rounded beige/gray wheel fairings attached below BLUE box-spine track with pale SILVER running rails and NAVY blue columns. Choose the photographed first two rows, their real overhead bogies/blue rail and one connected navy support section in a medium canted portrait with source riders at source scale. Preserve the exact source inverted-under-track relationship and actual running hardware; no yellow Texas rail, free-spin Batman, new route, additional unpictured car or invented body support. Crop unrelated foreground columns only where the source already establishes unobscured hardware. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-105868631595783-thumbnail.jpg",
+      "thumbnailSHA256": "0568ab35f7a58a04f99625bb08fcd42972a5439a9ea24c88cdf4e1690506aa42",
+      "thumbnailBytes": 25689,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-105868631595783-detail.jpg",
+      "detailSHA256": "eb289abfa637861112d8027b68b3375b9aefa52c8e96c03035d601e3164bf061",
+      "detailBytes": 160695,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-105868631595783",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict BATMAN™ The Ride at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official Georgia BATMAN gallery photograph shows the actual four-across PURPLE bucket seats with BLACK shoulder restraints/silver hand grips, SILVER/gray cantilevered row frames, BLACK overhead wheels and rounded beige/gray wheel fairings attached below BLUE box-spine track with pale SILVER running rails and NAVY blue columns. Choose the photographed first two rows, their real overhead bogies/blue rail and one connected navy support section in a medium canted portrait with source riders at source scale. Preserve the exact source inverted-under-track relationship and actual running hardware; no yellow Texas rail, free-spin Batman, new route, additional unpictured car or invented body support. Crop unrelated foreground columns only where the source already establishes unobscured hardware. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "434862fa9e8caf9e18cb400499bd1fbbcb81b0ef5a1958fd9995660d4b0ce591",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 106669138453046,
+      "rideName": "DC SUPER-VILLAINS™ Swing",
+      "alt": "Illustrated DC SUPER-VILLAINS™ Swing at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:29:05.046754+00:00",
+      "originalSHA256": "16b14bfd6bf6b9c480743781020b90e6d4fd1e2869a8f51c054ce611c2119ccd",
+      "review": "Accepted: Compared with the operator photograph: retains the blue scalloped swing canopy with physical emblem/portrait panels and bulb strips, blue mast with yellow collar, pale-blue lower panels, red/blue suspended chairs, silver cages and chains. The illuminated canopy treatment stays consistent with the physical ride rather than inventing a different tower or flying-chair mechanism.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff701f87a766891824c4ac88a14a395044ba17b93-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "DC SPER-VILLAINS™ Swing ride in motion at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/gotham-city-crime-wave",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c1e4c3f2599516328f794b811d613207dc2338b41a390c87bc032ac1f6720427",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official DC SUPER-VILLAINS Swing photograph shows the actual BLUE scalloped ornate circular canopy with painted villain emblems/portraits framed by blue scrollwork and WHITE bulb strips, attached to a BLUE central mast with YELLOW upper collar and pale-blue/gray ornamental polygonal lower panels. RED and BLUE individual chair buckets in SILVER tubular cages hang on long real SILVER chains from the canopy underside. Choose the photographed foreground blue chair and its complete chain-to-canopy connection plus a source-supported blue mast/canopy section in a portrait, preserving the actual tilt and real seat suspension. Keep source riders medium/background scale; printed character portraits remain manufactured decoration, not live villains. No tall SkyScreamer tower, new canopy/seat style or unseen full drive mechanism. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-106669138453046-thumbnail.jpg",
+      "thumbnailSHA256": "e71c17c9fed61d500117f3fcdc6f377b837dbd9530431410d0c00cb39600de84",
+      "thumbnailBytes": 32007,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-106669138453046-detail.jpg",
+      "detailSHA256": "484af8b3511e8a61a9b282f9a0e410f308d0c89b6ba39d91ab1038d3758c7458",
+      "detailBytes": 231898,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-106669138453046",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict DC SUPER-VILLAINS™ Swing at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official DC SUPER-VILLAINS Swing photograph shows the actual BLUE scalloped ornate circular canopy with painted villain emblems/portraits framed by blue scrollwork and WHITE bulb strips, attached to a BLUE central mast with YELLOW upper collar and pale-blue/gray ornamental polygonal lower panels. RED and BLUE individual chair buckets in SILVER tubular cages hang on long real SILVER chains from the canopy underside. Choose the photographed foreground blue chair and its complete chain-to-canopy connection plus a source-supported blue mast/canopy section in a portrait, preserving the actual tilt and real seat suspension. Keep source riders medium/background scale; printed character portraits remain manufactured decoration, not live villains. No tall SkyScreamer tower, new canopy/seat style or unseen full drive mechanism. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "51519a35473a59456887298a4b3a26b2debb53ba904143481ccc8752cee44a63",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 112755231539931,
+      "rideName": "Monster Mansion",
+      "alt": "Illustrated Monster Mansion at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:29:55.099387+00:00",
+      "originalSHA256": "a57c69d3d66073e73cbc6db5cab51af972071d0d8a8b71456a8bb49a55f2715a",
+      "review": "Accepted: Compared with the operator exterior photograph: the blue boat, gray bow and benches, silver restraint and blue guide channel remain in contact with the water. The red-brick rounded dark portal, weathered chevron wood, gray stucco, white trim, red shutter and wooden tank above retain the actual photographed façade. It shows the exterior boat approach without inventing unseen interior monster scenes.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F06d4c16a9f4ee619fcfcf857a2d9587b88ba0409-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests enjoying Monster Mansion, an amusement park boat ride at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/monster-mansion",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c816fe42e4146b5d3fde08852c3afa4b6da45cf7bd426996710cf8e1133b5ee0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Monster Mansion photograph shows the actual bright BLUE low boat with rounded GRAY gunwale/bow, GRAY bench backs and SILVER handrail moving in a narrow BLUE water trough out of a dark rounded brick tunnel. The documented facade is RED brick with weathered BROWN timber chevron braces above the opening, a pale-gray stucco/white-trim wall and RED shutter at left, and a weathered cylindrical wooden water tank with dark hoops/wooden roof above. Choose the source boat/front benches at correct water contact and connected brick/timber portal in a medium portrait with source riders at source scale. Keep the actual physical warning placards incidental, crop unrelated foreground dock equipment/neighbor building. This is an honest photographed exterior/boat view: no unseen monsters, invented interior, hidden hull or new route. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-112755231539931-thumbnail.jpg",
+      "thumbnailSHA256": "217d6e4d78a7378da9e524c70474d87e5dfe84966ec51df8e7568ac5c4b0bab7",
+      "thumbnailBytes": 24830,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-112755231539931-detail.jpg",
+      "detailSHA256": "80ad6dfdaa43ad420dc3c8b5bc715e32e0e1932dab5685d06481dfed0d141220",
+      "detailBytes": 207387,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-112755231539931",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Monster Mansion at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official Monster Mansion photograph shows the actual bright BLUE low boat with rounded GRAY gunwale/bow, GRAY bench backs and SILVER handrail moving in a narrow BLUE water trough out of a dark rounded brick tunnel. The documented facade is RED brick with weathered BROWN timber chevron braces above the opening, a pale-gray stucco/white-trim wall and RED shutter at left, and a weathered cylindrical wooden water tank with dark hoops/wooden roof above. Choose the source boat/front benches at correct water contact and connected brick/timber portal in a medium portrait with source riders at source scale. Keep the actual physical warning placards incidental, crop unrelated foreground dock equipment/neighbor building. This is an honest photographed exterior/boat view: no unseen monsters, invented interior, hidden hull or new route. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "2068259a18d623eda7da84384df13751a80589c1a255508dd04d7c5cd8511b15",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 119873256078473,
+      "rideName": "Speedy Gonzales Speed Boats",
+      "alt": "Illustrated Speedy Gonzales Speed Boats at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:38:20.411149+00:00",
+      "originalSHA256": "3e0cbba2818c97891fc5859647063e220b1d168dcf4f7ebb66dc9394e3e86048",
+      "review": "Accepted: The generated image retains the photographed cream/light-gray boat with pink/yellow stripes, gray cockpit and silver guards, wood-grain underside and brass-colored projecting hydrofoil detail, mounted mechanically above the dry blue rotating base. The yellow cheese hub, sombrero figure and two children remain source-based. No water, wake or freely propelled speedboat has been introduced.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F587dc1ad12643a26dece7599cd1fd5fda05ee73d-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children having fun operating Speedy Gonzales Speed Boats at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/speedy-gonzales-speed-boats",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "6f5f5a044a71433ae0d8b95c24c3d51008bd1a4d11f1670c1c2bf2d4c836d77a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Speedy Gonzales Speed Boats photograph shows the actual DRY mechanically mounted LIGHT GRAY/cream speedboat gondola with a woodgrain-textured pale underside, PINK wave stripes/YELLOW edge, gray molded cockpit/windscreen, SILVER guardrails and a real projecting brass-colored side hydrofoil detail. Visible wheel/mount hardware attaches it to the BLUE rotating base; the YELLOW cheese-pattern central cylinder and source manufactured figure/large sombrero sit behind. Choose the documented front boat/cockpit, source-scale seated children and actual blue base attachment in a medium portrait. This photographed attraction is a dry circular mechanical ride: do not add water, a wake, real propulsion, free flight, unseen hull or guessed full drive layout. Existing painted side decoration can remain physical ornament. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-119873256078473-thumbnail.jpg",
+      "thumbnailSHA256": "1daf6faebccc565d3b443b93288ed467d82cb6da5cce3e083515ab7236da0f3f",
+      "thumbnailBytes": 24959,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-119873256078473-detail.jpg",
+      "detailSHA256": "e7335b6f56b4b7f42824f93f116b1d9d253c51f4a91ea767d69dbee6e81f4f67",
+      "detailBytes": 165502,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-119873256078473",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Speedy Gonzales Speed Boats at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official Speedy Gonzales Speed Boats photograph shows the actual DRY mechanically mounted LIGHT GRAY/cream speedboat gondola with a woodgrain-textured pale underside, PINK wave stripes/YELLOW edge, gray molded cockpit/windscreen, SILVER guardrails and a real projecting brass-colored side hydrofoil detail. Visible wheel/mount hardware attaches it to the BLUE rotating base; the YELLOW cheese-pattern central cylinder and source manufactured figure/large sombrero sit behind. Choose the documented front boat/cockpit, source-scale seated children and actual blue base attachment in a medium portrait. This photographed attraction is a dry circular mechanical ride: do not add water, a wake, real propulsion, free flight, unseen hull or guessed full drive layout. Existing painted side decoration can remain physical ornament. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "3a8d86ac668c747f20a652179af8123132586722483930bab0353cf945afcdd8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 125602448258553,
+      "rideName": "Tsunami Surge",
+      "alt": "Illustrated Tsunami Surge at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:36:12.233064+00:00",
+      "originalSHA256": "7e3c27547c1673d4a9e58b1efc4220020d09518f5661d676b0267f7f09abaf1a",
+      "review": "Accepted: Retains the source's orange-rimmed upsweep, wide yellow/turquoise stripes, yellow clover raft with blue handles and photographed pair, thin water contact and foam, gray supports and timber-railed stair tower. The raft remains against the slide surface rather than airborne; the portrait does not invent a complete bowl or unseen tube route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc223a6d9698afbc85727bc7284ba5cce42bc6bea-1920x1146.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A pair of riders enjoying the Tsunami Surge water ride at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/tsunami-surge",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "881581d50ff768a51a39e1677a20cdd855958deb2a40a7ae6ea8f75ea377b6e8",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Georgia Tsunami Surge photograph shows the actual steep ORANGE-rimmed zero-gravity slide wall with wide alternating TURQUOISE and YELLOW running-surface stripes. A real YELLOW clover-shaped inflatable raft with blue grab handles carries the source pair of riders on the LEFT upsweep, in physical contact with a thin sheet of slide water/foam. Gray support columns and the actual adjacent timber-railed access stair are visible behind. Choose that documented left upsweep/raft and source-supported orange sidewall/support section in a medium portrait with riders incidental at source scale. Preserve slide/raft contact and actual stripes; no free aerial drop, invented bowl/tube route, additional slide connection, wavepool or unrelated stair/coaster. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-125602448258553-thumbnail.jpg",
+      "thumbnailSHA256": "9118656bc868262793505963bb5904b37d921141b53720aaa31771f676a40ec8",
+      "thumbnailBytes": 23014,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-125602448258553-detail.jpg",
+      "detailSHA256": "a1cf7d4c30cd7924a2f216d8a5767a62caf9603dc2c30e62bbbe7393a1b68442",
+      "detailBytes": 157268,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-125602448258553",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Tsunami Surge at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official Georgia Tsunami Surge photograph shows the actual steep ORANGE-rimmed zero-gravity slide wall with wide alternating TURQUOISE and YELLOW running-surface stripes. A real YELLOW clover-shaped inflatable raft with blue grab handles carries the source pair of riders on the LEFT upsweep, in physical contact with a thin sheet of slide water/foam. Gray support columns and the actual adjacent timber-railed access stair are visible behind. Choose that documented left upsweep/raft and source-supported orange sidewall/support section in a medium portrait with riders incidental at source scale. Preserve slide/raft contact and actual stripes; no free aerial drop, invented bowl/tube route, additional slide connection, wavepool or unrelated stair/coaster. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "54d90c1b04f844fd620a2d7eb913dd112080df73cfd93792e7acf4a5ba761b7b",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 129873494629009,
+      "rideName": "Up, Up and Away",
+      "alt": "Illustrated Up, Up and Away at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:37:04.129948+00:00",
+      "originalSHA256": "34c888e2760a665e80aa4b22707558356d065d20cce4e2961f852f8def5b55d2",
+      "review": "Accepted: Preserves the photographed teal/white and pink/white rigid balloon canopies, gold swags and bulb strips, brown wicker-style rectangular baskets with padded rims, silver gates and straight gray suspension rods. The foreground basket stays connected to the actual red arms and teal mast with red/gold collar and teal base. Source occupants remain incidental; it does not depict free-flying balloons.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb1657fa781d241a8b161f3b048cf80c6b106c254-1920x1280.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Up, Up, and Away, a balloon kid ride at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/up-up-and-away",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "8d8cf7523bb4b94bd3800c98f9ba233a089e94a9a218c82283999d2870a9a4f6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official local Up, Up and Away photograph shows actual BROWN wicker-textured rectangular baskets with dark padded rims and SILVER gate, suspended by straight GRAY corner rods below rigid TEAL/WHITE or pink-red/WHITE balloon-shaped canopies with GOLD swag trim and rows of WHITE bulbs. Actual RED radial lift arms connect around a TEAL central mast, with a RED-and-GOLD ornamental collar and teal base enclosure. Choose the photographed foreground RIGHT teal/white canopy and attached basket/rods plus source-supported red arm/teal hub section in a portrait; keep source riders incidental. Preserve mechanical attachments and real basket tilt, not free-floating hot-air balloons. No Texas cloud-painted mast, new seat/arm configuration or unseen drive base. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-129873494629009-thumbnail.jpg",
+      "thumbnailSHA256": "d2e2fba4011b2bb5d19b3207bdcb1f367a011d8374acbdf99c889713db44f6be",
+      "thumbnailBytes": 27581,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-129873494629009-detail.jpg",
+      "detailSHA256": "52339618b7670bfe86dafe4fc6f25d98e99d3c669e17f819ed319e034e2785fd",
+      "detailBytes": 178411,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-129873494629009",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Up, Up and Away at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official local Up, Up and Away photograph shows actual BROWN wicker-textured rectangular baskets with dark padded rims and SILVER gate, suspended by straight GRAY corner rods below rigid TEAL/WHITE or pink-red/WHITE balloon-shaped canopies with GOLD swag trim and rows of WHITE bulbs. Actual RED radial lift arms connect around a TEAL central mast, with a RED-and-GOLD ornamental collar and teal base enclosure. Choose the photographed foreground RIGHT teal/white canopy and attached basket/rods plus source-supported red arm/teal hub section in a portrait; keep source riders incidental. Preserve mechanical attachments and real basket tilt, not free-floating hot-air balloons. No Texas cloud-painted mast, new seat/arm configuration or unseen drive base. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "48253740ca938466bf730bc64c2bf8e65f99672cb682f075e8d4507728d59793",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 130810046077534,
+      "rideName": "Rockin’ Tug",
+      "alt": "Illustrated Rockin’ Tug at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:37:33.862415+00:00",
+      "originalSHA256": "2366aeb7f088f9f0158e4b277cc3f7ad16c078cda7f35983f737f19913cca3a7",
+      "review": "Accepted: Matches the selected operator action photograph's brown plank boat, gray padded gunwale, silver gates, colored life rings and ropes, gray riveted cabin arches, brown roof, yellow vent horns and blue chimney. The boat sits over the dark-green mechanical guide track within turquoise wave-painted walls; the unseen undercarriage stays occluded. It preserves the dry rocking ride rather than inventing seawater, a wake or visible wheels.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbc275222f91c1d1e129b4f8d65fd0fd179917f16-7008x4672.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Families having fun on the Rockin' Tug ride at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/rockin-tug",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "cfbbc7b2635dbe805a7a97ef638988c09b622168249cdf30b6d539477c3437e2",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Rockin' Tug gallery photograph shows the actual BROWN plank-textured tugboat body with dark GRAY padded gunwale, SILVER gated side openings and attached colorful BLUE/YELLOW/PINK/WHITE life rings on real ropes. Its central cabin has GRAY riveted arched pillars, brown plank roof trim, real small lamps, TWO YELLOW vent horns and a BLUE chimney/barrel ornament. The boat sits inside a curved mechanical track with DARK GREEN guide/rack sections and TURQUOISE wave-painted sidewalls; it is not a free boat on water. Choose the documented near boat/cabin and actual track-sidewall contact in a medium portrait with source family at source scale. Preserve occlusion of hidden underside; no added wheel chassis, sea/wake, unpictured route or new cabin. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-130810046077534-thumbnail.jpg",
+      "thumbnailSHA256": "c39f9544bfcfd95551a329963a7f16910df3da21a30086662a5a013f39403f57",
+      "thumbnailBytes": 27292,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-130810046077534-detail.jpg",
+      "detailSHA256": "f6269d70324548a4965d97cea5ad3777f7775149bcf2e9fb05c2faaaeae78886",
+      "detailBytes": 197796,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-130810046077534",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Rockin’ Tug at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: The genuine official Rockin' Tug gallery photograph shows the actual BROWN plank-textured tugboat body with dark GRAY padded gunwale, SILVER gated side openings and attached colorful BLUE/YELLOW/PINK/WHITE life rings on real ropes. Its central cabin has GRAY riveted arched pillars, brown plank roof trim, real small lamps, TWO YELLOW vent horns and a BLUE chimney/barrel ornament. The boat sits inside a curved mechanical track with DARK GREEN guide/rack sections and TURQUOISE wave-painted sidewalls; it is not a free boat on water. Choose the documented near boat/cabin and actual track-sidewall contact in a medium portrait with source family at source scale. Preserve occlusion of hidden underside; no added wheel chassis, sea/wake, unpictured route or new cabin. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "917f0135de207471989b262f375e75bed0a7b5945eec675988b4017b7f63bb9e",
+      "generationSteps": []
+    },
+    {
       "parkId": 37,
       "rideId": 10024564956838,
       "rideName": "Jersey Devil Coaster",
