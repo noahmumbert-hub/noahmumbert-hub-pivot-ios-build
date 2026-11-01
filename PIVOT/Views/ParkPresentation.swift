@@ -151,6 +151,7 @@ struct ParkBannerView: View {
             RoundedRectangle(cornerRadius: 24, style: .continuous)
                 .strokeBorder(.white.opacity(0.16), lineWidth: 1).allowsHitTesting(false)
         }
+        .accessibilityElement(children: .contain)
         .accessibilityIdentifier("park-banner-\(park?.id ?? -1)")
         .sheet(isPresented: $showPhotoCredit) {
             if let artwork { ParkPhotoCreditView(artwork: artwork) }

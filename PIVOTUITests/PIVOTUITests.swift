@@ -212,8 +212,10 @@ final class PIVOTUITests: XCTestCase {
         let app = rootFixture(["--reference-ui-park=\(parkID)", "--ui-dark"] + extra)
         screenshot("Compact Waits \(capture) overview", app: app)
         for identifier in ["park-hours-value", "park-early-entry-value"] {
-            let value = app.staticTexts[identifier].firstMatch
+            let matches = app.descendants(matching: .any).matching(identifier: identifier)
+            let value = matches.firstMatch
             centerFullyVisible(value, in: app, file: file, line: line)
+            XCTAssertEqual(matches.count, 1, "The schedule value must have a unique accessibility identity", file: file, line: line)
             XCTAssertTrue(value.label.contains(" – "), "Both complete schedule endpoints must remain available", file: file, line: line)
             assertFullTextLayout(value, category: category, file: file, line: line)
             screenshot("Compact Waits \(capture) \(identifier)", app: app)
@@ -224,6 +226,8 @@ final class PIVOTUITests: XCTestCase {
         let banner = app.descendants(matching: .any)["park-banner-\(parkID)"].firstMatch
         let controls = app.cells.containing(.textField, identifier: "Ride search").firstMatch
         XCTAssertTrue(banner.exists && controls.exists, file: file, line: line)
+        XCTAssertEqual(app.descendants(matching: .any).matching(identifier: "park-banner-\(parkID)").count, 1,
+                       "The park card must expose one container rather than overriding its schedule children", file: file, line: line)
         waitForSettledFrames([banner, controls], file: file, line: line)
         let parkGap = controls.frame.minY - banner.frame.maxY
         XCTAssertGreaterThanOrEqual(parkGap, 0, "Park and rides cards must not overlap", file: file, line: line)
