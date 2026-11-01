@@ -19508,6 +19508,135 @@
     },
     {
       "parkId": 57,
+      "rideId": 2551666690317,
+      "rideName": "Celebration Swings",
+      "alt": "Illustrated Celebration Swings at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:52:09.304785+00:00",
+      "originalSHA256": "496bc72323598c8ce34a59da5b8a714f2b4bd32ce86e5bba1d1714aabfab2660",
+      "review": "Accepted: Inspected generated original preserves the low upward view of cream portrait-panel swing canopy, pink/turquoise tower decoration, connected dark chains, red individual metal seats and ordinary restrained riders. Bulb lighting and textured surfaces fit the requested realistic dusk treatment.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/790ef6b00f6ce872a3f5c5c84964671b29da2ffc-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/celebration-swings",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "6c6e2df0a3a0df2deeb7c8ce41267fd89ab9d961d644b6048f80b804b7ad8dd3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Celebration Swings photograph from below: cream ornamental circular canopy with painted portrait panels and scalloped edge, pale mint/cream central cylindrical tower with pink diamond and turquoise lattice decoration, dark suspension chains and individual red metal swing seats carrying ordinary riders. Preserve real canopy/chain/seat connections and low upward angle with small source-supported background coaster; no invented tower or extra decks."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-2551666690317-thumbnail.jpg",
+      "thumbnailSHA256": "72258e27cee9175f32b02a2f9d7253b6b5a50954baf70bb3f6b8ce04283c30dc",
+      "thumbnailBytes": 26672,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-2551666690317-detail.jpg",
+      "detailSHA256": "0155cbf04d879955a36f810279a8747545f9804070f07d8ccf2f93fac04ec8be",
+      "detailBytes": 219860,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 5860210027778,
+      "rideName": "Tiki Twirl",
+      "alt": "Illustrated Tiki Twirl at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:52:36.785179+00:00",
+      "originalSHA256": "13e2ae52564231b716893aebbe743e91a27419afeff6ee3b361c134f97cf60fa",
+      "review": "Accepted: Inspected generated original preserves the rust-red disk with yellow underside dots, outward motorcycle seats and beige restraints, actual fixed tiki face and real undercarriage contacting raised curved track; no unsupported flying disk or invented flame.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F819e962c1126da0ac4149bccd9e13c6abf95bebe-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests spinning around on Tiki Twirl",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/tiki-twirl",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "808120fdecd4c6d7b46c5931fe94f2e9a54f3dc418ee2b30f0efae93a159d26a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Tiki Twirl photograph: large rust-red/orange circular disk with yellow underside dots, outward-facing motorcycle-like seats with beige high front restraints and ordinary riders, actual fixed carved tiki face/backboard at center, disk wheel/undercarriage seated on visible green-gray raised curved steel track. Preserve connected disk/track geometry and this photographed section, no flying unsupported disk or invented flame in this frame. Page browser title mistakenly mentions Whitewater Falls but body heading, alt and pixels all identify Tiki Twirl."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-5860210027778-thumbnail.jpg",
+      "thumbnailSHA256": "befc4b6abeddb2f2193cf96662071c55d8f2613aeaf0adc042490b90949a9a0b",
+      "thumbnailBytes": 21593,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-5860210027778-detail.jpg",
+      "detailSHA256": "1e81f0edf6a54775a7067c9b5d228a2a7d13364fe5a9740b761d8c563597efdc",
+      "detailBytes": 155430,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 11876124976829,
+      "rideName": "Pacific Gliders",
+      "alt": "Illustrated Pacific Gliders at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:53:36.386051+00:00",
+      "originalSHA256": "6606ef6b3f20b6afe2e2b294647c4b25371f969894e86eb1096f28a553ecd878",
+      "review": "Accepted: Inspected generated original preserves pale-aqua hinged arms, hydraulic lines, brown paired seats with restraints, bronze compass hub and connected orange/white and lime/white wings from the exact operator photo.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fdd03491b575fc55fc7159711b250b62e2b7347ca-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Pacific Gliders at California's Great America",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/pacific-gliders",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "42962b7766e180a418ad8dc484db47be4f033f651eebd74c3b98abcfcb30a67d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Pacific Gliders photograph: pale aqua radial pivot arms with visible black hydraulic lines and white hinge plates around bronze compass-bowl central hub, suspended paired brown seats with real black safety restraint/foot supports, triangular fabric-like wings alternating orange/white and lime/white above each unit. Real timber coaster behind, small entry sign in source. Preserve this exact glider mechanism and wing connections; do not replace with Flying Eagles tubs or skyride."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-11876124976829-thumbnail.jpg",
+      "thumbnailSHA256": "08f6ff46edc977ed4decc9b7f11e998efc40f8c3d9052c2aa477def9a0d1bf6f",
+      "thumbnailBytes": 27255,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-11876124976829-detail.jpg",
+      "detailSHA256": "5e49db66180e20f6b465b2501faeadd6712a97fd54161c354475e1038b052862",
+      "detailBytes": 201829,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
       "rideId": 21923171352176,
       "rideName": "Flight Deck",
       "alt": "Illustrated Flight Deck at California’s Great America",
@@ -19543,6 +19672,908 @@
       "detailFile": "57-21923171352176-detail.jpg",
       "detailSHA256": "cc914cda42d6c4d02cca06f63efafea3c78ebb15333d72a17ad5af58b67b3a51",
       "detailBytes": 163079,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 24958977288293,
+      "rideName": "Delta Flyer/Eagle's Flight",
+      "alt": "Illustrated Delta Flyer/Eagle's Flight at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:54:09.490508+00:00",
+      "originalSHA256": "d5190e9f4f54765eea2377a6bbf01c4f05c2460c5e802423c7e7492dd39aec48",
+      "review": "Accepted: Inspected generated original preserves red open-window gondola 17, ordinary seated riders, long metal hanger and pulley carriage visibly connected to the overhead cable, blue support pylon and documented park view.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/1d5228542e0f2de573ec28664a7e4a4218c7298e-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/delta-flyer-eagles-flight",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "bfaeceffd205f9549e389e8ddc83617dc04b38d229410de42320c04decf5964f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Delta Flyer/Eagle's Flight photograph: red open-window square gondola number 17 with red roof, black perimeter trim and safety rail, visible ordinary seated riders, long gray hanger connected through actual pulley carriage to overhead black cable; blue support pylon and receding red gondolas above real tree-covered park. Preserve hanger/pulley/cable geometry and documented aerial angle; same physical park-crossing skyride as separate Eagle's Flight catalog alias."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-24958977288293-thumbnail.jpg",
+      "thumbnailSHA256": "a2bc188e00188eaeee6737e66e3d5bdd121e94552e1093d3c55fc25f80f3a864",
+      "thumbnailBytes": 24009,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-24958977288293-detail.jpg",
+      "detailSHA256": "e84abdf519a4e67876f95d46be6205f249653d5f4db9e12a3b58a814e97c955c",
+      "detailBytes": 167963,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 30905799162731,
+      "rideName": "Xtreme Skyflyer",
+      "alt": "Illustrated Xtreme Skyflyer at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:54:37.486915+00:00",
+      "originalSHA256": "44d7bde03062c64922693c30370fca27c4465f8d249da8c226f9700013389f07",
+      "review": "Accepted: Inspected generated original preserves the documented ordinary participants in face-down fabric harnesses, actual connected straps and suspension hardware, taut paired cables and gray lattice tower, within the photographed section.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F521e0dfa2e4b8cc2eb5c77468da90d5d5c947c45-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests falling from the sky on Xtreme Skyflyer",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/xtreme-skyflyer",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d85cc7cc62d4e786ad49c20428ce196dc05dfa328d471d752e48f80ee01b525f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Xtreme Skyflyer photograph: three ordinary participants face down together in proper fabric body harnesses, black harness straps and rigid connection hardware join taut paired suspension cables extending diagonally right, pale gray steel lattice tower at left. Preserve exact source-supported harness/cable connection and swinging pose, not free unsupported flight; crop within this documented section without inventing complete arch or unrelated coaster."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-30905799162731-thumbnail.jpg",
+      "thumbnailSHA256": "51c17b59b579775a248d49a7e3434d69114ba38b6f34e99c4648351de1158113",
+      "thumbnailBytes": 17425,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-30905799162731-detail.jpg",
+      "detailSHA256": "5276d1d370c6e6a91ec337fef7cb126a600ca98c8d463856ec489319c412f0e4",
+      "detailBytes": 107908,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 34879778447445,
+      "rideName": "Lucy's Crabbie Cabbies",
+      "alt": "Illustrated Lucy's Crabbie Cabbies at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:55:29.467627+00:00",
+      "originalSHA256": "234e181ace95afd023895b4fd422d295af90f0d0ac8f770e2ce5786133e59cb9",
+      "review": "Accepted: Inspected generated original preserves connected yellow checker-belt cab cars, headlamp/grille details, shared lap bars and ordinary seated riders, with visible wheel assemblies contacting the blue track. Close composition remains ride-specific and photographic.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/56e58aa726071768023b3c03325aff737090b43e-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/lucys-crabbie-cabbies",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "af1ed714244b79b00dcaed98a49d9b97532ef098d539af2ce3c219c63c2b4325",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Lucy's Crabbie Cabbies photograph: connected bright-yellow small cab-themed coaster cars with black/white checker belt, circular painted headlamp/grille details, rounded shared lap bars and two ordinary seated riders across each row, blue steel track/wheels partially visible below and blue/pink support structure behind. Preserve real car train, seat restraint and wheel/rail connections in this intimate front-side view; no new licensed figure or invented full layout."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-34879778447445-thumbnail.jpg",
+      "thumbnailSHA256": "6c13e1fff24c8126c54195004c213a6a971763625479382d262c7a7addbe6e3e",
+      "thumbnailBytes": 26790,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-34879778447445-detail.jpg",
+      "detailSHA256": "405aed21671661a7a486b0c4b9c1a56bd7ac4a1d973db17f356227d8723d90fc",
+      "detailBytes": 154951,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 40053852232752,
+      "rideName": "Planet Snoopy Construction Zone",
+      "alt": "Illustrated Planet Snoopy Construction Zone at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:56:15.984267+00:00",
+      "originalSHA256": "2ff80846d0790548fa7876472c347b0561bbe88521bfb7a5f78fe90ae1f85542",
+      "review": "Accepted: Inspected generated original preserves the lime/yellow raised playhouse, blue stairs and supports with red padding, connected red/blue straight and cream spiral slides, tire arch and small green/yellow bulldozer playground on turf. Physical printed equipment details remain props.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/a746bf840956d03d2f584effbcbb0d2e4c9f70ae-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/planet-snoopy-construction-zone",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "454ebad37b19bba6b2468097f56fe85f6b1b65d11360b3cdc08f6d2e2c776851",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Planet Snoopy Construction Zone photograph: raised lime-green playhouse with yellow window frames, blue roof/stair rail/support columns padded red, two straight red and blue tube slides and one cream spiral tube, small green/yellow bulldozer-themed toddler play frame on artificial turf with yellow short slide, tire arch and physical printed cartoon panel. Preserve this documented empty playground and connected slide/platform geometry; do not invent animated characters, ride vehicles or new building."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-40053852232752-thumbnail.jpg",
+      "thumbnailSHA256": "394f5fc742f52888794f9dedbd8c45407b84ed52022f2bca12e984affe78399a",
+      "thumbnailBytes": 21861,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-40053852232752-detail.jpg",
+      "detailSHA256": "950efd8f88dda92d008bee4e9e9d7dfcfec2c7c9d18e5de7b880583e59d7d7cf",
+      "detailBytes": 183829,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 44803352858321,
+      "rideName": "Barney Oldfield's Redwood Rally",
+      "alt": "Illustrated Barney Oldfield's Redwood Rally at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:57:09.108983+00:00",
+      "originalSHA256": "353156d0d8a066f02fc56977dd248db7fd0d1f85743c457b1b2589d411acb02d",
+      "review": "Accepted: Inspected generated original preserves the parked green antique car with brown bench, spoked wheels and rear spare, orange workshop hoist, red pump props, corrugated shed and tire wall. Static source-grounded composition avoids inventing a guided route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/3fb66a06249e4a1368e2059ea6b92854a1e97f0e-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/barney-oldfields-redwood-rally",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "7bd4f7502ef73ec4bc442042bb32b916f9e67c63871f08aa99d8154c0c351f94",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Barney Oldfield's Redwood Rally photograph: parked green antique car with tall hood, brown ribbed bench, thin black spoked wheels, rear green spare wheel, black steering wheel and running board; red antique car behind, orange workshop hoist in front, corrugated service shed with green roof and orange doors, old gas-pump props and tire wall. Keep source-supported parked display/loading view; do not invent moving guide rail, tunnel or road beyond the photograph."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-44803352858321-thumbnail.jpg",
+      "thumbnailSHA256": "6a7b866ce73f9f2e943788319b95abe130512227d38515226a36766e285a7f89",
+      "thumbnailBytes": 26093,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-44803352858321-detail.jpg",
+      "detailSHA256": "e9c5f6cf7730892ac613df4bbd568495bf534b90c6e5acfa23ce62e599483a83",
+      "detailBytes": 194692,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 50463691456851,
+      "rideName": "Centrifuge",
+      "alt": "Illustrated Centrifuge at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:58:26.490008+00:00",
+      "originalSHA256": "3981c49788d760e839f8ab248cb78c254a3bbba418772e78f6bec6b138d774e4",
+      "review": "Accepted: Inspected generated original preserves glossy teal rounded spinning tubs with red lap bars and ordinary riders, black skirts and pivot arms connected to yellow satellite hub, dark turntable and red perimeter. It remains recognizably Centrifuge rather than bumper cars.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/5ec98cd096a47e71a06c5916a590bbf6d2a502fd-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/centrifuge",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "41309f4a9689f9adfe347e58769c50274aee6aa4964cafc3b45225efc08e9734",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Centrifuge photograph: glossy teal/green rectangular rounded spinning tubs with black bumper skirts, round front/rear lamps, shared red metal lap bars and black bench seats carrying ordinary guests; tubs connected by low black arms to yellow domed satellite hub, red/purple tubs behind and dark flat turntable deck in front of red wood perimeter. Preserve actual tub/hub/pivot hardware in source-grounded close view, not bumper cars or teacups."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-50463691456851-thumbnail.jpg",
+      "thumbnailSHA256": "361d24de5f68ad413c08b442700cc182e90370312408dfe9e7462d802b36a0f4",
+      "thumbnailBytes": 23587,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-50463691456851-detail.jpg",
+      "detailSHA256": "95f8edf263b993a7f6cb57929f5f3aeb7fa505fb9b901b96ed43e1032f4ad07b",
+      "detailBytes": 155708,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 58904274780832,
+      "rideName": "Mission Falls",
+      "alt": "Illustrated Mission Falls at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:57:37.217359+00:00",
+      "originalSHA256": "cecc543afae85096a4d8777b65cc56095706af6974ca427a7afc07a595e89731",
+      "review": "Accepted: Inspected full generated original and enlarged source/output crops. Both actual photo and generated image show TWO ordinary riders in an elongated blue tandem tube contacting the broad turquoise half-pipe wall; an initial single-rider annotation was corrected with evidence while the original executed prompt was preserved. Wet fiberglass, blue rim, palms, umbrellas and source-grounded angle match; no regeneration was needed.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/c1aca3014c9dbf87674350465d9d8664334d77f8-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/mission-falls",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "15349360fe1205388df9e0bedbf2718f992beccd56d67cae235fb1cc88f21efb",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Mission Falls photograph: very broad steep aqua/turquoise wet half-pipe wall on right with dark/blue rim, two ordinary riders lying feet-forward in an actual elongated blue tandem tube with black handles contacting thin water sheet, source view looks down over white umbrellas, blue loungers, palm tree and blue-roofed low building. Preserve this actual wall/tube contact and elevated perspective only, no invented full slide route or airborne rider."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-58904274780832-thumbnail.jpg",
+      "thumbnailSHA256": "1c28d7ad2e606e589a85fb33b570ba8e2db63c59906eecfdbc3b0f2ac86ee43d",
+      "thumbnailBytes": 23539,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-58904274780832-detail.jpg",
+      "detailSHA256": "e1ef22e3c3fe6804e6963c12f5116d5f4e2e7bc2ee21beb16ca41b56c16e89ab",
+      "detailBytes": 198628,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 59037193400559,
+      "rideName": "Delirium",
+      "alt": "Illustrated Delirium at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:58:04.417723+00:00",
+      "originalSHA256": "95fb1d047a3394eb78993971a5585b9cc95bddf049f475e190a058e1ba4737c1",
+      "review": "Accepted: Inspected generated original preserves yellow radial spokes, blue central hub, blue/green seat banks and ordinary restrained riders, connected gray pendulum/A-frame and bent lamps. It does not substitute a circular seating ring for the photographed spoke assembly.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1032ba2187dbad23fd9c26ce620f41185896cb60-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Delirium, a spinning thrill ride",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/delirium",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c67ff728e17004ea80fc7d1e32b48d5d879032ebe270bd109f6aabc19fd24ee0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Delirium photograph: yellow radial spokes around blue circular hub join banks of teal/blue and green outward visible seat backs; actual ordinary riders restrained with legs dangling; spinning assembly suspended from thick gray central pendulum shaft within gray A-frame supports, real bent white lamps and yellow/red entry sign foreground. Preserve exact pendulum/hub/spoke/seat connections and source crop; do not turn it into a giant circular Frisbee seating ring or unsupported star."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-59037193400559-thumbnail.jpg",
+      "thumbnailSHA256": "253d2382dd03334f0c7c9130b8418d1a57519c068ebca7829e2fb830203dff92",
+      "thumbnailBytes": 27960,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-59037193400559-detail.jpg",
+      "detailSHA256": "33e33c872006118585981444a972e46fe571d07ad3b9575850c17c1b51b254a1",
+      "detailBytes": 203187,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 62808380139940,
+      "rideName": "The Grizzly",
+      "alt": "Illustrated The Grizzly at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:58:49.490296+00:00",
+      "originalSHA256": "15ad081631e2a40910c55424049e95e9e7e1bf674e40382be23e5d95d7b1d7d1",
+      "review": "Accepted: Inspected generated original preserves the red/yellow train, lap-bar seated riders, wheel/rail contact and dense brown timber trestle/maintenance railing on the photographed California Grizzly descent.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/c57d968ba62529f3e1d857ccc682e6fe06c3fc2c-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/the-grizzly",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "224e212fe2eb77bf7d2af1731edda506823e28b8ac6e25d6e5a2e9197aaa448f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own The Grizzly photograph: long red train with yellow rectangular side panels, actual ordinary riders behind black lap bars, train wheels seated on descending wooden-coaster steel running rails, dark brown dense timber rectangular and diagonal braced supports, narrow wooden maintenance walkway with side railing. Preserve actual connected train/rails/trestle and slope in this California photo, not another park Grizzly or invented inversion/full layout."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-62808380139940-thumbnail.jpg",
+      "thumbnailSHA256": "ca7e2f43813ee0e4af0a4317b6984718fbbe025e00dfb9144fadafc066e02884",
+      "thumbnailBytes": 23607,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-62808380139940-detail.jpg",
+      "detailSHA256": "593f1c8e41cc99d0c5907be559498d6c762dd610ff123caaf704da78b729a5f5",
+      "detailBytes": 157426,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 63159932132095,
+      "rideName": "RailBlazer",
+      "alt": "Illustrated RailBlazer at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:59:22.754730+00:00",
+      "originalSHA256": "748bdd7ea35a8c5055430796b0824e16a216c38cb43e3927711406fd25b4fa6d",
+      "review": "Accepted: Inspected generated original preserves the yellow single-file train, black shoulder harnesses and orange restraint grips, bolted orange single box-beam rail and visible wheel contact from RailBlazer’s actual photograph.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fcfc1ac0deba47d7f38f29a510c8acd7dcadebbee-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests on RailBlazer",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/railblazer",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "39fb8dbc2b25ea83f4d9ffb247a0ea387a969121b21e3b0be07ef9edacfa2a10",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own RailBlazer close photograph: one-seat-wide yellow off-road themed steel train with black over-shoulder harnesses and orange lap restraint/handgrips, ordinary seated riders straddling an orange single box-beam rail with bolted splice plates and visible black wheel assemblies. Preserve actual single-file seat/rail/wheel contact and banked source angle on dark supports, no twin rails, invented inversion or full hidden layout."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-63159932132095-thumbnail.jpg",
+      "thumbnailSHA256": "4068e3b1608409582cbad028782f5d37ae49b9c28049b8e96302cc38bf9b0399",
+      "thumbnailBytes": 23177,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-63159932132095-detail.jpg",
+      "detailSHA256": "6f7f3bcb62de88aa09d2e918b9a1661163d0bfc25f492bffa04c2a083bc4f9db",
+      "detailBytes": 139568,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 64137981448602,
+      "rideName": "Rushin' River",
+      "alt": "Illustrated Rushin' River at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:00:01.555243+00:00",
+      "originalSHA256": "dcda639709a02d9253b3e4b667f815b798677ea489caa290f080b81ea96c8293",
+      "review": "Accepted: Inspected generated original preserves ordinary adults in clear/lime round tubes with black handles and legs touching pale turquoise river water, photographed palm/building background and low water-level composition.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F8d236472efa59e417dbcad5a6ee2ffc5c51362aa-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests relaxing in a lazy river",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/rushin-river",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "b363d5b2ee7e6d74270086ff2ecc797b6a017aa415a4497887bb0a286f0d8917",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Rushin' River water-level photograph: ordinary adults sitting in large clear-and-lime-green round inner tubes with black handles, legs resting partly in shallow pale turquoise water, palm trees and pale aqua building softly blurred behind. Preserve documented tubes/handles/water contact and intimate low river perspective, no invented entire river route, tunnel or waterslide."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-64137981448602-thumbnail.jpg",
+      "thumbnailSHA256": "f3d3474462dc7e39fcd49a4749af5eeb45802e81237e337bc66b76dc5175238d",
+      "thumbnailBytes": 21453,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-64137981448602-detail.jpg",
+      "detailSHA256": "f662c826bdcf6ab4e9736ba0aa5ece5804ef4a884d9857792e764ac96d7086a7",
+      "detailBytes": 132767,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 65436909229700,
+      "rideName": "Liberty Twirler",
+      "alt": "Illustrated Liberty Twirler at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:01:26.684355+00:00",
+      "originalSHA256": "307ba224f5d98769483900844c1bd21943f68985a4dd3d5ff101da42bf854357",
+      "review": "Accepted: Inspected generated original preserves the silver red-padded Scrambler tub, hinged front gate, chrome lap bar, physical star trim and actual connected blue pivot beams and white diagonal rods.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F007dffc72b9999d6bf8f5d06e26567aee0e9cb01-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests on Liberty Twirler",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/liberty-twirler",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "37789b6d835798d8d9ada8614b9a99cbf3092a563f5674ab279ef3eb034acefb",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Liberty Twirler photograph: classic Scrambler-style silver rectangular tub with red padded seat, round chrome bar and hinged broad silver front gate bearing physical red star/stripe decoration, ordinary seated family, actual blue base pivot beams and diagonal white steel support rods connect into blue/white central tower. Preserve precise tub/restraint/arm connections and close ground-level view; not bumper cars or chain swings."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-65436909229700-thumbnail.jpg",
+      "thumbnailSHA256": "62cced90e935dad273b8670626baaf9fffd533b1d4e72823357394613ace583b",
+      "thumbnailBytes": 26342,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-65436909229700-detail.jpg",
+      "detailSHA256": "15660307af222e0c7ce96a922bbd0664c19d0db8f5b9e4d46cb10175e7090988",
+      "detailBytes": 163947,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 73538505212234,
+      "rideName": "Otter Trotter",
+      "alt": "Illustrated Otter Trotter at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:00:29.871615+00:00",
+      "originalSHA256": "dc6ad124649bd38434acf4d0adaf05e4de012fccb7b84131139fe7bf6759710b",
+      "review": "Accepted: Inspected generated original preserves the documented pale blue/lime splash deck, pink circular jet ring, ordinary family holding hands, small ground water arcs and real sea-creature activity panels, without inventing a deep pool or slides.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/4d4783e467e120360061d79ad83c5aa8ee7bd2c5-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/otter-trotter",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "81c4ec9797c1dd65f4384d03899162e3b2f99239f1bb4e0fb669a0b700fa3dc5",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Otter Trotter photograph: toddler splash deck painted pale blue with lime/turquoise curving bands and pink circular jet ring, small arcing water jets, ordinary family standing and holding hands in shallow spray, real brown post and blue/red round sea-creature activity panels, blue shade canopy and low pale blue building behind. Preserve actual ground jets and documented deck colors, no invented deep pool, otters or giant slides."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-73538505212234-thumbnail.jpg",
+      "thumbnailSHA256": "7dfa53eef4f0221206a29d0ac504cfd9b7b7acfb8a1d588ad3840565f8f189ac",
+      "thumbnailBytes": 25100,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-73538505212234-detail.jpg",
+      "detailSHA256": "e8d4a266aa037534fa5f513bd314a8f8a9697289adfbb8f1c103b146a3b9e005",
+      "detailBytes": 175185,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 79090554617090,
+      "rideName": "Woodstock Express",
+      "alt": "Illustrated Woodstock Express at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:00:57.711978+00:00",
+      "originalSHA256": "8fa520f984d2629766fa2cef7f09872bbf05522feb36094bdd3e56654a365cbb",
+      "review": "Accepted: Inspected generated original preserves the California yellow/ochre and burgundy small train, black high seatbacks and lap bars, ordinary parent/child front row, actual following cars and source-grounded platform/rail view.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F786d8db09c5a4ecb19bcc704dbbbd9cf8878ebdc-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A father and son on Woodstock Express",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/woodstock-express",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "dee26d9d4af566d889b9035d4ebcd9d49e60c016da8a3036d9bbb9a205f5d199",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own California Woodstock Express photograph: yellow/ochre small connected coaster train with burgundy horizontal stripe and central lightning-like nose mark, black upright seat backs and padded shared black lap bars, ordinary parent and child front row, connected following cars at left and real trees/supports behind. Preserve this California train and source-limited front-side boarding/ride section; not the blue Cedar Point or wooden Kings Island coaster with the same name."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-79090554617090-thumbnail.jpg",
+      "thumbnailSHA256": "eef0880a700b2469d108a752c8529b173cb6f7a05535fc9bcf174f02a91e74dd",
+      "thumbnailBytes": 24613,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-79090554617090-detail.jpg",
+      "detailSHA256": "d5a8c0fdd8fce3abbafe886138c8f4087f4bd84448031ae4251c6f38b75fb01e",
+      "detailBytes": 142169,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 80436174214164,
+      "rideName": "Character Carousel",
+      "alt": "Illustrated Character Carousel at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:02:14.468965+00:00",
+      "originalSHA256": "e75ddbd750dc23caab9002fac84af6beb772ffe0aefcc7b135629fa17d7d619d",
+      "review": "Accepted: Inspected generated original preserves the tan, black and zebra carousel sculptures, twisted brass poles, source-supported blue mirror drum and white curled relief, blue roof structure and real pole/platform attachment.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F3e5c21dfdf5cf3319ec3b7ddc289fc5b8794bfe7-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests on the carousel",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/character-carousel",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "7be87e8f8435ae8a36ae59b04cbc853cff82236eab07162dc973de391e9d621a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Character Carousel photograph: actual tan carved carousel horse with mint/rose saddle blanket and black mane, nearby black horse and striped zebra figures, twisted brass vertical poles, blue center drum with oval mirrors, white curled relief trim and blue roof beams above, pale seats/steps below. Preserve physical carved animal sculptures and pole/platform attachment, no real animals, new characters or invented second story."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-80436174214164-thumbnail.jpg",
+      "thumbnailSHA256": "8f07148aa6fd59f6f57a71bca215371b32f6a65e80275fb6e44cfb47589f7c08",
+      "thumbnailBytes": 28584,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-80436174214164-detail.jpg",
+      "detailSHA256": "e190ccbf1ee8f9819764ee6c63f9c63fade42e7c15a5afe31ae17d4f40ace488",
+      "detailBytes": 191326,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 84207438298200,
+      "rideName": "Mass Effect: New Earth",
+      "alt": "Illustrated Mass Effect: New Earth at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:04:19.706568+00:00",
+      "originalSHA256": "ea135a98287c54dfb9e5ecdc6a87f6d00ab2e1f0ddb270e5d9e61bec0ae76190",
+      "review": "Accepted: Inspected generated original preserves the real simulator auditorium, ordinary guest with 3D glasses and armrest, live performer at gray/red console, black safety rail and grated floor. Computer portal and figure remain visibly screen content rather than real objects in the room.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/cd0a71ced772422bd9a4438a7e4b4fd5f63b1f63-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/mass-effect-new-earth",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "5ad0e31d3a86582f78cd1a69f6a4d8297f259056762d89162b395115760f3ea3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Mass Effect New Earth photograph: real dark simulator auditorium, ordinary guest seated at left wearing 3D glasses and holding a fixed armrest/handle, large blue-lit screen showing computer-generated sci-fi portal/station and digital figure as SCREEN content, live ordinary performer at gray console with red inset light panels in front, real black safety rail and grated floor. Preserve this documented physical auditorium and display composition; keep projected/game imagery visibly on a screen, not a real monster, spacecraft or invented theater route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-84207438298200-thumbnail.jpg",
+      "thumbnailSHA256": "3ef8de8b00c94f67537fea3aea52cea374c8031145fb0b50aefe8ff437dfdbf5",
+      "thumbnailBytes": 24314,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-84207438298200-detail.jpg",
+      "detailSHA256": "82042175a93fc3b9179c6d6b05232e81788076fcf23cc07052112b42f63dd863",
+      "detailBytes": 172248,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 90160636894665,
+      "rideName": "Joe Cool's Dodgem School",
+      "alt": "Illustrated Joe Cool's Dodgem School at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:05:31.611492+00:00",
+      "originalSHA256": "550dbe863788f30d7122a918372c6703187c53dbb9a5736808fa6a194ce7edc3",
+      "review": "Accepted: Inspected corrected generated original. It preserves the documented yellow miniature bumper cars, black seats, orange shoulder belts, pickup poles, checker trim, printed hood emblems and ordinary seated riders; the distant background now faithfully shows the actual pink perimeter fence, pale gray pavilion supports and grass. The unrelated landmark and invented palm skyline are removed. Initial factual-error draft is retained privately and excluded from the bundle.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/dc5a2c11db576adeedcc7644c9519c3ab697dea9-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/joe-cools-dodgem-school",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "9c387a699d72f3c987645d4c5c8d8d5e0e7a20dd2601ed3abaab07fa8c424e52",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Joe Cool's Dodgem School photograph: small bright-yellow cab-themed bumper cars with black seats, orange shoulder belts, round black steering wheels, broad dark rubber bumper, square lamps and checker trim, actual printed Peanuts hood emblems and overhead pickup poles, ordinary seated children on flat indoor arena floor. Preserve actual vehicle scale, restraints, steering and pickup connection; no road traffic, new character figures or invented track."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-90160636894665-thumbnail.jpg",
+      "thumbnailSHA256": "1637dc72028dc63a5731cb3c9ff8834118a300518f836c7905af1473db827d9f",
+      "thumbnailBytes": 23494,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-90160636894665-detail.jpg",
+      "detailSHA256": "34ad9f51d057c82e8b1df9af50ed4268e5c29eaa4626911a84b92f41b66faa6b",
+      "detailBytes": 139927,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 90558205429907,
+      "rideName": "The Pumpkin Patch",
+      "alt": "Illustrated The Pumpkin Patch at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:05:10.131216+00:00",
+      "originalSHA256": "e3fff448ccaf3ca0458cdfe421acc35b75cdcfc60ef344345b850c0f88d7b753",
+      "review": "Accepted: Inspected generated original preserves orange ridged pumpkin tubs and half-canopies with green stems, safety gates and ordinary seated riders, yellow hangers and real blue radial beams/central tower.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/a76560c33b4f11cdfbd1117e2c74ef6bee7e1781-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/the-pumpkin-patch",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e7d81b1ab936d787e1b11511030726bebca22c9a8691ade7fe9b0d983cc23c1b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own The Pumpkin Patch photograph: orange ridged pumpkin-shaped passenger tubs and separate pumpkin-half canopies with green stalk/leaves, orange safety gates, ordinary riders, yellow rigid vertical hangers attached to actual blue radial beams and tall square blue central tower, trees behind. Preserve physical tub/hanger/arm connections and open source angle, not a free-floating pumpkin, Ferris wheel or invented full structure."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-90558205429907-thumbnail.jpg",
+      "thumbnailSHA256": "0ddae57bc09ca0604ffe7834137c505ea4b695e5deadf22979e8b4853b8809ae",
+      "thumbnailBytes": 25781,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-90558205429907-detail.jpg",
+      "detailSHA256": "9615d27a0749b6e96d140013e6150ad5ab77add2799f53e10745be50a807a2ef",
+      "detailBytes": 178118,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 93921002787563,
+      "rideName": "Pup's Pier",
+      "alt": "Illustrated Pup's Pier at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:05:59.647851+00:00",
+      "originalSHA256": "022f170545f36ed2a4ca1e4e7a080328ec6caf6b3f0ecc75c11d299220a78a97",
+      "review": "Accepted: Inspected generated original preserves the actual yellow stair/handrail water-play frame, net bridge, brown posts, green tube sections, red/blue roofs, physical otter panels and falling water curtain with ordinary family on splash deck.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/1c3514196e336677d5bbd98a06f03b7e8ce10d5c-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/pups-pier",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "81bb53057ad9cec459799b94b88642355cfad4c68b8df0d04bd188f8d242a34c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Pup's Pier photograph: yellow multi-level water-play stairs and handrails, rope-net bridges, brown support posts, green tubes at left, red/light-blue small corrugated roofs, fixed otter themed printed panels and real water curtain pouring across splash-deck entry; ordinary family holds hands under spray. Preserve exact photographed structure/water path, keep otter panels physical artwork rather than living animals, no invented full slide route or unrelated waterpark."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-93921002787563-thumbnail.jpg",
+      "thumbnailSHA256": "6ff4f0583779213de8fd68749c2818fd885dc0aefb85c9204de3e27734560a23",
+      "thumbnailBytes": 28726,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-93921002787563-detail.jpg",
+      "detailSHA256": "21daa477d41e498ea304d388d597ae1bdcb45415a5f6c50c5e95f9ce23a7c5c5",
+      "detailBytes": 241887,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 111547161113523,
+      "rideName": "Sally's Swing Set",
+      "alt": "Illustrated Sally's Swing Set at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:06:53.368535+00:00",
+      "originalSHA256": "397fb03b6f4c701511451ac56d237728cf5d9e01cb0681994cb9d823b9454d11",
+      "review": "Accepted: Inspected generated original from the corrected genuine Sally's Swing Set hero preserves the small yellow/orange canopy, pink details and green bulb tower, silver/yellow seats on paired chains, ordinary restrained riders and actual photographed plane ride in the background.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fd64ff5625465c21ba995c99d0351acf2bc1e4d75-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/sallys-swing-set",
+          "alt": "Kids on chain swings",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "599ea7c8d35ca52d2d367d753d12d1ae56fb3bb18316b06c256d92bb641ad209",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected CORRECT own-hero Sally's Swing Set photograph after rejecting cached related-card photo of Sally's Love Buggies without generating it. Actual small chain-swing carousel has yellow/orange bulb-lined canopy with pink ring details, bright green cylindrical ornamental tower with white round bulbs, individual silver metal-framed yellow-bottom swing seats suspended by real paired chains, ordinary restrained riders with legs hanging, source-grounded low upward view and small documented plane ride behind. Preserve this actual small swing hardware, not the unrelated umbrella-canopy car ride."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-111547161113523-thumbnail.jpg",
+      "thumbnailSHA256": "145177ce660bee418367ff42486953b520a4b607e11a587bf692f2453b44c504",
+      "thumbnailBytes": 29494,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-111547161113523-detail.jpg",
+      "detailSHA256": "0014b71b17e0b510254c917b7d5162e7922d622ed212e2d11394c473ef0afa81",
+      "detailBytes": 203476,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 57,
+      "rideId": 141327932952332,
+      "rideName": "Coastal Cruz",
+      "alt": "Illustrated Coastal Cruz at California’s Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:07:22.044904+00:00",
+      "originalSHA256": "6591abe9faad89eea8f44e13e81dd7b6885a9a8e103fc3b343ffb50b9b2806bd",
+      "review": "Accepted: Inspected generated original preserves the broad aqua open flume, connected blue tube section, four ordinary seated family-raft riders in the blue raft with handles, wet flow/contact and documented external support braces and foliage.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/7e7ef071d02785098ba7ee3b0fa50d0fbaf648bb-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/cagreatamerica/attractions/coastal-cruz",
+          "credit": "Six Flags / California's Great America (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "9860e6edb40fa669ff6aabf889fa3a327eaaed6326aa9854dbeb3bf385486247",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected operator own Coastal Cruz photograph: broad open aqua fiberglass flume with tall sides and stepped outer reinforcement, large blue circular family raft with yellow rim patches/dark handles and four ordinary seated riders, thin white water touching raft bottom, partially visible connected enclosed blue tube at left, black/gray support braces and actual dense palm/green foliage. Preserve this exact open source section, real tube/flume connection and raft, no full hidden route or airborne raft."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "57-141327932952332-thumbnail.jpg",
+      "thumbnailSHA256": "f3ce3e25edb226945da7e862a32155460891da665c97e496a5d130a5ceec8233",
+      "thumbnailBytes": 27459,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "57-141327932952332-detail.jpg",
+      "detailSHA256": "76dc59ab1123ce2c0426d01e0a7987b77de19c0ae1928f86c1161b231c4a0a1a",
+      "detailBytes": 201270,
       "detailPixels": [
         768,
         960
