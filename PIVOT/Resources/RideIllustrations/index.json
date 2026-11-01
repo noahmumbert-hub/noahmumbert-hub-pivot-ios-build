@@ -21865,6 +21865,1034 @@
       ]
     },
     {
+      "parkId": 58,
+      "rideId": 6314042359822,
+      "rideName": "Wonder Mountain's Guardian",
+      "alt": "Illustrated Wonder Mountain's Guardian at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:33:51.212074+00:00",
+      "originalSHA256": "7dead10d550fe220f776f2502c835c9c0cfaf416f2b36943ce55246ef8d83111",
+      "review": "Accepted: generated original actually viewed. Gray/wood-paneled interactive coaster car with diamond plate, black seats/front restraints, fixed infrared game controllers in riders’ hands, 3D glasses and visible wheel bogies on gray track matches the documented physical ride. No battle or invented interior.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbe2d356f537fc0a3188b5ebed83fdd01e20d69f8-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Wonder Mountain's Guardian",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/wonder-mountains-guardian",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a6a701ce882ab45a2cf9813b3a564752d0c108d434b52c4e5409c508fb93e34d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator hero photo pixels and own ride text inspected. Close low upward view of gray metal interactive coaster cars, brown wood-look side panels, gray diamond-plate edges, black high-backed seats, ordinary seated riders wearing 3D glasses holding the fixed black toy infrared game controllers mounted to gray hinges, black front/lap restraints and wheel bogies gripping gray tubular track. Second car follows on the same documented section against plain blue sky. These are manufactured amusement-ride game controllers, not real weapons; show the physical seated ride, no battle scene, shooting at people or invented mountain/interior/hidden route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-6314042359822-thumbnail.jpg",
+      "thumbnailSHA256": "93bcc70999b8b661f7b6de35b343820da91b0bb284997a7d5be148af0ea6786f",
+      "thumbnailBytes": 21218,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-6314042359822-detail.jpg",
+      "detailSHA256": "e9d33fee9716c5ce1529cba25008b2f09a84479ad913957147e672204860982e",
+      "detailBytes": 144336,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 9746144088068,
+      "rideName": "Character Carrousel",
+      "alt": "Illustrated Character Carrousel at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:32:59.359361+00:00",
+      "originalSHA256": "7e4dcd138a525a7c20ea6652b7695f8733b40a68571899cc2abc33cb35b099f7",
+      "review": "Accepted: generated original actually viewed. Canadian red/white single-level carousel, gold poles, cream carved horses with green/blue jeweled saddles, mirror drum and ordinary family riders match the actual operator photograph; distinct from the California carousel.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbdf789c1c2240181f3f249d09adecad9758a9980-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests riding on the Character Carrousel",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/character-carrousel",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "4ea5a3bc48b9069b6d35dafdaee5a4ae4266a8d4e974cd5b6a672befcae76d43",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator hero photo and own ride heading reviewed. Single-level children’s carousel with red-and-white striped canopy, red roof beams, cream/pink mirror drum and physical star reliefs, white/tan carved horses with black manes and green/turquoise jeweled saddles, gold vertical poles, red chariot at right and green perimeter fence. Ordinary child seated on a horse with parent beside them. Different installation from California’s similarly named blue carousel; retain this photographed red/white design. No new character figures."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-9746144088068-thumbnail.jpg",
+      "thumbnailSHA256": "b344dad22e9b3e96a6bf7d3b23de5fb66487faed1985e82ab1f9393b0ead1ff0",
+      "thumbnailBytes": 31187,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-9746144088068-detail.jpg",
+      "detailSHA256": "c2026b3530befead0a4bb2cc191a976b527c7fe419d2f967426ec0288ca446d5",
+      "detailBytes": 217893,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 12783395284359,
+      "rideName": "Psyclone",
+      "alt": "Illustrated Psyclone at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:35:14.497344+00:00",
+      "originalSHA256": "ec1ba0daa39116676dacc44e79815badd03707112341d82902d813ebde138e61",
+      "review": "Accepted: generated original actually viewed. Gray A-frame/yellow shaft and radial gray disc with red/white outer seat banks, ordinary restrained riders and physical yellow Psyclone letters on red frame preserve the documented source-specific pendulum.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/d30c1a3399c224ca64bdb3476236ed9411eb249f-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/psyclone",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "05ad021903eb947464d0c8dcb2802e38ffda6ae33805782f1f4a243f2dd2b07b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photo and own page reviewed. Gray A-frame supports the photographed yellow pendulum shaft and gray radial circular disc with red/white seatbacks at its outer rim, ordinary restrained riders with dangling legs. Large physical yellow Psyclone letters on curved red metal frame appear in foreground. Preserve exact visible disc/frame attachment and source-limited angle; no invented whole assembly or unrelated seat-bank geometry."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-12783395284359-thumbnail.jpg",
+      "thumbnailSHA256": "4058c68522830961e844fcad1f17496ed01eb6ef3cde513a1f5d0ccbc9d57c0e",
+      "thumbnailBytes": 27281,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-12783395284359-detail.jpg",
+      "detailSHA256": "6a4525d9693ed3109649e925c8b00c28a0337515098883ed25425b0678a0ff6d",
+      "detailBytes": 187188,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 15040364493356,
+      "rideName": "Moosehorn Falls",
+      "alt": "Illustrated Moosehorn Falls at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:34:47.292962+00:00",
+      "originalSHA256": "0673403d3fe3f03776a57c63d967095094de8407fa3cbd17e480fa89d7538f6d",
+      "review": "Accepted: generated original actually viewed. Realistic overhead view of aqua wave wall, green rim and white inlet, teal/yellow six-person raft contacting wet surface, actual queue walkway and source-supported tower shadow retained; no airborne raft or complete invented course.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F8af0650c4f1546c4600b3949a37cff072b7773c7-6000x4000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Moosehorn Falls",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/moosehorn-falls",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "db9c5961386e3ad323dac02918521bb313f896b8e23ab07782cec97492be4b6c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual selected operator hero is a genuine overhead photograph showing real seated riders, wet reflections and tower shadow; other page gallery items marked renderings are not selected. Broad turquoise/aqua steep curved wave wall with green rim, white entry section at left and actual teal/yellow six-person family raft touching the flowing surface near center-right. Timber-clad queue walkway on steel braces left, source-supported water and shadows. Keep this overhead wall/raft section only; no airborne raft or invented complete route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-15040364493356-thumbnail.jpg",
+      "thumbnailSHA256": "ed98bed28284fd605c9981820b24762aafad2cf5158ef2fedabea4ebf7eab873",
+      "thumbnailBytes": 23232,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-15040364493356-detail.jpg",
+      "detailSHA256": "79585011cefd2518cff3a774c819c6dfeb6ebd80a49722d272826ac92c3e3b6f",
+      "detailBytes": 190314,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 15411915173136,
+      "rideName": "Jokey's Jalopies",
+      "alt": "Illustrated Jokey's Jalopies at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:34:17.432443+00:00",
+      "originalSHA256": "10fa32606e0778930b4d3ffed1fefd37f496fe55ab11e9854ca9b70eda002f0f",
+      "review": "Accepted: generated original actually viewed. Physical yellow/teal Jokey’s Jalopies sign, rear of teal/black canopy car on the photographed guide curve, pale-blue/red-trim garage and trees retained without inventing the hidden vehicle front.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fab43486598e6849b979d101b95ac2dc6e2667269-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Jokey's Japlopies sign",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/jokeys-jalopies",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "63ace7d4a73d67642e0ae36fd535dbbdb2586f54fe1c1a6077f8a308991cc158",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator entry photo and own page reviewed. Physical jagged yellow sign with teal edge, existing white Jokey lettering and pink JALOPIES lettering and round green smiling car illustration above. Actual teal/black antique-style guide car with black canopy is seen from the rear on curved concrete guide path beside low pale-blue garage with red trim; ordinary rider inside and trees behind. Keep documented rear view and entry section, not an invented hidden vehicle front or full route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-15411915173136-thumbnail.jpg",
+      "thumbnailSHA256": "22abd9a69bc356702a975b26ec76d80ae8e1b3b674710b6b3254fd05339361ed",
+      "thumbnailBytes": 27607,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-15411915173136-detail.jpg",
+      "detailSHA256": "8cd9747571745e32d3b5b94911df546c66b4e1a3ec338a3f8a51875d8f2c5826",
+      "detailBytes": 183958,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 18031388250046,
+      "rideName": "Mountain Bay Cliffs",
+      "alt": "Illustrated Mountain Bay Cliffs at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:35:52.785873+00:00",
+      "originalSHA256": "fb8c9bfc145e9ca9ffc559496b452509d92b79b526451e6bd39db436bdd45a13",
+      "review": "Accepted: generated original actually viewed. Artificial waterpark rock/platform structure, green rails, supervised upright feet-first ordinary bathers, actual pool and waterfall, red-hat lifeguards and safety ring retained. Controlled amusement activity and plausible source geometry preserved.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc2446b1f729ffede4fd3af232d19ca26efcee224-6016x4016.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests Jumping off Mountain Bay Cliffs",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/mountain-bay-cliffs",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "47f5da18f237667f6f457a5ca50a2317c44863241d37dd0f5787c50f505d15dc",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photograph and own page reviewed. Purpose-built waterpark gray artificial-rock cliff wall, documented platform ledge and green handrails, short waterfall through wall cavity and turquoise landing pool. Ordinary upright feet-first bathers mid-jump from the photographed controlled ledge; on-duty red-hat lifeguards at upper left and ground right, orange safety ring, wood fence and trees. Preserve source-supported platform/pool geometry and supervised normal waterpark activity, without changing height or inventing a natural cliff or injury."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-18031388250046-thumbnail.jpg",
+      "thumbnailSHA256": "a6b722c431080f36cd087558eb3a8005fe99425bb02119f5fa34488afcc31600",
+      "thumbnailBytes": 26600,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-18031388250046-detail.jpg",
+      "detailSHA256": "ad34ebf4b1d080a848ca89c58fec980ae8e8297d485ed13323151be7bbed31d9",
+      "detailBytes": 216023,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 20372504811881,
+      "rideName": "Swing Of The Century",
+      "alt": "Illustrated Swing Of The Century at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:35:19.153410+00:00",
+      "originalSHA256": "297a397b309c43a57c37cb7b99c83d4a523e234e7489c351e8b27c61a709343a",
+      "review": "Accepted: actually viewed generated original. Source-specific cream/teal painted canopy, cameo panels, diamond center column, red chain-swing seats and ordinary restrained riders retain actual connections and proportions with realistic evening lighting.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/bab7e7c0b4aa41b0d75674932b50b076d174a4a6-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/swing-of-the-century",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "fe43ca339c4425670661517a500ed188e349cbc3cc59f572f07d7377198ddb3c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photograph and own chain-swing ride page reviewed. Low upward view of ornate cream/teal decorative canopy with painted cameo/floral panels, small perimeter bulbs, central cream column covered with teal/magenta diamond panels and portrait paintings. Numerous individual red swing seats hang outward on paired long chains with ordinary restrained riders; empty chairs also visible. Trees frame the ride. Preserve chain-to-canopy connections and source angle, not a high tower swing."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-20372504811881-thumbnail.jpg",
+      "thumbnailSHA256": "3e26fbfee8792f73f2b9f8bb713ff94d6759d1df55539df167a23ff92e12fcd3",
+      "thumbnailBytes": 32800,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-20372504811881-detail.jpg",
+      "detailSHA256": "ce0f7ceba7db3569106f15b8120a54cd14ba878b7b6ff57ca11b54a9b5eb6929",
+      "detailBytes": 271867,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 28120500630265,
+      "rideName": "Krachenwagen",
+      "alt": "Illustrated Krachenwagen at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:36:08.262093+00:00",
+      "originalSHA256": "d7a6a3798b4e12aa64188af27c80cf69f1e069421e7f2b8e7240061b5f339125",
+      "review": "Accepted: actually viewed generated original. Scuffed blue angular two-headlight bumper car, black padded high seat, steering wheel/diagonal belt, red pickup pole and thick rubber bumper on conductive floor, with source-supported neighboring cars and pavilion, retained.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/5fc0a8e929353c8257ad3226ea926d877c95fd10-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/krachenwagen",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "0c69e9cff36c88522c95dabcc7b2adb637dcc55457cdd8f051d145b31fdb3c3a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photograph and own Krachenwagen heading/body reviewed. Covered bumper-car floor with scuffed blue angular two-headlight car foreground, black high-backed padded seat and ordinary child driver holding steering wheel with black diagonal belt. Similar purple, green, yellow and red cars with thick black rubber bumpers and tall red electrical pickup poles, ordinary seated guests; cream spindle balustrade and green pavilion trim behind. Grounded cars on dark conductive floor, no road or aerial ride."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-28120500630265-thumbnail.jpg",
+      "thumbnailSHA256": "66192339fbaebe8dc2c20e9a04fffe5dec88f8599bd9e2905e37c221e2d49360",
+      "thumbnailBytes": 25540,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-28120500630265-detail.jpg",
+      "detailSHA256": "a881b5fcb5615dc6bfaa4b33e1c7b2b34c86c148566e8c077df923ffb30e0f39",
+      "detailBytes": 152282,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 28704759559542,
+      "rideName": "Yukon Striker",
+      "alt": "Illustrated Yukon Striker at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:41:54.170846+00:00",
+      "originalSHA256": "fceb950fa7e5048eec47b5dad87a5dec9ee6d64d8719acd0c9efd80e555ec32e",
+      "review": "Accepted: final ordinary correction actually viewed. Extra unsupported train at crest removed; only the single source-supported wide three-row train descends the orange vertical drop. Empty crest/catwalk and documented teal supports, connected valley and trees preserved; inaccurate initial draft excluded.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F310afc51d25df67cd55b9c00c085145692fb48ab-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Yukon Striker Dive Coaster",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/yukon-striker",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a3de424127616fda06f92f5f4db217d0216e30be9a536b686f0d20851a5af071",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator wide photo and dive-coaster description reviewed. Burnt-orange tubular track and dark teal tall angled support columns; central visible crest/holding bend feeds vertical drop with a wide three-row floorless train descending, actual connected U-shaped valley and rise, trees and low fence. Compose the documented central crest/drop section for portrait, preserve actual wide short three-row train attachment and rail continuity; do not invent complete route or place an unseen tunnel in frame."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-28704759559542-thumbnail.jpg",
+      "thumbnailSHA256": "31f4da579f592b41014922755b192836f2a04dac9f4eafc097cb746e9be96939",
+      "thumbnailBytes": 23730,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-28704759559542-detail.jpg",
+      "detailSHA256": "5aa6c4d1f83e08de2dc1dde23fdbb7e3ae362a253aab061b1231adf4a137670b",
+      "detailBytes": 183445,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 29138396930096,
+      "rideName": "Dragon Fyre",
+      "alt": "Illustrated Dragon Fyre at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:37:58.127582+00:00",
+      "originalSHA256": "7e33632f5a34b9032b54e6b50eec9a08f71ade2d19e263e5269075eb69417ee1",
+      "review": "Accepted: actually viewed generated original. Green tubular loop rails, deep-purple columns, purple/teal multi-car train attached along central loop with ordinary riders held by yellow restraints, grass and fence retain actual source geometry.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/5d87608271bfb5e957e950758f695f5dd684fb1e-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/dragon-fyre",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "b968b76d97d7ab8c7cb09975784d4d04ddfadcea45bb52769bfe9d9695e1c010",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photo and own Dragon Fyre page reviewed. Dark-green tubular double-loop track with triangular/cross-tie spine and thick deep-purple vertical support posts. Purple/teal train with bright yellow over-shoulder restraints and ordinary riders is on right downward side of the central foreground loop, multiple cars follow continuously through that loop. Grass, fence and distant trees below; background loop visible. Preserve visible loop track/train contact and source crop, no dragon or fantasy effects."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-29138396930096-thumbnail.jpg",
+      "thumbnailSHA256": "c2cdfbed90fa3a28b1009d35b4f49cf98af3e8b44e8ffe4beae01e25a4d34310",
+      "thumbnailBytes": 23326,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-29138396930096-detail.jpg",
+      "detailSHA256": "ff078e4b568f55fba3d84cf65ddd30b9d320b8f7bbc05d84897617eafa6d8131",
+      "detailBytes": 168357,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 35335403495038,
+      "rideName": "Whirlwinds",
+      "alt": "Illustrated Whirlwinds at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:38:47.408245+00:00",
+      "originalSHA256": "153051cc9df8fb51fddaed115786b1f12202d620405435bc97d92a0c510c4ba9",
+      "review": "Accepted: actually viewed generated original. Twin cream open runouts into blue pool, long curving flumes on timber tower/braces, yellow-orange shades, grassy slope and seated lifeguard retained without invented enclosure or riders.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/fbd676e6773ebc92a44b89780b89acee95d91944-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/whirlwinds",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "34a2ad05e86597ddc752ee45467a44217908a5c984be88c9cbb1b617d3b1f8d7",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Whirlwinds hero caption identifies two white slides emptying into a pool. Cream/off-white paired open trough outlets dip side by side into turquoise pool; long open wavy curving flumes behind wrap the timber stair/queue tower on dark posts and diagonal braces, yellow-orange shade panels at top. Ordinary seated lifeguard left, white safety rails and grassy slope. Compose documented twin runouts and visible tower, no invented tube enclosure or complete hidden route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-35335403495038-thumbnail.jpg",
+      "thumbnailSHA256": "c873223011fc5d76ded3d114dbc1d3c70e84c5e4173d016523efc43c5c261846",
+      "thumbnailBytes": 25191,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-35335403495038-detail.jpg",
+      "detailSHA256": "3cdbe19e1c8b89800f8454af05ee62bf5600df0c6122fee9fcc265399b486aa9",
+      "detailBytes": 186661,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 35568797735321,
+      "rideName": "Flying Eagles",
+      "alt": "Illustrated Flying Eagles at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:37:31.579223+00:00",
+      "originalSHA256": "c6d98e4f8460c5f523273dddd1f3566761e659670eca80fed1125f328a4bae3c",
+      "review": "Accepted: actually viewed generated original. Blue-purple suspended tub with red/white/yellow physical eagle graphics, blue frame/steering vane and two attached steel cables retains ordinary parent/child passengers, documented tub angle and source park surroundings.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F06d8e25a60cc95dedfe8e48c8cb691597635efc5-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests riding Flying Eagles",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/flying-eagles",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f83052e5b5976606f709c9536248f6cea0542505ea434e2e830b2523e877814f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photograph and Flying Eagles page reviewed. Close blue-purple suspended two-person flying-scooter tub with large red/white/yellow eagle graphics, physical yellow number 6, blue frame and broad vertical steering vane, ordinary adult/child riders seated inside. Two steel suspension cables extend upward from a visible attachment block; similar red tub partly at right. Green trees and red-roof pavilion/nearby red track in background. Keep documented source angle, tub geometry and cables, no actual flying bird or invented whole hub."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-35568797735321-thumbnail.jpg",
+      "thumbnailSHA256": "6fd835a251c15dfdd0a79700add95999efae3452ec3ddc3e5bda407de7201162",
+      "thumbnailBytes": 24370,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-35568797735321-detail.jpg",
+      "detailSHA256": "bd9a50e66ff45c32a91a2f9692605f8068e2cca0e90c1c9f93119b7ca3f64c55",
+      "detailBytes": 148314,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 36820337416368,
+      "rideName": "Snoopy’s Racing Railway",
+      "alt": "Illustrated Snoopy’s Racing Railway at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:40:46.725918+00:00",
+      "originalSHA256": "412f3a425b518cb710081f2702eba4eb3067409cefee545aa68aae3bac9b0c9d",
+      "review": "Accepted: generated original actually viewed. Wood-look/orange paired-seat coaster train, black lap bars, ordinary family riders, visible wheels/gray rail and source fixed engineer Snoopy/Woodstock sculptures retained with actual descending train section.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb3c9c917ab315d5b2ffa0a5bdc0635d8b341d44c-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests on Snoopy's Racing Railway",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/snoopys-racing-railway",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f7bded59e328c19b5b991dbc78666b8373e77bae251640053d5647a47d8b24e2",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photo and own ride heading inspected. Brown wood-look multi-car family coaster train descends diagonally on documented gray track, orange high-backed paired seats, black front lap restraints, ordinary adult/child riders and visible undercarriage wheels. Black locomotive boiler/smokestack at front, fixed Snoopy sculpture with blue engineer cap on rear car, small fixed yellow Woodstock figure by wood platform. Trees, fence and source-visible tan support behind. Preserve manufactured train/statues and continuous train-to-rail contact, no fantasy moving character or hidden route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-36820337416368-thumbnail.jpg",
+      "thumbnailSHA256": "aae6c94ed123e2edb9aaf940fea89311a3ea4b9aab4a516fbe515aef013a7b84",
+      "thumbnailBytes": 30716,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-36820337416368-detail.jpg",
+      "detailSHA256": "44c4a327674c86849eb5ef52bc05dad041a1401ede488822e4e23fcc1d1921ed",
+      "detailBytes": 231578,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 37681003286640,
+      "rideName": "Speed City Raceway",
+      "alt": "Illustrated Speed City Raceway at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:42:00.734941+00:00",
+      "originalSHA256": "2768d5595ead31d6d0cb9630360d3be06340a0157dfa01c3775c430baebf13bd",
+      "review": "Accepted: generated original actually viewed against identified photographer’s 2001 photo. Blue rounded low go-kart with helmeted driver, black high seat/roll hoop, red/yellow trailing kart, tire barriers/brackets, asphalt curve and floodlights retained. Historical appearance is explicit in source provenance; current paint or operation not claimed.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://live.staticflickr.com/244/523010741_e6c92e7db7_b.jpg",
+          "sourceURL": "https://www.flickr.com/photos/dave_minogue/523010741/",
+          "credit": "Julie, Dave & Family / Flickr",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sha256": "1a74c6ba3607f91f55280290a15d09c1675659fb0b41dc36914f3a385e135615",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual original photographer photo, Flickr date/credit and ride-specific file identity reviewed. Cached park-entrance photo rejected. Authentic historical 2001 view, not evidence of current paint/operation. Low blue rounded go-kart with white physical number panel, black high-backed roll hoop, ordinary helmeted driver and wheels on flat asphalt. Red/yellow car behind, thick black tire barriers on brackets, low curving track island/grass, tall floodlight poles and distant tree line. Compose photographed blue car/barrier section, no invented whole track or present-day refurbishment."
+        }
+      ],
+      "license": "CC BY-SA 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "thumbnailFile": "58-37681003286640-thumbnail.jpg",
+      "thumbnailSHA256": "53edc344e879b31b32c4e142fc5bb152226845039f33c73981ae7c9f908e9d33",
+      "thumbnailBytes": 17777,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-37681003286640-detail.jpg",
+      "detailSHA256": "87518c49c5b0daf0cb5cec089ae7f608ab157d6ab65a9e21b008dec669082860",
+      "detailBytes": 131208,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 44014072050631,
+      "rideName": "Shockwave",
+      "alt": "Illustrated Shockwave at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:41:40.114649+00:00",
+      "originalSHA256": "766d21d9da9973073fbf6b2b975abe9f3ff01c8984e5606d4d0dfdc8aa51c2ba",
+      "review": "Accepted: generated original actually viewed. White mast, source blue radial hub/arms and white seat banks with black/yellow restraints remain connected; ordinary riders’ orientations, physical oval sign and maintenance stair follow actual photo.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/6c1cae05f1fe49855c342b031babda1d4fe5af0f-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/shockwave",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "0ffb063a1eb7b52752b9c3513df2c146c8ba5aa322dc4b7a118c9f6890d0c110",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Shockwave photo and own heading inspected. White angled central support mast with small colored stripes carries blue radial star hub; visible blue arms end in white rectangular seat banks with black seats/yellow over-shoulder restraints, ordinary riders secured in source-supported different orientations, legs outside. Multicolor oval physical Shockwave sign on white mast, blue/yellow maintenance stair at right. Preserve only this visible connected hub/arm/seat assembly."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-44014072050631-thumbnail.jpg",
+      "thumbnailSHA256": "a70f8a55f485e1fb0854a4a5e25f9117d99a91dc85168b59e188f73472f12c75",
+      "thumbnailBytes": 21399,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-44014072050631-detail.jpg",
+      "detailSHA256": "492ccedd2b075165761ca04a7243b6673eef3e51a61203e55c10af5101fb34aa",
+      "detailBytes": 144007,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 44902286253516,
+      "rideName": "Super Soaker",
+      "alt": "Illustrated Super Soaker at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:42:51.155896+00:00",
+      "originalSHA256": "a0d426557d160f864981c1d7688bdd5ad0980ea0fb77d2904cc43ade7cf1afd4",
+      "review": "Accepted: generated original actually viewed. Actual broad purple open flume and lavender tube section, braced supports, green physical sign, conifer and neighboring yellow flume preserved without invented riders or complete route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F3678168ecc5ff5a0970121a64a6eb5a508217363-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Super Soaker water slide",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/super-soaker",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f3ad1561405a0d282f609c735f2c22491f50556f895bd301a164a3168e2243bd",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Super Soaker photo and own heading/caption reviewed. Broad purple open family-raft slide winding horizontally, connected lavender enclosed rear section on dark braces, open purple downhill runout foreground right. Green physical Super Soaker sign with blue/yellow lettering right, conifer trees, real neighboring steep yellow flume partly visible. Compose documented purple flume/sign section, no invented people or complete hidden route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-44902286253516-thumbnail.jpg",
+      "thumbnailSHA256": "134f7ebee029c7135df473b83a9a7f2c758b5941d87353f1f67430760c2a9ee8",
+      "thumbnailBytes": 21698,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-44902286253516-detail.jpg",
+      "detailSHA256": "e7d6e43e4a1ca4c5d2b98bf16f3548b0e1e14c893eda84c375ca893a7ac551c4",
+      "detailBytes": 157280,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 49949150339824,
+      "rideName": "Thunder Run",
+      "alt": "Illustrated Thunder Run at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:43:19.476329+00:00",
+      "originalSHA256": "a4c0f523792c6fa87502fa2b4e9bc72e0b1d5e0f0736d5474b45401046c3c0bc",
+      "review": "Accepted: generated original actually viewed. Identifiable Thunder Run station entry with brown timber/lavender stairs, yellow decorative shapes, actual physical sign and queue retained. Source-limited entry view does not invent an unseen train or interior.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5f4c915222f61157308b078fb921dfba4dbd5342-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The Thunder Run Sign",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/thunder-run",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "7219ffd49f31d6d5ee5cb9e4264f848464d8a8ac2940b8347cabc8bdab6ebc3a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Thunder Run photo and own powered-coaster page reviewed. Photo documents the actual station entry, not train or interior: brown timber stair/queue pavilion, lavender trim/rail caps, cream posts with yellow decorative edge shapes, roof trusses, ordinary queued guests and large brown/lavender physical THUNDER RUN sign in green-blue and cream lettering. Preserve this identifiable entry composition. Do not invent train/track/dragon/mountain interior absent from photo."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-49949150339824-thumbnail.jpg",
+      "thumbnailSHA256": "60f6dd50a7e1a97512c33ff9a473c7f4822c81c654232350e737da14173ed5d5",
+      "thumbnailBytes": 25336,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-49949150339824-detail.jpg",
+      "detailSHA256": "74c7a089511a48d6a6244bdacd3f536a6e363244d7be0a158244f331e7926f22",
+      "detailBytes": 188928,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 49981268538805,
+      "rideName": "Typhoon",
+      "alt": "Illustrated Typhoon at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:43:46.472725+00:00",
+      "originalSHA256": "eeb10478de68c5335b111204f3d890d2e9014b6979caa03ed14c1323530933c6",
+      "review": "Accepted: generated original actually viewed. Paired blue tunnel mouths and divided runouts, ordinary riders in source-supported yellow tubes, splash, blue flume segments and silver posts retain actual photographed connections and perspective.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbb1c90290b026f5386bffed2e7122a8f326ddc73-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Two guests riding Typhoon",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/typhoon",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f6e5789ced176caa5f23917a54740ab6c61e564782eba0d7831e83a6b07639cb",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Typhoon photo and own tube-slide page reviewed. Two bright-blue circular tunnel mouths lead to parallel blue open runouts divided by high blue wall; real yellow tubes with ordinary seated riders emerging in splash. Curving blue enclosed flumes, silver cylindrical supports/braces and grass behind, partial orange/yellow funnel above. Preserve actual double runout geometry and tube-water contact, no hidden route or extra riders."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-49981268538805-thumbnail.jpg",
+      "thumbnailSHA256": "0a1e8769091b737e0610c11cd0f4c860e87509d0d0ed447449f905e0d8586442",
+      "thumbnailBytes": 27123,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-49981268538805-detail.jpg",
+      "detailSHA256": "3cec76ece9db1c49efdf778a02c0d796c05bb298ad9dfc31ff37370af7a392b4",
+      "detailBytes": 204264,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 51320538612942,
+      "rideName": "Snow Flake Lake",
+      "alt": "Illustrated Snow Flake Lake at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:46:24.998971+00:00",
+      "originalSHA256": "2d98eb6fdef7b690f35214c2ea1e9258cae065b42f49478eaae400b5a9afa9a2",
+      "review": "Accepted: generated original actually viewed against newly verified Canadian rink photo. Real Snow Flake Lake rectangle, metal edge rail/entry gate, winter skaters, timber skate-change benches, Tudor roofs and green coaster skyline match the actual onsite view. Cross-park family marketing candidate excluded before generation; capture date remains unverified.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.toronto2anywhere.ca/wp-content/uploads/2023/11/WinterFest-Skating-at-Sunset.jpeg",
+          "sourceURL": "https://www.toronto2anywhere.ca/winterfest-at-canadas-wonderland/",
+          "credit": "Julie Millan / Toronto to Anywhere (onsite reference publisher)",
+          "license": "Copyright source photographer/publisher; rights retained",
+          "licenseURL": "https://www.toronto2anywhere.ca/winterfest-at-canadas-wonderland/",
+          "sha256": "74639c904259c552d6f5fe3992b9d5a53533c56237b7d55559a469175afe5ba3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual onsite author photo and operator Snow Flake Lake description inspected. Selected image documents Canada’s exact rink, unlike the shared family marketing hero also used for Kings Island, rejected before generation. Outdoor rectangular ice rink with ordinary winter-clothed skaters, low black/metal edge railing and white entry gate, dark timber skate-change benches in the foreground, evergreen at right and bare trees wrapped in warm white lights. Tudor-style park roofs and real tall green coaster hills visible beyond. Compose the documented rink/benches and background as photographed with restrained blue-purple evening lighting; no new trains, mountain, architecture or unrelated landmarks. Seasonal skating experience, not a mechanical ride. Photo capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-51320538612942-thumbnail.jpg",
+      "thumbnailSHA256": "a054e940749d57ab38c622b43af377d56602f401f865d2f6010c49fcc3864e27",
+      "thumbnailBytes": 24626,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-51320538612942-detail.jpg",
+      "detailSHA256": "96baf41671a112283f3e336c4e17abe59bd091cbc06164dba87ffcc48ce44311",
+      "detailBytes": 190307,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 52562016279326,
+      "rideName": "Flying Canoes",
+      "alt": "Illustrated Flying Canoes at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:48:14.356463+00:00",
+      "originalSHA256": "6f8bc9113afe57edc76acfe2b9e33683b5e12652e3534bb74358258ed694c0ec",
+      "review": "Accepted: generated original actually viewed. Brown/red canoe tubs with ordinary secured passengers connect to blue/yellow radial arms and teal hydraulics; fixed paddler/canoe sculpture on blue cloud, turquoise platform and park fence/lamps preserve source-specific physical assembly.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F58f5fc7ff8935d84d537aa22067f2448569969b5-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests riding Flying Canoes",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/flying-canoes",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d9283ba64df7076d1587901800654ab8fa4a3d03de2acf2a282a8dd1cc915d5c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Flying Canoes photograph and own family-ride page reviewed. Brown/red canoe-shaped rounded tubs with cream triangular edge decoration, ordinary seated parent/child and metal front bars, supported by actual blue upper arms/yellow lower arms and visible teal hydraulic components around blue hub. Fixed bright-blue cloud sculpture with static red canoe and sculpted paddlers above; turquoise circular platform, green fence, wood lamp post and low park buildings behind. Depict actual manufactured ride/sculpture, not airborne real canoe or floating people."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-52562016279326-thumbnail.jpg",
+      "thumbnailSHA256": "03cad0d57077a1ddc80dde96eada32c203314b1c116d0b1275804a3d04675dbc",
+      "thumbnailBytes": 28855,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-52562016279326-detail.jpg",
+      "detailSHA256": "7292958be2c6b418420f3626797eb4b6b9dee7063e03be89bef1dea398786a99",
+      "detailBytes": 205445,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 59397844881248,
+      "rideName": "Timberwolf Falls",
+      "alt": "Illustrated Timberwolf Falls at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:45:33.042250+00:00",
+      "originalSHA256": "50488f08687b475675e04e482144b99d6029f6275cd89d474a16692633eb8eda",
+      "review": "Accepted: generated original actually viewed. Wide tan/reddish-brown boat with source-supported rows, front bars and ordinary seated passengers stays in actual narrow concrete water-channel curve with guide rails, trees and nearby red track behind. No invented unseen drop.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F03f71c18eff33cd9cee980e7bc463316682f3225-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests on Timberwolf Falls",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/timberwolf-falls",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c39cf6bef1e2b76f840c3627c287052b4ec314c68f931296e6898d43dd786261",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Timberwolf Falls photograph and own boat ride page reviewed. Wide tan/cream low boat with reddish-brown interior/bench backs and black front restraint bars carries several rows of ordinary seated passengers around a narrow concrete-lined water-channel curve. Real side guide rails, green grass/trees and source-visible red coaster section high behind. Compose documented boat/channel bend only; do not invent unseen drop, taller log-shaped vehicle or complete course."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-59397844881248-thumbnail.jpg",
+      "thumbnailSHA256": "ef1d4471088de5108d37eb3db4fff94278b6a3b443d7ccb13fe9e59bcd7847e1",
+      "thumbnailBytes": 30206,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-59397844881248-detail.jpg",
+      "detailSHA256": "0dc2aead68250e8af2d934d535f2aaa32aa28cbeab60e6220c3e900a2de562ad",
+      "detailBytes": 260285,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 63078614727106,
+      "rideName": "Lakeside Lagoon Slides",
+      "alt": "Illustrated Lakeside Lagoon Slides at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:48:35.636755+00:00",
+      "originalSHA256": "9a414a8a59d0b80b666ce5089177a53e7b03a2899c9d2d0be48a08eeba239909",
+      "review": "Accepted: generated original actually viewed. Source-specific two narrow blue lanes and broad green shallow slide, timber top rails/green posts, ordinary supervising family/lifeguard, wet surfaces and actual background wooden coaster retained.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa5298139da70c1f1a0e027903a4fd32a3705c4ab-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Some kiddie slides",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/lakeside-lagoon-slides",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "59aff4623ac82c0ec272f0ffef63de4dd05b7368848258c643e3d5d4927f25dc",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Lakeside Lagoon Slides photo/caption reviewed. Small shallow water-play slides: two adjacent bright-blue open narrow lanes left and broad green open slide right, pale timber top platform/guardrail and green posts, metal entry handrails, ordinary parent/children at top and red-hat lifeguard. Wet slide surfaces with trees and source-visible wooden coaster behind. Preserve documented child-scale slide/platform geometry and water, no deep pool or hidden route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-63078614727106-thumbnail.jpg",
+      "thumbnailSHA256": "0caeb394590b828cbf59ef92c1e90ef7c7650e2c185d3e9bf08b0ac4f02cad7b",
+      "thumbnailBytes": 25963,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-63078614727106-detail.jpg",
+      "detailSHA256": "ef74b1796e45d25d4bc1e40fa7ec041a0a07b18e8e43d3cc3b3bc047ef0cbd97",
+      "detailBytes": 219861,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 69623477908932,
+      "rideName": "Lucy's Tugboat",
+      "alt": "Illustrated Lucy's Tugboat at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:47:21.639764+00:00",
+      "originalSHA256": "fccf008ead98a30d9b28012f2aa4ae8ef856bed4f2f7b3155692c4efc6a82bf6",
+      "review": "Accepted: generated original actually viewed. Red/blue tugboat, white arched cabin, tire decorations, black seats/front bars, yellow exhaust and numbered44 funnel preserve actual hardware; boat visibly meets source curved rail and remains a mechanical ride.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F79352faaf1763be41f44c7b7704f61dee0fb2782-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Kids on Lucy's Tugboat",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/lucys-tugboat",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "45585452ab9ccbfb8eb72e9737bb35294e01a8faad9822f69dd3e3d7d25642b2",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Lucy's Tugboat photo and own family-ride page reviewed. Red shallow boat with blue lower hull, black perimeter bumper, molded black tire decorations on hanging ropes, white riveted central cabin/arched openings and blue name panel, yellow exhaust and red/blue funnel numbered44. Several ordinary children/adults in black-backed bench seats behind metal front bars. Boat wheels meet actual low curved gray/blue rail track; trees/fence and real park fixtures behind. This is a mechanical rocking/spinning boat on rails, not free-floating on sea."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-69623477908932-thumbnail.jpg",
+      "thumbnailSHA256": "9ce31b08d1e4ae2780c077286b7618059e8380b1d66b6d6b3b3bee0ca59dde3d",
+      "thumbnailBytes": 27161,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-69623477908932-detail.jpg",
+      "detailSHA256": "a3627ec3c3b1afcb73eed3db078b16801ac182fbcbc21809d3b9a4f8009ece0c",
+      "detailBytes": 187224,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 58,
+      "rideId": 70202907654185,
+      "rideName": "The Pumpkin Patch",
+      "alt": "Illustrated The Pumpkin Patch at Canada’s Wonderland",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T07:49:00.041068+00:00",
+      "originalSHA256": "c97546081e97539ac3b07db8bfdd461998a766306f84369374a5207a51684b5e",
+      "review": "Accepted: generated original actually viewed. Orange wood-grain pumpkin tubs/canopies, green leaf caps, black entry gates, yellow hangers and blue radial/lift assembly retain source-supported connections and ordinary seated riders against dusk sky.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F546bf9c05e4143dd71348ba017dcac26a68dc4eb-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A pumpkin themed ride",
+          "sourceURL": "https://www.sixflags.com/canadaswonderland/attractions/the-pumpkin-patch",
+          "credit": "Six Flags / Canada's Wonderland (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "fcf0ddd2373f7d36c36c07ffde865cad1ddd4e31e8b5b080bf0681b19a92918f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Pumpkin Patch photograph and own heading/body reviewed. Low upward view of orange wood-grain pumpkin-shaped round gondola tubs with black entry gates and circular top canopies capped by green leaf shapes. Tubs attach via yellow hangers to blue radial arms/central blue lift column; ordinary seated riders partly visible. Only source-supported assembly against sky. Distinct from other parks' pumpkin installations, no added character sculpture, vine forest or unseen ground."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "58-70202907654185-thumbnail.jpg",
+      "thumbnailSHA256": "8e27493436933e1089b9424f0a3797ea5df614cb21b9ac8f0ddafad77db843fd",
+      "thumbnailBytes": 20550,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "58-70202907654185-detail.jpg",
+      "detailSHA256": "44855df5a8f7b97554319baab2c851a30811af514ab795abe3cb5e403140bd68",
+      "detailBytes": 138677,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
       "parkId": 59,
       "rideId": 22859144152735,
       "rideName": "Boogie Board Racer",
