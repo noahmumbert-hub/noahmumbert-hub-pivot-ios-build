@@ -7160,6 +7160,852 @@
       "generationSteps": []
     },
     {
+      "parkId": 35,
+      "rideId": 147800714905011,
+      "rideName": "Dahlonega Mine Train",
+      "alt": "Illustrated Dahlonega Mine Train at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:39:58.048599+00:00",
+      "originalSHA256": "c8e73e0b5eb05151effd24db10d27f42250a0f6e346c7148520b970b52aa069b",
+      "review": "Accepted: Preserves the operator photograph's connected mine-car train on the actual low banked brown/tan tubular curve and tan columns. Brown wood panels, pale-yellow framing, red seat shells, black bars/backs, dark riveted chassis and small yellow wheels remain visible. The source's longer connected rear train remains in the crop; no unsupported tunnel, locomotive or complete route is introduced.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F58bbaf2bdb6ee629e5efb40f9b3b29eaa7685edd-6000x4000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Dahlonega Mine Train roller coaster navigating a bend at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/dahlonega-mine-train",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "aa366a3d325289a2d298502d5b0901dda927bdb8acef238fdf22e6f2b85735ba",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator ride page and actual photograph inspected. The mine train is on brown/tan tubular running rails and tan columns; mine-car sides have brown wood panels in pale-yellow framing, red seat shells, black padded bars/backs, dark riveted chassis and small yellow wheels. The photographed front car reads Dahlonega and is followed by connected cars on a low banked curve through trees. Use this source curve/front two or three cars, without inventing a mine tunnel, a complete track route or steam locomotive. Photo date unverified; illustration conveys appearance only."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-147800714905011-thumbnail.jpg",
+      "thumbnailSHA256": "b1e0d63f3b3104e521b0dcb7bf8b1df080a08ae0c98c99505d0b255dd602e2f0",
+      "thumbnailBytes": 29417,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-147800714905011-detail.jpg",
+      "detailSHA256": "ea504a2a07c33f7c74c30a10d1afe936c5c25c82bc6ff8b1a2ba510c8e0aa37f",
+      "detailBytes": 197799,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-147800714905011",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Dahlonega Mine Train at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator ride page and actual photograph inspected. The mine train is on brown/tan tubular running rails and tan columns; mine-car sides have brown wood panels in pale-yellow framing, red seat shells, black padded bars/backs, dark riveted chassis and small yellow wheels. The photographed front car reads Dahlonega and is followed by connected cars on a low banked curve through trees. Use this source curve/front two or three cars, without inventing a mine tunnel, a complete track route or steam locomotive. Photo date unverified; illustration conveys appearance only. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "98021ff90f1ea2f370afe67502cfe4c87164c06e7412d186f4f5b2f3ed6a9dd7",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 150878029622726,
+      "rideName": "Bonzai Pipelines",
+      "alt": "Illustrated Bonzai Pipelines at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:40:53.681382+00:00",
+      "originalSHA256": "9af5870d942070fbe9fb6830d256200242c85dce6c305a8c04e2990e81bc777e",
+      "review": "Accepted: Matches the photographed teal, yellow, lime, orange/red, white and pink water-slide segments, bolted circular flanges, cylindrical gray columns, angled braces and timber-railed stairs. Actual turquoise runout and pink exit chute remain, with source visitors near the base. The visible bends and supports remain source-based, without an invented hidden bowl, drop capsule or coaster.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9d9f8e0f6c70703bad889828079c4a32c53873e0-1920x1280.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up guests waiting at the entrance to ride the Bonzai Pipelines thrilling water slides.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/bonzai-pipelines",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2e7dd97a531678689bbb26b7de56ee751bc7aa1a98ebe7c536f4007e5c0eab73",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual wide photographic pixels inspected. Real interwoven enclosed/open water-slide tubes have teal, yellow, lime, orange/red, white and pink segments, circular bolted flanges, cylindrical light-gray support columns with angled steel braces, and a central timber-railed stair tower. Turquoise exit runouts and pink open chute are at the lower left, with source guests small near the base. Focus on the documented teal/orange/yellow tube bends and their gray supports plus the actual stair tower. Do not invent a different slide layout, hidden bowl, drop capsule or coaster track; the unrelated red coaster visible behind may fall outside this tighter crop. Source alt label says entrance but photo actually shows the slide structure. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-150878029622726-thumbnail.jpg",
+      "thumbnailSHA256": "378407394ec2a23bb1bec3e744a8799a124eb8b118f19ea70d280a846667cf94",
+      "thumbnailBytes": 26806,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-150878029622726-detail.jpg",
+      "detailSHA256": "2f4a72d9765d16dab459b8fabd2f2470da31940beea02285fde0a4a10c4449f9",
+      "detailBytes": 195336,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-150878029622726",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Bonzai Pipelines at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator page and actual wide photographic pixels inspected. Real interwoven enclosed/open water-slide tubes have teal, yellow, lime, orange/red, white and pink segments, circular bolted flanges, cylindrical light-gray support columns with angled steel braces, and a central timber-railed stair tower. Turquoise exit runouts and pink open chute are at the lower left, with source guests small near the base. Focus on the documented teal/orange/yellow tube bends and their gray supports plus the actual stair tower. Do not invent a different slide layout, hidden bowl, drop capsule or coaster track; the unrelated red coaster visible behind may fall outside this tighter crop. Source alt label says entrance but photo actually shows the slide structure. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "86fbcdd6630b1bbfad111794f9df6c7a8e0f34a27984e5c74747baf28fa8d868",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 160071744934162,
+      "rideName": "CATWOMAN Whip",
+      "alt": "Illustrated CATWOMAN Whip at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:41:45.634084+00:00",
+      "originalSHA256": "aeeafedb01ae8b24244cd9f58fab7c1ca76750b23fb9356f41f7820d2fd52bb4",
+      "review": "Accepted: The result correctly depicts the actual tilted radial rotating wheel despite the source's inaccurate coaster alt text. Light-gray perforated spokes, purple structure, green/purple rim accents, dark caged gondolas, green-eyed cat-mask hub and central mast/paired cylinders remain mechanically connected. The photographed neighboring coaster remains background context; the foreground entrance placard is outside the crop.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5d8a2da8ce39ef1261f50b772c8c0c546d956450-1334x890.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Thrill seekers experiencing a thrilling loop on the CATWOMAN Whip roller coaster at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/catwoman-whip",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f4689832e3909124f152c12e2e98ed9aab94bf9a1527d7b9255f25651b26d06b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual photograph inspected. Despite inaccurate roller-coaster alt text, this photographed ride is a large tilted radial rotating wheel with light-gray perforated triangular truss spokes, purple structural struts, a dark central cat-mask medallion with green eyes, purple/green outer-rim accents and individual dark caged passenger gondolas fixed around the rim. Gray/purple central mast and paired polished support cylinders remain connected. Compose the actual upper wheel, hub, mast and rim gondolas; the large foreground entrance placard and lamp may crop out. Do not turn it into a roller coaster, a pendulum with one end disc, or Texas's cat-themed twister. The separate coaster behind is unrelated. Source people remain distant; photo date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-160071744934162-thumbnail.jpg",
+      "thumbnailSHA256": "7abca9918896acefa6557f3a3d52a625a79c65eb5c2ff09010289ef7cce68a01",
+      "thumbnailBytes": 25291,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-160071744934162-detail.jpg",
+      "detailSHA256": "51da7b61b15881acbcba3b792456c8719b56073e0d23858808945fab9feb4c90",
+      "detailBytes": 167836,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-160071744934162",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict CATWOMAN Whip at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator page and actual photograph inspected. Despite inaccurate roller-coaster alt text, this photographed ride is a large tilted radial rotating wheel with light-gray perforated triangular truss spokes, purple structural struts, a dark central cat-mask medallion with green eyes, purple/green outer-rim accents and individual dark caged passenger gondolas fixed around the rim. Gray/purple central mast and paired polished support cylinders remain connected. Compose the actual upper wheel, hub, mast and rim gondolas; the large foreground entrance placard and lamp may crop out. Do not turn it into a roller coaster, a pendulum with one end disc, or Texas's cat-themed twister. The separate coaster behind is unrelated. Source people remain distant; photo date unknown. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "0b994ffce395eabf9cd9053a760324473ac20c3160dd90c3f9857a075a5049aa",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 172959403413063,
+      "rideName": "Hanson Cars",
+      "alt": "Illustrated Hanson Cars at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:42:36.810791+00:00",
+      "originalSHA256": "a96317c09f92db672336fe21e46aea47e9326adfd9027af455fde2b654a66f60",
+      "review": "Accepted: Retains the actual green number-16 antique car, black mesh grille and fenders, brass round headlights, gold spoked wheels, narrow black tires, two-row padded benches, thin steering wheel and black straight bumper. The four source occupants and pose remain. Wheels contact the concrete lane over the dark center guide rail, with actual roadside guardrails and trees; it is a guided amusement ride rather than road traffic.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffb145c59d73161b2475b16f3631697fd49f98804-6000x4000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A family enjoying a fun ride on the Hanson Cars at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/hanson-cars",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "af6051e48addbb76f93321f852d77c77745f0b5b30d183cef3d71bdee196cc06",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator ride page and actual photograph inspected. Real green antique touring car number 16 has black mesh radiator/grille and fenders, brass round headlights, black narrow treaded tires on gold spoked wheels, black padded two-row bench seating, thin steering wheel and a straight black front bumper. Four source occupants ride in the photographed pose; the front two children and rear two adults may remain medium scale. Wheels contact the concrete lane, and a narrow dark center guide rail curves under the chassis; timber/metal roadside guardrails and leafy landscaping frame it. Use the source front three-quarter vehicle on its actual guided lane, no modern road traffic, steam locomotive, free roaming street or made-up track."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-172959403413063-thumbnail.jpg",
+      "thumbnailSHA256": "dddf365187579c02191011d0e97764204d17b9f3fda2921ecc08f865df59b116",
+      "thumbnailBytes": 26370,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-172959403413063-detail.jpg",
+      "detailSHA256": "c7203285e74482dc780ebf6b3aeccb59e4a7fecf26f5f8060c294a24bf895883",
+      "detailBytes": 171583,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-172959403413063",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Hanson Cars at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator ride page and actual photograph inspected. Real green antique touring car number 16 has black mesh radiator/grille and fenders, brass round headlights, black narrow treaded tires on gold spoked wheels, black padded two-row bench seating, thin steering wheel and a straight black front bumper. Four source occupants ride in the photographed pose; the front two children and rear two adults may remain medium scale. Wheels contact the concrete lane, and a narrow dark center guide rail curves under the chassis; timber/metal roadside guardrails and leafy landscaping frame it. Use the source front three-quarter vehicle on its actual guided lane, no modern road traffic, steam locomotive, free roaming street or made-up track. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "1d94d10ffe904039e1e56a059b002f10c0643555c70554944a5cd2c34da642f0",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 174290397673438,
+      "rideName": "ACME Trucking Company",
+      "alt": "Illustrated ACME Trucking Company at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:43:56.619843+00:00",
+      "originalSHA256": "f92ed35ed2b48ae8cedf78fcb81534c22ba4a93b55a5259b568668fb7153ed64",
+      "review": "Accepted: Retains the real blue number-1 miniature truck with perforated silver grille, chrome round headlights, amber markers, twin small steering wheels, empty cabin, silver handles and tread steps, tall perforated exhaust stacks and blue/black canopy. The photographed black, blue and red trucks remain behind on the center guide rail, with the tan station, white fence and silver queue railing. It depicts the local guided ride with ground contact, not a road tractor or another park's delivery ride.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F712b86cec565dc9a819ed542fc791ab47169e1ab-1725x1150.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of the cartoon-themed trucks on the Acme Trucking Company ride at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/acme-trucking-company",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "38d84b6e48a0f6404f641021565d6c9aada6729c88930f0d3f2d6829f6e2fc48",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator ride page and actual station photograph inspected. The source shows a line of real miniature guided semi trucks: the front blue truck number 1 has a rectangular perforated silver grille, round chrome headlights, amber marker lamps, black tires, twin small black steering wheels in an empty open cabin, silver side grab handles and metal tread steps, twin tall perforated exhaust stacks, blue/black rear canopy panels. Black, blue and red trucks remain coupled along the ground center guide rail behind it beneath a tan wooden station roof, with actual white picket fence and silver queue railing. Focus on front blue truck and next black truck while keeping the actual guided ground contact, not a full-size road tractor or Texas's red delivery truck. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-174290397673438-thumbnail.jpg",
+      "thumbnailSHA256": "ffcaae4b1840c96eefc44728af65f760aca748b62847063e9573381eefbab774",
+      "thumbnailBytes": 26398,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-174290397673438-detail.jpg",
+      "detailSHA256": "5dc1297481c54fca45494e806b3ff4a1a8a8521660a8928bd4d7dcf275a116fa",
+      "detailBytes": 179225,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-174290397673438",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict ACME Trucking Company at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator ride page and actual station photograph inspected. The source shows a line of real miniature guided semi trucks: the front blue truck number 1 has a rectangular perforated silver grille, round chrome headlights, amber marker lamps, black tires, twin small black steering wheels in an empty open cabin, silver side grab handles and metal tread steps, twin tall perforated exhaust stacks, blue/black rear canopy panels. Black, blue and red trucks remain coupled along the ground center guide rail behind it beneath a tan wooden station roof, with actual white picket fence and silver queue railing. Focus on front blue truck and next black truck while keeping the actual guided ground contact, not a full-size road tractor or Texas's red delivery truck. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "6e9540101a6ee32d56f23b254b95dc2a5c020b65b8efa6c65d16cc20da351e1c",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 176282382207939,
+      "rideName": "SkyScreamer",
+      "alt": "Illustrated SkyScreamer at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:44:46.200481+00:00",
+      "originalSHA256": "61a64099dfc8a854d72309ca050918542552dfdc7cf1e48c3c1540d8079563e5",
+      "review": "Accepted: Matches the local green tower with yellow lattice and blue lower structure, red/lavender starburst crown with pale-yellow stars, long paired silver cables and spreader bars, and dark-red two-person chairs. Source riders remain supported on the photographed left-side chair arc. The entrance sign is outside the crop; the actual tower/cable connections remain visible without invented full tower or base.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe3d01f5f06861645d83ff2d50284a864a631221c-1752x1168.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests experiencing the SkyScreamer swing ride at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/skyscreamer",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "bf2fe4d11a57f40169baf8a45c4b8190a11a301eec52147232f0432f4e28886c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator ride page and actual low-angle photograph inspected. This Georgia tower swing has green vertical tower members with yellow diagonal lattice, blue lower structure, and the large starburst-shaped upper rotating crown painted red and lavender with pale-yellow stars. Long pairs of silver cables with horizontal spreader bars suspend dark-red two-person open chairs around the crown; source riders have dangling legs and ordinary restraints. Keep the actual left-side chair arc connected to the visible crown and tower, leaving the large foreground entrance sign outside the tighter portrait if needed. This is not Texas's red/white/blue star tower or an enclosed gondola wheel; do not invent unseen base or full tower height. Capture date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-176282382207939-thumbnail.jpg",
+      "thumbnailSHA256": "36ba2fed9d825c4d58964eca6a0e8de6726657c00e35d18bc4c36386a6bc3e6b",
+      "thumbnailBytes": 26750,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-176282382207939-detail.jpg",
+      "detailSHA256": "1eec19fc27609935d926dc01bfe39f06140ad7d9a32c86136bcbd7a010bf03b6",
+      "detailBytes": 185757,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-176282382207939",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict SkyScreamer at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator ride page and actual low-angle photograph inspected. This Georgia tower swing has green vertical tower members with yellow diagonal lattice, blue lower structure, and the large starburst-shaped upper rotating crown painted red and lavender with pale-yellow stars. Long pairs of silver cables with horizontal spreader bars suspend dark-red two-person open chairs around the crown; source riders have dangling legs and ordinary restraints. Keep the actual left-side chair arc connected to the visible crown and tower, leaving the large foreground entrance sign outside the tighter portrait if needed. This is not Texas's red/white/blue star tower or an enclosed gondola wheel; do not invent unseen base or full tower height. Capture date unknown. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "f2ea9222e9f3a9027183279864d73b0e99b468cf9c1850a7adc17b9c070613d1",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 179145995990024,
+      "rideName": "The BATCOPTERS™",
+      "alt": "Illustrated The BATCOPTERS™ at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:43:29.615499+00:00",
+      "originalSHA256": "ee44fefe113d08eefc2fb2981d4681b35b8d1b46a93d692a71c931d44d773613",
+      "review": "Accepted: The result retains the actual bright-blue helicopter tubs, white painted cockpit windows, silver safety gates, yellow fixed rotor and lower float/skid details, and printed bat emblems. Foreground source occupants, silver radial arms/linkages, central gray faux-rock hub and dry concrete pad remain. It preserves the mechanical circular ride, without free flight or aircraft propulsion.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa79a19a11379d49a9982a2aff037d1d729b4bdd3-4096x3072.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of families in BATCOPTERS™ vehicles at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/batcopters",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ba896062763a47990d992d84306e4ebd0ae3bca8d151ce968aa6c1be586de04b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator ride page and actual photograph inspected. Real child helicopter tubs are bright blue with white painted cockpit windows, open rectangular side apertures and silver safety gates, small fixed yellow main/tail rotor details, yellow float/skid-shaped lower pieces and printed bat emblems. The photographed foreground blue tub with two children is physically connected beneath to a silver radial support arm/hydraulic linkage leading to the central gray faux-rock hub on a dry concrete circular pad; other blue tubs and yellow details are visible behind. Use the actual foreground tub, arm and hub, not a free-flying helicopter or Texas's bat-wing aircraft ride. Fixed decorative rotors must not become real aircraft propulsion; source people may remain medium scale. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-179145995990024-thumbnail.jpg",
+      "thumbnailSHA256": "5feda54aabe4e1fed7ace6d47063c8103e27047275a3aca7fcc2ad377ce0666d",
+      "thumbnailBytes": 31874,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-179145995990024-detail.jpg",
+      "detailSHA256": "10128d237349358b27b924d8da10e3e904996bbc64b66f788fbaa73589486101",
+      "detailBytes": 230190,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-179145995990024",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict The BATCOPTERS™ at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator ride page and actual photograph inspected. Real child helicopter tubs are bright blue with white painted cockpit windows, open rectangular side apertures and silver safety gates, small fixed yellow main/tail rotor details, yellow float/skid-shaped lower pieces and printed bat emblems. The photographed foreground blue tub with two children is physically connected beneath to a silver radial support arm/hydraulic linkage leading to the central gray faux-rock hub on a dry concrete circular pad; other blue tubs and yellow details are visible behind. Use the actual foreground tub, arm and hub, not a free-flying helicopter or Texas's bat-wing aircraft ride. Fixed decorative rotors must not become real aircraft propulsion; source people may remain medium scale. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "72546e2d49c9941bad552cd56783069a4526b574332f207da39ebb98cd817f74",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 182028867719428,
+      "rideName": "SUPERMAN™:Tower of Power",
+      "alt": "Illustrated SUPERMAN™:Tower of Power at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:45:39.805185+00:00",
+      "originalSHA256": "306c285eb20afdd504e0840bf2f1f40d3d8ec92b8e088ac06b408bc76cfca817",
+      "review": "Accepted: Matches this separate Georgia Zamperla installation's compact circular red seat carriage, black over-shoulder restraints and silver handles, yellow polygonal collar, wide silver ring/braces, blue steel lattice mast, gray guides and bulb strips. Source children and neighboring empty seats remain in the documented arrangement, with feet dangling from restrained seats. No Texas S&S square carriage/triple-tower hardware or living superhero scene was introduced. The blocked Texas request was not retried.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F35159baffdef347db5e17b76349d680409ba906c-6900x4600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of young thrill seekers having fun on SUPERMAN™:Tower of Power at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/superman-tower-power",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "5aa2d87dc1c743f775a4643f29bedc2314d942d1eb524ab215ea554495372c3b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page identifies a 2016 Zamperla kiddie installation, and actual photograph inspected: outward-facing red molded seats with black over-shoulder restraints and silver handgrips form a compact circular red carriage around a blue steel lattice mast with vertical gray guides and white bulb strips. A large yellow polygonal collar and wide silver circular ring/braces sit immediately above the red seats. Keep source two children medium-scale, neighboring actual empty seats and mast guides connected, dangling feet and carriage geometry accurate. This is the distinct Over Georgia Zamperla circular children's tower, not the prior Over Texas S&S triple pressure-tower request (which had a square blue carriage, yellow restraints, red/white tower hardware and remains untouched). Do not import Texas hardware or invent full hidden tower/base or living superhero. Capture date unverified; generated appearance does not assert operation."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-182028867719428-thumbnail.jpg",
+      "thumbnailSHA256": "ad69e589dd2d19f2d215620ab412b0e6991dff874bfa86de9ed96d558fcf0b20",
+      "thumbnailBytes": 28027,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-182028867719428-detail.jpg",
+      "detailSHA256": "331594c256d72ef6d9dd43a74bce8db60336a6cb605a9299c2819af3436e0356",
+      "detailBytes": 174124,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-182028867719428",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict SUPERMAN™:Tower of Power at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator page identifies a 2016 Zamperla kiddie installation, and actual photograph inspected: outward-facing red molded seats with black over-shoulder restraints and silver handgrips form a compact circular red carriage around a blue steel lattice mast with vertical gray guides and white bulb strips. A large yellow polygonal collar and wide silver circular ring/braces sit immediately above the red seats. Keep source two children medium-scale, neighboring actual empty seats and mast guides connected, dangling feet and carriage geometry accurate. This is the distinct Over Georgia Zamperla circular children's tower, not the prior Over Texas S&S triple pressure-tower request (which had a square blue carriage, yellow restraints, red/white tower hardware and remains untouched). Do not import Texas hardware or invent full hidden tower/base or living superhero. Capture date unverified; generated appearance does not assert operation. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "1fa2678787fcce5bfde7b42ae0e4af17c5c571afbb27a899242fa0f04d318e5f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 218852000101558,
+      "rideName": "Log Jamboree",
+      "alt": "Illustrated Log Jamboree at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:47:02.042243+00:00",
+      "originalSHA256": "097251c5af8ef48d4c2f060c64c61a0022af2cfd344919c239724c7cab8f87d1",
+      "review": "Accepted: Retains the photographed bark-textured dark reddish-brown log number 13, creamy cut-wood bow, black in-line seats and source riders descending the straight bright-blue flume. Water runoff remains in the chute, with the actual dark-brown timber support/platform beside it. The tan background coaster is separate context; no unseen log route, tunnel or giant splash pool was invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb7123ef86858eb08e76650a104dd326c367084dc-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests enjoying the water adventure of Log Jamboree, a water log ride at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/log-jamboree",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "8f4a03380248e993158181bfbd136a48799c555e77df745bd8a227f8761342ba",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual action photograph inspected. The real log-shaped boat number 13 has dark reddish-brown/purple bark-textured sides and creamy yellow cut-wood grain on the tapered bow, black padded in-line seats and visible source family. The log descends the straight bright-blue open flume with water contact and white runoff, carried above a dark-brown timber platform/support structure. Choose this documented drop and its nearby support; do not invent a mine tunnel, huge final splash pool or hidden course. The tan coaster crossing behind is unrelated and may fall outside the tighter portrait. Photo capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-218852000101558-thumbnail.jpg",
+      "thumbnailSHA256": "9a5e6525eaa4e2189e964f89ed3707683917cf3ae41b1d51fb6801c36c8c4004",
+      "thumbnailBytes": 25166,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-218852000101558-detail.jpg",
+      "detailSHA256": "017c6e4ae486792c109c19a1902ca6f719a106636379e37b992a9ddf00cee55a",
+      "detailBytes": 181894,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-218852000101558",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Log Jamboree at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator page and actual action photograph inspected. The real log-shaped boat number 13 has dark reddish-brown/purple bark-textured sides and creamy yellow cut-wood grain on the tapered bow, black padded in-line seats and visible source family. The log descends the straight bright-blue open flume with water contact and white runoff, carried above a dark-brown timber platform/support structure. Choose this documented drop and its nearby support; do not invent a mine tunnel, huge final splash pool or hidden course. The tan coaster crossing behind is unrelated and may fall outside the tighter portrait. Photo capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "dc4a66f99ef03a1a8cbc42d1a86aff38c0305edc5023fc4a3083ab9502de14b8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 219332808333829,
+      "rideName": "Blue Hawk",
+      "alt": "Illustrated Blue Hawk at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:47:55.842913+00:00",
+      "originalSHA256": "4e7a7990ee3d31c3186dbd14011269eeed0491388c4e86172609d1ea3d00771b",
+      "review": "Accepted: Matches the selected actual empty station train: sculpted light-gray nose with red stripes, black high-back seats and vest padding, red U-restraint frames, tan running wheels and exposed gray guide hardware gripping blue track. The white trussed roof, blue/gray wall, red door, silver gates and diamond-plate decks with yellow edges remain local. Physical operator marking stays on the source nose; no passengers or fabricated outside route were introduced.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fda553ade7912da30508d71f27a093abd93f41749-7008x4672.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of the Blue Hawk coaster trains at Six Flags Over Georgia, showcasing the unique design.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/blue-hawk",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2248a81738538966222c136c9b9a9a4da8a8d5ecd9ae691d7c2bebaccedd8191",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and selected actual station photograph inspected rather than relying on the distant track-only hero. Empty two-across train has light-gray/white sculpted nose and sidewalls with actual red nose stripes, black padded high-back seats, red U-shaped restraint frames with black vest/padding, tan running wheels and exposed gray bogie/guide hardware on blue tubular track. The train sits between gray diamond-plate station decks with yellow safety edges under a white steel-trussed roof, blue/gray paneled walls, silver queue gates and red service door. Keep this actual empty front train section and station hardware, without inventing an outside action shot, passengers or a complete route. Physical printed operator marking may remain unobtrusive decoration. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-219332808333829-thumbnail.jpg",
+      "thumbnailSHA256": "f364b3f4ae6ee631231f3f6cd87ba58184943de15556f0fc64ced20365d19c91",
+      "thumbnailBytes": 26084,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-219332808333829-detail.jpg",
+      "detailSHA256": "c861c3f6d5e4dd95307d3af659f448ca442d6e370131473cd24afa122f904d5d",
+      "detailBytes": 196325,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-219332808333829",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Blue Hawk at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator page and selected actual station photograph inspected rather than relying on the distant track-only hero. Empty two-across train has light-gray/white sculpted nose and sidewalls with actual red nose stripes, black padded high-back seats, red U-shaped restraint frames with black vest/padding, tan running wheels and exposed gray bogie/guide hardware on blue tubular track. The train sits between gray diamond-plate station decks with yellow safety edges under a white steel-trussed roof, blue/gray paneled walls, silver queue gates and red service door. Keep this actual empty front train section and station hardware, without inventing an outside action shot, passengers or a complete route. Physical printed operator marking may remain unobtrusive decoration. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "fc3a1763fa087276131d6671a865df2619e6db7a4b02aebd65374422b4323189",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 221966174825875,
+      "rideName": "Pandemonium",
+      "alt": "Illustrated Pandemonium at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:48:24.215267+00:00",
+      "originalSHA256": "f09f9b896dce2641dd7b0afadbd4951dab1c5b4e200748fe677a36c71c5260fc",
+      "review": "Accepted: Correctly retains the Georgia giant pendulum at its photographed loading position, with an empty turquoise seat ring, black restraints/headrests, silver handles, copper disc/hub, beige lower arm with light strips and teal/beige support legs. The actual blue station building and silver octagonal platform with yellow edge remain. It does not turn the ride into the identically named Texas coaster or invent an airborne pose.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F697a3c82e13603f4942a67f5eef05b79cb10595a-7008x4672.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Pandemonium, a thrilling pendulum ride at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/pandemonium",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ba1d9ecd0485174b184da67cd87508875fae4f7ea0125929f8cd98e61864c941",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual selected close station photograph inspected. This Georgia Pandemonium is a giant pendulum, not the Texas spinning coaster. Empty outward-facing mint/turquoise molded seats with black padded headrests/over-shoulder restraints and silver U-handgrips ring a copper/brown disc and central bolted copper hub. The central vertical beige pendulum arm has pale longitudinal light strips; large angled support legs are teal above beige lower segments. The ring rests over a low silver diamond-plate octagonal loading platform with a yellow edge; a real blue wall/gray-roof station building is behind. Compose the documented disc, lower arm, supports and platform at photographed loading position, with no invented airborne pose, new passengers or unseen top joint. Hero entrance sign is not used. Capture date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-221966174825875-thumbnail.jpg",
+      "thumbnailSHA256": "b88251cfcf69b7f880cc9d8b4a8d775d65b2c701b5bc295c8a3c7ad34c295129",
+      "thumbnailBytes": 21985,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-221966174825875-detail.jpg",
+      "detailSHA256": "f127bf0bd3840c368ecb4d9cc2fa191e69785069c0a44a2b212f5176f8a59345",
+      "detailBytes": 177469,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-221966174825875",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Pandemonium at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator page and actual selected close station photograph inspected. This Georgia Pandemonium is a giant pendulum, not the Texas spinning coaster. Empty outward-facing mint/turquoise molded seats with black padded headrests/over-shoulder restraints and silver U-handgrips ring a copper/brown disc and central bolted copper hub. The central vertical beige pendulum arm has pale longitudinal light strips; large angled support legs are teal above beige lower segments. The ring rests over a low silver diamond-plate octagonal loading platform with a yellow edge; a real blue wall/gray-roof station building is behind. Compose the documented disc, lower arm, supports and platform at photographed loading position, with no invented airborne pose, new passengers or unseen top joint. Hero entrance sign is not used. Capture date unknown. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "beeddf126c4640f6d6ddd3592dc6760cbfcc9663202591745d406cc7d992a1fa",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 222981991401419,
+      "rideName": "Daffy Duck Bucket Blasters",
+      "alt": "Illustrated Daffy Duck Bucket Blasters at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:49:06.759808+00:00",
+      "originalSHA256": "28b069712663cac2ccaf3016d97d8bd6cfd8f351b7353edb79e1fbf70cb07c14",
+      "review": "Accepted: Preserves the actual foreground purple bucket, two black bands, silver round rails, yellow water cannons and photographed adult/child. The other source-colored tubs and visible blue radial mechanical arms remain in shallow water around the tan hub with beach ball, green pail/shovel, starfish and boards; the large orange bucket stays on its white A-frame. It retains this local water-cannon spinner, separate from the previously blocked Magic Mountain jeep scene.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb63b4fc424398b303fbda5453a05cb5076a639d7-1920x1280.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Families enjoying the fun water battle on Daffy Duck's Bucket Blasters ride at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/daffy-ducks-bucket-blasters",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "319f1ec960dcd4343bee18338a826160ff1f7644267f6f7851ca49b3394d0d70",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual photograph inspected. Real orange, purple, blue, green, yellow and red bucket tubs have molded plank-like sides, two black bands, circular holes in upright backs, silver round safety rails and yellow water-cannon nozzles. They are connected by visible blue radial mechanical arms in shallow water around a tan sandy-island hub bearing a beach ball, green pail/shovel, small orange starfish and red/blue boards. White A-frame braces hold a large orange bucket above the center, with silver handle and blue/white life ring. Use the foreground purple bucket with actual adult/child, its blue arm and the photographed center hub; don't invent free-floating boats, a new ride route or live cartoon scene. This is an independent spinning water-cannon ride, distinct from the blocked Magic Mountain Daffy jeep/Elmer scene. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-222981991401419-thumbnail.jpg",
+      "thumbnailSHA256": "b5f7e562631325184d25eed390fd5b7a3ddfc15104adc1d6e371fe0eb03464f1",
+      "thumbnailBytes": 29489,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-222981991401419-detail.jpg",
+      "detailSHA256": "c24e58910850177381ddaa83a8b7448207a10f374aa37ee50b5b1ec4e005e53d",
+      "detailBytes": 191860,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-222981991401419",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Daffy Duck Bucket Blasters at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator page and actual photograph inspected. Real orange, purple, blue, green, yellow and red bucket tubs have molded plank-like sides, two black bands, circular holes in upright backs, silver round safety rails and yellow water-cannon nozzles. They are connected by visible blue radial mechanical arms in shallow water around a tan sandy-island hub bearing a beach ball, green pail/shovel, small orange starfish and red/blue boards. White A-frame braces hold a large orange bucket above the center, with silver handle and blue/white life ring. Use the foreground purple bucket with actual adult/child, its blue arm and the photographed center hub; don't invent free-floating boats, a new ride route or live cartoon scene. This is an independent spinning water-cannon ride, distinct from the blocked Magic Mountain Daffy jeep/Elmer scene. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "08fb49880e61af41638e17d43aa5916b172064758d82f6051866f81cabecdaa9",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 242962937517086,
+      "rideName": "Riverview Carousel",
+      "alt": "Illustrated Riverview Carousel at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:50:57.637203+00:00",
+      "originalSHA256": "1aa5be19d83569e81984bbbaac666fb0439ef573dfe8c6ef2bdc836e7b25fd55",
+      "review": "Accepted: The generated image preserves the selected photograph's glossy carved black rearing horse with orange bridle and pale hooves, neighboring chestnut/cream horse with red saddle cloth and paint wear, cream carriage bench and nearby tan/gray figures. Straight silver poles and visible overhead gray crank rods remain connected beneath white wooden beams and rows of bulbs. Horses remain painted carvings attached to a carousel deck.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F315a5aafcae68841aba767348048278833d866f5-7008x4672.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of some of the horses on the Riverview Carousel at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/riverview-carousel",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "fd7cd17375ee40472ef22119b84f5ad52e324c4bc9db0cc84afe41cf0efdf04c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual selected detailed photograph inspected, replacing the very wide 1500x350 people-focused hero strip. Real carved carousel horses include a central glossy black rearing horse with orange bridle and pale hooves, left chestnut/cream horse with red saddle cloth and cream hooves, adjacent tan/gray horses and a cream carriage bench with brown/gold scroll edges. Straight silver vertical poles connect to real gray overhead crank rods beneath white radial wooden beams, tan/cream pavilion ceiling and rows of small clear bulbs. Choose the actual central black horse and neighboring chestnut horse with their poles, visible deck and source ceiling hardware; keep them carved painted figures, not living horses, free-running animals or a fantasy carousel. Photo date unverified; preserve minor paint wear and actual local materials."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-242962937517086-thumbnail.jpg",
+      "thumbnailSHA256": "10f9f5425caa00f221eb06ef9450f71be99176b494c20c0499d29fdea803ac23",
+      "thumbnailBytes": 25613,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-242962937517086-detail.jpg",
+      "detailSHA256": "ac130c0115a06358dcb6f65205605e57b8efff90abe809ee0a1752ec76c3df6b",
+      "detailBytes": 164901,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-242962937517086",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Riverview Carousel at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator page and actual selected detailed photograph inspected, replacing the very wide 1500x350 people-focused hero strip. Real carved carousel horses include a central glossy black rearing horse with orange bridle and pale hooves, left chestnut/cream horse with red saddle cloth and cream hooves, adjacent tan/gray horses and a cream carriage bench with brown/gold scroll edges. Straight silver vertical poles connect to real gray overhead crank rods beneath white radial wooden beams, tan/cream pavilion ceiling and rows of small clear bulbs. Choose the actual central black horse and neighboring chestnut horse with their poles, visible deck and source ceiling hardware; keep them carved painted figures, not living horses, free-running animals or a fantasy carousel. Photo date unverified; preserve minor paint wear and actual local materials. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "5994d284e9bf58a5055033127cfcffc028837150ac64935b32cb6defdbc935fe",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 256218607539217,
+      "rideName": "Georgia Scorcher",
+      "alt": "Illustrated Georgia Scorcher at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:50:07.312571+00:00",
+      "originalSHA256": "fab279c77358ac1253491bfc0ffbf8b116a9880de09dabc672f883b8dbe33258",
+      "review": "Accepted: Retains the actual stand-up train's four-across black high-back restraint modules and silver handles above tall purple frames and red standing platforms. The purple/red front fairing with yellow center and exposed pale wheels stays on the photographed red banked track. Standing source riders and connected rear rows remain; this has not been replaced by a seated floorless train or a different local route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7bce60e6b2bc25ef7635acbaacd491a586350ef5-6000x4000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A close-up of guests enjoying Georgia Scorcher, a thrilling standing coaster at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/georgia-scorcher",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "15529fe34bd910172d7d08d380a334610eb4d497d867bdc20715c4f9b0262843",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page explicitly establishes the local standing coaster, and actual low-angle banked-train photograph inspected. Four-across black high-back stand-up restraint modules with silver handgrips and tall supports rise above purple chassis frames and red foot platforms; actual source riders are standing on the car floor. Rounded front fairing is purple/red with a yellow center, exposed pale wheels/bogies contact the RED box-spine/twin-running-rail track. Compose the photographed leading train rows on the documented banked red curve and immediate supports, keeping their standing geometry. The tan/teal background coaster is unrelated and may crop out; do not substitute seated floorless vehicles, another park's train, or invented track route. Capture date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-256218607539217-thumbnail.jpg",
+      "thumbnailSHA256": "47a59843b2bfe83462c925797557e5eb04f109dc7ce234582fa2f47846700ff7",
+      "thumbnailBytes": 20669,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-256218607539217-detail.jpg",
+      "detailSHA256": "87175a587cb5756f1993b757e6f5b8a906d20a18a16e62d2a19cedaecc7d0cc5",
+      "detailBytes": 124443,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-256218607539217",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Georgia Scorcher at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator page explicitly establishes the local standing coaster, and actual low-angle banked-train photograph inspected. Four-across black high-back stand-up restraint modules with silver handgrips and tall supports rise above purple chassis frames and red foot platforms; actual source riders are standing on the car floor. Rounded front fairing is purple/red with a yellow center, exposed pale wheels/bogies contact the RED box-spine/twin-running-rail track. Compose the photographed leading train rows on the documented banked red curve and immediate supports, keeping their standing geometry. The tan/teal background coaster is unrelated and may crop out; do not substitute seated floorless vehicles, another park's train, or invented track route. Capture date unknown. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "2c1eeee807fa888f08040c3d95f0f30ad87218d46165c0ac478ee7a85ebecfd2",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 267701355196644,
+      "rideName": "The Great American Scream Machine",
+      "alt": "Illustrated The Great American Scream Machine at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:51:26.289564+00:00",
+      "originalSHA256": "96a2c76b5581c2fa28218e2a0cd068c37491f8becaf0c9242c56873c9d030b2c",
+      "review": "Accepted: Matches the source first hill's dense white wooden bents and diagonal bracing, red track-side beams and blue walkway rails, with source train small on the left climb and the rounded crest/right descent intact. The actual lake reflection, grassy edge, trees and weathered timber fence remain. It represents the photographed hill without inventing a close-up vehicle, inversion or tubular steel spine.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5996220779e57966011b9c61dfc783c563a06427-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The Great American Scream Machine roller coaster at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/great-american-scream-machine",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "80898f104418defaf889c50b6705b728a9baff85e6054555566afbd1cdfd9957",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual wide structure photograph inspected. The source's large first wooden-coaster hill has dense WHITE timber uprights, diagonal cross-bracing and horizontal bents, RED track-side beams and BLUE side walkway/handrails. A small source train with distant riders climbs the left incline toward the rounded crest; opposite descent continues down the right. The real lower timber structure stands in a calm lake, reflected beneath, with nearby grass, trees and a simple weathered timber fence. Compose this actual first hill and its lake reflection as an architectural ride image; keep train distant as photographed and do not invent a close train, another hill layout, inversion or steel tubular spine. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-267701355196644-thumbnail.jpg",
+      "thumbnailSHA256": "ca24f0e820ea9ce37a36af4de4944a9a818586a582bc6f5b3e0f501f529e693b",
+      "thumbnailBytes": 24639,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-267701355196644-detail.jpg",
+      "detailSHA256": "9e711e78ca18744842eeba80cc1a26940e475dc3525ce5f6288e5d51cb18a933",
+      "detailBytes": 214904,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-267701355196644",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict The Great American Scream Machine at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator page and actual wide structure photograph inspected. The source's large first wooden-coaster hill has dense WHITE timber uprights, diagonal cross-bracing and horizontal bents, RED track-side beams and BLUE side walkway/handrails. A small source train with distant riders climbs the left incline toward the rounded crest; opposite descent continues down the right. The real lower timber structure stands in a calm lake, reflected beneath, with nearby grass, trees and a simple weathered timber fence. Compose this actual first hill and its lake reflection as an architectural ride image; keep train distant as photographed and do not invent a close train, another hill layout, inversion or steel tubular spine. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "5324ae2bf7ce127b78bbf222c9fcf40dceafe02777c7ac5869485c4291801ae8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 270133664987894,
+      "rideName": "JUSTICE LEAGUE™: Battle for Metropolis",
+      "alt": "Illustrated JUSTICE LEAGUE™: Battle for Metropolis at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:52:04.882462+00:00",
+      "originalSHA256": "1e98d66b4ec08ce8044897208a8fde4523b1b2bd052d75100d04d0bf42c74623",
+      "review": "Accepted: Preserves the local marble-pattern Art Deco facade, raised-letter arch, blue panels with white vertical mullions, central piers and medallion, bronze side fins/reliefs, silver stars, concrete entry steps and black fencing. Source visitors remain incidental and physical sign lettering stays architectural decoration. No unseen dark-ride interior, vehicle or live superhero scene was invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffa8123820c21299296c5a95db506aa749a691b1d-1752x1168.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Entrance to JUSTICE LEAGUE™: Battle for Metropolis at Six Flags Over Georgia.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/justice-league-battle-metropolis",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "b74936eaed072e9a20d6b9dba97bf6da6fc85de46b52389eea75b81c168ebff4",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual local exterior photograph inspected. Gray/white marble-pattern Art Deco Hall of Justice facade has a large raised-letter arched band above blue inset panels and straight white vertical mullions, paired central piers, small blue oval medallion over the dark doorway, bronze/gold vertical fins and angular relief panels on both sides, silver stars, shallow concrete entrance stairs and black queue fences. Source visitors may remain small incidental context. Use the real central arch, entry and one or both side panels, keeping actual material and relief proportions; physical sign lettering may be small source decoration, not new UI text. No invented dark-ride interior, vehicles or live superhero scene. Source capture date unknown; local photo is distinct from the earlier Texas exterior."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-270133664987894-thumbnail.jpg",
+      "thumbnailSHA256": "a8355066d493fb8b9fd1b0039e1d734ccf25fa7a5005cc4a5e7909761963a551",
+      "thumbnailBytes": 20382,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-270133664987894-detail.jpg",
+      "detailSHA256": "33aab7c535eb60b4bcc8caf3869a79778f531fc098be5991627da8141375fbd1",
+      "detailBytes": 146312,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-270133664987894",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict JUSTICE LEAGUE™: Battle for Metropolis at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator page and actual local exterior photograph inspected. Gray/white marble-pattern Art Deco Hall of Justice facade has a large raised-letter arched band above blue inset panels and straight white vertical mullions, paired central piers, small blue oval medallion over the dark doorway, bronze/gold vertical fins and angular relief panels on both sides, silver stars, shallow concrete entrance stairs and black queue fences. Source visitors may remain small incidental context. Use the real central arch, entry and one or both side panels, keeping actual material and relief proportions; physical sign lettering may be small source decoration, not new UI text. No invented dark-ride interior, vehicles or live superhero scene. Source capture date unknown; local photo is distinct from the earlier Texas exterior. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "1b536d576727ca5a488a63ad1ebf3c0153bdbab3cc665dc5a0ad1bb5a2d5f275",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 273258094438076,
+      "rideName": "Georgia Gold Rusher",
+      "alt": "Illustrated Georgia Gold Rusher at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:53:37.428066+00:00",
+      "originalSHA256": "6bea78e78f644dc6ed069d6943a387ad196137be04a6968db361a53da68139c8",
+      "review": "Accepted: Preserves the actual photographed steeply inclined blue chassis, dark-gray circular platform, outward-facing brown/dark seats with yellow backs and blue supports, black lap restraints, source adult riders, exposed tan wheels and bogies on the red spine/pale running rails. The image depicts the one documented platform and its real mechanical connections. No hidden second platform, water splash or future vehicle enhancement was invented. The operator's 2026 closure statement remains a source limitation, not an assertion of current operation in the app.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4cc558dcbf286358fe219500150876fa77002e90-3000x2001.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A close up of Georgia Gold Rusher",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/georgia-gold-rusher",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "0410acdfefb4ab86e8649a31c937d7a67b564b686dd352ea4efabe76f312eb9b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual close action photograph inspected. This is a real photographed vehicle, not a concept rendering. A blue steel chassis and large dark-gray circular spinning platform carry outward-facing brown/dark seats with bright yellow shells/backs, blue support frames and black lap restraints, source adult riders, and exposed large tan running wheels and dark bogie assemblies gripping the RED box/lattice spine and pale running rail on a steep incline. Compose the one documented platform and its undercarriage at the actual source angle; do not invent a second hidden platform, new route, water contact/splash absent from this photo, or future replacement vehicle. Current page explicitly states closed for the 2026 season while manufacturer changes vehicle; this artwork preserves photographed appearance only and does not assert present operation or the appearance of future enhancements. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-273258094438076-thumbnail.jpg",
+      "thumbnailSHA256": "936b4f35fe7ec0121db3fc074719fe3949c94c21d17eb71e21d1f48dc1eca100",
+      "thumbnailBytes": 24682,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-273258094438076-detail.jpg",
+      "detailSHA256": "48940af5ece741fd44298a10f858d5cf8ac1b5f1ca5257e984fb4103e7fd2696",
+      "detailBytes": 149297,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-273258094438076",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Georgia Gold Rusher at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator page and actual close action photograph inspected. This is a real photographed vehicle, not a concept rendering. A blue steel chassis and large dark-gray circular spinning platform carry outward-facing brown/dark seats with bright yellow shells/backs, blue support frames and black lap restraints, source adult riders, and exposed large tan running wheels and dark bogie assemblies gripping the RED box/lattice spine and pale running rail on a steep incline. Compose the one documented platform and its undercarriage at the actual source angle; do not invent a second hidden platform, new route, water contact/splash absent from this photo, or future replacement vehicle. Current page explicitly states closed for the 2026 season while manufacturer changes vehicle; this artwork preserves photographed appearance only and does not assert present operation or the appearance of future enhancements. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "f287c60c09ef89c2d61bf6a7fbe198355b2c84e8411f8f580fe07d4881714e2f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 35,
+      "rideId": 277856809925344,
+      "rideName": "HARLEY QUINN™ Wild Whirl",
+      "alt": "Illustrated HARLEY QUINN™ Wild Whirl at Six Flags Over Georgia",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:53:10.391630+00:00",
+      "originalSHA256": "dd2dd36d0c6bde3a4518f086f2dd9843d6e14e0a9f2a3d5bc7cd4ef5b4d446f1",
+      "review": "Accepted: Matches the selected higher-resolution photograph's red rounded covered tub number 3, checker panels, printed jester/diamond shell decorations, black bench, curved silver lap restraint and projecting front footwell with source pair. The car remains on its actual circular base within the red/gray deck, beside the red/white/silver conical cover and red lights/rails. The separate green coaster remains background context. It does not become a coaster car, free-floating vehicle or live character scene.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2bdc92bc25725efe5cca4f128f8c79c23195b378-6900x4600.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of two young guest eagerly waiting for HARLEY QUINN™ Wild Whirl spinning ride to start.",
+          "sourceURL": "https://www.sixflags.com/overgeorgia/attractions/harley-quinn-wild-whirl",
+          "credit": "Six Flags / Over Georgia (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "5cca63d27386d6fe9a3be974c2a81e6d74f5bf7f1e2cb13c58b8485bacce7bf5",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and both higher-resolution real gallery photos inspected; select the front action/loading photo instead of the low-resolution 600x400 hero. Actual red oval/rounded covered two-person tubs have black-and-white checker panels, white/black diamond strips and printed jester artwork on their outer shells, black padded bench, silver curved lap restraint and a projecting low front footwell. The foreground car number 3 holds the actual source pair; it rests mechanically on its circular base in a red/gray diamond-plate deck around the real red/white/silver conical center cover. Red railings, striped light posts and festoon bulbs frame the pad. Compose that foreground source tub, base and adjacent center cover; keep source pair medium scale and no free-floating car, roller coaster vehicle or live comic character. The green coaster overhead is a separate ride and may fall outside the crop. Page dates this to 2015; no unsupported new-2026 assertion. Photo capture date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "35-277856809925344-thumbnail.jpg",
+      "thumbnailSHA256": "0f7ce6dd8c1225f6467aea6c6fcf792f0c76539a72680fd566b8f62ff64c11d4",
+      "thumbnailBytes": 25300,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "35-277856809925344-detail.jpg",
+      "detailSHA256": "8c625e7ff02b9a484deb646f93dc5d856a01ac83e034b78acc75b23d656a2ef4",
+      "detailBytes": 179904,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "35-277856809925344",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict HARLEY QUINN™ Wild Whirl at Six Flags Over Georgia. Source- and pixel-reviewed facts and limits: Operator page and both higher-resolution real gallery photos inspected; select the front action/loading photo instead of the low-resolution 600x400 hero. Actual red oval/rounded covered two-person tubs have black-and-white checker panels, white/black diamond strips and printed jester artwork on their outer shells, black padded bench, silver curved lap restraint and a projecting low front footwell. The foreground car number 3 holds the actual source pair; it rests mechanically on its circular base in a red/gray diamond-plate deck around the real red/white/silver conical center cover. Red railings, striped light posts and festoon bulbs frame the pad. Compose that foreground source tub, base and adjacent center cover; keep source pair medium scale and no free-floating car, roller coaster vehicle or live comic character. The green coaster overhead is a separate ride and may fall outside the crop. Page dates this to 2015; no unsupported new-2026 assertion. Photo capture date unknown. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "8cb95dca6663c88ebe9ce13ad31f260115d693a13d792c5450a6d45c56f93746",
+      "generationSteps": []
+    },
+    {
       "parkId": 37,
       "rideId": 10024564956838,
       "rideName": "Jersey Devil Coaster",
