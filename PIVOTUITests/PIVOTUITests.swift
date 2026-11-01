@@ -216,15 +216,14 @@ final class PIVOTUITests: XCTestCase {
                        .completed, "Displayed glyph frames must settle before measuring or capturing them: \(lastFrames)", file: file, line: line)
     }
 
-    /// Short drags converge on the measured content viewport without the SE
-    /// overshoot caused by alternating full-screen swipes. The whole target,
-    /// including both edges of a chart, must fit above the native tab bar.
+    /// Move by the measured missing edge, using longer drags only while far
+    /// away. The entire target must fit clear of foreground native bars.
     private func centerFullyVisible(_ element: XCUIElement, in app: XCUIApplication,
                                      file: StaticString = #filePath, line: UInt = #line) {
         let viewport = safeContentViewport(in: app)
         let appFrame = app.frame
         for _ in 0..<22 {
-            var movement: CGFloat = min(170, viewport.height * 0.4)
+            var movement: CGFloat = min(420, viewport.height * 0.8)
             let frame = element.exists ? element.frame : .zero
             if !frame.isEmpty {
                 guard frame.height <= viewport.height + 1, frame.width <= viewport.width + 1 else {
@@ -279,12 +278,13 @@ final class PIVOTUITests: XCTestCase {
     }
 
     private func assertFullTextLayout(_ text: XCUIElement, style: UIFont.TextStyle = .caption1,
+                                      category: UIContentSizeCategory = .accessibilityLarge,
                                       file: StaticString = #filePath, line: UInt = #line) {
         let wording = text.label
         let frame = text.frame
         XCTAssertFalse(wording.contains("…") || wording.contains("..."),
                        "Supporting text must retain its full wording", file: file, line: line)
-        let required = expectedTextHeight(wording, width: frame.width, style: style, category: .accessibilityLarge)
+        let required = expectedTextHeight(wording, width: frame.width, style: style, category: category)
         XCTAssertGreaterThanOrEqual(frame.height, required - 3,
                                     "The visible text frame must accommodate its entire wrapped wording", file: file, line: line)
     }
@@ -319,13 +319,51 @@ final class PIVOTUITests: XCTestCase {
         XCTFail("Could not bring the complete time label into its horizontal viewport", file: file, line: line)
     }
 
+    private func assertHistoryHeaderLayout(_ header: XCUIElement, chart: XCUIElement, app: XCUIApplication,
+                                           category: UIContentSizeCategory, capture: String) {
+        centerFullyVisible(header, in: app)
+        let viewport = safeContentViewport(in: app)
+        let movement = min(viewport.height * 0.8, max(0, header.frame.minY - viewport.minY - 12))
+        if movement > 2 {
+            // Put the title near the upper edge so that the adjacent plot also
+            // has a real visible frame, even when both are taller than SE.
+            let appFrame = app.frame
+            let start = app.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(
+                dx: viewport.maxX - 3 - appFrame.minX, dy: viewport.midY + movement / 2 - appFrame.minY))
+            start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: 0, dy: -movement)),
+                        withVelocity: .slow, thenHoldForDuration: 0.2)
+            waitForSettledFrames([header, chart])
+        }
+        let headerFrame = header.frame
+        let wording = header.label
+        XCTAssertTrue(wording.hasPrefix("Recent observed waits"))
+        // The complete control must be at least as tall as its wording would
+        // need with no icon at all. A collapsed 44pt control cannot satisfy this
+        // bound while painting a four-line title over the chart.
+        let minimum = expectedTextHeight(wording, width: headerFrame.width, style: .caption1, category: category)
+        XCTAssertGreaterThanOrEqual(headerFrame.height, minimum - 3,
+                                    "The disclosure must reserve the full height of its multiline title")
+        let title = header.staticTexts["wait-history-title-10916"].firstMatch
+        if title.exists {
+            assertFullTextLayout(title, style: .caption1, category: category)
+            assertContained(title.frame, in: headerFrame, "The genuine title glyphs must fit inside the disclosure control")
+        }
+        let chartFrame = chart.frame
+        XCTAssertFalse(chartFrame.isEmpty || chartFrame.isInfinite || chartFrame.isNull)
+        XCTAssertLessThanOrEqual(headerFrame.maxY + 8, chartFrame.minY,
+                                 "The full disclosure header must end before the plotted wait labels begin")
+        screenshot("\(capture) complete history header clear of chart", app: app)
+    }
+
     private func assertHistoryColumns(_ waits: [String], chart: XCUIElement, app: XCUIApplication,
-                                      category: UIContentSizeCategory = .accessibilityExtraExtraExtraLarge, capture: String) {
+                                      category: UIContentSizeCategory = .accessibilityExtraExtraExtraLarge,
+                                      observations: Range<Int>? = nil, header: XCUIElement? = nil, capture: String) {
+        if let header { assertHistoryHeaderLayout(header, chart: chart, app: app, category: category, capture: capture) }
         centerFullyVisible(chart, in: app)
         assertObservedChartSamples(waits, chart: chart)
         let times = chart.staticTexts.matching(NSPredicate(format: "identifier BEGINSWITH 'wait-sample-time-10916-'"))
         XCTAssertEqual(times.count, waits.count, "Every dot must have a genuine displayed local-time label")
-        for index in waits.indices.reversed() {
+        for index in (observations ?? waits.indices).reversed() {
             let time = chart.staticTexts["wait-sample-time-10916-\(index)"].firstMatch
             centerHorizontally(time, in: chart, app: app)
             assertCompleteClock(time, category: category)
@@ -375,22 +413,36 @@ final class PIVOTUITests: XCTestCase {
         }
     }
 
-    func testObservedHistoryLabelsKeepTwelveRepeatedDotsInBothAppearances() {
-        for appearance in ["--ui-light", "--ui-dark"] {
-            let app = observedHistoryFixture(["--ride-history-case=equal", appearance])
-            let chart = app.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
-            centerFullyVisible(chart, in: app)
-            assertObservedChartSamples(Array(repeating: "15", count: 12), chart: chart)
-            screenshot("Observed history repeated waits latest \(appearance)", app: app)
-            centerHorizontally(chart.staticTexts["wait-sample-time-10916-0"].firstMatch, in: chart, app: app)
-            screenshot("Observed history repeated waits earlier \(appearance)", app: app)
-            assertObservedSampleRows(Array(repeating: "15", count: 12), app: app)
-            app.terminate()
-        }
+    func testObservedHistoryLabelsKeepTwelveRepeatedDotsInLightAppearance() {
+        checkRepeatedHistory(appearance: "--ui-light")
     }
 
-    func testObservedHistoryHandlesSingleSparseAndUnavailableSamples() {
-        for mode in ["single", "sparse", "empty", "invalid"] {
+    func testObservedHistoryLabelsKeepTwelveRepeatedDotsInDarkAppearance() {
+        checkRepeatedHistory(appearance: "--ui-dark")
+    }
+
+    private func checkRepeatedHistory(appearance: String) {
+        let app = observedHistoryFixture(["--ride-history-case=equal", appearance])
+        let chart = app.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
+        centerFullyVisible(chart, in: app)
+        assertObservedChartSamples(Array(repeating: "15", count: 12), chart: chart)
+        screenshot("Observed history repeated waits latest \(appearance)", app: app)
+        centerHorizontally(chart.staticTexts["wait-sample-time-10916-0"].firstMatch, in: chart, app: app)
+        screenshot("Observed history repeated waits earlier \(appearance)", app: app)
+        assertObservedSampleRows(Array(repeating: "15", count: 12), app: app)
+        app.terminate()
+    }
+
+    func testObservedHistoryHandlesSingleAndSparseSamples() {
+        checkObservedHistoryCases(["single", "sparse"])
+    }
+
+    func testObservedHistoryWithholdsUnavailableSamples() {
+        checkObservedHistoryCases(["empty", "invalid"])
+    }
+
+    private func checkObservedHistoryCases(_ modes: [String]) {
+        for mode in modes {
             let app = observedHistoryFixture(["--ride-history-case=\(mode)"])
             let chart = app.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
             if mode == "empty" || mode == "invalid" {
@@ -398,7 +450,7 @@ final class PIVOTUITests: XCTestCase {
                 reveal(empty, in: app)
                 XCTAssertTrue(empty.isHittable)
                 XCTAssertFalse(chart.exists, "Unavailable observations must not become zero-minute dots")
-                XCTAssertFalse(app.staticTexts["Sample times"].exists)
+                XCTAssertFalse(app.buttons["Sample times"].exists)
             } else {
                 let maximum = Double(1440).formatted(.number.precision(.fractionLength(0...1)))
                 let waits = mode == "single" ? ["12.5"] : ["0", "12.5", maximum]
@@ -410,11 +462,26 @@ final class PIVOTUITests: XCTestCase {
         }
     }
 
-    func testObservedHistoryRemainsReadableAtLargestAccessibilitySizeInRows() {
+    func testObservedHistoryLargestRowsKeepEarlierLabelsReadable() {
+        checkLargestHistoryRows(observations: 0..<6)
+    }
+
+    func testObservedHistoryLargestRowsKeepLatestLabelsReadable() {
+        checkLargestHistoryRows(observations: 6..<12)
+    }
+
+    private func checkLargestHistoryRows(observations: Range<Int>) {
         let app = observedHistoryFixture(["--ui-largest-type", "--ui-dark"])
         let chart = app.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
         let waits = ["20", "20", "15", "15", "0", "15", "25", "20", "15", "10", "15", "15"]
-        assertHistoryColumns(waits, chart: chart, app: app, capture: "Largest observed history row")
+        assertHistoryColumns(waits, chart: chart, app: app, observations: observations,
+            header: app.buttons["wait-history-toggle-10916"], capture: "Largest observed history row")
+        app.terminate()
+    }
+
+    func testObservedSampleTimesRemainReadableAtLargestAccessibilitySize() {
+        let app = observedHistoryFixture(["--ui-largest-type", "--ui-dark"])
+        let waits = ["20", "20", "15", "15", "0", "15", "25", "20", "15", "10", "15", "15"]
         assertObservedSampleRows(waits, app: app)
         XCTAssertGreaterThan(app.staticTexts["wait-sample-row-10916-11"].frame.height, 60,
                              "Measure the real wrapping sample text to verify the largest size was applied")
@@ -422,8 +489,16 @@ final class PIVOTUITests: XCTestCase {
         app.terminate()
     }
 
-    func testObservedHistoryRemainsReadableAtLargestAccessibilitySizeInDetails() {
-        let app = observedHistoryFixture(["--ui-largest-type", "--ui-dark"])
+    func testObservedHistoryLargestDetailsKeepEarlierLabelsReadable() {
+        checkLargestHistoryDetails(observations: 0..<6)
+    }
+
+    func testObservedHistoryLargestDetailsKeepLatestLabelsReadable() {
+        checkLargestHistoryDetails(observations: 6..<12)
+    }
+
+    private func checkLargestHistoryDetails(observations: Range<Int>) {
+        let app = rootFixture(["--reference-ui-park=5", "--reference-ui-ride=10916", "--ride-history-ui-test", "--ui-largest-type", "--ui-dark"])
         let ride = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Guardians of the Galaxy'")).firstMatch
         reveal(ride, in: app); ride.tap()
         XCTAssertTrue(app.navigationBars["Ride information"].waitForExistence(timeout: 5))
@@ -434,7 +509,8 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(details.waitForExistence(timeout: 5), "Chart assertions must inspect the presented ride information")
         let chart = details.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
         let waits = ["20", "20", "15", "15", "0", "15", "25", "20", "15", "10", "15", "15"]
-        assertHistoryColumns(waits, chart: chart, app: app, capture: "Largest observed history ride detail")
+        assertHistoryColumns(waits, chart: chart, app: app, observations: observations,
+            header: details.buttons["wait-history-toggle-10916"], capture: "Largest observed history ride detail")
         let done = app.buttons["Done"]
         XCTAssertTrue(done.isHittable)
         done.tap()

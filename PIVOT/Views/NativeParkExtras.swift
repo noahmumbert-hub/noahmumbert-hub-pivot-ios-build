@@ -594,6 +594,8 @@ enum WaitHistoryPresentation {
 /// Keep the disclosure's toggle inside its header. The default List disclosure
 /// hit region can also receive taps intended for controls in expanded content.
 private struct WaitHistoryDisclosureStyle: DisclosureGroupStyle {
+    let identifier: String
+
     func makeBody(configuration: Configuration) -> some View {
         VStack(alignment: .leading, spacing: 0) {
             Button {
@@ -601,15 +603,19 @@ private struct WaitHistoryDisclosureStyle: DisclosureGroupStyle {
             } label: {
                 HStack(alignment: .firstTextBaseline, spacing: 8) {
                     configuration.label
-                    Spacer(minLength: 8)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .fixedSize(horizontal: false, vertical: true)
                     Image(systemName: configuration.isExpanded ? "chevron.down" : "chevron.right")
                         .font(.caption.weight(.semibold)).foregroundStyle(.tint)
                         .accessibilityHidden(true)
                 }
                 .frame(minHeight: 44, alignment: .leading)
+                .fixedSize(horizontal: false, vertical: true)
                 .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
+            .fixedSize(horizontal: false, vertical: true)
+            .accessibilityIdentifier(identifier)
             .accessibilityValue(configuration.isExpanded ? "Expanded" : "Collapsed")
             if configuration.isExpanded { configuration.content }
         }
@@ -666,19 +672,25 @@ struct NativeWaitHistoryView: View {
                             } label: {
                                 Text("Sample times").frame(minHeight: 44, alignment: .leading)
                             }.font(.caption)
+                                .disclosureGroupStyle(WaitHistoryDisclosureStyle(identifier: "wait-history-sample-toggle-\(ride.id)"))
                         }
                         Divider()
                         NativeRideLowWaitSummary(ride: ride, timeZone: timeZone)
                     }.padding(.top, 12)
                 }
             } label: {
-                Label("Recent observed waits · \(samples.count) \(samples.count == 1 ? "sample" : "samples")", systemImage: "chart.bar.fill")
+                HStack(alignment: .firstTextBaseline, spacing: 8) {
+                    Image(systemName: "chart.bar.fill").accessibilityHidden(true)
+                    Text("Recent observed waits · \(samples.count) \(samples.count == 1 ? "sample" : "samples")")
+                        .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
+                        .accessibilityIdentifier("wait-history-title-\(ride.id)")
+                }
                     .font(.caption.weight(.medium)).foregroundStyle(Color.pivotMuted)
                     .fixedSize(horizontal: false, vertical: true)
                     .frame(minHeight: 44, alignment: .leading)
             }
             .tint(accent)
-            .disclosureGroupStyle(WaitHistoryDisclosureStyle())
+            .disclosureGroupStyle(WaitHistoryDisclosureStyle(identifier: "wait-history-toggle-\(ride.id)"))
         }
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("wait-history-\(ride.id)")

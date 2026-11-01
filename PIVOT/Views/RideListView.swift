@@ -449,9 +449,11 @@ private struct RideRowView: View {
                         }
                     }
                     .frame(minHeight: 48)
+                    .fixedSize(horizontal: false, vertical: true)
                     .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
+                .fixedSize(horizontal: false, vertical: true)
                 .accessibilityLabel(accessibilitySummary(current))
                 .accessibilityHint("Double tap to open the ride information screen")
 
@@ -540,6 +542,7 @@ private struct RideRowView: View {
                 Text("\(wait)").font(.system(.largeTitle, design: .rounded).weight(.bold)).monospacedDigit().tracking(-1.5)
                 Text("min").font(.caption)
             }
+            .fixedSize(horizontal: false, vertical: true)
             .foregroundStyle(wait <= 20 ? Color.pivotMint : wait <= 50 ? PivotAccent.orange.color : Color.pivotPink)
             .frame(minWidth: 48)
             .accessibilityHidden(true)

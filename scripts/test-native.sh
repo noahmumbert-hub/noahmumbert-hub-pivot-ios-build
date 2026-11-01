@@ -66,10 +66,15 @@ case "${PIVOT_TEST_SCOPE:-all}" in
     test_options+=(
       -only-testing:PIVOTTests/NativeParkExtrasTests
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedWaitDotsKeepEveryValueAndOpenLowestWaitForecast
-      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLabelsKeepTwelveRepeatedDotsInBothAppearances
-      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryHandlesSingleSparseAndUnavailableSamples
-      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryRemainsReadableAtLargestAccessibilitySizeInRows
-      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryRemainsReadableAtLargestAccessibilitySizeInDetails
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLabelsKeepTwelveRepeatedDotsInLightAppearance
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLabelsKeepTwelveRepeatedDotsInDarkAppearance
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryHandlesSingleAndSparseSamples
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryWithholdsUnavailableSamples
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestRowsKeepEarlierLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestRowsKeepLatestLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestDetailsKeepEarlierLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestDetailsKeepLatestLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedSampleTimesRemainReadableAtLargestAccessibilitySize
     ) ;;
   lowest-waits)
     test_options+=(
