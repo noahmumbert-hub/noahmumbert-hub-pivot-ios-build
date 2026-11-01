@@ -42822,6 +42822,53 @@
     },
     {
       "parkId": 282,
+      "rideId": 8317619620793,
+      "rideName": "Gully Washer",
+      "alt": "Illustrated Gully Washer at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:40:59.266474+00:00",
+      "originalSHA256": "f70b74afe5b847b654efd0234fc5174c20fbf3edc236064c9380e23c49827309",
+      "review": "Accepted: Actual generated pixels preserve Gully Washer's purple/lilac, green/lime and orange/yellow tube coils, gray support columns/braces and actual stair tower in the photographed upward view. No raft, opaque-tube rider or full hidden routing is invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe4d952db4c675e6187a2c7cb176cfc1db6575f88-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Three slides—green, orange, and purple—with the tower and line in the background at Frontier City's Gully Washer.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/gully-washer",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f364111e366303dab80dd039c0f2bc5cd68ddf4c33d646d3f0b19db2acb971bb",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Frontier City Gully Washer photo shows three enclosed flumes: purple/lilac, green/lime and orange/yellow tubes, with gray columns and triangular braces, and a gray timber-railed stair tower at left. Preserve this observed close upward view of connected visible coil sections; no raft/rider is visible. Do not confuse this slide complex with same-named river-raft rides or invent opaque-tube riders and a hidden complete course."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-8317619620793-thumbnail.jpg",
+      "thumbnailSHA256": "2f7ed9b7619b9341c154af3312f959553bac6085df2be9e0ac0b30772dbaaa6f",
+      "thumbnailBytes": 21161,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-8317619620793-detail.jpg",
+      "detailSHA256": "b0f84f2835e424dfde4897c38e7f86b52e54e7009fb777f3a249781100a56296",
+      "detailBytes": 135253,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-8317619620793",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Gully Washer at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Frontier City Gully Washer photo shows three enclosed flumes: purple/lilac, green/lime and orange/yellow tubes, with gray columns and triangular braces, and a gray timber-railed stair tower at left. Preserve this observed close upward view of connected visible coil sections; no raft/rider is visible. Do not confuse this slide complex with same-named river-raft rides or invent opaque-tube riders and a hidden complete course. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "39f5b46dea153cc137eaec0df43bd484e78ff6acfe0fc0e1aaae1c46cec7d398",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
       "rideId": 28884639662751,
       "rideName": "Prairie Schooner",
       "alt": "Illustrated Prairie Schooner at Frontier City",
@@ -42864,6 +42911,1134 @@
       "key": "282-28884639662751",
       "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT, accurately based on actual attraction photo image 1. Image 2 supplies only the UI's restrained blue-purple evening treatment. Natural photographic materials, believable physical perspective and softly balanced practical lighting, slightly cinematic rather than painted or cartoon. Preserve real ride hardware, geometry and colors; clear central subject at thumbnail size. No screenshot UI, frame, border, watermark, overlaid captions or illegible lettering. Prairie Schooner at Frontier City: actual photographed brown/red Viking-style swinging ship with raised prow, pink/mauve A-frame supports, long yellow lattice suspension arm, rustic wooden boarding platform and railings, small timber gateway and black cannon in foreground amid trees. Preserve realistic pivot and geometry, full ship in portrait; no ocean, sails or fantasy warship. Omit small sign text rather than invent lettering.",
       "promptSHA256": "1c6a0708a7861dee3220b17061e72b2f0c240d1cad1f1a97bfab116149754f60",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 37680069812368,
+      "rideName": "Silver Bullet",
+      "alt": "Illustrated Silver Bullet at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:39:37.733378+00:00",
+      "originalSHA256": "5691636e4fb19f29cc695e0812e199dc951abf96914cb8c3fbaa351333fcd08d",
+      "review": "Accepted: Actual generated pixels preserve Frontier Silver Bullet's dark sit-down two-across train, tall rectangular seatbacks, decorative silver/orange panels and small ordinary guests along the dark banked crest with black columns/catwalk and pennants. The namesake is park-correct.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9c15858c753e2fb75b15fdb4121ebd73d7d054a2-6000x4000.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Silver Bullet roller coaster at Frontier City approaching a peak, showcasing the thrilling ascent.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/silver-bullet",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e7b99feb8e0c6c27808e0ffdc09725be3aef50cb437b7fd359d46c7231d0e0e6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Frontier City Silver Bullet photograph shows a dark navy/black two-across coaster train with tall rectangular black seatbacks/headrests, silver/yellow/orange decorative panels and small ordinary clothed guests, on a dark steel banked crest with black support columns, catwalk fence and red/blue pennants. Preserve this actual sitting-on-top train and photographed crest; it is distinct from the Darien flat ride or Knott's inverted coaster of the same name. No hidden full route or invented close restraints."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-37680069812368-thumbnail.jpg",
+      "thumbnailSHA256": "abde3c52a36af2de0101d67b4642a3217d22da1eae38330c59446e53855f2e7e",
+      "thumbnailBytes": 16598,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-37680069812368-detail.jpg",
+      "detailSHA256": "bd1ed709505c74147cab71f1ae7c97f0704564fb63c18bb4c40ac1e068e7e34b",
+      "detailBytes": 106542,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-37680069812368",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Silver Bullet at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Frontier City Silver Bullet photograph shows a dark navy/black two-across coaster train with tall rectangular black seatbacks/headrests, silver/yellow/orange decorative panels and small ordinary clothed guests, on a dark steel banked crest with black support columns, catwalk fence and red/blue pennants. Preserve this actual sitting-on-top train and photographed crest; it is distinct from the Darien flat ride or Knott's inverted coaster of the same name. No hidden full route or invented close restraints. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "dbd1a129e2bee3b0135d0c86b20e6e4b01e7908d0ac42a1010ca444ef14de1d4",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 44579363269792,
+      "rideName": "Soaring Eagle",
+      "alt": "Illustrated Soaring Eagle at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:40:31.390094+00:00",
+      "originalSHA256": "63908683a1d1048a6b222a45bb1d00d9a746b44ef96919cad966d421093c12d6",
+      "review": "Accepted: Actual generated pixels preserve Soaring Eagle's blue two-person chair, white back, handles/lap belt and ordinary clothed adults, curved eagle-decorated hanger and actual trolley/cable connections beside the white station mast, netting and timber deck.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F3601df69db0302798b48801eacb960065f8173f8-6534x4356.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of a couple on Soaring Eagle at Frontier City, woman with a nervous white-knuckle grip and man smiling.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/soaring-eagle",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "8ac91f5aeba42378520f098612e2d42b929d585423bcd33b7fa776176bcaca13",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Soaring Eagle photo shows a blue two-person zipline chair with white back, silver side handles and black lap belt, supporting two ordinary clothed adults. Its blue curved hanger has a physical bald-eagle sculpture attached, and visible silver trolley wheels/brackets connect to taut black cables beside the white station mast, black netting and timber deck. Preserve actual chair/cable hardware and station section, not free-flying people or a living eagle."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-44579363269792-thumbnail.jpg",
+      "thumbnailSHA256": "814c357ff19095b2efd45791e147334b754f92be896a97015d7f894871a52fbd",
+      "thumbnailBytes": 26753,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-44579363269792-detail.jpg",
+      "detailSHA256": "7d012a0e99eecde2ca75d218156c76df1d98f8b496cb75704406a52abb14cbb9",
+      "detailBytes": 176749,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-44579363269792",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Soaring Eagle at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Soaring Eagle photo shows a blue two-person zipline chair with white back, silver side handles and black lap belt, supporting two ordinary clothed adults. Its blue curved hanger has a physical bald-eagle sculpture attached, and visible silver trolley wheels/brackets connect to taut black cables beside the white station mast, black netting and timber deck. Preserve actual chair/cable hardware and station section, not free-flying people or a living eagle. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "284e1c2fcd144c303cd391bc5ff226b30dacfb47bf467845d2bd1f2fb03471c4",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 74203135223360,
+      "rideName": "Billy's Frog Hopper",
+      "alt": "Illustrated Billy's Frog Hopper at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:41:28.178857+00:00",
+      "originalSHA256": "4395dfbddbd8d2127b2b983d889cb0e8d7f40f08adfe38e3280c5cc7d4b56ce7",
+      "review": "Accepted: Actual generated pixels preserve Billy's Frog Hopper's physical green/pale-yellow two-row frog cars, eyes/cheeks/feet, silver steps/shared bars, connected green arms and woodgrain hub inside the actual pale-roofed western pavilion with ordinary clothed guests.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc43a67282c0c814729a1f4edc809b721616114ac-6969x4646.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Kids enjoying Billy Frog Hopper ride with parents, hopping up and down in frog-shaped vehicles at Frontier City.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/billys-frog-hopper",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ae3fa082519de29c8d8f7fdea5080471541e6d482e30de4f73d26c18e1509282",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Billy's Frog Hopper photo shows green fiberglass frog-shaped two-row cars with pale-yellow bellies, painted big white eyes/red cheeks, broad feet and silver chequerplate steps, brown rear rim and silver shared safety bars. Green curved radial arms connect cars to the actual woodgrain central hub inside a pale-blue-roof timber pavilion with western red buildings outside. Ordinary clothed guests match source seating. This is the observed radial frog-car ride, not a vertical drop tower despite the generic name."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-74203135223360-thumbnail.jpg",
+      "thumbnailSHA256": "6ec2478d8a916ec32e03e866605538f33c618c401c07e2d0d66b1346dcaf38a0",
+      "thumbnailBytes": 22963,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-74203135223360-detail.jpg",
+      "detailSHA256": "c038b4b63ba72a362ed6b6efc9e9d770f9b6ceeb30965a5e7ad22db94b2c0b86",
+      "detailBytes": 167703,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-74203135223360",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Billy's Frog Hopper at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Billy's Frog Hopper photo shows green fiberglass frog-shaped two-row cars with pale-yellow bellies, painted big white eyes/red cheeks, broad feet and silver chequerplate steps, brown rear rim and silver shared safety bars. Green curved radial arms connect cars to the actual woodgrain central hub inside a pale-blue-roof timber pavilion with western red buildings outside. Ordinary clothed guests match source seating. This is the observed radial frog-car ride, not a vertical drop tower despite the generic name. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "721b5357d7a3722f0064443782e7561568a88d171969c22b34cdb5361e7ad331",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 78625163853155,
+      "rideName": "Diamondback",
+      "alt": "Illustrated Diamondback at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:41:54.591209+00:00",
+      "originalSHA256": "2d62623c67190bedbccf1feae8a19718301c8950c86d48aa56edb795926fecab",
+      "review": "Accepted: Actual generated pixels preserve Frontier Diamondback's yellow/blue vertical loop and red/maroon sit-down train with small restrained guests and wheel bogies along the upper loop. This remains the source-supported shuttle loop rather than another park's namesake.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fed488513a41018d13500b12d4c2484f8fa77a973-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A side view of Frontier City's Diamondback roller coaster, with the red and black coaster upside-down, centered in the loop.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/diamondback",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c6785ffc6bba17df3c93fe4c0a9f8dbd61421055f302e5e5aee4793996be3487",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Frontier City Diamondback photo shows the shuttle coaster's vertical loop with yellow running rails/crossties, blue tubular backbone/support and red/maroon sit-down train with dark restrained ordinary guests and silver/black wheel bogies following the upper loop interior. Preserve this source-documented loop/train section. No Kings Island hypercoaster substitution, invented entire route, disconnected cars or unsupported close restraint design."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-78625163853155-thumbnail.jpg",
+      "thumbnailSHA256": "2121b91a30f4ca1245460bd233cdc3e1c3e4f2f114c83c800807da0f2b2d5dca",
+      "thumbnailBytes": 24255,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-78625163853155-detail.jpg",
+      "detailSHA256": "c8e8ae4c5ed22849369e825572dadd66230aba5d22064beeb93872a912f66f25",
+      "detailBytes": 164725,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-78625163853155",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Diamondback at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Frontier City Diamondback photo shows the shuttle coaster's vertical loop with yellow running rails/crossties, blue tubular backbone/support and red/maroon sit-down train with dark restrained ordinary guests and silver/black wheel bogies following the upper loop interior. Preserve this source-documented loop/train section. No Kings Island hypercoaster substitution, invented entire route, disconnected cars or unsupported close restraint design. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "1646bacd304bb4fe348b66a9708025f9667ee9c3730be07b2ab8516718c42100",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 93301060177555,
+      "rideName": "Tina's Tea Cup Twirl",
+      "alt": "Illustrated Tina's Tea Cup Twirl at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:42:24.887615+00:00",
+      "originalSHA256": "d0810ec9329c85a18d9af94e3a61c3c3f9100d3e12b76d36bac0322077d91933",
+      "review": "Accepted: Actual generated pixels preserve Tina's woodgrain flower-painted empty teacups, purple/orange/blue rims/bases/handles and blue mesh-gated car, timber slatted pavilion and actual fence/platform. No unsupported passengers or porcelain replacement is introduced.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F0cbc443e58d89a0c6adb03792cf3df8c67cb478b-6870x4580.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Tina's Tea Cup Twirl ride at Frontier City with colorful tea cups under a wooden canopy.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/tinas-tea-cup-twirl",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "7873e8dab8900a0e5805440f2d6b754c44124d56d244c004c14bf0f0b17120cf",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Tina's Tea Cup Twirl photo shows empty woodgrain-brown teacup ride cars with painted flower decorations, colorful purple/orange/blue rims and matching bases, handles and an open blue accessible-style car with hinged mesh gate. The actual red timber slatted pavilion roof, timber post fence, black central platform and western buildings remain context. Preserve documented empty cars and actual hardware; no invented seated guests or generic porcelain tea party."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-93301060177555-thumbnail.jpg",
+      "thumbnailSHA256": "e6e4274621a48484ded79f4c113903c8f166c40d3ee646cb4ee99ae7afe11269",
+      "thumbnailBytes": 26159,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-93301060177555-detail.jpg",
+      "detailSHA256": "28ee265c2331e8948f4d492d9d82074f6e7d9b10a750bd93f26c8b235268fc8a",
+      "detailBytes": 194164,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-93301060177555",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Tina's Tea Cup Twirl at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Tina's Tea Cup Twirl photo shows empty woodgrain-brown teacup ride cars with painted flower decorations, colorful purple/orange/blue rims and matching bases, handles and an open blue accessible-style car with hinged mesh gate. The actual red timber slatted pavilion roof, timber post fence, black central platform and western buildings remain context. Preserve documented empty cars and actual hardware; no invented seated guests or generic porcelain tea party. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "87c980e273cb27e4759128eb368cddf9e38a5574b4dc3e56426eb4d51fd5b355",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 103732280180144,
+      "rideName": "Rolling Thunder",
+      "alt": "Illustrated Rolling Thunder at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:44:04.188925+00:00",
+      "originalSHA256": "8d51f3b02ef4b789945b4fe4b5595da330cb48b2af29fcd3f16db73896f9ef73",
+      "review": "Accepted: Actual generated pixels preserve Frontier Rolling Thunder's blue linked back-to-back cars, orange end panel/grab loops and black over-shoulder restraints, blue side guards and ordinary clothed guests on the visible circular rail section.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9f9655237fa775d59c01042bf187aa10abad7761-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Bright blue Rolling Thunder coaster in operation at Frontier City, riders with hands up enjoying the ride.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/rolling-thunder",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "170a72961568231cc23e704fba4b6adc6a5eea158fb82e3ab987019a067bf152",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Frontier Rolling Thunder photo is a close view of blue linked ring-ride cars with orange end panel, black over-shoulder restraints and orange grab loops, blue vertical side-bar guards and ordinary clothed guests seated in actual back-to-back pairs. Preserve this photographed train section on the visible blue/orange circular rail; no invented full hidden loop, unsupported close restraint redesign or Darien green train substitution."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-103732280180144-thumbnail.jpg",
+      "thumbnailSHA256": "ffc97902e028fbafd04e00a0910694d855ea07a189a616fd92ac3a0ef607230d",
+      "thumbnailBytes": 21327,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-103732280180144-detail.jpg",
+      "detailSHA256": "81c95f120b599bf79814482fab98c3a6392e75f8bc2fe09adabc98345723c1cc",
+      "detailBytes": 127070,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-103732280180144",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Rolling Thunder at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Frontier Rolling Thunder photo is a close view of blue linked ring-ride cars with orange end panel, black over-shoulder restraints and orange grab loops, blue vertical side-bar guards and ordinary clothed guests seated in actual back-to-back pairs. Preserve this photographed train section on the visible blue/orange circular rail; no invented full hidden loop, unsupported close restraint redesign or Darien green train substitution. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "fa2a5a6325c1657c4981a7aa96a4ad70c5c613ec7fa90883536ee130ec4d736f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 105231642385428,
+      "rideName": "Mystery River Log Flume",
+      "alt": "Illustrated Mystery River Log Flume at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:46:05.378511+00:00",
+      "originalSHA256": "6bc87cf4f52bfd33759b500e33ca1846be5ec2fe42cf693d4194ea00f9c3303d",
+      "review": "Accepted: Actual generated pixels preserve Mystery River's bark-textured tandem log boat and orange interior, actual family seating, straight lagoon guide beams, stone turning wall/loading shelter and distant flume drop/western facades.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbbdee0e04d51928e76212fa7f47a884afc6fd8d0-6926x4617.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders in a log-shaped ride vehicle at the end of Frontier City's Mystery River Log Flume ride.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/mystery-river-log-flume",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "65951058557a2fd2355c1f6ce7614590e5e67ec349afc8e48c4954f79218d9a8",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Mystery River Log Flume photo shows a brown bark-textured log boat with orange cut-end/seat interior and ordinary clothed guests seated in tandem, floating between straight guide beams in a turquoise lagoon toward a source-visible curved low stone wall and dark loading shelter. The actual steep pale flume drop is distant at right, western facades/carousel trees in background. Preserve the observed boat/channel section and no invented hidden course."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-105231642385428-thumbnail.jpg",
+      "thumbnailSHA256": "7213f04da38a33ef3831f7021bda2b61e1a9573baad1a82f59a408c9e62ec457",
+      "thumbnailBytes": 26746,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-105231642385428-detail.jpg",
+      "detailSHA256": "d3e1fd221aaf1c81b41c3a0b1405df058ed528f35ad6a657616e58d24abdbb09",
+      "detailBytes": 220287,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-105231642385428",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Mystery River Log Flume at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Mystery River Log Flume photo shows a brown bark-textured log boat with orange cut-end/seat interior and ordinary clothed guests seated in tandem, floating between straight guide beams in a turquoise lagoon toward a source-visible curved low stone wall and dark loading shelter. The actual steep pale flume drop is distant at right, western facades/carousel trees in background. Preserve the observed boat/channel section and no invented hidden course. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "ab0d3968a4ea833c22a5946471b4bc7e11d296691c952375e3fb4fd4ef8f65d7",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 112742403561805,
+      "rideName": "Grand Carousel",
+      "alt": "Illustrated Grand Carousel at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:43:22.520379+00:00",
+      "originalSHA256": "b1c309398c863798bc4d26670bac08e4218571fc32920fdfcedac3a05b820352",
+      "review": "Accepted: Actual generated pixels preserve Grand Carousel's black/cream horses, colored saddles, white manes and metal stirrups on twisted gold poles, cream beam roof/bulbs, mirrors and ordinary clothed belted guests.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa8c8cd9b8847fcdb3008d4b09dd1b6e13abda23a-1406x932.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of three girls high-fiving while riding their respective carousel horses on Frontier City's Grand Carousel.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/grand-carousel",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c597ecffb564d140a72ad4c0b88032fb2562519918ef3fa7a654c34125265e52",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Grand Carousel photo shows black and cream physical carousel horses with white/gray manes, colorful saddles and black metal stirrups, mounted on gold twisted poles beneath the cream/white beam roof with colored bulb strings. Ordinary clothed guests sit on the source saddles and visible waist belts, with mirrored inner wall and tree setting outside. Preserve this actual close carousel section, no live horses or fabricated whole pavilion."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-112742403561805-thumbnail.jpg",
+      "thumbnailSHA256": "fab92d78e782ad4f270b523f65df12e54ed84a6390804a8344f6222f3af30cf8",
+      "thumbnailBytes": 26917,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-112742403561805-detail.jpg",
+      "detailSHA256": "c3e1f32468c6bae5099a9da7dde7ad7f8f360ff1bdbaa6a8f9744b6372ecee3f",
+      "detailBytes": 173402,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-112742403561805",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Grand Carousel at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Grand Carousel photo shows black and cream physical carousel horses with white/gray manes, colorful saddles and black metal stirrups, mounted on gold twisted poles beneath the cream/white beam roof with colored bulb strings. Ordinary clothed guests sit on the source saddles and visible waist belts, with mirrored inner wall and tree setting outside. Preserve this actual close carousel section, no live horses or fabricated whole pavilion. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "74054fabe47a34e1acbde9d1a9d2eed4681ef5c7c6b24ad7942ea9e59af8e090",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 124595216528462,
+      "rideName": "Sidewinder",
+      "alt": "Illustrated Sidewinder at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:45:24.693978+00:00",
+      "originalSHA256": "9f39fa80c1848f193f2c7cbfb610d4b7f5d46f997a530afbd03bb4159012b08c",
+      "review": "Accepted: Actual generated pixels preserve Sidewinder's red/white Scrambler arms/mast, red tubs and shared bars, ordinary seated guests, actual dark deck/picket fence and rustic buildings. No coaster namesake is substituted.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fae56b314253858061f9c017ce45a8057c4f38aa5-6803x4535.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Sidewinder at Frontier City in operation, an amusement park scrambler moving pairs of riders in ride vehicles in a circle.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/sidewinder",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "de7a7ecc5755f2fb9d3aceccddcd8f36b88bac538c1fe5d4b493f9ae2adaf48b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Sidewinder photo shows a red/white Scrambler-style installation with red two/three-seat tubs and black bench interiors/shared horizontal bars, white triangulated linked radial braces and a red central mast. Ordinary clothed guests, actual dark deck, picket fence, trees and rustic western buildings remain context. Preserve the photographed linked ground-level ride and distinctive red cars; no other Sidewinder coaster substitution or invented hidden mechanism."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-124595216528462-thumbnail.jpg",
+      "thumbnailSHA256": "a463b12707330a011579158f1665831cfc4112b0ba3d6696d4ced4c8c4f160e4",
+      "thumbnailBytes": 27302,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-124595216528462-detail.jpg",
+      "detailSHA256": "15b770e01653f3b5c3e26ffdbe2e229e1b0cc1f9be2ebff0f9e80952720a4cb5",
+      "detailBytes": 209092,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-124595216528462",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Sidewinder at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Sidewinder photo shows a red/white Scrambler-style installation with red two/three-seat tubs and black bench interiors/shared horizontal bars, white triangulated linked radial braces and a red central mast. Ordinary clothed guests, actual dark deck, picket fence, trees and rustic western buildings remain context. Preserve the photographed linked ground-level ride and distinctive red cars; no other Sidewinder coaster substitution or invented hidden mechanism. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "d8af8b781b6380ecd9292f94e397922dba24d043f97d205f6d0d1228b44c46ce",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 126420778352506,
+      "rideName": "Rocky's Ranger Planes",
+      "alt": "Illustrated Rocky's Ranger Planes at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:42:52.087977+00:00",
+      "originalSHA256": "a0c97a10828c53383d162fb1f622e4cbf957470fe303d21166efee4c0ad6bece",
+      "review": "Accepted: Actual generated pixels preserve Rocky's blue dotted/orange-trim plane with separate front/rear cockpits, source seating/handles/step, connected white lifting arms, colored bulbs/yellow actuators and checked airport ornament.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2686a648195b874bc51f95133902042281faf62e-6928x4619.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Father and daughter riding Rocky's Ranger Planes, with daughter in front pretending to fly the plane.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/rockys-ranger-planes",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "471c2cf950c2fe19708c1cebe1bdc601b529c42d0b6bd3e944c5211eeecd9aa8",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Rocky's Ranger Planes photo shows blue dotted fiberglass plane with orange trim/wingtips, a small front cockpit and separate adult rear cockpit with source-visible black lap belts, actual silver grab handles and black side step. Ordinary clothed child/adult sit in tandem. White lifting arms with colored bulbs and yellow actuators connect actual red/yellow/blue planes to a blue hub under an orange/white checked airport ornament. Preserve connected toy-plane ride hardware, not free flight or real aircraft."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-126420778352506-thumbnail.jpg",
+      "thumbnailSHA256": "0a132e2070b375a35ba29a705e98bc672a6e8193cf438faf886bf90dd9da437c",
+      "thumbnailBytes": 27920,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-126420778352506-detail.jpg",
+      "detailSHA256": "fef82819412397f8b2f808a1ff97554b718e47066b424933caba2dc9a972d750",
+      "detailBytes": 174957,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-126420778352506",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Rocky's Ranger Planes at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Rocky's Ranger Planes photo shows blue dotted fiberglass plane with orange trim/wingtips, a small front cockpit and separate adult rear cockpit with source-visible black lap belts, actual silver grab handles and black side step. Ordinary clothed child/adult sit in tandem. White lifting arms with colored bulbs and yellow actuators connect actual red/yellow/blue planes to a blue hub under an orange/white checked airport ornament. Preserve connected toy-plane ride hardware, not free flight or real aircraft. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "d20e8c751b2c387704b0baa809a641fa781ada1933c1dc8b8569f00192da96db",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 127788749835062,
+      "rideName": "Grand Centennial Ferris Wheel",
+      "alt": "Illustrated Grand Centennial Ferris Wheel at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:44:42.713426+00:00",
+      "originalSHA256": "46481846fd19e97f985202ded19df2b5b1cf1fc834d210a58c4502b2cbcf176b",
+      "review": "Accepted: Actual generated pixels preserve Grand Centennial's white wheel/spokes, bright-blue A-frames and small multicolor canopied open gondolas above the red loading deck and grassy hill, with source timber footbridge/trees.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F8299167583ee2a697d579a256749a4a29b95ecf7-6975x4650.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Full view of Frontier City's Grand Centennial Ferris Wheel from afar, sitting at the top of a hill.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/grand-centennial-ferris-wheel",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a187729c60373097267f0b5f5f585887e58d4e2bd4fb26ea2cb49824ac11b4df",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Grand Centennial Ferris Wheel photo shows a white spoke/rim wheel on bright-blue A-frame supports, small red/blue/green/yellow open round gondolas with matching dark/colored canopy roofs, a red loading deck on a grassy hill, trees and a rustic timber-roofed footbridge below. Preserve this documented whole visible wheel and source-supported silhouette, not an enclosed observation wheel or invented close gondola interiors."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-127788749835062-thumbnail.jpg",
+      "thumbnailSHA256": "e2cbcd87847a437dc5ce477eef573c00b6cfe75b071196012466c5056b0e313e",
+      "thumbnailBytes": 23701,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-127788749835062-detail.jpg",
+      "detailSHA256": "f9eff4a02ee3dc3faf0f328cd779a9977cdb708010743e6dbf17a828bab6b07b",
+      "detailBytes": 206610,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-127788749835062",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Grand Centennial Ferris Wheel at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Grand Centennial Ferris Wheel photo shows a white spoke/rim wheel on bright-blue A-frame supports, small red/blue/green/yellow open round gondolas with matching dark/colored canopy roofs, a red loading deck on a grassy hill, trees and a rustic timber-roofed footbridge below. Preserve this documented whole visible wheel and source-supported silhouette, not an enclosed observation wheel or invented close gondola interiors. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "3b17c3ef654ce3b16f6d25864634a6c5b44822f1d5f430b5fa9b4e0359e7ec78",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 128257324440317,
+      "rideName": "Ol' 89er Express",
+      "alt": "Illustrated Ol' 89er Express at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:45:04.873719+00:00",
+      "originalSHA256": "a4761a40a055943f0833f6c75538d2b7fc37da7168e1911501e6952f6b3c83be",
+      "review": "Accepted: Actual generated pixels preserve Ol' 89er's burgundy/red locomotive, green cab roof, black number-9 front/square lamp and cowcatcher, coupled red coaches and source driver/trackside fence; no invented full rail route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff7bf0bce5c2b50784509952b724122c8392303bf-6866x4577.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Ol' 89er Express at Frontier City, a vintage red train with a green roof and gold accents, with people onboard.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/ol-89er-express",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e12f07ec4d4ba8cb154a4e8bf235ea5724ce864642722fca35d13c4df5861539",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Ol' 89er Express photograph shows a burgundy/red miniature locomotive with green cab roof, gold trim, black circular front plate marked 9, square front headlamp, flared red chimney, visible rods/wheels and red/white cowcatcher. Connected red open carriages with pale supports/red roofs carry ordinary clothed guests behind the source driver; narrow rails, timber station deck and tall metal fence anchor the exact setting. Preserve actual connected train, not a modern road train or invented steam mechanism."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-128257324440317-thumbnail.jpg",
+      "thumbnailSHA256": "a78edcdc20255c51d34c203295e5ff564ec82d695dae2c9bf481e38ffff4f8db",
+      "thumbnailBytes": 26528,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-128257324440317-detail.jpg",
+      "detailSHA256": "7383ccc78d24d62c21fd0a7bc9837db59692986331322ef54e35d340f951f26d",
+      "detailBytes": 190609,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-128257324440317",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Ol' 89er Express at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Ol' 89er Express photograph shows a burgundy/red miniature locomotive with green cab roof, gold trim, black circular front plate marked 9, square front headlamp, flared red chimney, visible rods/wheels and red/white cowcatcher. Connected red open carriages with pale supports/red roofs carry ordinary clothed guests behind the source driver; narrow rails, timber station deck and tall metal fence anchor the exact setting. Preserve actual connected train, not a modern road train or invented steam mechanism. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "212a0f55ed6ee2be6a45e2e9767d08c2b5a49756c3877dccd7dd1a3fdbbdc7f6",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 144744193734947,
+      "rideName": "Quick Draw",
+      "alt": "Illustrated Quick Draw at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:44:41.717413+00:00",
+      "originalSHA256": "1d5f89e10cff2c0ba73c2f2f61212ca069966e4b728f7c0ae82f0e8e093ec7fe",
+      "review": "Accepted: Actual generated pixels preserve Quick Draw's empty blue/green mine cart with black bench, silver shared bar and yellow game shooter on the actual floor guide track, with cactus/western station details.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fdf6e0b7f1f1a4e99810212b20237c962c8ab6d5b-6587x4391.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Ride attendant and navy blue vehicle at the start of Quick Draw at Frontier City.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/quick-draw",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "7295beaf437f9aa5c2639043bdb9906668b1aa6198e0e8db8456aceaf3b18305",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Quick Draw photo shows an empty round navy-blue mine-style dark-ride car with green woodgrain side panel, silver trim/broad bumper, black bench, tall silver shared grab/lap rail and mounted yellow electronic game shooter beside a dark score panel. Actual floor guide track curves into painted western/cactus doors under a rustic timber station roof; ordinary attendant at the booth stays context. Preserve the observed empty car/loading area, no invented hidden scenes or realistic firearm use."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-144744193734947-thumbnail.jpg",
+      "thumbnailSHA256": "4a54a924637058e991989cfd35de664b999704c1be7cc499feabbcec373f4060",
+      "thumbnailBytes": 22611,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-144744193734947-detail.jpg",
+      "detailSHA256": "dbec1a3c33382be53c7b699194a55b249d0524b158ef678fcf674f47e174f99b",
+      "detailBytes": 169578,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-144744193734947",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Quick Draw at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Quick Draw photo shows an empty round navy-blue mine-style dark-ride car with green woodgrain side panel, silver trim/broad bumper, black bench, tall silver shared grab/lap rail and mounted yellow electronic game shooter beside a dark score panel. Actual floor guide track curves into painted western/cactus doors under a rustic timber station roof; ordinary attendant at the booth stays context. Preserve the observed empty car/loading area, no invented hidden scenes or realistic firearm use. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "73531337ece4181f159503b2452140a26a033cff90d8150d436eb8dc0682d401",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 151990249311092,
+      "rideName": "Tornado",
+      "alt": "Illustrated Tornado at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:48:10.168124+00:00",
+      "originalSHA256": "e80a4fcc9a37faa46e3c9eb1053d6a348430f407f47672fabd00d3749841113d",
+      "review": "Accepted: Actual generated pixels preserve Tornado's rounded blue/red Tilt-A-Whirl tub, black inner canopy, silver restraint, ordinary clothed guests and visible steel deck/beams beneath the tree setting.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc51e6d77f650bc85a3563d1cd72359ca5077548f-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Two girls enjoying the Tornado spinning ride at Frontier City.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/tornado",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "05ef79586bf48922d52fc5502c92458a4ca0ef2dc0e1b8c0238b718d1fd8490b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Frontier Tornado photograph shows blue domed Tilt-A-Whirl cars with red midsections, blue low footwell/floor and silver shared safety rail, carrying ordinary clothed guests. Preserve this source-specific blue/red spinning car configuration over the undulating steel chequerplate deck with red/blue connected beams and blue perimeter rails under trees. This is a flat ride, not a waterslide funnel despite the same name elsewhere."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-151990249311092-thumbnail.jpg",
+      "thumbnailSHA256": "2c18bfb72a974fb7f8537570842e651268fb1c7f121ee47350fdf9cee1464b18",
+      "thumbnailBytes": 27959,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-151990249311092-detail.jpg",
+      "detailSHA256": "407be96376f9c32a89d5b304d7570618b1d41b6776a42ef4103dbdfb2ccfb906",
+      "detailBytes": 217245,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-151990249311092",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Tornado at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Frontier Tornado photograph shows blue domed Tilt-A-Whirl cars with red midsections, blue low footwell/floor and silver shared safety rail, carrying ordinary clothed guests. Preserve this source-specific blue/red spinning car configuration over the undulating steel chequerplate deck with red/blue connected beams and blue perimeter rails under trees. This is a flat ride, not a waterslide funnel despite the same name elsewhere. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "6feffa088f9299bfc254c5a6c7559726ab43f242558927795950a399b95428ca",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 174872909250161,
+      "rideName": "Frankie's Mine Train",
+      "alt": "Illustrated Frankie's Mine Train at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:46:24.482759+00:00",
+      "originalSHA256": "194c21aa93a8b7882bd45b5d0ba3854acfb094ea16c1ca0f02303719a2edcbbf",
+      "review": "Accepted: Actual generated pixels preserve Frankie's Mine Train's orange woodgrain cars, silver rivets/diagonal braces, red seating, ordinary clothed children, black bogies and source-supported brown rails.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fac66851e3cc2c2566052795bf52a7d47a38b0ff1-5834x3889.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Frontier City's Frankie's Mine Train in operation, with a kid in the front car raising his hands",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/frankies-mine-train",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d51afc9bebc1dd10c4d9ac150fcfc9a3323a914741f4f16c4bdb980bd5c39daa",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Frankie's Mine Train photo shows orange/brown woodgrain mine-cart coaster cars with thick silver riveted corner frames and diagonal braces, red interiors, visible black/silver bogies and actual steel wheels wrapping brown tubular rails. Ordinary clothed guests sit behind source silver hand/lap bars. Preserve only this low banked track section beside timber/metal fences and trees, not a real mine or invented hidden full route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-174872909250161-thumbnail.jpg",
+      "thumbnailSHA256": "f29e173c69fc7e6589555e2af55d1d20c755120068f4505fc11656296e2005df",
+      "thumbnailBytes": 24884,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-174872909250161-detail.jpg",
+      "detailSHA256": "9b63ecfddfc617bfc0330942d044d51427d804d1579e67e20ff7a100d03b810d",
+      "detailBytes": 151063,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-174872909250161",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Frankie's Mine Train at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Frankie's Mine Train photo shows orange/brown woodgrain mine-cart coaster cars with thick silver riveted corner frames and diagonal braces, red interiors, visible black/silver bogies and actual steel wheels wrapping brown tubular rails. Ordinary clothed guests sit behind source silver hand/lap bars. Preserve only this low banked track section beside timber/metal fences and trees, not a real mine or invented hidden full route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "fc20f09c88d5f0ed790546256dc4fb057ab93bf9b5437ff9605405e1e55e3af8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 179236481740163,
+      "rideName": "Bubba's Honey Swings",
+      "alt": "Illustrated Bubba's Honey Swings at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:45:32.630082+00:00",
+      "originalSHA256": "5496aa21a633419c6ba83db7dbf2203a849cf8c377432e0c6f46be859122c9d6",
+      "review": "Accepted: Actual generated pixels preserve Bubba's Honey Swings' yellow/orange honeycomb canopy and central mast, hanging chains and low chairs behind the orange fence, with practical bulbs and no unsupported passenger/restraint close-up.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9f491ba2d3822bb9238a2726b85b28a153fc413a-1440x800.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Entry sign for Bubba's Honey Swings at Frontier City, depicting a bear holding a playful 'Got Honey' message.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/bubbas-honey-swings",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "4cc8ee6e7aebfafc8a3272c0b08f25624ccac54012942fc563d0c40e93a64e1f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Bubba's Honey Swings photograph shows a small yellow/orange honeycomb-patterned cylindrical swing mast and scalloped canopy, white bulb rim and thin hanging chains, behind an orange picket fence on a round timber deck among trees. Source empty seats are low and partly fence-obscured. Compose the actual visible canopy/mast/chains and leave the large foreground text/bear sign outside the portrait; do not invent hidden chair restraints, riders or a giant tower."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-179236481740163-thumbnail.jpg",
+      "thumbnailSHA256": "5231fefd02fac8a3c5e471270c1b64eeaeb9732824aea53ffdaad3b36c7d4d9a",
+      "thumbnailBytes": 29387,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-179236481740163-detail.jpg",
+      "detailSHA256": "f34808c23cc764d09be2c6fa5f2f1267a35be7ce916c357f470b5736121c640e",
+      "detailBytes": 240070,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-179236481740163",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Bubba's Honey Swings at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Bubba's Honey Swings photograph shows a small yellow/orange honeycomb-patterned cylindrical swing mast and scalloped canopy, white bulb rim and thin hanging chains, behind an orange picket fence on a round timber deck among trees. Source empty seats are low and partly fence-obscured. Compose the actual visible canopy/mast/chains and leave the large foreground text/bear sign outside the portrait; do not invent hidden chair restraints, riders or a giant tower. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "cccbc7b499540cdbf55a776303311546713ca0bf0af8ec2c5176f3a467a8db00",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 192473280875328,
+      "rideName": "Winged Warrior",
+      "alt": "Illustrated Winged Warrior at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:47:20.159474+00:00",
+      "originalSHA256": "425cbd22b17a253c0d32095841761b00e1ccb0083c204db235bc0f733f24d5cc",
+      "review": "Accepted: Actual generated pixels preserve Winged Warrior's pale-blue box car, bird-painted steering/rudder panel, silver bolts and suspension cables, and ordinary clothed guest holding the actual control.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F95e9425a5ac94da212e592287fcd3b2772d8fc8f-6000x4000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Girl enjoying her sky ride on the Winged Warrior at Frontier City, smiling as she soars through the air.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/winged-warrior",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "173e56e5a061cc17cb7362442a84c33cfd3e19bd73d1d7abd64d39a46597bdb1",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Winged Warrior photograph shows pale-blue flying-scooter box gondolas with blue/black painted stylized bird rudder panels, worn cream undersides, actual silver bolts/pivots, overhead hanger and support cables. Ordinary clothed guests hold the actual small control handle; other yellow/blue decorated gondolas and timber fence/trees remain context. Preserve documented cable-hung physical vehicles, not free flight or unrelated hornet paint, and do not invent a hidden full mechanism."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-192473280875328-thumbnail.jpg",
+      "thumbnailSHA256": "e012c352d6473bdd621f1d4f212f5bb64e053c66015b647acdc895e4b028e595",
+      "thumbnailBytes": 24788,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-192473280875328-detail.jpg",
+      "detailSHA256": "908235b38ea0c61771d353655c65bf92083a50a619c39130d32e2bf72fe72528",
+      "detailBytes": 128758,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-192473280875328",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Winged Warrior at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Winged Warrior photograph shows pale-blue flying-scooter box gondolas with blue/black painted stylized bird rudder panels, worn cream undersides, actual silver bolts/pivots, overhead hanger and support cables. Ordinary clothed guests hold the actual small control handle; other yellow/blue decorated gondolas and timber fence/trees remain context. Preserve documented cable-hung physical vehicles, not free flight or unrelated hornet paint, and do not invent a hidden full mechanism. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "34708eee31e022477c3bcc45e2b7762630c14900f0ba86666f2145442d6c30be",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 196357139050813,
+      "rideName": "Wildcat",
+      "alt": "Illustrated Wildcat at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:48:58.188750+00:00",
+      "originalSHA256": "e0f247faa5380222b20e656a677e26f7a6b0a5382c01e7d1a16679edafc6ec2b",
+      "review": "Accepted: Actual generated pixels preserve Wildcat's white timber lattice, source-visible foreground hill, blue/red train, dense forest and station-roof context without inventing a whole course or close hidden restraints.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4443f8d57ed1b909f72e4747bff21dc85eda7965-5964x3976.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Wildcat wooden roller coaster at Frontier City coming down from a summit.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/wildcat",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "cbf66b3c5244f2112635ed314e00c7ee780b6688a33a9f9033b72b30ee43c14c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Wildcat aerial photograph shows a white-painted timber-lattice wooden coaster, reddish/brown running rails with pale catwalk handrails, connected out-and-back hills among dense trees and a small blue/red train with ordinary clothed guests descending the foreground hill. Preserve only this documented visible hill and track section, station roof at right and tree setting; no invented whole course, closer car restraints or substitution with another Wildcat."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-196357139050813-thumbnail.jpg",
+      "thumbnailSHA256": "5651d8065980fa3b543748ecc401c62cd1db82a862df3d3f7ca772a613289310",
+      "thumbnailBytes": 25257,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-196357139050813-detail.jpg",
+      "detailSHA256": "36e78645249e81c4309dfb7936ff2778ebccf176c21a953a4d3623f823639b5a",
+      "detailBytes": 226397,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-196357139050813",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Wildcat at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Wildcat aerial photograph shows a white-painted timber-lattice wooden coaster, reddish/brown running rails with pale catwalk handrails, connected out-and-back hills among dense trees and a small blue/red train with ordinary clothed guests descending the foreground hill. Preserve only this documented visible hill and track section, station roof at right and tree setting; no invented whole course, closer car restraints or substitution with another Wildcat. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "eb68a37daa652d09704a5866705ece23389e558cf936192e6076a1530f79d6f3",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 214224493980320,
+      "rideName": "Tin Lizzy's",
+      "alt": "Illustrated Tin Lizzy's at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:51:36.887560+00:00",
+      "originalSHA256": "33591f2e3103acb3ac1df7d41c72ca279f58c438ff4764fa3e1819b5f550e186",
+      "review": "Accepted: Actual generated pixels preserve Tin Lizzy's yellow antique-style guided car, black canopy, twin lamps/radiator, black bumper/spoked wheels and central bridge guide beam, with ordinary clothed riders and timber railings.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc0cf46308ecd61757ea72ad89ce610ebb3f4bbf4-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Two women enjoying Tin Lizzy's at Frontier City, an amusement park car ride.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/tin-lizzys",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "940609a54ac1a7917baba5d53dabbbadd0f2f7a9ad8b7110324a588512dff22b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Frontier Tin Lizzy's photo shows a yellow antique-style guided car with black canopy on thin posts, two front round lamps beside the black radiator, black front bumper/spoked wheels and actual steering wheel. Ordinary clothed guests sit in its two rows; a central guide beam runs under the car on the timber bridge, with weathered timber railings, green gabled building and trees behind. Preserve the actual source-specific canopied car, not Darien's open cars or free road driving."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-214224493980320-thumbnail.jpg",
+      "thumbnailSHA256": "8f5b8e48c8239c0050bed1aef049357f3ccfd9e73784c8460cb22eeb06cc6d9e",
+      "thumbnailBytes": 26244,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-214224493980320-detail.jpg",
+      "detailSHA256": "230f773b6f6caed6d5b97daa049c06f5fcb09b16a57e19ef38872fc04f2351ed",
+      "detailBytes": 176203,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-214224493980320",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Tin Lizzy's at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Frontier Tin Lizzy's photo shows a yellow antique-style guided car with black canopy on thin posts, two front round lamps beside the black radiator, black front bumper/spoked wheels and actual steering wheel. Ordinary clothed guests sit in its two rows; a central guide beam runs under the car on the timber bridge, with weathered timber railings, green gabled building and trees behind. Preserve the actual source-specific canopied car, not Darien's open cars or free road driving. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "c4156753b32f4b158711c9decb2dee1b11fa1d36bfea21a0aceffee5906efa2e",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 248838922276096,
+      "rideName": "Casino",
+      "alt": "Illustrated Casino at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:50:23.554371+00:00",
+      "originalSHA256": "ef30a67c481e1a958fb93f7d35c68a19342a26934af252d9d593f18e5bf9371e",
+      "review": "Accepted: Actual generated pixels preserve Casino's empty black bench tubs with red/black card-suit panels and silver rails, blue/cream bulb-lined hub cone and silver ornament, level loading deck and western facade.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2b4efa069a011ef619a8842ca7889c372004be22-1440x800.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The playing card seats and roulette wheel-themed center of Casino, a spinning ride at Frontier City.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/casino",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "64231325ab79efe59740c6e6060cbbf6a5333c7e11c052ead0705f2cb61ebd10",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Casino ride photo shows an empty circular flat-ride platform with red/black playing-card-suit panels on two-person black bench tubs and silver tubular rails/closed shared bars. Blue/cream sloped central panels lined with bulbs support a silver hub ornament; pale perimeter rails and timber western facade remain context. Preserve this documented empty level loading state and actual card-suit ride hardware, not a real casino or invented riders/tilted operation."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-248838922276096-thumbnail.jpg",
+      "thumbnailSHA256": "968e0aabd2205caad4fd5c0bd1b5d0d1fd938cbf2ba5b2d67718a8bb351627f1",
+      "thumbnailBytes": 25012,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-248838922276096-detail.jpg",
+      "detailSHA256": "b1ab3438cf73886f4826ad0f202a2c16365242f62d3f2bc365e40e9c6ad75b98",
+      "detailBytes": 220336,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-248838922276096",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Casino at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Casino ride photo shows an empty circular flat-ride platform with red/black playing-card-suit panels on two-person black bench tubs and silver tubular rails/closed shared bars. Blue/cream sloped central panels lined with bulbs support a silver hub ornament; pale perimeter rails and timber western facade remain context. Preserve this documented empty level loading state and actual card-suit ride hardware, not a real casino or invented riders/tilted operation. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "f065da4477b1514b3a7a87a16713afcaf026a1146470ce2582b584913fd201f1",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 256628493187459,
+      "rideName": "Rodeo Round Up",
+      "alt": "Illustrated Rodeo Round Up at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:49:52.521754+00:00",
+      "originalSHA256": "87f05ff1fe6e61736b3a55df9762f6c4656c93efc9eb0a79124602acc8313a1f",
+      "review": "Accepted: Actual generated pixels preserve Rodeo Round Up's orange/white cowhide bumper cars, chrome trim, black rubber bumper bands and padded benches, pickup poles contacting the roof and ordinary clothed riders in the timber arena.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F55f55c5b66a198db47228ca48cfea1876ba63f8e-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Two boys and a man enjoying Frontier City's Rodeo Round Up's bumper cars smiling as they bump into each other.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/rodeo-round-up",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "56a7fd4933e294076c5efba2da10f9fb4c40c553cd0256043ec69ed5c838614c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Rodeo Round Up photo shows rounded orange/white cowhide-patterned bumper cars with chrome horizontal trim, round orange lamps/small yellow plates, black broad rubber bumpers, black padded benches/steering wheels and tall pickup poles contacting the overhead grid. Ordinary clothed adult and children steer in the timber-sided arena with plank roof and worn metal floor. Preserve this actual bumper-car styling and physical power poles, not modern road vehicles."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-256628493187459-thumbnail.jpg",
+      "thumbnailSHA256": "4dda330244f89b2d446eae6e0aa55c94cd84a6fd4dfed1a720f696f64a595bb3",
+      "thumbnailBytes": 26048,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-256628493187459-detail.jpg",
+      "detailSHA256": "ebf2c66710d57dca8bf3e736402e98116858c5b2dfb7c5c75b595fc488868e73",
+      "detailBytes": 157113,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-256628493187459",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Rodeo Round Up at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Rodeo Round Up photo shows rounded orange/white cowhide-patterned bumper cars with chrome horizontal trim, round orange lamps/small yellow plates, black broad rubber bumpers, black padded benches/steering wheels and tall pickup poles contacting the overhead grid. Ordinary clothed adult and children steer in the timber-sided arena with plank roof and worn metal floor. Preserve this actual bumper-car styling and physical power poles, not modern road vehicles. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "68fadc092ed1ce604b21bbd7697cfb959320561da89c5645b16d44441637dada",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 259894204461367,
+      "rideName": "Steel Lasso",
+      "alt": "Illustrated Steel Lasso at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:51:05.119048+00:00",
+      "originalSHA256": "dedf64a4cf85833a7115837ea6ea0995a72eed0da1d10e9a05154d62fb0dc24c",
+      "review": "Accepted: Actual generated pixels preserve Steel Lasso's orange-backed/navy suspended seats and curved orange lap bars/belts, hanging legs, dark overhead chassis with gray arms/actuator rods and source-visible orange track/green supports.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc9cbf64de95c5289f3a5fcac4e352c5fb9294b8a-6000x4000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Young girl and guy in the front car of Steel Lasso, a suspended family coaster at Frontier City, going around a bend.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/steel-lasso",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "0138a661516cf304e461b3a378bb2fd100bca77ec0e1b90b22b9baaab12ba99e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Steel Lasso photo shows orange-backed/navy suspended coaster seats with curved orange lap-bar handles and source-visible belts, ordinary clothed guests' legs hanging below, dark overhead blue bogie chassis connected by gray hanging arms/pivots and silver actuator rods, with orange running track and green supports behind. Preserve the source-supported suspended train configuration and actual banked turn, not over-shoulder bars, upright coaster cars or invented full routing."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-259894204461367-thumbnail.jpg",
+      "thumbnailSHA256": "fa64ffe90c5e66395b566305f31480fd9720eb58807b3211b420773398f25f6e",
+      "thumbnailBytes": 25728,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-259894204461367-detail.jpg",
+      "detailSHA256": "be670b4c93e5c7a42d33f786aa78d4a5f662df1e63ef804727de7a09cccec393",
+      "detailBytes": 141720,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-259894204461367",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Steel Lasso at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Steel Lasso photo shows orange-backed/navy suspended coaster seats with curved orange lap-bar handles and source-visible belts, ordinary clothed guests' legs hanging below, dark overhead blue bogie chassis connected by gray hanging arms/pivots and silver actuator rods, with orange running track and green supports behind. Preserve the source-supported suspended train configuration and actual banked turn, not over-shoulder bars, upright coaster cars or invented full routing. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "efa436853ab76503c0c7a82bdd5cbaf0a2b664aa3638dc85c8d3d1b90927e0e0",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 263298768959312,
+      "rideName": "Gunslinger",
+      "alt": "Illustrated Gunslinger at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:51:58.695890+00:00",
+      "originalSHA256": "1d9d2c4b18c9324ebfe471b3e47b8a4fafbd4630d7b9d456aeac28a5be993464",
+      "review": "Accepted: Actual generated pixels preserve Gunslinger's empty orange back-to-back seats on blue pivots, raised black shoulder restraints, silver side rails and white/yellow bulb-lined radial beams beneath the low horizontal blue main arm and western facade.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F6ce98c4e0b413f31201f8c81cc22abcd9001a1f9-6927x4618.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Frontier City's Gunslinger ride with orange seats and a white, gold, and blue arm.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/gunslinger",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "840254651c5e2d1ff23a3c62262ebf86bcbc2aa1451914d9560d23bc3d517a74",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected own-page Gunslinger gallery photo, replacing the sign-focused hero before generation, shows empty orange molded seats in back-to-back pairs on blue pivot/gimbal brackets, black padded over-shoulder restraints raised and silver side grab rails. White radial beams with rows of yellow bulbs connect to a blue central hub and blue/white main support arm in its documented low horizontal loading position. Preserve visible actual bolts, mechanical connections, pale/red deck, timber perimeter fence and western Hotel Bristol facade, not invented riders, hidden tower or a different raised configuration."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-263298768959312-thumbnail.jpg",
+      "thumbnailSHA256": "23ed65d0840d6b8a8b3b9467e81935de3eac9eeb672a46d8c4eced9e0cc02dc0",
+      "thumbnailBytes": 22061,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-263298768959312-detail.jpg",
+      "detailSHA256": "6e09d53bc94480d6b44be01cf556de5723e0090ceb91b7ed1e06cf12c8759864",
+      "detailBytes": 157114,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-263298768959312",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Gunslinger at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: The inspected own-page Gunslinger gallery photo, replacing the sign-focused hero before generation, shows empty orange molded seats in back-to-back pairs on blue pivot/gimbal brackets, black padded over-shoulder restraints raised and silver side grab rails. White radial beams with rows of yellow bulbs connect to a blue central hub and blue/white main support arm in its documented low horizontal loading position. Preserve visible actual bolts, mechanical connections, pale/red deck, timber perimeter fence and western Hotel Bristol facade, not invented riders, hidden tower or a different raised configuration. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "78da752a404b09f856252fd198c844f0173cbec971122f0827f699daf94197d0",
+      "generationSteps": []
+    },
+    {
+      "parkId": 282,
+      "rideId": 272963769399020,
+      "rideName": "Renegade Rapids",
+      "alt": "Illustrated Renegade Rapids at Frontier City",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:52:46.744625+00:00",
+      "originalSHA256": "9cb9f0f2b836f9dfba570db83c85776a500e14a583928d3e66aabdf936a9e498",
+      "review": "Accepted: Actual generated pixels preserve Renegade Rapids' orange circular eight-seat raft, thick black collar, tall black slotted backrests and actual belted inward seating, in the observed narrow green channel with concrete walls and wooded banks.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F854cb4a639786ff3e2e62434f311678b9b1e36bd-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Ariel view of riders in circular ride vehicles enjoying Frontier City's Renegade Rapids.",
+          "sourceURL": "https://www.sixflags.com/frontiercity/attractions/renegade-rapids",
+          "credit": "Six Flags / Frontier City (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2acc5c468552a31bfdceaa97756de0a99be030241c488e3fc18cf7815bc09221",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Renegade Rapids photo shows an orange rigid circular eight-seat raft with black thick bumper collar, individual tall black slotted backrests, silver perimeter rail and ordinary clothed guests seated inward with actual lap belts. The raft floats through a narrow churning green channel with low concrete walls and shaded rocks/tree banks. Preserve this observed raft/channel section, not a generic different color/seating raft or invented whole river route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "282-272963769399020-thumbnail.jpg",
+      "thumbnailSHA256": "b28f36a2dc663c4f9e9a99f40f9a14b236950b80bad4f62ff2dbf13122b5303d",
+      "thumbnailBytes": 29900,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "282-272963769399020-detail.jpg",
+      "detailSHA256": "54fd24886904dbace4cc3eea7cace4ea9c391fcc114699ba2639588de8b3248b",
+      "detailBytes": 236117,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "282-272963769399020",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Renegade Rapids at Six Flags Frontier City. Source- and pixel-reviewed facts and limits: Actual Renegade Rapids photo shows an orange rigid circular eight-seat raft with black thick bumper collar, individual tall black slotted backrests, silver perimeter rail and ordinary clothed guests seated inward with actual lap belts. The raft floats through a narrow churning green channel with low concrete walls and shaded rocks/tree banks. Preserve this observed raft/channel section, not a generic different color/seating raft or invented whole river route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "5ce2915efb768ebcded25d447dd8051ebc9eab20505b48d7c33e33bb80a81d61",
       "generationSteps": []
     },
     {
