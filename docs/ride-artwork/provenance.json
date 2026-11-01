@@ -2680,6 +2680,96 @@
     },
     {
       "parkId": 24,
+      "rideId": 94880706621636,
+      "rideName": "Snuffy's Elephant Romp",
+      "alt": "Illustrated Snuffy's Elephant Romp at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:03:07.587862+00:00",
+      "originalSHA256": "ad76177a3d0d543fee02889f023cd77c9578bb5346ed77dc4b5875bc9a2f4f87",
+      "review": "Accepted: Actually viewed the original on-site photo report/caption, selected photos and full generated portrait. Molded blue/gray elephant vehicles, documented colored saddles/ears, real teal lift arms/pedestal and leaf decoration, ordinary clothed source-style riders and source fence/landscape remain recognizable. No invented live elephant, Snuffy figure or different park. Historical 2010 source does not establish current paint or service.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://themeparkreview.com/forum/uploads/monthly_2010_03/21.jpg.c58808eb2db137ad9e116fc24ce583d2.jpg",
+          "sourceURL": "https://themeparkreview.com/forum/topic/29795-busch-gardens-tampa-bay-bgt-discussion-thread/page/30/",
+          "credit": "live2tell75 / Theme Park Review, original March29,2010 photo report",
+          "license": "Photographer copyright retained; photographic reference only",
+          "licenseURL": "https://themeparkreview.com/forum/topic/29795-busch-gardens-tampa-bay-bgt-discussion-thread/page/30/",
+          "sha256": "8b0fac1d9a942f72a62a522a7a8defa7c9d5d73c6df3833dca34f96f7fb02990",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually read original March29,2010 on-site report and Snuffy’s Elephant Romp photo captions plus current official ride description; inspected sign and actual ride photo. Selected real ride photo shows a molded blue elephant-shaped junior vehicle with gray belly, colorful saddle/ears, ordinary clothed source family riders behind actual seat restraints, attached teal radial lift arms and a green central pedestal with flat leaf/butterfly decoration. Brown safety fence, real trees and mulch surround the ride. Preserve this documented connected elephant vehicle/arm section and real molded-plastic/steel surfaces. Not a living flying elephant, an invented Snuffy figure or a different park’s Dumbo ride; no hidden complete spinning mechanism or current-status claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-94880706621636-thumbnail.jpg",
+      "thumbnailSHA256": "a4eea100d5641d3f265cdf09e29d0c17885dcb0b85b1d9f790c846de0be1509f",
+      "thumbnailBytes": 29965,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-94880706621636-detail.jpg",
+      "detailSHA256": "1784e2f043ba1577b7210c5ba27c6e849308b5e8a12f57197251da54917d3385",
+      "detailBytes": 219148,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-94880706621636",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Snuffy's Elephant Romp at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Actually read original March29,2010 on-site report and Snuffy’s Elephant Romp photo captions plus current official ride description; inspected sign and actual ride photo. Selected real ride photo shows a molded blue elephant-shaped junior vehicle with gray belly, colorful saddle/ears, ordinary clothed source family riders behind actual seat restraints, attached teal radial lift arms and a green central pedestal with flat leaf/butterfly decoration. Brown safety fence, real trees and mulch surround the ride. Preserve this documented connected elephant vehicle/arm section and real molded-plastic/steel surfaces. Not a living flying elephant, an invented Snuffy figure or a different park’s Dumbo ride; no hidden complete spinning mechanism or current-status claim. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "390bb9702df3fbca15279cd4a813d90ce4178d6631b0ddb7afca3a3ee22a8173",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 104372984757255,
+      "rideName": "Elmo's Safari Go-Round",
+      "alt": "Illustrated Elmo's Safari Go-Round at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:02:42.655527+00:00",
+      "originalSHA256": "d12edb0bd2395c6d196a221c0901bcb463345c18f43856826cccffb9d8a79b62",
+      "review": "Accepted: Actually viewed the original on-site photo report/caption, selected photos and full generated portrait. Source molded black/white zebra mounts, geometric paint/saddles, real poles, dark plank floor and green canopy bulbs remain recognizable with realistic lacquer/wood/metal surfaces; no living animals or invented performer. Historical 2010 source does not establish current paint or service.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://themeparkreview.com/forum/uploads/monthly_2010_03/18.jpg.9eec8cfdc7d7ead704e7fc75dab6767f.jpg",
+          "sourceURL": "https://themeparkreview.com/forum/topic/29795-busch-gardens-tampa-bay-bgt-discussion-thread/page/30/",
+          "credit": "live2tell75 / Theme Park Review, original March29,2010 photo report",
+          "license": "Photographer copyright retained; photographic reference only",
+          "licenseURL": "https://themeparkreview.com/forum/topic/29795-busch-gardens-tampa-bay-bgt-discussion-thread/page/30/",
+          "sha256": "8f70cb35e223218d883c415a7652b9bffb04d3b5b07362563f67196589ff1d2e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually read original March29,2010 on-site report, exact Elmo’s Safari-Go Round captions and current official description. Both authentic photos inspected. Selected close-up shows the real manufactured black/white cartoon zebra carousel mount with large round eyes, actual geometric painted body, colored saddle, vertical brass-colored pole, dark plank floor and green canopy with warm rim bulbs; a second zebra and orange patterned mount are behind. Preserve only this documented molded zebra/pole/canopy section, realistic lacquer/metal/wood materials and source ornament. Not a live animal, a different park’s carousel or invented character performer. No lettering. Historical photo, not proof of current paint or present operation."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-104372984757255-thumbnail.jpg",
+      "thumbnailSHA256": "56d982fdbb6c5313639c0e8274d927f5681de71990d4b0bb15bfec31c3cf632c",
+      "thumbnailBytes": 29924,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-104372984757255-detail.jpg",
+      "detailSHA256": "36fdd71c8daeb91c506562f3bfc60fe7035490d3627b73ed772bb08696248038",
+      "detailBytes": 209351,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-104372984757255",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Elmo's Safari Go-Round at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Actually read original March29,2010 on-site report, exact Elmo’s Safari-Go Round captions and current official description. Both authentic photos inspected. Selected close-up shows the real manufactured black/white cartoon zebra carousel mount with large round eyes, actual geometric painted body, colored saddle, vertical brass-colored pole, dark plank floor and green canopy with warm rim bulbs; a second zebra and orange patterned mount are behind. Preserve only this documented molded zebra/pole/canopy section, realistic lacquer/metal/wood materials and source ornament. Not a live animal, a different park’s carousel or invented character performer. No lettering. Historical photo, not proof of current paint or present operation. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "f4902e705956c58a9bf9c15a8ac4740c17ae5a4ee84d28aa84a428a55236d5fa",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
       "rideId": 107411584880664,
       "rideName": "Zoe-Patra's Hippos of the Nile",
       "alt": "Illustrated Zoe-Patra's Hippos of the Nile at Busch Gardens Tampa Bay",
@@ -2796,6 +2886,51 @@
     },
     {
       "parkId": 24,
+      "rideId": 112842942548208,
+      "rideName": "Rosita's Djembe Fly Away",
+      "alt": "Illustrated Rosita's Djembe Fly Away at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:01:29.622521+00:00",
+      "originalSHA256": "e4a0e8859cf858221ab48dcabecba98b7794fed57b538ae1b11dd64a7c9d0f3c",
+      "review": "Accepted: Actually viewed the original on-site photo report/caption, selected photos and full generated portrait. Actual orange drum-shaped column/canopy, black lacing, connected chains and small metal chairs remain recognizable with real fence/trees and restrained evening light. No invented tower or character performer. Historical 2010 source does not establish current paint or service.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://themeparkreview.com/forum/uploads/monthly_2010_03/15.jpg.d9a850b07d847a75eb5908b716d69a2e.jpg",
+          "sourceURL": "https://themeparkreview.com/forum/topic/29795-busch-gardens-tampa-bay-bgt-discussion-thread/page/30/",
+          "credit": "live2tell75 / Theme Park Review, original March29,2010 photo report",
+          "license": "Photographer copyright retained; photographic reference only",
+          "licenseURL": "https://themeparkreview.com/forum/topic/29795-busch-gardens-tampa-bay-bgt-discussion-thread/page/30/",
+          "sha256": "09516c1b224b3798fd871fde389b63dfefaa14da6cd8de934d26bb0f1ea4d825",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually read the original March29,2010 on-site Theme Park Review report/captions and current official Safari of Fun description, and inspected both authentic photos. Rosita’s Djembe Fly-Away is a small chair swing with a red/orange drum-shaped central column and wide orange inverted-drum canopy, black crisscross lacing/paint, warm rim bulbs and real chains attaching the small silver/metal chairs. Wooden/mesh safety fence, trees and source shade canopy surround it. Depict the documented swing hardware/empty chair section with realistic painted metal and connected chains. Do not invent a full-size thrill swing tower, a live character or unseen long flight. Omit sign/queue lettering. Historical source, no current paint or status claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-112842942548208-thumbnail.jpg",
+      "thumbnailSHA256": "3f54ff49de9d1cab29159b97182386021fed22abc916a40aa3ede46d451f97b8",
+      "thumbnailBytes": 27095,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-112842942548208-detail.jpg",
+      "detailSHA256": "4f3b8da9160200c19267cbab08aa9bd20a5894249abf4c1ce5f6d69783e9073c",
+      "detailBytes": 230342,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-112842942548208",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Rosita's Djembe Fly Away at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Actually read the original March29,2010 on-site Theme Park Review report/captions and current official Safari of Fun description, and inspected both authentic photos. Rosita’s Djembe Fly-Away is a small chair swing with a red/orange drum-shaped central column and wide orange inverted-drum canopy, black crisscross lacing/paint, warm rim bulbs and real chains attaching the small silver/metal chairs. Wooden/mesh safety fence, trees and source shade canopy surround it. Depict the documented swing hardware/empty chair section with realistic painted metal and connected chains. Do not invent a full-size thrill swing tower, a live character or unseen long flight. Omit sign/queue lettering. Historical source, no current paint or status claim. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "c49e608c7acb2edf35c89e121eadb0ce365016f5d0f520bfb0cda3f0e07d9609",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
       "rideId": 124083574457229,
       "rideName": "Gwazi Gliders",
       "alt": "Illustrated Gwazi Gliders at Busch Gardens Tampa Bay",
@@ -2839,6 +2974,51 @@
       "key": "24-124083574457229",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Gwazi Gliders at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Inspected genuine official wide banner shows Gwazi Gliders’ manufactured magenta/pink junior aerial vehicles with orange/yellow curved wing/canopy parts, actual black central support, connected radial pink arms and hanging/vertical rods, purple/pink picket fence and green trees. Ordinary clothed source children sit behind actual bars. Compose this documented vehicle/arm section with realistic molded plastic/steel, not a flying aircraft, full hidden spinning layout or unrelated ride. Ignore cropped foreground sign and background arcade text. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
       "promptSHA256": "8f4272573c237b00140b402ce9abf3a43aab392cdc539ac62b3e36b2153f3961",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 132585994582519,
+      "rideName": "The Count's Zambezi Rally",
+      "alt": "Illustrated The Count's Zambezi Rally at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:02:12.591113+00:00",
+      "originalSHA256": "d1f2d764f23a01972f2911606a55212b4611bcac6714b18f3b6bf5bb63d1b32d",
+      "review": "Accepted: Actually viewed the original on-site photo report/caption, selected photos and full generated portrait. Empty purple/green race car, actual steering/seats/wheels/black bumper, connected guide rail and red play bridge/flat elephant decoration match the authentic photographed section. Realistic molded/plastic/rubber/pavement materials, no invented Count figure or hidden course. Historical 2010 source does not establish current paint or service.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://themeparkreview.com/forum/uploads/monthly_2010_03/13.jpg.0d9ca24e769f6d0f8d71c1cdc2330194.jpg",
+          "sourceURL": "https://themeparkreview.com/forum/topic/29795-busch-gardens-tampa-bay-bgt-discussion-thread/page/30/",
+          "credit": "live2tell75 / Theme Park Review, original March29,2010 photo report",
+          "license": "Photographer copyright retained; photographic reference only",
+          "licenseURL": "https://themeparkreview.com/forum/topic/29795-busch-gardens-tampa-bay-bgt-discussion-thread/page/30/",
+          "sha256": "4467c938d58f5bb5f9b0877b245e157200b7b30c7b1a3603d8cb3c17983f6cfd",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually read the original March29,2010 on-site Theme Park Review photo report by live2tell75, its caption for this exact ride, and the current official Safari of Fun ride description. Inspected photo shows empty purple/green low race cars with actual green molded seats, visible steering wheel, green wheels, black front bumper and connected center guide rail in a paved curve below the red/brown themed play bridge. Source blue flat elephant decoration, wood fence and trees remain background. Compose the documented front empty car and guide rail with realistic molded plastic, tires and pavement. No invented Count character, living animal, extra seats or hidden full track. Historical 2010 photography, not proof of current paint or operation."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-132585994582519-thumbnail.jpg",
+      "thumbnailSHA256": "4d3f1c615a43356ce315ec17bb91b47fe59d3d3806f8576c1a0e4611c835850e",
+      "thumbnailBytes": 30197,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-132585994582519-detail.jpg",
+      "detailSHA256": "4b1f20ea441e73df0e48e7f2a975389f6f26a277b51be03a5ed1a402015bac3e",
+      "detailBytes": 221624,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-132585994582519",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict The Count's Zambezi Rally at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Actually read the original March29,2010 on-site Theme Park Review photo report by live2tell75, its caption for this exact ride, and the current official Safari of Fun ride description. Inspected photo shows empty purple/green low race cars with actual green molded seats, visible steering wheel, green wheels, black front bumper and connected center guide rail in a paved curve below the red/brown themed play bridge. Source blue flat elephant decoration, wood fence and trees remain background. Compose the documented front empty car and guide rail with realistic molded plastic, tires and pavement. No invented Count character, living animal, extra seats or hidden full track. Historical 2010 photography, not proof of current paint or operation. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "e112b6980349472324f31e40f533346e0fcc5f28f8a157697a5018d2ebd8b1df",
       "generationSteps": []
     },
     {
@@ -40238,6 +40418,639 @@
       "generationSteps": []
     },
     {
+      "parkId": 67,
+      "rideId": 16596,
+      "rideName": "Punga Racers™",
+      "alt": "Illustrated Punga Racers™ at Volcano Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:31:58.394380+00:00",
+      "originalSHA256": "7ea81b9ed66edc89793b81e3e1a74f8fb4429d9ee50a7150280021f1831cc8b3",
+      "review": "Accepted: Actually viewed the genuine selected photo and full generated portrait. Actual orange/black/teal/yellow body-slide flumes, purple/dark supports and runout dividers preserved with ordinary source adults; no mats or rafts. Generated representative imagery does not assert current operation or current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/punga-racers?intcmp=uo-blog_guides-and-tips_complete-guide-to-universal-volcano-bay_punga-racers_20210224",
+          "credit": "Universal Orlando Resort, own-attraction page photography",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/punga-racers?intcmp=uo-blog_guides-and-tips_complete-guide-to-universal-volcano-bay_punga-racers_20210224",
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/vb-punga-racers-ride-2-guys-b.jpg",
+          "sourcePageEvidenceKind": "Normalized source windows from the public web tool, not raw HTTP HTML",
+          "sourceEvidenceFile": "volcano-last-five-source-windows-240.json",
+          "sourceEvidenceSHA256": "ec665b9d2ce59e801fecf14a6d586787aa71604474a2d15bc02e2adfa046ce5f",
+          "sha256": "03f80362391ff9ea591576e59b9385477083cf54ec249c569a3fc2298b440b47",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed Universal’s own Punga Racers photograph and read current body describing four BODY-SLIDE lanes, not mat racing. Source shows the real orange, black, teal/green and yellow intertwined enclosed/open flumes on purple/dark supports, actual straight runout lanes with dividers, rock volcano in the documented background, tropical foliage and two source adults in normal swim trunks stepping through the runouts. Preserve this documented runout/flume section and real connected supports, wet fiberglass/water and source riders. No invented mats, rafts, new lanes, full hidden course or different water park. Do not imply current operation during the park maintenance closure."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "67-16596-thumbnail.jpg",
+      "thumbnailSHA256": "6ce2c79c363870f0e5b0a341c5de2eade9a79fdad6747f7d8c20fcd7e874e697",
+      "thumbnailBytes": 27159,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "67-16596-detail.jpg",
+      "detailSHA256": "6b64f5f234f0c94f3ea10e18a6dbdab0bc602e1acbfd63b1034d0ea75e3de7a0",
+      "detailBytes": 212050,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "67-16596",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Punga Racers at Universal Volcano Bay, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed Universal’s own Punga Racers photograph and read current body describing four BODY-SLIDE lanes, not mat racing. Source shows the real orange, black, teal/green and yellow intertwined enclosed/open flumes on purple/dark supports, actual straight runout lanes with dividers, rock volcano in the documented background, tropical foliage and two source adults in normal swim trunks stepping through the runouts. Preserve this documented runout/flume section and real connected supports, wet fiberglass/water and source riders. No invented mats, rafts, new lanes, full hidden course or different water park. Do not imply current operation during the park maintenance closure. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "e31033e83a1927345ad625705124acfa6ebba7b12de3a7e895020e76cc0ccfd3",
+      "generationSteps": []
+    },
+    {
+      "parkId": 67,
+      "rideId": 16598,
+      "rideName": "Kala & Tai Nui Serpentine Body Slides™",
+      "alt": "Illustrated Kala & Tai Nui Serpentine Body Slides™ at Volcano Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:43:51.541413+00:00",
+      "originalSHA256": "ba84204e400b2e7c8d627c67456b0256971979dae7fcf797ab89c921fc45242f",
+      "review": "Accepted: Actually viewed the genuine selected photo and full generated portrait. BLUE real launch capsule, clear curved door/metal handle and source rider preserved; ordinary edit removes the unsupported distant volcano and restores close rock enclosure. Both original draft and corrected pixels reviewed. Generated representative imagery does not assert current operation or current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/kala-tai-nui-serpentine-body-slides?intcmp=uo-blog_guides-and-tips_complete-guide-to-universal-volcano-bay_kala-tai-nui-serpentine-body-slides_20210224",
+          "credit": "Universal Orlando Resort, official own-attraction page media",
+          "license": "Copyright Universal; reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/kala-tai-nui-serpentine-body-slides?intcmp=uo-blog_guides-and-tips_complete-guide-to-universal-volcano-bay_kala-tai-nui-serpentine-body-slides_20210224",
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/vb-kala-tai-nui-slide-ride-guy-b.jpg",
+          "sourcePageEvidenceKind": "Normalized public-web source windows, not raw HTTP HTML",
+          "sourceEvidenceFile": "volcano-last-five-source-windows-240.json",
+          "sourceEvidenceSHA256": "ec665b9d2ce59e801fecf14a6d586787aa71604474a2d15bc02e2adfa046ce5f",
+          "sha256": "4cf246970cc12765579a34b0092ee1d3e00a3c0ce1c1afd19642c15e47285a14",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed the official Kala & Tai Nui own-page hero and read current operator descriptions of the twin trapdoor slides. It shows the documented BLUE launch capsule with curved transparent door, real silver handle, black lower rim, blue back panel and artificial rock behind, with source adult in normal blue/gray shorts and crossed arms. This is the exact blue-pod scene also found mislabeled under Ko’okiri on the supplier site; use only the correctly identified operator reference here. Compose the source capsule and ordinary rider section with realistic wet surfaces, not a face portrait. Do not invent the unseen second capsule, full intertwining route, hidden floor or RED Ko’okiri hardware."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "67-16598-thumbnail.jpg",
+      "thumbnailSHA256": "3ea576fcfb3ecdc6243d821a46430340ecd26c549b1d6728101010aacf3fd718",
+      "thumbnailBytes": 21861,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "67-16598-detail.jpg",
+      "detailSHA256": "e04d4c14e7b62c225f6fb7cafddd64ccbd5190392460407e9c588735b0010518",
+      "detailBytes": 154331,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "67-16598",
+      "prompt": "Edit image 1, using image 2 as the genuine photographic reference. Preserve the realistic BLUE Kala & Tai Nui launch capsule, curved clear door, real handle, ordinary source rider in swim trunks with crossed arms, wet material detail and blue-purple evening treatment. Correct only the invented background: the source is inside artificial rockwork and contains no distant freestanding volcano. Remove the distant volcano/sky/palm vista at right and fill that narrow background region with close artificial rock matching image 2. Keep the capsule framing and all actual geometry. Do not add a new landmark, landscape, hardware, text, UI or hidden slide route. Portrait 4:5 generated representative ride art.",
+      "promptSHA256": "419690b30898d259e1e7bfabbcfd26673ffe74a0d2fe86e4ef6922d267b51dfb",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Kala & Tai Nui Serpentine Body Slides at Universal Volcano Bay, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed the official Kala & Tai Nui own-page hero and read current operator descriptions of the twin trapdoor slides. It shows the documented BLUE launch capsule with curved transparent door, real silver handle, black lower rim, blue back panel and artificial rock behind, with source adult in normal blue/gray shorts and crossed arms. This is the exact blue-pod scene also found mislabeled under Ko’okiri on the supplier site; use only the correctly identified operator reference here. Compose the source capsule and ordinary rider section with realistic wet surfaces, not a face portrait. Do not invent the unseen second capsule, full intertwining route, hidden floor or RED Ko’okiri hardware. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+          "promptSHA256": "da2e8eae965625079d15b1d585a5d8ce26bf7c7de11828035d0dc7a3cc428b21",
+          "outputSHA256": "ae427f0be7f80463fcb490b8c3ed4024643fa8c8a451202f6025ba37bac42c2e",
+          "outputFile": "exec-a3570782-2421-4edc-a72b-1a7b2c9ca491.png",
+          "generationReferences": [
+            "/workspace/pivot-ride-artwork/references/volcano-kala-tai-nui-own-ride-guy.jpg",
+            "/workspace/pivot-design-reference/reference.jpeg"
+          ],
+          "review": "Rejected: unsupported distant volcano not in source."
+        },
+        {
+          "prompt": "Edit image 1, using image 2 as the genuine photographic reference. Preserve the realistic BLUE Kala & Tai Nui launch capsule, curved clear door, real handle, ordinary source rider in swim trunks with crossed arms, wet material detail and blue-purple evening treatment. Correct only the invented background: the source is inside artificial rockwork and contains no distant freestanding volcano. Remove the distant volcano/sky/palm vista at right and fill that narrow background region with close artificial rock matching image 2. Keep the capsule framing and all actual geometry. Do not add a new landmark, landscape, hardware, text, UI or hidden slide route. Portrait 4:5 generated representative ride art.",
+          "promptSHA256": "419690b30898d259e1e7bfabbcfd26673ffe74a0d2fe86e4ef6922d267b51dfb",
+          "outputSHA256": "ba84204e400b2e7c8d627c67456b0256971979dae7fcf797ab89c921fc45242f",
+          "outputFile": "exec-32a02b86-9fac-405c-b663-1e4470aa8a21.png",
+          "generationReferences": [
+            "/workspace/generated_images/exec-a3570782-2421-4edc-a72b-1a7b2c9ca491.png",
+            "/workspace/pivot-ride-artwork/references/volcano-kala-tai-nui-own-ride-guy.jpg"
+          ],
+          "review": "Accepted: Actually viewed the genuine selected photo and full generated portrait. BLUE real launch capsule, clear curved door/metal handle and source rider preserved; ordinary edit removes the unsupported distant volcano and restores close rock enclosure. Both original draft and corrected pixels reviewed. Generated representative imagery does not assert current operation or current paint."
+        }
+      ]
+    },
+    {
+      "parkId": 67,
+      "rideId": 16600,
+      "rideName": "Maku of Maku Puihi Round Raft Rides™",
+      "alt": "Illustrated Maku of Maku Puihi Round Raft Rides™ at Volcano Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:15:44.163994+00:00",
+      "originalSHA256": "011c8ceefc451d789dabcfcd4fffaa2fea65603ba2b950844294848a79fc8a99",
+      "review": "Accepted: Actually viewed the genuine selected photo and full generated portrait. Actual yellow/amber saucer turns, enclosed connecting tubes, attached supports and loading hut are recognizable. No invented guest group or replacement route; source highway/construction yard is cropped away. Generated representative treatment does not establish current paint or operation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.prismic.io/proslide/aR3-XWGnmrmGqC7o_VolcanoBay_Maku_FS_Aerial.png?auto=format%2Ccompress&rect=622%2C128%2C1399%2C1049&w=3840&fit=max",
+          "sourceURL": "https://www.proslide.com/projects/universal-volcano-bay/",
+          "credit": "ProSlide / Universal, original manufacturer case study media",
+          "license": "Copyright ProSlide / Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.proslide.com/projects/universal-volcano-bay/",
+          "sourceEvidenceKind": "Raw HTTP200 manufacturer case study and actually inspected photograph; current operator ride descriptions also reviewed through public web. Exact capture date and current paint unverified.",
+          "sha256": "1e6665971df103a8099e55f7d10f8598087d356f0a1d9f4ea0fa1392de74ddcf",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Inspected the genuine supplier aerial photo and ProSlide body explicitly identifying Maku’s FlyingSAUCER sections; current official Universal group description also read. The actual Maku route is yellow/amber, with enclosed curved connectors feeding three broad round open saucer turns, real yellow supports, an adjacent green Puihi route and real central raft-lift conveyor. Compose one or two documented YELLOW saucer/connector sections and attached supports with realistic wet fiberglass and source perspective; crop away the highway/construction yard. No invented full unseen layout, rider group, new building or color reassignment. The source aerial is not a rendering, and capture time/current paint remain unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "67-16600-thumbnail.jpg",
+      "thumbnailSHA256": "33e897f7aa2aca733cb63a9378666e573e1ae716b77f40ad766c4a7020b554e9",
+      "thumbnailBytes": 29360,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "67-16600-detail.jpg",
+      "detailSHA256": "c76710a6b91c581580604ea452df408df916cf6a7d621247314013078a885eea",
+      "detailBytes": 230616,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "67-16600",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Maku of Maku Puihi Round Raft Rides at Universal Volcano Bay, Orlando. Source- and pixel-reviewed facts and limits: Inspected the genuine supplier aerial photo and ProSlide body explicitly identifying Maku’s FlyingSAUCER sections; current official Universal group description also read. The actual Maku route is yellow/amber, with enclosed curved connectors feeding three broad round open saucer turns, real yellow supports, an adjacent green Puihi route and real central raft-lift conveyor. Compose one or two documented YELLOW saucer/connector sections and attached supports with realistic wet fiberglass and source perspective; crop away the highway/construction yard. No invented full unseen layout, rider group, new building or color reassignment. The source aerial is not a rendering, and capture time/current paint remain unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "22b39a4f8d37cda381e406fdcd7564d4e6d318342e9d3142988c6c267c7c9576",
+      "generationSteps": []
+    },
+    {
+      "parkId": 67,
+      "rideId": 16602,
+      "rideName": "Taniwha Tubes™",
+      "alt": "Illustrated Taniwha Tubes™ at Volcano Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:17:31.677540+00:00",
+      "originalSHA256": "92a0f2568e10a715fd386cd8b3b0834af3fa09378e977200b552bdf027ff34ca",
+      "review": "Accepted: Actually viewed the genuine selected photo and full generated portrait. Source turquoise/lime outlet section, actual connected flumes/supports, stationary tiki prop with pink fringe/starfish/skirt and real palms/pool remain recognizable. Representative documented Taniwha group section, not a fabricated full layout. Generated representative treatment does not establish current paint or operation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.prismic.io/proslide/aQS2E7pReVYa34ic_CC_PIPEline_Universal-Volcano-Bay-1-.jpg?auto=format%2Ccompress&rect=0%2C512%2C683%2C512&w=3840&fit=max",
+          "sourceURL": "https://www.proslide.com/projects/universal-volcano-bay/",
+          "credit": "ProSlide / Universal, original manufacturer case study media",
+          "license": "Copyright ProSlide / Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.proslide.com/projects/universal-volcano-bay/",
+          "sourceEvidenceKind": "Raw HTTP200 manufacturer case study and actually inspected photograph; current operator ride descriptions also reviewed through public web. Exact capture date and current paint unverified.",
+          "sha256": "fd84ef21e3cfcb41ad2fab2e88db64a85978f92b6e27e554c766da8828e9b05a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed the genuine ProSlide Taniwha/Raki PIPEline outlet photograph and read supplier case-study plus current operator guide identifying Tonga and Raki as Taniwha Tubes routes. Source shows an actual turquoise left tube outlet and lime-green right outlet feeding a shallow catch pool, real green/turquoise enclosed sections on dark supports behind, palms and a stationary manufactured gray/teal tiki decoration with pink fringe, orange starfish ornaments and grass skirt. Compose this documented representative outlet section of the Taniwha group with realistic molded fiberglass, water, painted decorative prop and physical supports; not all four routes or a living figure. No invented riders, extra slides or full hidden course."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "67-16602-thumbnail.jpg",
+      "thumbnailSHA256": "72f947e0fca2de63248b5b109d2eb74d4c348c2b688373ab251c83f521f8f576",
+      "thumbnailBytes": 27342,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "67-16602-detail.jpg",
+      "detailSHA256": "09c197cd964e97bef6d00fcf950b668559ef02c0b04501169df06ee34494f28c",
+      "detailBytes": 228632,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "67-16602",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Taniwha Tubes at Universal Volcano Bay, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed the genuine ProSlide Taniwha/Raki PIPEline outlet photograph and read supplier case-study plus current operator guide identifying Tonga and Raki as Taniwha Tubes routes. Source shows an actual turquoise left tube outlet and lime-green right outlet feeding a shallow catch pool, real green/turquoise enclosed sections on dark supports behind, palms and a stationary manufactured gray/teal tiki decoration with pink fringe, orange starfish ornaments and grass skirt. Compose this documented representative outlet section of the Taniwha group with realistic molded fiberglass, water, painted decorative prop and physical supports; not all four routes or a living figure. No invented riders, extra slides or full hidden course. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "6c4979ea50fec3578a2c3b5373e579f16eb8e72e7e99d785db034da0d8d77fc9",
+      "generationSteps": []
+    },
+    {
+      "parkId": 67,
+      "rideId": 16605,
+      "rideName": "Honu of Honu ika Moana™",
+      "alt": "Illustrated Honu of Honu ika Moana™ at Volcano Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:13:59.718442+00:00",
+      "originalSHA256": "324bdbc5b634a4f6043f3b1f651747ab3910003442c72aaa45bbee137371cf44",
+      "review": "Accepted: Actually viewed the genuine selected photo and full generated portrait. Source blue wave wall, enclosed blue connector, teal trestles, actual loading hut and source-scale petal raft remain recognizable with realistic wet fiberglass and connected geometry. Generated representative treatment does not establish current paint or operation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.prismic.io/proslide/aR39yGGnmrmGqC7c_VolcanoBay_Moana_DTW_Aerial.png?auto=format%2Ccompress&rect=552%2C170%2C1672%2C1254&w=3840&fit=max",
+          "sourceURL": "https://www.proslide.com/projects/universal-volcano-bay/",
+          "credit": "ProSlide / Universal, original manufacturer case study media",
+          "license": "Copyright ProSlide / Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.proslide.com/projects/universal-volcano-bay/",
+          "sourceEvidenceKind": "Raw HTTP200 manufacturer case study and actually inspected photograph; current operator ride descriptions also reviewed through public web. Exact capture date and current paint unverified.",
+          "sha256": "497ccf06945da5202f59b1c22594040251f255c134b68cfee3c0b5bf3abec506",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Inspected genuine manufacturer drone photograph and read ProSlide case-study body plus current official Universal guide. Honu is the BLUE TornadoWAVE route: actual connected large blue open wave walls and enclosed blue connecting tube, teal support trestles, documented loading hut/roof and a small yellow/green petal raft visible on the wall. Compose the documented blue wall/connecting flume and real wet fiberglass/supports in a portrait with the source raft kept at source scale. The adjacent green ika Moana route is a different attraction; do not swap colors, invent a new full layout or add close-up unseen guests. No current-operation or exact current-paint claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "67-16605-thumbnail.jpg",
+      "thumbnailSHA256": "b23f26214c5b3516913d46f70627a838977ce3ee8d80608b026dc9c1369efe72",
+      "thumbnailBytes": 31229,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "67-16605-detail.jpg",
+      "detailSHA256": "0c750ab89555e84a3c772cab4576b3685752264116a095fda8b1c9f1833764ab",
+      "detailBytes": 247448,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "67-16605",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Honu of Honu ika Moana at Universal Volcano Bay, Orlando. Source- and pixel-reviewed facts and limits: Inspected genuine manufacturer drone photograph and read ProSlide case-study body plus current official Universal guide. Honu is the BLUE TornadoWAVE route: actual connected large blue open wave walls and enclosed blue connecting tube, teal support trestles, documented loading hut/roof and a small yellow/green petal raft visible on the wall. Compose the documented blue wall/connecting flume and real wet fiberglass/supports in a portrait with the source raft kept at source scale. The adjacent green ika Moana route is a different attraction; do not swap colors, invent a new full layout or add close-up unseen guests. No current-operation or exact current-paint claim. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "334dc39f3a948582ff32019a41b3750e6099aba41d17b09b08366a7fac23be99",
+      "generationSteps": []
+    },
+    {
+      "parkId": 67,
+      "rideId": 16607,
+      "rideName": "Ohyah of the Ohyah and Ohno Drop Slides™",
+      "alt": "Illustrated Ohyah of the Ohyah and Ohno Drop Slides™ at Volcano Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:14:33.490920+00:00",
+      "originalSHA256": "7bb2bdc103bce84789e3f4ee04b3062eb1401cef2582e10b2c587c3a49869f66",
+      "review": "Accepted: Actually viewed the genuine selected photo and full generated portrait. Green lower Ohyah outlet/approach, real moss-textured rock, turquoise pool and source swimmer remain recognizable. Operator-verified color assignment; neighboring purple Ohno stays separate. Generated representative treatment does not establish current paint or operation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.prismic.io/proslide/aQS14bpReVYa34iB_TWISTER_DropSlide_Universal-Volcano-Bay-Edited-2-people.jpg?auto=format%2Ccompress&rect=408%2C0%2C2448%2C1836&w=3840&fit=max",
+          "sourceURL": "https://www.proslide.com/projects/universal-volcano-bay/",
+          "credit": "ProSlide / Universal, original manufacturer case study media",
+          "license": "Copyright ProSlide / Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.proslide.com/projects/universal-volcano-bay/",
+          "sourceEvidenceKind": "Raw HTTP200 manufacturer case study and actually inspected photograph; current operator ride descriptions also reviewed through public web. Exact capture date and current paint unverified.",
+          "additionalIdentitySourceURL": "https://blog.discoveruniversal.com/attractions/best-thrill-rides-at-universal-orlando/",
+          "sha256": "3eed11760bf2f06e5d1ac888a0151093a072a97fc07e25d303f4b844899dc603",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed supplier photograph of both real Ohyah/Ohno outlets and read current official Universal guide and the operator's Best Thrill Rides article, which explicitly identifies Ohyah as GREEN and Ohno as PURPLE. The actual green low outlet is left of the purple higher outlet in the photo, with green enclosed curves above, dark structural brackets, moss-textured rockwork, turquoise catch pool and source swimmer in normal swimwear. Compose the documented GREEN Ohyah outlet/curve and its short drop into the actual pool, with only source-supported neighboring purple geometry as background. Retain realistic wet fiberglass and pool/rock materials; do not reverse lane colors, invent a raft, or add a new course."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "67-16607-thumbnail.jpg",
+      "thumbnailSHA256": "81ec333bcb9e3c2e69daf3ebd2c5c6af6d614d26bf7e2705c41a1e8a785f2527",
+      "thumbnailBytes": 27432,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "67-16607-detail.jpg",
+      "detailSHA256": "a6b08f4004dc568e486b8b99b30511f518a4ed5a2bcc6d2b4e5b0eedd01f977f",
+      "detailBytes": 234485,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "67-16607",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Ohyah of the Ohyah and Ohno Drop Slides at Universal Volcano Bay, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed supplier photograph of both real Ohyah/Ohno outlets and read current official Universal guide and the operator's Best Thrill Rides article, which explicitly identifies Ohyah as GREEN and Ohno as PURPLE. The actual green low outlet is left of the purple higher outlet in the photo, with green enclosed curves above, dark structural brackets, moss-textured rockwork, turquoise catch pool and source swimmer in normal swimwear. Compose the documented GREEN Ohyah outlet/curve and its short drop into the actual pool, with only source-supported neighboring purple geometry as background. Retain realistic wet fiberglass and pool/rock materials; do not reverse lane colors, invent a raft, or add a new course. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "7f73feed9785ffb00d9313ab30919a59ae7ec317af81cc8d33be2124f33bb6e4",
+      "generationSteps": []
+    },
+    {
+      "parkId": 67,
+      "rideId": 16609,
+      "rideName": "ika Moana of Honu ika Moana™",
+      "alt": "Illustrated ika Moana of Honu ika Moana™ at Volcano Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:13:12.637771+00:00",
+      "originalSHA256": "78ac082c9d1b77d493558675993db0e239608f79695f2f180ef2d0abafe21418",
+      "review": "Accepted: Actually viewed the genuine selected photo and full generated portrait. Documented green broad/open and enclosed ika Moana sections, teal supports and actual shared lift/hut remain recognizable, with neighboring blue Honu kept separate. Generated representative treatment does not establish current paint or operation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.prismic.io/proslide/aQkJwLpReVYa39_Q_Moana.jpg?auto=format%2Ccompress&rect=103%2C206%2C1177%2C883&w=3840&fit=max",
+          "sourceURL": "https://www.proslide.com/projects/universal-volcano-bay/",
+          "credit": "ProSlide / Universal, original manufacturer case study media",
+          "license": "Copyright ProSlide / Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.proslide.com/projects/universal-volcano-bay/",
+          "sourceEvidenceKind": "Raw HTTP200 manufacturer case study and actually inspected photograph; current operator ride descriptions also reviewed through public web. Exact capture date and current paint unverified.",
+          "sha256": "71b01cab998ee2bbb88a6bdd24dc7def4dc7946cb17ba78fba70b792922407b4",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Inspected genuine ProSlide aerial photograph, manufacturer's ika Moana MAMMOTH section and current Universal description. The documented ika Moana route is green: actual broad open troughs and enclosed green curves on teal columns, curving under/along the real shared raft-lift conveyor and loading hut. The neighboring blue Honu wave wall remains separate. Compose the source GREEN connecting flume section with believable bolted fiberglass, water and teal support connections. No invented raft/guests, hybrid blue/green route, hidden course or new buildings. Historical representative art, not current-operation evidence."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "67-16609-thumbnail.jpg",
+      "thumbnailSHA256": "3b53c1d73d6543878b23fa438c5526bf1ef6c02a036cbe238f614775046f59b3",
+      "thumbnailBytes": 28892,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "67-16609-detail.jpg",
+      "detailSHA256": "621efad496e420812747aaabd172c32b3af5589772f644c766f27d4f1e0489fe",
+      "detailBytes": 240220,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "67-16609",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict ika Moana of Honu ika Moana at Universal Volcano Bay, Orlando. Source- and pixel-reviewed facts and limits: Inspected genuine ProSlide aerial photograph, manufacturer's ika Moana MAMMOTH section and current Universal description. The documented ika Moana route is green: actual broad open troughs and enclosed green curves on teal columns, curving under/along the real shared raft-lift conveyor and loading hut. The neighboring blue Honu wave wall remains separate. Compose the source GREEN connecting flume section with believable bolted fiberglass, water and teal support connections. No invented raft/guests, hybrid blue/green route, hidden course or new buildings. Historical representative art, not current-operation evidence. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "36a3efa90e66d54a37225b5074efd1f9366923d41561fa1f0ffe8a4fbf991e25",
+      "generationSteps": []
+    },
+    {
+      "parkId": 67,
+      "rideId": 16612,
+      "rideName": "Ohno of the Ohyah and Ohno Drop Slides™",
+      "alt": "Illustrated Ohno of the Ohyah and Ohno Drop Slides™ at Volcano Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:17:06.757198+00:00",
+      "originalSHA256": "f5c08531a33b418dd37cdd14a57256a0d0def403c021c1d229af7ed92a61aebc",
+      "review": "Accepted: Actually viewed the genuine selected photo and full generated portrait. Purple higher Ohno outlet/approach, source normal swimmer and actual pool/rocks remain recognizable. Operator-verified color and relative drop assignment; green Ohyah stays separate. Generated representative treatment does not establish current paint or operation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.prismic.io/proslide/aQS14bpReVYa34iB_TWISTER_DropSlide_Universal-Volcano-Bay-Edited-2-people.jpg?auto=format%2Ccompress&rect=408%2C0%2C2448%2C1836&w=3840&fit=max",
+          "sourceURL": "https://www.proslide.com/projects/universal-volcano-bay/",
+          "credit": "ProSlide / Universal, original manufacturer case study media",
+          "license": "Copyright ProSlide / Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.proslide.com/projects/universal-volcano-bay/",
+          "sourceEvidenceKind": "Raw HTTP200 manufacturer case study and actually inspected photograph; current operator ride descriptions also reviewed through public web. Exact capture date and current paint unverified.",
+          "additionalIdentitySourceURL": "https://blog.discoveruniversal.com/attractions/best-thrill-rides-at-universal-orlando/",
+          "sha256": "3eed11760bf2f06e5d1ac888a0151093a072a97fc07e25d303f4b844899dc603",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed the genuine manufacturer photograph of paired outlets and read current official Universal guide plus operator Best Thrill Rides body confirming Ohno is PURPLE and higher than green Ohyah. Source shows the purple enclosed approach and open purple higher outlet between real moss-textured rockwork, actual water spilling into the turquoise catch pool and source guest in normal swimwear. Compose the documented PURPLE Ohno outlet and approach with realistic wet fiberglass/connected supports, keeping the neighboring lower green route separate. No reversed colors, invented launch pod/raft, extra riders, hidden course or current-service claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "67-16612-thumbnail.jpg",
+      "thumbnailSHA256": "33dacd987677664eaeca6fba725b4baace8e4d5212b8c64f9110553b42ef7d21",
+      "thumbnailBytes": 27188,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "67-16612-detail.jpg",
+      "detailSHA256": "35ad6f7b555e83d7aab7ded8d52a15a04b5a94da53de45a8a7b2281b08ea0986",
+      "detailBytes": 225148,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "67-16612",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Ohno of the Ohyah and Ohno Drop Slides at Universal Volcano Bay, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed the genuine manufacturer photograph of paired outlets and read current official Universal guide plus operator Best Thrill Rides body confirming Ohno is PURPLE and higher than green Ohyah. Source shows the purple enclosed approach and open purple higher outlet between real moss-textured rockwork, actual water spilling into the turquoise catch pool and source guest in normal swimwear. Compose the documented PURPLE Ohno outlet and approach with realistic wet fiberglass/connected supports, keeping the neighboring lower green route separate. No reversed colors, invented launch pod/raft, extra riders, hidden course or current-service claim. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "9e250e0e35d875eea99ea0bd6188fbd9ee3dabef825aa1a41fac9e3825ffa7ea",
+      "generationSteps": []
+    },
+    {
+      "parkId": 67,
+      "rideId": 16614,
+      "rideName": "Ko'okiri Body Plunge™",
+      "alt": "Illustrated Ko'okiri Body Plunge™ at Volcano Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:30:55.533513+00:00",
+      "originalSHA256": "8b918394a7ae4005afb53ebf224735733449ee4deae7a2afdd709bb3487cb09c",
+      "review": "Accepted: Actually viewed the genuine selected photo and full generated portrait. RED real launch capsule, clear curved door/metal handles and source rider remain inside the documented rock enclosure; realistic wet surfaces. Generated representative imagery does not assert current operation or current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/kookiri-body-plunge?intcmp=uo-blog_guides-and-tips_complete-guide-to-universal-volcano-bay_kookiri-body-plunge_20210224",
+          "credit": "Universal Orlando Resort, official own-attraction page media",
+          "license": "Copyright Universal; reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/kookiri-body-plunge?intcmp=uo-blog_guides-and-tips_complete-guide-to-universal-volcano-bay_kookiri-body-plunge_20210224",
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/vb-kookiri-body-plunge-ride-guy-b.jpg",
+          "sourcePageEvidenceKind": "Normalized public-web source windows, not raw HTTP HTML",
+          "sourceEvidenceFile": "independent-web-source-windows-240.json",
+          "sourceEvidenceSHA256": "985266833cc7b136c351b8cec9ab83061ad52009b4cece97c2296f4a0dc3f6d9",
+          "sha256": "12126f6e5a81625914ab171d700974ac40be6ab236ed2fd3dd3c873c23999e13",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed the own-attraction photograph reached from the official Ko’okiri page and read its current body. It shows the real RED launch capsule with clear curved door, chrome pull handles, red wet platform, overhead mechanical fixture and artificial volcano rockwork/opening. Source adult wears normal blue-gray swim trunks and stands with arms crossed. Preserve this documented capsule/rider/rock section with realistic wet fiberglass/glass/metal and restrained evening lighting; equipment is the subject, not a face portrait. Do not invent the full 125-foot shaft or hidden trapdoor mechanism. This correct red own-ride reference replaces a rejected supplier blue-pod image; the latter is confirmed by the operator’s Kala/Tai Nui page to belong to that separate attraction. Current seasonal closure is not an operating claim in generated art."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "67-16614-thumbnail.jpg",
+      "thumbnailSHA256": "a9b6f3cdfaf2635068cd2278680a7630baff9ccf8d5952b3e1a17ba5a22be57c",
+      "thumbnailBytes": 22764,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "67-16614-detail.jpg",
+      "detailSHA256": "bb360717beb515ec4c8745aeb6ad5bc63ef438c5d04cdc564dd30227021a009a",
+      "detailBytes": 171894,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "67-16614",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Ko'okiri Body Plunge at Universal Volcano Bay, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed the own-attraction photograph reached from the official Ko’okiri page and read its current body. It shows the real RED launch capsule with clear curved door, chrome pull handles, red wet platform, overhead mechanical fixture and artificial volcano rockwork/opening. Source adult wears normal blue-gray swim trunks and stands with arms crossed. Preserve this documented capsule/rider/rock section with realistic wet fiberglass/glass/metal and restrained evening lighting; equipment is the subject, not a face portrait. Do not invent the full 125-foot shaft or hidden trapdoor mechanism. This correct red own-ride reference replaces a rejected supplier blue-pod image; the latter is confirmed by the operator’s Kala/Tai Nui page to belong to that separate attraction. Current seasonal closure is not an operating claim in generated art. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "47e07cb31cd6a925cea85c3e669db4093883597baa2b067c15611406a022ce2a",
+      "generationSteps": []
+    },
+    {
+      "parkId": 67,
+      "rideId": 16616,
+      "rideName": "Kopiko Wai Winding River™",
+      "alt": "Illustrated Kopiko Wai Winding River™ at Volcano Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:44:15.505810+00:00",
+      "originalSHA256": "40f23d72b69cfd68b3dfafcf6e208a1272a6bfef825345064037be5a05c4b169",
+      "review": "Accepted: Actually viewed the genuine selected photo and full generated portrait. Actual orange clear patterned ring/handle/valve, adult green swimsuit, calm water and tiled wall preserved. Ordinary edit removes unsupported distant volcano and restores foliage/sky; original and corrected pixels reviewed. Generated representative imagery does not assert current operation or current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/kopiko-wai-winding-river?intcmp=uo-blog_guides-and-tips_complete-guide-to-universal-volcano-bay_kopiko-wai-winding-river_20210224",
+          "credit": "Universal Orlando Resort, own-attraction page photography",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/kopiko-wai-winding-river?intcmp=uo-blog_guides-and-tips_complete-guide-to-universal-volcano-bay_kopiko-wai-winding-river_20210224",
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/vb-kopiko-wai-winding-river-ride-lady-tube-b.jpg",
+          "sourcePageEvidenceKind": "Normalized source windows from the public web tool, not raw HTTP HTML",
+          "sourceEvidenceFile": "volcano-last-five-source-windows-240.json",
+          "sourceEvidenceSHA256": "ec665b9d2ce59e801fecf14a6d586787aa71604474a2d15bc02e2adfa046ce5f",
+          "sha256": "ea0b45bc891877290bcd217b52938f8eb2b57586c1a42efd6ac67a35fd61b3ff",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed the genuine own-page Kopiko Wai photograph and read the current official description of its gentle winding river. Source is a normal adult in a green swimsuit relaxing in an orange/transparent inflatable ring with real pale decorative patterns, handle and inflation valve, on calm turquoise water beside a pale green tiled wall/stone rim with foliage beyond. Compose that documented ring, gentle water and wall section with realistic wet vinyl, tile and evening reflections; preserve ordinary relaxed source pose, not a portrait or swimwear advertisement. No invented raft convoy, rapids, underground cavern, full volcano or hidden route. The gentle tube float is distinct from TeAwa’s faster life-vest river."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "67-16616-thumbnail.jpg",
+      "thumbnailSHA256": "316c2e41d43769f0e5afc5d0d558c1e1337ab666fec113707b519804ae3d4b25",
+      "thumbnailBytes": 24891,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "67-16616-detail.jpg",
+      "detailSHA256": "653a618fd3b1a01f710fef9a2ea2b3c7a5d93b3ceb83f78c85ff2a3a6f6659c9",
+      "detailBytes": 158990,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "67-16616",
+      "prompt": "Edit image 1, using image 2 as the genuine photographic reference. Preserve the realistic Kopiko Wai orange clear patterned inflatable ring with handle/valve, ordinary relaxed adult in a green one-piece swimsuit, calm turquoise water and pale green tiled wall. Correct only the invented distant volcano at the far upper right: replace that unsupported landmark with ordinary foliage and softly lit blue-purple evening sky matching the source wall/plant surroundings. Keep the existing ring and water framing. No new landmark, rapids, hidden route, text, UI or extra hardware. Portrait 4:5 generated representative ride art.",
+      "promptSHA256": "eec04894803e5157c9139df3f0c5d4f951d3a9c12186b794b4b76c793c337518",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Kopiko Wai Winding River at Universal Volcano Bay, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed the genuine own-page Kopiko Wai photograph and read the current official description of its gentle winding river. Source is a normal adult in a green swimsuit relaxing in an orange/transparent inflatable ring with real pale decorative patterns, handle and inflation valve, on calm turquoise water beside a pale green tiled wall/stone rim with foliage beyond. Compose that documented ring, gentle water and wall section with realistic wet vinyl, tile and evening reflections; preserve ordinary relaxed source pose, not a portrait or swimwear advertisement. No invented raft convoy, rapids, underground cavern, full volcano or hidden route. The gentle tube float is distinct from TeAwa’s faster life-vest river. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+          "promptSHA256": "edd9432efb6bc775e4421326b92fc806228d196da001f8da856351a6af5b6cd1",
+          "outputSHA256": "f44ca53d5b4ddec93f8e8ec0dd220cc81c944d6bf276f062beb739e16c89ad15",
+          "outputFile": "exec-ecf13f91-29a4-4562-b8a6-8abf9838534f.png",
+          "generationReferences": [
+            "/workspace/pivot-ride-artwork/references/volcano-kopiko-own.jpg",
+            "/workspace/pivot-design-reference/reference.jpeg"
+          ],
+          "review": "Rejected: unsupported distant volcano not in source."
+        },
+        {
+          "prompt": "Edit image 1, using image 2 as the genuine photographic reference. Preserve the realistic Kopiko Wai orange clear patterned inflatable ring with handle/valve, ordinary relaxed adult in a green one-piece swimsuit, calm turquoise water and pale green tiled wall. Correct only the invented distant volcano at the far upper right: replace that unsupported landmark with ordinary foliage and softly lit blue-purple evening sky matching the source wall/plant surroundings. Keep the existing ring and water framing. No new landmark, rapids, hidden route, text, UI or extra hardware. Portrait 4:5 generated representative ride art.",
+          "promptSHA256": "eec04894803e5157c9139df3f0c5d4f951d3a9c12186b794b4b76c793c337518",
+          "outputSHA256": "40f23d72b69cfd68b3dfafcf6e208a1272a6bfef825345064037be5a05c4b169",
+          "outputFile": "exec-97105bb0-88fa-4752-93fe-f06f0a3dd210.png",
+          "generationReferences": [
+            "/workspace/generated_images/exec-ecf13f91-29a4-4562-b8a6-8abf9838534f.png",
+            "/workspace/pivot-ride-artwork/references/volcano-kopiko-own.jpg"
+          ],
+          "review": "Accepted: Actually viewed the genuine selected photo and full generated portrait. Actual orange clear patterned ring/handle/valve, adult green swimsuit, calm water and tiled wall preserved. Ordinary edit removes unsupported distant volcano and restores foliage/sky; original and corrected pixels reviewed. Generated representative imagery does not assert current operation or current paint."
+        }
+      ]
+    },
+    {
+      "parkId": 67,
+      "rideId": 16618,
+      "rideName": "TeAwa The Fearless River™",
+      "alt": "Illustrated TeAwa The Fearless River™ at Volcano Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:33:36.579699+00:00",
+      "originalSHA256": "3faa2468f4d06afb9c6ddbe9949ca7559bac7d247b2a7df21a75b200747d1c58",
+      "review": "Accepted: Actually viewed the genuine selected photo and full generated portrait. Actual curving fast-water channel, tiled edges, lantern supports, palms, source-scale life-vest swimmers and neighboring yellow/green flumes preserved; no lazy-river tubes. Generated representative imagery does not assert current operation or current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/teawa-the-fearless-river?intcmp=uo-blog_guides-and-tips_complete-guide-to-universal-volcano-bay_teawa-the-fearless-river_20210224",
+          "credit": "Universal Orlando Resort, own-attraction page photography",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/teawa-the-fearless-river?intcmp=uo-blog_guides-and-tips_complete-guide-to-universal-volcano-bay_teawa-the-fearless-river_20210224",
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/vb-teawa-fearless-river-ride-riders-b.jpg",
+          "sourcePageEvidenceKind": "Normalized source windows from the public web tool, not raw HTTP HTML",
+          "sourceEvidenceFile": "volcano-last-five-source-windows-240.json",
+          "sourceEvidenceSHA256": "ec665b9d2ce59e801fecf14a6d586787aa71604474a2d15bc02e2adfa046ce5f",
+          "sha256": "4200a84c166c442642f5743b478e8f20e070809a5238f69ca4b8629df2b3d499",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed the own-page TeAwa photograph and read the current operator body and life-jacket requirement. Source shows a real curving turquoise fast-water channel with concrete/tiled edges, visible distant swimmers wearing life vests, palms/foliage, bamboo-style lantern supports, mist/rockwork at right and the actual yellow/green neighboring Maku/Puihi slide sections overhead. Compose this documented river curve and connected surrounding structures with realistic choppy water and vegetation; source-scale guests remain in life vests. No inner tubes, calm lazy-river rings, unvested close-up swimmers, invented full route or relocated landmark. Generated representative art does not assert the park is currently operating."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "67-16618-thumbnail.jpg",
+      "thumbnailSHA256": "c98b2bcf72c539d4c42df5e4351db5af66a21bca0df29b841a3a6d53aed8a8fb",
+      "thumbnailBytes": 26906,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "67-16618-detail.jpg",
+      "detailSHA256": "4539552190698f9746ace3428d6376265fbde00bd0ab07dc72381513a8939c9b",
+      "detailBytes": 244077,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "67-16618",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict TeAwa The Fearless River at Universal Volcano Bay, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed the own-page TeAwa photograph and read the current operator body and life-jacket requirement. Source shows a real curving turquoise fast-water channel with concrete/tiled edges, visible distant swimmers wearing life vests, palms/foliage, bamboo-style lantern supports, mist/rockwork at right and the actual yellow/green neighboring Maku/Puihi slide sections overhead. Compose this documented river curve and connected surrounding structures with realistic choppy water and vegetation; source-scale guests remain in life vests. No inner tubes, calm lazy-river rings, unvested close-up swimmers, invented full route or relocated landmark. Generated representative art does not assert the park is currently operating. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "877a30f4730f308424f4f9241078624d4835428096ebd88373e4f25aabd881a5",
+      "generationSteps": []
+    },
+    {
+      "parkId": 67,
+      "rideId": 16620,
+      "rideName": "Puihi of Maku Puihi Round Raft Rides™",
+      "alt": "Illustrated Puihi of Maku Puihi Round Raft Rides™ at Volcano Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:24:45.792106+00:00",
+      "originalSHA256": "e5c77b627242d14c2f0b9ea10ee513093ba3be579c62101f00507f6205079ad6",
+      "review": "Accepted: Actually viewed the genuine selected photo and full generated portrait. Corrected version preserves real lime-yellow funnel, green inlet, yellow group raft/handles and source swimmers while removing the invented distant volcano. Background is limited to the documented highway ramp, trees and evening sky. Generated representative treatment does not establish current paint or operation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.prismic.io/proslide/aQjljLpReVYa39tz_PuihioftheMakuPuihi_Tornado.png?auto=format%2Ccompress&rect=160%2C0%2C951%2C713&w=3840&fit=max",
+          "sourceURL": "https://www.proslide.com/projects/universal-volcano-bay/",
+          "credit": "ProSlide / Universal, original manufacturer case study media",
+          "license": "Copyright ProSlide / Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.proslide.com/projects/universal-volcano-bay/",
+          "sourceEvidenceKind": "Raw HTTP200 manufacturer case study and actually inspected photograph; current operator ride descriptions also reviewed through public web. Exact capture date and current paint unverified.",
+          "sha256": "b4b779eee82b13ca3dca7aec1815a7aa689c2f8931369837355263f34009385d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Inspected genuine manufacturer photo and ProSlide Puihi TORNADO case-study section. Source shows actual lime-yellow interior of the large funnel with green enclosed circular inlet, a documented yellow petal-shaped group raft with real handles and source guests in normal swimwear, water sheeting on the real flume and visible source supports/background beyond its edge. Preserve the photographed raft, funnel surface and green inlet with connected geometry and realistic water/fiberglass. Not Honu’s blue wave wall or Maku’s yellow saucer route; do not invent a second funnel, hidden full layout or extra riders."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "67-16620-thumbnail.jpg",
+      "thumbnailSHA256": "32e43b0e7cb397b7d1cfaadde62f857c3154285106f6b27ab830661f9adf5f04",
+      "thumbnailBytes": 17793,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "67-16620-detail.jpg",
+      "detailSHA256": "783cf2287a0c13d0947758054bbc40412d855c09cc59cfd7a28147a059e964c8",
+      "detailBytes": 130065,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "67-16620",
+      "prompt": "Correct the first generated PIVOT portrait against the second genuine ProSlide Puihi photograph. Keep the accurate foreground: lime-yellow funnel interior, physically connected green circular inlet, yellow five-lobed raft with the same source group in ordinary swimwear, wet fiberglass and source water. Remove the invented distant purple volcano and hills beyond the highway; they do not appear in the genuine reference and put the park landmark in an unsupported location. The background outside the funnel must stay limited to the actual source highway ramp, trees and quiet blue-purple evening sky. Do not add a new building, mountain, coaster or other landmark. Preserve this realistic generated-art style and portrait crop, physical foreground geometry and normal raft seating. No text, UI or watermark.",
+      "promptSHA256": "7a678c9a32fc154adda9071761c359af9429c0302dbe82581819c880ed8ee72d",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Puihi of Maku Puihi Round Raft Rides at Universal Volcano Bay, Orlando. Source- and pixel-reviewed facts and limits: Inspected genuine manufacturer photo and ProSlide Puihi TORNADO case-study section. Source shows actual lime-yellow interior of the large funnel with green enclosed circular inlet, a documented yellow petal-shaped group raft with real handles and source guests in normal swimwear, water sheeting on the real flume and visible source supports/background beyond its edge. Preserve the photographed raft, funnel surface and green inlet with connected geometry and realistic water/fiberglass. Not Honu’s blue wave wall or Maku’s yellow saucer route; do not invent a second funnel, hidden full layout or extra riders. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+          "promptSHA256": "d4fc6a1b07b19a748e0c72deec9513a3549f5a96bf44e2edffeade599ceeff43",
+          "outputSHA256": "044f3c5989bd633b84150f7e3696c33e6d70c483a460fefceab22d7be6cb21ba",
+          "outputFile": "/workspace/generated_images/exec-b9d711ee-9f32-43aa-842b-1b5b51254f16.png",
+          "generationReferences": [
+            "/workspace/pivot-ride-artwork/references/volcano-proslide-12.jpg",
+            "/workspace/pivot-design-reference/reference.jpeg"
+          ],
+          "review": "First portrait reviewed; unsupported distant volcano/hills rejected."
+        },
+        {
+          "prompt": "Correct the first generated PIVOT portrait against the second genuine ProSlide Puihi photograph. Keep the accurate foreground: lime-yellow funnel interior, physically connected green circular inlet, yellow five-lobed raft with the same source group in ordinary swimwear, wet fiberglass and source water. Remove the invented distant purple volcano and hills beyond the highway; they do not appear in the genuine reference and put the park landmark in an unsupported location. The background outside the funnel must stay limited to the actual source highway ramp, trees and quiet blue-purple evening sky. Do not add a new building, mountain, coaster or other landmark. Preserve this realistic generated-art style and portrait crop, physical foreground geometry and normal raft seating. No text, UI or watermark.",
+          "promptSHA256": "7a678c9a32fc154adda9071761c359af9429c0302dbe82581819c880ed8ee72d",
+          "outputSHA256": "e5c77b627242d14c2f0b9ea10ee513093ba3be579c62101f00507f6205079ad6",
+          "outputFile": "/workspace/generated_images/exec-48c426f4-fc79-461b-927f-27fe356c9f4a.png",
+          "generationReferences": [
+            "/workspace/generated_images/exec-b9d711ee-9f32-43aa-842b-1b5b51254f16.png",
+            "/workspace/pivot-ride-artwork/references/volcano-proslide-12.jpg"
+          ],
+          "review": "Accepted: Actually viewed the genuine selected photo and full generated portrait. Corrected version preserves real lime-yellow funnel, green inlet, yellow group raft/handles and source swimmers while removing the invented distant volcano. Background is limited to the documented highway ramp, trees and evening sky. Generated representative treatment does not establish current paint or operation."
+        }
+      ]
+    },
+    {
       "parkId": 69,
       "rideId": 4042149978736,
       "rideName": "PEANUTS™ Road Rally",
@@ -47059,6 +47872,55 @@
       "key": "334-14692",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Use image 1 as the authentic ride photograph and preserve visible identifying hardware, materials, colors and physical connections. Image 2 supplies only subtle blue-purple dusk treatment; ignore all UI, lettering and logo. Photographic natural textures, believable perspective, softly balanced practical lighting; slightly cinematic rather than painted. Keep the attraction readable at thumbnail size. No interface, border, watermark or overlaid lettering. Curse of the Werewolf at Universal Epic Universe: faithfully use the real onboard/near-train perspective of rotating coaster cars with BLACK high-backed seats, black/silver lap restraints and weathered BRONZE outer seat trim; preserve the gray steel track curling behind and tall dark safety-net fence visible against sky. Natural incidental generic riders are secondary to the distinctive seat hardware. Retain the close crop and actual visible rail, do not invent unseen carriage bodywork, a wolf character, a haunted mansion or unrelated track layout.",
       "promptSHA256": "eecbb92fd4e1c5deb49b81db3975e44e3ea26febd1a564bdf8079607b739a435",
+      "generationSteps": []
+    },
+    {
+      "parkId": 334,
+      "rideId": 14694,
+      "rideName": "Monsters Unchained: The Frankenstein Experiment",
+      "alt": "Illustrated Monsters Unchained: The Frankenstein Experiment at Epic Universe",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:43:15.788833+00:00",
+      "originalSHA256": "bae9b3187c3ec254e5f9b68fd1af98d4d140429870bf4afa6f2561503cb2daa3",
+      "review": "Accepted: Actually viewed genuine operator queue photograph and generated portrait. Real double carved-wood staircase, two physical draped statues, stone vault/arches, wall murals, practical chandelier and portrait remain connected and recognizable. Realistic stone/wood with restrained cool fill. No invented ride chamber or monsters; representative generated queue image.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/ueu-dark-universe-mutfe-interior-stairs-b.jpg",
+          "alt": "The double staircase at the entrance queue for Monsters Unchained, with marble statues and murals on the walls.",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/monsters-unchained-the-frankenstein-experiment?intcmp=uo-blog_attractions%7Cguides-and-tips_guide-to-monsters-unchained-the-frankenstein-experiment-at-universal-epic-universe_monsters-unchained-the-frankenstein-experiment_20261005",
+          "credit": "Universal Orlando Resort, official own-attraction gallery",
+          "license": "Copyright Universal; reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/monsters-unchained-the-frankenstein-experiment?intcmp=uo-blog_attractions%7Cguides-and-tips_guide-to-monsters-unchained-the-frankenstein-experiment-at-universal-epic-universe_monsters-unchained-the-frankenstein-experiment_20261005",
+          "sourcePageEvidenceKind": "Normalized public-web source windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "monsters-own-page-web-source-241.json",
+          "sourceEvidenceSHA256": "0d8b0a1bba2df41c5ab71f703411faae3013dca2f178915f20bbeb4ee20df6aa",
+          "sha256": "25dcc7eedd2d79e3af8ab31efc812e7c3df640da27316c2d5363430fc1a92113",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed the operator own-attraction gallery photograph and read its exact staircase caption plus the current October 2026 operator guide. The genuine empty queue is a dark carved-wood double staircase under a stone vaulted ceiling, two physical white draped marble statues on dark pedestals, large painted murals on the walls, a hanging practical chandelier, upper portrait and actual railings/arches. Compose this documented practical queue interior with realistic stone, wood, painted plaster and restrained blue-purple cool fill with existing warm practical lights. Preserve the split stairs and physical supports. Do not invent the hidden ride vehicles, laboratory scenes, monsters, moving figures, giant castle exterior or operating status. This is the real Orlando Epic Universe queue, not another park or a movie still."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "334-14694-thumbnail.jpg",
+      "thumbnailSHA256": "0e526617bfb7c9fe17ff8c8b8ed35288f8ff8733d10af001b98452c39651c20f",
+      "thumbnailBytes": 21035,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "334-14694-detail.jpg",
+      "detailSHA256": "fed21cee9732d33f4730a1ed7f1ab36c8782ec6b8c921c10c9530506121b6238",
+      "detailBytes": 159578,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "334-14694",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Monsters Unchained: The Frankenstein Experiment at Universal Epic Universe, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed the operator own-attraction gallery photograph and read its exact staircase caption plus the current October 2026 operator guide. The genuine empty queue is a dark carved-wood double staircase under a stone vaulted ceiling, two physical white draped marble statues on dark pedestals, large painted murals on the walls, a hanging practical chandelier, upper portrait and actual railings/arches. Compose this documented practical queue interior with realistic stone, wood, painted plaster and restrained blue-purple cool fill with existing warm practical lights. Preserve the split stairs and physical supports. Do not invent the hidden ride vehicles, laboratory scenes, monsters, moving figures, giant castle exterior or operating status. This is the real Orlando Epic Universe queue, not another park or a movie still. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "e71256adcf830ab3fea1b05f8deaace19827f1135c22fe9b1fae0d9598bbfc17",
       "generationSteps": []
     },
     {
