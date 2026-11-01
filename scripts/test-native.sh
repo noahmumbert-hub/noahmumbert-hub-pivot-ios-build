@@ -150,6 +150,8 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testWaitsSearchAndResultsStayJoinedAtAccessibilitySize
       -only-testing:PIVOTUITests/PIVOTUITests/testWaitsSharedGroupKeepsUnchangedWaitFromFreshProvider
       -only-testing:PIVOTUITests/PIVOTUITests/testWaitsSharedGroupWithholdsWaitFromExpiredProviderFetch
+      -only-testing:PIVOTUITests/PIVOTUITests/testLowestWaitEvidenceAndHourlySheetStayConsistentAtAccessibilityTextSize
+      -only-testing:PIVOTUITests/PIVOTUITests/testStaleLowestWaitHourlySheetWithholdsRecommendationAtAccessibilityTextSize
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeSurfacesPreserveHoursShowsAlertsAndPlanProgress
       -only-testing:PIVOTTests/PIVOTTests/testGeneratedIllustrationsAreBundledBoundedAndAttributed
       -only-testing:PIVOTTests/PIVOTTests/testGeneratedIllustrationsRequireAnExactParkAndRideMatch

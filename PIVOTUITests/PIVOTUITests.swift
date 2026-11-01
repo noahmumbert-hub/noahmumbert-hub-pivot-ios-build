@@ -773,7 +773,9 @@ final class PIVOTUITests: XCTestCase {
         let app = rootFixture(["--reference-ui-park=5", "--ride-history-ui-test", "--ride-history-supported", "--ui-large-type"]
             + (expired ? ["--ride-search-expired"] : []))
         let search = app.textFields["Ride search"]
-        reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
+        centerFullyVisible(search, in: app)
+        XCTAssertTrue(search.isHittable)
+        search.tap(); search.typeText("Guardians\n")
         let history = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Recent observed waits'")).firstMatch
         reveal(history, in: app); history.tap()
         let summary = app.otherElements["ride-lowest-wait-summary"].firstMatch
