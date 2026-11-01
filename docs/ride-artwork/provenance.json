@@ -11057,6 +11057,758 @@
     },
     {
       "parkId": 38,
+      "rideId": 124060659793863,
+      "rideName": "American Eagle Red Side",
+      "alt": "Illustrated American Eagle Red Side at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:19:48.282251+00:00",
+      "originalSHA256": "be417b68e6cb1614181a7ab3a2d0640a85dd5365dfae263ba8b91665be427e78",
+      "review": "Accepted: Generated pixels inspected. The genuine red train/cream side stripes, black slotted seat backs, metal side steps, physical front Eagle print and seated source families match the selected local red-train photograph. White timber, blue walkway and red handrail preserve the actual section. A reference-read transport error was resolved once with the identical request after local SHA verification; no moderation error/retry occurred. Dusk scene is generated, not proof of current racing operation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fccbd03cb9c730bc9ed533befa04e23a2503e138f-1440x844.png%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders on the American Eagle wooden roller coaster at Six Flags Great America.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/american-eagle",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "bc0f639ab21587f351b79466da9fecd28433f7ddad085e6533dbded68ba21d42",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page, actual wide white-timber photograph and two real red-train galleries inspected; select the wider red-train gallery. RED flat-panel cars have cream side stripes, metal riveted edging/diamond-plate side steps, BLACK slotted high seat backs and source lap restraints; physical American Eagle print is on the front. The documented red train descends a low hill toward camera with actual source passengers seated, beside a BLUE painted walkway channel and RED outer handrail carried by WHITE timber bents. Preserve visible wooden running beds, original connections and source white-beam occlusions. This is the catalog Red Side; the source directly documents red cars, but capture date and present simultaneous racing status are not established. Do not repaint a blue train red, invent another train/route or claim both sides are operating."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-124060659793863-thumbnail.jpg",
+      "thumbnailSHA256": "1e2ba1ba863c836a7b126f91b7b4f700b00d1ed12d857b61ee09e312366c516c",
+      "thumbnailBytes": 30564,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-124060659793863-detail.jpg",
+      "detailSHA256": "734dfe08207d2db8435a426d1f3ec1bd6db549bef544a18b50dc9296445fa0ff",
+      "detailBytes": 201655,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-124060659793863",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict American Eagle Red Side at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page, actual wide white-timber photograph and two real red-train galleries inspected; select the wider red-train gallery. RED flat-panel cars have cream side stripes, metal riveted edging/diamond-plate side steps, BLACK slotted high seat backs and source lap restraints; physical American Eagle print is on the front. The documented red train descends a low hill toward camera with actual source passengers seated, beside a BLUE painted walkway channel and RED outer handrail carried by WHITE timber bents. Preserve visible wooden running beds, original connections and source white-beam occlusions. This is the catalog Red Side; the source directly documents red cars, but capture date and present simultaneous racing status are not established. Do not repaint a blue train red, invent another train/route or claim both sides are operating. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "8aef029fea01808f8c7f59100d8c98a8606f3245b0f97fb3dbe419a8e35f9a06",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 124864211366249,
+      "rideName": "Roaring Rapids",
+      "alt": "Illustrated Roaring Rapids at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:16:53.990926+00:00",
+      "originalSHA256": "4cb4d19b860130719f9629eeea1a2d5e31ca00e4bfd795dd5a53261f6fe342b8",
+      "review": "Accepted: Generated pixels inspected. Actual yellow/orange raft sides, thick black ring, silver outer chains, black slotted seat backs and center handrails remain specific to the local photograph, with source families seated. The genuine gray rock channel/tunnel framing is retained; dusk reflections are generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2b60c9f06fb01db2d1272003aa0603785fdbe451-1440x800.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Group of people on Six Flags Great America's Roaring Rapids water ride navigating through rapids.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/roaring-rapids",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "be2da220e5a741c0c8f25f4cfbfe8efef557ff748d2fb16ce9ceacdb387691b0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual local rapids photograph inspected. The circular raft has YELLOW/orange molded sides, a thick BLACK rubber outer ring, visible silver safety chains across outer side panels, tall BLACK seat backs with three slots and SILVER tubular center handrails/triangular braces. Source families remain seated around the center behind their belts. Gray/brown water foams around it; genuine dark gray artificial rock walls, a low dark tunnel opening and source overhanging green foliage enclose this photographed section. Compose this actual near raft and documented rocky channel/tunnel relationship without inventing distant waterfalls, unseen full river, a different parks maroon raft or fantasy expedition machinery. Date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-124864211366249-thumbnail.jpg",
+      "thumbnailSHA256": "a3f059f62446a86996d16b1d44dda7056cf31fbe16ee670e716f8a10d19a077a",
+      "thumbnailBytes": 26213,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-124864211366249-detail.jpg",
+      "detailSHA256": "a58209ed45484a899975762d9ec2af9655216aeed6077194643fb249be138c76",
+      "detailBytes": 193311,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-124864211366249",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Roaring Rapids at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual local rapids photograph inspected. The circular raft has YELLOW/orange molded sides, a thick BLACK rubber outer ring, visible silver safety chains across outer side panels, tall BLACK seat backs with three slots and SILVER tubular center handrails/triangular braces. Source families remain seated around the center behind their belts. Gray/brown water foams around it; genuine dark gray artificial rock walls, a low dark tunnel opening and source overhanging green foliage enclose this photographed section. Compose this actual near raft and documented rocky channel/tunnel relationship without inventing distant waterfalls, unseen full river, a different parks maroon raft or fantasy expedition machinery. Date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "a060bb70b616bccdf5851a9a57f0b115cb1e02d6e54369e064fe40c83ed27353",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 126441017401253,
+      "rideName": "Krazy Kars",
+      "alt": "Illustrated Krazy Kars at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:17:37.264098+00:00",
+      "originalSHA256": "f18401b9e988eaee408ab89b8263f8617d69f11664067472bec407638d2c4858",
+      "review": "Accepted: Generated pixels inspected. Purple/yellow car2, dark-green wheel hubs/headlamp housings/seat fins, white bumper, source front children with orange belts and guide pickup follow the actual photo. Attached guide rails and white/blue station structure remain intact. Dusk illumination is generated; no free-road driving depicted.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4d9d7c82f19c82202d1e398248a70c3b81618587-1988x1326.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children getting ready to start the ride in colorful Krazy Kars at Six Flags Great America.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/krazy-kars",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "26347aecb6fc9a62dce2afee8dedadf151c983e73eef408616158b4b9b04c7a1",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual local guided car photograph inspected. The near four-seat kiddie car has a PURPLE rounded hood/body, YELLOW wheel fenders/windshield frame/interior, DARK GREEN decorative hubcaps/round headlamp housings and seat-back fins, a WHITE straight front bumper and small physical yellow number 2. Source two children sit behind the front small black steering wheels and orange belts; rear seats are empty. Real black/green guide rails run below the car inside a white steel roofed station, with white columns/diagonal braces, blue support posts, turquoise fence and grass outside. Compose the genuine near car, source guide pickup/bracket and station structure, leaving following cars secondary. No highway free driving, invented car mechanics or full hidden course. Source capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-126441017401253-thumbnail.jpg",
+      "thumbnailSHA256": "ff16295b158df4cc5e349ff7d478e09982aa1320b6b433f0d512d7d7a130105f",
+      "thumbnailBytes": 22552,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-126441017401253-detail.jpg",
+      "detailSHA256": "9101c28c8cf3d8be252b6bf77ae466b4488bd79314dd62b1ed159592b51c924e",
+      "detailBytes": 156011,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-126441017401253",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Krazy Kars at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual local guided car photograph inspected. The near four-seat kiddie car has a PURPLE rounded hood/body, YELLOW wheel fenders/windshield frame/interior, DARK GREEN decorative hubcaps/round headlamp housings and seat-back fins, a WHITE straight front bumper and small physical yellow number 2. Source two children sit behind the front small black steering wheels and orange belts; rear seats are empty. Real black/green guide rails run below the car inside a white steel roofed station, with white columns/diagonal braces, blue support posts, turquoise fence and grass outside. Compose the genuine near car, source guide pickup/bracket and station structure, leaving following cars secondary. No highway free driving, invented car mechanics or full hidden course. Source capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "0b2954ca5f58edee0ee2d336cca658470bdc11e79a907a2747bf1c0135b9481f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 142386632071394,
+      "rideName": "Wrath of Rakshasa",
+      "alt": "Illustrated Wrath of Rakshasa at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:17:14.427187+00:00",
+      "originalSHA256": "899e19f7dfa9d9a7b00d3e426877c33c3b0984d9172f6f8fdeca9094f2f0baa4",
+      "review": "Accepted: Generated pixels inspected. Real blue inversion/spine and yellow support geometry, source-scale broad train at the upper arc and documented right-hand drop/catwalk preserve this local dive coaster. No unsupported close rider restraints or fantasy demon/ruins. Lighting and atmosphere are generated; source date remains unverified.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F29699c617891aef186efdc634b0511a8ee7f252d-2000x1333.webp%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Wrath of Rakshasa",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/wrath-of-rakshasa",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e8360486b2f5187c900a861fe0a47c32e96f82fc0219bf8937ad18a270d45243",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and genuine ride photograph inspected. Great Americas B&M dive coaster has vivid BLUE box-spine/tubular running rails and YELLOW/gold cylindrical supports with visible flange joints. The actual near inversion rises on the left with a broad three-row, seven-across dark train/red-yellow restraint detailing near its upper arc; the steep blue first-drop/catwalk section to the right and smaller blue hill behind are source context. Compose the documented near blue inversion, yellow columns and attached small source-scale train, with real rail/wheel relationship and source landscaping; gray unrelated background structure remains peripheral. Keep riders tiny rather than inventing close hidden restraints or building a complete guessed route, and do not add a literal demon or fantasy ruins. The operator reports 2025 introduction, but exact photo date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-142386632071394-thumbnail.jpg",
+      "thumbnailSHA256": "63fdfd3ee143b1198799d312798f9147e80de8a7f93ce96a90f8b12d0df1e7c6",
+      "thumbnailBytes": 23112,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-142386632071394-detail.jpg",
+      "detailSHA256": "ff84fc57ca8f0799fa31d15caf4140d33c71acef8d5fbf25901868f67f38a900",
+      "detailBytes": 177650,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-142386632071394",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Wrath of Rakshasa at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and genuine ride photograph inspected. Great Americas B&M dive coaster has vivid BLUE box-spine/tubular running rails and YELLOW/gold cylindrical supports with visible flange joints. The actual near inversion rises on the left with a broad three-row, seven-across dark train/red-yellow restraint detailing near its upper arc; the steep blue first-drop/catwalk section to the right and smaller blue hill behind are source context. Compose the documented near blue inversion, yellow columns and attached small source-scale train, with real rail/wheel relationship and source landscaping; gray unrelated background structure remains peripheral. Keep riders tiny rather than inventing close hidden restraints or building a complete guessed route, and do not add a literal demon or fantasy ruins. The operator reports 2025 introduction, but exact photo date is unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "d9bf920a720b9aef1fdae714a9bea475db9f8e5377a8df068c19ebd2e943d895",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 158498344445127,
+      "rideName": "Big Easy Balloons",
+      "alt": "Illustrated Big Easy Balloons at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:22:01.228246+00:00",
+      "originalSHA256": "ffbae70e96f10f30c3efda9637b9f404d9ae3cbdc4584e559b8be27ae1edbf11",
+      "review": "Accepted: Generated pixels inspected. Mardi Gras green/purple/yellow rigid balloon canopies, cream swag/bulbs, dark suspension rods, brown basket shells/silver gates and maroon lifting arms remain attached to the documented center mast/fleur-de-lis drum. Source riders stay seated; no held character-balloon imagery. Dusk illumination is generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F318e4cc0837774cb040c49f69a3aa47eb6cb51a5-7952x5304.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Big Easy Balloons ride at Six Flags Great America, with riders floating in colorful balloons.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/big-easy-balloons",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "0dc748f7fd28c6f4acb47942ca3eb73bed58e58260be34dbf9bf5fd7c951cbdd",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual local balloon-spinner photo inspected. Rigid round balloon canopies are Mardi Gras PURPLE/GREEN/YELLOW panels, with cream molded swag trim and white bulb rows; long dark suspension rods connect each canopy to BROWN/tan basket-textured gondolas with dark brown edging, U-shaped entry recess and SILVER gates/handrails. MAROON steel radial lifting arms attach these assemblies to the center mast above a green/maroon lower guard drum decorated with yellow fleur-de-lis. Source seated families and tiny background park visitors are genuine; preserve actual basket-to-rods/arm connections and source scale. Compose the documented front gondolas and mechanism, with neighboring Joker rails peripheral only. This independent local ride has no Daffy figure; do not add a character, substitute fruit gondolas, free-flying hot-air balloon or hidden drive. Date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-158498344445127-thumbnail.jpg",
+      "thumbnailSHA256": "b4f167216f964fb534a72ed8cde0753108a2ee0abd814d2bd0a6827879730fef",
+      "thumbnailBytes": 24977,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-158498344445127-detail.jpg",
+      "detailSHA256": "00001deaae1517e66e30289e959a94e4e3474222a36d46096cd5a3b59913c256",
+      "detailBytes": 180424,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-158498344445127",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Big Easy Balloons at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual local balloon-spinner photo inspected. Rigid round balloon canopies are Mardi Gras PURPLE/GREEN/YELLOW panels, with cream molded swag trim and white bulb rows; long dark suspension rods connect each canopy to BROWN/tan basket-textured gondolas with dark brown edging, U-shaped entry recess and SILVER gates/handrails. MAROON steel radial lifting arms attach these assemblies to the center mast above a green/maroon lower guard drum decorated with yellow fleur-de-lis. Source seated families and tiny background park visitors are genuine; preserve actual basket-to-rods/arm connections and source scale. Compose the documented front gondolas and mechanism, with neighboring Joker rails peripheral only. This independent local ride has no Daffy figure; do not add a character, substitute fruit gondolas, free-flying hot-air balloon or hidden drive. Date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "4199c66580bbce85a116dddb2361d1e374fd5893b7ed7b4e0ede23085a80c856",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 161208858125070,
+      "rideName": "The Lobster",
+      "alt": "Illustrated The Lobster at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:22:20.752516+00:00",
+      "originalSHA256": "fe32c833cf662f5b5a3cde013d414e394dce27c79ce5010da0268a5635e66686",
+      "review": "Accepted: Generated pixels inspected. Glossy black tubs with gold stripes/red round lamps, silver rails and actual seated source passengers stay connected to the paired lower arms and curved black/gold bulb-lined mechanism. The card retains the source local paint and main geometry; dusk lighting/background and small upper-edge fill are generated atmosphere, not a technical reconstruction.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F24157611a9071c1daf68596440e77043abf36609-7952x5304.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "People enjoying The Lobster ride at Six Flags Great America, spinning in black and orange cars.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/the-lobster",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "be7257b1fc073fe43e1a15282de3801b328f5a762b374bd0cb0a3b9120b55665",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual local Schwarzkopf spinner photograph inspected. Glossy BLACK rounded double-seat tubs have thin GOLD horizontal trim, black padded seat backs, SILVER side rails/lap rail and round RED inset lamps on their outside panels. Actual source passengers remain seated behind rails. Curved BLACK arms with gold strips and round amber bulbs form arcs above/behind, joining smaller paired tub rotors to the black/silver bolted central mechanism. Compose the documented near tub pair, its attached lower steel arms, real arched arm and center column with source trees/concrete pad behind. Do not invent a live lobster/octopus, detached cars, guessed complete hidden arm network or unrelated ride paint. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-161208858125070-thumbnail.jpg",
+      "thumbnailSHA256": "0a912ef436e91b5dbe0f3e456428069800ed6b38dde3932ad6a75281f33dcc07",
+      "thumbnailBytes": 25405,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-161208858125070-detail.jpg",
+      "detailSHA256": "488f9e9b4edc072107d6ac7ddf5ad271eb698e4a3d5171bb2380c461c6eafe8a",
+      "detailBytes": 182550,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-161208858125070",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict The Lobster at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual local Schwarzkopf spinner photograph inspected. Glossy BLACK rounded double-seat tubs have thin GOLD horizontal trim, black padded seat backs, SILVER side rails/lap rail and round RED inset lamps on their outside panels. Actual source passengers remain seated behind rails. Curved BLACK arms with gold strips and round amber bulbs form arcs above/behind, joining smaller paired tub rotors to the black/silver bolted central mechanism. Compose the documented near tub pair, its attached lower steel arms, real arched arm and center column with source trees/concrete pad behind. Do not invent a live lobster/octopus, detached cars, guessed complete hidden arm network or unrelated ride paint. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "10eee622a68bb5fb64504b145dd8e9e676bb054175da24705a99da943d4e9b6f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 165815350412029,
+      "rideName": "Krazy Kups",
+      "alt": "Illustrated Krazy Kups at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:22:45.052844+00:00",
+      "originalSHA256": "d7e4ba53f18b82cd8803063fd54d0eeef0a41c2861a06ef3d70e10e4aa26512a",
+      "review": "Accepted: Generated pixels inspected. Pink/magenta cup, lime/purple angular decoration, cream steering disc, silver entry rail and two source boys match the actual local ride. Pale-green turntable, black fence and blue gate frame remain context. Lower-edge fastener fill and dusk atmosphere are generated; no claim of a verified hidden mechanism.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F69bb8eb602ea33ee936aef965a9f75380d956486-1440x800.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Kids spinning in Krazy Kups at Six Flags Great America.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/krazy-kups",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "6a13b866604f31f489386dd35da3f3db1be6f8bbe75ef90285299cb9cf7b081e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual close teacup photograph inspected. The local low cup is PINK with darker magenta rim/interior, pale-pink side panels and PURPLE/lime angular decoration; a small physical Krazy Kups wordmark is partly visible on the shell. Two source boys sit inside holding the small CREAM center steering disc. A narrow SILVER entry rail and dark latch are visible at the right edge; the cup is bolted to the pale GREEN round turntable. A second pink cup/source family, black perimeter fence, blue rectangular gate frame and green hedges are genuine background. Compose the source near cup and children/center disc at photographed scale, preserving concealed lower mechanism. No steaming tea, invented giant teapot, extra unsupported restraints, new character or different parks ornate teacup. Date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-165815350412029-thumbnail.jpg",
+      "thumbnailSHA256": "50522cfef25da33cc059fd897429a904f1f165ccc1a26328333fcc766758232f",
+      "thumbnailBytes": 21170,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-165815350412029-detail.jpg",
+      "detailSHA256": "079f71f031612cb7d3cce1e9e30ba04cc100db87090669c8859085cfcab9b5d6",
+      "detailBytes": 127815,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-165815350412029",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Krazy Kups at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual close teacup photograph inspected. The local low cup is PINK with darker magenta rim/interior, pale-pink side panels and PURPLE/lime angular decoration; a small physical Krazy Kups wordmark is partly visible on the shell. Two source boys sit inside holding the small CREAM center steering disc. A narrow SILVER entry rail and dark latch are visible at the right edge; the cup is bolted to the pale GREEN round turntable. A second pink cup/source family, black perimeter fence, blue rectangular gate frame and green hedges are genuine background. Compose the source near cup and children/center disc at photographed scale, preserving concealed lower mechanism. No steaming tea, invented giant teapot, extra unsupported restraints, new character or different parks ornate teacup. Date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "99967796ca937c8eac79dd5c774eb7be9a0b2a896ba85db0b73412acf217254a",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 186168382773456,
+      "rideName": "River Rocker",
+      "alt": "Illustrated River Rocker at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:23:10.485213+00:00",
+      "originalSHA256": "a79817b261c26519dc4ae606a7520c883e110cfcbefa901081dcf59b6eddf8c9",
+      "review": "Accepted: Generated pixels inspected. Raised orange canoe hull, dark underside edge, stepped rows/source seated passengers, salmon truss arm and high pivot/A-frame with rope-wrap decoration follow the real photo. Attached structural relationships and source tree/roof framing preserved; no invented sails or water route. Dusk is generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fdd88db9b80930447e3f52ce8a4d6e9a90f00f8d3-1988x1326.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Six Flags Great America's River Rocker pirate ship ride swinging upwards with riders visible.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/river-rocker",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "75225a28a1e226992f4ffddec3d14724914b67def1e53b0aee1e30f9f2f947bb",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual local swinging canoe photograph inspected. River Rocker has a large ORANGE/red smooth canoe-shaped hull with dark underside trim, stepped rectangular row side panels/physical small row numbers and actual source passengers seated inside behind source bars. RED/salmon truss pendulum arms attach the hull to a real high pivot/catwalk and angular RED/salmon A-frame; the thick front support bears molded rope-wrap details and a yellow base edge. The photographed boat is raised to the right, with source tree line and partial shingle roof at left. Compose that attached hull/arm/pivot/support relationship and genuine occlusions, without inventing sails, pirate mast, a water channel, hidden drive or unsupported seat structure. Date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-186168382773456-thumbnail.jpg",
+      "thumbnailSHA256": "285273faf263da2f293cb40585b40193069dfc1b26f7a3939c52e7c1d846b415",
+      "thumbnailBytes": 21126,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-186168382773456-detail.jpg",
+      "detailSHA256": "a7e005c04a955ba2c8b115104df2ea0092e259904755c4ee7eb4a12cc441ce42",
+      "detailBytes": 150490,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-186168382773456",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict River Rocker at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual local swinging canoe photograph inspected. River Rocker has a large ORANGE/red smooth canoe-shaped hull with dark underside trim, stepped rectangular row side panels/physical small row numbers and actual source passengers seated inside behind source bars. RED/salmon truss pendulum arms attach the hull to a real high pivot/catwalk and angular RED/salmon A-frame; the thick front support bears molded rope-wrap details and a yellow base edge. The photographed boat is raised to the right, with source tree line and partial shingle roof at left. Compose that attached hull/arm/pivot/support relationship and genuine occlusions, without inventing sails, pirate mast, a water channel, hidden drive or unsupported seat structure. Date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "495d0a8ace262202b983de7b4223cb5428a8f955aa48f630e1fdb98b9c25fa14",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 197206839366066,
+      "rideName": "Red Baron",
+      "alt": "Illustrated Red Baron at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:24:12.534077+00:00",
+      "originalSHA256": "09421fb386384f6771c8765ad77d16254f8c7427e01087d5f1c2b1a5d9c5b108",
+      "review": "Accepted: Generated pixels inspected. Real empty red3/white2 biplane tubs, twin wings/black struts, decorative wheels, source roundels/cross decal and attached red arms retain the genuine low loading pose. Checkerboard tower/red fence and source backdrop stay recognizable. No invented airborne guests or absent propeller. Dusk lights are generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F45595ad6ddc2a7b7d9b37e1fa37f377271e8d15f-7952x5304.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Six Flags Great America Red Baron ride with multiple red and white airplane seats arranged in a circle.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/red-baron",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d5655f2954bc2f9422aa552ae3f42769ff2e0d564f3fa00125d805618cf144bf",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual local parked-plane photograph inspected. Real circular ride has empty red and white BIPLANE tubs, black wing struts, black-trimmed twin wings, black decorative wheels and small black recessed nose cones; source red plane3 has white nose rings/physical black cross decal, while the white plane2 carries blue/red roundels and red/white/blue striped tail. Red radial arms/lifting links attach the planes to a red central base with a tall RED/WHITE checkerboard control-tower cover and small square top canopy. Preserve the genuine low loading position, red picket fence, gray/blue wall and actual source-empty near cockpits. Compose only these attached toy planes and center tower; do not invent airborne passengers, real combat aircraft, prominent absent propellers or a Snoopy character. Date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-197206839366066-thumbnail.jpg",
+      "thumbnailSHA256": "4ba5022c8588b0540ead37a843a7ee6a037d213de85c61b93f2d1a7b570871ca",
+      "thumbnailBytes": 22456,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-197206839366066-detail.jpg",
+      "detailSHA256": "3304108307c710d2b70d8b17c863dfe060457ba8dd53e0fe0073cda2e71b7519",
+      "detailBytes": 179200,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-197206839366066",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Red Baron at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual local parked-plane photograph inspected. Real circular ride has empty red and white BIPLANE tubs, black wing struts, black-trimmed twin wings, black decorative wheels and small black recessed nose cones; source red plane3 has white nose rings/physical black cross decal, while the white plane2 carries blue/red roundels and red/white/blue striped tail. Red radial arms/lifting links attach the planes to a red central base with a tall RED/WHITE checkerboard control-tower cover and small square top canopy. Preserve the genuine low loading position, red picket fence, gray/blue wall and actual source-empty near cockpits. Compose only these attached toy planes and center tower; do not invent airborne passengers, real combat aircraft, prominent absent propellers or a Snoopy character. Date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "905877497368e497765dbdc0325cd3d833e956a29106c94dd32efa2999d33e67",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 200310622244464,
+      "rideName": "American Eagle",
+      "alt": "Illustrated American Eagle at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:24:56.166653+00:00",
+      "originalSHA256": "1e4f707dc3a11a96c375ff84475ffd11b0779c6d92a03d1cae8af2d579497cc0",
+      "review": "Accepted: Generated pixels inspected. Actual white timber lattice, parallel large drops, near rising hill/brown rail bed/red trim and source chain-link fence identify American Eagle overall. This is a distinct overview from Red Sides close red-train asset; hidden cars remain distant and no blue train/current racing claim is invented. Dusk sky is generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffe42e0f778e8ffc8d20e222e2014884dcd09f3ad-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "View of the American Eagle wooden roller coaster at Six Flags Great America.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/american-eagle",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "cc7acbf419c07f09aab0ee3e504f786b06904160324cb46f3fc1c00cce42d1f4",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual shared American Eagle wide track photograph inspected. This catalog entry is American Eagle overall, separate from the specifically named Red Side entry. The selected genuine overview shows dense WHITE painted timber bents, unpainted brown timber rail beds, red outer handrails/trim and the real parallel large drop far left, with a nearer rising hill crossing to the upper right. A small dark train is partly hidden near the low left section; exact train color/details are not established and must remain distant/occluded. Compose the documented track/timber overview at portrait scale, retaining source near chain-link fence and connections rather than reusing the already accepted close red-train image. Do not invent a blue train, recolor a source car, assert which side is operating or fabricate hidden course geometry. Date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-200310622244464-thumbnail.jpg",
+      "thumbnailSHA256": "28345ed632ed6163bc807de5d39a1bf8c90c0437e1b0a02b993865f1e4985a56",
+      "thumbnailBytes": 28870,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-200310622244464-detail.jpg",
+      "detailSHA256": "12c2e2e506432a4de318581b92207e67b3fe421d668c9bfa6a8bf47dda1d4e67",
+      "detailBytes": 206410,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-200310622244464",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict American Eagle at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual shared American Eagle wide track photograph inspected. This catalog entry is American Eagle overall, separate from the specifically named Red Side entry. The selected genuine overview shows dense WHITE painted timber bents, unpainted brown timber rail beds, red outer handrails/trim and the real parallel large drop far left, with a nearer rising hill crossing to the upper right. A small dark train is partly hidden near the low left section; exact train color/details are not established and must remain distant/occluded. Compose the documented track/timber overview at portrait scale, retaining source near chain-link fence and connections rather than reusing the already accepted close red-train image. Do not invent a blue train, recolor a source car, assert which side is operating or fabricate hidden course geometry. Date unknown. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "3490ce5e0b710733f098fce2373817257554d7c22de5ec6ab772cc181a45930b",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 200822176394723,
+      "rideName": "Logger's Run",
+      "alt": "Illustrated Logger's Run at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:25:22.459016+00:00",
+      "originalSHA256": "cefaf369fd3a9ee7494f0b575b15bee93c060f80afcf0699db4bc70a55c321c2",
+      "review": "Accepted: Generated pixels inspected against Eden, Janine and Jims 2013 reference. Pale-green elevated metal flume curves/supports/walkways and genuine rocky foreground cascade/foliage are retained, without inventing a visible log boat or complete hidden route. CC BY2.0 source attribution and reported old capture date are preserved; dusk atmosphere does not establish current paint or operation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.coasterpedia.net/thumb/8/89/Logger%27s_Run_%28Six_Flags_Great_America%29_2013_01.jpg/1200px-Logger%27s_Run_%28Six_Flags_Great_America%29_2013_01.jpg.webp",
+          "sourceURL": "https://coasterpedia.net/wiki/File:Logger%27s_Run_(Six_Flags_Great_America)_2013_01.jpg",
+          "credit": "Eden, Janine and Jim / edenpictures (via Coasterpedia)",
+          "license": "Creative Commons Attribution 2.0 (CC BY 2.0)",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+          "originalSourceURL": "https://www.flickr.com/photos/edenpictures/9485487049/",
+          "captureDateReported": "2013-08-08",
+          "sha256": "bc5bf663e16ad3f063ae83de9537df83bcaf5d04c79cbb532b659e75f3819c0b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual locally identified Logger's Run photo pixels, Coasterpedia ride page and image file licensing/author page inspected. The genuine 2013 photograph by Eden, Janine and Jim shows a pale GREEN raised metal flume trough making broad curves across cylindrical green supports, with attached green maintenance handrails/lights, source lift walkway/roof at left and diagonal structural ties. In the foreground a real gray artificial-rock cascade/white water falls between green vines and leafy trees; tiny actual visitors are peripheral and no close boat is visible. Compose only this documented elevated trough, support connections and existing rocky waterfall with the source foliage, without inventing a log boat, new drops or full hidden route. Capture date is reported as 2013-08-08 by the file record; current paint/operating status is not established. Image source is credited to its photographer under CC BY 2.0, not to Six Flags."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-200822176394723-thumbnail.jpg",
+      "thumbnailSHA256": "e2f872494bd9434a7b4c1e5c03b81a961ae3794e98b5681620a08d01e4f2d764",
+      "thumbnailBytes": 22858,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-200822176394723-detail.jpg",
+      "detailSHA256": "5225bb164de626f8a887bb9c0d920723417eb0425f17fe0a172e74c29337320d",
+      "detailBytes": 186074,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-200822176394723",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Logger's Run at Six Flags Great America. Source- and pixel-reviewed facts and limits: Actual locally identified Logger's Run photo pixels, Coasterpedia ride page and image file licensing/author page inspected. The genuine 2013 photograph by Eden, Janine and Jim shows a pale GREEN raised metal flume trough making broad curves across cylindrical green supports, with attached green maintenance handrails/lights, source lift walkway/roof at left and diagonal structural ties. In the foreground a real gray artificial-rock cascade/white water falls between green vines and leafy trees; tiny actual visitors are peripheral and no close boat is visible. Compose only this documented elevated trough, support connections and existing rocky waterfall with the source foliage, without inventing a log boat, new drops or full hidden route. Capture date is reported as 2013-08-08 by the file record; current paint/operating status is not established. Image source is credited to its photographer under CC BY 2.0, not to Six Flags. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "a66899ec3f887ff5ea84d8abe5e9d0995680f09c9b0151c174a274ac60acb2d8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 203287787577887,
+      "rideName": "Demon",
+      "alt": "Illustrated Demon at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:26:09.307670+00:00",
+      "originalSHA256": "b060cd016d9b44ea931b358fa26cfddd6bdef40204344a91ceb70e057c577d77",
+      "review": "Accepted: Generated pixels inspected. Local yellow two-abreast Arrow train, red shoulder restraints, dark seat backs/front flame decal, gray bogies and black rail/brace connections follow the real banked source. White timber backdrop/right rock/near track occlusions retained. Generated dusk lighting, not a present-operation photo.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F986536d0bc93c17e5611d55e3ed7d9421a730d13-2227x1485.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Demon roller coaster",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/demon",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "9c42989142baad169aceb63b6c9fe16af4d2f34344c55c7e6d72e8648c627714",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual local Arrow coaster photograph inspected. A YELLOW two-abreast box train with small physical demon-face/front flame decal, dark stripe/seat backs and RED padded over-shoulder restraints descends the pictured BLACK/charcoal tubular rails/truss with source gray wheel assemblies attached. Real black columns/cross-bracing, near black track curve/right faux-rock wall, white American Eagle timber backdrop and leafy trees frame the source riders. Compose that banked train/rail section with source seated passengers and original support/rock occlusions. This is Great America Illinois Demon, not the California namesake. No living demon, invented entire course, detached car or substitute coaster restraints. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-203287787577887-thumbnail.jpg",
+      "thumbnailSHA256": "5ee0d31b4b5702fb097a69517650c01cfc79f9cf5754885c36115860e88b5bf6",
+      "thumbnailBytes": 30055,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-203287787577887-detail.jpg",
+      "detailSHA256": "d1ba6af5dd492b1aa7c3fd3f08b8b55a6bf12f9c5cd1124362664248790f12fb",
+      "detailBytes": 208417,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-203287787577887",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Demon at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual local Arrow coaster photograph inspected. A YELLOW two-abreast box train with small physical demon-face/front flame decal, dark stripe/seat backs and RED padded over-shoulder restraints descends the pictured BLACK/charcoal tubular rails/truss with source gray wheel assemblies attached. Real black columns/cross-bracing, near black track curve/right faux-rock wall, white American Eagle timber backdrop and leafy trees frame the source riders. Compose that banked train/rail section with source seated passengers and original support/rock occlusions. This is Great America Illinois Demon, not the California namesake. No living demon, invented entire course, detached car or substitute coaster restraints. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "77cc938e297de5c7fa91c3e22dd95387ba87c059d6cccb2a82af02bab97329de",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 204310553407550,
+      "rideName": "Fiddler’s Fling",
+      "alt": "Illustrated Fiddler’s Fling at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:27:19.876732+00:00",
+      "originalSHA256": "c904e987ce1ad0e1418520148ee8e48de24609f05dd710fa196f8b052bda8538",
+      "review": "Accepted: Generated pixels inspected. Local silver/blue tubs, pale-blue oval canopies/navy curved supports and red rotor domes match the genuine loading scene. Seated families and small helper remain at source positions; near rail/hedge preserve the platform occlusion. Blue-white bulbs and dusk are generated lighting, not hidden mechanism reconstruction.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F81043d3c6962dcbc2ba5367f217af82d99ed00ed-7952x5304.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "People enjoying a ride on Fiddler's Fling at Six Flags Great America.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/fiddlers-fling",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "822cc2c23a6678097beca891c0fe0491a69616f19d5653ef8ddaa9c276e639dc",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual local flat-ride photograph inspected. Fiddlers Fling uses low rounded SILVER/light-blue double tubs with dark-blue bands/padding and round white/blue lights, each under a broad pale BLUE oval disc canopy on dark NAVY curved steel supports. Small BLUE rotor housings have RED rounded dome caps; genuine lower links are mostly obscured by the tubs/platform. Source families sit in cars on the gray circular pad inside white perimeter walls with red trim; a silver near rail and hedge partly occlude the platform. Compose the documented front tubs/canopy supports and visible center dome in the source loading pose, keeping actual riders seated and background helpers small. Do not invent flying tubs, rail tracks, exposed hidden drives or a carnival tent spanning all cars. Capture date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-204310553407550-thumbnail.jpg",
+      "thumbnailSHA256": "5bd008c0240a0dd98749e48c713c118266540c24cbcdf0c313c28317710de6f3",
+      "thumbnailBytes": 27347,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-204310553407550-detail.jpg",
+      "detailSHA256": "8374ff3134a2a0b13d85847cc4e8c2a2e1cbb5d68cd17dd3f31102b341fd8705",
+      "detailBytes": 188260,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-204310553407550",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Fiddler’s Fling at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual local flat-ride photograph inspected. Fiddlers Fling uses low rounded SILVER/light-blue double tubs with dark-blue bands/padding and round white/blue lights, each under a broad pale BLUE oval disc canopy on dark NAVY curved steel supports. Small BLUE rotor housings have RED rounded dome caps; genuine lower links are mostly obscured by the tubs/platform. Source families sit in cars on the gray circular pad inside white perimeter walls with red trim; a silver near rail and hedge partly occlude the platform. Compose the documented front tubs/canopy supports and visible center dome in the source loading pose, keeping actual riders seated and background helpers small. Do not invent flying tubs, rail tracks, exposed hidden drives or a carnival tent spanning all cars. Capture date unknown. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "84393dac9e00f6bac268e803ebd57e90c8a3113866fb2fd3956df100f4710f50",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 205303320652498,
+      "rideName": "Rue Le Dodge",
+      "alt": "Illustrated Rue Le Dodge at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:27:50.457158+00:00",
+      "originalSHA256": "829c796c479c83a5be21ed633b77bdbef8b0e32fba5078ccd0a3cf0844b7df42",
+      "review": "Accepted: Generated pixels inspected. Orange/silver car, black bumper ring/bench/steering wheel, source red-hatted adult/child and actual pickup pole to ceiling match local reference. Turquoise walls, other source cars and metal floor remain background. No road traffic or invented electricity; warm indoor/dusk treatment is generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F409b2df3a9281385ddbb9744bf6df33430f87a07-7377x4921.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests enjoying the Rue Le Dodge bumper car ride at Six Flags Great America.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/rue-le-dodge",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d48bfa163c58571b6a1f005f5d4e92dcf8bddb06aa66a0756bc623e03774879a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual local bumper-car photograph inspected. Near ORANGE shell has a broad SILVER front grille/hood center stripe, black pinstripes, molded silver exhaust-like side trim, black seat/steering wheel and thick BLACK rubber bumper ring; actual adult with red hat and child share the source bench behind their lap belt. A tall BLACK pickup pole rises to the overhead mesh ceiling. Other source red/orange/yellow/blue cars, turquoise/blue corrugated walls, black ceiling grid and scuffed metal floor remain secondary. Compose the documented orange near car with its connected pickup pole/ceiling and actual seated guests; no street wheels, road traffic, invented electric arc or a different parks car paint. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-205303320652498-thumbnail.jpg",
+      "thumbnailSHA256": "e61ee977a6d1b3fd25613dfa99606689d845e465e8c8860e2b9134b297832fae",
+      "thumbnailBytes": 23054,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-205303320652498-detail.jpg",
+      "detailSHA256": "4a04136b7e3e3e21a90e9caadb20ecef32345243e726ab3d7ef753305b52e110",
+      "detailBytes": 152852,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-205303320652498",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Rue Le Dodge at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual local bumper-car photograph inspected. Near ORANGE shell has a broad SILVER front grille/hood center stripe, black pinstripes, molded silver exhaust-like side trim, black seat/steering wheel and thick BLACK rubber bumper ring; actual adult with red hat and child share the source bench behind their lap belt. A tall BLACK pickup pole rises to the overhead mesh ceiling. Other source red/orange/yellow/blue cars, turquoise/blue corrugated walls, black ceiling grid and scuffed metal floor remain secondary. Compose the documented orange near car with its connected pickup pole/ceiling and actual seated guests; no street wheels, road traffic, invented electric arc or a different parks car paint. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "7c36f503f826f98e16eccb84270629842d609b6a727c6a3c71fc6ae2127c2708",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 213987632318907,
+      "rideName": "Scenic Railway County Fair Station",
+      "alt": "Illustrated Scenic Railway County Fair Station at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:28:28.361690+00:00",
+      "originalSHA256": "aaadece85638fdc65e1fdea892f1fdc2a46150cda8853d0ed89bdb002ce29c10",
+      "review": "Accepted: Generated locomotive pixels inspected. Red boiler/cowcatcher/domes, blue-black funnel/smokebox, brass bell, wooden cab, photographed small16/3 marks, actual rods/wheels-to-rail and trailing blue/cream coaches retain the source local train. Yellow platform/flags/source riders retained; no fabricated steam/fuel claim. Dusk is generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fd76b9ebb606bd0b51f3f468b0e6eec7c2a8e80f5-2000x1333.webp%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Six Flags Great America's Scenic Railway train ride with passengers waving and a roller coaster in the background.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/scenic-railway-county-fair",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e9b01a37c8647c8ca3e7ccaffddb76c86942556291d6f120994f05c401d02763",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual local Scenic Railway train photograph inspected. Real locomotive has a RED cylindrical boiler/round front, dark BLUE-black smokebox/funnel stack with broad metal cap, RED domes with brass/gold bands, brass bell, square brown/metal headlamp and red slatted cowcatcher. A varnished BROWN wooden cab/red side panels carries small physical white GARR16 lettering, while small black/gold number3 plates are on the smokebox; do not reconcile or change the photographed marks. Red spoked driving wheels/black rods and steel wheels remain on the actual railway track; blue/cream open passenger coaches with red bases and source riders trail left. American flags, yellow platform edge and actual dense green trees frame this documented stopped/loading view. Compose actual engine-to-coach and wheel/rail connections; no invented station architecture, new steam plume, unsupported fuel claims or hidden route. Date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-213987632318907-thumbnail.jpg",
+      "thumbnailSHA256": "cb8320ce991fcd3ee871a20c3bf08ec66d38eab776bd3aafe34c9b01126029c1",
+      "thumbnailBytes": 29604,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-213987632318907-detail.jpg",
+      "detailSHA256": "786acb6a3b9c4429cce6f8646849035cd580c86d1fad5be77cb4d7f169274ad4",
+      "detailBytes": 219299,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-213987632318907",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Scenic Railway County Fair Station at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual local Scenic Railway train photograph inspected. Real locomotive has a RED cylindrical boiler/round front, dark BLUE-black smokebox/funnel stack with broad metal cap, RED domes with brass/gold bands, brass bell, square brown/metal headlamp and red slatted cowcatcher. A varnished BROWN wooden cab/red side panels carries small physical white GARR16 lettering, while small black/gold number3 plates are on the smokebox; do not reconcile or change the photographed marks. Red spoked driving wheels/black rods and steel wheels remain on the actual railway track; blue/cream open passenger coaches with red bases and source riders trail left. American flags, yellow platform edge and actual dense green trees frame this documented stopped/loading view. Compose actual engine-to-coach and wheel/rail connections; no invented station architecture, new steam plume, unsupported fuel claims or hidden route. Date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "42efaa4e41553e74f58d123cd429ec2f09fb837b1f02b3f86a750e525936c1e1",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 219135277259806,
+      "rideName": "Maxx Force",
+      "alt": "Illustrated Maxx Force at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:29:14.742301+00:00",
+      "originalSHA256": "68bd1e25002d0bdf9dcfae96a7aba0349d478374375f121e68609b9827cad44f",
+      "review": "Accepted: Generated pixels inspected. Actual maroon/white racing shells, decorative front tires, red seats/black lap bars and source passengers retain the banked Maxx Force identity. Gray bogie wheels grip the white lattice rail beneath, with dark gray supports and peripheral separate colored column behind. No shoulder restraints or road controls invented; dusk is generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F0e880ce5668d0e42383149427dfe1d8d20a91297-1440x800.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Excited riders leaning into the curve on Maxx Force roller coaster at Six Flags Great America.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/maxx-force",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "41f1dd546ec38e8eb3ba6dce2f88fe07d37de264f7835de97f42e1853106bb38",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual banked close coaster photograph inspected. Maxx Forces train has MAROON/WHITE racing-car-style shells, black decorative front tire forms, RED seat backs, BLACK lap restraints and source two-abreast passengers. Actual silver/gray coaster wheel bogies beneath the shell grip the WHITE triangular lattice track; distinguish those running wheels from decorative racing tires. DARK GRAY cylindrical columns/crossbars support the white rail, with a peripheral separate red/yellow column at right. Compose the documented near train and connected banked track with source seated passengers/some raised arms at their actual scale; do not add shoulder restraints, road steering controls, floating F1 vehicles or a guessed entire launch route. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-219135277259806-thumbnail.jpg",
+      "thumbnailSHA256": "172a282f571327ea2e7c01d54be98fe46a5cd4016b4b020a083aeebdc38af2a1",
+      "thumbnailBytes": 25819,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-219135277259806-detail.jpg",
+      "detailSHA256": "7da79cf695fe5aec0945b2b89bf74eddfac6a0fec912106062611ffe3fbe118a",
+      "detailBytes": 155319,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-219135277259806",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Maxx Force at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual banked close coaster photograph inspected. Maxx Forces train has MAROON/WHITE racing-car-style shells, black decorative front tire forms, RED seat backs, BLACK lap restraints and source two-abreast passengers. Actual silver/gray coaster wheel bogies beneath the shell grip the WHITE triangular lattice track; distinguish those running wheels from decorative racing tires. DARK GRAY cylindrical columns/crossbars support the white rail, with a peripheral separate red/yellow column at right. Compose the documented near train and connected banked track with source seated passengers/some raised arms at their actual scale; do not add shoulder restraints, road steering controls, floating F1 vehicles or a guessed entire launch route. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "a9e680888de6a22ff4ed4e8fbbffc7ddbd14bca4cdaf0607e7897501a98c54c3",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
       "rideId": 222079749455837,
       "rideName": "Raging Bull",
       "alt": "Illustrated Raging Bull at Six Flags Great America",
@@ -11099,6 +11851,382 @@
       "key": "38-222079749455837",
       "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based closely on actual attraction photo image 1. Image 2 supplies only restrained blue-purple dusk atmosphere. Believable physical perspective, natural photographic materials and moderate practical lights; slightly cinematic, not painted or cartoon. Preserve identifying real hardware, colors and layout. Center the attraction for thumbnail readability. No UI, frame, border, watermark or overlaid caption. Avoid small illegible text. Raging Bull at Six Flags Great America: match photo's actual orange/coral track on purple/mauve support columns, dark red train with four seats across and yellow lap restraints descending a steep bend. Nearby dark gray lift track as photographed and green foliage below. Plausible bogies ON rails, real metal surfaces; no inversions, invented hanging seats or unrelated ride.",
       "promptSHA256": "5fbd9398f3edf3ef933d5daf0ac70f10bbc7601393d48567b0b2b28d4213821e",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 226353449099304,
+      "rideName": "X Flight",
+      "alt": "Illustrated X Flight at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:30:46.719525+00:00",
+      "originalSHA256": "fca0c6f005203d47126efc5043d9c8c6b1bd3e04e551629fb5126bc05cf6d7dc",
+      "review": "Accepted: Generated pixels inspected. Both outboard passenger wings remain attached to the actual center bogie/red track, with navy/red/white angular shells, real dark restraints and source riders feet hanging. Blue-charcoal columns/source background catwalk retained. No extra train or free aircraft; dusk atmosphere is generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff02144f75b7d92fb1f51df7f7ee9ad7ca6a35856-2000x1333.webp%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders on X Flight at Six Flags Great America, experiencing the thrill of the ride.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/x-flight",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "901d955978dae4adbc9d806daf3703941b2fa8c19d3f374bd4434242dfa78c06",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual local wing-coaster photograph inspected. RED rectangular track spine/tubular rails lie between the two outboard passenger wings; dark BLUE/charcoal columns support it. Angular dark NAVY/red/white train fairings with source white emblem decals, gray wheel bogies and black frames remain attached on both sides of the rail. Each side has two seats abreast with dark shoulder/vest restraints and source riders feet hanging free; the bank tilts one wing high and the other low, not two independent trains. Compose the documented near wing rows/center bogie rail and actual source background lift/catwalk, preserving connected geometry and source passenger scale. No free aircraft wings, extra train, unsupported keyhole tower or whole hidden route. Date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-226353449099304-thumbnail.jpg",
+      "thumbnailSHA256": "78700c81ecd21e2e4c02774de8f5766568d603e430a63fd94c05540b92d8c809",
+      "thumbnailBytes": 25795,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-226353449099304-detail.jpg",
+      "detailSHA256": "3668a94d4c8dbf73b35c471d9f3485ecb10af9e76e21860275ba296ff1ebfe5f",
+      "detailBytes": 169292,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-226353449099304",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict X Flight at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual local wing-coaster photograph inspected. RED rectangular track spine/tubular rails lie between the two outboard passenger wings; dark BLUE/charcoal columns support it. Angular dark NAVY/red/white train fairings with source white emblem decals, gray wheel bogies and black frames remain attached on both sides of the rail. Each side has two seats abreast with dark shoulder/vest restraints and source riders feet hanging free; the bank tilts one wing high and the other low, not two independent trains. Compose the documented near wing rows/center bogie rail and actual source background lift/catwalk, preserving connected geometry and source passenger scale. No free aircraft wings, extra train, unsupported keyhole tower or whole hidden route. Date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "580b711a9c4074009ef71906b33bdfa6973c23ee603061985c716572e2da0a2e",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 230070028568324,
+      "rideName": "Hometown Fun Machine",
+      "alt": "Illustrated Hometown Fun Machine at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:29:40.282647+00:00",
+      "originalSHA256": "4622ec48f99bcd564d3d4579c15c779cb0fa549ac1bc32ac514d9e8c43c2e4fd",
+      "review": "Accepted: Generated pixels inspected. Local silver riveted tub, green edge trim, entry latch/chain, horizontal safety rail and source women remain connected to the yellow lattice arm. Green fence/red-green booth and source tree backdrop are preserved; generated dusk lighting does not assert hidden drive details.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F926a0b519b72d69aa17780cd63565345b866f6c4-7952x5304.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "People enjoying a ride on the Hometown Fun Machine at Six Flags Great America.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/hometown-fun-machine",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "17f9989b95d896c9b0714bc88e099315cfec173a2437bd5e46a8288c68f03bb8",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual local Scrambler close photograph inspected. The near SILVER riveted double passenger tub has GREEN top side trim/black padding, a rounded silver lower front hood, silver horizontal tubular safety rail and visible metal entry latch/chain at the left. Two source women sit inside holding the real rail. YELLOW steel lattice radial arms/diagonal stays join the actual green/yellow center mechanism, with small physical tub number5 visible behind. Dark GREEN wood-slat fence, red/green booth and source tree shade frame the pad. Compose this connected near tub and yellow arm section, retaining true mechanical junctions/occlusions rather than substituting Great Adventures red-arm Scrambler or inventing hidden drives. Capture date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-230070028568324-thumbnail.jpg",
+      "thumbnailSHA256": "54538df0a7346fbdbc673ed8b9a34053da217c550373a2c6a883d58f019106ac",
+      "thumbnailBytes": 25535,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-230070028568324-detail.jpg",
+      "detailSHA256": "8e3fe15dd74d739653896e5d1a13a385b327d76410a33126f92b9a855db711f6",
+      "detailBytes": 181807,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-230070028568324",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Hometown Fun Machine at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual local Scrambler close photograph inspected. The near SILVER riveted double passenger tub has GREEN top side trim/black padding, a rounded silver lower front hood, silver horizontal tubular safety rail and visible metal entry latch/chain at the left. Two source women sit inside holding the real rail. YELLOW steel lattice radial arms/diagonal stays join the actual green/yellow center mechanism, with small physical tub number5 visible behind. Dark GREEN wood-slat fence, red/green booth and source tree shade frame the pad. Compose this connected near tub and yellow arm section, retaining true mechanical junctions/occlusions rather than substituting Great Adventures red-arm Scrambler or inventing hidden drives. Capture date unknown. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "ee0596c2e81e3771a0d6ef0c77d9f1fb714fda029d50eaf6615d41f5aca65f3c",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 243648186662984,
+      "rideName": "Giant Drop",
+      "alt": "Illustrated Giant Drop at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:30:06.614995+00:00",
+      "originalSHA256": "421b2861b3101c4ce3fd0f410f023f5f8f33f1eaef149e8b733ec6b49eb85466",
+      "review": "Accepted: Generated pixels inspected. Brown mast/guide rails and mining-style carrier backs, orange shoulder pads/silver U bars, adjacent four-seat benches and lower buffer cylinders retain actual source loading pose. Source guests remain seated, with surrounding queue/building context and separate coaster lift peripheral. No unsupported high-fall/top-cap scene; dusk is generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1fecf82e1b3c8dffff785ee3f9a0333284eedd05-7952x5304.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Giant Drop ride at Six Flags Great America, featuring riders strapped into seats and ready for a thrilling drop.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/giant-drop",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2f7204183a34a5e0af633f960446c06b97c652e7ad7121d0e6a191c508b27c3f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual low-loading local drop-tower photo inspected. Giant Drop has a tall BROWN/maroon cylindrical/segmented mast with dark steel guide rails, bolted rings and attached brown molded carrier backs bearing angular mining-themed trim. Four-across bench sections on adjacent mast faces have BLACK seat bases, bright ORANGE over-shoulder pads and SILVER U-shaped grab bars; actual source riders sit with feet dangling just above the loading pad. Real lower buffer cylinders/guide structures, black queue rail, wood canopy/earth-tone building and separate orange coaster lift/purple supports form source context. Compose the documented near two bench sections, mast guides and base equipment in this source loading pose. No invented high-fall scene, extra restraint layout, superhero figure or hidden top cap. Date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-243648186662984-thumbnail.jpg",
+      "thumbnailSHA256": "53d554bd76f506b5530e1b102c95459e1ec4cdeb1720ee93aebcd148208e53fa",
+      "thumbnailBytes": 23367,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-243648186662984-detail.jpg",
+      "detailSHA256": "0950958963f492c5dcea0c6d4484c63d62f56e0084eb3de16a6c784a36a49770",
+      "detailBytes": 169786,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-243648186662984",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Giant Drop at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual low-loading local drop-tower photo inspected. Giant Drop has a tall BROWN/maroon cylindrical/segmented mast with dark steel guide rails, bolted rings and attached brown molded carrier backs bearing angular mining-themed trim. Four-across bench sections on adjacent mast faces have BLACK seat bases, bright ORANGE over-shoulder pads and SILVER U-shaped grab bars; actual source riders sit with feet dangling just above the loading pad. Real lower buffer cylinders/guide structures, black queue rail, wood canopy/earth-tone building and separate orange coaster lift/purple supports form source context. Compose the documented near two bench sections, mast guides and base equipment in this source loading pose. No invented high-fall scene, extra restraint layout, superhero figure or hidden top cap. Date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "a1941d407c02b564cf3de076705882dc51e2e58c08dd05873922c23f7c7b58b7",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 250983158349244,
+      "rideName": "Lady Bugs",
+      "alt": "Illustrated Lady Bugs at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:30:27.115265+00:00",
+      "originalSHA256": "29910b3c8992c6d0a5035b0944e701efdbdf013e08761fa7e8cac4854b90c4da",
+      "review": "Accepted: Generated pixels inspected. Empty near red/yellow molded bug tubs, black spots/painted faces/antenna rods, small wheels on circular steel track, yellow flower hub and green fence match source loading scene. Source children stay in the farther tub; no new passengers or living insects. Local school/canopy background retained, dusk generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa1fe9f067f6688a1b87cdd5717d3040d745309fa-7952x5304.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Kids loading into the colorful Lady Bugs ride at Six Flags Great America.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/lady-bugs",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e2e86ff9c489c7c3251fec0057da17eefd6f284798b9f45fbf5f45701d63e77d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual local small circular car ride photograph inspected. RED and YELLOW rounded ladybug tubs have BLACK spots, white smiling painted faces, thin black antenna rods/black loop handgrips, black perimeter bumper strip and small black wheels on the real narrow circular steel guide track. The near red tub is empty with visible small molded seats/white belt straps and silver edge grab handles; yellow car3 is also empty, while actual source children sit in the farther right yellow tub. Yellow central skirt supports GREEN stalks and large fixed YELLOW flower/sun panels with molded smiling center/white bulb details. Bright green picket fence, actual red/white school facade and partial blue/yellow canopy frame the source loading scene. Compose this documented near empty tub/track and flower hub without adding live giant insects, unsupported passengers, a different character ride or hidden mechanism. Date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-250983158349244-thumbnail.jpg",
+      "thumbnailSHA256": "c2cb1fd40af614c6cd2446f0ec54e8dc003c22de62039d010f36fe80b78724ca",
+      "thumbnailBytes": 26733,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-250983158349244-detail.jpg",
+      "detailSHA256": "612735bfc93c134ca0dd404f55de80735c2dccad2bfc10be73ab52c6205cc8fa",
+      "detailBytes": 190857,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-250983158349244",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Lady Bugs at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual local small circular car ride photograph inspected. RED and YELLOW rounded ladybug tubs have BLACK spots, white smiling painted faces, thin black antenna rods/black loop handgrips, black perimeter bumper strip and small black wheels on the real narrow circular steel guide track. The near red tub is empty with visible small molded seats/white belt straps and silver edge grab handles; yellow car3 is also empty, while actual source children sit in the farther right yellow tub. Yellow central skirt supports GREEN stalks and large fixed YELLOW flower/sun panels with molded smiling center/white bulb details. Bright green picket fence, actual red/white school facade and partial blue/yellow canopy frame the source loading scene. Compose this documented near empty tub/track and flower hub without adding live giant insects, unsupported passengers, a different character ride or hidden mechanism. Date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "e414bcb7b75d20066d0f0e035839963799305e07c795fecb4c5015465c11bb46",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 252305260439749,
+      "rideName": "Whizzer",
+      "alt": "Illustrated Whizzer at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:33:42.949955+00:00",
+      "originalSHA256": "25871c2cf9a14dc7a812df312f8427a44034eea1211850df456d9bf978eb53ba",
+      "review": "Accepted: Generated pixels inspected. White/green rounded Whizzer tubs, physical nose lettering, black padding/silver grab frames and source inline riders follow the real family coaster. Actual wheels/gray tubular rails/dark-green flange columns stay connected with source column occlusions. No invented shoulder restraints or full hidden spiral. Dusk is generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbc626f60c3ce013c1b98a87d1bebfb746596a5f5-1440x800.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of riders on the Whizzer roller coaster as it begins its descent at Six Flags Great America.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/whizzer",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d08488a6d3a3d2c0f22791b9dc2a7c41804b6f8e0464df35cc3828aea8258d40",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual close local family-coaster photograph inspected. Whizzers linked WHITE rounded tub cars carry a thin dark-GREEN side stripe, small physical green Whizzer lettering on the nose and black cushioned upper rims. Source passengers sit in the genuine close inline paired arrangement, with silver curved grab frames/black padding and their photographed belts/handholds; do not convert this into shoulder-restraint thrill seats. Actual dark wheels engage twin gray tubular running rails and the dark GREEN steel crossbeams/I-beam support columns have bolted flanges, with near columns occluding left train sections. Compose the documented front tub/curve and source small seated riders, preserving actual occlusions/rail attachment and leafy willow backdrop. No guessed complete spiral/route or added white timber coaster. Date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-252305260439749-thumbnail.jpg",
+      "thumbnailSHA256": "62e2bed806e26a6023cdc0a0c32bdd02b7b514de077a7b8dc82e8e1b49e9626d",
+      "thumbnailBytes": 22997,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-252305260439749-detail.jpg",
+      "detailSHA256": "07d68e345cb606fa0ec75fc9674afc7bad52e1934f5b8e6bc4e0433bad98ea91",
+      "detailBytes": 143113,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-252305260439749",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Whizzer at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual close local family-coaster photograph inspected. Whizzers linked WHITE rounded tub cars carry a thin dark-GREEN side stripe, small physical green Whizzer lettering on the nose and black cushioned upper rims. Source passengers sit in the genuine close inline paired arrangement, with silver curved grab frames/black padding and their photographed belts/handholds; do not convert this into shoulder-restraint thrill seats. Actual dark wheels engage twin gray tubular running rails and the dark GREEN steel crossbeams/I-beam support columns have bolted flanges, with near columns occluding left train sections. Compose the documented front tub/curve and source small seated riders, preserving actual occlusions/rail attachment and leafy willow backdrop. No guessed complete spiral/route or added white timber coaster. Date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "1c7d20669061454e212b214cba1770bf4bd7194d674757cda50ce43887b1ec42",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 254892233355268,
+      "rideName": "DC Super-Villains Swing™",
+      "alt": "Illustrated DC Super-Villains Swing™ at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:34:06.438284+00:00",
+      "originalSHA256": "5cc94e07b80f71e4f34b9430d528414c719b8732bd9372f6997c926ea5bd0231",
+      "review": "Accepted: Generated pixels inspected. Local blue canopy/tower, fixed printed villain panels/cream scrollwork, chain-to-small-chair connections and source seated riders match the selected photo. Actual black six-wheel Batmobile stays a static foreground display. No living villain or guessed complete roof/finial. Generated dusk lighting is consistent with requested cards.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc2f4545b50b9066028958a6fe7c7a92320ff2d14-1440x800.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "DC Super-Villains Swing ride at Six Flags Great America with the Batmobile in the foreground.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/dc-super-villains-swing",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "93253abc885290b498877bb96c869f565a4c50dd7b5cdace9198fd3977e00191",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual local swing/Batmobile-prop photograph inspected. The documented ride has a bright BLUE cylindrical central tower with gold top band, a broad BLUE radial canopy underside with cream/gold scrollwork/bulb strips and fixed printed villain portraits/symbol panels on the fascia, plus silver-chain suspension to real small red/blue/green molded swing chairs with silver cage rails and actual seated riders. Preserve real chain attachment points and source tower/carousel proportions, with source leaves occluding edges. Compose the documented blue tower/canopy underside and attached chairs as the subject; keep the real black six-wheel Batmobile display partly cropped at the bottom, not a moving road vehicle. The upper roof/finial is outside the source image and should stay outside the crop. Do not invent live villains, disconnected flying seats, new hidden roof or full unshown base. Source date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-254892233355268-thumbnail.jpg",
+      "thumbnailSHA256": "caab64dff719a2665476a225d913c9e38e0f0366e99f6fed6f803c95abb7ae06",
+      "thumbnailBytes": 34257,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-254892233355268-detail.jpg",
+      "detailSHA256": "c7022f407c29cb30b0a80c350bccd2f2fc44de65b49fb067ac972c90813739fc",
+      "detailBytes": 267210,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-254892233355268",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict DC Super-Villains Swing™ at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual local swing/Batmobile-prop photograph inspected. The documented ride has a bright BLUE cylindrical central tower with gold top band, a broad BLUE radial canopy underside with cream/gold scrollwork/bulb strips and fixed printed villain portraits/symbol panels on the fascia, plus silver-chain suspension to real small red/blue/green molded swing chairs with silver cage rails and actual seated riders. Preserve real chain attachment points and source tower/carousel proportions, with source leaves occluding edges. Compose the documented blue tower/canopy underside and attached chairs as the subject; keep the real black six-wheel Batmobile display partly cropped at the bottom, not a moving road vehicle. The upper roof/finial is outside the source image and should stay outside the crop. Do not invent live villains, disconnected flying seats, new hidden roof or full unshown base. Source date unknown. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "37c2fa0b649bfd2d7b59c28511b6ad1ab2fbae3663d8811d186f7af534ed6ca8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 263392368120347,
+      "rideName": "Sprocket Rockets",
+      "alt": "Illustrated Sprocket Rockets at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:34:28.938820+00:00",
+      "originalSHA256": "b774da9c87f3f893e9f109a028964344db1f2f4efee815d8d93f0febd2522047",
+      "review": "Accepted: Generated pixels inspected. Teal/silver rocket cars, black lap bars/orange inserts, source families and local small Vekoma scale match the actual train gallery. White/gray rail/bogie connections and large green column/near-rail occlusions are preserved; no unrelated Goliath backdrop or fantasy flight. Dusk scene is generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb8cfdccd7583ea49de82f3ab4c90827d2e91850f-7952x5304.jpg%3Fw%3D1408%26h%3D1192%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Families enjoying a ride on Sprocket Rockets at Six Flags Great America.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/sprocket-rockets",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f6dbe2b1779aee241882d4aa2a72adc84ce851027418216d054040bf2accb675",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page, real entrance-sign photo and actual local train gallery inspected; choose the train photograph. Sprocket Rockets has TEAL/green rounded rocket-shell cars with SILVER/white body sections and silver nose panels, BLACK seats/lap bars with ORANGE restraint inserts, and a small Vekoma family-train scale. Actual families/children remain seated as photographed. Gray bogie wheels remain attached under the cars to WHITE/light-gray running rails and white lattice braces, supported by cylindrical GREEN columns; large foreground green columns and a near gray rail genuinely occlude sections of the nose/train. Compose the documented banked near cars and these original occlusions, with the source trees behind. Do not substitute the unrelated giant brown Goliath hill behind the entrance sign, invent spaceflight/exhaust or expose hidden wheels unsupported by the photo. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-263392368120347-thumbnail.jpg",
+      "thumbnailSHA256": "408a802e483cb5cc2cece0543d1ad5beaf8a21e888a1f9a07dfad8e1f967f381",
+      "thumbnailBytes": 23453,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-263392368120347-detail.jpg",
+      "detailSHA256": "d8e2e0155a36da2bd51ef9977796835985f3c8a7477904e18ea41db878fbc7d6",
+      "detailBytes": 145348,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-263392368120347",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Sprocket Rockets at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page, real entrance-sign photo and actual local train gallery inspected; choose the train photograph. Sprocket Rockets has TEAL/green rounded rocket-shell cars with SILVER/white body sections and silver nose panels, BLACK seats/lap bars with ORANGE restraint inserts, and a small Vekoma family-train scale. Actual families/children remain seated as photographed. Gray bogie wheels remain attached under the cars to WHITE/light-gray running rails and white lattice braces, supported by cylindrical GREEN columns; large foreground green columns and a near gray rail genuinely occlude sections of the nose/train. Compose the documented banked near cars and these original occlusions, with the source trees behind. Do not substitute the unrelated giant brown Goliath hill behind the entrance sign, invent spaceflight/exhaust or expose hidden wheels unsupported by the photo. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "bbf09027fbbb7c66ce650e78f255e89c0d044049fb7783f158f69c2e1e33864f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 38,
+      "rideId": 266521174043425,
+      "rideName": "Chubasco",
+      "alt": "Illustrated Chubasco at Six Flags Great America",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:34:59.311400+00:00",
+      "originalSHA256": "40d927881fa3c4b8c5c7eb3e7358fb9579ad58f691dbcaef945191bb1a8e5d92",
+      "review": "Accepted: Generated pixels inspected. Actual cream/navy patterned cups/plinths, worn near entry gate/step, source family, orange/black central vessel and cream stucco/wood-truss/iron-chandelier room retain local Chubasco identity. No pink teacup substitution or hidden drive invented. Warm lamps/dusk through arches are generated atmosphere.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe8f6233b53e4929612767af374181d0d7ced363e-7952x5304.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of riders enjoying Chubasco teacup ride at Six Flags Great America.",
+          "sourceURL": "https://www.sixflags.com/greatamerica/attractions/chubasco",
+          "credit": "Six Flags / Great America (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "50c375be5019bdaf5027a280f18f54f8e2b13207467905b15cb4049de0fac12b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual local indoor cup photograph inspected. Chubascos large CREAM/WHITE cups and circular plinths have NAVY-blue angular/triangle pottery patterns, navy lower border and small circular dot trim; near cup10 has the actual rectangular entry gate/hinge/worn paint and small metal entry step. Real families remain seated within black-padded interiors. A tall ORANGE-red vessel at the center has narrow neck/handle and black geometric spiral motifs. Authentic cream stucco walls/arched window openings, brown exposed wooden roof trusses and black iron circular chandeliers/chain hangers enclose the source scene. Compose the documented near cup, connected plinth/turntable and orange center vessel under the real ceiling; retain physical wear and source door geometry. No pink Krazy Kups substitution, living characters, steaming tea, invented hidden drive or outdoor fantasy palace. Source date unknown."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "38-266521174043425-thumbnail.jpg",
+      "thumbnailSHA256": "261da1622f7eb2e65fee9862aeefb394542dbd92dc949b5c1eb93002165d2b72",
+      "thumbnailBytes": 22111,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "38-266521174043425-detail.jpg",
+      "detailSHA256": "67be6d7097bccc0f54408f35e33d4b8b48d7e7c3c9af392c322ee2d82c258a29",
+      "detailBytes": 162607,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "38-266521174043425",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Chubasco at Six Flags Great America. Source- and pixel-reviewed facts and limits: Operator page and actual local indoor cup photograph inspected. Chubascos large CREAM/WHITE cups and circular plinths have NAVY-blue angular/triangle pottery patterns, navy lower border and small circular dot trim; near cup10 has the actual rectangular entry gate/hinge/worn paint and small metal entry step. Real families remain seated within black-padded interiors. A tall ORANGE-red vessel at the center has narrow neck/handle and black geometric spiral motifs. Authentic cream stucco walls/arched window openings, brown exposed wooden roof trusses and black iron circular chandeliers/chain hangers enclose the source scene. Compose the documented near cup, connected plinth/turntable and orange center vessel under the real ceiling; retain physical wear and source door geometry. No pink Krazy Kups substitution, living characters, steaming tea, invented hidden drive or outdoor fantasy palace. Source date unknown. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "ec00e183937fd19f0af0f02e93fed8caae815a072ca4d7465aa212eb95c19f22",
       "generationSteps": []
     },
     {
