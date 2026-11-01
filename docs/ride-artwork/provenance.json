@@ -15322,6 +15322,100 @@
     },
     {
       "parkId": 43,
+      "rideId": 776077839351,
+      "rideName": "Hook's Lagoon",
+      "alt": "Illustrated Hook's Lagoon at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:44:14.618932+00:00",
+      "originalSHA256": "481affbbd61d025ea2e2e5c8e54763205c7bc9b91956d8705bc71be62cb0895a",
+      "review": "Accepted: actual weathered timber water-play structure, rope nets, teal/red huts, silver tipping bucket and dry deck retain the source configuration. No invented operating bucket water or riders; generated dusk light preserves tactile wood/material realism.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1d64bea662cec66f9639c8cade6bec49bc695d88-8192x5461.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Hook's Lagoon splash pad at Six Flags New England, featuring various play structures and water slides.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/hooks-lagoon",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "4e97510398332b5a74e5078b31484d7c08405310301e3b2b2f6159f1e5d238ce",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Hook's Lagoon page and real photographic hero inspected. The source is an EMPTY DRY pirate-themed multilevel water-play structure: weathered TIMBER uprights/crossbeams, beige rope safety nets, small teal/red/pink plank huts, corrugated gray/red roofs, a tall SILVER/GRAY tipping bucket bound by black bands and real purple/tan open slides at left. A large yellow paddle-like play element and genuine pipe handles stand below. Preserve real timber joints, ladders/net bridges and dry pale concrete deck exactly as the source; do not invent flowing bucket water, riders, a full unseen slide route or claim operation. Dusk lighting is generated interpretation; capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-776077839351-thumbnail.jpg",
+      "thumbnailSHA256": "5219b7a7e24115a3b3f16650ba3ff62e1ae88b213c0149e9193e7f3448a9a081",
+      "thumbnailBytes": 20183,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-776077839351-detail.jpg",
+      "detailSHA256": "158439bfc3948a57db471ccc608f043aaec9c38a1ec4bc0193890860df226cc2",
+      "detailBytes": 159844,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-776077839351",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Hook's Lagoon at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual operator Hook's Lagoon page and real photographic hero inspected. The source is an EMPTY DRY pirate-themed multilevel water-play structure: weathered TIMBER uprights/crossbeams, beige rope safety nets, small teal/red/pink plank huts, corrugated gray/red roofs, a tall SILVER/GRAY tipping bucket bound by black bands and real purple/tan open slides at left. A large yellow paddle-like play element and genuine pipe handles stand below. Preserve real timber joints, ladders/net bridges and dry pale concrete deck exactly as the source; do not invent flowing bucket water, riders, a full unseen slide route or claim operation. Dusk lighting is generated interpretation; capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "18464f8b1eb4273625c4aec394cd1ba5fcf06c9fc9ad0b296bbf2a09be53f3e5",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 6740476372060,
+      "rideName": "Kiddie Pirate Ship",
+      "alt": "Illustrated Kiddie Pirate Ship at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:44:49.671439+00:00",
+      "originalSHA256": "4bc0389ca3af6c802f446aec31cbb0211e294df97f1b7f78768418e230a55e94",
+      "review": "Accepted: actual fixed green faux-wood pirate bow, gray rock base, yellow-edged steps, rope nets, source child and shallow-water fountains remain connected. Shared Hook's Lagoon background is authentic context; no swinging ride invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb27a3c607d3d0ef38449306f6bcd01f8ad4babcf-840x540.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Kiddie Pirate Ship",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/kiddie-pirate-ship",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d287719c9a190bebeb55c7e562ea3e7411691c4ae1153913754686825c577fb9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Kiddie Pirate Ship page and real photograph inspected. This is a fixed SMALL weathered GREEN faux-wood ship bow in shallow pale-blue wading water, with TAN steps edged YELLOW, beige rope NET railings between pale wood posts, a gray faux-rock base with a real eye motif, and actual water pouring from the bow/nearby fountain. The source child in yellow/navy rash top and patterned shorts stands in the shallow foreground; preserve source pose and real water contact. Hook's Lagoon timber towers and purple/tan slides are authentic shared background. This is not a swinging amusement pirate ship: preserve stationary water-play sculpture and connected steps, no invented swinging frame or extra children. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-6740476372060-thumbnail.jpg",
+      "thumbnailSHA256": "125c75c0b22a0a887f61dbc856dbc7b43dc15e6c15f4e4076d5e654d8a160ea2",
+      "thumbnailBytes": 25279,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-6740476372060-detail.jpg",
+      "detailSHA256": "b3219e3b0abdc6df4bea97069c4ccf3e36079acf70eb13d520fafae63884e9a6",
+      "detailBytes": 201655,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-6740476372060",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Kiddie Pirate Ship at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual operator Kiddie Pirate Ship page and real photograph inspected. This is a fixed SMALL weathered GREEN faux-wood ship bow in shallow pale-blue wading water, with TAN steps edged YELLOW, beige rope NET railings between pale wood posts, a gray faux-rock base with a real eye motif, and actual water pouring from the bow/nearby fountain. The source child in yellow/navy rash top and patterned shorts stands in the shallow foreground; preserve source pose and real water contact. Hook's Lagoon timber towers and purple/tan slides are authentic shared background. This is not a swinging amusement pirate ship: preserve stationary water-play sculpture and connected steps, no invented swinging frame or extra children. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "18b82a78074f8b454662bc8dff4ee33ab5ffe2ed8d01ce23b74f139144c60d68",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
       "rideId": 9103657575778,
       "rideName": "1909 Illions Grand Carousel",
       "alt": "Illustrated 1909 Illions Grand Carousel at Six Flags New England",
@@ -15364,6 +15458,1179 @@
       "key": "43-9103657575778",
       "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based closely on actual attraction photo image 1. Image 2 supplies only restrained blue-purple dusk atmosphere. Believable physical perspective, natural photographic materials and moderate practical lights; slightly cinematic, not painted or cartoon. Preserve identifying real hardware, colors and layout. Center the attraction for thumbnail readability. No UI, frame, border, watermark or overlaid caption. Avoid small illegible text. 1909 Illions Grand Carousel at Six Flags New England: match the actual octagonal pale sage/cream Victorian pavilion, broad rose-red shingle roof, upper clerestory with stained-glass panels and small teal cupola, white ornate columns and black wrought-iron fence, lit carousel inside. Preserve whole pavilion identity and flowerbeds in portrait, natural wood textures, no invented towers or close-up characters; omit small signage rather than invent text.",
       "promptSHA256": "12b8b3cf40cc444b02af3294ff4abff5f5be4c4984fb724550dca2ab2a0cf8e8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 12023867433197,
+      "rideName": "Big Kahuna",
+      "alt": "Illustrated Big Kahuna at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:00:11.604234+00:00",
+      "originalSHA256": "984631e48668013444013f99def1a087f788d861d07f99ca3d4cc3fdb6cbd5c4",
+      "review": "Accepted: the inspected portrait preserves Big Kahuna's documented green and purple open/closed outlets, timber supports and connected splash-water finish without invented riders or a hidden route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4b978e50d71cd959986e00b333e90314b6370af6-1920x1275.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Big Kahuna",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/big-kahuna",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "bf6ca81d9add4c4d5cb7e360e81cf7f3c57a30f27efc250b938f4b05cbcafd4d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Big Kahuna operator page and real four-outlet photograph inspected; manufacturer's primary Six Flags case study also identifies Big Kahuna as a PIPEline tube-slide installation, not a large family-raft Mammoth. The actual source shows GREEN and MINT enclosed-tube mouths at left, a pale PURPLE open finish center-right and a MINT open finish far right, all emptying into one light-turquoise pool. Overlapping green/mint enclosed sections and pale-purple channel portions rest on weathered TIMBER posts/diagonal braces, with actual bolted fiberglass seams and source water pouring from the exits. Preserve the visible photographed sections and separate mouths, without inventing hidden full courses or occupied rafts. Capture date/current paint currency unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-12023867433197-thumbnail.jpg",
+      "thumbnailSHA256": "1107018b93408d200ab981ca49fcdf2d213dbaa2e663f294fc0e217ab120137e",
+      "thumbnailBytes": 25626,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-12023867433197-detail.jpg",
+      "detailSHA256": "9f7a2c11a46e786c89ec0e5418ce8e85428259f05cdf01cd745a0d9cca0b301a",
+      "detailBytes": 186924,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-12023867433197",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Big Kahuna at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual Big Kahuna operator page and real four-outlet photograph inspected; manufacturer's primary Six Flags case study also identifies Big Kahuna as a PIPEline tube-slide installation, not a large family-raft Mammoth. The actual source shows GREEN and MINT enclosed-tube mouths at left, a pale PURPLE open finish center-right and a MINT open finish far right, all emptying into one light-turquoise pool. Overlapping green/mint enclosed sections and pale-purple channel portions rest on weathered TIMBER posts/diagonal braces, with actual bolted fiberglass seams and source water pouring from the exits. Preserve the visible photographed sections and separate mouths, without inventing hidden full courses or occupied rafts. Capture date/current paint currency unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "f1af1000fede2c69bfcdf01c2c5bd4244ead760045befe5babc43f64c68ba860",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 12289633197616,
+      "rideName": "CATWOMAN™ Whip",
+      "alt": "Illustrated CATWOMAN™ Whip at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:45:09.827729+00:00",
+      "originalSHA256": "1207699d33338efbb1dc09efc2f81e777bb56622db538d993b2768f3ff03089a",
+      "review": "Accepted: Catwoman Whip's purple marbled articulated train, black seatbacks/lap bars, silver bogies and lime rail on brown supports retain source geometry and rail contact. Distant red/blue coaster stays separate; dusk lighting is generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc23655ef5f019714efcd718218fbd91a8e91b90d-8192x5461.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Kids enjoying a ride on the CATWOMAN™ Whip at Six Flags New England, a beginner thrill ride.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/catwomans-whip",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a24f22b3ce638412a45a2045364f360457388f1a5180e8f90f35bb5e1a321a40",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Catwoman Whip page and real source train photograph inspected. This Zierer family coaster has a long articulated PURPLE marble-pattern train with BLACK rectangular seatbacks, light gray/silver lower body and trim, small source CATWOMAN physical panel, black/dark lap bars and exposed gray wheel bogies. It follows a LOW LIME-GREEN lattice-spine rail on DARK BROWN supports, with real foliage partly occluding the lower rail. A red coaster rail and blue columns behind belong to the genuine separate background ride; do not merge them. Preserve near train/rail wheel contact and photographed banked curve with actual source occupants; no living character, inverted train or invented full figure-eight. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-12289633197616-thumbnail.jpg",
+      "thumbnailSHA256": "3b25de4516dd5b6d094a73e910d01ac54ddb07ac8e729c026e9f7591bdd39dfa",
+      "thumbnailBytes": 32485,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-12289633197616-detail.jpg",
+      "detailSHA256": "ca2810e11d29e3f9c2340e4c98d136fca91a83bc3fc9478c4545c43c590a2e24",
+      "detailBytes": 229214,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-12289633197616",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict CATWOMAN™ Whip at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual operator Catwoman Whip page and real source train photograph inspected. This Zierer family coaster has a long articulated PURPLE marble-pattern train with BLACK rectangular seatbacks, light gray/silver lower body and trim, small source CATWOMAN physical panel, black/dark lap bars and exposed gray wheel bogies. It follows a LOW LIME-GREEN lattice-spine rail on DARK BROWN supports, with real foliage partly occluding the lower rail. A red coaster rail and blue columns behind belong to the genuine separate background ride; do not merge them. Preserve near train/rail wheel contact and photographed banked curve with actual source occupants; no living character, inverted train or invented full figure-eight. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "a98d8144aa665731044ee2b9a47c6e3ff31f37df38cf998e3390e61dcc116384",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 15571448338399,
+      "rideName": "Animation Department",
+      "alt": "Illustrated Animation Department at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:45:56.616401+00:00",
+      "originalSHA256": "de640ab618258293806706da34676d0f6cdb94de65c30ea3c61f28f973265063",
+      "review": "Accepted: source pale-lavender child swing drum, genuine printed canopy panels, white seats/chrome guards and chain connections remain tangible and distinct. Source children stay in the photographed seats above brick paving; generated light does not turn physical artwork into living characters.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F71dadc8114bf889ec738d2f8cc987100c2fd9f60-1920x1285.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children riding the Animation Department swing ride at Six Flags New England.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/animation-department",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "637eb884cca349f5782290342ce401f38f600a374c91493ddab267aa01764267",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Animation Department operator page and authentic child swing photograph inspected. The small swing ride has a broad PALE LAVENDER/WHITE center drum, light blue/lavender canopy panels with genuine black-and-white printed Looney Tunes artwork, red round trim bulbs and hanging SILVER chains. WHITE small molded/fabric-backed seats have actual curved chrome side/guard rails and pale vertical chain sleeves. Source children sit as photographed in separate attached chairs just above the brick paving; blue metal fence with red finials and dense trees border the ride. Preserve real chain-to-canopy/seat connections, source seating and tangible printed panels, without turning illustrations into living characters or inventing extra limbs, tower-drop hardware or an unseen whole mechanism. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-15571448338399-thumbnail.jpg",
+      "thumbnailSHA256": "276cf57272d4ac98bb8d9328477950c5bca35024c1a019e6549756ed39880338",
+      "thumbnailBytes": 25784,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-15571448338399-detail.jpg",
+      "detailSHA256": "a54889873d1702f52adaded80687fa5ca030c8d31df8e477ffeacd9e49c101d7",
+      "detailBytes": 178490,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-15571448338399",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Animation Department at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual Animation Department operator page and authentic child swing photograph inspected. The small swing ride has a broad PALE LAVENDER/WHITE center drum, light blue/lavender canopy panels with genuine black-and-white printed Looney Tunes artwork, red round trim bulbs and hanging SILVER chains. WHITE small molded/fabric-backed seats have actual curved chrome side/guard rails and pale vertical chain sleeves. Source children sit as photographed in separate attached chairs just above the brick paving; blue metal fence with red finials and dense trees border the ride. Preserve real chain-to-canopy/seat connections, source seating and tangible printed panels, without turning illustrations into living characters or inventing extra limbs, tower-drop hardware or an unseen whole mechanism. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "6d094ed889ee8ba0a72a82e08aac50d5de0c98e56e5830a89c4245364e2ef664",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 21436437129734,
+      "rideName": "Hurricane Bay",
+      "alt": "Illustrated Hurricane Bay at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:45:28.976006+00:00",
+      "originalSHA256": "b90347f644cb6b8f21b09582704ab5dd6c85e9d292d83f3542b46eaf328fe149",
+      "review": "Accepted: operator-labeled Hurricane Bay activity section retains real blue net/cables, cut-log floating steps, timber/red posts, stainless entry rails and empty turquoise water. No generic green lily pads or invented separate route; generated dusk reflections remain interpretive.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F88ae19c74ef09698c05a7d10f3002323d9b344dd-6240x4160.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Six Flags New England's Hurricane Bay features a challenging ropes course over a pool with stepping stones.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/hurricane-bay",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e5ef4bf38888f4b1f3bf05e1ff946c7dd904fdeedef76020c65b8f02be6d470a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Hurricane Bay pool page and its authentic hero photograph inspected. The selected view documents a LIGHT-TURQUOISE activity-pool section with real overhead BLUE ROPE NETS, cream rope cross-netting farther left, weathered timber/red support posts and a row of floating TAN round cut-log stepping pads with one darker broad irregular pad. Small log-shaped floating pieces sit farther left; actual stainless entry handrails, pale stone-edged pool islands, rope/mesh perimeter rails and beige landing pads frame the course. Preserve the real net anchoring/cables, float/water contact and photographed pool section. Source pool is empty, so do not invent participants or generic green leaf pads. This depicts the operator-labeled Hurricane Bay section; do not claim an unsupported separate Lily Pads route. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-21436437129734-thumbnail.jpg",
+      "thumbnailSHA256": "3c0a3de3b9923a7cdce80f897f8b4bf8119a84d6bb41a0f135f677b2484a1e4a",
+      "thumbnailBytes": 23589,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-21436437129734-detail.jpg",
+      "detailSHA256": "fe081292d087bcce6d86ec8dd476ab4e87e8f813d0850bad3db7871dbfe229e9",
+      "detailBytes": 186794,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-21436437129734",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Hurricane Bay at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual operator Hurricane Bay pool page and its authentic hero photograph inspected. The selected view documents a LIGHT-TURQUOISE activity-pool section with real overhead BLUE ROPE NETS, cream rope cross-netting farther left, weathered timber/red support posts and a row of floating TAN round cut-log stepping pads with one darker broad irregular pad. Small log-shaped floating pieces sit farther left; actual stainless entry handrails, pale stone-edged pool islands, rope/mesh perimeter rails and beige landing pads frame the course. Preserve the real net anchoring/cables, float/water contact and photographed pool section. Source pool is empty, so do not invent participants or generic green leaf pads. This depicts the operator-labeled Hurricane Bay section; do not claim an unsupported separate Lily Pads route. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "6dbe7ced8ecac3fbc01432b236bc1aea8967c3774d6ae1dd316658a185ec2f0b",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 26385994336485,
+      "rideName": "Blizzard River",
+      "alt": "Illustrated Blizzard River at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:51:27.816868+00:00",
+      "originalSHA256": "1354c930f6b986a2dc5c41c36053da451abc72ae08b03c81c5a7066938aa0715",
+      "review": "Accepted: actual white hard-shell eight-seat river boat, black bumper/attachments and high seat backs retain source group seating, handholds and water contact. Timber booth, ladder, rock edge and foliage match documented section; generated dusk light is interpretive.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa0b2eac8a8e2cb731a0e71b570663eb61d2520b1-1333x2000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Group of people enjoying the Blizzard River water rapids ride at Six Flags New England.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/blizzard-river",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c7a42e42115696dfd826d1332ec94909dd6dd49ce8e3bcca7206927350808ff9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Blizzard River page and authentic raft photograph inspected. A WHITE hard-shell circular rapids boat, source number 8, has a thick BLACK rubber bumper, real black attachment straps/chains, eight inward-facing seats with TALL BLACK slotted backs and black/metal handholds. Actual source group sits around the center with some hands raised; retain the source seating/restraint geometry and true boat/water contact. Narrow gray-white turbulent concrete river curves around a large faux-rock edge right, with a weathered timber observation booth/blue-gray roof labeled 3, mesh fence, white ladder and dense real trees behind. A small photographed penguin decoration is background only. Do not substitute an inflatable water-slide raft or invent a hidden course. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-26385994336485-thumbnail.jpg",
+      "thumbnailSHA256": "8aee17dc5feb23a39adcde0ea8e69a869578fbff4de7c5380f86f99e80457ba7",
+      "thumbnailBytes": 28818,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-26385994336485-detail.jpg",
+      "detailSHA256": "c975f9526c2e1246693b1ca96683ed9d36160bbc280154bc1a72360cbbbaab97",
+      "detailBytes": 226641,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-26385994336485",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Blizzard River at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual operator Blizzard River page and authentic raft photograph inspected. A WHITE hard-shell circular rapids boat, source number 8, has a thick BLACK rubber bumper, real black attachment straps/chains, eight inward-facing seats with TALL BLACK slotted backs and black/metal handholds. Actual source group sits around the center with some hands raised; retain the source seating/restraint geometry and true boat/water contact. Narrow gray-white turbulent concrete river curves around a large faux-rock edge right, with a weathered timber observation booth/blue-gray roof labeled 3, mesh fence, white ladder and dense real trees behind. A small photographed penguin decoration is background only. Do not substitute an inflatable water-slide raft or invent a hidden course. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "05e605f9c2b5665c0be2fb84a046d6a82c96b7433a49f5e0e21ab95756ed9689",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 28282975413360,
+      "rideName": "Quantum Accelerator",
+      "alt": "Illustrated Quantum Accelerator at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:50:50.912388+00:00",
+      "originalSHA256": "caccf8e34d2ed4ef775e5c7582398fa9406c76f744b77349a6a1900102643916",
+      "review": "Accepted: real paired gold/brass straddle-bike train, black back pads, visible gray bogies and red rails/brown spine retain source diagonal rise and contact. Actual teal/brass physical sign and station context remain distinct; no floating futuristic hardware invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F0ef6ea924e397de0af3c792c34b454bd229e6f92-2000x1333.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Quantum Accelerator ride",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/quantum-accelerator",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2e7d37c882fa6c7beff7fe40d2d7efd8325a326eeab1913d50a8344158b6c201",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Quantum Accelerator page and real photographic hero inspected: this is an actual built coaster/occupied train photograph, not announcement CGI. The linked train has TWO-ACROSS BRASS/GOLD steampunk straddle-bike seats with BLACK back pads, silver/gray textured lower body and real visible dark wheel bogies/handlebars. It follows a low rising diagonal section with RED twin rails, brown/tan structural spine and matching ochre supports. Genuine large teal/brass QUANTUM ACCELERATOR physical sign on bolted weathered timber fills the foreground; real station metal roof is partly behind. Keep the actual near train pose, paired seating and rail contact, partial physical sign and source geometry; do not invent a futuristic floating vehicle, new rider pose, full hidden layout or announcement render details. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-28282975413360-thumbnail.jpg",
+      "thumbnailSHA256": "e19135eefef3b6508e88cfce77c9696a85344a1106ccb1707778a1790250cbed",
+      "thumbnailBytes": 25036,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-28282975413360-detail.jpg",
+      "detailSHA256": "23ab5139c36e4f0018bbcf2c883f924fc760dafee68e958aced1f131b2e56b31",
+      "detailBytes": 154267,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-28282975413360",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Quantum Accelerator at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual operator Quantum Accelerator page and real photographic hero inspected: this is an actual built coaster/occupied train photograph, not announcement CGI. The linked train has TWO-ACROSS BRASS/GOLD steampunk straddle-bike seats with BLACK back pads, silver/gray textured lower body and real visible dark wheel bogies/handlebars. It follows a low rising diagonal section with RED twin rails, brown/tan structural spine and matching ochre supports. Genuine large teal/brass QUANTUM ACCELERATOR physical sign on bolted weathered timber fills the foreground; real station metal roof is partly behind. Keep the actual near train pose, paired seating and rail contact, partial physical sign and source geometry; do not invent a futuristic floating vehicle, new rider pose, full hidden layout or announcement render details. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "5cfc7bd59cb61f32755cbf272b2ab008a2b51372d04f4aa161d61188e479ff13",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 42177604511303,
+      "rideName": "Monsoon Lagoon",
+      "alt": "Illustrated Monsoon Lagoon at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:50:03.207759+00:00",
+      "originalSHA256": "1c29cb4738dc49342a5e93d9497eeb0311ccf366659cbfefefe17d53a0b051db",
+      "review": "Accepted: actual Monsoon Lagoon operator-labeled exterior/complex view keeps timber stairs, connected purple/green flumes, blue partial tube, real braces and empty path. Pool remains outside frame, without invented unseen features/riders. Dusk light is generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F0e5464f13f86fd48b292e03519fabbde1d0c7ed7-6240x4160.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Colorful water slides at Monsoon Lagoon in Six Flags New England with purple, green, and blue slides.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/monsoon-lagoon",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "188a887ceeb4ea6b661b648d13443424fcacb5e5c8aa5985534b60b219485d71",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Monsoon Lagoon page and real photographed entrance/slide-complex section inspected. Documented scene has weathered GRAY TIMBER stairs/landings with upright baluster rails, timber support posts and black cable cross-braces; a PURPLE OPEN spiral flume curls prominently at right, a bright GREEN open curve behind, and BLUE tube portions are partly occluded. Real pale path, timber/rope perimeter railing, source gray bins and red/white parasol fragments remain tangible context. Preserve empty source stairs and physically connected visible slide sections. This honest operator-labeled area view does not show the pool itself: do not invent an unseen pool, flowing waterfalls, riders or full route. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-42177604511303-thumbnail.jpg",
+      "thumbnailSHA256": "da1376b810f5c13cc9d0f16633eb033c073007b6b97b675b4bbc78f557ebf3d5",
+      "thumbnailBytes": 24160,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-42177604511303-detail.jpg",
+      "detailSHA256": "3a4852d55b434fd3d4f1367a45bd1d0208ab44422e29a7f5d6120712bed3650e",
+      "detailBytes": 198852,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-42177604511303",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Monsoon Lagoon at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual operator Monsoon Lagoon page and real photographed entrance/slide-complex section inspected. Documented scene has weathered GRAY TIMBER stairs/landings with upright baluster rails, timber support posts and black cable cross-braces; a PURPLE OPEN spiral flume curls prominently at right, a bright GREEN open curve behind, and BLUE tube portions are partly occluded. Real pale path, timber/rope perimeter railing, source gray bins and red/white parasol fragments remain tangible context. Preserve empty source stairs and physically connected visible slide sections. This honest operator-labeled area view does not show the pool itself: do not invent an unseen pool, flowing waterfalls, riders or full route. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "cb9a95b17740a6a7ed95c978325caeaff394576c57b1005ddad83bbb935e4f64",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 46664680073160,
+      "rideName": "Shark Attack",
+      "alt": "Illustrated Shark Attack at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:53:46.742668+00:00",
+      "originalSHA256": "1867a415a161ec865d19c493c2371d3c993061d6a94fe5da53905e72e556c39b",
+      "review": "Accepted: real Shark Attack green/pink/light-blue/orange outlets and matching tube sections keep actual open/closed transitions, timber tower and calm empty pool. Genuine local hut/sign and separate background coaster remain distinct; no sharks or new riders invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9ad1e1528142ee29c2095a4b459a848faf9b94e2-6240x4160.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Shark Attack waterslides at Six Flags New England with colorful tubes.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/shark-attack",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d810e33a8ae3c194966c4faa4c7991c7dc966d71c31ab646e269164c1f537aac",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Shark Attack page and real hero photograph inspected. FOUR real enclosed-to-open slide outlets in GREEN, DUSTY PINK, LIGHT BLUE and ORANGE face the same calm turquoise catch pool. Upper matching colored tubes/half-open portions curl around GRAY timber stairs, timber posts and diagonal braces; the real teal weathered hut at left has a physical SHARK ATTACK sign. A purple coaster in the far background is a separate actual ride. Preserve distinct outlet profiles, tube joints, open/closed transitions, source supports and calm empty pool; do not invent sharks, raft riders or a hidden route. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-46664680073160-thumbnail.jpg",
+      "thumbnailSHA256": "b7d86daf655ccbf5a4d836f0b82e2aa2a7be4a0e50bf7b88d102f870ec46263d",
+      "thumbnailBytes": 21609,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-46664680073160-detail.jpg",
+      "detailSHA256": "8b35e938c0230363936c3a1b3911ed6a19e92e4277a6b4530c8dc1d9ad388f0d",
+      "detailBytes": 165092,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-46664680073160",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Shark Attack at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual operator Shark Attack page and real hero photograph inspected. FOUR real enclosed-to-open slide outlets in GREEN, DUSTY PINK, LIGHT BLUE and ORANGE face the same calm turquoise catch pool. Upper matching colored tubes/half-open portions curl around GRAY timber stairs, timber posts and diagonal braces; the real teal weathered hut at left has a physical SHARK ATTACK sign. A purple coaster in the far background is a separate actual ride. Preserve distinct outlet profiles, tube joints, open/closed transitions, source supports and calm empty pool; do not invent sharks, raft riders or a hidden route. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "0380d2bc8b8cdcb375ad677aebdfc7a9ec885087831b5cd42634a33f2be15b3e",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 48768435584957,
+      "rideName": "Thunderbolt",
+      "alt": "Illustrated Thunderbolt at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:52:54.885997+00:00",
+      "originalSHA256": "b56232051940ee3c9185fa9f145547aff90647a833785a1d3c4596a99a38699b",
+      "review": "Accepted: source maroon Thunderbolt bench train and black chassis remain behind authentic white timber rail/structure with source paired occupants and four colored flags. Foreground fence occlusion preserved; distant blue coaster remains separate. Lighting is generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F27370af663087ccecc6e9aa217131fb50f237e47-840x540.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Thunderbolt",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/thunderbolt",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "820ceee73152dcf10942d17f451747312b124907457fab50881fce610ec81881",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Thunderbolt page and authentic wooden-coaster train photograph inspected. A MAROON traditional bench train with yellow physical THUNDERBOLT nose lettering/lightning decoration and BLACK lower chassis follows a low curve behind a WHITE wooden safety rail. Actual source occupants sit in paired bench rows with some hands raised; preserve real train articulation and foreground fence occlusion rather than inventing hidden wheels. WHITE timber coaster lattice, white railings and narrow poles with actual yellow/blue/green/orange flags stand behind. A distant BLUE steel coaster is separate real background, not part of Thunderbolt. Preserve photographed low near-turn, worn wood/paint and no invented full route. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-48768435584957-thumbnail.jpg",
+      "thumbnailSHA256": "06b6101a94bce42596ad34692436f81ff2873dbb1df258d9a06751f5b3639bc7",
+      "thumbnailBytes": 18610,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-48768435584957-detail.jpg",
+      "detailSHA256": "f2f5feb471c10522ed69fbcb6ece4d5d88194fdc6af85acc3321a13b4f4f5d28",
+      "detailBytes": 117598,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-48768435584957",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Thunderbolt at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual operator Thunderbolt page and authentic wooden-coaster train photograph inspected. A MAROON traditional bench train with yellow physical THUNDERBOLT nose lettering/lightning decoration and BLACK lower chassis follows a low curve behind a WHITE wooden safety rail. Actual source occupants sit in paired bench rows with some hands raised; preserve real train articulation and foreground fence occlusion rather than inventing hidden wheels. WHITE timber coaster lattice, white railings and narrow poles with actual yellow/blue/green/orange flags stand behind. A distant BLUE steel coaster is separate real background, not part of Thunderbolt. Preserve photographed low near-turn, worn wood/paint and no invented full route. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "df09b066e8ad7b69d60b2c1dad0355c1638ff0187295950d9fa33cf6cdcc6e88",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 54083855843037,
+      "rideName": "Zoom Jets",
+      "alt": "Illustrated Zoom Jets at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:52:05.893364+00:00",
+      "originalSHA256": "47e5a07d0396c1030de49286ebf195c4388a6faf6a1ad00aaadc1845c9cd6673",
+      "review": "Accepted: actual silver blue/yellow-nosed planes remain attached to multicolored radial arms with source hydraulic/root connections and white cloud cutouts. Real globe, black fence and source occupants are retained; source sign shape remains context. Generated dusk light does not turn cars into free-flying aircraft.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F000828e20e640865644cab8b6ffcb8f5f2df6681-6240x4160.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The Zoom Jets ride at Six Flags New England with colorful airplanes and a globe at the center.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/zoomjets",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "87b756ca9877d5251de52842d2f94b4c20ace537a9db8096b55abf7616238180",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Zoom Jets page and real ride photograph inspected. This is a mechanically connected children's airplane spinner: SILVER fuselage cars with BLUE or YELLOW intake/nose rings, matching open cockpit rims/fin and genuine small black landing-wheel forms attach to MULTICOLORED radial arms with visible blue root hardware/hydraulic connections. White cloud cutouts decorate the arms; a large real blue-green GLOBE caps a pale-blue center column. Source occupants sit inside the actual plane cockpits; retain source seating and visible arm-to-plane connection. Genuine black perimeter fence, actual Zoom Jets entry sign, colorful lamppost globes and nearby trees are photographed context. Do not create free-flying aircraft, new propellers or hidden whole mechanism. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-54083855843037-thumbnail.jpg",
+      "thumbnailSHA256": "dfe729c7e45e67689d9e287cc5a7e1206ad0f3f1231e1e2dc465090e3da1287b",
+      "thumbnailBytes": 24114,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-54083855843037-detail.jpg",
+      "detailSHA256": "65f2c069e6836a77b81b6c197e2d6c55792662691d110d9ca6c2261ecb427c96",
+      "detailBytes": 195799,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-54083855843037",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Zoom Jets at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual operator Zoom Jets page and real ride photograph inspected. This is a mechanically connected children's airplane spinner: SILVER fuselage cars with BLUE or YELLOW intake/nose rings, matching open cockpit rims/fin and genuine small black landing-wheel forms attach to MULTICOLORED radial arms with visible blue root hardware/hydraulic connections. White cloud cutouts decorate the arms; a large real blue-green GLOBE caps a pale-blue center column. Source occupants sit inside the actual plane cockpits; retain source seating and visible arm-to-plane connection. Genuine black perimeter fence, actual Zoom Jets entry sign, colorful lamppost globes and nearby trees are photographed context. Do not create free-flying aircraft, new propellers or hidden whole mechanism. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "31251de7b0b08992cec419d8c8779c05f9ea1558a35f19a9cf202dad98047f10",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 68824611742336,
+      "rideName": "New England SkyScreamer",
+      "alt": "Illustrated New England SkyScreamer at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:01:02.477026+00:00",
+      "originalSHA256": "90d75a6af296ceb983f9c78f8865b1abf8b74009e23650bb9632b5e8e720f055",
+      "review": "Accepted: the inspected portrait retains New England SkyScreamer's white-and-blue lattice mast, gold-toned radial carrier, long suspension chains and small paired chairs, actual dark star/flag housing and flags; realistic mechanical surfaces and restrained dusk treatment remain legible.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F06997fb4562339921cee81c4f1905ba91d4a16d3-1920x1285.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders spinning high in the sky on the New England SkyScreamer at Six Flags New England.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/new-england-skyscreamer",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a751ca640e8571f3f961ba3bcedd51ed771d9099676ff7c087e02c0a9e8cd3ea",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual New England SkyScreamer operator page and authentic upper-tower photograph inspected. Tall WHITE/BLUE lattice mast with GOLD/TAN internal bracing carries an open GOLD/TAN radial truss-arm carrier near the top. Real suspended paired BLACK chairs with actual source riders hang from very long thin chains attached at actual arm tips. The top has a BLUE housing with real partial Six Flags lettering, a large DARK star ornament and narrow flagpoles bearing colored triangular flags. Preserve source tower/truss/chain connections and real flying-chair arrangement; the base and entire height are outside this source frame, so do not invent a ground layout, superhero sign, other tower paint or hidden mechanism. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-68824611742336-thumbnail.jpg",
+      "thumbnailSHA256": "a3e2a24a67b9eec0d98036303223acf013f23e1fcc7a3da3567c6ce33f5b23ea",
+      "thumbnailBytes": 17555,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-68824611742336-detail.jpg",
+      "detailSHA256": "9e91c63f2a22ea4c45f5702c16c6e1a2525546f2faeabac87cb62eed5326ce41",
+      "detailBytes": 127715,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-68824611742336",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict New England SkyScreamer at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual New England SkyScreamer operator page and authentic upper-tower photograph inspected. Tall WHITE/BLUE lattice mast with GOLD/TAN internal bracing carries an open GOLD/TAN radial truss-arm carrier near the top. Real suspended paired BLACK chairs with actual source riders hang from very long thin chains attached at actual arm tips. The top has a BLUE housing with real partial Six Flags lettering, a large DARK star ornament and narrow flagpoles bearing colored triangular flags. Preserve source tower/truss/chain connections and real flying-chair arrangement; the base and entire height are outside this source frame, so do not invent a ground layout, superhero sign, other tower paint or hidden mechanism. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "b80a23f3ea5279dd4b2c109fcd2d2324b229182f0148e63aa406cdbf5bdf6813",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 71706015059721,
+      "rideName": "Adventure River",
+      "alt": "Illustrated Adventure River at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:01:42.233654+00:00",
+      "originalSHA256": "bb44fe2c2b9bda8855d03618aeed62467252a0838943459e9562aa8e35162b58",
+      "review": "Accepted: the inspected portrait retains Adventure River's documented stone arch and left waterfall, clear gray tubes with black handles and ordinary seated source-supported swimmers. It shows this photographed river section rather than an invented full route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1bbd969e48f2f47453c2594964ce6ddfb200dd00-2000x1333.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Two young girls in swimsuits floating on inner tubes on Adventure River at Six Flags New England.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/adventure-river",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "4d4a61e6e921fea6a92dbf758fa5c3da67e93ab08f1eed86a711387fc2fe0254",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Adventure River operator page and real lazy-river photograph inspected. Actual source families float seated in CLEAR/TRANSPARENT GRAY inner tubes with BLACK grips along a light-blue concrete water channel. The two foreground source riders and farther tubes retain their actual seated poses and water contact. A genuine ROCK arch/canyon wall surrounds the back of the channel and a real falling water sheet enters from the left rock wall; keep source rock texture, openings and partly occluded people. Unlike unsupported new scenery, this rock opening is genuinely visible in this photo. Frame this documented river section only, no invented full river loop, new slides or extra participants. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-71706015059721-thumbnail.jpg",
+      "thumbnailSHA256": "46ffaaa8a66c5dcf00bf23b241b3db283105a59722df3039be102d62b7588556",
+      "thumbnailBytes": 23544,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-71706015059721-detail.jpg",
+      "detailSHA256": "3dc6ae5772bcce8d344bf68d9150dd2768891787a6bba1298ffcb4cc7c70db81",
+      "detailBytes": 168846,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-71706015059721",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Adventure River at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual Adventure River operator page and real lazy-river photograph inspected. Actual source families float seated in CLEAR/TRANSPARENT GRAY inner tubes with BLACK grips along a light-blue concrete water channel. The two foreground source riders and farther tubes retain their actual seated poses and water contact. A genuine ROCK arch/canyon wall surrounds the back of the channel and a real falling water sheet enters from the left rock wall; keep source rock texture, openings and partly occluded people. Unlike unsupported new scenery, this rock opening is genuinely visible in this photo. Frame this documented river section only, no invented full river loop, new slides or extra participants. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "7368fe1001de2d4357e6982e58744625ea266b76bfe4c5e34f03fcbf20533c44",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 72963865554258,
+      "rideName": "Scrambler",
+      "alt": "Illustrated Scrambler at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:02:44.466643+00:00",
+      "originalSHA256": "7b8a8de2728612f698e1d397fac53acac9285ba5668d592749523a6b323ae35c",
+      "review": "Accepted: the inspected portrait preserves the stationary empty Scrambler's white truss arms, polished silver small cars, dark seat interiors, central drive and white fence, with the documented separate coaster structures behind it.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fdaf2a601280327c5a0e473f11eb7cfae6b9966bd-6240x4160.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Scrambler ride at Six Flags New England with white metal structure and roller coaster in the background.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/mind-scrambler",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "57aa57220236a907bb9199e40ca4ac0850620753b0685eac5a4ee943ae3d9990",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Scrambler operator page and empty-ride photograph inspected. This classic ride has a WHITE painted central column, long WHITE/SILVER radial beams and triangular truss/braced secondary arms supporting POLISHED SILVER box-like cars with BLACK padded seats and real small physical Six Flags panel. The source ride is stopped and EMPTY; preserve that actual pose, visible joint connections and deck rather than inventing riders/motion. A WHITE spear-top metal fence and green hedge occlude the lower cars. A real maroon/cream Scrambler entrance sign is right; red/tan steel coaster tracks behind and gray lattice farther right are separate source background rides. Do not merge their hardware or invent a hidden whole rotor. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-72963865554258-thumbnail.jpg",
+      "thumbnailSHA256": "f6ff71fe6240198b4ac13d3e122ebf711b6bcc8d24ce304630b5ef7d0edc59db",
+      "thumbnailBytes": 30135,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-72963865554258-detail.jpg",
+      "detailSHA256": "6548cb63b6b82a933cff20a4b59c3545bfb3aafb418b3bb441dc634967cfe122",
+      "detailBytes": 256111,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-72963865554258",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Scrambler at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual Scrambler operator page and empty-ride photograph inspected. This classic ride has a WHITE painted central column, long WHITE/SILVER radial beams and triangular truss/braced secondary arms supporting POLISHED SILVER box-like cars with BLACK padded seats and real small physical Six Flags panel. The source ride is stopped and EMPTY; preserve that actual pose, visible joint connections and deck rather than inventing riders/motion. A WHITE spear-top metal fence and green hedge occlude the lower cars. A real maroon/cream Scrambler entrance sign is right; red/tan steel coaster tracks behind and gray lattice farther right are separate source background rides. Do not merge their hardware or invent a hidden whole rotor. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "1861d367471f1904276e026c523bda5bbcfe216b249d3619dc4537469ae71e65",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 81810839119168,
+      "rideName": "Taz Prop Delivery Company",
+      "alt": "Illustrated Taz Prop Delivery Company at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:02:05.306027+00:00",
+      "originalSHA256": "c6d8f0809308dd2c10208d67c0e5c25619afb649199b48e069942386fe9ebc5b",
+      "review": "Accepted: the inspected portrait preserves the green and purple monster-truck bodies, large treaded black tires, gold wheels, visible yellow suspension details and central guide rail. The source Taz figure remains a fixed ride decoration and the truck hardware remains distinct from other rides.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F37fadd84d9a424cc8473b6c0078608e5c6c12056-1440x1533.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Visitors driving colorful trucks on the Taz Prop Delivery Company ride at Six Flags New England, surrounded by greenery.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/tazs-prop-delivery-company",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "adc7957534e807efd99f175465bfc2cab73c687fe5c3c98cc3a5375222a11c5f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Taz Prop Delivery Company operator page and authentic guided-truck photograph inspected. Two distinct LARGE monster-pickup bodies, GREEN front and PURPLE following, have big BLACK treaded wheels with GOLD rims, source yellow shock/decorative suspension forms, silver square grilles/bumper, small windshield and black roll bars topped by a row of square lights. The real cars follow a narrow visible center GUIDE RAIL along a gray curved concrete roadway, with actual source occupants in the green truck and a photographed fixed TAZ statue at the purple truck as background decoration. Preserve real truck steering seats, guide-rail/wheel contact, body paint and statue's material presence; no living character or free-driving off-road invention. This independent monster-truck hardware is distinct from the blocked Magic Mountain jeep/Elmer request. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-81810839119168-thumbnail.jpg",
+      "thumbnailSHA256": "a053f25b085d4fad6441b8fa7737aea795345583ab3123a0263e755683db7330",
+      "thumbnailBytes": 25520,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-81810839119168-detail.jpg",
+      "detailSHA256": "a77935eb711300056535b86408cd30b0585704e965b0837e5c390df117399f03",
+      "detailBytes": 180247,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-81810839119168",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Taz Prop Delivery Company at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual Taz Prop Delivery Company operator page and authentic guided-truck photograph inspected. Two distinct LARGE monster-pickup bodies, GREEN front and PURPLE following, have big BLACK treaded wheels with GOLD rims, source yellow shock/decorative suspension forms, silver square grilles/bumper, small windshield and black roll bars topped by a row of square lights. The real cars follow a narrow visible center GUIDE RAIL along a gray curved concrete roadway, with actual source occupants in the green truck and a photographed fixed TAZ statue at the purple truck as background decoration. Preserve real truck steering seats, guide-rail/wheel contact, body paint and statue's material presence; no living character or free-driving off-road invention. This independent monster-truck hardware is distinct from the blocked Magic Mountain jeep/Elmer request. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "296dda6690ced8154e8cc1a828908aee2d5f7d310a999bbe10a08aee19cd65b6",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 94770365265206,
+      "rideName": "CYBORG™ Hyper Drive",
+      "alt": "Illustrated CYBORG™ Hyper Drive at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:10:37.289178+00:00",
+      "originalSHA256": "a3d72d9d6e5e3fc9a5500d6fa7708ab1ac645f516e866f6a1b082d3082b328e9",
+      "review": "Accepted: the inspected portrait preserves the verified Cyborg opening-report actual dark seats, black padded restraints with chrome handgrips, textured foot deck and connected red-lit rotor structure in magenta indoor haze. This is generated ride artwork based on a photographic reference, not the rejected raw comic-art candidate or a claim of a real app photograph.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://eventsinsider.com/wp-content/uploads/2019/06/Cyborg-Hyperdrive-Six-Flags-02-S.jpg",
+          "sourceURL": "https://eventsinsider.com/cyborg-hyperdrive-six-flags-delivers-new-thrill-5-stars/",
+          "credit": "EventsInsider / Matt Martino (reference publisher; photo author not separately specified)",
+          "license": "Copyright EventsInsider; source rights retained",
+          "licenseURL": "https://eventsinsider.com/cyborg-hyperdrive-six-flags-delivers-new-thrill-5-stars/",
+          "alt": "Opening report Cyborg Hyper Drive photo candidate at Six Flags New England",
+          "sha256": "e9c74104f96570992c985efef898b19e93089b88767ee20e70bb928e971c8e6e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected real photographic close view of indoor Cyborg rider seats: black padded over-shoulder restraints with polished handgrips, dark gray/blue seat shells, silver textured foot platform, actual red-lit rotor structure and magenta indoor haze; two ordinary riders. No complete hidden mechanism or room layout claimed. Replaces non-photographic comic-art raw candidate. The other two publisher links returned HTTP 421 and were not retried."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-94770365265206-thumbnail.jpg",
+      "thumbnailSHA256": "a2846a7b565fbecb18c80e888b73c909012150412b50030639a409d9130f0a6d",
+      "thumbnailBytes": 22540,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-94770365265206-detail.jpg",
+      "detailSHA256": "bf9fd4fc39d6e7adc40d1c9c107cb0eaabae13171966849b5447b9e9d3740e36",
+      "detailBytes": 131377,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-94770365265206",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict CYBORG™ Hyper Drive at Six Flags New England. Source- and pixel-reviewed facts and limits: Actually inspected real photographic close view of indoor Cyborg rider seats: black padded over-shoulder restraints with polished handgrips, dark gray/blue seat shells, silver textured foot platform, actual red-lit rotor structure and magenta indoor haze; two ordinary riders. No complete hidden mechanism or room layout claimed. Replaces non-photographic comic-art raw candidate. The other two publisher links returned HTTP 421 and were not retried. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "9e35b3adfcc85e857600012ff303ed0e880745fc89b081afba997159d0727d7e",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 98535243848665,
+      "rideName": "Wicked Cyclone",
+      "alt": "Illustrated Wicked Cyclone at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:03:21.759215+00:00",
+      "originalSHA256": "4c64382adc6144f5813c909a85f9b126ee22386dc16a99811cfa3c578389e41d",
+      "review": "Accepted: the inspected portrait retains Wicked Cyclone's orange IBox rail, gray painted hybrid lattice and bolted connections, orange/silver/blue train and visible wheel contact in the documented banked/inverted source section. It does not invent a full route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F81957cd89d681913c3dedaa3c065f161047c56fa-1640x1108.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders upside down on the Wicked Cyclone hybrid roller coaster at Six Flags New England",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/wicked-cyclone",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "795afc64de5c36cb3bead51f0588ea61302273ac5be0265cbf9f4dd56129163f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Wicked Cyclone operator page and photographic action hero inspected. Real ORANGE I-box rail twists into a steeply banked/inverted section within a dense GRAY painted support lattice with visible bolted plates. The source train has ORANGE underbody/seats, SILVER/GRAY side panels with BLUE/ORANGE accent artwork, real dark lap restraints and exposed pale wheel assemblies contacting the orange rails. Actual source riders are carried through the documented bank/roll with some raised hands; preserve their seating and train articulation and real beam occlusions. Do not fabricate the full layout, detachable train, different coaster colors or classify every painted lattice member as shiny steel. Sky/lighting in this operator image is already stylized; use actual photographic ride geometry with the requested restrained dusk treatment. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-98535243848665-thumbnail.jpg",
+      "thumbnailSHA256": "da8f7327676eef68fdecddd8e876e7fb611002bc8e8b3058d783044e2d06390c",
+      "thumbnailBytes": 28479,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-98535243848665-detail.jpg",
+      "detailSHA256": "ca734cd487367170656d757a3786e7e9b3273b53e0a711b8063ae6731ea73984",
+      "detailBytes": 183673,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-98535243848665",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Wicked Cyclone at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual Wicked Cyclone operator page and photographic action hero inspected. Real ORANGE I-box rail twists into a steeply banked/inverted section within a dense GRAY painted support lattice with visible bolted plates. The source train has ORANGE underbody/seats, SILVER/GRAY side panels with BLUE/ORANGE accent artwork, real dark lap restraints and exposed pale wheel assemblies contacting the orange rails. Actual source riders are carried through the documented bank/roll with some raised hands; preserve their seating and train articulation and real beam occlusions. Do not fabricate the full layout, detachable train, different coaster colors or classify every painted lattice member as shiny steel. Sky/lighting in this operator image is already stylized; use actual photographic ride geometry with the requested restrained dusk treatment. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "0612cc7518eaf17fcc7473776911545e9de231a290c4fbe44e5e187e2f4991ce",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 100995207679941,
+      "rideName": "Hurricane Falls",
+      "alt": "Illustrated Hurricane Falls at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:09:22.588201+00:00",
+      "originalSHA256": "da0d609355b051db3ac44887a6b5a2a9bce88d507963edaf765a872933bf0995",
+      "review": "Accepted: the inspected portrait preserves the corrected Hurricane Falls own-hero yellow and orange open curves, purple closed outlet, concrete support piers and wet parallel runouts; no riders, rafts or hidden route are invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?q=75&url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fd64a39cda9ee92d7c4d981493223bd10793afb4c-840x540.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/hurricane-falls",
+          "credit": "Six Flags / New England",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Hurricane Falls yellow/orange/purple slides at Six Flags New England",
+          "sha256": "507bd9d0febc4dece511f16f3013dffce0ac297e5b9c4cdd52558e2e6ff89844",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Use the operator own-hero photograph, not the raw related Cannonball Falls candidate. Actual yellow and orange open body-slide curves and purple enclosed round outlet, visible concrete cylindrical piers and steel saddles, wet straight parallel color-matched runouts. Preserve the photographed low finish perspective; no riders or rafts or invented full routes."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-100995207679941-thumbnail.jpg",
+      "thumbnailSHA256": "3694944be726281e66c2df609225ebf04c5a0ed08cc87c7358a424708cb9f0d4",
+      "thumbnailBytes": 21120,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-100995207679941-detail.jpg",
+      "detailSHA256": "82f5faf9a1749d0ed627872b03482ebdb7602b1944d8c48ed0b940f070928f29",
+      "detailBytes": 150170,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-100995207679941",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Hurricane Falls at Six Flags New England. Source- and pixel-reviewed facts and limits: Use the operator own-hero photograph, not the raw related Cannonball Falls candidate. Actual yellow and orange open body-slide curves and purple enclosed round outlet, visible concrete cylindrical piers and steel saddles, wet straight parallel color-matched runouts. Preserve the photographed low finish perspective; no riders or rafts or invented full routes. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "b491eafd92c057c2176a750292caa4a0a065577e27377106b301fd1597aa362c",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 101056539571704,
+      "rideName": "New England Express",
+      "alt": "Illustrated New England Express at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:08:59.027888+00:00",
+      "originalSHA256": "72b46064bd0332271c017507fc52d644837382bb3c53aaa7307f88b8a831be4c",
+      "review": "Accepted: the inspected portrait retains the small red/silver/blue New England Express engine, circular star front plate, narrow railway and actual station roof/columns and rail curve. It preserves empty stationary source composition and realistic painted wear.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2674c72871cf074d59be246a0bd59072a688a9e7-8192x5461.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "New England Express train at Whistlestop Park station in Six Flags New England with greenery in the background.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/new-england-express",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ba3316a299b83200c9725b73cf9d3f15c72bb2172237628c7c78d71af65552b7",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photograph of the small New England Express locomotive at Whistlestop Park station: red cab and boiler, blue chimney and front buffer, silver ridged upper boiler, white-blue circular star front plate; small wheels remain seated on the actual narrow railway. Green pale columns and roof, teal railing and brick depot visible. Keep stationary empty source station and photographed rail curve, no invented tunnel or extra engine."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-101056539571704-thumbnail.jpg",
+      "thumbnailSHA256": "179d97de73d304942a362287a95f9cfb976832a8d18ca1191a77f4585bc98369",
+      "thumbnailBytes": 25899,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-101056539571704-detail.jpg",
+      "detailSHA256": "f296421d63cd93c23728740ff9bcabd21d64e59eca5f41c2249b9ce127f177b7",
+      "detailBytes": 210117,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-101056539571704",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict New England Express at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual operator photograph of the small New England Express locomotive at Whistlestop Park station: red cab and boiler, blue chimney and front buffer, silver ridged upper boiler, white-blue circular star front plate; small wheels remain seated on the actual narrow railway. Green pale columns and roof, teal railing and brick depot visible. Keep stationary empty source station and photographed rail curve, no invented tunnel or extra engine. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "00789678d125bc630f078a89df6ff474ccd08824c925542c6ffccdbd5b2a4c63",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 108101215853617,
+      "rideName": "Balloon Race",
+      "alt": "Illustrated Balloon Race at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:10:07.936792+00:00",
+      "originalSHA256": "0389a5122bf028d95789bb7547180c1dbbd8004e43a62a49ee16da89a04a2ae0",
+      "review": "Accepted: the inspected portrait retains Balloon Race rigid colored segmented shells, bulbs, cream/green baskets suspended by rods, green carrier and central drum, with documented separate Flashback rail and distant tower behind. Empty source ride and photographic hardware remain recognizable.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fed3b8bcdaa06b49da6b76eeea2081258878f816c-6240x4160.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Colorful Balloon Race ride at Six Flags New England with vibrant hot air balloon-themed seats.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/balloon-race",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a3ec5f7c1f1a7f92143ad7c5a8577551d84def6ae90295ccf403441da0bc5151",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual empty Balloon Race: rigid rounded balloon shells with alternating green/white/yellow, blue/white/yellow and lavender/white/yellow panels, scalloped tops and bulb strings; small cream basket gondolas outlined in dark green hang on straight narrow rods from actual green radial carrier. Orange/yellow central drum, burgundy plinth, black fence. Background separate reddish Flashback rail and tan supports and distant SkyScreamer remain background only. No free-floating real hot air balloons or invented riders."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-108101215853617-thumbnail.jpg",
+      "thumbnailSHA256": "aeaf2f566650a361e439a9231af00f8ab1c543bf09d72cb1c2a364554bdb55f8",
+      "thumbnailBytes": 26794,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-108101215853617-detail.jpg",
+      "detailSHA256": "5741c59ef884e2b7dcc20aa0db586a031ee0a59ca17a9e5217e3d4feea9c82d7",
+      "detailBytes": 191927,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-108101215853617",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Balloon Race at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual empty Balloon Race: rigid rounded balloon shells with alternating green/white/yellow, blue/white/yellow and lavender/white/yellow panels, scalloped tops and bulb strings; small cream basket gondolas outlined in dark green hang on straight narrow rods from actual green radial carrier. Orange/yellow central drum, burgundy plinth, black fence. Background separate reddish Flashback rail and tan supports and distant SkyScreamer remain background only. No free-floating real hot air balloons or invented riders. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "9aea01714e95ea13c4717e869c192c8e2c000ed0e3cb0c4d8f11011046de35f8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 112367816617544,
+      "rideName": "Swiss Family Toboggan",
+      "alt": "Illustrated Swiss Family Toboggan at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:10:56.813416+00:00",
+      "originalSHA256": "d15dad10b3f872e459bb0bab0c2df9aefb73ea8d45c848c275a72a7c1a9a4a92",
+      "review": "Accepted: the inspected portrait preserves Swiss Family Toboggan's empty wide pale lavender rolling water channel, high walls, photographed support timbers, trees and background pool/building; no raft or unseen route was added.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F62114a91628c03da78407e299f490b999c131ed4-2880x1600.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Swiss Family Toboggan",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/swiss-family-toboggan",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "29ce5ecab0e9f96ee540c84140faf330e8b4e05befbdd4fc6472bc8285cb6f87",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photograph of Swiss Family Toboggan empty wide pale lavender open family-raft channel, high rising sides and a rolling straight downhill curve carrying water, trees partially framing the sides, brown supports, background pool and low peach-roof building. No raft is visible in this source, so retain empty water chute and do not invent passengers or a full unseen route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-112367816617544-thumbnail.jpg",
+      "thumbnailSHA256": "77a503354e9e34d0ef21a3f75138e6d9859eb83b59e2be9223d43a0aae17d615",
+      "thumbnailBytes": 23426,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-112367816617544-detail.jpg",
+      "detailSHA256": "789d00d6089b7d1413077c05b2ab390f413bbc97db29d1475097a6d38a8bb01e",
+      "detailBytes": 194946,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-112367816617544",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Swiss Family Toboggan at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual operator photograph of Swiss Family Toboggan empty wide pale lavender open family-raft channel, high rising sides and a rolling straight downhill curve carrying water, trees partially framing the sides, brown supports, background pool and low peach-roof building. No raft is visible in this source, so retain empty water chute and do not invent passengers or a full unseen route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "da2dd795968a3225296b1515cdc23ddbb225948d0b40cb421cf55d78705ba350",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 139501568877469,
+      "rideName": "Commotion Ocean",
+      "alt": "Illustrated Commotion Ocean at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:10:32.025109+00:00",
+      "originalSHA256": "78af9ff6ccf7181b62cbec55a2076ab6a32d7fc081706f189116b753473266d8",
+      "review": "Accepted: the inspected portrait preserves Commotion Ocean's actual palm/wave entrance sign and timber posts, parasols, stacked chairs, rope fence and landscaped bed. It depicts the photographed entrance with only the source-supported distant pool strip.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F33761a5db720dfa6e929f4cf3955d11b67db4eb1-8192x5461.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The entrance sign for Commotion Ocean, a wave pool attraction at Six Flags New England.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/commotion-ocean",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "4a94c73af401c30ca7fa88e646aa31b876be08ebfef2bb57031bb5484940e47f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photograph of Commotion Ocean entrance: palm-and-wave-shaped physical sign with warm yellow/orange lettering and pink edge on thick natural timber posts; orange/yellow parasols, stacked black lounge chairs, shrubs, stone bed and rope fence. Distant narrow pool strip, blue shade structures and separate water slides are only background. Preserve the documented entrance, not an invented wave-pool aerial or riders; sign schedule is source signage not live app data."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-139501568877469-thumbnail.jpg",
+      "thumbnailSHA256": "0b61dee2a4e968609debfe596258921a932c9b4d5ab49f5e7952f2a2abb6046b",
+      "thumbnailBytes": 22036,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-139501568877469-detail.jpg",
+      "detailSHA256": "670044071d7d2691543a72e9e917bdd4b27a00b83bdb0dd52a494b0ce745faff",
+      "detailBytes": 189361,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-139501568877469",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Commotion Ocean at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual operator photograph of Commotion Ocean entrance: palm-and-wave-shaped physical sign with warm yellow/orange lettering and pink edge on thick natural timber posts; orange/yellow parasols, stacked black lounge chairs, shrubs, stone bed and rope fence. Distant narrow pool strip, blue shade structures and separate water slides are only background. Preserve the documented entrance, not an invented wave-pool aerial or riders; sign schedule is source signage not live app data. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "aa48d0698a243bfad276f5ce6c60c963314a74a69f798364a8362840115e9147",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 143544880995074,
+      "rideName": "Stampede Bumper Cars  Remix",
+      "alt": "Illustrated Stampede Bumper Cars  Remix at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:11:24.433781+00:00",
+      "originalSHA256": "22dd89d178228d19114b545221f921022add16c4ddf8c839e8cf00d03db33e10",
+      "review": "Accepted: the inspected portrait retains Stampede Bumper Cars' actual wood-look indoor arena, exposed ceiling and hanging bell lamps, colorful low cars on thick rubber bumpers, reflective floor and ordinary source-supported seated riders. Subtle blue-purple interior lighting preserves the actual hall.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5fa987186cb7e973715331b7bb35187d5e0248d8-1920x1224.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders having fun on the Stampede Bumper Cars at Six Flags New England, classic bumper car attraction.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/stampede-bumper-cars-remix",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ecb652826bdaf63fa7dcb7b0425565e892f041df667e8f2bf8895e533cca9d8b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Stampede Bumper Cars photograph: wood/log-look enclosed hall, exposed dark ceiling beams and many hanging bell lamps, polished reflective floor; low yellow/red and teal/blue cars on thick black rubber perimeter bumpers, ordinary seated guests and steering wheels. Barn wall has actual tools/ropes. Keep this indoor photographed arena and car bodies, no invented power poles or crash debris; use natural indoor light with restrained purple-blue ambience rather than exterior sky."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-143544880995074-thumbnail.jpg",
+      "thumbnailSHA256": "73d1d4437b621e73b752377d61609b6026e41c308656bf529b10d591c26184ac",
+      "thumbnailBytes": 20791,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-143544880995074-detail.jpg",
+      "detailSHA256": "750f9edd9d0124f9166c41cd28b5a11e7eeebe776b4f849037c93c08ba654d75",
+      "detailBytes": 140337,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-143544880995074",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Stampede Bumper Cars  Remix at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual operator Stampede Bumper Cars photograph: wood/log-look enclosed hall, exposed dark ceiling beams and many hanging bell lamps, polished reflective floor; low yellow/red and teal/blue cars on thick black rubber perimeter bumpers, ordinary seated guests and steering wheels. Barn wall has actual tools/ropes. Keep this indoor photographed arena and car bodies, no invented power poles or crash debris; use natural indoor light with restrained purple-blue ambience rather than exterior sky. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "590fb2cceae4aaeab074cc0d1e30258f81f04049a50989f3eae83bf1cfe80618",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 154012260745968,
+      "rideName": "The Great Chase",
+      "alt": "Illustrated The Great Chase at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:12:02.494272+00:00",
+      "originalSHA256": "79e3332426d10328df41f28ff91b1f766347594242471b50b7c4961d4562d2bb",
+      "review": "Accepted: the inspected portrait retains The Great Chase gray/white entrance, red raised title and physical printed cartoon panels, red gates and benches, with only the documented red rail and separate white wooden structure behind. No unseen train or route was added.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1e1773867ebb6ce061f1bf8c56842ce43cd6c75d-6240x4160.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The entrance to The Great Chase at Six Flags New England, featuring a cartoon character and ride signage.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/great-chase",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2302d2fc88fca26d3b4740ca5d0a94b71aa91fc189080aa8ed0f813425da8aaa",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photograph of The Great Chase entrance: gray/white curved-top facade with deep red raised ride title and printed cartoon rabbit/rider panels, rectangular open bays with red gates, brown benches and tree. The documented small red tubular coaster rail crosses the right edge on blue supports, separate large white wooden coaster structure behind. Preserve entrance and visible rail only, no invented train or hidden full layout; physical printed characters remain signs."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-154012260745968-thumbnail.jpg",
+      "thumbnailSHA256": "0631fa66a742608c24f4f6f1d5b7b25f056957b0513b887f9f417db66890c224",
+      "thumbnailBytes": 22525,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-154012260745968-detail.jpg",
+      "detailSHA256": "f65297fa5f6dd7a02f21f03c29053dc75ed5c18e30f14d757d0d1ee10fee0327",
+      "detailBytes": 195744,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-154012260745968",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict The Great Chase at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual operator photograph of The Great Chase entrance: gray/white curved-top facade with deep red raised ride title and printed cartoon rabbit/rider panels, rectangular open bays with red gates, brown benches and tree. The documented small red tubular coaster rail crosses the right edge on blue supports, separate large white wooden coaster structure behind. Preserve entrance and visible rail only, no invented train or hidden full layout; physical printed characters remain signs. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "800b01c8441fd6d08aa4634d51bf0168113fcd765c6b884bc520ac62df0f3c85",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 160364388378088,
+      "rideName": "Tea Cups",
+      "alt": "Illustrated Tea Cups at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:12:47.954860+00:00",
+      "originalSHA256": "7945c6a3bad264b49ff46a1ef8ac944a792b4a94039774b14f9992d0440bb7af",
+      "review": "Accepted: the inspected portrait preserves the photographed Tea Cups blue/white cup with gold rim, handle, source doorway and center steering disk, ordinary seated family, fixed urn and yellow/blue canopy. Mild motion and realistic surfaces remain consistent with source geometry.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb2f60426b5e780b3ffb30541e5ab3994f79e18b5-4096x2731.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A family spins and laughs on the Tea Cups ride at Six Flags New England, enjoying the teacup ride experience.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/tea-cups",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2a12bdd4ddad80a26b48e61d9195c31f7497fe469095dd949ecdec4e259a3eb0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Tea Cups photograph of a blue/white large cup with gold rim and handle, source family of ordinary seated riders, circular center steering disk and door on real rotating floor. Alternating yellow/dark-blue canopy and cream/gold central tea urn, other actual diamond-pattern cups in background. Preserve physical door, handle and fixed central hardware with believable mild motion; no free-floating cup or invented route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-160364388378088-thumbnail.jpg",
+      "thumbnailSHA256": "9495ec2ba0e0dc3d5f470d011856c9d29f985d3728df70c8e706a79d068753a2",
+      "thumbnailBytes": 23426,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-160364388378088-detail.jpg",
+      "detailSHA256": "83836030e1daf3be0c4e349decc68c9151b0fd3bdcdd87eb825c945c3f0130db",
+      "detailBytes": 122575,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-160364388378088",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Tea Cups at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual operator Tea Cups photograph of a blue/white large cup with gold rim and handle, source family of ordinary seated riders, circular center steering disk and door on real rotating floor. Alternating yellow/dark-blue canopy and cream/gold central tea urn, other actual diamond-pattern cups in background. Preserve physical door, handle and fixed central hardware with believable mild motion; no free-floating cup or invented route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "44c60b2816a92bd726b4006f6595402b5dbdca13afdf492b51d11b1a98e2a1e7",
+      "generationSteps": []
+    },
+    {
+      "parkId": 43,
+      "rideId": 167932937190431,
+      "rideName": "SUPERGIRL™ Sky Flyer",
+      "alt": "Illustrated SUPERGIRL™ Sky Flyer at Six Flags New England",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T06:13:44.891596+00:00",
+      "originalSHA256": "8c6cc099160bd7037eaaad2627a9f3c183c3b594a04495eee117a96ea02c9ec8",
+      "review": "Accepted: the inspected portrait retains New England Supergirl Sky Flyer's actual rigid red arm/piston connection, blue-backed seat, black padded restraint and chrome handgrips, with the source-supported close rider view. It shows the independent rotating wheel ride and does not recreate the blocked Fiesta tower.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F3332cd96c867fbbab99b906a841632b2e3057e2d-3840x2160.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A close-up of a rider on the Supergirl Sky Flyer at Six Flags New England, experiencing the thrill.",
+          "sourceURL": "https://www.sixflags.com/newengland/attractions/supergirl-sky-flyer",
+          "credit": "Six Flags / New England (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "336e945ec4e569c93b11011d2e1338f354116a5565aa5243bb1f475aa2283a3f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator gallery photograph of New England SUPERGIRL Sky Flyer: close view of ordinary rider secured in black padded over-shoulder restraint with two chrome handgrip bars and low latch, blue seat edge, red pivot/arm with paired metal piston connection above, next restrained rider behind. Source is a rotating wheel ride with rigid mechanical arms, entirely distinct from the moderation-blocked Fiesta Texas tall swing tower. Keep this photographed close-up and its hardware only; no tower, chains, character artwork or invented full wheel."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "43-167932937190431-thumbnail.jpg",
+      "thumbnailSHA256": "8ba670b79b2f4826a96fe31d75bf71710b4b62b654a98106338fc704cbb00aa9",
+      "thumbnailBytes": 19023,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "43-167932937190431-detail.jpg",
+      "detailSHA256": "1d46c11973c774e84c255d9bac507fd64185c81444c5bee920ee228cd565ab38",
+      "detailBytes": 102845,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "43-167932937190431",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict SUPERGIRL™ Sky Flyer at Six Flags New England. Source- and pixel-reviewed facts and limits: Actual operator gallery photograph of New England SUPERGIRL Sky Flyer: close view of ordinary rider secured in black padded over-shoulder restraint with two chrome handgrip bars and low latch, blue seat edge, red pivot/arm with paired metal piston connection above, next restrained rider behind. Source is a rotating wheel ride with rigid mechanical arms, entirely distinct from the moderation-blocked Fiesta Texas tall swing tower. Keep this photographed close-up and its hardware only; no tower, chains, character artwork or invented full wheel. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "6f0d2d0efd07faeb76d7b1921bc98814d825d668c1091b3464350d508782c0c3",
       "generationSteps": []
     },
     {
