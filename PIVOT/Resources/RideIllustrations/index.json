@@ -36996,6 +36996,92 @@
     },
     {
       "parkId": 281,
+      "rideId": 16541032949277,
+      "rideName": "Hook's Lagoon",
+      "alt": "Illustrated Hook's Lagoon at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:15:06.463789+00:00",
+      "originalSHA256": "3e10826ce0bef700f9be316b1ca7d5110eb01c41cc4902ab93fb4648a2e6ecef",
+      "review": "Accepted: Actual generated portrait pixels preserve Hook's Lagoon's timber-look pirate climbing structure, gray roof/yellow steps, artificial palms, fish-spray pole, cream slide, red-topped mushroom fountain and shallow aqua pool/curved deck. Source-visible ordinary lifeguards remain contextual; natural surfaces replace reference compression without changing the documented section.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F0cf41625bafa160742e0bd9b7429a968338d89df-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Hook's Lagoon at Six Flags Darien Lake, featuring an expansive splash pad with various water play structures.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/hooks-lagoon",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "7049f74aec18b76ba162de4ebb5dbca66f75205928c14db60d24f5900c701d3d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photograph shows Hook's Lagoon's shallow aqua splash pool around a timber-look pirate climbing structure, gray pitched hut roof, yellow steps, brown rails/bridges and multiple small water jets. Source-visible artificial palm fixtures, white fish-spray pole with colored fish, small cream open slide at right, red-topped mushroom fountain at left and curved sand-colored pool edges anchor this exact installation. Preserve the photographed layout section and ordinary distant lifeguards, not an invented whole waterpark. The reference image is visibly compressed/posterized; use its actual geometry with realistic natural surfaces."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-16541032949277-thumbnail.jpg",
+      "thumbnailSHA256": "00b044d07f1b49d78abcfb5fcb52da3ffe1fa382693996ff11dd18f5ce2228e8",
+      "thumbnailBytes": 19032,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-16541032949277-detail.jpg",
+      "detailSHA256": "95dcfbcdb0a51501282bfb8b1ac04bb7292e8b85eacddf6a179bb2c0eb07d86d",
+      "detailBytes": 158889,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 27036898343007,
+      "rideName": "Sleighride",
+      "alt": "Illustrated Sleighride at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:17:06.781941+00:00",
+      "originalSHA256": "c570b72277bc2c639d3243516953ad64abeba95462a768c2d7ed46af88df8517",
+      "review": "Accepted: Actual generated portrait pixels preserve Sleighride's winter facade, pastel domed skyline and sleigh/snowman decoration, icicle edging, patterned fascia, actual white/black cars and blue/cream radial deck with the light-blue fence and source-visible neighboring coaster. It remains the photographed hardware configuration.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F6345839295158fedf41bba76b2ad2614dab62240-6213x4142.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Families enjoying the Sleighride at Six Flags Darien Lake, a popular ride for kids in Buffalo, NY.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/sleighride",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ab78976b951b9abc147bb4649573e6a94fbe120c7b9e5974128ddf55f885c101",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The actual Darien photo shows Sleighride's white/black linked sleigh cars around an undulating blue/cream radial deck beneath a winter-themed canopy: pastel onion-dome skyline, painted horse sleigh and snowmen, white icicle edging, pale-blue uprights, ornamental patterned fascia and light-blue picket fence. Source-visible blue/green looping coaster behind stays contextual. Preserve the actual empty source-visible cars and no invented rider seating or hidden full mechanism. Render realistic surfaces, not the reference's compression/posterization."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-27036898343007-thumbnail.jpg",
+      "thumbnailSHA256": "0cbb9eec5ce5a9f6c39b78f2d2b5960768a1c860ed2834a32089ff3b0f61ce36",
+      "thumbnailBytes": 27430,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-27036898343007-detail.jpg",
+      "detailSHA256": "1a80511508854b03e055304bd33f86e5c87b4f218abf368c2fe19f478dc0a59a",
+      "detailBytes": 223038,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
       "rideId": 29292884721301,
       "rideName": "Silver Bullet",
       "alt": "Illustrated Silver Bullet at Six Flags Darien Lake",
@@ -37031,6 +37117,952 @@
       "detailFile": "281-29292884721301-detail.jpg",
       "detailSHA256": "91246ce71842f940ab7bf6f78814a4e77c0c0bf124a76527acf88a2e879fc8bb",
       "detailBytes": 207128,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 42599836482641,
+      "rideName": "RipCurl Racer",
+      "alt": "Illustrated RipCurl Racer at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:15:29.840095+00:00",
+      "originalSHA256": "a858140be7f1d9ace9c254a26fd8408fe2f17cfbacba350a0dad70d323709f90",
+      "review": "Accepted: Actual generated portrait pixels preserve RipCurl Racer's six blue open lanes, blue/white runouts, connected rainbow upper tubes, gray supports and ordinary prone mat riders. Wet fiberglass surfaces and the source walkway match the observed installation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2ea813ebf71eb47db183626bca82cc6c8007e5bd-1920x1280.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders racing down the blue slides of the RipCurl Racer at Six Flags Darien Lake.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/ripcurl-racer",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a19a434da32d9199f05beb5ebe15b528389a3d82acee699ce13a9cb34b49b650",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photo shows RipCurl Racer's six blue open racing lanes and blue/white runouts, connected upper braided red/orange/yellow/teal/blue/purple enclosed tubes on gray supports, and ordinary riders lying prone on actual blue mats with forward handles. Preserve the real six-lane geometry, actual supports and source-visible adjacent rope-lined walkway, without inventing a new hidden routing. Use realistic wet fiberglass and natural dusk, not the source's compression/posterization."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-42599836482641-thumbnail.jpg",
+      "thumbnailSHA256": "4f6feb350fcea5645d7ffbd046aa854d8a84fe3cecf97f014ed2af7698791b09",
+      "thumbnailBytes": 25289,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-42599836482641-detail.jpg",
+      "detailSHA256": "62021d902bd8dad73ddd32d6e0cfc4f53e47fa3875545edb48eba8ad41327ab1",
+      "detailBytes": 197541,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 43282130618792,
+      "rideName": "Critter Chase",
+      "alt": "Illustrated Critter Chase at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:15:53.248803+00:00",
+      "originalSHA256": "fd5f5e96493ecccf3839dc426432bb748dfc4bc0b3c41f3cb772a8423c914ad1",
+      "review": "Accepted: Actual generated portrait pixels preserve Critter Chase's gray elephant/red saddle car, purple lifting arms and bulbs, yellow actuator, faux-rock base and nearby spotted ladybug cars with an ordinary clothed child. The physical fiberglass ride and mechanical connections remain source-supported.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F8dbff26f714ed308288f39bfc57d18fc2042ce41-6693x4462.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A young boy riding in an elephant-themed car on the Critter Chase ride at Six Flags Darien Lake.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/critter-chase",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f8728a25ed0841638e45b3dfc2b207d12602ba48bef450bc1f69e1911d68cce0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Darien photo shows Critter Chase's gray elephant gondola with a red saddle/body, ordinary clothed child and red hand control, purple radial lifting arms with bulb strips and yellow actuator, faux rock center base and nearby red ladybug gondolas with blue/yellow spots. Preserve the source-specific animal cars and connected actual arms, wooden fence and tree setting. No cartoon render, generic Dumbo substitution, invented hidden restraints or free flight; use realistic painted fiberglass despite compressed source."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-43282130618792-thumbnail.jpg",
+      "thumbnailSHA256": "47f90907ced3158ed7270797cb16a709e6d1206d4ba2c8b2946e5b555b224e9d",
+      "thumbnailBytes": 27180,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-43282130618792-detail.jpg",
+      "detailSHA256": "7d23f1ec1e85bc249782b7468fb1345535a1448af56f9cb535a7ba4936bdd85d",
+      "detailBytes": 196656,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 57297641166947,
+      "rideName": "Pirate",
+      "alt": "Illustrated Pirate at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:17:44.030530+00:00",
+      "originalSHA256": "16f9b38d2fb7729e51d3c7ad1289ee050d76cafa8404b844396a6c9b9ab463ac",
+      "review": "Accepted: Actual generated portrait pixels preserve Pirate's brown ship/yellow shared benches, actual restrained guests, white A-frame/ladders, brown pendulum frame, roofed operator booth, queue rails and lake. Source-visible background elements remain contextual; no disconnected ship or full hidden course appears.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F29a0e814f264cebe01d61a825a74faf4eba49e9a-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The Pirate ride swinging with passengers onboard at Six Flags Darien Lake.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/pirate",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "74883838c367d04cdd0f62649d68fdeaab0ed39fe4520ccbeea2a6cc1ce2c206",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual source photo shows Pirate's swinging brown woodgrain ship with yellow shared benches/restraints and ordinary clothed passengers, white A-frame with maintenance ladders, brown triangular pendulum framework, roofed red/brown operator booth, wooden queue railings and adjacent lake. The source-visible teal coaster/blue tower remain small context only. Keep photographed connected ship/pendulum support geometry and this swing position; no invented whole park or disconnected hull. Render as realistic hardware, not posterized source textures."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-57297641166947-thumbnail.jpg",
+      "thumbnailSHA256": "dd490a314540c2876b74472bce55c1e79ddb5c39a02709d4a7870b5356750d13",
+      "thumbnailBytes": 25835,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-57297641166947-detail.jpg",
+      "detailSHA256": "8c2c0253303ced176df82dcbf576bfac746946d497e783cd42b699e3d22a1ce9",
+      "detailBytes": 199036,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 64017895263644,
+      "rideName": "Hoot 'N' Holler",
+      "alt": "Illustrated Hoot 'N' Holler at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:16:25.517304+00:00",
+      "originalSHA256": "110cfb5cb1e0d90ced7500857fea984403c5c46ce96a0890c45e8527eb9c49a7",
+      "review": "Accepted: Actual generated portrait pixels preserve Hoot 'N' Holler's brown log cars, red seats and common black lap bars, actual gray bogies and pale-green curved steel rails with ordinary clothed riders. The gabled station, grasses, fence and source-visible nearby attractions agree with the photographed section.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4383dbcb8a45ee90de109c5c6626e4f0f29814d7-6655x4437.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children riding the Hoot 'n Holler coaster at Six Flags Darien Lake, a beginner thrill ride for kids.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/hoot-n-holler",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "1e507a8dadb394ff3bb074f8450b82ad1559534c041a456c83f7caf2da09080f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual source photo shows Hoot 'N' Holler's brown log-shaped two-seat coaster cars with red molded seats, black common lap bars, visible gray bogies on pale-green steel rails and matching supports. Ordinary clothed children ride in the source-visible middle cars. Preserve only this low curved track section beside the simple gabled station, grasses, chain-link fence and photographed Sleighride/blue-green coaster background; no wooden-coaster substitution or invented full course. Realistic generated surfaces, not compressed posterization."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-64017895263644-thumbnail.jpg",
+      "thumbnailSHA256": "e97f7b11477b6474285f3e237985b43ba873a3fd9cab942d4cb66c3634e237e7",
+      "thumbnailBytes": 26647,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-64017895263644-detail.jpg",
+      "detailSHA256": "dbb1d35de0be47dec5edc11030137aac81212a7c0b3415fbd7477d28b013ed82",
+      "detailBytes": 196269,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 67688443334861,
+      "rideName": "Viper",
+      "alt": "Illustrated Viper at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:20:26.500906+00:00",
+      "originalSHA256": "74c1fb815eac98caaef0a8406a8d65bd2da8009b7e5be98756d0c1bc53f2c4b0",
+      "review": "Accepted: Actual generated portrait pixels preserve Viper's dark tubular vertical loop, gray A-frame supports and green/teal train inside the upper loop, with source-supported pine setting and black fence. Photographic metal surfaces and realistic restrained dusk agree with the source section; no close invented car or restraint is introduced.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F04bed080f0dc8a2a779bfdf8598545d7415fbc22-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Entrance sign and loop of the Viper roller coaster at Six Flags Darien Lake.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/viper",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "633c0b45967f0dd617b8998ff6dbf757766b46aacadb0596e9825fb6ebee128e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The actual Darien Viper operator photo shows the black/dark-gray tubular steel vertical loop, gray A-frame supports and linked green/teal train on the upper inside of the loop, with pine tree branches and black boundary rails. Compose the source-visible loop and train rather than the large foreground entrance sign; keep only source-supported distant passenger silhouettes and do not invent close restraint or car details. This is Darien's Arrow coaster, not another park's same-named Viper. No new full course, realistic materials rather than posterized source."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-67688443334861-thumbnail.jpg",
+      "thumbnailSHA256": "073f22bc91f764ab1dbd0503e8873af9cd57b06e04f5057db1053e5efc4c8543",
+      "thumbnailBytes": 25876,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-67688443334861-detail.jpg",
+      "detailSHA256": "0a4c64e63106d87783afcf47f256ec3c32c06f61a2379fe0193c9b559f83f557",
+      "detailBytes": 202262,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 77071786888506,
+      "rideName": "Bear Valley Bumper Buggies",
+      "alt": "Illustrated Bear Valley Bumper Buggies at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:21:42.137971+00:00",
+      "originalSHA256": "6ef8e43cc907ecd8cd39de6e09333c378fe32c0f4bc598832f217337caf1c63a",
+      "review": "Accepted: Actual generated pixels preserve Bear Valley Buggies' angular yellow car, silver stripe, black seat, steering wheel and orange lamps, actual pickup poles and broad black bumpers on the arena floor with brown wooden walls and ordinary clothed guests. It remains distinct from the small raccoon-themed cars.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc16d28359e38adae1fa0f71b418f9fdfbf8b738b-6769x4513.jpg%3Frect%3D1851%2C1347%2C2666%2C1480%26w%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests enjoying the Bear Valley Bumper Buggies at Six Flags Darien Lake, classic bumper cars fun in Buffalo, NY.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/bear-valley-bumper-buggies",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c20fce44cae6b107d48e54612d5e9fec4b2af462a3b4b2f9e2e3287e40c2bbca",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Bear Valley Bumper Buggies photo shows large angular yellow bumper cars with pale silver/white center stripes, black molded seats and steering wheels, front orange lamps, actual overhead pickup poles and thick scuffed black rubber perimeter bumpers on a smooth indoor floor. Ordinary clothed riders in neighboring yellow cars are visible, with partial red/blue cars and brown timber shed walls. Preserve this actual larger-car installation, distinct from the small Raccoon Rally cars."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-77071786888506-thumbnail.jpg",
+      "thumbnailSHA256": "050fb826eaf14f24f3153bf529d854dce830bba78f292f69c07bcc20bcf7127b",
+      "thumbnailBytes": 20492,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-77071786888506-detail.jpg",
+      "detailSHA256": "302cbcd745521dcf038b3b5c8724cc18872e6f5f1e59da1ec2d6a0c9216c47ff",
+      "detailBytes": 117931,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 77100257967789,
+      "rideName": "Grande Carousel",
+      "alt": "Illustrated Grande Carousel at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:22:51.778922+00:00",
+      "originalSHA256": "e82b203bc34531c129fe6e81ae7c1658460433a136d30b4898f4b47841cea1ea",
+      "review": "Accepted: Actual generated portrait pixels preserve Grande Carousel's red/white roof, cream cupola and blue point, cream/blue/red columns, blue scalloped edge and gold medallions, mirrored ornate canopy and carousel horses on brass poles, with black perimeter fence and ordinary guests.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7ae30ddae35558fc6ac454fcd4cd2bed0b831f93-6992x4662.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The Grand Carousel at Six Flags Darien Lake featuring colorful horses and a red and white striped roof.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/grande-carousel",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "3c72519dea9ced051f5a971acf703d8875b4d50c94df160ff1ae198df00f07c7",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Grande Carousel photograph shows its red/white striped polygonal roof and cream louvered cupola with blue pointed cap, cream square posts with blue/red panels and yellow medallions, blue scalloped eave and round carousel canopy with blue/cream decorative mirrors. Source-visible painted horses on brass poles, black metal perimeter railing and ordinary clothed riders remain realistic. Preserve actual pavilion and carousel section; do not invent hidden horses, new distant rides or full interior."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-77100257967789-thumbnail.jpg",
+      "thumbnailSHA256": "0788dabffc39971b824692bda06dfcecbc8784b1709d50f8d3f8a615aaec172d",
+      "thumbnailBytes": 23133,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-77100257967789-detail.jpg",
+      "detailSHA256": "2568b742b8d105712a1eef82a0c90af3932b2353591bfc81b1a6cbe5d87b2983",
+      "detailBytes": 176570,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 86008257335406,
+      "rideName": "Raccoon Rally",
+      "alt": "Illustrated Raccoon Rally at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:21:04.005437+00:00",
+      "originalSHA256": "80b6ae0ade8ad10d128726d96d2b6bfc1cbfe7ccec74df3467fb8c39b17a6fec",
+      "review": "Accepted: Actual generated portrait pixels preserve Raccoon Rally's small red/gold/blue bumper cars, raccoon hood decorations, square headlights, chrome trim and broad bumpers, steering wheels and overhead pickup poles. Ordinary clothed children and the pine mural/scratched floor match the inspected photograph.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe79b0846a06ca8a4c5a28b1182c321687e890f0a-6826x4551.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children riding bumper cars at Six Flags Darien Lake on the Raccoon Rally ride.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/raccoon-rally",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "dd5fbda32cde2d63fd78424a674f3453b0d0f3200d0788082a9140257db28a95",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Raccoon Rally photograph shows small red, gold and blue single-seat bumper cars with raccoon hood medallions, square front lights, chrome lower strips and black rubber bumpers. Each car has a black seat/steering wheel, source-supported seatbelt and tall overhead electrical pickup pole. Ordinary clothed children drive on the scratched indoor floor before painted green pine-tree wall panels and ceiling lights. Keep this actual kiddie installation distinct from Bear Valley's larger yellow cars."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-86008257335406-thumbnail.jpg",
+      "thumbnailSHA256": "15353440dc29d903c079af8a4b6dfc7e6649130d64c23b3d318b640f4ee5872e",
+      "thumbnailBytes": 21097,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-86008257335406-detail.jpg",
+      "detailSHA256": "51fe5e71df5eeb885dc5b1711e0d812b4cc7053c4efc41268652f25b87a67be4",
+      "detailBytes": 145653,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 89023853374162,
+      "rideName": "Slingshot",
+      "alt": "Illustrated Slingshot at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:22:11.110368+00:00",
+      "originalSHA256": "10b14f9b2a08c01a988d5ecb32b3baa6887925a83ad6a2e7c418d89d8e04333d",
+      "review": "Accepted: Actual generated portrait pixels preserve Slingshot's empty two-seat blue spherical cage, black/blue padded seats with raised restraint linkages, silver pivots, black tension cables and colored bulbs above the circular worn red/cream platform and white railings. The empty source state is retained without invented launch path or passengers.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9a29e431558c596b5e2600631d081311d0b9246f-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Empty seats of the Slingshot ride at Six Flags Darien Lake, ready for the next thrill-seekers.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/slingshot",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "b11812bee78879e8b95a9383d363c6b61e4c9c053647ae4c3315cdb253eb8bd1",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Slingshot photograph shows an empty two-seat pod in a blue spherical tubular cage, actual black/blue padded seats, raised padded restraint/handgrip assemblies and silver linkage, side pivot plates and attached black cables. Colored bulb fixtures ring the blue frame, which rests on a circular red/cream worn platform inside white perimeter rails. Preserve the source-observed empty seat and mechanism state; no invented passengers, new launch arc or unsupported giant towers."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-89023853374162-thumbnail.jpg",
+      "thumbnailSHA256": "7f79b7333c64e445c2bd8f0ab0716be6d5c76459e9915f2e1c21fb7ef9a4edca",
+      "thumbnailBytes": 26781,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-89023853374162-detail.jpg",
+      "detailSHA256": "279da91ab29385a110012f3375b0c47e1837e2fc54cefd29675c64a346126e97",
+      "detailBytes": 197050,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 91543159448407,
+      "rideName": "Moose on the Loose",
+      "alt": "Illustrated Moose on the Loose at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:23:19.679300+00:00",
+      "originalSHA256": "0378a52ac09e62aa33628a43f48f22fbaefd6647bc448e430c4bbdaf58554430",
+      "review": "Accepted: Actual generated portrait pixels preserve Moose on the Loose's brown fiberglass moose with cream antlers, ordinary blue-clothed rider and belt, guided low gray track, yellow timber/wire fence and shingled station in trees. The source-supported ride vehicle remains physical fiberglass, with no live-animal substitution.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc02c6a6d6bb0eeed4a6bb501e24f701c4ded009e-1440x800.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Boy riding on the Moose on the Loose attraction at Six Flags Darien Lake.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/moose-on-the-loose",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "83da2ae3ee1ee52f77cb1dd7d196d27b3e8bee3cc313501b08af9e2141449930",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Moose on the Loose photo shows a guided fiberglass brown moose vehicle with cream antlers, actual saddle/seat and visible secured belt, ordinary clothed child rider, compact gray guide rails beneath, yellow timber/wire fence and low shingled station building among trees. Compose the photographed moose/guide-track section instead of the big text sign. This is a physical amusement ride, not a live animal; no invented full track layout or hidden legs."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-91543159448407-thumbnail.jpg",
+      "thumbnailSHA256": "e70ed8b9d0cb438bb561bd3f151f5710054da2fdb01fc9fa45f8d5f15b07cf47",
+      "thumbnailBytes": 23495,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-91543159448407-detail.jpg",
+      "detailSHA256": "664d7ee8dcd9e7b07ffbb108ddc8a694c761aeb620f2e6040203f355c835514e",
+      "detailBytes": 168950,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 96196419554196,
+      "rideName": "Lasso",
+      "alt": "Illustrated Lasso at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:25:20.968978+00:00",
+      "originalSHA256": "a9c1751af120c52e70dcae658a4893f32cf8679c018eb1b0a418fcb34a08479a",
+      "review": "Accepted: Actual generated portrait pixels preserve Lasso's ornate cream/yellow canopy, silver-framed landscape panels and underside paintings, teal/pink diamond mast, chain-hung multicolor chairs with actual rails and ordinary clothed seated guests. The source trees and brown gabled building remain contextual.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F49ef4071c11bfcdbd3b267a43b9b1eda70de2f41-2560x1707.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders enjoying the Lasso swing ride at Six Flags Darien Lake, an exciting amusement park attraction.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/lasso",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e65c1da023438b72e0877ff9bc6cb39cc1618dc970525ee19d338203bbe745d3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Lasso photograph shows the cream/yellow ornate wave-swinger canopy with landscape panels in silver scroll frames, painted underside scenes, teal/pink diamond-patterned yellow mast, chain-suspended multicolor chairs and ordinary clothed seated guests. Source-visible trees and brown gabled entrance building remain contextual. Preserve actual canopy, chair chains/rails and connected mast geometry; no copied Dorney swing paint or invented full ride setting."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-96196419554196-thumbnail.jpg",
+      "thumbnailSHA256": "1feb65332583c592110c6e3e224b6906a060fa45afda40eb241689afe26e2260",
+      "thumbnailBytes": 25709,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-96196419554196-detail.jpg",
+      "detailSHA256": "4b0b114586967b3b09e54402c94ab143c59502bae22425c636bf7a2fda827183",
+      "detailBytes": 214112,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 98007408970129,
+      "rideName": "Tornado",
+      "alt": "Illustrated Tornado at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:23:32.659469+00:00",
+      "originalSHA256": "6703cb27f0f4f3821e16ebf3bab3dc1db3f40800d2eb5a0e1f483a6c3943f04d",
+      "review": "Accepted: Actual generated portrait pixels preserve Tornado's large blue/yellow funnel, connected alternating entry tube, gray triangulated support structure and stair tower, with the source wave-pool context. No raft was visible in the source or invented in the generated artwork.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5cd4f91b50ec60b92bab331a053e9b7c9d41d03a-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests enjoying the wave pool at Six Flags Darien Lake, with the Tornado waterslide in the background.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/tornado",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2dada01ecc3095b63284d5d2203d91a21e2037c52df967230ecc92cc38ba00f8",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Darien Tornado source photograph shows the large blue/yellow open funnel on gray triangulated supports and the connected alternating blue/yellow entry tube from the upper left tower/staircase. An ordinary wave-pool scene lies in front; source-visible smaller neighboring multicolor tubes stay background context. Center the source-documented funnel and connected entry section. No raft is visible, so do not invent a raft shape, riders inside the funnel, hidden outlet or full course."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-98007408970129-thumbnail.jpg",
+      "thumbnailSHA256": "dc4976fe06105f5b33a8f3835886e3a53677520418ee92b1a4e1ca9d8b0be308",
+      "thumbnailBytes": 24024,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-98007408970129-detail.jpg",
+      "detailSHA256": "92826eb8f82715c5fa24aaf8201b5e41eb4bf5f4c2a179e5f178c11be86ff610",
+      "detailBytes": 180263,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 107127386780268,
+      "rideName": "Motocoaster",
+      "alt": "Illustrated Motocoaster at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:24:30.136260+00:00",
+      "originalSHA256": "e7551361215095e04f5f5b9688f268c953183e9a3dee8c6a55b124daa4a50fda",
+      "review": "Accepted: Actual generated portrait pixels preserve Motocoaster's linked multicolor motorcycle fairings, astride clothed riders using handlebars, black linked chassis and actual wheel bogies around gray tubular coaster rails on yellow/white supports. These remain connected ride cars rather than free road motorcycles.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7f7407b791fde6da5925ef38e6da9aa65cc1d468-1920x1321.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders on the Motocoaster at Six Flags Darien Lake, riding motorcycle-themed cars on the roller coaster.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/motocoaster",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "60af192dfac73fe813539b8a0d916af530c15ac6ade2898fe5d6b515f7f21364",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Motocoaster photo shows the linked motorcycle-style cars with real yellow, green, blue, white and red bike fairings, riders seated astride and leaning into handlebars with actual rear restraints, black linked chassis, visible wheel bogies wrapping gray tubular steel rails, and white/yellow support columns. Ordinary clothed guests match source seating. Preserve connected coaster hardware and photographed banked turn; these are ride vehicles, not road motorcycles or free-jumping bikes."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-107127386780268-thumbnail.jpg",
+      "thumbnailSHA256": "96d5cddaadd47f58a4a4fea65ceff37f3fd2dea789dca09508d1fb4d29353b47",
+      "thumbnailBytes": 22895,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-107127386780268-detail.jpg",
+      "detailSHA256": "0ce281f90bea194c581a528308f4d614d2edb92615ca6c6168795fe979bef5e2",
+      "detailBytes": 138662,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 118651378194326,
+      "rideName": "Woody's Whirlers",
+      "alt": "Illustrated Woody's Whirlers at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:24:00.719851+00:00",
+      "originalSHA256": "fb4d0cc3d1c68d0a590d0ef9d399e28d027c7a692b973c56541fc1761a2eba38",
+      "review": "Accepted: Actual generated portrait pixels preserve Woody's Whirlers' pale-blue/white swing chair with silver perimeter rail, black crotch strap and chain sleeves, ordinary clothed child, matching empty chairs, blue/white center section and timber fence. No enlarged unrelated swing installation is introduced.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F8e23a928d65faf4b0a69c21d6b2486f9976636d7-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A young girl enjoying a ride on Woody's Whirlers chair swing at Six Flags Darien Lake.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/woodys-whirlers",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "9fd5adced61aa4a47e895a5f7c811a19a7818ed91352da0c2fd8089925145349",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Woody's Whirlers photograph shows the small pale-blue/white molded swing chair with silver tubular perimeter/grab rail, black crotch strap and chains with black protective sleeves, ordinary clothed child seated in the foreground and empty matching chairs behind. Preserve actual blue/white central drum section, timber fence and trees. No invented giant tower, unsupported chair restraint or enlarged adult swing installation."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-118651378194326-thumbnail.jpg",
+      "thumbnailSHA256": "8ce1139e8255e0b6fc9117a5556171ea350ba4ed02e045c5b0b41c9635fc5474",
+      "thumbnailBytes": 25088,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-118651378194326-detail.jpg",
+      "detailSHA256": "8b20ab1931e966e978399e47793512f808f8de8bb2da582a8253e82218c74a4c",
+      "detailBytes": 150353,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 122687607356381,
+      "rideName": "Ride of Steel",
+      "alt": "Illustrated Ride of Steel at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:26:52.642234+00:00",
+      "originalSHA256": "a18ff0fffb150f77e36fc4efbb359c338f453ef092170a06f7570f8e99c67238",
+      "review": "Accepted: Actual generated portrait pixels preserve Ride of Steel's blue-lattice lift/drop and red triangular-spine track above the lake, blue columns and pale piers, with the small red train only at the distant crest and neighboring hill in context. The documented hill section remains recognizable without invented close seating.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F866a5e65e15b5777cb5517fc9fc8ca5c5d4b5c68-2200x1650.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Ride of Steel Roller Coaster at Six Flags Darien Lake",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/ride-of-steel",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "4feee051ef8078e4aaa496707af35ff321b1684e72892754683fb366dcd3b3d3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Ride of Steel photograph shows the tall blue-lattice lift/drop supports and red triangular-spine running track descending steeply over the lake, then curving low across the foreground, with blue columns on pale concrete piers and a red train only at the distant crest. Preserve this documented hill/lake section and source-visible neighboring background hill; do not invent a close train, different restraints, full layout or present operating status."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-122687607356381-thumbnail.jpg",
+      "thumbnailSHA256": "f36fddd8302fca63486b034ac863c5336d6775290b68b932289d6b05fc9cc1b9",
+      "thumbnailBytes": 18613,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-122687607356381-detail.jpg",
+      "detailSHA256": "418284fec66e512e3401debafbd912250bf2782e394c6a0e822b037db264a759",
+      "detailBytes": 154805,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 126416681405453,
+      "rideName": "Swirl City Slide Complex",
+      "alt": "Illustrated Swirl City Slide Complex at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:26:10.393656+00:00",
+      "originalSHA256": "88def55b5ac6fe1497b4eb70b6dbdfbf5736fecef28ce6dce73c65b11caf698f",
+      "review": "Accepted: Actual generated portrait pixels preserve Swirl City's visible red/yellow/blue tube sections and round blue/yellow bowl on gray supports, wet path and rope/wood queue posts. The obstructing sign stays out of the composition; no passengers inside opaque flumes or unsupported route-to-name mapping is added.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F298e1c29bd51406a6041a587b8eef598b0f8b8e7-6898x4598.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Safety information board for the Swirl City Slide Complex at Six Flags Darien Lake, with colorful water slides in the background.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/swirl-city-slide-complex",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "9f0a5b2c5eadfd0883fd69bafecd4d68994594f0e1b27b291d9c9da0d4e8df48",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Swirl City source photo shows the upper red/yellow/blue enclosed flumes and a round yellow/blue bowl on gray support columns behind a large safety board. Source-visible wet pavement, rope/wooden queue posts and blue double tubes carried by ordinary bathers stay contextual. Compose only the clearly visible upper slide hardware, with the foreground text board outside the portrait; do not reconstruct routes hidden by the board, assign an unsupported tube color to a named individual slide, invent passengers inside opaque tubes or a full hidden complex."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-126416681405453-thumbnail.jpg",
+      "thumbnailSHA256": "11a596521782c32ae3d8081bc6be82393126194b81ba99afd51d6496634c3e22",
+      "thumbnailBytes": 22601,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-126416681405453-detail.jpg",
+      "detailSHA256": "fdfc6d72f8b498cdb6f6ade75d3a927a30d01e69519e3f0ab4877e9a86480e92",
+      "detailBytes": 179902,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 132728800446705,
+      "rideName": "Big Kahuna",
+      "alt": "Illustrated Big Kahuna at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:29:29.048307+00:00",
+      "originalSHA256": "c5a68da6a54d51808287507d300fbeb70e6cad33541ccf79cb034bcf358e3613",
+      "review": "Accepted: Actual generated pixels preserve Big Kahuna's cross-braced gray stair tower, timber railings, white water pipes and the visible red flume section, with Ride of Steel a small source background detail. No unsupported raft or hidden full routing is invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc28df6765e9009bf2a2106e08e0f5a2a3f174452-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Big Kahuna",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/big-kahuna",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "9e4fd458e0b867b8492e4e94a5bc9729089027f7a691370efd2bbd2866f540e2",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Big Kahuna photograph shows its gray cross-braced steel staircase/tower with timber railings, vertical white water pipes and red open/enclosed flume twists extending behind and right; the distant Ride of Steel red/blue hill is background context. Preserve the documented tower and connected visible red flume section. No raft is visible: do not invent seating, a family raft or a hidden full route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-132728800446705-thumbnail.jpg",
+      "thumbnailSHA256": "31c2fed3705f941bd40516357f2c77fb0fbb52adc27c0f81e9af2134b8d0799a",
+      "thumbnailBytes": 25344,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-132728800446705-detail.jpg",
+      "detailSHA256": "0e964c012154c78e11b411ebf32deba4caee28eb4d938bf04ff5e3b3f411213a",
+      "detailBytes": 197813,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 134094577382662,
+      "rideName": "Wally's Weather Balloons",
+      "alt": "Illustrated Wally's Weather Balloons at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:29:00.503927+00:00",
+      "originalSHA256": "f912ae7972a658a0b2db6d07b61f2fd7f16328bf28271f6e8304693b95422a1a",
+      "review": "Accepted: Actual generated pixels preserve Wally's Weather Balloons' rigid blue/teal/yellow/white shells with bulbs, yellow arms, silver hangers, wicker-textured baskets, striped rims, black steering wheels and silver gates. Ordinary clothed children and the source lighthouse/timber-fence setting remain contextual.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F32478ad292688b89b57e8538884ae1472f0b147a-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Colorful Wally's Weather Balloons ride at Six Flags Darien Lake with kids enjoying the balloon-themed attraction.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/wallys-weather-balloons",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "8972bd08105e43461ee1567bca2d0ba3e769869b9f75750b6bf64e80b6dfa58a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Wally's Weather Balloons photograph shows blue/teal/yellow/white physical balloon shells with bulb lines, yellow radial arms and silver vertical hanger tubes supporting wicker-textured baskets with striped padded rims, black central steering wheels and silver hinged gates. Ordinary clothed children sit in the source baskets; the blue/teal center, lighthouse-like building and timber fence remain context. Keep actual connected ride hardware, not free-flying hot-air balloons."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-134094577382662-thumbnail.jpg",
+      "thumbnailSHA256": "26425af31a880c7af501d8fc81bd8ad486cc6a43ace4517aee025cc04a759744",
+      "thumbnailBytes": 28432,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-134094577382662-detail.jpg",
+      "detailSHA256": "8754aceafa141ee4a4df476007b85bab50649d616d33787b5c744487e024115d",
+      "detailBytes": 192299,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 136503035370450,
+      "rideName": "Chucky's Mud Buckets",
+      "alt": "Illustrated Chucky's Mud Buckets at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:29:52.164613+00:00",
+      "originalSHA256": "a177cc97279156c0cdfc9aeaf704cee67407978c7790a786a82439eac4e1342f",
+      "review": "Accepted: Actual generated pixels preserve Chucky's Mud Buckets' yellow barrel cars, green interiors and leaf ornaments, silver rolled rims/base bands/entry gates/steering wheels, yellow round deck and green stump center. Ordinary clothed children and the photographed green building and bushes remain natural.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff27b72394c2bf98272f6b52ccb404bae4cf1fdc0-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children enjoying a ride in yellow barrel-shaped seats on Chucky's Mud Buckets at Six Flags Darien Lake.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/chuckys-mud-buckets",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "503d58d36721aaf01fd9653e2211a9368ecd7b5f1536a0de5345dd6eebeed91e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Chucky's Mud Buckets photo shows yellow barrel-shaped teacup cars with green interiors, silver rolled rims and base bands, green leaf ornaments, central silver steering wheels and silver entry gates. Preserve ordinary clothed children, the yellow round planked spinning deck with black outer edge and green stump-like center, timber fence/bushes and green gabled building. No invented hidden restraints or generic unrelated teacups."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-136503035370450-thumbnail.jpg",
+      "thumbnailSHA256": "f97dbdd4d17cd99c9609a4074381f9b021076aab10dd771862a3f4065338d17a",
+      "thumbnailBytes": 23438,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-136503035370450-detail.jpg",
+      "detailSHA256": "0f88d3101b66f547b2a014ff42f9660b8b4e9a0c5ea1b5ed07048e78a4501174",
+      "detailBytes": 167124,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 146726205095999,
+      "rideName": "Tantrum",
+      "alt": "Illustrated Tantrum at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:31:21.561913+00:00",
+      "originalSHA256": "454859976813f6976ec6e50093c5b5aa7a4170851566f462f5c2c7692f5efac9",
+      "review": "Accepted: Actual generated pixels preserve Tantrum's orange vertical lift/ladder/supports and green rails, beyond-vertical drop and neighboring inversion sections, with the small gray car distant at left and timber queue/silver-roofed station below. It does not invent a close restraint or unseen full route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F45a73ec61bafe0f70330b586f636d1e1db9354f3-6796x4531.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The Tantrum roller coaster at Six Flags Darien Lake, featuring green and orange tracks with thrilling loops.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/tantrum",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e85320d7c7f8332b6dd6fa7bb173a508db9a2d16aa96c7aaeddca05d99bc209b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Tantrum photo shows green running rails/lattice spine and orange vertical chain-lift/ladder with orange A-frame supports, a beyond-vertical left drop with a small gray car low in the photograph, and green inversions at right. Preserve only the documented lift/drop and adjoining supported sections, timber queue rails and silver-roofed station; tiny ordinary clothed riders stay distant. No full hidden course, close invented car or restraint."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-146726205095999-thumbnail.jpg",
+      "thumbnailSHA256": "2b7516d9d94b07546f238cd91718341ba0a869af54ff562072d5bb038d2f9a38",
+      "thumbnailBytes": 23213,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-146726205095999-detail.jpg",
+      "detailSHA256": "f68c07d6c95d2eb92a803ae46d34f08a39568ae19a548e93a12aea2f2f9a3658",
+      "detailBytes": 193538,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 148019462333190,
+      "rideName": "Haymaker",
+      "alt": "Illustrated Haymaker at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:30:49.133399+00:00",
+      "originalSHA256": "765945cf1151902123fbf6e54c94e270bf8b9d1c4b9651846e578594c89c1d74",
+      "review": "Accepted: Actual generated pixels preserve Haymaker's pale bench gondolas, red fabric canopies, silver shared lap rails, white supporting radial arms with colored bulbs and ordinary clothed guests. The source games buildings and black fence stay background; these are arm-supported cars rather than chain swings.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fab60d6146dbaac0d716e6d9875fb86f8d9bbf59b-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Families enjoying the Haymaker ride at Six Flags Darien Lake, a classic gondola theme park attraction.",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/haymaker",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "06b750bc4db691f20997a9d57b02689675be1101a8b11c899cc6d34885aa894a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Haymaker photograph shows pale-gray/light-blue open bench gondolas with small orange lamps, red fabric canopies, silver tubular shared lap rails and black restraint straps as visible, attached to white radial arms with red/blue/yellow bulbs. Ordinary clothed families remain seated in the actual gondolas; source games buildings and black fence are background. Preserve arm-supported canopy cars, not chain chairs or invented seating."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-148019462333190-thumbnail.jpg",
+      "thumbnailSHA256": "b9f95a83a1a3a4b79f8c073ee8ffb136535e2c208cb4af3f941218ae8c20dcfe",
+      "thumbnailBytes": 29286,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-148019462333190-detail.jpg",
+      "detailSHA256": "7192545dffe2978486667dacc0a8a379884d9b59e48a60cc27e10eac0386269e",
+      "detailBytes": 174707,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 281,
+      "rideId": 150192023433048,
+      "rideName": "Wahoo Wave",
+      "alt": "Illustrated Wahoo Wave at Six Flags Darien Lake",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:31:49.082291+00:00",
+      "originalSHA256": "873ff269998fd3a75ba7c9ff8bddca9cb1643da1ae5849107c575d7062ded793",
+      "review": "Accepted: Actual generated pixels preserve Wahoo Wave's red/orange-edged yellow/teal checked wave wall, yellow four-lobed raft and blue handles with two ordinary adult bathers and water trail, stair tower and entry tube. Actual half-pipe geometry remains source-supported.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F03568606c1b9d7ea005f44766b7174020aed28c6-1920x1146.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Wahoo Wave water slide at Six Flags Darien Lake with riders enjoying the tall and colorful slide",
+          "sourceURL": "https://www.sixflags.com/darienlake/attractions/wahoo-wave",
+          "credit": "Six Flags / Darien Lake (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "859ed817570aa27a811e2d2df11eb8552f95d8f08d72c41a4e4a5dc389762f09",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Wahoo Wave photograph shows the orange/red-edged open wave wall with yellow/teal checked fiberglass, a yellow four-lobed raft with blue handles and two ordinary adult bathers seated in the source, and its real white-water trail. Gray columns, timber-railed stair tower and connected multicolor entry tube remain behind. Preserve this photographed half-pipe/raft section; no new funnel, unsupported raft seating or hidden complete slide routing."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "281-150192023433048-thumbnail.jpg",
+      "thumbnailSHA256": "0c915cc2fb23e2a3395887629e425eae6209ec33de2708f0903eb65976466027",
+      "thumbnailBytes": 23219,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "281-150192023433048-detail.jpg",
+      "detailSHA256": "4df1899a8007f3b82b4ffc1c18fa7842029a10a7c884dd6a81eb920c32ada6a2",
+      "detailBytes": 167804,
       "detailPixels": [
         768,
         960
