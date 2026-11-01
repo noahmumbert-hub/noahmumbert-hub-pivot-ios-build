@@ -164,13 +164,21 @@ final class PIVOTUITests: XCTestCase {
         let window = app.frame
         var top = window.minY + 24
         var bottom = window.maxY - 8
-        for bar in app.statusBars.allElementsBoundByIndex + app.navigationBars.allElementsBoundByIndex {
+        for bar in app.statusBars.allElementsBoundByIndex {
             let frame = bar.frame
             if !frame.isEmpty, frame.intersects(window), frame.maxY < window.midY {
                 top = max(top, frame.maxY + 8)
             }
         }
-        for bar in app.tabBars.allElementsBoundByIndex + app.keyboards.allElementsBoundByIndex {
+        // UIKit can retain the underlying page in the accessibility tree of a
+        // sheet. Only foreground native controls reserve content space.
+        for bar in app.navigationBars.allElementsBoundByIndex where bar.isHittable {
+            let frame = bar.frame
+            if !frame.isEmpty, frame.intersects(window), frame.maxY < window.midY {
+                top = max(top, frame.maxY + 8)
+            }
+        }
+        for bar in app.tabBars.allElementsBoundByIndex + app.keyboards.allElementsBoundByIndex where bar.isHittable {
             let frame = bar.frame
             if !frame.isEmpty, frame.intersects(window), frame.minY > window.midY {
                 bottom = min(bottom, frame.minY - 8)
@@ -213,11 +221,12 @@ final class PIVOTUITests: XCTestCase {
     /// including both edges of a chart, must fit above the native tab bar.
     private func centerFullyVisible(_ element: XCUIElement, in app: XCUIApplication,
                                      file: StaticString = #filePath, line: UInt = #line) {
+        let viewport = safeContentViewport(in: app)
+        let appFrame = app.frame
         for _ in 0..<22 {
-            let viewport = safeContentViewport(in: app)
             var movement: CGFloat = min(170, viewport.height * 0.4)
-            if element.exists, !element.frame.isEmpty {
-                let frame = element.frame
+            let frame = element.exists ? element.frame : .zero
+            if !frame.isEmpty {
                 guard frame.height <= viewport.height + 1, frame.width <= viewport.width + 1 else {
                     XCTFail("Target cannot fit the visible content area. Frame \(frame); viewport \(viewport)", file: file, line: line)
                     return
@@ -233,7 +242,7 @@ final class PIVOTUITests: XCTestCase {
             }
             let x = viewport.maxX - 3
             let start = app.coordinate(withNormalizedOffset: .zero)
-                .withOffset(CGVector(dx: x - app.frame.minX, dy: viewport.midY + movement / 2 - app.frame.minY))
+                .withOffset(CGVector(dx: x - appFrame.minX, dy: viewport.midY + movement / 2 - appFrame.minY))
             let end = start.withOffset(CGVector(dx: 0, dy: -movement))
             start.press(forDuration: 0.05, thenDragTo: end, withVelocity: .slow, thenHoldForDuration: 0.2)
         }
@@ -253,9 +262,10 @@ final class PIVOTUITests: XCTestCase {
         let font = UIFont.preferredFont(forTextStyle: .caption2,
             compatibleWith: UITraitCollection(preferredContentSizeCategory: category))
         let glyphs = (text as NSString).size(withAttributes: [.font: font])
-        XCTAssertGreaterThanOrEqual(label.frame.width, ceil(glyphs.width) - 2,
+        let frame = label.frame
+        XCTAssertGreaterThanOrEqual(frame.width, ceil(glyphs.width) - 2,
                                     "The displayed time must have room for every glyph", file: file, line: line)
-        XCTAssertGreaterThanOrEqual(label.frame.height, font.lineHeight - 2,
+        XCTAssertGreaterThanOrEqual(frame.height, font.lineHeight - 2,
                                     "The displayed time must have a complete caption line", file: file, line: line)
     }
 
@@ -270,18 +280,22 @@ final class PIVOTUITests: XCTestCase {
 
     private func assertFullTextLayout(_ text: XCUIElement, style: UIFont.TextStyle = .caption1,
                                       file: StaticString = #filePath, line: UInt = #line) {
-        XCTAssertFalse(text.label.contains("…") || text.label.contains("..."),
+        let wording = text.label
+        let frame = text.frame
+        XCTAssertFalse(wording.contains("…") || wording.contains("..."),
                        "Supporting text must retain its full wording", file: file, line: line)
-        let required = expectedTextHeight(text.label, width: text.frame.width, style: style, category: .accessibilityLarge)
-        XCTAssertGreaterThanOrEqual(text.frame.height, required - 3,
+        let required = expectedTextHeight(wording, width: frame.width, style: style, category: .accessibilityLarge)
+        XCTAssertGreaterThanOrEqual(frame.height, required - 3,
                                     "The visible text frame must accommodate its entire wrapped wording", file: file, line: line)
     }
 
     private func centerHorizontally(_ label: XCUIElement, in scrollView: XCUIElement, app: XCUIApplication,
                                     file: StaticString = #filePath, line: UInt = #line) {
         XCTAssertTrue(label.waitForExistence(timeout: 5), "A genuine displayed time label must exist", file: file, line: line)
+        let contentViewport = safeContentViewport(in: app)
+        let appFrame = app.frame
         for _ in 0..<14 {
-            let viewport = scrollView.frame.intersection(safeContentViewport(in: app)).insetBy(dx: 4, dy: 0)
+            let viewport = scrollView.frame.intersection(contentViewport).insetBy(dx: 4, dy: 0)
             let frame = label.frame
             guard !frame.isEmpty, frame.width <= viewport.width + 1 else {
                 XCTFail("A complete time label must fit its scroll viewport. Frame \(frame); viewport \(viewport)", file: file, line: line)
@@ -290,14 +304,15 @@ final class PIVOTUITests: XCTestCase {
             let fullyVisible = viewport.insetBy(dx: -1, dy: -1).contains(frame)
             if fullyVisible {
                 waitForSettledFrames([scrollView, label], file: file, line: line)
-                assertContained(label.frame, in: viewport, "The entire time label must be inside the horizontal viewport", file: file, line: line)
+                let currentViewport = scrollView.frame.intersection(safeContentViewport(in: app)).insetBy(dx: 4, dy: 0)
+                assertContained(label.frame, in: currentViewport, "The entire time label must be inside the horizontal viewport", file: file, line: line)
                 return
             }
             let offset = frame.minX < viewport.minX
                 ? viewport.minX - frame.minX + 12 : viewport.maxX - frame.maxX - 12
             let movement = min(viewport.width * 0.65, max(20, abs(offset))) * (offset < 0 ? -1 : 1)
             let start = app.coordinate(withNormalizedOffset: .zero)
-                .withOffset(CGVector(dx: viewport.midX - movement / 2 - app.frame.minX, dy: viewport.midY - app.frame.minY))
+                .withOffset(CGVector(dx: viewport.midX - movement / 2 - appFrame.minX, dy: viewport.midY - appFrame.minY))
             start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: movement, dy: 0)),
                         withVelocity: .slow, thenHoldForDuration: 0.2)
         }
@@ -415,7 +430,9 @@ final class PIVOTUITests: XCTestCase {
         let bodySize = app.staticTexts["Ride information body size"]
         XCTAssertTrue(bodySize.waitForExistence(timeout: 5))
         XCTAssertGreaterThanOrEqual(bodySize.frame.height, 50, "Ride details must actually render the largest accessibility text size")
-        let chart = app.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
+        let details = app.scrollViews["ride-information-content"]
+        XCTAssertTrue(details.waitForExistence(timeout: 5), "Chart assertions must inspect the presented ride information")
+        let chart = details.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
         let waits = ["20", "20", "15", "15", "0", "15", "25", "20", "15", "10", "15", "15"]
         assertHistoryColumns(waits, chart: chart, app: app, capture: "Largest observed history ride detail")
         let done = app.buttons["Done"]
@@ -481,22 +498,24 @@ final class PIVOTUITests: XCTestCase {
         let hourly = app.buttons["ride-history-hourly-estimates"]
         centerFullyVisible(hourly, in: app); hourly.tap()
         XCTAssertTrue(app.navigationBars["Predicted waits"].waitForExistence(timeout: 5))
+        let forecast = app.otherElements["ride-wait-forecast"].firstMatch
+        XCTAssertTrue(forecast.waitForExistence(timeout: 5), "Assertions must inspect the presented forecast, whose source evidence also appears on the underlying page")
         let bodySize = app.staticTexts["Hourly forecast body size"]
         XCTAssertTrue(bodySize.waitForExistence(timeout: 5))
         XCTAssertGreaterThanOrEqual(bodySize.frame.height, 35,
                                     "The actual presented hourly sheet must render accessibility-size body text")
         if expired {
-            XCTAssertFalse(app.staticTexts["lowest-predicted-wait"].exists)
-            XCTAssertFalse(app.staticTexts["lowest-wait-source-time"].exists)
-            let saved = app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH 'History only'")).firstMatch
+            XCTAssertFalse(forecast.staticTexts["lowest-predicted-wait"].exists)
+            XCTAssertFalse(forecast.staticTexts["lowest-wait-source-time"].exists)
+            let saved = forecast.staticTexts.matching(NSPredicate(format: "label BEGINSWITH 'History only'")).firstMatch
             centerFullyVisible(saved, in: app)
             screenshot("Hourly sheet withholds stale lowest wait at measured accessibility size", app: app)
         } else {
-            let lowest = app.staticTexts["lowest-predicted-wait"]
+            let lowest = forecast.staticTexts["lowest-predicted-wait"]
             centerFullyVisible(lowest, in: app)
             XCTAssertTrue(lowest.label.contains("about 10 min"))
             XCTAssertGreaterThan(lowest.frame.height, 40, "The complete hourly-window text must really wrap at accessibility size")
-            let source = app.staticTexts["lowest-wait-source-time"]
+            let source = forecast.staticTexts["lowest-wait-source-time"]
             centerFullyVisible(source, in: app)
             XCTAssertTrue(source.label.contains("Wait source checked"))
             screenshot("Hourly sheet retains supported lowest wait at measured accessibility size", app: app)

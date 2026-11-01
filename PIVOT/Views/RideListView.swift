@@ -401,6 +401,7 @@ struct RideDetailScreenView: View {
                 .frame(width: max(0, geometry.size.width - 40), alignment: .leading)
                 .padding(20)
             }
+            .accessibilityIdentifier("ride-information-content")
             }
             .background(Color.pivotBackground)
             .navigationTitle("Ride information")
