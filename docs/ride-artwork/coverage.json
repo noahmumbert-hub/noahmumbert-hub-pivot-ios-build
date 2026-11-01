@@ -364,11 +364,11 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 957,
-    "pendingIllustrations": 167,
-    "acceptedForRequestedStyle": 956,
-    "unfinishedForRequestedStyle": 168,
-    "blocked": 17
+    "acceptedIllustrations": 987,
+    "pendingIllustrations": 137,
+    "acceptedForRequestedStyle": 986,
+    "unfinishedForRequestedStyle": 138,
+    "blocked": 18
   },
   "parks": [
     {
@@ -30904,10 +30904,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/deluge"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-24175505265362",
@@ -30928,10 +30928,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/kiddie-coast"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-24413553220329",
@@ -30957,10 +30957,10 @@
           "url": "https://www.inparkmagazine.com/104whitewater/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-25174583318026",
@@ -30981,10 +30981,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/kristal-river"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-33209166214222",
@@ -31029,10 +31029,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/sea-creature-cove"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-53642911761522",
@@ -31058,10 +31058,10 @@
           "url": "https://www.inparkmagazine.com/104whitewater/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-59284728554666",
@@ -31087,10 +31087,10 @@
           "url": "https://www.visitnbtx.com/news/schlitterbahn-new-braunfels-unveils-wasserbahn-racers-a-new-high-speed-mat-racing-attraction-for-2026"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-69211335625373",
@@ -31111,10 +31111,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/the-falls"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-81212300486859",
@@ -31135,10 +31135,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/raging-river-tube-chute"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-81283237342682",
@@ -31159,10 +31159,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/congo-river-expedition"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-100636626598303",
@@ -31183,10 +31183,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/dragons-revenge"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-101138061531068",
@@ -31207,10 +31207,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/hillside-tube-chute"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-108786330280275",
@@ -31231,10 +31231,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/hans-hideout"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-113891727653128",
@@ -31255,10 +31255,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/kinderhaven"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-123321505160651",
@@ -31279,10 +31279,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/soda-straw-body-slide"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-128946798150227",
@@ -31303,10 +31303,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/aquaveyer"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-134502292682167",
@@ -31332,10 +31332,10 @@
           "url": "https://www.inparkmagazine.com/104whitewater/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-147487365281866",
@@ -31356,10 +31356,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/black-knight"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-151354660625682",
@@ -31380,10 +31380,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/butterfly-bayou"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-151879728706785",
@@ -31404,10 +31404,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/lava-lagoon-heated-pool"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-184022151318454",
@@ -31428,10 +31428,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/torrent-river"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-190518003475226",
@@ -31457,10 +31457,10 @@
           "url": "https://www.inparkmagazine.com/104whitewater/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-198934934803198",
@@ -31481,10 +31481,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/boogie-bahn-surfing-ride"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-218858496121200",
@@ -31508,7 +31508,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "339-241356317112077",
@@ -31529,10 +31529,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/comal-cove"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-242665005199549",
@@ -31553,10 +31553,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/wolfpack-raft-slide"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-251385293724320",
@@ -31577,10 +31577,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/back-splash"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-253155240926954",
@@ -31601,10 +31601,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/downhill-racer"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-260421171791571",
@@ -31625,10 +31625,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/kristal-cove"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-266147547800539",
@@ -31649,10 +31649,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/cliffhanger-tube-chute"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-272039738433288",
@@ -31673,10 +31673,10 @@
           "url": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/whitewater-tube-chute"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     }
   ]
 }

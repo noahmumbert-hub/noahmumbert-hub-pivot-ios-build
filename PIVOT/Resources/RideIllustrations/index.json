@@ -40772,6 +40772,178 @@
     },
     {
       "parkId": 339,
+      "rideId": 7461499888841,
+      "rideName": "Deluge",
+      "alt": "Illustrated Deluge at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:02:14.224452+00:00",
+      "originalSHA256": "55597c904333c506c10a517ebe31bbf6e9c2d0e4cb12a58259a8b9d7a85b4531",
+      "review": "Accepted: Actual generated pixels preserve Deluge's shallow pale-turquoise tubing pool, yellow/purple and clear/lime inner tubes, white beach slope, arched shade frames, thatched huts and actual timber lifeguard station.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F6ccedde2e8b5b3952333b96139eec3ce2ace987f-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Wide View of Guests Tubing at Deluge - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/deluge",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a2aa15b2120ad4355190d8a9ef800b25fe0a54fd4b25426d96c17831211c18ca",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Deluge photo shows a broad shallow pale-turquoise tubing pool with a wide white beach slope at rear, ordinary distant families in yellow/purple and clear/lime inner tubes, thatched shade huts and three arched metal/perforated shade structures. A timber lifeguard station at right, rope-net edge, green trees and shrub beds remain source context. Preserve this photographed shallow pool and tubing section without inventing a flume or full hidden perimeter."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-7461499888841-thumbnail.jpg",
+      "thumbnailSHA256": "269d73628a942dfd791a4c8e4abb9233a2600c725bd66ae1d32ffb0fa907e3d9",
+      "thumbnailBytes": 27267,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-7461499888841-detail.jpg",
+      "detailSHA256": "6424cdaffd924a334270ec21889174394d2b0c0f856b603bbfeebb35f21cd993",
+      "detailBytes": 226852,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 24175505265362,
+      "rideName": "Kiddie Coast",
+      "alt": "Illustrated Kiddie Coast at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:01:18.031708+00:00",
+      "originalSHA256": "4248ce7ebbde11ffe8e905ca4107a5fb31bd58e15dce2928b4eb61a658be62e3",
+      "review": "Accepted: Actual generated pixels preserve Kiddie Coast's small cyan slide and timber-colored pirate-ship hull/green trim/yellow porthole, rope-net gangway and ordinary rash-guard-wearing child, in the documented shallow-water playground section.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff32dc6b6b124b11603b4714155968bd27d7793c5-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Kiddie Coast - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/kiddie-coast",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "6da7e803502d2341b3c92e6195a75885c6653061b6b8634694d4c481a5cc038f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kiddie Coast photo shows the physical pirate-ship water playground with faux timber yellow/brown hull, green/yellow trim, round yellow-rimmed portholes, tan posts/rope-net gangway and two bright-cyan small open slides into shallow water. An ordinary child in a blue/white rash guard and aqua swim shorts sits at the center slide exit; other guests remain distant. Preserve this documented slide/ship section and source-supported materials, not a real sailing ship or invented full playground."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-24175505265362-thumbnail.jpg",
+      "thumbnailSHA256": "44a75ab5d884b646b05e856f4849a836887554f4abbfcb385471825bea476e67",
+      "thumbnailBytes": 26509,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-24175505265362-detail.jpg",
+      "detailSHA256": "d6826a2fea33a8234d6d31155e6b2054816662767b7df50c49034fa1be517409",
+      "detailBytes": 167789,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 24413553220329,
+      "rideName": "Bow Wow Blaster",
+      "alt": "Illustrated Bow Wow Blaster at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:03:06.813142+00:00",
+      "originalSHA256": "4e3f480bc35fd5a2fd76a4521a88b9a8b9948240e92604149401679d4a4f5a57",
+      "review": "Accepted: Actual generated pixels preserve Bow Wow Blaster's lime tandem tube and blue grab handles, actual parent/child seating, cyan bolted channel walls and black propulsion strips without inventing a whole course.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb65b02151c73bb4a5c902d157805af68e9d8aa25-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Mother and Child sliding down Bow Wow Blaster at Schlitterbahn New Braunfels.",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/bow-wow-blaster",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "841e6a50ad407ed60f708b434b0be76559e6287a957d2bc122b972793695c8f0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Bow Wow Blaster photo shows an ordinary parent and child seated tandem in the actual lime-green double inner tube with blue grab handles, in a cyan/blue open water-coaster trough with black propulsion strips on its floor, high bolted fiberglass walls and timber structure behind. Preserve the documented tube, tandem position, channel and actual mechanical/water surfaces, not invented whole course, hidden launch hardware or a generic Blaster namesake."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-24413553220329-thumbnail.jpg",
+      "thumbnailSHA256": "2ec46d245c04a00d1f19c2d3143a75466c9a62e22aa00bd426489f4bce59d1b3",
+      "thumbnailBytes": 23893,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-24413553220329-detail.jpg",
+      "detailSHA256": "6ae9169774440284ace937fe86d06144536c6d7405279929aa9e5be1db0df122",
+      "detailBytes": 172639,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 25174583318026,
+      "rideName": "Kristal River",
+      "alt": "Illustrated Kristal River at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:03:30.037448+00:00",
+      "originalSHA256": "0baef739ccbeeaad389a6f04db4f07ca79c3f8fa92b594308b814aea995531d4",
+      "review": "Accepted: Actual generated pixels preserve Kristal River's photographed turquoise bend, faux-rock coping, rope-post perimeter, teal huts/pale roofs, shade trees and ordinary guests in actual inner tubes.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F939268da15bfdbf27bd0d25e593d8de180bdf209-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests on Floats at Kristal River - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/kristal-river",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "92ee19d611105de45001998ce1cef46e2b4fcfdb5478be6974cec45608e840ca",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kristal River photo shows a gently curving wide turquoise current channel edged by light faux-rock coping, tan walkway, timber posts/rope rails and teal wooden huts with pale metal roofs beneath large shade trees. Ordinary distant guests swim or recline in orange/yellow inner tubes in the photographed river bend. Preserve this actual pool/river section and texture, not a natural wild river, invented slide route or unphotographed alligator props."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-25174583318026-thumbnail.jpg",
+      "thumbnailSHA256": "09d34115df43ebee3035aeba3c8184321ca834344fffb2828d5142b74f1ff2d7",
+      "thumbnailBytes": 30221,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-25174583318026-detail.jpg",
+      "detailSHA256": "5783799b20ff9b7f21c761ddadfb3512bf6b552c50cc20e3534415b28b33411f",
+      "detailBytes": 252006,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
       "rideId": 33209166214222,
       "rideName": "Bahnzai Pipeline",
       "alt": "Illustrated Bahnzai Pipeline at Schlitterbahn New Braunfels",
@@ -40807,6 +40979,1123 @@
       "detailFile": "339-33209166214222-detail.jpg",
       "detailSHA256": "e79e92d950f976b76ce7c70b5bba1dcb39af1ef063962024815e13279876996f",
       "detailBytes": 195598,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 45881653371486,
+      "rideName": "Sea Creature Cove",
+      "alt": "Illustrated Sea Creature Cove at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:02:44.428849+00:00",
+      "originalSHA256": "f41e4d8c5a05784e1272b7c7201e3baf7660dd41af279361721b7a8f08ff2aee",
+      "review": "Accepted: Actual generated pixels preserve Sea Creature Cove's manufactured green scaled head, large yellow eye, pink/green fin ears and cream rounded-tooth jaw, wet fiberglass and actual child in a blue rash guard behind it.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb521c591b9d47aa04a67829172212fe7aaf31a53-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Boy on Colorful Dragon Play Structure at Sea Creature Cove - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/sea-creature-cove",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "53b52188a91ec954547c917a8ce875cfe375510b9e5a39b5151652caeb93fb24",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Sea Creature Cove photo shows the close physical green sea-dragon play structure with painted scales, large yellow eye, pink/green speckled fin ears and cream jaw/rounded teeth, wet fiberglass finish and spray droplets. An ordinary child in a blue rash guard stands behind its head; shallow greenish water and landscaped bushes remain context. Preserve only this documented manufactured play-sculpture section, not a live animal, invented whole creature or another licensed character."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-45881653371486-thumbnail.jpg",
+      "thumbnailSHA256": "bd78bb14ba78967480d641ad8a44b6e1538154f68a78943e4966008e49ab09e5",
+      "thumbnailBytes": 26444,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-45881653371486-detail.jpg",
+      "detailSHA256": "22a7b128d06b6a7b7b22f7cd919cfaa824a8426061e48fd7cff5edfd05efb193",
+      "detailBytes": 189171,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 53642911761522,
+      "rideName": "Fur-Bidden Forest",
+      "alt": "Illustrated Fur-Bidden Forest at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:03:52.389740+00:00",
+      "originalSHA256": "d70faf2468effe3b37febd332463a11b6add213fe69252a517b49812586d4ef6",
+      "review": "Accepted: Actual generated pixels preserve Fur-Bidden Forest's close shallow fountain scene with actual clothed parent/child and brown enclosed slide, tan posts and teal/timber play-platform context without a fabricated full tower or bucket.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F44ed09532fd2d928100d8aa54e89808484bb8aa3-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Father and daughter enjoying Fur-Bidden Forest - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/fur-bidden-forest",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "02e31f65ecb9949b74eb6bcaadb7f1a46dcfd54e135dd11ad56819d01b0f9026",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Fur-Bidden Forest photo shows an ordinary parent in a patterned short-sleeve swim shirt and child in a pink long-sleeve rash guard playing at a small fountain in shallow turquoise water. Behind are the actual brown enclosed tube slide, tan support posts and teal/brown timber play-platform slats. Preserve this documented close fountain/play-structure section and real surfaces, without inventing a full hidden tower, bucket, extra slides or undepicted hardware."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-53642911761522-thumbnail.jpg",
+      "thumbnailSHA256": "ebe9a3d2f3286f2ab58c6837498022d689a3a219402b1c5a7261059f810c3b8c",
+      "thumbnailBytes": 27017,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-53642911761522-detail.jpg",
+      "detailSHA256": "d831a80d7296aa9eb98f1452134a1741a022d4e91e3dc4a5997ae5b911e51b78",
+      "detailBytes": 193010,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 59284728554666,
+      "rideName": "Wasserbahn Racers",
+      "alt": "Illustrated Wasserbahn Racers at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:07:11.332848+00:00",
+      "originalSHA256": "da40962c9923b1439a1c52528e65371856489e01311a9c31e3342db8b9eabb70",
+      "review": "Accepted: Actual generated pixels preserve Wasserbahn Racers' three green/yellow/blue lanes, stone hillside and timber staircase, blue foam mats and actual separated runouts with ordinary guests.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fef35042cac155e7f211628c2bcbeaa05ee7efdaf-2000x1334.webp%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A young boy smiles and splashes through a water lane after finishing a ride on the Wasserbahn Racers. He is holding a blue racing mat, with two other children splashing behind him in the parallel green and blue lanes. The multi-colored racing slides and a wooden staircase are visible in the background.",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/wasserbahn-racers",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "4e98c863ab3e9525d3a233e7a0c00a855ef0c5a01be720c566c3ae4f8f08bd5a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Wasserbahn Racers photograph shows three open green/yellow/blue racing flumes on a stone-landscaped hillside with a timber stairway. At the shallow separated runout lanes ordinary guests carry blue foam racing mats; a child in patterned swim shorts stands in foreground with the mat. Preserve only this documented racing-slide/runout section and actual channel separators, not six lanes or an invented launch tower/hidden route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-59284728554666-thumbnail.jpg",
+      "thumbnailSHA256": "84d76346e031d7721c89a5e55cc8056eccbe6dc2d9cddad56bf0672ae426250e",
+      "thumbnailBytes": 27540,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-59284728554666-detail.jpg",
+      "detailSHA256": "bbfb56754a18baa4191e71acb68603d57a754447042f178a0808864ac5d6338d",
+      "detailBytes": 184738,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 69211335625373,
+      "rideName": "The Falls",
+      "alt": "Illustrated The Falls at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:06:13.359567+00:00",
+      "originalSHA256": "3f213b253bf5d6792d45f18747167fa57a4f9cc10398d04edbac03ca1f8b566b",
+      "review": "Accepted: Actual generated pixels preserve The Falls' clear/lime tube and real handles, feet-forward source guest, staggered rock baffles and churning turquoise channel; no natural waterfall or complete course is invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc30d46ad4d0dd129d6d378748c55429fe8a5ea24-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Boy Tubing in Rapids at The Falls - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/the-falls",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f4aed22fe8954bca22cd1334c778bd5b7833e89dfdabfe16d37086f0c259fb45",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual The Falls photograph shows an ordinary guest reclining feet-forward in a clear/lime single inner tube with two lime handles, descending the churning turquoise rapids channel. Light tan faux-stone walls and staggered rock baffles shape the visible water, with other yellow/clear tubes and foliage behind. Preserve this documented rapid/baffle section and actual tube, not a natural waterfall, full hidden river or different raft hardware."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-69211335625373-thumbnail.jpg",
+      "thumbnailSHA256": "194960e25498187758060c943155ed5765efba978fa1f53898e1f254aa3bc231",
+      "thumbnailBytes": 29516,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-69211335625373-detail.jpg",
+      "detailSHA256": "01c0e2a0ae18d0aec591f3f91f9690e52b405164bf26a5f09484a81bd4b58494",
+      "detailBytes": 194469,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 81212300486859,
+      "rideName": "Raging River Tube Chute",
+      "alt": "Illustrated Raging River Tube Chute at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:07:40.381342+00:00",
+      "originalSHA256": "b037a6b69482c08c02a524e4500c777ee55a1577dca9f0ef57f1858ad24fe58c",
+      "review": "Accepted: Actual generated pixels preserve Raging River's black single tube, actual blue open trough between tan rockwork and timber rail, source guest and upstream attendant, distinct from the corrected Hillside image.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9c75f999a3c9765a4a3d1c08c91d9392b9b545a7-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Wide View of Guests Tubing on Raging River Tube Chute - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/raging-river-tube-chute",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "3fafadadfcfeef9a7f9ed4b78fb860e69445eaed1d95f2b8e7189b29e743326c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Raging River Tube Chute photograph shows an ordinary guest reclining in a black single inner tube through a bright-blue open trough with curved high side walls, bordered by rough tan rockwork and a timber rail at right. A distant attendant in blue shorts stands upstream. Preserve this exact documented chute section, water and black inner tube, not the adjacent Hillside ride or invented full course."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-81212300486859-thumbnail.jpg",
+      "thumbnailSHA256": "2321f0f00be76008c204abfa2bc4cde7a856ef9603964915cc420de0928ff049",
+      "thumbnailBytes": 28998,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-81212300486859-detail.jpg",
+      "detailSHA256": "c8940cdcad3a03a139b4c9f6896a0a3d1a31a8dd80412876871b46eedfd4c8b4",
+      "detailBytes": 214660,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 81283237342682,
+      "rideName": "Congo River Expedition",
+      "alt": "Illustrated Congo River Expedition at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:09:22.138995+00:00",
+      "originalSHA256": "e39aef2e1aa0ca6378dc39f7a69560ed4b55fa21e1821c0a0f039d834fc13a3c",
+      "review": "Accepted: Actual generated pixels preserve Congo River's black single tubes and ordinary guests under the real mist/water curtain, turquoise channel, leafy wall and actual tan pillar section.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F873f58eb28515ba3fdcc47c906aadf9e49670124-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests in Tubes on Congo River Expedition - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/congo-river-expedition",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "bdebcb1d9fb6341f60e00d7270b37425cf9e722efce2edd4f6f7ed912f68a02f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Congo River Expedition photograph shows ordinary guests reclining in separate black single inner tubes beneath heavy falling mist/water, in a broad turquoise channel with pale faux-rock wall, leafy plants and a tan sculpted pillar at right. Preserve this documented shaded waterfall/mist channel and source tube positions, not a natural Congo river, invented full route or unsupported ride vehicles."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-81283237342682-thumbnail.jpg",
+      "thumbnailSHA256": "5a9cc60f7c37fa032d51f48d23ec35edb600f61d8484ba515977d851c9161703",
+      "thumbnailBytes": 25643,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-81283237342682-detail.jpg",
+      "detailSHA256": "1caf89f845af63eb09c4275b972be623da111f32fdaa7ac7f3e82b2d56771fb7",
+      "detailBytes": 189940,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 100636626598303,
+      "rideName": "Dragon's Revenge",
+      "alt": "Illustrated Dragon's Revenge at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:08:01.961697+00:00",
+      "originalSHA256": "451ac5422e8a805c618d99d091b28ceb71c191a220f52fce27119593b7d8e15a",
+      "review": "Accepted: Actual generated pixels preserve Dragon's Revenge's source green enclosed flume/ribs, dark steel supports, weathered timber enclosure/platform and utility plumbing, with trees/mist. The entrance/sign candidate was not used and no opaque-tube passengers or full route are invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.incrediblecoasters.com/dragonsrevenge2.JPG",
+          "alt": "",
+          "sourceURL": "https://www.incrediblecoasters.com/DragonsRevengePhotos.html",
+          "credit": "Incrediblecoasters (original on-site report and photographic reference publisher)",
+          "license": "Copyright source photographer/publisher; rights retained",
+          "licenseURL": "https://www.incrediblecoasters.com/DragonsRevengePhotos.html",
+          "sha256": "a1842ff415e26846bc119ecbbbab907d210748857011a3a19bf087378d79aa26",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected original on-site Incrediblecoasters photo replaces the official entrance/sign-only candidate before generation. It shows the actual bright-green enclosed Dragon's Revenge flume running horizontally and curving at left, with circumferential fiberglass ribs, dark gray steel brackets/supports and actual weathered timber platform/cladding under the tube, among dense trees and light mist. Foreground white plumbing is separate utility pipe. Preserve only this documented mechanical tube/structure section, not an invented whole course, passengers inside opaque tubing or projected effects outside the photograph. The page's July 15, 2013 last-ridden date does not establish the exact photo capture date or current paint/operation."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-100636626598303-thumbnail.jpg",
+      "thumbnailSHA256": "019d8ef17b9d805c80e3e8a185a9663a610279d0b959ec08d2f947c9286e229d",
+      "thumbnailBytes": 19661,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-100636626598303-detail.jpg",
+      "detailSHA256": "a1c9a0f2e979f11cc216eb1f5d2a8220893167b124b6aee2f911f924901ed8fd",
+      "detailBytes": 165433,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 101138061531068,
+      "rideName": "Hillside Tube Chute",
+      "alt": "Illustrated Hillside Tube Chute at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:08:57.474591+00:00",
+      "originalSHA256": "8954af9488a14fe2a360763b2453c36bf5fe49c60ea8ca1dd850444fd14d1f39",
+      "review": "Accepted: Actual generated pixels preserve Hillside's actual tan chute bend, black tube and guest, rough stone coping/planted rock island with fountain jets, orange-stone castle and ivy turrets; rejected Raging River photo is not used.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F0c368e011fe46a2b37d8519b378485625b5b56a6-1371x1036.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Iconic Schlitterbahn Castle and Hillside Tube Chute - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/hillside-tube-chute",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "75ba3b11bc6525c82221ab9df09df7b1bdf12f03db2afd86fc5c872f924f401b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected ride-own official hero replaces the rejected automated Raging River related-card photo before generation. Actual Hillside Tube Chute photo shows a shallow tan concrete channel edged by rough pale-stone coping around a planted rock island and fountain sprays, with an ordinary guest in a black inner tube at the bend. The orange-stone castle and ivy-covered turret structures with shingled pointed roofs and small pennants stand on the landscaped hillside. Preserve this documented chute/castle section, real materials and tube, without invented hidden route or copied lettering."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-101138061531068-thumbnail.jpg",
+      "thumbnailSHA256": "718a0f7b430b76212a649dde04da9b2c75814c03e4a204841cc8fa84fcc64815",
+      "thumbnailBytes": 27827,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-101138061531068-detail.jpg",
+      "detailSHA256": "104dc4fefe5ecf75f03ea2b2cdb3d773c6781812cbab7110b1e66d56d8e19c15",
+      "detailBytes": 235871,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 108786330280275,
+      "rideName": "Han's Hideout",
+      "alt": "Illustrated Han's Hideout at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:10:34.200099+00:00",
+      "originalSHA256": "3e92b9e3157e0b41a0449ed18c535cacc0a595759947b733d631c8a49119e876",
+      "review": "Accepted: Actual generated pixels preserve Han's Hideout's cream runout, net fences/posts, ordinary child in blue rash guard/orange shorts, red/yellow/cream slide sections and actual timber play-structure context.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F470e78424e48eb38c04f1c2f09f177d8567ccf1e-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Wide View of Han's Hideout Water Fun House - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/hans-hideout",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c5b7dbe2327132985069bb47dd7ae2b2b9bf6f432347a41f00b4c89b4f2ff15b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Han's Hideout photo shows the cream-colored shallow slide runout edged by rope-net fences and tan/metal posts, with an ordinary child in a blue long-sleeve rash guard and orange swim shorts wading out. Red/yellow/cream open body-slide sections wrap around the actual tall timber-supported play structure behind, among shade trees and a wet tan deck. Preserve this documented exit/slide structure section; do not invent the whole hidden play tower, tipping bucket or additional slides."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-108786330280275-thumbnail.jpg",
+      "thumbnailSHA256": "65d25d95ef0bee46b12bbf1869178dd401170a9b96fb2334107ddfdb29e37d36",
+      "thumbnailBytes": 27153,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-108786330280275-detail.jpg",
+      "detailSHA256": "60f955cb0c012559906423a42ae357e0dc93a7b22f35f57e75141dad5d3a9629",
+      "detailBytes": 186938,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 113891727653128,
+      "rideName": "Kinderhaven",
+      "alt": "Illustrated Kinderhaven at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:10:11.399742+00:00",
+      "originalSHA256": "01c4cca64a05a455705b2b900eb3f2ec95c4229c129c6dc7bc9d82d4d8cfbeca",
+      "review": "Accepted: Actual generated pixels preserve Kinderhaven's documented blue loungers/white frames, blue fabric umbrella, rope-net timber-post fence and photographed pool/slide background with ordinary children in rash guards. No unseen full pirate ship or pool plan is invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F58278280783d33e7fbbbd9047b8f87230beca7c8-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Three Boys on Pool Chairs Near Kinderhaven Wading Pool - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/kinderhaven",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "94e59f051ba1148348004fc96ba02c0647851dec585d972551be2590457e5962",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kinderhaven own-page photograph documents its poolside: three light-blue strap loungers with white tubular frames on tan deck/green mat, beneath a large royal-blue fabric umbrella and behind a tan rope-net fence between timber posts. Ordinary children in blue/white rash guards sit in the real chairs, with the actual shallow pool and blue/yellow slide structures visible in the background. Preserve only this documented poolside section and photographed background; do not invent a complete pirate ship, unseen slide interiors or a whole pool plan from the page description."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-113891727653128-thumbnail.jpg",
+      "thumbnailSHA256": "09f1095a2b16fb9a9e8b33e6c8aea8aa4b59e5ceb3498e00421fd66dcab342be",
+      "thumbnailBytes": 25663,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-113891727653128-detail.jpg",
+      "detailSHA256": "dac6f6e8d68f15c6dbccb95022bf892ba581bbae8e96e771527a667b9ef22b11",
+      "detailBytes": 190022,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 123321505160651,
+      "rideName": "Soda Straw Body Slide",
+      "alt": "Illustrated Soda Straw Body Slide at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:10:55.460419+00:00",
+      "originalSHA256": "eba8a771e255dbf2a4351a19bc8771daacf0c99a83a3e73cd7f627a0401ae5de",
+      "review": "Accepted: Actual generated pixels preserve Soda Straw's slender red/yellow enclosed tubes, diagonal accents and circular bolted ribs connected to the actual red steel supports/braces among trees.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F90d435c1483b01c2346d5e5b37187a3364885033-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Twisting Slides of Soda Straw Body Slide - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/soda-straw-body-slide",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ecc31d65265d2193c4d940c715acbb84d7bfe888ae88113f53adfff6090f4a55",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Soda Straw Body Slide photograph is a low close view of two slender red and yellow curving enclosed fiberglass tubes among trees. Red tubular steel columns/diagonal braces and actual circular bolted ribs support the visible turns; yellow diagonal accents mark the red tube. Preserve this photographed mechanical slide section and weathered materials, not a generic drinking straw, full hidden ride routing or passengers inside opaque tubes."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-123321505160651-thumbnail.jpg",
+      "thumbnailSHA256": "dcdb608cd10c4b8893eec7fb85ff43720ac0848b53478216e8ce7b255237741a",
+      "thumbnailBytes": 26084,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-123321505160651-detail.jpg",
+      "detailSHA256": "1bd785400126a13834f595951794efa1a1f2a4c5ae78beab8c5e3497c584bd44",
+      "detailBytes": 225203,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 128946798150227,
+      "rideName": "AquaVeyer",
+      "alt": "Illustrated AquaVeyer at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:11:46.165158+00:00",
+      "originalSHA256": "f710454a6e8618eb08eb42cac42906a10bca4fb59b1739dfde668cf4ac9b28fd",
+      "review": "Accepted: Actual generated pixels preserve AquaVeyer's dark-gray inclined conveyor, clear/lime inner tubes and actual reclining guests, white/netted sides, adjacent blue helical mechanism and source timber turret tower/stairway.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4bec995d7d27af82ea5f1bfa434a3f59dbdcbf31-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "AquaVeyer at Schlitterbahn New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/aquaveyer",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2544019938fe3f0a69c0d2316a5448096ad82cc0c42cda9a2427149dcaa86e35",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual AquaVeyer photograph shows a wide dark-gray inclined conveyor carrying ordinary guests reclining in clear/lime single inner tubes, bounded by white side walls and rope netting, with a large actual blue helical screw/mechanism parallel at left and a pedestrian stairway at right. The source timber slide tower with orange castle turrets/pale pointed roofs and blue shade sails stands behind, with plants/wood railings. Preserve only this documented lift and adjacent mechanism, actual tube spacing and connected structure, not invented flume geometry or a different raft lift."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-128946798150227-thumbnail.jpg",
+      "thumbnailSHA256": "43bd9f3e5c94997fec03ba44bfc4159bfba1a88fae8fc907cfdb36558cb76faf",
+      "thumbnailBytes": 25674,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-128946798150227-detail.jpg",
+      "detailSHA256": "79ca52bac91c7397b415eafb05f78031c31e38f0ed7892643236f6703805b85c",
+      "detailBytes": 188272,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 134502292682167,
+      "rideName": "Schatze’s Paw’nd",
+      "alt": "Illustrated Schatze’s Paw’nd at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:12:14.745577+00:00",
+      "originalSHA256": "ac63903fa8cf8850a704214447e9f047b29169cb5da5864fda9eb118c03d1992",
+      "review": "Accepted: Actual generated pixels preserve Schatze's Paw'nd's broad low orange/yellow body slide, actual family seating without rafts, wet fiberglass, shallow blue runout and source timber/teal side context.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/7586f99bb04aae5ac52834d61540aa9864b11ef2-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/schatzes-pawnd",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "767d5c5a760a8b09bb53e79e97c6292cf840bad949719dcfeb0ea67980149398",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Schatze's Paw'nd photograph shows a broad pale orange/yellow open family body slide ending in a shallow blue splash pool. Ordinary parents and children sit side-by-side/behind on the wet slide without rafts, with source timber posts, teal fence slats and tan/gravel landscaping at the sides. Preserve this photographed wide low slide/runout section and real fiberglass seams, not a large raft coaster, invented whole play area or additional people outside the reference."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-134502292682167-thumbnail.jpg",
+      "thumbnailSHA256": "f428264a6f808359cf25e8973a879b1169ba33b4301206bf12cb4b8890ccfb47",
+      "thumbnailBytes": 22868,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-134502292682167-detail.jpg",
+      "detailSHA256": "15cced03cbc5c98042fa138efe02dc989c8866564f0ae0ed99b9e256f23d9b38",
+      "detailBytes": 153278,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 147487365281866,
+      "rideName": "Black Knight",
+      "alt": "Illustrated Black Knight at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:12:43.069973+00:00",
+      "originalSHA256": "4567109c8b54eda0b39103bc40521b8350fd78138601b190bf4434f52ed78fc4",
+      "review": "Accepted: Actual generated pixels preserve Black Knight's black enclosed turns with cyan/magenta bands on real gray supports, blue stair/platform tower, orange turrets and pale roofs, without substituting a namesake coaster.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F11a383c29db5f670fe8d00de976106781b275bd5-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Black Knight Ride - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/black-knight",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "dc1fdee2ce1cb1c940cd3716379b230ee27b0c896acb2c3e5a70640ee6ac9ff6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Black Knight photograph shows multiple black enclosed flume coils with cyan and magenta/red panel bands on gray steel supports. The actual blue stair/platform tower has orange castle turrets, pale shingled pointed roofs, small flags and blue shade sails; separate green/yellow/blue slides are only background. Preserve this documented black-tube section and physical bolted connections without inventing a complete hidden route, passenger views inside opaque tubing or confusing a different Black Knight ride."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-147487365281866-thumbnail.jpg",
+      "thumbnailSHA256": "a62edf7ae5a74c0e6a7523ef74305c3bdf30f443aa3710d810104874a15cc13d",
+      "thumbnailBytes": 24634,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-147487365281866-detail.jpg",
+      "detailSHA256": "4317f7aeb4ff4895157731c3e3274c1309900827a4e788c9fb16b122bb83ed0e",
+      "detailBytes": 171304,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 151354660625682,
+      "rideName": "Butterfly Bayou",
+      "alt": "Illustrated Butterfly Bayou at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:12:54.366131+00:00",
+      "originalSHA256": "0f37bfe1ff8a90312146c5c921f092875310e2262b824180a2a4a3bebe6e8d53",
+      "review": "Accepted: Actual generated pixels preserve Butterfly Bayou's manufactured yellow/orange/black wing-shaped slide sides, cream channel, wet surfaces and ordinary source child at the top, with actual leafy context.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F599e640014c792bfa4efba452b66a5f38c90037a-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Girl on Top of Slide at Butterfly Bayou - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/butterfly-bayou",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "76506dd86a66b667589c3ca6aa86f6aead2e359ac4b15e570ddd76c5a5f1c9ed",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Butterfly Bayou photograph shows a small cream open body-slide channel between large fixed yellow/orange/black butterfly-wing-shaped sides, with white speckles on the black border and wet manufactured finish. An ordinary child in a lime/red swimsuit sits at the top with another distant child behind, amid leafy landscaping. Preserve this documented physical butterfly slide section, not a real butterfly, unphotographed whole playground or invented supports."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-151354660625682-thumbnail.jpg",
+      "thumbnailSHA256": "6d7144a804be05ccc111f985813bdbd77cc70f149e95eb23e8fccbffcfe670a5",
+      "thumbnailBytes": 22952,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-151354660625682-detail.jpg",
+      "detailSHA256": "e487fe4e12863f1a5617e15e90b02269fba991d76aef10ef436be8285b8c783b",
+      "detailBytes": 143396,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 151879728706785,
+      "rideName": "Lava Lagoon",
+      "alt": "Illustrated Lava Lagoon at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:13:51.910949+00:00",
+      "originalSHA256": "9c9ce32c83e6cfd8268bfa6e3b9d8845f571d3891b24a232ee5455856d57d463",
+      "review": "Accepted: Actual generated pixels preserve Lava Lagoon's striped mushroom water-curtain fountain, rough tan waterfall wall, pale-turquoise water, stainless entry rail/blue tile and ordinary bathers.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F57257de4f5b9c496b8566b5f0e4708f9e3457fc7-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Friends Talking in Lava Lagoon Heated Pool - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/lava-lagoon-heated-pool",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "fa6f93b889fd0232f2ee8aad4f4f23d6d5a9e4f2db6f4090b6b49cd744275584",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Lava Lagoon photograph shows a pale-turquoise family pool with a large brown/yellow/cyan-striped mushroom fountain pouring a circular water curtain from its rim, a rough tan faux-rock waterfall wall and leafy shade trees. Ordinary distant bathers and source stainless entry rail/blue tiled edge remain context. Preserve this documented pool/fountain/rock section, not real lava, invented slides or an unsupported full pool plan."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-151879728706785-thumbnail.jpg",
+      "thumbnailSHA256": "771c4d85aafcea6d4a448cb8a2d146730f11f49933bb74303eca855e66c148eb",
+      "thumbnailBytes": 29021,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-151879728706785-detail.jpg",
+      "detailSHA256": "b5deecc4cd2a29f4f1eea519d04576775927270f6fd7edb4eeb470f1806bcd65",
+      "detailBytes": 246156,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 184022151318454,
+      "rideName": "Torrent River",
+      "alt": "Illustrated Torrent River at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:14:32.171509+00:00",
+      "originalSHA256": "d44c306ff4f125198dae99e0a4bcbb917ff41d0139b392c7082f8d18566b8cd3",
+      "review": "Accepted: Actual generated pixels preserve Torrent River's clear/yellow single inner tubes, real yellow/red/blue life jackets, ordinary source guests and curved white wall with rectangular grille panels beneath the actual tower/slide background.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F041d4f3ffd2b6b0d3e6b2ecd7940c8fd7989343a-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Family Tubing in Torrent River - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/torrent-river",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "826c84a287f8e23866be6b9fa3c8c9e0ac7c38725f7dfb68b799ffe30de94553",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Torrent River photograph shows ordinary family guests reclining feet-forward in clear single inner tubes with yellow wave graphics/handles, wearing actual red/yellow/blue life jackets. They float beside a curved white channel wall with real rectangular vent/grille panels; wooden tower and blue/green slides are distant background. Preserve this documented tubing section and source life jackets, not a natural whitewater river or invented hidden route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-184022151318454-thumbnail.jpg",
+      "thumbnailSHA256": "1f356515394452a688ea6bc67e248da4631346b4449f72176d00bd69aa905446",
+      "thumbnailBytes": 23675,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-184022151318454-detail.jpg",
+      "detailSHA256": "0f5961edeecb4575c78af8f4192eb178163324ff874b57188f950f54f40015bc",
+      "detailBytes": 143806,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 190518003475226,
+      "rideName": "Master Blaster Uphill Water Coaster",
+      "alt": "Illustrated Master Blaster Uphill Water Coaster at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:12:28.197768+00:00",
+      "originalSHA256": "b032b8924131e9419d428af23d489e2ed6366ae9817dd341b82d2b4c65654031",
+      "review": "Accepted: Actual generated pixels preserve Master Blaster's long orange tandem inflatable boat, gray floor and black strap handles, actual seated riders, pale-cyan open trough and rope-net/timber side rails.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff6e119e741166d1391c5f8c2aad6e087e5f40bd5-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Two Girls Sliding Fast in Tube on Master Blaster Uphill Water Coaster - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/master-blaster-uphill-water-coaster",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "42cf2af1074bd4744b4e1868b51c63563b11d37bdf485697a3a1a3ac2a6926a9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Master Blaster photograph shows ordinary riders seated in tandem in a long orange two-person inflatable boat with gray floor and black strap grab handles, descending the source pale-cyan open water-coaster channel. Actual rope-net safety fence and orange/timber railing line the channel edges. Preserve this documented raft/channel section, actual boat seating and seams, without inventing a full hidden coaster layout, drop-capsule hardware or new lettering."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-190518003475226-thumbnail.jpg",
+      "thumbnailSHA256": "ee005dc5abdab9f78c5021a3f51069ddea55b7f13ed6da036338a30c463eb8bb",
+      "thumbnailBytes": 22918,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-190518003475226-detail.jpg",
+      "detailSHA256": "b529e64d227f48b00dbdaf44761ec9c3fd05387e552d0c158aa7798312a92652",
+      "detailBytes": 150276,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 198934934803198,
+      "rideName": "Boogie Bahn Surfing Ride",
+      "alt": "Illustrated Boogie Bahn Surfing Ride at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:14:57.095839+00:00",
+      "originalSHA256": "cc65fbe039bbe0c0b3ed127d4e1f0f228cb58f0caef76bacff261a1d7077e76b",
+      "review": "Accepted: Actual generated pixels preserve Boogie Bahn's blue/yellow-edge bodyboard, prone source rider in a black rash guard, actual grip/support and bright-blue shallow sheet-flow surface without a fabricated ocean wave.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbbcf0fa9444a73992fd3b2929a68d03f757d49fe-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Boogie Bahn Surfing Ride - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/boogie-bahn-surfing-ride",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a65443c7856fd10cdb2039a611cfd982547d04c110a5b44afd2b649693f0e21b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Boogie Bahn photograph is a close view of an ordinary bodyboarder in a black short-sleeve rash guard and pink/orange swim trunks, lying prone on a blue foam bodyboard with yellow edge on the artificial bright-blue sheet-flow wave surface. Preserve the real board grip, supported prone position, wet surfaces and shallow foaming water, not a natural ocean wave, standing surfboard or invented whole ride enclosure."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-198934934803198-thumbnail.jpg",
+      "thumbnailSHA256": "43dce47fe5fcc43f1e9ee4faacca6546c3ee2d67070d32304e734235d2913dfe",
+      "thumbnailBytes": 25549,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-198934934803198-detail.jpg",
+      "detailSHA256": "dfbac0926366cb9a930c9fba6e439896eb585a0f9390c3d409cfaef2919f4399",
+      "detailBytes": 178872,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 241356317112077,
+      "rideName": "Comal Cove",
+      "alt": "Illustrated Comal Cove at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:18:05.138377+00:00",
+      "originalSHA256": "e2f7ce1d21bb7ffbf43e7eb05fc1969ee608602e84ca51214ceea4c748da5d4d",
+      "review": "Accepted: Actual generated pixels preserve Comal Cove's photographed close parent/child pool scene and real blue rippling water without copying the rejected Sea Creature Cove sculpture or inventing a whole pool plan.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1d73651525195d0ddd63aa00f2b3d6a4cde558b5-2000x1333.webp%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A mother and young daughter laughing and playing in the blue water of a pool. The woman is wearing a red swimsuit and holding the girl, who is in an orange swimsuit, as they look at each other with joyful expressions.",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/comal-cove",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "3a7e8346c23b3758e6065971c9afc911ff06c71aed700def6d855f2ebc2a1337",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The actual own-page Comal Cove hero replaces the rejected automated Sea Creature Cove related-card photo before generation. It documents ordinary parent and child in orange/red swimwear smiling in the blue pool, with the parent supporting the child and real rippling water filling the background. Preserve only this photographed close family/pool-water section; do not invent unseen park structures, water slides, pool borders, sea-creature sculptures or a whole pool plan."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-241356317112077-thumbnail.jpg",
+      "thumbnailSHA256": "f3f99a62483fb65ac5d2e0fb6f77ddb64ec63c438b443e0e2d792f98d9c0ba85",
+      "thumbnailBytes": 26822,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-241356317112077-detail.jpg",
+      "detailSHA256": "b4f6319e462ec87c6cf42e8a145a9051ea1c7299b5dff1f2c0e3cac5554da942",
+      "detailBytes": 168619,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 242665005199549,
+      "rideName": "Wolfpack Raft Slide",
+      "alt": "Illustrated Wolfpack Raft Slide at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:17:10.129639+00:00",
+      "originalSHA256": "f444fc9ef4223d0387c129b91107ebacbe09e5faa1c240809d49f224b73b1808",
+      "review": "Accepted: Actual generated pixels preserve Wolfpack's broad green open flume, source-visible stacked curves/bolted ribs and gray support brackets around the blue turret tower; no unverified raft or opaque-tube passengers are added.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5cbe62debbc082fcaf723fe8d3c5f0fb98ad26e4-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Wide View of Wolfpack Raft Slide Green Slide Structure - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/wolfpack-raft-slide",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e72ad456f383cf93e334eaffbdeaa303157cead3c72477b143074ae2be601de9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Wolfpack Raft Slide photograph shows a broad bright-green open flume winding through stacked visible turns on gray tubular steel columns/brackets, with real ribbed fiberglass seams. The actual blue Blastenhoff tower with orange castle turrets, pale pointed roofs and blue shade sails is behind; separate pale-blue/netted water-coaster channel is context only. Preserve this documented green slide section, without inventing hidden course, unsupported passengers/rafts or a different Wolfpack."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-242665005199549-thumbnail.jpg",
+      "thumbnailSHA256": "0492a219f10264e4e0e0d175868f77ebd10a081cab9a4c32c733b4456be6a804",
+      "thumbnailBytes": 24060,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-242665005199549-detail.jpg",
+      "detailSHA256": "a6112136c40f1f7f57466a6a116ca3336618308f830c4608119fc0b4f06f5f9e",
+      "detailBytes": 162802,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 251385293724320,
+      "rideName": "Back Splash",
+      "alt": "Illustrated Back Splash at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:17:38.978028+00:00",
+      "originalSHA256": "f9a67a28384f99a493ca0250b8a877e7bfaf422c3357b85243f004f60425329f",
+      "review": "Accepted: Actual generated pixels preserve Back Splash's empty cyan fast-flow channel, high divider ridge, padded bridge/grille, netting and source timber deck/railings/plants.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F0091195f94c7e1247ded0c88d76418f75a89e9e4-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Back Splash Ride at Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/back-splash",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a09bf1d328e694740818793bc63d8777602ca0deb699abdc8e5262be18d21c23",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Back Splash photograph shows an empty bright-cyan artificial fast-flow channel with high rounded pale-blue divider ridge at left, black rope-net barriers and blue-padded bridge/grille crossing upstream. Actual timber slat deck/railings, tan side wall and green plants surround the flowing water. Preserve this documented channel/bridge section, not a natural waterfall, fabricated ride vehicles, complete hidden routing or reproduced sign text."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-251385293724320-thumbnail.jpg",
+      "thumbnailSHA256": "d227bfc78d70970d39043befe78662191a4838425944bd726f1e2bf088e42ce5",
+      "thumbnailBytes": 26654,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-251385293724320-detail.jpg",
+      "detailSHA256": "f1a715e34c68f73563852f5fa352e861014dee39c0a5d74217414974d3520a24",
+      "detailBytes": 219974,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 253155240926954,
+      "rideName": "Downhill Racer",
+      "alt": "Illustrated Downhill Racer at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:19:34.539548+00:00",
+      "originalSHA256": "cd6d76d676c3d3ce565e056b2094ea4d1a8266f179cb59a548b2d4bd00820275",
+      "review": "Accepted: Actual generated pixels preserve Downhill Racer's cream paired race lanes on both sides of the central gray staircase, real blue mat riders, separate central tubing channel, queue canopy and source railings.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5d07e1a1340394da9da705eeea72fbbeb764c27d-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "View from Bottom of Downhill Racer Speed Slides - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/downhill-racer",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "870d79140b1507fda055923c4ba65dbecd8345233217d758480cbc30dc36a02c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Downhill Racer photograph shows two side banks of paired cream open racing lanes descending steeply beside a central gray stairway with red/timber railings and small flag poles at top. Ordinary mat riders lie prone on blue forward-handled foam mats in the visible left runout. A separate tan tubing channel passes between the two banks and beneath the stairs; blue queue canopy and real trees/buildings remain context. Preserve only this documented racing/drop/runout geometry; do not merge the tubing channel with a race lane or invent extra lanes/hidden routing."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-253155240926954-thumbnail.jpg",
+      "thumbnailSHA256": "53f5541ff45e12b160ed2042ae5ddbbc8fd40fb3d562466bfef690cd74a3cbb6",
+      "thumbnailBytes": 26332,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-253155240926954-detail.jpg",
+      "detailSHA256": "3e2ea3b1b222886532f8d5ed05cd601b18d319bac7280f7788cab04e7a546a72",
+      "detailBytes": 210161,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 260421171791571,
+      "rideName": "Kristal Cove",
+      "alt": "Illustrated Kristal Cove at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:26:21.641735+00:00",
+      "originalSHA256": "d6ccecfb1d0dc1e3c65618741085963a650d845e58e1a9d6e4c88f1ca2ea3b9e",
+      "review": "Accepted: Actually viewed final built-in factual correction. Kristal Cove's unsupported distant rock boundary, palm skyline and whole-pool horizon are removed. The close source-documented three loungers, yellow/cyan/pink towels, ordinary adult guests, shallow turquoise rippling water and distant small bathers remain. Both executed prompts, references and output hashes are preserved; no moderation retry occurred.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F44e7205c1c605ffe91718f5c5f5f804b725b1457-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests in Beach Chairs at Kristal Cove - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/kristal-cove",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "b2100b5edec959bd8b1b1ea1730db43f657d97cb70880709046b3bb2e277695f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Kristal Cove photograph documents its pale shallow beach-entry pool with turquoise water, three pale strap loungers partly at the water's edge and bright yellow/cyan/pink towels. Ordinary adult guests recline on the source chairs while small distant family bathers remain in the pool. Preserve this photographed pool/shallow-entry/lounge section and natural materials, not invented slides, unseen structures, a full hidden pool shape or another Kristal River image."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-260421171791571-thumbnail.jpg",
+      "thumbnailSHA256": "a06ce02679ec378a8b141d1f8b1e64ca987f29a81b8c75c56912d811959b2ad4",
+      "thumbnailBytes": 28083,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-260421171791571-detail.jpg",
+      "detailSHA256": "4f676e535f03e0c1ad655f83ed12231aeb0af730e065465521e3efa87fe88125",
+      "detailBytes": 209652,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 266147547800539,
+      "rideName": "Cliffhanger Tube Chute",
+      "alt": "Illustrated Cliffhanger Tube Chute at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:20:27.064243+00:00",
+      "originalSHA256": "272dccb40bdb7837a0a9725ebc08c6e8302bbcf1bf9e09ecb70d33f7c9fdd634",
+      "review": "Accepted: Actual generated pixels preserve Cliffhanger's shaped tan narrow chute, actual black and yellow/purple single tubes/handles, ordinary source guests and churning small rapid without a fabricated cliff drop.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb901438a6ab828a875e3845a1faabf40d76a9bd8-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Cliffhanger Tube Chute - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/cliffhanger-tube-chute",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "215708f51a87e519f5fc353c5503b4976530a62d77f7bf463c4ba9de0a25a3c8",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Cliffhanger Tube Chute photograph shows a narrow tan open water channel descending a small churning rapid, with source guest in a black single inner tube and a following guest in a yellow/purple single inner tube holding actual handles. Pale/tan shaped walls with real water staining guide greenish water; source swimwear/positions remain ordinary. Preserve this documented chute/tube section and exact tube colors, not a cliff drop, generic raft ride or invented whole hidden route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-266147547800539-thumbnail.jpg",
+      "thumbnailSHA256": "59e609211f3e4d4617edf0a55b2618f916b0a6af816ca4f720a110bf9222252c",
+      "thumbnailBytes": 27629,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-266147547800539-detail.jpg",
+      "detailSHA256": "65683145b902f73c25939a102abdeb7cd6b82e8b10622c4d0d6afbd0c8554cbd",
+      "detailBytes": 206311,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 339,
+      "rideId": 272039738433288,
+      "rideName": "Whitewater Tube Chute",
+      "alt": "Illustrated Whitewater Tube Chute at Schlitterbahn New Braunfels",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:20:03.587934+00:00",
+      "originalSHA256": "521f75bc34155390faf9988662b93f247577d6788b3bed809a580319280bc7cc",
+      "review": "Accepted: Actual generated pixels preserve Whitewater's overhead blue channel and central tan divider, real black inner tubes/source guest positions, leafy tree cover, green walkway and silver railing section.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F97a1d9423363a3b48188bb05ca73f89cc073d9c1-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Overhead View of Guests Tubing Down Rapids at Whitewater Tube Chute - Schlitterbahn Waterpark New Braunfels",
+          "sourceURL": "https://www.sixflags.com/schlitterbahnnewbraunfels/attractions/whitewater-tube-chute",
+          "credit": "Six Flags / Schlitterbahn New Braunfels (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "15ce1cdb8551c003c5614ce22ef20e418cd080da18a3dea35ae4a917e15b46e9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Whitewater Tube Chute photograph is an overhead view of the bright-blue open rapids channel with a long central tan rock divider, winding under leafy trees. Ordinary guests recline feet-forward in black single inner tubes through the actual churning curves; green walkway and silver rail/stair landing sit at right. Preserve this documented channel/divider/river-bend section and real source tube positions, not a natural river, invented full course or a different Whitewater ride."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "339-272039738433288-thumbnail.jpg",
+      "thumbnailSHA256": "63dac90fe3daf21de8ee6f90b46d8b351a12ccbe1657aa9e67eda9abd13cf1ae",
+      "thumbnailBytes": 29563,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "339-272039738433288-detail.jpg",
+      "detailSHA256": "5470a53874d5e90a1d897e4f91115a7eca7b363234166b81e2b24609a0dd63e4",
+      "detailBytes": 241737,
       "detailPixels": [
         768,
         960
