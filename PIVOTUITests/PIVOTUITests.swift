@@ -1,5 +1,6 @@
 import XCTest
 import UIKit
+import Vision
 
 final class PIVOTUITests: XCTestCase {
     private func mapFixtureApp(_ arguments: [String] = []) -> XCUIApplication {
@@ -113,6 +114,119 @@ final class PIVOTUITests: XCTestCase {
             if expired { XCTAssertFalse(closed.label.contains("Closed for")) }
             app.terminate()
         }
+    }
+
+    private func assertWaitsControlsJoinedToResult(_ app: XCUIApplication, rideID: Int,
+                                                  file: StaticString = #filePath, line: UInt = #line) {
+        let search = app.descendants(matching: .any)["ride-search-control"].firstMatch
+        let result = app.buttons["ride-row-action-\(rideID)"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5), file: file, line: line)
+        let viewport = safeContentViewport(in: app)
+        // Fit the real search and result together without assuming a scroll
+        // offset or a fixed height for the native List or its large-text rows.
+        var visible = false
+        var trace: [String] = []
+        for _ in 0..<8 {
+            let searchFrame = search.frame
+            let resultFrame = result.frame
+            let joined = searchFrame.union(resultFrame)
+            trace.append("search \(searchFrame); result \(resultFrame)")
+            guard !searchFrame.isEmpty, !resultFrame.isEmpty, joined.height <= viewport.height + 1 else { break }
+            if viewport.insetBy(dx: -1, dy: -1).contains(joined) { visible = true; break }
+            let offset = joined.minY < viewport.minY ? joined.minY - viewport.minY - 8 : joined.maxY - viewport.maxY + 8
+            let movement = min(viewport.height * 0.8, max(20, abs(offset))) * (offset < 0 ? -1 : 1)
+            let start = app.coordinate(withNormalizedOffset: .zero)
+                .withOffset(CGVector(dx: verticalPanX(in: viewport), dy: viewport.midY + movement / 2))
+            start.press(forDuration: 0.05,
+                        thenDragTo: start.withOffset(CGVector(dx: 0, dy: -movement)),
+                        withVelocity: .slow, thenHoldForDuration: 0.2)
+        }
+        XCTAssertTrue(visible, "Search and its result must fit together. \(trace.joined(separator: "; "))", file: file, line: line)
+        guard visible else { return }
+        waitForSettledFrames([search, result], file: file, line: line)
+        for element in [search, app.buttons["ride-sort-menu"], app.segmentedControls["ride-status-filter"], result] {
+            assertContained(element.frame, in: safeContentViewport(in: app),
+                            "Search, sort, filters and the matching ride must be fully visible together", file: file, line: line)
+        }
+        let controlsCell = app.cells.containing(.textField, identifier: "Ride search").firstMatch
+        let resultCell = app.cells.containing(.button, identifier: "ride-row-action-\(rideID)").firstMatch
+        XCTAssertTrue(controlsCell.exists, "Controls must be a real native List cell", file: file, line: line)
+        XCTAssertTrue(resultCell.exists, "The ride must remain a real native List cell", file: file, line: line)
+        guard controlsCell.exists, resultCell.exists else { return }
+        let controlsFrame = controlsCell.frame
+        let resultFrame = resultCell.frame
+        XCTAssertEqual(controlsFrame.maxY, resultFrame.minY, accuracy: 2,
+                       "Controls and results must touch within one inset-grouped section, without a separate card gap", file: file, line: line)
+        XCTAssertEqual(controlsFrame.minX, resultFrame.minX, accuracy: 1, file: file, line: line)
+        XCTAssertEqual(controlsFrame.width, resultFrame.width, accuracy: 1, file: file, line: line)
+    }
+
+    func testWaitsSearchAndResultsShareOneNativeGroup() {
+        let app = rootFixture(["--reference-ui-park=5", "--ui-dark"])
+        let search = app.textFields["Ride search"]
+        reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
+        assertWaitsControlsJoinedToResult(app, rideID: 10916)
+        XCTAssertTrue(app.buttons["ride-row-action-10916"].label.contains("45 minute wait"))
+        XCTAssertEqual(app.descendants(matching: .any)["ride-search-control"].firstMatch.frame.height, 46, accuracy: 1)
+        screenshot("Waits shared group search current wait", app: app)
+        app.buttons["ride-sort-menu"].tap()
+        app.buttons["Name"].tap()
+        XCTAssertTrue(app.buttons["ride-sort-menu"].label.contains("Name"))
+        app.buttons["Clear ride search"].tap()
+        app.segmentedControls["ride-status-filter"].buttons["Down"].tap()
+        search.tap(); search.typeText("Spaceship\n")
+        assertWaitsControlsJoinedToResult(app, rideID: 159)
+        let closed = app.buttons["ride-row-action-159"]
+        XCTAssertTrue(closed.label.contains("Temporarily closed"))
+        XCTAssertFalse(closed.label.contains("0 minute wait"))
+        XCTAssertFalse(app.buttons["ride-row-action-10916"].exists)
+        screenshot("Waits shared group filtered down status", app: app)
+    }
+
+    func testWaitsSearchAndResultsStayJoinedAtAccessibilitySize() {
+        let app = rootFixture(["--reference-ui-park=5", "--ui-dark", "--ui-large-type"])
+        let heading = app.staticTexts["Current rides"]
+        centerFullyVisible(heading, in: app)
+        XCTAssertGreaterThanOrEqual(heading.frame.height, 35, "The actual controls heading must render enlarged type")
+        screenshot("Waits shared group enlarged heading", app: app)
+        let search = app.textFields["Ride search"]
+        reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
+        assertWaitsControlsJoinedToResult(app, rideID: 10916)
+        XCTAssertTrue(app.buttons["ride-row-action-10916"].label.contains("45 minute wait"))
+        XCTAssertGreaterThanOrEqual(search.frame.height, 35)
+        screenshot("Waits shared group enlarged search and current wait", app: app)
+    }
+
+    func testWaitsSharedGroupKeepsUnchangedWaitFromFreshProvider() {
+        let app = rootFixture(["--reference-ui-park=5", "--ui-dark", "--ride-search-unchanged-provider"])
+        let search = app.textFields["Ride search"]
+        reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
+        assertWaitsControlsJoinedToResult(app, rideID: 10916)
+        let health = app.descendants(matching: .any)["waits-feed-health"].firstMatch
+        let freshness = app.descendants(matching: .any)["waits-feed-freshness"].firstMatch
+        XCTAssertTrue(health.label.contains("Live"), "The matched provider response must be fresh in this scenario")
+        XCTAssertTrue(freshness.label.hasPrefix("Live · auto 5s"))
+        let result = app.buttons["ride-row-action-10916"]
+        XCTAssertTrue(result.label.contains("45 minute wait"), "The fresh provider response confirms its unchanged posted wait")
+        XCTAssertFalse(result.label.contains("Wait stale"))
+        XCTAssertFalse(result.label.contains("0 minute wait"))
+        screenshot("Waits shared group fresh provider unchanged current wait", app: app)
+    }
+
+    func testWaitsSharedGroupWithholdsWaitFromExpiredProviderFetch() {
+        let app = rootFixture(["--reference-ui-park=5", "--ui-dark", "--ride-search-unchanged-provider", "--ride-search-provider-fetch-expired"])
+        let search = app.textFields["Ride search"]
+        reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
+        assertWaitsControlsJoinedToResult(app, rideID: 10916)
+        let health = app.descendants(matching: .any)["waits-feed-health"].firstMatch
+        let freshness = app.descendants(matching: .any)["waits-feed-freshness"].firstMatch
+        XCTAssertFalse(health.label.contains("Live"), "A fresh app fetch cannot hide an expired provider response")
+        XCTAssertTrue(freshness.label.contains("Source too old"))
+        let result = app.buttons["ride-row-action-10916"]
+        XCTAssertTrue(result.label.contains("Wait stale"))
+        XCTAssertFalse(result.label.contains("45 minute wait"))
+        XCTAssertFalse(result.label.contains("0 minute wait"))
+        screenshot("Waits shared group expired provider wait withheld", app: app)
     }
 
     func testObservedWaitDotsKeepEveryValueAndOpenLowestWaitForecast() {
@@ -898,12 +1012,69 @@ final class PIVOTUITests: XCTestCase {
         }
     }
 
-    func testGeneratedRideIllustrationLoadsWithCreditsAndPreservesWaits() {
+    private func assertNoVisibleThumbnailBadge(_ rideAction: XCUIElement, in app: XCUIApplication,
+                                              file: StaticString = #filePath, line: UInt = #line) throws {
+        centerFullyVisible(rideAction, in: app, file: file, line: line)
+        let capture = rideAction.screenshot()
+        let nativeImage = capture.image
+        let nativePixels = try XCTUnwrap(nativeImage.cgImage, file: file, line: line)
+        func recognizedText(in image: UIImage) throws -> [String] {
+            let pixels = try XCTUnwrap(image.cgImage)
+            let request = VNRecognizeTextRequest()
+            request.recognitionLevel = .accurate
+            request.recognitionLanguages = ["en-US"]
+            request.usesLanguageCorrection = false
+            request.customWords = ["AI art"]
+            request.minimumTextHeight = 0.005
+            try VNImageRequestHandler(cgImage: pixels, options: [:]).perform([request])
+            return request.results?.flatMap { $0.topCandidates(3).map(\.string) } ?? []
+        }
+        func containsBadge(_ strings: [String]) -> Bool {
+            strings.contains { $0.range(of: #"\b(?:AI|Al)\s*art\b"#,
+                                       options: [.regularExpression, .caseInsensitive]) != nil }
+        }
+        // The old overlay was accessibility-hidden, so AX text absence alone
+        // cannot catch it. Calibrate OCR on the same native pixels/scale with
+        // an explicitly synthetic 9pt old badge. Never attach/export this control
+        // as a native UI capture or change production rendering to assist OCR.
+        let size = rideAction.frame.size
+        guard size.width > 0, size.height > 0, size.width.isFinite, size.height.isFinite else {
+            XCTFail("The native ride action must have a finite nonempty screenshot frame", file: file, line: line)
+            return
+        }
+        let format = UIGraphicsImageRendererFormat()
+        format.scale = CGFloat(nativePixels.width) / size.width
+        let control = UIGraphicsImageRenderer(size: size, format: format).image { _ in
+            nativeImage.draw(in: CGRect(origin: .zero, size: size))
+            let attributes: [NSAttributedString.Key: Any] = [
+                .font: UIFont.systemFont(ofSize: 9, weight: .semibold), .foregroundColor: UIColor.white
+            ]
+            let text = "AI art" as NSString
+            let measured = text.size(withAttributes: attributes)
+            let badge = CGRect(x: 4, y: size.height - ceil(measured.height) - 10,
+                               width: ceil(measured.width) + 10, height: ceil(measured.height) + 6)
+            UIColor.black.withAlphaComponent(0.78).setFill()
+            UIBezierPath(roundedRect: badge, cornerRadius: badge.height / 2).fill()
+            text.draw(at: CGPoint(x: badge.minX + 5, y: badge.minY + 3), withAttributes: attributes)
+        }
+        let calibration = try recognizedText(in: control)
+        XCTAssertTrue(containsBadge(calibration), "OCR must detect the synthetic old badge before testing its absence: \(calibration)", file: file, line: line)
+        let actual = try recognizedText(in: nativeImage)
+        XCTAssertFalse(containsBadge(actual), "The actual ride thumbnail must have no visible AI art badge: \(actual)", file: file, line: line)
+        let attachment = XCTAttachment(screenshot: capture)
+        attachment.name = "Native ride action without thumbnail badge \(rideAction.identifier)"
+        attachment.lifetime = .keepAlways
+        add(attachment)
+    }
+
+    func testGeneratedRideIllustrationLoadsWithCreditsAndPreservesWaits() throws {
         let app = rootFixture(["--reference-ui-park=5", "--ui-dark"])
         let search = app.textFields["Ride search"]
         reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
         let guardians = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Guardians of the Galaxy'")).firstMatch
         reveal(guardians, in: app)
+        XCTAssertTrue(guardians.label.contains("45 minute wait"))
+        try assertNoVisibleThumbnailBadge(app.buttons["ride-row-action-10916"], in: app)
         screenshot("Illustration Guardians ride card", app: app)
         guardians.tap()
         let artwork = app.descendants(matching: .any)["ride-illustration-5-10916"].firstMatch
@@ -929,11 +1100,13 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(app.buttons["native-day-favorites"].isHittable)
     }
 
-    func testGeneratedRideWithReservedPhotoRightsKeepsAccurateCredits() {
+    func testGeneratedRideWithReservedPhotoRightsKeepsAccurateCredits() throws {
         let app = rootFixture(["--reference-ui-park=334", "--reference-ui-ride=14691", "--ui-dark"])
         let ride = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Fyre Drill'")).firstMatch
         reveal(ride, in: app)
         XCTAssertTrue(ride.isHittable)
+        XCTAssertTrue(ride.label.contains("45 minute wait"))
+        try assertNoVisibleThumbnailBadge(app.buttons["ride-row-action-14691"], in: app)
         screenshot("Accepted Florida Fyre Drill illustration card", app: app)
         ride.tap()
         let artwork = app.descendants(matching: .any)["ride-illustration-334-14691"].firstMatch

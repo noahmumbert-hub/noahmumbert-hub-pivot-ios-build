@@ -68,6 +68,81 @@ final class PIVOTTests: XCTestCase {
         XCTAssertNil(value.waitMinutes)
     }
 
+    func testRideSearchUsesFreshProviderSnapshotForUnchangedPostedWait() {
+        let now = start.addingTimeInterval(3601)
+        let waits: [Int?] = [45, 0, nil]
+        for wait in waits {
+            let provider = ThemeParksWikiRideStatus(entityId: "exact-ride", entityName: "Space Mountain",
+                status: "OPERATING", sourceUpdatedAt: start, matchedBy: "ID", sourceAgeSeconds: 3601)
+            let snapshot = makeSnapshot(sourceOffset: 3601,
+                themeParksWiki: makeThemeParksWikiSummary(fetchedAt: now),
+                ride: makeRide(status: .open, waitTime: wait, themeParksWikiStatus: provider))
+            XCTAssertTrue(DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot,
+                isLoading: false, refreshFailed: false, at: now).isLive)
+            let value = RideWaitPresentation.resolve(rideID: 126, parkID: 6, snapshot: snapshot,
+                refreshFailed: false, at: now)
+            XCTAssertTrue(value.isCurrent, "An unchanged provider value is current when its matched park response is fresh")
+            XCTAssertEqual(value.waitMinutes, wait)
+            XCTAssertEqual(value.title, wait == nil ? "Open · wait not posted" : wait == 0 ? "0 min wait · walk-on" : "45 min wait")
+        }
+    }
+
+    func testRideSearchUnchangedProviderWaitPreservesAvailabilityAndFreshnessGuards() {
+        let now = start.addingTimeInterval(3601)
+        func ride(status: RideStatus = .open, wait: Int? = 45, providerStatus: String? = "OPERATING",
+                  changedAt: Date? = nil) -> LiveRide {
+            let provider = providerStatus.map { ThemeParksWikiRideStatus(entityId: "exact-ride", entityName: "Space Mountain",
+                status: $0, sourceUpdatedAt: changedAt ?? start, matchedBy: "ID", sourceAgeSeconds: 3601) }
+            return makeRide(status: status, waitTime: wait, themeParksWikiStatus: provider)
+        }
+        let summary = makeThemeParksWikiSummary(fetchedAt: now)
+        func snapshot(_ ride: LiveRide, summary: ThemeParksWikiSummary? = nil,
+                      offset: TimeInterval = 3601, healthy: Bool = true, active: Bool = true) -> LiveParkSnapshot {
+            makeSnapshot(sourceOffset: offset, feedHealthy: healthy, parkActive: active,
+                themeParksWiki: summary, ride: ride)
+        }
+        let fresh = snapshot(ride(), summary: summary)
+        struct GuardCase {
+            let name: String
+            let snapshot: LiveParkSnapshot?
+            var rideID = 126
+            var parkID: Int? = 6
+            var failed = false
+            let title: String
+            var current = false
+        }
+        let cases: [GuardCase] = [
+            .init(name: "missing snapshot", snapshot: nil, title: "Wait unavailable"),
+            .init(name: "wrong ride", snapshot: fresh, rideID: -1, title: "Wait unavailable"),
+            .init(name: "wrong park", snapshot: fresh, parkID: 5, title: "Wait unavailable"),
+            .init(name: "no park", snapshot: fresh, parkID: nil, title: "Wait unavailable"),
+            .init(name: "refresh failed", snapshot: fresh, failed: true, title: "Wait unavailable"),
+            .init(name: "unhealthy feed", snapshot: snapshot(ride(), summary: summary, healthy: false), title: "Wait unavailable"),
+            .init(name: "park inactive", snapshot: snapshot(ride(), summary: summary, active: false), title: "Park not active", current: true),
+            .init(name: "legacy unknown provider", snapshot: snapshot(ride(providerStatus: nil), summary: summary), title: "Wait stale"),
+            .init(name: "missing summary", snapshot: snapshot(ride()), title: "Wait stale"),
+            .init(name: "summary has no fetch", snapshot: snapshot(ride(), summary: makeThemeParksWikiSummary(fetchedAt: now, hasFetchedAt: false)), title: "Wait stale"),
+            .init(name: "summary not used for waits", snapshot: snapshot(ride(), summary: makeThemeParksWikiSummary(fetchedAt: now, usedForWaitTimes: false)), title: "Wait stale"),
+            .init(name: "provider unavailable", snapshot: snapshot(ride(), summary: makeThemeParksWikiSummary(available: false, fetchedAt: now)), title: "Wait unavailable"),
+            .init(name: "provider cache stale", snapshot: snapshot(ride(), summary: makeThemeParksWikiSummary(cacheStale: true, fetchedAt: now)), title: "Wait stale"),
+            .init(name: "provider fetch expired", snapshot: snapshot(ride(), summary: makeThemeParksWikiSummary(fetchedAt: now.addingTimeInterval(-901))), title: "Wait stale"),
+            .init(name: "park fetch expired", snapshot: snapshot(ride(), summary: summary, offset: 2700), title: "Wait stale"),
+            .init(name: "future provider fetch", snapshot: snapshot(ride(), summary: makeThemeParksWikiSummary(fetchedAt: now.addingTimeInterval(121))), title: "Wait stale"),
+            .init(name: "future snapshot", snapshot: snapshot(ride(), summary: makeThemeParksWikiSummary(fetchedAt: now.addingTimeInterval(121)), offset: 3722), title: "Wait unavailable"),
+            .init(name: "future ride change", snapshot: snapshot(ride(changedAt: now.addingTimeInterval(121)), summary: summary), title: "Wait unavailable"),
+            .init(name: "nonfinite ride change", snapshot: snapshot(ride(changedAt: Date(timeIntervalSince1970: .infinity)), summary: summary), title: "Wait unavailable"),
+            .init(name: "explicit stale status", snapshot: snapshot(ride(status: .stale), summary: summary), title: "Wait stale"),
+            .init(name: "contradictory provider", snapshot: snapshot(ride(providerStatus: "CLOSED"), summary: summary), title: "Wait unavailable"),
+            .init(name: "invalid numeric wait", snapshot: snapshot(ride(wait: -1), summary: summary), title: "Wait unavailable"),
+        ]
+        for item in cases {
+            let value = RideWaitPresentation.resolve(rideID: item.rideID, parkID: item.parkID,
+                snapshot: item.snapshot, refreshFailed: item.failed, at: now)
+            XCTAssertNil(value.waitMinutes, item.name)
+            XCTAssertEqual(value.title, item.title, item.name)
+            XCTAssertEqual(value.isCurrent, item.current, item.name)
+        }
+    }
     @MainActor
     func testRideSearchRetainsQueryAcrossLiveWaitUpdatesAndFailures() async throws {
         let defaults = try XCTUnwrap(UserDefaults(suiteName: "ride-search-\(UUID())"))
@@ -3247,12 +3322,14 @@ final class PIVOTTests: XCTestCase {
     private func makeThemeParksWikiSummary(
         available: Bool = true,
         cacheStale: Bool = false,
-        fetchedAt: Date? = nil
+        fetchedAt: Date? = nil,
+        hasFetchedAt: Bool = true,
+        usedForWaitTimes: Bool = true
     ) -> ThemeParksWikiSummary {
         ThemeParksWikiSummary(
             available: available,
             cacheStale: cacheStale,
-            fetchedAt: fetchedAt ?? start,
+            fetchedAt: hasFetchedAt ? (fetchedAt ?? start) : nil,
             sourceUpdatedAt: start.addingTimeInterval(-3600),
             cacheAgeSeconds: 0,
             cacheHit: false,
@@ -3264,7 +3341,7 @@ final class PIVOTTests: XCTestCase {
             warning: nil,
             role: "PRIMARY",
             statusSemantics: "Current provider status",
-            usedForWaitTimes: true,
+            usedForWaitTimes: usedForWaitTimes,
             usedForOperationalEligibility: true,
             usedForOperationalTraining: false,
             source: makeThemeParksWikiAttribution()
@@ -3302,6 +3379,7 @@ final class PIVOTTests: XCTestCase {
         sourceOffset: TimeInterval,
         waitStatusSourceOffset: TimeInterval? = nil,
         feedHealthy: Bool = true,
+        parkActive: Bool = true,
         themeParksWiki: ThemeParksWikiSummary? = nil,
         ride: LiveRide
     ) -> LiveParkSnapshot {
@@ -3316,7 +3394,7 @@ final class PIVOTTests: XCTestCase {
                 country: "United States",
                 timezone: "America/New_York"
             ),
-            parkActive: true,
+            parkActive: parkActive,
             feedHealthy: feedHealthy,
             fetchedAt: sourceDate,
             sourceUpdatedAt: sourceDate,

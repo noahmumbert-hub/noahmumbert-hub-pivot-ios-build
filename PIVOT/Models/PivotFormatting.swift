@@ -79,7 +79,18 @@ struct RideWaitPresentation: Equatable {
             guard let observed = ride.themeParksWikiStatus?.sourceUpdatedAt ?? ride.lastUpdated else { return unavailable() }
             let age = now.timeIntervalSince(observed)
             guard age.isFinite, age >= -120 else { return unavailable() }
-            guard age < DashboardFeedHealth.maximumAge else { return stale() }
+            // ThemeParks.wiki live responses contain current posted waits;
+            // lastUpdated is the last value change, not a polling timestamp.
+            // https://www.themeparks.wiki/api
+            let confirmedByCurrentProvider: Bool
+            if let provider = ride.themeParksWikiStatus,
+               let summary = snapshot.themeParksWiki, let fetchedAt = summary.fetchedAt {
+                let fetchAge = now.timeIntervalSince(fetchedAt)
+                confirmedByCurrentProvider = provider.status == "OPERATING"
+                    && summary.available && summary.usedForWaitTimes
+                    && fetchAge.isFinite && fetchAge >= -120 && fetchAge < DashboardFeedHealth.maximumAge
+            } else { confirmedByCurrentProvider = false }
+            guard age < DashboardFeedHealth.maximumAge || confirmedByCurrentProvider else { return stale() }
             guard let wait = ride.waitTime else {
                 return Self(title: "Open · wait not posted", waitMinutes: nil, isCurrent: true)
             }

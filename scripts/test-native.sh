@@ -144,6 +144,12 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTTests/PIVOTTests/testRideSearchRetainsQueryAcrossLiveWaitUpdatesAndFailures
       -only-testing:PIVOTUITests/PIVOTUITests/testRideSearchKeepsHistoricalSizeAndCurrentWaits
       -only-testing:PIVOTUITests/PIVOTUITests/testFavoriteRideSearchConnectsWaitsAndSupportsLargeText
+      -only-testing:PIVOTTests/PIVOTTests/testRideSearchUsesFreshProviderSnapshotForUnchangedPostedWait
+      -only-testing:PIVOTTests/PIVOTTests/testRideSearchUnchangedProviderWaitPreservesAvailabilityAndFreshnessGuards
+      -only-testing:PIVOTUITests/PIVOTUITests/testWaitsSearchAndResultsShareOneNativeGroup
+      -only-testing:PIVOTUITests/PIVOTUITests/testWaitsSearchAndResultsStayJoinedAtAccessibilitySize
+      -only-testing:PIVOTUITests/PIVOTUITests/testWaitsSharedGroupKeepsUnchangedWaitFromFreshProvider
+      -only-testing:PIVOTUITests/PIVOTUITests/testWaitsSharedGroupWithholdsWaitFromExpiredProviderFetch
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeSurfacesPreserveHoursShowsAlertsAndPlanProgress
       -only-testing:PIVOTTests/PIVOTTests/testGeneratedIllustrationsAreBundledBoundedAndAttributed
       -only-testing:PIVOTTests/PIVOTTests/testGeneratedIllustrationsRequireAnExactParkAndRideMatch

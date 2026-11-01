@@ -208,13 +208,6 @@ struct RideThumbnailView: View {
             } else { placeholder }
         }
         .frame(width: 64, height: 76)
-        .overlay(alignment: .bottomLeading) {
-            if illustration != nil {
-                Text("AI art").font(.system(size: 9, weight: .semibold))
-                    .foregroundStyle(.white).padding(.horizontal, 5).padding(.vertical, 3)
-                    .background(.black.opacity(0.78), in: Capsule()).padding(4)
-            }
-        }
         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         .overlay { RoundedRectangle(cornerRadius: 16).strokeBorder(Color.pivotBorder, lineWidth: 1) }
         .accessibilityHidden(true)
@@ -253,11 +246,35 @@ enum ReferenceParkUITestFixture {
         let featuredIDs = requestedRideID.map { [$0] } ?? (park == .epcot ? [10916, 10914, 159] : [])
         let selected = featuredIDs.isEmpty ? Array(points.prefix(3)) : featuredIDs.compactMap { id in points.first { $0.rideId == id } }
         let base = (payload["rides"] as! [[String: Any]])[0]
+        let unchangedProviderWait = ProcessInfo.processInfo.arguments.contains("--ride-search-unchanged-provider")
+        if unchangedProviderWait {
+            let expired = ProcessInfo.processInfo.arguments.contains("--ride-search-provider-fetch-expired")
+            payload["themeParksWiki"] = [
+                "available": true, "cacheStale": false,
+                "fetchedAt": now.timeIntervalSince1970 - (expired ? 901 : 0),
+                "sourceUpdatedAt": now.timeIntervalSince1970 - 901,
+                "cacheAgeSeconds": expired ? 901 : 0, "cacheHit": true,
+                "matchedRideCount": 1, "unmatchedRides": [], "role": "PRIMARY",
+                "statusSemantics": "Current provider status", "usedForWaitTimes": true,
+                "usedForOperationalEligibility": true, "usedForOperationalTraining": false,
+                "source": ["name": "UI test fixture", "label": "UI test fixture",
+                           "url": "https://example.invalid", "termsUrl": "https://example.invalid",
+                           "updateCadenceMinutes": 5]
+            ]
+        }
         payload["rides"] = selected.enumerated().map { index, point -> [String: Any] in
             var ride = base
             ride["id"] = point.rideId!; ride["name"] = point.name
             ride["land"] = park == .epcot ? (index == 1 ? "World Showcase" : "World Discovery") : "Test observations"
             ride["status"] = index == 2 ? "DOWN" : "OPEN"; ride["isOpen"] = index != 2
+            if index == 0 && unchangedProviderWait {
+                // lastUpdated is a value-change timestamp; vary the provider
+                // fetch independently to exercise fresh versus expired data.
+                ride["lastUpdated"] = now.timeIntervalSince1970 - 901
+                ride["themeParksWikiStatus"] = ["entityId": point.id, "entityName": point.name,
+                    "status": "OPERATING", "sourceUpdatedAt": now.timeIntervalSince1970 - 901,
+                    "matchedBy": "ID", "sourceAgeSeconds": 901]
+            }
             if index == 2 { ride["waitTime"] = NSNull() }
             else { ride["waitTime"] = index == 0 ? 45 : 30 }
             ride["location"] = ["latitude": point.latitude, "longitude": point.longitude]

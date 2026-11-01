@@ -65,11 +65,14 @@ struct RideListView: View {
                     .listRowBackground(Color.clear)
                     .listRowSeparator(.hidden)
             }
-            Section { controls.buttonStyle(.plain).pivotCard(padding: 14) }
-                .listRowInsets(EdgeInsets())
-                .listRowBackground(Color.clear)
-                .listRowSeparator(.hidden)
             Section {
+                controls
+                    .buttonStyle(.plain)
+                    .padding(14)
+                    .accessibilityElement(children: .contain)
+                    .accessibilityIdentifier("waits-controls-row")
+                    .listRowInsets(EdgeInsets())
+                    .listRowSeparatorTint(Color.pivotBorder)
                 if store.isLoading && store.snapshot == nil {
                     HStack(spacing: 10) {
                         ProgressView().tint(.primary)
@@ -83,17 +86,18 @@ struct RideListView: View {
                     ForEach(rides) { ride in
                         RideRowView(ride: ride, timeZone: store.selectedPark?.timeZone ?? ParkTimeFormatter.selectedParkTimeZone) { selectedRide = ride }
                             .listRowInsets(EdgeInsets())
-                            .listRowBackground(Color.pivotSurface)
                             .listRowSeparatorTint(Color.pivotBorder)
                     }
                 }
             }
+            .listRowBackground(Color.pivotSurface)
             if let nativeFooter {
                 Section { nativeFooter }
                     .listRowBackground(Color.clear)
                     .listRowSeparator(.hidden)
             }
         }
+        .accessibilityIdentifier("waits-rides-list")
         .listStyle(.insetGrouped)
         .contentMargins(.horizontal, 14, for: .scrollContent)
         .contentMargins(.top, 8, for: .scrollContent)
@@ -122,6 +126,7 @@ struct RideListView: View {
                             Label(health.badgeLabel, systemImage: "circle.fill")
                                 .font(.caption.weight(.medium))
                                 .foregroundStyle(health.isLive ? Color.pivotMint : Color.orange)
+                                .accessibilityIdentifier("waits-feed-health")
                         }
                     }
                     if dynamicTypeSize.isAccessibilitySize {
@@ -222,6 +227,7 @@ struct RideListView: View {
             Text(health.status)
                 .font(.caption2)
                 .foregroundStyle(Color.pivotMuted)
+                .accessibilityIdentifier("waits-feed-freshness")
         }
     }
 
@@ -456,6 +462,7 @@ private struct RideRowView: View {
                 .fixedSize(horizontal: false, vertical: true)
                 .accessibilityLabel(accessibilitySummary(current))
                 .accessibilityHint("Double tap to open the ride information screen")
+                .accessibilityIdentifier("ride-row-action-\(ride.id)")
 
                 NativeWaitHistoryView(ride: ride, timeZone: timeZone)
                     .padding(.horizontal, 12).padding(.vertical, 8)

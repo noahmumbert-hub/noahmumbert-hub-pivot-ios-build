@@ -1,0 +1,21 @@
+# Waits search and artwork presentation corrections
+
+Noah’s screenshot showed the Waits tab with search and filters in a large separate card above the ride list. The previous search work restored the 46-point search/sort controls and current wait subtitles; it had not joined that card to the native list. This correction places those same compact controls as the first row of the inset-grouped section containing ride results, loading and empty states. The native List still owns scrolling and virtualization. Search, sort, status filters, current wait/status labels, favorites and ride details retain their behavior.
+
+The visible “AI art” capsule is removed from illustrated thumbnails. No image pixels are modified. Ride detail screens still identify generated illustrations accurately and retain reference credits, rights and source links; generated illustrations are not described as photographs.
+
+## Provider freshness semantics
+
+The [ThemeParks.wiki API guide](https://www.themeparks.wiki/api) defines `lastUpdated` as when the value last changed. Its current park live response supplies the posted wait and status. The native client previously treated an unchanged value older than fifteen minutes as stale even if a healthy recent park fetch confirmed it. A read-only check of the published app API reproduced this for Hagrid and Flight of the Hippogriff: a recent healthy fetch contained OPERATING waits with older change timestamps.
+
+The repair is limited to the current-wait presentation resolver. An unchanged wait can remain current only with an exact ride in the selected park, a healthy recent snapshot, an available provider summary explicitly used for wait times with a recorded fresh fetch, and an OPERATING provider status. Both the source change and provider fetch timestamps must remain finite and within the future-skew bound. Finite, nonfuture timestamps, valid numeric waits, explicit stale/unknown states and failed/cache-stale/expired feed guards still apply. Legacy data without this provider confirmation retains its conservative age requirement. This does not alter observation history, forecast calculations, reopening guidance, backend data or the map resolver.
+
+## Regression and release evidence
+
+New native UI cases assert that search, sort, filters and a matching result remain fully visible together, that the real native control/result cells touch without a separate section gap, and that this holds with enlarged accessibility text. Current-open and filtered-closed results are exercised. Separate cases distinguish an unchanged wait confirmed by a fresh provider fetch from an expired provider fetch that must withhold the wait.
+
+The two existing generated-illustration journeys still verify current waits and truthful detail provenance. They additionally recognize text in the actual native ride-action screenshot to reject the removed badge. A synthetic copy carrying the former small badge calibrates that detector; it is never exported as native evidence and never changes app rendering. Actual native captures remain the visual review evidence.
+
+Release validation derives the exact test inventory from the final immutable source. A complete new run on iPhone SE (3rd generation), iPhone 16 Pro and iPhone 16 Pro Max must pass all unit/UI cases, followed by review of actual per-device captures, enlarged chart and modal targets, attribution destinations and the unsigned device archive. The earlier artwork-only revision `bb374277970cb7bbc97f6e2528221532c1323fe1` and its run 139 are preserved as historical evidence and cannot authorize publication of these corrections. Test budgets remain 180 seconds per case by default and 240 seconds maximum.
+
+The release retains the owner-confirmed 119 accepted Florida illustrations from `d30931a62de9d4ce618efc4488a59962a794ce4f`, including all 46 public illustrations unchanged. The six later images, unaccepted Frozen draft, blocked drafts and new non-Florida work remain outside this selection. Publication remains conditional on exact-source validation and verified readback from the existing SideStore feed. No main-branch or artwork-branch merge is required. Physical SideStore installation, a manual VoiceOver audit and formal contrast testing are outside the available simulator/archive evidence.
