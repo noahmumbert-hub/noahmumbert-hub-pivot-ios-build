@@ -364,10 +364,10 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 250,
-    "pendingIllustrations": 874,
-    "acceptedForRequestedStyle": 249,
-    "unfinishedForRequestedStyle": 875,
+    "acceptedIllustrations": 261,
+    "pendingIllustrations": 863,
+    "acceptedForRequestedStyle": 260,
+    "unfinishedForRequestedStyle": 864,
     "blocked": 7
   },
   "parks": [
@@ -4199,10 +4199,10 @@
           "url": "https://www.sixflags.com/magicmountain/attractions/lex-luthor-drop-doom"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "32-226834458668243",
@@ -4223,10 +4223,10 @@
           "url": "https://www.sixflags.com/magicmountain/attractions/buccaneer"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "32-229588410036496",
@@ -4252,10 +4252,10 @@
           "url": "https://rcdb.com/25.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "32-237901672045355",
@@ -4281,10 +4281,10 @@
           "url": "https://rcdb.com/12282.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "32-245180751379203",
@@ -4305,10 +4305,10 @@
           "url": "https://www.sixflags.com/magicmountain/attractions/justice-league-battle-metropolis"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "32-250289351945861",
@@ -4329,10 +4329,10 @@
           "url": "https://www.sixflags.com/magicmountain/attractions/whistlestop-train"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "32-253596019711387",
@@ -4363,10 +4363,10 @@
           "url": "https://rcdb.com/3305.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "32-255483755839553",
@@ -4392,10 +4392,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Magic_Mountain"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "32-265814784167435",
@@ -4421,10 +4421,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Magic_Mountain"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "32-266943764441961",
@@ -4450,10 +4450,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Magic_Mountain"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "32-271601048643927",
@@ -4479,10 +4479,10 @@
           "url": "https://rcdb.com/2169.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "33-8654638258163",
