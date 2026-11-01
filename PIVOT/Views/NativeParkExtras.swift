@@ -595,6 +595,7 @@ enum WaitHistoryPresentation {
 /// hit region can also receive taps intended for controls in expanded content.
 private struct WaitHistoryDisclosureStyle: DisclosureGroupStyle {
     let identifier: String
+    let chevronSize: CGFloat
 
     func makeBody(configuration: Configuration) -> some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -606,7 +607,7 @@ private struct WaitHistoryDisclosureStyle: DisclosureGroupStyle {
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .fixedSize(horizontal: false, vertical: true)
                     Image(systemName: configuration.isExpanded ? "chevron.down" : "chevron.right")
-                        .font(.caption.weight(.semibold)).foregroundStyle(.tint)
+                        .font(.system(size: chevronSize, weight: .semibold)).foregroundStyle(.tint)
                         .accessibilityHidden(true)
                 }
                 .frame(minHeight: 44, alignment: .leading)
@@ -633,6 +634,8 @@ struct NativeWaitHistoryView: View {
     @ScaledMetric(relativeTo: .caption2) private var annotationAllowance: CGFloat = 26
     @ScaledMetric(relativeTo: .caption2) private var chartHeight: CGFloat = 175
     @ScaledMetric(relativeTo: .caption2) private var timeLabelHeight: CGFloat = 20
+    @ScaledMetric(relativeTo: .caption) private var disclosureIconSize: CGFloat = 14
+    @ScaledMetric(relativeTo: .caption) private var disclosureChevronSize: CGFloat = 12
     let ride: LiveRide
     let timeZone: TimeZone
     var initiallyExpanded: Bool = false
@@ -673,7 +676,8 @@ struct NativeWaitHistoryView: View {
                             } label: {
                                 Text("Sample times").frame(minHeight: 44, alignment: .leading)
                             }.font(.caption)
-                                .disclosureGroupStyle(WaitHistoryDisclosureStyle(identifier: "wait-history-sample-toggle-\(ride.id)"))
+                                .disclosureGroupStyle(WaitHistoryDisclosureStyle(
+                                    identifier: "wait-history-sample-toggle-\(ride.id)", chevronSize: min(disclosureChevronSize, 20)))
                         }
                         Divider()
                         NativeRideLowWaitSummary(ride: ride, timeZone: timeZone)
@@ -681,7 +685,9 @@ struct NativeWaitHistoryView: View {
                 }
             } label: {
                 HStack(alignment: .firstTextBaseline, spacing: 8) {
-                    Image(systemName: "chart.bar.fill").accessibilityHidden(true)
+                    Image(systemName: "chart.bar.fill")
+                        .font(.system(size: min(disclosureIconSize, 24), weight: .medium))
+                        .accessibilityHidden(true)
                     Text("Recent observed waits · \(samples.count) \(samples.count == 1 ? "sample" : "samples")")
                         .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
                         .accessibilityIdentifier("wait-history-title-\(ride.id)")
@@ -691,7 +697,8 @@ struct NativeWaitHistoryView: View {
                     .frame(minHeight: 44, alignment: .leading)
             }
             .tint(accent)
-            .disclosureGroupStyle(WaitHistoryDisclosureStyle(identifier: "wait-history-toggle-\(ride.id)"))
+            .disclosureGroupStyle(WaitHistoryDisclosureStyle(
+                identifier: "wait-history-toggle-\(ride.id)", chevronSize: min(disclosureChevronSize, 20)))
         }
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("wait-history-\(ride.id)")

@@ -364,10 +364,10 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 53,
-    "pendingIllustrations": 1071,
-    "acceptedForRequestedStyle": 52,
-    "unfinishedForRequestedStyle": 1072,
+    "acceptedIllustrations": 29,
+    "pendingIllustrations": 1095,
+    "acceptedForRequestedStyle": 29,
+    "unfinishedForRequestedStyle": 1095,
     "blocked": 5
   },
   "parks": [
@@ -871,8 +871,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "blocked"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "blocked",
+      "releaseExclusionReason": "Requested style remains blocked; older draft not bundled"
     },
     {
       "key": "5-10914",
@@ -3472,8 +3473,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "32-6688040077038",
@@ -3554,8 +3556,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "32-48845976404786",
@@ -4553,8 +4556,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "33-27301211175206",
@@ -5445,8 +5449,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "34-9125773368852",
@@ -6572,8 +6577,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "35-2338774209375",
@@ -7674,8 +7680,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "37-28250270144895",
@@ -9825,8 +9832,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "38-226353449099304",
@@ -10080,8 +10088,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "39-11499764302332",
@@ -11642,8 +11651,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "41-119442780371544",
@@ -11887,8 +11897,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "43-12023867433197",
@@ -13220,8 +13231,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "44-12964809535981",
@@ -14292,8 +14304,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "50-89174659861007",
@@ -15814,8 +15827,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "57-24958977288293",
@@ -17165,8 +17179,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "58-3561804630704",
@@ -17194,8 +17209,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "58-6314042359822",
@@ -19406,8 +19422,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "59-39475357863823",
@@ -19430,8 +19447,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "59-39891228108462",
@@ -21004,8 +21022,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "60-12010934181385",
@@ -21033,8 +21052,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "60-22030429369577",
@@ -22997,8 +23017,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "61-36677140242096",
@@ -23958,8 +23979,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "62-17970922764622",
@@ -26913,8 +26935,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "69-30950747630874",
@@ -28428,8 +28451,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "281-42599836482641",
@@ -29591,8 +29615,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "282-37680069812368",
@@ -30250,8 +30275,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "295-35039795864383",
@@ -30764,10 +30790,10 @@
           "url": "https://www.universalorlando.com/webdata/k2/en/us/files/Documents/epic-universe-guide-for-safety-and-accessibility.pdf#page=34"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "334-14692",
@@ -30793,10 +30819,10 @@
           "url": "https://rcdb.com/20551.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "334-14693",
@@ -30880,10 +30906,10 @@
           "url": "https://rcdb.com/20550.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "339-7461499888841",
@@ -31007,8 +31033,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
-      "requestedStyleStatus": "accepted"
+      "integrationStatus": "deferred-release-scope",
+      "requestedStyleStatus": "accepted-outside-release-scope",
+      "releaseExclusionReason": "Not in the Florida-only release"
     },
     {
       "key": "339-45881653371486",
@@ -31678,5 +31705,64 @@
       "integrationStatus": "pending",
       "requestedStyleStatus": "pending"
     }
-  ]
+  ],
+  "releaseSelection": {
+    "version": "1.18.0",
+    "region": "Florida",
+    "parkIDs": [
+      5,
+      6,
+      7,
+      8,
+      21,
+      24,
+      64,
+      65,
+      67,
+      334
+    ],
+    "approvedKeys": [
+      "5-155",
+      "5-156",
+      "5-158",
+      "5-159",
+      "5-10916",
+      "6-129",
+      "6-130",
+      "6-134",
+      "6-137",
+      "6-138",
+      "6-140",
+      "6-143",
+      "6-248",
+      "6-11527",
+      "7-123",
+      "7-5476",
+      "8-110",
+      "8-112",
+      "21-161007786566085",
+      "21-250622806424631",
+      "24-62020843059756",
+      "64-6004",
+      "65-12107",
+      "67-16595",
+      "334-14688",
+      "334-14690",
+      "334-14691",
+      "334-14692",
+      "334-14695"
+    ],
+    "approvedIllustrations": 29,
+    "catalogEntries": 145,
+    "unfinishedRequestedStyle": 116,
+    "artworkHandoffCommit": "c87e4c3d6ca91da76da94f0cfd69e13ca0cfddc8",
+    "assetRevision": "ba910085ca9a8d2484fbbbc64fa073ac85c1a645",
+    "newAssetIntroduction": "a5fd40643a7470474bbf80e236177e7208042940",
+    "excludedDraftKeys": [
+      "5-2679"
+    ],
+    "existingPublicAssetsPreserved": true,
+    "ongoingWorkBranch": "feature/ride-illustrations",
+    "notes": "Only accepted Florida illustrations are bundled. Non-Florida work remains in its independent artwork branch; unaccepted and blocked drafts are excluded."
+  }
 }

@@ -78,7 +78,7 @@ In SideStore, open **Sources → +** (usually under Browse) and add:
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 ```
 
-PIVOT **1.15.1 / 100.22.2** is the latest listed update; earlier tested updates remain in version history. Install it as an update to the existing PIVOT app, using the same signing identity. Keep the app installed to preserve saved data. The source and IPA downloads are public and do not expire with Actions artifacts. Physical SideStore installation remains untested.
+The live source lists the current tested version and build; earlier tested updates remain in its version history. Install it as an update to the existing PIVOT app, using the same signing identity. Keep the app installed to preserve saved data. The source and IPA downloads are public and do not expire with Actions artifacts. Physical SideStore installation remains untested.
 
 Future updates use this same source URL. Each native update still needs a new tested IPA; SideStore downloads and signs it when you choose to update. Publishing is manual, after successful Xcode tests and archive validation. Workflow permissions are unchanged.
 
@@ -124,3 +124,10 @@ aligned and rebuild the IPA; never change only the feed's version string.
 **1.15.1 / 100.22.2** puts the crowd meter, park/date browser, and a ride forecast selector beneath Your day on the Plan tab. Waits and ride information retain posted waits and observed history. Learned data and forecast calculations are preserved.
 
 [Verified Xcode run, attempt 2](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/38332103121) passed 167 unit tests, 13 simulator UI tests, and the Release archive. The update is available through the existing SideStore source. [Validation and delivery report](docs/plan-crowd-update.md) includes the actual tab-placement check, inspected screenshot, first-attempt simulator startup failures, checksum, and unrun physical installation.
+
+
+## Florida artwork and combined native update
+
+The **1.18.0** update combines native ride search, labels for every observed-wait dot, lowest-wait predictions and best reopening estimates. The selected artwork contains **29 accepted Florida ride illustrations across ten parks**, with generated-artwork labels and attribution. Coverage is partial: 116 of the 145 Florida catalog rides still lack an illustration accepted for the requested style. New non-Florida artwork and unaccepted drafts are excluded from this release; existing public reference assets remain.
+
+[Scope, source handoff and validation requirements](docs/noah-florida-update-2026-11-01.md) explain the selected asset checkpoint and release gates. Publication uses the existing SideStore source after final three-device tests and unsigned archive verification. The separate artwork branch continues the remaining work.
