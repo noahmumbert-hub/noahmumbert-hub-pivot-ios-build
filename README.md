@@ -4,13 +4,23 @@ Add this source in SideStore → Sources → +:
 
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 
-Current update: **1.17.1 / build 100.63.1**, iOS 17.0+.
+Current update: **1.18.0 / build 100.137.1**, iOS 17.0+.
 
-Corrects SideStore update detection by advancing PIVOT to version 1.17.1. This update includes the redesigned park screens and restored PIVOT title from the previous build.
+PIVOT 1.18.0 brings the requested native wait updates together with accepted Florida artwork.
 
-Settings now shows both the app version and build number, making the installed release easy to verify. Map, zoom, full-screen, wait-time and planning controls are retained.
+• Search rides by name while keeping current waits and ride status connected.
+• See a wait label on every observed chart point, with complete local times.
+• See the lowest-wait prediction when fresh, sufficient evidence supports it.
+• See the best reopening prediction beside its supported window.
+• Read full Radar selections and supporting descriptions at larger text sizes, with clearer chart labels and enlarged hourly views.
 
-IPA SHA-256: `7b38bce3dc7f6168d1f95d8bddee766dd1c3d1e7c81008c114f2beae5e09a12b`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/41212671639).
+This release includes 29 accepted AI-generated Florida ride illustrations across ten parks, including Fyre Drill, Curse of the Werewolf and Hiccup’s Wing Gliders at Epic Universe. Coverage is partial: 29 of 145 Florida catalog rides are covered, with 116 remaining gaps. Other park artwork continues separately. Unaccepted drafts are excluded; generated-artwork labels and source attribution are retained.
+
+Wait and reopening predictions are estimates. Stale, missing or insufficient evidence continues to withhold recommendations. Existing app identity and saved preferences are preserved.
+
+Install as an update to the existing PIVOT app with the same signing identity. Keep the app installed to retain its data. The IPA is unsigned for SideStore to sign; physical-device installation remains untested.
+
+IPA SHA-256: `b014a4be74d35ec81861f2266df8a7c650130ca50e8c8b50827ce0fb413e445e`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/41288969074).
 The unsigned IPA preserves `com.noahmumbert.PIVOT` and its Live Activity extension.
 Install as an update using the same signing identity; keep the existing app installed to retain saved data.
 Native unit and simulator UI tests passed for this build. Physical SideStore installation remains untested.

@@ -7,7 +7,7 @@
   "localizedDescription": "PIVOT updates for SideStore. Uses the existing PIVOT app identity.",
   "website": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
   "websiteURL": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
-  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/812f1784b97a20d000f52fb09fecf51124808100/icon.png",
+  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/a0e64a0345c2e20ca9611d48857e3ab7993e844b/icon.png",
   "tintColor": "70DFC0",
   "apps": [
     {
@@ -16,14 +16,23 @@
       "developerName": "Noah Mumbert",
       "subtitle": "Theme park companion",
       "localizedDescription": "Park wait times, ride status, weather observations, planning, shows and Live Activities.",
-      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/812f1784b97a20d000f52fb09fecf51124808100/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/a0e64a0345c2e20ca9611d48857e3ab7993e844b/icon.png",
       "tintColor": "70DFC0",
-      "version": "1.17.1",
-      "versionDate": "2026-10-31T15:30:45Z",
-      "versionDescription": "Corrects SideStore update detection by advancing PIVOT to version 1.17.1. This update includes the redesigned park screens and restored PIVOT title from the previous build.\n\nSettings now shows both the app version and build number, making the installed release easy to verify. Map, zoom, full-screen, wait-time and planning controls are retained.",
-      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/812f1784b97a20d000f52fb09fecf51124808100/PIVOT-1.17.1-100.63.1.ipa",
-      "size": 7744392,
+      "version": "1.18.0",
+      "versionDate": "2026-11-01T09:33:36Z",
+      "versionDescription": "PIVOT 1.18.0 brings the requested native wait updates together with accepted Florida artwork.\n\n• Search rides by name while keeping current waits and ride status connected.\n• See a wait label on every observed chart point, with complete local times.\n• See the lowest-wait prediction when fresh, sufficient evidence supports it.\n• See the best reopening prediction beside its supported window.\n• Read full Radar selections and supporting descriptions at larger text sizes, with clearer chart labels and enlarged hourly views.\n\nThis release includes 29 accepted AI-generated Florida ride illustrations across ten parks, including Fyre Drill, Curse of the Werewolf and Hiccup’s Wing Gliders at Epic Universe. Coverage is partial: 29 of 145 Florida catalog rides are covered, with 116 remaining gaps. Other park artwork continues separately. Unaccepted drafts are excluded; generated-artwork labels and source attribution are retained.\n\nWait and reopening predictions are estimates. Stale, missing or insufficient evidence continues to withhold recommendations. Existing app identity and saved preferences are preserved.\n\nInstall as an update to the existing PIVOT app with the same signing identity. Keep the app installed to retain its data. The IPA is unsigned for SideStore to sign; physical-device installation remains untested.",
+      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/a0e64a0345c2e20ca9611d48857e3ab7993e844b/PIVOT-1.18.0-100.137.1.ipa",
+      "size": 14086664,
       "versions": [
+        {
+          "version": "1.18.0",
+          "buildVersion": "100.137.1",
+          "date": "2026-11-01T09:33:36Z",
+          "localizedDescription": "PIVOT 1.18.0 brings the requested native wait updates together with accepted Florida artwork.\n\n• Search rides by name while keeping current waits and ride status connected.\n• See a wait label on every observed chart point, with complete local times.\n• See the lowest-wait prediction when fresh, sufficient evidence supports it.\n• See the best reopening prediction beside its supported window.\n• Read full Radar selections and supporting descriptions at larger text sizes, with clearer chart labels and enlarged hourly views.\n\nThis release includes 29 accepted AI-generated Florida ride illustrations across ten parks, including Fyre Drill, Curse of the Werewolf and Hiccup’s Wing Gliders at Epic Universe. Coverage is partial: 29 of 145 Florida catalog rides are covered, with 116 remaining gaps. Other park artwork continues separately. Unaccepted drafts are excluded; generated-artwork labels and source attribution are retained.\n\nWait and reopening predictions are estimates. Stale, missing or insufficient evidence continues to withhold recommendations. Existing app identity and saved preferences are preserved.\n\nInstall as an update to the existing PIVOT app with the same signing identity. Keep the app installed to retain its data. The IPA is unsigned for SideStore to sign; physical-device installation remains untested.",
+          "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/a0e64a0345c2e20ca9611d48857e3ab7993e844b/PIVOT-1.18.0-100.137.1.ipa",
+          "size": 14086664,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.17.1",
           "buildVersion": "100.63.1",
