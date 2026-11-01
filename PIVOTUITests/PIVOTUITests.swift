@@ -1601,6 +1601,129 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Selected ride wait"].waitForExistence(timeout: 3), mapEvents(app))
     }
 
+    private func selectRootMapRide(_ name: String, app: XCUIApplication) {
+        let search = app.textFields["Search park places"]
+        XCTAssertTrue(search.waitForExistence(timeout: 10))
+        search.tap(); search.typeText(name + "\n")
+        app.buttons["Browse map places"].tap()
+        let row = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH 'map-place-row-' AND label BEGINSWITH %@", name)).firstMatch
+        XCTAssertTrue(row.waitForExistence(timeout: 10)); row.tap()
+        XCTAssertTrue(app.staticTexts["Selected ride wait"].waitForExistence(timeout: 10))
+    }
+
+    func testMapRefreshKeepsUnchangedProviderWaitOnActualMap() {
+        let app = rootFixture(["--reference-ui-park=5", "--ride-search-unchanged-provider"])
+        app.tabBars.buttons["Map"].tap()
+        selectRootMapRide("Guardians", app: app)
+        screenshot("Map unchanged provider wait baseline", app: app)
+        XCTAssertEqual(app.staticTexts["Selected ride wait"].label, "45 min")
+        app.buttons["Full screen map"].tap()
+        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
+        XCTAssertEqual(app.staticTexts["Selected ride wait"].label, "45 min")
+    }
+
+    private func waitForMapWait(_ text: String, app: XCUIApplication, timeout: TimeInterval = 10) {
+        let label = app.staticTexts["Selected ride wait"]
+        let predicate = NSPredicate { _, _ in label.exists && label.label == text }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: predicate, object: nil)], timeout: timeout), .completed,
+            "Map wait expected \(text); got \(label.exists ? label.label : "missing")")
+    }
+
+    private func refreshMapWait(_ text: String, app: XCUIApplication) {
+        let refresh = app.buttons["Refresh map waits"]
+        XCTAssertTrue(refresh.waitForExistence(timeout: 10)); XCTAssertTrue(refresh.isEnabled)
+        refresh.tap()
+        waitForMapWait(text, app: app)
+    }
+
+    func testMapNetworkRefreshRepeatFullScreenFailureRecoveryAndNavigation() {
+        let app = XCUIApplication()
+        app.launchArguments = ["--apple-ui-test", "--map-refresh-network-test", "--map-refresh-manual-test", "-pivot.selectedPark", "6"]
+        app.launch()
+        app.tabBars.buttons["Map"].tap()
+        selectRootMapRide("Space Mountain", app: app)
+        waitForMapWait("35 min", app: app)
+        refreshMapWait("5 min", app: app)
+        app.buttons["Full screen map"].tap()
+        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
+        refreshMapWait("Wait unavailable", app: app) // Real HTTP 503 handling.
+        XCTAssertTrue(app.staticTexts["Map feed status"].label.contains("Refresh failed"))
+        screenshot("Map HTTP failure retains location and withholds wait", app: app)
+        refreshMapWait("0 min · walk-on", app: app)
+        XCTAssertFalse(app.staticTexts["Map feed status"].label.contains("failed"))
+        refreshMapWait("Wait unavailable", app: app) // HTTP 200 with an expired provider fetch.
+        XCTAssertTrue(app.staticTexts["Map feed status"].label.contains("too old"))
+        refreshMapWait("15 min", app: app)
+        refreshMapWait("Wait unavailable", app: app) // Malformed HTTP 200 JSON.
+        XCTAssertTrue(app.staticTexts["Map feed status"].label.contains("Refresh failed"))
+        refreshMapWait("15 min", app: app)
+        screenshot("Map current wait recovers in full screen", app: app)
+        app.buttons["Close full screen map"].tap()
+        XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 5))
+        app.tabBars.buttons["Waits"].tap()
+        app.tabBars.buttons["Map"].tap()
+        waitForMapWait("15 min", app: app)
+        XCTAssertEqual(app.textFields["Search park places"].value as? String, "Space Mountain")
+        refreshMapWait("15 min", app: app)
+        app.buttons["Change park. Current park: Magic Kingdom Park"].tap()
+        let epcot = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'EPCOT'")).firstMatch
+        XCTAssertTrue(epcot.waitForExistence(timeout: 10)); epcot.tap()
+        selectRootMapRide("Guardians", app: app)
+        refreshMapWait("15 min", app: app)
+        XCTAssertTrue(app.buttons["Change park. Current park: EPCOT"].exists)
+    }
+
+    func testMapNetworkAutoRefreshContinuesInFullScreenAndAfterForegroundReturn() {
+        let app = XCUIApplication()
+        app.launchArguments = ["--apple-ui-test", "--map-refresh-network-test", "-pivot.selectedPark", "6"]
+        app.launch()
+        app.tabBars.buttons["Map"].tap()
+        selectRootMapRide("Space Mountain", app: app)
+        app.buttons["Full screen map"].tap()
+        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
+        let label = app.staticTexts["Selected ride wait"]
+        let initial = label.label
+        let updated = NSPredicate { _, _ in label.exists && label.label != initial && label.label.hasSuffix(" min") }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: updated, object: nil)], timeout: 15), .completed,
+            "The production foreground polling loop must update the visible full-screen map")
+        screenshot("Map automatic HTTP refresh in full screen", app: app)
+        let beforeBackground = label.label
+        XCUIDevice.shared.press(.home)
+        app.activate()
+        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 10))
+        let resumed = NSPredicate { _, _ in label.exists && label.label != beforeBackground && label.label.hasSuffix(" min") }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: resumed, object: nil)], timeout: 15), .completed)
+        app.buttons["Close full screen map"].tap()
+        app.tabBars.buttons["Plan"].tap()
+        app.tabBars.buttons["Map"].tap()
+        XCTAssertTrue(label.waitForExistence(timeout: 10))
+        XCTAssertTrue(label.label.hasSuffix(" min"))
+    }
+
+    func testLiveMapRefreshReportsRealProviderStatus() {
+        let app = XCUIApplication()
+        app.launchArguments = ["-pivot.selectedPark", "6"]
+        app.launch()
+        XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 15))
+        app.tabBars.buttons["Map"].tap()
+        selectRootMapRide("Prince Charming", app: app)
+        let refresh = app.buttons["Refresh map waits"]
+        let ready = NSPredicate { _, _ in refresh.exists && refresh.isEnabled }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 30), .completed)
+        refresh.tap()
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 30), .completed)
+        let status = app.staticTexts["Map feed status"]
+        let observation = "LIVE MAP OBSERVATION: \(status.label); selected ride: \(app.staticTexts["Selected ride wait"].label)"
+        print(observation)
+        let evidence = XCTAttachment(string: observation); evidence.lifetime = .keepAlways; add(evidence)
+        screenshot("Live provider map refresh observation", app: app)
+        XCTAssertTrue(status.label.hasPrefix("Live"), observation)
+        // Real service failures remain failures; no synthetic fallback is used.
+        app.buttons["Full screen map"].tap()
+        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["Map feed status"].label.hasPrefix("Live"))
+    }
+
     func testMapFullScreenPreservesSelectionFiltersAndCurrentWait() {
         let app = mapFixtureApp()
         chooseMapCategory("Rides", app: app)
