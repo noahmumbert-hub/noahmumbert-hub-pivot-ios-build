@@ -47,7 +47,7 @@
     },
     {
       "key": "32-60144663924757",
-      "rideName": "Sylvester’s Pounce and Bounce",
+      "rideName": "Sylvester\u2019s Pounce and Bounce",
       "status": "blocked",
       "tool": "built-in-imagegen",
       "error": "HTTP 400 moderation_blocked; output stage; category other",
@@ -56,7 +56,7 @@
     },
     {
       "key": "32-188464574626467",
-      "rideName": "Daffy’s Forest Four-Wheelers",
+      "rideName": "Daffy\u2019s Forest Four-Wheelers",
       "status": "blocked",
       "tool": "built-in-imagegen",
       "error": "HTTP 400 moderation_blocked; output stage; category other",
@@ -101,7 +101,7 @@
     },
     {
       "key": "39-130166750718998",
-      "rideName": "SUPERGIRL™ Sky Flight",
+      "rideName": "SUPERGIRL\u2122 Sky Flight",
       "status": "blocked",
       "tool": "built-in-imagegen",
       "error": "HTTP 400 moderation_blocked; output stage; category other",
@@ -128,7 +128,7 @@
     },
     {
       "key": "43-173711916451594",
-      "rideName": "GOTHAM CITY™ Crime Wave",
+      "rideName": "GOTHAM CITY\u2122 Crime Wave",
       "status": "blocked",
       "tool": "built-in-imagegen",
       "error": "HTTP 400 moderation_blocked; output stage; category other",
@@ -137,7 +137,7 @@
     },
     {
       "key": "43-201853394465730",
-      "rideName": "THE RIDDLER™ Revenge",
+      "rideName": "THE RIDDLER\u2122 Revenge",
       "status": "blocked",
       "tool": "built-in-imagegen",
       "error": "HTTP 400 moderation_blocked; output stage; category other",
@@ -146,7 +146,7 @@
     },
     {
       "key": "43-224520076735759",
-      "rideName": "BATMAN THE DARK KNIGHT™",
+      "rideName": "BATMAN THE DARK KNIGHT\u2122",
       "status": "blocked",
       "tool": "built-in-imagegen",
       "error": "HTTP 400 moderation_blocked; output stage; category other",
@@ -160,6 +160,51 @@
       "tool": "built-in-imagegen",
       "error": "HTTP 400 moderation_blocked; output stage; category sexual",
       "requestID": "2f6d0802-30e3-44e7-b273-2663c617efae",
+      "action": "Do not retry or work around this block. No generated image returned."
+    },
+    {
+      "key": "5-466",
+      "rideName": "Gran Fiesta Tour Starring The Three Caballeros",
+      "status": "blocked",
+      "tool": "built-in-imagegen",
+      "error": "HTTP 400 moderation_blocked; output stage; category other",
+      "requestID": "0c78f260-fdb2-4f79-849c-715c2493e0fc",
+      "action": "Do not retry or work around this block. No generated image returned."
+    },
+    {
+      "key": "6-127",
+      "rideName": "Under the Sea - Journey of The Little Mermaid",
+      "status": "blocked",
+      "tool": "built-in-imagegen",
+      "error": "HTTP 400 moderation_blocked; input stage; category public-figure",
+      "requestID": "fbc4ae1c-c1c5-40bb-ab48-a2f839d03f6c",
+      "action": "Do not retry or work around this block. No generated image returned."
+    },
+    {
+      "key": "6-135",
+      "rideName": "Mad Tea Party",
+      "status": "blocked",
+      "tool": "built-in-imagegen",
+      "error": "HTTP 400 moderation_blocked; output stage; category other",
+      "requestID": "bad4e474-ed15-412a-90fe-f14bd0aab87a",
+      "action": "Do not retry or work around this block. No generated image returned."
+    },
+    {
+      "key": "6-136",
+      "rideName": "Peter Pan's Flight",
+      "status": "blocked",
+      "tool": "built-in-imagegen",
+      "error": "HTTP 400 moderation_blocked; output stage; category other",
+      "requestID": "2ea831b0-c323-434d-916d-3438632a93e9",
+      "action": "Do not retry or work around this block. No generated image returned."
+    },
+    {
+      "key": "6-142",
+      "rideName": "The Many Adventures of Winnie the Pooh",
+      "status": "blocked",
+      "tool": "built-in-imagegen",
+      "error": "HTTP 400 moderation_blocked; output stage; category other",
+      "requestID": "bea18158-29de-4c07-944e-5a35b5f1a92c",
       "action": "Do not retry or work around this block. No generated image returned."
     }
   ]

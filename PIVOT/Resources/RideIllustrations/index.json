@@ -3,6 +3,49 @@
   "records": [
     {
       "parkId": 5,
+      "rideId": 153,
+      "rideName": "The Seas with Nemo & Friends",
+      "alt": "Illustrated The Seas with Nemo & Friends at EPCOT",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:39:58.537380+00:00",
+      "originalSHA256": "5dc88e35d6b975086aed2df99a0718e54d87baa9c86f4c4e0a71ac2900be7c9c",
+      "review": "Accepted: Actually viewed final built-in factual correction. The accurate salmon-orange scalloped clam car, shared ribbed front edge, source seated clothed parent and child, orange seat and row of dim clam cars remain. Unsupported blue coral silhouettes were removed; background is now the source-documented dark indoor ambience. Realistic materials and restrained blue-purple lighting retained. Generated artwork, not a documentary photograph.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/vision-dam/digital/parks-platform/parks-global-assets/disney-world/attractions/the-sea-with-nemo-and-friends/240824WS-300219-1-1-16x9.jpg?2025-09-15T21:58:04+00:00",
+          "kind": "literal-image-url-in-source",
+          "alt": "",
+          "sourceURL": "https://disneyworld.disney.go.com/attractions/epcot/seas-with-nemo-and-friends/?CMP=OKC-107785_YX_WDW_attraction_theseaswithnemofriends_NA",
+          "credit": "Walt Disney World Resort / Disney (official photographic reference publisher)",
+          "license": "Copyright Disney/source photographer; rights retained",
+          "licenseURL": "https://disneyworld.disney.go.com/attractions/epcot/seas-with-nemo-and-friends/?CMP=OKC-107785_YX_WDW_attraction_theseaswithnemofriends_NA",
+          "sha256": "d0b8cb12d60c63d68ce86006091caa12b73d2c82492291b9e41e2b35942aa8c2",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected official Walt Disney World photo replaces the small exterior candidate. It shows the actual salmon/orange clam-shell Omnimover car with high scalloped shell back, ribbed curved front/shared restraint edge, orange seat and source dark base, with an ordinary clothed parent and child seated together in the real dark-ride vehicle. Other clam cars are softly visible behind under actual dim indoor light. Preserve only this documented car/guest section and manufactured shell texture; no invented full track, underwater live fish, projected characters or scene outside the photo."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "5-153-thumbnail.jpg",
+      "thumbnailSHA256": "0a4712947e5095cc50030c945a536f622891964eada17305595274af932a87bd",
+      "thumbnailBytes": 17025,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "5-153-detail.jpg",
+      "detailSHA256": "ffbb6ff1e2b09edd6f5138ac66afe6d3c196a04e0de1c2ab6309aae2b7e32d69",
+      "detailBytes": 102061,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 5,
       "rideId": 155,
       "rideName": "Journey Into Imagination With Figment",
       "alt": "Illustrated Journey Into Imagination With Figment at EPCOT",
@@ -163,6 +206,49 @@
     },
     {
       "parkId": 5,
+      "rideId": 160,
+      "rideName": "Test Track",
+      "alt": "Illustrated Test Track at EPCOT",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:55:37.751083+00:00",
+      "originalSHA256": "16733d9b4d84f89851a927b5847f4a2197d545cc4e30a945f11ce299282cc83c",
+      "review": "Accepted: Actually viewed current official source photo and generated portrait; gray-blue cabin/black padded backrest, actual yellow-edged diagonal seat belts and side grab rail retained with ordinary adult source riders. Blurred scene stays generic motion ambience without old neon course, invented full car or unsupported future footage. Generated artwork, not a documentary photo.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/vision-dam/digital/parks-platform/parks-global-assets/disney-world/attractions/test-track/0926ZL_07796OK_xak-16x9.jpg?2025-11-14T18:00:16+00:00",
+          "kind": "literal-image-url-in-source",
+          "alt": "",
+          "sourceURL": "https://disneyworld.disney.go.com/attractions/epcot/test-track/",
+          "credit": "Walt Disney World Resort / Disney (official photographic reference publisher)",
+          "license": "Copyright Disney/source photographer; rights retained",
+          "licenseURL": "https://disneyworld.disney.go.com/attractions/epcot/test-track/",
+          "sha256": "fd4dc609cd58922475501108aad70083f9bd986dc17a00d4fb3ef1a9c345eb68",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected genuine official Test Track photo belongs to the current General Motors version verified by the operator's current page. It shows two ordinary clothed adult guests inside the actual gray-blue molded ride-car cabin with black padded head/back rest, real diagonal yellow-edged dark seat belts and black side grab rail. The blurred blue/cream indoor set conveys real motion; no old Chevrolet design studio, neon wireframe course or unphotographed future scene is used. Preserve this photographed cabin, belt placement and source seated posture, without inventing an unseen full car, wheels or track."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "5-160-thumbnail.jpg",
+      "thumbnailSHA256": "c877b911f842a22bbd2ffdcd157fc641e878d9e206cf7c815be220f3bc3a7a80",
+      "thumbnailBytes": 19400,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "5-160-detail.jpg",
+      "detailSHA256": "12bcde522ddacf89f22c8f6a66da34414ea0aabe29aeab6bf20b3699079d180a",
+      "detailBytes": 115996,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 5,
       "rideId": 2679,
       "rideName": "Frozen Ever After",
       "alt": "Illustrated Frozen Ever After at EPCOT",
@@ -235,6 +321,49 @@
       "detailFile": "5-10916-detail.jpg",
       "detailSHA256": "72ab32811f13614c9482c61277d8f1816cc2c5c49392ac153fa663dee883b13a",
       "detailBytes": 169657,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 5,
+      "rideId": 16467,
+      "rideName": "Soarin' Across America",
+      "alt": "Illustrated Soarin' Across America at EPCOT",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:34:29.792790+00:00",
+      "originalSHA256": "449f84ca61a6ac4f5fabd7ba16fc98a62dfa78109520f36dfbe5393755bd5a85",
+      "review": "Accepted: Actually viewed the official source photo and generated portrait. Existing EPCOT entrance preserves physical red wing on silver pedestal, perforated metal brackets and practical lamps, blue illuminated mountain lines, silver queue rails, curved portal and cream cloud-like ceiling. No old-film scene, invented America footage, hidden theater or gondolas. Source is the former-film EPCOT official gallery; exact capture date and current signage/paint are not verified. Generated representative entrance artwork, not a documentary photograph.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/gallery/attractions/epcot/soarin/soarin-gallery04.jpg?1760717033399",
+          "kind": "literal-image-url-in-source",
+          "alt": "",
+          "sourceURL": "https://disneyworld.disney.go.com/en_CA/attractions/epcot/soarin-around-world/",
+          "credit": "Walt Disney World Resort / Disney (official photographic reference publisher)",
+          "license": "Copyright Disney/source photographer; rights retained",
+          "licenseURL": "https://disneyworld.disney.go.com/en_CA/attractions/epcot/soarin-around-world/",
+          "sha256": "72477ca2fb2b69470153845e2913ca2ab90b654b10e6788a915f9bfc0f6d4fe0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Current official EPCOT page verifies the named Soarin' Across America film update. The selected real photo is the existing EPCOT Soarin' entrance from its former-film official gallery, not the rejected Great Wall promotional composite, Sydney footage or Disneyland photos. Depict only this photographed empty blue entry/queue section with white-blue illuminated mountain-line pattern, silver queue rails and curved portal, cream overhead cloud-like panels, and the physical red wing-shaped ornament on silver pedestal with actual perforated metal crosspieces/practical lamps. Do not show the old world film, invent the current America footage or hidden theater/gondolas, or copy sign lettering. This is a source-documented representative entrance; exact capture date and current signage/paint are not verified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "5-16467-thumbnail.jpg",
+      "thumbnailSHA256": "50078c962e3339591b920ba6114a2e61f134773d2d84f070986ecd597dbe9471",
+      "thumbnailBytes": 18617,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "5-16467-detail.jpg",
+      "detailSHA256": "d1bb937b2dc333b052166ab710e665ce9975f5bd18ee53319794cef5d849c860",
+      "detailBytes": 127583,
       "detailPixels": [
         768,
         960
@@ -315,6 +444,135 @@
       "detailFile": "6-130-detail.jpg",
       "detailSHA256": "9413cf811b9d75e018d808a741d9716a46b0ad3148fda2f6f8721b6ce2f5b54b",
       "detailBytes": 190053,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 6,
+      "rideId": 131,
+      "rideName": "Buzz Lightyear’s Space Ranger Spin",
+      "alt": "Illustrated Buzz Lightyear’s Space Ranger Spin at Magic Kingdom Park",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:48:59.285787+00:00",
+      "originalSHA256": "01ce97f137db2dc8d1c8e98b5b82dd6668335d03cbcfec6a2ba3c57c361eb7dd",
+      "review": "Accepted: Actually viewed source and generated portrait. Current updated purple-gray/lime star cruiser, handheld colored blasters, ordinary seated source family, physical green alien set figures and illuminated red-yellow portal preserve the documented newer attraction. Original car insignia remains part of the source vehicle; no new app logo/UI or unsupported hidden hardware.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/vision-dam/digital/parks-platform/parks-global-assets/disney-world/attractions/buzz-lightyears-space-ranger-spin/0317ZK_1918AFN_R2_xak-16x9.jpg?2026-05-21T17:35:33+00:00",
+          "kind": "literal-image-url-in-source",
+          "alt": "",
+          "sourceURL": "https://disneyworld.disney.go.com/en_CA/attractions/magic-kingdom/buzz-lightyear-space-ranger-spin/",
+          "credit": "Walt Disney World Resort / Disney (official photographic reference publisher)",
+          "license": "Copyright Disney/source photographer; rights retained",
+          "licenseURL": "https://disneyworld.disney.go.com/",
+          "sha256": "0f781ab255fafb33337a84124104ea4b54694ddcc70ed0d52b78fc70749860b7",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Current official photo, supported by the current operator page's reopened enhancements, shows the updated purple/gray star-cruiser car with lime green trim and actual two ordinary clothed source guests holding the new handheld colored blasters. Physical green three-eyed alien figures and a red/yellow circular escape-hatch set with turquoise illuminated strips and star-speckled dark backdrop surround the car. Preserve the documented new vehicle, handheld blasters, source set and seated guests; do not substitute the older fixed-gun car or invent hidden hardware. Omit all set lettering and logos."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "6-131-thumbnail.jpg",
+      "thumbnailSHA256": "d51101d38aa180c2c1adb9513b6f08335c4b0b4f43f27873132ba0d5c251bbcc",
+      "thumbnailBytes": 26006,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "6-131-detail.jpg",
+      "detailSHA256": "38b11c77005896a4c66971097ed25f9d85f0f322bf5349e029bb9aed711bcd27",
+      "detailBytes": 130550,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 6,
+      "rideId": 132,
+      "rideName": "Dumbo the Flying Elephant",
+      "alt": "Illustrated Dumbo the Flying Elephant at Magic Kingdom Park",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:49:39.846338+00:00",
+      "originalSHA256": "9500749527b53bb6d841732a77497e2caccf87d827d072cf5091cf1f21d2054f",
+      "review": "Accepted: Actually viewed source and generated portrait. The actual gray-blue Dumbo car with coral cap/green trim/pale scalloped collar, orange compartment, ordinary parent-child seating, gold hinge and connected blue radial arm/fountain replace the wrong related Smellephant statue. Realistic painted fiberglass and dusk practical lighting.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/parks-and-tickets/attractions/magic-kingdom/dumbo-the-flying-elephant/dumbo-the-flying-elephant-00.jpg?1761054168264",
+          "kind": "literal-image-url-in-source",
+          "alt": "",
+          "sourceURL": "https://disneyworld.disney.go.com/attractions/magic-kingdom/dumbo-the-flying-elephant/",
+          "credit": "Walt Disney World Resort / Disney (official photographic reference publisher)",
+          "license": "Copyright Disney/source photographer; rights retained",
+          "licenseURL": "https://disneyworld.disney.go.com/",
+          "sha256": "9921bc8a43096696501d61acbf42a2b843ee95b54e6fbccfd9420614659d2251",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Replace the rejected Smellephants-on-Parade related-card statue: the selected official Dumbo ride photograph actually shows the gray-blue molded elephant vehicle with wide ears, coral-orange cap, green neck trim, scalloped pale collar, orange passenger compartment and an ordinary clothed parent and child seated together. Actual blue radial arm attaches through the ornate gold hinge assembly beside fountain water, with other real elephant cars softly behind. Preserve source car proportions, real seat/arm connection and photographed family posture; do not add another statue, a full unseen hub or invented ride geometry."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "6-132-thumbnail.jpg",
+      "thumbnailSHA256": "75747ee61a8541a9ac77151784da9b6a57dd00d39689f4f085dd55858c78b576",
+      "thumbnailBytes": 25962,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "6-132-detail.jpg",
+      "detailSHA256": "048a807375be72145aa202487505bcef70abbb103afec1dd690dec674e3f37b5",
+      "detailBytes": 141533,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 6,
+      "rideId": 133,
+      "rideName": "\"it's a small world\"",
+      "alt": "Illustrated \"it's a small world\" at Magic Kingdom Park",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:50:24.082931+00:00",
+      "originalSHA256": "956ae6469a4d42867859c357d784317f3e6d54e9da21bc2c2da29c50ccddbcb5",
+      "review": "Accepted: Actually viewed source and generated portrait. Physical red-gold/white-ruff doll with auburn yarn hair/black bowed hat and silver staff, layered European scenic flats and small manufactured stage dolls preserved across actual dark ride water. Real manufactured set, not living people or another park exterior.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/parks-and-tickets/attractions/magic-kingdom/its-a-small-world/its-a-small-world-00.jpg?1779824490382",
+          "kind": "literal-image-url-in-source",
+          "alt": "",
+          "sourceURL": "https://disneyworld.disney.go.com/attractions/magic-kingdom/its-a-small-world/",
+          "credit": "Walt Disney World Resort / Disney (official photographic reference publisher)",
+          "license": "Copyright Disney/source photographer; rights retained",
+          "licenseURL": "https://disneyworld.disney.go.com/",
+          "sha256": "7e5d3b392345670d2fe0f48f86c72e9c22e15ae0add0a5b839625ff49c9fc4da",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The selected real official Magic Kingdom interior photograph shows actual manufactured small-world set pieces: a large auburn-yarn-haired doll at left in red-and-gold costume with white ruff and black hat decorated with bows, holding a silver staff; colorful flat scenic European houses, geometric Eiffel-tower-like prop and small blue/white costumed dolls on a round stage are visible behind across dark ride water. Preserve the source toy/animatronic construction, fabric/paint materials and documented scenic composition; not live human performers, a real city or Disneyland exterior."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "6-133-thumbnail.jpg",
+      "thumbnailSHA256": "c652eba88537d6e11bef07189c8e2b69ea3e97843638c1f19702c3779d0203a3",
+      "thumbnailBytes": 25446,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "6-133-detail.jpg",
+      "detailSHA256": "a114235a69edbd6379cc7deeae3e542647c98cc150b1221da155c089ad0417a6",
+      "detailBytes": 166491,
       "detailPixels": [
         768,
         960
@@ -482,6 +740,49 @@
     },
     {
       "parkId": 6,
+      "rideId": 141,
+      "rideName": "The Magic Carpets of Aladdin",
+      "alt": "Illustrated The Magic Carpets of Aladdin at Magic Kingdom Park",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:54:15.242006+00:00",
+      "originalSHA256": "5f9d60b6801a4e2c9cf864c4159cf5039014fe4372cf22b3ec98d5a67c668631",
+      "review": "Accepted: Actually viewed source and generated portrait; photographed red-orange carpet seat/blue edge, ordinary seated source riders, yellow patterned following car and actual Adventureland bazaar details retained. No undocumented lifting mechanism or full ride plan shown.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/parks-and-tickets/attractions/magic-kingdom/the-magic-carpets-of-aladdin/magic-carpets-of-aladdin-00.jpg?1699630941487",
+          "kind": "literal-image-url-in-source",
+          "alt": "",
+          "sourceURL": "https://disneyworld.disney.go.com/attractions/magic-kingdom/magic-carpets-of-aladdin/",
+          "credit": "Walt Disney World Resort / Disney (official photographic reference publisher)",
+          "license": "Copyright Disney/source photographer; rights retained",
+          "licenseURL": "https://disneyworld.disney.go.com/attractions/magic-kingdom/magic-carpets-of-aladdin/",
+          "sha256": "1bf2fc0d21c8ee0cccc8c98be2cf7b9d35181c59817930cb70c3437d87c55d9a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected genuine official Magic Carpets photograph documents a close section of the actual flying carpet vehicle, with curved red/orange bench and pale blue edge, two ordinary clothed source riders seated together, a second yellow/pink/blue patterned carpet car behind and the real brown/red decorated Adventureland bazaar roof. Preserve this photographed seat/body section and natural guest arrangement; the underside, lifting arm and central hub are not visible and must not be invented. The result is a source-based close ride portrait rather than a full undocumented mechanism."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "6-141-thumbnail.jpg",
+      "thumbnailSHA256": "ede5c6f63151413e70a901c97c01c512af329fd1daacafec5dffea548a7e3729",
+      "thumbnailBytes": 22412,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "6-141-detail.jpg",
+      "detailSHA256": "008fb65b0b55894341005548950d159c9065a05bf910ca357f1d69f8e01c5dd2",
+      "detailBytes": 130563,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 6,
       "rideId": 143,
       "rideName": "Tomorrowland Speedway",
       "alt": "Illustrated Tomorrowland Speedway at Magic Kingdom Park",
@@ -522,6 +823,49 @@
     },
     {
       "parkId": 6,
+      "rideId": 161,
+      "rideName": "Prince Charming Regal Carrousel",
+      "alt": "Illustrated Prince Charming Regal Carrousel at Magic Kingdom Park",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:54:45.718405+00:00",
+      "originalSHA256": "a5db758d91b2ae454538841d4471b106b2bda7800cbcdaee37f64ebe1f9866c5",
+      "review": "Accepted: Actually viewed source and generated portrait; glossy white carved horse with pale-blue bridle/gold hardware, actual twisted gold pole and purple/cream canopy retained with ordinary clothed parent supporting the source child. Realistic carved/painted materials and practical bulbs.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/parks-and-tickets/attractions/magic-kingdom/prince-charming-regal-carrousel/prince-charming-regal-carrousel-00.jpg?1749597664401",
+          "kind": "literal-image-url-in-source",
+          "alt": "",
+          "sourceURL": "https://disneyworld.disney.go.com/attractions/magic-kingdom/prince-charming-regal-carrousel/",
+          "credit": "Walt Disney World Resort / Disney (official photographic reference publisher)",
+          "license": "Copyright Disney/source photographer; rights retained",
+          "licenseURL": "https://disneyworld.disney.go.com/attractions/magic-kingdom/prince-charming-regal-carrousel/",
+          "sha256": "403ac6f19a92e522423125d292208c3c78a6a81d6f79f6d5862f47999e29ef7c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected genuine official photo shows Prince Charming Regal Carrousel's real glossy white carved horse with pale-blue bridle, gold hardware and saddle accents beside its actual twisted gold vertical pole. An ordinary clothed parent supports a clothed child seated on the horse, with another white carousel horse and the real purple/cream canopy panels, mirrors and perimeter bulbs softly behind. Preserve actual manufactured horse anatomy and source guest seating/support pose; do not invent unsupported legs, a different horse or a whole carousel structure."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "6-161-thumbnail.jpg",
+      "thumbnailSHA256": "1e55496663ece673cfb8cf51e3f1fe8bc0bc69607d31a91178891134d5f15f13",
+      "thumbnailBytes": 23157,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "6-161-detail.jpg",
+      "detailSHA256": "d8f124c7c294f5a7877489ca99651bde115aad32756c6de20c490820a5d97005",
+      "detailBytes": 141299,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 6,
       "rideId": 248,
       "rideName": "Astro Orbiter",
       "alt": "Illustrated Astro Orbiter at Magic Kingdom Park",
@@ -555,6 +899,49 @@
       "detailFile": "6-248-detail.jpg",
       "detailSHA256": "151faaaaf668aa01ea4f903577328f8cd06637cd4a58ad3c7d3963c890036f4f",
       "detailBytes": 172104,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 6,
+      "rideId": 1190,
+      "rideName": "Tomorrowland Transit Authority PeopleMover",
+      "alt": "Illustrated Tomorrowland Transit Authority PeopleMover at Magic Kingdom Park",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:55:08.538705+00:00",
+      "originalSHA256": "2db0d34292bbac60d85f41fc2e158ced18be51b43f515dc282680f62e9ca65d7",
+      "review": "Accepted: Actually viewed source and generated portrait; actual blue PeopleMover seat/side wall, silver outer rail and pale canopy retained with two ordinary adult source guests and source white arched Tomorrowland structure. No invented wheels, motor or whole train.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/vision-dam/digital/parks-platform/parks-global-assets/disney-world/attractions/tomorrowland-transit-authority-peoplemover/240824WS-_0708-GF-16x9.jpg?2026-05-14T16:53:25+00:00",
+          "kind": "literal-image-url-in-source",
+          "alt": "",
+          "sourceURL": "https://disneyworld.disney.go.com/attractions/magic-kingdom/tomorrowland-transit-authority-peoplemover/",
+          "credit": "Walt Disney World Resort / Disney (official photographic reference publisher)",
+          "license": "Copyright Disney/source photographer; rights retained",
+          "licenseURL": "https://disneyworld.disney.go.com/attractions/magic-kingdom/tomorrowland-transit-authority-peoplemover/",
+          "sha256": "d520f285f791448a2464a84ab6d0ab6fe9d8349bddd2f275770000da0b80b79e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected current official photograph documents the interior of an actual blue PeopleMover tram car with a dark blue bench, low blue side wall and the real silver outside rail below a flat pale overhead canopy. Two ordinary clothed adult source guests are seated, with the source white arched Tomorrowland structure and green trees softly beyond. Preserve this close photographed car/seat and genuine visible surroundings; the linear motor, wheels and complete elevated track are not visible, so do not invent their mechanism or a whole train."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "6-1190-thumbnail.jpg",
+      "thumbnailSHA256": "4a78e3eec1674820067bdc114d094cfda15df4f95c89882c8fd46b9f42cffc55",
+      "thumbnailBytes": 16674,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "6-1190-detail.jpg",
+      "detailSHA256": "265caebb503a6b3392020878e7e1f1074f4998c6a4079d18be981564ea092b5f",
+      "detailBytes": 93807,
       "detailPixels": [
         768,
         960
@@ -762,6 +1149,92 @@
     },
     {
       "parkId": 21,
+      "rideId": 41297957342255,
+      "rideName": "Pipeline: The Surf Coaster",
+      "alt": "Illustrated Pipeline: The Surf Coaster at SeaWorld Orlando",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:46:30.635718+00:00",
+      "originalSHA256": "f6185b23834b7478cfdd3f0421496a8ca5b8dc40250f9f1b823e33be2a71597d",
+      "review": "Accepted: Actually viewed source and generated portrait; real orange-yellow surfboard deck, standing riders, orange dynamic restraints, gray seat arms and wheel connections preserved on teal banked track and gray cylindrical support. Realistic steel and restrained dusk; no invented full course.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://seaworld.com/orlando/-/media/migrated-media/seaworld-orlando/images/rides/pipeline/700x453-swo-2023-coasters-pipeline.jpg?h=453&w=700&la=en&hash=FB6C9DAF63249E6D205F514A819447B3",
+          "kind": "image",
+          "alt": "Pipeline The Surf Coaster at SeaWorld Orlando",
+          "sourceURL": "https://seaworld.com/orlando/roller-coasters/pipeline/",
+          "credit": "SeaWorld Orlando (official photographic reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://seaworld.com/orlando/",
+          "sha256": "f912c5f5b5a515ad514dd2b37babec92fba5766ac9d910a611c499faee234d44",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected official photograph shows Pipeline's real orange/yellow surfboard-like flat train deck on teal tubular running rails and box spine, with gray cylindrical support, actual gray vertical dynamic seat-support arms and undercarriage/wheel bogies physically connected to the rail. Ordinary clothed standing riders have the actual orange over-the-shoulder restraints and teal seat backs. Preserve this documented banked section, standing rider posture and manufactured geometry; do not turn it into a seated, floorless or inverted coaster, or invent the hidden course."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "21-41297957342255-thumbnail.jpg",
+      "thumbnailSHA256": "1d209980500f79566b8f8e48a5ad3f7080397c1dcd863af02e4b415201855b4d",
+      "thumbnailBytes": 27094,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "21-41297957342255-detail.jpg",
+      "detailSHA256": "c18b1a0561b6c2ec99da749d4151eca64b5abbf61d62c30d6e11581b59656797",
+      "detailBytes": 170465,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 21,
+      "rideId": 132368262506504,
+      "rideName": "Kraken®",
+      "alt": "Illustrated Kraken® at SeaWorld Orlando",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:43:40.413187+00:00",
+      "originalSHA256": "1ef423ece6748e5a719a9306c8a352e3bd25c92c8bfa269c517388e7d7e29e1d",
+      "review": "Accepted: Actually viewed source and generated portrait; green track/spine, source teal four-across floorless train attached above the rail through the banked inversion, source restraints and blue-gray support/catwalk materials preserved. Portrait re-composes the source section; no full track layout shown.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://seaworld.com/orlando/-/media/migrated-media/seaworld-orlando/images/rides/kraken/1900x700/swo_rides_kraken_webbanner.png?h=251&w=1801&la=en&hash=20BE206AA6A46D6649F4238C07E28DF3",
+          "kind": "image",
+          "alt": "Kraken RD Banner",
+          "sourceURL": "https://seaworld.com/orlando/roller-coasters/kraken/",
+          "credit": "SeaWorld Orlando (official photographic reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://seaworld.com/orlando/",
+          "sha256": "0b21c2ff22c0a091d5d4fed8fae7326a3cdd4c673be69e014bfa56d1dc4c8717",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected official narrow banner shows the real green steel rails/spine and green maintenance stairs/catwalk with blue-gray support columns, and a teal four-across floorless train banked/inverted on its real green rail. The operator confirms this is an above-track floorless pedestal-seating coaster, not a hanging inverted train. Depict only the visible banked track/train section with actual source restraints and ordinary clothed guests; the banner crops parts of the train, so do not invent a full train, unseen route or detailed hidden restraint hardware."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "21-132368262506504-thumbnail.jpg",
+      "thumbnailSHA256": "ba22e4bc1873baf9c40e0b33058c8445e73db5ad0912f1e70f8de5e50176e9b6",
+      "thumbnailBytes": 19535,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "21-132368262506504-detail.jpg",
+      "detailSHA256": "bca7575e14eae379d3f19599fc12377140a713dd80f7235f5b327cf46847d484",
+      "detailBytes": 125452,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 21,
       "rideId": 161007786566085,
       "rideName": "Sky Tower",
       "alt": "Illustrated Sky Tower at SeaWorld Orlando",
@@ -802,6 +1275,178 @@
     },
     {
       "parkId": 21,
+      "rideId": 196344009848927,
+      "rideName": "Journey to Atlantis",
+      "alt": "Illustrated Journey to Atlantis at SeaWorld Orlando",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:51:53.648136+00:00",
+      "originalSHA256": "69bee924b5da1bd2dd24f60c82a34072867b77a52f7c4948c0cb3bcaf989acfb",
+      "review": "Accepted: Actually viewed final factual edit and source photo. Unsupported extended tall drop/building removed, keeping the actual gray-white red-trim boat, ordinary source riders, white splash, tan rockwork, short concrete flume walls and dark rails. Source-visible section only with realistic water and dusk lighting.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://seaworld.com/orlando/-/media/migrated-media/seaworld-orlando/images/rides/journey-to-atlantis/1900x700/swo_journey_to_atlantis.png?h=300&w=2161&la=en&hash=142FBC1160985221C1E76FAF528BF792",
+          "kind": "image",
+          "alt": "Journey to Atlantis ",
+          "sourceURL": "https://seaworld.com/orlando/rides/journey-to-atlantis/",
+          "credit": "SeaWorld Orlando (official photographic reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://seaworld.com/orlando/",
+          "sha256": "a3372370bc5084f0fb73065d5ebd887c89d76ac3bf0a63694aa75e0c0cdcad62",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected official narrow banner documents Journey to Atlantis' actual gray/white boat with red trim entering a white splash, on a twin concrete flume-guide section with dark running rails. Sandstone-like faux rocks are at left, a beige sculpted retaining wall and wood railing at right, with part of a tan Mediterranean-style facade behind. The source crops the background drop and some boat occupants; compose this visible boat/splash/flume section only, preserving actual connected waterway geometry and ordinary source guests without inventing a whole course or extra drop."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "21-196344009848927-thumbnail.jpg",
+      "thumbnailSHA256": "426d59e94394a77d248c2378b161a72ffcc998532fd5666713f5ec5c0e98de71",
+      "thumbnailBytes": 25725,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "21-196344009848927-detail.jpg",
+      "detailSHA256": "ec1827682e397992f77250edc9a4065b93e2cae381312a657604a2e3dc62b5c5",
+      "detailBytes": 202321,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 21,
+      "rideId": 201433938641141,
+      "rideName": "Flamingo Paddle Boats",
+      "alt": "Illustrated Flamingo Paddle Boats at SeaWorld Orlando",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:44:10.401660+00:00",
+      "originalSHA256": "8f27cde0efeb3e4e6a44c77d5c4ea1d2923930dc08869a6feb19e86f6ea56438",
+      "review": "Accepted: Actually viewed source and generated portrait; molded pink flamingo pedal-boat hull/neck/beak, black lower bumper with yellow stripe, real teal dock posts and white dock floats retained with ordinary source guests and believable water reflections. No invented distant landmarks or lake plan.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://seaworld.com/orlando/-/media/migrated-media/seaworld-orlando/images/rides/paddle-boats/swo_rides_flamingopaddleboats_webbanner.png?h=251&w=1801&la=en&hash=E9DFC186CEFBC8747D416C8FCF905AE7",
+          "kind": "image",
+          "alt": "Paddle Boats",
+          "sourceURL": "https://seaworld.com/orlando/rides/paddle-boats/",
+          "credit": "SeaWorld Orlando (official photographic reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://seaworld.com/orlando/",
+          "sha256": "e81e1f308b9cced6f342dad9d100589c46aa0c0359097d8b285d7416d745608c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected official narrow banner shows real pink flamingo-shaped pedal boats with curved necks, black-and-white beaks, pink molded seating, black lower hull and yellow bumper stripe on green-blue water beside teal pier posts and a dock with white floats. Ordinary source guests are small in the background. Preserve the photographed boat and dock details; parts of the flamingo necks are cut off, so compose the source-documented visible hull, seating and neck section rather than inventing new boat geometry, a whole lake or distant landmarks."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "21-201433938641141-thumbnail.jpg",
+      "thumbnailSHA256": "440149e41b64ee9663febbe7f72cc3a95782665b03199467d3d4a920d3f24af2",
+      "thumbnailBytes": 24992,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "21-201433938641141-detail.jpg",
+      "detailSHA256": "4f0e2e9300554ca76f20c124194c01494e8b96b69c20107b758f8825cbd66025",
+      "detailBytes": 157409,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 21,
+      "rideId": 213939893339792,
+      "rideName": "Manta",
+      "alt": "Illustrated Manta at SeaWorld Orlando",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:48:01.352981+00:00",
+      "originalSHA256": "05d5486bd7f724affc2f3b14f5e64f4f418d9f092009c2507d19d810807ac81a",
+      "review": "Accepted: Actually viewed source and generated portrait; manufactured blue ray-shaped nose, pale turquoise-white-pink decoration, banked flying-train orientation, source seats/restraints and connected overhead blue rail preserved. Visible train section only with actual source palms and realistic surfaces; no invented complete inversion.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://seaworld.com/orlando/-/media/migrated-media/seaworld-orlando/images/rides/manta/swo_rides_manta_webbanner.png?h=251&w=1801&la=en&hash=012AD066048AA5DC8AD5A733C102F102",
+          "kind": "image",
+          "alt": "Manta Banner",
+          "sourceURL": "https://seaworld.com/orlando/roller-coasters/manta/",
+          "credit": "SeaWorld Orlando (official photographic reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://seaworld.com/orlando/",
+          "sha256": "923258bdcfc2715716c5e5597cdf0d6d3fe24d702e97ad358fbfc037f9502cc3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected official narrow banner shows Manta's real blue ray-shaped molded train nose with pale turquoise/white/pink decoration, dark blue seats/restraints, source ordinary clothed riders in the flying train and physically connected blue overhead running rails/spine. The source is steeply banked and crops the train; show only its visible close ray nose, adjacent source seats and connected rail, preserving the photographed riding orientation and hardware. Do not invent a full train, entire inversion or unseen track plan."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "21-213939893339792-thumbnail.jpg",
+      "thumbnailSHA256": "0b7045e574efb3290d6d1aa84111ba27e7705a2ed234df48353dddf235a97a4e",
+      "thumbnailBytes": 22481,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "21-213939893339792-detail.jpg",
+      "detailSHA256": "c6287007373813bbb98b5b5462b9632a95caf7d41ec75f18b27368d9af7c2480",
+      "detailBytes": 132442,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 21,
+      "rideId": 226635493153383,
+      "rideName": "Penguin Trek",
+      "alt": "Illustrated Penguin Trek at SeaWorld Orlando",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:44:52.490282+00:00",
+      "originalSHA256": "c8a7b286294b9e841e3c5df2e9e412bd9102613a943ea6dfa1b497b778c7e543",
+      "review": "Accepted: Actually viewed source and generated portrait; real silver/pale-blue snowmobile front, teal-gray two-across seats, source restraints and wheel bogies stay connected to the white banked track with actual mesh catwalk/gray supports. Photo-based material texture; no invented snow or penguin scene.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://seaworld.com/orlando/-/media/commercial/seaworld-orlando/images/rides/penguin-trek/2025/1200x776_swo_penguin_trek_pov.png?h=776&w=1200&la=en&hash=7F062DCEA5B1A40351F7D7BEDBBAED8E",
+          "kind": "image",
+          "alt": "Penguin Trek at SeaWorld Orlando",
+          "sourceURL": "https://seaworld.com/orlando/roller-coasters/penguin-trek/",
+          "credit": "SeaWorld Orlando (official photographic reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://seaworld.com/orlando/",
+          "sha256": "9d554bf7dbf33a551a843e607c9a4357bd0a8b08cdbe06e207cd7337ba9f3eba",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected official 1200x776 photo shows Penguin Trek's real silver-gray and pale-blue snowmobile-like front car, teal/gray two-abreast seats and source lap-restraint hardware, on white tubular coaster rails and spine with gray supports. A silver mesh maintenance catwalk follows the banked rail. Ordinary clothed families sit in their actual seats; vegetation partly frames the source. Preserve this photographed banked train section, connected wheel bogies and track, avoiding invented penguins, snow, indoor scenes or full hidden layout."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "21-226635493153383-thumbnail.jpg",
+      "thumbnailSHA256": "75304c2d7ec4387259e631ac31573e6040948c97eaf9dd39590959bf356afcbe",
+      "thumbnailBytes": 20647,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "21-226635493153383-detail.jpg",
+      "detailSHA256": "5338bdba2c6afaa76bd06d66112b8d7b794c61bd612d649f59d2483811926c89",
+      "detailBytes": 143764,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 21,
       "rideId": 250622806424631,
       "rideName": "Mako®",
       "alt": "Illustrated Mako® at SeaWorld Orlando",
@@ -835,6 +1480,92 @@
       "detailFile": "21-250622806424631-detail.jpg",
       "detailSHA256": "03411e7e30138f9451ef2e6f8c50851f9c62b2ca94a49a72852e2e0a3289dfd1",
       "detailBytes": 168838,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 21,
+      "rideId": 253934793508041,
+      "rideName": "Infinity Falls®",
+      "alt": "Illustrated Infinity Falls® at SeaWorld Orlando",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:51:21.695711+00:00",
+      "originalSHA256": "7281295da4c7820378a2f9bcde77207d1092f8446753573f82686adcb56d7ad7",
+      "review": "Accepted: Actually viewed final factual edit and source photo. Unsupported top platform/end and extra upper structure are cropped away. Real blue circular raft, orange-tan inserts, yellow central handhold, black bumper, ordinary source riders, gray striped chute and flowing water remain within the source-documented section.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://seaworld.com/orlando/-/media/commercial/seaworld-orlando/images/rides/infinity-falls/1900x263_swo_rides_infinity_falls_01.png?h=263&w=1900&la=en&hash=E4456384FD9AF31A73BE99A84AD4B650",
+          "kind": "image",
+          "alt": "Infinity Falls",
+          "sourceURL": "https://seaworld.com/orlando/rides/infinity-falls/",
+          "credit": "SeaWorld Orlando (official photographic reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://seaworld.com/orlando/",
+          "sha256": "fc01c7789bc9af5f23915c27dde562c59c0531feb7611fcf8faf2b8247281369",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected official narrow banner shows Infinity Falls' real blue circular raft with orange/tan seat inserts and black rubber bumper, ordinary clothed guests around a central yellow handhold, descending the actual straight gray water chute with transverse dark strips and white flowing water. Source palms/greenery, tan faux-rock edges and turquoise service pipes frame this visible section. Compose only this documented raft/chute section; do not invent a whole drop tower, unseen elevator or river course."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "21-253934793508041-thumbnail.jpg",
+      "thumbnailSHA256": "84b20da66fce1e45b47b870c74990345a0ea61f3dad67a6e26f6a49e9f7693c8",
+      "thumbnailBytes": 31644,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "21-253934793508041-detail.jpg",
+      "detailSHA256": "9f43483f5783bd21d1b1ea95b2fa79a251bb8cc5ea406515fcc2c6a28b2631ff",
+      "detailBytes": 239622,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 21,
+      "rideId": 262673904341261,
+      "rideName": "Ice Breaker",
+      "alt": "Illustrated Ice Breaker at SeaWorld Orlando",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:47:30.468557+00:00",
+      "originalSHA256": "c6cb2825e49ef83f176a6cd96b7c34cb7383e7b4eceacc8645e546c65cf1c062",
+      "review": "Accepted: Actually viewed source and generated portrait; orange rails/cross-ties, teal supports, teal seat backs/gray restraint frames and exposed gray chassis/wheel connections retain actual banked source orientation. No full spike or complete hidden route depicted.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://seaworld.com/orlando/-/media/migrated-media/seaworld-orlando/images/rides/ice-breaker/2022/swo_rides_icebreaker_banner_desktop.png?h=300&w=2161&la=en&hash=1079100E6F80EDD209297C7E7C1049CA",
+          "kind": "image",
+          "alt": "Ice Breaker",
+          "sourceURL": "https://seaworld.com/orlando/roller-coasters/ice-breaker/",
+          "credit": "SeaWorld Orlando (official photographic reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://seaworld.com/orlando/",
+          "sha256": "31c07f53178ddfda4165d2622823bb80535405ef76a4718227ded6e549e9b356",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually inspected official narrow banner shows Ice Breaker's real orange steel running rails/cross-ties, teal cylindrical supports and teal high-backed two-across seats with gray restraint frames on the gray exposed multi-car chassis/wheel assemblies. The train is banked on its actual orange rail and ordinary source guests are partly cropped. Depict only this documented train/rail section and actual connections; do not invent the full beyond-vertical spike, complete train, unseen restraint details or a hidden route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "21-262673904341261-thumbnail.jpg",
+      "thumbnailSHA256": "40306652e10e560a1251bf718626f44c7e39d8f991d3265549249dcdf6e7371f",
+      "thumbnailBytes": 27933,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "21-262673904341261-detail.jpg",
+      "detailSHA256": "ec00ff13fe34efcdfc0e0fb0d061efdda595652d811522d508a1339aabfa74d7",
+      "detailBytes": 173106,
       "detailPixels": [
         768,
         960
