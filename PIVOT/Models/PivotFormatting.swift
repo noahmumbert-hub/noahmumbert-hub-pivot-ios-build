@@ -202,8 +202,10 @@ struct ReopeningGuidance: Equatable, Sendable {
               estimate.historicalMedianAt <= estimate.windowEnd else {
             return uncertain("The reopening estimate could not be verified.")
         }
+        let times = ParkTimeFormatter.reopeningTimes(start: estimate.windowStart, best: estimate.historicalMedianAt,
+            end: estimate.windowEnd, timeZone: timeZone, at: now)
+        let range = times.range
         guard now <= estimate.windowEnd else {
-            let range = "\(ParkTimeFormatter.time(estimate.windowStart, timeZone: timeZone))–\(ParkTimeFormatter.time(estimate.windowEnd, timeZone: timeZone))"
             if let observed = ride.statusObservedAt, observed > estimate.windowEnd, observed <= now,
                now.timeIntervalSince(observed) <= 15 * 60, ride.statusEpisodeAnchorAt == estimate.episodeAnchorAt {
                 return uncertain("Issued window \(range). Result pending; delayed source updates may change the outcome.",
@@ -212,7 +214,6 @@ struct ReopeningGuidance: Equatable, Sendable {
             return uncertain("Issued window \(range). Waiting for a fresh ride update; an elapsed window alone does not confirm a miss.",
                              title: "Window ended · waiting for a fresh ride update")
         }
-        let range = "\(ParkTimeFormatter.time(estimate.windowStart, timeZone: timeZone))–\(ParkTimeFormatter.time(estimate.windowEnd, timeZone: timeZone))"
         if ride.hasWeatherHold {
             let lightning = snapshot.weather.lightning
             guard lightning.sourceKind != "GLM",
@@ -234,7 +235,7 @@ struct ReopeningGuidance: Equatable, Sendable {
             let showPrediction = estimate.reliability?.showBestGuess == true
             return Self(headline: "Historical restart range", range: range, bestGuess: nil,
                         detail: "Based on observed restarts after mapped lightning clearance. The park decides when the ride reopens.",
-                        estimatedBestPrediction: showPrediction ? ParkTimeFormatter.time(estimate.historicalMedianAt, timeZone: timeZone) : nil,
+                        estimatedBestPrediction: showPrediction ? times.best : nil,
                         bestPredictionHasPassed: showPrediction && now > estimate.historicalMedianAt)
         }
         guard estimate.startQuality == "observed", estimate.closureSignal == "confirmed" else {
@@ -267,9 +268,9 @@ struct ReopeningGuidance: Equatable, Sendable {
             recent(calibration?.trainedThrough) && estimate.reliability?.showBestGuess != false
         let showPrediction = estimate.reliability?.showBestGuess != false
         return Self(headline: "Historical reopening range", range: range,
-                    bestGuess: showBest ? ParkTimeFormatter.time(estimate.historicalMedianAt, timeZone: timeZone) : nil,
+                    bestGuess: showBest ? times.best : nil,
                     detail: "Based on comparable observed closures. The park has not announced a reopening time.",
-                    estimatedBestPrediction: showPrediction ? ParkTimeFormatter.time(estimate.historicalMedianAt, timeZone: timeZone) : nil,
+                    estimatedBestPrediction: showPrediction ? times.best : nil,
                     bestPredictionHasPassed: showPrediction && now > estimate.historicalMedianAt)
     }
 }
@@ -413,6 +414,21 @@ enum ParkTimeFormatter {
 
     static func time(_ date: Date, timeZone: TimeZone? = nil) -> String {
         displayFormatter("shortTime", timeZone: timeZone).string(from: date)
+    }
+
+    static func reopeningTimes(start: Date, best: Date, end: Date, timeZone: TimeZone,
+                               at referenceDate: Date) -> (range: String, best: String) {
+        let referenceOffset = timeZone.secondsFromGMT(for: referenceDate)
+        // The entire future window can fall in the repeated hour after a transition.
+        let needsZone = [start, best, end].contains { timeZone.secondsFromGMT(for: $0) != referenceOffset }
+        func label(_ date: Date) -> String {
+            let clock = time(date, timeZone: timeZone)
+            guard needsZone else { return clock }
+            // A repeated clock hour needs the date's own native zone abbreviation.
+            let abbreviation = displayFormatter("z", timeZone: timeZone).string(from: date)
+            return "\(clock) \(abbreviation)"
+        }
+        return (range: "\(label(start))–\(label(end))", best: label(best))
     }
 
     static func dateTime(_ date: Date?, timeZone: TimeZone? = nil) -> String {
@@ -612,8 +628,10 @@ extension ReopeningEstimate {
     }
 
     func presentation(timeZone: TimeZone) -> ForecastPresentation {
-        let range = "\(ParkTimeFormatter.time(windowStart, timeZone: timeZone))–\(ParkTimeFormatter.time(windowEnd, timeZone: timeZone))"
-        let best = ParkTimeFormatter.time(historicalMedianAt, timeZone: timeZone)
+        let times = ParkTimeFormatter.reopeningTimes(start: windowStart, best: historicalMedianAt,
+            end: windowEnd, timeZone: timeZone, at: issuedAt)
+        let range = times.range
+        let best = times.best
 
         switch forecastPhase {
         case .upcoming:

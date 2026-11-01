@@ -2372,9 +2372,10 @@ final class PIVOTTests: XCTestCase {
     }
 
     private func reopeningFixture(estimate changes: [String: Any] = [:], lightning: [String: Any]? = nil,
-                                  ride rideChanges: [String: Any] = [:], snapshot snapshotChanges: [String: Any] = [:]) throws -> LiveParkSnapshot {
+                                  ride rideChanges: [String: Any] = [:], snapshot snapshotChanges: [String: Any] = [:],
+                                  at referenceDate: Date? = nil) throws -> LiveParkSnapshot {
         var json = try XCTUnwrap(JSONSerialization.jsonObject(with: Data(Self.productionV6SnapshotJSON.utf8)) as? [String: Any])
-        let now = Self.isoDate("2026-10-13T18:00:00.000Z")
+        let now = referenceDate ?? Self.isoDate("2026-10-13T18:00:00.000Z")
         func iso(_ offset: TimeInterval) -> String { ISO8601DateFormatter().string(from: now.addingTimeInterval(offset)) }
         json["fetchedAt"] = iso(0)
         json["sourceUpdatedAt"] = iso(0)
@@ -2509,6 +2510,75 @@ final class PIVOTTests: XCTestCase {
         XCTAssertNotNil(result.range)
         XCTAssertTrue(result.bestPredictionHasPassed)
         XCTAssertEqual(normalizedDisplaySpaces(result.bestPredictionLabel), "Earlier best prediction · 2:05 PM (estimate)")
+    }
+
+    func testReopeningDisplayDisambiguatesDSTFallbackRangeAndBestPrediction() throws {
+        let zone = FloridaPark.magicKingdom.timeZone
+        let cases = [
+            (now: "2026-11-01T05:46:00.000Z", start: "2026-11-01T05:51:00Z", best: "2026-11-01T06:01:00Z",
+             end: "2026-11-01T06:21:00Z", range: "1:51 AM EDT–1:21 AM EST", bestLabel: "1:01 AM EST"),
+            (now: "2026-11-01T05:57:00.000Z", start: "2026-11-01T06:00:00Z", best: "2026-11-01T06:10:00Z",
+             end: "2026-11-01T06:30:00Z", range: "1:00 AM EST–1:30 AM EST", bestLabel: "1:10 AM EST")
+        ]
+        for sample in cases {
+            let now = Self.isoDate(sample.now)
+            for version in ["PIVOT-ONLINE-CALIBRATION-v4", "PIVOT-ONLINE-CALIBRATION-v3"] {
+                var calibration = reopeningCalibration
+                calibration["version"] = version
+                let snapshot = try reopeningFixture(estimate: ["calibration": calibration,
+                    "windowStart": sample.start, "historicalMedianAt": sample.best, "windowEnd": sample.end], at: now)
+                let estimate = try XCTUnwrap(snapshot.rides[0].estimate)
+                XCTAssertLessThan(estimate.windowStart, estimate.historicalMedianAt)
+                XCTAssertLessThan(estimate.historicalMedianAt, estimate.windowEnd)
+                XCTAssertEqual(zone.secondsFromGMT(for: now), -4 * 3600)
+                XCTAssertEqual(zone.secondsFromGMT(for: estimate.windowEnd), -5 * 3600)
+                let guidance = reopeningGuidance(snapshot)
+                XCTAssertEqual(normalizedDisplaySpaces(guidance.range), sample.range)
+                XCTAssertEqual(normalizedDisplaySpaces(guidance.estimatedBestPrediction), sample.bestLabel)
+                XCTAssertEqual(normalizedDisplaySpaces(guidance.bestPredictionLabel), "Best prediction · \(sample.bestLabel) (estimate)")
+                XCTAssertFalse(guidance.bestPredictionHasPassed)
+                let forecast = estimate.presentation(timeZone: zone)
+                XCTAssertEqual(forecast.range, guidance.range)
+                XCTAssertEqual(forecast.bestGuess, guidance.estimatedBestPrediction)
+                let target = try XCTUnwrap(PIVOTLiveActivityTargetBuilder.makeTarget(selectedPark: .magicKingdom,
+                    snapshot: snapshot, featuredRide: snapshot.rides[0]))
+                XCTAssertEqual(target.state.windowStart, estimate.windowStart)
+                XCTAssertEqual(target.state.windowEnd, estimate.windowEnd)
+                if version == "PIVOT-ONLINE-CALIBRATION-v4" {
+                    XCTAssertEqual(normalizedDisplaySpaces(guidance.bestGuess), sample.bestLabel)
+                    XCTAssertEqual(target.state.bestGuess, estimate.historicalMedianAt)
+                } else {
+                    XCTAssertNil(guidance.bestGuess)
+                    XCTAssertNil(target.state.bestGuess, "DST formatting must not promote a v3 point into ActivityKit guidance")
+                }
+            }
+        }
+    }
+
+    func testReopeningDisplayKeepsSameOffsetStringsUnchanged() throws {
+        for (timestamp, zoneID, expectedRange, expectedBest) in [
+            ("2026-11-01T05:00:00.000Z", "America/New_York", "1:05 AM–1:40 AM", "1:20 AM"),
+            ("2026-11-01T06:05:00.000Z", "America/New_York", "1:10 AM–1:45 AM", "1:25 AM"),
+            ("2026-11-01T05:46:00.000Z", "America/Los_Angeles", "10:51 PM–11:26 PM", "11:06 PM")
+        ] {
+            let now = Self.isoDate(timestamp)
+            let zone = try XCTUnwrap(TimeZone(identifier: zoneID))
+            let snapshot = try reopeningFixture(estimate: ["calibration": reopeningCalibration], at: now)
+            let estimate = try XCTUnwrap(snapshot.rides[0].estimate)
+            let guidance = ReopeningGuidance.presentation(ride: snapshot.rides[0], snapshot: snapshot,
+                feedHealth: DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot,
+                    isLoading: false, refreshFailed: false, at: now), at: now, timeZone: zone)
+            let priorRange = "\(ParkTimeFormatter.time(estimate.windowStart, timeZone: zone))–\(ParkTimeFormatter.time(estimate.windowEnd, timeZone: zone))"
+            let priorBest = ParkTimeFormatter.time(estimate.historicalMedianAt, timeZone: zone)
+            XCTAssertEqual(guidance.range, priorRange)
+            XCTAssertEqual(guidance.estimatedBestPrediction, priorBest)
+            XCTAssertEqual(guidance.bestGuess, priorBest)
+            XCTAssertEqual(normalizedDisplaySpaces(guidance.range), expectedRange)
+            XCTAssertEqual(normalizedDisplaySpaces(guidance.estimatedBestPrediction), expectedBest)
+            let forecast = estimate.presentation(timeZone: zone)
+            XCTAssertEqual(forecast.range, priorRange)
+            XCTAssertEqual(forecast.bestGuess, priorBest)
+        }
     }
 
     func testBestReopeningPredictionUsesReleasedV3ForecastWithoutPromotingActivityGuidance() throws {

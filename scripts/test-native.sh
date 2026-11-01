@@ -97,6 +97,8 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTTests/PIVOTTests/testReopeningRangeNeedsHistoryAndPointNeedsScoredSameRideSupport
       -only-testing:PIVOTTests/PIVOTTests/testBestReopeningPredictionUsesForecastMedianAndParkLocalTime
       -only-testing:PIVOTTests/PIVOTTests/testBestReopeningPredictionMarksPassedPointWithinCurrentWindow
+      -only-testing:PIVOTTests/PIVOTTests/testReopeningDisplayDisambiguatesDSTFallbackRangeAndBestPrediction
+      -only-testing:PIVOTTests/PIVOTTests/testReopeningDisplayKeepsSameOffsetStringsUnchanged
       -only-testing:PIVOTTests/PIVOTTests/testBestReopeningPredictionUsesReleasedV3ForecastWithoutPromotingActivityGuidance
       -only-testing:PIVOTTests/PIVOTTests/testBestReopeningPredictionWithholdsUnavailableAndUnverifiedTimes
       -only-testing:PIVOTTests/PIVOTTests/testExpiredReopeningWindowCannotRemainUpcomingBetweenRefreshes

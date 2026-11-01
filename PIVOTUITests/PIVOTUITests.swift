@@ -216,6 +216,11 @@ final class PIVOTUITests: XCTestCase {
                        .completed, "Displayed glyph frames must settle before measuring or capturing them: \(lastFrames)", file: file, line: line)
     }
 
+    private func verticalPanX(in viewport: CGRect) -> CGFloat {
+        // Clear the native scroll indicator's expanded drag area.
+        viewport.maxX - min(48, viewport.width / 4)
+    }
+
     /// Move by the measured missing edge, using longer drags only while far
     /// away. The entire target must fit clear of foreground native bars.
     private func centerFullyVisible(_ element: XCUIElement, in app: XCUIApplication,
@@ -239,14 +244,14 @@ final class PIVOTUITests: XCTestCase {
                     ? frame.minY - viewport.minY - 12 : frame.maxY - viewport.maxY + 12
                 movement = min(movement, max(20, abs(offset))) * (offset < 0 ? -1 : 1)
             }
-            let x = viewport.maxX - 3
+            let x = verticalPanX(in: viewport)
             let start = app.coordinate(withNormalizedOffset: .zero)
                 .withOffset(CGVector(dx: x - appFrame.minX, dy: viewport.midY + movement / 2 - appFrame.minY))
             let end = start.withOffset(CGVector(dx: 0, dy: -movement))
             start.press(forDuration: 0.05, thenDragTo: end, withVelocity: .slow, thenHoldForDuration: 0.2)
         }
         screenshot("Complete target could not fit the content viewport", app: app)
-        XCTFail("Could not place the complete target inside the visible content area", file: file, line: line)
+        XCTFail("Could not place the complete target inside the visible content area. Frame \(element.frame); viewport \(safeContentViewport(in: app))", file: file, line: line)
     }
 
     private func assertCompleteClock(_ label: XCUIElement, category: UIContentSizeCategory,
@@ -331,7 +336,7 @@ final class PIVOTUITests: XCTestCase {
             // has a real visible frame, even when both are taller than SE.
             let appFrame = app.frame
             let start = app.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(
-                dx: viewport.maxX - 3 - appFrame.minX, dy: viewport.midY + movement / 2 - appFrame.minY))
+                dx: verticalPanX(in: viewport) - appFrame.minX, dy: viewport.midY + movement / 2 - appFrame.minY))
             start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: 0, dy: -movement)),
                         withVelocity: .slow, thenHoldForDuration: 0.2)
             waitForSettledFrames([header, chart])
