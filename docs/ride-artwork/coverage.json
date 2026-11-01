@@ -364,11 +364,11 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 1004,
-    "pendingIllustrations": 120,
-    "acceptedForRequestedStyle": 1003,
-    "unfinishedForRequestedStyle": 121,
-    "blocked": 23
+    "acceptedIllustrations": 1012,
+    "pendingIllustrations": 112,
+    "acceptedForRequestedStyle": 1011,
+    "unfinishedForRequestedStyle": 113,
+    "blocked": 24
   },
   "parks": [
     {
@@ -999,10 +999,10 @@
           "url": "https://rcdb.com/274.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "6-127",
@@ -1652,10 +1652,10 @@
           "url": "https://darkridedatabase.com/rides/tianas-bayou-adventure-2/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "7-117",
@@ -1717,10 +1717,10 @@
           "url": "https://darkridedatabase.com/rides/star-tours-the-adventures-continue/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "7-123",
@@ -1890,10 +1890,10 @@
           "url": "https://darkridedatabase.com/rides/millennium-falcon-smugglers-run/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "7-6369",
@@ -1919,10 +1919,10 @@
           "url": "https://darkridedatabase.com/rides/star-wars-rise-of-the-resistance/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "7-16342",
@@ -1948,10 +1948,10 @@
           "url": "https://rcdb.com/560.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "8-110",
@@ -2054,10 +2054,10 @@
           "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/kilimanjaro-safaris/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "8-4438",
@@ -2083,10 +2083,10 @@
           "url": "https://darkridedatabase.com/rides/navi-river-journey/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "8-4439",
@@ -2139,7 +2139,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "21-4266066062235",

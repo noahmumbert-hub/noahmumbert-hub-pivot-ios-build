@@ -371,6 +371,49 @@
     },
     {
       "parkId": 6,
+      "rideId": 126,
+      "rideName": "The Barnstormer",
+      "alt": "Illustrated The Barnstormer at Magic Kingdom Park",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:11:03.409056+00:00",
+      "originalSHA256": "35b3e01e14a7587244e77fd9946b8824bc95236d59e1ef79b71842ba71f053d2",
+      "review": "Accepted: Actually viewed source and generated portrait; red-orange two-abreast plane coaster, gray molded engine/cream stationary propeller, riveted wings/brown struts, source lap bars/riders and wheel connections on green steel track through real barn preserved. Photographic surfaces and restrained dusk.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/parks-and-tickets/attractions/magic-kingdom/barnstormer-starring-the-great-goofini/barnstormer-starring-great-goofini-00.jpg?1658974534085",
+          "kind": "literal-image-url-in-source",
+          "alt": "",
+          "sourceURL": "https://disneyworld.disney.go.com/en_CA/attractions/magic-kingdom/barnstormer-starring-great-goofini/",
+          "credit": "Walt Disney World Resort / Disney (official photographic reference publisher)",
+          "license": "Copyright Disney/source photographer; rights retained",
+          "licenseURL": "https://disneyworld.disney.go.com/en_CA/attractions/magic-kingdom/barnstormer-starring-great-goofini/",
+          "sha256": "3a4d2da2333f4c300e42d8572dce4786aed17608f657e2521c6188d71791ec5d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected genuine official Magic Kingdom photograph shows the actual red/orange two-abreast stunt-plane coaster train with large molded gray engine nose and stationary cream propeller, cream riveted wings and brown struts, source lap-bar seats and ordinary clothed family riders. The real train and wheel assemblies are attached to the green steel track/supports as it passes through a red timber barn with shingled roofs and a broken scenic opening. Preserve this documented banked section and source plane/track connection; no flying aircraft or full hidden coaster route. Exact capture date/current paint are not verified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "6-126-thumbnail.jpg",
+      "thumbnailSHA256": "f334dd3dee48120f0790f78c4e476fdd198440581943fd78f9aed79537d0be49",
+      "thumbnailBytes": 31622,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "6-126-detail.jpg",
+      "detailSHA256": "30933cf0f6e44a1c87858749ccf4f6b38e77cf2153fe07089856b261117b6a7b",
+      "detailBytes": 192194,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 6,
       "rideId": 129,
       "rideName": "Seven Dwarfs Mine Train",
       "alt": "Illustrated Seven Dwarfs Mine Train at Magic Kingdom Park",
@@ -988,6 +1031,92 @@
       ]
     },
     {
+      "parkId": 6,
+      "rideId": 13630,
+      "rideName": "Tiana's Bayou Adventure",
+      "alt": "Illustrated Tiana's Bayou Adventure at Magic Kingdom Park",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:19:06.608804+00:00",
+      "originalSHA256": "86573566cdf2261dac7d1d82a3ffe366e5486af87d24816ad6c770064fa63fac",
+      "review": "Accepted: Actually viewed both original Disney Magic Kingdom ride-testing photos and the generated portrait. Empty brown molded log/tan seatbacks, connected rose-tan curving flume, real rocky island, stone-faced pedestrian bridge, lower drop/waterway and source greenery remain recognizable with realistic materials and restrained blue-purple light. No invented riders or characters. Historical source and generated treatment do not assert current operating condition, capture date or exact current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://disneyparksblog.com/app/uploads/2024/06/wdw-tianas-bayou-adventure-behind-the-scenes-log-drop-2.jpg",
+          "kind": "literal-image-url-in-source",
+          "alt": "Ride vehicle testing for Tiana's Bayou Adventure",
+          "sourceURL": "https://disneyparksblog.com/disney-experiences/16-unique-and-never-before-seen-tianas-bayou-adventure-photos/",
+          "credit": "Disney / Disney Parks Blog (original Magic Kingdom ride-testing photographic publisher)",
+          "license": "Copyright Disney/source photographer; rights retained",
+          "licenseURL": "https://disneyparksblog.com/disney-experiences/16-unique-and-never-before-seen-tianas-bayou-adventure-photos/",
+          "sha256": "b0d4a4cc7e604081561bf098f76ab0ab8a053e493ec38082c45100137b6a5770",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The original Disney Parks Blog June20,2024 behind-the-scenes article explicitly identifies these photos as Magic Kingdom ride-vehicle testing before the Florida opening. Both real photographs were actually inspected. Selected wide photo shows an empty dark-brown log flume vehicle with tan individual seatbacks on the actual curving rose/tan concrete water channel, with rocky island, reeds/trees, stone-faced pedestrian bridge and source drop/under-bridge waterway behind. This replaces the rejected marketing composite, food photo and Disneyland gallery images. Compose the documented empty log and lower channel/bridge section only, keeping the actual connected waterway geometry and natural materials; do not invent guests, character figures, completed unseen mountaintop, current film scene or a full hidden route. The source is historical testing photography, not proof of current operating state, paint or exact capture date; avoid the construction scaffolding at the top by framing only the documented lower section."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "6-13630-thumbnail.jpg",
+      "thumbnailSHA256": "df0455ed2fb718569f8fef57b88a122804d16f24092346f0d047fece0d51e1c1",
+      "thumbnailBytes": 26499,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "6-13630-detail.jpg",
+      "detailSHA256": "5119945b520b19844490a919042dc96b9dafaf2b9a680d61a3f720c90e8ea9a1",
+      "detailBytes": 228932,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 7,
+      "rideId": 120,
+      "rideName": "Star Tours – The Adventures Continue",
+      "alt": "Illustrated Star Tours – The Adventures Continue at Disney’s Hollywood Studios",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:14:10.935526+00:00",
+      "originalSHA256": "485ed7eee790381cb82a6e98234cdb7f948f990d358aa4391d9927ef70331b4f",
+      "review": "Accepted: Actually viewed source and generated portrait; stationary gray AT-AT entrance prop retains actual red window, armored head/panels, scenic barrels and jointed legs among documented trees/building. Manufactured set prop, not walking combat or invented simulator cabin.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/parks-and-tickets/attractions/hollywood-studios/star-tours-the-adventures-continue/star-tours-00.jpg?1789488880586",
+          "kind": "literal-image-url-in-source",
+          "alt": "",
+          "sourceURL": "https://disneyworld.disney.go.com/attractions/hollywood-studios/star-tours/",
+          "credit": "Walt Disney World Resort / Disney (official photographic reference publisher)",
+          "license": "Copyright Disney/source photographer; rights retained",
+          "licenseURL": "https://disneyworld.disney.go.com/attractions/hollywood-studios/star-tours/",
+          "sha256": "ac36cebdbd0aa65a4893e9de6adb9236895b535e04bd91f5f99acce505582b5c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected genuine official Hollywood Studios photograph documents the actual gray AT-AT exterior prop with red front window, sculpted armored head, mounted scenic blaster barrels, visible neck/body panelwork and tall jointed legs rising among real trees beside the dark-blue ride building. This is the stationary manufactured Star Tours entrance prop, not a real walking military machine, space battle or invented simulator cabin. Preserve the photographed pose/materials and visible exterior section; omit poster lettering and do not add a full unseen ride layout."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "7-120-thumbnail.jpg",
+      "thumbnailSHA256": "c3f2b0f6886beb9399e23323fc2b4bc7f7e60af2fa5a819cf6e53d592ebd79ce",
+      "thumbnailBytes": 23347,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "7-120-detail.jpg",
+      "detailSHA256": "9af519fef2f3caea10dadbd352aa2d0d3c952d52e94e3afbe982b9a45eb3ecdf",
+      "detailBytes": 215124,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
       "parkId": 7,
       "rideId": 123,
       "rideName": "The Twilight Zone™ Tower of Terror",
@@ -1068,6 +1197,135 @@
       ]
     },
     {
+      "parkId": 7,
+      "rideId": 6368,
+      "rideName": "Millennium Falcon: Smugglers Run",
+      "alt": "Illustrated Millennium Falcon: Smugglers Run at Disney’s Hollywood Studios",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:12:39.634320+00:00",
+      "originalSHA256": "58361a1ac888435f3158d4cadb6139e41ca7851cbecab74caa84058d09133342",
+      "review": "Accepted: Actually viewed selected official Disney World night photo and generated portrait; parked full-size Falcon hull/mandibles/offset cockpit/landing supports, outpost tower/buildings/built rock spires and safety rail retained. No Disneyland cockpit or invented newer mission footage.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/disney-world/attractions/hollywood-studios/millennium-falcon-smugglers-run/smugglers-run-night-16x9.jpg?1785971940212",
+          "kind": "literal-image-url-in-source",
+          "alt": "",
+          "sourceURL": "https://disneyworld.disney.go.com/attractions/hollywood-studios/millennium-falcon-smugglers-run/",
+          "credit": "Walt Disney World Resort / Disney (official photographic reference publisher)",
+          "license": "Copyright Disney/source photographer; rights retained",
+          "licenseURL": "https://disneyworld.disney.go.com/attractions/hollywood-studios/millennium-falcon-smugglers-run/",
+          "sha256": "b9c30076cbb99a3661288d32800668b744569be6f69faa5e604699f467278657",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Current official body verifies the newer Mandalorian/Grogu mission. The selected genuine official Disney WORLD night photo, not the rejected Disneyland cockpit gallery or mission promotional composite, shows the actual full-size parked Millennium Falcon exterior with broad weathered gray disk, twin front mandibles, offset cockpit and real landing supports behind a dark safety railing. Actual tan industrial outpost buildings, round tower, built rock spires and practical blue/gold lights surround it. Preserve this static manufactured attraction exterior, source hull details and supported landing geometry; no flying spacecraft, invented current film footage or hidden simulator."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "7-6368-thumbnail.jpg",
+      "thumbnailSHA256": "865fa196b71407d53e0e740b90e94ebd06321111ec9de8bba3dbcae9bb7b15bb",
+      "thumbnailBytes": 24359,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "7-6368-detail.jpg",
+      "detailSHA256": "11c8b9a0308f4938ec7c120ddb5fbc20a72714d830fbf52a80b9612135049cd9",
+      "detailBytes": 197291,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 7,
+      "rideId": 6369,
+      "rideName": "Star Wars: Rise of the Resistance",
+      "alt": "Illustrated Star Wars: Rise of the Resistance at Disney’s Hollywood Studios",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:13:42.315148+00:00",
+      "originalSHA256": "c144afa6a2f1e210f2236096017f4058aabdf045f4e12f0d94e20606bc6ad629",
+      "review": "Accepted: Actually viewed actual hangar source and generated portrait; foreground physical white stormtrooper/red pauldron/scenic blaster, static figure rows/black queue rails, gray ribbed/light-strip walls, TIE prop and reflective floor retained. The space-window backdrop remains part of the manufactured set, no live combat or moving vehicle invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/disney-world/attractions/hollywood-studios/star-wars-rise-of-the-resistance/star-wars-rise-of-the-resistance-hangar-16x9.jpg?1789488948586",
+          "kind": "literal-image-url-in-source",
+          "alt": "",
+          "sourceURL": "https://disneyworld.disney.go.com/attractions/hollywood-studios/star-wars-rise-of-the-resistance/",
+          "credit": "Walt Disney World Resort / Disney (official photographic reference publisher)",
+          "license": "Copyright Disney/source photographer; rights retained",
+          "licenseURL": "https://disneyworld.disney.go.com/attractions/hollywood-studios/star-wars-rise-of-the-resistance/",
+          "sha256": "ae31ee0f19f9cdf2412221508a4e596c56c0a8342f9fb87b2cabf3fc3b72690a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected official real Hollywood Studios hangar photograph shows a foreground physical white-armored stormtrooper with black joints/red shoulder pauldron and its actual scenic prop blaster, rows of stationary physical white stormtrooper figures behind black queue rails, glossy dark floor, gray ribbed/light-strip hangar walls and mounted black TIE-fighter prop at right. The space-window backdrop is part of the indoor themed set. Preserve source-built materials/geometry and stationary set roles, not live combat or an invented moving ride car/route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "7-6369-thumbnail.jpg",
+      "thumbnailSHA256": "b39f0bbf29d2b17f0d3d2938d72392325a001af84b46597aa0a846df91ff0b1c",
+      "thumbnailBytes": 24359,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "7-6369-detail.jpg",
+      "detailSHA256": "bac044973a6c53a9c412a2b537b417f05d1b8b18731bd1fdf8a22028a1dc4625",
+      "detailBytes": 164140,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 7,
+      "rideId": 16342,
+      "rideName": "Rock ’n’ Roller Coaster Starring The Muppets",
+      "alt": "Illustrated Rock ’n’ Roller Coaster Starring The Muppets at Disney’s Hollywood Studios",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:10:21.620497+00:00",
+      "originalSHA256": "c707e4232cc1685c7c7d3a401a078d54223e9ce23244df2ea73c42d32f10e1d5",
+      "review": "Accepted: Actually viewed the current official source and generated portrait. New psychedelic painted giant guitar, white pickguard/cream knobs/metal strings, actual gray building/palm and secondary staged physical Electric Mayhem puppet group retained with realistic fabric/foam. Representative source-based promotional scene; puppet group is not claimed as a permanent installed exterior fixture. No old Aerosmith art or invented ride vehicle.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/vision-dam/digital/parks-platform/parks-global-assets/disney-world/attractions/rock-n-roller-coaster-starring-the-muppets/RnR-muppets-16x9.jpg?2026-06-05T18:49:23+00:00",
+          "kind": "literal-image-url-in-source",
+          "alt": "",
+          "sourceURL": "https://disneyworld.disney.go.com/attractions/hollywood-studios/rock-and-roller-coaster-starring-muppets/",
+          "credit": "Walt Disney World Resort / Disney (official photographic reference publisher)",
+          "license": "Copyright Disney/source photographer; rights retained",
+          "licenseURL": "https://disneyworld.disney.go.com/attractions/hollywood-studios/rock-and-roller-coaster-starring-muppets/",
+          "sha256": "0be56aea246058d3e9c8b15c696e687233e41229215a81e4eefc2b46903b4163",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Current official page verifies the new Muppets version; the inspected actual official promotional photograph shows the existing giant guitar entrance now painted in broad pastel pink/blue/green/red psychedelic bands with white pickguard, cream control knobs, black neck and metal strings, beside actual gray building/palm. A staged physical Electric Mayhem puppet group stands in the foreground of this real photo, not permanent exterior ride animatronics. Focus the portrait on the documented new guitar structure/real entrance; the source puppet group may remain secondary but must retain physical fabric/foam materials and must not be represented as permanent installed figures. No old Aerosmith theming, invented current ride vehicle, new sign wording or unphotographed full guitar neck."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "7-16342-thumbnail.jpg",
+      "thumbnailSHA256": "18f3ffb7d4d126ea20e0b4d42b34415e7bdb82c89a480546ff0b617b0c2c2007",
+      "thumbnailBytes": 27152,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "7-16342-detail.jpg",
+      "detailSHA256": "45b816b8b3824d365bcc1cbcd2a0dbf7495b381e08ac6a327500d92f694e26d9",
+      "detailBytes": 197092,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
       "parkId": 8,
       "rideId": 110,
       "rideName": "Expedition Everest - Legend of the Forbidden Mountain",
@@ -1142,6 +1400,92 @@
       "detailFile": "8-112-detail.jpg",
       "detailSHA256": "fa9234094779e10ed6033f34a366ead2d9997c611fe6245535729ff996431ea6",
       "detailBytes": 230331,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 8,
+      "rideId": 113,
+      "rideName": "Kilimanjaro Safaris",
+      "alt": "Illustrated Kilimanjaro Safaris at Disney’s Animal Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:12:04.585858+00:00",
+      "originalSHA256": "153f9bdce77f5812b16eb80dc8c7838d844384c11152d10187ead7c550623abc",
+      "review": "Accepted: Actually viewed official source and generated portrait; actual weathered safari truck/canopy/roof luggage/grille/tires, water crossing, source reeds/rocks/sculpted baobab and elephants retained with realistic materials. Source-based representative habitat, no promise of particular animal sightings or current positions.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/parks-and-tickets/attractions/animal-kingdom/kilimanjaro-safaris/kilimanjaro-safaris-00.jpg?1776767550199",
+          "kind": "literal-image-url-in-source",
+          "alt": "",
+          "sourceURL": "https://disneyworld.disney.go.com/attractions/animal-kingdom/kilimanjaro-safaris/",
+          "credit": "Walt Disney World Resort / Disney (official photographic reference publisher)",
+          "license": "Copyright Disney/source photographer; rights retained",
+          "licenseURL": "https://disneyworld.disney.go.com/attractions/animal-kingdom/kilimanjaro-safaris/",
+          "sha256": "ce3cb0e097d8fd19fee5771fb70c808a41afa2b20553e8e7e9ad4f2b672c54e2",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The inspected official photographic safari scene shows the actual weathered tan/brown open-sided safari truck with canvas canopy, roof luggage and green roll, front grille guard and large tires at a shallow water crossing. Source reeds, rocky/green habitat, large sculpted baobab and actual elephants are visible beyond. Preserve this source-documented vehicle/habitat composition and realistic manufactured/natural materials; no invented coaster, vehicle seating mechanism or unsafe guest-animal encounter. Animals are representative of the photographed safari, not a claim that they will be visible at a particular time."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "8-113-thumbnail.jpg",
+      "thumbnailSHA256": "520a38b65300b85e86afe46fa6bfa1ea9555f1325596d66bf2261e974fd6e2b7",
+      "thumbnailBytes": 27158,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "8-113-detail.jpg",
+      "detailSHA256": "083b8a56e7b849313569764e224f547202da8c20aece2a14fa03f0e63dece473",
+      "detailBytes": 241185,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 8,
+      "rideId": 4438,
+      "rideName": "Na'vi River Journey",
+      "alt": "Illustrated Na'vi River Journey at Disney’s Animal Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T12:14:39.259902+00:00",
+      "originalSHA256": "75037bb2f080ffb966c06780d4fb5bc91168df0c89e601642bebaeaebd433982",
+      "review": "Accepted: Actually viewed genuine source and generated portrait; physical blue Shaman animatronic pose/woven garments/braided strands, sculpted roots/glowing plants and real guest boat on reflective water retain the documented scene. Clearly manufactured attraction scenery, no live person or invented route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/vision-dam/digital/parks-platform/parks-global-assets/disney-world/attractions/navi-river-journey/240824WS-309260-1-1-16x9.jpg?2025-08-19T01:07:25+00:00",
+          "kind": "literal-image-url-in-source",
+          "alt": "",
+          "sourceURL": "https://disneyworld.disney.go.com/attractions/animal-kingdom/navi-river-journey/",
+          "credit": "Walt Disney World Resort / Disney (official photographic reference publisher)",
+          "license": "Copyright Disney/source photographer; rights retained",
+          "licenseURL": "https://disneyworld.disney.go.com/attractions/animal-kingdom/navi-river-journey/",
+          "sha256": "1d462b763a66c6cf40961c4c1f07450d5abb19fdadb7555789e0eef08920ae40",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Replace the inspected official family close-up with the better own-page genuine photo of the actual Na'vi Shaman of Songs animatronic scene. A blue manufactured figure with long red/brown braided strands, orange-pink woven garments and source outstretched hands sits within sculpted roots and glowing magenta/cyan mushrooms/vines. The real boat with small ordinary source guests passes at lower left on dark reflective water. Preserve the actual physical animatronic/set construction, figure pose, layered scenic plants and visible boat/water relationship; not a live blue person, invented floating landscape or hidden full water route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "8-4438-thumbnail.jpg",
+      "thumbnailSHA256": "745155113d208702bf281a66496106a42854b73b0bcf8b834c5bd5eb3f9a0b04",
+      "thumbnailBytes": 28424,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "8-4438-detail.jpg",
+      "detailSHA256": "93697713d7933430005d20e54b0a8bc64b6b05e504c48812e8291ab4f169d204",
+      "detailBytes": 216548,
       "detailPixels": [
         768,
         960
