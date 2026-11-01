@@ -364,10 +364,10 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 499,
-    "pendingIllustrations": 625,
-    "acceptedForRequestedStyle": 498,
-    "unfinishedForRequestedStyle": 626,
+    "acceptedIllustrations": 512,
+    "pendingIllustrations": 612,
+    "acceptedForRequestedStyle": 511,
+    "unfinishedForRequestedStyle": 613,
     "blocked": 12
   },
   "parks": [
@@ -11197,10 +11197,10 @@
           "url": "https://www.sixflags.com/fiestatexas/attractions/fiestatexas-attractions-fireball"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-240610806997371",
@@ -11226,10 +11226,10 @@
           "url": "https://www.sfftsource.com/rides/white-water-canyon"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-242060916205868",
@@ -11255,10 +11255,10 @@
           "url": "https://rcdb.com/529.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-242560240130808",
@@ -11284,10 +11284,10 @@
           "url": "https://rcdb.com/605.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-245291769670080",
@@ -11313,10 +11313,10 @@
           "url": "https://www.sfftsource.com/rides/riptide-runner"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-248852484163075",
@@ -11342,10 +11342,10 @@
           "url": "https://www.sixflags.com/fiestatexas/attractions/fiestatexas-attractions-fiestatexasrailroad"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-249426359243664",
@@ -11371,10 +11371,10 @@
           "url": "https://rcdb.com/528.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-253671325116577",
@@ -11395,10 +11395,10 @@
           "url": "https://www.sixflags.com/fiestatexas/attractions/metropolis-transit-authority"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-256481512273372",
@@ -11419,10 +11419,10 @@
           "url": "https://www.sixflags.com/fiestatexas/attractions/green-lantern-emeral-fight"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-256967982753336",
@@ -11448,10 +11448,10 @@
           "url": "https://www.sfftsource.com/rides/texas-tumble"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-260369102827331",
@@ -11472,10 +11472,10 @@
           "url": "https://www.sixflags.com/fiestatexas/attractions/spinsanity"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-266831728384390",
@@ -11496,10 +11496,10 @@
           "url": "https://www.sixflags.com/fiestatexas/attractions/hurricane-force-5"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-277666234041236",
@@ -11520,10 +11520,10 @@
           "url": "https://www.sixflags.com/fiestatexas/attractions/bugs-white-water-rapids"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "41-66829960275970",
