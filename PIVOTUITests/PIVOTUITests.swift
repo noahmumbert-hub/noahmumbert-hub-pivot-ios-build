@@ -124,8 +124,7 @@ final class PIVOTUITests: XCTestCase {
         let chart = app.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
         centerFullyVisible(chart, in: app)
         screenshot("Every observed wait dot labeled latest samples", app: app)
-        chart.swipeRight()
-        waitForSettledFrames([chart, chart.staticTexts["wait-sample-time-10916-0"].firstMatch])
+        centerHorizontally(chart.staticTexts["wait-sample-time-10916-0"].firstMatch, in: chart, app: app)
         screenshot("Every observed wait dot labeled earlier samples", app: app)
         let sampleTimes = app.buttons["Sample times"].firstMatch
         reveal(sampleTimes, in: app); sampleTimes.tap()
@@ -191,14 +190,22 @@ final class PIVOTUITests: XCTestCase {
                                       file: StaticString = #filePath, line: UInt = #line) {
         var previous: [CGRect] = []
         var unchangedSince = Date()
+        var lastFrames: [CGRect] = []
         let predicate = NSPredicate { _, _ in
-            guard elements.allSatisfy({ $0.exists && !$0.frame.isEmpty }) else { return false }
+            // A frame query already resolves the element. Repeating exists
+            // and frame queries can consume the entire waiter on a busy SE.
             let frames = elements.map(\.frame)
-            if frames != previous { previous = frames; unchangedSince = Date() }
+            lastFrames = frames
+            guard frames.allSatisfy({ !$0.isEmpty && !$0.isInfinite && !$0.isNull }) else { return false }
+            let stable = frames.count == previous.count && zip(frames, previous).allSatisfy { lhs, rhs in
+                abs(lhs.minX - rhs.minX) <= 1 && abs(lhs.minY - rhs.minY) <= 1
+                    && abs(lhs.width - rhs.width) <= 1 && abs(lhs.height - rhs.height) <= 1
+            }
+            if !stable { previous = frames; unchangedSince = Date() }
             return Date().timeIntervalSince(unchangedSince) >= 0.25
         }
-        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: predicate, object: nil)], timeout: 4),
-                       .completed, "Displayed glyph frames must settle before measuring or capturing them", file: file, line: line)
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: predicate, object: nil)], timeout: 8),
+                       .completed, "Displayed glyph frames must settle before measuring or capturing them: \(lastFrames)", file: file, line: line)
     }
 
     /// Short drags converge on the measured content viewport without the SE
@@ -206,7 +213,6 @@ final class PIVOTUITests: XCTestCase {
     /// including both edges of a chart, must fit above the native tab bar.
     private func centerFullyVisible(_ element: XCUIElement, in app: XCUIApplication,
                                      file: StaticString = #filePath, line: UInt = #line) {
-        var previous = CGRect.null
         for _ in 0..<22 {
             let viewport = safeContentViewport(in: app)
             var movement: CGFloat = min(170, viewport.height * 0.4)
@@ -216,21 +222,20 @@ final class PIVOTUITests: XCTestCase {
                     XCTFail("Target cannot fit the visible content area. Frame \(frame); viewport \(viewport)", file: file, line: line)
                     return
                 }
-                if viewport.insetBy(dx: -1, dy: -1).contains(frame),
-                   abs(frame.midY - viewport.midY) <= 12 || frame == previous {
+                if viewport.insetBy(dx: -1, dy: -1).contains(frame) {
                     waitForSettledFrames([element], file: file, line: line)
                     assertContained(element.frame, in: safeContentViewport(in: app), "The complete target must remain visible", file: file, line: line)
                     return
                 }
-                let offset = frame.midY - viewport.midY
-                movement = min(movement, max(30, abs(offset))) * (offset < 0 ? -1 : 1)
-                previous = frame
+                let offset = frame.minY < viewport.minY
+                    ? frame.minY - viewport.minY - 12 : frame.maxY - viewport.maxY + 12
+                movement = min(movement, max(20, abs(offset))) * (offset < 0 ? -1 : 1)
             }
             let x = viewport.maxX - 3
             let start = app.coordinate(withNormalizedOffset: .zero)
                 .withOffset(CGVector(dx: x - app.frame.minX, dy: viewport.midY + movement / 2 - app.frame.minY))
             let end = start.withOffset(CGVector(dx: 0, dy: -movement))
-            start.press(forDuration: 0.05, thenDragTo: end)
+            start.press(forDuration: 0.05, thenDragTo: end, withVelocity: .slow, thenHoldForDuration: 0.2)
         }
         screenshot("Complete target could not fit the content viewport", app: app)
         XCTFail("Could not place the complete target inside the visible content area", file: file, line: line)
@@ -275,7 +280,6 @@ final class PIVOTUITests: XCTestCase {
     private func centerHorizontally(_ label: XCUIElement, in scrollView: XCUIElement, app: XCUIApplication,
                                     file: StaticString = #filePath, line: UInt = #line) {
         XCTAssertTrue(label.waitForExistence(timeout: 5), "A genuine displayed time label must exist", file: file, line: line)
-        var previous = CGRect.null
         for _ in 0..<14 {
             let viewport = scrollView.frame.intersection(safeContentViewport(in: app)).insetBy(dx: 4, dy: 0)
             let frame = label.frame
@@ -284,18 +288,18 @@ final class PIVOTUITests: XCTestCase {
                 return
             }
             let fullyVisible = viewport.insetBy(dx: -1, dy: -1).contains(frame)
-            // The first/last column can reach a scroll limit before the exact
-            // midpoint. Full glyph containment remains mandatory at that limit.
-            if fullyVisible && (abs(frame.midX - viewport.midX) <= 8 || frame == previous) {
+            if fullyVisible {
                 waitForSettledFrames([scrollView, label], file: file, line: line)
                 assertContained(label.frame, in: viewport, "The entire time label must be inside the horizontal viewport", file: file, line: line)
                 return
             }
-            previous = frame
-            let movement = min(viewport.width * 0.65, max(25, abs(frame.midX - viewport.midX))) * (frame.midX < viewport.midX ? 1 : -1)
+            let offset = frame.minX < viewport.minX
+                ? viewport.minX - frame.minX + 12 : viewport.maxX - frame.maxX - 12
+            let movement = min(viewport.width * 0.65, max(20, abs(offset))) * (offset < 0 ? -1 : 1)
             let start = app.coordinate(withNormalizedOffset: .zero)
                 .withOffset(CGVector(dx: viewport.midX - movement / 2 - app.frame.minX, dy: viewport.midY - app.frame.minY))
-            start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: movement, dy: 0)))
+            start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: movement, dy: 0)),
+                        withVelocity: .slow, thenHoldForDuration: 0.2)
         }
         XCTFail("Could not bring the complete time label into its horizontal viewport", file: file, line: line)
     }
@@ -363,8 +367,7 @@ final class PIVOTUITests: XCTestCase {
             centerFullyVisible(chart, in: app)
             assertObservedChartSamples(Array(repeating: "15", count: 12), chart: chart)
             screenshot("Observed history repeated waits latest \(appearance)", app: app)
-            chart.swipeRight(); chart.swipeRight(); chart.swipeRight(); chart.swipeRight()
-            waitForSettledFrames([chart, chart.staticTexts["wait-sample-time-10916-0"].firstMatch])
+            centerHorizontally(chart.staticTexts["wait-sample-time-10916-0"].firstMatch, in: chart, app: app)
             screenshot("Observed history repeated waits earlier \(appearance)", app: app)
             assertObservedSampleRows(Array(repeating: "15", count: 12), app: app)
             app.terminate()
