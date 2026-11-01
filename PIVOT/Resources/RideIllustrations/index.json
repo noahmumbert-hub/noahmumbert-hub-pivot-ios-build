@@ -4939,6 +4939,608 @@
       ]
     },
     {
+      "parkId": 34,
+      "rideId": 179481255453933,
+      "rideName": "Six Flags & Texas Railroad",
+      "alt": "Illustrated Six Flags & Texas Railroad at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:55:32.881636+00:00",
+      "originalSHA256": "1e528657d3a5685e8ac991de4398a33845f8a7a10dbdadcff8bd18e2b5abeddf",
+      "review": "Accepted: generated pixels inspected against genuine official Patton number-2 locomotive photograph. Red boiler/cab/pilot, black smokebox/chimney, red headlamp housing/green cap and antler, brass bell/pipes, pale-rimmed driving wheels/rods and rail/platform contact retained. Source-scale coaches remain behind. Artwork does not assert operation during the source page's temporary construction notice.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe630a057c7a4b4fdbc360256820d55359f23e46c-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The Boomtown Depot train ride at Six Flags Over Texas with the train at the station.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/six-flags-and-texas-railroad",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e54c61fe326da457d2bfd2e9b0a046a3d904ed5745c529b511c1c6ff61e7863c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official railway photograph shows the actual RED Patton number-2 locomotive with a round BLACK smokebox, red barred pilot/cowcatcher, square red headlamp housing under a green roof/antler ornament, real brass bell/pipes, red cab, pale-rimmed driving wheels and connecting rods attached on ordinary narrow-gauge steel rails beside a timber station platform. Choose the photographed front locomotive and connected running gear in a close/medium portrait; keep far coaches/background visitors incidental and crop unrelated coaster structures. Preserve actual track/wheel contact, not a toy train. The operator page currently carries a temporary-unavailability/construction notice; this undated appearance reference does not establish current operating status and app runtime data is untouched."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-179481255453933-thumbnail.jpg",
+      "thumbnailSHA256": "93c7df961fa29cd5f295bb37fecd09c2bc4adb6ab780ebbb14c0e56da479d7f5",
+      "thumbnailBytes": 25728,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-179481255453933-detail.jpg",
+      "detailSHA256": "3417bb3f2d7719c806e02f3c6abed2ad113777754a2c1c8b2989fe3212822307",
+      "detailBytes": 178614,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 34,
+      "rideId": 182146849141181,
+      "rideName": "Pandemonium",
+      "alt": "Illustrated Pandemonium at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:56:41.158563+00:00",
+      "originalSHA256": "44439e48d58b246791687cc532ef77b0bb00f40becd9eb3822be1c3c87cec5e9",
+      "review": "Accepted: generated pixels inspected against genuine official local exterior photograph. Actual magenta triangular rails, banked upper crest with attached red/tan spinning car, gray support columns/braces and nearby local rail geometry retained. Unrelated teal Aquaman track/tower and foreground signs omitted; no inverted loop invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff815438745c735eefd4ff099e3173038b2a93b8d-3932x2620.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A view of the Pandemonium spinning roller coaster track and structure at Six Flags Over Texas, showcasing its twists and loops.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/pandemonium",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c979d9de5a0497ffb2987569edfb8dcbdb467d37c9c8517d2467ce3700b8c81f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official exterior Pandemonium gallery photograph shows its actual magenta/PURPLE triangular tube rails and GRAY cylindrical columns, banked compact curves and an attached small RED/tan spinning car seen from beneath at the upper crest. Choose that documented upper crest/car and connected gray columns plus only source-supported adjacent rail. Preserve car-to-track attachment and perspective; source alt text says loops, but the photograph does not establish inversions. Crop the unrelated teal Aquaman rail, tall tower and foreground signs. No different park track, new route or inverted loop. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-182146849141181-thumbnail.jpg",
+      "thumbnailSHA256": "c2e3d2f24f7e214d31faf36e72f3bc310cd55c48d74cc7f286cf033fa07311b9",
+      "thumbnailBytes": 20313,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-182146849141181-detail.jpg",
+      "detailSHA256": "91ee0958d03943b7962d614ad73fcde8eebcd10e036a24c2b8afc6952f203506",
+      "detailBytes": 132818,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 34,
+      "rideId": 187663064903407,
+      "rideName": "AQUAMAN: Power Wave",
+      "alt": "Illustrated AQUAMAN: Power Wave at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:57:20.551085+00:00",
+      "originalSHA256": "20994f1a5675f75292e4e738bd89d4bdb7399786151dec3eae4b71b62566e19b",
+      "review": "Accepted: generated pixels inspected against genuine 2023-watermarked SFOT Source local boat photograph. Actual green hull/golden end panels, broad black-seat rows and lap restraints, visible gray guide assemblies and attached steep teal rails/blue support lattice retained. Source physical front emblem remains; no Pulsar stock livery, water splash or hidden route substituted. Original watermarked photograph stays private and credited.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6348983bcf1bf37042eeba18/87831c6f-2e31-4d3c-8246-3445f43afcf4/DSC06071-2.jpg",
+          "kind": "image",
+          "alt": "Actual original photograph linked from the ride-specific SFOT Source gallery",
+          "sourceURL": "https://www.sfotsource.com/rides/aquaman-power-wave",
+          "credit": "SFOT Source (photographer/publisher)",
+          "license": "Copyright SFOT Source; all rights reserved; source photograph remains private",
+          "licenseURL": "https://www.sfotsource.com/about",
+          "sha256": "6034579b32786cb77d2bdbb3ff05ab8d3789297a3cfc0d3a429d46a1d5f5cb7e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine original SFOT Source Aquaman photograph with a 2023 copyright watermark shows the actual local broad GREEN boat, rounded GOLDEN-YELLOW/ORANGE front and rear end panels, tall BLACK molded seats/headrests, dark lap restraints and silver restraint brackets. It carries five rows of four seats on a steep TEAL twin-rail/box-spine spike with substantial BLUE lattice supports and photographed gray wheel/guide assemblies under the hull. Choose the documented local boat and its immediately attached steep rail/support section in a medium portrait, preserving the real twenty-seat arrangement and green/yellow livery. No blue Pulsar hull/red seats, white supports, unrelated purple coaster, invented water/splash or unpictured complete route. Existing painted emblem can remain physical ornament, with no new text. Exact capture date unverified; original watermarked reference remains private."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-187663064903407-thumbnail.jpg",
+      "thumbnailSHA256": "70b2e52e8c27e5afb3dd0b4d4a2dfd04fe7c729b689487bb77244642a5a57e03",
+      "thumbnailBytes": 24458,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-187663064903407-detail.jpg",
+      "detailSHA256": "6779690002c97acc2b1a930390a3311d60b2970f9d636d67ca6411b1aa090ce1",
+      "detailBytes": 151253,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 34,
+      "rideId": 191124333359707,
+      "rideName": "Dino Off Road Adventure",
+      "alt": "Illustrated Dino Off Road Adventure at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:56:14.394201+00:00",
+      "originalSHA256": "3bd1bb3f5cf610bbf91bb0525dcbef48e10198c53dcb8cdd680bcce7f8afdf40",
+      "review": "Accepted: generated pixels inspected against genuine 2024-watermarked SFOT Source vehicle photograph. Actual tan open jeep, slotted black grille/two round lights, bumper/axle/narrow tires, gray seat rows, steering wheel and central guide on the paved wooded course retained with source family at medium scale. No unpictured dinosaur, different vehicle or route invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6348983bcf1bf37042eeba18/8821fe43-c78f-4d4f-b2eb-d5f41798b9d9/DSC03898.jpg",
+          "kind": "image",
+          "alt": "Actual original photograph linked from the ride-specific SFOT Source gallery",
+          "sourceURL": "https://www.sfotsource.com/rides/dino-adventure",
+          "credit": "SFOT Source (photographer/publisher)",
+          "license": "Copyright SFOT Source; all rights reserved; source photograph remains private",
+          "licenseURL": "https://www.sfotsource.com/about",
+          "sha256": "82c1b3c8f69dd4a34b5be3ddf5325bf8404b98d3d9bc9018f9aac42137fde73b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine original SFOT Source vehicle photograph with a 2024 copyright watermark shows Dino Off Road Adventure's actual TAN open vintage-jeep ride vehicle: square front grille with BLACK vertical slots, TWO round lamps, flat tan hood/short silver rail, black front bumper/exposed axle, narrow black tires/tan fenders, two rows of GRAY seats and a black steering wheel. It follows the photographed central raised guide on a narrow paved course between trees and timber fencing. Choose the actual vehicle and connected guide/path in a medium portrait with source-scale riders; crop unrelated background signs. No generic safari vehicle, old Chaparral body, unpictured dinosaur, new guide rails, invented full route or hidden chassis. Exact capture date unverified; original watermarked reference remains private."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-191124333359707-thumbnail.jpg",
+      "thumbnailSHA256": "f7bca517a30d1be7136fa3dab2abe052d7d965ae7c59336a96c8908d53bfa61c",
+      "thumbnailBytes": 26759,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-191124333359707-detail.jpg",
+      "detailSHA256": "6b08935b17d058680bc0b0aa8ff7dc5f015feefcd40d4cda2cb81b853edea63e",
+      "detailBytes": 188849,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 34,
+      "rideId": 192176805907013,
+      "rideName": "Mini Mine Train",
+      "alt": "Illustrated Mini Mine Train at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:00:08.701269+00:00",
+      "originalSHA256": "80df2876d69113864341f265f18d2128bba294fc5ada9c543edf573605a4f7e4",
+      "review": "Accepted: generated pixels inspected against the genuine official Mini Mine Train photograph. Gray/silver paired cars, black seat padding/restraints, visible running wheels on rust-red rail/supports, tan timber mine portal and turquoise stair bridge are retained. Source-scale riders and connected rear cars remain; no steam locomotive or red-car guess substituted.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F65335d0c0b275319629f30c9fe35f8a572549e93-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children riding the Mini Mine Train at Six Flags Over Texas, a beginner thrill ride for kids.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/mini-mine-train",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "59743987993cc53a4efc03dc4634c057eab0bd7bdf5ed7e2d4522b301b2a9e3a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Mini Mine Train photograph shows actual compact GRAY/dark-silver two-across mine-coaster cars with lighter silver front panel, BLACK padded seat backs/lap restraints and visible round steel running wheels riding the photographed low RUST-RED tubular rail with red crossmembers/supports. The train leaves a dark opening beneath a TAN plank-sided mine building and TURQUOISE wooden stair/railing bridge among trees. Choose only the photographed front two gray cars, attached wheels/rail and mine-portal/bridge section at medium scale with source riders incidental. Do not use the page text's unsupported bright-red car color, a steam locomotive, different Runaway Mine Train or invented unseen track route. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-192176805907013-thumbnail.jpg",
+      "thumbnailSHA256": "732441af04442ea438672c8a0199fbf8b3ebbdc084678b41ba945099398135c2",
+      "thumbnailBytes": 27989,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-192176805907013-detail.jpg",
+      "detailSHA256": "4a3e685e6b84db4563393f4a6e7550f0b0bc5df26929dc6fb78e66e21131ce52",
+      "detailBytes": 207775,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 34,
+      "rideId": 207830917786942,
+      "rideName": "Cloud Bouncer",
+      "alt": "Illustrated Cloud Bouncer at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:01:46.283205+00:00",
+      "originalSHA256": "6218d573054a6c01526f3e4541af18d375db4f33c66bc752b18e85540cc8c4ce",
+      "review": "Accepted: generated pixels inspected against the genuine official Cloud Bouncer basket gallery photograph. Red-strapped tan wicker-textured gondola, cream sandbags, silver guard/pole, striped balloon ornament and attached blue cloud arm/central mast with green base enclosure retained. Clearly the actual balloon-basket ride, distinct from the Bugs Bunny drop row.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F130a6821a88877a2b6dc8fbe258ba67dd57a18c1-1440x799.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Cloud Bouncer ride in action at Six Flags Over Texas with families seated in colorful balloon baskets.\"",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/cloud-bouncer",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "cbb7b286bb768af05b35f3f9efbd57c8a0bba3a0bef9286e36a975dc91bca26a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Cloud Bouncer gallery photograph shows the actual elevated round GOLD/TAN wicker-textured baskets with RED or GREEN painted straps/rims, cream/white decorative sandbags, tall SILVER cage guardrails/gates and real vertical poles attaching them to striped balloon-shaped canopy ornaments. They connect to BLUE radial arms painted WHITE clouds around a BLUE central guide mast, above a green shrub-painted base enclosure. Choose the photographed foreground RED-strapped basket, guard/pole, its visible blue cloud arm and central attachment in a medium portrait with riders source-scale; preserve mechanical connections and crop unrelated foreground signs. This is the basket/balloon ride, distinct from Bugs Bunny Cloud Bouncer's straight seat row. No actual free-flying hot-air balloon or invented unseen carriage underside. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-207830917786942-thumbnail.jpg",
+      "thumbnailSHA256": "90be12d7dc6ee180de99c9d89500b4084d1fd0d9b82483eda4e211c3eefa3b3e",
+      "thumbnailBytes": 27417,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-207830917786942-detail.jpg",
+      "detailSHA256": "6945df7a8ec0d8a4dd13a632c2c34a9c30fae2507db67c6e58dec3d2470a8070",
+      "detailBytes": 176395,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 34,
+      "rideId": 214470725999922,
+      "rideName": "Titan",
+      "alt": "Illustrated Titan at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:00:55.026374+00:00",
+      "originalSHA256": "da5341f7420e585e4f33ebe92931901adfe98af63a817a65882119a0b40086a1",
+      "review": "Accepted: generated pixels inspected against the genuine newer official Titan photograph and primary 2025 repaint corroboration. Actual dark-blue banked rails/crest and attached white column/lattice/braces retained with no train added. Historical orange/teal gallery colors were not blended into this newer appearance.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9bb0d91d89abfe4a51d913f6f9ed812ee44a1be4-2000x1333.webp%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A view of the Titan roller coaster structure with blue and orange tracks against a clear blue sky at Six Flags Over Texas.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/titan",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "7fcdfc0ed2c7ef14f076acce803fe25f78c1a01efc254611e5393ae75ece8a60",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine newer official Titan hero photograph shows DARK BLUE box-spine coaster track with low banked foreground curves and its tall lift/crest behind, supported on WHITE steel lattice, white cylindrical columns and diagonal/cross bracing, with actual dark maintenance walkway/handrails. SFOT Source independently documents this blue/white repaint in 2025; older orange-track/teal-support gallery photos are historical and must not be blended into it. Choose only the photographed banked blue curve and attached white columns, with a source-supported part of the actual tall crest/lattice behind. No train is visible in this selected reference: add none. No inverted loops, invented layout, Magic Mountain Goliath or guessed train. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-214470725999922-thumbnail.jpg",
+      "thumbnailSHA256": "786315022a88df584e5de1da571c37261dfc26032f56d7c921acc225b2eebfb5",
+      "thumbnailBytes": 23600,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-214470725999922-detail.jpg",
+      "detailSHA256": "4dd7050f0c5b92bd3fa79335f42cbd77dfd2559de63f7bf850437c54567a2fb5",
+      "detailBytes": 180900,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 34,
+      "rideId": 219046769491605,
+      "rideName": "Taz Tornado Swings",
+      "alt": "Illustrated Taz Tornado Swings at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:00:36.269649+00:00",
+      "originalSHA256": "6761bdc6b708e9d938f00c6ce5b61a3e0ae7fe58a90c5326798b8e2e73c51449",
+      "review": "Accepted: generated pixels inspected against the genuine official local Taz swing photograph. Empty orange molded foreground chair/silver cage, paired chains/blue lower suspension, sculpted red canopy arms and gray tornado/cloud hub/stone-pattern pedestal retained. Unrelated foreground visitors/signage/tower removed from crop; no live character or alternate ride.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffbc4a715fb97faa915efe02d9c434f786df0e683-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Taz Tornado Swings ride at Six Flags Over Texas, featuring chair swings and a fun, colorful setup.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/taz-tornado-swings",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "186532e5f88dc5e8ab4ec978d877bc8e10fdf6388319f6cff09fac32262684ba",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Taz Tornado Swings photo shows the actual small swing roundabout: ORANGE individual molded chairs in SILVER tubular cages, two SILVER chain suspensions per side with BLUE lower rods, attached to RED/BROWN radial canopy arms terminating in sculpted glove-like fingers around a gray/cream central ornament. A GRAY sculpted tornado/cloud cone sits over the actual stone-pattern lower pedestal inside a YELLOW wooden fence. Choose the photographed empty orange foreground chair, its real paired chains/blue rods and attached red canopy arm/gray hub in a medium portrait, preserving manufactured hardware. Keep source-scale background riders incidental; crop foreground bench/visitors, signs, unrelated tower and ride. No living character, new tower, unsupported chair or alternate park's ride. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-219046769491605-thumbnail.jpg",
+      "thumbnailSHA256": "3404fcd7239bfd0769f82ef2589110bebbdc52e8f72b1b8cab11cb2add6d42be",
+      "thumbnailBytes": 25751,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-219046769491605-detail.jpg",
+      "detailSHA256": "00ffffa39e561b107210f147fd4abcb2fe61b318e41fcb8edd92bc7755a6b5cc",
+      "detailBytes": 203518,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 34,
+      "rideId": 226368260506135,
+      "rideName": "New Texas Giant",
+      "alt": "Illustrated New Texas Giant at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:04:57.178144+00:00",
+      "originalSHA256": "4326d621270d9ebd3406426cee0377e7274aee76af8d68b982b3505a6d37a246",
+      "review": "Accepted: generated pixels inspected against genuine official New Texas Giant photograph. Actual burgundy Cadillac-themed front, chrome grille/round lamps/bumper, longhorn ornament, brown seats/red side fins and visible guide wheels on red steel I-box track/timber framing retained with source-scale riders. The source camera pole remains in front of the grille; no invented car/route or wooden running rail substituted.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fd6fa074f33d82d053043b544a67608fde7a9672b-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A group of people enjoying the New Texas Giant roller coaster at Six Flags Over Texas, raising their hands in excitement.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/new-texas-giant",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "6581fbe329cfd7eaf4df1780a057983e51db6e913dede643a105cb3ff54335f0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official New Texas Giant photograph shows its actual BURGUNDY/red Cadillac-themed front train car, SILVER chrome grille/paired round lamps/rounded bumper, pale longhorn hood ornament, brown padded seating, tall red/silver fin-like side panels and photographed gray wheel brackets running on RED steel I-box track over real timber supports. Choose the photographed front car and first connected car, real running wheels/rail and timber section in a close/medium banked portrait with source riders at medium scale. Preserve actual train-to-track attachment, not a road-going car. Crop the source camera pole and unrelated observation tower rather than adding unpictured machinery or extending the route. No all-wood running rail, new inversion or different Texas Giant vehicle. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-226368260506135-thumbnail.jpg",
+      "thumbnailSHA256": "d0ff0f223179b45b66624bda33e99a13363a5f4be552c4c1a70fa71f4f0ce7fa",
+      "thumbnailBytes": 22644,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-226368260506135-detail.jpg",
+      "detailSHA256": "29573dea25b276920a49db0a77405c6e040246d1507211ae188bac0ff148d5da",
+      "detailBytes": 145715,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 34,
+      "rideId": 231415658884727,
+      "rideName": "JUSTICE LEAGUE™: Battle for METROPOLIS",
+      "alt": "Illustrated JUSTICE LEAGUE™: Battle for METROPOLIS at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:04:09.873453+00:00",
+      "originalSHA256": "37621bd1f481a090c00ed0fc99c4170eacd4bc7bf9c5763bf6944e75f1b3e25d",
+      "review": "Accepted: generated pixels inspected against genuine official local Hall of Justice exterior photograph. Pale semicircular arch, narrow dark window bays, central entrance/JL emblem, actual bronze side reliefs, stepped fins, terrace rails and stair geometry retained with source visitors. Physical facade lettering remains. No unpictured ride interior or superhero scene invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F38f3d0e3249fa9c321409361b2e5928b831983c7-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Hall of Justice building, the entrance to JUSTICE LEAGUE™: Battle for METROPOLIS at Six Flags Over Texas.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/battle-for-metropolis",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f86c0a95b3fb140702032d72265360e474011a9a2006dafeed7222b0726defba",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official local Over Texas photograph shows the actual Hall of Justice entrance building: a broad PALE GRAY semicircular arched facade, tall narrow dark window bays separated by pale vertical ribs, raised central entry and rectangular column, real blue oval JL emblem above the doorway, bronze geometric relief panels at both sides, stepped brown upper fins, real stairs and BLACK terrace railings. Choose this documented exterior arch, center doorway and one attached bronze side panel in a portrait with realistic pale concrete/metal/glass. Existing physical facade lettering may remain; add no overlay or invented lettering. This is an honest exterior representation: no unseen ride vehicle, superhero battle, animatronic room or interior invented. Crop unrelated background towers and keep source visitors distant/incidental. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-231415658884727-thumbnail.jpg",
+      "thumbnailSHA256": "44c1dbaa33da9d3e5ee16273a59eed690a74aa5f2c20d71f653b33bf8447d257",
+      "thumbnailBytes": 19351,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-231415658884727-detail.jpg",
+      "detailSHA256": "c3c376e4d7c6aef50560b878216fa7be588216b09f941e8e4d399e8c8c32560a",
+      "detailBytes": 141358,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 34,
+      "rideId": 231960407615491,
+      "rideName": "Marvin the Martian Space Rockets",
+      "alt": "Illustrated Marvin the Martian Space Rockets at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:03:32.168878+00:00",
+      "originalSHA256": "85dbf03e39fef3953d911069185ad556ebb94f74f89e327f0a93a99f3ff38d16",
+      "review": "Accepted: generated pixels inspected against genuine official local rocket-ride photograph. Silver/red tandem-seat rocket, yellow mounted control, side steps, attached blue radial arms/support cylinders and orange/green globe-topped mast with manufactured figure retained with source-scale children. Real colored bulb rows are lit for the dusk treatment; no free space flight.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7f71c7308880c4b8c2a4991a3511b58e384c3468-2000x1333.webp%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children enjoying the Marvin The Martian Space Rockets ride at Six Flags Over Texas.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/marvin-martian-space-rockets",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "892227e09902a059c5ac6f6c969764e3c44457bce06372236867633bddb0796f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Marvin the Martian Space Rockets photograph shows the actual SILVER elongated rocket gondolas with RED rounded conical nose and fins, TWO inline BLACK seats, a mounted YELLOW toy-space-blaster control with red lens, silver side foot steps and attachment to BLUE radial arms with colored bulb rows and visible support cylinders below. The actual central ORANGE mast has GREEN raised dots and supports a painted globe with a manufactured Marvin figure. Choose the photographed foreground silver/red rocket, attached blue arm/yellow control and source-supported central mast section in a medium portrait; preserve source-scale children, real seat/arm/footstep connections and manufactured surfaces. Do not depict real space flight, new alien vehicle, live character, added passengers or hidden full mechanism. Crop unrelated shade awnings/foreground signs when possible. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-231960407615491-thumbnail.jpg",
+      "thumbnailSHA256": "e3f7d281c164338ce2d52f3cae9c4f3de1776ebddf9a5709b686aa614a124b50",
+      "thumbnailBytes": 27819,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-231960407615491-detail.jpg",
+      "detailSHA256": "22bd1cd99f0275272cfd38e002f937c5b932b5b7dec774398b075832e9f7774c",
+      "detailBytes": 170173,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 34,
+      "rideId": 253224109288399,
+      "rideName": "Daffy Duck Bucket Blasters",
+      "alt": "Illustrated Daffy Duck Bucket Blasters at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:05:21.546480+00:00",
+      "originalSHA256": "06b31b9509a034c0404a5ba607089d26c64b31b0f1f6b6bc388755b58072046c",
+      "review": "Accepted: generated pixels inspected against genuine official local water-bucket attraction photograph. Orange/green tubs, silver guardrails, yellow water cannons, blue basin/fence and central orange bucket/white frame with photographed surfboard/beach-ball decor retained. Water and foreground fence occlude hidden mechanism; no invented chassis or different ride substituted.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F96fe9f0645d9a9e1d2a12c09a6226f83bac4570e-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Daffy Duck Bucket Blasters",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/daffy-duck-bucket-blasters",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "784b3245fb6d01a85a8e2a0b92d8d915b95b6b9e5cc23532a7f14079586fcaf1",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Daffy Duck Bucket Blasters photograph shows the actual ORANGE/GREEN/PINK barrel-shaped passenger tubs with SILVER tubular guardrails and YELLOW mounted water cannons on gray pivots, within a BLUE shallow-water basin and bright blue fence. The real central tan sand-island platform holds a huge ORANGE bucket with gray hoops/handle on a WHITE crossed A-frame; a flower-painted BLUE surfboard, beach ball and toy pail are attached decor. Choose the photographed orange passenger tub and its actual cannon/guardrail on water, with a source-supported portion of the central orange bucket/white frame behind it. Preserve water occlusion; no floating unattached tub, hidden chassis, invented route or living duck. Source riders remain at medium/background scale and printed flags are physical decoration. This is the local water-bucket attraction, distinct from Magic Mountain's previously blocked jeep/Elmer scene; that blocked request remains untouched. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-253224109288399-thumbnail.jpg",
+      "thumbnailSHA256": "0d659cdef0af40fe5d28ea67466b4046cd528d6e5fc41d6ff90c6912d640832a",
+      "thumbnailBytes": 26740,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-253224109288399-detail.jpg",
+      "detailSHA256": "a5e0bf69a9a6e93451f098179253919ce220555b7b7c33c2a23cb10019db9a09",
+      "detailBytes": 175964,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 34,
+      "rideId": 259802627828583,
+      "rideName": "Judge Roy Scream",
+      "alt": "Illustrated Judge Roy Scream at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:06:38.155550+00:00",
+      "originalSHA256": "ab3dedae6d1bfa92610a0e60f4d01e94ffaf912c8e8b0e0964fb3fc7412e2ffb",
+      "review": "Accepted: generated pixels inspected against the genuine official Judge Roy Scream photograph. White/cream timber post-and-diagonal lattice, rounded steep crest and attached gray running/guardrail edge retained with source-supported tree occlusion. No train, steel hybrid rail, new loop or unpictured route added.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fdb128ac6bdbff1f78d37c60d0ca42796befbb87a-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The Judge Roy Scream wooden roller coaster at Six Flags Over Texas.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/judge-roy-scream",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "8f3f9e02b617302e709a9fa979df1f002eca9cf07e0824f53549f0fd69c10f66",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Judge Roy Scream photograph shows the actual WHITE/cream painted timber trestle with a dense lattice of wood posts, horizontal ties and diagonal bracing, supporting its steep rounded lift/crest and lower rolling hills with a dark GRAY running-strip/handrail edge. Choose only the photographed steep white-lattice crest and its connected top rail/guardrail, preserving actual wood texture, joint pattern and non-inverting slope. Trees partly occlude the structure in the source; retain plausible source occlusion or crop to documented clear sections. No train is visible, so add none. No steel hybrid red rail, new loop, guessed car, full unseen layout or invented adjacent ride. Crop foreground road signs/fence; restrained dusk, no exaggerated sunburst. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-259802627828583-thumbnail.jpg",
+      "thumbnailSHA256": "f5a91e22ce7044e11bd5a7c9d5b7bd54127560d794e95876644e729ec5755547",
+      "thumbnailBytes": 25663,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-259802627828583-detail.jpg",
+      "detailSHA256": "b3fb803f5051638e70b94f1620f3e0702a168f401562284d80a672f846c73441",
+      "detailBytes": 208822,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 34,
+      "rideId": 273016583279569,
+      "rideName": "Gunslinger",
+      "alt": "Illustrated Gunslinger at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T02:07:14.604044+00:00",
+      "originalSHA256": "ca49b0cc888a920456e73649606c669e498615d3d26f54ed57f02ff94b24b6ed",
+      "review": "Accepted: generated pixels inspected against the genuine official Gunslinger photograph. Black seat/red tubular cage, pale lower suspension with brown chain sections and attached gray/white upper arms retained around actual central maintenance platform/ladder cage. Source rider remains at medium scale; unpictured base stays outside frame.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F627bf747dcf5542496df712d79e9381125dd7ec9-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders swinging high on the Gunslinger ride at Six Flags Over Texas.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/gunslinger",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "afa4c1827ab2f3449da1d1349846b3a8a5536e795897a08da307ecb4e5782dc0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Gunslinger photograph shows the actual suspended BLACK bucket seats enclosed by dark RED tubular cages/armrests, pale woven suspension straps below rusty-brown chain sections attached to GRAY/white radial steel arms, around a TAUPE/gray central mechanism with real grated maintenance platform and ladder cage. Choose the photographed central black/red occupied chair, its actual paired pale straps/chain attachments and connected upper arm/central platform section in a medium portrait. Keep source rider at medium scale and actual swing tilt/seat support intact. No western gunfight, new character, invented canopy, unrelated tall tower or unsupported floating chair; do not invent the unpictured full base. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-273016583279569-thumbnail.jpg",
+      "thumbnailSHA256": "54f3a191589104167085029bd7f06644542012d97fd033c7ed4e72277ad23c4e",
+      "thumbnailBytes": 33582,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-273016583279569-detail.jpg",
+      "detailSHA256": "4e4272cde6799fa3fe71836bbb3a8f640b89e0cdecb2c4a0d7bc13ec31d0c066",
+      "detailBytes": 204496,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
       "parkId": 35,
       "rideId": 355690524725,
       "rideName": "Twisted Cyclone",
