@@ -2368,6 +2368,92 @@
     },
     {
       "parkId": 33,
+      "rideId": 8654638258163,
+      "rideName": "Bugs’ Buccaneer",
+      "alt": "Illustrated Bugs’ Buccaneer at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:36:57.692866+00:00",
+      "originalSHA256": "007b448b28b2a7b343f9ab9a485475acdd3f2909a3b1b0a7d49013c7e91a9c29",
+      "review": "Accepted: actual generated pixels compared with the genuine Discovery Kingdom photo. Pink/maroon wood-effect raised bow and silver mesh panel, gold A-frame and blue anchor medallion retained; queue fence still hides the lower ship. No hidden full hull or benches reconstructed.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1457b9907fa435ef92c9bb5b76b97a0fca299ef8-600x400.jpg%3Fw%3D1408%26h%3D1192%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Bugs' Buccaneer pirate themed ride for kids in action on a sunny day at Six Flags Discovery Kingdom.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/bugs-buccaneer",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "41cded74e95570867fc1d245e19a3af0115ad426bfdd4543cbfaa5cf582d38b9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom photo shows the actual small pink/maroon wood-effect swinging pirate-ship bow, silver/gray upper side panel/mesh, pale GOLD A-frame arm with real riveted edges and circular blue anchor medallion, behind a wooden seaport queue fence. Choose only the photographed raised bow/upper side and actual supporting A-frame/anchor disc in a close portrait. Keep the lower hull, benches and hidden mechanism occluded/cropped as in the source. Crop the large sail/sign, visitors and queue lettering; do not reconstruct a complete unpictured ship, water scene or new swing attachment. Undated genuine photograph, not current-operation proof."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-8654638258163-thumbnail.jpg",
+      "thumbnailSHA256": "77ef3e68f0f7f94cdaa4882d2d370a6040e1de48ed8bbeb9fcc470eff366d3d7",
+      "thumbnailBytes": 24335,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-8654638258163-detail.jpg",
+      "detailSHA256": "03ab15d83640d38264bd401b6f13e5203911a2d882ebc1d6ec516a0d68eeae32",
+      "detailBytes": 168949,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 9810806847794,
+      "rideName": "Taz’s Typhoon",
+      "alt": "Illustrated Taz’s Typhoon at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:36:32.312407+00:00",
+      "originalSHA256": "ff300520542ace6aba9067b550c2a3b2343056b7ec2eec36bae475cddbea064c",
+      "review": "Accepted: actual generated pixels compared with the genuine Discovery Kingdom photo. Gray mast and ribbed vortex housing/faux-rock base, brown paw-shaped radial arms, silver chain connections and red bench swings retained. Fixed manufactured top ornament stays partly cropped; no living animal or new mechanism.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe832b961661b555054822b103c08dd06ac34973f-1440x1531.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Families enjoying Taz's Typhoon at Six Flags Discovery Kingdom.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/tazs-typhoon",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "79cfbf0f0eaedf0ce723ffc496b8c9661e7abf8dada887d7a7d01efe6e73fcec",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom photo shows the actual dark-gray cylindrical mast/faux-rock base and ribbed vortex central housing, brown radial steel arms with molded paw panels, thin silver chains, black brace rods and RED bench swing chairs with silver suspension side bars. Use a close/medium source-supported lower-hub, real radial arm/chain and attached red bench portrait; keep the cropped top and unseen mechanism outside frame. Retain the manufactured fixed ornament/materials, not a living animal. Incidental riders must remain small or outside the crop; no copied tourist portrait, free-floating bench, new canopy or invented full ride geometry. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-9810806847794-thumbnail.jpg",
+      "thumbnailSHA256": "d96d6283f576dd125f4760660aedca8b1f08db32d8cc48fbdb18c15214776704",
+      "thumbnailBytes": 28895,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-9810806847794-detail.jpg",
+      "detailSHA256": "5a22a4b83e0f9b5f521398e04b5c22278b1c5160f36f3063c0cc25ca897a40e6",
+      "detailBytes": 198210,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
       "rideId": 19192107735555,
       "rideName": "Congo Queen",
       "alt": "Illustrated Congo Queen at Six Flags Discovery Kingdom",
@@ -2403,6 +2489,1335 @@
       "detailFile": "33-19192107735555-detail.jpg",
       "detailSHA256": "6f9b9c50c991ec67049085eff9d030bcf08c71806318506ffd09f51c62dfd20b",
       "detailBytes": 210571,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 27301211175206,
+      "rideName": "WONDER WOMAN Lasso of Truth",
+      "alt": "Illustrated WONDER WOMAN Lasso of Truth at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:37:29.709419+00:00",
+      "originalSHA256": "41d6f2bf27b306867ab1b2457fe32863cd5490fc286a9cdb3d3c65a3c2351fc6",
+      "review": "Accepted: actual generated pixels compared with the genuine Discovery Kingdom photo. Red seat ring, six alternating blue/gray spokes, yellow pendulum arm, blue seats/black restraints and gray/red side supports preserved. Entrance sign/statue and unrelated green coaster cropped out.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F79928cddcb779c8f88ee7bdc56be56461dc55eca-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests experiencing the high flying thrills of the WONDER WOMAN Lasso of Truth ride at Six Flags Discovery Kingdom.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/wonder-woman-lasso-truth",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f342c899cf6cbb9c4455e9d74a262b0917842e8ad76334e2e37be2e60cd6eab3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom photo shows the actual RED circular pendulum seat ring with alternating BLUE and gray/silver spokes, blue seats/black shoulder restraints around the outside, attached to the YELLOW central pendulum arm between gray supports with RED upper sections and pale light strips. Choose the photographed disc, yellow arm and real support section, preserving actual six-spoke structure and connected rotation hub. Crop the foreground entrance lettering/statue and unrelated green Medusa track rather than inventing a coaster scene. Keep riders incidental at source scale; do not change it to Magic Mountain's blue/mint CraZanity, add extra arms or reconstruct unseen apex/base. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-27301211175206-thumbnail.jpg",
+      "thumbnailSHA256": "9f9b5004a4fb6730099add4964735a7cd50bc722439bd80df8ef7f827312c84b",
+      "thumbnailBytes": 21690,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-27301211175206-detail.jpg",
+      "detailSHA256": "b19ac7736dbedf8f7e84bc47b516a59e33b5b186552d5cb75c03158ba2fca651",
+      "detailBytes": 135756,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 32055456380662,
+      "rideName": "Pepe Le Pew’s Rafts of Romance",
+      "alt": "Illustrated Pepe Le Pew’s Rafts of Romance at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:37:48.573718+00:00",
+      "originalSHA256": "729876b34210e8244cbdc5e227ca496e167ecb6519f1aaacf673e3b729b456f2",
+      "review": "Accepted: actual generated pixels compared with the genuine Discovery Kingdom photo. Gray banded barrel body, red rims, green interior and photographed side-entry gate design retained on the real blue deck behind the blue fence/red heart panels. No water, unseen underside or character scene added.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F018513b1706585400e378bd867882048bf349523-1500x1001.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Families twirling around on Pepe Le Pew's Rafts of Romance spinning ride at Six Flags Discovery Kingdom.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/pepe-le-pews-rafts-romance",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "92e066ec9dbbe920e752f60cb9b0c9578142da35b590067b21b6cb31cfc2964c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom photo shows the actual gray cylindrical spinning barrel/tub cars with horizontal wall bands, RED rounded top/bottom rims, GREEN interiors and real metal side-entry gates on a BLUE circular deck behind a BLUE wood fence with red heart panels. Choose a source-supported close view of the foreground-left empty gray barrel/red rim/green inside and adjacent actual heart/fence, retaining photographed occlusion of lower mounts. Crop the central skunk ornament and tourist portraits because the documented car hardware is the subject; do not invent a boat on water, barrel mechanism, hidden seat interior or extra romantic scene. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-32055456380662-thumbnail.jpg",
+      "thumbnailSHA256": "5f76d48190367b2006d6aab3a2e3ddf0fba3ed6ec7c76e64faf4ef8106cdf69f",
+      "thumbnailBytes": 21438,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-32055456380662-detail.jpg",
+      "detailSHA256": "21ade68bba2caba9819e26d3cc114877a968615d28cf7590c8e9320b1fa8c940",
+      "detailBytes": 134828,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 37180970441307,
+      "rideName": "Monsoon Falls",
+      "alt": "Illustrated Monsoon Falls at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:44:39.359731+00:00",
+      "originalSHA256": "29d672271e17ba6e44149b86a52d4988a39b1192dc0289d5edba1feb4fd1de23",
+      "review": "Accepted: original and corrected generated pixels inspected against the genuine Discovery Kingdom Monsoon Falls photo. Tight final crop retains the blue splash boat within actual low-wall runout, brown pedestrian bridge and partial white/gray-roof boathouse. The unrelated old wooden coaster is excluded; no new route or building reconstructed.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffbbfa251643ac2fb0c9f99ce51f14816b01175a6-1500x1001.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests approaching the  thrilling splash moment on Monsoon Falls at Six Flags Discovery Kingdom.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/monsoon-falls",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "1bea307a4d275809a4d0b04a46ef6d1f08d594ae7c1833880363d38cb0c0fafe",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photograph shows a BLUE wide splash boat in the real straight foamy-water runout between low tan concrete divider walls, a brown timber pedestrian bridge immediately behind the boat, and an off-white board-and-batten boathouse with gray gable roofs, dark service openings and real timber braces at the right. Use a source-supported portrait of the actual blue boat/runout, bridge and boathouse edge, preserving its shallow lagoon/channel geometry and believable splash. Keep riders incidental and all neighboring coaster layouts out of the crop. Do not invent a brown log, giant cliff/wilderness waterfall, new full route, close unseen restraint or different building. Undated photograph; no present-operation proof."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-37180970441307-thumbnail.jpg",
+      "thumbnailSHA256": "11a3d6f20d6efc0a929ebd16faaff4a8658792a79737ee8a7ff3d3b2a97e38fe",
+      "thumbnailBytes": 31300,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-37180970441307-detail.jpg",
+      "detailSHA256": "b3de7e29fc673c13d27d51da4991dbf80c4dcf97d2eb8e10c152c48587fb90c3",
+      "detailBytes": 230296,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 39310590590378,
+      "rideName": "SUPERMAN Ultimate Flight",
+      "alt": "Illustrated SUPERMAN Ultimate Flight at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:41:37.181180+00:00",
+      "originalSHA256": "7807835320c48e243e6daed9439b645c3c9f779d18c127580b8b924d0bb439ea",
+      "review": "Accepted: generated pixels inspected against the genuine Discovery Kingdom official photo. Actual upright two-across train, silver pointed front cowling/gray wheel bogies, yellow rails on red spine and blue bolted support assembly retained in the documented lower banked section. No flying B&M train or invented route; riders remain incidental in the thumbnail.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fd0382b7963886170072570300705e7821d444fdd-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests experiencing the excitement of SUPERMAN Ultimate Flight roller coaster at Six Flags Discovery Kingdom.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/superman-ultimate-flight",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "8930e8f189d29f81339c31a4c8d3ec2b0387488988378f2aad264f679eb4de23",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photograph shows the actual compact two-across train with BLACK high seat backs/lap-restraint structures, RED lower seat/chassis accents, silver/white pointed front mechanical cowling and exposed gray wheel bogies attached around YELLOW running rails on a RED triangular spine, amid BLUE tubular support beams with bolted joints. Use only the photographed banked lower-curve section and real connected train/wheel/rail/support assembly. Keep riders at medium source scale/non-identifiable; no copied portrait. This is the upright Premier launch-coaster train, not a prone flying B&M train. Do not add superhero figures, detached seats, new route/inversion or unseen underframe. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-39310590590378-thumbnail.jpg",
+      "thumbnailSHA256": "a32949c20ad771dbb9b6604d1888a980cec0eef711d658deaa894437b31caa39",
+      "thumbnailBytes": 26449,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-39310590590378-detail.jpg",
+      "detailSHA256": "d0d06acb7b3acd730794aaf73cbf0c976246339b72e653a88eb11d848ddad51b",
+      "detailBytes": 158645,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 49282234457181,
+      "rideName": "Kong",
+      "alt": "Illustrated Kong at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:39:27.787301+00:00",
+      "originalSHA256": "2a0de84c89cca047d9bd8bb0627f5899621f0733ef3efd2558dc1edde313aed1",
+      "review": "Accepted: generated pixels inspected against the genuine Discovery Kingdom official photo. Dark-red tubular rail with repeated ties, tan/peach columns/braces, source upper turn/front banked curve and palms retained. No train was added where none is visible in the source, and no gorilla or extra layout invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fdb86db9026384f10d8e4e7d6fb7d2e7bd009935c-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "All of the twists and turns of the suspended looping coaster Kong at Six Flags Discovery Kingdom.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/kong",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "46c4ee0a02cafa339c61030452d5dbcad97d98454d3e7336085f8d95ff400d9f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photograph shows Kong's real DARK RED tubular suspended-coaster rail/spine with repeated cross-brace ties, tan/peach cylindrical supports and diagonal braces, photographed closely overlapping banked curves/upper turn and a real lift walkway behind palms. No train is visible in the selected source. Choose a source-supported tight portrait of the foreground upper red curve where it passes between actual tan columns, keeping the documented slope/brace connections and source palm edge. Do not add any train, gorilla, new track junction, invented whole layout, extra loop or different color scheme. Crop the unrelated yellow coaster and foreground queue railings. Undated photo; no current-operation claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-49282234457181-thumbnail.jpg",
+      "thumbnailSHA256": "e1dadfe82b795a7a56dcaa3ee91e1624e0acc3a97e2bc400e7aa205148adb158",
+      "thumbnailBytes": 25927,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-49282234457181-detail.jpg",
+      "detailSHA256": "879eb5cc15e47277ca5b05484f0c5472003f6df89d8e1940de2fa228d1cad516",
+      "detailBytes": 204320,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 53698827658225,
+      "rideName": "Seaport Carousel",
+      "alt": "Illustrated Seaport Carousel at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:44:15.739359+00:00",
+      "originalSHA256": "6cf2739de077e367794392a6aaf92941de72408a3c8ca7918b9a60bd7a5c6408",
+      "review": "Accepted: original and corrected generated pixels inspected against the genuine Discovery Kingdom Seaport Carousel photo. Final crop retains actual green/cream/gold fascia, animal-picture medallions/bulbs, red paneled underside, brass pole and carved elephant head/raised trunk/tusk. Rider-obscured saddle/body/legs are fully outside the frame.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F43cbdb7a499de76cafd26749d93ab105f541a6c4-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Families riding the Seaport Carousel at Six Flags Discovery Kingdom, enjoying the classic amusement ride.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/seaport-carousel",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a4b14eca2ff84bd77b1ab1f454519d490284c1612608827c8704484b3162d3fe",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photograph shows Seaport Carousel's actual small GREEN and cream/gold ornate fascia with animal picture medallions and rows of round bulbs, RED decorated underside panels, brass poles and the physical tan carved elephant with raised trunk/white tusks beneath the right side, among actual zebra/camel ride animals. Choose a close source-supported portrait of the green/gold fascia and elephant HEAD/raised trunk below it with its real brass pole. Keep the rider-obscured saddle/body, hidden legs and full deck outside crop rather than reconstructing them. Crop tourist faces and queue signs. No live elephant, horse-only generic carousel, new canopy/animal ornaments or hidden mechanism. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-53698827658225-thumbnail.jpg",
+      "thumbnailSHA256": "dc8ca047d77667071b964f385ce4cf5beee19ceee19415d3765eb0b3f7571a98",
+      "thumbnailBytes": 30655,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-53698827658225-detail.jpg",
+      "detailSHA256": "d9f9fd78e1bea41583d383733dc50ef025915a9ed3940e1b28a0c5da8ae08270",
+      "detailBytes": 196840,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 54828070044621,
+      "rideName": "Air Penguins",
+      "alt": "Illustrated Air Penguins at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:42:11.029648+00:00",
+      "originalSHA256": "3b308086fdbe23df42140848df4d578f9b284e0832df8f112bc752dcc07647dd",
+      "review": "Accepted: generated pixels inspected against the genuine Discovery Kingdom official photo. Actual black toy helicopter, open gated door, yellow rotor/landing forms and connected radial arm/hydraulic rods retained beside the striped lighthouse/faux-rock base. No real penguin or freely flying aircraft.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff75541e7f63414aa846c5ccd216c3204b0d9dfa4-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Six Flags Discovery Kingdom's Air Penguins waiting for guests to enter the adventure ride for toddlers and kids.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/air-penguins",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "39654279721b22a832b79c6b8230652cf934a9a91f049f6d1cb55d7a7cd545d2",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photograph shows the actual BLACK toy helicopter cars with broad open side doors/silver safety gates, dark molded roof windows, YELLOW small top rotor blades and yellow pontoon-like landing forms, physically attached to YELLOW radial arms and visible hydraulic rods around a small black/WHITE striped lighthouse on a gray faux-rock base. Choose the photographed foreground-left empty black helicopter and its real connected yellow arm with the lighthouse edge, keeping the actual cab/door/rotor/landing shapes. Do not add real penguins, water, a freely flying helicopter, new cockpit mechanics or full hidden armature. Avoid the roof edge/park signs and keep incidental people out of focus/outside crop. Source is undated; no current-operation proof."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-54828070044621-thumbnail.jpg",
+      "thumbnailSHA256": "2804bdb822d01ee8e655453f1a754db2197d302e7fe209fd27b65ca97c8ac41f",
+      "thumbnailBytes": 24629,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-54828070044621-detail.jpg",
+      "detailSHA256": "4e36bb0f90fac5c0f581a6310a9e2fce53e81297e918eaacb7fb807d81f28606",
+      "detailBytes": 159236,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 64857467469138,
+      "rideName": "Safari Jeep Tours",
+      "alt": "Illustrated Safari Jeep Tours at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:50:37.956513+00:00",
+      "originalSHA256": "cb4796fdd5495e5bd6cfba72194f79dcce39f0d94e16fa21ffec5747acaecab0",
+      "review": "Accepted: original and corrected generated pixels inspected against the genuine Discovery Kingdom Safari Jeep Tours photo. Tight final hardware detail retains pale-yellow front hood, round headlamp/square panel, black grille and orange indicators beside the real reed-fence/path. All passengers, windshield, roll hoop and expanded axle/guide assembly are excluded.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe4d9a9e69afae6fa8240a6dd7f486f4347d3b7dc-1440x1506.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children on Safari Jeep ride at Six Flags Discovery Kingdom",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/safari-jeep-tours",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "7b419f84359cb14e478b67c06287db083ba05c0343df58850f29964c761355bc",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photograph shows the actual small pale-YELLOW safari jeep front with rectangular BLACK grille, two circular headlamps in square dark panels, orange narrow indicators, large treaded BLACK front tires/yellow hubs, flat windshield and black roll hoop with four rectangular lamps above. The car rolls on the real concrete path astride a central raised steel guide rail/visible underfront bracket, beside a rustic reed fence. Choose a close front hardware portrait of the yellow hood/grille/lamps/tires/actual guide-rail contact, keeping the upper windshield and source child faces above the crop. Do not invent unseen rear chassis or interior, free off-road driving, animals, a new suspension or license-plate lettering. Adjacent white/orange striped cars must not be merged into this plain yellow front. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-64857467469138-thumbnail.jpg",
+      "thumbnailSHA256": "edec71def90c50427eac8f6d01ebc8ea4774b93ff5444a4f17710df31e96b364",
+      "thumbnailBytes": 17259,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-64857467469138-detail.jpg",
+      "detailSHA256": "2ee3f8e65033d860d71bd1d7ef2431ec54197a148b536ba67d6162c1a72551ab",
+      "detailBytes": 102559,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 77101153011624,
+      "rideName": "Ark",
+      "alt": "Illustrated Ark at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:43:16.310529+00:00",
+      "originalSHA256": "f657abc4643b6cbc299cad9b8bbc66e468e48bc7fc1b7e3942d46a595dae07eb",
+      "review": "Accepted: generated pixels inspected against the genuine Discovery Kingdom official photo. Actual raised dark-brown ship with curled bow, colorful ornamental shields, lap-bar bench rows and rust-orange attached lattice arm/A-frame retained. Source palms, shallow pond and foreground occlusion preserved; no reconstructed whole hull or ocean scene.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5ef3ab41d0d617e2eed74d3cc4a6d97cb09ef9a4-1500x1001.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests with their hands up swinging on The Ark at Six Flags Discovery Kingdom, an amusment park pirate ship.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/the-ark",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e11580e9bc13494fdda585a8932e15569ef2484ab4e921dbdd840e3c3b91f1b4",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photograph shows the actual large DARK BROWN wood-effect swinging ship, raised on its left side with real curled bow tip, rows of orange/green/blue/red ornamental shield panels and brown benches with silver/gray lap bars, suspended from RUST-ORANGE A-frame beams and an attached lattice swing arm above the park's shallow themed pond. Use the photographed raised left boat section and real attached arm/support, keeping rider details small/non-identifiable and the right/lower hull still occluded/cropped. Preserve source palms and modest pond edge. Crop foreground sign, queuing people and unshown base; no Noah animal ark, ocean ship, new mast or reconstructed full hull. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-77101153011624-thumbnail.jpg",
+      "thumbnailSHA256": "6b8fd9dc01fa0dd551305d1b70a4b946ff8496eccb295207ae56657b9591942b",
+      "thumbnailBytes": 25063,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-77101153011624-detail.jpg",
+      "detailSHA256": "ffbd0e8ff5d6641b9273bc049fcff6f44b2aba6a4b614b52796bda4715228c17",
+      "detailBytes": 191712,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 78430797086550,
+      "rideName": "SkyScreamer",
+      "alt": "Illustrated SkyScreamer at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:51:39.949304+00:00",
+      "originalSHA256": "2fe43cbc6e2626561a8a59aa9687fe6cf9b7695fcecd459a53bf1304e6c3bfeb",
+      "review": "Accepted: original and corrected generated pixels inspected against the genuine Discovery Kingdom SkyScreamer photo. Actual star-decorated red/blue collar, multicolor lattice mast and thin chains connected to paired black chairs retained. Entire gray lettered cap and unpictured ground base are cropped out; no replacement cap invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fb85df6f51f2f0283ab1fa6958df32c8f30509309-1500x1001.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "SkyScreamer swing ride at Six Flags Discovery Kingdom, featuring tall swings that give a thrilling aerial view.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/skyscreamer",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c5daf60bdf96e3a0c471f1c702e8289196bd57d444ad8692f70e3829868f7814",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photo shows the actual tall yellow/green/blue/red steel lattice SkyScreamer mast, gray spherical cap above, rotating collar with RED/BLUE pointed star-decorated radial panels and actual thin silver chains suspending paired BLACK seats. Choose the photographed upper mast/collar and several real connected swing pairs in a close/medium portrait, preserving physical chain attachment and photographed scale. Keep riders tiny/incidental, crop cap lettering and the unrelated green coaster/full park/ground base. Do not add a canopy, single giant drop carriage, new tower geometry or untethered seats. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-78430797086550-thumbnail.jpg",
+      "thumbnailSHA256": "d4098cfad1c5f58116fcfe707f440d8453179f3a2184d0a287199c9fe23fad73",
+      "thumbnailBytes": 18204,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-78430797086550-detail.jpg",
+      "detailSHA256": "6c60f60041729fa63c637e6f90dfb5942c010ec6c99f15600d035800b2f364aa",
+      "detailBytes": 133043,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 101265433160671,
+      "rideName": "Boomerang Coast-to-Coaster",
+      "alt": "Illustrated Boomerang Coast-to-Coaster at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:46:42.425445+00:00",
+      "originalSHA256": "ca44acd28b3210201845d7c9fe736b7f327eee1fba52fff0446701fb6111ca05",
+      "review": "Accepted: generated pixels inspected against the genuine Discovery Kingdom official photo. Teal tubular cobra-roll arch/cross-ties, actual yellow support columns, maintenance walkway, spiral service stair and source palms retained. No train added where the source has none; no new track junction or invented whole layout.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F35bbb4de1840967bc8abd934ede9cd7e0b2081e8-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Boomerang Coast-to-Coaster, a looping roller coaster at Six Flags Discovery Kingdom that features thrilling loops and turns.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/boomerang-coast-coaster",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "9a0da4b064716f2b00903678b6b199caceaff1369eea6c144c8db6004a30c523",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photo shows the actual TEAL tubular Boomerang cobra-roll rail with triangular cross-ties and YELLOW support columns/braces, a real center elevated maintenance walkway with teal railings, yellow spiral service stairs and source palm trees. No train is visible in this selected photo. Choose a close source-supported portrait of one teal upper cobra-roll arch and its actual yellow supports/walkway edge; preserve the photographed overlapping rail paths without joining them. Keep the other arch/ground/advertising outside crop. No invented train, boomerang prop, new inversion, different coaster or reconstructed full course. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-101265433160671-thumbnail.jpg",
+      "thumbnailSHA256": "ada8810c956e3611d4e77a80a7a5340576c4ce881eb2510d30da080552a83aa3",
+      "thumbnailBytes": 23631,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-101265433160671-detail.jpg",
+      "detailSHA256": "b989428b5458ca8742e92f093d504874250a01e845a9c24f4d47d6a7230eb2f1",
+      "detailBytes": 171820,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 108157577665976,
+      "rideName": "Medusa",
+      "alt": "Illustrated Medusa at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:48:14.566677+00:00",
+      "originalSHA256": "ad21004ff3c8c0b0efe7c95309a046ab205038ebe363b1a244a909c6c156193a",
+      "review": "Accepted: generated pixels inspected against genuine Discovery Kingdom Medusa photo. Lime/yellow-green box-spine first drop, purple columns and actual four-across floorless train/lime restraint frames/gray bogies retained at source scale; adjacent loop edge preserved without new route. No Jersey Medusa or serpent scene.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4c8d1d095aa1fd040b434c86ba60f6185e2f86fc-1500x996.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Medusa roller coaster at Six Flags Discovery Kingdom, showcasing its impressive twists and loops.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/medusa",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "6b9219449339df256fd7eb97e4f28644845249f760e451e404aa100d3ddafb41",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photo shows Medusa's real LIME/YELLOW-GREEN box-spine track with PURPLE tubular supports, the source four-across floorless train with lime shoulder-restraint frames/black seats/gray wheel bogies on the steep RIGHT-hand first drop, and the genuine large vertical-loop arch to its left. Choose a source-supported portrait of the documented right descending train/rail and adjacent purple columns, keeping train scale faithful and source riders tiny/non-identifiable. Crop unrelated SkyScreamer/other coaster and lower route. Do not invent a snake monster, Jersey Medusa colors, conventional enclosed car or new loop layout. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-108157577665976-thumbnail.jpg",
+      "thumbnailSHA256": "f06c1ff959c7ceee020ed403bff5d4d43c486dc83842a56107a19753e228583a",
+      "thumbnailBytes": 20199,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-108157577665976-detail.jpg",
+      "detailSHA256": "485e981f48a34a4e6786ff0fbae072c58a1ec0d78658ff45e085add6dcfcce20",
+      "detailBytes": 119630,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 109193367965200,
+      "rideName": "Wave Swinger",
+      "alt": "Illustrated Wave Swinger at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:47:49.406341+00:00",
+      "originalSHA256": "e93ed01f0b47df21089aa5eac8bb0c028316111bd6a6daeef8bece8f7f9a11df",
+      "review": "Accepted: generated pixels inspected against genuine Discovery Kingdom Wave Swinger photo. Actual multicolor radial canopy underside, pink/cream scalloped marine-picture fascia and mast panels, silver chain attachments and blue/red/green metal chairs retained. Source-cropped canopy top stays outside view and no new roof is reconstructed.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc1c53cefa93eb97806acf5912ce9ab4912baf655-1440x1528.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests enjoying the Wave Swinger, the amusement park swing ride at Six Flags Discovery Kingdom.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/wave-swinger",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f944349435f6828c53890dd760392bb3d1b2fb74c8cfb87d504e2593af494ff9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photo shows Wave Swinger's actual tilting canopy with radial multicolor GREEN/YELLOW/ORANGE/RED/PURPLE underside panels edged in small bulbs, cream/PINK decorative scalloped fascia, aquatic fish/whale/ship picture panels on the central mast, thin silver chains and real individual BLUE/RED/GREEN metal-framed swing chairs. Choose a source-supported close/medium portrait of the canopy's colorful underside, painted marine mast panel and a few attached chairs, preserving chains connected to the actual canopy ring. Keep tourist faces outside crop or tiny/turned away; source canopy top is cut off and must stay outside frame. No invented full roof, lighthouse tower or free-floating chair. Undated photograph, no present-operation proof."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-109193367965200-thumbnail.jpg",
+      "thumbnailSHA256": "f7a59cb58bcdfc8fd18e324aa7d70157d01ba9489b59a9cf60b062bb24be215f",
+      "thumbnailBytes": 30947,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-109193367965200-detail.jpg",
+      "detailSHA256": "65c0533513077cb5ea8472e5ccb774b8c78b440642a49de1b2f9b3e2bc437be9",
+      "detailBytes": 207815,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 126253054912288,
+      "rideName": "White Water Safari",
+      "alt": "Illustrated White Water Safari at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:51:06.024873+00:00",
+      "originalSHA256": "773ce8a6407d80e7ddaef17841febd70c2b1d047fcc26b14d3404cc95a3ae6de",
+      "review": "Accepted: original and corrected generated pixels inspected against the genuine Discovery Kingdom White Water Safari photo. Final close crop retains yellow/tan molded wall and actual entry/bench edge, dark inner frame, black ribbed flotation collar, source hand/lap-level context and foamy water contact. All rider heads/faces are outside view; no new waterfall/river/seating plan.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9a15a9b765418bf1358e8079c421e597e28dbf7d-1440x1523.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A family enjoying White Water Safari, the water rapids ride at Six Flags Discovery Kingdom.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/white-water-safari",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d38faa21e6671a7b505b7db5fcb72b795fe632cddf3de83b28f521932ce98c60",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photo shows the actual compact round rapids raft with YELLOW/TAN molded back/side wall, dark BLUE/black inner frame and a broad black ribbed rubber flotation collar, short inward-facing molded bench seats, real center silver grab rail and a narrow foamy water channel beside rounded tan faux-rock wall/bamboo. Use a tight source-supported portrait of the front yellow sidewall, genuine opening/bench edge, black ribbed collar and water contact; crop source rider heads above their hands/lap level rather than create a tourist portrait or reconstruct hidden seats. Do not replace this with Magic Mountain's tall gray seatback raft, add a waterfall, new seat plan or unpictured river course. Omit the boat numeral. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-126253054912288-thumbnail.jpg",
+      "thumbnailSHA256": "1d7315ae59d2a3c8f3a2722ef990fbac86c8217c92ad4ffdd1fd6f3391d91794",
+      "thumbnailBytes": 28286,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-126253054912288-detail.jpg",
+      "detailSHA256": "f22e8be5e218515c565dc5d7f6d0f38abab6df252c5519e15c44da9341ed00a1",
+      "detailBytes": 211195,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 132104306049759,
+      "rideName": "Yosemite Sam's Flight School",
+      "alt": "Illustrated Yosemite Sam's Flight School at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:58:13.199835+00:00",
+      "originalSHA256": "9355f97544fc459a232363d69e636d9a4b9fa0f9b8557fd15f4ff97197a5f227",
+      "review": "Accepted: generated pixels inspected against the actual NorCal Thrills vehicle gallery photo, independently matched to its primary HTML. Green/yellow plane upper wing/front cowling with red hub, black seat backs, silver wing/radial supports and pneumatic cylinders retained beside checkered hub. Blue fence still hides the lower vehicle; no absent propeller, invented landing gear or living character.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://norcalthrills.com/images/park/sfdk/rides/yosemite-sams-flight-school/gallery/NorCalThrills-YosemiteSamsFlightSchool-2.jpg",
+          "sourceURL": "https://norcalthrills.com/parks/sfdk/rides/yosemite-sams-flight-school/",
+          "credit": "NorCal Thrills / Roller Coaster Network (photographer/publisher)",
+          "license": "Copyright NorCal Thrills / Roller Coaster Network; source rights retained",
+          "licenseURL": "https://norcalthrills.com/terms/",
+          "alt": "Yosemite Sam's Flight School actual plane ride gallery photograph",
+          "sha256": "991ec658154a279d6be25dcfcd048e49deae45a9b849faedaf689b7cc60b7d74",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The actual NorCal Thrills primary gallery photo (exact image URL also present in preserved primary HTML) shows Discovery Kingdom's real small biplane-style cars: GREEN body/upper wing with BLACK edge, YELLOW rounded front cowling with circular RED hub/bulb ring, yellow tail, real thin silver wing bracing, BLACK molded seat backs and actual silver radial support arms/pneumatic cylinders on the central black/WHITE checkered hub beneath a fixed red/white tower ornament. The blue foreground fence hides the lower vehicle/mounts. Choose only the photographed front green/yellow plane's upper wing, yellow front cowling, black seat edge and source-supported silver support/brace context in a portrait, retaining the actual fence occlusion of the underside. Do not add a propeller absent from this photo, unseen landing gear/full chassis, freely flying plane, living character or unpictured mechanism. Crop all character signs/lettering and the full tower top. Capture date unverified; no current-operation proof."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-132104306049759-thumbnail.jpg",
+      "thumbnailSHA256": "71f2af394143a52359d4a4a74c9e3650ce4926df98f3598f600a8e20c9f69e30",
+      "thumbnailBytes": 24259,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-132104306049759-detail.jpg",
+      "detailSHA256": "4eb12df4b4ddcda563580e786c2c86cf72e261d169fad0d4939bf237d18f4873",
+      "detailBytes": 150810,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 147012007047197,
+      "rideName": "Sidewinder Safari",
+      "alt": "Illustrated Sidewinder Safari at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:54:36.728615+00:00",
+      "originalSHA256": "4acc212a8e61b1bf012c1e120a9a965059ce1baae9f25faf5a47381949d4f0a1",
+      "review": "Accepted: generated pixels inspected against the genuine Discovery Kingdom Sidewinder Safari photo. Actual low yellow spinning car with snake-face/scales print, orange/red interior, black head roll, silver lap/grab bars and gray bogies attached to yellow tubular rail on green steel structure retained. Riders remain in the medium view; no living snake or new route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F786aa60d56cbab28abcbc5b26bb4a16e17c2ba1b-1500x844.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests with their hands up having fun experiencing the thrill of Sidewinder Safari at Six Flags Discovery Kingdom.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/sidewinder-safari",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c16a06880b00641b72643578a9af516b59cc3e07b53470081f38603b0ba183a3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photograph shows Sidewinder Safari's actual low YELLOW spinning coaster car with printed brown/tan snake-face/scales on its front panel, orange/red inner seat panels, BLACK rear head roll, silver grab/lap bars and exposed gray bogies attached to YELLOW tubular rails/ladder ties on GREEN steel columns/braces. Choose a close source-supported hardware portrait of the actual decorated yellow front panel, lower grab-bar/seat edge, real gray bogies and their yellow rail connection; crop above rider hands/laps rather than copy tourist faces. Keep the documented green support/roof edge where visible. No living snake, added track, different seating mechanism or reconstructed full spinning route. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-147012007047197-thumbnail.jpg",
+      "thumbnailSHA256": "39b9c4744a293400dba8f9d7e400bcfc3dfec2d39c8542e5f0aab3f23eec4445",
+      "thumbnailBytes": 28092,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-147012007047197-detail.jpg",
+      "detailSHA256": "ccbda99164e24f8c27354c7c67a3b5abf7100f07134ffa9a769122425360e3a6",
+      "detailBytes": 165258,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 149220262748871,
+      "rideName": "Cobra",
+      "alt": "Illustrated Cobra at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:55:15.213241+00:00",
+      "originalSHA256": "da6bf51073c9d6f5742a697f45bc40ebdd30d19e9f86f804cb85430dcd5726c9",
+      "review": "Accepted: generated pixels inspected against genuine Discovery Kingdom Cobra photo. Tan/gold train's molded scale-pattern backs and basket/wood-effect lower sides, silver lap bars, gray wheel connections, gold rail and rust-red supports retained on the photographed banked curve. Lead nose remains outside view; no invented snake head or giant background coaster.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2a0c64ea4075e9b9db99389dfe7e0c4ac8b19f06-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Cobra roller coaster in motion at Six Flags Discovery Kingdom, with guests enjoying this beginner thrill ride for kids.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/cobra",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "1670a564c59588f1f0bf54617c2d775287835958023b493a3aea85d2e467075f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photo shows Cobra's actual long TAN/gold family-coaster train with high molded backs bearing pale oval scale/stone motifs, brown/tan wood/basket-effect lower sides, real silver lap bars and gray wheel connections on GOLD/tan triangular-spine rail with RUST-RED slender steel supports among palms. The lead nose is already outside the photo at left. Choose the photographed middle banked train-car section and actual rail/support, leaving the lead nose and whole route outside the crop. Keep riders incidental at medium source scale. Do not invent a snake-head front, living cobra, full train nose, extra inversion or the unrelated giant coaster behind. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-149220262748871-thumbnail.jpg",
+      "thumbnailSHA256": "53ca2d77774508adde6aa79035e22d2c3d5ccad11fe9104c5617276f19d70f79",
+      "thumbnailBytes": 29605,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-149220262748871-detail.jpg",
+      "detailSHA256": "9ac1c34069a86f1b5c1373f6c54c5760ed33f33ad361f7543df62833a1cd5bc3",
+      "detailBytes": 235706,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 159570519499409,
+      "rideName": "Merlin’s Seaside Tours",
+      "alt": "Illustrated Merlin’s Seaside Tours at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:55:43.765664+00:00",
+      "originalSHA256": "e515873cc42737f137e5146783d0f8269a847648a9a0d371605edf726b99955d",
+      "review": "Accepted: generated pixels inspected against genuine Discovery Kingdom Merlin's Seaside Tours photo. Red box-shaped bus side, yellow roof/window pillars, small tire-like side discs/red hubs, silver latches and actual paired yellow lifting arms/round pivots retained against the seaport mural/lighthouse. No road-driving scene or unseen bus front.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F462ead2f45699d56e5b820c513f19fbb40f1cbc0-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Kids enjoying a ride on Merlin's Seaside Tours at Six Flags Discovery Kingdom, smiling and having fun on seaside-themed ride.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/merlins-seaside-tours",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c817e0037425964bb6a59a2b08dcd706b9d293356da6276ef0094b33d87b54bf",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photo shows Merlin's Seaside Tours' actual RED rectangular bus-shaped gondola with YELLOW roof/window pillars and orange underside of roof, small black/gray tire-like side discs with red hubs, silver side-panel latches and actual paired YELLOW lifting arms connecting below the body to round yellow rotary pivots against a painted pale-blue seaport/white-lighthouse backdrop. Choose the documented bus SIDE and one/two real attached yellow lifting-arm/pivot sections in a medium portrait; preserve the actual box shape, window spacing and arm connections. Crop queue visitors and bus lettering, keep incidental passengers tiny. Do not turn it into a road-driving bus, add a smiling face/dolphin/hidden wheels, reconstruct an unseen front or invent a new mechanism. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-159570519499409-thumbnail.jpg",
+      "thumbnailSHA256": "ae4629d5534d30ee774cd305d4e946f94daaf50829b280f3c92ed89355421503",
+      "thumbnailBytes": 21100,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-159570519499409-detail.jpg",
+      "detailSHA256": "82f7f009b5dba6528f7a93acbd414cf86bc1d83643a8f73554560295f724be9f",
+      "detailBytes": 137689,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 159794277606335,
+      "rideName": "Foghorn’s Seaport Railway",
+      "alt": "Illustrated Foghorn’s Seaport Railway at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:01:25.878443+00:00",
+      "originalSHA256": "5edc1d02c8f4c36eb19f7354e4640ab6bac1d3a539390e69199ddabc161a926c",
+      "review": "Accepted: generated pixels inspected against the genuine Discovery Kingdom Foghorn's Seaport Railway photo. Green/gold boiler/cab, red flared funnel/dome/curved roof, dark-blue front lower panel and actual red two-wheel/rod assembly on narrow rails retained. Rear train and unphotographed circular front face stay outside view; logos/number removed.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2ee8b56ea756e08fdbf9fdac6abc9cc77b9b8633-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Foghorn's Seaport Railway in motion at Six Flags Discovery Kingdom, with guests smiling for the camera.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/foghorns-seaport-railway",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "59504084931f84192976a4b84ea453401f9f8c3ef15c298d5f55cdb8b55ddab9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photo shows Foghorn's Seaport Railway's actual small GREEN locomotive with GOLD/YELLOW edging, RED flared funnel and rounded steam dome, curved RED roof with yellow edge over the green/gold cab, dark BLUE front lower panel, RED spoked side wheels with gray rims and a connecting rod on real small rails through planted dirt/ivy. Use a close source-supported SIDE profile of the green boiler, red funnel/dome, lower cab edge and actual visible two-wheel/rod/rail assembly, keeping the unphotographed front circular face and rear train outside crop. Keep source people outside the crop or tiny, omit boiler number/printed logo/lettering. No living rooster, Thomas face, invented extra wheel set, new chassis or full hidden route. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-159794277606335-thumbnail.jpg",
+      "thumbnailSHA256": "070b290663f7dbe9b00fa47db0e4afb7815c4860030e925b227e8d54c1f19fb5",
+      "thumbnailBytes": 27627,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-159794277606335-detail.jpg",
+      "detailSHA256": "488008e62143263219af6e9bf0b2f7138a4be124eef6d8b70bc100be41346f1c",
+      "detailBytes": 165938,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 161054094380458,
+      "rideName": "Monkey Business",
+      "alt": "Illustrated Monkey Business at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:01:52.318892+00:00",
+      "originalSHA256": "ad19d74974c610a1a34ddc238b5ac7f1341d61d337f2d048e849db5bed5dc6d5",
+      "review": "Accepted: generated pixels inspected against the genuine Discovery Kingdom Monkey Business photo. Actual bronze/brown coco-pod, gold rim/red inner back, fixed gray monkey/rope ornaments, green inset floor turntables and timber-roof pavilion/central tree retained. Source riders remain in a medium view; no live primates or invented pod mechanism.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff1fbcf5e289792570a4ea16e9c439c7209bf98c6-1500x1001.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Young thrill seekers having fun on the Monkey Business spinning ride at Six Flags Discovery Kingdom.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/monkey-business",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "9291c71dfe9baae02fa3e96f8a2e002cd569fa64d743dc9136a0a25c87fc4340",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photo shows the actual round bronze/BROWN coco-pod spinning cars with cream/GOLD rounded rims, RED inner back/bench surfaces and fixed gray sculpted monkey figures gripping actual gray rope-like exterior bands. They sit on green circular inset turntables within the dark floor of a real timber/bamboo-roofed pavilion with a sculpted central tree trunk. Choose the source-supported front pod's exterior/rim/physical monkey-and-rope ornament and red seat edge in a close/medium portrait, preserving the actual rounded pod and floor contact. Keep rider heads above/outside crop; retain honest indoor wood structure and soft dusk spill from perimeter windows rather than an invented outdoor scene. No live primate, new pod/seat mechanism or hidden base. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-161054094380458-thumbnail.jpg",
+      "thumbnailSHA256": "88975d6b68b00dec24c86b340aeca0dba44bafe96e7ad88440b13658463e6b8b",
+      "thumbnailBytes": 20768,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-161054094380458-detail.jpg",
+      "detailSHA256": "bf6b16b84992adfd9bed201145b56a17342bb0acc2d6935e2a17aa26a93a8611",
+      "detailBytes": 149216,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 166410036764124,
+      "rideName": "THE JOKER",
+      "alt": "Illustrated THE JOKER at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:02:59.695833+00:00",
+      "originalSHA256": "db0313ce7a7a52b1213fd837f49c4001525410165b944ec5819d890b47e355fe",
+      "review": "Accepted: generated pixels inspected against the genuine Discovery Kingdom THE JOKER photo. Actual green two-across RMC train/black lap restraints and green printed nose/purple bumper retained on green/purple narrow I-box rails within real timber/gray steel trestle. This remains the local hybrid ride with source-scale hardware, not another park's free-spin coaster.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7ab0bf83b3dc3f4ab614a286020adb67784c3eee-1200x800.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests racing through the chaotic twists and turns of THE JOKER roller coaster at Six Flags Discovery Kingdom.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/the-joker-ride",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "61e927b1fe4be5e749893384f75e169fc11946a7580a1fb6195943ccfb4515c3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photo shows THE JOKER's actual RMC hybrid train in GREEN with black lap restraints and two-across rows, a rounded green nose/purple bumper with a printed villain face graphic, mechanically attached to narrow PURPLE and GREEN steel I-box rails with metal running strips inside weathered LIGHT-BROWN timber trestle/X-bracing and gray steel crossmembers. Use only the photographed front portion of the descending train and actual curved rail/wood-support section. Keep riders at source medium scale/non-identifiable. This is the Discovery Kingdom timber hybrid, not another park's S&S free-spin ride. Omit nose lettering/character graphic if it distracts, but do not create a living clown/villain, extra car, detached seat or invented full route. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-166410036764124-thumbnail.jpg",
+      "thumbnailSHA256": "8f36ffc3433a9bdd8a64ea4960b3b33d317707397bc03d5538e35e1c27461e5c",
+      "thumbnailBytes": 27968,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-166410036764124-detail.jpg",
+      "detailSHA256": "df473cda0b2ff2f784c0a668991bd0d1c6d3cf704bde543694f07cfa84619e1d",
+      "detailBytes": 193033,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 174635094278795,
+      "rideName": "Nairobi’s Look Out Balloons",
+      "alt": "Illustrated Nairobi’s Look Out Balloons at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:02:11.599163+00:00",
+      "originalSHA256": "8efe85f97b19d27c41b0f06e3e2c20f20db0e5508928ae903df0b6569fce5159",
+      "review": "Accepted: generated pixels inspected against genuine Discovery Kingdom Nairobi's Look Out Balloons photo. Orange wicker-textured baskets/red-green straps/cream corner sacks, solid red-yellow/green-cream balloon props, real silver guards/rigid suspension, orange radial arms and lift mast/guide strips retained. No flames or freely floating balloon.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F0cdfeb3328570c580c2f281129d5a2df790bf1b5-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of Nairobi's Look Out Balloons at Six Flags Discovery Kingdom, showcasing the colorful balloon designs.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/nairobis-look-out-balloons",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "69570c2907ac7d6644bbcd996b38b8449cfedc058f21052d7faec221564767cd",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photo shows Nairobi's actual orange/brown central lift mast with gray vertical guide strips, attached orange/red triangular radial steel arms, small solid GREEN/cream and RED/yellow balloon props above rigid orange wicker-textured basket gondolas with red/green straps, molded cream corner sacks and actual silver upper guard rails/rigid suspension rods. Choose a source-supported low-angle close/medium portrait of one documented basket/balloon and its real attached radial arm/hub section; keep the photographed underside plate/corner sacks and no unseen interior seats reconstructed. Keep other gondolas at source scale and tower top/ground outside frame. No freely floating hot-air balloon, flame, new suspension or invented full base. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-174635094278795-thumbnail.jpg",
+      "thumbnailSHA256": "8d4c04142b4847c35a27442fae87256feabccb3326cc2e4e5c2d7999b8d7f6af",
+      "thumbnailBytes": 22560,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-174635094278795-detail.jpg",
+      "detailSHA256": "f236ced7da9e6e6c5e246ef570fb80b31c043668181229d5a2ade021816307f5",
+      "detailBytes": 147740,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 188182980647119,
+      "rideName": "Acme Fun Factory",
+      "alt": "Illustrated Acme Fun Factory at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:07:16.559181+00:00",
+      "originalSHA256": "31a4d36ce9ed6523740e632ec4ff115dc11e48cda15dcb455ea603599e2ebf18",
+      "review": "Accepted: generated pixels inspected against the genuine NorCal Thrills Acme Fun Factory photograph. Actual green columns/braces, upper safety netting, gray weathered board walls, salmon corrugated side/green shutter and three pastel cylindrical props retained. This represents the photographed exterior only; no unseen play equipment or invented interior.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://norcalthrills.com/images/park/sfdk/rides/acme-fun-factory/gallery/NorCalThrills-AcemFunFactory-2.jpg",
+          "sourceURL": "https://norcalthrills.com/parks/sfdk/rides/acme-fun-factory/",
+          "credit": "NorCal Thrills / Roller Coaster Network (photographer/publisher)",
+          "license": "Copyright NorCal Thrills / Roller Coaster Network; source rights retained",
+          "licenseURL": "https://norcalthrills.com/terms/",
+          "alt": "Actual Acme Fun Factory seaport play-building exterior",
+          "sha256": "35f330d05034d96301c1f084d62cfd92cdf46af506b43d53f785269858d51aa6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine NorCal Thrills primary gallery photo shows Acme Fun Factory's actual two-storey seaport play BUILDING exterior: dark GREEN cylindrical columns/diagonal braces, open upper level enclosed in BLACK square safety netting, weathered gray/white and natural timber board panels, salmon/orange corrugated side panel with green shutters, and three actual tall pastel mint/pink/lilac cylindrical props with contrasting bands below. Choose the source-supported LEFT exterior/netted upper-play-level structure and pastel cylindrical props, keeping photographed proportions, net/beam attachment and lower rail. Crop all large entrance lettering, cartoon boat/cutouts on the right and visitor faces; do not invent unseen foam-ball cannons, playground interior, slides or a different facade. This is an exterior representation only. Capture date unverified; no present-operation proof."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-188182980647119-thumbnail.jpg",
+      "thumbnailSHA256": "c2132c21b680d36973c03ea6e0a491336f3424dd0d796ac2e2865e6b266e5e64",
+      "thumbnailBytes": 21639,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-188182980647119-detail.jpg",
+      "detailSHA256": "d538ea1fb33b0b0df787609809d6e6fa8d1a822ed370b078db93b9144fbb3b53",
+      "detailBytes": 173469,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 194870791244895,
+      "rideName": "Road Runner Express",
+      "alt": "Illustrated Road Runner Express at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:06:51.226863+00:00",
+      "originalSHA256": "17ac4266a09ad296f344a8ed669925fa32d0b9c4743a6d262817e9bb1acac32c",
+      "review": "Accepted: generated pixels inspected against the genuine NorCal Thrills Discovery Kingdom Road Runner Express station photograph. Actual orange woodgrain mine-cart nose, riveted gray V/corner frame, black lap bars and blue track/station lift retained. Lower running assembly remains largely occluded, with no reconstructed full chassis.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://norcalthrills.com/images/park/sfdk/coasters/roadrunner-express/gallery/NorCalThrills-RoadRunnerExpress-3.jpg",
+          "sourceURL": "https://norcalthrills.com/parks/sfdk/coasters/roadrunner-express/",
+          "credit": "NorCal Thrills / Roller Coaster Network (photographer/publisher)",
+          "license": "Copyright NorCal Thrills / Roller Coaster Network; source rights retained",
+          "licenseURL": "https://norcalthrills.com/terms/",
+          "alt": "Actual Roadrunner Express mine-cart train at its station and blue course",
+          "sha256": "a37477b5bc49c7261ea2077f4015ef5608c938b31e77e1ee035961edb1b4e3ad",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine NorCal Thrills primary Roadrunner Express gallery photo shows Discovery Kingdom's actual SMALL ORANGE/BROWN woodgrain mine-cart train with SILVER/gray riveted corner frames and large V-shaped braces on the front panel, BLACK padded lap bars/seat-back edges, at a real station platform beside BLUE tubular rails with ladder ties, blue square supports and a small blue lift/service stair in trees. Use a source-supported portrait of the actual front mine-cart panel, gray V-frame/rivets and black upper bar with a limited actual blue rail/lift section behind. The lower train/wheel connection is hidden by the source platform/frame and must stay hidden/cropped; never reconstruct it. Crop station visitors and all entrance signs, retain the small non-inverting course scale. No blue/white Magic Mountain Road Runner vehicle, living bird, new locomotive, new inversion or full hidden route. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-194870791244895-thumbnail.jpg",
+      "thumbnailSHA256": "fe7d8e9eed599c8a20e7b1e67de681f90523250185d944dd21b4bdd9d4b3e15d",
+      "thumbnailBytes": 27678,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-194870791244895-detail.jpg",
+      "detailSHA256": "429bee0861a16acc33a38d9b768a4a1865701109371fbede595a6dd627bcf5ff",
+      "detailBytes": 232965,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 222754866807645,
+      "rideName": "BATMAN: The Ride",
+      "alt": "Illustrated BATMAN: The Ride at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:08:07.927825+00:00",
+      "originalSHA256": "42af8b1917d7d49f49cb6d8c267b9c48ca695cb2540abae3f6ea45db35f23235",
+      "review": "Accepted: generated pixels inspected against the genuine official Discovery Kingdom BATMAN photo. Yellow-ochre stacked wavy 4D track, charcoal supports/braces and the small source-supported outboard-seat vehicle remain mechanically connected. Foreground entrance sign/building excluded; this is the local free-spin ride.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F871653b5efc2a60b418a6bdf4b807039b13d9c50-1500x844.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests enjoying the thrills of Batman The Ride at Six Flags Discovery Kingdom.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/batman-ride",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "545f90376b61a863701c5ab17b5cec3b569f79fc0cc918313e42f9982b093fbc",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photograph shows the actual YELLOW/ochre steel 4D Free Spin track with repeated narrow ties and CHARCOAL gray tubular supports/diagonal braces, three photographed stacked wavy sections and an actual small outboard-wing seat vehicle on the upper rail at right. Use a source-supported medium portrait of the upper yellow wavy rail and its attached small black/gray wing-seat vehicle with real dark support connections, cropping the foreground entrance building/sign and giant bat logo entirely out. Keep the tiny photographed seat/harness scale rather than inventing a close eight-seat mechanism. This is the local S&S free-spin coaster, not Magic Mountain's blue inverted Batman. No living superhero/bat, new full track layout, additional vehicle or detached seat. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-222754866807645-thumbnail.jpg",
+      "thumbnailSHA256": "23beb44eaf5726e01da62bd34f503d2c21c11066967ef0fe302cccbf5b05a689",
+      "thumbnailBytes": 19495,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-222754866807645-detail.jpg",
+      "detailSHA256": "60ab572ce67c562610f5b087cf03ae98cecee05abbf1102f4cc979dfc54f40c2",
+      "detailBytes": 118661,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 239876623569531,
+      "rideName": "Scat-A-Bout",
+      "alt": "Illustrated Scat-A-Bout at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:07:45.767542+00:00",
+      "originalSHA256": "78eab8e450b45556e30829ceb70723e74760ab23bdc7fe866977ef79fa2989d7",
+      "review": "Accepted: generated pixels inspected against the genuine Discovery Kingdom Scat-A-Bout photograph. Actual red central mast/subhubs, connected triangular arms and silver/red bench gondolas with yellow diamond trim retained; foreground shrub occlusion and source-scale riders retained without new hidden lower mechanics.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F377c1cfdca398032e2d82561a9209347628fec94-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests having fun on the Scat-A-Bout amusement park scrambler ride at Six Flags Discovery Kingdom.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/scat-a-bout",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "0d915a3d9a461e86de31876abe55725332c3e889151b84c96b86cb2e16e84054",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Discovery Kingdom official photo shows Scat-A-Bout's actual RED central steel mast/sub-hubs and triangular radial arm bracing, attached SILVER metal bench gondolas with RED side panels/interior backs, silver front tube/hinges/rivets and a strip of small YELLOW diamond motifs, above the real gray concrete pad behind leafy shrubs. Choose the photographed foreground silver/red car and its actual connected red arm/hub section, preserving real floor contact and source leaf occlusion of the lower mounts. Keep riders small or outside crop; do not reconstruct hidden seat restraints/base, add a canopy, replace with another park's scrambler or introduce a new arm arrangement. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-239876623569531-thumbnail.jpg",
+      "thumbnailSHA256": "56aa76307418c349b6847e9f86f84b9c59b9515a58cebf176577335a311fee52",
+      "thumbnailBytes": 27279,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-239876623569531-detail.jpg",
+      "detailSHA256": "03ac96d969ac0f2066516cec90e552622f3ed630fe76e643f35b596f48e53b79",
+      "detailBytes": 181255,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 251173706554548,
+      "rideName": "Thrilla Gorilla",
+      "alt": "Illustrated Thrilla Gorilla at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:14:05.649712+00:00",
+      "originalSHA256": "c0bed390a04cd6c94dd3acf9773350e7c6add43f992c2cc0cc4a7d33a1150b9e",
+      "review": "Accepted: generated pixels inspected against the genuine official Thrilla Gorilla photo. The fixed molded black centerpiece, red glass-like eyes, gray snout/ivory teeth, white circular collar and real timber pavilion retained; surrounding cars retain source motion blur without invented seat or drive detail.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F3770615709b1194f4311902f8c7e79487e030372-2144x1424.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A close-up of the gorilla head that's in the center of the Thrilla Gorilla spinning ride at Six Flags Discovery Kingdom.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/thrilla-gorilla",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "07864031a90b99c2e517010ec057556108877da89ced2ab142eb5c831e6e6abf",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official photo shows Thrilla Gorilla's actual manufactured BLACK gorilla-head/bust centerpiece with molded fur grooves, dark-red glass-like eyes, gray snout, ivory teeth and red mouth, mounted in a WHITE/gray circular collar beneath a dark timber-roofed pavilion. The red/cream spinning cars around it are motion blurred in the real source; preserve their blurred perimeter rather than inventing detailed seat layouts or new drive machinery. Choose a close/medium source-supported portrait of the fixed molded centerpiece/collar with the true pavilion and blurred cars at the lower edge. It is a physical ride ornament, not a living animal. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-251173706554548-thumbnail.jpg",
+      "thumbnailSHA256": "61599f4a2463778e3482708d63128f127d3ad5de505e981e24f2995615f854da",
+      "thumbnailBytes": 18088,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-251173706554548-detail.jpg",
+      "detailSHA256": "8caab04880ca2675fd96d2c0db442e458ea5222545189f48c122d1505d40ad7b",
+      "detailBytes": 128022,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 256981398922278,
+      "rideName": "Seaside Railway",
+      "alt": "Illustrated Seaside Railway at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:16:39.347834+00:00",
+      "originalSHA256": "161bf61f06fce42a7d264a99ec17b18cdb8215b4f0f1f3d4cc622cf0b53f4713",
+      "review": "Accepted: generated pixels inspected against genuine operator Seaside Railway photo and independently corroborated NorCal locomotive architecture. Operator photo's red/silver locomotive, blue-star smokebox face, circular cab window, paired funnel/headlamp, red cowcatcher and visible red driving wheels/rod retained; different NorCal wrap not blended. Capture date remains unverified.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa56921bca8eb80b73b1dd6a5c969a9c0dc8ac249-1440x1518.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of Seaport Railway train at Six Flags Discovery Kingdom, showcasing its colorful design.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/seaside-railway",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "87b8fe56f67e0adc3828c27f65ef5eb62a2c7497f8853eb7fd75705411ab0f37",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The official Seaside Railway attraction-page photo shows the actual RED locomotive with a large SILVER circular smokebox face carrying BLUE stars around a red ring/raised blue center star, RED flared funnel, smaller RED headlamp tower with silver-rimmed lamp, red cab with large circular silver-rimmed window, silver boiler bands/side panels, red slatted cowcatcher and red spoked driving wheels/silver connecting rod on narrow rails under the actual station roof. A separate genuine NorCal Seaside Railway photo confirms this physical red locomotive/circular cab architecture but shows a different front graphic/side wrap, so do not blend paint schemes or claim a capture date. Use ONLY the operator photo's star-front finish and photographed front/side hardware in a close portrait. Keep rear coaches, Foghorn's smaller green train in background, tourist faces and station lettering outside crop. Preserve source occlusion, no new hidden running gear, Thomas face or invented route. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-256981398922278-thumbnail.jpg",
+      "thumbnailSHA256": "ba69e53bdb4b4bcd93663a5fa23f1a75feed7f4ee6a64e7c9661f7e8c0c3b2b0",
+      "thumbnailBytes": 24207,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-256981398922278-detail.jpg",
+      "detailSHA256": "4578e71bf7e00bec89466938f9a1cc94827eb185987043fb58848517cc5a2d47",
+      "detailBytes": 151896,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 257814227102350,
+      "rideName": "Boardwalk Bumper Buggies",
+      "alt": "Illustrated Boardwalk Bumper Buggies at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:13:43.585403+00:00",
+      "originalSHA256": "8cd297994a243aef03ccf2bcea2b7dc0413ad926ad7eed4ca13ace0a522cbdc8",
+      "review": "Accepted: generated pixels inspected against the genuine Boardwalk Bumper Buggies photo. Actual purple/yellow rear shell, dual seatback humps, amber/red/red triple taillight recesses, silver strip and broad black bumper retained on the indoor metal floor. Source number and riders cropped out; adjacent cars remain background.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2b4dbc9482ae474ca9ac7492a3c43b67e0577d05-1440x1512.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Kids and adults riding Six Flags Discovery Kingdom's Boardwalk Bumper Buggies.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/boardwalk-bumper-buggies",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "b78993959922541212afed8678813056174228d7ff37c0adb24f5984fa5a5303",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official photo shows Boardwalk Bumper Buggies' actual foreground rear PURPLE car with wide YELLOW rim/body band, two black-backed seat humps outlined yellow, two triple circular amber/red/red tail lamps in dark teardrop recesses, silver metal bumper strip and broad BLACK rubber collar on the real metal floor within the green-walled pavilion. Choose this photographed rear panel, actual taillight arrangement, seatback lower edges and bumper in a tight source-supported portrait; keep rider heads and the number/lettering outside the crop. Do not combine the adjacent red car's front or green cars into a new vehicle, invent hidden pickups/mechanics or change the bumper/seat configuration. Indoor lighting with restrained dusk spill, not an outdoor road scene. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-257814227102350-thumbnail.jpg",
+      "thumbnailSHA256": "141566327e2736c546451c4f2308682cd05c690e55b5dbb3388594b9df84e002",
+      "thumbnailBytes": 20158,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-257814227102350-detail.jpg",
+      "detailSHA256": "8ffc2c26df8138a0ffee124c17ec31399f77027e8b4548d36c400034f005add6",
+      "detailBytes": 126122,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 260921955258450,
+      "rideName": "Elmer’s Weather Balloon Service",
+      "alt": "Illustrated Elmer’s Weather Balloon Service at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:16:18.403548+00:00",
+      "originalSHA256": "5ffb3abe7c1f040d71d70e8c33bbc700f9213edb7922360d05107e9951d047f6",
+      "review": "Accepted: generated pixels inspected against genuine NorCal Thrills Elmer's Weather Balloon Service hardware photo. Actual segmented green/yellow/cream and blue/red solid balloon props, silver suspension rods, partly fence-hidden molded baskets, connected blue radial arms and blue/yellow hub retained. No free-floating balloon or unseen seat/drive mechanism.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://norcalthrills.com/images/park/sfdk/rides/elmers-weather-balloon-service/gallery/NorCalThrills-ElmersWeatherBalloonService-2.jpg",
+          "sourceURL": "https://norcalthrills.com/parks/sfdk/rides/elmers-weather-balloon-service/",
+          "alt": "Actual low spinning weather-balloon gondolas and attached blue radial arm",
+          "credit": "NorCal Thrills / Roller Coaster Network (photographer/publisher)",
+          "license": "Copyright NorCal Thrills / Roller Coaster Network; source rights retained",
+          "licenseURL": "https://norcalthrills.com/terms/",
+          "sha256": "9b5d94fa435432c26ab464e0d8721a0cdab0a056fa706186604ea8074e4aaac3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine NorCal Thrills gallery photo shows this ride's actual low rotating balloon gondolas: solid segmented GREEN/YELLOW/cream balloon shells with rows of white bulbs, two straight SILVER vertical suspension rods down to a partially visible RED/yellow molded basket, fixed to a BLUE radial steel arm with yellow bulb edging and a blue central housing decorated with yellow lightning bands. Choose the photographed LEFT green/yellow/cream balloon, its two actual silver rods, connected blue arm and only the visible red basket rim above the BLUE picket fence. The fence continues hiding the lower basket/base as in the source. Keep the central top ornament, entrance signage and people outside this hardware portrait; do not invent complete unseen seats, hidden wheels, flames or free-floating balloon. This local low balloon-spinner is different from Nairobi's tower ride. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-260921955258450-thumbnail.jpg",
+      "thumbnailSHA256": "e3cd9778c97c9f22b376d54501eb0f2fdfddc8ab41f15f02492f788d642a7187",
+      "thumbnailBytes": 26743,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-260921955258450-detail.jpg",
+      "detailSHA256": "bdfbde718f603c884c59d241d64893e5a0cee11658a233e77fee29cec20f4b5e",
+      "detailBytes": 181401,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 33,
+      "rideId": 276539918030690,
+      "rideName": "THE FLASH Vertical Velocity",
+      "alt": "Illustrated THE FLASH Vertical Velocity at Six Flags Discovery Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:17:05.260179+00:00",
+      "originalSHA256": "7f18087f4e1235ba398dac583cb2a8fec9684b62725d7e7436a2feaaccd04ca1",
+      "review": "Accepted: generated pixels inspected against genuine official THE FLASH Vertical Velocity gallery photograph. Actual red triangular-spine twisting spike, yellow support frame and station rail retained; no train added to an empty source. A narrow photographed neighboring timber structure remains at the edge, with no reconstructed full route; source date remains unverified.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa84c6126014990f0b05d8f5c1f0d34d7a5a6b0ba-1500x1000.jpg%3Fw%3D1408%26h%3D1192%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A shot looking at the first ascend THE FLASH Vertical Velocity  from the perspective of guests waiting in line.",
+          "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/vertical-velocity",
+          "credit": "Six Flags / Discovery Kingdom (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "5b9c7de92ba41e910df31d2242ce9341214a7573c0adad02755614ea1e8f24ef",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official secondary gallery photo shows THE FLASH Vertical Velocity's actual RED triangular-spine tubular track leaving its station and rising into the photographed twisting spike, framed by large bright YELLOW vertical columns and crossbars; actual top bends/twist are visible. There is NO train visible, so add none. Choose a source-supported close/medium portrait of that red twisting upper spike and yellow support frame, preserving photographed rail orientation, ties and real support attachments. Keep the unrelated old wooden coaster at far right, queue lettering and people outside crop; avoid inventing a full U route, hidden spike, new train or another park's V2. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "33-276539918030690-thumbnail.jpg",
+      "thumbnailSHA256": "5c32f192011e99036ad79023df635ce82a272946094f1cb2b2c735af917f266c",
+      "thumbnailBytes": 22281,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "33-276539918030690-detail.jpg",
+      "detailSHA256": "65ec95430ecd16ba9f9c24aefebe8169cf23dda0b430671c5064bbd481c96073",
+      "detailBytes": 165336,
       "detailPixels": [
         768,
         960
