@@ -364,11 +364,11 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 46,
-    "pendingIllustrations": 1078,
-    "acceptedForRequestedStyle": 46,
-    "unfinishedForRequestedStyle": 1078,
-    "blocked": 10
+    "acceptedIllustrations": 119,
+    "pendingIllustrations": 1005,
+    "acceptedForRequestedStyle": 119,
+    "unfinishedForRequestedStyle": 1005,
+    "blocked": 17
   },
   "parks": [
     {
@@ -1000,10 +1000,10 @@
           "url": "https://rcdb.com/274.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "6-127",
@@ -1653,10 +1653,10 @@
           "url": "https://darkridedatabase.com/rides/tianas-bayou-adventure-2/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "7-117",
@@ -1718,10 +1718,10 @@
           "url": "https://darkridedatabase.com/rides/star-tours-the-adventures-continue/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "7-123",
@@ -1891,10 +1891,10 @@
           "url": "https://darkridedatabase.com/rides/millennium-falcon-smugglers-run/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "7-6369",
@@ -1920,10 +1920,10 @@
           "url": "https://darkridedatabase.com/rides/star-wars-rise-of-the-resistance/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "7-16342",
@@ -1949,10 +1949,10 @@
           "url": "https://rcdb.com/560.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "8-110",
@@ -2055,10 +2055,10 @@
           "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/kilimanjaro-safaris/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "8-4438",
@@ -2084,10 +2084,10 @@
           "url": "https://darkridedatabase.com/rides/navi-river-journey/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "8-4439",
@@ -2113,10 +2113,10 @@
           "url": "https://darkridedatabase.com/rides/avatar-flight-of-passage/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "8-14943",
@@ -2140,7 +2140,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "21-4266066062235",
@@ -2166,10 +2166,10 @@
           "url": "https://rcdb.com/3340.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "21-10195714265280",
@@ -2727,10 +2727,10 @@
           "url": "https://coasterpedia.net/wiki/Congo_River_Rapids_(Busch_Gardens_Tampa)"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-12794577221212",
@@ -2761,10 +2761,10 @@
           "url": "https://buschgardens.com/tampa/rides/serengeti-flyer/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-18900576089094",
@@ -2790,10 +2790,10 @@
           "url": "https://rcdb.com/8632.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-28011971629002",
@@ -2824,10 +2824,10 @@
           "url": "https://buschgardens.com/tampa/rides/skyride/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-51215365277309",
@@ -2842,10 +2842,10 @@
       "mapName": "Kumba",
       "referencePhotoCandidate": null,
       "rideSourceCandidates": [],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-54228505557825",
@@ -2876,10 +2876,10 @@
           "url": "https://rcdb.com/21221.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-62020843059756",
@@ -2939,10 +2939,10 @@
           "url": "https://rcdb.com/12781.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-73121299912724",
@@ -2968,10 +2968,10 @@
           "url": "https://rcdb.com/16985.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-93334705723617",
@@ -2997,10 +2997,10 @@
           "url": "https://coasterpedia.net/wiki/Serengeti_Express"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-94880706621636",
@@ -3026,10 +3026,10 @@
           "url": "https://coasterpedia.net/wiki/Snuffy%27s_Elephant_Romp"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-104372984757255",
@@ -3055,10 +3055,10 @@
           "url": "https://buschgardens.com/tampa/kid-friendly/sesame-street-safari-of-fun/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-107411584880664",
@@ -3084,10 +3084,10 @@
           "url": "https://coasterpedia.net/wiki/Zoe-Patra_and_the_Hippos_of_the_Nile"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-110006467483838",
@@ -3113,10 +3113,10 @@
           "url": "https://www.intamin.com/project/falcons-fury/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-112842942548208",
@@ -3142,10 +3142,10 @@
           "url": "https://buschgardens.com/tampa/kid-friendly/sesame-street-safari-of-fun/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-124083574457229",
@@ -3171,10 +3171,10 @@
           "url": "https://coasterpedia.net/wiki/Gwazi_Gliders"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-132585994582519",
@@ -3200,10 +3200,10 @@
           "url": "https://coasterpedia.net/wiki/The_Count%27s_Zambezi_Rally"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-134101349704354",
@@ -3224,10 +3224,10 @@
           "url": "https://buschgardens.com/tampa/rides/grand-caravan-carousel/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-148706213240245",
@@ -3253,10 +3253,10 @@
           "url": "https://coasterpedia.net/wiki/Serengeti_Express"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-209348409508903",
@@ -3282,10 +3282,10 @@
           "url": "https://rcdb.com/16607.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-216145341385222",
@@ -3311,10 +3311,10 @@
           "url": "https://coasterpedia.net/wiki/File:Ubanga-Banga_Bumper_Cars_plate.jpg"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-251072542612520",
@@ -3345,10 +3345,10 @@
           "url": "https://rcdb.com/2662.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-263287875124675",
@@ -3379,10 +3379,10 @@
           "url": "https://rcdb.com/87.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-277681966364288",
@@ -3413,10 +3413,10 @@
           "url": "https://buschgardens.com/tampa/rides/skyride/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "24-280455735184698",
@@ -3442,10 +3442,10 @@
           "url": "https://coasterpedia.net/wiki/Big_Bird%27s_Whirly_Birdie"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "32-6173967272242",
@@ -25491,7 +25491,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "64-5986",
@@ -25517,10 +25517,10 @@
           "url": "https://www.thrillride.com/Islands/islands.html"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "64-5987",
@@ -25546,10 +25546,10 @@
           "url": "https://darkridedatabase.com/rides/cat-in-the-hat/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "64-5988",
@@ -25580,10 +25580,10 @@
           "url": "https://blog.discoveruniversal.com/attractions/attraction-guide-doctor-dooms-fearfall-at-universals-islands-of-adventure/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "64-5989",
@@ -25609,10 +25609,10 @@
           "url": "https://darkridedatabase.com/rides/dudley-do-rights-ripsaw-falls/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "64-5991",
@@ -25638,10 +25638,10 @@
           "url": "https://rcdb.com/703.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "64-5992",
@@ -25667,10 +25667,10 @@
           "url": "https://darkridedatabase.com/rides/harry-potter-and-the-forbidden-journey/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "64-5994",
@@ -25701,10 +25701,10 @@
           "url": "https://blog.discoveruniversal.com/guides-and-tips/the-ultimate-thrill-seekers-guide-to-universal-orlando-resort/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "64-5997",
@@ -25730,10 +25730,10 @@
           "url": "https://coasterpedia.net/wiki/One_Fish,_Two_Fish,_Red_Fish,_Blue_Fish"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "64-5998",
@@ -25759,10 +25759,10 @@
           "url": "https://www.thrillride.com/bilgeratbarges/barges.html"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "64-5999",
@@ -25788,10 +25788,10 @@
           "url": "https://rcdb.com/559.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "64-6001",
@@ -25817,10 +25817,10 @@
           "url": "https://coasterpedia.net/wiki/High_in_the_Sky_Seuss_Trolley_Train_Ride"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "64-6003",
@@ -25846,10 +25846,10 @@
           "url": "https://coasterpedia.net/wiki/Storm_Force_Accelatron"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "64-6004",
@@ -25911,10 +25911,10 @@
           "url": "https://darkridedatabase.com/rides/skull-island-reign-of-kong/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "64-6682",
@@ -25940,10 +25940,10 @@
           "url": "https://rcdb.com/15330.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "64-8721",
@@ -25969,10 +25969,10 @@
           "url": "https://rcdb.com/6992.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "64-175627073509676",
@@ -25998,10 +25998,10 @@
           "url": "https://www.doppelmayr.com/en/reference-projects/reference-project-168-ful-hogwarts-express/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "65-5984",
@@ -26030,7 +26030,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "65-5990",
@@ -26056,10 +26056,10 @@
           "url": "https://coasterpedia.net/wiki/E.T._Adventure_(Universal_Studios_Florida)"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "65-5995",
@@ -26088,7 +26088,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "65-5996",
@@ -26143,10 +26143,10 @@
           "url": "https://rcdb.com/2232.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "65-6005",
@@ -26175,7 +26175,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "65-6006",
@@ -26201,10 +26201,10 @@
           "url": "https://darkridedatabase.com/rides/transformers-the-ride-3d/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "65-6014",
@@ -26230,10 +26230,10 @@
           "url": "https://rcdb.com/11887.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "65-6018",
@@ -26259,10 +26259,10 @@
           "url": "https://darkridedatabase.com/rides/race-through-new-york-starring-jimmy-fallon/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "65-6038",
@@ -26353,10 +26353,10 @@
           "url": "https://rcdb.com/563.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "65-37303123562965",
@@ -26382,10 +26382,10 @@
           "url": "https://www.doppelmayr.com/en/reference-projects/reference-project-168-ful-hogwarts-express/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "67-16595",
@@ -26445,10 +26445,10 @@
           "url": "https://www.proslide.com/projects/universal-volcano-bay/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "67-16598",
@@ -26474,10 +26474,10 @@
           "url": "https://www.proslide.com/projects/universal-volcano-bay/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "67-16600",
@@ -26503,10 +26503,10 @@
           "url": "https://www.proslide.com/projects/universal-volcano-bay/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "67-16602",
@@ -26532,10 +26532,10 @@
           "url": "https://www.proslide.com/projects/universal-volcano-bay/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "67-16605",
@@ -26566,10 +26566,10 @@
           "url": "https://blog.discoveruniversal.com/guides-and-tips/the-ultimate-thrill-seekers-guide-to-universal-orlando-resort/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "67-16607",
@@ -26595,10 +26595,10 @@
           "url": "https://www.proslide.com/projects/universal-volcano-bay/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "67-16609",
@@ -26624,10 +26624,10 @@
           "url": "https://www.proslide.com/projects/universal-volcano-bay/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "67-16612",
@@ -26653,10 +26653,10 @@
           "url": "https://www.proslide.com/projects/universal-volcano-bay/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "67-16614",
@@ -26687,10 +26687,10 @@
           "url": "https://blog.discoveruniversal.com/guides-and-tips/the-ultimate-thrill-seekers-guide-to-universal-orlando-resort/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "67-16616",
@@ -26711,10 +26711,10 @@
           "url": "https://www.universalorlando.com/webdata/k2/en/us/files/Documents/volcano-bays-guide-for-rider-safety-and-accessibility.pdf#page=28"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "67-16618",
@@ -26735,10 +26735,10 @@
           "url": "https://www.universalorlando.com/webdata/k2/en/us/files/Documents/volcano-bays-guide-for-rider-safety-and-accessibility.pdf#page=28"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "67-16620",
@@ -26764,10 +26764,10 @@
           "url": "https://www.proslide.com/projects/universal-volcano-bay/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "69-4042149978736",
@@ -30624,7 +30624,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "334-14686",
@@ -30650,10 +30650,10 @@
           "url": "https://rcdb.com/21380.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "334-14687",
@@ -30679,10 +30679,10 @@
           "url": "https://darkridedatabase.com/rides/harry-potter-and-the-battle-at-the-ministry/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "334-14688",
@@ -30740,7 +30740,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "334-14690",
@@ -30848,10 +30848,10 @@
           "url": "https://coasterpedia.net/wiki/Dragon_Racer%27s_Rally"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "334-14694",
@@ -30877,10 +30877,10 @@
           "url": "https://darkridedatabase.com/rides/monsters-unchained-the-frankenstein-experiment/"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "334-14695",
@@ -31707,7 +31707,7 @@
     }
   ],
   "releaseSelection": {
-    "version": "1.18.1",
+    "version": "1.18.2",
     "region": "Florida",
     "parkIDs": [
       5,
@@ -31767,42 +31767,172 @@
       "21-213939893339792",
       "21-226635493153383",
       "21-253934793508041",
-      "21-262673904341261"
+      "21-262673904341261",
+      "6-126",
+      "6-13630",
+      "7-120",
+      "7-6368",
+      "7-6369",
+      "7-16342",
+      "8-113",
+      "8-4438",
+      "8-4439",
+      "21-4266066062235",
+      "24-4498153166281",
+      "24-12794577221212",
+      "24-18900576089094",
+      "24-28011971629002",
+      "24-51215365277309",
+      "24-54228505557825",
+      "24-66123251959045",
+      "24-73121299912724",
+      "24-93334705723617",
+      "24-94880706621636",
+      "24-104372984757255",
+      "24-107411584880664",
+      "24-110006467483838",
+      "24-112842942548208",
+      "24-124083574457229",
+      "24-132585994582519",
+      "24-134101349704354",
+      "24-148706213240245",
+      "24-209348409508903",
+      "24-216145341385222",
+      "24-251072542612520",
+      "24-263287875124675",
+      "24-277681966364288",
+      "24-280455735184698",
+      "64-5986",
+      "64-5987",
+      "64-5988",
+      "64-5989",
+      "64-5991",
+      "64-5992",
+      "64-5994",
+      "64-5997",
+      "64-5998",
+      "64-5999",
+      "64-6001",
+      "64-6003",
+      "64-6017",
+      "64-6682",
+      "64-8721",
+      "64-175627073509676",
+      "65-5990",
+      "65-6000",
+      "65-6006",
+      "65-6014",
+      "65-6018",
+      "65-13605",
+      "65-37303123562965",
+      "67-16596",
+      "67-16598",
+      "67-16600",
+      "67-16602",
+      "67-16605",
+      "67-16607",
+      "67-16609",
+      "67-16612",
+      "67-16614",
+      "67-16616",
+      "67-16618",
+      "67-16620",
+      "334-14686",
+      "334-14687",
+      "334-14693",
+      "334-14694"
     ],
     "newKeys": [
-      "5-153",
-      "5-160",
-      "5-16467",
-      "6-131",
-      "6-132",
-      "6-133",
-      "6-141",
-      "6-161",
-      "6-1190",
-      "21-41297957342255",
-      "21-132368262506504",
-      "21-196344009848927",
-      "21-201433938641141",
-      "21-213939893339792",
-      "21-226635493153383",
-      "21-253934793508041",
-      "21-262673904341261"
+      "6-126",
+      "6-13630",
+      "7-120",
+      "7-6368",
+      "7-6369",
+      "7-16342",
+      "8-113",
+      "8-4438",
+      "8-4439",
+      "21-4266066062235",
+      "24-4498153166281",
+      "24-12794577221212",
+      "24-18900576089094",
+      "24-28011971629002",
+      "24-51215365277309",
+      "24-54228505557825",
+      "24-66123251959045",
+      "24-73121299912724",
+      "24-93334705723617",
+      "24-94880706621636",
+      "24-104372984757255",
+      "24-107411584880664",
+      "24-110006467483838",
+      "24-112842942548208",
+      "24-124083574457229",
+      "24-132585994582519",
+      "24-134101349704354",
+      "24-148706213240245",
+      "24-209348409508903",
+      "24-216145341385222",
+      "24-251072542612520",
+      "24-263287875124675",
+      "24-277681966364288",
+      "24-280455735184698",
+      "64-5986",
+      "64-5987",
+      "64-5988",
+      "64-5989",
+      "64-5991",
+      "64-5992",
+      "64-5994",
+      "64-5997",
+      "64-5998",
+      "64-5999",
+      "64-6001",
+      "64-6003",
+      "64-6017",
+      "64-6682",
+      "64-8721",
+      "64-175627073509676",
+      "65-5990",
+      "65-6000",
+      "65-6006",
+      "65-6014",
+      "65-6018",
+      "65-13605",
+      "65-37303123562965",
+      "67-16596",
+      "67-16598",
+      "67-16600",
+      "67-16602",
+      "67-16605",
+      "67-16607",
+      "67-16609",
+      "67-16612",
+      "67-16614",
+      "67-16616",
+      "67-16618",
+      "67-16620",
+      "334-14686",
+      "334-14687",
+      "334-14693",
+      "334-14694"
     ],
-    "approvedIllustrations": 46,
-    "newIllustrations": 17,
-    "previousPublicIllustrations": 29,
+    "approvedIllustrations": 119,
+    "newIllustrations": 73,
+    "previousPublicIllustrations": 46,
     "catalogEntries": 145,
-    "unfinishedRequestedStyle": 99,
-    "artworkHandoffCommit": "9b25febc23e67104b1ff3bc5f0dc3ea85017018d",
-    "assetRevision": "9b25febc23e67104b1ff3bc5f0dc3ea85017018d",
-    "handoffPath": "docs/ride-artwork/florida-addendum-47-2026-11-01.json",
-    "previousPublicSource": "3b495b1e828757144f1352e5ce9353d740eaf7ff",
-    "previousPublicFeedCommit": "4cdbb9be839a4c7f4eaab2282925af3fbb365036",
+    "unfinishedRequestedStyle": 26,
+    "artworkHandoffCommit": "d30931a62de9d4ce618efc4488a59962a794ce4f",
+    "assetRevision": "d30931a62de9d4ce618efc4488a59962a794ce4f",
+    "handoffPath": "docs/ride-artwork/florida-addendum-120-2026-11-01.json",
+    "stableHandoffEvidence": "Artwork owner confirmed d30931a62de9d4ce618efc4488a59962a794ce4f and florida-addendum-120-2026-11-01.json as the stable Florida selection through parent thread01a18d74-ae44-76f2-bebb-a275a7249023 on2026-11-01. Six later assets at b2d06dced52801e8af3964f7c868e00b9343166a are excluded.",
+    "previousPublicSource": "9fb701c688b7ca039cd254edf57911d688ca4da7",
+    "previousPublicFeedCommit": "6f77720ae869b2b669645fc20e2f15d66ce51fcc",
     "excludedDraftKeys": [
       "5-2679"
     ],
     "existingPublicAssetsPreserved": true,
     "ongoingWorkBranch": "feature/ride-illustrations",
-    "notes": "Only the 17 accepted Florida additions are imported; all 29 public records and their JPEGs remain unchanged. Other artwork continues independently."
+    "notes": "Select 73 accepted Florida additions; preserve all 46 public records and their JPEGs. Remaining artwork continues independently."
   }
 }

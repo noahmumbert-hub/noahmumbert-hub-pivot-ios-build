@@ -137,3 +137,9 @@ The **1.18.0** update combines native ride search, labels for every observed-wai
 The **1.18.1** candidate adds 17 accepted illustrations for EPCOT, Magic Kingdom and SeaWorld Orlando. All 29 illustrations in 1.18.0 remain unchanged, bringing the total to **46 of 145 Florida catalog rides**, with **99 remaining gaps**. Native search, observed-wait labels, lowest-wait predictions and reopening estimates retain their released behavior.
 
 [Incremental artwork scope and release gates](docs/florida-artwork-increment-2026-11-01.md) record the exact owner checkpoint, selected ride IDs and validation requirements. Publication to the existing SideStore source requires the final revision's complete three-device regression, visual/accessibility review and unsigned archive checks. Other artwork continues independently.
+
+## Stable Florida artwork pass
+
+The **1.18.2** candidate selects the owner-confirmed `d30931a6` checkpoint: **119 accepted Florida ride illustrations, 73 additions beyond 1.18.1**. All 46 previously published illustrations and other resources remain intact. Coverage is partial, with 26 of 145 Florida catalog rides still lacking accepted artwork in this selection. Six later images remain outside the selected checkpoint.
+
+[Stable selection, coverage and release gates](docs/florida-artwork-pass-2026-11-01.md) record the exact handoff, exclusions and validation requirements. Native ride search, observed-wait labels, lowest-wait predictions and reopening estimates retain their released behavior. Publication to the existing SideStore source requires full testing and archive verification on the final revision, plus three-device visual/accessibility review and verified public readback.

@@ -1,6 +1,6 @@
 # PIVOT 1.18.1 — additional Florida illustrations
 
-This candidate adds 17 accepted Florida ride illustrations to the public 1.18.0 source revision `3b495b1e828757144f1352e5ce9353d740eaf7ff`. The artwork owner's exact checkpoint is `9b25febc23e67104b1ff3bc5f0dc3ea85017018d` on `feature/ride-illustrations`. Its [handoff addendum](ride-artwork/florida-addendum-47-2026-11-01.json) pins the accepted records and both JPEG checksums for each addition. The full [release selection](ride-artwork/florida-release-selection-2026-11-01.json) includes 46 accepted Florida rides and excludes the earlier Frozen draft and all blocked or unaccepted work.
+This candidate adds 17 accepted Florida ride illustrations to the public 1.18.0 source revision `3b495b1e828757144f1352e5ce9353d740eaf7ff`. The artwork owner's exact checkpoint is `9b25febc23e67104b1ff3bc5f0dc3ea85017018d` on `feature/ride-illustrations`. Its [handoff addendum](ride-artwork/florida-addendum-47-2026-11-01.json) pins the accepted records and both JPEG checksums for each addition. The full [release selection](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/blob/9fb701c688b7ca039cd254edf57911d688ca4da7/docs/ride-artwork/florida-release-selection-2026-11-01.json) includes 46 accepted Florida rides and excludes the earlier Frozen draft and all blocked or unaccepted work.
 
 | Park | Additional ride IDs | Total accepted / catalog rides |
 | --- | --- | ---: |
