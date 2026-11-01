@@ -429,6 +429,11 @@ final class DashboardStore: ObservableObject {
     }
 
     func setSceneActive(_ isActive: Bool) {
+#if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("--map-refresh-network-test") {
+            print("MAP_REFRESH_LIFECYCLE sceneActive=\(isActive) previous=\(sceneIsActive) generation=\(monitoringGeneration)")
+        }
+#endif
         guard sceneIsActive != isActive else { return }
         sceneIsActive = isActive
         // A foreground return is a new observation session, never a replay.
@@ -611,6 +616,11 @@ final class DashboardStore: ObservableObject {
 
         do {
             let nextSnapshot = try await apiClient.snapshot(for: expectedPark)
+#if DEBUG
+            if ProcessInfo.processInfo.arguments.contains("--map-refresh-network-test") {
+                print("MAP_REFRESH_LIFECYCLE response park=\(expectedPark.rawValue) cancelled=\(Task.isCancelled) requestGeneration=\(requestGeneration) currentGeneration=\(monitoringGeneration)")
+            }
+#endif
             guard !Task.isCancelled, selectedPark == expectedPark, requestGeneration == monitoringGeneration else { return }
 
             let now = Date()

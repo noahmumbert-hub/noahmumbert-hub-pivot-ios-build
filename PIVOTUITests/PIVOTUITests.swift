@@ -1671,7 +1671,10 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertEqual(app.textFields["Search park places"].value as? String, "Space Mountain")
         refreshMapWait("15 min", app: app)
         app.buttons["Change park. Current park: Magic Kingdom Park"].tap()
-        let epcot = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'EPCOT'")).firstMatch
+        let parkSearch = app.searchFields.firstMatch
+        XCTAssertTrue(parkSearch.waitForExistence(timeout: 5)); parkSearch.tap(); parkSearch.typeText("EPCOT")
+        // Park rows include the operator monogram before the park name.
+        let epcot = app.buttons.matching(NSPredicate(format: "label CONTAINS 'EPCOT'")).firstMatch
         XCTAssertTrue(epcot.waitForExistence(timeout: 10)); epcot.tap()
         selectRootMapRide("Guardians", app: app)
         refreshMapWait("15 min", app: app)
@@ -1684,14 +1687,19 @@ final class PIVOTUITests: XCTestCase {
         app.launch()
         app.tabBars.buttons["Map"].tap()
         selectRootMapRide("Space Mountain", app: app)
+        let embedded = app.staticTexts["Selected ride wait"]
+        let initialLive = NSPredicate { _, _ in embedded.exists && embedded.label.hasSuffix(" min") }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: initialLive, object: nil)], timeout: 15), .completed,
+            "Foreground polling must survive asynchronous bootstrap before entering full screen; source: \(app.staticTexts["Map feed status"].label)")
         app.buttons["Full screen map"].tap()
         XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
         let label = app.staticTexts["Selected ride wait"]
         let initial = label.label
         let updated = NSPredicate { _, _ in label.exists && label.label != initial && label.label.hasSuffix(" min") }
-        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: updated, object: nil)], timeout: 15), .completed,
-            "The production foreground polling loop must update the visible full-screen map")
+        let updateResult = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: updated, object: nil)], timeout: 15)
         screenshot("Map automatic HTTP refresh in full screen", app: app)
+        XCTAssertEqual(updateResult, .completed,
+            "Full-screen polling: initial=\(initial), current=\(label.label), source=\(app.staticTexts["Map feed status"].label)")
         let beforeBackground = label.label
         XCUIDevice.shared.press(.home)
         app.activate()
