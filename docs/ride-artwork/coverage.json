@@ -364,10 +364,10 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 512,
-    "pendingIllustrations": 612,
-    "acceptedForRequestedStyle": 511,
-    "unfinishedForRequestedStyle": 613,
+    "acceptedIllustrations": 523,
+    "pendingIllustrations": 601,
+    "acceptedForRequestedStyle": 522,
+    "unfinishedForRequestedStyle": 602,
     "blocked": 12
   },
   "parks": [
@@ -11544,10 +11544,10 @@
           "url": "https://www.sixflags.com/magicmountain/attractions/tornado"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "41-75504633190290",
@@ -11568,10 +11568,10 @@
           "url": "https://www.sixflags.com/magicmountain/attractions/lightning-falls"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "41-86785221824877",
@@ -11592,10 +11592,10 @@
           "url": "https://www.sixflags.com/magicmountain/attractions/bonzai-pipelines"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "41-117697621354564",
@@ -11616,10 +11616,10 @@
           "url": "https://www.sixflags.com/magicmountain/attractions/tiki-falls"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "41-118203199791868",
@@ -11669,10 +11669,10 @@
           "url": "https://www.sixflags.com/magicmountain/attractions/lizard-lagoon"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "41-137939972726036",
@@ -11693,10 +11693,10 @@
           "url": "https://www.sixflags.com/magicmountain/attractions/lost-temple-rapids"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "41-202538959446569",
@@ -11717,10 +11717,10 @@
           "url": "https://www.sixflags.com/magicmountain/attractions/taboo-tower"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "41-213166350172329",
@@ -11741,10 +11741,10 @@
           "url": "https://www.sixflags.com/magicmountain/attractions/lizard-lagoon"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "41-220871345973869",
@@ -11765,10 +11765,10 @@
           "url": "https://www.sixflags.com/magicmountain/attractions/river-cruise"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "41-225082144601914",
@@ -11789,10 +11789,10 @@
           "url": "https://www.sixflags.com/magicmountain/attractions/castaway-cove"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "41-266348352685544",
@@ -11813,10 +11813,10 @@
           "url": "https://api.themeparks.wiki/v1/entity/37e9a297-6863-4ee3-beb6-016107703c1c"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "43-776077839351",

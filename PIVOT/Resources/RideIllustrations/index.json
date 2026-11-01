@@ -13396,6 +13396,177 @@
     },
     {
       "parkId": 41,
+      "rideId": 66829960275970,
+      "rideName": "Tornado",
+      "alt": "Illustrated Tornado at Hurricane Harbor Los Angeles",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:35:30.791369+00:00",
+      "originalSHA256": "2f47d11c03973d7fd127e2e54e38c5b815ed7a067854ef0dcc509009531577d2",
+      "review": "Accepted: actual yellow cloverleaf raft, four source rider arrangement and blue handles remain in contact with the blue/yellow funnel wall, with source panel seams and wet fiberglass preserved. Close composition avoids inventing unseen funnel hardware; generated reflected light is interpretive.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7916fd7dbb8d941a458d33370df96692c1e7bfe3-1920x1280.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A group of friends riding an inflatable raft on the Tornado waterslide at Hurricane Harbor LA.",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/tornado",
+          "credit": "Six Flags / Hurricane Harbor Los Angeles (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "99e39e5a1ae24cb22af3d0990a35fc6d427880e993b1ced6a423023d62a3cd8d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Tornado page explicitly locates Hurricane Harbor Los Angeles and its real close photographic hero was viewed. This is a yellow four-lobed CLOVERLEAF inflatable raft with BLUE grip handles and FOUR actual source riders, seated feet toward the middle. The visible huge funnel wall has a broad YELLOW diagonal panel and BLUE panels above; real seams, wet fiberglass and raft/water contact remain visible. Compose only the documented close raft and funnel-wall section, keeping source poses. Do not invent the funnel mouth, full external support layout, new slide colors or an unseen outlet. Capture date unverified; generated dusk is not observed opening-hour evidence."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "41-66829960275970-thumbnail.jpg",
+      "thumbnailSHA256": "71ea46e3fe8397228f97b753e98bd55fd84ac27a09ffc9e11e7c19271786fec8",
+      "thumbnailBytes": 17716,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "41-66829960275970-detail.jpg",
+      "detailSHA256": "d5f747fda88b6ab15665234de65d4eeb9bba62b01959fad68c68958b5d75e089",
+      "detailBytes": 140874,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 41,
+      "rideId": 75504633190290,
+      "rideName": "Lightning Falls",
+      "alt": "Illustrated Lightning Falls at Hurricane Harbor Los Angeles",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:35:04.022994+00:00",
+      "originalSHA256": "dcb4fb2988180fe65c48a301acb88b39adca84f81809d12e60ebc58551eaf7da",
+      "review": "Accepted: photographed three orange open outlets, blue tandem tubes/source occupants, pale support braces, bamboo and common catch pool remain distinct. Paint reflects the selected photo with capture date/current currency unverified; dusk light is generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe40300a03e802ac85ed9ad808227f925e66f96ab-1920x1280.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Group of riders on orange water slides, splashing into the pool at Lightning Falls, Hurricane Harbor LA.",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/lightning-falls",
+          "credit": "Six Flags / Hurricane Harbor Los Angeles (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "5aff26b32c32c4f605d2c7aa4d7cecdd2a34f6df6de245dbef0048538627c3d8",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Lightning Falls page and real hero photograph inspected. THREE bright ORANGE open flume outlets empty into one light-blue catch pool, with source BLUE tandem tubes and actual occupants splashing at the center/right. Stacked orange banked curves and PALE cream/yellow support posts/braces rise behind dense bamboo/trees. Preserve actual separate outlets, worn fiberglass/water surfaces and photographed tube poses; no invented interconnection or complete route. The source page identifies this park; capture date and current paint currency remain unverified, so do not claim this represents current observed operating conditions."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "41-75504633190290-thumbnail.jpg",
+      "thumbnailSHA256": "6212ed07be0c833e7c1b34116a094abead7d155a32925a66f3931fc3105bc28c",
+      "thumbnailBytes": 24523,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "41-75504633190290-detail.jpg",
+      "detailSHA256": "60e79a03ffb7ddd889cb2c1c4e6fce3ee80ab15291250f4e353e5218c50ea8d1",
+      "detailBytes": 202051,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 41,
+      "rideId": 86785221824877,
+      "rideName": "Bonzai Pipelines",
+      "alt": "Illustrated Bonzai Pipelines at Hurricane Harbor Los Angeles",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:34:15.910268+00:00",
+      "originalSHA256": "452e2cc7a99e8eabce34e80354933f220f4b5322c90799836206e1ebeed473d0",
+      "review": "Accepted: source orange/aqua launch capsules, transparent curved doors, chrome hinges/handles, small control panels, actual standing riders and black railing retain physical connections. No unseen trapdoor or full course invented; generated dusk/distant lights are interpretive.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbfd86d18daabc8d121cc02286ad7425e154dddfe-1920x2044.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Two people in launch capsules of the Bonzai Pipelines ride at Hurricane Harbor LA.",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/bonzai-pipelines",
+          "credit": "Six Flags / Hurricane Harbor Los Angeles (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "3a5adf78eaee564d5cb4e2138c63189059d5699e5ad3f746cea64f72debcfea0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Bonzai Pipelines page and real launch-capsule hero pixels inspected. Side-by-side vertical ORANGE and TURQUOISE/AQUA capsules have clear curved glass doors, real chrome handles/hinges, rounded top/bottom shells and visible small control panel on the turquoise unit. The source woman stands inside the orange capsule and source man inside the turquoise capsule with hands/arms across upper body as photographed. Aqua open runout-shaped lower shell and pale deck are visible; black safety railing overlooks dry Southern California hills. Preserve real transparent-door reflections and separate closed capsules; do not show unsupported launched bodies, unseen trapdoor mechanism or an invented full slide route. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "41-86785221824877-thumbnail.jpg",
+      "thumbnailSHA256": "997b87b4bb0819cf124ed3bf95f0c3c35dfcd2c4b416bc2580d3548de569314e",
+      "thumbnailBytes": 19010,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "41-86785221824877-detail.jpg",
+      "detailSHA256": "394507aa4bb60ca62060c73f5e2266967d8519cc9e35466ab1908c4dda483dcf",
+      "detailBytes": 111568,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 41,
+      "rideId": 117697621354564,
+      "rideName": "Tiki Falls",
+      "alt": "Illustrated Tiki Falls at Hurricane Harbor Los Angeles",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:35:49.359627+00:00",
+      "originalSHA256": "c8e15f326f4d205b59e39e50cf308b1a4703d53edeb3ae873ac7476ba64f9548",
+      "review": "Accepted: selected operator makeover photo's three gray carved-face outlets with orange/yellow/aqua mouths and matching enclosed tubes retain their real arrangement, palms, stair tower and braces. Empty source outflows remain empty, with natural water texture and generated evening light.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?q=75&url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fcf07ae6d7236c4ae6c76d04d29dcec8d8d230905-2000x1333.webp%3Fw%3D850%26h%3D490%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920",
+          "sourceURL": "https://www.sixflags.com/west-coast-region",
+          "credit": "Six Flags (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Tiki Falls at Hurricane Harbor Los Angeles",
+          "sha256": "41093061b19ee4e95c0a18bc0ee11cf55f3be6e45d6169fdf3a78344e4403b9d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator attraction page, older sign-only candidate and newer operator West Coast makeover image all inspected. Select the actual makeover photograph explicitly labeled Tiki Falls by the operator, with THREE real carved gray stone-face outlet facades: ORANGE mouth/flume left with amber eyes, YELLOW center with greenish eyes, AQUA right with blue eyes. Orange, yellow and pale-aqua enclosed tube curves rise behind on GRAY galvanized columns/braces and real central stairs, with palms occluding their documented sections. Each face mouth connects to its corresponding visible outflow into one light-blue pool; actual source has NO riders at the mouths. Preserve source tube-to-outlet connections, faces, painted eyes, water outlets and palm occlusions. Do not reuse older cream/blue sign-only paint, invent new faces/riders or a full hidden course. Actual photo, not announcement concept art; capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "41-117697621354564-thumbnail.jpg",
+      "thumbnailSHA256": "b32111640e36f04af238f09d5510aa65dfc365150c102bc284f54b822f1e370e",
+      "thumbnailBytes": 27555,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "41-117697621354564-detail.jpg",
+      "detailSHA256": "dcb29c2fa009aa5747d6e146c484f2a867d35cc15b79c6ec4fec1dcbae076ca7",
+      "detailBytes": 214463,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 41,
       "rideId": 118203199791868,
       "rideName": "Black Snake Summit",
       "alt": "Illustrated Black Snake Summit at Hurricane Harbor Los Angeles",
@@ -13431,6 +13602,306 @@
       "detailFile": "41-118203199791868-detail.jpg",
       "detailSHA256": "f9b2488f357c5ec92965686555864c894d803ccfaf67d7e850ae703458750ce4",
       "detailBytes": 249732,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 41,
+      "rideId": 119442780371544,
+      "rideName": "Reptile Ridge",
+      "alt": "Illustrated Reptile Ridge at Hurricane Harbor Los Angeles",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:38:05.657460+00:00",
+      "originalSHA256": "ec62298e8edbf57bfe2756076bf016b9ac22af3a82be265302f449d4af0ff135",
+      "review": "Accepted: real Reptile Ridge green tower, orange straight open drop, green/blue-gray enclosed tubes, red open spiral, connected supports and actual stone-head island remain distinct. Shared pool/fountain stays secondary; original source has no riders, and none were invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/6653233f5b43eb2094b3a45339ca94d91bcf65fe-2000x1125.png?rect=0,41,2000,1045&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/lizard-lagoon",
+          "credit": "Six Flags / Hurricane Harbor Los Angeles (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f397ff3ba2ebee5f097cdb7ee1ab937c08ec489a4b05a50c543f71d104ef3b57",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Lizard Lagoon page explicitly places Reptile Ridge inside this pool area, and authentic full tower photograph was inspected. Reptile Ridge has a GREEN steel stair tower with pale shade roof, a straight ORANGE/YELLOW steep OPEN body slide down the front, GREEN closed-tube spirals at left, alternating DARK BLUE and LIGHT GRAY/BLUE enclosed spirals in the center and RED OPEN spiral at right. The source green low runout and real stone-face decorative block sit at its base; palms occlude portions of the tower. Preserve the photographed tower, tube joints, actual supports and separate open/closed slide types; focus the portrait on ride hardware. Foreground Lizard Lagoon pool/mushroom is secondary shared context, not a separate invented attraction. Source has no visible people on the slides; no unsupported riders or full hidden route. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "41-119442780371544-thumbnail.jpg",
+      "thumbnailSHA256": "94b7a496e1b1a91d312b0d2753f5de9c7bd0cb4ad45a90a98e7a2751359722dc",
+      "thumbnailBytes": 24407,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "41-119442780371544-detail.jpg",
+      "detailSHA256": "4c173bf3d8f938d45711be86fcdc01d224a814c9acdb1f58fe1d670f681e2718",
+      "detailBytes": 191445,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 41,
+      "rideId": 137939972726036,
+      "rideName": "Lost Temple Rapids",
+      "alt": "Illustrated Lost Temple Rapids at Hurricane Harbor Los Angeles",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:38:27.013748+00:00",
+      "originalSHA256": "fe44938997815b1d38b757d6f75b3c5058aa70f732fc525e56785e31befd6526",
+      "review": "Accepted: source yellow/blue raft with dark middle band, four seated occupants and black handles stays within the real light-blue open flume with wet panel seams and bamboo backdrop. No temple building or hidden course invented; dusk light is generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe8f880fefe1840b3c60abd14ea73c3fa8922fa60-1920x1280.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Group of friends enjoying the Lost Temple Rapids ride at Hurricane Harbor LA.",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/lost-temple-rapids",
+          "credit": "Six Flags / Hurricane Harbor Los Angeles (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "0889f274e074a354b13eab199db3a0d3f7b4b4d4b077d1cb0b03944b3aa8696a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Lost Temple Rapids page and real source hero inspected. A YELLOW-and-BLUE circular family raft with a dark navy horizontal mid-band and black grip handles carries FOUR actual source riders, seated around its rim, in a LIGHT BLUE OPEN U-shaped flume. This photographed low curve has tall sculpted side walls, genuine panel seams, wet fiberglass and white water at the raft's contact; bamboo, trees and real gray utility fence frame the section. Preserve raft occupancy/handles, contact and source chute geometry. Do not invent temple buildings only described in prose, closed tubes, unseen course or a mechanical-seat rapids boat. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "41-137939972726036-thumbnail.jpg",
+      "thumbnailSHA256": "32b656d6c308e65a4a64c9953165c149e953ab97e02c847efbda6ff5233ad047",
+      "thumbnailBytes": 27179,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "41-137939972726036-detail.jpg",
+      "detailSHA256": "389e5cc0d806da5c24901d869c6e1cead2b7778a62baf0f2a70b5b5f93b6fd6d",
+      "detailBytes": 219061,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 41,
+      "rideId": 202538959446569,
+      "rideName": "Taboo Tower",
+      "alt": "Illustrated Taboo Tower at Hurricane Harbor Los Angeles",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:38:49.362043+00:00",
+      "originalSHA256": "b6387b3bfe34134a42d513b11a1a0748314f6d677584715a4d1a173245a1ead2",
+      "review": "Accepted: actual Taboo Tower exterior retains its timber/rope physical sign, carved ornament, pale block wall, open black gate, real steel stairs and photographed slide fragments. Honest entrance portrait avoids inventing unseen drops or riders; dusk lighting is generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe06d72e66e07c155e7cf6319412be24a763d6868-8192x5464.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Entrance sign of Taboo Tower ride at Hurricane Harbor LA.",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/taboo-tower",
+          "credit": "Six Flags / Hurricane Harbor Los Angeles (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "004ff6c9fd7a2a32c657e5e1d9d86b8636bf9e1dfdbdf582a7b2f70694de1ab2",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Taboo Tower page and its real entry photograph inspected. The selected authentic view shows a weathered pale faux-stone wall/block pattern, an actual wooden TABOO TOWER sign held in a dark timber frame with thick ROPE lashings, and a small carved mask ornament above. The entrance below has a black hinged/open gate. Real gray steel stairs/handrails rise behind the wall; partial black tubes at upper left and pale cream, aqua and lime slide sections at upper right are photographed adjacent context, not a basis to fabricate the full route. Bamboo and palm fronds create actual occlusions. Keep an honest exterior/entrance portrait with source-supported stair and slide fragments, tactile timber/rope/stone, no invented riders or unseen drops. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "41-202538959446569-thumbnail.jpg",
+      "thumbnailSHA256": "3fe38aeeb5b33bec79d9bb47aed2407fc7a6aeb9cb7cf1674f63242592758ecc",
+      "thumbnailBytes": 23648,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "41-202538959446569-detail.jpg",
+      "detailSHA256": "42a40a15521ae37ce18b398c1b44710c7f43509d7579ed3a0cda9618cddb518d",
+      "detailBytes": 195442,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 41,
+      "rideId": 213166350172329,
+      "rideName": "Lizard Lagoon",
+      "alt": "Illustrated Lizard Lagoon at Hurricane Harbor Los Angeles",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:52:39.105792+00:00",
+      "originalSHA256": "0ed6ce05bc82f90068c257d1a3ece8d35669e199470f38859b1ec6d1bf3d81fc",
+      "review": "Accepted: composition refined before commit to distinguish Lizard Lagoon from the adjacent Reptile Ridge tower image. The source white domed spray fountain and stem, actual pool/stainless rail and water curtain dominate this closer portrait; the genuine island/head and partial tower remain background. Fountain stays partially cropped as documented. Empty pool, no new riders or hidden mechanism; dusk light is generated. Previous composition preserved privately.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F6892ea902319713f5968a7a4525a272bd232c4b7-1500x1500.png%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Lizard Lagoon",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/lizard-lagoon",
+          "credit": "Six Flags / Hurricane Harbor Los Angeles (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "789e4866d64eda20607f5dd6c5825138d9704cfed2f4ecb51524f62a0bad50c5",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Lizard Lagoon page identifies the pool and explicitly notes Reptile Ridge nested here; actual pool hero pixels were viewed separately from the wider Reptile photo. Compose the foreground LIGHT BLUE pool, real WHITE domed MUSHROOM spray fountain at right, stainless entry rail, stone-edged planted island with a GRAY carved-stone face and brown lifeguard chair. Keep the documented pool rim, water surface and fountain plumbing as photographed. The green-supported Reptile Ridge tower with orange straight slide, green/blue tubes and red open spiral is authentic shared background only. Focus this distinct image on the relaxing pool/fountain section rather than duplicating the Reptile tower hero. Source pool is empty; do not invent swimmers, new pool geometry or extra slides. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "41-213166350172329-thumbnail.jpg",
+      "thumbnailSHA256": "4e2be49d2f2424e9e463acbc079e2b431362f55fa33bd075ca2c589b67c72d23",
+      "thumbnailBytes": 23983,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "41-213166350172329-detail.jpg",
+      "detailSHA256": "7b1f452ee4b767f8414b38ef97546d0fef2f21c1c345b42c77ce70b89bdb7316",
+      "detailBytes": 189072,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 41,
+      "rideId": 220871345973869,
+      "rideName": "River Cruise",
+      "alt": "Illustrated River Cruise at Hurricane Harbor Los Angeles",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:41:10.124002+00:00",
+      "originalSHA256": "de477f350cea1d578484184b9963c8ab0dfec559de0b3a8b87f3f8dca3d0a5b7",
+      "review": "Accepted: photographed yellow handled tubes and seated source guests stay on the narrow blue lazy river beneath actual rectangular carved stone crossings. Shell/mask/sea-creature reliefs, column perspective and water contact remain recognizable. Generated lighting is interpretive.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff20d2679b6a7b44f868baba50ebb0a81a474cd36-1920x2044.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Visitors floating on yellow tubes along the River Cruise at Hurricane Harbor LA, passing under intricate stone carvings.",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/river-cruise",
+          "credit": "Six Flags / Hurricane Harbor Los Angeles (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ba0dce39fe55f15841696539b899f2a1b715b430b060064c06851d4e386eee0c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator River Cruise page and photographic hero pixels inspected. Real guests float seated in YELLOW individual inner tubes with BLACK handles along a narrow LIGHT-BLUE concrete lazy-river channel. A row of authentic rectangular faux-stone architraves/columns spans the channel; their brown/orange reliefs show actual coiled shell motifs, sea creatures and central carved masks. Green trailing foliage borders the repeated openings. Preserve these real architectural beams and their perspective, tube/rider water contact and actual source seated poses. Unlike the corrected Fiesta railroad photograph, these carved crossings are genuinely visible in this source. Do not invent new drops, tunnels, ride vehicles or unphotographed layout. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "41-220871345973869-thumbnail.jpg",
+      "thumbnailSHA256": "f8152ca5560411d408d04718a87703332a34dbc768b9c6dabac322c6585df42a",
+      "thumbnailBytes": 30276,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "41-220871345973869-detail.jpg",
+      "detailSHA256": "b09607edef4e4c1cdabc28700bd7853d351a559013e54b530c33911469faca3d",
+      "detailBytes": 201872,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 41,
+      "rideId": 225082144601914,
+      "rideName": "Castaway Cove",
+      "alt": "Illustrated Castaway Cove at Hurricane Harbor Los Angeles",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:41:30.452284+00:00",
+      "originalSHA256": "2438c1b3c8faf48015b493cf1528eef6bb3fac4b19a837013075fab56c5f6e08",
+      "review": "Accepted: source paired purple carved-face pillars and pale beam keep their physical falling-water structure, with shallow pool, rock ledge and actual woman/child pose arrangement. Natural water/material texture retains requested realism; dusk light is generated.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F799288f100dd44555a49f5c072ab16e04be32ce8-1920x1378.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A woman and child enjoying the water features at Castaway Cove, Hurricane Harbor LA.",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/castaway-cove",
+          "credit": "Six Flags / Hurricane Harbor Los Angeles (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "430d0b197f5a4c19d5b3b2c500ff3bc551bdf0c8860a05a0511ce6f116c07c1e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator Castaway Cove page and real source photograph inspected. The documented shallow LIGHT-GREEN/BLUE wading water has two tall PURPLE faux-stone rectangular pillars with actual inset carved faces, supporting a PALE cream horizontal beam from which real vertical water streams fall. Behind is a short faux-rock waterfall ledge, palms and trees; gray low wall borders the right. Actual source woman in red swimsuit/striped sunhat and child in rainbow-striped swimsuit stand in the shallow water as photographed. Preserve the family poses, source water depth/contact, paired purple pillars and real falling-water structure. No invented slides, extra children, new faces on posts or unseen pool layout. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "41-225082144601914-thumbnail.jpg",
+      "thumbnailSHA256": "7ab65c96f7708c72fab7dc33403b19c9abe57e6e119a61fe768c13ee6284ce02",
+      "thumbnailBytes": 24039,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "41-225082144601914-detail.jpg",
+      "detailSHA256": "83620fc59533e1aa30e8d7cf0fe509997d0060ab555b2702c995eea70e364a67",
+      "detailBytes": 197957,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 41,
+      "rideId": 266348352685544,
+      "rideName": "Blacksnake Summit Tube Slides",
+      "alt": "Illustrated Blacksnake Summit Tube Slides at Hurricane Harbor Los Angeles",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T05:41:59.036678+00:00",
+      "originalSHA256": "9a487e755949fadcfd216bfa202c1a761fe56d30fd69c89ca5165298db53f7c1",
+      "review": "Accepted: actual lower tube-slide pair retains two black circular mouths, long separate worn runout troughs, central attendant walkway, green queue canopy, source waiting guests and carried yellow tubes. Original historical 2015 source/current paint limits are recorded; hidden course not reconstructed.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://thecoasterkings.com/wp-content/uploads/2015/06/20150611_152239-Large.jpg",
+          "sourceURL": "https://thecoasterkings.com/six-flags-hurricane-harbor-la-2/",
+          "credit": "Coaster Kings (original photographer/publisher)",
+          "license": "Copyright Coaster Kings; source rights retained",
+          "licenseURL": "https://thecoasterkings.com",
+          "alt": "Black Snake Summit tube slides at Hurricane Harbor Los Angeles",
+          "sha256": "ff507c3e1ce170281b040d20617ac45fba7d4855665f4805029aae16d67e8bef",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Original Coaster Kings 2015 photographic walkthrough and both its tower/course and actual exit photographs were viewed. The primary account explicitly separates lower-level Boa Constrictor/Sidewinder TUBE slides from upper Black Snake Summit body/speed slides; use the actual lower tube-slide EXIT photo for this distinct catalog entry. TWO BLACK enclosed round tube mouths empty into TWO straight long BLACK/GRAY open runout troughs, divided by a real narrow pale concrete walkway with an actual attendant. Worn/flaking surface paint, moving shallow water and curved tube shells are visible. Yellow carried inner tubes are beside the wooden fence left; real waiting guests stand behind rope rails under dark-green shade canopy at right, with bamboo and palms behind. Keep the actual empty exits/runouts, visible connected tubing and photographed queue/attendant; no launched riders or invented hidden course. Historical source was published June 2015; capture date and current paint currency are unverified. Source retains copyright."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "41-266348352685544-thumbnail.jpg",
+      "thumbnailSHA256": "c63a4d5b9132220bb6030f1e820e40bf8232b9e6b9c20828be86b5a12b8e7730",
+      "thumbnailBytes": 23360,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "41-266348352685544-detail.jpg",
+      "detailSHA256": "4dc04347630bc664ddc1871f02633b5492350db59c56a3e1f8c6a594200a38c9",
+      "detailBytes": 201805,
       "detailPixels": [
         768,
         960
