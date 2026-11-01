@@ -183,6 +183,102 @@ final class PIVOTUITests: XCTestCase {
         screenshot("Waits shared group filtered down status", app: app)
     }
 
+    func testWaitsCompactLayoutKeepsParkHoursAndHistoryTouchTarget() {
+        checkCompactWaitsLayout(parkID: 5, rideID: 10916, extra: [],
+                               category: .large, capture: "standard EPCOT")
+    }
+
+    func testWaitsCompactLayoutKeepsTwelveSampleControlSmall() {
+        checkCompactWaitsLayout(parkID: 64, rideID: 5985,
+                               extra: ["--reference-ui-ride=5985", "--ride-history-ui-test"],
+                               category: .large, capture: "standard Islands of Adventure")
+    }
+
+    func testWaitsCompactLayoutAllowsAccessibilityTextToWrap() {
+        checkCompactWaitsLayout(parkID: 5, rideID: 10916,
+                               extra: ["--ride-history-ui-test", "--ui-large-type"],
+                               category: .accessibilityLarge, capture: "accessibility large")
+    }
+
+    func testWaitsCompactLayoutAllowsLargestAccessibilityTextToWrap() {
+        checkCompactWaitsLayout(parkID: 5, rideID: 10916,
+                               extra: ["--ride-history-ui-test", "--ui-largest-type"],
+                               category: .accessibilityExtraExtraExtraLarge, capture: "accessibility largest")
+    }
+
+    private func checkCompactWaitsLayout(parkID: Int, rideID: Int, extra: [String],
+                                         category: UIContentSizeCategory, capture: String,
+                                         file: StaticString = #filePath, line: UInt = #line) {
+        let app = rootFixture(["--reference-ui-park=\(parkID)", "--ui-dark"] + extra)
+        screenshot("Compact Waits \(capture) overview", app: app)
+        for identifier in ["park-hours-value", "park-early-entry-value"] {
+            let value = app.staticTexts[identifier].firstMatch
+            centerFullyVisible(value, in: app, file: file, line: line)
+            XCTAssertTrue(value.label.contains(" – "), "Both complete schedule endpoints must remain available", file: file, line: line)
+            assertFullTextLayout(value, category: category, file: file, line: line)
+            screenshot("Compact Waits \(capture) \(identifier)", app: app)
+        }
+
+        let heading = app.staticTexts["Current rides"].firstMatch
+        centerFullyVisible(heading, in: app, file: file, line: line)
+        let banner = app.descendants(matching: .any)["park-banner-\(parkID)"].firstMatch
+        let controls = app.cells.containing(.textField, identifier: "Ride search").firstMatch
+        XCTAssertTrue(banner.exists && controls.exists, file: file, line: line)
+        waitForSettledFrames([banner, controls], file: file, line: line)
+        let parkGap = controls.frame.minY - banner.frame.maxY
+        XCTAssertGreaterThanOrEqual(parkGap, 0, "Park and rides cards must not overlap", file: file, line: line)
+        XCTAssertLessThanOrEqual(parkGap, 12, "A healthy feed must not reserve an empty warning row or a large section gap", file: file, line: line)
+        screenshot("Compact Waits \(capture) park to rides junction", app: app)
+
+        let toggle = app.buttons["wait-history-toggle-\(rideID)"]
+        centerFullyVisible(toggle, in: app, file: file, line: line)
+        let action = app.buttons["ride-row-action-\(rideID)"]
+        let cell = app.cells.containing(.button, identifier: "ride-row-action-\(rideID)").firstMatch
+        waitForSettledFrames([toggle, action, cell], file: file, line: line)
+        XCTAssertTrue(toggle.isHittable, "The smaller history control must remain independently tappable", file: file, line: line)
+        XCTAssertEqual(toggle.value as? String, "Collapsed", file: file, line: line)
+        XCTAssertGreaterThanOrEqual(toggle.frame.height, 44, "Compaction must retain the minimum history touch target", file: file, line: line)
+        XCTAssertTrue(toggle.label.hasPrefix("Recent observed waits"), file: file, line: line)
+        assertFullTextLayout(toggle, category: category, file: file, line: line)
+        let title = toggle.staticTexts["wait-history-title-\(rideID)"].firstMatch
+        if title.exists {
+            assertFullTextLayout(title, category: category, file: file, line: line)
+            assertContained(title.frame, in: toggle.frame, "The title must fit the compact control", file: file, line: line)
+        }
+        let historyGap = toggle.frame.minY - action.frame.maxY
+        let bottomPadding = cell.frame.maxY - toggle.frame.maxY
+        XCTAssertGreaterThanOrEqual(historyGap, 0, file: file, line: line)
+        XCTAssertLessThanOrEqual(historyGap, 8, "Remove excess space above the history control", file: file, line: line)
+        XCTAssertGreaterThanOrEqual(bottomPadding, 0, file: file, line: line)
+        XCTAssertLessThanOrEqual(bottomPadding, 12, "Remove the history control's extra vertical card padding", file: file, line: line)
+        if category == .large {
+            XCTAssertLessThanOrEqual(toggle.frame.height, 46, "A one-line history control needs only its accessible touch height", file: file, line: line)
+        } else {
+            let font = UIFont.preferredFont(forTextStyle: .caption1,
+                compatibleWith: UITraitCollection(preferredContentSizeCategory: category))
+            XCTAssertGreaterThanOrEqual(toggle.frame.height, font.lineHeight - 2,
+                                        "The control must grow with the actual caption size", file: file, line: line)
+        }
+        let metrics: [String: Any] = ["capture": capture, "category": category.rawValue,
+            "parkGap": parkGap, "historyTouchHeight": toggle.frame.height,
+            "historyTopGap": historyGap, "rowBottomPadding": bottomPadding,
+            "historyLabel": toggle.label]
+        if let data = try? JSONSerialization.data(withJSONObject: metrics, options: [.sortedKeys]),
+           let json = String(data: data, encoding: .utf8) { print("COMPACT_WAITS_LAYOUT_METRICS " + json) }
+        screenshot("Compact Waits \(capture) collapsed history touch target", app: app)
+
+        toggle.tap()
+        let chart = app.descendants(matching: .any)["observed-wait-chart-\(rideID)"].firstMatch
+        XCTAssertTrue(chart.waitForExistence(timeout: 5), "The smaller control must still open its chart", file: file, line: line)
+        centerFullyVisible(toggle, in: app, file: file, line: line)
+        XCTAssertEqual(toggle.value as? String, "Expanded", file: file, line: line)
+        screenshot("Compact Waits \(capture) expanded history", app: app)
+        toggle.tap()
+        let collapsed = NSPredicate { _, _ in toggle.value as? String == "Collapsed" && !chart.exists }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: collapsed, object: nil)], timeout: 5), .completed,
+                       "Toggling history must not intercept the ride action or leave a chart mounted", file: file, line: line)
+    }
+
     func testWaitsSearchAndResultsStayJoinedAtAccessibilitySize() {
         let app = rootFixture(["--reference-ui-park=5", "--ui-dark", "--ui-large-type"])
         let heading = app.staticTexts["Current rides"]

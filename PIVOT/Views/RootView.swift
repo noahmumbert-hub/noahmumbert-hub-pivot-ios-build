@@ -111,13 +111,15 @@ struct RootView: View {
     }
 
     private var waitsHeader: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            header
+        VStack(alignment: .leading, spacing: 0) {
+            header.padding(.bottom, 12)
             parkSwitch
-            RetainedSnapshotNotice()
+            // An empty timeline still occupies a VStack slot. Put its spacing
+            // inside the visible notice so a healthy feed leaves no blank row.
+            RetainedSnapshotNotice(topSpacing: 12)
             if store.selectedPark?.id == 65, store.snapshot?.parkId == 65,
                let event = store.snapshot?.halloweenHorrorNights {
-                horrorNightSection(event, showHouses: true)
+                horrorNightSection(event, showHouses: true).padding(.top, 12)
             }
         }
     }
@@ -1867,6 +1869,7 @@ struct ActiveScreenTimeline<Content: View>: View {
 /// detail. Time alone can expire a retained snapshot, even without a new response.
 struct RetainedSnapshotNotice: View {
     @EnvironmentObject private var store: DashboardStore
+    var topSpacing: CGFloat = 0
 
     var body: some View {
         ActiveScreenTimeline { date in
@@ -1883,6 +1886,7 @@ struct RetainedSnapshotNotice: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .pivotCard(padding: 14)
+                .padding(.top, topSpacing)
                 .accessibilityElement(children: .combine)
                 .accessibilityIdentifier("retained-snapshot-notice")
             }

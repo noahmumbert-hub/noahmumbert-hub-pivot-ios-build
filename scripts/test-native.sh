@@ -60,6 +60,10 @@ case "${PIVOT_TEST_SCOPE:-all}" in
   all) ;;
   layout-review)
     test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutKeepsParkHoursAndHistoryTouchTarget
+      -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutKeepsTwelveSampleControlSmall
+      -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutAllowsAccessibilityTextToWrap
+      -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutAllowsLargestAccessibilityTextToWrap
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryHandlesSparseSamples
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestDetailsKeepFirstThreeLabelsReadable
       -only-testing:PIVOTUITests/PIVOTUITests/testHourlyForecastShowsFirstTwoCompleteTimesAtAccessibilityTextSize

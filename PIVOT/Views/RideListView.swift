@@ -61,14 +61,15 @@ struct RideListView: View {
         List {
             if let nativeHeader {
                 Section { nativeHeader }
-                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 4, trailing: 0))
+                    .listRowInsets(EdgeInsets())
                     .listRowBackground(Color.clear)
                     .listRowSeparator(.hidden)
             }
             Section {
                 controls
                     .buttonStyle(.plain)
-                    .padding(14)
+                    .padding(.horizontal, 14)
+                    .padding(.vertical, 10)
                     .accessibilityElement(children: .contain)
                     .accessibilityIdentifier("waits-controls-row")
                     .listRowInsets(EdgeInsets())
@@ -101,7 +102,7 @@ struct RideListView: View {
         .listStyle(.insetGrouped)
         .contentMargins(.horizontal, 14, for: .scrollContent)
         .contentMargins(.top, 8, for: .scrollContent)
-        .listSectionSpacing(12)
+        .listSectionSpacing(8)
         .scrollContentBackground(.hidden)
         .background(Color.pivotBackground)
         .scrollDismissesKeyboard(.interactively)
@@ -109,7 +110,7 @@ struct RideListView: View {
     }
 
     private var controls: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 8) {
             if radarOnly {
                 HStack {
                     Text("All down rides").font(.title3.weight(.semibold))
@@ -468,10 +469,10 @@ private struct RideRowView: View {
                 .accessibilityIdentifier("ride-row-action-\(ride.id)")
 
                 NativeWaitHistoryView(ride: ride, timeZone: timeZone)
-                    .padding(.horizontal, 12).padding(.vertical, 8)
-                    .background(Color.pivotSurfaceRaised.opacity(0.42), in: RoundedRectangle(cornerRadius: 14))
-                    .overlay { RoundedRectangle(cornerRadius: 14).strokeBorder(Color.pivotBorder.opacity(0.6), lineWidth: 0.75).allowsHitTesting(false) }
-                    .padding(.top, 12)
+                    .padding(.horizontal, 10)
+                    .background(Color.pivotSurfaceRaised.opacity(0.42), in: RoundedRectangle(cornerRadius: 10))
+                    .overlay { RoundedRectangle(cornerRadius: 10).strokeBorder(Color.pivotBorder.opacity(0.6), lineWidth: 0.75).allowsHitTesting(false) }
+                    .padding(.top, 6)
 
                 if ride.status == .down {
                     let guidance = ReopeningGuidance.presentation(ride: ride, snapshot: store.snapshot,
@@ -502,7 +503,8 @@ private struct RideRowView: View {
                 }
 
             }
-            .padding(14)
+            .padding(.horizontal, 14)
+            .padding(.vertical, 10)
             .background(Color.pivotSurface)
         }
     }

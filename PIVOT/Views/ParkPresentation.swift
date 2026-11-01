@@ -86,10 +86,10 @@ struct ParkBannerView: View {
             if let park {
                 Rectangle().fill(.white.opacity(0.18)).frame(width: 164, height: 1).accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: 10) {
-                    scheduleLine("Park hours", value: hours?.regular.map { timeRange($0, park: park) } ?? "Updating", icon: "clock")
+                    scheduleLine("Park hours", value: hours?.regular.map { timeRange($0, park: park) } ?? "Updating", icon: "clock", identifier: "park-hours")
                     scheduleLine(hours?.earlyEntry?.label ?? "Early entry",
                                  value: hours?.earlyEntry.map { timeRange($0, park: park) } ?? (hours == nil ? "Updating" : "Not posted"),
-                                 icon: "ticket")
+                                 icon: "ticket", identifier: "park-early-entry")
                 }.padding(.trailing, artwork == nil ? 0 : 28)
                 if hours?.stale == true {
                     Label("Saved schedule · refresh pending", systemImage: "clock.arrow.circlepath")
@@ -162,12 +162,13 @@ struct ParkBannerView: View {
             + ParkTimeFormatter.time(period.closingTime, timeZone: park.timeZone)
     }
 
-    private func scheduleLine(_ title: String, value: String, icon: String) -> some View {
+    private func scheduleLine(_ title: String, value: String, icon: String, identifier: String) -> some View {
         HStack(alignment: .top, spacing: 12) {
             Image(systemName: icon).font(.body).frame(width: 22).padding(.top, 2)
             VStack(alignment: .leading, spacing: 2) {
                 Text(title).foregroundStyle(.white.opacity(0.85))
-                Text(value)
+                    .accessibilityIdentifier(identifier + "-title")
+                Text(value).accessibilityIdentifier(identifier + "-value")
             }.font(.caption).fixedSize(horizontal: false, vertical: true)
         }
     }
