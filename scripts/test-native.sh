@@ -58,6 +58,14 @@ test_options=(
 )
 case "${PIVOT_TEST_SCOPE:-all}" in
   all) ;;
+  layout-review)
+    test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryHandlesSparseSamples
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestDetailsKeepFirstThreeLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testHourlyForecastShowsEarlierCompleteTimesAtAccessibilityTextSize
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedSampleTimesRemainReadableAtLargestAccessibilitySize
+      -only-testing:PIVOTUITests/PIVOTUITests/testMapFailedRefreshDoesNotPresentCachedWaitAsCurrent
+    ) ;;
   map-attribution)
     test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeBrowseFocusesRideAndRootWaitDetailsStayCurrent
@@ -68,12 +76,17 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedWaitDotsKeepEveryValueAndOpenLowestWaitForecast
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLabelsKeepTwelveRepeatedDotsInLightAppearance
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLabelsKeepTwelveRepeatedDotsInDarkAppearance
-      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryHandlesSingleAndSparseSamples
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryHandlesSingleSample
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryHandlesSparseSamples
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryWithholdsUnavailableSamples
-      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestRowsKeepEarlierLabelsReadable
-      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestRowsKeepLatestLabelsReadable
-      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestDetailsKeepEarlierLabelsReadable
-      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestDetailsKeepLatestLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestRowsKeepFirstThreeLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestRowsKeepSecondThreeLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestRowsKeepThirdThreeLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestRowsKeepLastThreeLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestDetailsKeepFirstThreeLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestDetailsKeepSecondThreeLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestDetailsKeepThirdThreeLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestDetailsKeepLastThreeLabelsReadable
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedSampleTimesRemainReadableAtLargestAccessibilitySize
     ) ;;
   lowest-waits)
@@ -159,7 +172,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
     ) ;;
   *)
-    echo 'Unsupported PIVOT_TEST_SCOPE; use all, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, or map-gestures.' >&2
+    echo 'Unsupported PIVOT_TEST_SCOPE; use all, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, or map-gestures.' >&2
     exit 1 ;;
 esac
 python3 - <<'PY'

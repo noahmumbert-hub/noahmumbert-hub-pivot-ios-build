@@ -196,24 +196,40 @@ final class PIVOTUITests: XCTestCase {
 
     private func waitForSettledFrames(_ elements: [XCUIElement],
                                       file: StaticString = #filePath, line: UInt = #line) {
+        let started = Date()
+        let deadline = started.addingTimeInterval(15)
         var previous: [CGRect] = []
-        var unchangedSince = Date()
-        var lastFrames: [CGRect] = []
-        let predicate = NSPredicate { _, _ in
-            // A frame query already resolves the element. Repeating exists
-            // and frame queries can consume the entire waiter on a busy SE.
-            let frames = elements.map(\.frame)
-            lastFrames = frames
-            guard frames.allSatisfy({ !$0.isEmpty && !$0.isInfinite && !$0.isNull }) else { return false }
-            let stable = frames.count == previous.count && zip(frames, previous).allSatisfy { lhs, rhs in
+        var previousSampleAt: Date?
+        var trace: [String] = []
+        while Date() < deadline {
+            if let previousSampleAt {
+                let delay = 0.25 - Date().timeIntervalSince(previousSampleAt)
+                if delay > 0 { Thread.sleep(forTimeInterval: delay) }
+            }
+            // An AX read cannot be interrupted. Check before each read so only
+            // the in-flight frame lookup may finish after the deadline.
+            var frames: [CGRect] = []
+            for element in elements {
+                guard Date() < deadline else { break }
+                frames.append(element.frame)
+            }
+            let sampledAt = Date()
+            trace.append("t=\(sampledAt.timeIntervalSince(started)): \(frames)")
+            guard frames.count == elements.count else { break }
+            let valid = frames.allSatisfy { frame in
+                !frame.isEmpty && !frame.isNull
+                    && [frame.minX, frame.minY, frame.width, frame.height].allSatisfy(\.isFinite)
+            }
+            let stable = valid && frames.count == previous.count && zip(frames, previous).allSatisfy { lhs, rhs in
                 abs(lhs.minX - rhs.minX) <= 1 && abs(lhs.minY - rhs.minY) <= 1
                     && abs(lhs.width - rhs.width) <= 1 && abs(lhs.height - rhs.height) <= 1
             }
-            if !stable { previous = frames; unchangedSince = Date() }
-            return Date().timeIntervalSince(unchangedSince) >= 0.25
+            if stable, let previousSampleAt, sampledAt.timeIntervalSince(previousSampleAt) >= 0.25 { return }
+            previous = valid ? frames : []
+            previousSampleAt = sampledAt
         }
-        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: predicate, object: nil)], timeout: 8),
-                       .completed, "Displayed glyph frames must settle before measuring or capturing them: \(lastFrames)", file: file, line: line)
+        XCTFail("Displayed glyph frames must settle before measuring or capturing them. Actual sample trace: \(trace.joined(separator: "; "))",
+                file: file, line: line)
     }
 
     private func verticalPanX(in viewport: CGRect) -> CGFloat {
@@ -446,8 +462,12 @@ final class PIVOTUITests: XCTestCase {
         app.terminate()
     }
 
-    func testObservedHistoryHandlesSingleAndSparseSamples() {
-        checkObservedHistoryCases(["single", "sparse"])
+    func testObservedHistoryHandlesSingleSample() {
+        checkObservedHistoryCases(["single"])
+    }
+
+    func testObservedHistoryHandlesSparseSamples() {
+        checkObservedHistoryCases(["sparse"])
     }
 
     func testObservedHistoryWithholdsUnavailableSamples() {
@@ -475,12 +495,20 @@ final class PIVOTUITests: XCTestCase {
         }
     }
 
-    func testObservedHistoryLargestRowsKeepEarlierLabelsReadable() {
-        checkLargestHistoryRows(observations: 0..<6)
+    func testObservedHistoryLargestRowsKeepFirstThreeLabelsReadable() {
+        checkLargestHistoryRows(observations: 0..<3)
     }
 
-    func testObservedHistoryLargestRowsKeepLatestLabelsReadable() {
-        checkLargestHistoryRows(observations: 6..<12)
+    func testObservedHistoryLargestRowsKeepSecondThreeLabelsReadable() {
+        checkLargestHistoryRows(observations: 3..<6)
+    }
+
+    func testObservedHistoryLargestRowsKeepThirdThreeLabelsReadable() {
+        checkLargestHistoryRows(observations: 6..<9)
+    }
+
+    func testObservedHistoryLargestRowsKeepLastThreeLabelsReadable() {
+        checkLargestHistoryRows(observations: 9..<12)
     }
 
     private func checkLargestHistoryRows(observations: Range<Int>) {
@@ -502,12 +530,20 @@ final class PIVOTUITests: XCTestCase {
         app.terminate()
     }
 
-    func testObservedHistoryLargestDetailsKeepEarlierLabelsReadable() {
-        checkLargestHistoryDetails(observations: 0..<6)
+    func testObservedHistoryLargestDetailsKeepFirstThreeLabelsReadable() {
+        checkLargestHistoryDetails(observations: 0..<3)
     }
 
-    func testObservedHistoryLargestDetailsKeepLatestLabelsReadable() {
-        checkLargestHistoryDetails(observations: 6..<12)
+    func testObservedHistoryLargestDetailsKeepSecondThreeLabelsReadable() {
+        checkLargestHistoryDetails(observations: 3..<6)
+    }
+
+    func testObservedHistoryLargestDetailsKeepThirdThreeLabelsReadable() {
+        checkLargestHistoryDetails(observations: 6..<9)
+    }
+
+    func testObservedHistoryLargestDetailsKeepLastThreeLabelsReadable() {
+        checkLargestHistoryDetails(observations: 9..<12)
     }
 
     private func checkLargestHistoryDetails(observations: Range<Int>) {
@@ -1239,11 +1275,19 @@ final class PIVOTUITests: XCTestCase {
             if previousFrame.isNull || abs(frame.midX - previousFrame.midX) > 1 || abs(frame.midY - previousFrame.midY) > 1 {
                 previousFrame = frame; stableSince = Date(); return false
             }
-            return Date().timeIntervalSince(stableSince) >= 1 && fixturePin.isHittable
+            return Date().timeIntervalSince(stableSince) >= 1
         }
         XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: stablePin, object: nil)], timeout: 5), .completed,
                        "The native pin must settle after keyboard/card layout changes before the physical tap")
-        fixturePin.tap()
+        // MapKit can report a visible, settled annotation as not hittable in
+        // its virtual AX tree. Exercise the actual pin at its measured center;
+        // the selected-ride assertions below must prove that the tap worked.
+        let pinFrame = fixturePin.frame
+        let pinCenter = CGPoint(x: pinFrame.midX, y: pinFrame.midY)
+        XCTAssertFalse(pinFrame.isEmpty)
+        XCTAssertTrue(windowFrame.contains(pinCenter))
+        app.coordinate(withNormalizedOffset: .zero)
+            .withOffset(CGVector(dx: pinCenter.x - windowFrame.minX, dy: pinCenter.y - windowFrame.minY)).tap()
         XCTAssertTrue(app.staticTexts["Selected ride wait"].waitForExistence(timeout: 3), mapEvents(app))
     }
 
