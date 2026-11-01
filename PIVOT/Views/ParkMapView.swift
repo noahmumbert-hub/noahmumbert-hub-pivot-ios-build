@@ -67,20 +67,27 @@ struct ParkMapRidePresentation: Equatable {
         guard let ride = snapshot.rides.first(where: { $0.id == rideID }) else {
             return unavailable("No current update for this ride")
         }
+        guard snapshot.parkActive else {
+            return Self(title: "Park inactive", detail: "No current wait available", waitMinutes: nil)
+        }
         switch ride.status {
         case .open:
             guard let observed = ride.themeParksWikiStatus?.sourceUpdatedAt ?? ride.lastUpdated else {
                 return Self(title: "Open · wait unavailable", detail: "Wait update time unavailable", waitMinutes: nil)
             }
-            let age = now.timeIntervalSince(observed)
-            guard age.isFinite, age >= -120, age < DashboardFeedHealth.maximumAge else {
-                return Self(title: "Open · wait unavailable", detail: "Wait update is too old to call current", waitMinutes: nil)
+            // Use the same confirmed-provider policy as Waits. A ride's
+            // sourceUpdatedAt records its last value change, not the last fetch.
+            let current = RideWaitPresentation.resolve(rideID: rideID, parkID: parkID,
+                snapshot: snapshot, refreshFailed: refreshFailed, at: now)
+            guard current.isCurrent else {
+                return Self(title: "Open · wait unavailable", detail: "Wait update is unavailable or too old to call current", waitMinutes: nil)
             }
             guard let wait = ride.waitTime, wait >= 0 else {
                 return Self(title: "Open · wait not posted", detail: "No current wait published for this ride", waitMinutes: nil)
             }
+            let checked = min(snapshot.fetchedAt, snapshot.themeParksWiki?.fetchedAt ?? snapshot.fetchedAt)
             return Self(title: wait == 0 ? "0 min · walk-on" : "\(wait) min",
-                detail: "Open · updated \(ParkTimeFormatter.age(observed, relativeTo: now))", waitMinutes: wait)
+                detail: "Open · checked \(ParkTimeFormatter.age(checked, relativeTo: now)) · value changed \(ParkTimeFormatter.age(observed, relativeTo: now))", waitMinutes: wait)
         case .down: return Self(title: "Temporarily closed", detail: "No current wait while this ride is closed", waitMinutes: nil)
         case .scheduled: return Self(title: "Not operating now", detail: "No current wait outside operation", waitMinutes: nil)
         case .parkInactive: return Self(title: "Park inactive", detail: "No current wait available", waitMinutes: nil)
@@ -489,6 +496,8 @@ struct ParkMapView: View {
     let snapshot: LiveParkSnapshot?
     let onChoosePark: () -> Void
     var refreshFailed = false
+    var isRefreshing = false
+    var onRefresh: (() async -> Void)? = nil
     var catalogOverride: ParkMapCatalog? = nil
     @State private var catalog: ParkMapCatalog?
     @State private var loadFailed = false
@@ -677,6 +686,22 @@ struct ParkMapView: View {
     }
     private var bottomPanel: some View {
         VStack(spacing: 0) {
+            if let onRefresh {
+                HStack(spacing: 8) {
+                    Text(DashboardFeedHealth.presentation(parkSelected: park != nil, snapshot: snapshot,
+                        isLoading: isRefreshing, refreshFailed: refreshFailed, at: now).status)
+                        .font(.caption).foregroundStyle(.secondary)
+                        .accessibilityIdentifier("Map feed status")
+                    Spacer(minLength: 0)
+                    Button { Task { await onRefresh() } } label: {
+                        if isRefreshing { ProgressView().frame(width: 44, height: 44) }
+                        else { Image(systemName: "arrow.clockwise").frame(width: 44, height: 44) }
+                    }
+                    .accessibilityLabel("Refresh map waits").accessibilityIdentifier("Refresh map waits")
+                    .disabled(park == nil || isRefreshing)
+                }.padding(.leading, 14).padding(.trailing, 4)
+                Divider()
+            }
             if let point = selected {
                 ScrollView { selectedPlace(point) }.frame(maxHeight: 190).fixedSize(horizontal: false, vertical: true)
                 Divider()

@@ -141,6 +141,10 @@ final class PIVOTTests: XCTestCase {
             XCTAssertNil(value.waitMinutes, item.name)
             XCTAssertEqual(value.title, item.title, item.name)
             XCTAssertEqual(value.isCurrent, item.current, item.name)
+            let point = ParkMapPoint(id: "exact-ride", name: "Space Mountain", category: .ride,
+                latitude: 28.4, longitude: -81.5, rideId: item.rideID)
+            XCTAssertNil(ParkMapRidePresentation.resolve(point: point, parkID: item.parkID,
+                snapshot: item.snapshot, refreshFailed: item.failed, at: now).waitMinutes, "Map: " + item.name)
         }
     }
     @MainActor
@@ -303,12 +307,98 @@ final class PIVOTTests: XCTestCase {
     }
 
 
+    func testMapRefreshKeepsUnchangedWaitFromCurrentProviderSnapshot() {
+        let now = start.addingTimeInterval(3601)
+        let point = ParkMapPoint(id: "exact-ride", name: "Space Mountain", category: .ride,
+            latitude: 28.4, longitude: -81.5, rideId: 126)
+        let provider = ThemeParksWikiRideStatus(entityId: point.id, entityName: point.name,
+            status: "OPERATING", sourceUpdatedAt: start, matchedBy: "ID", sourceAgeSeconds: 3601)
+        let snapshot = makeSnapshot(sourceOffset: 3601,
+            themeParksWiki: makeThemeParksWikiSummary(fetchedAt: now),
+            ride: makeRide(status: .open, waitTime: 45, themeParksWikiStatus: provider))
+        let value = ParkMapRidePresentation.resolve(point: point, parkID: 6,
+            snapshot: snapshot, refreshFailed: false, at: now)
+        XCTAssertEqual(value.waitMinutes, 45,
+            "A fresh matched provider snapshot confirms the unchanged posted wait on Map too")
+    }
+
+    @MainActor
+    func testMapSyntheticTransportUsesProductionDateContract() async throws {
+        let config = URLSessionConfiguration.ephemeral
+        config.protocolClasses = [MapRefreshTestURLProtocol.self]
+        let client = PivotAPIClient(baseURL: URL(string: "https://map-refresh-test.invalid")!,
+            session: URLSession(configuration: config))
+        let snapshot = try await client.snapshot(for: .magicKingdom)
+        let point = ParkMapPoint(id: "b2260923-9315-40fd-9c6b-44dd811dbe64", name: "Space Mountain", category: .ride,
+            latitude: 28.4, longitude: -81.5, rideId: 138)
+        XCTAssertNotNil(ParkMapRidePresentation.resolve(point: point, parkID: 6,
+            snapshot: snapshot, refreshFailed: false, at: Date()).waitMinutes,
+            "The synthetic HTTP transport must use the real ISO-8601 decoding contract")
+    }
+
+    @MainActor
+    func testMapRefreshRequestsDecodeUpdateFailAndRecoverWithoutInventingWaits() async throws {
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: "map-refresh-\(UUID())"))
+        defaults.set(6, forKey: "pivot.selectedPark")
+        let config = URLSessionConfiguration.ephemeral; config.protocolClasses = [AuditURLProtocol.self]
+        let client = PivotAPIClient(baseURL: URL(string: "https://audit.invalid")!, session: URLSession(configuration: config))
+        let store = DashboardStore(apiClient: client, defaults: defaults)
+        let point = ParkMapPoint(id: "exact-ride", name: "Space Mountain", category: .ride,
+            latitude: 28.4, longitude: -81.5, rideId: 126)
+        let provider = ThemeParksWikiRideStatus(entityId: point.id, entityName: point.name,
+            status: "OPERATING", sourceUpdatedAt: start, matchedBy: "ID", sourceAgeSeconds: 3601)
+        let now = start.addingTimeInterval(3601)
+        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601
+        func data(wait: Int, providerAt: Date? = nil) throws -> Data {
+            try encoder.encode(makeSnapshot(sourceOffset: 3601,
+                themeParksWiki: makeThemeParksWikiSummary(fetchedAt: providerAt ?? now),
+                ride: makeRide(status: .open, waitTime: wait, themeParksWikiStatus: provider)))
+        }
+        func mapWait() -> Int? {
+            ParkMapRidePresentation.resolve(point: point, parkID: store.selectedPark?.id,
+                snapshot: store.snapshot, refreshFailed: store.errorMessage != nil, at: now).waitMinutes
+        }
+        defer { AuditURLProtocol.response = nil }
+        for wait in [35, 5, 0] {
+            let payload = try data(wait: wait)
+            AuditURLProtocol.response = { request in
+                XCTAssertEqual(request.url?.path, "/api/live")
+                XCTAssertEqual(URLComponents(url: request.url!, resolvingAgainstBaseURL: false)?.queryItems?.first?.value, "6")
+                XCTAssertEqual(request.cachePolicy, .reloadIgnoringLocalCacheData)
+                return payload
+            }
+            await store.refreshNow()
+            XCTAssertNil(store.errorMessage)
+            XCTAssertEqual(mapWait(), wait)
+        }
+        for malformed in [false, true] {
+            AuditURLProtocol.response = { _ in
+                if malformed { return Data("invalid JSON".utf8) }
+                throw URLError(.notConnectedToInternet)
+            }
+            await store.refreshNow()
+            XCTAssertNotNil(store.errorMessage)
+            XCTAssertEqual(store.snapshot?.rides.first?.waitTime, malformed ? 15 : 0, "Keep the last observation for provenance")
+            XCTAssertNil(mapWait(), "Retained data cannot masquerade as a current wait after a failure")
+            let recovered = try data(wait: 15)
+            AuditURLProtocol.response = { _ in recovered }
+            await store.refreshNow()
+            XCTAssertNil(store.errorMessage)
+            XCTAssertEqual(mapWait(), 15)
+        }
+        let stale = try data(wait: 99, providerAt: now.addingTimeInterval(-901))
+        AuditURLProtocol.response = { _ in stale }
+        await store.refreshNow()
+        XCTAssertNil(store.errorMessage, "HTTP and decode success does not establish provider freshness")
+        XCTAssertNil(mapWait())
+    }
+
     func testMapRideWaitStatesNeverInventAWait() {
         let point = ParkMapPoint(id: "map-1", name: "Map ride", category: .ride,
                                  latitude: 28.4, longitude: -81.5, rideId: 1)
         let cases: [(RideStatus, Int?, String, Int?)] = [
             (.open, 35, "35 min", 35), (.open, 0, "0 min · walk-on", 0),
-            (.open, nil, "Open · wait not posted", nil), (.open, -1, "Open · wait not posted", nil),
+            (.open, nil, "Open · wait not posted", nil), (.open, -1, "Open · wait unavailable", nil),
             (.down, 99, "Temporarily closed", nil), (.scheduled, 99, "Not operating now", nil),
             (.parkInactive, 99, "Park inactive", nil), (.stale, 99, "Wait unavailable", nil),
             (.unknown("NEW_STATUS"), 99, "Wait unavailable", nil)
