@@ -858,18 +858,18 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testGeneratedRideWithReservedPhotoRightsKeepsAccurateCredits() {
-        let app = rootFixture(["--reference-ui-park=60", "--reference-ui-ride=9600564880643", "--ui-dark"])
-        let ride = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'K.I. & Miami Valley Railroad'")).firstMatch
+        let app = rootFixture(["--reference-ui-park=334", "--reference-ui-ride=14691", "--ui-dark"])
+        let ride = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Fyre Drill'")).firstMatch
         reveal(ride, in: app)
         XCTAssertTrue(ride.isHittable)
-        screenshot("Illustration Kings Island railroad card", app: app)
+        screenshot("Accepted Florida Fyre Drill illustration card", app: app)
         ride.tap()
-        let artwork = app.descendants(matching: .any)["ride-illustration-60-9600564880643"].firstMatch
+        let artwork = app.descendants(matching: .any)["ride-illustration-334-14691"].firstMatch
         XCTAssertTrue(artwork.waitForExistence(timeout: 5))
         let loaded = NSPredicate { _, _ in artwork.value as? String == "Loaded" }
         XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: loaded, object: nil)], timeout: 5), .completed)
-        screenshot("Illustration Kings Island railroad detail", app: app)
-        let rights = app.descendants(matching: .any).matching(NSPredicate(format: "label == 'Reference rights: Copyright Six Flags; source rights retained'")).firstMatch
+        screenshot("Accepted Florida Fyre Drill illustration detail", app: app)
+        let rights = app.descendants(matching: .any).matching(NSPredicate(format: "label == 'Reference rights: Copyright Universal Studios; source rights retained'")).firstMatch
         reveal(rights, in: app)
         XCTAssertTrue(rights.isHittable)
         XCTAssertTrue(app.staticTexts["AI-generated illustration"].exists)
