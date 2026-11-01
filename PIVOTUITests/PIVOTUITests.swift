@@ -384,13 +384,19 @@ final class PIVOTUITests: XCTestCase {
         }
     }
 
-    private func assertForecastTimeLabels(in forecast: XCUIElement, app: XCUIApplication, capture: String) {
+    private func assertForecastTimeLabels(in forecast: XCUIElement, app: XCUIApplication,
+                                         earlier: Bool, capture: String) {
         let chart = forecast.descendants(matching: .any)["wait-forecast-chart"].firstMatch
         centerFullyVisible(chart, in: app)
         let times = chart.staticTexts.matching(NSPredicate(format: "identifier BEGINSWITH 'wait-forecast-time-'"))
-        XCTAssertGreaterThan(times.count, 1, "A multi-hour forecast must display its actual time labels")
-        XCTAssertLessThanOrEqual(times.count, 25)
-        for index in (0..<times.count).reversed() {
+        let count = times.count
+        XCTAssertGreaterThan(count, 1, "A multi-hour forecast must display its actual time labels")
+        XCTAssertLessThanOrEqual(count, 25)
+        // Review disjoint halves in separate cases so compact-device gestures
+        // retain the same per-test time limit while still inspecting every clock.
+        let midpoint = (count + 1) / 2
+        let indices = earlier ? 0..<midpoint : midpoint..<count
+        for index in indices.reversed() {
             let time = chart.staticTexts["wait-forecast-time-\(index)"].firstMatch
             centerHorizontally(time, in: chart, app: app)
             assertCompleteClock(time, category: .accessibilityLarge)
@@ -543,7 +549,15 @@ final class PIVOTUITests: XCTestCase {
         checkLowestWaitEvidenceAndHourlySheet(expired: true)
     }
 
-    func testHourlyForecastShowsEveryCompleteTimeAtAccessibilityTextSize() {
+    func testHourlyForecastShowsEarlierCompleteTimesAtAccessibilityTextSize() {
+        checkHourlyForecastTimesAtAccessibilityTextSize(earlier: true)
+    }
+
+    func testHourlyForecastShowsLaterCompleteTimesAtAccessibilityTextSize() {
+        checkHourlyForecastTimesAtAccessibilityTextSize(earlier: false)
+    }
+
+    private func checkHourlyForecastTimesAtAccessibilityTextSize(earlier: Bool) {
         let app = observedHistoryFixture(["--ride-history-supported", "--ui-large-type"])
         let summary = app.otherElements["ride-lowest-wait-summary"].firstMatch
         let hourly = summary.buttons["ride-history-hourly-estimates"]
@@ -555,7 +569,7 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(bodySize.waitForExistence(timeout: 5))
         XCTAssertGreaterThanOrEqual(bodySize.frame.height, 35,
                                     "Clock glyphs must be reviewed in the genuinely enlarged modal")
-        assertForecastTimeLabels(in: forecast, app: app, capture: "Accessibility hourly sheet")
+        assertForecastTimeLabels(in: forecast, app: app, earlier: earlier, capture: "Accessibility hourly sheet")
         let done = app.buttons["Done"]
         XCTAssertTrue(done.isHittable)
         done.tap(); app.terminate()

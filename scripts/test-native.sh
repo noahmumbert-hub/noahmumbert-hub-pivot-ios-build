@@ -83,7 +83,8 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testHistoryLowestWaitPredictionWithholdsMissingAndStaleEvidence
       -only-testing:PIVOTUITests/PIVOTUITests/testLowestWaitEvidenceAndHourlySheetStayConsistentAtAccessibilityTextSize
       -only-testing:PIVOTUITests/PIVOTUITests/testStaleLowestWaitHourlySheetWithholdsRecommendationAtAccessibilityTextSize
-      -only-testing:PIVOTUITests/PIVOTUITests/testHourlyForecastShowsEveryCompleteTimeAtAccessibilityTextSize
+      -only-testing:PIVOTUITests/PIVOTUITests/testHourlyForecastShowsEarlierCompleteTimesAtAccessibilityTextSize
+      -only-testing:PIVOTUITests/PIVOTUITests/testHourlyForecastShowsLaterCompleteTimesAtAccessibilityTextSize
     ) ;;
   reopening-accessibility)
     test_options+=(
