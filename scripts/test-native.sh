@@ -81,7 +81,8 @@ case "${PIVOT_TEST_SCOPE:-all}" in
     ) ;;
   reopening-accessibility)
     test_options+=(
-      -only-testing:PIVOTUITests/PIVOTUITests/testReopeningPredictionRemainsReadableAtAccessibilitySizeAndInRadar
+      -only-testing:PIVOTUITests/PIVOTUITests/testReopeningPredictionRemainsReadableAtAccessibilitySizeInRows
+      -only-testing:PIVOTUITests/PIVOTUITests/testReopeningPredictionRemainsReadableAtAccessibilitySizeInRadar
     ) ;;
   reopening)
     test_options+=(
@@ -100,7 +101,8 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testReopeningWindowShowsSupportedBestPredictionAndUnavailableStates
       -only-testing:PIVOTUITests/PIVOTUITests/testReopeningWindowWithholdsRangeOnlyStaleAndMissingPoints
       -only-testing:PIVOTUITests/PIVOTUITests/testReopeningWindowDistinguishesEndedFailedAndPassedPredictions
-      -only-testing:PIVOTUITests/PIVOTUITests/testReopeningPredictionRemainsReadableAtAccessibilitySizeAndInRadar
+      -only-testing:PIVOTUITests/PIVOTUITests/testReopeningPredictionRemainsReadableAtAccessibilitySizeInRows
+      -only-testing:PIVOTUITests/PIVOTUITests/testReopeningPredictionRemainsReadableAtAccessibilitySizeInRadar
     ) ;;
   reference-ui)
     test_options+=(

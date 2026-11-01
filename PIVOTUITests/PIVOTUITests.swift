@@ -560,7 +560,7 @@ final class PIVOTUITests: XCTestCase {
         }
     }
 
-    func testReopeningPredictionRemainsReadableAtAccessibilitySizeAndInRadar() {
+    func testReopeningPredictionRemainsReadableAtAccessibilitySizeInRows() {
         let app = rootFixture(["--reference-ui-park=5", "--reopening-ui-test", "--ui-large-type", "--ui-dark"])
         selectDownRides(in: app)
         let headline = app.staticTexts["reopening-headline-159"].firstMatch
@@ -580,16 +580,34 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertEqual(detail.label, "Based on comparable observed closures. The park has not announced a reopening time.")
         assertFullTextLayout(detail)
         screenshot("Reopening best prediction accessibility row", app: app)
+        app.terminate()
+    }
+
+    func testReopeningPredictionRemainsReadableAtAccessibilitySizeInRadar() {
+        let app = rootFixture(["--reference-ui-park=5", "--reopening-ui-test", "--ui-large-type", "--ui-dark"])
         app.tabBars.buttons["More"].tap()
         let closures = app.buttons["Closures & park weather"]
         centerFullyVisible(closures, in: app); closures.tap()
         checkRadarSelectionAtAccessibilitySize(in: app)
+        let headline = app.staticTexts["reopening-headline-159"].firstMatch
+        centerFullyVisible(headline, in: app)
+        XCTAssertEqual(headline.label, "Historical reopening range")
+        assertFullTextLayout(headline, style: .headline)
+        let prediction = app.staticTexts["reopening-best-prediction-159"].firstMatch
         centerFullyVisible(prediction, in: app)
+        XCTAssertTrue(prediction.label.hasPrefix("Best prediction ·"))
         XCTAssertTrue(prediction.label.hasSuffix("(estimate)"))
         assertFullTextLayout(prediction, style: .subheadline)
+        let window = app.staticTexts["reopening-window-159"].firstMatch
         centerFullyVisible(window, in: app)
         assertFullTextLayout(window, style: .title2)
         screenshot("Reopening best prediction accessibility radar", app: app)
+        let detail = app.staticTexts["reopening-detail-159"].firstMatch
+        centerFullyVisible(detail, in: app)
+        XCTAssertEqual(detail.label, "Based on comparable observed closures. The park has not announced a reopening time.")
+        assertFullTextLayout(detail, style: .subheadline)
+        screenshot("Complete reopening supporting copy in accessibility Radar", app: app)
+        app.terminate()
     }
 
     private func checkRadarSelectionAtAccessibilitySize(in app: XCUIApplication) {
