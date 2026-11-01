@@ -4,11 +4,19 @@ Add this source in SideStore → Sources → +:
 
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 
-Current update: **1.18.1 / build 100.138.1**, iOS 17.0+.
+Current update: **1.18.2 / build 100.149.1**, iOS 17.0+.
 
-Adds 17 accepted Florida ride illustrations for EPCOT, Magic Kingdom and SeaWorld Orlando. All 29 existing illustrations remain, for 46 of 145 Florida catalog rides; 99 remain unfinished. Preserves native ride search, every observed-wait label, lowest-wait predictions, best reopening estimates and readability improvements. Illustrations retain their AI-generated labels and reference attribution. Remaining artwork continues independently.
+Compact ride search, sorting and status filters now share the Waits list with their results.
 
-IPA SHA-256: `4599e0ebfc3ce1cac001544a10a48177ff71f6349f62663263ae262d9f6df45f`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/41306487772).
+Unchanged posted waits remain visible when a fresh live response confirms them. Stale or failed feeds still withhold unverified waits.
+
+Removed the artwork badge from thumbnails. Ride details retain truthful illustration credits and reference rights.
+
+Added 73 accepted Florida ride illustrations, bringing the selected coverage to 119 of 145 catalog rides, with 26 remaining gaps. All previously published illustrations are preserved.
+
+Observed-wait dot labels, lowest-wait predictions and best reopening estimates remain included.
+
+IPA SHA-256: `f9092abdfcdef0001732ffacee0ea9c98b7f06885c7dad5bafde69b9cb40279d`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/41344687017).
 The unsigned IPA preserves `com.noahmumbert.PIVOT` and its Live Activity extension.
 Install as an update using the same signing identity; keep the existing app installed to retain saved data.
 Native unit and simulator UI tests passed for this build. Physical SideStore installation remains untested.

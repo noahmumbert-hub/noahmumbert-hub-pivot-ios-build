@@ -7,7 +7,7 @@
   "localizedDescription": "PIVOT updates for SideStore. Uses the existing PIVOT app identity.",
   "website": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
   "websiteURL": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
-  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/7063ed803cede6e4a2ff91e0fde22281526a304e/icon.png",
+  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/4f73d1f2902658bb3be5dcf35566448f64d65ebe/icon.png",
   "tintColor": "70DFC0",
   "apps": [
     {
@@ -16,14 +16,23 @@
       "developerName": "Noah Mumbert",
       "subtitle": "Theme park companion",
       "localizedDescription": "Park wait times, ride status, weather observations, planning, shows and Live Activities.",
-      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/7063ed803cede6e4a2ff91e0fde22281526a304e/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/4f73d1f2902658bb3be5dcf35566448f64d65ebe/icon.png",
       "tintColor": "70DFC0",
-      "version": "1.18.1",
-      "versionDate": "2026-11-01T13:44:28Z",
-      "versionDescription": "Adds 17 accepted Florida ride illustrations for EPCOT, Magic Kingdom and SeaWorld Orlando. All 29 existing illustrations remain, for 46 of 145 Florida catalog rides; 99 remain unfinished. Preserves native ride search, every observed-wait label, lowest-wait predictions, best reopening estimates and readability improvements. Illustrations retain their AI-generated labels and reference attribution. Remaining artwork continues independently.",
-      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/7063ed803cede6e4a2ff91e0fde22281526a304e/PIVOT-1.18.1-100.138.1.ipa",
-      "size": 16993643,
+      "version": "1.18.2",
+      "versionDate": "2026-11-01T21:34:45Z",
+      "versionDescription": "Compact ride search, sorting and status filters now share the Waits list with their results.\n\nUnchanged posted waits remain visible when a fresh live response confirms them. Stale or failed feeds still withhold unverified waits.\n\nRemoved the artwork badge from thumbnails. Ride details retain truthful illustration credits and reference rights.\n\nAdded 73 accepted Florida ride illustrations, bringing the selected coverage to 119 of 145 catalog rides, with 26 remaining gaps. All previously published illustrations are preserved.\n\nObserved-wait dot labels, lowest-wait predictions and best reopening estimates remain included.",
+      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/4f73d1f2902658bb3be5dcf35566448f64d65ebe/PIVOT-1.18.2-100.149.1.ipa",
+      "size": 32457424,
       "versions": [
+        {
+          "version": "1.18.2",
+          "buildVersion": "100.149.1",
+          "date": "2026-11-01T21:34:45Z",
+          "localizedDescription": "Compact ride search, sorting and status filters now share the Waits list with their results.\n\nUnchanged posted waits remain visible when a fresh live response confirms them. Stale or failed feeds still withhold unverified waits.\n\nRemoved the artwork badge from thumbnails. Ride details retain truthful illustration credits and reference rights.\n\nAdded 73 accepted Florida ride illustrations, bringing the selected coverage to 119 of 145 catalog rides, with 26 remaining gaps. All previously published illustrations are preserved.\n\nObserved-wait dot labels, lowest-wait predictions and best reopening estimates remain included.",
+          "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/4f73d1f2902658bb3be5dcf35566448f64d65ebe/PIVOT-1.18.2-100.149.1.ipa",
+          "size": 32457424,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.18.1",
           "buildVersion": "100.138.1",
