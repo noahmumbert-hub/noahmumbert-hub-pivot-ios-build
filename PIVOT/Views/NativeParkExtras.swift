@@ -619,6 +619,7 @@ private struct WaitHistoryDisclosureStyle: DisclosureGroupStyle {
             .accessibilityValue(configuration.isExpanded ? "Expanded" : "Collapsed")
             if configuration.isExpanded { configuration.content }
         }
+        .fixedSize(horizontal: false, vertical: true)
     }
 }
 

@@ -235,6 +235,7 @@ struct NativeRideLowWaitSummary: View {
                             timeZone: timeZone, now: context.date)
                     } else {
                         Text("Prediction unavailable").font(.subheadline.weight(.medium))
+                            .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
                         Text(prediction.detail).font(.caption).foregroundStyle(Color.pivotMuted)
                             .fixedSize(horizontal: false, vertical: true)
                     }

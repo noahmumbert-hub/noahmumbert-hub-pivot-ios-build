@@ -382,8 +382,8 @@ final class PIVOTUITests: XCTestCase {
         }
     }
 
-    private func assertForecastTimeLabels(in app: XCUIApplication, capture: String) {
-        let chart = app.descendants(matching: .any)["wait-forecast-chart"].firstMatch
+    private func assertForecastTimeLabels(in forecast: XCUIElement, app: XCUIApplication, capture: String) {
+        let chart = forecast.descendants(matching: .any)["wait-forecast-chart"].firstMatch
         centerFullyVisible(chart, in: app)
         let times = chart.staticTexts.matching(NSPredicate(format: "identifier BEGINSWITH 'wait-forecast-time-'"))
         XCTAssertGreaterThan(times.count, 1, "A multi-hour forecast must display its actual time labels")
@@ -541,6 +541,24 @@ final class PIVOTUITests: XCTestCase {
         checkLowestWaitEvidenceAndHourlySheet(expired: true)
     }
 
+    func testHourlyForecastShowsEveryCompleteTimeAtAccessibilityTextSize() {
+        let app = observedHistoryFixture(["--ride-history-supported", "--ui-large-type"])
+        let summary = app.otherElements["ride-lowest-wait-summary"].firstMatch
+        let hourly = summary.buttons["ride-history-hourly-estimates"]
+        centerFullyVisible(hourly, in: app); hourly.tap()
+        XCTAssertTrue(app.navigationBars["Predicted waits"].waitForExistence(timeout: 5))
+        let forecast = app.otherElements["ride-wait-forecast"].firstMatch
+        XCTAssertTrue(forecast.waitForExistence(timeout: 5))
+        let bodySize = app.staticTexts["Hourly forecast body size"]
+        XCTAssertTrue(bodySize.waitForExistence(timeout: 5))
+        XCTAssertGreaterThanOrEqual(bodySize.frame.height, 35,
+                                    "Clock glyphs must be reviewed in the genuinely enlarged modal")
+        assertForecastTimeLabels(in: forecast, app: app, capture: "Accessibility hourly sheet")
+        let done = app.buttons["Done"]
+        XCTAssertTrue(done.isHittable)
+        done.tap(); app.terminate()
+    }
+
     private func checkLowestWaitEvidenceAndHourlySheet(expired: Bool) {
         let app = rootFixture(["--reference-ui-park=5", "--ride-history-ui-test", "--ride-history-supported", "--ui-large-type"]
             + (expired ? ["--ride-search-expired"] : []))
@@ -548,30 +566,32 @@ final class PIVOTUITests: XCTestCase {
         reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
         let history = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Recent observed waits'")).firstMatch
         reveal(history, in: app); history.tap()
+        let summary = app.otherElements["ride-lowest-wait-summary"].firstMatch
+        XCTAssertTrue(summary.waitForExistence(timeout: 5))
         if expired {
-            let unavailable = app.staticTexts["Prediction unavailable"].firstMatch
+            let unavailable = summary.staticTexts["Prediction unavailable"].firstMatch
             centerFullyVisible(unavailable, in: app)
-            XCTAssertFalse(app.staticTexts["ride-lowest-wait-window"].exists)
-            XCTAssertFalse(app.staticTexts["lowest-wait-source-time"].exists)
+            XCTAssertFalse(summary.staticTexts["ride-lowest-wait-window"].exists)
+            XCTAssertFalse(summary.staticTexts["lowest-wait-source-time"].exists)
         } else {
-            let lowest = app.staticTexts["ride-lowest-wait-window"]
+            let lowest = summary.staticTexts["ride-lowest-wait-window"]
             centerFullyVisible(lowest, in: app)
             XCTAssertTrue(lowest.label.contains("about 10 min"))
-            let parkTime = app.staticTexts["lowest-wait-park-time"]
+            let parkTime = summary.staticTexts["lowest-wait-park-time"]
             centerFullyVisible(parkTime, in: app)
             XCTAssertGreaterThan(parkTime.frame.height, 40, "Park time and zone must wrap at accessibility size")
-            let variation = app.staticTexts["lowest-wait-variation"]
+            let variation = summary.staticTexts["lowest-wait-variation"]
             centerFullyVisible(variation, in: app)
             XCTAssertGreaterThan(variation.frame.height, 40, "The complete uncertainty label must wrap")
-            let source = app.staticTexts["lowest-wait-source-time"]
+            let source = summary.staticTexts["lowest-wait-source-time"]
             centerFullyVisible(source, in: app)
             XCTAssertTrue(source.label.contains("Wait source checked"))
-            let observed = app.staticTexts["lowest-wait-history-time"]
+            let observed = summary.staticTexts["lowest-wait-history-time"]
             centerFullyVisible(observed, in: app)
             XCTAssertTrue(observed.label.contains("History last observed"))
         }
         screenshot(expired ? "Lowest wait unavailable at accessibility size" : "Lowest wait evidence at accessibility size", app: app)
-        let hourly = app.buttons["ride-history-hourly-estimates"]
+        let hourly = summary.buttons["ride-history-hourly-estimates"]
         centerFullyVisible(hourly, in: app); hourly.tap()
         XCTAssertTrue(app.navigationBars["Predicted waits"].waitForExistence(timeout: 5))
         let forecast = app.otherElements["ride-wait-forecast"].firstMatch
@@ -595,7 +615,6 @@ final class PIVOTUITests: XCTestCase {
             centerFullyVisible(source, in: app)
             XCTAssertTrue(source.label.contains("Wait source checked"))
             screenshot("Hourly sheet retains supported lowest wait at measured accessibility size", app: app)
-            assertForecastTimeLabels(in: app, capture: "Accessibility hourly sheet")
         }
         let done = app.buttons["Done"]
         XCTAssertTrue(done.isHittable)
