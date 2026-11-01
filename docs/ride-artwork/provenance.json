@@ -1724,6 +1724,52 @@
     },
     {
       "parkId": 21,
+      "rideId": 4266066062235,
+      "rideName": "Super Grover's Box Car Derby",
+      "alt": "Illustrated Super Grover's Box Car Derby at SeaWorld Orlando",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:05:00.220701+00:00",
+      "originalSHA256": "36267c2611c4f57837586e4d85c1aab1b517a6c795bc1e02a64b9f8da9d0af35",
+      "review": "Accepted: Actually viewed genuine selected source photo and full generated portrait. Physical blue/silver front car, G/lightning insignia, black padded seats/lapbar and actual station deck/fence match the historical construction-tour photograph. No invented riders or full course. Realistic generated representative imagery, not a documentary photo.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://blooloop.com/media-library/ride-vehicle-of-super-grover-s-box-car-derby-at-sesame-street-land-at-seaworld-orlando.jpg?id=57008770&width=980",
+          "alt": "Ride vehicle of Super Grover's Box Car Derby at Sesame Street Land at SeaWorld Orlando",
+          "sourceURL": "https://blooloop.com/theme-park/in-depth/sesame-street-seaworld-orlando/",
+          "credit": "Brady MacDonald, original on-site March 2019 Blooloop article",
+          "license": "Photographic reference only; original photographer/publisher rights retained",
+          "licenseURL": "https://blooloop.com/theme-park/in-depth/sesame-street-seaworld-orlando/",
+          "sha256": "e1333f40f358ec1f8a4d93fbe7b49ed431f59019e1be66741bf2e57c7ca00eba",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually read Brady MacDonald’s March 20 2019 original construction-tour report, explicit ride photo caption and six-ride retheming list, then inspected this genuine original photo. Source shows the empty physical blue/silver front coaster car with red G/yellow lightning insignia, fabricated silver grille/spring trim and black circular headlights, connected train with black padded seatbacks and actual lapbars, metal station deck, gray column and yellow station fence. Compose only this documented empty front-car and station section at realistic blue-purple dusk; preserve manufactured decorative details and actual linked car/rail geometry. Do not turn the car into a live character or road vehicle, invent riders, add a hidden course or current construction state. The March 2019 image documents historical hardware/paint, not current condition."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "21-4266066062235-thumbnail.jpg",
+      "thumbnailSHA256": "4d3eb954c490af3e94d7be536dfe7e6e793c4b2d4aa13d3978fb337ee977e98a",
+      "thumbnailBytes": 25628,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "21-4266066062235-detail.jpg",
+      "detailSHA256": "04c0b18ee0152f7cb963968d5e9fccd4237d27c042742c1f873e51af1ab6a1a7",
+      "detailBytes": 180691,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "21-4266066062235",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Super Grover's Box Car Derby at SeaWorld Orlando, Florida. Source- and pixel-reviewed facts and limits: Actually read Brady MacDonald’s March 20 2019 original construction-tour report, explicit ride photo caption and six-ride retheming list, then inspected this genuine original photo. Source shows the empty physical blue/silver front coaster car with red G/yellow lightning insignia, fabricated silver grille/spring trim and black circular headlights, connected train with black padded seatbacks and actual lapbars, metal station deck, gray column and yellow station fence. Compose only this documented empty front-car and station section at realistic blue-purple dusk; preserve manufactured decorative details and actual linked car/rail geometry. Do not turn the car into a live character or road vehicle, invent riders, add a hidden course or current construction state. The March 2019 image documents historical hardware/paint, not current condition. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "b3a320bded072bbb8a456ea47b1aa1e5f2748b9dc4c45a36ae8bb74b2b8b79e7",
+      "generationSteps": []
+    },
+    {
+      "parkId": 21,
       "rideId": 41297957342255,
       "rideName": "Pipeline: The Surf Coaster",
       "alt": "Illustrated Pipeline: The Surf Coaster at SeaWorld Orlando",
@@ -2418,6 +2464,52 @@
       "key": "24-28011971629002",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Skyride (Egypt Station) at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: The inspected genuine own-page SkyRide photo documents a blue open-sided cable gondola with a flat blue canopy frame, dark perimeter handrails, real bench/ordinary source guests, metal hanger and wheel attachment to the continuous overhead cable. Gray support tower, park trees and source distant ride silhouettes are visible. This is a representative cabin of the same Busch Gardens Tampa SkyRide system for the Egypt Station catalog entry, not a photo proving that this exact view is from Egypt Station. No station building/location is invented, and current official annual-maintenance closure is not contradicted by an operating-status claim in the artwork. Preserve actual suspended cabin/cable geometry. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
       "promptSHA256": "00145cab560b8b75caf6f35e4b0e62cdae3ba22e0486bee2e2eaf90a9a18124a",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 51215365277309,
+      "rideName": "Kumba",
+      "alt": "Illustrated Kumba at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:52:30.068953+00:00",
+      "originalSHA256": "af0be0942305e0784014a049965576a567bc1ab82206535847030bee45aeced4",
+      "review": "Accepted: Actually viewed the selected genuine photographic reference and full generated portrait. Actual turquoise track curves/loop, red connected supports, palms and low roof match the historical 2006 source; empty track contains no invented train or replacement configuration. Realistic generated representative treatment does not assert current operation or exact current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://themeparkreview.com/forum/uploads/monthly_2006_02/DSC06509.JPG.cf061c6675450406e7a96489bc775c50.JPG",
+          "alt": "DSC06509.JPG.cf061c6675450406e7a96489bc775c50.JPG",
+          "sourceURL": "https://themeparkreview.com/forum/topic/6653-kumbas-paint-comparison/",
+          "credit": "Erik Johnson, original February 7 2006 on-site photographs, Theme Park Review",
+          "license": "Photographic reference only; copyright retained by original photographer",
+          "licenseURL": "https://themeparkreview.com/forum/topic/6653-kumbas-paint-comparison/",
+          "sha256": "d19d434e81b99d0094467d0a91196993c481c3b2e609d9b5ca1b73feb90eb1df",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually read the original first-person photo report by Erik Johnson dated February 7 2006, including his explicit statement that he took the new Kumba photos that day, and viewed five original photos. Selected DSC06509 shows actual turquoise box-spine tubular-rail looping coaster track, red/orange steel support columns and braces, real palms and the edge of a low corrugated roof; the tall circular loop and intersecting foreground corkscrew curves are actual source geometry. Compose only this documented connected track/support section at realistic blue-purple dusk; keep it EMPTY as in the photo, with no invented train or hidden full course. Preserve the true turquoise/red historical scheme and palm arrangement. The 2006 reference does not establish current paint, 2026 availability, refurbishment or future Kumba Revenge configuration. Previously inaccessible Baynum assets were not retried; this is an independent original photographer source."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-51215365277309-thumbnail.jpg",
+      "thumbnailSHA256": "a4dbd92b9cecc8d7fb23ff69010f52f494ef11533120d39d393ae107366ed025",
+      "thumbnailBytes": 24811,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-51215365277309-detail.jpg",
+      "detailSHA256": "479d27e25b3d2d3fd738e681bfe613cb4c96049c7635fc48f6dd2e5f4becdfd2",
+      "detailBytes": 189247,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-51215365277309",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Kumba at Busch Gardens Tampa Bay, Florida. Source- and pixel-reviewed facts and limits: Actually read the original first-person photo report by Erik Johnson dated February 7 2006, including his explicit statement that he took the new Kumba photos that day, and viewed five original photos. Selected DSC06509 shows actual turquoise box-spine tubular-rail looping coaster track, red/orange steel support columns and braces, real palms and the edge of a low corrugated roof; the tall circular loop and intersecting foreground corkscrew curves are actual source geometry. Compose only this documented connected track/support section at realistic blue-purple dusk; keep it EMPTY as in the photo, with no invented train or hidden full course. Preserve the true turquoise/red historical scheme and palm arrangement. The 2006 reference does not establish current paint, 2026 availability, refurbishment or future Kumba Revenge configuration. Previously inaccessible Baynum assets were not retried; this is an independent original photographer source. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "9a232fd9e5eab50ea006071790405a33d540fe904ec32b497bcb7956c1a97690",
       "generationSteps": []
     },
     {
@@ -3160,6 +3252,52 @@
       "key": "24-209348409508903",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Tigris at Busch Gardens Tampa Bay. Source- and pixel-reviewed facts and limits: Inspected official Tigris photograph shows three real green/orange coaster cars with ordinary clothed riders and actual restraints/wheel brackets attached to the underside of the orange/red rail at its source inverted heartline-roll section. Operator body explicitly confirms Tigris has an inverted heartline roll. Preserve this documented train/connected rail section and realistic steel/chassis geometry; no invented full launch tower, disconnected bogies, extra cars or hidden route. Keep source-supported inversion orientation rather than making it an unsupported different ride. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
       "promptSHA256": "0adf37774b8f9700b08be82df9bfc3f670908012a056f7321022c72f65028cc1",
+      "generationSteps": []
+    },
+    {
+      "parkId": 24,
+      "rideId": 216145341385222,
+      "rideName": "Ubanga-Banga Bumper Cars",
+      "alt": "Illustrated Ubanga-Banga Bumper Cars at Busch Gardens Tampa Bay",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:05:33.617162+00:00",
+      "originalSHA256": "a954ef4dec9c635cdc9ba38b3bf2085e864f7bc8b4a4d34ae4d2f1e169085df9",
+      "review": "Accepted: Actually viewed genuine selected source photo and full generated portrait. Actual dark-roof covered arena, shiny floor, masonry openings and small rubber-rim bumper cars with overhead pickup poles remain recognizable. Historical fan attribution and unknown original photographer/capture date are explicit; no exact current-condition claim. Realistic generated representative imagery, not a documentary photo.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.themeparkreview.com/forum/files/cimg1998.jpg",
+          "alt": "Historical Ubanga Banga photo explicitly embedded under the exact ride heading in November 2016 fan article",
+          "sourceURL": "https://buschgardenstampa.wordpress.com/2016/11/17/ubanga-banga-bumper-cars/",
+          "credit": "Theme Park Review image embedded by megrancan98; original photographer/capture date unverified",
+          "license": "Photographic reference only; rights retained, license not independently verified",
+          "licenseURL": "https://buschgardenstampa.wordpress.com/2016/11/17/ubanga-banga-bumper-cars/",
+          "sha256": "cc540cbfc8de67e4abb675c8660b70ec212ce6962bddc027e983002247975c75",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually read the exact November 17 2016 Ubanga-Banga fan article by megrancan98 and current official ride body, and inspected the original Theme Park Review photo URL explicitly embedded by that article. Source is a covered rectangular bumper-car arena with dark shiny flat floor, metal truss roof/overhead electrical grid, pale textured masonry walls/open bays, small orange/teal/yellow bumper cars with thick black rubber rims, vertical electric pickup poles and ordinary clothed source riders. Compose only the documented arena/car section with realistic metal, rubber and restrained evening fill; keep source-scale people, actual car proportions and overhead pickup connections. No invented ride guide rails, hidden arena extension or different park. Original TPR photographer and capture date could not be independently recovered; rights remain unverified/retained. This historical fan-attributed identity does not establish current paint/operation; no Coasterpedia blocked image was retried."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "24-216145341385222-thumbnail.jpg",
+      "thumbnailSHA256": "af0242ad8d84065b382ef5785036665bd20ab0e2d3260f7bf82316ca388614a7",
+      "thumbnailBytes": 19376,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "24-216145341385222-detail.jpg",
+      "detailSHA256": "daa7fc7b921e1460a3872939f30c73affbbe262dc6024bb591e9a994cf06301d",
+      "detailBytes": 157266,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "24-216145341385222",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Ubanga-Banga Bumper Cars at Busch Gardens Tampa Bay, Florida. Source- and pixel-reviewed facts and limits: Actually read the exact November 17 2016 Ubanga-Banga fan article by megrancan98 and current official ride body, and inspected the original Theme Park Review photo URL explicitly embedded by that article. Source is a covered rectangular bumper-car arena with dark shiny flat floor, metal truss roof/overhead electrical grid, pale textured masonry walls/open bays, small orange/teal/yellow bumper cars with thick black rubber rims, vertical electric pickup poles and ordinary clothed source riders. Compose only the documented arena/car section with realistic metal, rubber and restrained evening fill; keep source-scale people, actual car proportions and overhead pickup connections. No invented ride guide rails, hidden arena extension or different park. Original TPR photographer and capture date could not be independently recovered; rights remain unverified/retained. This historical fan-attributed identity does not establish current paint/operation; no Coasterpedia blocked image was retried. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "d4ea550062b9cddf13ac1e08ce1e3a41371282c0ed86bd8085044399968d7d1c",
       "generationSteps": []
     },
     {
@@ -40285,6 +40423,594 @@
     },
     {
       "parkId": 64,
+      "rideId": 5986,
+      "rideName": "Caro-Seuss-el™",
+      "alt": "Illustrated Caro-Seuss-el™ at Islands of Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:51:44.784323+00:00",
+      "originalSHA256": "569973ccea21e908891010b44becd1dbae8a088ba4bbe9a006a2bd318a4b7f67",
+      "review": "Accepted: Actually viewed the selected genuine photographic reference and full generated portrait. Real purple canopy, flower/scrollwork frieze, molded carousel mounts, connected poles and queue fence preserved under actual undulating pavilion roof. Realistic generated representative treatment does not assert current operation or exact current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/pt/br/files/Images/gds/ioa-caro-seuss-el-ride-full-wide-cf-b.jpg",
+          "alt": "Wide view of actual Caro-Seuss-el in Orlando",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/caro-seuss-el",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/caro-seuss-el",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "ioa-first-six-source-web-241.json",
+          "sourceEvidenceSHA256": "8d2799e9cf4975b35cc20b0acdb912fe5583eb502cf3a4706674770df8f94660",
+          "sha256": "8e2ed2dd08829295a83f045318ba6a5774b6728dac70c57abac71bbd3585822e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Viewed the operator own-page wide photograph and read the attraction body/captions in its Portuguese rendering plus English source. Actual carousel has a purple canopy ring with orange/yellow flower shapes and scrollwork, curving yellow support poles, pink curved outer beams, orange/pink undulating pavilion roof, actual fantastical molded creature mounts, circular platform and waist-height metal queue fence. These are fabricated carousel seats, not live fantasy animals. Compose the documented whole central carousel and visible mounts with real fiberglass, poles and floor under restrained blue-purple evening fill; preserve real canopy/support connections. Do not add unshown characters or hidden mechanisms. Photo capture date/current paint or operating status are not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "64-5986-thumbnail.jpg",
+      "thumbnailSHA256": "295ebe8bc9a9423fd751ffadb0f33a9c1609b6e5ec17d642231b56fb766e556d",
+      "thumbnailBytes": 22439,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "64-5986-detail.jpg",
+      "detailSHA256": "a51b2bfc8e75f3b1335dc464ebc080572b932d0b1d129cb837ee1096a6180d00",
+      "detailBytes": 170963,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "64-5986",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Caro-Seuss-el™ at Universal Islands of Adventure, Orlando. Source- and pixel-reviewed facts and limits: Viewed the operator own-page wide photograph and read the attraction body/captions in its Portuguese rendering plus English source. Actual carousel has a purple canopy ring with orange/yellow flower shapes and scrollwork, curving yellow support poles, pink curved outer beams, orange/pink undulating pavilion roof, actual fantastical molded creature mounts, circular platform and waist-height metal queue fence. These are fabricated carousel seats, not live fantasy animals. Compose the documented whole central carousel and visible mounts with real fiberglass, poles and floor under restrained blue-purple evening fill; preserve real canopy/support connections. Do not add unshown characters or hidden mechanisms. Photo capture date/current paint or operating status are not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "1a9da90f3cc7b16b9ddbce12932d36ab124cce672b46b29c12ab4cb34a211bf8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 64,
+      "rideId": 5987,
+      "rideName": "The Cat in The Hat™",
+      "alt": "Illustrated The Cat in The Hat™ at Islands of Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:50:13.803092+00:00",
+      "originalSHA256": "299b03a478cbb6182efc482fd5147c872a005c8fb9c643aa25ae2e62d2b7d2bc",
+      "review": "Accepted: Actually viewed the selected genuine photographic reference and full generated portrait. Actual red shell with physical glove decoration, turquoise seats/lapbar and clothed family riders preserved against practical interior scenery. Realistic generated representative treatment does not assert current operation or exact current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/pt/br/files/Images/gds/uor-universal-orlando-cat-in-the-hat-ride-kids-smiling-cf-b.jpg",
+          "alt": "Actual children riding The Cat in the Hat in Orlando",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/the-cat-in-the-hat",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/the-cat-in-the-hat",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "ioa-first-six-source-web-241.json",
+          "sourceEvidenceSHA256": "8d2799e9cf4975b35cc20b0acdb912fe5583eb502cf3a4706674770df8f94660",
+          "sha256": "e4ef6da2f61dc6b6b0c446efd1336b5b65971908ed007e4a63bffb4032d2dcd1",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Viewed the genuine own-page Cat in the Hat gallery photograph and read its exact Orlando ride caption; the available page snapshot does not expose the full narrative body. Actual source shows ordinary clothed family riders in turquoise bench seats, curved red front shell/seat bar with white glove-shaped molded decoration, rounded yellow/red practical interior walls and tilted purple-framed window/pink curtains. Preserve actual vehicle shell and riders scale/ordinary clothing, real lapbar/seat connections and physical scenery. Compose only this documented interior vehicle section, not a movie illustration, live cartoon character or invented full ride route. Photo capture date/current paint or operating status are not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "64-5987-thumbnail.jpg",
+      "thumbnailSHA256": "26294fec04c0fd433fdcf9f301067446f731503971f046c186b4da471cd5e8d8",
+      "thumbnailBytes": 16970,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "64-5987-detail.jpg",
+      "detailSHA256": "72eb1e193d334425977e1edccc28bd04d6fe7ddd45a86f1ff5d849d22abe51c1",
+      "detailBytes": 90989,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "64-5987",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict The Cat in The Hat™ at Universal Islands of Adventure, Orlando. Source- and pixel-reviewed facts and limits: Viewed the genuine own-page Cat in the Hat gallery photograph and read its exact Orlando ride caption; the available page snapshot does not expose the full narrative body. Actual source shows ordinary clothed family riders in turquoise bench seats, curved red front shell/seat bar with white glove-shaped molded decoration, rounded yellow/red practical interior walls and tilted purple-framed window/pink curtains. Preserve actual vehicle shell and riders scale/ordinary clothing, real lapbar/seat connections and physical scenery. Compose only this documented interior vehicle section, not a movie illustration, live cartoon character or invented full ride route. Photo capture date/current paint or operating status are not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "1146d3f5e8ea9462715e3df2caf53502c01a6bf393bc92384fde837ac6d87b3a",
+      "generationSteps": []
+    },
+    {
+      "parkId": 64,
+      "rideId": 5988,
+      "rideName": "Doctor Doom's Fearfall®",
+      "alt": "Illustrated Doctor Doom's Fearfall® at Islands of Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:47:10.744492+00:00",
+      "originalSHA256": "719ccaa026ce1148b80f2e1450af3b45196334ba56c8e1ed5965fc608ce424aa",
+      "review": "Accepted: Actually viewed the selected genuine photographic reference and full generated portrait. Connected pair of lattice drop towers, mounted small gondola and actual fabricated face/lettered marquee remain readable; no third tower or living figure. Realistic generated representative treatment does not assert current operation or exact current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/ioa-doctor-dooms-fearfall-ride-two-towers-and-exterior-cf-b.jpg",
+          "alt": "Actual exterior and two towers of Doctor Doom Fearfall",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/doctor-dooms-fearfall",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/doctor-dooms-fearfall",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "ioa-first-six-source-web-241.json",
+          "sourceEvidenceSHA256": "8d2799e9cf4975b35cc20b0acdb912fe5583eb502cf3a4706674770df8f94660",
+          "sha256": "12b6d85591f920b114f35f5a766b7baf4dd21b85994d8e1ae90206bddd4327ec",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Viewed genuine own-page exterior/two-towers photo and read current operator body. Actual ride has two slender gray lattice launch/drop towers with round orange/red top crowns, small seated gondolas mounted to tower rails, fabricated green hooded metal face on a purple-lettered entrance marquee, yellow/green angular base scenery and real steel supports. Compose the documented pair of towers and entrance with source-supported scale/connected lattice and realistic metal at blue-purple dusk; manufactured character sign stays a physical sign, not a live figure. Preserve source signage only; no invented third tower, vehicles, fireworks or hidden machinery. Operator caption confirms Orlando. Photo capture date/current paint or operating status are not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "64-5988-thumbnail.jpg",
+      "thumbnailSHA256": "85f1179f5762fa741ab2a26919ac14333b65ed23409786ddb6f1bd09136a96c0",
+      "thumbnailBytes": 24351,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "64-5988-detail.jpg",
+      "detailSHA256": "171841ee71ccba1b935afa74a8367fb30c57e70ffab746fa533fec19c4e30fc5",
+      "detailBytes": 180660,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "64-5988",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Doctor Doom's Fearfall® at Universal Islands of Adventure, Orlando. Source- and pixel-reviewed facts and limits: Viewed genuine own-page exterior/two-towers photo and read current operator body. Actual ride has two slender gray lattice launch/drop towers with round orange/red top crowns, small seated gondolas mounted to tower rails, fabricated green hooded metal face on a purple-lettered entrance marquee, yellow/green angular base scenery and real steel supports. Compose the documented pair of towers and entrance with source-supported scale/connected lattice and realistic metal at blue-purple dusk; manufactured character sign stays a physical sign, not a live figure. Preserve source signage only; no invented third tower, vehicles, fireworks or hidden machinery. Operator caption confirms Orlando. Photo capture date/current paint or operating status are not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "60cf07c0cb6404b48d22d674a48ff53f498649f45c2f4e651808cedd289b9da9",
+      "generationSteps": []
+    },
+    {
+      "parkId": 64,
+      "rideId": 5989,
+      "rideName": "Dudley Do-Right's Ripsaw Falls®",
+      "alt": "Illustrated Dudley Do-Right's Ripsaw Falls® at Islands of Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:49:11.538214+00:00",
+      "originalSHA256": "cd1b1d1399ab4c124770c274180736c25487efbf9d2aa8fbfbf75c5cf510037b",
+      "review": "Accepted: Actually viewed the selected genuine photographic reference and full generated portrait. Source sawmill facade, steep flume with small source log vehicle, green runout guides, rockwork and believable splash water remain recognizable. Realistic generated representative treatment does not assert current operation or exact current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/ioa-dudley-do-rights-ripsaw-falls-ride-exterior-flume-plunge-cf-b.jpg",
+          "alt": "Actual exterior and flume plunge of Dudley Do-Right Ripsaw Falls",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/dudley-do-rights-ripsaw-falls",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/dudley-do-rights-ripsaw-falls",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "ioa-first-six-source-web-241.json",
+          "sourceEvidenceSHA256": "8d2799e9cf4975b35cc20b0acdb912fe5583eb502cf3a4706674770df8f94660",
+          "sha256": "d718a2265f03d9dcc8cb0e53f3de1a8f408e80a7c8278b7750d0b63344de44db",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Viewed genuine own-page exterior/flume plunge photo and read its exact operator gallery caption identifying this Orlando attraction. Actual scene is a green paired guide/runout channel with turbulent water, tan rounded rockwork, a source-scale log vehicle near the tall steep green flume exit, real turquoise/purple exaggerated sawmill buildings, red/pink signage and snowy white molded roof edges. Compose this documented flume/runout/sawmill section with realistic water, painted fiberglass and connected structures, keeping ordinary source guests small. The architecture is real fabricated cartoon theming, not an animated illustration. No hidden route, relocated mountain, extra boats or new text. Photo capture date/current paint or operating status are not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "64-5989-thumbnail.jpg",
+      "thumbnailSHA256": "2af61afa0b1d650fa95e616fc80198c11a42759513d104e105638424d9527ecd",
+      "thumbnailBytes": 29317,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "64-5989-detail.jpg",
+      "detailSHA256": "308ee76b9196a8ae04c4dd80fd429df296d6cddfdc1216699e36bc21de213c6a",
+      "detailBytes": 234306,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "64-5989",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Dudley Do-Right's Ripsaw Falls® at Universal Islands of Adventure, Orlando. Source- and pixel-reviewed facts and limits: Viewed genuine own-page exterior/flume plunge photo and read its exact operator gallery caption identifying this Orlando attraction. Actual scene is a green paired guide/runout channel with turbulent water, tan rounded rockwork, a source-scale log vehicle near the tall steep green flume exit, real turquoise/purple exaggerated sawmill buildings, red/pink signage and snowy white molded roof edges. Compose this documented flume/runout/sawmill section with realistic water, painted fiberglass and connected structures, keeping ordinary source guests small. The architecture is real fabricated cartoon theming, not an animated illustration. No hidden route, relocated mountain, extra boats or new text. Photo capture date/current paint or operating status are not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "c8195649fddc922aac250fc45e25d567c6d348fa66769a4cb6925566a509b14d",
+      "generationSteps": []
+    },
+    {
+      "parkId": 64,
+      "rideId": 5991,
+      "rideName": "Flight of the Hippogriff™",
+      "alt": "Illustrated Flight of the Hippogriff™ at Islands of Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:51:19.287979+00:00",
+      "originalSHA256": "22124de140f4bd5b4b863fa9a624f740665dc24c3a8c8ce85acf350b0628784e",
+      "review": "Accepted: Actually viewed the selected genuine photographic reference and full generated portrait. Source wicker-look coaster cars, physical hippogriff nose, lapbars/riders, engaged wheel bogies/rail and real castle/rock backdrop preserved. Realistic generated representative treatment does not assert current operation or exact current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/ioa-flight-of-the-hippogriff-coaster2-b.jpg",
+          "alt": "Actual guests on Flight of the Hippogriff in Orlando",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/flight-of-the-hippogriff",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/flight-of-the-hippogriff",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "ioa-first-six-source-web-241.json",
+          "sourceEvidenceSHA256": "8d2799e9cf4975b35cc20b0acdb912fe5583eb502cf3a4706674770df8f94660",
+          "sha256": "979736596d3930ab7c563610c94694eca54a663b87a01ae793e6730b346aecf4",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Viewed genuine own-page Orlando coaster photograph and read available operator body/caption. Actual Flight of the Hippogriff train has wicker-pattern tan cars with raised hippogriff-shaped front, ordinary clothed restrained riders, visible black wheel bogies engaged with red/brown tubular rail on gray supports, source rocky retaining wall and Hogwarts castle turrets in the real background. Compose only this documented banked train/track section with real woven-look fiberglass, metal running gear and existing castle backdrop; preserve connected bogies/rail and source riders scale. The nose is a physical coaster car, not a live flying creature. No invented course, missing restraints, film still or other park. Photo capture date/current paint or operating status are not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "64-5991-thumbnail.jpg",
+      "thumbnailSHA256": "366fe4f3409ceafb207013ad9d944dd28cddcb421721c91b681866dd4ade00c1",
+      "thumbnailBytes": 28102,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "64-5991-detail.jpg",
+      "detailSHA256": "c0959aef7ece91b465ed06027fa040dac1ea2d524b51bf54134633e66f8a6a89",
+      "detailBytes": 205286,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "64-5991",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Flight of the Hippogriff™ at Universal Islands of Adventure, Orlando. Source- and pixel-reviewed facts and limits: Viewed genuine own-page Orlando coaster photograph and read available operator body/caption. Actual Flight of the Hippogriff train has wicker-pattern tan cars with raised hippogriff-shaped front, ordinary clothed restrained riders, visible black wheel bogies engaged with red/brown tubular rail on gray supports, source rocky retaining wall and Hogwarts castle turrets in the real background. Compose only this documented banked train/track section with real woven-look fiberglass, metal running gear and existing castle backdrop; preserve connected bogies/rail and source riders scale. The nose is a physical coaster car, not a live flying creature. No invented course, missing restraints, film still or other park. Photo capture date/current paint or operating status are not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "ebf54609fa0e16362f62b37d18391d7b41da3ee0112ce76190f4eb57409ddffe",
+      "generationSteps": []
+    },
+    {
+      "parkId": 64,
+      "rideId": 5992,
+      "rideName": "Harry Potter and the Forbidden Journey™",
+      "alt": "Illustrated Harry Potter and the Forbidden Journey™ at Islands of Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:58:00.394048+00:00",
+      "originalSHA256": "fe46b51137a8a17bd73b87ce28f79e2af4bc9111354ef60df3d73679cbc7b11b",
+      "review": "Accepted: Actually viewed the genuine source photo and full generated portrait. Actual stone portrait stairwell, frame arrangement and practical lantern retain believable material and source architecture. Representative generated imagery, no claim of current operation or exact current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/pt/br/files/Images/gds/ioa-harry-potter-and-the-forbidden-journey-gallery-b.jpg",
+          "alt": "Actual portraits in Hogwarts Forbidden Journey queue",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/harry-potter-and-the-forbidden-journey",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/harry-potter-and-the-forbidden-journey",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "ioa-second-and-final-source-web-243.json",
+          "sourceEvidenceSHA256": "41820b941700f13548db7780b5b634237a3d02b5278381087d795df831ce2f5c",
+          "sha256": "790824ea675f5406b986fea6eabe5fb256f7ff7c45df23a5a1607bdf1c71bda5",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed operator gallery photo and read its exact caption identifying portraits inside the Orlando Forbidden Journey queue. Real practical stone-walled stairwell has numerous differently sized ornate gold/brown portrait frames fixed to walls, source painted portraits, stone arch opening at right and a warm faceted wall lantern. Compose only this documented queue wall interior with realistic stone/wood/metal frame detail, existing painted portraits and restrained cool blue-purple ambient fill alongside actual warm lanterns. Preserve frame placement and actual architecture; faces remain paintings in frames, not live people or new film characters. No invented ride vehicle, full castle exterior or unseen chambers. Exact capture date/current operational condition not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "64-5992-thumbnail.jpg",
+      "thumbnailSHA256": "a035e613c94095826bb74ba4e00020b3dd69312f91c208b64b9436181365b50c",
+      "thumbnailBytes": 21836,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "64-5992-detail.jpg",
+      "detailSHA256": "6a8f655a3515ff07a9e43d6f993fc38f17f19e176b103b2ab229b9c8dbcabf3d",
+      "detailBytes": 174032,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "64-5992",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Harry Potter and the Forbidden Journey™ at Universal Islands of Adventure, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed operator gallery photo and read its exact caption identifying portraits inside the Orlando Forbidden Journey queue. Real practical stone-walled stairwell has numerous differently sized ornate gold/brown portrait frames fixed to walls, source painted portraits, stone arch opening at right and a warm faceted wall lantern. Compose only this documented queue wall interior with realistic stone/wood/metal frame detail, existing painted portraits and restrained cool blue-purple ambient fill alongside actual warm lanterns. Preserve frame placement and actual architecture; faces remain paintings in frames, not live people or new film characters. No invented ride vehicle, full castle exterior or unseen chambers. Exact capture date/current operational condition not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "fadd82d7ccc105a8875b33e1baa676efce7eda9378808a8a354f3fe435b17d53",
+      "generationSteps": []
+    },
+    {
+      "parkId": 64,
+      "rideId": 5994,
+      "rideName": "Jurassic Park River Adventure",
+      "alt": "Illustrated Jurassic Park River Adventure at Islands of Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:56:25.028105+00:00",
+      "originalSHA256": "953cec62a74a79d0d8b25d610dc2f2ed46c07145d8264852e715361dc78f0a36",
+      "review": "Accepted: Actually viewed the genuine source photo and full generated portrait. Actual yellow multirow boat, ordinary clothed riders/bar and flume guide remain in the documented splash scene with realistic water. Representative generated imagery, no claim of current operation or exact current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/ioa-jurassic-park-river-adventure-ride-splash-b.jpg",
+          "alt": "Actual Jurassic Park River Adventure boat splashdown in Orlando",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/jurassic-park-river-adventure",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/jurassic-park-river-adventure",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "ioa-second-and-final-source-web-243.json",
+          "sourceEvidenceSHA256": "41820b941700f13548db7780b5b634237a3d02b5278381087d795df831ce2f5c",
+          "sha256": "f6a9ddfd726378915c3c1d68039dfd50543dd1516251fc544af8b48bbc4220fa",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed operator gallery photo and read exact caption identifying Orlando Jurassic Park River Adventure splashdown. Actual yellow wide multirow boat has black rubber bumper, source ordinary clothed riders behind real dark safety bar and a small source front emblem, surrounded by a large real white splash above a concrete/metal flume guide trough. Compose this documented boat and splashdown hardware with realistic water droplets, wet fiberglass and restrained blue-purple evening water/reflections; preserve boat row structure and source-scale riders. No invented T-Rex, hidden route, future refurbishment, another park or new lettering. Exact capture date/current operational condition not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "64-5994-thumbnail.jpg",
+      "thumbnailSHA256": "1c0c4889c70a027e90c702350d59f9b8b1e09693a195ba405bbc15ca5e61afe7",
+      "thumbnailBytes": 23622,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "64-5994-detail.jpg",
+      "detailSHA256": "8639d2b68315b7afbd3d6bfc31b4a946604cf8d03bf694105d3813af971de422",
+      "detailBytes": 181806,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "64-5994",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Jurassic Park River Adventure at Universal Islands of Adventure, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed operator gallery photo and read exact caption identifying Orlando Jurassic Park River Adventure splashdown. Actual yellow wide multirow boat has black rubber bumper, source ordinary clothed riders behind real dark safety bar and a small source front emblem, surrounded by a large real white splash above a concrete/metal flume guide trough. Compose this documented boat and splashdown hardware with realistic water droplets, wet fiberglass and restrained blue-purple evening water/reflections; preserve boat row structure and source-scale riders. No invented T-Rex, hidden route, future refurbishment, another park or new lettering. Exact capture date/current operational condition not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "34d67647ebfc57f6823176e75182ce8d317b19d8fbc68527eb6136dfc4c8aeee",
+      "generationSteps": []
+    },
+    {
+      "parkId": 64,
+      "rideId": 5997,
+      "rideName": "One Fish, Two Fish, Red Fish, Blue Fish™",
+      "alt": "Illustrated One Fish, Two Fish, Red Fish, Blue Fish™ at Islands of Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:57:00.984579+00:00",
+      "originalSHA256": "e8b1e64e41cf826c6261385782127a0f3040e30e4d2ceac167e59ced10da9c70",
+      "review": "Accepted: Actually viewed the genuine source photo and full generated portrait. Actual blue/yellow fish car and metal arm remain connected above physical wave structure and manufactured green figure; source riders retained. Representative generated imagery, no claim of current operation or exact current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/ioa-one-fish-two-fish-red-fish-blue-fish-blue-ride-cf-b.jpg",
+          "alt": "Actual mother/daughter inside blue fish car at Orlando",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/one-fish-two-fish-red-fish",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/one-fish-two-fish-red-fish",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "ioa-second-and-final-source-web-243.json",
+          "sourceEvidenceSHA256": "41820b941700f13548db7780b5b634237a3d02b5278381087d795df831ce2f5c",
+          "sha256": "846f0d5cb56acfaa2a8bf34fc0489534566577e5d631e4e2e7bbb313cc81dcd0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed operator own-photo and read body/caption for One Fish Two Fish Red Fish Blue Fish. Actual source shows blue molded flying-fish vehicle with yellow side fin/seating opening, ordinary clothed mother/daughter, supported by a real radial metal arm above a turquoise wavy central mechanism with a green manufactured Sneetch figure holding an umbrella. Compose the documented blue fish, actual seat/bar/arm attachment and central decorative structure at realistic evening light. All creatures are physical fiberglass park scenery and cars, not live animated beings. No invented extra vehicles, hidden full mechanism, missing restraint or new text. Exact capture date/current operational condition not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "64-5997-thumbnail.jpg",
+      "thumbnailSHA256": "e87c2cda52b169829042d545eabd44dc8e9c972404215d9c2d506fab52be4ad8",
+      "thumbnailBytes": 24696,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "64-5997-detail.jpg",
+      "detailSHA256": "094f799f8038f8a3a06a5bba61507bfad298c122184f3605ee032fad86202589",
+      "detailBytes": 150728,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "64-5997",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict One Fish, Two Fish, Red Fish, Blue Fish™ at Universal Islands of Adventure, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed operator own-photo and read body/caption for One Fish Two Fish Red Fish Blue Fish. Actual source shows blue molded flying-fish vehicle with yellow side fin/seating opening, ordinary clothed mother/daughter, supported by a real radial metal arm above a turquoise wavy central mechanism with a green manufactured Sneetch figure holding an umbrella. Compose the documented blue fish, actual seat/bar/arm attachment and central decorative structure at realistic evening light. All creatures are physical fiberglass park scenery and cars, not live animated beings. No invented extra vehicles, hidden full mechanism, missing restraint or new text. Exact capture date/current operational condition not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "aa524d6a5e1154db1b915298ec0d47148d19c0dc15722f5ebc0938c78dbfff2f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 64,
+      "rideId": 5998,
+      "rideName": "Popeye & Bluto's Bilge-Rat Barges®",
+      "alt": "Illustrated Popeye & Bluto's Bilge-Rat Barges® at Islands of Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:58:59.591081+00:00",
+      "originalSHA256": "6d255caa3721bb1b575bb1dce55d499fcbbadde6ab10d56e1a4d26979114a547",
+      "review": "Accepted: Actually viewed the genuine source photo and full generated portrait. Actual circular raft hardware, seats, central clear cover/grip and ordinary clothed riders preserve source physical scene and rocky/rope surroundings. Representative generated imagery, no claim of current operation or exact current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/pt/br/files/Images/gds/ioa-popeye-and-blutos-bilge-rat-barges-ride-raft-close-cf-b.jpg",
+          "alt": "Actual guests on spinning river raft in Orlando",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/popeye-and-blutos-bilge-rat-barges",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/popeye-and-blutos-bilge-rat-barges",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "ioa-second-and-final-source-web-243.json",
+          "sourceEvidenceSHA256": "41820b941700f13548db7780b5b634237a3d02b5278381087d795df831ce2f5c",
+          "sha256": "ce6e48cbc1cd2e88b311cb4871dc11ac002d714eba60284e2b933bff213445f6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed operator own-gallery photo and read exact caption naming guests in the spinning Orlando Popeye raft. Source close section has circular raft seating with yellow/tan padded seatbacks, ordinary clothed restrained riders holding a real shared circular central grip, clear rounded weather/luggage cover in front, turbulent water and actual brown fabricated rocky walls/overhead rope construction behind. Compose this documented close raft hardware/rider section with realistic wet material and evening fill, keeping physical connections and source rider scale. No live cartoon hero, new raft type, extra limbs or invented full river route. Exact capture date/current operational condition not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "64-5998-thumbnail.jpg",
+      "thumbnailSHA256": "40798c38099473f6b38a166f1f5fd2865a775689a54f4f8bd66fa948fe834152",
+      "thumbnailBytes": 28378,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "64-5998-detail.jpg",
+      "detailSHA256": "9ae36dfe83d7480d6622967ca9765d95bf081e16cb4f1aee263faf654f768b34",
+      "detailBytes": 181130,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "64-5998",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Popeye & Bluto's Bilge-Rat Barges® at Universal Islands of Adventure, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed operator own-gallery photo and read exact caption naming guests in the spinning Orlando Popeye raft. Source close section has circular raft seating with yellow/tan padded seatbacks, ordinary clothed restrained riders holding a real shared circular central grip, clear rounded weather/luggage cover in front, turbulent water and actual brown fabricated rocky walls/overhead rope construction behind. Compose this documented close raft hardware/rider section with realistic wet material and evening fill, keeping physical connections and source rider scale. No live cartoon hero, new raft type, extra limbs or invented full river route. Exact capture date/current operational condition not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "32b5faee490a96e88666ede420c28341d62c2d658f3a7a458e68986f36b61949",
+      "generationSteps": []
+    },
+    {
+      "parkId": 64,
+      "rideId": 5999,
+      "rideName": "Pteranodon Flyers",
+      "alt": "Illustrated Pteranodon Flyers at Islands of Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T13:59:24.803533+00:00",
+      "originalSHA256": "d9dd64584bdeffd3a5228830e46a365a606d9841f77bbfea62e63096d4aa4841",
+      "review": "Accepted: Actually viewed the genuine source photo and full generated portrait. Actual engaged overhead trolley, rods and tandem suspended seats/riders remain at source scale over real hut/rocks with track/support pole preserved. Representative generated imagery, no claim of current operation or exact current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/pt/br/files/Images/gds/ioa-pteranodon-flyers-ride-hut-b.jpg",
+          "alt": "Actual Pteranodon Flyers car above Orlando landscape",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/pteranodon-flyers",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/pteranodon-flyers",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "ioa-second-and-final-source-web-243.json",
+          "sourceEvidenceSHA256": "41820b941700f13548db7780b5b634237a3d02b5278381087d795df831ce2f5c",
+          "sha256": "7e4fadae945e0579bd75af3268286eb769fda2558296ba8c56435d4ad24ece51",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed operator own-gallery photo and read exact caption naming actual Pteranodon Flyers car above the Orlando landscape. Source shows a yellow/orange overhead tubular track, real wheel/trolley assembly carrying a painted dark green/yellow pteranodon-shaped physical hanger, two tandem dark suspended seats connected by real metal rods with ordinary clothed source riders, tall pale support pole and actual timber hut/rock/trees below. Compose only this documented suspended vehicle/track/support/hut section. Preserve the engaged bogie and rod-to-seat connections, tandem seating and source-scale riders; realistic metal/paint/foliage at dusk. No live dinosaur, freely flying seats, side-by-side invented seating or hidden route. Exact capture date/current operational condition not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "64-5999-thumbnail.jpg",
+      "thumbnailSHA256": "ad1894eae98d162482c48385d04202af33aa1540b59c94f483d13d3ea1cdd6c7",
+      "thumbnailBytes": 26883,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "64-5999-detail.jpg",
+      "detailSHA256": "777dfcca00cbc56e6628dc7a8a41a0948d2fa144795f5c4025956dbec84d12a0",
+      "detailBytes": 240583,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "64-5999",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Pteranodon Flyers at Universal Islands of Adventure, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed operator own-gallery photo and read exact caption naming actual Pteranodon Flyers car above the Orlando landscape. Source shows a yellow/orange overhead tubular track, real wheel/trolley assembly carrying a painted dark green/yellow pteranodon-shaped physical hanger, two tandem dark suspended seats connected by real metal rods with ordinary clothed source riders, tall pale support pole and actual timber hut/rock/trees below. Compose only this documented suspended vehicle/track/support/hut section. Preserve the engaged bogie and rod-to-seat connections, tandem seating and source-scale riders; realistic metal/paint/foliage at dusk. No live dinosaur, freely flying seats, side-by-side invented seating or hidden route. Exact capture date/current operational condition not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "6bf1cb162fe8f39fb50fe82a8b988abc93fb5b0d3b4c57c43c61a99b1586c13d",
+      "generationSteps": []
+    },
+    {
+      "parkId": 64,
+      "rideId": 6001,
+      "rideName": "The High in the Sky Seuss Trolley Train Ride!™",
+      "alt": "Illustrated The High in the Sky Seuss Trolley Train Ride!™ at Islands of Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:18:21.089223+00:00",
+      "originalSHA256": "7b68d1061b82eb070cf76929c49de6eeb16a3e21d7bc46ce8ccb2df286ccc72e",
+      "review": "Accepted: Actually viewed genuine reference and full generated portrait. Actual connected trolley cars, canopy posts, engaged bogies/rail and station opening remain readable; ordinary source riders preserved. Realistic generated representative imagery without a current-operation claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/pt/br/files/Images/gds/ioa-high-in-the-sky-seuss-trolly-train-ride-left-cf-b.jpg",
+          "alt": "Actual guests on the High in the Sky Seuss Trolley Train at Orlando",
+          "sourceURL": "https://www.universalorlando.com/web/pt/br/things-to-do/rides-attractions/high-in-the-sky-seuss-trolley-train-ride",
+          "credit": "Universal Orlando Resort own-attraction photography",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/pt/br/things-to-do/rides-attractions/high-in-the-sky-seuss-trolley-train-ride",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "trolley-and-epic-source-web-251.json",
+          "sourceEvidenceSHA256": "ec4c62d3d599828f07f7c6b2ae1050078cb30392a7277f4451d2cc42f9cdb13e",
+          "sha256": "05cb2a85d5cbdbd00dc199511efdbd1c433124a4574c122f9040e874a718ed2e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed operator own-page genuine train photo and read the Portuguese attraction body, exact photo caption and complete original operator trolley guide. Actual small red/green/teal open trolley cars with white star/flower details, purple posts and striped canopy roofs carry ordinary clothed riders on visible multiwheel bogies engaged with a turquoise elevated beam/rail; source pink/yellow fabricated station/tunnel opening and actual supports surround them. Compose only this documented train/connected rail/station section at realistic restrained blue-purple dusk, keeping actual bogies/canopy connections and source riders. No road train, freely floating cars, missing restraints, hidden full two-track route or new scenery. Source capture date/current condition unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "64-6001-thumbnail.jpg",
+      "thumbnailSHA256": "24f130bf7371368dcd532f557e21f3d595ec75ecb7550fda9bb0879061ded02e",
+      "thumbnailBytes": 24658,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "64-6001-detail.jpg",
+      "detailSHA256": "732d03be7b9fc1ac10f258c045e0bc1010788c3fb38a141ae46f8e5901c66955",
+      "detailBytes": 158545,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "64-6001",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict The High in the Sky Seuss Trolley Train Ride! at Universal Islands of Adventure, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed operator own-page genuine train photo and read the Portuguese attraction body, exact photo caption and complete original operator trolley guide. Actual small red/green/teal open trolley cars with white star/flower details, purple posts and striped canopy roofs carry ordinary clothed riders on visible multiwheel bogies engaged with a turquoise elevated beam/rail; source pink/yellow fabricated station/tunnel opening and actual supports surround them. Compose only this documented train/connected rail/station section at realistic restrained blue-purple dusk, keeping actual bogies/canopy connections and source riders. No road train, freely floating cars, missing restraints, hidden full two-track route or new scenery. Source capture date/current condition unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "5616065bc73f476dbb80e2fe7e200cfce62a369e8cf4894b7bfb431497c66fa9",
+      "generationSteps": []
+    },
+    {
+      "parkId": 64,
+      "rideId": 6003,
+      "rideName": "Storm Force Accelatron®",
+      "alt": "Illustrated Storm Force Accelatron® at Islands of Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:00:29.960610+00:00",
+      "originalSHA256": "4e6b66efcd7d34b09167dfe07ee09ffea7b4ae4368ddd7f73ac2d14461f26e3d",
+      "review": "Accepted: Actually viewed genuine source photo and full generated portrait. Actual yellow/purple spinning tub, closed gate/metal rails, central handwheel and ordinary source family retained. Realistic generated representative art, not evidence of current operation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/ioa-storm-force-accelatron-family-b.jpg",
+          "alt": "Actual family spinning in Storm Force Accelatron",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/storm-force-accelatron",
+          "credit": "Universal Orlando Resort own-attraction photography",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/storm-force-accelatron",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "ioa-last-reference-web-245.json",
+          "sourceEvidenceSHA256": "5801dc2ab557fcbf196bf43c27497f8002dffe35ab0ed66d682e1df4808d932b",
+          "sha256": "d140c4d525ab4db8947f14f02521430672ee345a9451d077f17feced429e29b5",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own-attraction source photograph and read operator body and family spinning-ride caption. Source physical yellow circular spinning tub has narrow purple stripes, silver perimeter rails/door, actual bench ring and central shared handwheel held by ordinary clothed family, with a purple tub and public barrier visible behind. Compose this documented vehicle section under its covered pavilion with realistic fiberglass/metal and restrained blue-purple evening fill; preserve closed gate and real handwheel connections. No live superhero, invented flying chairs or hidden mechanism. Historical source clothing/paint do not establish current operational condition."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "64-6003-thumbnail.jpg",
+      "thumbnailSHA256": "50c3557e2306a89fb57d7502b2e73baae2c041cbfb97be9cf82fb5774814a3dd",
+      "thumbnailBytes": 22796,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "64-6003-detail.jpg",
+      "detailSHA256": "656775fed584da78a60ea35722ebe006c3fbf0b9a6ea468c1cc5852f25d11d5c",
+      "detailBytes": 130826,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "64-6003",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Storm Force Accelatron® at Universal Islands of Adventure, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed own-attraction source photograph and read operator body and family spinning-ride caption. Source physical yellow circular spinning tub has narrow purple stripes, silver perimeter rails/door, actual bench ring and central shared handwheel held by ordinary clothed family, with a purple tub and public barrier visible behind. Compose this documented vehicle section under its covered pavilion with realistic fiberglass/metal and restrained blue-purple evening fill; preserve closed gate and real handwheel connections. No live superhero, invented flying chairs or hidden mechanism. Historical source clothing/paint do not establish current operational condition. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "a57539c59942f323430d4ec8f1ad48f94dcd996358ad8501149070be30c92129",
+      "generationSteps": []
+    },
+    {
+      "parkId": 64,
       "rideId": 6004,
       "rideName": "The Incredible Hulk Coaster®",
       "alt": "Illustrated The Incredible Hulk Coaster® at Islands of Adventure",
@@ -40325,6 +41051,447 @@
       "key": "64-6004",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT using actual attraction photo image 1 for accurate physical details and image 2 only for the UI's subtle blue-purple evening mood. Natural photographic textures, plausible perspective, soft light with restrained highlights, clear identifiable subject at thumbnail size. Slightly realistic cinematic treatment, no painted brushwork, exaggerated orange sky, cartoon materials or fantasy scenery. No UI, borders, logos, text or watermark. The Incredible Hulk Coaster at Islands of Adventure, the actual cobra-roll track element over the lagoon in the reference photo. Preserve green steel track, tall pale-grey supports and authentic two-inversion cobra-roll geometry with its connecting upper section, viewed from waterside. Real green floodlighting against a subtle blue-purple evening sky, believable water reflections and distant buildings. Do not add Hulk characters, invented extra track loops or unsupported steel.",
       "promptSHA256": "261f069f5c014f6c9c041810d8d96cc43642a458863c7dad61783b5580245f30",
+      "generationSteps": []
+    },
+    {
+      "parkId": 64,
+      "rideId": 6017,
+      "rideName": "Skull Island: Reign of Kong™",
+      "alt": "Illustrated Skull Island: Reign of Kong™ at Islands of Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:00:53.224999+00:00",
+      "originalSHA256": "0c9f1f8fc941c8cd813199c6ac8a8b77cef4523e284d8a405fe91b7c6ecdfce7",
+      "review": "Accepted: Actually viewed genuine source photo and full generated portrait. Actual carved double-gate temple, flame torches and source-scale expedition truck remain on documented path; no living ape or invented interior. Realistic generated representative art, not evidence of current operation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/pt/br/files/Images/gds/ioa-reign-of-kong-exterior-cf-b800x800.jpg",
+          "alt": "Actual exterior Reign of Kong attraction",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/skull-island-reign-of-kong",
+          "credit": "Universal Orlando Resort own-attraction photography",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/skull-island-reign-of-kong",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "ioa-last-reference-web-245.json",
+          "sourceEvidenceSHA256": "5801dc2ab557fcbf196bf43c27497f8002dffe35ab0ed66d682e1df4808d932b",
+          "sha256": "992210ec89e1e97e7908b872ff8d841750bed3b6dd3832f0473e822951789ce6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed the own-page exterior photo identified by its exact operator caption, after rejecting the separate explicitly illustrated entrance candidate. Source is real practical Skull Island temple facade at dusk with tall carved double gates, symmetrical skull/face stonework, actual flame torches, dark rocks/foliage, narrow concrete path with visible paired tire marks and the documented small khaki open-sided expedition truck with seated source guests. Preserve this specific facade/truck path geometry and source scale at realistic restrained blue-purple dusk; real carved scenic faces remain stone props. Do not invent a giant living ape, dinosaur attack, inside ride scene or new architecture."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "64-6017-thumbnail.jpg",
+      "thumbnailSHA256": "4fc0f95268cd5377d88005710fa2014dbe67ed82a06d134740e28a30b11b4122",
+      "thumbnailBytes": 21982,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "64-6017-detail.jpg",
+      "detailSHA256": "96e786e1b4d1a87506dffb4fda60f7809ae1da32a6fa4e0e8b55466bec48fa5f",
+      "detailBytes": 181778,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "64-6017",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Skull Island: Reign of Kong™ at Universal Islands of Adventure, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed the own-page exterior photo identified by its exact operator caption, after rejecting the separate explicitly illustrated entrance candidate. Source is real practical Skull Island temple facade at dusk with tall carved double gates, symmetrical skull/face stonework, actual flame torches, dark rocks/foliage, narrow concrete path with visible paired tire marks and the documented small khaki open-sided expedition truck with seated source guests. Preserve this specific facade/truck path geometry and source scale at realistic restrained blue-purple dusk; real carved scenic faces remain stone props. Do not invent a giant living ape, dinosaur attack, inside ride scene or new architecture. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "bfa06cefa047a361a7e71d08f70f11dcce37b39df3b76524f0fcc4901218210f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 64,
+      "rideId": 6682,
+      "rideName": "Hagrid's Magical Creatures Motorbike Adventure™",
+      "alt": "Illustrated Hagrid's Magical Creatures Motorbike Adventure™ at Islands of Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:01:39.061716+00:00",
+      "originalSHA256": "aa2b8f034776ea3cf46985ccdf0e7aaf17ca1f442f5f5d9f87f16d3690b695d1",
+      "review": "Accepted: Actually viewed genuine source photo and full generated portrait. Genuine occupied source motorbike/sidecar geometry, lap restraints and handlebars preserved with actual tree/castle backdrop; ambiguous empty-train marketing reference excluded. Realistic generated representative art, not evidence of current operation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/ioa-hagrids-motorbike-adventure-guests-castle-cf-b.jpg",
+          "alt": "Actual source guests on Hagrid motorbike ride",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/hagrids-magical-creatures-motorbike-adventure",
+          "credit": "Universal Orlando Resort own-attraction photography",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/hagrids-magical-creatures-motorbike-adventure",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "ioa-last-reference-web-245.json",
+          "sourceEvidenceSHA256": "5801dc2ab557fcbf196bf43c27497f8002dffe35ab0ed66d682e1df4808d932b",
+          "sha256": "fe976a52e2e4370726dda81783922628cb69174d83d58e1edb40e2823ab6bd3e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed the selected genuine operator photo of ordinary guests on the motorbike/sidecar train in Orlando. Photo shows paired physical motorcycle and beige sidecar shells, black padded seats, handlebars, actual lap restraints/metal connectors, train on brown rail, ordinary clothed source riders banking with the train, real trees/landscape and Hogwarts castle beyond. Compose this documented occupied vehicle section with realistic metal, fiberglass and natural evening fill, preserving actual train tilt and seat/handbar connections. No real motorcycle road chase, unrestrained rider, added character, full course or hidden drop. Earlier empty-train arch image was excluded because its marketing appearance was ambiguous; only this inspected occupied source photo is used."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "64-6682-thumbnail.jpg",
+      "thumbnailSHA256": "468b34fa06179acb142c22cc623adbfd27ee1b7c3241d8e94a0c581e1f1b674d",
+      "thumbnailBytes": 27229,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "64-6682-detail.jpg",
+      "detailSHA256": "1d21182952bd2f110527495a0fa8fb71680864b3962a6144d959425755b92bc9",
+      "detailBytes": 174323,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "64-6682",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Hagrid's Magical Creatures Motorbike Adventure™ at Universal Islands of Adventure, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed the selected genuine operator photo of ordinary guests on the motorbike/sidecar train in Orlando. Photo shows paired physical motorcycle and beige sidecar shells, black padded seats, handlebars, actual lap restraints/metal connectors, train on brown rail, ordinary clothed source riders banking with the train, real trees/landscape and Hogwarts castle beyond. Compose this documented occupied vehicle section with realistic metal, fiberglass and natural evening fill, preserving actual train tilt and seat/handbar connections. No real motorcycle road chase, unrestrained rider, added character, full course or hidden drop. Earlier empty-train arch image was excluded because its marketing appearance was ambiguous; only this inspected occupied source photo is used. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "c973508a5385912cbf6bfbe61093835bd64a26e569be288d15ef95f9f39008aa",
+      "generationSteps": []
+    },
+    {
+      "parkId": 64,
+      "rideId": 8721,
+      "rideName": "Jurassic World VelociCoaster",
+      "alt": "Illustrated Jurassic World VelociCoaster at Islands of Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:00:21.080465+00:00",
+      "originalSHA256": "2291dbd5cec499bf8acca1465365fba5933aa294a5cbffa5f8b82f0373e7ed4b",
+      "review": "Accepted: Actually viewed the genuine source photo and full generated portrait. Actual top-hat, small train, connected black track/supports and source lagoon/buildings remain source-specific with realistic dusk reflections. Representative generated imagery, no claim of current operation or exact current paint.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/ioa-velocicoaster-ride-track-and-exterior-cf-b.jpg",
+          "alt": "Actual track and exterior of Orlando VelociCoaster",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/jurassic-world-velocicoaster",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/jurassic-world-velocicoaster",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "ioa-second-and-final-source-web-243.json",
+          "sourceEvidenceSHA256": "41820b941700f13548db7780b5b634237a3d02b5278381087d795df831ce2f5c",
+          "sha256": "c8fb4cf580dd2e56ea64f9fdd04953ccbe47857b8bbdc67307555a843231283a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed operator own-gallery photograph and read exact caption naming actual VelociCoaster track/exterior at Orlando. Source real black/dark-gray coaster top-hat with small source train cresting, tubular supports attached to concrete footings, low dark track curving beside the actual lagoon, tropical palms and low Jurassic-themed buildings. Compose this documented lagoon/top-hat section with realistic steel, water and blue-purple dusk, preserving true track-support topology and distant train scale. No real dinosaur, fabricated mountain, Hollywood/Japan replacement, giant close-up train or invented full course. Explicitly artistic night render elsewhere in the gallery is not the selected reference. Exact capture date/current operational condition not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "64-8721-thumbnail.jpg",
+      "thumbnailSHA256": "f8a7bf2ec958ba14aa7d894f030b1e550cc156aa719e769e077f1f8626ddd9de",
+      "thumbnailBytes": 23444,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "64-8721-detail.jpg",
+      "detailSHA256": "38761e20d070f9911fd7f684943e49624fedc04f032a00e29fa83425eba0ff88",
+      "detailBytes": 185505,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "64-8721",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Jurassic World VelociCoaster at Universal Islands of Adventure, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed operator own-gallery photograph and read exact caption naming actual VelociCoaster track/exterior at Orlando. Source real black/dark-gray coaster top-hat with small source train cresting, tubular supports attached to concrete footings, low dark track curving beside the actual lagoon, tropical palms and low Jurassic-themed buildings. Compose this documented lagoon/top-hat section with realistic steel, water and blue-purple dusk, preserving true track-support topology and distant train scale. No real dinosaur, fabricated mountain, Hollywood/Japan replacement, giant close-up train or invented full course. Explicitly artistic night render elsewhere in the gallery is not the selected reference. Exact capture date/current operational condition not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "fd19916f2d255c3a0c2f9523155de2a1be7f306b1d8487fa61b11e9bb6a88a35",
+      "generationSteps": []
+    },
+    {
+      "parkId": 64,
+      "rideId": 175627073509676,
+      "rideName": "Hogwarts Express™ - Hogsmeade™ Station",
+      "alt": "Illustrated Hogwarts Express™ - Hogsmeade™ Station at Islands of Adventure",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:02:35.966586+00:00",
+      "originalSHA256": "e7ca7cbd855549c292fd30fee2fa2ef2095faab9e71d4543d19294a8bc6b5ebe",
+      "review": "Accepted: Actually viewed genuine source photo and full generated portrait. Actual source engine front/buffers/coupler and HOGSMEADE wall sign identify the correct stone station; no Kings Cross hall substitution. Realistic generated representative art, not evidence of current operation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/ioa-hogwarts-express-hogsmeade-station-train-b.jpg",
+          "alt": "Hogsmeade own-page train hero",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/hogwarts-express-hogsmeade-station",
+          "credit": "Universal Orlando Resort own-attraction photography",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/hogwarts-express-hogsmeade-station",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "ioa-last-reference-web-245.json",
+          "sourceEvidenceSHA256": "5801dc2ab557fcbf196bf43c27497f8002dffe35ab0ed66d682e1df4808d932b",
+          "sha256": "f4a5e4918f0794df61edf69f56fb0c9ae978ad668d3484a1865df9975ee2133b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed the genuine own-page Hogsmeade train hero, including clearly visible HOGSMEADE wall sign, and read the original operator Hogwarts Express guide explaining the two stations. Source shows actual black/red Hogwarts Express locomotive front with 5972 plate, physical buffers/coupler, headlamps, dark chimney, red carriage, real stone station wall/arched openings and existing station canopy edge. Compose only this documented Hogsmeade station/train front with realistic weathered metal/stone and restrained dusk, preserving source lettering and connected rail/platform. This is the actual source Hogsmeade view, not the gallery recommendation showing Kings Cross. No invented London hall, Scottish countryside, hidden route or extra engine. Smoke is only the source practical effect; no current-service claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "64-175627073509676-thumbnail.jpg",
+      "thumbnailSHA256": "3dd11bad47602adbea6daa6ffc07320869f3c6b1ea167202ccb2832760faaf07",
+      "thumbnailBytes": 21651,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "64-175627073509676-detail.jpg",
+      "detailSHA256": "9c99edb0f5b1150ca8e814e50dec722d448607b4ea596eb59313d14a72164a7f",
+      "detailBytes": 152987,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "64-175627073509676",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Hogwarts Express™ - Hogsmeade™ Station at Universal Islands of Adventure, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed the genuine own-page Hogsmeade train hero, including clearly visible HOGSMEADE wall sign, and read the original operator Hogwarts Express guide explaining the two stations. Source shows actual black/red Hogwarts Express locomotive front with 5972 plate, physical buffers/coupler, headlamps, dark chimney, red carriage, real stone station wall/arched openings and existing station canopy edge. Compose only this documented Hogsmeade station/train front with realistic weathered metal/stone and restrained dusk, preserving source lettering and connected rail/platform. This is the actual source Hogsmeade view, not the gallery recommendation showing Kings Cross. No invented London hall, Scottish countryside, hidden route or extra engine. Smoke is only the source practical effect; no current-service claim. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "f0ac5d25dd73906345f220c0946432d1b463014264954096aa814297d00800ce",
+      "generationSteps": []
+    },
+    {
+      "parkId": 65,
+      "rideId": 5990,
+      "rideName": "E.T. Adventure™",
+      "alt": "Illustrated E.T. Adventure™ at Universal Studios Florida",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:09:14.768475+00:00",
+      "originalSHA256": "cbbf4d003c025a7aa458c049bc83629ef8f32d290b2864eba0a133ffa4d8bfb1",
+      "review": "Accepted: Actually viewed genuine source photo and generated portrait. Documented physical entrance arch, moon/bicycle mural and ET lettering preserved. Numeric operational wait panel and clock excluded from framing; no static invented live wait. Generated representative art, not a documentary photo or current operating claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/pt/br/files/Images/gds/uor-complete-guide-to-e-t-adventure-cf-b.jpg",
+          "alt": "Actual exterior entrance ET Adventure Orlando",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/et-adventure",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/et-adventure",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "studios-source-web-247.json",
+          "sourceEvidenceSHA256": "1728762b4ba5ee00e60830ba6c2efa081d27206ffcb9f8b599538d45fb25dbda",
+          "sha256": "0de9d11f4e91c9e4be336a23c4cfdf69c8081a1b0d201ea34d8c5b8dfb6f083a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own-page exterior photo and read exact operator caption naming Orlando ET Adventure entrance. Physical facade is a turquoise angular arch/building with actual raised ET lettering, painted dark forest/night mural and a circular moon with bicycle silhouette, real white beam/columns, queue rails and pavement/foliage. Compose the UPPER documented arch/mural/building only, keeping the source numeric wait display, clock, other small operational signs and lower pavement outside the frame so static generated art cannot be mistaken for a live wait/status reading. Preserve real physical panel/trim geometry and realistic dusk; the bicycle is a flat sign silhouette, not a flying person. No invented ride interior or new text. Exact capture date/current paint or operating state are not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "65-5990-thumbnail.jpg",
+      "thumbnailSHA256": "780e908003544fd3fca9b91d85250d5422e1f57343f1c9fecf614e78f2f2ef7b",
+      "thumbnailBytes": 23433,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "65-5990-detail.jpg",
+      "detailSHA256": "563fbeda0a8dae35c521ec04d5d4533a3c5987426446499f04f1566629188257",
+      "detailBytes": 163289,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "65-5990",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict E.T. Adventure™ at Universal Studios Florida, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed own-page exterior photo and read exact operator caption naming Orlando ET Adventure entrance. Physical facade is a turquoise angular arch/building with actual raised ET lettering, painted dark forest/night mural and a circular moon with bicycle silhouette, real white beam/columns, queue rails and pavement/foliage. Compose the UPPER documented arch/mural/building only, keeping the source numeric wait display, clock, other small operational signs and lower pavement outside the frame so static generated art cannot be mistaken for a live wait/status reading. Preserve real physical panel/trim geometry and realistic dusk; the bicycle is a flat sign silhouette, not a flying person. No invented ride interior or new text. Exact capture date/current paint or operating state are not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "c21063934833c874a92b695c89cac7f75d6547b822d79f14d33387e3ab3d8fd8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 65,
+      "rideId": 6000,
+      "rideName": "Revenge of the Mummy™",
+      "alt": "Illustrated Revenge of the Mummy™ at Universal Studios Florida",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:09:42.688871+00:00",
+      "originalSHA256": "34e09e7897e261d87add2053fbabf03b2b3b421d241ad2435e7319fbb92c6d1d",
+      "review": "Accepted: Actually viewed genuine source photo and generated portrait. Documented physical Anubis statue, timber rails, ordinary source guests and practical golden stone wall preserved with realistic materials and restrained cool fill. Generated representative art, not a documentary photo or current operating claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/usf-revenge-of-the-mummy-ride-anubis-b.jpg",
+          "alt": "Physical Anubis queue statue in Orlando Mummy ride",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/revenge-of-the-mummy",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/revenge-of-the-mummy",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "studios-source-web-247.json",
+          "sourceEvidenceSHA256": "1728762b4ba5ee00e60830ba6c2efa081d27206ffcb9f8b599538d45fb25dbda",
+          "sha256": "263e2e499b0826215c4dce760f641bd4f2159c4476589bbf87ea192d47943cc5",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed genuine operator photo and read caption identifying the physical Anubis statue in the Orlando Mummy queue. Source large dark jackal-headed sculpted prop sits at right foreground, ordinary clothed source guests stand behind real timber plank rail/posts at left, with actual golden painted stone/hieroglyph scenic walls and visible practical ropes/wooden floor. Compose this documented statue/queue section with realistic painted resin, wood and stone texture, restrained cool blue-purple ambient fill plus existing warm practical light. Keep the statue a manufactured prop and guests ordinary source-scale visitors; no live monster, invented fire, film action or unseen coaster. Exact capture date/current paint or operating state are not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "65-6000-thumbnail.jpg",
+      "thumbnailSHA256": "2f0a0d040430e148bbea974bade941eb531ac028a6627cfa2ef820c8f67c2c09",
+      "thumbnailBytes": 22131,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "65-6000-detail.jpg",
+      "detailSHA256": "517e5bd507240b16197e3c075dfe8790542326d189b9ac2c363b6db09d397aa7",
+      "detailBytes": 161045,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "65-6000",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Revenge of the Mummy™ at Universal Studios Florida, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed genuine operator photo and read caption identifying the physical Anubis statue in the Orlando Mummy queue. Source large dark jackal-headed sculpted prop sits at right foreground, ordinary clothed source guests stand behind real timber plank rail/posts at left, with actual golden painted stone/hieroglyph scenic walls and visible practical ropes/wooden floor. Compose this documented statue/queue section with realistic painted resin, wood and stone texture, restrained cool blue-purple ambient fill plus existing warm practical light. Keep the statue a manufactured prop and guests ordinary source-scale visitors; no live monster, invented fire, film action or unseen coaster. Exact capture date/current paint or operating state are not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "c87a916680360de4d7c47b4f7ab89ede45363a883586011570df981d3cca3b9e",
+      "generationSteps": []
+    },
+    {
+      "parkId": 65,
+      "rideId": 6006,
+      "rideName": "TRANSFORMERS™ The Ride-3D",
+      "alt": "Illustrated TRANSFORMERS™ The Ride-3D at Universal Studios Florida",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:14:19.544693+00:00",
+      "originalSHA256": "809917baff93b11523b732d192aa523a717a90024aaff09749a24382e514c7ac",
+      "review": "Accepted: Actually viewed genuine reference and full generated portrait. Actual practical illuminated display column, queue rails, concrete panels/doors and acoustic ceiling remain source-specific; no invented living robot. Generated representative art, not a documentary photo or current operating claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/pt/br/files/Images/gds/usf-transformers-3d-ride-allspark-b.jpg",
+          "alt": "Actual AllSpark cube display prop inside Transformers queue in Orlando",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/transformers-ride-3d",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/transformers-ride-3d",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "studios-final-source-web-250.json",
+          "sourceEvidenceSHA256": "2bbaad91f5ef510ead1272d6ffd24a2ab72c7a4520db8fd2fa1a52f80124b831",
+          "sha256": "c0b11de671afb09ae657d1f68615d8f327f9b9e62e87a7f527e64d483c1685b6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own-page gallery photograph and read exact caption identifying physical AllSpark display in Orlando Transformers queue; explicitly CGI character images elsewhere were excluded. Source real circular queue room has central tall silver/clear illuminated containment column with small physical display object inside, round metal guard rails, dark acoustic-pyramid ceiling, actual blue strip lights, concrete wall panels, utility doors, vents and source NORTH E13/DANGER signs. Compose only this documented practical room with realistic metal, glass, floor reflections and restrained cool blue-purple practical light. Preserve actual ceiling/column/rail attachments. No live robot, invented battle, hidden vehicle or new warning wording. Exact capture date/current paint or operating state are not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "65-6006-thumbnail.jpg",
+      "thumbnailSHA256": "591cc7e3d9bd4d8b2b73b0e20344437a0d1ce8fc554048f2d8f1377e6d4a2bd7",
+      "thumbnailBytes": 27555,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "65-6006-detail.jpg",
+      "detailSHA256": "2782f4f76c66d41ff0c0d2e970c77c61f100d8218f331fb8db022a17d43065d4",
+      "detailBytes": 196092,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "65-6006",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict TRANSFORMERS™ The Ride-3D at Universal Studios Florida, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed own-page gallery photograph and read exact caption identifying physical AllSpark display in Orlando Transformers queue; explicitly CGI character images elsewhere were excluded. Source real circular queue room has central tall silver/clear illuminated containment column with small physical display object inside, round metal guard rails, dark acoustic-pyramid ceiling, actual blue strip lights, concrete wall panels, utility doors, vents and source NORTH E13/DANGER signs. Compose only this documented practical room with realistic metal, glass, floor reflections and restrained cool blue-purple practical light. Preserve actual ceiling/column/rail attachments. No live robot, invented battle, hidden vehicle or new warning wording. Exact capture date/current paint or operating state are not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "365d18b574457a5f70a1c5e85f24d1b7144f659c9c04271c721ba55c729da847",
+      "generationSteps": []
+    },
+    {
+      "parkId": 65,
+      "rideId": 6014,
+      "rideName": "Harry Potter and the Escape from Gringotts™",
+      "alt": "Illustrated Harry Potter and the Escape from Gringotts™ at Universal Studios Florida",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:15:25.406297+00:00",
+      "originalSHA256": "01ad159ccf23b63712aefc33dc2e76d3ed740147cf3b5ae0e4a97c00bd568829",
+      "review": "Accepted: Actually viewed genuine reference and full generated portrait. Actual Gringotts lobby/chandeliers, columns, tiled floor/stanchions and source small installed teller figures preserve architectural alignment. Generated representative art, not a documentary photo or current operating claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/pt/br/files/Images/gds/usf-escape-from-gringotts-ride-chandalier-b.jpg",
+          "alt": "Actual Gringotts entrance lobby and chandelier in Orlando",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/harry-potter-and-the-escape-from-gringotts",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/harry-potter-and-the-escape-from-gringotts",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "studios-final-source-web-250.json",
+          "sourceEvidenceSHA256": "2bbaad91f5ef510ead1272d6ffd24a2ab72c7a4520db8fd2fa1a52f80124b831",
+          "sha256": "4a77e91a795ab6d44f1dafd14318ab0a10ccdee1a0fbb678e4d478e697223b4b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed genuine operator gallery photo and read caption identifying Gringotts grand lobby/chandelier in Orlando. Real queue hall has large cascading crystal chandelier, smaller aligned chandelier behind, dark marble-look columns with gold bases/capitals, cream vaulted ceiling/skylight windows, actual ornate tiled floor, black queue stanchions and small physical teller figures behind dark wood counters. Compose only this documented practical hall interior with real stone/wood/glass details, actual column spacing and lighting connections, restrained cool blue-purple fill and existing warm chandelier lights. Figures remain small installed props. No giant dragon, actor, magical flying person or invented underground ride scene. Exact capture date/current paint or operating state are not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "65-6014-thumbnail.jpg",
+      "thumbnailSHA256": "1848bbdc877eb2341da185f94e5ce2ff6dc1306e8f60e46d7a850b6d3426b9b7",
+      "thumbnailBytes": 25327,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "65-6014-detail.jpg",
+      "detailSHA256": "4a0264c4987ebdd35e3ef78312704355da9724614f79ebaf9ac567bedbee22c1",
+      "detailBytes": 194433,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "65-6014",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Harry Potter and the Escape from Gringotts™ at Universal Studios Florida, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed genuine operator gallery photo and read caption identifying Gringotts grand lobby/chandelier in Orlando. Real queue hall has large cascading crystal chandelier, smaller aligned chandelier behind, dark marble-look columns with gold bases/capitals, cream vaulted ceiling/skylight windows, actual ornate tiled floor, black queue stanchions and small physical teller figures behind dark wood counters. Compose only this documented practical hall interior with real stone/wood/glass details, actual column spacing and lighting connections, restrained cool blue-purple fill and existing warm chandelier lights. Figures remain small installed props. No giant dragon, actor, magical flying person or invented underground ride scene. Exact capture date/current paint or operating state are not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "11b4c0b0dd990f9362564419d408e72114f1d7fbcdb5936447be41a8553db55b",
+      "generationSteps": []
+    },
+    {
+      "parkId": 65,
+      "rideId": 6018,
+      "rideName": "Race Through New York Starring Jimmy Fallon™",
+      "alt": "Illustrated Race Through New York Starring Jimmy Fallon™ at Universal Studios Florida",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:16:29.539398+00:00",
+      "originalSHA256": "1f5ce5cd269d2e8f17c82c01792314e087829526af40adb5bb5c1ed260bb64e0",
+      "review": "Accepted: Actually viewed genuine reference and full generated portrait. Real physical cream/blue NBC park facade, mounted round sign, fixed photographic cutout and canopy letters preserved; no claim of a live celebrity appearance. Generated representative art, not a documentary photo or current operating claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/usf-race-through-new-york-starring-jimmy-fallon-building-cf-b.jpg",
+          "alt": "Actual Fallon ride building exterior",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/race-through-ny-starring-jimmy-fallon",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/race-through-ny-starring-jimmy-fallon",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "studios-final-source-web-250.json",
+          "sourceEvidenceSHA256": "2bbaad91f5ef510ead1272d6ffd24a2ab72c7a4520db8fd2fa1a52f80124b831",
+          "sha256": "fe5e9aa96526d0b5ff7f38438c970e0f171336e77e9d350f2f9e29999891f440",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed operator own-gallery photo and read exact caption identifying the Race Through New York building exterior in Universal Studios Florida. Source real cream stone NBC-styled facade has blue window panels, actual metallic rounded Tonight Show/NBC Studios canopy with red/white mounted letters, round blue attraction sign and a fixed photographic Jimmy Fallon cutout mounted above the canopy. Preserve this fabricated physical signage/cutout and source building materials at realistic blue-purple dusk; it is a sign on the park building, not the celebrity physically visiting or endorsing a product. No live presenter, staged new event, actual Manhattan streets, hidden simulator or new sign text. Exact capture date/current paint or operating state are not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "65-6018-thumbnail.jpg",
+      "thumbnailSHA256": "9c2e2ad1363db70ee3e13b454932fd1db1af9ca79b82c7c8a9d7598ec9069936",
+      "thumbnailBytes": 25152,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "65-6018-detail.jpg",
+      "detailSHA256": "75bab667379747a1d107c1169d55faec69518a99fdc58f8a6e1f488758468672",
+      "detailBytes": 160378,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "65-6018",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Race Through New York Starring Jimmy Fallon™ at Universal Studios Florida, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed operator own-gallery photo and read exact caption identifying the Race Through New York building exterior in Universal Studios Florida. Source real cream stone NBC-styled facade has blue window panels, actual metallic rounded Tonight Show/NBC Studios canopy with red/white mounted letters, round blue attraction sign and a fixed photographic Jimmy Fallon cutout mounted above the canopy. Preserve this fabricated physical signage/cutout and source building materials at realistic blue-purple dusk; it is a sign on the park building, not the celebrity physically visiting or endorsing a product. No live presenter, staged new event, actual Manhattan streets, hidden simulator or new sign text. Exact capture date/current paint or operating state are not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "7ea9fa245246b116a7b6b784838fb894f7fa9a1e1e0b82153096dfe321c4b466",
       "generationSteps": []
     },
     {
@@ -40369,6 +41536,104 @@
       "key": "65-12107",
       "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT, accurately based on real attraction photo image 1. Image 2 supplies only the UI's restrained blue-purple evening mood. Natural photographic materials, believable physical perspective and softly balanced practical lighting, slight cinematic realism rather than painted brushwork or excessive orange glow. Keep authentic identifying ride features clear and central at thumbnail size. No screenshot UI, frame, border, overlaid labels or watermark. Illumination's Villain-Con Minion Blast at Universal Studios Florida: exact cream/yellow stepped soundstage facade with tall colorful character banners and a central Vicious 6 poster, orange/black eye-pattern entrance canopy, and yellow Minion-crossing road sign in the foreground with simple one-eyed Minion silhouette. Preserve the actual photographed attraction exterior, realistic building and sign materials. Omit small lettering and close-up visitors; no invented roller coaster or unrelated Minion ride.",
       "promptSHA256": "909067956c492dc197ebe003ba7589e7fa8017c33ec500d4ebd359b37877ead2",
+      "generationSteps": []
+    },
+    {
+      "parkId": 65,
+      "rideId": 13605,
+      "rideName": "Trolls Trollercoaster",
+      "alt": "Illustrated Trolls Trollercoaster at Universal Studios Florida",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:17:16.384193+00:00",
+      "originalSHA256": "bea268d162632a53877456ab2cd94311d38dde2518d24fbdd702e69d60e87672",
+      "review": "Accepted: Actually viewed genuine reference and full generated portrait. Real lime/purple car, lapbars/seatbacks/protective mesh and ordinary clothed source riders match banked photo section. Generated representative art, not a documentary photo or current operating claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/pt/br/files/Images/gds/usf-trolls-trollercoaster-boy-and-dad-b.jpg",
+          "alt": "Own-attraction photo of boy and dad on Trolls Trollercoaster",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/trolls-trollercoaster",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/trolls-trollercoaster",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "studios-final-source-web-250.json",
+          "sourceEvidenceSHA256": "2bbaad91f5ef510ead1272d6ffd24a2ab72c7a4520db8fd2fa1a52f80124b831",
+          "sha256": "4fce509560bcf1ad0d4799745dfadb479476985fe1f419e62ccc74dcecbc4867",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed the own-attraction genuine photograph of clothed source father/son and other restrained riders on Trolls Trollercoaster in Orlando. Actual lime-green and purple connected coaster cars have black padded lapbars/seatbacks, real black protective mesh along the front, orange/green support/track section and real trees/sky behind. Compose this documented occupied car section with realistic metal/fiberglass/net detail at restrained blue-purple evening fill, preserve lapbar/seat connections, ordinary source clothing/people scale and banked vehicle angle. No cartoon film scene, invented troll passengers, unrestrained riders or unseen full course. Exact capture date/current paint or operating state are not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "65-13605-thumbnail.jpg",
+      "thumbnailSHA256": "e8c48ddcf04e8910d882b53c9108e56348080970b581fd8f0b4e88b05a269ce1",
+      "thumbnailBytes": 24992,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "65-13605-detail.jpg",
+      "detailSHA256": "12d69bc2caaaf43ac271730ad5eeaabaacc04a19b5f01064f544d50b549e3bb3",
+      "detailBytes": 189037,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "65-13605",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Trolls Trollercoaster at Universal Studios Florida, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed the own-attraction genuine photograph of clothed source father/son and other restrained riders on Trolls Trollercoaster in Orlando. Actual lime-green and purple connected coaster cars have black padded lapbars/seatbacks, real black protective mesh along the front, orange/green support/track section and real trees/sky behind. Compose this documented occupied car section with realistic metal/fiberglass/net detail at restrained blue-purple evening fill, preserve lapbar/seat connections, ordinary source clothing/people scale and banked vehicle angle. No cartoon film scene, invented troll passengers, unrestrained riders or unseen full course. Exact capture date/current paint or operating state are not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "62982b345f0d9e82b220dcf6165f7ec2f799d738b78c508a5277cb753de3c6b9",
+      "generationSteps": []
+    },
+    {
+      "parkId": 65,
+      "rideId": 37303123562965,
+      "rideName": "Hogwarts Express™ - King's Cross Station",
+      "alt": "Illustrated Hogwarts Express™ - King's Cross Station at Universal Studios Florida",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:17:46.428673+00:00",
+      "originalSHA256": "243620db3299498b53d63922c7227ad8f259dd8acc8e15d3bb520b1c02e85c2a",
+      "review": "Accepted: Actually viewed genuine reference and full generated portrait. Actual upper engine close-up, source lamps/rivets and brick station arch distinguish Kings Cross; promotional mask and unseen coupler excluded. Generated representative art, not a documentary photo or current operating claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/en/us/files/Images/gds/usf-kings-cross-station-universal-train-close-up-cf-b.jpg",
+          "alt": "Actual Kings Cross engine in station",
+          "sourceURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/hogwarts-express-kings-cross-station",
+          "credit": "Universal Orlando Resort own-attraction gallery",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/hogwarts-express-kings-cross-station",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "studios-final-source-web-250.json",
+          "sourceEvidenceSHA256": "2bbaad91f5ef510ead1272d6ffd24a2ab72c7a4520db8fd2fa1a52f80124b831",
+          "sha256": "29f7d5ed32f236733dc069a6b82ffe6b87e7da4e2a253a3827c889068bf5433a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed the own-page Kings Cross gallery photo and read exact train-in-station caption, plus operator Hogwarts Express guide distinguishing both stations. Source close-up black/red 5972 locomotive has real weathered metal boiler/rivets/rails, chimney practical vapor, actual lamps/nameplate and brown brick station arches/green structural beam behind. Compose only the documented UPPER engine close-up and brick hall. Keep the source white diagonal graphic mask/footer out of the frame without inventing unseen buffers/coupler or a full platform. This is the actual Kings Cross brick station view; do not copy the HOGSMEADE stone wall/sign. Realistic restrained cool practical light with source lamps, no new route or lettering. Exact capture date/current paint or operating state are not independently established."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "65-37303123562965-thumbnail.jpg",
+      "thumbnailSHA256": "f40358e37ce9cd69ceabc01c5ec28a901cf5646968b6a08e385f583deab52463",
+      "thumbnailBytes": 19539,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "65-37303123562965-detail.jpg",
+      "detailSHA256": "00fd136426d6f2c1b956e649c17860caa46cf661454216952d1342a827e8e90d",
+      "detailBytes": 130970,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "65-37303123562965",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Hogwarts Express™ - King's Cross Station at Universal Studios Florida, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed the own-page Kings Cross gallery photo and read exact train-in-station caption, plus operator Hogwarts Express guide distinguishing both stations. Source close-up black/red 5972 locomotive has real weathered metal boiler/rivets/rails, chimney practical vapor, actual lamps/nameplate and brown brick station arches/green structural beam behind. Compose only the documented UPPER engine close-up and brick hall. Keep the source white diagonal graphic mask/footer out of the frame without inventing unseen buffers/coupler or a full platform. This is the actual Kings Cross brick station view; do not copy the HOGSMEADE stone wall/sign. Realistic restrained cool practical light with source lamps, no new route or lettering. Exact capture date/current paint or operating state are not independently established. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "63e4eae6ba74857a30c3a5f54d26644cd261fc845c5d518674320a14e6844ea7",
       "generationSteps": []
     },
     {
@@ -47692,6 +48957,127 @@
     },
     {
       "parkId": 334,
+      "rideId": 14686,
+      "rideName": "Mine-Cart Madness™",
+      "alt": "Illustrated Mine-Cart Madness™ at Epic Universe",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:23:44.585990+00:00",
+      "originalSHA256": "dc645692da653637efced4132203d0c8e1c867107094e1cd13bd49d47338e788",
+      "review": "Accepted: Actually viewed genuine operator photographic scene, first generated draft and corrected portrait. Corrected framing contains only documented upper cart, two lamp props, four clothed restrained source riders and actual scenic rails/timber; invented undercarriage/wheel-to-track detail is outside the frame. Realistic generated representative art, no current-operation claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/pt/br/files/Images/gds/ueu-super-nintendo-world-dkc-mine-cart-madness-logo-b.jpg",
+          "alt": "Own-attraction marketing hero; photo authenticity not yet inspected",
+          "sourceURL": "https://www.universalorlando.com/web/pt/br/things-to-do/rides-attractions/mine-cart-madness",
+          "credit": "Universal Orlando Resort own-attraction marketing",
+          "license": "Copyright Universal; reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/pt/br/things-to-do/rides-attractions/mine-cart-madness",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "trolley-and-epic-source-web-251.json",
+          "sourceEvidenceSHA256": "ec4c62d3d599828f07f7c6b2ae1050078cb30392a7277f4451d2cc42f9cdb13e",
+          "sha256": "cbfce02734d5e8771520b2b906435662ec85634d63d15273585fc4bef3a0af58",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed the real photographic upper portion of the official Epic own-attraction hero and read Portuguese body describing the actual Golden Temple/mine cart ride. Source shows one physical distressed yellow/gray four-seat mine-cart vehicle with two big front lamp props, actual dark padded lapbars/side grab rails, ordinary clothed source adults, decorative wheel shapes/bolts, real foreground mist and diagonal steel false mine rails on timber/cane scenic construction behind. Compose only this documented visible cart section with realistic painted fiberglass, metal, restraint connections and restrained blue-purple dusk. The ride illusion does not mean a vehicle can fly unsupported; do not invent unseen jump mechanism, track gap/full course or new train. Keep lower promotional logo/graphic band outside the portrait. This is operator-supplied Epic photographic hardware, not concept art or another park substitution; no current-operation claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "334-14686-thumbnail.jpg",
+      "thumbnailSHA256": "b11ba783ba45a5232e18493eea8a5043a274bf54d2544924639978478b8a887d",
+      "thumbnailBytes": 22280,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "334-14686-detail.jpg",
+      "detailSHA256": "be48cf51f2939b6104b2629125a00dcccb3d7f13c43dd352a83f6f0014dcd4a0",
+      "detailBytes": 135240,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "334-14686",
+      "prompt": "Edit image 1 using image 2 as the genuine photographed reference of Mine-Cart Madness at Universal Epic Universe. Preserve the actual distressed yellow/gray four-seat cart UPPER BODY, two large lamp props, black lapbars/side grab rails and four ordinary clothed adult source riders. Recompose as a portrait of that documented upper cart and riders, with the lower edge cropped just below the striped front bumper. Keep ALL underside, decorative wheels, bogies, road wheels, track-contact mechanisms and support machinery OUTSIDE the frame: the genuine photo does not reveal them, and image 1 invented ordinary wheel-to-track detail. Show only source-supported mist, timber/cane scenery and the diagonal scenic false rails behind, with realistic paint/metal and restrained blue-purple dusk. Do not invent a new mechanism, track jump or hidden course. No promotional logo band, UI, new lettering or extra riders.",
+      "promptSHA256": "118d0570bde17b72048cb65a06009a03167be6984ff22036ef65d0dbba859aa3",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Mine-Cart Madness™ at Universal Epic Universe, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed the real photographic upper portion of the official Epic own-attraction hero and read Portuguese body describing the actual Golden Temple/mine cart ride. Source shows one physical distressed yellow/gray four-seat mine-cart vehicle with two big front lamp props, actual dark padded lapbars/side grab rails, ordinary clothed source adults, decorative wheel shapes/bolts, real foreground mist and diagonal steel false mine rails on timber/cane scenic construction behind. Compose only this documented visible cart section with realistic painted fiberglass, metal, restraint connections and restrained blue-purple dusk. The ride illusion does not mean a vehicle can fly unsupported; do not invent unseen jump mechanism, track gap/full course or new train. Keep lower promotional logo/graphic band outside the portrait. This is operator-supplied Epic photographic hardware, not concept art or another park substitution; no current-operation claim. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+          "promptSHA256": "61cb0decadac9147fa2c0ee1314420973dedcb6d6da838e63a9276c419553609",
+          "outputSHA256": "96ed810112c6a53164e7ecad9e9d6347eee4a359906e495a2d22928dc459ac11",
+          "outputFile": "exec-e9a440c7-0ca9-445d-8904-9bb1f1bdbce7.png",
+          "generationReferences": [
+            "/workspace/pivot-ride-artwork/references/epic-minecart-hero-254.jpg",
+            "/workspace/pivot-design-reference/reference.jpeg"
+          ],
+          "review": "Rejected: unsupported undercarriage and ordinary wheel-to-track detail not visible in reference."
+        },
+        {
+          "prompt": "Edit image 1 using image 2 as the genuine photographed reference of Mine-Cart Madness at Universal Epic Universe. Preserve the actual distressed yellow/gray four-seat cart UPPER BODY, two large lamp props, black lapbars/side grab rails and four ordinary clothed adult source riders. Recompose as a portrait of that documented upper cart and riders, with the lower edge cropped just below the striped front bumper. Keep ALL underside, decorative wheels, bogies, road wheels, track-contact mechanisms and support machinery OUTSIDE the frame: the genuine photo does not reveal them, and image 1 invented ordinary wheel-to-track detail. Show only source-supported mist, timber/cane scenery and the diagonal scenic false rails behind, with realistic paint/metal and restrained blue-purple dusk. Do not invent a new mechanism, track jump or hidden course. No promotional logo band, UI, new lettering or extra riders.",
+          "promptSHA256": "118d0570bde17b72048cb65a06009a03167be6984ff22036ef65d0dbba859aa3",
+          "outputSHA256": "dc645692da653637efced4132203d0c8e1c867107094e1cd13bd49d47338e788",
+          "outputFile": "exec-ac6bccd2-6215-4d2e-bd7e-602c5372f3e6.png",
+          "generationReferences": [
+            "/workspace/generated_images/exec-e9a440c7-0ca9-445d-8904-9bb1f1bdbce7.png",
+            "/workspace/pivot-ride-artwork/references/epic-minecart-hero-254.jpg"
+          ],
+          "review": "Accepted: Actually viewed genuine operator photographic scene, first generated draft and corrected portrait. Corrected framing contains only documented upper cart, two lamp props, four clothed restrained source riders and actual scenic rails/timber; invented undercarriage/wheel-to-track detail is outside the frame. Realistic generated representative art, no current-operation claim."
+        }
+      ]
+    },
+    {
+      "parkId": 334,
+      "rideId": 14687,
+      "rideName": "Harry Potter and the Battle at the Ministry™",
+      "alt": "Illustrated Harry Potter and the Battle at the Ministry™ at Epic Universe",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:20:45.831412+00:00",
+      "originalSHA256": "6f02b077f2ca5b4fc07485de1766649e7be58d0028bfcf289e70826119afa38c",
+      "review": "Accepted: Actually viewed genuine reference and full generated portrait. Actual tiled atrium, gold globe lamps, green practical openings and ordinary source queue guests preserved; no invented ride scene. Realistic generated representative imagery without a current-operation claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/pt/br/files/Images/gds/ueu-wwohp-hpbatm-atrium-floo-network-b.jpg",
+          "alt": "Actual guests entering the Battle at Ministry atrium in Epic Universe",
+          "sourceURL": "https://www.universalorlando.com/web/pt/br/things-to-do/rides-attractions/harry-potter-and-the-battle-at-the-ministry",
+          "credit": "Universal Orlando Resort own-attraction photography",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/pt/br/things-to-do/rides-attractions/harry-potter-and-the-battle-at-the-ministry",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "trolley-and-epic-source-web-251.json",
+          "sourceEvidenceSHA256": "ec4c62d3d599828f07f7c6b2ae1050078cb30392a7277f4451d2cc42f9cdb13e",
+          "sha256": "05ddd4340e9733c7531c19ef17b9bc3e2dafaf94d08e02c2bee633f4656fa267",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed genuine own-gallery photograph and read exact operator caption naming visitors in the Orlando Battle at the Ministry queue. Actual source is a dark green tiled atrium corridor with arched tiled bays, tall physical gold lighting fixtures with white globe lamps, glowing green practical Floo fireplace openings, dark queue chains/posts and ordinary clothed source guests looking up. Compose only this documented practical corridor section, retaining tile grid/arch curvature/lamp/chain connections and source guest scale. Real materials with restrained cool blue-purple fill and source green practical light, not excessive magical effects. No real fire attack, actor character, invented underground elevator or unseen full atrium; physical scenery remains practical park construction."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "334-14687-thumbnail.jpg",
+      "thumbnailSHA256": "0283004642ab7d2fb6c3d0bdcc2f4b14bd748b66f4eb6de2c9ccec340cea63a6",
+      "thumbnailBytes": 27598,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "334-14687-detail.jpg",
+      "detailSHA256": "94871d946aa2ff8928268c8b8a2a1bdabe70c3b98312be2cdc6cecbfb76f0970",
+      "detailBytes": 157955,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "334-14687",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Harry Potter and the Battle at the Ministry™ at Universal Epic Universe, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed genuine own-gallery photograph and read exact operator caption naming visitors in the Orlando Battle at the Ministry queue. Actual source is a dark green tiled atrium corridor with arched tiled bays, tall physical gold lighting fixtures with white globe lamps, glowing green practical Floo fireplace openings, dark queue chains/posts and ordinary clothed source guests looking up. Compose only this documented practical corridor section, retaining tile grid/arch curvature/lamp/chain connections and source guest scale. Real materials with restrained cool blue-purple fill and source green practical light, not excessive magical effects. No real fire attack, actor character, invented underground elevator or unseen full atrium; physical scenery remains practical park construction. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "0acaf1a1a8b691689e1b428fa7c222c87036a2a5205bc939b12b2994cae5cf11",
+      "generationSteps": []
+    },
+    {
+      "parkId": 334,
       "rideId": 14688,
       "rideName": "Constellation Carousel",
       "alt": "Illustrated Constellation Carousel at Epic Universe",
@@ -47872,6 +49258,55 @@
       "key": "334-14692",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Use image 1 as the authentic ride photograph and preserve visible identifying hardware, materials, colors and physical connections. Image 2 supplies only subtle blue-purple dusk treatment; ignore all UI, lettering and logo. Photographic natural textures, believable perspective, softly balanced practical lighting; slightly cinematic rather than painted. Keep the attraction readable at thumbnail size. No interface, border, watermark or overlaid lettering. Curse of the Werewolf at Universal Epic Universe: faithfully use the real onboard/near-train perspective of rotating coaster cars with BLACK high-backed seats, black/silver lap restraints and weathered BRONZE outer seat trim; preserve the gray steel track curling behind and tall dark safety-net fence visible against sky. Natural incidental generic riders are secondary to the distinctive seat hardware. Retain the close crop and actual visible rail, do not invent unseen carriage bodywork, a wolf character, a haunted mansion or unrelated track layout.",
       "promptSHA256": "eecbb92fd4e1c5deb49b81db3975e44e3ea26febd1a564bdf8079607b739a435",
+      "generationSteps": []
+    },
+    {
+      "parkId": 334,
+      "rideId": 14693,
+      "rideName": "Dragon Racer's Rally",
+      "alt": "Illustrated Dragon Racer's Rally at Epic Universe",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T14:20:04.646798+00:00",
+      "originalSHA256": "aa04a961b6d1906aff4dcce6e91fabf8d7b31153b3cc8f1675abfbd706c502b9",
+      "review": "Accepted: Actually viewed genuine reference and full generated portrait. Actual tilted Sky Fly arm, mounted dragon-shaped physical seats, support and documented timber/rope entrance preserved. Small operational wait board excluded. Realistic generated representative imagery without a current-operation claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.universalorlando.com/contentdata/uor/pt/br/files/Images/gds/ueu-httyd-isle-of-berk-dragon-racers-rally-scope-b.jpg",
+          "alt": "Actual Dragon Racers Rally entrance and ride at Epic Universe",
+          "sourceURL": "https://www.universalorlando.com/web/pt/br/things-to-do/rides-attractions/dragon-racers-rally",
+          "credit": "Universal Orlando Resort own-attraction photography",
+          "license": "Copyright Universal; photographic reference only, rights retained",
+          "licenseURL": "https://www.universalorlando.com/web/pt/br/things-to-do/rides-attractions/dragon-racers-rally",
+          "sourcePageEvidenceKind": "Normalized public-web response windows; not raw HTTP HTML",
+          "sourceEvidenceFile": "trolley-and-epic-source-web-251.json",
+          "sourceEvidenceSHA256": "ec4c62d3d599828f07f7c6b2ae1050078cb30392a7277f4451d2cc42f9cdb13e",
+          "sha256": "e2efa9bcf55579e0c20847033a5d2792ee5f80734c81a84137734c146ea8d6cd",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own-attraction genuine scope photograph and read exact entrance caption plus Portuguese ride body. Source Dragon Racers Rally has a real tilted rotating Sky Fly arm/round gondola with multiple dragon-shaped physical winged seats fixed to the rim, actual central support/counterweight, source-scale distant riders, timber/rope/painted entrance rails, colorful fabricated bow/catapult-like prop at right, small entrance signs and yellow/blue neighboring coaster track behind. Compose only this documented machine/entrance section with realistic painted metal and connected rotating arm/seat geometry at restrained dusk. Dragon shapes are fabricated seats, not live animals. Keep source actual ride paint and source-scale guests; frame out small numeric wait panel/operational boards to avoid a false live reading. No extra arms, unsupported flying seats or hidden route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "334-14693-thumbnail.jpg",
+      "thumbnailSHA256": "3218b7dfad2df5224480b3b4ff023bd8a70e0c280e4810a14f4c9b07bf5a5c67",
+      "thumbnailBytes": 25054,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "334-14693-detail.jpg",
+      "detailSHA256": "d9ba74b21df2693b6b1d0b6c00245d77943463ba4e9430f5f6014d8765dfa15e",
+      "detailBytes": 188720,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "334-14693",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Dragon Racer's Rally at Universal Epic Universe, Orlando. Source- and pixel-reviewed facts and limits: Actually viewed own-attraction genuine scope photograph and read exact entrance caption plus Portuguese ride body. Source Dragon Racers Rally has a real tilted rotating Sky Fly arm/round gondola with multiple dragon-shaped physical winged seats fixed to the rim, actual central support/counterweight, source-scale distant riders, timber/rope/painted entrance rails, colorful fabricated bow/catapult-like prop at right, small entrance signs and yellow/blue neighboring coaster track behind. Compose only this documented machine/entrance section with realistic painted metal and connected rotating arm/seat geometry at restrained dusk. Dragon shapes are fabricated seats, not live animals. Keep source actual ride paint and source-scale guests; frame out small numeric wait panel/operational boards to avoid a false live reading. No extra arms, unsupported flying seats or hidden route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "da3ef7bee38d235200c5f229b204b42aad2680c6134a1512e38c7ff536c163f7",
       "generationSteps": []
     },
     {

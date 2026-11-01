@@ -10,7 +10,7 @@
     "Continue labeling images as AI-generated, never as real photographs."
   ],
   "existingAssetStatus": "Bundled records with styleRevision 2 have been reviewed for the requested direction. Earlier records require review/revision; a missing styleRevision means original style 1.",
-  "acceptedForRequestedStyle": 1047,
+  "acceptedForRequestedStyle": 1076,
   "continuationModel": "GPT-6.1 Sol",
   "continuationReasoning": "max",
   "publicationAuthorized": false
