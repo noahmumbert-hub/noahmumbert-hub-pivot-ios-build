@@ -11082,6 +11082,49 @@
     },
     {
       "parkId": 39,
+      "rideId": 1502550413799,
+      "rideName": "JOKER™: Carnival of Chaos",
+      "alt": "Illustrated JOKER™: Carnival of Chaos at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:40:54.560585+00:00",
+      "originalSHA256": "e8183dc060d5ec6b65c1c559b3c3a9f1d15295654cd6eadf72629a0dbd782e52",
+      "review": "Accepted: actual source loading pose retained with the green disc, purple seats and hub, two-tone green/purple support frame, raised black restraints with silver handles, and diamond-plate platform. Realistic photographic paint and restrained dusk; generated artwork, not a ride photograph.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F3d196807c204aa3780226d7a0207310ffdb10636-1500x1001.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders seated and ready for the JOKER™ Carnival of Chaos ride at Six Flags Fiesta Texas.",
+          "sourceURL": "https://www.sixflags.com/fiestatexas/attractions/the-joker-carnival-of-chaos",
+          "credit": "Six Flags / Fiesta Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a5025c011938caa56a169bd3b207580c68c8f0de9498ff92c1adc0525ed9600d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page, real entrance hero, airborne close gallery and actual full loading-disc gallery inspected; choose the loading photograph. Fiesta Texas Joker has a circular GREEN passenger-disc shell with PURPLE seat buckets and purple central cylindrical hub/pendulum beam. The real beam and A-frame legs have PURPLE lower/GREEN upper sections and visible white light strips/bolted joints. Source passengers sit at loading level with BLACK over-shoulder restraint frames raised/open and silver handles/hinges; preserve this actual stopped loading pose, not an operating ride with unlocked restraints. The gray diamond-plate deck, local black fence and source station glazing are genuine. Compose the documented near passenger arc, hub/beam and source support portions; the upper pivot is not visible, so keep it out of frame. No living villain, blue/yellow Wonder Woman or Sky Striker substitution, complete hidden support network or airborne invented mechanism. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-1502550413799-thumbnail.jpg",
+      "thumbnailSHA256": "cf322e019f0dce39a6d90514a385fbbb0b3a4b86aff9adecee50e4fab64b6183",
+      "thumbnailBytes": 25002,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-1502550413799-detail.jpg",
+      "detailSHA256": "88798fe6d33758f1233009d000df949d45034d080f9e195856b4c88186b38390",
+      "detailBytes": 198971,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
       "rideId": 3962859292030,
       "rideName": "Grand Carousel",
       "alt": "Illustrated Grand Carousel at Six Flags Fiesta Texas",
@@ -11117,6 +11160,816 @@
       "detailFile": "39-3962859292030-detail.jpg",
       "detailSHA256": "145abc606a5fcab98b3e107a22b2e61a00e90c6e8761eba68ac50f71b6f1c4f3",
       "detailBytes": 215440,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 11499764302332,
+      "rideName": "Cowabunga",
+      "alt": "Illustrated Cowabunga at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:42:05.409529+00:00",
+      "originalSHA256": "a8ecb5a4b7619f67ac79559a1e0bd654dc9f7c4257da86eb9c3a4235c140048e",
+      "review": "Accepted: empty lime two-lane child slide, continuous fiberglass divider and sides, gray retaining wall, wood-post mesh barrier and shallow blue landing pool match the reviewed original photo. Realistic materials and dusk treatment; generated artwork.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "http://static1.squarespace.com/static/635339166c326c0332e0b15a/t/684ef5a71ef4b52dec09af3f/1750005159114/DSC04502.jpg?format=1500w",
+          "sourceURL": "https://www.sfftsource.com/rides/cowabunga",
+          "credit": "SFFT Source / Amusement Source Media (original photographic reference)",
+          "license": "Copyright SFFT Source; all rights reserved",
+          "licenseURL": "https://www.sfftsource.com/rides/cowabunga",
+          "copyrightYearVisible": 2025,
+          "sha256": "667611a6476c60aed96dde3ec1d21e70a82f5a31c70cc0405332e2f053abaccb",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual SFFT Source photographer page and local water-slide photograph inspected. Cowabunga is the small LIME/GREEN two-lane molded body-slide with a tall raised center divider, matching tall side lips and a short double descent into the real shallow turquoise pool. Preserve source fiberglass seam, attached gray concrete retaining wall, wood posts/black mesh safety fence at the start and black pool-edge tiles; a separate yellow/red tube at far left and orange slide at far right remain peripheral. Source lanes are empty; compose the actual documented slide and existing pool outlet without adding riders, new elevated stairs, huge adult-racer scale or unseen route. The actual source copyright mark reads2025; this is a copyright-year clue, not a verified capture date. Original watermarked reference remains unchanged and private; generated scene is not a real photo."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-11499764302332-thumbnail.jpg",
+      "thumbnailSHA256": "0f85da3ae8d06571d41015c66b7308759fbd2813af6b1e3e3294a0895e79227c",
+      "thumbnailBytes": 23442,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-11499764302332-detail.jpg",
+      "detailSHA256": "9f3a626fa30b19305f0bb0befea32a5b58e646a495777c31901bd8b050b4e9d1",
+      "detailBytes": 177593,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 20695112586711,
+      "rideName": "Paradise Cove",
+      "alt": "Illustrated Paradise Cove at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:41:47.397285+00:00",
+      "originalSHA256": "9d903de3c5bdbb932b4e6a4fe23b50cba6f9d6d7527b89a0461b8dae49b6cf89",
+      "review": "Accepted: actual aqua bucket stand with orange, green, blue and yellow buckets remains the subject above the shallow pool, with family-scale background bathers, wood fence and chairs. Source-supported water feature and realistic dusk treatment; not claimed as an observed operating scene or real photograph.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/635339166c326c0332e0b15a/a17da56d-ff50-4c6c-8266-7a8cfec7dcc0/IMG_4330.jpg",
+          "sourceURL": "https://www.sfftsource.com/rides/paradise-cove",
+          "credit": "SFFT Source / Amusement Source Media (original photographic reference)",
+          "license": "Copyright SFFT Source; all rights reserved",
+          "licenseURL": "https://www.sfftsource.com/rides/paradise-cove",
+          "copyrightYearVisible": 2017,
+          "sha256": "efe0996f5fe81fb6ebf333f6d76ee192270a582f313f5536f7f05b39f8e28989",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and its generic close people/pool hero inspected, then genuine locally identified SFFT Source pool gallery/photographer page inspected; choose the actual local facility view. Paradise Cove has a shallow pale-TURQUOISE pool, pale blue pool-edge tiles and a light AQUA vertical post/crossbeam with curved feed pipes supporting tipping ORANGE, GREEN, BLUE and YELLOW buckets. Actual spray/foam, silver entry handrail, white Adirondack/lounge chairs, wood/mesh perimeter fence and real trees frame the source equipment. Compose this photographed bucket feature and pool section with source bathers small/secondary, preserving actual hardware connections and pool-edge geometry. No invented waterslide, unseen full pool plan, generic resort infinity pool or new people doing unsafe actions. The reference watermark reads2017; exact capture date/current configuration are not established. Preserve original watermarked file privately and accurate photographer credit."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-20695112586711-thumbnail.jpg",
+      "thumbnailSHA256": "a38e8c0b6fd60e1937e417b0bcbde55de49db0b9cac1055c7e105984334aa0ca",
+      "thumbnailBytes": 27529,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-20695112586711-detail.jpg",
+      "detailSHA256": "cf89d8fbed15f7d41519c14488daed7b71f62c6add5c1f6ab972c0b108902d83",
+      "detailBytes": 210334,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 37343989476297,
+      "rideName": "Chupacabra",
+      "alt": "Illustrated Chupacabra at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:42:29.461845+00:00",
+      "originalSHA256": "81b960e5225b5c219379c967230667ab73378a9b2372d4d5df2e5581447c931b",
+      "review": "Accepted: maroon/red inverted track, yellow steel support joints and source orange/blue seat backs remain attached in the documented overhead train pose. No monster or historical blue-paint substitution. Realistic photographic surfaces and dusk treatment; generated artwork.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fd7c73798bee0d8a25f727b7ab5326071ca3c4a2c-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Chupacabra roller coaster view from below looking up and guests",
+          "sourceURL": "https://www.sixflags.com/fiestatexas/attractions/chupacabra",
+          "credit": "Six Flags / Fiesta Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "99ee34df7c07c2ec9b45a4456b4e377472afc8b191c43bd4cd0e30c7504a39e8",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Operator page and actual current-hero ride photograph inspected. Chupacabras track is dark RED/maroon with twin tubular running rails and rectangular spine, supported by bright YELLOW/gold cylindrical columns with bolted flange rings; the source low upward view shows a real inversion/curved crest above. Its single inverted train hangs from attached gray bogies with red/dark carrier frames, orange/blue rounded seat-back shells and tiny source passengers in actual shoulder restraints. Compose that documented overhead curve/train and yellow support junctions at source small-rider scale, preserving occlusions and separate background track segments. Operator gallery alt text still uses the former Goliath name/older blue paint, but this chosen hero directly shows current red/yellow hardware; do not mix those historical colors, add a living monster or construct the complete hidden route. Source capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-37343989476297-thumbnail.jpg",
+      "thumbnailSHA256": "5f556d5c0f206d20fa06f443ab60096fedaba2a04fe5a3fcedffff3480f97287",
+      "thumbnailBytes": 19372,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-37343989476297-detail.jpg",
+      "detailSHA256": "62fd4d9375bb4e8aa47ba4d24b042da06457e23b4c1d49c4ad84830a52d54e25",
+      "detailBytes": 114842,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 42129799781694,
+      "rideName": "Kinderstein",
+      "alt": "Illustrated Kinderstein at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:46:49.601378+00:00",
+      "originalSHA256": "2065a177c8f3207c9dee9e196aee44c3c0739ae3f07e57e6f6dca231538632f4",
+      "review": "Accepted: source yellow/gold cup and saucer, blue/gold stein center, pale-green neighboring cup and navy round platform remain connected and recognizable. Realistic materials and dusk; generated artwork.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F396d2c951593ea1a0e85d3a43151470219632d0c-1200x800.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A father and son enjoying the Kinderstein teacup ride at Six Flags Fiesta Texas.",
+          "sourceURL": "https://www.sixflags.com/fiestatexas/attractions/kinderstein",
+          "credit": "Six Flags / Fiesta Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "58dfb15bf7a02496a5af60b335fe5b8b45ac6d31e7c83828b0adb94c2c984aa3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photo: near yellow cup with broad gold rim stripe, gold scroll handle and matching round saucer; father in green tee/black cap and boy in dark tee sit behind the small silver center disc. Behind is the tall blue cylindrical beer-stein center with gold lid/handle and white-gold shield, blue/gold hub skirt, pale-green and blue cups, dark navy grooved round turntable, actual seams and red edge hinge links. Keep these attached cup/saucer/turntable connections and source wood fence/trees; no monster or beverage fantasy. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-42129799781694-thumbnail.jpg",
+      "thumbnailSHA256": "92e75474f20bc7fe80cd336bbfb7db6b9acc1cb30da7d2ead8bbba778c75b046",
+      "thumbnailBytes": 23380,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-42129799781694-detail.jpg",
+      "detailSHA256": "d6224849bb6311fc54a2ea9d9213d8af2921586678690b921e298d31a57d9a88",
+      "detailBytes": 146546,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 48885298609633,
+      "rideName": "Wave Runner",
+      "alt": "Illustrated Wave Runner at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:48:35.502763+00:00",
+      "originalSHA256": "3124de90c20d3c1f35f01e91299953d6898df656c5b04af4e1d05e63ddc6480b",
+      "review": "Accepted: turquoise lattice Scrambler arms, lime stays and numbered silver/blue tub with real gate/lap rail match the source section; adult/child pose retained. No substituted park paint or unattached vehicle. Generated realistic dusk artwork.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F595f189f5f013063acae604065e0e95a8b43527f-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Wave Runner ride at Six Flags Fiesta Texas spinning with riders in green and blue carts.",
+          "sourceURL": "https://www.sixflags.com/fiestatexas/attractions/wave-runner",
+          "credit": "Six Flags / Fiesta Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ae646e60ba520c1fe97422c57cf25053f7a9a6f4a064c97dd15511ef55570ae6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photo: Wave Runner Scrambler with turquoise-blue lattice arms/triangular mast and lime diagonal stays, silver riveted passenger tubs with blue seat padding, lime/yellow ornate numbered front panel and a real gate/lap rail. Source adult in blue tee/red-white cap and child in a dark tee are seated in the near attached tub. Wood boardwalk, blue-gray building and blurred trees in the source. Preserve the real blue-green arms and attached tub, not another park Scrambler paint. No invented hardware or free-floating tub; capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-48885298609633-thumbnail.jpg",
+      "thumbnailSHA256": "4775fe1879427ac6ae25bfbe1548a810dd0e9a3a04c0255c4c96f311480fa053",
+      "thumbnailBytes": 27843,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-48885298609633-detail.jpg",
+      "detailSHA256": "fce4dc95156f2217a69f29603091b66aaf440dcd2c329829d36d70103f737de9",
+      "detailBytes": 181205,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 52683726744312,
+      "rideName": "Daffy’s Bus Stop",
+      "alt": "Illustrated Daffy’s Bus Stop at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:48:06.998392+00:00",
+      "originalSHA256": "3ce858796e3c6b808799843e3c5f5b10c277d09ab5cde96aff1e18b4082647f8",
+      "review": "Accepted: yellow horizontal school-bus ride body, silver loading gates, red ribs, white-centered black wheels and visible red/orange arm sections above the actual school mural remain the subject. Background source mural is partially cropped rather than treated as a real street. Generated dusk artwork.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe40d142d2e2df15901ccc99e804118aec9e2d974-1500x1001.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A group of people enjoying Daffy’s Bus Stop ride at Six Flags Fiesta Texas, featuring a school bus theme.",
+          "sourceURL": "https://www.sixflags.com/fiestatexas/attractions/daffys-bus-stop",
+          "credit": "Six Flags / Fiesta Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "5f6092e004f620758affd49641cfb8312d885ef72de8e6fb02500387a8e2da40",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photo: raised but level long yellow school-bus ride body, open rectangular windows with seated source families and individual narrow silver entry gates/latches, red horizontal ribs, black bumper and wheels with white centers. Visible red/orange crank arm portions below the bus connect it to the ride; do not reconstruct occluded machinery. Preserve the real school/football mural with its printed Daffy football-player artwork as a physical wall, source trees, brick building and black fence. Compose the attached horizontal bus, not road driving or a hot-air balloon. Original physical school lettering may remain subtle; no invented labels. Catalog identity Daffy’s Bus Stop is retained despite a newer source listing title. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-52683726744312-thumbnail.jpg",
+      "thumbnailSHA256": "6523d8cdc0a7df9bc6800578c4c4faf5e0f196ec4aaa6db3fb78dda6611cf6e0",
+      "thumbnailBytes": 26544,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-52683726744312-detail.jpg",
+      "detailSHA256": "702ab93c7b35b74c0c2170e13674a3061c5f63f841504451179b78ec97c630e5",
+      "detailBytes": 198448,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 52896481943628,
+      "rideName": "Thunder Rapids Water Coaster",
+      "alt": "Illustrated Thunder Rapids Water Coaster at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:47:16.933735+00:00",
+      "originalSHA256": "d6bf77882109bc6a74bca00bf0fd0c2b5042ac9a085fe1c52e57ecd3bdf41835",
+      "review": "Accepted: actual photographed black-and-white saucer turn and teal raft, lime/turquoise tube joints, galvanized column cradles and visible water pipes retained. Uses the reviewed real photo, not rejected concept art. Generated dusk artwork; hidden route not reconstructed.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/635339166c326c0332e0b15a/9b483e3a-8fe7-4b22-865b-9b56fa1184b1/DSC03730.jpg",
+          "sourceURL": "https://www.sfftsource.com/rides/thunder-rapids",
+          "credit": "SFFT Source / Amusement Source Media (original photographic reference)",
+          "license": "Copyright SFFT Source; all rights reserved",
+          "licenseURL": "https://www.sfftsource.com/rides/thunder-rapids",
+          "copyrightYearVisible": 2022,
+          "sha256": "d09a83a4434632f89d8154811300bef99ce98e054f8589aa5da47138132e48b2",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual SFFT Source photograph selected in place of the rejected operator CGI: lime-green and turquoise enclosed fiberglass tube sections with exposed bolted circular joints, a real open black-and-white striped saucer turn with silver safety posts and a dark teal multi-person raft carrying source riders through it. Gray galvanized columns and triangular steel support cradle, visible white water pipes and aqua perimeter fence; preserve the exact photographed turn and raft position. Frame only the documented actual elevated section rather than inventing the hidden full course. The original private photo has a visible 2022 copyright mark; capture date is unverified. Distinct generated dusk rendering, not a real photo or concept reconstruction."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-52896481943628-thumbnail.jpg",
+      "thumbnailSHA256": "cd7d7acc7918e7c9fe92de6de8b11aeb4bab4796e28a44712514118f54803518",
+      "thumbnailBytes": 23063,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-52896481943628-detail.jpg",
+      "detailSHA256": "e0fa6746014ec607b9ced9d6a7ef4934fccb4496aad2def12af2fbdd55401a8a",
+      "detailBytes": 162991,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 60491582785063,
+      "rideName": "Bonzai Pipeline",
+      "alt": "Illustrated Bonzai Pipeline at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:49:30.223506+00:00",
+      "originalSHA256": "38cc29913bedf94d48f70fc698e9a471862f2da29fb39e10dda82b4da4d1d5f9",
+      "review": "Accepted: documented turquoise body-slide interior with repeated white translucent bands, actual wall seams, shallow flowing water and source seated rider pose. No undocumented exterior or full route added. Realistic generated rendering, not a real photograph.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F34f2b270140190fb201cfa23a153ed42c1471d7f-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Child enjoying a thrilling ride inside the turquoise tunnel of the Bonzai Pipeline at Six Flags Fiesta Texas.",
+          "sourceURL": "https://www.sixflags.com/fiestatexas/attractions/bonzai-pipeline",
+          "credit": "Six Flags / Fiesta Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "1c62271643ce68524e73f31af2b58457bf2ce62ed379074c293dd587feec6206",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator-published photo shows only the interior of a turquoise enclosed body slide: repeated white translucent vertical bands around its curved wall, thin pale horizontal fiberglass seams, water flowing along the bottom and the source child seated feet-forward in blue patterned trunks. Limit the image to this documented interior and its flowing water, with the ride tube as subject; do not infer exterior color, hidden launch, route or a raft. It is published as Bonzai Pipeline by its own operator; capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-60491582785063-thumbnail.jpg",
+      "thumbnailSHA256": "464498c1fd6380f6d6bf82c8e1f9f7be13a78ede3429a51b3b29375cc2ff0540",
+      "thumbnailBytes": 23370,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-60491582785063-detail.jpg",
+      "detailSHA256": "4fb97e223821a8515ab40de7b648cf85af0ba547ebe0cefd9866860d06487e1f",
+      "detailBytes": 144927,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 68405628050482,
+      "rideName": "The Gully Washer",
+      "alt": "Illustrated The Gully Washer at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:50:58.396767+00:00",
+      "originalSHA256": "ac9d14b5e5c669475e3383adbaf9f2b9ac7030b127652f73763fe9767c6fd08a",
+      "review": "Accepted: circular dark-bumper/tan-seat raft and central handhold, source family, narrow concrete rapids channel and splash occlusion preserved. Source rocks, vegetation and right-hand shed remain context. Generated dusk artwork.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fce310fb70fbb8b15c4760c234d46d5e2b1f47c83-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Families enjoying the thrilling Gully Washer rapids water ride at Six Flags Fiesta Texas.",
+          "sourceURL": "https://www.sixflags.com/fiestatexas/attractions/the-gully-washer",
+          "credit": "Six Flags / Fiesta Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "5bfbcfbb8bc7b411407fc0f75e04b6b1960827a07207a9e8beeba019282f256c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photograph from above the Gully Washer: round dark rubber-bumper raft with tan/brown seat backs, a circular black central handhold and seated source family, travelling within the narrow aqua concrete rapids channel. Source large white splash partly hides the front raft edge, rock and vegetation on the left, corrugated dark shed/railed walkway on the right. Preserve these actual channel/raft connections, not a log boat or a coaster track. Compose only the photographed rapids section; capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-68405628050482-thumbnail.jpg",
+      "thumbnailSHA256": "4d959d6f92afd4ccc69576c6e21541d9fc4c61a2bf7ea39866125c726ccb2b41",
+      "thumbnailBytes": 31697,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-68405628050482-detail.jpg",
+      "detailSHA256": "c63a783d73e63ea004611385d93aa1fe0f06a5e90ab878c0ef12b5ef83ebde71",
+      "detailBytes": 257764,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 76513824752775,
+      "rideName": "SHAZAM™: Tower of Eternity",
+      "alt": "Illustrated SHAZAM™: Tower of Eternity at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:50:08.944085+00:00",
+      "originalSHA256": "69b21a2e9769d54b8e73c415ea9e6064b0cac50e76396912a36d6448dbb37f39",
+      "review": "Accepted: actual tan/gold lattice mast, attached red circular gondola, red guard hoops, white lightning hub markings and black/silver restraints match the real photo rather than announcement CGI. Source rider pose retained. Realistic generated dusk artwork.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/635339166c326c0332e0b15a/1775188394082-N76VP6E21TJ4JISP4UH4/DSC00051.jpg",
+          "sourceURL": "https://www.sfftsource.com/rides/shazam",
+          "credit": "SFFT Source / Amusement Source Media (original photographic reference)",
+          "license": "Copyright SFFT Source; all rights reserved",
+          "licenseURL": "https://www.sfftsource.com/rides/shazam",
+          "copyrightYearVisible": 2026,
+          "sha256": "795eb7911c0048f55cdea899fb55190ff97da5261fb8c267795e1a1ad7e356b8",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Selected actual SFFT Source gondola photo, replacing rejected 2023 announcement CGI. Actual tan/gold square open-lattice vertical tower with guide rails and round LED strings, red circular 12-seat gondola wrapped around it, red open circular overhead guard hoops and white lightning graphics on the hub. Black/gray over-shoulder restraints with silver U-shaped handles secure the seated source riders. Preserve the photographed gondola attached to the single mast and source pose; no flying superhero figure or hidden tower mechanics. Original private watermark says 2026; capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-76513824752775-thumbnail.jpg",
+      "thumbnailSHA256": "15d89d5c90aa6f0b44ebb170b86b2e25157a9419ce9b4ac64ecc26f55f6f8f45",
+      "thumbnailBytes": 22090,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-76513824752775-detail.jpg",
+      "detailSHA256": "878ccc1cabf7063405cde823f62c8e30a524b3515599787ab9fba0c076656612",
+      "detailBytes": 136955,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 77407118425379,
+      "rideName": "Bucking Broncos",
+      "alt": "Illustrated Bucking Broncos at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:50:36.152459+00:00",
+      "originalSHA256": "d08c2c42a87d84a7d5674f0c9befdb652f3a9184821cae61fb10f9509f7f23b7",
+      "review": "Accepted: attached junior brown mast/log bench, running-horse top sculpture, five yellow backs with differently colored hat shapes, lap bar, visible straps and single source rider retained. No replacement character or invented occupants. Generated dusk artwork.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F95fa717da4a556ba8cf3337663012fb243fea350-1500x1001.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Child riding the Bucking Broncos kids free fall drop tower ride at Six Flags Fiesta Texas.",
+          "sourceURL": "https://www.sixflags.com/fiestatexas/attractions/bucking-broncos",
+          "credit": "Six Flags / Fiesta Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2da4d66b1702f11f74ec9e1ebc2c44762e33c35dbea767c0027818ea034842b6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photo: brown single junior drop-tower mast topped by physical running-horse sculptures, attached straight brown/log-styled five-place bench, yellow tall seat backs bearing subtle cattle-brand markings and different yellow/cream/black/brown/pink hat-like shade shapes above each seat. Real black shared lap bar and visible red restraint straps, one source child in a blue cap seated in the center; empty seats stay empty. Wood fence, real tree canopy and dark western-roof building behind. Preserve the connected small tower and bench, not another cartoon-character tower. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-77407118425379-thumbnail.jpg",
+      "thumbnailSHA256": "b87f64b7f2d6504bda7d412562c0c3f21868e005c5dfef3ba825ba9de870f0cd",
+      "thumbnailBytes": 29936,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-77407118425379-detail.jpg",
+      "detailSHA256": "04d756cf371076ddca9feae9ad6656fb3e8ebf56e0834ddffd657a4f308db219",
+      "detailBytes": 226799,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 84438571379387,
+      "rideName": "Yosemite Sam Wacky Wagons",
+      "alt": "Illustrated Yosemite Sam Wacky Wagons at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:54:01.535676+00:00",
+      "originalSHA256": "8a5081a08406a4c19cd5b4aa9a6b3d1a14451c5fb8def8fc868101c7869110c0",
+      "review": "Accepted: small covered-wagon Ferris wheel, maroon plank-like tubs with cream roofs, silver gates, brown spokes and actual pivot connections retained, with empty cars. Original real ride source replaces the earlier sign-only candidate. Generated dusk artwork.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/635339166c326c0332e0b15a/e3daf9bf-9073-4c14-b893-fc33465dfc0e/IMG_2646.jpg",
+          "sourceURL": "https://www.sfftsource.com/rides/ys-wacky-wagons",
+          "credit": "SFFT Source / Amusement Source Media (original photographic reference)",
+          "license": "Copyright SFFT Source; all rights reserved",
+          "licenseURL": "https://www.sfftsource.com/rides/ys-wacky-wagons",
+          "copyrightYearVisible": 2017,
+          "sha256": "5d08c15d5f0568a9a211643a6c093c867259597e7401f9166bfb772848a1c6e4",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Selected actual SFFT Source photo replaces a sign-only operator image. Small six-position Ferris wheel: brown/orange radial spokes and solid center, attached maroon plank-textured covered-wagon tubs, cream arched canvas-textured roofs on black upright frames, visible narrow silver gates and seat benches, rows of real small bulbs along spokes. Source tubs empty, remain empty; western wood buildings/white siding/tree branches behind. Preserve every visible pivot-to-spoke connection and wheel scale, not a giant wheel. A small physical cartoon wall decoration may remain in the documented background without becoming a live character. Original private copyright watermark 2017; capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-84438571379387-thumbnail.jpg",
+      "thumbnailSHA256": "2dde3bf5ac79351b39dfa95290edcd5c43336fd6b29a5748466db6a87c31bf67",
+      "thumbnailBytes": 21999,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-84438571379387-detail.jpg",
+      "detailSHA256": "31a17a4a8f82733aa9c24d554a1c8699151cdbf2e82fef04e99360ece7a785f7",
+      "detailBytes": 159917,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 87055465954189,
+      "rideName": "Dare Devil Dive Flying Machines",
+      "alt": "Illustrated Dare Devil Dive Flying Machines at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:52:41.262485+00:00",
+      "originalSHA256": "305a3b6e9af38fdbb49b45ad43c1ca5dc837375f85217cc3be3ee4608d3f91a0",
+      "review": "Accepted: source bronze/gold central housing, red attached radial arms and angled six-seat steampunk plane with perforated wings, gold propeller and black restraints retained. No free-flying plane or hidden route invented. Generated realistic dusk artwork.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F494461637899152c4bacd3de45713440b1f3d1d0-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders enjoying the Dare Devil Dive Flying Machines ride at Six Flags Fiesta Texas.",
+          "sourceURL": "https://www.sixflags.com/fiestatexas/attractions/daredevil-dive-flying-machines",
+          "credit": "Six Flags / Fiesta Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "879c0e2945b9824f28d7781311b4b8cc067f532f047c726c065a940489173d81",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator action photo of the Dare Devil Dive Flying Machines. Bronze/gold decorative engine-like center and spindle with propeller/gear motifs, red radial arms ending in mechanically attached steampunk plane-shaped gondolas with orange-brown pierced/perforated wings, gold rounded wingtips and silver/gold nose propeller. Source main plane tilted above camera with six restrained seated riders; brown high-backed seats and black/gray over-shoulder restraints with silver grips. Preserve source arm/plane pivot and fixed propeller as photographed; no freely flying aircraft or hidden complete mechanism. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-87055465954189-thumbnail.jpg",
+      "thumbnailSHA256": "4fe553fe82f7d0eb24fb204c19c19f6702f374e4765235305323954c4477ae79",
+      "thumbnailBytes": 19053,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-87055465954189-detail.jpg",
+      "detailSHA256": "776d839d694bc68d2b1f49b27e08f3d6961bd51bc20d4b3f42b2a80bae39556c",
+      "detailBytes": 122497,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 103953260334221,
+      "rideName": "Bamboo Chutes",
+      "alt": "Illustrated Bamboo Chutes at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:53:35.719299+00:00",
+      "originalSHA256": "cd93a784aa955e37bf9a1bf1b5037b21fca0b93c9e39e55606d27b60645c5b77",
+      "review": "Accepted: real low orange open-slide exit and adjacent turquoise edge, source feet-forward seated rider in dark rash top, shallow blue splash pool and timber backdrop preserved. Generated artwork, not a photographed event.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7585e2d979697b7a86da6f7aa85c52545baef5ca-1440x799.png%3Frect%3D1%2C0%2C1439%2C799%26w%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Child enjoying the Bamboo Chutes waterslide at Six Flags Fiesta Texas, sliding down and splashing into the pool.",
+          "sourceURL": "https://www.sixflags.com/fiestatexas/attractions/bamboo-chutes",
+          "credit": "Six Flags / Fiesta Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "705a4ba4ff6d50f847d04f8451aa980b1e353b1aa87101f477eb9e5760f0a287",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photo of Bamboo Chutes shows the low orange curved open-flume mouth emptying into a shallow blue splash pool, narrow blue/turquoise neighboring slide edge on left, source small child in a dark long-sleeved rash top and green/blue swim shorts sitting feet-forward at the orange exit. Wood horizontal guard wall and pale gravel behind, white/tile pool rim. Keep this documented small-slide exit and source splash; no tall slide tower, raft or hidden route. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-103953260334221-thumbnail.jpg",
+      "thumbnailSHA256": "11b4d8ff12d009ae2c47604f4041b33b60af6db89be5082cc4b7e316b13b0ae1",
+      "thumbnailBytes": 25505,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-103953260334221-detail.jpg",
+      "detailSHA256": "163e3892ac580e89cf547b572b28307310bee4f1f214ef0ec82f5b60b8e9f3a8",
+      "detailBytes": 163396,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 105702759252937,
+      "rideName": "Bahama Blaster",
+      "alt": "Illustrated Bahama Blaster at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:53:07.286877+00:00",
+      "originalSHA256": "0e9bef819952b9aa12caa45cc3570f3352c7e84681e7bc39b58ed1455976d506",
+      "review": "Accepted: paired orange/yellow straight drops, looping yellow/turquoise tube sections, gray bracing and real platform, yellow/turquoise runouts and source splash occlusion remain legible. Photographic material treatment without imaginary routes. Generated dusk artwork.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff1e92643474f1131d2d43b8888870144e3a855f0-1200x666.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Six Flags Fiesta Texas Bahama Blaster waterslide with riders splashing down at the bottom.",
+          "sourceURL": "https://www.sixflags.com/fiestatexas/attractions/bahama-blaster",
+          "credit": "Six Flags / Fiesta Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c1117867067db903e5abd858d4189ebe3d8e43a5589e0b753e1568d90c257525",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photograph of Bahama Blaster: paired tall straight orange/yellow chutes descend from the real square gray steel and timber-rail stair platform; separate yellow and turquoise enclosed looping tubes arc across the front on gray braced columns, leading toward four long yellow/turquoise splash runouts. Source large white water plumes partly conceal runout endings; source lifeguards/rope rail/wood fence/tree and quarry backdrop remain peripheral. Preserve visible slide routes/connections only, no invented riders inside opaque tubes or new routes. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-105702759252937-thumbnail.jpg",
+      "thumbnailSHA256": "584ba88eadedb9d2f343f0d3983f3b6d5cd91590ead32fe456885aaba85a5dac",
+      "thumbnailBytes": 24475,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-105702759252937-detail.jpg",
+      "detailSHA256": "56e34be406d5dfbcc501f14e4ac191ecda28c331585b81b975928d256edeb9c8",
+      "detailBytes": 187907,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 122863831138479,
+      "rideName": "Circuit Breaker Grand Prix - Electric Go-Karts",
+      "alt": "Illustrated Circuit Breaker Grand Prix - Electric Go-Karts at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:55:45.829133+00:00",
+      "originalSHA256": "18318c17ceea4ed676dba412a9722e5ae7115259f43c6742af9d3d7513ff5359",
+      "review": "Accepted: actual tire-lined loading/course view, blue/green karts under timber canopy, pineapple infield prop, bridge and quarry remain recognizable. Source connected course geometry and seated guests retained. Generated dusk artwork; no new circuit.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F65d8a6f659bc9fb1750006271c669c5093797d4c-1500x1001.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "View of Circuit Breaker Grand Prix go-kart track at Six Flags Fiesta Texas with karts lined up.",
+          "sourceURL": "https://www.sixflags.com/fiestatexas/attractions/circuit-breaker-grand-prix-electric-go-karts",
+          "credit": "Six Flags / Fiesta Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f4c6ca7bed725bed628afab9f07ff6193f189138130a2e21697d651271c601a9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photograph of Circuit Breaker Grand Prix shows concrete tire-lined electric-kart course and a dark timber pitched-roof loading canopy on the left. Blue/green open low karts with black high-backed seats and steering wheels line the pit lane under the canopy; photographed source guests remain seated in those karts. Physical checkered pink/white loading banner, yellow posts and low black tire barriers, large pineapple prop in the infield, raised timber pedestrian bridge, quarry wall and the distant real Fireball loop are source context. Compose the actual loading/course section with believable scale; no invented racing circuit, off-track cars or new lettering. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-122863831138479-thumbnail.jpg",
+      "thumbnailSHA256": "329ace1b816519c778865e435ace0fe712b9e54ac1062069de2d3510f27ed2d8",
+      "thumbnailBytes": 21175,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-122863831138479-detail.jpg",
+      "detailSHA256": "b9f8b55009afd074cfde782062b3b7750d52fe5048fa9060adf0ecf26aa8d218",
+      "detailBytes": 162713,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 135723327957180,
+      "rideName": "BATMAN™ The Ride",
+      "alt": "Illustrated BATMAN™ The Ride at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:56:32.045754+00:00",
+      "originalSHA256": "c7ef0af3d66974785c82e02cac940eb64b18f4c2b55352188275e0da973a0c52",
+      "review": "Accepted: actual S&S free-spin seat/pivot geometry with upside-down foreground source riders, orange restraints, black/gray seat shells and opposite seats preserved. Source park is small background context; no false B&M reconstruction from stale prose. Generated dusk artwork.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F492601ea06b19d2c2ea3b977e7b9ccbd8705eba4-1500x1092.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders experiencing an upside-down moment on BATMAN™ The Ride at Six Flags Fiesta Texas.",
+          "sourceURL": "https://www.sixflags.com/fiestatexas/attractions/batman-the-ride",
+          "credit": "Six Flags / Fiesta Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ecf5df2373b35d1908b7746f78f9ea9cd0673f47c534758eccbece92ca061bd7",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator on-ride photograph of the Fiesta Texas S&S free-spin Batman: two foreground source riders upside down in black/dark-gray individual seats with orange U-shaped over-shoulder restraints and silver buckles, real large black wheel/pivot hardware attached to the right-hand gray support/track; opposite seats and two restrained riders below. Keep the documented sideways/inverted pose and connected individual seat hardware, source tilted park/quarry/green track far beneath. Do not follow the source page’s generic inverted-B&M marketing prose, which conflicts with this park’s S&S ride/photo; do not invent B&M track or any hidden route. No costumed hero. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-135723327957180-thumbnail.jpg",
+      "thumbnailSHA256": "0bc9bf3c1bb1ec601fad736f91215963619e4269e0aadec42213f8e14e66692f",
+      "thumbnailBytes": 27238,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-135723327957180-detail.jpg",
+      "detailSHA256": "0c65eb64ef91aee8fec94d5a9d447cbdfc1ef7bf137f1c6b0057a55a5d602dd0",
+      "detailBytes": 171552,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 141027680158892,
+      "rideName": "Pandemonium",
+      "alt": "Illustrated Pandemonium at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:56:11.093476+00:00",
+      "originalSHA256": "a33243bf539e4fc5e900d13257c762254c5f9d6c4e8d6d1681823b18651e591d",
+      "review": "Accepted: actual red/charcoal spinning car with three source riders and one empty seat, real wheel chassis on orange triangular-braced track and black support against quarry wall retained. Generated dusk artwork.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F10cdb6ebe2aa4474fe58b685368f0e084100d361-1500x1001.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders enjoying Pandemonium roller coaster at Six Flags Fiesta Texas.",
+          "sourceURL": "https://www.sixflags.com/fiestatexas/attractions/pandemonium",
+          "credit": "Six Flags / Fiesta Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "9a1ad91d04ee45f2769b763b6ba52f1fdaff9210449ad54417c8275df8edea81",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual operator photograph of Pandemonium: red and charcoal four-seat back-to-back spinning coaster car marked subtly with physical 4, three source riders seated with black lap bars and one visibly empty high-backed black seat. Real silver rectangular undercarriage, exposed wheel assemblies and round pivot remain seated on the orange triangular-braced rails, black cylindrical supports and limestone quarry wall behind. Preserve this exact banked car/track pose, empty seat, real rail/wheel connections and near track crossing only; no flying car, circular pendulum or invented full layout. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-141027680158892-thumbnail.jpg",
+      "thumbnailSHA256": "34b4810e1febc6c1897fcd6cd7164bb5d199fc89241dac2909b665d67c3ad4fe",
+      "thumbnailBytes": 26244,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-141027680158892-detail.jpg",
+      "detailSHA256": "e42b5bad87ab407ee562a3c7d1f7b0b617f1c4324dc6709a1e90729c436ab6f4",
+      "detailBytes": 164441,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 39,
+      "rideId": 218418358506721,
+      "rideName": "HH - Coral Cove",
+      "alt": "Illustrated HH - Coral Cove at Six Flags Fiesta Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T04:54:27.316034+00:00",
+      "originalSHA256": "31476140d158053bb1282b7cac5abe1e6a323aeff83ccc458e44b692c3c87e69",
+      "review": "Accepted: actual Coral Cove area arrangement preserved: lime/orange flume, yellow/purple bulbous tube and low exit, smaller background slides, divided shallow pool, aqua loungers, stacked yellow tubes and thatch foreground. Resolved source gap using documented real operator press photo; generated dusk artwork.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/635339166c326c0332e0b15a/2b57a6a4-5874-439f-b4c8-a914756d2837/Coral+Cove+5.jpg",
+          "sourceURL": "https://www.sfftsource.com/news/2026/5/14/fiesta-texas-launches-daily-operations-expands-summer-hours-and-debuts-nightly-drone-spectacular",
+          "credit": "Six Flags / Fiesta Texas (press photograph republished by SFFT Source)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "229a630c56a660ae0fd2d43396c8e8b7b1d61e428e125046c46d9b26d970d700",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual park press photograph captioned Coral Cove, Hurricane Harbor San Antonio’s Newest Addition, republished with Six Flags copyright by SFFT Source May 14 2026. Documented multi-slide children’s area: lime/orange open flume curves in front, yellow/purple bulbous enclosed section with real bolted flanges ending in a low yellow/purple open exit, small red/lime/orange slides further back, shallow pale-aqua pool divided by a low dark-blue-tile wall with physical 2 FT marker. Stacked yellow handled inner tubes at near right, aqua in-water loungers, rope-and-post safety rails, palms/trees and thatch cabana roof fringe. Compose this actual area view, preserving connections and empty nearby water; no invented attraction, giant course or people. The exact photo capture date is unverified; publication date is documented."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "39-218418358506721-thumbnail.jpg",
+      "thumbnailSHA256": "cc0aa9597097354dc6727c04ee2eb3d6f8a207d00bd961a8d61af1ddb5602958",
+      "thumbnailBytes": 27697,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "39-218418358506721-detail.jpg",
+      "detailSHA256": "45c6894a0c9856b7385e0128e22b63da33c3efcdb61c21a5ee19d3631723dfa4",
+      "detailBytes": 199857,
       "detailPixels": [
         768,
         960

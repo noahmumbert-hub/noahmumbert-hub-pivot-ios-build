@@ -364,11 +364,11 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 459,
-    "pendingIllustrations": 665,
-    "acceptedForRequestedStyle": 458,
-    "unfinishedForRequestedStyle": 666,
-    "blocked": 11
+    "acceptedIllustrations": 479,
+    "pendingIllustrations": 645,
+    "acceptedForRequestedStyle": 478,
+    "unfinishedForRequestedStyle": 646,
+    "blocked": 12
   },
   "parks": [
     {
@@ -10054,10 +10054,10 @@
           "url": "https://www.sixflags.com/fiestatexas/attractions/the-joker-carnival-of-chaos"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-3962859292030",
@@ -10107,10 +10107,10 @@
           "url": "https://www.sfftsource.com/rides/cowabunga"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-20695112586711",
@@ -10136,10 +10136,10 @@
           "url": "https://www.sfftsource.com/rides/paradise-cove"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-37343989476297",
@@ -10165,10 +10165,10 @@
           "url": "https://rcdb.com/3976.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-42129799781694",
@@ -10194,10 +10194,10 @@
           "url": "https://www.sfftsource.com/rides/kinderstein"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-48885298609633",
@@ -10223,10 +10223,10 @@
           "url": "https://www.sfftsource.com/rides/wave-runner"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-52683726744312",
@@ -10247,10 +10247,10 @@
           "url": "https://www.sixflags.com/fiestatexas/attractions/daffys-bus-stop"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-52896481943628",
@@ -10281,10 +10281,10 @@
           "url": "https://www.sfftsource.com/rides/thunder-rapids"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-60491582785063",
@@ -10305,10 +10305,10 @@
           "url": "https://www.sixflags.com/fiestatexas/attractions/bonzai-pipeline"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-68405628050482",
@@ -10329,10 +10329,10 @@
           "url": "https://www.sixflags.com/fiestatexas/attractions/the-gully-washer"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-76513824752775",
@@ -10353,10 +10353,10 @@
           "url": "https://www.sixflags.com/fiestatexas/attractions/shazam-tower-of-eternity"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-77407118425379",
@@ -10377,10 +10377,10 @@
           "url": "https://www.sixflags.com/fiestatexas/attractions/bucking-broncos"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-84438571379387",
@@ -10401,10 +10401,10 @@
           "url": "https://www.sixflags.com/fiestatexas/attractions/yosemite-sam-wacky-wagons"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-87055465954189",
@@ -10425,10 +10425,10 @@
           "url": "https://www.sixflags.com/fiestatexas/attractions/daredevil-dive-flying-machines"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-103953260334221",
@@ -10454,10 +10454,10 @@
           "url": "https://www.sfftsource.com/rides/bamboo-chutes"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-105702759252937",
@@ -10478,10 +10478,10 @@
           "url": "https://www.sixflags.com/fiestatexas/attractions/bahama-blaster"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-122863831138479",
@@ -10507,10 +10507,10 @@
           "url": "https://www.sfftsource.com/rides/circuit-breaker"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-130166750718998",
@@ -10539,7 +10539,7 @@
       "referenceReview": "pending",
       "generationStatus": "pending",
       "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "requestedStyleStatus": "blocked"
     },
     {
       "key": "39-135723327957180",
@@ -10565,10 +10565,10 @@
           "url": "https://rcdb.com/12283.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-141027680158892",
@@ -10594,10 +10594,10 @@
           "url": "https://rcdb.com/3751.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-145706577814864",
@@ -11144,10 +11144,10 @@
           "url": "https://api.themeparks.wiki/v1/entity/ed700b84-b5e6-4323-8faf-95a40acefaee"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "39-227383946915287",
