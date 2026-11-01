@@ -190,7 +190,9 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertGreaterThanOrEqual(heading.frame.height, 35, "The actual controls heading must render enlarged type")
         screenshot("Waits shared group enlarged heading", app: app)
         let search = app.textFields["Ride search"]
-        reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
+        centerFullyVisible(search, in: app)
+        XCTAssertTrue(search.isHittable, "The fully visible large-text search field must accept input")
+        search.tap(); search.typeText("Guardians\n")
         let freshness = app.staticTexts["waits-feed-freshness"].firstMatch
         centerFullyVisible(freshness, in: app)
         screenshot("Waits shared group enlarged full freshness", app: app)
