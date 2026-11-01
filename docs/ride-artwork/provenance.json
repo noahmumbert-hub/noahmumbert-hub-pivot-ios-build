@@ -4343,6 +4343,1179 @@
       "generationSteps": []
     },
     {
+      "parkId": 34,
+      "rideId": 9125773368852,
+      "rideName": "THE JOKER",
+      "alt": "Illustrated THE JOKER at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:21:13.079365+00:00",
+      "originalSHA256": "076f405dd320c99b6dd4a26e55fe524c61ab484cec89d998c49704ea74640289",
+      "review": "Accepted: generated pixels inspected against the genuine operator Over Texas JOKER gallery photo. The source purple/green free-spin track waves and right-hand crest, gray cross-ties/braces and green/purple columns retained; no absent train or hybrid timber structure added. Entrance foreground excluded except a small distant source sign fragment.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F61588c59627a00d715b4b106ce7ae696ccd63ff8-4129x2751.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Front view of THE JOKER roller coaster track at Six Flags Over Texas.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/joker",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "9f9c71c7551b6c30d72b67aa11b327684c0e4313b9e9cb28d11c733f776b00f6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official gallery photo shows THE JOKER's actual S&S free-spin track: paired PURPLE and bright GREEN wavy rail edges joined by gray cross-ties, tall GREEN and PURPLE columns with dark-gray horizontal/diagonal braces, and the large source right-hand curling crest. Choose the photographed upper right crest and connected adjacent wave/support section as a source-supported portrait. No vehicle is visible in this source, so add none. Crop the foreground entrance lettering, character cutout and station canopy rather than making a living character scene or new track layout. This is Over Texas's local 4D coaster, not Discovery Kingdom's timber hybrid. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-9125773368852-thumbnail.jpg",
+      "thumbnailSHA256": "b92da8d475ebf2e965db07f532c946ba210db2da4080bddb1cc44facdd388bfc",
+      "thumbnailBytes": 22159,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-9125773368852-detail.jpg",
+      "detailSHA256": "768168e94e1bbce09743b9ef537b01793f7d7644de153453f49df856d272382c",
+      "detailBytes": 145213,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-9125773368852",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict THE JOKER at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official gallery photo shows THE JOKER's actual S&S free-spin track: paired PURPLE and bright GREEN wavy rail edges joined by gray cross-ties, tall GREEN and PURPLE columns with dark-gray horizontal/diagonal braces, and the large source right-hand curling crest. Choose the photographed upper right crest and connected adjacent wave/support section as a source-supported portrait. No vehicle is visible in this source, so add none. Crop the foreground entrance lettering, character cutout and station canopy rather than making a living character scene or new track layout. This is Over Texas's local 4D coaster, not Discovery Kingdom's timber hybrid. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "9e180425aacb69158b1cd032493a3733f03084fb5efa40815f27e75813cc1934",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 13338675545572,
+      "rideName": "Six Flags Speedway Go Karts",
+      "alt": "Illustrated Six Flags Speedway Go Karts at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:21:34.391635+00:00",
+      "originalSHA256": "f471146571e69eec7a617ed5fd41f696eaff71c44402e943beb4af471e4a69d7",
+      "review": "Accepted: generated pixels inspected against genuine operator Speedway gallery photo. Source blue low kart, high black seat/steering, small exposed wheels and wraparound bumper retained on concrete yellow-lined course with tire barriers/red-roof pit. Source-scale driver retained, no road-car body or invented cage.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe33bc22c207bf0c426e13b75647463ab13187db7-3619x2412.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Go-kart racers driving on the Six Flags Speedway track at Six Flags Over Texas, with a covered pit area.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/six-flags-speedway-go-karts",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e65488f3fbbcb311a164cdbbe990b922cb728c28538f8c2d45259c6f5b16b01d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official secondary gallery photo shows actual low BLUE open go-karts with black wraparound rubber perimeter bumpers, small exposed black tires, black high-backed single seats and simple black steering wheels on the concrete Speedway course beside yellow painted lines and black tire barriers. Use the photographed foreground BLUE kart from its source side/front three-quarter angle, retaining the attached wheel positions, low body, black bumper and source driver at medium scale. The red-roof pit pavilion is genuine background; crop the unrelated green coaster above it and all lettering/numbers. Do not invent a road sports car, kart roll cage, new engine layout or track route. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-13338675545572-thumbnail.jpg",
+      "thumbnailSHA256": "78d9dc0a38beecd3516859ebf283a81ccfaaead386d2d7117a3f01888d0e821d",
+      "thumbnailBytes": 23650,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-13338675545572-detail.jpg",
+      "detailSHA256": "b07e7696868d330c4445ace3be5968db4295a6eb24fbc367c18226af42b17f06",
+      "detailBytes": 181440,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-13338675545572",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Six Flags Speedway Go Karts at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official secondary gallery photo shows actual low BLUE open go-karts with black wraparound rubber perimeter bumpers, small exposed black tires, black high-backed single seats and simple black steering wheels on the concrete Speedway course beside yellow painted lines and black tire barriers. Use the photographed foreground BLUE kart from its source side/front three-quarter angle, retaining the attached wheel positions, low body, black bumper and source driver at medium scale. The red-roof pit pavilion is genuine background; crop the unrelated green coaster above it and all lettering/numbers. Do not invent a road sports car, kart roll cage, new engine layout or track route. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "1379a970d091fc87bb029b24e12353fd87b1c5c696c93550af880e8a9ba4a486",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 17505046374530,
+      "rideName": "MR. FREEZE",
+      "alt": "Illustrated MR. FREEZE at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:22:23.820258+00:00",
+      "originalSHA256": "3fb7677d4b5724c508f47430c77de5aa642da7d580b003f72b4f2c55cac997fb",
+      "review": "Accepted: generated pixels inspected against genuine operator MR. FREEZE station gallery photo. Actual blue mesh boarding rails, straight launch corridor/crosswalk, circular corrugated portal, dark roof trusses and blue practical-lit room retained. No train or unpictured exterior layout invented; this is a station representation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fec2ba2c0e8e80740b1091c1ef96029b7c96c9755-4369x2910.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Inside view of the MR. FREEZE roller coaster tunnel at Six Flags Over Texas.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/mr-freeze",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f2ec41fc084969cedc4e4649dfd2cd10e87de2b02190d74f7efef9370728a47c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official MR. FREEZE secondary gallery photo shows the actual dark industrial station and launch tunnel: bright BLUE mesh boarding guard rails on both sides of a central straight steel track/maintenance crosswalk leading into a circular corrugated tunnel with bright far opening, roof steel trusses and sparse white/blue practical fixtures. Choose this photographed distinctive launch-corridor view; preserve the actual rails, symmetrical mesh fences, circular portal and dark indoor steel surfaces. No train is visible, so do not invent one or extrapolate unseen exterior track. Keep visitors small or outside crop, omit printed monitors/exit text and maintain honest indoor blue lighting rather than an outdoor sunset. Exterior layout and capture date unverified. This is a photographed station representation."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-17505046374530-thumbnail.jpg",
+      "thumbnailSHA256": "580a793a0eb6a725fcce9c6ad9a201b7292d7dcf079f4754eda2750619afd4a2",
+      "thumbnailBytes": 23836,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-17505046374530-detail.jpg",
+      "detailSHA256": "ed248a47df453f1e9bbc0302ae834995682a9d1e3caac92b9bcc2d585ff6ccf8",
+      "detailBytes": 178057,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-17505046374530",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict MR. FREEZE at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official MR. FREEZE secondary gallery photo shows the actual dark industrial station and launch tunnel: bright BLUE mesh boarding guard rails on both sides of a central straight steel track/maintenance crosswalk leading into a circular corrugated tunnel with bright far opening, roof steel trusses and sparse white/blue practical fixtures. Choose this photographed distinctive launch-corridor view; preserve the actual rails, symmetrical mesh fences, circular portal and dark indoor steel surfaces. No train is visible, so do not invent one or extrapolate unseen exterior track. Keep visitors small or outside crop, omit printed monitors/exit text and maintain honest indoor blue lighting rather than an outdoor sunset. Exterior layout and capture date unverified. This is a photographed station representation. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "e2ccddc0b0f36b97342876afa5fb79881ee71044937117ac14c4314d05e5e113",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 21059733047135,
+      "rideName": "Rodeo",
+      "alt": "Illustrated Rodeo at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:22:51.460604+00:00",
+      "originalSHA256": "ab80280c766b0b0de60342b935ed63ed4f1b6d8745fffe29439c175c4b9187d9",
+      "review": "Accepted: generated pixels inspected against genuine official Rodeo photograph. Actual brown/white molded bull cars, pale horns, black bench/lap bars, connected black arms and gold perforated deck/hub caps retained. Riders remain incidental; no live bull or invented chassis.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9a39e125f3daad560c162e4bf5b904dd50b2d636-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children riding the Rodeo at Six Flags Over Texas, enjoying the kids' amusement park bull ride.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/rodeo",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "bea8886cb9cfe5f4856728152020bec786587340478a3a9be26b2a949d8f24f7",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Rodeo photo shows the actual manufactured brown-and-WHITE patched bull-shaped spinning cars with short pale horns, molded bull heads, black two-person bench interiors and black lap bars, attached by black steel arms over a large golden perforated metal deck around black hubs with GOLD circular caps. Choose a close/medium source-supported portrait of the photographed front-right brown/white bull car and its true arm/deck connection. Retain the molded shell and visible horn/seat arrangement; source riders stay incidental at medium scale. Do not depict a live animal, conventional rodeo saddle, invented car chassis, extra rotating arm or hidden full drive layout. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-21059733047135-thumbnail.jpg",
+      "thumbnailSHA256": "654e1d17feb7c033e105e723b06f1b907815ba1befa5e3f93e5d0dfa64435971",
+      "thumbnailBytes": 26531,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-21059733047135-detail.jpg",
+      "detailSHA256": "27057d315aa2a4c0a3f06ae808d75a65cee9413c59158e3c3f75a95f34097234",
+      "detailBytes": 176954,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-21059733047135",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Rodeo at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official Rodeo photo shows the actual manufactured brown-and-WHITE patched bull-shaped spinning cars with short pale horns, molded bull heads, black two-person bench interiors and black lap bars, attached by black steel arms over a large golden perforated metal deck around black hubs with GOLD circular caps. Choose a close/medium source-supported portrait of the photographed front-right brown/white bull car and its true arm/deck connection. Retain the molded shell and visible horn/seat arrangement; source riders stay incidental at medium scale. Do not depict a live animal, conventional rodeo saddle, invented car chassis, extra rotating arm or hidden full drive layout. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "34161bdd6d9cba530324af0a3506a0eeebf1e384bf9cc8691afc45419a11ab85",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 24083328696389,
+      "rideName": "La Fiesta de las Tazas",
+      "alt": "Illustrated La Fiesta de las Tazas at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:25:03.526231+00:00",
+      "originalSHA256": "1f4d56fd343c997d3f6a0ef552c2b6a68a83fe9a5be9e3b63074ec5ecdef2dd3",
+      "review": "Accepted: generated pixels inspected against genuine official La Fiesta de las Tazas photo. White cups/saucers, navy rims, blue/orange handles, yellow/green floral painting, actual silver side gate and tall white/blue pitcher retained on blue turntables. No canopy or hidden spinner assembly invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F639dacee0774a420e49b91e4f5a1d724c31e1b40-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "La Fiesta de las Tazas teacup ride with riders spinning in large, decorated cups at Six Flags Over Texas.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/la-fiesta-de-las-tazas",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e7db4a4ebdd6ca182458e8cff23eb750f5d8dbd4bb04f2f9d85805437b20aaf0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official photo shows actual WHITE teacup shells and saucers with navy-BLUE rounded rims, BLUE/ORANGE curved handles and painted YELLOW flowers with GREEN stems/red pots, on BLUE circular turntable areas. The tall central white pitcher has a thin blue rim/lid stripe, white handle and long spout plus the same flower painting. Choose one photographed foreground cup/saucer with actual silver side gate, flower details and a source-supported portion of the pitcher and blue deck. Keep visitors incidental and do not invent a canopy, hidden cup mechanism, different folk pattern or teapot shape. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-24083328696389-thumbnail.jpg",
+      "thumbnailSHA256": "ae7ff2c1df202a450d0f5a7798908c44c98a49e95208e8b40113002031016bdd",
+      "thumbnailBytes": 26166,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-24083328696389-detail.jpg",
+      "detailSHA256": "1e034035198b6af7a80f38dba147458221e5968cfff3668155f2ee782ab7c1c4",
+      "detailBytes": 176936,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-24083328696389",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict La Fiesta de las Tazas at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official photo shows actual WHITE teacup shells and saucers with navy-BLUE rounded rims, BLUE/ORANGE curved handles and painted YELLOW flowers with GREEN stems/red pots, on BLUE circular turntable areas. The tall central white pitcher has a thin blue rim/lid stripe, white handle and long spout plus the same flower painting. Choose one photographed foreground cup/saucer with actual silver side gate, flower details and a source-supported portion of the pitcher and blue deck. Keep visitors incidental and do not invent a canopy, hidden cup mechanism, different folk pattern or teapot shape. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "dca3e941a92c33e32f77b2489a60c9b47a4bddd79a7c1ee64c4bc3a35695eafd",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 25724546861905,
+      "rideName": "El Sombrero",
+      "alt": "Illustrated El Sombrero at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:25:25.282489+00:00",
+      "originalSHA256": "d9bffe4429013e7ffa8d9be6920ccdc3e8da80110931e8b9486ef6496e59ca18",
+      "review": "Accepted: generated pixels inspected against genuine official El Sombrero photo. Actual white conical crown with orange tip/blue-red zigzags and lower bands, pale blue-decorated brim, multicolored guarded seat ring and blue/purple fence retained. Lower drive stays occluded and entrance lettering/unrelated slide are excluded.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7ee02b660a296dbcb3e2be35154d626a93b611d2-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Entrance to the El Sombrero ride at Six Flags Over Texas with colorful sombrero-shaped ride in view. Riders enjoying the El Sombrero spinning ride at Six Flags Over Texas, shaped like a large sombrero.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/el-sombrero",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "8e4c2f993002bfcf487ef7ad168c8ccbb8d33a43fee40a3f7268646b95b6cff7",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official El Sombrero photo shows the actual tall conical white crown with orange top, blue/red zigzag band and red/orange/blue lower rings, broad pale brim with blue angular decoration, and attached ring of individual flat-sided multicolored orange/red/purple/yellow/blue seat cars with silver upper guard bars. It sits within a blue/purple metal perimeter fence; source lower drive/seat interiors are obscured. Choose a close/medium portrait of this photographed crown/brim and real outer car/guard-bar ring; retain source occlusion. Crop entrance lettering, the unrelated distant water slide and visitors rather than inventing a new hat canopy, separate free-floating cars or unseen hub. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-25724546861905-thumbnail.jpg",
+      "thumbnailSHA256": "8c90e09cbaa4c80384ec8adc9f2be5d2bbc371e9a0b10264b452621f3b8a6183",
+      "thumbnailBytes": 24230,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-25724546861905-detail.jpg",
+      "detailSHA256": "9012a9ef897ffa1b1f09c996de2b11c9e2f2ae693431d53ee3235140c944d677",
+      "detailBytes": 168350,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-25724546861905",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict El Sombrero at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official El Sombrero photo shows the actual tall conical white crown with orange top, blue/red zigzag band and red/orange/blue lower rings, broad pale brim with blue angular decoration, and attached ring of individual flat-sided multicolored orange/red/purple/yellow/blue seat cars with silver upper guard bars. It sits within a blue/purple metal perimeter fence; source lower drive/seat interiors are obscured. Choose a close/medium portrait of this photographed crown/brim and real outer car/guard-bar ring; retain source occlusion. Crop entrance lettering, the unrelated distant water slide and visitors rather than inventing a new hat canopy, separate free-floating cars or unseen hub. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "1cc1fcf2618c5560036a57e4d83b10802500057a2f62056a5082759b55f368d8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 28568302080070,
+      "rideName": "Speedy Gonzales’ Truckin’ Across America",
+      "alt": "Illustrated Speedy Gonzales’ Truckin’ Across America at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:25:54.258849+00:00",
+      "originalSHA256": "f3d0327f67227a280b4d698887a2ce3a9dff3158046b402a6c42b3307d0e5ee6",
+      "review": "Accepted: generated pixels inspected against genuine official Speedy Gonzales Truckin' Across America photo. Child-scale red cab, split windshield, silver grille/bumper/mirrors, paired lamps, actual black exhaust and red riding section retained on the small guide course by its blue-rim pond/windmill. Source hood decal remains printed ornament, no living character.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe7ffd04902bee6684e92185370d0089957bc18ee-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Speedy Gonzales' Truckin Across America ride at Six Flags Over Texas, featuring a red truck on a track.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/speedy-gonzales-truckin-across-america",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "b07328ea470646c6c4bc2aff9043fedf7f239b9f062743850ef5f56e7eb06909",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official photo shows the actual child-scale RED semi-truck ride vehicle with flat split dark windshield, silver rectangular mesh grille, paired round headlamps, gray/silver bumper, red front fenders, small black tires, chrome side mirrors and upright black exhaust pipe. The molded cab is open at the rear above a red riding bench, on a fixed narrow guide course curving around a small blue-rim pond and wooden windmill. Use a close/medium portrait of the photographed red cab/front and actual visible course contact, keeping vegetation occlusion of lower gear. Keep unrelated neighboring rides/logos and rear unpictured trailer outside crop. No full-size road truck, living mouse, invented chassis or free street driving. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-28568302080070-thumbnail.jpg",
+      "thumbnailSHA256": "d67e93d843367ef8c58c400d74fb97dcff95fe8a438baa86bc2d2684f25456e9",
+      "thumbnailBytes": 27322,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-28568302080070-detail.jpg",
+      "detailSHA256": "d8f87d5f905b77053b73e3e24d9db897752432f1606107fd05832ef402bb096e",
+      "detailBytes": 186206,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-28568302080070",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Speedy Gonzales’ Truckin’ Across America at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official photo shows the actual child-scale RED semi-truck ride vehicle with flat split dark windshield, silver rectangular mesh grille, paired round headlamps, gray/silver bumper, red front fenders, small black tires, chrome side mirrors and upright black exhaust pipe. The molded cab is open at the rear above a red riding bench, on a fixed narrow guide course curving around a small blue-rim pond and wooden windmill. Use a close/medium portrait of the photographed red cab/front and actual visible course contact, keeping vegetation occlusion of lower gear. Keep unrelated neighboring rides/logos and rear unpictured trailer outside crop. No full-size road truck, living mouse, invented chassis or free street driving. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "5a3c495648126a83bb6fa8b7a38fb5932b80ca58b77f7e83646d7ef4cf3efed6",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 33105614403678,
+      "rideName": "Tormenta Rampaging Run",
+      "alt": "Illustrated Tormenta Rampaging Run at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:26:20.555175+00:00",
+      "originalSHA256": "f8e2006a8b429185e559cf3cbb8f60181a90b58035f6f92c8a1f7f16813c65b0",
+      "review": "Accepted: generated pixels inspected against genuine operator Tormenta photographic banner, not the separate CGI candidate. Broad three-row floorless train with burgundy/black restraints and visible wheel brackets remains attached to cream rails/taupe box spine beside dark navy columns. No full hidden route or unsupported vehicle type added.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fassets.sixflags.com%2Ftransform%2FWebsite-POI-Banner_2880x1600%2F89e41207-3e5b-4909-a9f8-bb4ce7b7d900%2FSFOT-Tormenta-27%3Fio%3Dtransform%3Afill%2Cwidth%3A1920%2Cheight%3A1066%26format%3Dwebp%26quality%3D80%26v%3D2026-10-28T13%3A25%3A16.310Z&w=1920&q=75",
+          "kind": "image",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/tormenta-rampaging-run",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "9e4fc0021e59ad7f62784b76cfdc4108192d57ebb474a7c30cd2d05045c7720f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine operator photographic banner, separately inspected from the site's labeled CGI rendering, shows Tormenta's actual broad three-row floorless dive-coaster train with black bucket seats and dark BURGUNDY/RED restraint shells, red lower chassis, pale metal wheel brackets and riders' dangling feet. It is mechanically attached to pale CREAM tubular rails/ties on a TAUPE-brown box spine descending past large dark NAVY cylindrical columns/braces. Choose only the photographed close/medium train and connected drop section, preserving actual wide row geometry and support attachments. Keep riders incidental at source scale, omit train lettering and crop the distant loop rather than extrapolating a full route or using the CGI candidate. No fabricated row/seat layout, detached car or different park's dive coaster. Photo capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-33105614403678-thumbnail.jpg",
+      "thumbnailSHA256": "d9ce3167fc9f3aaf04f211d9fbe48c40b1d1ce5aa2463548a948af3262f79f58",
+      "thumbnailBytes": 19656,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-33105614403678-detail.jpg",
+      "detailSHA256": "a7f7553aa037ec44b758599d4f37141bbccbcec463afa306ef977a883d102425",
+      "detailBytes": 126935,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-33105614403678",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Tormenta Rampaging Run at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine operator photographic banner, separately inspected from the site's labeled CGI rendering, shows Tormenta's actual broad three-row floorless dive-coaster train with black bucket seats and dark BURGUNDY/RED restraint shells, red lower chassis, pale metal wheel brackets and riders' dangling feet. It is mechanically attached to pale CREAM tubular rails/ties on a TAUPE-brown box spine descending past large dark NAVY cylindrical columns/braces. Choose only the photographed close/medium train and connected drop section, preserving actual wide row geometry and support attachments. Keep riders incidental at source scale, omit train lettering and crop the distant loop rather than extrapolating a full route or using the CGI candidate. No fabricated row/seat layout, detached car or different park's dive coaster. Photo capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "fe106d82c8a26c08416a2a5570e05afc92a8c8b969752423a21ee53a182b40ef",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 35301786079669,
+      "rideName": "Wile E. Coyote’s Grand Canyon Blaster",
+      "alt": "Illustrated Wile E. Coyote’s Grand Canyon Blaster at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:28:19.473970+00:00",
+      "originalSHA256": "faffc8cf708569e6933b3cddc93f53e6029c7c703964e396d8ef9f827ac4570e",
+      "review": "Accepted: generated pixels inspected against genuine official Grand Canyon Blaster photograph. Actual tan woodgrain crate sides, galvanized corner/gate frames, silver lap bars, black seat padding and orange lower body retained with distinct round wheel decoration and real dark running gear on red track. Source-scale riders remain visible; unpictured nose/full route are not reconstructed.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9504f5eb5aeb09c32f47575133e3e2e7eefc1060-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": " Families and kids enjoying the exciting Wile E. Coyote's Grand Canyon Blaster ride at Six Flags Over Texas, a beginner thrill ride for kids.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/wile-e-coyotes-grand-canyon-blaster",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "bb0dff8e5c93413b4becef60febdbdb6f3bf59684e25215b1d3b9f730490c2f5",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official photo shows actual ACME crate-themed coaster cars with TAN/YELLOW woodgrain plank sides, galvanized SILVER riveted corner/edge frames, square rear gates, shiny horizontal lap/side bars and black padded benchbacks. Molded silver round wheel decorations sit on the orange lower body, separate from the actual BLACK steel running rollers attached to the RED tubular track below. Use a tight source-supported side/rear crate, real silver frame/lap-bar and visible rail/roller detail portrait, cropping rider heads above the top rather than inventing a nose or new seating. Omit all crate lettering. No living coyote, extra car, loose crate or unseen full route. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-35301786079669-thumbnail.jpg",
+      "thumbnailSHA256": "b1ec7899bb9ead95977793143d415b276aa9671e5f52a77ed1912fd744b30124",
+      "thumbnailBytes": 29355,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-35301786079669-detail.jpg",
+      "detailSHA256": "069f05269c5a6a3b650cfc2365864e4411f02750f45c60c143bff40519b1160c",
+      "detailBytes": 168597,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-35301786079669",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Wile E. Coyote’s Grand Canyon Blaster at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official photo shows actual ACME crate-themed coaster cars with TAN/YELLOW woodgrain plank sides, galvanized SILVER riveted corner/edge frames, square rear gates, shiny horizontal lap/side bars and black padded benchbacks. Molded silver round wheel decorations sit on the orange lower body, separate from the actual BLACK steel running rollers attached to the RED tubular track below. Use a tight source-supported side/rear crate, real silver frame/lap-bar and visible rail/roller detail portrait, cropping rider heads above the top rather than inventing a nose or new seating. Omit all crate lettering. No living coyote, extra car, loose crate or unseen full route. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "2d1f14ae665a303031d2ea94087cd164e64afa427611435ecf38ea80474aa502",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 36987916477836,
+      "rideName": "Sidewinder",
+      "alt": "Illustrated Sidewinder at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:29:05.498775+00:00",
+      "originalSHA256": "1d47ebb984d8a89efe2bf99878883c865df58d2f502f568ffe6df9ed20a3123b",
+      "review": "Accepted: generated pixels inspected against genuine official Over Texas Sidewinder photo. Actual riveted dark-red bench/front gate and rounded back stay attached to tan/copper triangular arms/subhub over concrete; no chains, canopy or car wheels invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F694e5a68798312135805119fc5e52373798ddd88-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders enjoying the Sidewinder scrambler ride at Six Flags Over Texas on a sunny day.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/sidewinder",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "9d3d1c4f582e70f9d74741e4339dc6ab64e9ba7fb3e57f01458ebe3664477149",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Sidewinder photo shows actual dark RED riveted bench gondolas with rounded lower backs, silver hinged front/lap gates and bench interiors, attached through the true tan/copper triangular steel radial arms and subhubs of the scrambler on a concrete pad. Choose the photographed foreground red bench/gate and its real tan braced arm/hub connection. Preserve source people as incidental medium-scale riders and the actual ground clearance; no invented canopy, chains, wheels or free-floating car. Source hidden internal drive remains unseen. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-36987916477836-thumbnail.jpg",
+      "thumbnailSHA256": "13cf6a25f2ae2f94ae7893862dfee09e283271e421dc896705dc90162ad0d505",
+      "thumbnailBytes": 21021,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-36987916477836-detail.jpg",
+      "detailSHA256": "c3965c49b803d549e07cbf8d041503944564ec646151f74dd50cce17b0d1e738",
+      "detailBytes": 147314,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-36987916477836",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Sidewinder at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official Sidewinder photo shows actual dark RED riveted bench gondolas with rounded lower backs, silver hinged front/lap gates and bench interiors, attached through the true tan/copper triangular steel radial arms and subhubs of the scrambler on a concrete pad. Choose the photographed foreground red bench/gate and its real tan braced arm/hub connection. Preserve source people as incidental medium-scale riders and the actual ground clearance; no invented canopy, chains, wheels or free-floating car. Source hidden internal drive remains unseen. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "db32498b0b633b35ddeb8cc785795e3bbc4b95c730cd7fabc633afa2d0bdc09f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 50577174314056,
+      "rideName": "BATMAN™ The Ride",
+      "alt": "Illustrated BATMAN™ The Ride at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:29:51.567523+00:00",
+      "originalSHA256": "67ddaf9e9e673ea992f3a25252f2b2dca9977d67ecfb63cbd804599cb4a68975",
+      "review": "Accepted: generated pixels inspected against genuine official Over Texas BATMAN inversion photograph. Yellow box-spine curve, dark navy support, purple/yellow four-across suspended seat rows and pale rounded bogie covers remain connected in the photographed inverted orientation. No sit-down/free-spin substitution or unpictured route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F761bd1b12d0a7dc85073723147bfda580188637b-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders on the BATMAN™ The Ride experience a thrilling loop at Six Flags Over Texas.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/batman-ride",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e549b9e26a75630ba191cc4813690a162fc37aeaa92e93c6878ebdc3b32edc37",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official BATMAN The Ride photo shows the local B&M inverted coaster partway through its inversion: YELLOW box-spine track, dark NAVY/PURPLE support, actual suspended four-across rows with PURPLE bucket seats and YELLOW over-shoulder restraints on black carrier beams, and pale gray/black rounded bogie covers mechanically wrapping the track. Choose only the photographed curved track and connected inverted train section, preserving its exact upside-down/sideways orientation and dangling-leg/seat relationships. Do not reinterpret it as upright sit-down cars, a Discovery Kingdom free-spin, a flying coaster, a new loop or an unpictured full route. Keep riders incidental at source scale and omit small logo marks. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-50577174314056-thumbnail.jpg",
+      "thumbnailSHA256": "0756791f46b2936c79d9a0a9b805137ed085d514de1b9d531621615df23f15e6",
+      "thumbnailBytes": 25229,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-50577174314056-detail.jpg",
+      "detailSHA256": "ee63132ab4bb7fd30f42acba9a9b9bdf5aa200bf1016369a534227b6b9bf7a90",
+      "detailBytes": 156200,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-50577174314056",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict BATMAN™ The Ride at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official BATMAN The Ride photo shows the local B&M inverted coaster partway through its inversion: YELLOW box-spine track, dark NAVY/PURPLE support, actual suspended four-across rows with PURPLE bucket seats and YELLOW over-shoulder restraints on black carrier beams, and pale gray/black rounded bogie covers mechanically wrapping the track. Choose only the photographed curved track and connected inverted train section, preserving its exact upside-down/sideways orientation and dangling-leg/seat relationships. Do not reinterpret it as upright sit-down cars, a Discovery Kingdom free-spin, a flying coaster, a new loop or an unpictured full route. Keep riders incidental at source scale and omit small logo marks. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "d354dd9bafca825d73c439b2a4dad5a598efeb00fac42cd189443e4f7699fcb8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 53855662778734,
+      "rideName": "Oil Derrick",
+      "alt": "Illustrated Oil Derrick at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:32:40.246057+00:00",
+      "originalSHA256": "facca37a9c9ed4b754dfe8657faccff5b4e8c2c499481bc6c9c3fa4fd9c59faa",
+      "review": "Accepted: generated pixels inspected against genuine official Oil Derrick photo. Actual two stacked polygonal decks, white rail/cage struts, dark-blue fascia, red utility core and rust-red lattice mast retained. The unrelated adjacent tower and unseen base are outside view.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F3cb504b009cd5737e406be49e416626f9104041a-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up view of the Oil Derrick observation deck at Six Flags Over Texas in Arlington.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/oil-derrick",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "18a06b7ef300685a83222f7e2125816c921a527fc39ee31e0949453f9eb873cf",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official photo shows the Oil Derrick observation tower's actual rust-RED lattice/X-braced mast and rectangular red core, TWO stacked polygonal observation decks with WHITE railings, white upward-angled safety-cage struts on the upper deck, dark BLUE horizontal fascia above, and a taller red utility housing with white rooftop rail and antennas. Choose only the photographed upper-deck/core/lattice section in a source-supported portrait. Crop the unrelated white/red tower at the right rather than inventing a full unpictured base, drop seats, oil-drilling machinery or a third observation deck. Keep visitors tiny and actual proportions/steel connections. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-53855662778734-thumbnail.jpg",
+      "thumbnailSHA256": "0d5df3c506bffa806baf347dbdfc0fb0d127c566abeb7822b7a4d84702ebfc8c",
+      "thumbnailBytes": 20000,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-53855662778734-detail.jpg",
+      "detailSHA256": "3f5ce9fae8edb29c9221ef57a6880cb87cac709bc92056820e3f36421878c82b",
+      "detailBytes": 136193,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-53855662778734",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Oil Derrick at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official photo shows the Oil Derrick observation tower's actual rust-RED lattice/X-braced mast and rectangular red core, TWO stacked polygonal observation decks with WHITE railings, white upward-angled safety-cage struts on the upper deck, dark BLUE horizontal fascia above, and a taller red utility housing with white rooftop rail and antennas. Choose only the photographed upper-deck/core/lattice section in a source-supported portrait. Crop the unrelated white/red tower at the right rather than inventing a full unpictured base, drop seats, oil-drilling machinery or a third observation deck. Keep visitors tiny and actual proportions/steel connections. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "882b3ecc63cb2ed8d1a1bcebdb544a00134e15fb21279c0d0f98dfc83848bc26",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 66490673724506,
+      "rideName": "CATWOMAN Whip",
+      "alt": "Illustrated CATWOMAN Whip at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:33:17.786590+00:00",
+      "originalSHA256": "54559accae0fc1256856c5d902e80619605225dd158e7c71654e1e2b181a5958",
+      "review": "Accepted: generated pixels inspected against genuine official CATWOMAN Whip photo. Raised burgundy lattice arms, gray/yellow outer attachments with paired red/black seats and real tilted support/hub retained. Entrance character/sign and unrelated JOKER track excluded; no invented flat-ride substitution.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F78cb09e7c46416023f4c9bfd943c4f66e39c63ff-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The CATWOMAN Whip ride in action at Six Flags Over Texas with riders and the ride entrance visible.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/catwoman-whip",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "02bfc1a2e95485c439ef6d989a40acb9868a329346fa09d57934f992cf843a63",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official photo shows CATWOMAN Whip's actual raised circular spread of dark BURGUNDY triangular-lattice radial arms on a dark tilted support mast/hub, gray/yellow angled outer ends carrying paired outward-facing RED/BLACK seats with gray back frames/shoulder restraints and source-scale riders. Choose the photographed wheel of real lattice arms, seat-pair attachments and tilted support in a close/medium portrait, preserving their actual connected geometry and source seat orientation. Crop entrance lettering/statue and unrelated green/purple JOKER track rather than adding a living character or different flat ride. No hidden extra mechanism, new seat count or invented motion position. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-66490673724506-thumbnail.jpg",
+      "thumbnailSHA256": "08545d0561f8208055c446408ccebfb21a2d16544ded41b27b7bd0aac51b7ef3",
+      "thumbnailBytes": 28674,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-66490673724506-detail.jpg",
+      "detailSHA256": "15d3b7dbcbf0010102eac4e3df0a61f72d79d11bfc4409cd7d29521377d93653",
+      "detailBytes": 217229,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-66490673724506",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict CATWOMAN Whip at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official photo shows CATWOMAN Whip's actual raised circular spread of dark BURGUNDY triangular-lattice radial arms on a dark tilted support mast/hub, gray/yellow angled outer ends carrying paired outward-facing RED/BLACK seats with gray back frames/shoulder restraints and source-scale riders. Choose the photographed wheel of real lattice arms, seat-pair attachments and tilted support in a close/medium portrait, preserving their actual connected geometry and source seat orientation. Crop entrance lettering/statue and unrelated green/purple JOKER track rather than adding a living character or different flat ride. No hidden extra mechanism, new seat count or invented motion position. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "f0f66cd57fc13654c581daffedd6d3d1afb5a1632bc06ac2d476614db10916cd",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 68587681034965,
+      "rideName": "Runaway Mountain",
+      "alt": "Illustrated Runaway Mountain at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:33:43.114939+00:00",
+      "originalSHA256": "1a5c5d1e98f47d02df77e1f32bd9561270803a8a54337d2c156e2d92a13980f7",
+      "review": "Accepted: generated pixels inspected against genuine official Runaway Mountain empty-train gallery photo. Light-gray rounded shell/dark trim/red rivets, actual tall black seatbacks/lap bars, visible running gear and yellow platform remain within the photographed rock-walled loading station. Front lettering omitted; no exterior course invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4e0540f105dcef5561eeda5c0c1d7ac37a3850b7-4391x2926.jpg%3Fw%3D1408%26h%3D1192%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Indoor roller coaster car for 'Runaway Mountain' at Six Flags Over Texas on the yellow loading platform.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/runaway-mountain",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "f432a35b13a42142370ebaf02c601c64856421ffb2ea2de3de07e7f2112d5a55",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official secondary gallery photo shows Runaway Mountain's actual empty light-GRAY rounded coaster car with dark-gray horizontal front trim/red rivets, black tall bucket backrests and black lap-restraint bars, visible small steel running-wheel/track edges, alongside a YELLOW loading-platform edge inside dark textured TAN artificial-rock cave walls with black mesh gates. Choose the photographed close front/side car, actual seat/lap-bar arrangement and yellow platform/rock setting. Keep the wooden front lettering/number outside crop or unlettered; do not invent an outdoor mountain track, full unseen train, new restraint design or hidden wheel assembly. Use honest dim indoor practical lighting with restrained blue-purple shadows, not an outdoor sunset. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-68587681034965-thumbnail.jpg",
+      "thumbnailSHA256": "18dc5ab694b047918f181d5f8ce596d9ad131f84b902a1a56066d14c67c86d09",
+      "thumbnailBytes": 19569,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-68587681034965-detail.jpg",
+      "detailSHA256": "cd32f42aefafd32f66a9bf0927ea483d9c3e839e65ffc17c3e3a24fcc0b58023",
+      "detailBytes": 126139,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-68587681034965",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Runaway Mountain at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official secondary gallery photo shows Runaway Mountain's actual empty light-GRAY rounded coaster car with dark-gray horizontal front trim/red rivets, black tall bucket backrests and black lap-restraint bars, visible small steel running-wheel/track edges, alongside a YELLOW loading-platform edge inside dark textured TAN artificial-rock cave walls with black mesh gates. Choose the photographed close front/side car, actual seat/lap-bar arrangement and yellow platform/rock setting. Keep the wooden front lettering/number outside crop or unlettered; do not invent an outdoor mountain track, full unseen train, new restraint design or hidden wheel assembly. Use honest dim indoor practical lighting with restrained blue-purple shadows, not an outdoor sunset. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "06809708d0692bea3c735281ef866f4f1932a7a3c56cbb8f636554176a219a23",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 81195162819684,
+      "rideName": "Roaring Rapids",
+      "alt": "Illustrated Roaring Rapids at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:34:10.839312+00:00",
+      "originalSHA256": "cc6318c30f467f8c478258f92a8a5d654b94254aa98f016011f588f4201eb6f9",
+      "review": "Accepted: generated pixels inspected against genuine official Over Texas Roaring Rapids interior photo. Actual maroon shell, slotted gray seatbacks/black benches and stainless central grab ring/braces on pale-capped maroon drum retained. Source riders remain prominent in this interior representation; the loading-area wall is retained and no exterior collar, river or waterfall is invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1a1ed4527f7c4e3abfee25c1fd271eab37129cc6-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A group of people, including children and adults, seated in a circular raft ride on the Roaring Rapids at Six Flags Over Texas.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/roaring-rapids",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "427b66526f7a9d0b363feb48c3a5c56fce27d1bda80cb03dd620c7fa475e4121",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Roaring Rapids photo shows the raft's actual interior: dark MAROON/RED rounded shell, tall slotted dark-GRAY molded seatbacks, black inner bench/lap belts and a central stainless circular grab ring supported by real angled silver braces on a maroon drum with a round pale/WHITE top. Use a tight source-supported portrait of this photographed interior ring/drum, adjacent real gray seatback and red inner rim, cropping rider heads above/outside frame without reconstructing hidden parts behind them. Retain incidental hands/legs only where photographed. The source background is a loading-area wall, not a raging river; do not invent an exterior rubber collar, seat layout, waterfall, whitewater or unseen full raft. This is an interior representation only; capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-81195162819684-thumbnail.jpg",
+      "thumbnailSHA256": "1e555bd940d7da987212c63a794e4c5a2578aebf1eff6f64147a236478102303",
+      "thumbnailBytes": 23986,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-81195162819684-detail.jpg",
+      "detailSHA256": "abcec4fc5b64a84b59c040ddc3168abeab88f7da08064a8ca2ba2b2f1529466e",
+      "detailBytes": 154498,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-81195162819684",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Roaring Rapids at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official Roaring Rapids photo shows the raft's actual interior: dark MAROON/RED rounded shell, tall slotted dark-GRAY molded seatbacks, black inner bench/lap belts and a central stainless circular grab ring supported by real angled silver braces on a maroon drum with a round pale/WHITE top. Use a tight source-supported portrait of this photographed interior ring/drum, adjacent real gray seatback and red inner rim, cropping rider heads above/outside frame without reconstructing hidden parts behind them. Retain incidental hands/legs only where photographed. The source background is a loading-area wall, not a raging river; do not invent an exterior rubber collar, seat layout, waterfall, whitewater or unseen full raft. This is an interior representation only; capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "fcf360bf0611933c6f751fd4e35a1a283053946ea2504a68d599d8903777abd0",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 101873510020181,
+      "rideName": "Boot Scootin",
+      "alt": "Illustrated Boot Scootin at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:36:41.897330+00:00",
+      "originalSHA256": "99753574b88c4c215469fd66e88a4cd8e15c8240d936a07d1f04c29141b46be2",
+      "review": "Accepted: generated pixels inspected against genuine official Boot Scootin gallery photo. Tan/red molded boot gondolas with real buckle/rivet detail, dark soles, curved brown arms, woodgrain central drum, gold cowboy hat and green base retained. Source-scale riders stay within the photographed boot seating.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F74cd1aeeeb7b00c7baaf4533f411f57f4877bc21-1440x799.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Families enjoying the Boot Scootin ride at Six Flags Over Texas, sitting in boot-shaped rotating seats. ",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/boot-scootin",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "8e5195c5d50df22476cfab561840483344ad6130997b85b78dc3e73e81b05e0a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official secondary gallery photo shows actual oversized Western-BOOT molded gondolas in TAN/GOLD and RED with dark brown sole/heel, raised belt/buckle and silver rivet decoration, open tall boot-top bench compartments and real silver lap/hand bars. Each boot is attached to curved BROWN radial arms around an orange WOODGRAIN-print tiered central drum carrying a large pale GOLD cowboy hat; the small central base is GREEN. Choose the photographed tan front boot, its true arm attachment and source-supported drum/hat in a close/medium portrait, keeping the child/adult riders incidental. Do not create detached walking boots, new seat interior, hidden drive mechanism or a different sombrero ride. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-101873510020181-thumbnail.jpg",
+      "thumbnailSHA256": "b134b3adae4b3ba845eb32e86277999215d5a278954d72986790def00c0df3ed",
+      "thumbnailBytes": 22576,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-101873510020181-detail.jpg",
+      "detailSHA256": "e3955fbd64e2e0763edaac4bf713d87bec0073df64c04c228473e92db7ca60f9",
+      "detailBytes": 141943,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-101873510020181",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Boot Scootin at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official secondary gallery photo shows actual oversized Western-BOOT molded gondolas in TAN/GOLD and RED with dark brown sole/heel, raised belt/buckle and silver rivet decoration, open tall boot-top bench compartments and real silver lap/hand bars. Each boot is attached to curved BROWN radial arms around an orange WOODGRAIN-print tiered central drum carrying a large pale GOLD cowboy hat; the small central base is GREEN. Choose the photographed tan front boot, its true arm attachment and source-supported drum/hat in a close/medium portrait, keeping the child/adult riders incidental. Do not create detached walking boots, new seat interior, hidden drive mechanism or a different sombrero ride. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "f19f99480a5fa75a74be79d11eab0886455e50afe10edf890d92c7c5545702ca",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 123282816855878,
+      "rideName": "Caddo Lake Barge",
+      "alt": "Illustrated Caddo Lake Barge at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:36:15.372977+00:00",
+      "originalSHA256": "fe93405726275b372c7bce0b731b19cbda05eda0123ec9b325daa4d5ca61fe43",
+      "review": "Accepted: generated pixels inspected against genuine official Caddo Lake Barge gallery photo. Teal/orange white-porthole rocking barge remains attached to its actual green inclined support/track beside the pond. Reeds hide the lower mechanism; unrelated canoe excluded and the ride is not depicted afloat.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F7c3abe03b6afa3e476beee0f45158f480f46e4ac-3395x2262.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "View of the Caddo Lake Barge ride at Six Flags Over Texas, with the barge floating on the water amidst tall grass and trees.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/caddo-lake-barge",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "afc50ccbd0180dbdd1c75a898a5b28f569f9bb1911a30bca75230b2726e56e2b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official secondary gallery photo shows Caddo Lake Barge's actual elevated rocking tug/boat gondola in TEAL/GREEN with bright ORANGE rounded gunwales and WHITE-ringed circular portholes, attached to the real dark GREEN inclined/curved steel track-support frame above tall marsh reeds. A separate decorative canoe floats in the foreground pond; it is NOT the ride gondola. Choose the photographed teal/orange barge and attached green rocker structure in a close/medium source-supported portrait, retaining reeds hiding the lower mechanism and small source-scale riders. Keep the unrelated canoe and large signage outside crop. Do not put the barge afloat on water, invent a propeller/full hull, hidden drive/base or extra rails. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-123282816855878-thumbnail.jpg",
+      "thumbnailSHA256": "ca72cb0e2ebd8286634c9046caaa8f08f8f2568489c03c9879ed40c4e4b55674",
+      "thumbnailBytes": 26948,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-123282816855878-detail.jpg",
+      "detailSHA256": "aec45639be867985fec65529b480be551af31324b2a85acf56b034bd9d0fc525",
+      "detailBytes": 182967,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-123282816855878",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Caddo Lake Barge at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official secondary gallery photo shows Caddo Lake Barge's actual elevated rocking tug/boat gondola in TEAL/GREEN with bright ORANGE rounded gunwales and WHITE-ringed circular portholes, attached to the real dark GREEN inclined/curved steel track-support frame above tall marsh reeds. A separate decorative canoe floats in the foreground pond; it is NOT the ride gondola. Choose the photographed teal/orange barge and attached green rocker structure in a close/medium source-supported portrait, retaining reeds hiding the lower mechanism and small source-scale riders. Keep the unrelated canoe and large signage outside crop. Do not put the barge afloat on water, invent a propeller/full hull, hidden drive/base or extra rails. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "806ab019f211dced2eaa64e1068a832aeffb2a99a248a42f418a715051873118",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 130352354351695,
+      "rideName": "Texas SkyScreamer",
+      "alt": "Illustrated Texas SkyScreamer at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:37:30.005944+00:00",
+      "originalSHA256": "828d2d0a6f4bb5c864dcc9b5f4b609cd8a99f82f6b33543b59a2710a366e090e",
+      "review": "Accepted: generated pixels inspected against genuine official Texas SkyScreamer photo. Red/pale-gold lattice mast, white/blue upper section, gold radial lattice arms, thin chains and paired dark-red/black swing seats retained. Tower cap and base remain outside view.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F58824cb631b614da8f13d695fd303f385e17188c-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Texas SkyScreamer at Six Flags Over Texas, a tall swing ride with riders enjoying the view.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/texas-skyscreamer",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "281840879849bf7ba1f2faf3eb51b50162e3b53d5d640bc6f142721b80c35973",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Texas SkyScreamer photo shows the actual tall RED lattice mast with pale GOLD inner bracing and WHITE/blue upper section, a pale GOLD starburst of triangular-lattice radial arms, thin SILVER chain bundles and paired dark RED/BLACK swing seats with actual shoulder/lap restraint structure. Choose only the photographed upper mast, real starburst hub/arm connections and hanging paired chairs in their source positions. Preserve the actual thin-chain attachments and source-scale riders. The tower top/cap is cropped in the source, so keep it outside frame; do not invent a new cap, complete unseen base, disconnected flying chairs or different park's multicolor tower. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-130352354351695-thumbnail.jpg",
+      "thumbnailSHA256": "3bc584736563e8a7bcd12690f08b414798443934838acb62fcbfb054ac8b6c0c",
+      "thumbnailBytes": 21391,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-130352354351695-detail.jpg",
+      "detailSHA256": "d1a22bf40776453b3c0ed70fc79cadffc449aa1cceaaa3036e990292748e8f41",
+      "detailBytes": 162435,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-130352354351695",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Texas SkyScreamer at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official Texas SkyScreamer photo shows the actual tall RED lattice mast with pale GOLD inner bracing and WHITE/blue upper section, a pale GOLD starburst of triangular-lattice radial arms, thin SILVER chain bundles and paired dark RED/BLACK swing seats with actual shoulder/lap restraint structure. Choose only the photographed upper mast, real starburst hub/arm connections and hanging paired chairs in their source positions. Preserve the actual thin-chain attachments and source-scale riders. The tower top/cap is cropped in the source, so keep it outside frame; do not invent a new cap, complete unseen base, disconnected flying chairs or different park's multicolor tower. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "b59c8fdf3304bd8af0eb968f56018b04f731c404a7a5cb86dbb26650780fa47f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 156397976694037,
+      "rideName": "Pirates of Speelunker Cave",
+      "alt": "Illustrated Pirates of Speelunker Cave at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:41:53.169266+00:00",
+      "originalSHA256": "97e54496ce16b39057124a42012bd5d16813d8043014a7098c7d90eb8e91eec7",
+      "review": "Accepted: generated pixels inspected against genuine 2022-watermarked SFOT Source boarding-area photograph. Actual brown scalloped boat/pale bench backs, blue channel, timber cave portal, stone wall, lantern and physical pirate flag retained. Foreground source riders remain from behind; no unseen cave scene or route invented. Original watermarked photo remains private and credited.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6348983bcf1bf37042eeba18/60d2bea8-380d-4630-a187-35680a0e1cc0/DSC03306.jpg",
+          "sourceURL": "https://www.sfotsource.com/rides/pirates-speelunker-cave",
+          "alt": "Actual Pirates of Speelunker Cave boat entering cave portal",
+          "credit": "SFOT Source (photographer/publisher)",
+          "license": "Copyright SFOT Source; all rights reserved; source photograph remains private",
+          "licenseURL": "https://www.sfotsource.com/about",
+          "sha256": "adec3db75fb7b592561ffdb8e352ddd22450cb1a85186cbb34d905e07e84dbe7",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine SFOT Source boarding-area photo shows this ride's actual low BROWN scalloped-edge boat with pale/WHITE inner bench backs in a narrow bright BLUE-lined water channel, approaching a dark timber X-braced cave portal between natural TAN stacked-stone wall and a real wooden dock. A black skull-and-crossbones flag, blue lantern and timber posts are visible above. Choose the photographed small rear boat entering that real portal and connected blue channel/stone bank in a close/medium portrait. Keep foreground riders/dock control panels/lettering outside crop and distant riders incidental. This 2022-watermarked reference establishes boat/portal appearance, not a present operating state or unseen cave scenes; do not invent pirates, animatronics, a full hidden boat hull or ride route. Photo capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-156397976694037-thumbnail.jpg",
+      "thumbnailSHA256": "ad73f7f2e097d2a28bd8064b84cb9dbda59d04df1e98bfe4347aff6a48157203",
+      "thumbnailBytes": 23139,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-156397976694037-detail.jpg",
+      "detailSHA256": "411c2faff21f5200b97e3416f4287949935e19167f081751c554156b288d1d93",
+      "detailBytes": 169635,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-156397976694037",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Pirates of Speelunker Cave at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine SFOT Source boarding-area photo shows this ride's actual low BROWN scalloped-edge boat with pale/WHITE inner bench backs in a narrow bright BLUE-lined water channel, approaching a dark timber X-braced cave portal between natural TAN stacked-stone wall and a real wooden dock. A black skull-and-crossbones flag, blue lantern and timber posts are visible above. Choose the photographed small rear boat entering that real portal and connected blue channel/stone bank in a close/medium portrait. Keep foreground riders/dock control panels/lettering outside crop and distant riders incidental. This 2022-watermarked reference establishes boat/portal appearance, not a present operating state or unseen cave scenes; do not invent pirates, animatronics, a full hidden boat hull or ride route. Photo capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "00a33b9ffce146e5f03612c163d97b353d75b4d08501dffc45d02721fb2b8c39",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 156989977854567,
+      "rideName": "Bugs Bunny Cloud Bouncer",
+      "alt": "Illustrated Bugs Bunny Cloud Bouncer at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:42:32.421761+00:00",
+      "originalSHA256": "09adffd3b3641a106a401d5f1d910960d15951f0753940ac0ed623272c1f8fc3",
+      "review": "Accepted: generated pixels inspected against genuine official Bugs Bunny Cloud Bouncer photograph. Actual red seat row, blue carriage, padded black lap bar/silver brackets, blue-white cloud/plane panel and yellow guide section retained, with source-scale children. No other park's character drop-tower substituted.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fe856d49784eb12de61f21a4c5432c7fc4efe2a20-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A group of children ride the Bugs Bunny Cloud Bouncer at Six Flags Over Texas, enjoying the free fall drop tower ride.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/bugs-bunny-cloud-bouncer",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "09dcb45dac5cab7e5b30b8bbe57d8cebf6a09500ee0752fd521c799053b88b79",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Bugs Bunny Cloud Bouncer photo shows the actual straight row of SIX RED molded bucket seats attached to a BLUE lower carriage, one long padded BLACK lap bar with silver hinged side brackets and individual belt straps, against the painted BLUE/WHITE cloud-and-airplane backdrop with a RED airplane nose and visible YELLOW/orange lower tower guide section. Choose this photographed local seat row and cloud/plane panel, preserving actual seat/bar attachments and source position. Source children remain incidental at the photographed medium scale. No living rabbit, Sylvester figure, different lighthouse drop tower, invented top ornament, extra seat or unseen full base. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-156989977854567-thumbnail.jpg",
+      "thumbnailSHA256": "d9fc356a821da72b6fa886c4ff1e5d1780878670a66d28b0d5c5acb34a8d1497",
+      "thumbnailBytes": 27406,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-156989977854567-detail.jpg",
+      "detailSHA256": "a7e2ef87d565c039dbffb8d450fcc8fd1249f4dc82e7ed1b1ed70222a5ec95e9",
+      "detailBytes": 160993,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-156989977854567",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Bugs Bunny Cloud Bouncer at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official Bugs Bunny Cloud Bouncer photo shows the actual straight row of SIX RED molded bucket seats attached to a BLUE lower carriage, one long padded BLACK lap bar with silver hinged side brackets and individual belt straps, against the painted BLUE/WHITE cloud-and-airplane backdrop with a RED airplane nose and visible YELLOW/orange lower tower guide section. Choose this photographed local seat row and cloud/plane panel, preserving actual seat/bar attachments and source position. Source children remain incidental at the photographed medium scale. No living rabbit, Sylvester figure, different lighthouse drop tower, invented top ornament, extra seat or unseen full base. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "ef6f3103eaf350a262a79c223b4c952a33df0732964490f9dc8a99ae45f18fdf",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 157065262321757,
+      "rideName": "Casa Magnetica",
+      "alt": "Illustrated Casa Magnetica at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:43:01.730125+00:00",
+      "originalSHA256": "69c4c370ba0d8c08174e20c08fef5551df9f8c4c25d9fc20ec5782dce8998a28",
+      "review": "Accepted: generated pixels inspected against genuine 2026-watermarked SFOT Source Casa Magnetica interior photograph. Actual slanted wall/shelves, suspended wicker basket/two garland-covered chains, exposed beam, papel-picado banners and table/hearth relationships retained. No levitating objects, invented furniture or unpictured room added; original watermarked photo stays private and credited.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6348983bcf1bf37042eeba18/1787611418511-5CONZ5RQIKDXZDV2009Y/DSC03546.jpg",
+          "sourceURL": "https://www.sfotsource.com/rides/casa-magnetica",
+          "alt": "Actual tilted Casa Magnetica interior and hanging basket",
+          "credit": "SFOT Source (photographer/publisher)",
+          "license": "Copyright SFOT Source; all rights reserved; source photograph remains private",
+          "licenseURL": "https://www.sfotsource.com/about",
+          "sha256": "642ba01cfa80d998885853e433d9a3625537bb932b7fc61a82e1c9a51f48fe0c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine SFOT Source 2026-watermarked interior photo shows Casa Magnetica's actual deliberately slanted plaster room: pale lavender/cream walls over a deep red-brown lower band, dark exposed beams/wood shelves, a bamboo-framed mirror at left, colorful papel-picado banners overhead and along the wall, and a WICKER basket hanging on two real chains decorated with YELLOW flower garlands beside a wooden table/books/cloth and arched hearth opening. Choose the photographed central hanging basket, attached chain/beam and tilted wall/shelf/table-edge relationships in a close/medium portrait, preserving the actual angle and gravity illusion instead of straightening the room or creating floating objects. Keep unseen room sections and tourist portraits outside crop; no magical energy or invented furniture. Honest dim indoor practical lighting with restrained blue-purple shadows. Exact capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-157065262321757-thumbnail.jpg",
+      "thumbnailSHA256": "f1b2e6e6b0825ce824046e80744bcf17163feb40edc34c14aacc38f2b677eaba",
+      "thumbnailBytes": 21786,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-157065262321757-detail.jpg",
+      "detailSHA256": "21a9fdc51ab3a0d5088679ad4baded98ee0990ea838262af5983c2a368fe06a7",
+      "detailBytes": 162579,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-157065262321757",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Casa Magnetica at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine SFOT Source 2026-watermarked interior photo shows Casa Magnetica's actual deliberately slanted plaster room: pale lavender/cream walls over a deep red-brown lower band, dark exposed beams/wood shelves, a bamboo-framed mirror at left, colorful papel-picado banners overhead and along the wall, and a WICKER basket hanging on two real chains decorated with YELLOW flower garlands beside a wooden table/books/cloth and arched hearth opening. Choose the photographed central hanging basket, attached chain/beam and tilted wall/shelf/table-edge relationships in a close/medium portrait, preserving the actual angle and gravity illusion instead of straightening the room or creating floating objects. Keep unseen room sections and tourist portraits outside crop; no magical energy or invented furniture. Honest dim indoor practical lighting with restrained blue-purple shadows. Exact capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "c13e3f075062673860b51a45b69175145d02f3bdb3dff8e5bf5eba24dc4e2069",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 166815507328892,
+      "rideName": "El Aserradero",
+      "alt": "Illustrated El Aserradero at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:46:34.561946+00:00",
+      "originalSHA256": "6c4b62007e28774342123089f236a9e9bb04e1d0b2cad3a3bc9d87a31adb3828",
+      "review": "Accepted: generated pixels inspected against the genuine official log-flume gallery photograph. Dark bark-textured log, pale cut-wood bow with rings/knots, tan inner channel and source-scale single-file riders remain within the turquoise flume with actual water contact and dark support framing. No unseen route or running gear added.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffe6a70ccfd9db33de0183c7d1807c67c83ed9b64-1440x799.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Family riding a log on the El Aserradero water ride at Six Flags Over Texas, smiling and having fun.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/el-aserradero",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d348a9bc16b121dae5a7a95d39cec7e8d391904971baf8b5084ff1d391211667",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official El Aserradero secondary gallery photo shows its actual dark BROWN/gray bark-textured log flume boat with a pale cut-wood bow face/annual rings, round light knots, long tan inner channel and single-file riders, descending within TURQUOISE sidewalls with dark wood/steel support framing and real water behind the log. Choose only that photographed log front/upper hull and turquoise chute section in a close/medium portrait; keep source riders incidental, preserve water contact/occlusion and crop the unrelated yellow coaster at left. No visible running gear is established, so do not add wheels, chassis, hidden hull or a full unpictured flume route. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-166815507328892-thumbnail.jpg",
+      "thumbnailSHA256": "8ce68e51baad1acc97bded4f8eb1f986280dff535679d9fe7e84d6397f4386e7",
+      "thumbnailBytes": 25450,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-166815507328892-detail.jpg",
+      "detailSHA256": "58fadba6fc50188d1d7639f426b03b67fb261df82e3a1c9a7c4487eabd11195e",
+      "detailBytes": 183905,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-166815507328892",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict El Aserradero at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official El Aserradero secondary gallery photo shows its actual dark BROWN/gray bark-textured log flume boat with a pale cut-wood bow face/annual rings, round light knots, long tan inner channel and single-file riders, descending within TURQUOISE sidewalls with dark wood/steel support framing and real water behind the log. Choose only that photographed log front/upper hull and turquoise chute section in a close/medium portrait; keep source riders incidental, preserve water contact/occlusion and crop the unrelated yellow coaster at left. No visible running gear is established, so do not add wheels, chassis, hidden hull or a full unpictured flume route. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "58fa8d257943cbd5f738f70d86258ed976c33ba7adc4d66de6444b6e178a635c",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 167988969400432,
+      "rideName": "THE RIDDLER™'s Revenge",
+      "alt": "Illustrated THE RIDDLER™'s Revenge at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:47:22.710664+00:00",
+      "originalSHA256": "0380eb252d6c7d1ad8425338e121edd7c53d837ea6977b5085325a81b2056d3b",
+      "review": "Accepted: generated pixels inspected against the genuine official Over Texas pendulum photograph. Yellow disc and six triangular green/yellow spokes, lime hub, green seat mounts, purple buckets/black restraints and attached dark teal arm/support are retained with source-scale riders. No other park's coaster substituted.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fd358a7b2db3a69965132d33e716e7abf75db4d77-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders experiencing the thrill of THE RIDDLER™'s Revenge, a pendulum ride at Six Flags Over Texas.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/riddler-revenge",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "49457a9ae416895f21affe24271137bcc4af37a0391d3f9dd3975d63b1e97501",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Over Texas RIDDLER's Revenge photo shows the actual YELLOW circular pendulum disc and six green/yellow triangular spokes, GREEN seat mounts with PURPLE bucket seats/black shoulder restraints, bright LIME central hub and a dark TEAL/green pendulum arm between green support legs with real pale light strips. Choose the photographed underside disc, its connected green hub/arm and source-supported support section, preserving actual spoke and seat-ring geometry. Keep riders at source scale; no stand-up coaster, Magic Mountain RIDDLER track, living villain or unpictured apex/base. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-167988969400432-thumbnail.jpg",
+      "thumbnailSHA256": "ffb771c97ffb739e66dee8d2c745753f9908e9f2484237b019df8480afc70578",
+      "thumbnailBytes": 27193,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-167988969400432-detail.jpg",
+      "detailSHA256": "9ad02f759748bb0fc4ef4d9f2ad63b14e43f8e642b78af71b006ec463e5967d6",
+      "detailBytes": 180324,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-167988969400432",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict THE RIDDLER™'s Revenge at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official Over Texas RIDDLER's Revenge photo shows the actual YELLOW circular pendulum disc and six green/yellow triangular spokes, GREEN seat mounts with PURPLE bucket seats/black shoulder restraints, bright LIME central hub and a dark TEAL/green pendulum arm between green support legs with real pale light strips. Choose the photographed underside disc, its connected green hub/arm and source-supported support section, preserving actual spoke and seat-ring geometry. Keep riders at source scale; no stand-up coaster, Magic Mountain RIDDLER track, living villain or unpictured apex/base. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "78df77a0b399912bfbf46f022dfd6150bd1ccfe5cfe02f8794be9378e95cf73e",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 175061786711038,
+      "rideName": "Silver Star Carousel",
+      "alt": "Illustrated Silver Star Carousel at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:47:00.738337+00:00",
+      "originalSHA256": "1b77c02a5c189241375be7502eeb1edb0241a580f0cd8aa915a3978e31378466",
+      "review": "Accepted: generated pixels inspected against the genuine official carousel gallery photograph. The carved chestnut horse, black mane, turquoise bridle/cloth, pink-red harness panels, brass pole, wooden platform and warm ornamental canopy are retained as manufactured carousel hardware.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4344ca0d7a6660dca00f0748e4039ebe95fc693c-3725x2482.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Close-up of a beautifully decorated horse on the Silver Star Carousel at Six Flags Over Texas.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/silver-star-carousel",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2acb16684f9af4ce5519f73406e2ab677fbe970d059c83a4417259e6f7463cea",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Silver Star Carousel close gallery photo shows its actual carved CHESTNUT-brown horse with glossy BLACK mane, TURQUOISE bridle and saddle cloth, PINK straps, RED chest/side panels, brown saddle, gold round medallions, black hooves and real silver stirrups, pierced by the actual BRASS vertical support pole above a wooden platform. The photographed canopy has warm/red bulbs, mirrors and painted ornamental panels. Choose this actual empty foreground chestnut horse, its photographed leg/body pose, pole and a source-supported canopy section in a portrait; keep adjacent riders/background horses incidental. This is a manufactured carousel figure, not a live horse; do not invent new saddlery, hidden legs, wings or a different carousel pavilion. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-175061786711038-thumbnail.jpg",
+      "thumbnailSHA256": "ba7529d8886108366d81d9562eaaeffaa80d98a1f0ad5eac9ed8d25250c77839",
+      "thumbnailBytes": 25922,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-175061786711038-detail.jpg",
+      "detailSHA256": "095540cc532745d2f19d15c83e368045b3c00ffb5b8414db1af8fd740fcb9a15",
+      "detailBytes": 167029,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-175061786711038",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Silver Star Carousel at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official Silver Star Carousel close gallery photo shows its actual carved CHESTNUT-brown horse with glossy BLACK mane, TURQUOISE bridle and saddle cloth, PINK straps, RED chest/side panels, brown saddle, gold round medallions, black hooves and real silver stirrups, pierced by the actual BRASS vertical support pole above a wooden platform. The photographed canopy has warm/red bulbs, mirrors and painted ornamental panels. Choose this actual empty foreground chestnut horse, its photographed leg/body pose, pole and a source-supported canopy section in a portrait; keep adjacent riders/background horses incidental. This is a manufactured carousel figure, not a live horse; do not invent new saddlery, hidden legs, wings or a different carousel pavilion. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "f47bb25b00726d30ad154660211503b9df119e8b8141cbe986700eae01e9c56b",
+      "generationSteps": []
+    },
+    {
+      "parkId": 34,
+      "rideId": 177742719363858,
+      "rideName": "Dive Bomber Alley",
+      "alt": "Illustrated Dive Bomber Alley at Six Flags Over Texas",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T01:47:44.194982+00:00",
+      "originalSHA256": "7220fc2aa363018723798859554b3d8feef307bcfe3f8fb802ebbf4086f3a241",
+      "review": "Accepted: generated pixels inspected against the genuine official harness-flight photograph. Three prone riders, red/black padded harnesses, converging black webbing/steel connectors, gray-black link and attached cable with pale foot-spreader retained. Unrelated coaster and unpictured towers are outside the crop; no unsupported free flight invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F797238b595b6d437e778e10ff1206ddb5b93a414-1440x799.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders soaring through the air on the Dive Bomber Alley ride at Six Flags Over Texas.",
+          "sourceURL": "https://www.sixflags.com/overtexas/attractions/dive-bomber-alley",
+          "credit": "Six Flags / Over Texas (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "197c627db903d89b3a0fe52906bdd30ac24ce7010904479edb4755c43f44f8b6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Dive Bomber Alley photo shows THREE side-by-side PRONE riders in actual RED/BLACK padded body harnesses, BLACK webbing suspension straps converging through visible steel connectors into a single cable/short gray-black covered link assembly, with a real pale horizontal foot-spreader bar. Choose this photographed harness/rider group and its actual suspension cable in a close/medium portrait, preserving the real strapped body orientation and connections. Crop the unrelated red-track/blue-column coaster behind them and leave the unpictured Skycoaster towers/ground outside frame. Do not depict unsupported free flight, parachutes, an aircraft, new hanging seats or invented full tower/cable geometry. Capture date unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "34-177742719363858-thumbnail.jpg",
+      "thumbnailSHA256": "01bb0536321fa7a13af5a58eef69be61ab0bf5a3fb02a4007fb17a13412c09df",
+      "thumbnailBytes": 14212,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "34-177742719363858-detail.jpg",
+      "detailSHA256": "28daaf9c2bdefc6e3b29aad37c7f03386266c46ed01fea70c72cb42b70001524",
+      "detailBytes": 78978,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "34-177742719363858",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Dive Bomber Alley at Six Flags Over Texas. Source- and pixel-reviewed facts and limits: The genuine official Dive Bomber Alley photo shows THREE side-by-side PRONE riders in actual RED/BLACK padded body harnesses, BLACK webbing suspension straps converging through visible steel connectors into a single cable/short gray-black covered link assembly, with a real pale horizontal foot-spreader bar. Choose this photographed harness/rider group and its actual suspension cable in a close/medium portrait, preserving the real strapped body orientation and connections. Crop the unrelated red-track/blue-column coaster behind them and leave the unpictured Skycoaster towers/ground outside frame. Do not depict unsupported free flight, parachutes, an aircraft, new hanging seats or invented full tower/cable geometry. Capture date unverified. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "1edbf2db45d72ad2dc0a1b7a24eef00e76752345fbef8507066477cfd4de0f18",
+      "generationSteps": []
+    },
+    {
       "parkId": 35,
       "rideId": 355690524725,
       "rideName": "Twisted Cyclone",
