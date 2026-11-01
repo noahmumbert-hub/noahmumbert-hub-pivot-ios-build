@@ -36515,6 +36515,1416 @@
       "generationSteps": []
     },
     {
+      "parkId": 62,
+      "rideId": 130738119594834,
+      "rideName": "Grizzly",
+      "alt": "Illustrated Grizzly at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:14:06.849000+00:00",
+      "originalSHA256": "556f6142b02f26348fd1b589b3310d572104b98b0f07af7547930310af4ad898",
+      "review": "Accepted: Actually viewed final generated original: single yellow Grizzly bear-front train, two-abreast secured ordinary riders and weathered wood rails/trestles follow source banked dip; believable photographic surfaces, recognizable source train, no full route claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/7ce2440bb30a91849407c5eba4555df4be7541a5-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/grizzly",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "6fd29ad7b919a8b816a5c1d577b558ae545fb762182aeba20ffb1cf2bc64e82f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Grizzly photograph with physical Grizzly front logo and target wooden-coaster page. Source one yellow-front wooden train with silver/dark vertical trim, actual bear/Grizzly decal, ordinary two-abreast secured riders follows weathered timber running rails through banked dip; dense wood trestles/maintenance side rail and leafy trees. Preserve single connected source train/wood-track section without invented full route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-130738119594834-thumbnail.jpg",
+      "thumbnailSHA256": "1c8ff7fe0ef16fefab443363128464486aa91212007d7252ac0e17c687f43e52",
+      "thumbnailBytes": 31778,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-130738119594834-detail.jpg",
+      "detailSHA256": "8e2203c04a7b74eebeec5f3a0cf4be07d5a6f7b9db6502d3a41e0f70e53c6f14",
+      "detailBytes": 240069,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-130738119594834",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Grizzly at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Grizzly photograph with physical Grizzly front logo and target wooden-coaster page. Source one yellow-front wooden train with silver/dark vertical trim, actual bear/Grizzly decal, ordinary two-abreast secured riders follows weathered timber running rails through banked dip; dense wood trestles/maintenance side rail and leafy trees. Preserve single connected source train/wood-track section without invented full route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "2e46f346df76f883a0f943b0852069ce6deb3cd99e0e511d881c444cb4215599",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 135078569899484,
+      "rideName": "Drop Tower",
+      "alt": "Illustrated Drop Tower at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:14:33.837367+00:00",
+      "originalSHA256": "f71fe6241c47ae1e8f5f958789d6cc4523ad25343d15a04345a3847487ff0fb7",
+      "review": "Accepted: Actually viewed final generated original: orange/yellow banded mast, green radial seat ring, secured distant riders and square green/gray machinery cap follow authentic low-angle source, no invented ground ride.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/5a217d26d82668f33661325b101672fdfffe7817-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/drop-tower",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "635d727a728074f7fb73448f3e048a8fb40ce4f30d80d28c5b1f928c0d172718",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Drop Tower photograph and target page. Source orange/yellow banded cylindrical mast with actual dark guide rails supports round green hub with black radial support rods/ring of outward-facing restrained seats and distant ordinary riders, actual green/gray square top machinery cap and loudspeakers. Low-angle source upper section against sky only, no invented ground or unrelated drop ride."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-135078569899484-thumbnail.jpg",
+      "thumbnailSHA256": "a88d3c2cf471b3e7f62d6344deb5a58c14f0002d81b8209f32df30a9335462a2",
+      "thumbnailBytes": 15110,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-135078569899484-detail.jpg",
+      "detailSHA256": "adfb1c41e9a0a5e1867b746faaab888fb50fa20f2f56c3b997eaa6616b70c07e",
+      "detailBytes": 109979,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-135078569899484",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Drop Tower at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Drop Tower photograph and target page. Source orange/yellow banded cylindrical mast with actual dark guide rails supports round green hub with black radial support rods/ring of outward-facing restrained seats and distant ordinary riders, actual green/gray square top machinery cap and loudspeakers. Low-angle source upper section against sky only, no invented ground or unrelated drop ride. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "5afcfae815696d338c902eca91cdc3e710d2d814d3aefc1a77e6d706f3493d4c",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 135848703730638,
+      "rideName": "Arachnidia",
+      "alt": "Illustrated Arachnidia at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:14:52.965629+00:00",
+      "originalSHA256": "0e653b5634bc7a1279f3a2a371ed9b083924ad3e27570bf6816d35d35b1d1f46",
+      "review": "Accepted: Actually viewed final generated original: actual orange Arachnidia tub with black padding, orange common bar and source silver latch/chain, ordinary mother and daughter; only source tub section depicted.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/2d01f4389f7f993204fb6bcf59e9277dd1bf1261-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/arachnidia",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d9695a01f44583e5bf15144dcb0656f323f441729fa3c0c75f46e0e05ae28d52",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Arachnidia photo and target multiarm spinning-ride body. Tight actual orange tub with black padded rear/upper trim, orange common bar held by ordinary mother/daughter, source polished latch/hinge and short chain at left, real tan queue rail/trees behind. Preserve this source tub/interior section only, no invented whole spider mechanism, character or extra arms."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-135848703730638-thumbnail.jpg",
+      "thumbnailSHA256": "5d792e1f61fcb9d55bfd384675e24b47816103040f48fe7907203baff28fb178",
+      "thumbnailBytes": 18901,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-135848703730638-detail.jpg",
+      "detailSHA256": "23e9995eb93db0adabbf309eebe5aa2058a845f83d662de97c286ba8063767f3",
+      "detailBytes": 122614,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-135848703730638",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Arachnidia at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Arachnidia photo and target multiarm spinning-ride body. Tight actual orange tub with black padded rear/upper trim, orange common bar held by ordinary mother/daughter, source polished latch/hinge and short chain at left, real tan queue rail/trees behind. Preserve this source tub/interior section only, no invented whole spider mechanism, character or extra arms. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "f03417925fb1c386cb278184c3dc1b2847d6fa5131296da2ea68ff7e7ce0b968",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 145027521106220,
+      "rideName": "Pantherian",
+      "alt": "Illustrated Pantherian at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:15:33.286166+00:00",
+      "originalSHA256": "925222a376a3bd948598401345b9b7aa4142fbcd3650acf163f6d157c29b4992",
+      "review": "Accepted: Actually viewed final generated original: actual yellow/orange tall drop/lift on red-orange trestles, single dark train, distant green Eiffel tower and white wooden track follow source aerial section; no current operating-status claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fassets.sixflags.com%2Ftransform%2FWebsite-POI-Banner_2880x1600%2F95e6f39e-a303-43eb-b63b-09879c364b3f%2FKD-Pantherian-27%3Fio%3Dtransform%3Afill%2Cwidth%3A1920%2Cheight%3A1066%26format%3Dwebp%26quality%3D80%26v%3D2026-10-28T13%3A25%3A16.310Z&w=1920&q=75",
+          "kind": "image",
+          "alt": "Pantherian",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/pantherian",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ee0d79127cc1b6559660d51ae8b1821b742e8006f1706aaab4fd03f565b1cc81",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Pantherian aerial photo and target page. Source tall yellow/orange lattice-backed coaster lift/drop on orange-red tall trestle supports and black lower columns; single dark connected train with ordinary riders tips down source near-vertical left descent. Actual adjacent white wooden Racer track/trees below and distant green observation tower, but use tight source central lift/drop section only rather than inventing full aerial layout, repaint or additional train."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-145027521106220-thumbnail.jpg",
+      "thumbnailSHA256": "50817d4e88ad2d911d66ba906c2b4f6fb900b5383ee4131ed7d4f1a00aae096e",
+      "thumbnailBytes": 28399,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-145027521106220-detail.jpg",
+      "detailSHA256": "cab6c8dcdf190624b2d0b000097715d9d2324a9eeaf55715363671793a647c4d",
+      "detailBytes": 220657,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-145027521106220",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Pantherian at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Pantherian aerial photo and target page. Source tall yellow/orange lattice-backed coaster lift/drop on orange-red tall trestle supports and black lower columns; single dark connected train with ordinary riders tips down source near-vertical left descent. Actual adjacent white wooden Racer track/trees below and distant green observation tower, but use tight source central lift/drop section only rather than inventing full aerial layout, repaint or additional train. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "bafdf87ed1d4090e33ec9143d6a5515a3e01f9255cc7ec39afe0c7c504f1ae71",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 145448439594238,
+      "rideName": "Backlot Stunt Coaster",
+      "alt": "Illustrated Backlot Stunt Coaster at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:16:26.002872+00:00",
+      "originalSHA256": "e22a6e2e31ebec01ba3961ba8a887b206c54696b304b302844e4e65f46737c97",
+      "review": "Accepted: Actually viewed final generated original: connected red convertible cars, silver decorative wheels, black seats/orange laps and guide-wheel assembly on source gray track/braces; no road chase or added effects.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/c35487c9f934928a0fcef85ab493481c73703b25-5760x3115.jpg?rect=0,53,5760,3010&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/backlot-stunt-coaster",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "0829e2c3e8d5f2a0242096cf495a5144f7e1b0246639a25312b61bff38fcabaa",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Backlot Stunt Coaster photo and target launched-coaster body. Actual connected red convertible-styled cars with fixed silver decorative road wheels, black headrests and orange lap restraints around ordinary family riders; actual undercarriage guide wheels grip gray launch/descent rails on drilled steel support beams amid gray columns/cross braces and gravel. Preserve source single train/track section, no real road chase, guns or added effects."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-145448439594238-thumbnail.jpg",
+      "thumbnailSHA256": "94516cb2c57d68c17279bb210faed840259a63c816228822cadd1dfe44dc8cd5",
+      "thumbnailBytes": 25448,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-145448439594238-detail.jpg",
+      "detailSHA256": "71b99924a6b2fb380bad9797382481a59f669dea45a0316e117d1775e988ebfd",
+      "detailBytes": 156214,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-145448439594238",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Backlot Stunt Coaster at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Backlot Stunt Coaster photo and target launched-coaster body. Actual connected red convertible-styled cars with fixed silver decorative road wheels, black headrests and orange lap restraints around ordinary family riders; actual undercarriage guide wheels grip gray launch/descent rails on drilled steel support beams amid gray columns/cross braces and gravel. Preserve source single train/track section, no real road chase, guns or added effects. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "2e0b31618f9b361d7e2b005b12d18219f0e137a9cdc192dd7948b5e5986a324e",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 148879768612156,
+      "rideName": "Tidal Wave Bay",
+      "alt": "Illustrated Tidal Wave Bay at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:17:19.911578+00:00",
+      "originalSHA256": "ca584343aa656f5b79b08cc2dfc29b58dd040c6dfa6b7963b74e90313e84d57e",
+      "review": "Accepted: Actually viewed final generated original: source shallow turquoise pool family scene, normal swimwear and blue-black life vest, background bathers, no invented giant waves or pool machinery.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/6d02a02c366e32109b0b745e981406e87daec32e-6144x4096.jpg?rect=0,443,6144,3210&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/tidal-wave-bay",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "77700b3f85893ee4474695095663b42fc67da02a35b03b6d2e0709631e2e1736",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Tidal Wave Bay photograph and target pool page. Tight source shallow pale-turquoise water with ordinary smiling children in normal swimwear, one wearing blue/black life vest, real background ordinary bathers standing in shallow water. Preserve simple source shallow-water family scene without invented giant waves, buildings, complete pool, machinery or unsupported pool geometry."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-148879768612156-thumbnail.jpg",
+      "thumbnailSHA256": "41f5bf15905efa31afd1876c82458217e5bf4d06fb79a2daefc226a95feeed48",
+      "thumbnailBytes": 24238,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-148879768612156-detail.jpg",
+      "detailSHA256": "c931f768dbe1c383d320a63423c23f5e151553f79495e13466dcb2d880dc48d7",
+      "detailBytes": 143839,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-148879768612156",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Tidal Wave Bay at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Tidal Wave Bay photograph and target pool page. Tight source shallow pale-turquoise water with ordinary smiling children in normal swimwear, one wearing blue/black life vest, real background ordinary bathers standing in shallow water. Preserve simple source shallow-water family scene without invented giant waves, buildings, complete pool, machinery or unsupported pool geometry. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "553878c9d306e3622438b6a6d4abcfdc2d311994e23cb734d808bf70b0bcdeb8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 149751036991911,
+      "rideName": "Reptilian",
+      "alt": "Illustrated Reptilian at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:23:16.536194+00:00",
+      "originalSHA256": "5bd282f4cfbf75ed482e08cd8fff6c6a62170ce1e2919701116c1b2b5a32df27",
+      "review": "Accepted: Actually viewed final generated original. Actual source orange open bobsled trough, linked brown reptile shells with green-yellow pattern, secured ordinary riders and green neighboring coaster on tan supports remain recognizable.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/c95321c6db3bd34218962ada189e437f7ac43649-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/reptilian",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a2f0f6ad9e82cf94f9fa7cbfe923a2d6e0c87fb24566683af814afe7d752bf53",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Reptilian photograph and target bobsled page. Source copper-orange open steel bobsled trough with one linked dark brown reptile-patterned train; green/yellow pixel-like reptile shell markings, black seats and lap bars around ordinary clothed guests; actual green neighboring track on tan columns and trees. Preserve only source banked trough and connected train, not invented conventional coaster rails or hidden full route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-149751036991911-thumbnail.jpg",
+      "thumbnailSHA256": "dafaef663a7bf33064febcff5d930b647ecbe77287e04a476aa564e1e8a58a5a",
+      "thumbnailBytes": 25056,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-149751036991911-detail.jpg",
+      "detailSHA256": "76d75a9de9a583347436f8c8c0b34ec37cf4707dd86dae99c9396a7776203ae2",
+      "detailBytes": 203937,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-149751036991911",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Reptilian at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Reptilian photograph and target bobsled page. Source copper-orange open steel bobsled trough with one linked dark brown reptile-patterned train; green/yellow pixel-like reptile shell markings, black seats and lap bars around ordinary clothed guests; actual green neighboring track on tan columns and trees. Preserve only source banked trough and connected train, not invented conventional coaster rails or hidden full route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "d3f5658cf2175a4d641c36e9a9cca4e8e36f66c30927002738681a4a5c7afa8e",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 165891229802310,
+      "rideName": "Delirium",
+      "alt": "Illustrated Delirium at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:22:54.515920+00:00",
+      "originalSHA256": "035a439df52fc7752899ede1b8cd73a4d6ad0d94378aeaebb510b71f507ce45c",
+      "review": "Accepted: Actually viewed final generated original. Actual blue upper pivot and A-frame carry connected orange/yellow pendulum and source orange-spoked seat ring, blue segments and multi-color restrained seats.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/278bbb53319c5194e781c29b27a4503fb8383b2d-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/delirium",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "683e1de82ca6e68b69ece3220658ba79ca8d693030bdc471270f480823a25fd9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Delirium photograph and target swinging pendulum page. Source blue A-frame and upper pivot, long orange/yellow arm and orange spoke outward-facing rotating seat ring with yellow/purple/red seats, black restraints and ordinary secured riders, blue perimeter/platform. Preserve mechanically connected photographed pendulum section and ring, no substituted Kings Island ride or invented exact count outside visible crop."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-165891229802310-thumbnail.jpg",
+      "thumbnailSHA256": "e8b7c854a11e4c28085b56044fa587a010e97bbe84d98ead4e66f6cf46f1fb8f",
+      "thumbnailBytes": 23465,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-165891229802310-detail.jpg",
+      "detailSHA256": "12377f4f19610d9ba361217c2b1b840d25ef2f40f9e26b3f2e7cb471276b593a",
+      "detailBytes": 163765,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-165891229802310",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Delirium at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Delirium photograph and target swinging pendulum page. Source blue A-frame and upper pivot, long orange/yellow arm and orange spoke outward-facing rotating seat ring with yellow/purple/red seats, black restraints and ordinary secured riders, blue perimeter/platform. Preserve mechanically connected photographed pendulum section and ring, no substituted Kings Island ride or invented exact count outside visible crop. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "4c81863ae9f254e154bf9d64210afdac7c17be7c39b15584c94af8c9ced34b03",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 166149247775838,
+      "rideName": "Racer 75 - South",
+      "alt": "Illustrated Racer 75 - South at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:23:56.796715+00:00",
+      "originalSHA256": "293bb6789ce2c2ab90c0f7abe9fd1499544016a461596741108dec8afce0bbf3",
+      "review": "Accepted: Actually viewed final generated original. Distinct composition of shared authentic twin-track Racer75 installation, two red trains 1/2 and source wood rails/fences; no unsupported assertion which side/train is South. Provider identity retained in source review.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/9d01f1d50b768d13e095969cb53d0a521b889225-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/racer-75",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "710c02a4d00c8751268896b45b3d150c401e8dba257394db12bdc7176741d309",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own official Racer75 photograph, target twin wooden-coaster page and public provider identity f32c1103-4767-4e5c-bd8c-cb1af4de2fe7 explicitly named Racer 75 - South, externalId RIDE-025-00192, beside generic Racer75 RIDE-025-00191. Both catalog entries belong to same twin-track installation and operator page. Source two red-front trains marked 1 and 2, silver vertical trim, ordinary two-abreast riders on parallel weathered wood rails, gray maintenance fences and pines. Create a distinct tighter composition of actual paired front-train/rail section, preserve both tracks; source does not identify which photographed lane is South, so DO NOT assign South to a color, train number or image side. This is generated artwork of the shared Racer75 installation, not lane-identification evidence."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-166149247775838-thumbnail.jpg",
+      "thumbnailSHA256": "6a8934d7e6b14766133b4d28ad58476566acfc6f109eedc72a89ff666e09a4bc",
+      "thumbnailBytes": 30739,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-166149247775838-detail.jpg",
+      "detailSHA256": "f1ebaf0b1cc4d87cfb870ee10652a328aba34a23a40c422953cd03e11643e312",
+      "detailBytes": 217377,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-166149247775838",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Racer 75 - South at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own official Racer75 photograph, target twin wooden-coaster page and public provider identity f32c1103-4767-4e5c-bd8c-cb1af4de2fe7 explicitly named Racer 75 - South, externalId RIDE-025-00192, beside generic Racer75 RIDE-025-00191. Both catalog entries belong to same twin-track installation and operator page. Source two red-front trains marked 1 and 2, silver vertical trim, ordinary two-abreast riders on parallel weathered wood rails, gray maintenance fences and pines. Create a distinct tighter composition of actual paired front-train/rail section, preserve both tracks; source does not identify which photographed lane is South, so DO NOT assign South to a color, train number or image side. This is generated artwork of the shared Racer75 installation, not lane-identification evidence. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "4e5f0d309db4993d5256f121db4ecd7e64aa567bbf32002bd1e4ab7cf16024ce",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 171450582998547,
+      "rideName": "Lucy's Tugboat",
+      "alt": "Illustrated Lucy's Tugboat at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:25:25.354312+00:00",
+      "originalSHA256": "06f2a99ef23a8cccd5e82c1d08c0af615fcab3847a115e6c94ab1d5f0939b0ce",
+      "review": "Accepted: Actually viewed final generated original. Red hull/tires/chains, white-purple cabin arches, red-blue stack/yellow ornaments, gated ordinary family and blue curved guide track/wave skirt follow exact source tugboat.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/c80a2560fa3b5801cb7f62296fab876f289b5681-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/lucys-tugboat",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "0e4f62cce0eb08131e50a08818ef532396eb5d8d29600103536b1157bf3a7a92",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Lucy Tugboat photograph and target family rocking-spinning tug page. Source red hull with black tires/red centers on chains, white-gray steps and numbered gray gates, orange bench/lap bars around ordinary family, white twin arch cabin with purple stripe, red-blue smokestack/yellow ornaments. Actual blue curved rail/platform and wave-painted skirt below, turquoise fence and trees. Preserve source connected boat/track section, no water-going vessel or free-floating ship."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-171450582998547-thumbnail.jpg",
+      "thumbnailSHA256": "04f68c3016ea606379b01be8646fb3af7e8ac28d602d4bf80b4f4c4ba4e5b716",
+      "thumbnailBytes": 29451,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-171450582998547-detail.jpg",
+      "detailSHA256": "635abd24167cc6025a45e1a07c094717c462c38f546979878f3bd5b6cc0d20e4",
+      "detailBytes": 206500,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-171450582998547",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Lucy's Tugboat at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Lucy Tugboat photograph and target family rocking-spinning tug page. Source red hull with black tires/red centers on chains, white-gray steps and numbered gray gates, orange bench/lap bars around ordinary family, white twin arch cabin with purple stripe, red-blue smokestack/yellow ornaments. Actual blue curved rail/platform and wave-painted skirt below, turquoise fence and trees. Preserve source connected boat/track section, no water-going vessel or free-floating ship. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "853d2c5cfa87228a09465f031c566fd594ec80a8adee25ef4e341de3591eda83",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 175326066081240,
+      "rideName": "Lazy Rider",
+      "alt": "Illustrated Lazy Rider at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:24:45.297368+00:00",
+      "originalSHA256": "488a495ccb666accdc1c1bc3094983d41a1da5a8f7374018ed0c1e99b0d1e1de",
+      "review": "Accepted: Actually viewed final generated original. Actual blue/green clear-bottom tubes and ordinary adult bathers on source turquoise river, blue waterline tile, dark coping and vegetation. No invented whole route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/5e0bebd693537a3229331e4342707d3d4c2e935e-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/lazy-rider",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "1386a88244f39088fa022bfe86a008b331865cf4f5d2b229cc2a529c1121e7d6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Lazy Rider photo and lazy-river page. Source ordinary adults relaxing in blue and green single inner tubes with clear bases and blue handles on pale-turquoise river; actual dark gray coping, blue waterline tiles, landscaping stone/foliage. Preserve tight source tubing section without inventing whole river route or unpictured machinery."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-175326066081240-thumbnail.jpg",
+      "thumbnailSHA256": "1bd2006128da4776c5ea9d1a831f4328a15066e90a868dd40e92fd5055a3ed61",
+      "thumbnailBytes": 24756,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-175326066081240-detail.jpg",
+      "detailSHA256": "f05975c299601a091135b5f76b3c873f8424de973eb84d1fa0d1adb969bf7d77",
+      "detailBytes": 153524,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-175326066081240",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Lazy Rider at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Lazy Rider photo and lazy-river page. Source ordinary adults relaxing in blue and green single inner tubes with clear bases and blue handles on pale-turquoise river; actual dark gray coping, blue waterline tiles, landscaping stone/foliage. Preserve tight source tubing section without inventing whole river route or unpictured machinery. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "8dd122804f48871c5d931991f2d6127510479f5f4c4a328df90c7c1033edf2ec",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 176402188658326,
+      "rideName": "FreeStylin'",
+      "alt": "Illustrated FreeStylin' at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:24:18.817006+00:00",
+      "originalSHA256": "d09c19054650714253f9600a8bacd0dbb6940fa9948485b4f20e88e5f6087148",
+      "review": "Accepted: Actually viewed final generated original. Authentic adjacent aqua/blue open flume outlets into common pool with grass divider, green-tube rider, timber supports and upper source aqua flume; no fabricated unseen connections.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/16af3dbf1b4062ffd194426c7df7c9f07aef9f3e-2048x1463.jpg?rect=0,197,2048,1070&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/freestylin",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c0f332a3cb10e425d113411dcad6d289133b1d50d093edbfb4f09726b6fa9cf6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator FreeStylin photograph and target two-blue-waterslides page. Source adjacent pale-turquoise and blue open flumes swoop into common pool, ordinary guest in green tube in left trough, blue waterline tile, grassy planted divider, timber/concrete supports and twisting upper aqua flume behind. Preserve only actual photographed double outlet section; no invented route connections outside photograph."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-176402188658326-thumbnail.jpg",
+      "thumbnailSHA256": "9f62da685dbd50ea72135028514858ba00988759b90041a761c75956db1c3d61",
+      "thumbnailBytes": 27213,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-176402188658326-detail.jpg",
+      "detailSHA256": "a339900797d6e645749bddfcfa4d30580927eab45a68edb49c5ef74491b2ce05",
+      "detailBytes": 237711,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-176402188658326",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict FreeStylin' at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator FreeStylin photograph and target two-blue-waterslides page. Source adjacent pale-turquoise and blue open flumes swoop into common pool, ordinary guest in green tube in left trough, blue waterline tile, grassy planted divider, timber/concrete supports and twisting upper aqua flume behind. Preserve only actual photographed double outlet section; no invented route connections outside photograph. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "1896521e1bd7b67cc509ee2028f1127cfd8d0351c821e44d1796b52a18a8cdc2",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 184820162375644,
+      "rideName": "Snoopy's Junction",
+      "alt": "Illustrated Snoopy's Junction at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:27:55.204545+00:00",
+      "originalSHA256": "02f508a9eaa1fde32a9e5b7f35ed8b75c299549324deb98c79623c2b1603ff9e",
+      "review": "Accepted: Actually viewed final generated original. Actual green/yellow/orange miniature engine, fixed Woodstock headlamp ornament, connected gated family cars and narrow ground rails match source.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/c8af32431d672ca02dbbf471f1df9d57b74545b7-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/snoopys-junction",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "8b44564959afae2d705298e21a28ac918cf76c2e6dae74e2ba6cb5630c01d382",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Snoopy Junction miniature train photograph and target page. Actual green engine cab/yellow-trimmed orange cylindrical boiler, black smokestack, red whistle, black/yellow cowcatcher and wheels, fixed Woodstock headlamp ornament; ordinary family in connected gray/orange/yellow gated bench cars on narrow ground rails beside lawn, wooden fence and wooden shelter. Preserve source front engine/car section, not full unseen railway."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-184820162375644-thumbnail.jpg",
+      "thumbnailSHA256": "a54b31d44a76d6e2213659d4fd5222819aa35fdfaeafc7a24cb20f75048965b5",
+      "thumbnailBytes": 29084,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-184820162375644-detail.jpg",
+      "detailSHA256": "3941bb59fe4862c7d76d3961a99b5f507a45ef5d7ce0a17f0dd48979b7f14cbd",
+      "detailBytes": 189477,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-184820162375644",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Snoopy's Junction at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Snoopy Junction miniature train photograph and target page. Actual green engine cab/yellow-trimmed orange cylindrical boiler, black smokestack, red whistle, black/yellow cowcatcher and wheels, fixed Woodstock headlamp ornament; ordinary family in connected gray/orange/yellow gated bench cars on narrow ground rails beside lawn, wooden fence and wooden shelter. Preserve source front engine/car section, not full unseen railway. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "1b2e4ba1826f50206ef71307a0405d25d420182f7d2166dad5d4651ef2ce7522",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 195140420995701,
+      "rideName": "Carousel",
+      "alt": "Illustrated Carousel at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:26:57.099681+00:00",
+      "originalSHA256": "fc9da924e502b74523ea520eb877f8b39b33fd913650495322972359713175e1",
+      "review": "Accepted: Actually viewed final generated original. Actual pale-green pavilion roof, domed lantern, cream/red/gold carved columns/fascia, shadowed carousel and neighboring Ferris wheel preserve source exterior.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/edf23421e9d1a0e3a3ddf258883d91e77629752e-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/carousel",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ec99ceea44909ba30ad3cd544ef28ede7ff0a5ed4e0f8fd23ae9327c81ca6852",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Carousel photograph and target carousel page. Actual pale-green broad pavilion roof, cream/red-gold carved fascia/scrolled cornice, central domed lantern on columns, cream square decorated posts and metal perimeter fence; physical carousel horses are partly shadowed inside, neighboring Americana Ferris wheel visible left. Preserve source exterior architecture and supported silhouettes only, not invented close interior horses or nonexistent castle."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-195140420995701-thumbnail.jpg",
+      "thumbnailSHA256": "e3c7ff7932e7e1279aad251420779cf643eb790a744393085b05ddeda488f351",
+      "thumbnailBytes": 26266,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-195140420995701-detail.jpg",
+      "detailSHA256": "3f8eedd77bfffa0e3418ffb828c8297355d11f88f84e9203a2f088c1099f0d38",
+      "detailBytes": 220455,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-195140420995701",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Carousel at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Carousel photograph and target carousel page. Actual pale-green broad pavilion roof, cream/red-gold carved fascia/scrolled cornice, central domed lantern on columns, cream square decorated posts and metal perimeter fence; physical carousel horses are partly shadowed inside, neighboring Americana Ferris wheel visible left. Preserve source exterior architecture and supported silhouettes only, not invented close interior horses or nonexistent castle. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "fd691bb73d89d9d4b4e0cbefbdf6c4d8f1478fbe8e4c629d1a195c180de68d2f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 200098434171415,
+      "rideName": "Dodgem",
+      "alt": "Illustrated Dodgem at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:26:16.871105+00:00",
+      "originalSHA256": "e4b6c754d2d0ec5d119b7dade5890d2faa568ef0f8f90ea5dc2f77dbf4161942",
+      "review": "Accepted: Actually viewed final generated original. Actual metallic green/yellow-striped and red bumper cars, rubber rings, steering wheels, seat belts and vertical pickup poles follow source ordinary adult arena scene.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/bf1314f680585014a72c35a4377ea2feeb288f6f-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/dodgem",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "bead74280980d112b50deabbdaf842380f921ab348b8557db37617150d3b4e2e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Dodgem photo and target bumper-car body. Actual metallic dark-green/orange-yellow striped cars and adjacent red car, broad black rubber bumpers, three-spoke steering wheels, black padded bench backs and diagonal seat belts on ordinary adult guests; slim vertical pickup poles toward ceiling. Preserve source three-car close section on arena floor, not full unseen pavilion layout."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-200098434171415-thumbnail.jpg",
+      "thumbnailSHA256": "fa0258a59492474439df39de7210f5de2862e721a53c9144501b56566b2da004",
+      "thumbnailBytes": 23187,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-200098434171415-detail.jpg",
+      "detailSHA256": "fe75641ab760e9eb4194583b4faeb1667414b9e3a7b7f75c3662a6caf81bcf32",
+      "detailBytes": 146521,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-200098434171415",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Dodgem at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Dodgem photo and target bumper-car body. Actual metallic dark-green/orange-yellow striped cars and adjacent red car, broad black rubber bumpers, three-spoke steering wheels, black padded bench backs and diagonal seat belts on ordinary adult guests; slim vertical pickup poles toward ceiling. Preserve source three-car close section on arena floor, not full unseen pavilion layout. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "ed48cf9cbd6149f486851134bdca954a6a9aa633318ef119b22a5a07bbb35a30",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 201575421039705,
+      "rideName": "Snoopy's Space Buggies",
+      "alt": "Illustrated Snoopy's Space Buggies at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:29:19.489733+00:00",
+      "originalSHA256": "094e52cbe2a8fb148a9425ea899d2e68dd64cb148bf492a854711bde58acad3c",
+      "review": "Accepted: Actually viewed final generated original. Actual yellow/orange rounded buggy interior and source ordinary clothed family retained; no invented hidden bouncing mechanism or spacecraft.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/00c3e947151f517e5370a68dc9cd29793e8485bf-1440x690.jpg?rect=0,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/snoopys-space-buggies",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a66a5a5d64050505344782de58005e51523524ddc345aa91a8f6878f82effda7",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Snoopy Space Buggies photograph and target bouncing family ride page. Tight source yellow rounded buggy body with orange molded bench, ordinary clothed parent and children; rounded pale-blue/red buggy behind, printed comic background. Preserve source car interior/common bar only where visible; no invented spaceship, hidden bouncing mechanism or free flight."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-201575421039705-thumbnail.jpg",
+      "thumbnailSHA256": "3a0f996048073c730714e4f7cdcb0e52d6f43785e302f18343d8eeb6e7e06654",
+      "thumbnailBytes": 19225,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-201575421039705-detail.jpg",
+      "detailSHA256": "a37c7820af50bf51b2fe2a31e9bc460057802392906bef08cc27364377827d0d",
+      "detailBytes": 109879,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-201575421039705",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Snoopy's Space Buggies at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Snoopy Space Buggies photograph and target bouncing family ride page. Tight source yellow rounded buggy body with orange molded bench, ordinary clothed parent and children; rounded pale-blue/red buggy behind, printed comic background. Preserve source car interior/common bar only where visible; no invented spaceship, hidden bouncing mechanism or free flight. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "9736a5c82121c20d604e05b7e440ee37bb7fc6febc73c0df1ec1b9a126cbe132",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 202101107549264,
+      "rideName": "Twisted Timbers",
+      "alt": "Illustrated Twisted Timbers at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:28:48.985307+00:00",
+      "originalSHA256": "88a95a4faf04390bef559ce02a892c183aada2b1709311b217b76c6acd49cba7",
+      "review": "Accepted: Actually viewed final generated original. Single olive-nosed train follows source sideways dark-red steel track on wooden trestles and gray cap brackets; actual hybrid construction retained.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/e3b437ccad49994841879bd70a989f6b260b0097-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/twisted-timbers",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "1a7257398759537d4bfa44d46ffe779772ea670bd2ca50d0b3a9e9531d1ccb4b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Twisted Timbers photograph and hybrid steel-on-wood coaster page. Source olive-green pointed-nose linked train, black/orange secured seats and ordinary riders nearly sideways on dark-red steel running track, actual timber trestles and gray metal joint/cap brackets. Preserve source banked/inverting track section and connected single train, not conventional wood rails or unseen full route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-202101107549264-thumbnail.jpg",
+      "thumbnailSHA256": "90380a1559d0b4878c7fb45aa551c029f914a1cb41b642075d3465e799977b97",
+      "thumbnailBytes": 25872,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-202101107549264-detail.jpg",
+      "detailSHA256": "2e6f0256a00dae34faf68bd860179673a01387a18de26aa856337e8eea839a69",
+      "detailBytes": 208443,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-202101107549264",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Twisted Timbers at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Twisted Timbers photograph and hybrid steel-on-wood coaster page. Source olive-green pointed-nose linked train, black/orange secured seats and ordinary riders nearly sideways on dark-red steel running track, actual timber trestles and gray metal joint/cap brackets. Preserve source banked/inverting track section and connected single train, not conventional wood rails or unseen full route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "7033a67ebe4e7e5ec0e86060e4b31ec5edfc74699746c9a283364e1af44241ef",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 202990289137094,
+      "rideName": "Bad Apple",
+      "alt": "Illustrated Bad Apple at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:28:21.252922+00:00",
+      "originalSHA256": "07e0a1231d1b39204966f97dc4e10a6d22b973294c018e446e51552a067f24c2",
+      "review": "Accepted: Actually viewed final generated original. Maroon branched main arms and spoked wheels with hinged white/maroon cars, common lap bars and ordinary riders preserve source connected ride mechanism.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/6b26fe2d134df3b0ba9a07c896368b465361b91f-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/bad-apple",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "04b2c17681fada1962c250f8d696a052a42bbb188140cc5cbfd36237320f2b7f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Bad Apple photograph and target ride page. Source maroon/purple main arm and branched rotating spoked wheels, small white/maroon open cars on hinged end brackets with black shared lap bars and ordinary secured guests, actual yellow/tan pivot structure, concrete pad and greenery. Preserve photographed mechanically connected hub/arm/spoked-wheel and visible pods, no apple fruit fantasy or added hidden route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-202990289137094-thumbnail.jpg",
+      "thumbnailSHA256": "12a0c7212bda87f7d5f9c543ad0f7b8505803db591060b222fbeb945f5c453e3",
+      "thumbnailBytes": 26780,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-202990289137094-detail.jpg",
+      "detailSHA256": "693ee5571b038ee3d11824e93d7fbb53655e37ef6a559b9bdd374f70bca5d5c6",
+      "detailBytes": 198707,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-202990289137094",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Bad Apple at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Bad Apple photograph and target ride page. Source maroon/purple main arm and branched rotating spoked wheels, small white/maroon open cars on hinged end brackets with black shared lap bars and ordinary secured guests, actual yellow/tan pivot structure, concrete pad and greenery. Preserve photographed mechanically connected hub/arm/spoked-wheel and visible pods, no apple fruit fantasy or added hidden route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "ed31f0710d01dc5d49c8ec4ce1efdd641c6cd1a4dd28b2b55f7b36a81c2b7b8b",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 204176258268675,
+      "rideName": "Blue Ridge Tollway",
+      "alt": "Illustrated Blue Ridge Tollway at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:30:01.814321+00:00",
+      "originalSHA256": "1bc962237cef0f95d43798fac8b148ebfd2313e63144ba0e845859275ac5b9e8",
+      "review": "Accepted: Actually viewed final generated original. Actual red antique guided car, brass lamps, black canopy/fenders, white spoke wheels and front guide rollers follow center source steel guide rail through wooded path.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/a19d0743e69e70f4d77aa2190103d2311e5ffd86-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/blue-ridge-tollway",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "bd48750b39c16b9cc55d0ba44bc011b940bebb7faa270f7c27a38c26a520ab22",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Blue Ridge Tollway photograph and target page. Actual red antique Ford-style guided car with black canopy/fenders, brass circular headlamps, white spoked wheels, wood front bumper and steering wheel, ordinary family; front guide rollers straddle center steel guide rail in narrow paved woodland lane beside split-rail fence. Preserve source car/guide section without inventing open highway or full route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-204176258268675-thumbnail.jpg",
+      "thumbnailSHA256": "8a7e2783c9ffcb79ecea44b374a2d9878af8b5f7551b2af6aebccf596ef87555",
+      "thumbnailBytes": 27159,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-204176258268675-detail.jpg",
+      "detailSHA256": "b20b794acd64b9bf450dd806a8903c7cf4b12c3e46b64f8319792d4f5157fe08",
+      "detailBytes": 186514,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-204176258268675",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Blue Ridge Tollway at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Blue Ridge Tollway photograph and target page. Actual red antique Ford-style guided car with black canopy/fenders, brass circular headlamps, white spoked wheels, wood front bumper and steering wheel, ordinary family; front guide rollers straddle center steel guide rail in narrow paved woodland lane beside split-rail fence. Preserve source car/guide section without inventing open highway or full route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "d72b3cb629d63b80387ae58b5e722e8426c56e490cd979b07a68873966f2c35a",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 207743233350770,
+      "rideName": "Wave Swinger",
+      "alt": "Illustrated Wave Swinger at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:33:42.037289+00:00",
+      "originalSHA256": "7c3dadaaa00e338ede528cbb7e0199de75154ef8888333b42c1c17bf5f029dff",
+      "review": "Accepted: Actually viewed final generated original. Own ornate cream/yellow chain-swing canopy and red/blue diamond mast retained with source long-exposure motion and actual pavilion/fence behind.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/83ece01ff785542faa079c87a7bdf1e9a5a167b1-2048x1490.jpg?rect=0,210,2048,1070&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/wave-swinger",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "957d0244e7637c1a2369456bd43cad9a5e679f531a5a0142ca9d20cd230f3796",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Wave Swinger long-exposure photograph and classic chain swing page. Source ornate cream/yellow round canopy and tapered center mast with red/blue diamond panels/gold trim, actual hanging chain seats/ordinary riders with natural motion blur, tan circular pad, black fence and cream-blue queue pavilion. Preserve source chain connections and source motion impression rather than invented detailed distant chair geometry."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-207743233350770-thumbnail.jpg",
+      "thumbnailSHA256": "de694aedf9c64a3a132ec5061c2ad5f086bd2ca456529c89cd738ee6c96753fb",
+      "thumbnailBytes": 24076,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-207743233350770-detail.jpg",
+      "detailSHA256": "4a37efa09ebfe9e4b1bdf8416b3f542d8ee0bf58a03db3621ad3ad1e815748a8",
+      "detailBytes": 200465,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-207743233350770",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Wave Swinger at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Wave Swinger long-exposure photograph and classic chain swing page. Source ornate cream/yellow round canopy and tapered center mast with red/blue diamond panels/gold trim, actual hanging chain seats/ordinary riders with natural motion blur, tan circular pad, black fence and cream-blue queue pavilion. Preserve source chain connections and source motion impression rather than invented detailed distant chair geometry. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "7dea5b308c3f9054bff446e83d4eb40deffab77c8bf05f890b8358879e777ae7",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 226871348021091,
+      "rideName": "Pipeline Peak",
+      "alt": "Illustrated Pipeline Peak at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:30:53.855027+00:00",
+      "originalSHA256": "b0e7f7d7438bee569bf26c33b51053364466e78299ddcc1ec79c38d342ccec92",
+      "review": "Accepted: Actually viewed final generated original. Shared authentic four-slide PipelinePeak complex retained: source colored enclosed tubes, actual gray stairs/supports and white rope fence. No name/color or tube/body route assertion.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/a021543d281c2096b5b3e586d8c6ebf9ddc48530-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/pipeline-peak",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "903ab4d34a582799bf3ffc7dddb98c597183ab6e09eda21a538bc74122898f50",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Pipeline Peak photograph and four-enclosed-slide primary page. Source shared multi-slide installation with yellow/purple/dark-blue/lime-green enclosed flumes, red steep enclosed drop to orange runout, gray vertical supports/stairs and white rope fence on concrete, trees and red coaster hill behind. Depict documented shared four-slide complex, not invent name-to-color or tube/body assignment to an individual photographed route; no unsupported new connections. Generic Pipeline Peak catalog entry represents installation."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-226871348021091-thumbnail.jpg",
+      "thumbnailSHA256": "a9fd75989ba5fa0378addc932117a0aa72e1156044ffcaadd4c3979abf574aeb",
+      "thumbnailBytes": 28965,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-226871348021091-detail.jpg",
+      "detailSHA256": "31cd9c27693d73aff4eed4ad9fa15be132956f4ee5e2578188095e9e7ed51a8b",
+      "detailBytes": 226090,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-226871348021091",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Pipeline Peak at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Pipeline Peak photograph and four-enclosed-slide primary page. Source shared multi-slide installation with yellow/purple/dark-blue/lime-green enclosed flumes, red steep enclosed drop to orange runout, gray vertical supports/stairs and white rope fence on concrete, trees and red coaster hill behind. Depict documented shared four-slide complex, not invent name-to-color or tube/body assignment to an individual photographed route; no unsupported new connections. Generic Pipeline Peak catalog entry represents installation. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "f71ae916d8c9921127955aa8022beecb20e985bb2ac319d6e7a9a9a5fe392a1c",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 233476370420529,
+      "rideName": "Lucy's Crabbie Cabbies",
+      "alt": "Illustrated Lucy's Crabbie Cabbies at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:33:03.352775+00:00",
+      "originalSHA256": "6dc76c686d3100c53583eb019da85aa56397f62b5d72e7cc534ab5d2504d62e9",
+      "review": "Accepted: Actually viewed final generated original. Actual yellow checker cab bumper cars, black rubber rings/seats, diagonal belts and dark pickup poles with ordinary clothed children match own source.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/710b9bb37759a225e1e2158df096860ac459814c-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/lucys-crabbie-cabbies",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "24d9553b0b56bc68ee8e8b398347b13c5ed59b2ec7ec6f1372d23b3254d6a91b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Lucy Crabbie Cabbies photo and target kids bumper-cars page. Source small bright-yellow cab bumper cars with black-and-white checker strip, black rubber rings, black seats/steering wheels and diagonal belts around ordinary clothed children, orange lower pickup mounts and tall dark poles to ceiling, pink metal perimeter fence, gray arena floor. Preserve actual source bumper cars not a coaster or road taxi."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-233476370420529-thumbnail.jpg",
+      "thumbnailSHA256": "2ec1de70ccbe1c8c9cc49e44cd18ded24eff35c8e55a1bbaaf8f5661e32906d7",
+      "thumbnailBytes": 26426,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-233476370420529-detail.jpg",
+      "detailSHA256": "a8695c01b0f95a356c55c2f1e31dd240b8b26256ecef8f421f46c59f88d17e01",
+      "detailBytes": 160095,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-233476370420529",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Lucy's Crabbie Cabbies at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Lucy Crabbie Cabbies photo and target kids bumper-cars page. Source small bright-yellow cab bumper cars with black-and-white checker strip, black rubber rings, black seats/steering wheels and diagonal belts around ordinary clothed children, orange lower pickup mounts and tall dark poles to ceiling, pink metal perimeter fence, gray arena floor. Preserve actual source bumper cars not a coaster or road taxi. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "57418cb1a1fabb7a14fe493d8474fd8e70071a9101b11eefd6f560aa02a649dd",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 249170625573433,
+      "rideName": "Zoom Flume",
+      "alt": "Illustrated Zoom Flume at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:31:32.371548+00:00",
+      "originalSHA256": "cde658b6303ea66e8671ffc47842a22679bf9bc7b20761f8623f817e280ff073",
+      "review": "Accepted: Actually viewed final generated original. Actual circular blue/cream inflatable family raft, black handles and source pale-blue/yellow flume section retained with ordinary adult bathers.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/6e914d9f852aca5f9352ae99b06b437b59487b3c-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/zoom-flume",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "b0a5e054e2e9a5531bcdef2aef4e98331d6b2b70fc556fca097f6354756e19ba",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Zoom Flume photograph and family raft slide page. Source circular blue/cream alternating-segment four-person inflatable raft with black handles/lower rim, ordinary adult bathers in normal swimwear, pale-blue open flume with yellow stripe and splashing water. Preserve tight source raft/flume section only, not unseen full water-slide route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-249170625573433-thumbnail.jpg",
+      "thumbnailSHA256": "32eaabdb1b163f9c95c1193ace86b35c8660b23ad1713d332f048f65f07ecf8b",
+      "thumbnailBytes": 24535,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-249170625573433-detail.jpg",
+      "detailSHA256": "298812411e3e6403156a921cfc0522dbe1cf8e05584a8000e78279a433d99291",
+      "detailBytes": 168199,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-249170625573433",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Zoom Flume at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Zoom Flume photograph and family raft slide page. Source circular blue/cream alternating-segment four-person inflatable raft with black handles/lower rim, ordinary adult bathers in normal swimwear, pale-blue open flume with yellow stripe and splashing water. Preserve tight source raft/flume section only, not unseen full water-slide route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "735ec630e176e43625a83a2703f395b6cf0169ea955a7ede1d09a3550387fa18",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 250431799172578,
+      "rideName": "PEANUTS™ Turnpike",
+      "alt": "Illustrated PEANUTS™ Turnpike at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:32:24.336250+00:00",
+      "originalSHA256": "0000f90ef4081404adf2d092674e9d8ae23bdfc473883c88a464516cd728d83d",
+      "review": "Accepted: Actually viewed final generated original. Actual worn blue guided miniature convertible, twin steering wheels and center rail follow source curved concrete path with turquoise fence/rocks.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/4742e284675878b9ce784c9f82880cdfd2a717e5-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/peanuts-turnpike",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "9f551b1e00482c8b03693a88dd9295547da836ee02e56f87319b2e9bc3ffe711",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator PEANUTS Turnpike photograph and target kiddie guided-car page. Actual worn blue miniature convertible with black bench, twin small steering wheels, narrow black tires and silver front bumper/guide assembly follows center steel guide rail on curving concrete path; ordinary clothed child, green lawn, rocks, turquoise fence/supports and blue wall behind. Preserve source ground-level car/guide section, not bumper-car arena or unrelated miniature highway."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-250431799172578-thumbnail.jpg",
+      "thumbnailSHA256": "6c0ec41e70aad2dcfb8f82d87fb33aba27c5424a5e154c0f9963fd82c3755e56",
+      "thumbnailBytes": 27121,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-250431799172578-detail.jpg",
+      "detailSHA256": "edb0a0113f38a4d94e8b78b3a5fc92d479ffb0e0949b0c675fb202ce855ff933",
+      "detailBytes": 182469,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-250431799172578",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict PEANUTS™ Turnpike at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator PEANUTS Turnpike photograph and target kiddie guided-car page. Actual worn blue miniature convertible with black bench, twin small steering wheels, narrow black tires and silver front bumper/guide assembly follows center steel guide rail on curving concrete path; ordinary clothed child, green lawn, rocks, turquoise fence/supports and blue wall behind. Preserve source ground-level car/guide section, not bumper-car arena or unrelated miniature highway. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "8f72600822f91828c44b39fd3068b81b7e725a7ecd79d8ca712361dd16b6ea3a",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 261460128460504,
+      "rideName": "Woodstock Express",
+      "alt": "Illustrated Woodstock Express at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:32:25.268262+00:00",
+      "originalSHA256": "33f597deb16d221b1c7c74a06e3e2b31f87cd5427301e32c445677704b705545",
+      "review": "Accepted: Actually viewed final generated original. Actual green wooden-coaster car fronts, black benches/lap bars, ordinary family and silver diamondplate on source blue timber track retained, no substitution from another park.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/d810d075688b835dd4de9ae6b2f4ec0bad906b53-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/woodstock-express",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c328fa9b9e23ede21ef159213449b3e6bdf969499c97adbf8675fd00b5595e21",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Woodstock Express photograph and target 1974 wooden-coaster page. Actual green flat-front linked train, black padded benches/common lap bars and ordinary clothed family, silver diamond-plate front/walkways and small guide wheels on actual blue-painted wood track structure with brown running rails, pines and guard wires. Preserve source front two-car section and real restrained seating, no substituted miniature truck or different park coaster."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-261460128460504-thumbnail.jpg",
+      "thumbnailSHA256": "bb21f3e0704f827dba7239d26d439d5ad404433782929661b8441fe608c19a7e",
+      "thumbnailBytes": 26053,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-261460128460504-detail.jpg",
+      "detailSHA256": "85fe5751540053e6b9caa5e44449fd1cd1e7e99ca045f34e89ba9b2ab93e006b",
+      "detailBytes": 176178,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-261460128460504",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Woodstock Express at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Woodstock Express photograph and target 1974 wooden-coaster page. Actual green flat-front linked train, black padded benches/common lap bars and ordinary clothed family, silver diamond-plate front/walkways and small guide wheels on actual blue-painted wood track structure with brown running rails, pines and guard wires. Preserve source front two-car section and real restrained seating, no substituted miniature truck or different park coaster. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "86b86a7b648ca047f992eb96c0c33be4a3f3b9c89d133b4c14f271d07c0a3243",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 266047380529611,
+      "rideName": "SC - Pipeline Peak Tube Slides",
+      "alt": "Illustrated SC - Pipeline Peak Tube Slides at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:33:35.905212+00:00",
+      "originalSHA256": "26e11b2e771ca18df78de22097a45e1ece1d64f18bf0dae42fa734be34c0e070",
+      "review": "Accepted: Actually viewed final generated original. Distinct tighter shared PipelinePeak installation composition retains photographed outlets/colored tubes, gray supports and rope fence. No source-unsupported color/name or tube/body route assignment; public provider identity retained in photo review.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/a021543d281c2096b5b3e586d8c6ebf9ddc48530-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/pipeline-peak",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "903ab4d34a582799bf3ffc7dddb98c597183ab6e09eda21a538bc74122898f50",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Pipeline Peak shared-complex photograph and four-enclosed-slide target page, plus actual public provider e4f6329d-7346-43e7-ba35-ec742510004b named SC - Pipeline Peak Tube Slides, externalId RIDE-025-00217, beside same Pipeline Peak installation. Create distinct tighter portrait of photographed lower common slide-complex outlets and connected gray supports/white rope fence, with actual yellow, purple, blue, lime and red flume portions only where photo shows them. Source does not label individual color-to-name or tube/body route mapping; depict shared installation without assigning a specific colored flume to this catalog entity or inventing riders/launches. Different composition from generic Pipeline Peak, no copied generated artwork."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-266047380529611-thumbnail.jpg",
+      "thumbnailSHA256": "73fa24c66b61a7d99d39e243508249281c66fd42b43b7b558327e29cf6ff27f3",
+      "thumbnailBytes": 28484,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-266047380529611-detail.jpg",
+      "detailSHA256": "79197edb96c1b9ac056b0613694e7bea332879f0eeacc7838439bc53a9b00d09",
+      "detailBytes": 218360,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-266047380529611",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict SC - Pipeline Peak Tube Slides at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Pipeline Peak shared-complex photograph and four-enclosed-slide target page, plus actual public provider e4f6329d-7346-43e7-ba35-ec742510004b named SC - Pipeline Peak Tube Slides, externalId RIDE-025-00217, beside same Pipeline Peak installation. Create distinct tighter portrait of photographed lower common slide-complex outlets and connected gray supports/white rope fence, with actual yellow, purple, blue, lime and red flume portions only where photo shows them. Source does not label individual color-to-name or tube/body route mapping; depict shared installation without assigning a specific colored flume to this catalog entity or inventing riders/launches. Different composition from generic Pipeline Peak, no copied generated artwork. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "f77ae3733ce751093b13dd45d73bf572ad2117f0d0d59f2a4262d7bc0c158af1",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 266609171182839,
+      "rideName": "White Water Canyon",
+      "alt": "Illustrated White Water Canyon at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:32:47.716567+00:00",
+      "originalSHA256": "b236e83c66f749bc8a0a24c0c9ae83b827674bacce02ff7e778fad9d4a3a6abb",
+      "review": "Accepted: Actually viewed final generated original. Actual green rigid circular rapids raft, black bumper/slotted backs/central handhold and ordinary clothed guests in source brown concrete whitewater channel, no inflated flume raft.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/5179e369245daed984230f0398ea7b9ab0e44c1e-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/white-water-canyon",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "b7925b01e281824e9b206a78bd47cb62859d5ed193f69f788fd3167990b03bc0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator White Water Canyon photograph and six-rider rapids body. Actual round green rigid six-person raft with huge black rubber bumper ring, tall black slotted seat backs, inward-facing ordinary clothed guests secured in seats and black central circular handhold; confined brown concrete whitewater channel through real foliage/rock banks. Preserve source circular six-seat raft and channel, no fabricated inflatable slide raft or giant waterfall."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-266609171182839-thumbnail.jpg",
+      "thumbnailSHA256": "9ca9040bddc3c0f7d0003d3c31ae330ce70a5b3e8e34c65067f7d16995a3739f",
+      "thumbnailBytes": 30084,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-266609171182839-detail.jpg",
+      "detailSHA256": "bb9f5ec85429a38908f74977f472e13a10ff9c716faebd772c7b9181ea9fc81f",
+      "detailBytes": 222523,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-266609171182839",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict White Water Canyon at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator White Water Canyon photograph and six-rider rapids body. Actual round green rigid six-person raft with huge black rubber bumper ring, tall black slotted seat backs, inward-facing ordinary clothed guests secured in seats and black central circular handhold; confined brown concrete whitewater channel through real foliage/rock banks. Preserve source circular six-seat raft and channel, no fabricated inflatable slide raft or giant waterfall. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "403e93c5dbf51e417ddcd1015853411bd12e255636cd2323ea559ae0b197d44b",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 273559739563355,
+      "rideName": "Sand Dune Lagoon",
+      "alt": "Illustrated Sand Dune Lagoon at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:35:18.938547+00:00",
+      "originalSHA256": "1bea7de009644667c7a58e8e1a6c0ffe90fed7e1b1a0cb283e9e53332de10e35",
+      "review": "Accepted: Actually viewed final generated original. Actual shallow pale-turquoise pool, low faux-rock waterfall wall and ordinary children including red/blue buckled life vest retained. No invented deep waves or whole pool.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/1c9899d99f663db4b9eba19fdbd373b2e9ab7173-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/sand-dune-lagoon",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "8c69ac15d2c66383801dc2202b50a1538f5f9bcdf9c80d4e87dea4e4bfc9de7b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Sand Dune Lagoon photograph and target pool page. Actual shallow pale-turquoise family pool with ordinary children in normal swimwear, one wearing red life vest with two blue buckled straps, low faux-rock wall and real two sheet waterfalls/greenery behind. Preserve source shallow-water scene and waterfall wall only; no invented giant waves or whole pool shape."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-273559739563355-thumbnail.jpg",
+      "thumbnailSHA256": "52f048e674c388e77e73479932bdfb0882c59e6d9723dd348f3c7bda81156a96",
+      "thumbnailBytes": 27161,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-273559739563355-detail.jpg",
+      "detailSHA256": "8a0fa0e6daa52c17186015c06441e3920b9ab42a3e6677b0fd353ecfecd38276",
+      "detailBytes": 202710,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-273559739563355",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Sand Dune Lagoon at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Sand Dune Lagoon photograph and target pool page. Actual shallow pale-turquoise family pool with ordinary children in normal swimwear, one wearing red life vest with two blue buckled straps, low faux-rock wall and real two sheet waterfalls/greenery behind. Preserve source shallow-water scene and waterfall wall only; no invented giant waves or whole pool shape. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "d64e628866b5a12726f3b85317ab1c8d84033787cad41572abad59e55f07ec06",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 275771009289693,
+      "rideName": "Tumbili",
+      "alt": "Illustrated Tumbili at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:34:06.953589+00:00",
+      "originalSHA256": "5325e74f45e06671a6dae45395099e9d02cf8c9637899cfc0973e8ce27ecade4",
+      "review": "Accepted: Actually viewed final generated original. Actual green undulating rails on tan bamboo-painted columns, compact opposing-wing vehicle with orange restraints and underside carriage preserve source free-spin geometry.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/622bc8547fd3bf1cc0919a1957063fc82faa4bdd-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/tumbili",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "4ba2cac8864b6afc42a32e879b5dc0f4d19c133be829441be7e3984cae9826eb",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator Tumbili photo and target free-spin coaster page. Actual bright-green undulating track on tan bamboo-painted supports, single compact dark/brown center vehicle with opposing wing seats, orange shoulder restraint hardware and ordinary secured riders, actual underside wheel carriage visible. Preserve only source connected near-crest car/track section and supported seat orientation, not conventional coaster train, monkey fantasy or hidden whole route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-275771009289693-thumbnail.jpg",
+      "thumbnailSHA256": "58301c84ba323356a5ea44e0550a58731db8aa6a139a1704d9870a997c62dc7d",
+      "thumbnailBytes": 20200,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-275771009289693-detail.jpg",
+      "detailSHA256": "1a755cfca7d04e7eccfdfd438e40c74cf204404da7e5cfb3f6057ec17e912483",
+      "detailBytes": 131462,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-275771009289693",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Tumbili at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator Tumbili photo and target free-spin coaster page. Actual bright-green undulating track on tan bamboo-painted supports, single compact dark/brown center vehicle with opposing wing seats, orange shoulder restraint hardware and ordinary secured riders, actual underside wheel carriage visible. Preserve only source connected near-crest car/track section and supported seat orientation, not conventional coaster train, monkey fantasy or hidden whole route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "82c75ef95763dd276da40c23d7677caa77ecce08c7dd40ae4751c7618cc9d351",
+      "generationSteps": []
+    },
+    {
+      "parkId": 62,
+      "rideId": 280512046644685,
+      "rideName": "PEANUTS™ 500",
+      "alt": "Illustrated PEANUTS™ 500 at Kings Dominion",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:34:55.982245+00:00",
+      "originalSHA256": "9c9e23a401e9f461533c8f5b0185558a2460e8236c467e12b5c2c84215d3935e",
+      "review": "Accepted: Actually viewed final generated original. Actual close purple/yellow/blue fixed-order stock cars, opaque gray windscreen panels, common silver bars and physical lower drive arms with ordinary family on source platform remain clear.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/567f03c08ca1c24f3cf1776dd32b542ef9562e5b-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/kingsdominion/attractions/peanuts-500",
+          "credit": "Six Flags / Kings Dominion (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "90459c8db074692e0ac14fbac25a01b20bb7b07bf108733eb7c7d6ee6ac866d6",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator PEANUTS500 photograph and target fixed-order stock-car ride body. Actual purple front car, yellow Charlie Brown5 middle car and blue rear car with opaque gray windscreen panels, black molded tires, silver common lap handbars and ordinary clothed family; connected physical drive arms/guide at lower visible source edge, gray platform, red metal fence and real neighboring kids ride. Preserve actual close three-car source section, not freeway race or invented full oval."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "62-280512046644685-thumbnail.jpg",
+      "thumbnailSHA256": "002f5abb8d86e722ffa4ca86c63e2648d409c1d7f9ffa39e32e1b6338d8ade2f",
+      "thumbnailBytes": 25626,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "62-280512046644685-detail.jpg",
+      "detailSHA256": "36a39e015fe18ea76e0634c971ff50fc0c924e66ba34fdd98a2d2254d640b4c7",
+      "detailBytes": 159592,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "62-280512046644685",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict PEANUTS™ 500 at Kings Dominion. Source- and pixel-reviewed facts and limits: Actually viewed own operator PEANUTS500 photograph and target fixed-order stock-car ride body. Actual purple front car, yellow Charlie Brown5 middle car and blue rear car with opaque gray windscreen panels, black molded tires, silver common lap handbars and ordinary clothed family; connected physical drive arms/guide at lower visible source edge, gray platform, red metal fence and real neighboring kids ride. Preserve actual close three-car source section, not freeway race or invented full oval. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "04369d69bb3595ef51d22c91ff35b7157ed57a0b0b1675c06d057a0c1816b981",
+      "generationSteps": []
+    },
+    {
       "parkId": 64,
       "rideId": 6004,
       "rideName": "The Incredible Hulk Coaster®",
