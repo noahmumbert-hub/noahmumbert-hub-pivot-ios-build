@@ -364,10 +364,10 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 901,
-    "pendingIllustrations": 223,
-    "acceptedForRequestedStyle": 900,
-    "unfinishedForRequestedStyle": 224,
+    "acceptedIllustrations": 919,
+    "pendingIllustrations": 205,
+    "acceptedForRequestedStyle": 918,
+    "unfinishedForRequestedStyle": 206,
     "blocked": 17
   },
   "parks": [
@@ -29063,10 +29063,10 @@
           "url": "https://www.sixflags.com/darienlake/attractions/skycoaster"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-167949246124336",
@@ -29092,10 +29092,10 @@
           "url": "https://rcdb.com/223.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-170376250025702",
@@ -29116,10 +29116,10 @@
           "url": "https://www.sixflags.com/darienlake/attractions/brain-drain"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-172273296804009",
@@ -29145,10 +29145,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Darien_Lake"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-180983081248787",
@@ -29174,10 +29174,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Darien_Lake"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-183935127846867",
@@ -29198,10 +29198,10 @@
           "url": "https://www.sixflags.com/darienlake/attractions/darien-lake-railway"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-184618321088245",
@@ -29227,10 +29227,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Darien_Lake"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-194122110895864",
@@ -29256,10 +29256,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Darien_Lake"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-201785916751404",
@@ -29285,10 +29285,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Darien_Lake"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-203471513686902",
@@ -29314,10 +29314,10 @@
           "url": "https://rcdb.com/430.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-206615584226962",
@@ -29343,10 +29343,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Darien_Lake"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-211839315077573",
@@ -29372,10 +29372,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Darien_Lake"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-227326903375728",
@@ -29396,10 +29396,10 @@
           "url": "https://www.sixflags.com/darienlake/attractions/grand-prix-speedway"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-234205733745974",
@@ -29425,10 +29425,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Darien_Lake"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-238446468530852",
@@ -29454,10 +29454,10 @@
           "url": "https://rcdb.com/490.htm"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-239600067263782",
@@ -29483,10 +29483,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Darien_Lake"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-241358381362004",
@@ -29512,10 +29512,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Darien_Lake"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "281-243198310955695",
@@ -29541,10 +29541,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Darien_Lake"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "282-8317619620793",
