@@ -38248,6 +38248,51 @@
     },
     {
       "parkId": 69,
+      "rideId": 26906640532323,
+      "rideName": "Thunder Canyon",
+      "alt": "Illustrated Thunder Canyon at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:10:21.568096+00:00",
+      "originalSHA256": "0e135854be1bf69f4bfce4f62625a9f767c79fa7bc709eba8f6b465519e749d4",
+      "review": "Accepted: Actual generated portrait pixels preserve the independently verified Dorney Thunder Canyon red rigid raft, thick black flotation collar, individual slotted black headrests, ordinary inward-seated adult bathers, tan channel walls and rock waterfall. It uses the actual onride photograph rather than the rejected Kings Dominion operator stock; no hidden seat-count, exact capture date or full route is inferred.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://onride.de/onride-upic387129@1120",
+          "sourceURL": "https://onride.de/viewtopic.php?t=76964",
+          "credit": "Thorsten Janke (Tejay) / onride.de (original photo publisher)",
+          "license": "Copyright source photographer; rights retained",
+          "licenseURL": "https://onride.de/onride.php?page=imprint#nutzungsbedingungen",
+          "sha256": "7f0400c4762cbae79a4313a7c59c25f5ed40c7b12f3570a09bcbed7684d7e634",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The initially selected operator raft image was rejected because its pixels duplicate Kings Dominion. The independent on-site Thorsten Janke (Tejay) Dorney photo shows the actual Thunder Canyon red circular rigid raft with thick black flotation collar and individual tall black slotted headrests, ordinary adult bathers seated inward, rushing pale river water inside tan concrete edges, trees and a waterfall descending from the actual rock wall on the right. Preserve this photographed section and visible raft hardware; do not infer unshown seat count or hidden route. The source groups this photo under 2010, but exact capture date and present-day appearance are not independently verified. No green Kings Dominion raft or central storage pod."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-26906640532323-thumbnail.jpg",
+      "thumbnailSHA256": "a0c1467284f4f0822383fbed3d340898d7a1b8a6172de9b51318e3b32cf30a93",
+      "thumbnailBytes": 27805,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-26906640532323-detail.jpg",
+      "detailSHA256": "0655b83882e1796e7181edacb3364bf3590639cee46d3258151a99235d726ddd",
+      "detailBytes": 231327,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-26906640532323",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Thunder Canyon at Dorney Park. Source- and pixel-reviewed facts and limits: The initially selected operator raft image was rejected because its pixels duplicate Kings Dominion. The independent on-site Thorsten Janke (Tejay) Dorney photo shows the actual Thunder Canyon red circular rigid raft with thick black flotation collar and individual tall black slotted headrests, ordinary adult bathers seated inward, rushing pale river water inside tan concrete edges, trees and a waterfall descending from the actual rock wall on the right. Preserve this photographed section and visible raft hardware; do not infer unshown seat count or hidden route. The source groups this photo under 2010, but exact capture date and present-day appearance are not independently verified. No green Kings Dominion raft or central storage pod. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "595befe063b77c1a7ac25957f0fd31f6c2875bf6eef077c9db0dbf41a84f997c",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
       "rideId": 29967439346153,
       "rideName": "Iron Menace",
       "alt": "Illustrated Iron Menace at Dorney Park & Wildwater Kingdom",
@@ -39183,6 +39228,1576 @@
       "key": "69-85837692904314",
       "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Whip at Dorney Park. Source- and pixel-reviewed facts and limits: Actually viewed own Dorney operator Whip photo and target historic oval-track ride page. Source weathered turquoise front car2 with cream curled painted flourishes, red bench, broad black padded common lap bar and bronze/silver front rail; ordinary clothed adult couple, orange car3 with family behind, actual small dark wheels on floor-level guide along wooden arena deck, cream posts/metal perimeter rails. Preserve photographed physical car/track section and source patina; no bumper-car pickup poles or invented whole oval. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
       "promptSHA256": "ec1c844eb7dfffc375ac05edc76672b917ffc0a64b5353e5b5bc3bd545ccdf9e",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 87602943807327,
+      "rideName": "Sally's Swingset",
+      "alt": "Illustrated Sally's Swingset at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:51:01.659931+00:00",
+      "originalSHA256": "23c4ffc7c31fad9e51ed4152a7b0ec1b03726b07381c6ca3874f50b1dad1bf36",
+      "review": "Accepted: Actual generated portrait pixels retain Sally's purple six-seat bench, common polished restraint rail with individual black crotch straps and anchors, yellow beam and curved silver hangers. Ordinary clothed children, purple fence and dark safety mat agree with the photograph; hidden motion hardware is not invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/c03e0baa95574fe98823542fa0f22467feb5b596-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/sallys-swingset",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "74e96517517f13255cb51ac48612c61d5ab9d5f86c930daade4ad17252188b8a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own Dorney operator Sally Swingset photograph and target broad bench-swing page. Actual six-place purple molded bench with common polished silver bar, individual dark crotch safety straps with silver anchors, yellow upper beam/silver curved end hanger, ordinary clothed children and source purple fence/green mat. Preserve photographed bench/restraint/support section only, no invented hidden swing-drive mechanism or drop-tower mast."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-87602943807327-thumbnail.jpg",
+      "thumbnailSHA256": "d875f8c5494619d8dab1370d7d46ea7bee2656fb7628f13ec961f0d704d7532a",
+      "thumbnailBytes": 26006,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-87602943807327-detail.jpg",
+      "detailSHA256": "30229041ece1f15ca3aa745bb9901ed07c573bd2699fa87fdccc61fa395c88c4",
+      "detailBytes": 189022,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-87602943807327",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Sally's Swingset at Dorney Park. Source- and pixel-reviewed facts and limits: Actually viewed own Dorney operator Sally Swingset photograph and target broad bench-swing page. Actual six-place purple molded bench with common polished silver bar, individual dark crotch safety straps with silver anchors, yellow upper beam/silver curved end hanger, ordinary clothed children and source purple fence/green mat. Preserve photographed bench/restraint/support section only, no invented hidden swing-drive mechanism or drop-tower mast. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "4f73e1897847c7813e7249fc5921bc84cca729957079be4375040ee352a3249a",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 93766076982794,
+      "rideName": "Wildwater Cove",
+      "alt": "Illustrated Wildwater Cove at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:51:28.992296+00:00",
+      "originalSHA256": "399fd34963a361cc500329b1880b966eed952256346bebb0c3c0aafe8becfdec",
+      "review": "Accepted: Actual generated portrait pixels retain the source's central adult in a blue swimsuit, modest shallow waves, teal wave-pattern fence and mustard-colored pool building. Other ordinary bathers remain contextual; no giant wave or undocumented attraction structure is added.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/6ff4a41e62ef77e42096d3ac7e451c8c80e7b8cb-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/wildwater-cove",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "7b751cbe0506c7d429e520f107a1579be3d9505a185c945641ee7883682720d8",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator WildwaterCove photo and target wave-pool page. Actual pale-turquoise shallow wave pool, ordinary guests in normal swimwear, source adult woman in blue swimsuit central, modest breaking white waves, actual teal wavy-painted fence and mustard-yellow pool building behind. Compose tight source adult-centered pool section with actual shallow water/fence, no invented giant waves, full pool geometry or machinery."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-93766076982794-thumbnail.jpg",
+      "thumbnailSHA256": "9c9f2e113399c562d6f0e21a2b204c3c5d8e9ba4b2994404c82de408f2fa7002",
+      "thumbnailBytes": 23306,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-93766076982794-detail.jpg",
+      "detailSHA256": "fab38b74f93a41f39b1db59152c901eeb01e9c81be1685e7af60f8cc9fe92c4b",
+      "detailBytes": 153493,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-93766076982794",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Wildwater Cove at Dorney Park. Source- and pixel-reviewed facts and limits: Actually viewed own operator WildwaterCove photo and target wave-pool page. Actual pale-turquoise shallow wave pool, ordinary guests in normal swimwear, source adult woman in blue swimsuit central, modest breaking white waves, actual teal wavy-painted fence and mustard-yellow pool building behind. Compose tight source adult-centered pool section with actual shallow water/fence, no invented giant waves, full pool geometry or machinery. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "ea3e9179e9ac0f6858db011503e04c14e49bb2d8d27da8cd74d120927acde6df",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 97592157132488,
+      "rideName": "Musik Express",
+      "alt": "Illustrated Musik Express at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:52:47.969341+00:00",
+      "originalSHA256": "0928daf501aa5a1f4cd3bb2683b3d0b3b7789a2585a03a3c7b952407a0088e48",
+      "review": "Accepted: Actual generated portrait pixels show Musik Express's connected white flower-medallion cars, red/blue benches, common lap rails, diamond plate and blue radial deck beneath the teal framed roof with string lights and operator booth. The observed installation and ordinary seated guests remain recognizable.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/051ef498a3b8f15920cb7ea86478007e252388ba-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/musik-express",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "965af9ebe3cfa7ce6f21203c50d6023e74fe8a2c7e7ae6dfa36b12967dd8a203",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator MusikExpress photograph and target circular undulating classic ride page. Source linked white scalloped cars with red/blue padded benches, silver side/common lap rails, silver diamond-plate footwells and red/purple/yellow flower light medallions carrying ordinary clothed families; actual blue radial sloped platform under teal steel canopy/lit strings, red-gold flowered center cap and cream operator booth. Preserve mechanically connected source cars/platform section, not roller-coaster train or unseen full route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-97592157132488-thumbnail.jpg",
+      "thumbnailSHA256": "0575232411ddb4067fbb40a1c342f422ec94f1f6d894990f827cfc4afd1b4e21",
+      "thumbnailBytes": 34613,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-97592157132488-detail.jpg",
+      "detailSHA256": "43c5507622189c1835a0cf5fd97f3bd358764c490b33fbd10d58500600053d17",
+      "detailBytes": 242086,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-97592157132488",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Musik Express at Dorney Park. Source- and pixel-reviewed facts and limits: Actually viewed own operator MusikExpress photograph and target circular undulating classic ride page. Source linked white scalloped cars with red/blue padded benches, silver side/common lap rails, silver diamond-plate footwells and red/purple/yellow flower light medallions carrying ordinary clothed families; actual blue radial sloped platform under teal steel canopy/lit strings, red-gold flowered center cap and cream operator booth. Preserve mechanically connected source cars/platform section, not roller-coaster train or unseen full route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "5545b5d63be4c2c5e3cd86bb5308dc82cb614be79e1071a413d678d84b27869b",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 113250948492597,
+      "rideName": "Wave Swinger",
+      "alt": "Illustrated Wave Swinger at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:53:43.386063+00:00",
+      "originalSHA256": "73606576cba688cbef271207ac4508d806e45f0d8c18767eabea6fa695386dd5",
+      "review": "Accepted: Actual generated portrait pixels retain Wave Swinger's cream/gold canopy, red/teal murals, pink/teal diamond mast and suspended chain chairs with ordinary secured riders. White Water Landing and Hydra appear only as observed background context; this is the Dorney installation.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/c4ed2dbe0e4d46f0165059ab862155059d248633-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/wave-swinger",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "bc95ab1fbdf305625940a70fe254ec6fe5fd56b5a0b92ba8130395fc58a7481d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own Dorney operator WaveSwinger photo and target illuminated classic swing page. Source ornate cream/gold canopy with red/teal illustrated portrait/landscape panels, pink/red/teal diamond center mast, linked silver chains and small red/blue/green/yellow suspended chairs carrying ordinary secured guests; actual WhiteWaterLanding turquoise flume/rustic tower and green Hydra rail behind. Preserve own Dorney architecture/chair connections, not another park swing."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-113250948492597-thumbnail.jpg",
+      "thumbnailSHA256": "027cf04d104d21e280d1a986b462160c01a70bd178643b56f725929ea139282c",
+      "thumbnailBytes": 28752,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-113250948492597-detail.jpg",
+      "detailSHA256": "69253f42d63c9e354966c1f517da4290e88adc7801de034ef0aa95a7429d67e8",
+      "detailBytes": 242914,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-113250948492597",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Wave Swinger at Dorney Park. Source- and pixel-reviewed facts and limits: Actually viewed own Dorney operator WaveSwinger photo and target illuminated classic swing page. Source ornate cream/gold canopy with red/teal illustrated portrait/landscape panels, pink/red/teal diamond center mast, linked silver chains and small red/blue/green/yellow suspended chairs carrying ordinary secured guests; actual WhiteWaterLanding turquoise flume/rustic tower and green Hydra rail behind. Preserve own Dorney architecture/chair connections, not another park swing. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "b77665c7be33d6a479c30590272369a20627620b0960625ff18be131ae7efff8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 113753590124751,
+      "rideName": "Boa Blasters & Constrictor",
+      "alt": "Illustrated Boa Blasters & Constrictor at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:51:54.076627+00:00",
+      "originalSHA256": "8fb21d7e22640c47a33c78d66d640d72071c4a5ba89e5aad39fade07a52c66f4",
+      "review": "Accepted: Actual generated portrait pixels show the photographed blue open flume outlet, ordinary adult in purple swimwear, clear/yellow inner tube and blue handles. The page covers the shared Boa Blasters/Constrictor complex; no unsupported assignment to an unseen named route or hidden slide course is made.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/b035b67a20b6c28f9e39f8f46582386f54c8b32e-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/boa-blasters-and-constrictor",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c18f0d238e82f32101fa4aa95f0b0b25fbfcc208e1221a896d6efd65370f2063",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own operator BoaBlasters/Constrictor photo and shared inner-tube-slide page. Source bright-blue open flume outlet to pale-turquoise splash pool, ordinary adult woman in purple normal swimwear on clear/yellow single tube with blue handles and splashing water. Preserve tight source outlet/tube section; image does not establish exact named route so no unsupported Boa-vs-Constrictor or whole-route mapping."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-113753590124751-thumbnail.jpg",
+      "thumbnailSHA256": "f5592930b1838ae2993e0066031997df8bbf5460406338bc0db1f054e20a1234",
+      "thumbnailBytes": 20872,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-113753590124751-detail.jpg",
+      "detailSHA256": "f5e16b26abbb7cadfe83523c9d2e4648d945c2e5020f205077144d1691a39366",
+      "detailBytes": 141166,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-113753590124751",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Boa Blasters & Constrictor at Dorney Park. Source- and pixel-reviewed facts and limits: Actually viewed own operator BoaBlasters/Constrictor photo and shared inner-tube-slide page. Source bright-blue open flume outlet to pale-turquoise splash pool, ordinary adult woman in purple normal swimwear on clear/yellow single tube with blue handles and splashing water. Preserve tight source outlet/tube section; image does not establish exact named route so no unsupported Boa-vs-Constrictor or whole-route mapping. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "78e033c48fc3ac4145a69cff6b518f86068661d547393637b7cfbab82f97a868",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 119166740174557,
+      "rideName": "Wild Mouse",
+      "alt": "Illustrated Wild Mouse at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:54:08.630377+00:00",
+      "originalSHA256": "8f33c10162e0104e9854ce0f7b6b40180c8bcac2b99411b4cc0989f9a9a3f817",
+      "review": "Accepted: Actual generated portrait pixels retain Wild Mouse's close yellow/orange car, black padded restraint, ordinary clothed mother and child, orange rails and teal posts with the source-visible white Dominator in the distance. The composition does not invent the hidden car nose or mascot design.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/ad0457eac0fdc65ad46bac18ec5202423729a008-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/wild-mouse",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "136171f12b3915ab6f72a1a12b52958c919074de00cb2e7e049518c64940fcae",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actually viewed own Dorney operator WildMouse photograph and target four-person cat/mouse car page. Source close yellow/orange car interior with black padded side/back and common lap restraint at lower crop around ordinary clothed mother/daughter, actual orange rail/teal posts and distant white Dominator tower behind. Preserve actual source passenger/car section only; do not invent front mascot sculpture, unseen track layout or a different park mouse coaster."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-119166740174557-thumbnail.jpg",
+      "thumbnailSHA256": "76c4d902fb47a2540a2806728b0f87ac46d3d60c4f0eb7b81795af7befded52e",
+      "thumbnailBytes": 20364,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-119166740174557-detail.jpg",
+      "detailSHA256": "3108b55e81cb09eb35566b32c2985d4f5c1ea4c719003087c7c5a75908e3da71",
+      "detailBytes": 127454,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-119166740174557",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Wild Mouse at Dorney Park. Source- and pixel-reviewed facts and limits: Actually viewed own Dorney operator WildMouse photograph and target four-person cat/mouse car page. Source close yellow/orange car interior with black padded side/back and common lap restraint at lower crop around ordinary clothed mother/daughter, actual orange rail/teal posts and distant white Dominator tower behind. Preserve actual source passenger/car section only; do not invent front mascot sculpture, unseen track layout or a different park mouse coaster. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "ede61f7587b39554f84a006a2d13f794b56b977cdcf8655fdda1e66f6432337a",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 135591773900996,
+      "rideName": "Kids Cove",
+      "alt": "Illustrated Kids Cove at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:57:11.628753+00:00",
+      "originalSHA256": "127dd6836f0e8eeca84b9d8616f19cd5be14704335ca2fb59bc318823c77576b",
+      "review": "Accepted: Actual generated portrait pixels preserve Kids Cove's yellow submarine fixture, blue portholes, orange wheel, shallow jets and ordinary family bathers. The yellow/green foreground fitting and white chairs agree with the photograph; no unsupported octopus or unseen play structure is added.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2d0a9532c2be5c95b995f4e70f73aa197b95a965-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A father and son playing in a kids' splash area at a waterpark.",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/kids-cove",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "6048645d8e926750625917bd1645ac8e94fbe821c801a8592bb1bdc242cdc8b4",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual photograph shows the physical yellow submarine play fixture with blue portholes and orange wheel, shallow play pool, ordinary father and children in normal swimwear, small water jets, yellow/green foreground fitting, white chairs and blue perimeter rope. Preserve this photographed fixture; do not invent the octopus or a full unseen play area mentioned elsewhere in the text."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-135591773900996-thumbnail.jpg",
+      "thumbnailSHA256": "9a37b1f7f979745b16b3ed2d5c9dacb62ae171317dde1afa57dbd55b2ac5cbee",
+      "thumbnailBytes": 25832,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-135591773900996-detail.jpg",
+      "detailSHA256": "62e393000b04e292c48cc6105b75460a8834cc8be692a218a01efcca7a37b12b",
+      "detailBytes": 172726,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-135591773900996",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Kids Cove at Dorney Park. Source- and pixel-reviewed facts and limits: Actual photograph shows the physical yellow submarine play fixture with blue portholes and orange wheel, shallow play pool, ordinary father and children in normal swimwear, small water jets, yellow/green foreground fitting, white chairs and blue perimeter rope. Preserve this photographed fixture; do not invent the octopus or a full unseen play area mentioned elsewhere in the text. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "06bafcd59397fb85f1aa8fe3aa2c9a539009ccb4799fb478cad2cf42ebbfc368",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 136290808072194,
+      "rideName": "Patriot's Plunge",
+      "alt": "Illustrated Patriot's Plunge at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:00:39.760087+00:00",
+      "originalSHA256": "af59847663de2b4bb61bbed3d5bbdd5472bcc37d600a8f2fa88b1e3240960f46",
+      "review": "Accepted: Actual generated portrait pixels preserve Patriot's Plunge's red/white/blue slide sections, blue upper tubes, gray supports, adult in a blue inner tube, turquoise building and source-visible Talon background. The image depicts only the documented lower section, with no full hidden route assertion.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/5aa39acd737270c77049975661f650ed80661caf-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/patriots-plunge",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "50f0dc388ad0f91f01a12e3b612fb97170d476092efbce74804e59a4d7778312",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual photo shows the lower red, white and blue open steep flumes on gray columns with enclosed blue upper sections. An ordinary adult on a blue inner tube descends the white center slide. Preserve the turquoise building, blue louvered roof and source-visible orange Talon rails on blue supports and distant white Dominator only as observed. No invented hidden routing."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-136290808072194-thumbnail.jpg",
+      "thumbnailSHA256": "0a53d11d9bba68c1cda72b3067d62498c34e5c17928c1598b9188efef0247ee5",
+      "thumbnailBytes": 24669,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-136290808072194-detail.jpg",
+      "detailSHA256": "6e305155dcf94a1cfcc20b0644960f83d2e3a17668d5778dd35be44bbd3ac121",
+      "detailBytes": 178284,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-136290808072194",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Patriot's Plunge at Dorney Park. Source- and pixel-reviewed facts and limits: Actual photo shows the lower red, white and blue open steep flumes on gray columns with enclosed blue upper sections. An ordinary adult on a blue inner tube descends the white center slide. Preserve the turquoise building, blue louvered roof and source-visible orange Talon rails on blue supports and distant white Dominator only as observed. No invented hidden routing. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "3154cc1d8ee5efab78cbaf9d33cf6753eb9d99ddf80777ae6c94d672ca7ddf67",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 145630147848566,
+      "rideName": "Enterprise",
+      "alt": "Illustrated Enterprise at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:57:41.445139+00:00",
+      "originalSHA256": "bf68497d57475521b050c14cec61ebe74dda60018306fb0e6af886a9987f47b6",
+      "review": "Accepted: Actual generated portrait pixels retain Enterprise's cream radial-spoked wheel, red/orange gondolas, red perimeter and tan/cream central arm, with trees and the observed distant tower. Occupants and hidden restraint details are not invented; no unsupported ground structure or full course appears.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/2eddc4049409d8875bc0a6d791837b1b8984f1a4-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/enterprise",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a3162e9eca7822b44347b9a83838f58ad5bc6cd130238e29ddc80d39e62bf0b1",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual source photograph shows the cream radial-spoked Enterprise wheel, red/orange enclosed gondolas, red outer ring and tan/cream drive arm assembly, with trees and the distant white Dominator tower. The upper wheel is partially cropped. Keep the photographed section; do not invent the full wheel base, seating or hidden restraint layout."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-145630147848566-thumbnail.jpg",
+      "thumbnailSHA256": "d6abaf3966f6ebe3589f5f43c61fd8286cdf6cda914100f6e8834ff17ec53537",
+      "thumbnailBytes": 26289,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-145630147848566-detail.jpg",
+      "detailSHA256": "581080be3b62c435a5f2824f2e9ad34d558da84ba26cbeada8b71234348548f9",
+      "detailBytes": 212954,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-145630147848566",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Enterprise at Dorney Park. Source- and pixel-reviewed facts and limits: Actual source photograph shows the cream radial-spoked Enterprise wheel, red/orange enclosed gondolas, red outer ring and tan/cream drive arm assembly, with trees and the distant white Dominator tower. The upper wheel is partially cropped. Keep the photographed section; do not invent the full wheel base, seating or hidden restraint layout. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "930acbb348d4e9f4e52e435d166e16ca57c323937e50b33c6df384f9be1fa621",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 152348973922957,
+      "rideName": "Zephyr",
+      "alt": "Illustrated Zephyr at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:58:41.382225+00:00",
+      "originalSHA256": "770dab29d004ea7eebf97dace6886b3a055ee4af94126dd750a1c06a16a34c24",
+      "review": "Accepted: Actual generated portrait pixels retain Zephyr's streamlined purple/silver/yellow locomotive, rounded lamp and bell, purple open-window cars with ordinary guests, narrow rails and the photographed timber creek crossing with stone banks and ducks. It remains a miniature streamlined train rather than an invented steam engine.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/f287956468e6ab1e642b3fad6c9fd235527f9bd7-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/zephyr",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "400e75f00338ddbd1fc3ea8fc60da31cb64d78e42b503f943c8364099cdd2ed0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual source photo shows Zephyr's purple, silver and yellow streamlined narrow-gauge locomotive with rounded headlight and bell, linked purple open-window passenger cars and ordinary guests/operator. The observed track crosses a small creek on timber sleepers, with stone banks, fallen leaves and ducks. This is not a steam engine; do not invent an unobserved route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-152348973922957-thumbnail.jpg",
+      "thumbnailSHA256": "f27a82cc1503c9eb6fc6eb1b827d1421394e475ec6c6b1b9e70bd93e6f0aba6b",
+      "thumbnailBytes": 29551,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-152348973922957-detail.jpg",
+      "detailSHA256": "d6d75f0509c04208411a24bc06875b6c6e247567c82a60efa8c725dd19e7257f",
+      "detailBytes": 249781,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-152348973922957",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Zephyr at Dorney Park. Source- and pixel-reviewed facts and limits: Actual source photo shows Zephyr's purple, silver and yellow streamlined narrow-gauge locomotive with rounded headlight and bell, linked purple open-window passenger cars and ordinary guests/operator. The observed track crosses a small creek on timber sleepers, with stone banks, fallen leaves and ducks. This is not a steam engine; do not invent an unobserved route. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "710b30c2b91dec894048acd639d83cfc5e36b628bf1fe2aa41c934c7c8510c31",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 154107828209710,
+      "rideName": "Revolution",
+      "alt": "Illustrated Revolution at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:59:19.194853+00:00",
+      "originalSHA256": "d06ecc6d113fbcb47c3593b4301b0a18cce7fae2cf0857bbc3c90ce74d24e7ce",
+      "review": "Accepted: Actual generated portrait pixels retain Revolution's yellow radial seat ring, inward-facing teal seats with black over-shoulder restraints, white/orange/blue seat backs, blue pendulum arm and yellow/orange/blue frame. Ordinary secured riders and actual connected hardware match the source.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/20283f7541611dbeab7c0a4b42b56d414c48b7d0-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/revolution",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "c6e2b68adfbbcd5a55a3f35bf6ab25a5dcb20b94fb5efcf9c56a7838e9acc1c3",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual source photograph shows Revolution's inward-facing yellow 32-seat ring, eight radial arms, teal seats, white/orange/blue seat-back panels and black over-shoulder restraints. Preserve the yellow arm, blue pendulum mast and yellow/orange/blue support frame, teal platform rails and ladder with ordinary secured guests. Seating faces inward as shown, unlike an outward-facing Delirium-style pendulum."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-154107828209710-thumbnail.jpg",
+      "thumbnailSHA256": "8e059389b8de2533aac64aa75d91e111d9767f09533979a7612a57a68ba88def",
+      "thumbnailBytes": 28961,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-154107828209710-detail.jpg",
+      "detailSHA256": "815d713002789195b7e0a32ec38a3c2b78e2b1a63b88bd2657326a0c63ffd1f3",
+      "detailBytes": 206493,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-154107828209710",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Revolution at Dorney Park. Source- and pixel-reviewed facts and limits: Actual source photograph shows Revolution's inward-facing yellow 32-seat ring, eight radial arms, teal seats, white/orange/blue seat-back panels and black over-shoulder restraints. Preserve the yellow arm, blue pendulum mast and yellow/orange/blue support frame, teal platform rails and ladder with ordinary secured guests. Seating faces inward as shown, unlike an outward-facing Delirium-style pendulum. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "3d9535829e91050c2ef10f82ab417e380a545a212f96f4100639ecab4094939c",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 162426878438119,
+      "rideName": "Woodstock's Wagon Wheel",
+      "alt": "Illustrated Woodstock's Wagon Wheel at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:00:01.879516+00:00",
+      "originalSHA256": "2e2494ee001c1376963e8a329ba775b9507a2180bed4c620d014a9835dcf8b66",
+      "review": "Accepted: Actual generated portrait pixels retain Woodstock's Wagon Wheel's green wheel and bulb strips, brown covered-wagon gondolas, cream arched roofs, decorative wheels and silver hinged gates, with ordinary family passengers. The portrait preserves the photographed ride mechanism.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fc0d68054f68493ec75c1aad477f33e46e9e860d1-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children and adults riding a kids' Ferris wheel ride at an amusement park.",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/woodstocks-wagon-wheel",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2bc24b4dbe0c8a7d782a53629df6554259ef3d3dabfb5a5738e81c16360dcab4",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual source photo shows Woodstock's Wagon Wheel: dark green eight-spoke wheel and round bulb-lit hub, brown wagon-shaped gondolas with cream arched canvas roofs and decorative brown wheels, silver hinged entry gates, ordinary family passengers and trees. Compose the source-visible baskets and wheel; do not invent hidden gondolas or unsupported loading hardware."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-162426878438119-thumbnail.jpg",
+      "thumbnailSHA256": "691590358abf1744ad14c15455663f0dc67c27beae6e7007a84a7500d4ff119e",
+      "thumbnailBytes": 26473,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-162426878438119-detail.jpg",
+      "detailSHA256": "a062cc93cba87a4fd80f7539593b274f993f8e72e3f770fbe7e0b62087cf0cda",
+      "detailBytes": 193045,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-162426878438119",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Woodstock's Wagon Wheel at Dorney Park. Source- and pixel-reviewed facts and limits: Actual source photo shows Woodstock's Wagon Wheel: dark green eight-spoke wheel and round bulb-lit hub, brown wagon-shaped gondolas with cream arched canvas roofs and decorative brown wheels, silver hinged entry gates, ordinary family passengers and trees. Compose the source-visible baskets and wheel; do not invent hidden gondolas or unsupported loading hardware. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "4366fb440041bf5f38937d6952beac21ec0693fdde96dfdcada5bb9a1844c1ed",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 165606068418020,
+      "rideName": "Linus Launcher",
+      "alt": "Illustrated Linus Launcher at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T09:59:42.887223+00:00",
+      "originalSHA256": "cbd8f8654f5525762f8024402000be61a8efd62413f1b4b1cac78cc6c0c07115",
+      "review": "Accepted: Actual generated portrait pixels retain Dorney Linus Launcher's lime paired prone beds, purple padded noses, black curved restraints, silver grips and actual turquoise overhead hanger/radial arms. Ordinary clothed riders remain face-down with feet behind. No invented tower mechanism appears.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/ae716693fb4c8076b08336269fc2dda649d63ba4-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/linus-launcher",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "e8f7add3031b9432a3d41f8abe423a6283445b3f3d90bef150f223f449ed409f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The actual Dorney photograph shows Linus Launcher's paired prone lime-green beds, purple nose/head pads, black curved restraints and silver handgrips, clothed guests lying face-down with feet behind, turquoise radial arms and light strips above. Keep the actual connected overhead hanger and paired prone geometry; no added tower, chair seats or unsupported vertical travel mechanism."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-165606068418020-thumbnail.jpg",
+      "thumbnailSHA256": "7c510535a6afba001bf18ed25baacb4d9a9a6955e904dc6e8ca5ce308ff84a32",
+      "thumbnailBytes": 27347,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-165606068418020-detail.jpg",
+      "detailSHA256": "3040854ca21907f5c1ab5a3c0f2921687e27cfe90526d66a343c5144e5c7a5c8",
+      "detailBytes": 155530,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-165606068418020",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Linus Launcher at Dorney Park. Source- and pixel-reviewed facts and limits: The actual Dorney photograph shows Linus Launcher's paired prone lime-green beds, purple nose/head pads, black curved restraints and silver handgrips, clothed guests lying face-down with feet behind, turquoise radial arms and light strips above. Keep the actual connected overhead hanger and paired prone geometry; no added tower, chair seats or unsupported vertical travel mechanism. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "c9be0bc4f89af8178ef836b640947e9f8a8b0019d43874dec3cecdf506afe863",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 171751328920139,
+      "rideName": "Camp Bus",
+      "alt": "Illustrated Camp Bus at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:00:05.179568+00:00",
+      "originalSHA256": "80a622881e134db571a4ed1b1fceb7759af34930fb7f4468d3e8fce49c810c97",
+      "review": "Accepted: Actual generated portrait pixels retain Camp Bus's suspended yellow body, red side panels, cream half doors and silver gates, actual teal underfloor arms, gray bumper/grille and roof camping props. Ordinary passengers remain seated in the observed vehicle; decorative wheels are not depicted as road driving.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F2a8d6685686257b4589cad503d80f2fa41d71767-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children and adults riding a gentle, bus-themed kids' ride at an amusement park.",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/camp-bus",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a839e493d5b9952ffd70e9402825667df2782b1a4db838ab1d18afeeeccd7b35",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual photograph shows a yellow Camp Bus with red open side panels, cream half-height doors and silver entry gates, gray bumper/grille, round lamps, decorative wheels and teal underfloor moving arms. The roof carries actual canoe/camping props and ordinary clothed passengers sit inside. Preserve the suspended bus installation and photographed underside; no free-road driving or invented support."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-171751328920139-thumbnail.jpg",
+      "thumbnailSHA256": "30aa7794e28a96f8561abcd02e36fab17e3d160c48e3cb9f81a51da09dffa5dc",
+      "thumbnailBytes": 26644,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-171751328920139-detail.jpg",
+      "detailSHA256": "45ed446763fea00d69c94e4160c66f925e111258758e9a8972cd16563803ad21",
+      "detailBytes": 182281,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-171751328920139",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Camp Bus at Dorney Park. Source- and pixel-reviewed facts and limits: Actual photograph shows a yellow Camp Bus with red open side panels, cream half-height doors and silver entry gates, gray bumper/grille, round lamps, decorative wheels and teal underfloor moving arms. The roof carries actual canoe/camping props and ordinary clothed passengers sit inside. Preserve the suspended bus installation and photographed underside; no free-road driving or invented support. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "03244127e8b7ae5a3bbe82ff2efa111ce35086d99fb8c7a3276dd2447bf5006d",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 176018328113268,
+      "rideName": "Flying Ace",
+      "alt": "Illustrated Flying Ace at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:01:10.504548+00:00",
+      "originalSHA256": "3bbab593f39d4149fccdf1d02782eb2873751818a11b2776b132eae05abb231a",
+      "review": "Accepted: Actual generated portrait pixels retain Dorney Flying Ace's red swinging airplane gondola, silver gates, yellow/blue roundels, source-visible aviator figure, blue A-frame/connected arm and bulb strips with ordinary restrained family passengers. The source-specific ride is distinct from circular Flying Ace installations.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/3285b9d3c3632296a0b16c43958c7c2c2d6b8e2b-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/flying-ace",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2c79f8f0bb43d44483de24f73f5a5aba209381fb8f41c9dd15e0348e5853b497",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The Dorney photograph shows a red biplane-shaped swinging gondola with yellow-blue roundels, silver entrance gates and seat rails, ordinary clothed families, blue A-frame and arm with red/yellow bulb strips, and the actual fixed Snoopy aviator figure above. This is the Dorney swinging airplane, not another park's circular Flying Ace ride. Keep photographed connected supports."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-176018328113268-thumbnail.jpg",
+      "thumbnailSHA256": "dc5997a6592ce116c6d79eb6a7751a5a8a65fb1d763325b1dd6c8759a925d961",
+      "thumbnailBytes": 28847,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-176018328113268-detail.jpg",
+      "detailSHA256": "85e620825b9434ba33664d6f5913c15a1c9dff11c59550788e04857d31b41e9c",
+      "detailBytes": 217996,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-176018328113268",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Flying Ace at Dorney Park. Source- and pixel-reviewed facts and limits: The Dorney photograph shows a red biplane-shaped swinging gondola with yellow-blue roundels, silver entrance gates and seat rails, ordinary clothed families, blue A-frame and arm with red/yellow bulb strips, and the actual fixed Snoopy aviator figure above. This is the Dorney swinging airplane, not another park's circular Flying Ace ride. Keep photographed connected supports. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "378fb2dfb138636cc467e9006cb8f5897417dccc4e55c5ca1c2d4f776e831ed7",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 190933820291474,
+      "rideName": "Kite Eating Tree",
+      "alt": "Illustrated Kite Eating Tree at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:00:43.332142+00:00",
+      "originalSHA256": "bfe24a8ca109d77c3756a0487a322615cabed7021ae74ca999e12223190353a7",
+      "review": "Accepted: Actual generated portrait pixels retain Kite Eating Tree's six-seat yellow/teal bench, thick common teal padded bar with orange individual crotch straps, silver end rails, vertical guide and kite decorations. Ordinary clothed children and leafy context match the source.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/1f9ee754bf59c9037eda5356d8b3b553f1de0589-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/kite-eating-tree",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "91636907297661343f90e9c93cf482c5a2246ac3231cf4d5f7404712a50fcc6f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Dorney photograph shows the yellow six-seat Kite Eating Tree bench with teal molded seats, thick common teal padded lap bar and orange individual crotch straps/anchors, silver end rails, yellow illustrated back panel and vertical guide behind. Preserve ordinary clothed children and the actual bench/restraint geometry, photographed kite decoration and leafy background; do not invent full tower height."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-190933820291474-thumbnail.jpg",
+      "thumbnailSHA256": "5a912feca9a17d81dcfab610858d05e8f07e9e1a3683d6265a7e2579d126ac6a",
+      "thumbnailBytes": 27753,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-190933820291474-detail.jpg",
+      "detailSHA256": "1f60fc7f08ede209cb81a2c4e4db911bb41266a0b25ceed53706a5a3da26f393",
+      "detailBytes": 170420,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-190933820291474",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Kite Eating Tree at Dorney Park. Source- and pixel-reviewed facts and limits: Actual Dorney photograph shows the yellow six-seat Kite Eating Tree bench with teal molded seats, thick common teal padded lap bar and orange individual crotch straps/anchors, silver end rails, yellow illustrated back panel and vertical guide behind. Preserve ordinary clothed children and the actual bench/restraint geometry, photographed kite decoration and leafy background; do not invent full tower height. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "d93449e00c54503fd2e17cf5ec782ee57adb1b0e8dd87b196c5598b16d54632b",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 192013077977382,
+      "rideName": "MT Buckets",
+      "alt": "Illustrated MT Buckets at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:01:50.097141+00:00",
+      "originalSHA256": "a0e3f49f9e576218941d9811d72be4fbf54be018e1eb7d492462f7397e4833c1",
+      "review": "Accepted: Actual generated portrait pixels retain MT Buckets' rust-orange flying-scooter tubs, patchwork cooling fins, turquoise radial arms, actual suspension cables and rust-patterned central cone with ordinary clothed guests. The large text sign is excluded; no substituted eagle vehicle appears.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/c13ea1c35f47575d06b474b9f4f18a41165a44aa-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/mt-buckets",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "eb0c9814a7943f1f1ac3770b0da989ab740b8e9cd84be6b9ef62ea32acd6f322",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual source photograph shows MT Buckets' rusty orange suspended flying-scooter buckets with patchwork metal cooling fins, turquoise radial arms, orange suspension rods/cables, rust-patterned conical base and ordinary clothed guests. The operator identifies this exact industrial McTavish installation. Compose the ride hardware from the source, excluding the large foreground text sign; no unrelated eagle-themed or other-park vehicle."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-192013077977382-thumbnail.jpg",
+      "thumbnailSHA256": "dfeedd8a478bb7f6be74496e9031dd72f5250a1996e11288e9c97a9b55287ee5",
+      "thumbnailBytes": 23652,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-192013077977382-detail.jpg",
+      "detailSHA256": "72efc3336810f4bcf041eae2c970884aa84d1f48cb6a8e1e2b1a3bef326c7c1d",
+      "detailBytes": 193342,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-192013077977382",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict MT Buckets at Dorney Park. Source- and pixel-reviewed facts and limits: Actual source photograph shows MT Buckets' rusty orange suspended flying-scooter buckets with patchwork metal cooling fins, turquoise radial arms, orange suspension rods/cables, rust-patterned conical base and ordinary clothed guests. The operator identifies this exact industrial McTavish installation. Compose the ride hardware from the source, excluding the large foreground text sign; no unrelated eagle-themed or other-park vehicle. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "6e3263c97bba2cb0b77a80260eb5e419935300a0d1f0b4bbf01dd75b12d6a540",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 192356586822152,
+      "rideName": "Thunderhawk",
+      "alt": "Illustrated Thunderhawk at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:02:11.969457+00:00",
+      "originalSHA256": "8fb1548679a7e08e03aeae81f47b76dab5910151330b60b47ca3846c22160bc1",
+      "review": "Accepted: Actual generated portrait pixels retain Thunderhawk's burgundy/gold two-abreast wooden-coaster train, lap restraints, running rails, timber sleepers and pale wooden hill trestles with ordinary riders. The photographed hill is preserved without inventing a full course.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/9969d547561891d6239efad2c8d083a9d6473987-1440x690.jpg?rect=0,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/thunderhawk",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "17d54c5280f604d96b7e36ca3ca7880c767aa72ef029273397503c74fc03305b",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual source photograph shows Thunderhawk's burgundy linked wooden-coaster cars with gold trim, two-abreast ordinary clothed riders under actual lap bars, on steel running rails and timber sleepers across cream/pale wooden trestles descending a hill. Preserve this photographed train and hill; no invented full course, steel coaster track or current-operation claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-192356586822152-thumbnail.jpg",
+      "thumbnailSHA256": "93e2428675452e3e5352f071417427930d3e3346467845b95ad67efea7854a40",
+      "thumbnailBytes": 26157,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-192356586822152-detail.jpg",
+      "detailSHA256": "a881fdfee66a84271cfcf35793f67ba2da19e7375a5955d1622a58355524317e",
+      "detailBytes": 185148,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-192356586822152",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Thunderhawk at Dorney Park. Source- and pixel-reviewed facts and limits: Actual source photograph shows Thunderhawk's burgundy linked wooden-coaster cars with gold trim, two-abreast ordinary clothed riders under actual lap bars, on steel running rails and timber sleepers across cream/pale wooden trestles descending a hill. Preserve this photographed train and hill; no invented full course, steel coaster track or current-operation claim. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "53b9d4a88b59c964e86d69560599cb8570914ba19faa2b4c17e18d292af5013b",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 193134697831580,
+      "rideName": "Snoopy's Junction",
+      "alt": "Illustrated Snoopy's Junction at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:06:57.045393+00:00",
+      "originalSHA256": "9fd137126acdad3ab6c42189f1967497941734341ad3668e43cac6a0074c0fd0",
+      "review": "Accepted: Actual generated portrait pixels retain Snoopy's Junction's orange/yellow miniature mock-steam locomotive, green cab and turquoise roof, black flared chimney, decorative yellow wheels, small guide wheels and coupling on narrow rails. Ordinary clothed family guests and the fixed conductor figure match the source; this remains distinct from the park's other trains.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/db383b8588e57460ca75503f73f0afa08068a19e-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/snoopys-junction",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "1615d37379720401280bdf2096a59b7125204a9604c8e1817ba8c793403ec74a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual photograph shows Snoopy's Junction's small orange/yellow mock-steam locomotive with green cab and turquoise roof, flared black chimney, yellow decorative driving wheels, visible small guide wheels and coupling, orange/yellow open passenger cars and black entry gates on narrow rails and timber sleepers. Ordinary clothed family passengers and a fixed conductor Woodstock figure are visible. Preserve this toy locomotive, not Zephyr or Cedar Creek Cannonball."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-193134697831580-thumbnail.jpg",
+      "thumbnailSHA256": "ee972d50466a485c00d315314558c065773df9aa1b211f15462e6a28fb5aa246",
+      "thumbnailBytes": 25812,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-193134697831580-detail.jpg",
+      "detailSHA256": "dd9c16a2b1648b24c03390ffb3c333997f7bd4b2ca5ee4f408c69301be67d0b0",
+      "detailBytes": 171979,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-193134697831580",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Snoopy's Junction at Dorney Park. Source- and pixel-reviewed facts and limits: Actual photograph shows Snoopy's Junction's small orange/yellow mock-steam locomotive with green cab and turquoise roof, flared black chimney, yellow decorative driving wheels, visible small guide wheels and coupling, orange/yellow open passenger cars and black entry gates on narrow rails and timber sleepers. Ordinary clothed family passengers and a fixed conductor Woodstock figure are visible. Preserve this toy locomotive, not Zephyr or Cedar Creek Cannonball. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "45e8cdf6fa82b310260c19e5eb7dd9e6aac9b1cd1a8defe749288349e4c2a24f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 197686055051687,
+      "rideName": "Snoopy's Rocket Express",
+      "alt": "Illustrated Snoopy's Rocket Express at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:14:18.819170+00:00",
+      "originalSHA256": "c5f97698751f70a1afef491cb21726429a2e4e01e98cc7733a85e6b35c86e6e1",
+      "review": "Accepted: Actually viewed final built-in factual correction. The unsupported blue double-rail beam and invented underside wheel arrangement are removed. Source-supported red/yellow paired noses, blue seats, silver rails, purple tail fin and ordinary clothed four passengers remain in a close 4:5 portrait. Both executed prompts, references, output files and hashes are preserved. No moderation block or moderation retry occurred.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/0cfdb51c7eb79a3dae55f5016e966e35b49d17a6-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/snoopys-rocket-express",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "bc416c7711fbf8d80653c1442e9eef8d94991380914d49e3c703ce9779aed2bc",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual photograph shows the four-passenger Snoopy's Rocket Express vehicle: two yellow conical noses in red rounded shells, blue seats, red side fairings, purple tail fin, silver shared grab/lap rails and four ordinary clothed children in two rows. The operator identifies an elevated monorail. Keep the photographed close vehicle section; do not invent an unsupported full track route or free-flying aircraft."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-197686055051687-thumbnail.jpg",
+      "thumbnailSHA256": "cb9f066b2f62d1264d14c3d4b4eca42dcd51e179246867bb0bf5f0541c86deaf",
+      "thumbnailBytes": 22911,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-197686055051687-detail.jpg",
+      "detailSHA256": "54b7d932b18a0112971795a9bdd66c267c42f66cda528ae744fb8f47164e315b",
+      "detailBytes": 137034,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-197686055051687",
+      "prompt": "Edit image 1 to correct an ordinary factual ride-hardware error. Image 2 is the genuine inspected Dorney Park Snoopy's Rocket Express photo and is authoritative for the visible vehicle. Keep the realistic 4:5 portrait, red/yellow paired rocket noses, blue seats, silver restraint/grab rails, purple tail fin and ordinary clothed four family passengers. The generated blue double-rail beam and new wheel/support arrangement below the car are not supported by that close source photo and are incorrect for this elevated monorail attraction. Remove that invented beam and underside support completely by reframing the scene as a close portrait of only the source-documented vehicle and riders, as in image 2; the lower car edge can meet the bottom edge of the image so no unverified underside or track is shown. Do not invent a replacement track or support, free flight or a hidden full route. Preserve natural photographic surfaces and restrained blue-purple evening mood. No added text, logos, UI or watermark. This remains generated artwork, not a documentary photograph.",
+      "promptSHA256": "68bec1badec40322143d505ad62261cd6ac5f7ff703a5f43b841d7ba64c93f22",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Snoopy's Rocket Express at Dorney Park. Source- and pixel-reviewed facts and limits: Actual photograph shows the four-passenger Snoopy's Rocket Express vehicle: two yellow conical noses in red rounded shells, blue seats, red side fairings, purple tail fin, silver shared grab/lap rails and four ordinary clothed children in two rows. The operator identifies an elevated monorail. Keep the photographed close vehicle section; do not invent an unsupported full track route or free-flying aircraft. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+          "promptSHA256": "45c3d0fd6316ff0a47b7b5f441c6298adb8bf6f0dcebc6411c4d250e8844c573",
+          "outputSHA256": "eb1049fb9f41666fed2fcd328ca854b6ad6597ea682ea1c16258e0fc4845de53",
+          "outputFile": "exec-9803fe54-84e5-443e-bd01-ca2fd87c081f.png",
+          "generationReferences": [
+            "/workspace/pivot-ride-artwork/candidate-photos/69-197686055051687.jpg",
+            "/workspace/pivot-design-reference/reference.jpeg"
+          ],
+          "review": "Rejected: actual pixels introduced unsupported blue double-rail beam and underside wheel arrangement."
+        },
+        {
+          "prompt": "Edit image 1 to correct an ordinary factual ride-hardware error. Image 2 is the genuine inspected Dorney Park Snoopy's Rocket Express photo and is authoritative for the visible vehicle. Keep the realistic 4:5 portrait, red/yellow paired rocket noses, blue seats, silver restraint/grab rails, purple tail fin and ordinary clothed four family passengers. The generated blue double-rail beam and new wheel/support arrangement below the car are not supported by that close source photo and are incorrect for this elevated monorail attraction. Remove that invented beam and underside support completely by reframing the scene as a close portrait of only the source-documented vehicle and riders, as in image 2; the lower car edge can meet the bottom edge of the image so no unverified underside or track is shown. Do not invent a replacement track or support, free flight or a hidden full route. Preserve natural photographic surfaces and restrained blue-purple evening mood. No added text, logos, UI or watermark. This remains generated artwork, not a documentary photograph.",
+          "promptSHA256": "68bec1badec40322143d505ad62261cd6ac5f7ff703a5f43b841d7ba64c93f22",
+          "outputSHA256": "c5f97698751f70a1afef491cb21726429a2e4e01e98cc7733a85e6b35c86e6e1",
+          "outputFile": "exec-f9f343b0-da26-4fbe-84af-d2092f837275.png",
+          "generationReferences": [
+            "/workspace/generated_images/exec-9803fe54-84e5-443e-bd01-ca2fd87c081f.png",
+            "/workspace/pivot-ride-artwork/candidate-photos/69-197686055051687.jpg"
+          ],
+          "review": "Accepted: Actually viewed final built-in factual correction. The unsupported blue double-rail beam and invented underside wheel arrangement are removed. Source-supported red/yellow paired noses, blue seats, silver rails, purple tail fin and ordinary clothed four passengers remain in a close 4:5 portrait. Both executed prompts, references, output files and hashes are preserved. No moderation block or moderation retry occurred."
+        }
+      ]
+    },
+    {
+      "parkId": 69,
+      "rideId": 202227800757442,
+      "rideName": "Dodgem",
+      "alt": "Illustrated Dodgem at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:12:36.333845+00:00",
+      "originalSHA256": "a538a002ad28a1db31b35f22d9ace15910e97c7b0b3b35c2d78e215b2ff5790d",
+      "review": "Accepted: Actual generated portrait pixels preserve the independently photographed Dorney Dodgem cars: glitter-purple/orange/blue shells, red/yellow flame panels, black sculpted bench seats, steering wheels/lap rails, segmented headlamps and thick rubber bumpers in their documented covered storage racks. No unsupported riders, operational arena or Cedar Point stock substitution appears; historical evidence limits are retained.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6SX8TS_LaK0vdEVA0iqPDas1g3bXFBKbaWnGgiQtk1VympikG_iEdpSZljaX03F-fB5ufiv1ZAG0lpxUTDa9logcx2v9vGkF7dk1VFwSXe-0znjKgmCfX1APmkq9K4cdi1TzGAg/s1600/DP+3.11.17+J2.jpg",
+          "sourceURL": "https://newsplusnotes.blogspot.com/2017/03/dorney-park-new-for-2017-march-project_16.html",
+          "credit": "NewsPlusNotes (original on-site photographer/publisher)",
+          "license": "Copyright NewsPlusNotes; rights retained",
+          "licenseURL": "https://newsplusnotes.blogspot.com/2017/03/dorney-park-new-for-2017-march-project_16.html",
+          "sha256": "cc7ebb368cc2bfcdb8e6898ae4569fa1abc9710034de9fe016b7aebcc4d64270",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The operator photo was rejected before generation because its alt explicitly identifies Cedar Point. Independent on-site NewsPlusNotes March 16, 2017 report and actual original photos identify Dorney's own stored bumper cars: glitter-purple, orange and blue shells, red/yellow flame side panels, sculpted black two-person seats, black steering wheels and lap rails, low segmented headlamps and broad black rubber bumpers. Use the inspected front-quarter view of the actual orange car and adjacent purple car in their photographed covered storage setting; portrait close hardware study, no passengers or invented driving scene. These are historical documented vehicles, not a present operating-status claim or a generic Cedar Point substitution."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-202227800757442-thumbnail.jpg",
+      "thumbnailSHA256": "a45cc5f0a72808f65cacd8f421e6770565a44cc5a6c88d513723a3fec3e97c8b",
+      "thumbnailBytes": 20464,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-202227800757442-detail.jpg",
+      "detailSHA256": "bfd5e22e3c2a772e54268501069ce469dc16ac75b186a482bb614e152b8c57a7",
+      "detailBytes": 135299,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-202227800757442",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Dodgem at Dorney Park. Source- and pixel-reviewed facts and limits: The operator photo was rejected before generation because its alt explicitly identifies Cedar Point. Independent on-site NewsPlusNotes March 16, 2017 report and actual original photos identify Dorney's own stored bumper cars: glitter-purple, orange and blue shells, red/yellow flame side panels, sculpted black two-person seats, black steering wheels and lap rails, low segmented headlamps and broad black rubber bumpers. Use the inspected front-quarter view of the actual orange car and adjacent purple car in their photographed covered storage setting; portrait close hardware study, no passengers or invented driving scene. These are historical documented vehicles, not a present operating-status claim or a generic Cedar Point substitution. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "b162266c8dbbb1f4d03786ef5c275b261c57d2a8779d604528e93336033eabc0",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 209763476405081,
+      "rideName": "Possessed",
+      "alt": "Illustrated Possessed at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:05:59.352611+00:00",
+      "originalSHA256": "73a703ffdebbd2ed0b5bee9dd4c60d24e977ffcffb4b8257793ec8d2a6cd3174",
+      "review": "Accepted: Actual generated portrait pixels preserve the independently photographed Possessed red/maroon inverted train chassis and bogies, yellow vertical lattice track, hanging purple seats, orange over-shoulder restraints and ordinary clothed riders with legs free beside the source maintenance catwalk. The original report dates the visit July9 2015; this is not a claim of current operation or appearance.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.negative-g.com/dorney-park/2015/dorney-park-2015-posessed-large-2.jpg",
+          "sourceURL": "https://www.negative-g.com/dorney-park/2015/dorney-park-2015-15.htm",
+          "credit": "Paul B. Drabek / Negative-G (original photographer)",
+          "license": "Copyright Paul B. Drabek; rights retained",
+          "licenseURL": "https://www.negative-g.com/dorney-park/2015/dorney-park-2015-15.htm",
+          "sha256": "28cf1310678f45d03138150b380781fb7c7b310067439703508126376efc5add",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Independent original photographer Paul B. Drabek's on-site report explicitly dates the Dorney visit July 9, 2015. The actual chosen photo shows Possessed's red/maroon inverted train chassis and bogies wrapping the yellow lattice running track and vertical spike, four-abreast hanging purple seats with orange over-shoulder restraints, ordinary clothed riders with legs free, and the side maintenance ladder/catwalk. Compose this documented close train/spike view, excluding the sign. This is historical photographic evidence, not a current paint or operating-status claim; do not recreate Superman-era colors or unseen full shuttle course."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-209763476405081-thumbnail.jpg",
+      "thumbnailSHA256": "3e344e589fb206083ab07d1b936d707b8062d011b19168591edd8ff9c3252aee",
+      "thumbnailBytes": 26787,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-209763476405081-detail.jpg",
+      "detailSHA256": "99bdc588cf2143a259d076880f7634c7656a8982d4a12716b949c2349510c7ec",
+      "detailBytes": 192627,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-209763476405081",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Possessed at Dorney Park. Source- and pixel-reviewed facts and limits: Independent original photographer Paul B. Drabek's on-site report explicitly dates the Dorney visit July 9, 2015. The actual chosen photo shows Possessed's red/maroon inverted train chassis and bogies wrapping the yellow lattice running track and vertical spike, four-abreast hanging purple seats with orange over-shoulder restraints, ordinary clothed riders with legs free, and the side maintenance ladder/catwalk. Compose this documented close train/spike view, excluding the sign. This is historical photographic evidence, not a current paint or operating-status claim; do not recreate Superman-era colors or unseen full shuttle course. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "b992bc9683bd9b596d0d04992d33d71e8b69e895c52930de12aa83f40b403b3b",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 225657234516242,
+      "rideName": "Woodstock Express",
+      "alt": "Illustrated Woodstock Express at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:07:24.681767+00:00",
+      "originalSHA256": "edeec44f707cd473693b05bdf3903b6be8a1b01f7e14d91e13d110359f01aab1",
+      "review": "Accepted: Actual generated portrait pixels preserve Woodstock Express's close green car bench, black head supports and common padded lap bar with ordinary clothed mother/child and following guests. No hidden car nose or full track layout is invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/d9c528d23b59d91c4f5f403e9affce10418806c7-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/woodstock-express",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a90984c91a80ac0db6b473b99a5f7d09bb072b9f16cd6a9fc0b4ac4c36b02875",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Dorney photograph shows Woodstock Express's close green coaster bench/car interior, black padded head supports and common black lap bar, ordinary clothed mother and child, following seated guests and trees. Preserve this observed car section; the source does not show the car nose or full course, so do not invent either."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-225657234516242-thumbnail.jpg",
+      "thumbnailSHA256": "d4f9059390199b66601110eab665508db6eb2d169ddc9cf75bbd2ef2112a4c70",
+      "thumbnailBytes": 19217,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-225657234516242-detail.jpg",
+      "detailSHA256": "16aba22a43018236214dddda775e7f22c733651f118080f75f100850b3ffc893",
+      "detailBytes": 119425,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-225657234516242",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Woodstock Express at Dorney Park. Source- and pixel-reviewed facts and limits: Actual Dorney photograph shows Woodstock Express's close green coaster bench/car interior, black padded head supports and common black lap bar, ordinary clothed mother and child, following seated guests and trees. Preserve this observed car section; the source does not show the car nose or full course, so do not invent either. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "2e4ee4e4b997739f78d85da1a9efabf343d21746afda8b5c6ebd401e773e9960",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 226758661234375,
+      "rideName": "Kaleidoscope",
+      "alt": "Illustrated Kaleidoscope at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:09:10.747163+00:00",
+      "originalSHA256": "1790666c0642461200e5c5ca71fa0aa349d999790b2ea84eb75765aece7c6b7d",
+      "review": "Accepted: Actual generated portrait pixels preserve Kaleidoscope's cream/red two-seat gondola fronts with gold pinstriping, red interiors, shared silver lap rails and connected red radial arms/hydraulic cylinders with yellow center. Ordinary clothed guests and photographed background context remain consistent.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/5d1dc51660a62d0dd02928f1ca11b616c47c0f1a-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/kaleidoscope",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "10d605f365aba897faecdc9429350da528901003b4ce8e9d4de95dae199e1f41",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual source photo shows Kaleidoscope's cream/red gondola fronts with gold pinstriping, red seat interiors and silver shared lap rails, red radial arms and red hydraulic cylinders with yellow central structure. Ordinary clothed passengers sit in the actual two-seat cars; source-visible blue coaster rail and nearby barriers stay contextual. Preserve actual connected Troika hardware, no invented hidden full mechanism."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-226758661234375-thumbnail.jpg",
+      "thumbnailSHA256": "e586005eb9ec50537abf479413c987ee08fdf52c924513d2060c05e8fccca185",
+      "thumbnailBytes": 25392,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-226758661234375-detail.jpg",
+      "detailSHA256": "a30b82dbece824ff95c661eb1948be1b30f17b91209b3c3d4bab15a151d48a54",
+      "detailBytes": 157552,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-226758661234375",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Kaleidoscope at Dorney Park. Source- and pixel-reviewed facts and limits: Actual source photo shows Kaleidoscope's cream/red gondola fronts with gold pinstriping, red seat interiors and silver shared lap rails, red radial arms and red hydraulic cylinders with yellow central structure. Ordinary clothed passengers sit in the actual two-seat cars; source-visible blue coaster rail and nearby barriers stay contextual. Preserve actual connected Troika hardware, no invented hidden full mechanism. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "2cb9e6814261c0e7f8caafd663712a9a15fc3556ded84b3e06415527126bf87c",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 228535158443160,
+      "rideName": "Dominator Red",
+      "alt": "Illustrated Dominator Red at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:09:51.903706+00:00",
+      "originalSHA256": "239135920ae0867a5ef58abf3c4073918250c738f3d1540d40f366743834998f",
+      "review": "Accepted: Actual generated portrait pixels retain the documented white lattice multi-tower Dominator installation, guide tubes, cream carriages, outward-facing red/black restrained seats and ordinary guests. This is a distinct closer shared-installation composition for the separately verified Red provider entry; it makes no unsupported claim about which photographed tower or color corresponds to Red.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/ce93f54b09cfb6f88aa1cee54fc8ea8b72ee710c-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/dominator",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "b28375789dc91ad75e6df47d7bf0bafecbd772b63b90f1354f68a9dace4a6c30",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Independent public provider records confirm Dominator Red (499a4e20-aee5-4a52-a87f-bb86d4f5305d, RIDE-008-00173) and Dominator (6b86a929-fb47-4727-b65a-00b13659de52, RIDE-008-00172) as separate catalog entities at the same installation. The own operator photo shows multiple white lattice towers with burgundy/teal guides, cream carriage panels and outward-facing red/black seats with restraints and ordinary clothed riders. Create a distinct closer low-angle portrait of the source-visible shared tower and carriage hardware. The source does not label which photographed tower is Red, so do not assign a tower, color or image side to Red or invent an unseen unit."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-228535158443160-thumbnail.jpg",
+      "thumbnailSHA256": "85942e6f3b7ed8fc1625bb853a36f364c41846da9a8153be7e5ce68e514c4582",
+      "thumbnailBytes": 26572,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-228535158443160-detail.jpg",
+      "detailSHA256": "fe78d67254eb5f88983a7c75ab225f6a08bc685590f6f6b07f026b7354eff5c5",
+      "detailBytes": 168138,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-228535158443160",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Dominator Red at Dorney Park. Source- and pixel-reviewed facts and limits: Independent public provider records confirm Dominator Red (499a4e20-aee5-4a52-a87f-bb86d4f5305d, RIDE-008-00173) and Dominator (6b86a929-fb47-4727-b65a-00b13659de52, RIDE-008-00172) as separate catalog entities at the same installation. The own operator photo shows multiple white lattice towers with burgundy/teal guides, cream carriage panels and outward-facing red/black seats with restraints and ordinary clothed riders. Create a distinct closer low-angle portrait of the source-visible shared tower and carriage hardware. The source does not label which photographed tower is Red, so do not assign a tower, color or image side to Red or invent an unseen unit. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "a37ff0fcda9b6f7c9a92f05bd3896116b71df641121146d7e7090b64a50e2c5b",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 238836941967530,
+      "rideName": "Scrambler",
+      "alt": "Illustrated Scrambler at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:10:29.816204+00:00",
+      "originalSHA256": "a9a8b8efb5cc080c31204cabf465eea60dbcba35a37a0977c2f54b2096eaf456",
+      "review": "Accepted: Actual generated portrait pixels preserve Dorney Scrambler's light-blue/yellow box gondola, silver hinged front rail and latch, black padded edges, ordinary clothed mother and child, blue radial hardware and yellow building. Source-specific bench/gate geometry remains clear.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/035f39898fb96919d43d56b2667fd5f870cbee1e-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/scrambler",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "de08b02ce689fa60b1a5f0d68aa5e5fa54edbd8439cb32c8515eefcfd3d0923d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Dorney Scrambler photo shows the pale blue/yellow box gondola with a silver hinged front rail/gate and latch, black padded top edges, teal posts, silver inner panels and ordinary clothed mother and child. Actual blue radial arms, red following gondola and yellow building form the background. Preserve the close shared bench and source-supported mechanical connections; no generic substituted tub."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-238836941967530-thumbnail.jpg",
+      "thumbnailSHA256": "874d2529895b0bdf155a2ade054e38ea58170ee8fdbc5ed041af197ae622c343",
+      "thumbnailBytes": 21942,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-238836941967530-detail.jpg",
+      "detailSHA256": "c44789dc58818ceb8569261b3c7c5ea53ef8fe1b16d5491802cc95e034c414da",
+      "detailBytes": 123785,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-238836941967530",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Scrambler at Dorney Park. Source- and pixel-reviewed facts and limits: Actual Dorney Scrambler photo shows the pale blue/yellow box gondola with a silver hinged front rail/gate and latch, black padded top edges, teal posts, silver inner panels and ordinary clothed mother and child. Actual blue radial arms, red following gondola and yellow building form the background. Preserve the close shared bench and source-supported mechanical connections; no generic substituted tub. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "7076f5154fd0e9de40cb617e17824db5c2160c1ae5d9ebdc3a98548c100ae5c8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 249003641715500,
+      "rideName": "Ferris Wheel",
+      "alt": "Illustrated Ferris Wheel at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:11:18.372831+00:00",
+      "originalSHA256": "c8080f6939a4033b26d8fe43d64123a544e2ec310bdfcb09a1a8b6f13c26e989",
+      "review": "Accepted: Actual generated portrait pixels preserve the Ferris Wheel's source-visible white spoke sections, colored bulb lines, cream/yellow/pale-teal octagonal gondolas, louver panels and metal rails/hangers. No hidden base or occupants are invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F824d544286e576ad404b3b2b12ab36aa6b958f96-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "A colorful Ferris wheel ride at an amusement park.",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/ferris-wheel",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2e585eedde0e867a49afa1355df8cad40b1ca5d2ea914df3756a955f64ddd676",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual source photo shows Ferris Wheel's white spoked framework, colored bulb lines, white/cream octagonal roofed gondolas with yellow or pale teal louver panels, silver upper safety rails and actual hanger connections seen from below. Preserve the photographed wheel segment and suspended level gondolas; do not invent a full wheel base or visible occupants hidden in the source."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-249003641715500-thumbnail.jpg",
+      "thumbnailSHA256": "d36655fdeed93a679d9ebbd959f018eb56f3be9086e90710147fdff1d8ecc80f",
+      "thumbnailBytes": 27253,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-249003641715500-detail.jpg",
+      "detailSHA256": "555912bc3a38135f91be56a44425022c4c24902d76aa0b7eb65d40751313662f",
+      "detailBytes": 172841,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-249003641715500",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Ferris Wheel at Dorney Park. Source- and pixel-reviewed facts and limits: Actual source photo shows Ferris Wheel's white spoked framework, colored bulb lines, white/cream octagonal roofed gondolas with yellow or pale teal louver panels, silver upper safety rails and actual hanger connections seen from below. Preserve the photographed wheel segment and suspended level gondolas; do not invent a full wheel base or visible occupants hidden in the source. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "ec7407bd447df37953160aa19375a223915b19ad1e10a4011de654e0b633a908",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 255238559856390,
+      "rideName": "Snoopy's Cloud Climbers",
+      "alt": "Illustrated Snoopy's Cloud Climbers at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:10:50.024459+00:00",
+      "originalSHA256": "29e54282b4543ba205980398fce48a753491ce82edef4b05c137153fdd4a3a6f",
+      "review": "Accepted: Actual generated portrait pixels preserve Cloud Climbers' lime-green pod, curved cowling, green grab rail, teal dots and small fixed tail propeller with the ordinary clothed child and source-visible adjacent pod. The composition remains a close ride vehicle view without inventing a full mechanism or free-flying helicopter.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/106ac7af3f68c35d74da77d86273b001a8c9cda5-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/snoopys-cloud-climbers",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "baa4ef756d39bc1432345d5e7e13c7738de0430f8553dc23d09455cad70c5cbe",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Dorney photo shows Snoopy's Cloud Climbers' glossy lime-green helicopter pod with a raised curved cowling, green side grab rail, teal dotted graphic, fixed small green tail propeller and ordinary clothed child seated inside. Partial purple/red neighboring ride pod and a circular mirror are source-visible. Compose this close actual pod, no invented helicopter engine, free flight or unobserved full radial mechanism."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-255238559856390-thumbnail.jpg",
+      "thumbnailSHA256": "31948bd548d4890e125c761d62e8f1162cf9316707b9ebb573fda0634bff3e9b",
+      "thumbnailBytes": 21647,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-255238559856390-detail.jpg",
+      "detailSHA256": "75fb335a579ecc1eda0c9986b85a93f361a5ff221616a29a37a43eb7593784d8",
+      "detailBytes": 125152,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-255238559856390",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Snoopy's Cloud Climbers at Dorney Park. Source- and pixel-reviewed facts and limits: Actual Dorney photo shows Snoopy's Cloud Climbers' glossy lime-green helicopter pod with a raised curved cowling, green side grab rail, teal dotted graphic, fixed small green tail propeller and ordinary clothed child seated inside. Partial purple/red neighboring ride pod and a circular mirror are source-visible. Compose this close actual pod, no invented helicopter engine, free flight or unobserved full radial mechanism. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "760d77dd14d07852b192b6bc8ee0cb86aef5c3ca0ef7412188b8fd617fb57703",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 264332998053273,
+      "rideName": "Talon",
+      "alt": "Illustrated Talon at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:12:35.557835+00:00",
+      "originalSHA256": "c8ae5814006aa9546095ab80ad0a9407130158a2146abb66efa0588582a5c048",
+      "review": "Accepted: Actual generated portrait pixels preserve Talon's blue inverted train chassis, teal four-abreast seats, yellow over-shoulder restraints, multicolor bogie covers and connected orange/yellow rails through the photographed inversion. Ordinary secured riders hang below the rails with free legs.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F728b88ec36da4cba3a6f1252f7248c2c928a1392-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders on Talon inverted roller coaster soar through an inversion.",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/talon",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2292a8a66f8dee59607febf6acf1d039bfa496a6dbf6d3788b17bbc9bf52f293",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Talon photo shows four-abreast inverted rows on a blue train chassis, teal seats, bright yellow over-shoulder restraints, yellow/red/blue bogie covers and orange/yellow running rails and spine through the observed inversion, supported by blue columns. Ordinary clothed riders hang below the rails with legs free. Preserve the connected wheel assemblies and this photographed track section, no invented full layout."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-264332998053273-thumbnail.jpg",
+      "thumbnailSHA256": "4781582c072e88a9bf64708436f74fb3d5cbe8743153d009b43b887a84150447",
+      "thumbnailBytes": 23060,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-264332998053273-detail.jpg",
+      "detailSHA256": "0bcb6c24593132c0deca3ebe7da2b123fce4810701944d2311aece3bea61cf11",
+      "detailBytes": 145266,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-264332998053273",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Talon at Dorney Park. Source- and pixel-reviewed facts and limits: Actual Talon photo shows four-abreast inverted rows on a blue train chassis, teal seats, bright yellow over-shoulder restraints, yellow/red/blue bogie covers and orange/yellow running rails and spine through the observed inversion, supported by blue columns. Ordinary clothed riders hang below the rails with legs free. Preserve the connected wheel assemblies and this photographed track section, no invented full layout. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "69453cc421b375a930794b4a89ff9ed07b73dd749e695de0c9b6b91ab054bd32",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 267691191443906,
+      "rideName": "Cedar Creek Cannonball",
+      "alt": "Illustrated Cedar Creek Cannonball at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:12:13.793556+00:00",
+      "originalSHA256": "dc5d141e1a40b515b6ee75bc8b763f7df5c7f3a37230a80206b96967852f2188",
+      "review": "Accepted: Actual generated portrait pixels retain Cedar Creek Cannonball's green boiler, red chassis/pilot and lamp housing, wooden cab, black flared stack, brass bell and two small flags. The ordinary operator, planters, railings and rocks match the source; no steam cloud or unseen route is invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://cdn.sanity.io/images/bsnrdz4t/production/580a9ca05f1da1cf89b99f2b189f33431cdda13b-1440x690.jpg?rect=60,0,1321,690&w=1200&h=627&fit=crop&auto=format",
+          "kind": "social-preview",
+          "alt": "",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/cedar-creek-cannonball",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "825df5c5bb1766d68c84c080411be8b091f0f3d79eab6c011fcba1ce2b79abdb",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Cedar Creek Cannonball photograph shows the green cylindrical boiler, red chassis and pilot, brown wooden cab with red number panel, flared black stack, brass bell, red square headlamp housing and two small US flags. An ordinary clothed operator is visible; planters of red flowers, black railings, rockwork and the photographed track section frame the train. This is the steam-replica Cannonball, distinct from purple Zephyr and the kiddie Snoopy train. No invented full route or steam cloud."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-267691191443906-thumbnail.jpg",
+      "thumbnailSHA256": "5c75d622527a1f4a85c60f35e595f5a52f19ea1c28b9065f412a491a395081a4",
+      "thumbnailBytes": 29208,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-267691191443906-detail.jpg",
+      "detailSHA256": "bd4e78d23856bc6a4e56a9a070ddbd2ebef9dbf2ea8ad94d02a922e16ef682cb",
+      "detailBytes": 236428,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-267691191443906",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Cedar Creek Cannonball at Dorney Park. Source- and pixel-reviewed facts and limits: Actual Cedar Creek Cannonball photograph shows the green cylindrical boiler, red chassis and pilot, brown wooden cab with red number panel, flared black stack, brass bell, red square headlamp housing and two small US flags. An ordinary clothed operator is visible; planters of red flowers, black railings, rockwork and the photographed track section frame the train. This is the steam-replica Cannonball, distinct from purple Zephyr and the kiddie Snoopy train. No invented full route or steam cloud. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "2b34af066a7a3bb2d19385a272e3cee6fd872fd99ebe9e8294e2ee8218fbd6a2",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 268672402579848,
+      "rideName": "Demon Drop",
+      "alt": "Illustrated Demon Drop at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:12:13.201548+00:00",
+      "originalSHA256": "79b0c1128d8abb98bb0520365d7da2ddcc42232b811d2d22eab430afe26a9783",
+      "review": "Accepted: Actual generated portrait pixels preserve Demon Drop's teal rectilinear lattice tower, central dark vertical guide/hoist, upper transfer structure, corrugated top cladding and side zigzag stairs/catwalks. The view stays on source-visible upper hardware, without inventing car seating, ground runout or a generic circular tower.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F8bfbbbdb3cd8f0a664d7b1d3cb1d40687dcd6cc0-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders experiencing free-fall on a drop ride at an amusement park.",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/demon-drop",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "120cad7f717cfc8927964a1d0a935416d919594002a99c0584310040455c65cd",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The actual Dorney Demon Drop operator photo shows the tall teal/green rectilinear lattice tower, dark central vertical guide/hoist, upper transfer structure and side zigzag maintenance stairs and catwalk rails, with corrugated teal top cladding against open sky. Compose this source-visible upper tower; no invented carriage, hidden seating or ground runout. Keep realistic steel connections rather than replacing it with a generic circular drop tower."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-268672402579848-thumbnail.jpg",
+      "thumbnailSHA256": "e3b9495a95bff3c6061aaa08e268bd10e9967da6d22084863b68ec9d10c91fde",
+      "thumbnailBytes": 19802,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-268672402579848-detail.jpg",
+      "detailSHA256": "a3da545a963ad9d14e92165c572bfac25c835ad1bd6e3a1e0858a150f127db1a",
+      "detailBytes": 136999,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-268672402579848",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Demon Drop at Dorney Park. Source- and pixel-reviewed facts and limits: The actual Dorney Demon Drop operator photo shows the tall teal/green rectilinear lattice tower, dark central vertical guide/hoist, upper transfer structure and side zigzag maintenance stairs and catwalk rails, with corrugated teal top cladding against open sky. Compose this source-visible upper tower; no invented carriage, hidden seating or ground runout. Keep realistic steel connections rather than replacing it with a generic circular drop tower. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "86b291ceb1187e6c23699b9514c691f252d9cd57933979a351fc5e5e9773df3f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 271530861043678,
+      "rideName": "Wildwater River",
+      "alt": "Illustrated Wildwater River at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:13:16.938372+00:00",
+      "originalSHA256": "299aef273c7e1555d079c28acb48aa1f8fd686c01f56abc4fb8feed73d9db667",
+      "review": "Accepted: Actual generated portrait pixels preserve Wildwater River's clear/pale-blue inflatable tube and ordinary visitor in normal swim trunks beside the source-visible rocky waterfall and turquoise channel. It depicts only the photographed river section.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F9eb0e1c15348beff989baa4eb54c1c8ebd0341c8-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children and adults floating down a lazy river at a waterpark.",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/wildwater-river",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "95e9288a58c4ee3edd65bab139513a0813daa7ce4e305f1002bbc1ac4691851a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The actual Wildwater River photograph shows an ordinary family visitor wearing normal swim trunks, resting in a clear/pale-blue inflatable tube beside the source-visible rocky waterfall wall and gentle turquoise channel. Preserve the actual clear tube, water flow and source section. Do not invent the unseen full river course, extra slides or current-operation state."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-271530861043678-thumbnail.jpg",
+      "thumbnailSHA256": "21c4d1df4b118c7d9b258c7f74c2d427f71694d17ea2251247a9c957381ebe77",
+      "thumbnailBytes": 24551,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-271530861043678-detail.jpg",
+      "detailSHA256": "724467ed501435842dda50e29c7e19d3e2e7052a538c722c415e508f5a05202e",
+      "detailBytes": 153342,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-271530861043678",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Wildwater River at Dorney Park. Source- and pixel-reviewed facts and limits: The actual Wildwater River photograph shows an ordinary family visitor wearing normal swim trunks, resting in a clear/pale-blue inflatable tube beside the source-visible rocky waterfall wall and gentle turquoise channel. Preserve the actual clear tube, water flow and source section. Do not invent the unseen full river course, extra slides or current-operation state. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "18061a87ca219b7d1325c19086bbabfcb9462d0363966c11825b7a2780a367c2",
+      "generationSteps": []
+    },
+    {
+      "parkId": 69,
+      "rideId": 279422890924427,
+      "rideName": "Runaway River",
+      "alt": "Illustrated Runaway River at Dorney Park & Wildwater Kingdom",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:13:42.654706+00:00",
+      "originalSHA256": "0ff8f5edb694d7f23c75fc05829aad98c2d4aaf26aef45c42f892bc34b6e63e9",
+      "review": "Accepted: Actual generated portrait pixels preserve Runaway River's ordinary family scene, child in striped one-piece swimwear, clear/yellow tube with blue handles, adult companion in clear/blue tube and source-visible neighboring tubes on gentle water. No unseen cave, new slides or full river layout is invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F368465ce8133b9fb08e247ce7b93d862c4bab48e-1440x690.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children and adults floating down a lazy river at a waterpark.",
+          "sourceURL": "https://www.sixflags.com/dorneypark/attractions/runaway-river",
+          "credit": "Six Flags / Dorney Park (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "4f22f7394135652111e0950f3db3dabd0426c8f8ff44a75fb1a65d138d715dbc",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The actual Runaway River photograph shows a normal family scene with a child in a striped one-piece swimsuit floating in a clear/yellow inner tube with blue handles, an adult companion in a clear/blue tube and additional yellow/blue tubes behind on gentle water. Preserve ordinary family activity and the observed water/tube details, with restrained dusk lighting. Do not invent unseen cave, fountains, full river layout or current-operation state."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "69-279422890924427-thumbnail.jpg",
+      "thumbnailSHA256": "d0e76ede2c4f8d363b5947371985d62418565a42b3e08bdf0785fe0cbc683c23",
+      "thumbnailBytes": 20726,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "69-279422890924427-detail.jpg",
+      "detailSHA256": "86427ce904004f4e8d70381eb24ff0ecb2ed147fec3412c5675013d26503ef29",
+      "detailBytes": 122098,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "69-279422890924427",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Runaway River at Dorney Park. Source- and pixel-reviewed facts and limits: The actual Runaway River photograph shows a normal family scene with a child in a striped one-piece swimsuit floating in a clear/yellow inner tube with blue handles, an adult companion in a clear/blue tube and additional yellow/blue tubes behind on gentle water. Preserve ordinary family activity and the observed water/tube details, with restrained dusk lighting. Do not invent unseen cave, fountains, full river layout or current-operation state. Compose only this documented source section for the portrait. Preserve photographic surfaces, actual paint, source-supported mechanical connections and restrained blue-purple dusk. No new lettering, logo, UI, watermark, full hidden route or invented hardware.",
+      "promptSHA256": "51df99db6a8401eb09acca8bb8b4fab264c4d2d30c3a09d1e734ddf74b89623b",
       "generationSteps": []
     },
     {
