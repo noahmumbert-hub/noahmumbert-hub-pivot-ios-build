@@ -364,10 +364,10 @@
     "mapEntries": 1122,
     "unionEntries": 1124,
     "photoCandidates": 28,
-    "acceptedIllustrations": 944,
-    "pendingIllustrations": 180,
-    "acceptedForRequestedStyle": 943,
-    "unfinishedForRequestedStyle": 181,
+    "acceptedIllustrations": 957,
+    "pendingIllustrations": 167,
+    "acceptedForRequestedStyle": 956,
+    "unfinishedForRequestedStyle": 168,
     "blocked": 17
   },
   "parks": [
@@ -30219,10 +30219,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Hurricane_Harbor_Phoenix"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "295-34253384203120",
@@ -30277,10 +30277,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Hurricane_Harbor_Phoenix"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "295-50903141557360",
@@ -30306,10 +30306,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Hurricane_Harbor_Phoenix"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "295-57024780774211",
@@ -30335,10 +30335,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Hurricane_Harbor_Phoenix"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "295-115264464966194",
@@ -30359,10 +30359,10 @@
           "url": "https://www.sixflags.com/phoenix/attractions/phoenix-attractions-typhoon-twister-serpentine"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "295-125426489726821",
@@ -30383,10 +30383,10 @@
           "url": "https://www.sixflags.com/phoenix/attractions/bonzai-racers"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "295-131597385392232",
@@ -30412,10 +30412,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Hurricane_Harbor_Phoenix"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "295-155411237392188",
@@ -30436,10 +30436,10 @@
           "url": "https://www.sixflags.com/phoenix/attractions/hurricane-bay"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "295-165413248009075",
@@ -30465,10 +30465,10 @@
           "url": "https://coasterpedia.net/wiki/Six_Flags_Hurricane_Harbor_Phoenix"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "295-183349070187519",
@@ -30489,10 +30489,10 @@
           "url": "https://www.sixflags.com/phoenix/attractions/screamin-streamers"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "295-198573165191223",
@@ -30513,10 +30513,10 @@
           "url": "https://www.sixflags.com/phoenix/attractions/bonzai-pipelines"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "295-218088732678550",
@@ -30537,10 +30537,10 @@
           "url": "https://www.sixflags.com/phoenix/attractions/paradise-island"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "295-249181349346747",
@@ -30561,10 +30561,10 @@
           "url": "https://www.sixflags.com/phoenix/attractions/adventure-river"
         }
       ],
-      "referenceReview": "pending",
-      "generationStatus": "pending",
-      "integrationStatus": "pending",
-      "requestedStyleStatus": "pending"
+      "referenceReview": "pixels-reviewed",
+      "generationStatus": "accepted",
+      "integrationStatus": "bundled",
+      "requestedStyleStatus": "accepted"
     },
     {
       "key": "334-14683",

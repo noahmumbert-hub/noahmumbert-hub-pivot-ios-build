@@ -39961,6 +39961,49 @@
     },
     {
       "parkId": 295,
+      "rideId": 15992860430486,
+      "rideName": "Bahama Blaster",
+      "alt": "Illustrated Bahama Blaster at Hurricane Harbor Phoenix",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:56:06.583518+00:00",
+      "originalSHA256": "e4ce261dd936584ca0aee04c27c77b1a30b0b707871fcbb2b477c066796f3ae5",
+      "review": "Accepted: Actual generated pixels preserve Bahama Blaster's teal/yellow net-guarded uphill channel, black propulsion strip and actual tandem raft obscured by the arched rope net, with parallel channels/desert setting.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F3e28b68a1d11b9875d0d6f5b9659dace2033ed95-1248x832.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "View of the Bahama Blaster water slide with a netted section for safety at Hurricane Harbor Phoenix.",
+          "sourceURL": "https://www.sixflags.com/phoenix/attractions/bahama-blaster",
+          "credit": "Six Flags / Hurricane Harbor Phoenix (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d8de48e29033b3944c0f89cf37152fa7f44ac4fb6224466d047f4d618dbf0ccd",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Bahama Blaster photograph shows a teal open water-coaster channel with black running belts/jet strip and a yellow left channel edge, under a white arched rope-safety-net tunnel on gray steel posts. Ordinary adult bathers sit on the source dark tandem raft mostly obscured by the real net. Preserve this documented net-guarded uphill section and parallel yellow/teal runouts/desert landscaping at right, not a fabricated full coaster course or closer unsupported raft seating."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "295-15992860430486-thumbnail.jpg",
+      "thumbnailSHA256": "8134ec440ae8bdb655fe13ec33df7c6b1796214dcfd2179b0710306f77983df2",
+      "thumbnailBytes": 28666,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "295-15992860430486-detail.jpg",
+      "detailSHA256": "5a573ba7ee4f8907dcf34dc718596d4b7de8196e1d2db45754c7e7976ecd0196",
+      "detailBytes": 244948,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 295,
       "rideId": 34253384203120,
       "rideName": "Tornado",
       "alt": "Illustrated Tornado at Hurricane Harbor Phoenix",
@@ -39996,6 +40039,522 @@
       "detailFile": "295-34253384203120-detail.jpg",
       "detailSHA256": "5254874c14d98fdc30d2402c4ff83f36fb70a57ef760a0ca94f8b08efa2cf9be",
       "detailBytes": 150101,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 295,
+      "rideId": 35039795864383,
+      "rideName": "Tiny Typhoon",
+      "alt": "Illustrated Tiny Typhoon at Hurricane Harbor Phoenix",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:58:28.185448+00:00",
+      "originalSHA256": "d37520a0b8d96211f14b972a7db1403cfddcd20da2fc34bae7e83e69edfe76b8",
+      "review": "Accepted: Actual generated pixels preserve Tiny Typhoon's orange/navy checked funnel interior, circular opening and actual short blue/orange flume beyond it, rippling water and distant pink tube/attendant.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F259626694a196067de7e2fb44414b3cda06a5a45-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Tiny Typhoon at Six Flags Hurricane Harbor Phoenix",
+          "sourceURL": "https://www.sixflags.com/phoenix/attractions/tiny-typhoon",
+          "credit": "Six Flags / Hurricane Harbor Phoenix (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "fd7718f8a9a8ededba7a47542102cbe98b1714871c9a7f506e64bb5a15a51e50",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Tiny Typhoon photograph is a close interior view of the small orange/dark-blue alternating checked funnel with its round opening onto the actual blue/orange short flume section and rippling shallow water. A distant lifeguard beyond the opening carries a pink tube. Preserve the photographed funnel interior/exit, not an invented full hidden exterior, unsupported passengers or a different large Tornado ride."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "295-35039795864383-thumbnail.jpg",
+      "thumbnailSHA256": "2701c4beff7336b38973644fd8f563a55ff6f07ee9377f1afb1df0d5cc6fdb45",
+      "thumbnailBytes": 19737,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "295-35039795864383-detail.jpg",
+      "detailSHA256": "ac38a02bbc83b5f9daabe84bf937aabff7e13b4c1de94e8f95d1390137eb99c8",
+      "detailBytes": 150153,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 295,
+      "rideId": 50903141557360,
+      "rideName": "Mammoth Falls",
+      "alt": "Illustrated Mammoth Falls at Hurricane Harbor Phoenix",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:56:45.908063+00:00",
+      "originalSHA256": "a524789dd89236ec06ff327e7254323c2988e9a51bc171a29d35fbee1865a549",
+      "review": "Accepted: Actual generated pixels preserve Mammoth Falls' yellow/blue upper channel turn and steep drop, gray steel structure, red raft-lift conveyor carrying the empty blue/yellow circular raft and partial yellow wave wall.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F6d3d08e518463478923ba4f2a7ea11ca1e7dbc38-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Mammoth Falls water slide at Hurricane Harbor Phoenix, featuring a steep drop and twisting turns.",
+          "sourceURL": "https://www.sixflags.com/phoenix/attractions/mammoth-falls",
+          "credit": "Six Flags / Hurricane Harbor Phoenix (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d7a85f91cca91bd0374134087d51d6925e6b28f1bad70d78ffb4348a49ed2096",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Mammoth Falls photograph shows the large yellow/blue open channel's high right spiral, gray steel columns/trusses and entry tower at left with its red vertical raft-lift conveyor holding an actual empty round blue/yellow raft. The channel drops steeply behind toward the partially visible yellow wave wall at lower left. Preserve this documented upper turn, drop section, actual lift/conveyor and deck/shade context without inventing full hidden halfpipe geometry or passengers in the empty lifted raft."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "295-50903141557360-thumbnail.jpg",
+      "thumbnailSHA256": "97b3cec40c6708289d0042a0f9ba799f5f3f1a2643fc7604863b3c1a2f49b8d9",
+      "thumbnailBytes": 24793,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "295-50903141557360-detail.jpg",
+      "detailSHA256": "3ef38567b8f953eac86f0999344fee1a80cc3bc49ddeaf5bb23671101a619ee9",
+      "detailBytes": 182949,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 295,
+      "rideId": 57024780774211,
+      "rideName": "Wahoo Racers",
+      "alt": "Illustrated Wahoo Racers at Hurricane Harbor Phoenix",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:57:35.500733+00:00",
+      "originalSHA256": "97d2f34479ddfdc18c4b9352f57344ebf6097c6fd803e5516d2e6515813a543a",
+      "review": "Accepted: Actual generated pixels preserve Wahoo Racers' six lanes in paired red/yellow/purple colors, black tube outlets, blue racing mats and actual gray steel tower/support structure; no hidden braiding is invented.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F478121a36a6fd0a3bd1d10dd7600716591a31cf0-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Kids racing down the colorful slides of Wahoo Racers at Hurricane Harbor Phoenix.",
+          "sourceURL": "https://www.sixflags.com/phoenix/attractions/wahoo-racers",
+          "credit": "Six Flags / Hurricane Harbor Phoenix (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a5a6ca5c280eecd06402bcf347a339472274f3df88f910a9a8ebb4bab7bb35ae",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Wahoo Racers photograph shows six racing lanes in paired red/yellow/purple colors descending from actual round black tube outlets on gray steel columns beside a tower/staircase. Ordinary source riders lie prone on blue forward-handled racing mats in the water. Preserve these six visible lane channels and actual drop section, with trees and separate yellow/green tubes only as background, not invented hidden braiding, routing or a full unsupported runout."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "295-57024780774211-thumbnail.jpg",
+      "thumbnailSHA256": "ec3f99a3422b5a58353a39427b0ad663e34853129291881fd1f8b4a6093014e5",
+      "thumbnailBytes": 23148,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "295-57024780774211-detail.jpg",
+      "detailSHA256": "26143df50cac3af1e7e13831a93638c7c9bae411e420002a6604b8d6f6c51533",
+      "detailBytes": 192682,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 295,
+      "rideId": 115264464966194,
+      "rideName": "Typhoon Twister/Serpentine Complex",
+      "alt": "Illustrated Typhoon Twister/Serpentine Complex at Hurricane Harbor Phoenix",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:57:58.497047+00:00",
+      "originalSHA256": "969590e62978b123755fb2ed60b78372425c68553fbd78a999eacfca542f5407",
+      "review": "Accepted: Actual generated pixels preserve Typhoon Twister/Serpentine's green/blue bowl and green outlet, orange/blue open turns, gray steel tower/yellow shade and actual two-rider tandem tube at the blue splash-pool outlet.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F91d29aa57c7a7dc0ef26f99041746ac9483ab2fd-6740x4494.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "View of Typhoon Twister and Serpentine Complex at Hurricane Harbor Phoenix, featuring two slides and a green and blue bowl.",
+          "sourceURL": "https://www.sixflags.com/phoenix/attractions/phoenix-attractions-typhoon-twister-serpentine",
+          "credit": "Six Flags / Hurricane Harbor Phoenix (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "37fc0a3551df2d0a88dbdace9a60d310b96d4b5bfc4eaaf1f5b0bd39fd60ac68",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Typhoon Twister/Serpentine Complex photograph shows the green/blue bowl and green outlet at left, orange open serpentine and dark-blue open flume coils on gray steel columns below the large steel stair tower and yellow shade. Two ordinary riders share the actual blue/turquoise tandem inner tube at the blue outlet into the blue splash pool; the orange outlet is empty. Preserve this visible documented complex section and exact source colors, not a full hidden routing or a claim of currently operating slides."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "295-115264464966194-thumbnail.jpg",
+      "thumbnailSHA256": "1d25cc7afaca13b4c2260cf441d7796ed1e12af20fd091f617c1f8266b6a7a98",
+      "thumbnailBytes": 23708,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "295-115264464966194-detail.jpg",
+      "detailSHA256": "7eba76d06cf32171339793d67b527d1ad880a19efc89e5897e7e86c294118852",
+      "detailBytes": 176568,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 295,
+      "rideId": 125426489726821,
+      "rideName": "Bonzai Racers",
+      "alt": "Illustrated Bonzai Racers at Hurricane Harbor Phoenix",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:58:55.913822+00:00",
+      "originalSHA256": "cc9bcaccd181b38e0c5dce35429c63c54607b614c666d46485e1ba9d851f3913",
+      "review": "Accepted: Actual generated pixels preserve Bonzai Racers' small empty six-lane red/yellow/purple slide, short blue runout, rope/post perimeter and source trees/poles, clearly distinct from the taller Wahoo ride.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1adc7a9fdcb21e0fbfec78686b70e97f5fcdfbaf-2880x1600.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Bonzai Racers at Six Flags Hurricane Harbor Phoenix",
+          "sourceURL": "https://www.sixflags.com/phoenix/attractions/bonzai-racers",
+          "credit": "Six Flags / Hurricane Harbor Phoenix (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "3e595c5d0c74f3104aac89bd571acbf30396ced9b082b92f135b263066af709d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Bonzai Racers photograph shows the empty small six-lane racing slide in paired red/yellow/purple colors entering the short blue splash runout, with timber posts/rope perimeter, trees and white poles. The primary page confirms this is the small head-first multi-lane attraction. Preserve the actual small empty slide and lane shapes, not the larger Wahoo Racers tower or invented riders, hidden geometry or a capture-date/current-paint claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "295-125426489726821-thumbnail.jpg",
+      "thumbnailSHA256": "027176e4282beed47aaa87ab35125dbea112afcfcb77b8c097ad0f8ad98aa110",
+      "thumbnailBytes": 26848,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "295-125426489726821-detail.jpg",
+      "detailSHA256": "d8284fcae5d402197543d5fe8dba58262319745651c8eb134a88a735771a30ea",
+      "detailBytes": 219984,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 295,
+      "rideId": 131597385392232,
+      "rideName": "Anaconda",
+      "alt": "Illustrated Anaconda at Hurricane Harbor Phoenix",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:58:09.817198+00:00",
+      "originalSHA256": "2532b6b87971580b9a0ad537c2c2830c6684d3e7f93d9b59151378677c5a9ca0",
+      "review": "Accepted: Actual generated pixels preserve Anaconda's stacked red/yellow enclosed turns, real bolted panels and gray columns below the red-shaded platform; adjacent racer remains peripheral background.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fdf33146d70993b4ea2473edad50aa23a903bd6a0-7008x4672.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "The Anaconda water slide at Hurricane Harbor Phoenix, featuring vibrant red and yellow twists.",
+          "sourceURL": "https://www.sixflags.com/phoenix/attractions/anaconda",
+          "credit": "Six Flags / Hurricane Harbor Phoenix (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "6411ee7927e3e6309b3fc88631351d860288403867655a2ae6af0f326ab7c93f",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Anaconda photo shows the red/dark-red and yellow enclosed tube winding in stacked coils at left on gray steel columns, from the shared elevated platform with red shade roofs. Preserve only this photographed Anaconda tube section, real bolted panel seams, foliage and yellow tubes below; the adjacent six-lane Wahoo racer at right and other colored launch tubes are background, not parts of Anaconda. No invented full hidden route or unsupported passengers inside opaque tubing."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "295-131597385392232-thumbnail.jpg",
+      "thumbnailSHA256": "a5e351d82a352368603b5f3725af98bfe24f7759ebba7fa27ed47323d839e9b6",
+      "thumbnailBytes": 26900,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "295-131597385392232-detail.jpg",
+      "detailSHA256": "95691286334bccf252bb9936c24a57d0e47867757efe83f2bb9bfe4fd3c985d6",
+      "detailBytes": 210022,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 295,
+      "rideId": 155411237392188,
+      "rideName": "Hurricane Bay",
+      "alt": "Illustrated Hurricane Bay at Hurricane Harbor Phoenix",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:58:33.045514+00:00",
+      "originalSHA256": "b8d53262275393f955e7a25d5a295c36cbbc84ff5cbbdae1f34e84a4d9510156",
+      "review": "Accepted: Actual generated pixels preserve Hurricane Bay's broad shallow wave-pool shore, source bathers and lifeguard/shade-sail context, with distinct red/yellow slides only in the background.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F669e9e731173b4e7a51a4783c08c84cbb71ce802-4096x2731.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Crowded wave pool at Hurricane Harbor Phoenix Hurricane Bay with families and kids enjoying the water under the clear blue sky.",
+          "sourceURL": "https://www.sixflags.com/phoenix/attractions/hurricane-bay",
+          "credit": "Six Flags / Hurricane Harbor Phoenix (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "1ca6953aad515a743ee81689d5e13fd0b576889521855ffe9bcf6b5cb0db3f35",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Hurricane Bay photo shows a broad shallow turquoise wave pool with pale sloping beach foreground and ordinary distant families in swimwear. Blue/beige overhead shade sails and life-guard station stand along the rear fence; the photographed red/yellow raft slides and steel support/lift structure are separate background attractions. Preserve this actual pool/shore section and distant low-key bathers, not a new slide as the subject, artificial giant waves or an invented whole pool outline."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "295-155411237392188-thumbnail.jpg",
+      "thumbnailSHA256": "275901fa5e7b1b04b76a9504d091046d8d0d6928726e5ace9cfa85f391500480",
+      "thumbnailBytes": 23570,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "295-155411237392188-detail.jpg",
+      "detailSHA256": "bbe471c2f6aded8148478e43468d65bb76313e90f54aad85acf91da818ef2460",
+      "detailBytes": 188440,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 295,
+      "rideId": 165413248009075,
+      "rideName": "Big Kahuna",
+      "alt": "Illustrated Big Kahuna at Hurricane Harbor Phoenix",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:59:51.722571+00:00",
+      "originalSHA256": "6c39441bfd3206a3bea72a9acf51d30c24b28342ff959edfe339a9be8daaf301",
+      "review": "Accepted: Actual generated pixels preserve Big Kahuna's red open banked trough, teal/orange exterior panels, gray supports and source four-person yellow/navy raft in the documented turn.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F87abfdd53242766233115868809a9fdf1567b3cb-6865x4577.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Family rafting down the red twisty slide of the Big Kahuna at Hurricane Harbor Phoenix.",
+          "sourceURL": "https://www.sixflags.com/phoenix/attractions/big-kahuna",
+          "credit": "Six Flags / Hurricane Harbor Phoenix (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "d635a7fff6f8a69dbd16f6aa9a7cb5f9e8cf7b95706fd57b3c01ff670708d6f0",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Big Kahuna photograph shows a round yellow/navy four-person inflatable raft with ordinary family bathers seated inward in the red open banked flume, with alternating teal/orange/red exterior panels. Gray steel columns and diagonal braces connect the visible stacked turns, with a large yellow Mammoth Falls wall separately at right and desert hills behind. Preserve this documented raft/turn section, actual raft handles/seating and connected hardware without inventing a whole hidden route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "295-165413248009075-thumbnail.jpg",
+      "thumbnailSHA256": "6d48f6b77788df6069dd0a8c47861cdb855382940c6766de0c741556176c0b12",
+      "thumbnailBytes": 24314,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "295-165413248009075-detail.jpg",
+      "detailSHA256": "0d5ff1d59519b7de5a252a9f33c83048727a4296c1d477d0519d64807ed98f65",
+      "detailBytes": 192795,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 295,
+      "rideId": 183349070187519,
+      "rideName": "Screamin Streamers",
+      "alt": "Illustrated Screamin Streamers at Hurricane Harbor Phoenix",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T10:59:02.081903+00:00",
+      "originalSHA256": "ec4ba8c4083cb12c084f26c1570732f24a4a84e9105075370db3a83ec3981478",
+      "review": "Accepted: Actual generated pixels preserve Screamin Streamers' two low red/yellow open serpentine slides and blue runouts, timber shelter, shade sails, pink tubes and actual landscaped setting without invented foreground riders.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fed29960afaf826a6ca20884646b5837ca3c5009c-2304x1280.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Screamin Streamers at Six Flags Hurricane Harbor Phoenix",
+          "sourceURL": "https://www.sixflags.com/phoenix/attractions/screamin-streamers",
+          "credit": "Six Flags / Hurricane Harbor Phoenix (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "de2d2f60a59a80309887c436150542fab05163d31b0038fd0ec23acf3ebb3c94",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Screamin Streamers photograph shows two low open serpentine channels, faded red at left and yellow at right, winding around landscaped soil and joining two blue shallow runout channels. Small timber shelter, blue/yellow fabric shade, rope-net perimeter, trees and pink tubes/ordinary distant attendants are source context. Preserve these actual short slide shapes and empty foreground, not the larger adjacent Anaconda tubes in the distant background or fabricated riders/full-course extensions."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "295-183349070187519-thumbnail.jpg",
+      "thumbnailSHA256": "fb230eb29ed631c680a5e4c4eb2fe0073262884b16d9c306989a2f49f1756c5d",
+      "thumbnailBytes": 24604,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "295-183349070187519-detail.jpg",
+      "detailSHA256": "bf0f5a0eed22763f2b29e0ef0c3c26228140b56681c51fec3747e3ec7463cb3b",
+      "detailBytes": 211937,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 295,
+      "rideId": 198573165191223,
+      "rideName": "Bonzai Pipelines",
+      "alt": "Illustrated Bonzai Pipelines at Hurricane Harbor Phoenix",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:01:14.355659+00:00",
+      "originalSHA256": "24bd7663a67566ccd99d5b698f2928947293cc58b355449d00461551b8b9d7e0",
+      "review": "Accepted: Actual generated pixels preserve Bonzai Pipelines' blue open slide and teal/green enclosed outlets, yellow single inner tubes and actual splash-pool/gray support configuration.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fa063516fb8c372aef839e37c49f910b1a1f6d178-1248x832.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders splashing into the pool at the end of the Bonzai Pipelines water slides at Hurricane Harbor Phoenix.",
+          "sourceURL": "https://www.sixflags.com/phoenix/attractions/bonzai-pipelines",
+          "credit": "Six Flags / Hurricane Harbor Phoenix (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "95b0f554373f4779c21c995f273ecf6ee075f1255d0905a829c8f914e7029d5d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Bonzai Pipelines photo shows three blue/teal/green flumes on gray supports: the left blue open channel and center/right enclosed tube mouths discharge into the turquoise splash pool. Ordinary riders sit feet-first in yellow single inner tubes at the actual exits, with the steel tower, desert trees and gravel landscaping behind. Preserve this observed outlet/slide section and real bolted joints, not a drop-capsule speed slide, generic pipeline or invented full routing."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "295-198573165191223-thumbnail.jpg",
+      "thumbnailSHA256": "5a662c13397fe4497d7ddc32d63b43a936730284f22aef340a732fdac3c9822d",
+      "thumbnailBytes": 27774,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "295-198573165191223-detail.jpg",
+      "detailSHA256": "13c7b47bc3db52eb96c52782e7b7662e88666f3fbe03c3901209b15bc3181dbb",
+      "detailBytes": 202421,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 295,
+      "rideId": 218088732678550,
+      "rideName": "Paradise Island",
+      "alt": "Illustrated Paradise Island at Hurricane Harbor Phoenix",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:00:50.867357+00:00",
+      "originalSHA256": "704ab200f607f494ea543a4c2d532b88cec7232491c9aab6818dccdf8915db04",
+      "review": "Accepted: Actual generated pixels preserve Paradise Island's photographed pool/beach shape, blue/white striped canopies, teal chairs, white loungers, teal hut and lifeguard umbrellas. No source editorial logo or new lettering is reproduced.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fce7621162f82c003f671f9d1f2884048fc0a5e80-1920x1279.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Aerial view of Paradise Island at Hurricane Harbor Phoenix showing families enjoying the pool and blue-striped umbrellas.",
+          "sourceURL": "https://www.sixflags.com/phoenix/attractions/paradise-island",
+          "credit": "Six Flags / Hurricane Harbor Phoenix (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "ea08d82455f8df2ce3eb189a959595310c2dc40bdbdd00a81e03fb95d4e72ab4",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Paradise Island aerial photograph shows an irregular turquoise family pool with a wide pale shallow-entry beach, blue/white striped circular shade canopies over rows of teal chairs, white loungers around the tan deck and red umbrellas above lifeguard chairs. An actual small teal timber hut with pale roof and wooded landscaping stand at rear. Preserve this documented pool/shore/canopy section, ordinary small distant bathers and photographic materials. Frame the pool scene only, excluding the source's editorial logo corner; no copied or new lettering and no invented whole hidden pool layout."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "295-218088732678550-thumbnail.jpg",
+      "thumbnailSHA256": "241eee65596e0decabc702fe6f1f98e1fdca9aa4f33ec34c0507892ed79161e8",
+      "thumbnailBytes": 28185,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "295-218088732678550-detail.jpg",
+      "detailSHA256": "f348b50f1583d3b1b145ee2b2f7681540d050bb87963e105d6df4a2bbecaab22",
+      "detailBytes": 233060,
+      "detailPixels": [
+        768,
+        960
+      ]
+    },
+    {
+      "parkId": 295,
+      "rideId": 249181349346747,
+      "rideName": "Adventure River",
+      "alt": "Illustrated Adventure River at Hurricane Harbor Phoenix",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T11:01:48.560113+00:00",
+      "originalSHA256": "86997ef438deeee434794b19d7942373749726a77511799caeae5f03d0f2a7e3",
+      "review": "Accepted: Actual generated pixels preserve Adventure River's empty blue-tiled bend, red brick coping, tan concrete edge, real ladder and desert/palm landscaping; adjacent slides remain background.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F26346715b613f4fcfad62f03e3af094cc60f0996-6865x4577.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "View of Adventure River ride at Hurricane Harbor Phoenix with palm trees and water slides in the background.",
+          "sourceURL": "https://www.sixflags.com/phoenix/attractions/adventure-river",
+          "credit": "Six Flags / Hurricane Harbor Phoenix (reference publisher)",
+          "license": "Copyright source photographer/operator; rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "3fd8e3f012152335aa6f1fd8a1e7505395b5230ca82a184e1764cc0234917b22",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Actual Adventure River photograph shows an empty winding turquoise current channel with blue tile lining, brick-red coping and tan concrete edge, weaving through gravel/desert trees and small palms. Actual steel exit ladder sits at the right bend; background colored enclosed/open slides belong to the separate slide complex. Preserve this photographed empty river bend, source water and real landscaping, without adding tubes, invented passengers, features outside the photograph or a complete hidden route."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "295-249181349346747-thumbnail.jpg",
+      "thumbnailSHA256": "70b7d060c9a027213204a3bb7f68e7942427654ad442fbad84193883c58ff838",
+      "thumbnailBytes": 24273,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "295-249181349346747-detail.jpg",
+      "detailSHA256": "92d4a9c4886734c6a9c9114d9b2b373472cf5dd27ded7e9c020869f6772c93e4",
+      "detailBytes": 208420,
       "detailPixels": [
         768,
         960
