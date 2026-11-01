@@ -1037,6 +1037,107 @@
     },
     {
       "parkId": 32,
+      "rideId": 6688040077038,
+      "rideName": "Grand American Carousel",
+      "alt": "Illustrated Grand American Carousel at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:48:40.746752+00:00",
+      "originalSHA256": "61a49883722a72a690cf514ced0d0e49dcfcdf2b1b3e7ce2b037ce821176e243",
+      "review": "Accepted: source and corrected generated pixels inspected. Tight actual glossy black carved horse head/swept mane/neck/upper chest, thin bridle and real brass spiral pole retained; rider-obscured saddle, rear ornament, lower body and hind legs are cropped away. Manufactured carousel sculpture and documented white horses/blue pavilion remain recognizable.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F4b67f5a1310680e5d5131c4eb1d6a821f92b19e8-1920x1279.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/grand-american-carousel",
+          "credit": "Six Flags / Magic Mountain (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "A group of smiling children and young women riding white and black horses on the Grand American Carousel at Six Flags Magic Mountain.",
+          "sha256": "ae221f4141e7247acfad31165d86e4acabfc5dc9e9ba93869670a39172bf7f56",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Magic Mountain-specific official hero photograph, not found on any other park page in the recorded source inventory, shows the real glossy black rearing carousel horse with sculpted swept mane, brown bridle/saddle, green saddle blanket and actual metal stirrup, mounted on a spiral brass-colored pole among real white carved horses and blue pavilion columns. Choose a close head/neck/upper-body portrait of this actual black manufactured carousel horse, preserving its distinctive pose and paint. Keep source-supported background horses/poles and incidental riders subtle. Do not invent unseen hind legs, a live horse, new ornaments or the full canopy/base. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-6688040077038-thumbnail.jpg",
+      "thumbnailSHA256": "c54d59966530938496c35ab642978f5ffc529ef892ced64f634f611eac2ba805",
+      "thumbnailBytes": 23209,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-6688040077038-detail.jpg",
+      "detailSHA256": "ea9e4eedbd125932d465dfd9685613b82211d9d3b733b5b3a2a284abea08bb78",
+      "detailBytes": 149496,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-6688040077038",
+      "prompt": "Make a framing-only accuracy edit of image 1, the generated Grand American Carousel horse portrait. Image 2 is the genuine Magic Mountain photo. Use a MUCH CLOSER 4:5 portrait around ONLY the actual black carved horse head, swept sculpted mane, neck and upper chest with its source-supported thin bridle/buckles and immediately adjacent real spiral brass pole. Crop out the entire saddle/green blanket/lower body, all hind legs, stirrups and unverified extra gold rear ornament that image 1 exposed beyond the rider-obscured photo. The horse neck/chest must run through the bottom crop; do not show a new complete animal silhouette or reconstruct unseen sculpture. Keep the actual glossy painted manufactured surface, white neighboring carousel horses/blue pavilion columns softly behind and restrained realistic dusk light. No living horse, new ornament, text, logo, UI or watermark.",
+      "promptSHA256": "aae0464ce81ddf9f8249e08456876a53a6b1a2b5e2f648e45177b96ce50c7927",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Grand American Carousel at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: The genuine Magic Mountain-specific official hero photograph, not found on any other park page in the recorded source inventory, shows the real glossy black rearing carousel horse with sculpted swept mane, brown bridle/saddle, green saddle blanket and actual metal stirrup, mounted on a spiral brass-colored pole among real white carved horses and blue pavilion columns. Choose a close head/neck/upper-body portrait of this actual black manufactured carousel horse, preserving its distinctive pose and paint. Keep source-supported background horses/poles and incidental riders subtle. Do not invent unseen hind legs, a live horse, new ornaments or the full canopy/base. Source capture date is unverified. Choose only a photographed source section to create this 4:5 portrait; never expand unseen hardware. Preserve actual manufactured paint, believable photographic materials and physically attached ride geometry. Keep restrained blue-purple evening/practical-light mood with no new text, logo, UI, watermark, copied faces, invented vehicle or route.",
+          "outputSHA256": "48919fe07feb9e15bf878ba37f39f58756901c3cd9238c59ac9cadaa9219bdf0"
+        },
+        {
+          "prompt": "Make a framing-only accuracy edit of image 1, the generated Grand American Carousel horse portrait. Image 2 is the genuine Magic Mountain photo. Use a MUCH CLOSER 4:5 portrait around ONLY the actual black carved horse head, swept sculpted mane, neck and upper chest with its source-supported thin bridle/buckles and immediately adjacent real spiral brass pole. Crop out the entire saddle/green blanket/lower body, all hind legs, stirrups and unverified extra gold rear ornament that image 1 exposed beyond the rider-obscured photo. The horse neck/chest must run through the bottom crop; do not show a new complete animal silhouette or reconstruct unseen sculpture. Keep the actual glossy painted manufactured surface, white neighboring carousel horses/blue pavilion columns softly behind and restrained realistic dusk light. No living horse, new ornament, text, logo, UI or watermark.",
+          "outputSHA256": "61a49883722a72a690cf514ced0d0e49dcfcdf2b1b3e7ce2b037ce821176e243"
+        }
+      ]
+    },
+    {
+      "parkId": 32,
+      "rideId": 19355358264319,
+      "rideName": "BATMAN™ The Ride",
+      "alt": "Illustrated BATMAN™ The Ride at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:41:55.888083+00:00",
+      "originalSHA256": "bd555fa478052c5a8027810b2aefff8192618deae34c05bf23a2508a47152be2",
+      "review": "Accepted: generated pixels inspected against the Magic Mountain-specific official blue-track station photo. Actual hanging black seats/yellow shoulder restraints, silver handholds, red/orange belt tabs, white overhead chassis/wheel connection and blue beam retained inside the source-supported dark station. Yellow-track image shared with another park was not used.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fbf1d2a71b407b2a7a0eaca0d9a510b5cdca7d3b5-2731x4096.png%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/batman-the-ride",
+          "credit": "Six Flags / Magic Mountain (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Guests riding batman",
+          "sha256": "7898d2b6bf47eae6c32bd6e02646bccfdaa6b58b370183000a3c2ce8ec5de8d8",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine Magic Mountain official gallery photograph shows a physical row of four black molded seats with bright-yellow over-the-shoulder restraints, silver handholds, red/orange belt tabs and white overhead chassis suspended from the actual BLUE track/beam in a dark stone-textured station/cave with gray diamond-plate platform. Choose a close actual row-and-overhead-connection portrait, preserving below-track hanging seats, restraint geometry, wheels, white frame and blue beam. Use this gallery photo rather than the unselected entrance car display or the yellow-track image shared with another park. Keep the honest dark station interior; do not invent an outside looping layout, different seats, unseen underframe or new superhero figure. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-19355358264319-thumbnail.jpg",
+      "thumbnailSHA256": "138b88302393bb43d74a8a547b1e053e9330e026480909f90e0c92340efedac3",
+      "thumbnailBytes": 26404,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-19355358264319-detail.jpg",
+      "detailSHA256": "10873a41fa8c7e237e2e99b080721aed31a816413d39275b9c038682667ed439",
+      "detailBytes": 183818,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-19355358264319",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict BATMAN™ The Ride at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: The genuine Magic Mountain official gallery photograph shows a physical row of four black molded seats with bright-yellow over-the-shoulder restraints, silver handholds, red/orange belt tabs and white overhead chassis suspended from the actual BLUE track/beam in a dark stone-textured station/cave with gray diamond-plate platform. Choose a close actual row-and-overhead-connection portrait, preserving below-track hanging seats, restraint geometry, wheels, white frame and blue beam. Use this gallery photo rather than the unselected entrance car display or the yellow-track image shared with another park. Keep the honest dark station interior; do not invent an outside looping layout, different seats, unseen underframe or new superhero figure. Source capture date is unverified. Choose only a photographed source section to create this 4:5 portrait; never expand unseen hardware. Preserve actual manufactured paint, believable photographic materials and physically attached ride geometry. Keep restrained blue-purple evening/practical-light mood with no new text, logo, UI, watermark, copied faces, invented vehicle or route.",
+      "promptSHA256": "f79ec8488dee07aa7422bb8a5af7369d05d57f3a71a269644341d57a1e2d84e5",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
       "rideId": 35625520485518,
       "rideName": "Swashbuckler",
       "alt": "Illustrated Swashbuckler at Six Flags Magic Mountain",
@@ -1079,6 +1180,970 @@
       "key": "32-35625520485518",
       "prompt": "Create ONE portrait 4:5 realistic generated ride visualization for PIVOT based closely on real attraction photo image 1. Image 2 supplies only restrained blue-purple evening mood. Natural photographic materials, believable physical perspective and softly balanced practical lighting; more realistic than a painted illustration. Preserve authentic identifying ride hardware, geometry and colors; center the subject clearly for thumbnail use. No screenshot UI, frames, borders, overlaid labels, watermark or invented lettering. Swashbuckler at Six Flags Magic Mountain: preserve the photo's actual blue central lattice mast, yellow radial arms, many thin steel chains, gray individual swing chairs and wooded hillside. Recompose as a portrait showing the central mast and suspended chairs; authentic steel and cable textures, no invented ornate carousel canopy.",
       "promptSHA256": "7e54cf61d54d05be5be1bddcdac11d5aeb12790f65cc848d6fbd1ea1a26bb78f",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
+      "rideId": 48845976404786,
+      "rideName": "Full Throttle",
+      "alt": "Illustrated Full Throttle at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:40:59.075313+00:00",
+      "originalSHA256": "b5f084b2cafe1b87188f33942ac105913938bf3da2582b4e2fcf60c36bf269f4",
+      "review": "Accepted: generated pixels inspected against genuine official Full Throttle gallery photo. Real white loop/rail structure, dark tubular supports/braces and source-supported left-side train retained, with no new inversion, full-course reconstruction or unrelated Sky Tower.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1d666ae4265d7a19d949f96de5af09cd47e088d0-2680x1866.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/full-throttle",
+          "credit": "Six Flags / Magic Mountain (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Wide-angle view of Full Throttle coaster at Six Flags Magic Mountain, featuring a large vertical loop.",
+          "sha256": "eb193917d53864809a6d85ccff8244f4c829e35e8a6be1aef4f976622bb68aef",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Full Throttle gallery photograph shows the actual large WHITE vertical loop with dark charcoal/black tubular support columns and diagonal braces, an actual distant train on the left inside loop rail, dry planted hillside below, green trees and the real red Sky Tower at the right edge. Choose a source-supported close/medium section of the upper loop arch and left-side train with real white rail/black bracing, cropping away the unrelated tower and full ground/base. Preserve the photographed rail/spine structure and train-to-track connection; do not replace it with a blue coaster, invent an extra inversion, expand a full course, or reveal a close-up seat model absent from the source. Source capture date is unverified."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-48845976404786-thumbnail.jpg",
+      "thumbnailSHA256": "3bfc02cd8193529c4ac05834f358d6edb0a0b5ff36bcea550bc2f009ce584fcd",
+      "thumbnailBytes": 21425,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-48845976404786-detail.jpg",
+      "detailSHA256": "dbbc0a8a0a793ab3bbd4ba0f6975abaafe62a36d878fe4355fcfdf15dc649260",
+      "detailBytes": 154959,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-48845976404786",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Full Throttle at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: The genuine official Full Throttle gallery photograph shows the actual large WHITE vertical loop with dark charcoal/black tubular support columns and diagonal braces, an actual distant train on the left inside loop rail, dry planted hillside below, green trees and the real red Sky Tower at the right edge. Choose a source-supported close/medium section of the upper loop arch and left-side train with real white rail/black bracing, cropping away the unrelated tower and full ground/base. Preserve the photographed rail/spine structure and train-to-track connection; do not replace it with a blue coaster, invent an extra inversion, expand a full course, or reveal a close-up seat model absent from the source. Source capture date is unverified. Choose only a photographed source section to create this 4:5 portrait; never expand unseen hardware. Preserve actual manufactured paint, believable photographic materials and physically attached ride geometry. Keep restrained blue-purple evening/practical-light mood with no new text, logo, UI, watermark, copied faces, invented vehicle or route.",
+      "promptSHA256": "5df99bbecf1d4cf7255416bbc6b081d153c226f326b8da27474bee68598ecfe6",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
+      "rideId": 54316865275675,
+      "rideName": "X2",
+      "alt": "Illustrated X2 at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:41:29.659722+00:00",
+      "originalSHA256": "988bb2775fb1ef802a1fa75e69aed4de50abea61f22517f57be8ae6b2ae3bd72",
+      "review": "Accepted: generated pixels inspected against Jeremy Thompson’s genuine 3 March 2025 X2 photo. Actual perforated light-gray chassis, black outboard wing-seat assemblies/red restraint accents, attached maroon lift rail, yellow maintenance stair and gray braces retained. Historical dated depiction only: operator retirement/catalog discrepancy explicitly recorded; no present-operation claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Six_Flags_Magic_Mountain_%2854369053282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Six_Flags_Magic_Mountain_(54369053282).jpg",
+          "credit": "Jeremy Thompson (3 March 2025)",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+          "alt": "Historical X2 wing-seat train on its actual lift at Six Flags Magic Mountain, 3 March 2025",
+          "sha256": "3255cc4b242f835e01ea985331fe803df0d40783c5ce5b86b05b3b3cbf147e32",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Jeremy Thompson's genuine 2025-03-03 photograph documents X2's actual train on the incline: perforated light-gray central chassis frames with large oval cutouts, independent black outboard wing-seat assemblies and red/orange restraint accents extending beside the rail, actual dark maroon lift rails, yellow maintenance stair treads and dark-gray support bracing. Choose a close/medium source-supported section with two documented train cars and their real wing-seat/chassis/rail connection beside the yellow stair. Keep the lift top, complete course, unrelated neighboring coaster and queue crowd outside the frame; do not invent them. Do not convert it to a conventional four-across car above a blue loop. This is explicitly the historical March 2025 appearance: the current operator notice reports permanent retirement while the ID remains in the captured catalog. Artwork must not imply present operation or new/reopened status."
+        }
+      ],
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+      "thumbnailFile": "32-54316865275675-thumbnail.jpg",
+      "thumbnailSHA256": "c736de3abdce0647b3d50b38baf303730d7e791152bca7c3411e76414a73994e",
+      "thumbnailBytes": 24460,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-54316865275675-detail.jpg",
+      "detailSHA256": "ba82accbeb592f9808b0cb1dbe7e5444a7affd83b6cf6e10edb53458f1f717b3",
+      "detailBytes": 176512,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-54316865275675",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict X2 at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: Jeremy Thompson's genuine 2025-03-03 photograph documents X2's actual train on the incline: perforated light-gray central chassis frames with large oval cutouts, independent black outboard wing-seat assemblies and red/orange restraint accents extending beside the rail, actual dark maroon lift rails, yellow maintenance stair treads and dark-gray support bracing. Choose a close/medium source-supported section with two documented train cars and their real wing-seat/chassis/rail connection beside the yellow stair. Keep the lift top, complete course, unrelated neighboring coaster and queue crowd outside the frame; do not invent them. Do not convert it to a conventional four-across car above a blue loop. This is explicitly the historical March 2025 appearance: the current operator notice reports permanent retirement while the ID remains in the captured catalog. Artwork must not imply present operation or new/reopened status. Choose only a photographed source section to create this 4:5 portrait; never expand unseen hardware. Preserve actual manufactured paint, believable photographic materials and physically attached ride geometry. Keep restrained blue-purple evening/practical-light mood with no new text, logo, UI, watermark, copied faces, invented vehicle or route.",
+      "promptSHA256": "c634d122ff5a31a38a30f6b6245c1be3a87770ba26b18d207f4959482c9488f5",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
+      "rideId": 71303944777335,
+      "rideName": "West Coast Racers",
+      "alt": "Illustrated West Coast Racers at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:46:28.296758+00:00",
+      "originalSHA256": "775ab24f8919e8a6a4149b3c59640585cd61048d8a46fa335e669a6cf8edc4af",
+      "review": "Accepted: actual generated pixels inspected against the genuine official West Coast Racers photo. Blue sports-car-styled lead car remains attached by gray wheel bogies to yellow rail, with the documented red train on white rail above, paired black restraints and gray tubular supports. No full-course reconstruction.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F96fa0b5238ad47db55638127e5e7ee8047ba647b-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/west-coast-racers",
+          "credit": "Six Flags / Magic Mountain (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "West Coast Racers at Six Flags Magic Mountain with cars racing on parallel tracks.",
+          "sha256": "49d9f8a6a0a18c12db6930f434b627ea88906390d8d8fc40854e65c968d6ff7d",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official West Coast Racers photograph shows the actual red sports-car-styled train on a WHITE banked rail above a BLUE sports-car-styled train on a YELLOW banked rail, real gray/black wheel bogies hugging the track, paired black seats/restraints and dark-gray tubular support grid. The decorative car-front wheels have gold spokes. Use a close source-supported view of the blue lead car and yellow track/bogie connection with a documented part of the red/white train above. Preserve actual relative tracks, car shapes, restraint layout and attached wheels; do not create road-going sports cars, a detached train, a new track crossover or full unseen racing course. Source capture date is unverified; artwork does not establish present operation."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-71303944777335-thumbnail.jpg",
+      "thumbnailSHA256": "968c355b1d806fa96b2cd0abdd841e4bc88e0838b45fea715ca0567d608b3954",
+      "thumbnailBytes": 26506,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-71303944777335-detail.jpg",
+      "detailSHA256": "06c2a339f1831262c7ad101c695cd4e74f64685b6c2205dd80cdb8a85746860a",
+      "detailBytes": 168240,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-71303944777335",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict West Coast Racers at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: The genuine official West Coast Racers photograph shows the actual red sports-car-styled train on a WHITE banked rail above a BLUE sports-car-styled train on a YELLOW banked rail, real gray/black wheel bogies hugging the track, paired black seats/restraints and dark-gray tubular support grid. The decorative car-front wheels have gold spokes. Use a close source-supported view of the blue lead car and yellow track/bogie connection with a documented part of the red/white train above. Preserve actual relative tracks, car shapes, restraint layout and attached wheels; do not create road-going sports cars, a detached train, a new track crossover or full unseen racing course. Source capture date is unverified; artwork does not establish present operation. Choose only a photographed source section for the 4:5 portrait; never expand unseen hardware. Keep authentic paint, believable photographic materials and real attached physical connections in restrained blue-purple evening light. No new text, logos, UI, watermark, copied faces, invented vehicle or route.",
+      "promptSHA256": "71a6309c1db8f47897c079f14d09ebe5aff0dab56ebab0e214f0c69038df6247",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
+      "rideId": 76102059230697,
+      "rideName": "Dive Devil",
+      "alt": "Illustrated Dive Devil at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:48:18.942437+00:00",
+      "originalSHA256": "bfc8b9361faf492c7e816a198e428b1eaa7657a4973f8f03bd9c932b74f1881a",
+      "review": "Accepted: actual generated pixels inspected against the genuine official Dive Devil photo. Real pale gray-blue lattice arch, attached vertical cables, paired narrow rear hoist towers and red roof edge retained. No close harness/rider detail or unrelated coaster reconstructed.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F43c500f5fb8714a83dcc7abccb1be6c48261bac5-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/dive-devil",
+          "credit": "Six Flags / Magic Mountain (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Entrance sign for Dive Devil at Six Flags Magic Mountain, a bungee jumping ride.",
+          "sha256": "ebdbe8b8d92cb7a9cbb09f224aa21dad49995f1c4de687c814d605f92ead4176",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Dive Devil photograph shows the actual tall pale gray-blue steel lattice arch, slender vertical suspension cables from its upper beam, two thin rear hoist/support lattice towers and the documented red-roofed entrance below. Use a close/medium portrait of the source-supported lattice arch/upper cables with only the photographed rear support section and a little source roof edge. Keep cables attached and tower geometry true to the photo. The small distant source does not establish any close harness detail, so do not invent close riders, gondolas, seat pods, a Ferris wheel, new arch base or a different jump course. Crop all entrance signs/price boards and unrelated coaster. Source capture date is unverified; artwork does not establish present operation."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-76102059230697-thumbnail.jpg",
+      "thumbnailSHA256": "153ad48b402246995d92fc5b87cc9918552a98b48753a225cacf0cba6f3bb2bb",
+      "thumbnailBytes": 16222,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-76102059230697-detail.jpg",
+      "detailSHA256": "b7605c4c0df1b8a31085164b2899479376307e036b578452dab7b6ef25376faf",
+      "detailBytes": 119685,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-76102059230697",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Dive Devil at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: The genuine official Dive Devil photograph shows the actual tall pale gray-blue steel lattice arch, slender vertical suspension cables from its upper beam, two thin rear hoist/support lattice towers and the documented red-roofed entrance below. Use a close/medium portrait of the source-supported lattice arch/upper cables with only the photographed rear support section and a little source roof edge. Keep cables attached and tower geometry true to the photo. The small distant source does not establish any close harness detail, so do not invent close riders, gondolas, seat pods, a Ferris wheel, new arch base or a different jump course. Crop all entrance signs/price boards and unrelated coaster. Source capture date is unverified; artwork does not establish present operation. Choose only a photographed source section for the 4:5 portrait; never expand unseen hardware. Keep authentic paint, believable photographic materials and real attached physical connections in restrained blue-purple evening light. No new text, logos, UI, watermark, copied faces, invented vehicle or route.",
+      "promptSHA256": "6f4b67611e85c1423f61b995460d0b75f1ca68d8ed030d2a0dc133d661caaa70",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
+      "rideId": 83189230563961,
+      "rideName": "Canyon Cruiser",
+      "alt": "Illustrated Canyon Cruiser at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:47:52.918056+00:00",
+      "originalSHA256": "211bfbb59be4e0e819d677785ca93733337b06a2a8417ad523aeccde0d60723c",
+      "review": "Accepted: actual generated pixels inspected against the genuine official Canyon Cruiser photo (legacy Canyon Blaster branding/URL). Actual crate-effect cars, cream high seatbacks, black lap bars, gray attached wheel assemblies, orange curved rail/green supports and teal mountain-profile fence retained. Historical/undated source paint is not a present-operation claim.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fd38ad02429e4f19022dda88c3d0b7e64f4942c3e-3936x2624.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/canyon-blaster",
+          "credit": "Six Flags / Magic Mountain (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "alt": "Canyon Blaster roller coaster at Six Flags Magic Mountain with Looney Tunes ACME-themed decorations and cactus statues.",
+          "sha256": "511d9ae3642f5c98c7e0c472927b260473fd99ac00431594104a62b14388f12c",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The current primary page headline confirms the catalog name Canyon Cruiser while its URL/title and photo alt retain Canyon Blaster. Its genuine ride photo shows actual dark-brown wood-crate-themed cars with pale gray/cream high seat inserts, black lap bars, silver/gray connected wheel assemblies running on ORANGE curved rails with GREEN supports, and the real teal mountain-profile backdrop/palms. Use a close source-supported two-car section and its actual wheel/track connection, retaining the crate panel textures and real materials while omitting lettering. No explosive action, new mine scene, unseen full route, free-driving carts or unpictured train parts. This photo's branded appearance is historical/undated, not a claim about current paint. Source capture date is unverified; artwork does not establish present operation."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-83189230563961-thumbnail.jpg",
+      "thumbnailSHA256": "d2870a37175e94317939b40e0bbb5c8f81d2facc60f135e7c68edeb3841a7b50",
+      "thumbnailBytes": 22686,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-83189230563961-detail.jpg",
+      "detailSHA256": "b03bbd434593bca41a9988358fb80fbfcc4ba1b2e40d4b03831e5e523dc5bc93",
+      "detailBytes": 139681,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-83189230563961",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Canyon Cruiser at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: The current primary page headline confirms the catalog name Canyon Cruiser while its URL/title and photo alt retain Canyon Blaster. Its genuine ride photo shows actual dark-brown wood-crate-themed cars with pale gray/cream high seat inserts, black lap bars, silver/gray connected wheel assemblies running on ORANGE curved rails with GREEN supports, and the real teal mountain-profile backdrop/palms. Use a close source-supported two-car section and its actual wheel/track connection, retaining the crate panel textures and real materials while omitting lettering. No explosive action, new mine scene, unseen full route, free-driving carts or unpictured train parts. This photo's branded appearance is historical/undated, not a claim about current paint. Source capture date is unverified; artwork does not establish present operation. Choose only a photographed source section for the 4:5 portrait; never expand unseen hardware. Keep authentic paint, believable photographic materials and real attached physical connections in restrained blue-purple evening light. No new text, logos, UI, watermark, copied faces, invented vehicle or route.",
+      "promptSHA256": "743e773ca6f1a4ae5e9cd6f2a3cb5c91d7846b1c4ba4dceb291289ec2868e1b3",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
+      "rideId": 95160309734440,
+      "rideName": "The Great American Revolution",
+      "alt": "Illustrated The Great American Revolution at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:53:37.510873+00:00",
+      "originalSHA256": "8f6fb0f3c2856c76a6ac56b5f51f1b659f811cd78ba725481f28504a7326a677",
+      "review": "Accepted: generated pixels inspected against genuine official Revolution photo. Actual white round-spine loop/lattice bracing, blue rail edge and blue structural columns/diagonals retained, with silver/white train inverted and attached to upper inside rail. Unrelated orange/green neighboring coaster cropped out; no full-route reconstruction.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F5f49296a47eaab533f737bda6999525d3b47bdb7-6000x4000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Guests on the loop of The New Revolution",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/the-new-revolution-classic",
+          "credit": "Six Flags / Magic Mountain (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "93c1e99b1bf65d6c86b92d4567fab6c0a45499b61968cd4d194ccd04f3b90030",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official photograph shows the actual classic white round-spine vertical loop with triangular white cross-bracing, blue rail edge, and real silver/white train inverted at the upper inside arch with dark seats. Large blue square-section columns and diagonal braces support it. Use a close/medium upper-loop-and-train portrait, retaining the actual wheel/track connection and photographed blue support section. Crop the unrelated orange/green neighboring coaster and any unseen full route. Current primary headline confirms the catalog name The Great American Revolution; page URL/alt retain New Revolution. Photo capture date is unverified; no present-operation claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-95160309734440-thumbnail.jpg",
+      "thumbnailSHA256": "3a0df4bb27755c804d6cb7705938cd322955037d8a2b330a5c1b8808b5f362a3",
+      "thumbnailBytes": 28642,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-95160309734440-detail.jpg",
+      "detailSHA256": "3c43f31f2312d8c84383c6250c4c5711b272d2a8e0083d46a2c00ef29416f6eb",
+      "detailBytes": 211677,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-95160309734440",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict The Great American Revolution at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: The genuine official photograph shows the actual classic white round-spine vertical loop with triangular white cross-bracing, blue rail edge, and real silver/white train inverted at the upper inside arch with dark seats. Large blue square-section columns and diagonal braces support it. Use a close/medium upper-loop-and-train portrait, retaining the actual wheel/track connection and photographed blue support section. Crop the unrelated orange/green neighboring coaster and any unseen full route. Current primary headline confirms the catalog name The Great American Revolution; page URL/alt retain New Revolution. Photo capture date is unverified; no present-operation claim. Choose only the photographed source section for this 4:5 portrait, never expanding unseen hardware. Preserve real physical attachments, paint and materials in restrained blue-purple evening light. No new text, logo, UI, frame or watermark.",
+      "promptSHA256": "61d33f736762d5f80f00b6d6f2394e245709ac59bd6663105405acaa0f88eb93",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
+      "rideId": 100787474584542,
+      "rideName": "Camp Bus",
+      "alt": "Illustrated Camp Bus at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:56:09.472914+00:00",
+      "originalSHA256": "2014b07c35dd3c4aeb210d6a4c1a3a9dc3e6bebf6b62c12190abe1a0ca7182ab",
+      "review": "Accepted: source and corrected generated pixels inspected. Tight 2026 red bus roof detail preserves actual silver luggage rail, ochre suitcases, green rolled camping mats, red canoe and a short top edge of the red window frame. Entire hidden window height, interior, lower bus and ride supports are cropped away. No copied people/characters or unsupported full vehicle.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.coasterpedia.net/8/8b/Camp_Bus_%28Six_Flags_Magic_Mountain%29_2026_01.jpg",
+          "sourceURL": "https://coasterpedia.net/wiki/File:Camp_Bus_(Six_Flags_Magic_Mountain)_2026_01.jpg",
+          "credit": "Jeremy Thompson (18 June 2026)",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+          "alt": "Camp Bus at Six Flags Magic Mountain, photographed 18 June 2026",
+          "sha256": "aa1c12ee3c720a4dc7cf8dec70b05e1a9773fd051a616bdbb21251d3ebafe22a",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Jeremy Thompson's genuine 18 June 2026 Camp Bus photograph shows the actual red upper bus shell/window openings, silver roof luggage rail, red canoe and ochre luggage/green rolled camping mats tied above it, against a physical painted evergreen/mountain-profile backdrop. Use a tight 4:5 portrait of ONLY this photographed roof, luggage/canoe and upper red window frame. The low bus body, wheels, supports and interior seat hardware are obscured by the real queue fence and visitors: keep all those out of frame rather than reconstructing them. The actual current red bus differs from the outdated yellow bus in the official entrance photo. Crop signs, visitors, Daffy cutout and entrance paddles. No complete school bus, road scene, wheels, invented ride mechanism or copied faces."
+        }
+      ],
+      "license": "CC BY 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+      "thumbnailFile": "32-100787474584542-thumbnail.jpg",
+      "thumbnailSHA256": "6818572f32416ce4c53a4ccee685c450fcfd912fb552c1a0f80b56ed747bfe96",
+      "thumbnailBytes": 22348,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-100787474584542-detail.jpg",
+      "detailSHA256": "97c352a427b6fd8b8a3a0286bb0b77aacefb1cdd1d03fbf6801b4ed259b73b51",
+      "detailBytes": 133865,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-100787474584542",
+      "prompt": "Make a framing-only accuracy edit of image 1, the generated Camp Bus detail. Image 2 is Jeremy Thompson's genuine June 18, 2026 source photo. Use a MUCH CLOSER 4:5 vertical portrait around ONLY the actual silver roof luggage rail, ochre suitcases, dark-green rolled camping mats, red canoe and immediately adjoining red bus roof edge. Keep only a short upper sliver of the documented red window frame at the BOTTOM crop; crop out the complete height of all bus windows because the actual source fence/visitors obscure that area. Do not reconstruct any interior, seat, wheel, support or full bus body. Actual red canoe should run through the right crop as it does in the documented section; luggage and rail remain physically attached to the red roof. Keep the real painted tree/mountain backdrop softly behind and the existing restrained realistic blue-purple evening mood. No text, logo, characters, faces, UI, watermark or added camping prop.",
+      "promptSHA256": "3ff7b13d01390080f004728b9a8d1cc9b1cb163a3e881d6be958fdd9e561aec3",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Camp Bus at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: Jeremy Thompson's genuine 18 June 2026 Camp Bus photograph shows the actual red upper bus shell/window openings, silver roof luggage rail, red canoe and ochre luggage/green rolled camping mats tied above it, against a physical painted evergreen/mountain-profile backdrop. Use a tight 4:5 portrait of ONLY this photographed roof, luggage/canoe and upper red window frame. The low bus body, wheels, supports and interior seat hardware are obscured by the real queue fence and visitors: keep all those out of frame rather than reconstructing them. The actual current red bus differs from the outdated yellow bus in the official entrance photo. Crop signs, visitors, Daffy cutout and entrance paddles. No complete school bus, road scene, wheels, invented ride mechanism or copied faces. Choose only the photographed source section for this 4:5 portrait, never expanding unseen hardware. Preserve real physical attachments, paint and materials in restrained blue-purple evening light. No new text, logo, UI, frame or watermark.",
+          "outputSHA256": "6309367288a9740d94686c0cd207ca654ef1bfc5ebccaf36be8a7c419f818d91"
+        },
+        {
+          "prompt": "Make a framing-only accuracy edit of image 1, the generated Camp Bus detail. Image 2 is Jeremy Thompson's genuine June 18, 2026 source photo. Use a MUCH CLOSER 4:5 vertical portrait around ONLY the actual silver roof luggage rail, ochre suitcases, dark-green rolled camping mats, red canoe and immediately adjoining red bus roof edge. Keep only a short upper sliver of the documented red window frame at the BOTTOM crop; crop out the complete height of all bus windows because the actual source fence/visitors obscure that area. Do not reconstruct any interior, seat, wheel, support or full bus body. Actual red canoe should run through the right crop as it does in the documented section; luggage and rail remain physically attached to the red roof. Keep the real painted tree/mountain backdrop softly behind and the existing restrained realistic blue-purple evening mood. No text, logo, characters, faces, UI, watermark or added camping prop.",
+          "outputSHA256": "2014b07c35dd3c4aeb210d6a4c1a3a9dc3e6bebf6b62c12190abe1a0ca7182ab"
+        }
+      ]
+    },
+    {
+      "parkId": 32,
+      "rideId": 118893261828682,
+      "rideName": "Ninja",
+      "alt": "Illustrated Ninja at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:54:34.807662+00:00",
+      "originalSHA256": "21260ea4bdc83b8b44d82bfe861451712135f143a214d26b0fdaaf20b67abfbe",
+      "review": "Accepted: generated pixels inspected against genuine official Ninja photo. Black suspended bucket car hangs below real burgundy/red rail on attached wheel/suspension assemblies with yellow/orange details, source-supported red restraint accents, white cylindrical columns and wooded context. No above-track train, wing-coaster substitution or expanded course.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fde603e3450268e3e2caa37e0771758792ab3c866-1500x998.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Ninja swinging roller coaster at Six Flags Magic Mountain with suspended cars and curved red track.",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/ninja",
+          "credit": "Six Flags / Magic Mountain (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "2bd49013ac59b3296e5a367b1596a60935977afe2af1c40a0833a867f4999fa1",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Ninja photo shows the actual black swinging suspended bucket cars HANGING BELOW burgundy/red overhead tubular rail, dark suspension links with yellow/orange connection details, white cylindrical support columns and trees/lake context. Choose a source-supported medium close section of two hanging black cars and their actual overhead suspension/rail attachment with a photographed white column behind. Preserve the swung outward car alignment, black seats and red shoulder restraint accents without inventing a new restraint layout. Crop unrelated Sky Tower, distant course and source crowds. No coaster cars above track, wing-seat replacement, free dangling gondola or new full route. Source capture date is unverified; no present-operation claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-118893261828682-thumbnail.jpg",
+      "thumbnailSHA256": "47cc8d4a6cd6315526eb8c72bb7bad25c19184a98efd78b9315fe133fe0ec656",
+      "thumbnailBytes": 19827,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-118893261828682-detail.jpg",
+      "detailSHA256": "73415b3207fd0240a844f0bf04a6e6edc1e645128588b733db77caa254bc7c16",
+      "detailBytes": 116348,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-118893261828682",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Ninja at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: The genuine official Ninja photo shows the actual black swinging suspended bucket cars HANGING BELOW burgundy/red overhead tubular rail, dark suspension links with yellow/orange connection details, white cylindrical support columns and trees/lake context. Choose a source-supported medium close section of two hanging black cars and their actual overhead suspension/rail attachment with a photographed white column behind. Preserve the swung outward car alignment, black seats and red shoulder restraint accents without inventing a new restraint layout. Crop unrelated Sky Tower, distant course and source crowds. No coaster cars above track, wing-seat replacement, free dangling gondola or new full route. Source capture date is unverified; no present-operation claim. Choose only the photographed source section for this 4:5 portrait, never expanding unseen hardware. Preserve real physical attachments, paint and materials in restrained blue-purple evening light. No new text, logo, UI, frame or watermark.",
+      "promptSHA256": "33ee801c46f46027d01db814e417471edfce06cd7b87993ac78f83dd4b75f453",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
+      "rideId": 151537078947755,
+      "rideName": "Magic Mover",
+      "alt": "Illustrated Magic Mover at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-10-31T23:55:43.480568+00:00",
+      "originalSHA256": "1c8da2ad460b46af5a885c34cce71351f63a8664045d616b0d003675d0aeaad6",
+      "review": "Accepted: actual generated pixels inspected against Paul B. Drabek's genuine June 2019 photo. Real blue funicular cabin, broad pale-bordered front window, narrow corner glazing, dark roof windows, central lamp and attached inclined rail retained. Historical Helpful Honda Express paint explicitly documented; no current-operation/paint claim. Advertising omitted; official gallery neighboring coaster not used.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://negative-g.com/six-flags-magic-mountain/2019/six-flags-magic-mountain-2019-25.jpg",
+          "sourceURL": "https://negative-g.com/six-flags-magic-mountain/2019/six-flags-magic-mountain-2019-19.htm",
+          "credit": "Paul B. Drabek / Negative-G (June 16–18, 2019)",
+          "license": "Copyright Paul B. Drabek; source rights retained",
+          "licenseURL": "https://negative-g.com/six-flags-magic-mountain/2019/six-flags-magic-mountain-2019-19.htm",
+          "alt": "Magic Mountain funicular car in historical Helpful Honda Express paint, June 2019",
+          "sha256": "ed2dfd86c6828709433693b6e469b7dc839dd56fd99b51d446775e525c1c4503",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Paul B. Drabek's genuine June 16–18, 2019 photograph documents this Magic Mountain funicular in its historical Helpful Honda Express branding: a BLUE rectangular inclined-rail car with a broad front window in a thin pale metallic border, small center-front headlamp, tall narrow dark corner windows, side glazing and dark roof windows. The actual front underbody sits directly on the photographed parallel steel rails in gravel on a planted slope. Choose a source-supported three-quarter front/cabin portrait, preserving real blue metal surfaces, window shape, headlamp and actual rail connection. Remove the old advertising lettering rather than depicting it as current. Crop the neighboring coaster, unseen rear cabin end and full-route surroundings. This is explicitly a dated 2019 appearance, not proof of present paint or operation; the current operator primary page confirms Magic Mover as the tram to the hilltop. The official gallery's neighboring Revolution train was not used."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-151537078947755-thumbnail.jpg",
+      "thumbnailSHA256": "c7d006636926e008d7d7778e8d4ff5686bc5b2d3b85f3bb658aaaf74e020ba51",
+      "thumbnailBytes": 28813,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-151537078947755-detail.jpg",
+      "detailSHA256": "8e6f83274f46d342d78203862aa1a71fe61df5577702273b0bdeefd545a75bc3",
+      "detailBytes": 239331,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-151537078947755",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Magic Mover at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: Paul B. Drabek's genuine June 16–18, 2019 photograph documents this Magic Mountain funicular in its historical Helpful Honda Express branding: a BLUE rectangular inclined-rail car with a broad front window in a thin pale metallic border, small center-front headlamp, tall narrow dark corner windows, side glazing and dark roof windows. The actual front underbody sits directly on the photographed parallel steel rails in gravel on a planted slope. Choose a source-supported three-quarter front/cabin portrait, preserving real blue metal surfaces, window shape, headlamp and actual rail connection. Remove the old advertising lettering rather than depicting it as current. Crop the neighboring coaster, unseen rear cabin end and full-route surroundings. This is explicitly a dated 2019 appearance, not proof of present paint or operation; the current operator primary page confirms Magic Mover as the tram to the hilltop. The official gallery's neighboring Revolution train was not used. Compose only the photographed source section for this 4:5 portrait; never expand unseen hardware. Preserve actual paint/materials and rail connection in restrained blue-purple dusk light. No new text, logo, watermark, UI, copied faces or invented vehicle.",
+      "promptSHA256": "0a3492a0e7cfbaaad36fcafb3557be86e529c0e8fccb9c77c55b43435b1c56a8",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
+      "rideId": 154820717574832,
+      "rideName": "THE RIDDLER™’s Revenge",
+      "alt": "Illustrated THE RIDDLER™’s Revenge at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:04:02.511943+00:00",
+      "originalSHA256": "eb2ad76a8bdf4b0617ec40f6e7f940b93faf620c1743386a27056a787770080c",
+      "review": "Accepted: original and corrected generated pixels inspected against genuine official Riddler's Revenge photo. Tight documented green streamlined nose/front standing platform, lower yellow hard restraints, green rail/cross-ties and attached gray bogies retained; all rider heads/faces, rear rows and nose question-mark graphic cropped/omitted. The standing ride remains distinct.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ffb69ea00f8b06636b79e85479440c583eb8ebb9a-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders enjoying and showing excitement on THE RIDDLER’s Revenge roller coaster at Six Flags Magic Mountain.",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/riddlers-revenge",
+          "credit": "Six Flags / Magic Mountain (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "55030f424d04bc75478c43e3c135efb55734ef6ea3484bac6aa692692b2d9aa8",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Riddler's Revenge photo shows the actual GREEN stand-up train with four rider positions across, YELLOW hard over-the-shoulder restraints, black head pads, green standing foot platform, streamlined green nose and real gray wheel/bogie assemblies attached to GREEN track with rectangular cross-ties. The primary text confirms standing rather than sitting. Choose a source-supported front two-row and track/bogie close portrait. Preserve standing posture and photographed restraint/platform hardware, green rail and dark supports; do not turn this into a seated or inverted coaster, invent hidden seat mechanisms, add new inversions or extend the full course. Keep incidental people non-identifiable without copied faces. Source capture date unverified; no present-operation claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-154820717574832-thumbnail.jpg",
+      "thumbnailSHA256": "2282fc0159691dfc12dccef258ed305a400b181d071d130a9e2ffbda3349cf8f",
+      "thumbnailBytes": 24031,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-154820717574832-detail.jpg",
+      "detailSHA256": "c78b74768ba3407d88ed655a84639dc8cbd075e815a78a3e66eb40e5c429ea5f",
+      "detailBytes": 142287,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-154820717574832",
+      "prompt": "Make a framing-only accuracy edit of image 1, the generated Riddler's Revenge image. Image 2 is the genuine official ride photo. Create a MUCH CLOSER 4:5 portrait of the actual green streamlined front nose, green front standing platform/guard rail, visible gray bogies and their attached green rail/cross-ties. Include only source-supported LOWER portions of the yellow restraints and riders' standing legs near the top crop. Crop out ALL heads and faces, the back rows and complete course. Keep the exact photographed green/yellow stand-up hardware, real attached wheels and dark source support, with the existing realistic blue-purple dusk treatment. Do not reconstruct hidden seat mechanisms or add a new body silhouette. Omit the question-mark nose graphic and ALL other lettering/logos. No UI, watermark or added ride geometry.",
+      "promptSHA256": "89297f3b7bc87500f0ca99c4402b9679a2d73e0e6e668b9589b3f0bb456f3d90",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict THE RIDDLER™’s Revenge at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: The genuine official Riddler's Revenge photo shows the actual GREEN stand-up train with four rider positions across, YELLOW hard over-the-shoulder restraints, black head pads, green standing foot platform, streamlined green nose and real gray wheel/bogie assemblies attached to GREEN track with rectangular cross-ties. The primary text confirms standing rather than sitting. Choose a source-supported front two-row and track/bogie close portrait. Preserve standing posture and photographed restraint/platform hardware, green rail and dark supports; do not turn this into a seated or inverted coaster, invent hidden seat mechanisms, add new inversions or extend the full course. Keep incidental people non-identifiable without copied faces. Source capture date unverified; no present-operation claim. Compose only the photographed source section for this 4:5 portrait; never expand hidden hardware. Keep authentic physical attachments, believable photographic paint/materials and restrained blue-purple evening light. No new text, logo, watermark, UI, fantasy, copied faces or new vehicle.",
+          "outputSHA256": "980cd87b8e47cc195725660aadb6d57f1829508dea1df19bf36bbea77952adba"
+        },
+        {
+          "prompt": "Make a framing-only accuracy edit of image 1, the generated Riddler's Revenge image. Image 2 is the genuine official ride photo. Create a MUCH CLOSER 4:5 portrait of the actual green streamlined front nose, green front standing platform/guard rail, visible gray bogies and their attached green rail/cross-ties. Include only source-supported LOWER portions of the yellow restraints and riders' standing legs near the top crop. Crop out ALL heads and faces, the back rows and complete course. Keep the exact photographed green/yellow stand-up hardware, real attached wheels and dark source support, with the existing realistic blue-purple dusk treatment. Do not reconstruct hidden seat mechanisms or add a new body silhouette. Omit the question-mark nose graphic and ALL other lettering/logos. No UI, watermark or added ride geometry.",
+          "outputSHA256": "eb2ad76a8bdf4b0617ec40f6e7f940b93faf620c1743386a27056a787770080c"
+        }
+      ]
+    },
+    {
+      "parkId": 32,
+      "rideId": 155604170841252,
+      "rideName": "Circuit Breaker Grand Prix",
+      "alt": "Illustrated Circuit Breaker Grand Prix at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:05:13.900969+00:00",
+      "originalSHA256": "736c65c53bfa7b9876427a0aa7bdc466495bfca5cb0c762459a177cbcad3e06e",
+      "review": "Accepted: original and corrected generated pixels inspected against genuine official Circuit Breaker foreground cyan kart. Tight cyan/white/silver nose and actual side vents, steering-column edge, short LED strips and wide black bumper retained, with source concrete/tire barrier context. Rider portrait, headrest, advertising and race number excluded; no invented rear chassis.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F075b3d1634080f8ec1e292b8c893400e9cccacc6-7952x5304.jpg%3Fw%3D1920%26h%3D1080%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "alt": "Circuit",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/circuit-breaker-grand-prix",
+          "credit": "Six Flags / Magic Mountain (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "224d4ef692c9288d47d21252d10ec053cb674cd0fdd4bc268ce188a7b1fd5e20",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Circuit Breaker gallery photo shows actual low electric go-karts on a concrete course: wide BLACK protective wraparound bumper, cyan/light-blue nose and side panels with white/silver angular stripes, black central steering wheel, tall black seat/headrest, dark shoulder belts/red tabs and black safety hoop above the headrest. The foreground car is cyan; the background car is pink/yellow. Choose a close source-supported portrait of only the foreground cyan kart and real bumper/steering/harness hardware, preserving the actual tire-barrier course softly behind. Keep incidental driver non-identifiable and avoid copying source faces. Do not replace this with bumper cars, a road sports car, open-wheel race car, invented lower chassis or new track layout. Source capture date unverified; no present-operation claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-155604170841252-thumbnail.jpg",
+      "thumbnailSHA256": "15710af0d36fe1e738695eb4b7be572a32ade79e87464e472d7a1a68f17d5f40",
+      "thumbnailBytes": 20668,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-155604170841252-detail.jpg",
+      "detailSHA256": "39953cd9246d743b7f7439c02d203bbeff36f08d2fa699fe4ba7e807b676a4b8",
+      "detailBytes": 119859,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-155604170841252",
+      "prompt": "Make a framing-only accuracy edit of image 1, the generated Circuit Breaker go-kart image. Image 2 is the genuine official gallery photo. Use a MUCH CLOSER 4:5 portrait of ONLY the documented cyan/light-blue nose, white/silver angular paint, short front LED strips, black full-width protective bumper, real steering-column/upper steering-wheel edge and adjoining actual side panel vents. The upper crop must cut BELOW the rider's head/face and shoulders; exclude the person and headrest entirely where needed. Crop the entire rear end rather than revealing new chassis/interior. Remove ALL panel advertising, racing number, tiny lettering and logo marks while keeping the physical colored panels/stripes authentic. Preserve concrete course and actual tire barrier softly behind, with realistic restrained blue-purple dusk light. No invented wheel model, road car, new interior/seat, copied faces, UI or watermark.",
+      "promptSHA256": "b8fe3ef17c00ab6673cba59929fa7965cc561a0c05468a7705ca086db8cadd48",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Circuit Breaker Grand Prix at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: The genuine official Circuit Breaker gallery photo shows actual low electric go-karts on a concrete course: wide BLACK protective wraparound bumper, cyan/light-blue nose and side panels with white/silver angular stripes, black central steering wheel, tall black seat/headrest, dark shoulder belts/red tabs and black safety hoop above the headrest. The foreground car is cyan; the background car is pink/yellow. Choose a close source-supported portrait of only the foreground cyan kart and real bumper/steering/harness hardware, preserving the actual tire-barrier course softly behind. Keep incidental driver non-identifiable and avoid copying source faces. Do not replace this with bumper cars, a road sports car, open-wheel race car, invented lower chassis or new track layout. Source capture date unverified; no present-operation claim. Compose only the photographed source section for this 4:5 portrait; never expand hidden hardware. Keep authentic physical attachments, believable photographic paint/materials and restrained blue-purple evening light. No new text, logo, watermark, UI, fantasy, copied faces or new vehicle.",
+          "outputSHA256": "4d3ab237ad9f3c620b763c21033cc4dc7d339cb2774189a2c5ebbb6f700ea5ab"
+        },
+        {
+          "prompt": "Make a framing-only accuracy edit of image 1, the generated Circuit Breaker go-kart image. Image 2 is the genuine official gallery photo. Use a MUCH CLOSER 4:5 portrait of ONLY the documented cyan/light-blue nose, white/silver angular paint, short front LED strips, black full-width protective bumper, real steering-column/upper steering-wheel edge and adjoining actual side panel vents. The upper crop must cut BELOW the rider's head/face and shoulders; exclude the person and headrest entirely where needed. Crop the entire rear end rather than revealing new chassis/interior. Remove ALL panel advertising, racing number, tiny lettering and logo marks while keeping the physical colored panels/stripes authentic. Preserve concrete course and actual tire barrier softly behind, with realistic restrained blue-purple dusk light. No invented wheel model, road car, new interior/seat, copied faces, UI or watermark.",
+          "outputSHA256": "736c65c53bfa7b9876427a0aa7bdc466495bfca5cb0c762459a177cbcad3e06e"
+        }
+      ]
+    },
+    {
+      "parkId": 32,
+      "rideId": 162015253750108,
+      "rideName": "TEEN TITANS™ Turbo Spin",
+      "alt": "Illustrated TEEN TITANS™ Turbo Spin at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:00:02.552044+00:00",
+      "originalSHA256": "5cdfbf1cf0c9d52b55d798c01e466ab28c2845052298c84e1424adb7efc1a283",
+      "review": "Accepted: actual generated pixels inspected against Jeremy Thompson's genuine 13 September 2022 interior photo. Real blue segmented disc floor, cropped light-blue central housing with attached radial rods, blue mesh standing bays/black rectangular back pads and yellow rope chains retained. No invented seated ride, complete underside/lift arm or superhero figure. Historical source date explicit.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Teen_Titans_Turbo_Spin_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+          "alt": "Interior blue standing bays and central housing of Teen Titans Turbo Spin, 13 September 2022",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Teen_Titans_Turbo_Spin_2.jpg",
+          "credit": "Jeremy Thompson (13 September 2022)",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+          "sha256": "4e5f6fed99c529ecd71434e2ecc3413a5169fd0355a1bddef66e1b62b9adae73",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Jeremy Thompson's genuine 13 September 2022 photo shows the real interior of Teen Titans Turbo Spin after the rebrand: BLUE circular segmented metal floor, light-blue cylindrical central housing with tall blue radial tension rods attached above, real blue perimeter mesh standing bays with tall BLACK rectangular back pads and YELLOW rope chains across the front, slender blue railings and trees beyond. Use only a photographed close/medium wedge of this interior: a section of blue floor, three actual standing bays/pads/yellow chains and source-supported rods; the central housing can run through the left crop. Preserve actual standing-wall geometry and mechanical attachments. Do not invent seats, shoulder restraints, a full machine underside/lift arm, a new exterior disc or superhero figures. Explicit historical 2022 appearance, not proof of current paint or operation."
+        }
+      ],
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+      "thumbnailFile": "32-162015253750108-thumbnail.jpg",
+      "thumbnailSHA256": "ff6d1bd215f42fc3ff92c85f7be245f607437d86301ac9c7a437d7f0f91566fc",
+      "thumbnailBytes": 25737,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-162015253750108-detail.jpg",
+      "detailSHA256": "7b03e4b7cf89a92cbb288cb7cb1c38b8b4259de53f9204b63eecac5bef542846",
+      "detailBytes": 191790,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-162015253750108",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict TEEN TITANS™ Turbo Spin at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: Jeremy Thompson's genuine 13 September 2022 photo shows the real interior of Teen Titans Turbo Spin after the rebrand: BLUE circular segmented metal floor, light-blue cylindrical central housing with tall blue radial tension rods attached above, real blue perimeter mesh standing bays with tall BLACK rectangular back pads and YELLOW rope chains across the front, slender blue railings and trees beyond. Use only a photographed close/medium wedge of this interior: a section of blue floor, three actual standing bays/pads/yellow chains and source-supported rods; the central housing can run through the left crop. Preserve actual standing-wall geometry and mechanical attachments. Do not invent seats, shoulder restraints, a full machine underside/lift arm, a new exterior disc or superhero figures. Explicit historical 2022 appearance, not proof of current paint or operation. Compose only the photographed source section for this 4:5 portrait; never expand hidden hardware. Keep authentic physical attachments, believable photographic paint/materials and restrained blue-purple evening light. No new text, logo, watermark, UI, fantasy, copied faces or new vehicle.",
+      "promptSHA256": "0b267e5d93ab4ad7f8100e3ecc2518dfa37adbf65a8d5c91a2488043af17a31b",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
+      "rideId": 173173829829369,
+      "rideName": "Gold Rusher",
+      "alt": "Illustrated Gold Rusher at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:04:27.936304+00:00",
+      "originalSHA256": "60b47ee82c4fd3cd55e7f13e3b03725f2c2f66e0ec51be2737a8222cc056bc21",
+      "review": "Accepted: original and corrected generated pixels inspected against genuine official Gold Rusher photo. Actual ochre flat mine-cart front panel/dark-brown riveted strips, silver latch/gray underframe and attached yellow rail/spine retained. Rider heads/faces and following cars excluded; only documented black lap-bar/seat-back edge remains.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F1c46c6084da3f3c61af140deb2d6f7556244848a-6000x4000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders experiencing thrill on Gold Rusher roller coaster at Six Flags Magic Mountain with hands raised.",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/gold-rusher",
+          "credit": "Six Flags / Magic Mountain (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "3595d4177e6b7a22d7a32c43c38ec9475e686a6108035e1512e113826fe8a407",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Gold Rusher photo shows actual ochre/orange mine-cart cars edged in dark brown with flat rectangular wood-effect front panels, black molded bench backs and black lap bars, connected gray underframe/wheel assemblies on YELLOW tubular rails/spine with yellow cross-ties and supports among the actual planted hillside/trees. Choose the source-supported front one/two car section plus its real rail/bogie attachment in a close portrait. Preserve actual car shape/colors, low lap bars and photographed track structure; no new mine scene, locomotive boiler, separate road wheels, invented full course or rider likeness. Source capture date unverified; no present-operation claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-173173829829369-thumbnail.jpg",
+      "thumbnailSHA256": "85a423ba20b6a20bb12234f52c45967efe468b620eb6d1b352ccbda33a869df9",
+      "thumbnailBytes": 20816,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-173173829829369-detail.jpg",
+      "detailSHA256": "bc45b348f11bc87be5a34e472fe1e8fe27b7564027785a9b1787fcab9501e1b2",
+      "detailBytes": 117153,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-173173829829369",
+      "prompt": "Make a framing-only accuracy edit of image 1, the generated Gold Rusher image. Image 2 is the genuine official ride photo. Use a MUCH CLOSER 4:5 portrait of the documented ochre/orange flat mine-cart front panel with dark-brown riveted edge strips, visible silver front latch/gray underframe, black lap-bar top edge and actual wheel/bogie connection to yellow rails/tubular spine. Crop ALL rider heads/faces and nearly all following cars outside the upper frame; the top may include only the source-supported lap bar and partial black seat back, without reconstructing an empty hidden interior. Keep the actual front panel shape, rivets, underframe and connected rail geometry. No boiler, new complete vehicle, new track route or new lower mechanism. Maintain restrained realistic blue-purple dusk and source trees; no text, logo, UI or watermark.",
+      "promptSHA256": "83f64f6c8d3d0be763fdf2cfd3ac228a446795880d5a0011bb38cb294833a77b",
+      "generationSteps": [
+        {
+          "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Gold Rusher at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: The genuine official Gold Rusher photo shows actual ochre/orange mine-cart cars edged in dark brown with flat rectangular wood-effect front panels, black molded bench backs and black lap bars, connected gray underframe/wheel assemblies on YELLOW tubular rails/spine with yellow cross-ties and supports among the actual planted hillside/trees. Choose the source-supported front one/two car section plus its real rail/bogie attachment in a close portrait. Preserve actual car shape/colors, low lap bars and photographed track structure; no new mine scene, locomotive boiler, separate road wheels, invented full course or rider likeness. Source capture date unverified; no present-operation claim. Compose only the photographed source section for this 4:5 portrait; never expand hidden hardware. Keep authentic physical attachments, believable photographic paint/materials and restrained blue-purple evening light. No new text, logo, watermark, UI, fantasy, copied faces or new vehicle.",
+          "outputSHA256": "648cf84897faaaa8704f7cf7cf80d78109729643069838e23248f471c1e1f598"
+        },
+        {
+          "prompt": "Make a framing-only accuracy edit of image 1, the generated Gold Rusher image. Image 2 is the genuine official ride photo. Use a MUCH CLOSER 4:5 portrait of the documented ochre/orange flat mine-cart front panel with dark-brown riveted edge strips, visible silver front latch/gray underframe, black lap-bar top edge and actual wheel/bogie connection to yellow rails/tubular spine. Crop ALL rider heads/faces and nearly all following cars outside the upper frame; the top may include only the source-supported lap bar and partial black seat back, without reconstructing an empty hidden interior. Keep the actual front panel shape, rivets, underframe and connected rail geometry. No boiler, new complete vehicle, new track route or new lower mechanism. Maintain restrained realistic blue-purple dusk and source trees; no text, logo, UI or watermark.",
+          "outputSHA256": "60b47ee82c4fd3cd55e7f13e3b03725f2c2f66e0ec51be2737a8222cc056bc21"
+        }
+      ]
+    },
+    {
+      "parkId": 32,
+      "rideId": 180423033172999,
+      "rideName": "Goliath",
+      "alt": "Illustrated Goliath at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:07:09.926544+00:00",
+      "originalSHA256": "67e9fa0f879277d82f297e3c15f2fba0188f6940eb15551b9957a92937cea4da",
+      "review": "Accepted: generated pixels inspected against genuine official Magic Mountain Goliath photo. Actual yellow nose/car shells, black seats/lap-restraint shape, orange-red vented side panels, attached gray bogies and orange box-spine track/turquoise supports retained. Unrelated wooden coaster removed; no other park's Goliath or invented inversion.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Fef9355862db30b540f1ba9458e20c0e5e3666c47-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Goliath roller coaster at Six Flags Magic Mountain, featuring orange and blue tracks with riders on board.",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/goliath",
+          "credit": "Six Flags / Magic Mountain (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "a78057ac9cee3f6c19ec323b8a75edbc034103f1ee7f8f223f54baa5362656d5",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Magic Mountain Goliath photo shows the actual YELLOW train nose and car side shells, BLACK seated restraint/seat backs with orange-red vented side details, real gray wheel chassis attached to ORANGE box-spine steel track, and pale turquoise/BLUE tubular support columns and braces. Use a close source-supported front-car/track attachment portrait, preserving actual banked alignment, paint and rail/bogie relationship. Keep all rider heads/faces outside the upper crop; focus on photographed nose, lower car body, black lap-restraint edge and real track. Exclude the unrelated white wooden coaster at the source right edge and unseen full course. No green RMC wooden coaster, invented inversion or different park's Goliath. Capture date unverified; no present-operation claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-180423033172999-thumbnail.jpg",
+      "thumbnailSHA256": "024540a98c49629ef22169c118da196fec4ac1d37c9d865358df3e5dd563b40a",
+      "thumbnailBytes": 22973,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-180423033172999-detail.jpg",
+      "detailSHA256": "1a146176933d54743ffeded83dd59bd4c442279dbed9c93fd5197166dba17ef8",
+      "detailBytes": 127607,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-180423033172999",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Goliath at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: The genuine official Magic Mountain Goliath photo shows the actual YELLOW train nose and car side shells, BLACK seated restraint/seat backs with orange-red vented side details, real gray wheel chassis attached to ORANGE box-spine steel track, and pale turquoise/BLUE tubular support columns and braces. Use a close source-supported front-car/track attachment portrait, preserving actual banked alignment, paint and rail/bogie relationship. Keep all rider heads/faces outside the upper crop; focus on photographed nose, lower car body, black lap-restraint edge and real track. Exclude the unrelated white wooden coaster at the source right edge and unseen full course. No green RMC wooden coaster, invented inversion or different park's Goliath. Capture date unverified; no present-operation claim. Compose only the documented physical source section for this 4:5 portrait; never expand hidden hardware. Keep actual attached structures and believable photographic materials in restrained blue-purple dusk light. Exclude visible people and faces using the specified crop. No copied sign, added text, logo, UI or watermark.",
+      "promptSHA256": "f7fffd6d11b570312f9dd35c57ac1315df912cff819c2bfa4bd2134f00ad0186",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
+      "rideId": 180664674422930,
+      "rideName": "Merrie Melodies Merrie Go Round",
+      "alt": "Illustrated Merrie Melodies Merrie Go Round at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:07:33.794868+00:00",
+      "originalSHA256": "72d50ed179a966e68333a089ba3c0f04a9727995061768795eacfe1e1d14dd32",
+      "review": "Accepted: generated pixels inspected against the genuine 18 June 2026 refreshed Merrie Melodies carousel photo. Actual red/white fabric canopy, white relief fascia/scalloped edge, warm bulb rows, brass poles and source-supported partial white horse head/pink halter/green fence retained. Large foreground sign and hidden full horse/base excluded. Dated 2026 provenance.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.coasterpedia.net/1/19/Merrie_Melodies_Merrie_Go_Round_%28Six_Flags_Magic_Mountain%29_2026_01.jpg",
+          "sourceURL": "https://coasterpedia.net/wiki/File:Merrie_Melodies_Merrie_Go_Round_(Six_Flags_Magic_Mountain)_2026_01.jpg",
+          "credit": "Roller Coaster Philosophy (18 June 2026)",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+          "alt": "Refreshed Merrie Melodies Merrie Go Round at Six Flags Magic Mountain, 18 June 2026",
+          "sha256": "d41531b0ef285b5022314e42bf1b8f660f9d1f37d9750373b0b751d80e5e2a0e",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Roller Coaster Philosophy's genuine 18 June 2026 photo documents the refreshed Merrie Melodies Merrie Go Round: actual RED/WHITE striped fabric cone canopy, ornate WHITE relief-carved fascia with scalloped edges and small warm bulbs underneath, real brass-colored carousel poles, dark/white carved horse heads and GREEN perimeter fence. Choose ONLY a photographed left-side canopy/fascia/pole detail, with the visible white horse's upper head/pink halter as a partial source-supported lower detail if it fits. Crop the large foreground Bugs Bunny entrance sign completely out; keep the unseen full horses/legs, interior seat details, base and entire ride footprint outside frame rather than reconstructing them. This is the smaller Merrie Melodies carousel, not Grand American Carousel. Preserve the documented white ornamental fascia and 2026 red/white canopy. Dated 2026 appearance, not proof of present operation."
+        }
+      ],
+      "license": "CC BY 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+      "thumbnailFile": "32-180664674422930-thumbnail.jpg",
+      "thumbnailSHA256": "f62778816f89acf27ead647979319576eb643d6a9c15dee7283ccc56edf4ce5c",
+      "thumbnailBytes": 25132,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-180664674422930-detail.jpg",
+      "detailSHA256": "156de374949fc59fd027516d4fc23d57510e8a35fb2b71373f1f08c487c026b6",
+      "detailBytes": 167854,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-180664674422930",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Merrie Melodies Merrie Go Round at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: Roller Coaster Philosophy's genuine 18 June 2026 photo documents the refreshed Merrie Melodies Merrie Go Round: actual RED/WHITE striped fabric cone canopy, ornate WHITE relief-carved fascia with scalloped edges and small warm bulbs underneath, real brass-colored carousel poles, dark/white carved horse heads and GREEN perimeter fence. Choose ONLY a photographed left-side canopy/fascia/pole detail, with the visible white horse's upper head/pink halter as a partial source-supported lower detail if it fits. Crop the large foreground Bugs Bunny entrance sign completely out; keep the unseen full horses/legs, interior seat details, base and entire ride footprint outside frame rather than reconstructing them. This is the smaller Merrie Melodies carousel, not Grand American Carousel. Preserve the documented white ornamental fascia and 2026 red/white canopy. Dated 2026 appearance, not proof of present operation. Compose only the documented physical source section for this 4:5 portrait; never expand hidden hardware. Keep actual attached structures and believable photographic materials in restrained blue-purple dusk light. Exclude visible people and faces using the specified crop. No copied sign, added text, logo, UI or watermark.",
+      "promptSHA256": "f663a9ec1c8fb9016a54f3b84a19f4320c81b108dae270e2e2ebc0c35c6fc1f2",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
+      "rideId": 193806608194954,
+      "rideName": "Road Runner Express",
+      "alt": "Illustrated Road Runner Express at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:07:59.671195+00:00",
+      "originalSHA256": "291c31a781e534fd31a65378d37d1c2294136622b81741557b9a6d61f3d182a4",
+      "review": "Accepted: generated pixels inspected against genuine official Road Runner Express photo. Actual rounded white/red car shells, dark blue pads, black lap bars, dark-red rail/black supports and physical cactus/gravel context retained. No invented complete lead nose/full route or rider portrait. Source paint/capture date remains unverified.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2Ff91c87917ff6d28ce5a7c6e823e1a9cf12ea258a-1500x1000.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Children and adults riding the Road Runner Express coaster at Six Flags Magic Mountain.",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/road-runner-express",
+          "credit": "Six Flags / Magic Mountain (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "160e3f0d8eafc5b6fdb58a9bf2ed13927b703ce0649dc1b043224a46d33a4197",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Road Runner Express photo shows actual white rounded car side shells with RED lower/body accent panels, dark blue padded seat backs and BLACK rounded lap bars; the real rail is dark RED on BLACK supports, surrounded by gray gravel and physical cactus/desert scenic pieces. Choose a close source-supported center car side/seat/lap-bar detail; keep rider heads/faces out of the upper crop and crop the lower underframe where it is not established. The lead front/nose runs out of the source frame: do not invent a complete nose, rocket body, wheel mechanism or whole course. Keep the actual photographed white/red shell curvature, blue padding and lap bar; source capture date is unverified and current paint/operation is not established. No explosive action, new characters or copied faces."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-193806608194954-thumbnail.jpg",
+      "thumbnailSHA256": "79d86da6b884a91cbbfaf7f7d1a6aa257527a94d320fd096d824a883ad19611d",
+      "thumbnailBytes": 26346,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-193806608194954-detail.jpg",
+      "detailSHA256": "822697533b888c74ccc4b4c15c7f490bcd1241571e9f12823c319522904df295",
+      "detailBytes": 161102,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-193806608194954",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Road Runner Express at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: The genuine official Road Runner Express photo shows actual white rounded car side shells with RED lower/body accent panels, dark blue padded seat backs and BLACK rounded lap bars; the real rail is dark RED on BLACK supports, surrounded by gray gravel and physical cactus/desert scenic pieces. Choose a close source-supported center car side/seat/lap-bar detail; keep rider heads/faces out of the upper crop and crop the lower underframe where it is not established. The lead front/nose runs out of the source frame: do not invent a complete nose, rocket body, wheel mechanism or whole course. Keep the actual photographed white/red shell curvature, blue padding and lap bar; source capture date is unverified and current paint/operation is not established. No explosive action, new characters or copied faces. Compose only the documented physical source section for this 4:5 portrait; never expand hidden hardware. Keep actual attached structures and believable photographic materials in restrained blue-purple dusk light. Exclude visible people and faces using the specified crop. No copied sign, added text, logo, UI or watermark.",
+      "promptSHA256": "bc9308ae5b890d06dcb11a286c3d47d8698a0000c44955b163d9a88bedc94358",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
+      "rideId": 199533952105510,
+      "rideName": "CraZanity",
+      "alt": "Illustrated CraZanity at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:11:06.085592+00:00",
+      "originalSHA256": "08855670187bb1636e034cfa6c14d0c4ae03d95f8ee731c1fe519da3071ea047",
+      "review": "Accepted: generated pixels inspected against genuine official CraZanity photo. Actual six alternating blue/mint spokes, blue seat ring with yellow shells/black restraints, attached yellow/cream arm and mint hub/maintenance structure retained. Large graphic and unphotographed full base excluded; no Ferris wheel substitution.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F3c76d91df894c508cf2427c2088cff9fc8d0b427-3600x2400.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "Riders spinning on CraZanity at Six Flags Magic Mountain, a giant pendulum ride swinging high into the sky.",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/crazanity",
+          "credit": "Six Flags / Magic Mountain (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "390f90e52600eeeb1b2a7a88e043a4c88a89ae4905f3201dffaddecc623cffa9",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official CraZanity photo shows the actual circular gondola with SIX large radial spokes alternating BLUE and pale MINT, a blue outer ring carrying YELLOW seat shells with BLACK shoulder restraints, and a long YELLOW/cream arm physically attached to the mint central hub. The source also shows a real pale mint maintenance platform/arm housing. Choose a source-supported close/medium portrait of the actual spoke wheel and attached yellow arm, cropping the unphotographed full base and large entrance/logo panel. Preserve six-spoke structure, true colors and connected hub/arm; any riders remain tiny/non-identifiable within real restraints. Do not turn it into a Ferris wheel, a detached spinning disc, more spokes, new support legs or full unseen swing course. Capture date unverified; no present-operation claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-199533952105510-thumbnail.jpg",
+      "thumbnailSHA256": "9e4afd142f778525f0369f6d66f097f542eda224c3ac988dc919a9cc32c5b55d",
+      "thumbnailBytes": 20783,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-199533952105510-detail.jpg",
+      "detailSHA256": "2e47384281eaed904fe364c0b458324f60366534a0258239bae0800594ce881d",
+      "detailBytes": 135359,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-199533952105510",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict CraZanity at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: The genuine official CraZanity photo shows the actual circular gondola with SIX large radial spokes alternating BLUE and pale MINT, a blue outer ring carrying YELLOW seat shells with BLACK shoulder restraints, and a long YELLOW/cream arm physically attached to the mint central hub. The source also shows a real pale mint maintenance platform/arm housing. Choose a source-supported close/medium portrait of the actual spoke wheel and attached yellow arm, cropping the unphotographed full base and large entrance/logo panel. Preserve six-spoke structure, true colors and connected hub/arm; any riders remain tiny/non-identifiable within real restraints. Do not turn it into a Ferris wheel, a detached spinning disc, more spokes, new support legs or full unseen swing course. Capture date unverified; no present-operation claim. Compose only the photographed source section for the 4:5 portrait and keep hidden hardware out of frame. Preserve actual paint, realistic physical connections and photographic materials in restrained blue-purple evening light. No new lettering, logo, UI, watermark, fantasy, copied faces or added vehicle.",
+      "promptSHA256": "4fa0930e7131fcb8a21a89501d3fd45cd315d5166f3b6ba71e20c525792186d5",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
+      "rideId": 209022932290751,
+      "rideName": "Funny Flyers",
+      "alt": "Illustrated Funny Flyers at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:12:30.902638+00:00",
+      "originalSHA256": "4056ef6122be0d4ea24e682bbf8371e005e647b1c31e027e275f5f1b5baa1d5e",
+      "review": "Accepted: generated pixels inspected against Jeremy Thompson's genuine 18 June 2026 Funny Flyers photo. Actual blue central mast/radial arms, silver pneumatic cylinders, partial gray central base and adjoining blue/yellow/red plane-body sections retained behind real green fence. Hidden full aircraft/underframe not reconstructed; entrance sign and rider portraits excluded.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.coasterpedia.net/9/99/Funny_Flyers_%28Six_Flags_Magic_Mountain%29_2026_01.jpg",
+          "sourceURL": "https://coasterpedia.net/wiki/File:Funny_Flyers_(Six_Flags_Magic_Mountain)_2026_01.jpg",
+          "credit": "Jeremy Thompson (18 June 2026)",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+          "alt": "Funny Flyers (Six Flags Magic Mountain) 2026 01.jpg",
+          "sha256": "f1678d14d99a45dd2898bbad0fd32208f5aac2396b2e77c19ac153772c2befb4",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Jeremy Thompson's genuine 18 June 2026 Funny Flyers photo shows the actual small plane spinner behind its green fence: BLUE radial support arms and central mast, two visible SILVER pneumatic cylinders, real gray angular central base, and actual low blue/green/yellow/red boxy plane bodies with small wings/propeller details. Use a close photographed section of the center mast/blue arm and silver cylinders with only the documented adjoining upper plane-body/wing section. Keep the green perimeter fence where it obscures lower hardware, and keep those hidden parts hidden. Crop all entrance lettering/Bugs Bunny sign, unrelated ride and visitors' faces. Do not expand a whole aircraft, unseen nose/wheels, extra mechanism, flying airplane or complete machine silhouette. Dated June 2026 appearance with no current-operation claim."
+        }
+      ],
+      "license": "CC BY 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+      "thumbnailFile": "32-209022932290751-thumbnail.jpg",
+      "thumbnailSHA256": "9ed62f2dbc093b62e45a61e78b680b352663117accb4ea3322ee76232048ea90",
+      "thumbnailBytes": 23035,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-209022932290751-detail.jpg",
+      "detailSHA256": "80c8d8a666476949d54d625e3000531ebc3aa2a0f5dbf1854b65da99b35274f3",
+      "detailBytes": 136032,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-209022932290751",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Funny Flyers at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: Jeremy Thompson's genuine 18 June 2026 Funny Flyers photo shows the actual small plane spinner behind its green fence: BLUE radial support arms and central mast, two visible SILVER pneumatic cylinders, real gray angular central base, and actual low blue/green/yellow/red boxy plane bodies with small wings/propeller details. Use a close photographed section of the center mast/blue arm and silver cylinders with only the documented adjoining upper plane-body/wing section. Keep the green perimeter fence where it obscures lower hardware, and keep those hidden parts hidden. Crop all entrance lettering/Bugs Bunny sign, unrelated ride and visitors' faces. Do not expand a whole aircraft, unseen nose/wheels, extra mechanism, flying airplane or complete machine silhouette. Dated June 2026 appearance with no current-operation claim. Compose only the photographed source section for the 4:5 portrait and keep hidden hardware out of frame. Preserve actual paint, realistic physical connections and photographic materials in restrained blue-purple evening light. No new lettering, logo, UI, watermark, fantasy, copied faces or added vehicle.",
+      "promptSHA256": "7a4f2579a1bad07f5a8286bad7f65c130bd671da7f89e45eea161f9846fde430",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
+      "rideId": 219109229968400,
+      "rideName": "Apocalypse",
+      "alt": "Illustrated Apocalypse at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:11:31.145908+00:00",
+      "originalSHA256": "dbb4be708e3bf8bee8ab5bed2f7ca1aab90941e3a57879b176a41105ffff726e",
+      "review": "Accepted: generated pixels inspected against genuine official Apocalypse photo. Real sweeping banked timber curve, dense trestle/X-brace lattice, stacked wood/dark steel running strips and service handrail retained. No train added to empty source section; unrelated red Sky Tower/orange coaster removed, no imagined full route.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://www.sixflags.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbsnrdz4t%2Fproduction%2F3666fe64812a7fcb25eca08721371079dcab55b7-3152x2213.jpg%3Fw%3D1920%26h%3D1066%26q%3D80%26fit%3Dclip%26auto%3Dformat%26dpr%3D2&w=1920&q=75",
+          "kind": "image",
+          "alt": "apocalypse ",
+          "sourceURL": "https://www.sixflags.com/magicmountain/attractions/apocalypse",
+          "credit": "Six Flags / Magic Mountain (reference publisher)",
+          "license": "Copyright Six Flags; source rights retained",
+          "licenseURL": "https://www.sixflags.com/terms-of-use",
+          "sha256": "7dfbbfa1b3a4c556d74a8ca2416891f000cea55a23f3e5a393193239994d7596",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "The genuine official Apocalypse photo shows the actual tan/brown wooden coaster's tightly banked sweeping curve, real dense timber trestle/X-brace lattice and stacked wood track with dark steel running strips, plus a narrow timber service walkway/handrail. Choose a source-supported close/medium portrait of the wooden banked curve and structural lattice. The photo contains no train at that section, so do not add a train or invent seats. Crop the unrelated red Sky Tower and orange coaster in the distance; do not reconstruct a full course, collapse/explosion, new inversion, steel hybrid rail or new base. Preserve believable weathered timber grain, bolts, actual bracing and real rail attachment. Capture date unverified; no present-operation claim."
+        }
+      ],
+      "license": null,
+      "licenseURL": null,
+      "thumbnailFile": "32-219109229968400-thumbnail.jpg",
+      "thumbnailSHA256": "4b7cb052006b2d8b285a5b030121efcec8a2818e9385c8d556c4c9a0c88ac768",
+      "thumbnailBytes": 28569,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-219109229968400-detail.jpg",
+      "detailSHA256": "1295a5fe3c1d22af84d1c147b31904e8591a0dfcb8da0c98cc0417b0ab1609da",
+      "detailBytes": 221044,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-219109229968400",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Apocalypse at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: The genuine official Apocalypse photo shows the actual tan/brown wooden coaster's tightly banked sweeping curve, real dense timber trestle/X-brace lattice and stacked wood track with dark steel running strips, plus a narrow timber service walkway/handrail. Choose a source-supported close/medium portrait of the wooden banked curve and structural lattice. The photo contains no train at that section, so do not add a train or invent seats. Crop the unrelated red Sky Tower and orange coaster in the distance; do not reconstruct a full course, collapse/explosion, new inversion, steel hybrid rail or new base. Preserve believable weathered timber grain, bolts, actual bracing and real rail attachment. Capture date unverified; no present-operation claim. Compose only the photographed source section for the 4:5 portrait and keep hidden hardware out of frame. Preserve actual paint, realistic physical connections and photographic materials in restrained blue-purple evening light. No new lettering, logo, UI, watermark, fantasy, copied faces or added vehicle.",
+      "promptSHA256": "d79d82c7e73d930b74ef534ccb56e1035e184f2e948db4fc8085dd05e1511817",
+      "generationSteps": []
+    },
+    {
+      "parkId": 32,
+      "rideId": 220709867186475,
+      "rideName": "Looney Ballooneys",
+      "alt": "Illustrated Looney Ballooneys at Six Flags Magic Mountain",
+      "kind": "ai-generated-illustration",
+      "generator": "built-in-imagegen",
+      "generatedAt": "2026-11-01T00:12:04.526329+00:00",
+      "originalSHA256": "6bb362f2547ac2d5cd1b170c383f7b12fc9e92bd75928709c9a031c8939e4e42",
+      "review": "Accepted: generated pixels inspected against genuine 18 June 2026 Looney Ballooneys photo. Solid cream/red and cream/yellow props with real seams/rivets, attached silver vertical poles, yellow wicker-textured basket/steering control and blue/gray central arm structure retained. Green fence still obscures lower hardware; no floating balloons or unrelated blocked ride.",
+      "styleRevision": 2,
+      "references": [
+        {
+          "url": "https://images.coasterpedia.net/c/c9/Looney_Ballooneys_%28Six_Flags_Magic_Mountain%29_2026_01.jpg",
+          "sourceURL": "https://coasterpedia.net/wiki/File:Looney_Ballooneys_(Six_Flags_Magic_Mountain)_2026_01.jpg",
+          "credit": "Roller Coaster Philosophy (18 June 2026)",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+          "alt": "Looney Ballooneys (Six Flags Magic Mountain) 2026 01.jpg",
+          "sha256": "5d1c030a8b23bfed335e2b8a5dc5fab0198e4c3ee20f649d74f2243730529197",
+          "pixelReviewed": true,
+          "sourceReviewed": true,
+          "review": "Roller Coaster Philosophy's genuine 18 June 2026 photo shows the actual Looney Ballooneys spinner: pastel cream/red, cream/yellow and cream/mint bulb-shaped solid balloon props with visible seams/rivets, attached by real straight SILVER vertical poles to YELLOW wicker-textured baskets with dark circular steering controls; pale blue central hub and gray/blue radial arms connect the baskets. Choose a close/medium source-supported portrait of the central cream/RED balloon, actual attached silver pole and upper yellow basket, with only a photographed section of neighboring cream/yellow prop and actual radial arm if it fits. Crop hidden basket underside/base and full footprint, keep green fence where it occludes hardware, exclude rider faces/entrance sign and unrelated rides. These are tethered mechanical ride props, not flying fabric hot-air balloons. Preserve June 2026 paint/structure; no new floating balloons, ropes instead of poles, imagined full base or present-operation claim."
+        }
+      ],
+      "license": "CC BY 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+      "thumbnailFile": "32-220709867186475-thumbnail.jpg",
+      "thumbnailSHA256": "389ca1637bd6ca3f454afaf169fc792183578c3c9485e6b80c8b6507f3ac59e1",
+      "thumbnailBytes": 20975,
+      "thumbnailPixels": [
+        256,
+        320
+      ],
+      "detailFile": "32-220709867186475-detail.jpg",
+      "detailSHA256": "80734a7ff46674beff669afb71572793a111cde576464845110226544a0ff608",
+      "detailBytes": 124693,
+      "detailPixels": [
+        768,
+        960
+      ],
+      "key": "32-220709867186475",
+      "prompt": "Create ONE portrait 4:5 realistic generated ride image for PIVOT. Image 1 is the inspected genuine photograph of this exact ride; preserve its actual hardware, materials, colors, seat restraints and connected physical geometry. Image 2 is only the private UI reference for restrained blue-purple evening mood: ignore all UI, text, logos and unrelated rides in image 2. Use believable photographic surfaces and perspective, natural dusk lighting, subtle practical highlights, much more realistic than a painted illustration. Keep the exact ride recognizable at small thumbnail size. No heavy brushwork, fantasy, excess orange glow, UI, frame, watermark or added lettering. This is generated artwork, not a documentary photo. Depict Looney Ballooneys at Six Flags Magic Mountain. Follow these source- and pixel-reviewed facts and limits: Roller Coaster Philosophy's genuine 18 June 2026 photo shows the actual Looney Ballooneys spinner: pastel cream/red, cream/yellow and cream/mint bulb-shaped solid balloon props with visible seams/rivets, attached by real straight SILVER vertical poles to YELLOW wicker-textured baskets with dark circular steering controls; pale blue central hub and gray/blue radial arms connect the baskets. Choose a close/medium source-supported portrait of the central cream/RED balloon, actual attached silver pole and upper yellow basket, with only a photographed section of neighboring cream/yellow prop and actual radial arm if it fits. Crop hidden basket underside/base and full footprint, keep green fence where it occludes hardware, exclude rider faces/entrance sign and unrelated rides. These are tethered mechanical ride props, not flying fabric hot-air balloons. Preserve June 2026 paint/structure; no new floating balloons, ropes instead of poles, imagined full base or present-operation claim. Compose only the photographed source section for the 4:5 portrait and keep hidden hardware out of frame. Preserve actual paint, realistic physical connections and photographic materials in restrained blue-purple evening light. No new lettering, logo, UI, watermark, fantasy, copied faces or added vehicle.",
+      "promptSHA256": "24fc8e61f08386dbf1f4ebdb8acaeceae94533eb813556461e6d4c3ed8d11d65",
       "generationSteps": []
     },
     {

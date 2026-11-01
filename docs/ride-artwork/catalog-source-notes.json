@@ -10,7 +10,20 @@
       "operatorSourceFinding": "The current operator notice states that X2 is permanently retired.",
       "oldRideURL": "https://www.sixflags.com/magicmountain/attractions/x2-coaster",
       "oldRideURLFinding": "Redirects to the general attractions page. Its generic blue-coaster photo is rejected as an X2 reference.",
-      "artworkTreatment": "Use a verified, explicitly dated historical photograph; do not imply present operation. Research remains in progress at milestone 227.",
+      "artworkTreatment": "Accepted artwork at milestone 249 uses Jeremy Thompson’s verified 3 March 2025 photograph (CC BY 2.0), with the historical date and permanent-retirement/catalog discrepancy explicit. No present-operation claim.",
+      "runtimeStatusChanged": false,
+      "catalogIDRemoved": false,
+      "referenceSourceURL": "https://commons.wikimedia.org/wiki/File:Six_Flags_Magic_Mountain_(54369053282).jpg"
+    },
+    {
+      "key": "32-151537078947755",
+      "rideName": "Magic Mover",
+      "reviewedOn": "2026-11-01",
+      "operatorSourceURL": "https://www.sixflags.com/magicmountain/attractions/magic-mover",
+      "operatorSourceFinding": "Current operator page identifies Magic Mover as the tram to the top of the hill. Its gallery includes a neighboring coaster rather than a clear funicular vehicle.",
+      "referenceSourceURL": "https://negative-g.com/six-flags-magic-mountain/2019/six-flags-magic-mountain-2019-19.htm",
+      "referenceSourceFinding": "Paul B. Drabek’s genuine June 16–18, 2019 photos document the funicular under its historical Helpful Honda Express branding.",
+      "artworkTreatment": "Generated artwork depicts the explicitly dated 2019 blue car appearance with old advertising omitted; current paint and operation are not established.",
       "runtimeStatusChanged": false,
       "catalogIDRemoved": false
     }
