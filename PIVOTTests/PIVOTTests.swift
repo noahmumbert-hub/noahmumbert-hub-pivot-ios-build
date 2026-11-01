@@ -323,6 +323,20 @@ final class PIVOTTests: XCTestCase {
     }
 
     @MainActor
+    func testMapSyntheticTransportUsesProductionDateContract() async throws {
+        let config = URLSessionConfiguration.ephemeral
+        config.protocolClasses = [MapRefreshTestURLProtocol.self]
+        let client = PivotAPIClient(baseURL: URL(string: "https://map-refresh-test.invalid")!,
+            session: URLSession(configuration: config))
+        let snapshot = try await client.snapshot(for: .magicKingdom)
+        let point = ParkMapPoint(id: "b2260923-9315-40fd-9c6b-44dd811dbe64", name: "Space Mountain", category: .ride,
+            latitude: 28.4, longitude: -81.5, rideId: 138)
+        XCTAssertNotNil(ParkMapRidePresentation.resolve(point: point, parkID: 6,
+            snapshot: snapshot, refreshFailed: false, at: Date()).waitMinutes,
+            "The synthetic HTTP transport must use the real ISO-8601 decoding contract")
+    }
+
+    @MainActor
     func testMapRefreshRequestsDecodeUpdateFailAndRecoverWithoutInventingWaits() async throws {
         let defaults = try XCTUnwrap(UserDefaults(suiteName: "map-refresh-\(UUID())"))
         defaults.set(6, forKey: "pivot.selectedPark")

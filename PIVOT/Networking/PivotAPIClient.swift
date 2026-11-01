@@ -226,7 +226,7 @@ actor PivotAPIClient {
 #if DEBUG
 /// Deterministic HTTP responses for the real RootView → DashboardStore → API
 /// refresh journey. No synthetic transport or payload is compiled into Release.
-private final class MapRefreshTestURLProtocol: URLProtocol, @unchecked Sendable {
+final class MapRefreshTestURLProtocol: URLProtocol, @unchecked Sendable {
     @MainActor private static var requestCount = 0
     override class func canInit(with request: URLRequest) -> Bool { true }
     override class func canonicalRequest(for request: URLRequest) -> URLRequest { request }
@@ -247,11 +247,13 @@ private final class MapRefreshTestURLProtocol: URLProtocol, @unchecked Sendable 
                     let now = Date()
                     let base = parkID == 6 ? NativeParkMapUITestScreen.rootSnapshot(at: now)
                         : ReferenceParkUITestFixture.snapshot(for: FloridaPark(rawValue: parkID)!, at: now)
-                    let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .secondsSince1970
+                    let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .iso8601
                     var payload = try JSONSerialization.jsonObject(with: encoder.encode(base)) as! [String: Any]
-                    let stamp = now.timeIntervalSince1970
+                    let formatter = ISO8601DateFormatter()
+                    let changedAt = formatter.string(from: now.addingTimeInterval(-3600))
+                    let providerAt = formatter.string(from: now.addingTimeInterval(manual && count == 5 ? -901 : 0))
                     payload["themeParksWiki"] = ["available": true, "cacheStale": false,
-                        "fetchedAt": stamp - (manual && count == 5 ? 901 : 0), "sourceUpdatedAt": stamp - 3600,
+                        "fetchedAt": providerAt, "sourceUpdatedAt": changedAt,
                         "matchedRideCount": 3, "unmatchedRides": [], "usedForWaitTimes": true,
                         "role": "PRIMARY", "statusSemantics": "Synthetic current provider status",
                         "usedForOperationalTraining": false,
@@ -261,10 +263,10 @@ private final class MapRefreshTestURLProtocol: URLProtocol, @unchecked Sendable 
                     payload["rides"] = (payload["rides"] as! [[String: Any]]).map { original in
                         var row = original
                         row["status"] = "OPEN"; row["isOpen"] = true; row["waitTime"] = wait
-                        row["lastUpdated"] = stamp - 3600
+                        row["lastUpdated"] = changedAt
                         row["themeParksWikiStatus"] = ["entityId": "synthetic-\(row["id"]!)",
                             "entityName": row["name"]!, "status": "OPERATING",
-                            "sourceUpdatedAt": stamp - 3600, "matchedBy": "ID", "sourceAgeSeconds": 3600]
+                            "sourceUpdatedAt": changedAt, "matchedBy": "ID", "sourceAgeSeconds": 3600]
                         return row
                     }
                     data = try JSONSerialization.data(withJSONObject: payload)
