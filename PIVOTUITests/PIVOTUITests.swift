@@ -1505,6 +1505,27 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Selected ride wait"].waitForExistence(timeout: 3), mapEvents(app))
     }
 
+    private func selectRootMapRide(_ name: String, app: XCUIApplication) {
+        let search = app.textFields["Search park places"]
+        XCTAssertTrue(search.waitForExistence(timeout: 10))
+        search.tap(); search.typeText(name + "\n")
+        app.buttons["Browse map places"].tap()
+        let row = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH 'map-place-row-' AND label BEGINSWITH %@", name)).firstMatch
+        XCTAssertTrue(row.waitForExistence(timeout: 10)); row.tap()
+        XCTAssertTrue(app.staticTexts["Selected ride wait"].waitForExistence(timeout: 10))
+    }
+
+    func testMapRefreshKeepsUnchangedProviderWaitOnActualMap() {
+        let app = rootFixture(["--reference-ui-park=5", "--ride-search-unchanged-provider"])
+        app.tabBars.buttons["Map"].tap()
+        selectRootMapRide("Guardians", app: app)
+        screenshot("Map unchanged provider wait baseline", app: app)
+        XCTAssertEqual(app.staticTexts["Selected ride wait"].label, "45 min")
+        app.buttons["Full screen map"].tap()
+        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
+        XCTAssertEqual(app.staticTexts["Selected ride wait"].label, "45 min")
+    }
+
     func testMapFullScreenPreservesSelectionFiltersAndCurrentWait() {
         let app = mapFixtureApp()
         chooseMapCategory("Rides", app: app)

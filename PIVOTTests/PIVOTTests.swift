@@ -303,6 +303,21 @@ final class PIVOTTests: XCTestCase {
     }
 
 
+    func testMapRefreshKeepsUnchangedWaitFromCurrentProviderSnapshot() {
+        let now = start.addingTimeInterval(3601)
+        let point = ParkMapPoint(id: "exact-ride", name: "Space Mountain", category: .ride,
+            latitude: 28.4, longitude: -81.5, rideId: 126)
+        let provider = ThemeParksWikiRideStatus(entityId: point.id, entityName: point.name,
+            status: "OPERATING", sourceUpdatedAt: start, matchedBy: "ID", sourceAgeSeconds: 3601)
+        let snapshot = makeSnapshot(sourceOffset: 3601,
+            themeParksWiki: makeThemeParksWikiSummary(fetchedAt: now),
+            ride: makeRide(status: .open, waitTime: 45, themeParksWikiStatus: provider))
+        let value = ParkMapRidePresentation.resolve(point: point, parkID: 6,
+            snapshot: snapshot, refreshFailed: false, at: now)
+        XCTAssertEqual(value.waitMinutes, 45,
+            "A fresh matched provider snapshot confirms the unchanged posted wait on Map too")
+    }
+
     func testMapRideWaitStatesNeverInventAWait() {
         let point = ParkMapPoint(id: "map-1", name: "Map ride", category: .ride,
                                  latitude: 28.4, longitude: -81.5, rideId: 1)

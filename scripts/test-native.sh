@@ -66,6 +66,11 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedSampleTimesRemainReadableAtLargestAccessibilitySize
       -only-testing:PIVOTUITests/PIVOTUITests/testMapFailedRefreshDoesNotPresentCachedWaitAsCurrent
     ) ;;
+  map-refresh)
+    test_options+=(
+      -only-testing:PIVOTTests/PIVOTTests/testMapRefreshKeepsUnchangedWaitFromCurrentProviderSnapshot
+      -only-testing:PIVOTUITests/PIVOTUITests/testMapRefreshKeepsUnchangedProviderWaitOnActualMap
+    ) ;;
   map-attribution)
     test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeBrowseFocusesRideAndRootWaitDetailsStayCurrent
