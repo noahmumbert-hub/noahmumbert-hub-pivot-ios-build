@@ -183,6 +183,34 @@ final class PIVOTUITests: XCTestCase {
         screenshot("Waits shared group filtered down status", app: app)
     }
 
+    func testBannerColdLaunchShowsParkAndSchedule() {
+        let app = rootFixture(["--reference-ui-park=64", "--ui-dark"])
+        defer { app.terminate() }
+        XCTAssertTrue(app.buttons["Change park. Current park: Islands of Adventure"].isHittable)
+        for identifier in ["park-hours-value", "park-early-entry-value"] {
+            let value = app.staticTexts[identifier]
+            let complete = NSPredicate { _, _ in value.exists && value.label.contains(" – ") }
+            XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: complete, object: nil)], timeout: 10), .completed,
+                           "The first Waits screen must display both complete schedule endpoints")
+        }
+        XCTAssertTrue(app.buttons["park-photo-credit-64"].isHittable)
+        screenshot("Park banner cold launch park and complete schedule", app: app)
+    }
+
+    private func assertParkBannerTouchTarget(_ frame: CGRect,
+                                              file: StaticString = #filePath, line: UInt = #line) {
+        let minimum: CGFloat = 44
+        for dimension in [frame.width, frame.height] {
+            // Native CGRect subtraction produced43.99999999999997 for44pt.
+            // Normalize at most8 floating-point ULPs, far below one pixel;
+            // a genuinely undersized dimension still fails the44pt assertion.
+            let normalized = abs(dimension - minimum) <= minimum.ulp * 8 ? minimum : dimension
+            XCTAssertTrue(dimension.isFinite, file: file, line: line)
+            XCTAssertGreaterThanOrEqual(normalized, minimum,
+                                        "The control needs a full44-point target; raw dimension \(dimension)", file: file, line: line)
+        }
+    }
+
     func testCompactParkBannerIslandsIsSmallerAndKeepsScheduleAndActions() {
         checkParkBanner(parkID: 64, name: "Islands of Adventure", category: .large,
                         extra: ["--ui-dark"], capture: "Islands standard")
@@ -236,8 +264,7 @@ final class PIVOTUITests: XCTestCase {
 
         centerFullyVisible(choose, in: app, file: file, line: line)
         assertContained(choose.frame, in: bounds.frame, "The park action and its wrapped name must remain inside the banner", file: file, line: line)
-        XCTAssertGreaterThanOrEqual(choose.frame.height, 44, file: file, line: line)
-        XCTAssertGreaterThanOrEqual(choose.frame.width, 44, file: file, line: line)
+        assertParkBannerTouchTarget(choose.frame, file: file, line: line)
         XCTAssertTrue(choose.isHittable, file: file, line: line)
         screenshot("Park banner \(capture) park action", app: app)
 
@@ -265,8 +292,7 @@ final class PIVOTUITests: XCTestCase {
         centerFullyVisible(credit, in: app, file: file, line: line)
         XCTAssertEqual(app.buttons.matching(identifier: "park-photo-credit-\(parkID)").count, 1, file: file, line: line)
         XCTAssertEqual(credit.label, "Photo credit", file: file, line: line)
-        XCTAssertGreaterThanOrEqual(credit.frame.width, 44, "The information action needs a full 44-point accessible width", file: file, line: line)
-        XCTAssertGreaterThanOrEqual(credit.frame.height, 44, "The information action needs a full 44-point accessible height", file: file, line: line)
+        assertParkBannerTouchTarget(credit.frame, file: file, line: line)
         assertContained(credit.frame, in: bounds.frame, "The information target must remain inside the banner", file: file, line: line)
         XCTAssertTrue(credit.isHittable, file: file, line: line)
         screenshot("Park banner \(capture) information target", app: app)
@@ -281,11 +307,19 @@ final class PIVOTUITests: XCTestCase {
         print("PARK_BANNER_INFORMATION_TARGET \(capture) frame=\(credit.frame) edge=\(edge)")
         credit.coordinate(withNormalizedOffset: edge).tap()
         XCTAssertTrue(app.navigationBars["Photo credit"].waitForExistence(timeout: 5), file: file, line: line)
+        if category != .large {
+            let probe = app.staticTexts["park-photo-credit-type-probe"]
+            XCTAssertTrue(probe.waitForExistence(timeout: 5), "The presented sheet must receive the requested native text-size fixture", file: file, line: line)
+            let font = UIFont.preferredFont(forTextStyle: .body,
+                compatibleWith: UITraitCollection(preferredContentSizeCategory: category))
+            XCTAssertGreaterThanOrEqual(probe.frame.height, font.lineHeight - 3,
+                                        "The photo-credit sheet must use the actual requested accessibility category", file: file, line: line)
+        }
         let source = app.descendants(matching: .any).matching(NSPredicate(format: "label == 'Original photo'")).firstMatch
         centerFullyVisible(source, in: app, file: file, line: line)
+        screenshot("Park banner \(capture) original photo link", app: app)
         assertFullTextLayout(source, style: .body, category: category, file: file, line: line)
         XCTAssertTrue(source.isHittable, file: file, line: line)
-        screenshot("Park banner \(capture) original photo link", app: app)
         app.buttons["Done"].tap()
 
         centerFullyVisible(choose, in: app, file: file, line: line)

@@ -210,6 +210,7 @@ private struct ParkPhotoCreditView: View {
             }.navigationTitle("Photo credit").navigationBarTitleDisplayMode(.inline)
                 .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
         }
+        .modifier(PivotUITestTypeSize(probeIdentifier: "park-photo-credit-type-probe"))
     }
 }
 

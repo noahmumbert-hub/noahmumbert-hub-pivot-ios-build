@@ -60,6 +60,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
   all) ;;
   park-banner)
     test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testBannerColdLaunchShowsParkAndSchedule
       -only-testing:PIVOTUITests/PIVOTUITests/testCompactParkBannerIslandsIsSmallerAndKeepsScheduleAndActions
       -only-testing:PIVOTUITests/PIVOTUITests/testCompactParkBannerEPCOTIsSmallerAndKeepsScheduleAndActions
       -only-testing:PIVOTUITests/PIVOTUITests/testCompactParkBannerIslandsKeepsAccessibilityScheduleAndActions
