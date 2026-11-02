@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-01T14:57:33.408019+00:00",
+  "status": "Seven exact photographic identities remain unresolved after recorded provider, operator-map and photo research. These are not image-generation moderation blocks; no requests were submitted.",
+  "records": [
+    {
+      "key": "58-75810765704637",
+      "rideName": "Zombies Interactive Dark Ride",
+      "parkID": 58,
+      "parkName": "Canada’s Wonderland",
+      "status": "source-photo-identity-unresolved",
+      "generationAttempts": 0,
+      "reason": "Historical operator releases establish Zombies4D inside Wonder Mountain. Current provider names Zombies Interactive Dark Ride, but no authentic exact overlay/physical ride photo identified. Do not silently substitute unrelated zombie artwork or ordinary Guardian imagery. Current operation/overlay identity unverified.",
+      "researchEvidenceSHA256": "ca84b1ae65305a21329e0e7b44e9ea90b469b8c76a3e5c349e2a9d3b64289cc8",
+      "smallestNextStep": "Provide a labeled authentic photo or operator confirmation connecting this exact catalog ID/alias to the physical attraction or route; the Canadian seasonal overlay also needs its exact identity confirmed.",
+      "primaryHistoricalEvidence": [
+        "https://www.newswire.ca/news-releases/halloween-haunt-opens-this-friday-with-all-new-zombies-4d-ride-515728771.html",
+        "https://www.newswire.ca/news-releases/halloween-haunt-opens-for-13-terrifying-nights-in-october-530059651.html"
+      ],
+      "catalogIdentityEvidenceSHA256": "db0b63d9aa35cbb9cc58fe3547097219955dfe3540456e06983fb5cfe01a17ac"
+    },
+    {
+      "key": "44-38291664119772",
+      "rideName": "zSplash Island - Dolphin",
+      "parkID": 44,
+      "parkName": "Hurricane Harbor New Jersey",
+      "status": "source-photo-identity-unresolved",
+      "generationAttempts": 0,
+      "reason": "Current provider name/coordinates and current 2026 operator map reviewed, but no verified real photograph identifies the exact individual Splash Island route under this internal catalog label. Whole-complex hero cannot establish which slide is Dolphin/Shark or the provider Kiddie Body Slides group; current gallery includes lazy river images and pre-opening press-model images use different colors. Do not invent or substitute Discovery Bay slides at different coordinates.",
+      "researchEvidenceSHA256": "5faae06d0aee9aabe5c2cb411d58c31f3d1239d59f9c623b9f5a4baa67e1489e",
+      "smallestNextStep": "Provide a labeled authentic photo or operator confirmation connecting this exact catalog ID/alias to the physical attraction or route; the Canadian seasonal overlay also needs its exact identity confirmed.",
+      "providerEvidence": {
+        "url": "https://api.themeparks.wiki/v1/entity/f8e6f958-cc06-41b5-93d4-ae00f6473edc",
+        "status": 200,
+        "sha256": "80c10f5f1cd4035f385f9256b39e87472bf62ab7f5d75786fb435c463f70efb1",
+        "externalID": "RIDE-925-00102",
+        "location": {
+          "latitude": 40.145629,
+          "longitude": -74.437604
+        }
+      }
+    },
+    {
+      "key": "44-159313949777504",
+      "rideName": "Kiddie Body Slides",
+      "parkID": 44,
+      "parkName": "Hurricane Harbor New Jersey",
+      "status": "source-photo-identity-unresolved",
+      "generationAttempts": 0,
+      "reason": "Current provider name/coordinates and current 2026 operator map reviewed, but no verified real photograph identifies the exact individual Splash Island route under this internal catalog label. Whole-complex hero cannot establish which slide is Dolphin/Shark or the provider Kiddie Body Slides group; current gallery includes lazy river images and pre-opening press-model images use different colors. Do not invent or substitute Discovery Bay slides at different coordinates.",
+      "researchEvidenceSHA256": "5faae06d0aee9aabe5c2cb411d58c31f3d1239d59f9c623b9f5a4baa67e1489e",
+      "smallestNextStep": "Provide a labeled authentic photo or operator confirmation connecting this exact catalog ID/alias to the physical attraction or route; the Canadian seasonal overlay also needs its exact identity confirmed.",
+      "providerEvidence": {
+        "url": "https://api.themeparks.wiki/v1/entity/355d88bd-ff1c-47ca-80a4-73bfad22434a",
+        "status": 200,
+        "sha256": "5da2add743dac102f578c305a1134818dda4c3d234c3de36e1737cf5f905c85f",
+        "externalID": "RIDE-925-00109",
+        "location": {
+          "latitude": 40.145542,
+          "longitude": -74.437768
+        }
+      }
+    },
+    {
+      "key": "44-246468629641661",
+      "rideName": "zSplash Island - Shark",
+      "parkID": 44,
+      "parkName": "Hurricane Harbor New Jersey",
+      "status": "source-photo-identity-unresolved",
+      "generationAttempts": 0,
+      "reason": "Current provider name/coordinates and current 2026 operator map reviewed, but no verified real photograph identifies the exact individual Splash Island route under this internal catalog label. Whole-complex hero cannot establish which slide is Dolphin/Shark or the provider Kiddie Body Slides group; current gallery includes lazy river images and pre-opening press-model images use different colors. Do not invent or substitute Discovery Bay slides at different coordinates.",
+      "researchEvidenceSHA256": "5faae06d0aee9aabe5c2cb411d58c31f3d1239d59f9c623b9f5a4baa67e1489e",
+      "smallestNextStep": "Provide a labeled authentic photo or operator confirmation connecting this exact catalog ID/alias to the physical attraction or route; the Canadian seasonal overlay also needs its exact identity confirmed.",
+      "providerEvidence": {
+        "url": "https://api.themeparks.wiki/v1/entity/18c629db-7f88-4658-a2fb-a929b6ece8ea",
+        "status": 200,
+        "sha256": "b0290b95594c9a30223c73917b0ef737f4de8ab3c10e34daa24478ce8e94ebc8",
+        "externalID": "RIDE-925-00104",
+        "location": {
+          "latitude": 40.145629,
+          "longitude": -74.437604
+        }
+      }
+    },
+    {
+      "key": "43-30709173790630",
+      "rideName": "HH - Lily Pads",
+      "parkID": 43,
+      "parkName": "Six Flags New England",
+      "status": "source-photo-identity-unresolved",
+      "generationAttempts": 0,
+      "reason": "Guide lists Hurricane Falls and other broad pool/play areas but not the three exact internal names; real photos cannot be mapped confidently to each requested catalog ID. The operator guide names Hurricane Falls in South, and Hurricane Bay/Hook Lagoon/Kiddie Pirate Ships in North, but does not name HH - Lily Pads, HH - Hurricane Falls (Hot), or HH - Shipwreck Cay. It does not establish an exact catalog-to-photo mapping for those three internal provider names. No generated request made for them.",
+      "researchEvidenceSHA256": "70d095f87bdae89c6c773a2747bca73b2b2fc5b865c11b640e3c73aaba055bff",
+      "providerEvidence": {
+        "url": "https://api.themeparks.wiki/v1/entity/1814298b-9972-406f-8a0e-7de24a868243",
+        "status": 200,
+        "sha256": "585caad54b4b0afc82fd2194a3b0440debc4809fd42e64e867a6bfb769e32cfb",
+        "externalID": "RIDE-935-00056",
+        "location": {
+          "latitude": 42.03428,
+          "longitude": -72.61465
+        }
+      },
+      "operatorGuideEvidence": {
+        "sourceURL": "https://www.sixflags.com/newengland/directions",
+        "documentURL": "https://media.qrtiger.com/files/2026/04/sfne-park-map.pdf",
+        "status": 200,
+        "sha256": "c1734adbf0405082b43af938c0ab7520e8321a33012574a73b9147a740b0105a",
+        "pixelReviewed": true,
+        "use": "Identity research only; diagram is not a photographic reference"
+      },
+      "smallestNextStep": "Provide a labeled authentic photo or operator confirmation connecting this exact provider alias/ID to the corresponding physical pool, play area or slide route."
+    },
+    {
+      "key": "43-232317719821764",
+      "rideName": "HH - Hurricane Falls (Hot)",
+      "parkID": 43,
+      "parkName": "Six Flags New England",
+      "status": "source-photo-identity-unresolved",
+      "generationAttempts": 0,
+      "reason": "Guide lists Hurricane Falls and other broad pool/play areas but not the three exact internal names; real photos cannot be mapped confidently to each requested catalog ID. The operator guide names Hurricane Falls in South, and Hurricane Bay/Hook Lagoon/Kiddie Pirate Ships in North, but does not name HH - Lily Pads, HH - Hurricane Falls (Hot), or HH - Shipwreck Cay. It does not establish an exact catalog-to-photo mapping for those three internal provider names. No generated request made for them.",
+      "researchEvidenceSHA256": "70d095f87bdae89c6c773a2747bca73b2b2fc5b865c11b640e3c73aaba055bff",
+      "providerEvidence": {
+        "url": "https://api.themeparks.wiki/v1/entity/1153d355-21fd-4a93-8bed-92d34a3f6f86",
+        "status": 200,
+        "sha256": "f83d3102829905633fcf624f129f2d52e4ab8f7261c09f4e19b796df5fbaf9b9",
+        "externalID": "RIDE-935-00057",
+        "location": {
+          "latitude": 42.03419,
+          "longitude": -72.61443
+        }
+      },
+      "operatorGuideEvidence": {
+        "sourceURL": "https://www.sixflags.com/newengland/directions",
+        "documentURL": "https://media.qrtiger.com/files/2026/04/sfne-park-map.pdf",
+        "status": 200,
+        "sha256": "c1734adbf0405082b43af938c0ab7520e8321a33012574a73b9147a740b0105a",
+        "pixelReviewed": true,
+        "use": "Identity research only; diagram is not a photographic reference"
+      },
+      "smallestNextStep": "Provide a labeled authentic photo or operator confirmation connecting this exact provider alias/ID to the corresponding physical pool, play area or slide route."
+    },
+    {
+      "key": "43-257901768120457",
+      "rideName": "HH - Shipwreck Cay",
+      "parkID": 43,
+      "parkName": "Six Flags New England",
+      "status": "source-photo-identity-unresolved",
+      "generationAttempts": 0,
+      "reason": "Guide lists Hurricane Falls and other broad pool/play areas but not the three exact internal names; real photos cannot be mapped confidently to each requested catalog ID. The operator guide names Hurricane Falls in South, and Hurricane Bay/Hook Lagoon/Kiddie Pirate Ships in North, but does not name HH - Lily Pads, HH - Hurricane Falls (Hot), or HH - Shipwreck Cay. It does not establish an exact catalog-to-photo mapping for those three internal provider names. No generated request made for them.",
+      "researchEvidenceSHA256": "70d095f87bdae89c6c773a2747bca73b2b2fc5b865c11b640e3c73aaba055bff",
+      "providerEvidence": {
+        "url": "https://api.themeparks.wiki/v1/entity/66ee8538-942d-461e-85cc-92ccae8d1dcf",
+        "status": 200,
+        "sha256": "ac3d86a91cc2c64fe7e224350ec48465a9c076dffcf9a892097f7e5eba87239f",
+        "externalID": "RIDE-935-00050",
+        "location": {
+          "latitude": 42.03591,
+          "longitude": -72.61515
+        }
+      },
+      "operatorGuideEvidence": {
+        "sourceURL": "https://www.sixflags.com/newengland/directions",
+        "documentURL": "https://media.qrtiger.com/files/2026/04/sfne-park-map.pdf",
+        "status": 200,
+        "sha256": "c1734adbf0405082b43af938c0ab7520e8321a33012574a73b9147a740b0105a",
+        "pixelReviewed": true,
+        "use": "Identity research only; diagram is not a photographic reference"
+      },
+      "smallestNextStep": "Provide a labeled authentic photo or operator confirmation connecting this exact provider alias/ID to the corresponding physical pool, play area or slide route."
+    }
+  ]
+}

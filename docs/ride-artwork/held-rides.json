@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "key": "33-243330476059929",
+      "rideName": "Sylvester’s Pounce & Bounce",
+      "parkName": "Six Flags Discovery Kingdom",
+      "state": "moderation-related-hold-no-generation-attempt",
+      "relatedBlockedKey": "32-60144663924757",
+      "generationAttempted": false,
+      "reason": "The distinct park reference depicts a closely matching Sylvester figure and children's drop-tower scene to an earlier blocked request. Held without another generation or an altered workaround. This is not a new tool moderation error and has no request ID.",
+      "sourceURL": "https://www.sixflags.com/discoverykingdom/attractions/sylvesters-pounce-bounce"
+    },
+    {
+      "key": "34-154498066496363",
+      "rideName": "Sylvester and Tweety Pounce and Bounce",
+      "parkName": "Six Flags Over Texas",
+      "state": "moderation-related-hold-no-generation-attempt",
+      "relatedBlockedKey": "32-60144663924757",
+      "generationAttempted": false,
+      "reason": "Closely related Sylvester and Tweety children’s drop-tower concept to the earlier blocked request. Held without submitting generation or a cropped/rephrased workaround; no new tool moderation failure or request ID.",
+      "sourceURL": "https://www.sixflags.com/overtexas/attractions/sylvester-and-tweety-pounce-and-bounce"
+    }
+  ]
+}

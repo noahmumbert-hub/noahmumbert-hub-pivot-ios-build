@@ -70,6 +70,25 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedSampleTimesRemainReadableAtLargestAccessibilitySize
       -only-testing:PIVOTUITests/PIVOTUITests/testMapFailedRefreshDoesNotPresentCachedWaitAsCurrent
     ) ;;
+  artwork-delivery)
+    test_options+=(
+      -only-testing:PIVOTTests/PIVOTTests/testGeneratedIllustrationsAreBundledBoundedAndAttributed
+      -only-testing:PIVOTTests/PIVOTTests/testGlobalArtworkDeliveryMatchesAcceptedIDsAndKeepsBlockedFallbacks
+      -only-testing:PIVOTTests/PIVOTTests/testGeneratedIllustrationsRequireAnExactParkAndRideMatch
+      -only-testing:PIVOTTests/PIVOTTests/testIllustrationCacheLoadsPackagedFilesAndHandlesMissingFiles
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup1
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup2
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup3
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup4
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup5
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup6
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup7
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup8
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryCreditsRemainReadableAtLargestAccessibilitySize
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryKeepsExcludedDraftAndPhotoFallbackTruthful
+      -only-testing:PIVOTUITests/PIVOTUITests/testGeneratedRideIllustrationLoadsWithCreditsAndPreservesWaits
+      -only-testing:PIVOTUITests/PIVOTUITests/testGeneratedRideWithReservedPhotoRightsKeepsAccurateCredits
+    ) ;;
   park-picker)
     test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testExpandedParkCanBeFoundAndSelected
@@ -200,7 +219,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
     ) ;;
   *)
-    echo 'Unsupported PIVOT_TEST_SCOPE; use all, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, or map-refresh.' >&2
+    echo 'Unsupported PIVOT_TEST_SCOPE; use all, artwork-delivery, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, or map-refresh.' >&2
     exit 1 ;;
 esac
 python3 - <<'PY'

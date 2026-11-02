@@ -1208,6 +1208,192 @@ final class PIVOTUITests: XCTestCase {
         add(attachment)
     }
 
+    private struct ArtworkDeliveryCase {
+        let parkID: Int
+        let rideID: Int
+        let parkName: String
+        let rideName: String
+        let references: [(credit: String, rights: String)]
+        let adaptation: String?
+        var key: String { "\(parkID)-\(rideID)" }
+    }
+
+    private var artworkDeliveryCases: [ArtworkDeliveryCase] {
+        [
+            .init(parkID: 5, rideID: 10916, parkName: "EPCOT", rideName: "Guardians of the Galaxy: Cosmic Rewind", references: [(credit: "Jedi94", rights: "CC BY-SA 4.0")], adaptation: "CC BY-SA 4.0"),
+            .init(parkID: 6, rideID: 129, parkName: "Magic Kingdom Park", rideName: "Seven Dwarfs Mine Train", references: [(credit: "Carter Johnson", rights: "CC BY 2.0")], adaptation: "CC BY 2.0"),
+            .init(parkID: 7, rideID: 5476, parkName: "Disney’s Hollywood Studios", rideName: "Slinky Dog Dash", references: [(credit: "Freddo", rights: "CC BY-SA 4.0")], adaptation: "CC BY-SA 4.0"),
+            .init(parkID: 8, rideID: 110, parkName: "Disney’s Animal Kingdom", rideName: "Expedition Everest - Legend of the Forbidden Mountain", references: [(credit: "Benjamin D. Esham (bdesham)", rights: "CC BY-SA 4.0")], adaptation: "CC BY-SA 4.0"),
+            .init(parkID: 21, rideID: 67702520791477, parkName: "SeaWorld Orlando", rideName: "SEAQuest: Legends of the Deep", references: [(credit: "Vekoma Rides Manufacturing B.V., official November 30 2025 IAAPA release; individual photographer not stated", rights: "Vekoma retains original-photo rights; photographic reference only, no permission to redistribute original asserted.")], adaptation: nil),
+            .init(parkID: 24, rideID: 62020843059756, parkName: "Busch Gardens Tampa Bay", rideName: "Cheetah Hunt", references: [(credit: "Busch Gardens / United Parks & Resorts (reference publisher)", rights: "Copyright United Parks & Resorts; source rights retained")], adaptation: nil),
+            .init(parkID: 32, rideID: 6173967272242, parkName: "Six Flags Magic Mountain", rideName: "WONDER WOMAN™ Flight of Courage", references: [(credit: "Six Flags (reference publisher)", rights: "Copyright Six Flags; source rights retained")], adaptation: nil),
+            .init(parkID: 33, rideID: 108157577665976, parkName: "Six Flags Discovery Kingdom", rideName: "Medusa", references: [(credit: "Six Flags / Discovery Kingdom (reference publisher)", rights: "Copyright Six Flags; source rights retained")], adaptation: nil),
+            .init(parkID: 34, rideID: 6240016210695, parkName: "Six Flags Over Texas", rideName: "Runaway Mine Train", references: [(credit: "Six Flags (reference publisher)", rights: "Copyright Six Flags; source rights retained")], adaptation: nil),
+            .init(parkID: 35, rideID: 355690524725, parkName: "Six Flags Over Georgia", rideName: "Twisted Cyclone", references: [(credit: "Six Flags (reference publisher)", rights: "Copyright Six Flags; source rights retained")], adaptation: nil),
+            .init(parkID: 37, rideID: 10024564956838, parkName: "Six Flags Great Adventure", rideName: "Jersey Devil Coaster", references: [(credit: "Six Flags (reference publisher)", rights: "Copyright Six Flags; source rights retained")], adaptation: nil),
+            .init(parkID: 38, rideID: 94405110155494, parkName: "Six Flags Great America", rideName: "Goliath", references: [(credit: "Six Flags / Great America (reference publisher)", rights: "Copyright Six Flags; source rights retained")], adaptation: nil),
+            .init(parkID: 39, rideID: 1502550413799, parkName: "Six Flags Fiesta Texas", rideName: "JOKER™: Carnival of Chaos", references: [(credit: "Six Flags / Fiesta Texas (reference publisher)", rights: "Copyright Six Flags; source rights retained")], adaptation: nil),
+            .init(parkID: 41, rideID: 66829960275970, parkName: "Hurricane Harbor Los Angeles", rideName: "Tornado", references: [(credit: "Six Flags / Hurricane Harbor Los Angeles (reference publisher)", rights: "Copyright Six Flags; source rights retained")], adaptation: nil),
+            .init(parkID: 43, rideID: 263165555937179, parkName: "Six Flags New England", rideName: "SUPERMAN™ The Ride", references: [(credit: "Six Flags / New England (reference publisher)", rights: "Copyright Six Flags; source rights retained")], adaptation: nil),
+            .init(parkID: 44, rideID: 3285667514807, parkName: "Hurricane Harbor New Jersey", rideName: "Hurricane Mountain", references: [(credit: "Six Flags (reference publisher)", rights: "Copyright Six Flags; source rights retained")], adaptation: nil),
+            .init(parkID: 50, rideID: 146600727393618, parkName: "Cedar Point", rideName: "Millennium Force", references: [(credit: "Six Flags (reference publisher)", rights: "Copyright Six Flags; source rights retained")], adaptation: nil),
+            .init(parkID: 57, rideID: 187367662225851, parkName: "California’s Great America", rideName: "Gold Striker", references: [(credit: "Six Flags / California's Great America (reference publisher)", rights: "Copyright source photographer/operator; rights retained")], adaptation: nil),
+            .init(parkID: 58, rideID: 3561804630704, parkName: "Canada’s Wonderland", rideName: "Behemoth", references: [(credit: "Six Flags (reference publisher)", rights: "Copyright Six Flags; source rights retained")], adaptation: nil),
+            .init(parkID: 59, rideID: 255684283139198, parkName: "Carowinds", rideName: "Fury 325", references: [(credit: "Paul B. Drabek / Negative-G (original photographer and publisher)", rights: "Copyright Paul B. Drabek; rights retained")], adaptation: nil),
+            .init(parkID: 60, rideID: 217175995369859, parkName: "Kings Island", rideName: "The Beast", references: [(credit: "Six Flags (reference publisher)", rights: "Copyright Six Flags; source rights retained")], adaptation: nil),
+            .init(parkID: 61, rideID: 52035568535322, parkName: "Knott’s Berry Farm", rideName: "GhostRider", references: [(credit: "Six Flags / Knott's Berry Farm (reference publisher)", rights: "Copyright Six Flags; source rights retained")], adaptation: nil),
+            .init(parkID: 62, rideID: 2757390716801, parkName: "Kings Dominion", rideName: "Rapterra", references: [(credit: "Six Flags (reference publisher)", rights: "Copyright Six Flags; source rights retained")], adaptation: nil),
+            .init(parkID: 64, rideID: 6682, parkName: "Islands of Adventure", rideName: "Hagrid's Magical Creatures Motorbike Adventure™", references: [(credit: "Universal Orlando Resort own-attraction photography", rights: "Copyright Universal; photographic reference only, rights retained")], adaptation: nil),
+            .init(parkID: 65, rideID: 5996, parkName: "Universal Studios Florida", rideName: "MEN IN BLACK™ Alien Attack!™", references: [(credit: "Orlando Informer attraction photography; individual photographer not stated", rights: "Reference only; copyright Orlando Informer/photographer retained")], adaptation: nil),
+            .init(parkID: 67, rideID: 16595, parkName: "Volcano Bay", rideName: "Krakatau™ Aqua Coaster", references: [(credit: "Universal Orlando Resort (reference publisher)", rights: "Copyright Universal Studios; source rights retained")], adaptation: nil),
+            .init(parkID: 69, rideID: 264332998053273, parkName: "Dorney Park & Wildwater Kingdom", rideName: "Talon", references: [(credit: "Six Flags / Dorney Park (reference publisher)", rights: "Copyright source photographer/operator; rights retained")], adaptation: nil),
+            .init(parkID: 281, rideID: 122687607356381, parkName: "Six Flags Darien Lake", rideName: "Ride of Steel", references: [(credit: "Six Flags / Darien Lake (reference publisher)", rights: "Copyright source photographer/operator; rights retained")], adaptation: nil),
+            .init(parkID: 282, rideID: 37680069812368, parkName: "Frontier City", rideName: "Silver Bullet", references: [(credit: "Six Flags / Frontier City (reference publisher)", rights: "Copyright source photographer/operator; rights retained")], adaptation: nil),
+            .init(parkID: 295, rideID: 15992860430486, parkName: "Hurricane Harbor Phoenix", rideName: "Bahama Blaster", references: [(credit: "Six Flags / Hurricane Harbor Phoenix (reference publisher)", rights: "Copyright source photographer/operator; rights retained")], adaptation: nil),
+            .init(parkID: 334, rideID: 14691, parkName: "Epic Universe", rideName: "Fyre Drill", references: [(credit: "Universal Orlando Resort (reference publisher)", rights: "Copyright Universal Studios; source rights retained")], adaptation: nil),
+            .init(parkID: 339, rideID: 7461499888841, parkName: "Schlitterbahn New Braunfels", rideName: "Deluge", references: [(credit: "Six Flags / Schlitterbahn New Braunfels (reference publisher)", rights: "Copyright source photographer/operator; rights retained")], adaptation: nil),
+        ]
+    }
+
+    private func assertArtworkDelivery(_ item: ArtworkDeliveryCase, largestText: Bool = false,
+                                       overview: Bool = false, file: StaticString = #filePath, line: UInt = #line) {
+        let suffix = largestText ? " largest text" : ""
+        let app = rootFixture(["--reference-ui-park=\(item.parkID)", "--reference-ui-ride=\(item.rideID)",
+                               "--ui-dark"] + (largestText ? ["--ui-largest-type"] : []))
+        defer { app.terminate() }
+        XCTAssertTrue(app.buttons["Change park. Current park: \(item.parkName)"].waitForExistence(timeout: 5), file: file, line: line)
+        let action = app.buttons["ride-row-action-\(item.rideID)"]
+        reveal(action, in: app)
+        XCTAssertTrue(action.isHittable, file: file, line: line)
+        XCTAssertTrue(action.label.contains(item.rideName), file: file, line: line)
+        XCTAssertTrue(action.label.contains("45 minute wait"), file: file, line: line)
+        if overview { screenshot("Artwork delivery \(item.key) list\(suffix)", app: app) }
+        // Thumbnail is deliberately hidden from VoiceOver. Preserve that behavior:
+        // inspect its actual native button pixels; do not invent a Loaded AX value.
+        let listCapture = XCTAttachment(screenshot: action.screenshot())
+        listCapture.name = "Artwork delivery \(item.key) native ride action\(suffix)"
+        listCapture.lifetime = .keepAlways
+        add(listCapture)
+        action.tap()
+        let artwork = app.descendants(matching: .any)["ride-illustration-\(item.key)"].firstMatch
+        XCTAssertTrue(artwork.waitForExistence(timeout: 5), file: file, line: line)
+        let loaded = NSPredicate { _, _ in artwork.value as? String == "Loaded" }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: loaded, object: nil)], timeout: 5), .completed, file: file, line: line)
+        XCTAssertTrue(artwork.label.hasPrefix("AI illustration:"), file: file, line: line)
+        screenshot("Artwork delivery \(item.key) detail\(suffix)", app: app)
+        let credit = app.descendants(matching: .any)["ride-illustration-credit"].firstMatch
+        reveal(credit, in: app)
+        XCTAssertTrue(credit.isHittable, file: file, line: line)
+        XCTAssertTrue(app.staticTexts["AI-generated illustration"].exists, file: file, line: line)
+        let composition = app.staticTexts["Inspired by real ride photography. Composition and lighting are illustrated."]
+        reveal(composition, in: app)
+        XCTAssertTrue(composition.isHittable, file: file, line: line)
+        for reference in item.references {
+            let source = app.descendants(matching: .any).matching(NSPredicate(format: "label == %@", "Reference photo: " + reference.credit)).firstMatch
+            reveal(source, in: app)
+            XCTAssertTrue(source.isHittable, file: file, line: line)
+            let rights = app.descendants(matching: .any).matching(NSPredicate(format: "label == %@", "Reference rights: " + reference.rights)).firstMatch
+            reveal(rights, in: app)
+            XCTAssertTrue(rights.isHittable, file: file, line: line)
+        }
+        if let license = item.adaptation {
+            let adaptation = app.descendants(matching: .any).matching(NSPredicate(format: "label == %@", "Illustration adaptation: " + license)).firstMatch
+            reveal(adaptation, in: app)
+            XCTAssertTrue(adaptation.isHittable, file: file, line: line)
+        } else {
+            XCTAssertFalse(app.descendants(matching: .any).matching(NSPredicate(format: "label BEGINSWITH 'Illustration adaptation:'")).firstMatch.exists, file: file, line: line)
+        }
+        screenshot("Artwork delivery \(item.key) rights\(suffix)", app: app)
+        let wait = app.staticTexts["45 min wait"]
+        reveal(wait, in: app)
+        XCTAssertTrue(wait.isHittable, file: file, line: line)
+        print("ARTWORK_DELIVERY_VERIFIED key=\(item.key) detail=Loaded syntheticWait=45 largest=\(largestText)")
+    }
+
+    func testArtworkDeliveryLoadsParkGroup1() {
+        for (offset, item) in artworkDeliveryCases[0..<4].enumerated() {
+            assertArtworkDelivery(item, overview: offset == 0)
+        }
+    }
+
+    func testArtworkDeliveryLoadsParkGroup2() {
+        for (offset, item) in artworkDeliveryCases[4..<8].enumerated() {
+            assertArtworkDelivery(item, overview: offset == 0)
+        }
+    }
+
+    func testArtworkDeliveryLoadsParkGroup3() {
+        for (offset, item) in artworkDeliveryCases[8..<12].enumerated() {
+            assertArtworkDelivery(item, overview: offset == 0)
+        }
+    }
+
+    func testArtworkDeliveryLoadsParkGroup4() {
+        for (offset, item) in artworkDeliveryCases[12..<16].enumerated() {
+            assertArtworkDelivery(item, overview: offset == 0)
+        }
+    }
+
+    func testArtworkDeliveryLoadsParkGroup5() {
+        for (offset, item) in artworkDeliveryCases[16..<20].enumerated() {
+            assertArtworkDelivery(item, overview: offset == 0)
+        }
+    }
+
+    func testArtworkDeliveryLoadsParkGroup6() {
+        for (offset, item) in artworkDeliveryCases[20..<24].enumerated() {
+            assertArtworkDelivery(item, overview: offset == 0)
+        }
+    }
+
+    func testArtworkDeliveryLoadsParkGroup7() {
+        for (offset, item) in artworkDeliveryCases[24..<28].enumerated() {
+            assertArtworkDelivery(item, overview: offset == 0)
+        }
+    }
+
+    func testArtworkDeliveryLoadsParkGroup8() {
+        for (offset, item) in artworkDeliveryCases[28..<32].enumerated() {
+            assertArtworkDelivery(item, overview: offset == 0)
+        }
+    }
+
+    func testArtworkDeliveryCreditsRemainReadableAtLargestAccessibilitySize() {
+        let item = artworkDeliveryCases.first { $0.parkID == 32 && $0.rideID == 6173967272242 }!
+        assertArtworkDelivery(item, largestText: true, overview: true)
+    }
+
+    func testArtworkDeliveryKeepsExcludedDraftAndPhotoFallbackTruthful() {
+        for (rideID, name, hasPhoto) in [(2679, "Frozen Ever After", false),
+                                       (10914, "Remy's Ratatouille Adventure", true)] {
+            let app = rootFixture(["--reference-ui-park=5", "--reference-ui-ride=\(rideID)", "--ui-dark"])
+            let action = app.buttons["ride-row-action-\(rideID)"]
+            reveal(action, in: app)
+            XCTAssertTrue(action.isHittable)
+            XCTAssertTrue(action.label.contains(name))
+            XCTAssertTrue(action.label.contains("45 minute wait"))
+            screenshot("Artwork delivery excluded \(rideID) list", app: app)
+            action.tap()
+            XCTAssertFalse(app.descendants(matching: .any)["ride-illustration-5-\(rideID)"].exists)
+            XCTAssertFalse(app.descendants(matching: .any)["ride-illustration-credit"].exists)
+            if hasPhoto {
+                let photoCredit = app.descendants(matching: .any).matching(NSPredicate(format: "label == 'Photo: Jeremy Thompson'")).firstMatch
+                reveal(photoCredit, in: app)
+                XCTAssertTrue(photoCredit.isHittable)
+                XCTAssertTrue(app.descendants(matching: .any).matching(NSPredicate(format: "label == 'CC BY 2.0'")).firstMatch.exists)
+            } else {
+                let fallback = app.staticTexts["A verified ride photo isn’t available yet."]
+                reveal(fallback, in: app)
+                XCTAssertTrue(fallback.isHittable)
+            }
+            screenshot("Artwork delivery excluded \(rideID) detail fallback", app: app)
+            let wait = app.staticTexts["45 min wait"]
+            reveal(wait, in: app)
+            XCTAssertTrue(wait.isHittable)
+            app.terminate()
+        }
+    }
+
     func testGeneratedRideIllustrationLoadsWithCreditsAndPreservesWaits() throws {
         let app = rootFixture(["--reference-ui-park=5", "--ui-dark"])
         let search = app.textFields["Ride search"]
@@ -2130,8 +2316,8 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["More"].tap()
         app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Settings'")).firstMatch.tap()
         XCTAssertEqual(app.buttons["accent-purple"].value as? String, "Selected")
-        reveal(app.staticTexts["PIVOT 1.18.3"], in: app)
-        XCTAssertTrue(app.staticTexts["PIVOT 1.18.3"].exists)
+        reveal(app.staticTexts["PIVOT 1.18.4"], in: app)
+        XCTAssertTrue(app.staticTexts["PIVOT 1.18.4"].exists)
         let build = app.staticTexts["PIVOT build number"]
         reveal(build, in: app)
         XCTAssertNotNil(build.label.range(of: #"^Build \d+(?:\.\d+){0,2}$"#, options: .regularExpression))

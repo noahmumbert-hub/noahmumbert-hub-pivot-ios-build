@@ -197,15 +197,93 @@ final class PIVOTTests: XCTestCase {
                 XCTAssertEqual(reference.licenseURL.scheme, "https")
             }
             for detail in [false, true] {
-                let url = try XCTUnwrap(record.fileURL(detail: detail), record.id)
-                let image = try XCTUnwrap(UIImage(contentsOfFile: url.path), record.id)
-                let pixels = try XCTUnwrap(image.cgImage)
-                XCTAssertLessThanOrEqual(pixels.width, detail ? 768 : 256)
-                XCTAssertLessThanOrEqual(pixels.height, detail ? 960 : 320)
-                XCTAssertGreaterThan(pixels.width, 0)
-                XCTAssertEqual(Double(pixels.width) / Double(pixels.height), 0.8, accuracy: 0.01)
+                // Force every delivered JPEG through the production display decode,
+                // releasing each bitmap before continuing through the full catalog.
+                try autoreleasepool {
+                    let url = try XCTUnwrap(record.fileURL(detail: detail), record.id)
+                    let image = try XCTUnwrap(UIImage(contentsOfFile: url.path), record.id)
+                    let displayed = try XCTUnwrap(image.preparingForDisplay(), record.id)
+                    let pixels = try XCTUnwrap(displayed.cgImage)
+                    XCTAssertLessThanOrEqual(pixels.width, detail ? 768 : 256)
+                    XCTAssertLessThanOrEqual(pixels.height, detail ? 960 : 320)
+                    XCTAssertGreaterThan(pixels.width, 0)
+                    XCTAssertGreaterThan(pixels.height, 0)
+                    XCTAssertEqual(Double(pixels.width) / Double(pixels.height), 0.8, accuracy: 0.01)
+                }
             }
         }
+    }
+
+    func testGlobalArtworkDeliveryMatchesAcceptedIDsAndKeepsBlockedFallbacks() throws {
+        let records = RideIllustrationCatalog.records
+        XCTAssertEqual(records.count, 1_082, "Exact accepted requested-style delivery selection")
+        XCTAssertEqual(Set(records.map(\.id)).count, 1_082)
+        XCTAssertEqual(Set(records.map(\.parkId)), Set(FloridaPark.allCases.map(\.id)))
+        let catalog = try ParkMapCatalog.load()
+        let liveOnly: Set<String> = ["58-51320538612942", "58-261088229033589"]
+        var observedLiveOnly = Set<String>()
+        for record in records {
+            XCTAssertEqual(RideIllustrationCatalog.ride(parkID: record.parkId, rideID: record.rideId)?.id, record.id)
+            let points = try XCTUnwrap(catalog.parks[String(record.parkId)]).points
+            if let point = points.first(where: { $0.rideId == record.rideId }) {
+                XCTAssertEqual(point.name, record.rideName, record.id)
+            } else {
+                observedLiveOnly.insert(record.id)
+            }
+        }
+        XCTAssertEqual(observedLiveOnly, liveOnly, "These approved live-only identities must not invent Map points")
+        let excluded: Set<String> = [
+            "7-117",
+            "5-2679",
+            "5-10914",
+            "7-5477",
+            "7-6361",
+            "32-60144663924757",
+            "32-188464574626467",
+            "34-38558287601197",
+            "34-158568328952689",
+            "37-1803018357908",
+            "37-149751189256202",
+            "39-130166750718998",
+            "43-112161848152920",
+            "43-153791471959902",
+            "43-173711916451594",
+            "43-201853394465730",
+            "43-224520076735759",
+            "339-218858496121200",
+            "5-466",
+            "6-127",
+            "6-135",
+            "6-136",
+            "6-142",
+            "8-14943",
+            "64-5985",
+            "65-5995",
+            "65-5984",
+            "65-6005",
+            "334-14683",
+            "334-14689",
+            "21-261100879756425",
+            "21-156184637344042",
+            "21-185875270501956",
+            "33-243330476059929",
+            "34-154498066496363",
+            "58-75810765704637",
+            "44-38291664119772",
+            "44-159313949777504",
+            "44-246468629641661",
+            "43-30709173790630",
+            "43-232317719821764",
+            "43-257901768120457"
+        ]
+        XCTAssertEqual(excluded.count, 42)
+        for key in excluded {
+            let parts = key.split(separator: "-").compactMap { Int($0) }
+            XCTAssertEqual(parts.count, 2)
+            XCTAssertNil(RideIllustrationCatalog.ride(parkID: parts[0], rideID: parts[1]), key)
+        }
+        XCTAssertNil(RideIllustrationCatalog.ride(parkID: 5, rideID: 2679), "The older Frozen draft is not this accepted-style selection")
+        XCTAssertNotNil(ParkArtworkCatalog.ride(parkID: 5, rideID: 10914), "The public Remy photograph remains an independent truthful fallback")
     }
 
     func testGeneratedIllustrationsRequireAnExactParkAndRideMatch() throws {
