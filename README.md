@@ -4,19 +4,13 @@ Add this source in SideStore → Sources → +:
 
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 
-Current update: **1.18.2 / build 100.149.1**, iOS 17.0+.
+Current update: **1.18.3 / build 100.177.1**, iOS 17.0+.
 
-Compact ride search, sorting and status filters now share the Waits list with their results.
+Waits uses less space between the park card and Current rides, with smaller Recent observed waits controls and less vertical padding. Text keeps its normal size and expands with Dynamic Type.
 
-Unchanged posted waits remain visible when a fresh live response confirms them. Stale or failed feeds still withhold unverified waits.
+Map shows current waits when a fresh provider response confirms an unchanged value. Feed status and refresh are available on the map, and refresh continues in full screen and resumes when returning to the app. Failed or expired responses still withhold unverified waits.
 
-Removed the artwork badge from thumbnails. Ride details retain truthful illustration credits and reference rights.
-
-Added 73 accepted Florida ride illustrations, bringing the selected coverage to 119 of 145 catalog rides, with 26 remaining gaps. All previously published illustrations are preserved.
-
-Observed-wait dot labels, lowest-wait predictions and best reopening estimates remain included.
-
-IPA SHA-256: `f9092abdfcdef0001732ffacee0ea9c98b7f06885c7dad5bafde69b9cb40279d`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/41344687017).
+IPA SHA-256: `c02d0b9f9e40abb5dfafde2c5ae960f10e752646efb74c545e007f1d3ffe4b3d`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/41402012227).
 The unsigned IPA preserves `com.noahmumbert.PIVOT` and its Live Activity extension.
 Install as an update using the same signing identity; keep the existing app installed to retain saved data.
 Native unit and simulator UI tests passed for this build. Physical SideStore installation remains untested.

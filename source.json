@@ -7,7 +7,7 @@
   "localizedDescription": "PIVOT updates for SideStore. Uses the existing PIVOT app identity.",
   "website": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
   "websiteURL": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
-  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/4f73d1f2902658bb3be5dcf35566448f64d65ebe/icon.png",
+  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/d3a4d1cd4fbb8a536659399efea2b5ff9d79a5ee/icon.png",
   "tintColor": "70DFC0",
   "apps": [
     {
@@ -16,14 +16,23 @@
       "developerName": "Noah Mumbert",
       "subtitle": "Theme park companion",
       "localizedDescription": "Park wait times, ride status, weather observations, planning, shows and Live Activities.",
-      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/4f73d1f2902658bb3be5dcf35566448f64d65ebe/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/d3a4d1cd4fbb8a536659399efea2b5ff9d79a5ee/icon.png",
       "tintColor": "70DFC0",
-      "version": "1.18.2",
-      "versionDate": "2026-11-01T21:34:45Z",
-      "versionDescription": "Compact ride search, sorting and status filters now share the Waits list with their results.\n\nUnchanged posted waits remain visible when a fresh live response confirms them. Stale or failed feeds still withhold unverified waits.\n\nRemoved the artwork badge from thumbnails. Ride details retain truthful illustration credits and reference rights.\n\nAdded 73 accepted Florida ride illustrations, bringing the selected coverage to 119 of 145 catalog rides, with 26 remaining gaps. All previously published illustrations are preserved.\n\nObserved-wait dot labels, lowest-wait predictions and best reopening estimates remain included.",
-      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/4f73d1f2902658bb3be5dcf35566448f64d65ebe/PIVOT-1.18.2-100.149.1.ipa",
-      "size": 32457424,
+      "version": "1.18.3",
+      "versionDate": "2026-11-02T08:43:35Z",
+      "versionDescription": "Waits uses less space between the park card and Current rides, with smaller Recent observed waits controls and less vertical padding. Text keeps its normal size and expands with Dynamic Type.\n\nMap shows current waits when a fresh provider response confirms an unchanged value. Feed status and refresh are available on the map, and refresh continues in full screen and resumes when returning to the app. Failed or expired responses still withhold unverified waits.",
+      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/d3a4d1cd4fbb8a536659399efea2b5ff9d79a5ee/PIVOT-1.18.3-100.177.1.ipa",
+      "size": 32461401,
       "versions": [
+        {
+          "version": "1.18.3",
+          "buildVersion": "100.177.1",
+          "date": "2026-11-02T08:43:35Z",
+          "localizedDescription": "Waits uses less space between the park card and Current rides, with smaller Recent observed waits controls and less vertical padding. Text keeps its normal size and expands with Dynamic Type.\n\nMap shows current waits when a fresh provider response confirms an unchanged value. Feed status and refresh are available on the map, and refresh continues in full screen and resumes when returning to the app. Failed or expired responses still withhold unverified waits.",
+          "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/d3a4d1cd4fbb8a536659399efea2b5ff9d79a5ee/PIVOT-1.18.3-100.177.1.ipa",
+          "size": 32461401,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.18.2",
           "buildVersion": "100.149.1",
