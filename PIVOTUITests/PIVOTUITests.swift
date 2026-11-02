@@ -210,10 +210,13 @@ final class PIVOTUITests: XCTestCase {
                                          category: UIContentSizeCategory, capture: String,
                                          file: StaticString = #filePath, line: UInt = #line) {
         let app = rootFixture(["--reference-ui-park=\(parkID)", "--ui-dark"] + extra)
+        let banner = app.descendants(matching: .any)["park-banner-\(parkID)"].firstMatch
+        XCTAssertTrue(banner.waitForExistence(timeout: 10), file: file, line: line)
+        waitForSettledFrames([banner], file: file, line: line)
         screenshot("Compact Waits \(capture) overview", app: app)
         for identifier in ["park-hours-value", "park-early-entry-value"] {
             let matches = app.descendants(matching: .any).matching(identifier: identifier)
-            let value = matches.firstMatch
+            let value = app.staticTexts[identifier].firstMatch
             if !value.exists { print("COMPACT_WAITS_INITIAL_ACCESSIBILITY \(capture) \(identifier)\n" + app.debugDescription) }
             centerFullyVisible(value, in: app, file: file, line: line)
             XCTAssertEqual(matches.count, 1, "The schedule value must have a unique accessibility identity", file: file, line: line)
@@ -224,7 +227,6 @@ final class PIVOTUITests: XCTestCase {
 
         let heading = app.staticTexts["Current rides"].firstMatch
         centerFullyVisible(heading, in: app, file: file, line: line)
-        let banner = app.descendants(matching: .any)["park-banner-\(parkID)"].firstMatch
         let controls = app.cells.containing(.textField, identifier: "Ride search").firstMatch
         XCTAssertTrue(banner.exists && controls.exists, file: file, line: line)
         XCTAssertEqual(app.descendants(matching: .any).matching(identifier: "park-banner-\(parkID)").count, 1,
