@@ -2268,12 +2268,40 @@ final class PIVOTUITests: XCTestCase {
 
     func testExpandedParkCanBeFoundAndSelected() {
         let app = XCUIApplication()
-        app.launchArguments = ["-pivot.selectedPark", "-1"]
+        app.launchArguments = ["-pivot.selectedPark", "6"]
         app.launch()
 
         guard app.wait(for: .runningForeground, timeout: 5),
               app.descendants(matching: .any)["PIVOT header"].waitForExistence(timeout: 10) else {
             XCTFail("The app must finish its foreground launch before selecting a park")
+            return
+        }
+        // Establish the unselected state through the real picker. A fresh install
+        // must not depend on a negative launch-default value or an earlier test.
+        let initialPark = app.buttons["Change park. Current park: Magic Kingdom Park"]
+        guard initialPark.waitForExistence(timeout: 5), initialPark.isHittable else {
+            XCTFail("The initial Magic Kingdom park control must be ready for picker setup")
+            return
+        }
+        waitForSettledFrames([initialPark])
+        assertContained(initialPark.frame, in: safeContentViewport(in: app),
+                        "The initial park control must be wholly visible before setup")
+        initialPark.tap()
+        let picker = app.navigationBars["Choose a park"]
+        let noPark = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "No park")).firstMatch
+        guard picker.waitForExistence(timeout: 5), noPark.waitForExistence(timeout: 5), noPark.isHittable else {
+            XCTFail("The actual picker must offer No park for unselected-state setup")
+            return
+        }
+        waitForSettledFrames([noPark])
+        assertContained(noPark.frame, in: safeContentViewport(in: app),
+                        "The No park setup row must be wholly visible before selection")
+        noPark.tap()
+        let setupFinished = NSPredicate { _, _ in
+            !picker.exists && app.buttons["Change park. Current park: none"].exists
+        }
+        guard XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: setupFinished, object: nil)], timeout: 5) == .completed else {
+            XCTFail("Choosing No park must dismiss the picker and establish the unselected state")
             return
         }
         // Select the unique visible control without assuming its AX parent type.
