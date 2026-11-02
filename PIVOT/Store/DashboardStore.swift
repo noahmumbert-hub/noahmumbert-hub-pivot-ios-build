@@ -115,6 +115,11 @@ final class DashboardStore: ObservableObject {
     private let defaults: UserDefaults
     private let locationService = ParkLocationService()
     private var sceneIsActive = false
+#if DEBUG
+    // A supported-history UI fixture is one observation session. Keep its
+    // forecast clock separate from the deliberately expired wait snapshot.
+    private var waitForecastFixtureNow: Date?
+#endif
     private var monitoringTask: Task<Void, Never>?
     private var monitoringGeneration: UInt = 0
     private var refreshSequence: UInt = 0
@@ -352,6 +357,24 @@ final class DashboardStore: ObservableObject {
         )
     }
 
+    func waitForecastEvaluationDate(at realDate: Date) -> Date {
+#if DEBUG
+        return Self.supportedUIForecastEvaluationDate(at: realDate,
+            bootstrapDate: waitForecastFixtureNow, arguments: ProcessInfo.processInfo.arguments)
+#else
+        return realDate
+#endif
+    }
+
+#if DEBUG
+    static func supportedUIForecastEvaluationDate(at realDate: Date, bootstrapDate: Date?,
+                                                   arguments: [String]) -> Date {
+        guard arguments.contains("--apple-ui-fixtures"), arguments.contains("--ride-history-supported"),
+              let bootstrapDate, bootstrapDate.timeIntervalSince1970.isFinite else { return realDate }
+        return bootstrapDate
+    }
+#endif
+
     func bootstrap() async {
 #if DEBUG
         if ProcessInfo.processInfo.arguments.contains("--map-refresh-network-test") {
@@ -360,6 +383,8 @@ final class DashboardStore: ObservableObject {
         }
         if ProcessInfo.processInfo.arguments.contains("--apple-ui-fixtures") {
             let fixtureNow = Date()
+            waitForecastFixtureNow = ProcessInfo.processInfo.arguments.contains("--ride-history-supported")
+                ? fixtureNow : nil
             let referenceID = ProcessInfo.processInfo.arguments.first { $0.hasPrefix("--reference-ui-park=") }
                 .flatMap { Int($0.split(separator: "=").last ?? "") }
             selectedPark = referenceID.flatMap(FloridaPark.init(rawValue:)) ?? .magicKingdom

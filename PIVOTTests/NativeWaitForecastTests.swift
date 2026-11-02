@@ -175,6 +175,64 @@ final class NativeWaitForecastTests: XCTestCase {
     }
 
     @MainActor
+    func testSupportedUIForecastClockKeepsStaleHistoryAcrossMidnightWithoutRefreshingEvidence() throws {
+        let epcot = FloridaPark.epcot
+        let bootstrapDate = date("2026-11-02T04:59:30Z") // Nov 1, 11:59:30 PM EST.
+        let realDate = date("2026-11-02T05:00:30Z") // Nov 2, 12:00:30 AM EST.
+        let arguments = ["--apple-ui-fixtures", "--ride-history-supported"]
+        let fresh = ReferenceParkUITestFixture.snapshot(for: epcot, at: bootstrapDate)
+        let schedule = try XCTUnwrap(fresh.parkHours)
+        let period = try XCTUnwrap(schedule.regular)
+        let history = ReferenceParkUITestFixture.learningHistory(park: epcot,
+            openingTime: period.openingTime, at: bootstrapDate)
+        let encoder = JSONEncoder(); encoder.dateEncodingStrategy = .secondsSince1970
+        var payload = try XCTUnwrap(JSONSerialization.jsonObject(with: encoder.encode(fresh)) as? [String: Any])
+        payload["fetchedAt"] = bootstrapDate.addingTimeInterval(-901).timeIntervalSince1970
+        let decoder = JSONDecoder(); decoder.dateDecodingStrategy = .secondsSince1970
+        let stale = try decoder.decode(LiveParkSnapshot.self, from: JSONSerialization.data(withJSONObject: payload))
+        let evaluationDate = DashboardStore.supportedUIForecastEvaluationDate(at: realDate,
+            bootstrapDate: bootstrapDate, arguments: arguments)
+        XCTAssertEqual(evaluationDate, bootstrapDate)
+        XCTAssertEqual(ParkHoursSnapshot.localDate(for: epcot, at: evaluationDate), "2026-11-01")
+        XCTAssertEqual(ParkHoursSnapshot.localDate(for: epcot, at: realDate), "2026-11-02")
+        XCTAssertEqual(stale.fetchedAt, bootstrapDate.addingTimeInterval(-901),
+                       "The fixture clock must not be taken from the deliberately expired snapshot")
+        XCTAssertFalse(WaitLearningHistory.fresh(stale.fetchedAt, now: evaluationDate))
+
+        func resolve(_ snapshot: LiveParkSnapshot, at now: Date) -> LowestWaitPrediction {
+            LowestWaitPrediction.resolve(history: history, rideID: 10916, park: epcot,
+                hours: ParkHoursSnapshot.current(for: epcot, candidates: [snapshot.parkHours], at: now),
+                snapshot: snapshot, failed: false, now: now)
+        }
+        let supported = resolve(fresh, at: evaluationDate)
+        XCTAssertEqual(supported.window?.minutes, 10)
+        let historyOnly = resolve(stale, at: evaluationDate)
+        XCTAssertGreaterThan(historyOnly.points.count, 1,
+                             "The enlarged stale modal must still exercise actual historical points")
+        XCTAssertEqual(historyOnly.points, supported.points)
+        XCTAssertTrue(historyOnly.points.allSatisfy { $0.days == 3 })
+        XCTAssertNil(historyOnly.window, "A fixed fixture clock must never turn stale waits into a ride-now suggestion")
+        XCTAssertNil(historyOnly.sourceCheckedAt)
+
+        for ordinaryArguments in [[], ["--apple-ui-fixtures"], ["--ride-history-supported"]] {
+            XCTAssertEqual(DashboardStore.supportedUIForecastEvaluationDate(at: realDate,
+                bootstrapDate: bootstrapDate, arguments: ordinaryArguments), realDate)
+        }
+        XCTAssertEqual(DashboardStore.supportedUIForecastEvaluationDate(at: realDate,
+            bootstrapDate: nil, arguments: arguments), realDate)
+        XCTAssertNil(ParkHoursSnapshot.current(for: epcot, candidates: [schedule], at: realDate),
+                     "The normal current-date schedule guard remains strict across midnight")
+        XCTAssertTrue(resolve(fresh, at: realDate).points.isEmpty)
+        let expiredRealDate = bootstrapDate.addingTimeInterval(901)
+        let ordinaryDate = DashboardStore.supportedUIForecastEvaluationDate(at: expiredRealDate,
+            bootstrapDate: bootstrapDate, arguments: [])
+        XCTAssertEqual(ordinaryDate, expiredRealDate)
+        XCTAssertFalse(RideWaitPresentation.resolve(rideID: 10916, parkID: epcot.id,
+            snapshot: fresh, refreshFailed: false, at: ordinaryDate).isCurrent,
+                       "Normal non-fixture evidence must continue to expire in real time")
+    }
+
+    @MainActor
     func testReferenceFixtureKeepsThreePriorOperatingDaysAcrossMidnightAndDSTFallback() throws {
         let epcot = FloridaPark.epcot
         let cases: [(name: String, timestamp: String, openingDay: String, priorDays: [String], utcOffset: Int)] = [

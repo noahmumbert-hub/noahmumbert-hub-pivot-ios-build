@@ -190,13 +190,14 @@ struct NativeRideWaitForecast: View {
     let timeZone: TimeZone
     var body: some View {
         TimelineView(.periodic(from: .now, by: 60)) { context in
+            let evaluationDate = store.waitForecastEvaluationDate(at: context.date)
             if let park = store.selectedPark {
                 let prediction = LowestWaitPrediction.resolve(history: store.waitLearning, rideID: ride.id, park: park,
-                    hours: store.parkHours(for: park, at: context.date), snapshot: store.snapshot,
-                    failed: store.errorMessage != nil, now: context.date)
+                    hours: store.parkHours(for: park, at: evaluationDate), snapshot: store.snapshot,
+                    failed: store.errorMessage != nil, now: evaluationDate)
                 WaitForecastTimeline(points: prediction.points, timeZone: timeZone,
                     canRecommend: prediction.window != nil, learningText: prediction.detail,
-                    sourceCheckedAt: prediction.sourceCheckedAt, now: context.date)
+                    sourceCheckedAt: prediction.sourceCheckedAt, now: evaluationDate)
             }
         }.pivotCard()
     }
@@ -210,13 +211,14 @@ struct NativeRideLowWaitSummary: View {
 
     var body: some View {
         TimelineView(.periodic(from: .now, by: 60)) { context in
+            let evaluationDate = store.waitForecastEvaluationDate(at: context.date)
             VStack(alignment: .leading, spacing: 6) {
                 Label("Lowest-wait prediction", systemImage: "clock.arrow.circlepath")
                     .font(.subheadline.weight(.semibold)).fixedSize(horizontal: false, vertical: true)
                 if let park = store.selectedPark {
                     let prediction = LowestWaitPrediction.resolve(history: store.waitLearning, rideID: ride.id, park: park,
-                        hours: store.parkHours(for: park, at: context.date), snapshot: store.snapshot,
-                        failed: store.errorMessage != nil, now: context.date)
+                        hours: store.parkHours(for: park, at: evaluationDate), snapshot: store.snapshot,
+                        failed: store.errorMessage != nil, now: evaluationDate)
                     if let best = prediction.window {
                         Text("\(ParkTimeFormatter.time(best.start, timeZone: timeZone))–\(ParkTimeFormatter.time(best.end, timeZone: timeZone)) · about \(best.minutes) min")
                             .font(.subheadline.weight(.medium)).fixedSize(horizontal: false, vertical: true)
@@ -232,7 +234,7 @@ struct NativeRideLowWaitSummary: View {
                         Text(prediction.detail).font(.caption).foregroundStyle(Color.pivotMuted)
                             .fixedSize(horizontal: false, vertical: true)
                         WaitPredictionEvidence(point: best, sourceCheckedAt: prediction.sourceCheckedAt,
-                            timeZone: timeZone, now: context.date)
+                            timeZone: timeZone, now: evaluationDate)
                     } else {
                         Text("Prediction unavailable").font(.subheadline.weight(.medium))
                             .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
