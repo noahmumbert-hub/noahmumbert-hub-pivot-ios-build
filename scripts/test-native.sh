@@ -70,6 +70,10 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedSampleTimesRemainReadableAtLargestAccessibilitySize
       -only-testing:PIVOTUITests/PIVOTUITests/testMapFailedRefreshDoesNotPresentCachedWaitAsCurrent
     ) ;;
+  park-picker)
+    test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testExpandedParkCanBeFoundAndSelected
+    ) ;;
   map-refresh)
     test_options+=(
       -only-testing:PIVOTTests/PIVOTTests

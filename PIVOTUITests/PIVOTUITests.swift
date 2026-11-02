@@ -1658,6 +1658,84 @@ final class PIVOTUITests: XCTestCase {
         waitForMapWait(text, app: app)
     }
 
+    /// Tap one real park result only after its entire row clears the native
+    /// search and keyboard overlays. No internal selection or tap retry.
+    private func tapVisibleParkPickerRow(_ name: String, in app: XCUIApplication,
+                                         parkSearch: XCUIElement, captureTitle: String,
+                                         timeout: TimeInterval = 5,
+                                         file: StaticString = #filePath, line: UInt = #line) -> Bool {
+        let pickerList = app.collectionViews.containing(.staticText, identifier: name).firstMatch
+        guard pickerList.waitForExistence(timeout: timeout) else {
+            XCTFail("The native park List must contain the exact \(name) title", file: file, line: line)
+            return false
+        }
+        let choices = pickerList.buttons.containing(.staticText, identifier: name)
+        let choice = choices.firstMatch
+        guard choice.waitForExistence(timeout: timeout), choices.count == 1 else {
+            XCTFail("The native park List must expose one exact \(name) result", file: file, line: line)
+            return false
+        }
+        // A List AX frame can cover the full sheet behind the keyboard/search.
+        // Both the target and native drag must stay in the visible list region.
+        func pickerViewport() -> CGRect {
+            let window = app.frame
+            var viewport = pickerList.frame.intersection(safeContentViewport(in: app))
+            for keyboard in app.keyboards.allElementsBoundByIndex {
+                let frame = keyboard.frame
+                if !frame.isEmpty, frame.intersects(viewport) {
+                    viewport.size.height = max(0, min(viewport.maxY, frame.minY - 8) - viewport.minY)
+                }
+            }
+            if parkSearch.exists {
+                let frame = parkSearch.frame
+                if frame.intersects(viewport) {
+                    if frame.midY > viewport.midY {
+                        // Clear the outer search capsule and its toolbar inset too.
+                        viewport.size.height = max(0, min(viewport.maxY, frame.minY - 16) - viewport.minY)
+                    } else {
+                        let bottom = viewport.maxY
+                        viewport.origin.y = max(viewport.minY, frame.maxY + 8)
+                        viewport.size.height = max(0, bottom - viewport.minY)
+                    }
+                }
+            }
+            return viewport.intersection(window)
+        }
+        let window = app.frame
+        for attempt in 0..<6 {
+            let viewport = pickerViewport()
+            let row = choice.frame
+            print("PARK_PICKER_VISIBLE_VIEWPORT park=\(name) attempt=\(attempt) viewport=\(viewport) row=\(row)")
+            guard viewport.width > 0, viewport.height > 44 else {
+                XCTFail("The park picker must expose a visible list region clear of search and keyboard", file: file, line: line)
+                return false
+            }
+            if viewport.insetBy(dx: -1, dy: -1).contains(row) && choice.isHittable { break }
+            let offset = row.minY < viewport.minY
+                ? row.minY - viewport.minY - 12 : row.maxY - viewport.maxY + 12
+            let movement = min(viewport.height * 0.75, max(30, abs(offset))) * (offset < 0 ? -1 : 1)
+            let origin = app.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(
+                dx: verticalPanX(in: viewport) - window.minX,
+                dy: viewport.midY + movement / 2 - window.minY))
+            let destination = origin.withOffset(CGVector(dx: 0, dy: -movement))
+            origin.press(forDuration: 0.05, thenDragTo: destination, withVelocity: .slow, thenHoldForDuration: 0.2)
+        }
+        waitForSettledFrames([pickerList, choice], file: file, line: line)
+        assertContained(choice.frame, in: pickerViewport(),
+                        "The complete park row must be clear of the foreground search and keyboard", file: file, line: line)
+        let hittable = choice.isHittable
+        XCTAssertTrue(hittable, file: file, line: line)
+        guard hittable else { return false }
+        screenshot(captureTitle, app: app)
+        let finalFrame = choice.frame
+        guard !finalFrame.isEmpty, pickerViewport().insetBy(dx: -1, dy: -1).contains(finalFrame), choice.isHittable else {
+            XCTFail("The complete \(name) row must remain visible and hittable at the single tap", file: file, line: line)
+            return false
+        }
+        choice.tap()
+        return true
+    }
+
     func testMapNetworkRefreshRepeatFullScreenFailureRecoveryAndNavigation() {
         let app = XCUIApplication()
         app.launchArguments = ["--apple-ui-test", "--map-refresh-network-test", "--map-refresh-manual-test", "-pivot.selectedPark", "6"]
@@ -1690,61 +1768,8 @@ final class PIVOTUITests: XCTestCase {
         app.buttons["Change park. Current park: Magic Kingdom Park"].tap()
         let parkSearch = app.searchFields.firstMatch
         XCTAssertTrue(parkSearch.waitForExistence(timeout: 5)); parkSearch.tap(); parkSearch.typeText("EPCOT")
-        let pickerList = app.collectionViews.containing(.staticText, identifier: "EPCOT").firstMatch
-        XCTAssertTrue(pickerList.waitForExistence(timeout: 10))
-        let epcot = pickerList.buttons.containing(.staticText, identifier: "EPCOT").firstMatch
-        XCTAssertTrue(epcot.waitForExistence(timeout: 10))
-        // A List AX frame can cover the full sheet behind the keyboard/search.
-        // Both the target and native drag must stay in the visible list region.
-        func pickerViewport() -> CGRect {
-            let window = app.frame
-            var viewport = pickerList.frame.intersection(safeContentViewport(in: app))
-            for keyboard in app.keyboards.allElementsBoundByIndex {
-                let frame = keyboard.frame
-                if !frame.isEmpty, frame.intersects(viewport) {
-                    viewport.size.height = max(0, min(viewport.maxY, frame.minY - 8) - viewport.minY)
-                }
-            }
-            if parkSearch.exists {
-                let frame = parkSearch.frame
-                if frame.intersects(viewport) {
-                    if frame.midY > viewport.midY {
-                        // Clear the outer search capsule and its toolbar inset too.
-                        viewport.size.height = max(0, min(viewport.maxY, frame.minY - 16) - viewport.minY)
-                    } else {
-                        let bottom = viewport.maxY
-                        viewport.origin.y = max(viewport.minY, frame.maxY + 8)
-                        viewport.size.height = max(0, bottom - viewport.minY)
-                    }
-                }
-            }
-            return viewport.intersection(window)
-        }
-        let window = app.frame
-        for attempt in 0..<6 {
-            let viewport = pickerViewport()
-            let row = epcot.frame
-            print("MAP_PICKER_VISIBLE_VIEWPORT attempt=\(attempt) viewport=\(viewport) row=\(row)")
-            guard viewport.width > 0, viewport.height > 44 else {
-                XCTFail("The park picker must expose a visible list region clear of search and keyboard")
-                return
-            }
-            if viewport.insetBy(dx: -1, dy: -1).contains(row) && epcot.isHittable { break }
-            let offset = row.minY < viewport.minY
-                ? row.minY - viewport.minY - 12 : row.maxY - viewport.maxY + 12
-            let movement = min(viewport.height * 0.75, max(30, abs(offset))) * (offset < 0 ? -1 : 1)
-            let origin = app.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(
-                dx: verticalPanX(in: viewport) - window.minX,
-                dy: viewport.midY + movement / 2 - window.minY))
-            let destination = origin.withOffset(CGVector(dx: 0, dy: -movement))
-            origin.press(forDuration: 0.05, thenDragTo: destination, withVelocity: .slow, thenHoldForDuration: 0.2)
-        }
-        waitForSettledFrames([pickerList, epcot])
-        assertContained(epcot.frame, in: pickerViewport(),
-                        "The complete park row must be clear of the foreground search and keyboard")
-        XCTAssertTrue(epcot.isHittable)
-        screenshot("Map EPCOT row clear of search and keyboard", app: app)
-        epcot.tap()
+        guard tapVisibleParkPickerRow("EPCOT", in: app, parkSearch: parkSearch,
+            captureTitle: "Map EPCOT row clear of search and keyboard", timeout: 10) else { return }
         let selectedPark = app.buttons["Change park. Current park: EPCOT"]
         let switched = NSPredicate { _, _ in
             !parkSearch.exists && selectedPark.exists && selectedPark.isHittable
@@ -2246,27 +2271,53 @@ final class PIVOTUITests: XCTestCase {
         app.launchArguments = ["-pivot.selectedPark", "-1"]
         app.launch()
 
-        let parkButton = app.buttons.matching(
-            NSPredicate(format: "label CONTAINS[c] 'Change park'")
-        ).firstMatch
-        XCTAssertTrue(parkButton.waitForExistence(timeout: 5))
+        guard app.wait(for: .runningForeground, timeout: 5),
+              app.descendants(matching: .any)["PIVOT header"].waitForExistence(timeout: 10) else {
+            XCTFail("The app must finish its foreground launch before selecting a park")
+            return
+        }
+        let banner = app.otherElements["park-banner--1"].firstMatch
+        guard banner.waitForExistence(timeout: 5) else {
+            XCTFail("The visible unselected park banner must exist")
+            return
+        }
+        let choices = banner.buttons.matching(NSPredicate(format: "label == %@", "Change park. Current park: none"))
+        let parkButton = choices.firstMatch
+        guard parkButton.waitForExistence(timeout: 5), choices.count == 1 else {
+            XCTFail("The visible unselected park banner must have one exact selection control")
+            return
+        }
+        waitForSettledFrames([parkButton])
+        let controlFrame = parkButton.frame
+        assertContained(controlFrame, in: safeContentViewport(in: app),
+                        "The park-selection control must be wholly visible before the single tap")
+        guard !controlFrame.isEmpty,
+              safeContentViewport(in: app).insetBy(dx: -1, dy: -1).contains(controlFrame), parkButton.isHittable else {
+            XCTFail("The park-selection control must be visible and hittable before its single tap")
+            return
+        }
+        screenshot("Expanded park selector ready before single tap", app: app)
         parkButton.tap()
 
         let search = app.searchFields.firstMatch
-        XCTAssertTrue(search.waitForExistence(timeout: 5))
+        let searchAppeared = search.waitForExistence(timeout: 5)
+        screenshot("Expanded park picker after single tap", app: app)
+        guard searchAppeared, app.navigationBars["Choose a park"].exists, search.isHittable else {
+            XCTFail("The single tap must present the native Choose a park search. App state \(app.state.rawValue); park control still exists \(parkButton.exists)")
+            return
+        }
         search.tap()
         search.typeText("Cedar Point")
 
-        let cedarPoint = app.buttons.matching(
-            NSPredicate(format: "label CONTAINS[c] 'Cedar Point'")
-        ).firstMatch
-        XCTAssertTrue(cedarPoint.waitForExistence(timeout: 5))
-        cedarPoint.tap()
-
-        XCTAssertTrue(
-            app.buttons.matching(
-                NSPredicate(format: "label CONTAINS[c] 'Current park: Cedar Point'")
-            ).firstMatch.waitForExistence(timeout: 5)
-        )
+        guard tapVisibleParkPickerRow("Cedar Point", in: app, parkSearch: search,
+            captureTitle: "Expanded Cedar Point row clear of search and keyboard") else { return }
+        let selectedPark = app.buttons["Change park. Current park: Cedar Point"]
+        let switched = NSPredicate { _, _ in
+            !search.exists && selectedPark.exists && selectedPark.isHittable
+        }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: switched, object: nil)], timeout: 5), .completed,
+                       "The picker must dismiss and the app must select Cedar Point after the single result tap")
+        screenshot("Expanded park selects Cedar Point after picker dismisses", app: app)
     }
+
 }
