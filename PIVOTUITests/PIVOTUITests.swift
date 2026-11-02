@@ -183,6 +183,109 @@ final class PIVOTUITests: XCTestCase {
         screenshot("Waits shared group filtered down status", app: app)
     }
 
+    func testParkBannerIslandsIsSmallerAndKeepsScheduleAndActions() {
+        checkParkBanner(parkID: 64, name: "Islands of Adventure", category: .large,
+                        extra: ["--ui-dark"], capture: "Islands standard")
+    }
+
+    func testParkBannerEPCOTIsSmallerAndKeepsScheduleAndActions() {
+        checkParkBanner(parkID: 5, name: "EPCOT", category: .large,
+                        extra: ["--ui-light"], capture: "EPCOT standard light")
+    }
+
+    func testParkBannerIslandsKeepsAccessibilityScheduleAndActions() {
+        checkParkBanner(parkID: 64, name: "Islands of Adventure", category: .accessibilityLarge,
+                        extra: ["--ui-dark", "--ui-large-type"], capture: "Islands accessibility large")
+    }
+
+    func testParkBannerEPCOTKeepsAccessibilityScheduleAndActions() {
+        checkParkBanner(parkID: 5, name: "EPCOT", category: .accessibilityLarge,
+                        extra: ["--ui-dark", "--ui-large-type"], capture: "EPCOT accessibility large")
+    }
+
+    func testParkBannerIslandsKeepsLargestScheduleAndActions() {
+        checkParkBanner(parkID: 64, name: "Islands of Adventure", category: .accessibilityExtraExtraExtraLarge,
+                        extra: ["--ui-dark", "--ui-largest-type"], capture: "Islands accessibility largest")
+    }
+
+    func testParkBannerEPCOTKeepsLargestScheduleAndActions() {
+        checkParkBanner(parkID: 5, name: "EPCOT", category: .accessibilityExtraExtraExtraLarge,
+                        extra: ["--ui-dark", "--ui-largest-type"], capture: "EPCOT accessibility largest")
+    }
+
+    private func checkParkBanner(parkID: Int, name: String, category: UIContentSizeCategory,
+                                 extra: [String], capture: String,
+                                 file: StaticString = #filePath, line: UInt = #line) {
+        let app = rootFixture(["--reference-ui-park=\(parkID)"] + extra)
+        defer { app.terminate() }
+        let bounds = app.descendants(matching: .any)["park-banner-layout-bounds-\(parkID)"].firstMatch
+        let choose = app.buttons["Change park. Current park: \(name)"].firstMatch
+        XCTAssertTrue(bounds.waitForExistence(timeout: 10), file: file, line: line)
+        XCTAssertTrue(choose.waitForExistence(timeout: 5), file: file, line: line)
+        waitForSettledFrames([bounds, choose], file: file, line: line)
+        let height = bounds.frame.height
+        if category == .large {
+            // Released native cards measure176–177pt on these devices. Keep a
+            // meaningful reduction while allowing font rounding and wrapping.
+            XCTAssertLessThanOrEqual(height, 160, "The park banner must be visibly smaller than the released card", file: file, line: line)
+        } else {
+            XCTAssertGreaterThan(height, 160, "Schedule text must grow naturally at accessibility sizes", file: file, line: line)
+        }
+        print("PARK_BANNER_METRICS \(capture) category=\(category.rawValue) card=\(bounds.frame) parkAction=\(choose.frame)")
+        screenshot("Park banner \(capture) overview", app: app)
+
+        centerFullyVisible(choose, in: app, file: file, line: line)
+        assertContained(choose.frame, in: bounds.frame, "The park action and its wrapped name must remain inside the banner", file: file, line: line)
+        XCTAssertGreaterThanOrEqual(choose.frame.height, 44, file: file, line: line)
+        XCTAssertGreaterThanOrEqual(choose.frame.width, 44, file: file, line: line)
+        XCTAssertTrue(choose.isHittable, file: file, line: line)
+        screenshot("Park banner \(capture) park action", app: app)
+
+        for identifier in ["park-hours-title", "park-hours-value", "park-early-entry-title", "park-early-entry-value"] {
+            let elements = app.descendants(matching: .any).matching(identifier: identifier)
+            let text = app.staticTexts[identifier].firstMatch
+            XCTAssertEqual(elements.count, 1, "Each schedule child must retain its own accessibility identity", file: file, line: line)
+            centerFullyVisible(text, in: app, file: file, line: line)
+            assertFullTextLayout(text, category: category, file: file, line: line)
+            assertContained(text.frame, in: bounds.frame, "The full schedule child must stay inside the banner", file: file, line: line)
+            if identifier.hasSuffix("value") {
+                XCTAssertTrue(text.label.contains(" – "), "Both schedule endpoints must remain available", file: file, line: line)
+            }
+            screenshot("Park banner \(capture) \(identifier)", app: app)
+        }
+        XCTAssertEqual(app.staticTexts["park-hours-title"].label, "Park hours", file: file, line: line)
+        XCTAssertEqual(app.staticTexts["park-early-entry-title"].label, "Early entry", file: file, line: line)
+        XCTAssertGreaterThanOrEqual(app.staticTexts["park-hours-title"].frame.minY, choose.frame.maxY,
+                                    "The schedule must not overlap the park name", file: file, line: line)
+        XCTAssertGreaterThanOrEqual(app.staticTexts["park-early-entry-title"].frame.minY,
+                                    app.staticTexts["park-hours-value"].frame.maxY,
+                                    "The two schedule rows must not overlap", file: file, line: line)
+
+        let credit = app.buttons["Photo credit"].firstMatch
+        centerFullyVisible(credit, in: app, file: file, line: line)
+        XCTAssertGreaterThanOrEqual(credit.frame.width, 44, file: file, line: line)
+        XCTAssertGreaterThanOrEqual(credit.frame.height, 44, file: file, line: line)
+        assertContained(credit.frame, in: bounds.frame, "The information target must remain inside the banner", file: file, line: line)
+        XCTAssertTrue(credit.isHittable, file: file, line: line)
+        screenshot("Park banner \(capture) information target", app: app)
+        credit.tap()
+        XCTAssertTrue(app.navigationBars["Photo credit"].waitForExistence(timeout: 5), file: file, line: line)
+        let source = app.descendants(matching: .any).matching(NSPredicate(format: "label == 'Original photo'")).firstMatch
+        centerFullyVisible(source, in: app, file: file, line: line)
+        assertFullTextLayout(source, style: .body, category: category, file: file, line: line)
+        XCTAssertTrue(source.isHittable, file: file, line: line)
+        screenshot("Park banner \(capture) original photo link", app: app)
+        app.buttons["Done"].tap()
+
+        centerFullyVisible(choose, in: app, file: file, line: line)
+        choose.tap()
+        XCTAssertTrue(app.navigationBars["Choose a park"].waitForExistence(timeout: 5), file: file, line: line)
+        screenshot("Park banner \(capture) native park picker", app: app)
+        app.buttons["Done"].tap()
+        XCTAssertTrue(app.buttons["Change park. Current park: \(name)"].waitForExistence(timeout: 5), file: file, line: line)
+        print("PARK_BANNER_VERIFIED park=\(parkID) category=\(category.rawValue) height=\(height) schedule=complete informationTarget=44 parkAction=working")
+    }
+
     func testWaitsCompactLayoutKeepsParkHoursAndHistoryTouchTarget() {
         checkCompactWaitsLayout(parkID: 5, rideID: 10916, extra: [],
                                category: .large, capture: "standard EPCOT")

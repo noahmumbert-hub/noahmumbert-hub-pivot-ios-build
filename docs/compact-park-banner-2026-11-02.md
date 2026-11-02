@@ -1,0 +1,11 @@
+# Smaller Waits park banner
+
+This isolated patch starts from released1.18.3 source `fb4e25828a5fd18c6ea203c2c6e123055a493d36`. It addresses the circled Islands of Adventure park banner in Noah's IMG_5853.jpeg. The separate global-artwork candidate `b4ee4cc69c22e6ed54a97de09da9d20bcbab2942` and its tested IPA remain unchanged and unpublished.
+
+The park banner keeps the same text styles, horizontal padding, background, schedule data, accessibility children, park-picker action and photo-credit sheet. Vertical padding becomes12pt per edge, the title/divider/schedule spacing8pt and the schedule-row gap6pt. Decorative symbols use their ordinary visual sizes inside their existing fixed columns, avoiding oversized symbols crossing adjacent schedule labels or clipping the information glyph at accessibility sizes. Both interactive targets keep44pt minimum dimensions. Current rides, search, sorting, filters, wait-history controls, Map behavior and artwork are untouched.
+
+Before-change run182 native card bounds measure176.33–177pt at standard text on SE/Pro/ProMax. This is a valid layout baseline because `ParkPresentation.swift` and park-background resources are byte-identical between released1.18.3 and the frozen B4 artwork candidate. Expected normal reduction is approximately24pt; actual after-change measurements require native execution.
+
+The new `park-banner` diagnostic scope selects12 UI cases: six dedicated normal/accessibility-large/maximum-accessibility cases across Islands of Adventure and EPCOT, four existing compact Waits cases, the existing native photo-credit/search regression and expanded-park selection. Dedicated cases require a smaller normal card, growing text at accessibility sizes, complete uniquely identified schedule children without overlap,44pt contained/hittable actions, actual native photo-credit/picker navigation and original screenshots of each target. Existing scopes remain intact. Focused runs do not build or publish an IPA.
+
+Final focused SE/Pro/ProMax original-pixel review is required before declaring this patch validated. Any eventual combined delivery must integrate explicitly and pass full native regressions plus unsigned archive checks on its final exact source. This patch does not authorize publication, merge, feed changes or website edits.
