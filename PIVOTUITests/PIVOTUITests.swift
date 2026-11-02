@@ -231,8 +231,11 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(banner.exists && controls.exists, file: file, line: line)
         XCTAssertEqual(app.descendants(matching: .any).matching(identifier: "park-banner-\(parkID)").count, 1,
                        "The park card must expose one container rather than overriding its schedule children", file: file, line: line)
-        waitForSettledFrames([banner, controls], file: file, line: line)
-        let parkGap = controls.frame.minY - banner.frame.maxY
+        let bounds = app.descendants(matching: .any)["park-banner-layout-bounds-\(parkID)"].firstMatch
+        XCTAssertTrue(bounds.waitForExistence(timeout: 5), "Measure the actual card rectangle, rather than the union of its accessibility children", file: file, line: line)
+        waitForSettledFrames([bounds, controls], file: file, line: line)
+        let parkGap = controls.frame.minY - bounds.frame.maxY
+        print("COMPACT_WAITS_PARK_FRAMES \(capture) container=\(banner.frame) card=\(bounds.frame) controls=\(controls.frame) gap=\(parkGap)")
         XCTAssertGreaterThanOrEqual(parkGap, 0, "Park and rides cards must not overlap", file: file, line: line)
         XCTAssertLessThanOrEqual(parkGap, 12, "A healthy feed must not reserve an empty warning row or a large section gap", file: file, line: line)
         screenshot("Compact Waits \(capture) park to rides junction", app: app)

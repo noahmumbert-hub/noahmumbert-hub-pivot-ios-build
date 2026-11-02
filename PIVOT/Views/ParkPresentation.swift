@@ -151,6 +151,19 @@ struct ParkBannerView: View {
             RoundedRectangle(cornerRadius: 24, style: .continuous)
                 .strokeBorder(.white.opacity(0.16), lineWidth: 1).allowsHitTesting(false)
         }
+        .overlay {
+#if DEBUG
+            if ProcessInfo.processInfo.arguments.contains("--apple-ui-fixtures") {
+                // A contain group's AX frame can extend to its children's
+                // enlarged frames. Measure the actual card rectangle separately.
+                Rectangle().fill(Color.black.opacity(0.001))
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel("Park banner layout bounds")
+                    .accessibilityIdentifier("park-banner-layout-bounds-\(park?.id ?? -1)")
+                    .allowsHitTesting(false)
+            }
+#endif
+        }
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("park-banner-\(park?.id ?? -1)")
         .sheet(isPresented: $showPhotoCredit) {
