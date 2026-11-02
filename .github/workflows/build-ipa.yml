@@ -7,7 +7,7 @@ on:
         description: Full release regression or focused diagnostics without an IPA
         type: choice
         default: all
-        options: [all, artwork-delivery, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, park-picker]
+        options: [all, artwork-delivery, artwork-credits, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, park-picker]
         required: true
       simulator:
         description: iPhone used for focused diagnostics only

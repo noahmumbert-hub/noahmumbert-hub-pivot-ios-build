@@ -1507,14 +1507,14 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: loaded, object: nil)], timeout: 5), .completed)
         screenshot("Illustration Guardians detail artwork", app: app)
         let credit = app.descendants(matching: .any)["ride-illustration-credit"].firstMatch
-        reveal(credit, in: app)
+        revealArtworkDetail(credit, in: app)
         XCTAssertTrue(credit.isHittable)
         XCTAssertTrue(app.staticTexts["AI-generated illustration"].exists)
         let reference = app.descendants(matching: .any).matching(NSPredicate(format: "label == 'Reference photo: Jedi94'")).firstMatch
-        reveal(reference, in: app)
+        revealArtworkDetail(reference, in: app)
         XCTAssertTrue(reference.isHittable)
         let wait = app.staticTexts["45 min wait"]
-        reveal(wait, in: app)
+        revealArtworkDetail(wait, in: app)
         XCTAssertTrue(wait.isHittable)
         screenshot("Illustration credits and current wait", app: app)
         app.buttons["Done"].tap()
@@ -1539,13 +1539,13 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: loaded, object: nil)], timeout: 5), .completed)
         screenshot("Accepted Florida Fyre Drill illustration detail", app: app)
         let rights = app.descendants(matching: .any).matching(NSPredicate(format: "label == 'Reference rights: Copyright Universal Studios; source rights retained'")).firstMatch
-        reveal(rights, in: app)
+        revealArtworkDetail(rights, in: app)
         XCTAssertTrue(rights.isHittable)
         XCTAssertTrue(app.staticTexts["AI-generated illustration"].exists)
         XCTAssertFalse(app.descendants(matching: .any).matching(NSPredicate(format: "label BEGINSWITH 'Illustration adaptation:'")).firstMatch.exists)
         screenshot("Illustration reserved reference rights", app: app)
         let wait = app.staticTexts["45 min wait"]
-        reveal(wait, in: app)
+        revealArtworkDetail(wait, in: app)
         XCTAssertTrue(wait.isHittable)
     }
 
