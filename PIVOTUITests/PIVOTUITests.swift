@@ -2276,15 +2276,11 @@ final class PIVOTUITests: XCTestCase {
             XCTFail("The app must finish its foreground launch before selecting a park")
             return
         }
-        let banner = app.otherElements["park-banner--1"].firstMatch
-        guard banner.waitForExistence(timeout: 5) else {
-            XCTFail("The visible unselected park banner must exist")
-            return
-        }
-        let choices = banner.buttons.matching(NSPredicate(format: "label == %@", "Change park. Current park: none"))
+        // Select the unique visible control without assuming its AX parent type.
+        let choices = app.buttons.matching(NSPredicate(format: "label == %@", "Change park. Current park: none"))
         let parkButton = choices.firstMatch
         guard parkButton.waitForExistence(timeout: 5), choices.count == 1 else {
-            XCTFail("The visible unselected park banner must have one exact selection control")
+            XCTFail("The unselected Waits screen must have one exact park-selection control")
             return
         }
         waitForSettledFrames([parkButton])
