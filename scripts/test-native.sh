@@ -84,6 +84,14 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup6
       -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup7
       -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup8
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup9
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup10
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup11
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup12
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup13
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup14
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup15
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryLoadsParkGroup16
       -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryCreditsRemainReadableAtLargestAccessibilitySize
       -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryKeepsExcludedDraftAndPhotoFallbackTruthful
       -only-testing:PIVOTUITests/PIVOTUITests/testGeneratedRideIllustrationLoadsWithCreditsAndPreservesWaits

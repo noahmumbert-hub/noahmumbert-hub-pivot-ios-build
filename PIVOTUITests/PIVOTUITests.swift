@@ -1255,6 +1255,55 @@ final class PIVOTUITests: XCTestCase {
         ]
     }
 
+    private func revealArtworkDetail(_ element: XCUIElement, in app: XCUIApplication,
+                                     file: StaticString = #filePath, line: UInt = #line) {
+        let navigation = app.navigationBars["Ride information"].firstMatch
+        XCTAssertTrue(navigation.waitForExistence(timeout: 5), file: file, line: line)
+        XCTAssertTrue(element.waitForExistence(timeout: 5), file: file, line: line)
+        let window = app.frame
+        let scroll = app.scrollViews.allElementsBoundByIndex.first { candidate in
+            candidate.exists && !candidate.frame.isEmpty && candidate.frame.intersects(window) && candidate.isHittable
+        }
+        guard let scroll else {
+            XCTFail("Artwork details must expose a foreground scroll view", file: file, line: line)
+            return
+        }
+        func visibleBody() -> CGRect {
+            var area = scroll.frame.intersection(window).insetBy(dx: 2, dy: 4)
+            let bottom = min(area.maxY, window.maxY - 12)
+            area.origin.y = max(area.minY, navigation.frame.maxY + 8)
+            area.size.height = max(0, bottom - area.minY)
+            return area
+        }
+        for attempt in 0..<10 {
+            waitForSettledFrames([scroll, element], file: file, line: line)
+            let area = visibleBody()
+            let frame = element.frame
+            print("ARTWORK_DETAIL_VISIBLE attempt=\(attempt) label=\(element.label) viewport=\(area) target=\(frame)")
+            guard area.width > 0, area.height > 44, !frame.isEmpty else {
+                XCTFail("Artwork detail text needs a measured visible scroll region and nonempty frame", file: file, line: line)
+                return
+            }
+            if area.contains(frame) && element.isHittable { return }
+            // A full-window flick overshot these short rights links in run178.
+            // Move at most120pt toward the measured target, holding at the end
+            // so the next poll observes its resting position, not a fly-by.
+            let offset = frame.midY - area.midY
+            guard abs(offset) >= 1, frame.height <= area.height else {
+                XCTFail("The complete artwork text must fit inside the foreground detail viewport", file: file, line: line)
+                return
+            }
+            let movement = min(120, min(area.height * 0.25, max(20, abs(offset)))) * (offset < 0 ? -1 : 1)
+            let start = app.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(
+                dx: area.midX - window.minX, dy: area.midY + movement / 2 - window.minY))
+            let end = start.withOffset(CGVector(dx: 0, dy: -movement))
+            start.press(forDuration: 0.05, thenDragTo: end, withVelocity: .slow, thenHoldForDuration: 0.2)
+        }
+        waitForSettledFrames([scroll, element], file: file, line: line)
+        assertContained(element.frame, in: visibleBody(), "Complete artwork text must remain clear of navigation and screen edges", file: file, line: line)
+        XCTAssertTrue(element.isHittable, file: file, line: line)
+    }
+
     private func assertArtworkDelivery(_ item: ArtworkDeliveryCase, largestText: Bool = false,
                                        overview: Bool = false, file: StaticString = #filePath, line: UInt = #line) {
         let suffix = largestText ? " largest text" : ""
@@ -1282,79 +1331,127 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(artwork.label.hasPrefix("AI illustration:"), file: file, line: line)
         screenshot("Artwork delivery \(item.key) detail\(suffix)", app: app)
         let credit = app.descendants(matching: .any)["ride-illustration-credit"].firstMatch
-        reveal(credit, in: app)
+        revealArtworkDetail(credit, in: app, file: file, line: line)
         XCTAssertTrue(credit.isHittable, file: file, line: line)
         XCTAssertTrue(app.staticTexts["AI-generated illustration"].exists, file: file, line: line)
         let composition = app.staticTexts["Inspired by real ride photography. Composition and lighting are illustrated."]
-        reveal(composition, in: app)
+        revealArtworkDetail(composition, in: app, file: file, line: line)
         XCTAssertTrue(composition.isHittable, file: file, line: line)
         for reference in item.references {
             let source = app.descendants(matching: .any).matching(NSPredicate(format: "label == %@", "Reference photo: " + reference.credit)).firstMatch
-            reveal(source, in: app)
+            revealArtworkDetail(source, in: app, file: file, line: line)
             XCTAssertTrue(source.isHittable, file: file, line: line)
             let rights = app.descendants(matching: .any).matching(NSPredicate(format: "label == %@", "Reference rights: " + reference.rights)).firstMatch
-            reveal(rights, in: app)
+            revealArtworkDetail(rights, in: app, file: file, line: line)
             XCTAssertTrue(rights.isHittable, file: file, line: line)
         }
         if let license = item.adaptation {
             let adaptation = app.descendants(matching: .any).matching(NSPredicate(format: "label == %@", "Illustration adaptation: " + license)).firstMatch
-            reveal(adaptation, in: app)
+            revealArtworkDetail(adaptation, in: app, file: file, line: line)
             XCTAssertTrue(adaptation.isHittable, file: file, line: line)
         } else {
             XCTAssertFalse(app.descendants(matching: .any).matching(NSPredicate(format: "label BEGINSWITH 'Illustration adaptation:'")).firstMatch.exists, file: file, line: line)
         }
         screenshot("Artwork delivery \(item.key) rights\(suffix)", app: app)
         let wait = app.staticTexts["45 min wait"]
-        reveal(wait, in: app)
+        revealArtworkDetail(wait, in: app, file: file, line: line)
         XCTAssertTrue(wait.isHittable, file: file, line: line)
         print("ARTWORK_DELIVERY_VERIFIED key=\(item.key) detail=Loaded syntheticWait=45 largest=\(largestText)")
     }
 
     func testArtworkDeliveryLoadsParkGroup1() {
-        for (offset, item) in artworkDeliveryCases[0..<4].enumerated() {
-            assertArtworkDelivery(item, overview: offset == 0)
+        for (offset, item) in artworkDeliveryCases[0..<2].enumerated() {
+            assertArtworkDelivery(item, overview: (0 + offset) % 4 == 0)
         }
     }
 
     func testArtworkDeliveryLoadsParkGroup2() {
-        for (offset, item) in artworkDeliveryCases[4..<8].enumerated() {
-            assertArtworkDelivery(item, overview: offset == 0)
+        for (offset, item) in artworkDeliveryCases[2..<4].enumerated() {
+            assertArtworkDelivery(item, overview: (2 + offset) % 4 == 0)
         }
     }
 
     func testArtworkDeliveryLoadsParkGroup3() {
-        for (offset, item) in artworkDeliveryCases[8..<12].enumerated() {
-            assertArtworkDelivery(item, overview: offset == 0)
+        for (offset, item) in artworkDeliveryCases[4..<6].enumerated() {
+            assertArtworkDelivery(item, overview: (4 + offset) % 4 == 0)
         }
     }
 
     func testArtworkDeliveryLoadsParkGroup4() {
-        for (offset, item) in artworkDeliveryCases[12..<16].enumerated() {
-            assertArtworkDelivery(item, overview: offset == 0)
+        for (offset, item) in artworkDeliveryCases[6..<8].enumerated() {
+            assertArtworkDelivery(item, overview: (6 + offset) % 4 == 0)
         }
     }
 
     func testArtworkDeliveryLoadsParkGroup5() {
-        for (offset, item) in artworkDeliveryCases[16..<20].enumerated() {
-            assertArtworkDelivery(item, overview: offset == 0)
+        for (offset, item) in artworkDeliveryCases[8..<10].enumerated() {
+            assertArtworkDelivery(item, overview: (8 + offset) % 4 == 0)
         }
     }
 
     func testArtworkDeliveryLoadsParkGroup6() {
-        for (offset, item) in artworkDeliveryCases[20..<24].enumerated() {
-            assertArtworkDelivery(item, overview: offset == 0)
+        for (offset, item) in artworkDeliveryCases[10..<12].enumerated() {
+            assertArtworkDelivery(item, overview: (10 + offset) % 4 == 0)
         }
     }
 
     func testArtworkDeliveryLoadsParkGroup7() {
-        for (offset, item) in artworkDeliveryCases[24..<28].enumerated() {
-            assertArtworkDelivery(item, overview: offset == 0)
+        for (offset, item) in artworkDeliveryCases[12..<14].enumerated() {
+            assertArtworkDelivery(item, overview: (12 + offset) % 4 == 0)
         }
     }
 
     func testArtworkDeliveryLoadsParkGroup8() {
-        for (offset, item) in artworkDeliveryCases[28..<32].enumerated() {
-            assertArtworkDelivery(item, overview: offset == 0)
+        for (offset, item) in artworkDeliveryCases[14..<16].enumerated() {
+            assertArtworkDelivery(item, overview: (14 + offset) % 4 == 0)
+        }
+    }
+
+    func testArtworkDeliveryLoadsParkGroup9() {
+        for (offset, item) in artworkDeliveryCases[16..<18].enumerated() {
+            assertArtworkDelivery(item, overview: (16 + offset) % 4 == 0)
+        }
+    }
+
+    func testArtworkDeliveryLoadsParkGroup10() {
+        for (offset, item) in artworkDeliveryCases[18..<20].enumerated() {
+            assertArtworkDelivery(item, overview: (18 + offset) % 4 == 0)
+        }
+    }
+
+    func testArtworkDeliveryLoadsParkGroup11() {
+        for (offset, item) in artworkDeliveryCases[20..<22].enumerated() {
+            assertArtworkDelivery(item, overview: (20 + offset) % 4 == 0)
+        }
+    }
+
+    func testArtworkDeliveryLoadsParkGroup12() {
+        for (offset, item) in artworkDeliveryCases[22..<24].enumerated() {
+            assertArtworkDelivery(item, overview: (22 + offset) % 4 == 0)
+        }
+    }
+
+    func testArtworkDeliveryLoadsParkGroup13() {
+        for (offset, item) in artworkDeliveryCases[24..<26].enumerated() {
+            assertArtworkDelivery(item, overview: (24 + offset) % 4 == 0)
+        }
+    }
+
+    func testArtworkDeliveryLoadsParkGroup14() {
+        for (offset, item) in artworkDeliveryCases[26..<28].enumerated() {
+            assertArtworkDelivery(item, overview: (26 + offset) % 4 == 0)
+        }
+    }
+
+    func testArtworkDeliveryLoadsParkGroup15() {
+        for (offset, item) in artworkDeliveryCases[28..<30].enumerated() {
+            assertArtworkDelivery(item, overview: (28 + offset) % 4 == 0)
+        }
+    }
+
+    func testArtworkDeliveryLoadsParkGroup16() {
+        for (offset, item) in artworkDeliveryCases[30..<32].enumerated() {
+            assertArtworkDelivery(item, overview: (30 + offset) % 4 == 0)
         }
     }
 

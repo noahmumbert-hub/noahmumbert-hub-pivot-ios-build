@@ -41,7 +41,7 @@ jobs:
     # The original combined suite took 37m. Bounded visual cases now inspect
     # every large-text chart column; allow test, archive and evidence uploads.
     # Individual XCTest time limits remain unchanged.
-    timeout-minutes: 90
+    timeout-minutes: 120
     env:
       DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
       PIVOT_SIMULATOR_NAME: iPhone 16 Pro
@@ -104,7 +104,7 @@ jobs:
     if: (github.ref != 'refs/heads/diagnostics/apple-native-redesign' || contains(github.event.head_commit.message, '[full-regression]') || inputs.scope == 'all') && (github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all')
     name: iPhone regression (${{ matrix.simulator }})
     runs-on: macos-15
-    timeout-minutes: 90
+    timeout-minutes: 120
     strategy:
       fail-fast: false
       matrix:
