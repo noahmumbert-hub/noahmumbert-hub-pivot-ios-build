@@ -1694,19 +1694,56 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(pickerList.waitForExistence(timeout: 10))
         let epcot = pickerList.buttons.containing(.staticText, identifier: "EPCOT").firstMatch
         XCTAssertTrue(epcot.waitForExistence(timeout: 10))
-        // The native bottom search bar can cover a row that still exists in AX.
-        // Reach the real row inside its List clip before asking XCTest to tap it.
-        for _ in 0..<6 {
-            let clip = pickerList.frame.intersection(app.frame)
+        // A List AX frame can cover the full sheet behind the keyboard/search.
+        // Both the target and native drag must stay in the visible list region.
+        func pickerViewport() -> CGRect {
+            let window = app.frame
+            var viewport = pickerList.frame.intersection(safeContentViewport(in: app))
+            for keyboard in app.keyboards.allElementsBoundByIndex {
+                let frame = keyboard.frame
+                if !frame.isEmpty, frame.intersects(viewport) {
+                    viewport.size.height = max(0, min(viewport.maxY, frame.minY - 8) - viewport.minY)
+                }
+            }
+            if parkSearch.exists {
+                let frame = parkSearch.frame
+                if frame.intersects(viewport) {
+                    if frame.midY > viewport.midY {
+                        // Clear the outer search capsule and its toolbar inset too.
+                        viewport.size.height = max(0, min(viewport.maxY, frame.minY - 16) - viewport.minY)
+                    } else {
+                        let bottom = viewport.maxY
+                        viewport.origin.y = max(viewport.minY, frame.maxY + 8)
+                        viewport.size.height = max(0, bottom - viewport.minY)
+                    }
+                }
+            }
+            return viewport.intersection(window)
+        }
+        let window = app.frame
+        for attempt in 0..<6 {
+            let viewport = pickerViewport()
             let row = epcot.frame
-            if clip.insetBy(dx: -1, dy: -1).contains(row) && epcot.isHittable { break }
-            if row.midY < clip.midY { pickerList.swipeDown(velocity: .slow) }
-            else { pickerList.swipeUp(velocity: .slow) }
+            print("MAP_PICKER_VISIBLE_VIEWPORT attempt=\(attempt) viewport=\(viewport) row=\(row)")
+            guard viewport.width > 0, viewport.height > 44 else {
+                XCTFail("The park picker must expose a visible list region clear of search and keyboard")
+                return
+            }
+            if viewport.insetBy(dx: -1, dy: -1).contains(row) && epcot.isHittable { break }
+            let offset = row.minY < viewport.minY
+                ? row.minY - viewport.minY - 12 : row.maxY - viewport.maxY + 12
+            let movement = min(viewport.height * 0.75, max(30, abs(offset))) * (offset < 0 ? -1 : 1)
+            let origin = app.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(
+                dx: verticalPanX(in: viewport) - window.minX,
+                dy: viewport.midY + movement / 2 - window.minY))
+            let destination = origin.withOffset(CGVector(dx: 0, dy: -movement))
+            origin.press(forDuration: 0.05, thenDragTo: destination, withVelocity: .slow, thenHoldForDuration: 0.2)
         }
         waitForSettledFrames([pickerList, epcot])
-        assertContained(epcot.frame, in: pickerList.frame.intersection(app.frame),
-                        "The complete park row must be inside the native picker List viewport")
+        assertContained(epcot.frame, in: pickerViewport(),
+                        "The complete park row must be clear of the foreground search and keyboard")
         XCTAssertTrue(epcot.isHittable)
+        screenshot("Map EPCOT row clear of search and keyboard", app: app)
         epcot.tap()
         let selectedPark = app.buttons["Change park. Current park: EPCOT"]
         let switched = NSPredicate { _, _ in
