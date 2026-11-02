@@ -897,10 +897,19 @@ final class PIVOTUITests: XCTestCase {
             XCTAssertTrue(lowest.label.contains("about 10 min"))
             let parkTime = summary.staticTexts["lowest-wait-park-time"]
             centerFullyVisible(parkTime, in: app)
-            XCTAssertGreaterThan(parkTime.frame.height, 40, "Park time and zone must wrap at accessibility size")
+            screenshot("Lowest wait complete park-local date and zone", app: app)
+            let parkWording = parkTime.label.split(whereSeparator: \.isWhitespace).joined(separator: " ")
+            XCTAssertNotNil(parkWording.range(of:
+                #"^Park time · (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) ([1-9]|[12][0-9]|3[01]),?(?: at)? (1[0-2]|0?[1-9]):[0-5][0-9] ?[AP]M (EDT|EST)$"#,
+                options: .regularExpression), "Retain the complete park-local date, clock and zone: \(parkTime.label)")
+            assertFullTextLayout(parkTime, style: .caption1, category: .accessibilityLarge)
             let variation = summary.staticTexts["lowest-wait-variation"]
             centerFullyVisible(variation, in: app)
-            XCTAssertGreaterThan(variation.frame.height, 40, "The complete uncertainty label must wrap")
+            screenshot("Lowest wait complete observed variation", app: app)
+            XCTAssertNotNil(variation.label.range(of:
+                #"^Observed variation [0-9]+–[0-9]+ min; not a guaranteed interval\.$"#,
+                options: .regularExpression), "Retain the complete range and uncertainty wording: \(variation.label)")
+            assertFullTextLayout(variation, style: .caption1, category: .accessibilityLarge)
             let source = summary.staticTexts["lowest-wait-source-time"]
             centerFullyVisible(source, in: app)
             XCTAssertTrue(source.label.contains("Wait source checked"))
@@ -1614,6 +1623,9 @@ final class PIVOTUITests: XCTestCase {
     private func selectRootMapRide(_ name: String, app: XCUIApplication) {
         let search = app.textFields["Search park places"]
         XCTAssertTrue(search.waitForExistence(timeout: 10))
+        let reachable = NSPredicate { _, _ in search.exists && search.isHittable }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: reachable, object: nil)], timeout: 10), .completed,
+                       "The active park's map search must be reachable before typing")
         search.tap(); search.typeText(name + "\n")
         app.buttons["Browse map places"].tap()
         let row = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH 'map-place-row-' AND label BEGINSWITH %@", name)).firstMatch
@@ -1678,9 +1690,31 @@ final class PIVOTUITests: XCTestCase {
         app.buttons["Change park. Current park: Magic Kingdom Park"].tap()
         let parkSearch = app.searchFields.firstMatch
         XCTAssertTrue(parkSearch.waitForExistence(timeout: 5)); parkSearch.tap(); parkSearch.typeText("EPCOT")
-        // Park rows include the operator monogram before the park name.
-        let epcot = app.buttons.matching(NSPredicate(format: "label CONTAINS 'EPCOT'")).firstMatch
-        XCTAssertTrue(epcot.waitForExistence(timeout: 10)); epcot.tap()
+        let pickerList = app.collectionViews.containing(.staticText, identifier: "EPCOT").firstMatch
+        XCTAssertTrue(pickerList.waitForExistence(timeout: 10))
+        let epcot = pickerList.buttons.containing(.staticText, identifier: "EPCOT").firstMatch
+        XCTAssertTrue(epcot.waitForExistence(timeout: 10))
+        // The native bottom search bar can cover a row that still exists in AX.
+        // Reach the real row inside its List clip before asking XCTest to tap it.
+        for _ in 0..<6 {
+            let clip = pickerList.frame.intersection(app.frame)
+            let row = epcot.frame
+            if clip.insetBy(dx: -1, dy: -1).contains(row) && epcot.isHittable { break }
+            if row.midY < clip.midY { pickerList.swipeDown(velocity: .slow) }
+            else { pickerList.swipeUp(velocity: .slow) }
+        }
+        waitForSettledFrames([pickerList, epcot])
+        assertContained(epcot.frame, in: pickerList.frame.intersection(app.frame),
+                        "The complete park row must be inside the native picker List viewport")
+        XCTAssertTrue(epcot.isHittable)
+        epcot.tap()
+        let selectedPark = app.buttons["Change park. Current park: EPCOT"]
+        let switched = NSPredicate { _, _ in
+            !parkSearch.exists && selectedPark.exists && selectedPark.isHittable
+        }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: switched, object: nil)], timeout: 10), .completed,
+                       "The picker must dismiss and the Map must select EPCOT before a new ride search")
+        screenshot("Map park switch selects EPCOT before ride search", app: app)
         selectRootMapRide("Guardians", app: app)
         refreshMapWait("15 min", app: app)
         XCTAssertTrue(app.buttons["Change park. Current park: EPCOT"].exists)
