@@ -64,11 +64,11 @@ struct ParkBannerView: View {
     private var artwork: ParkArtwork? { park.flatMap(ParkArtworkCatalog.hero) }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 8) {
             Button(action: onChoosePark) {
                 HStack(spacing: 10) {
                     Image(systemName: ParkArtworkCatalog.symbol(for: park))
-                        .font(.title3.weight(.semibold))
+                        .font(.system(size: 20, weight: .semibold))
                         .foregroundStyle(Color(red: 0.74, green: 0.76, blue: 1))
                         .frame(width: 44, height: 44)
                         .background(.white.opacity(0.11), in: Circle())
@@ -76,7 +76,7 @@ struct ParkBannerView: View {
                         .font(.title3.weight(.bold))
                         .fixedSize(horizontal: false, vertical: true)
                         .multilineTextAlignment(.leading)
-                    Image(systemName: "chevron.down").font(.caption.weight(.semibold))
+                    Image(systemName: "chevron.down").font(.system(size: 12, weight: .semibold))
                     Spacer(minLength: 0)
                 }.frame(minHeight: 44).contentShape(Rectangle())
             }
@@ -85,7 +85,7 @@ struct ParkBannerView: View {
 
             if let park {
                 Rectangle().fill(.white.opacity(0.18)).frame(width: 164, height: 1).accessibilityHidden(true)
-                VStack(alignment: .leading, spacing: 10) {
+                VStack(alignment: .leading, spacing: 6) {
                     scheduleLine("Park hours", value: hours?.regular.map { timeRange($0, park: park) } ?? "Updating", icon: "clock", identifier: "park-hours")
                     scheduleLine(hours?.earlyEntry?.label ?? "Early entry",
                                  value: hours?.earlyEntry.map { timeRange($0, park: park) } ?? (hours == nil ? "Updating" : "Not posted"),
@@ -105,7 +105,8 @@ struct ParkBannerView: View {
             }
         }
         .foregroundStyle(.white)
-        .padding(18)
+        .padding(.horizontal, 18)
+        .padding(.vertical, 12)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background {
             GeometryReader { geometry in
@@ -141,7 +142,7 @@ struct ParkBannerView: View {
             if artwork != nil {
                 Button { showPhotoCredit = true } label: {
                     Image(systemName: "info.circle")
-                        .font(.subheadline).foregroundStyle(.white.opacity(0.9))
+                        .font(.system(size: 17)).foregroundStyle(.white.opacity(0.9))
                         .frame(width: 44, height: 44)
                 }.buttonStyle(.plain).accessibilityLabel("Photo credit")
             }
@@ -178,7 +179,9 @@ struct ParkBannerView: View {
 
     private func scheduleLine(_ title: String, value: String, icon: String, identifier: String) -> some View {
         HStack(alignment: .top, spacing: 12) {
-            Image(systemName: icon).font(.body).frame(width: 22).padding(.top, 2)
+            // Decorative glyphs stay within their fixed columns as the adjacent
+            // schedule text grows with Dynamic Type.
+            Image(systemName: icon).font(.system(size: 16)).frame(width: 22).padding(.top, 2)
             VStack(alignment: .leading, spacing: 2) {
                 Text(title).foregroundStyle(.white.opacity(0.85))
                     .accessibilityIdentifier(identifier + "-title")

@@ -58,6 +58,21 @@ test_options=(
 )
 case "${PIVOT_TEST_SCOPE:-all}" in
   all) ;;
+  park-banner)
+    test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testParkBannerIslandsIsSmallerAndKeepsScheduleAndActions
+      -only-testing:PIVOTUITests/PIVOTUITests/testParkBannerEPCOTIsSmallerAndKeepsScheduleAndActions
+      -only-testing:PIVOTUITests/PIVOTUITests/testParkBannerIslandsKeepsAccessibilityScheduleAndActions
+      -only-testing:PIVOTUITests/PIVOTUITests/testParkBannerEPCOTKeepsAccessibilityScheduleAndActions
+      -only-testing:PIVOTUITests/PIVOTUITests/testParkBannerIslandsKeepsLargestScheduleAndActions
+      -only-testing:PIVOTUITests/PIVOTUITests/testParkBannerEPCOTKeepsLargestScheduleAndActions
+      -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutKeepsParkHoursAndHistoryTouchTarget
+      -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutKeepsTwelveSampleControlSmall
+      -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutAllowsAccessibilityTextToWrap
+      -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutAllowsLargestAccessibilityTextToWrap
+      -only-testing:PIVOTUITests/PIVOTUITests/testReferenceEPCOTCardsSearchFiltersAndPhotoCredits
+      -only-testing:PIVOTUITests/PIVOTUITests/testExpandedParkCanBeFoundAndSelected
+    ) ;;
   layout-review)
     test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutKeepsParkHoursAndHistoryTouchTarget
@@ -200,7 +215,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
     ) ;;
   *)
-    echo 'Unsupported PIVOT_TEST_SCOPE; use all, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, or map-refresh.' >&2
+    echo 'Unsupported PIVOT_TEST_SCOPE; use all, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, or park-picker.' >&2
     exit 1 ;;
 esac
 python3 - <<'PY'
