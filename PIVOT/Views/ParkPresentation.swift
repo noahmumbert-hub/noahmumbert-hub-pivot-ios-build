@@ -90,7 +90,7 @@ struct ParkBannerView: View {
                     scheduleLine(hours?.earlyEntry?.label ?? "Early entry",
                                  value: hours?.earlyEntry.map { timeRange($0, park: park) } ?? (hours == nil ? "Updating" : "Not posted"),
                                  icon: "ticket", identifier: "park-early-entry")
-                }.padding(.trailing, artwork == nil ? 0 : 28)
+                }.padding(.trailing, artwork == nil ? 0 : 34)
                 if hours?.stale == true {
                     Label("Saved schedule · refresh pending", systemImage: "clock.arrow.circlepath")
                         .font(.caption).foregroundStyle(Color(red: 1, green: 0.78, blue: 0.52))
@@ -144,7 +144,12 @@ struct ParkBannerView: View {
                     Image(systemName: "info.circle")
                         .font(.system(size: 17)).foregroundStyle(.white.opacity(0.9))
                         .frame(width: 44, height: 44)
-                }.buttonStyle(.plain).accessibilityLabel("Photo credit")
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Photo credit")
+                .accessibilityIdentifier("park-photo-credit-\(park?.id ?? -1)")
+                .padding(8)
             }
         }
         .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))

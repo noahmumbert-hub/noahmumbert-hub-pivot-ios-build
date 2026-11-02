@@ -60,12 +60,12 @@ case "${PIVOT_TEST_SCOPE:-all}" in
   all) ;;
   park-banner)
     test_options+=(
-      -only-testing:PIVOTUITests/PIVOTUITests/testParkBannerIslandsIsSmallerAndKeepsScheduleAndActions
-      -only-testing:PIVOTUITests/PIVOTUITests/testParkBannerEPCOTIsSmallerAndKeepsScheduleAndActions
-      -only-testing:PIVOTUITests/PIVOTUITests/testParkBannerIslandsKeepsAccessibilityScheduleAndActions
-      -only-testing:PIVOTUITests/PIVOTUITests/testParkBannerEPCOTKeepsAccessibilityScheduleAndActions
-      -only-testing:PIVOTUITests/PIVOTUITests/testParkBannerIslandsKeepsLargestScheduleAndActions
-      -only-testing:PIVOTUITests/PIVOTUITests/testParkBannerEPCOTKeepsLargestScheduleAndActions
+      -only-testing:PIVOTUITests/PIVOTUITests/testCompactParkBannerIslandsIsSmallerAndKeepsScheduleAndActions
+      -only-testing:PIVOTUITests/PIVOTUITests/testCompactParkBannerEPCOTIsSmallerAndKeepsScheduleAndActions
+      -only-testing:PIVOTUITests/PIVOTUITests/testCompactParkBannerIslandsKeepsAccessibilityScheduleAndActions
+      -only-testing:PIVOTUITests/PIVOTUITests/testCompactParkBannerEPCOTKeepsAccessibilityScheduleAndActions
+      -only-testing:PIVOTUITests/PIVOTUITests/testCompactParkBannerIslandsKeepsLargestScheduleAndActions
+      -only-testing:PIVOTUITests/PIVOTUITests/testCompactParkBannerEPCOTKeepsLargestScheduleAndActions
       -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutKeepsParkHoursAndHistoryTouchTarget
       -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutKeepsTwelveSampleControlSmall
       -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutAllowsAccessibilityTextToWrap

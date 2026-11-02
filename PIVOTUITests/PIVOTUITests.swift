@@ -183,32 +183,32 @@ final class PIVOTUITests: XCTestCase {
         screenshot("Waits shared group filtered down status", app: app)
     }
 
-    func testParkBannerIslandsIsSmallerAndKeepsScheduleAndActions() {
+    func testCompactParkBannerIslandsIsSmallerAndKeepsScheduleAndActions() {
         checkParkBanner(parkID: 64, name: "Islands of Adventure", category: .large,
                         extra: ["--ui-dark"], capture: "Islands standard")
     }
 
-    func testParkBannerEPCOTIsSmallerAndKeepsScheduleAndActions() {
+    func testCompactParkBannerEPCOTIsSmallerAndKeepsScheduleAndActions() {
         checkParkBanner(parkID: 5, name: "EPCOT", category: .large,
                         extra: ["--ui-light"], capture: "EPCOT standard light")
     }
 
-    func testParkBannerIslandsKeepsAccessibilityScheduleAndActions() {
+    func testCompactParkBannerIslandsKeepsAccessibilityScheduleAndActions() {
         checkParkBanner(parkID: 64, name: "Islands of Adventure", category: .accessibilityLarge,
                         extra: ["--ui-dark", "--ui-large-type"], capture: "Islands accessibility large")
     }
 
-    func testParkBannerEPCOTKeepsAccessibilityScheduleAndActions() {
+    func testCompactParkBannerEPCOTKeepsAccessibilityScheduleAndActions() {
         checkParkBanner(parkID: 5, name: "EPCOT", category: .accessibilityLarge,
                         extra: ["--ui-dark", "--ui-large-type"], capture: "EPCOT accessibility large")
     }
 
-    func testParkBannerIslandsKeepsLargestScheduleAndActions() {
+    func testCompactParkBannerIslandsKeepsLargestScheduleAndActions() {
         checkParkBanner(parkID: 64, name: "Islands of Adventure", category: .accessibilityExtraExtraExtraLarge,
                         extra: ["--ui-dark", "--ui-largest-type"], capture: "Islands accessibility largest")
     }
 
-    func testParkBannerEPCOTKeepsLargestScheduleAndActions() {
+    func testCompactParkBannerEPCOTKeepsLargestScheduleAndActions() {
         checkParkBanner(parkID: 5, name: "EPCOT", category: .accessibilityExtraExtraExtraLarge,
                         extra: ["--ui-dark", "--ui-largest-type"], capture: "EPCOT accessibility largest")
     }
@@ -261,14 +261,25 @@ final class PIVOTUITests: XCTestCase {
                                     app.staticTexts["park-hours-value"].frame.maxY,
                                     "The two schedule rows must not overlap", file: file, line: line)
 
-        let credit = app.buttons["Photo credit"].firstMatch
+        let credit = app.buttons["park-photo-credit-\(parkID)"].firstMatch
         centerFullyVisible(credit, in: app, file: file, line: line)
-        XCTAssertGreaterThanOrEqual(credit.frame.width, 44, file: file, line: line)
-        XCTAssertGreaterThanOrEqual(credit.frame.height, 44, file: file, line: line)
+        XCTAssertEqual(app.buttons.matching(identifier: "park-photo-credit-\(parkID)").count, 1, file: file, line: line)
+        XCTAssertEqual(credit.label, "Photo credit", file: file, line: line)
+        XCTAssertGreaterThanOrEqual(credit.frame.width, 44, "The information action needs a full 44-point accessible width", file: file, line: line)
+        XCTAssertGreaterThanOrEqual(credit.frame.height, 44, "The information action needs a full 44-point accessible height", file: file, line: line)
         assertContained(credit.frame, in: bounds.frame, "The information target must remain inside the banner", file: file, line: line)
         XCTAssertTrue(credit.isHittable, file: file, line: line)
         screenshot("Park banner \(capture) information target", app: app)
-        credit.tap()
+        // Exercise the44pt rectangle outside the17pt glyph. Across the two
+        // parks and size categories these taps cover all four target corners.
+        let edge: CGVector
+        if category == .large {
+            edge = parkID == 5 ? CGVector(dx: 0.1, dy: 0.1) : CGVector(dx: 0.9, dy: 0.9)
+        } else {
+            edge = parkID == 5 ? CGVector(dx: 0.9, dy: 0.1) : CGVector(dx: 0.1, dy: 0.9)
+        }
+        print("PARK_BANNER_INFORMATION_TARGET \(capture) frame=\(credit.frame) edge=\(edge)")
+        credit.coordinate(withNormalizedOffset: edge).tap()
         XCTAssertTrue(app.navigationBars["Photo credit"].waitForExistence(timeout: 5), file: file, line: line)
         let source = app.descendants(matching: .any).matching(NSPredicate(format: "label == 'Original photo'")).firstMatch
         centerFullyVisible(source, in: app, file: file, line: line)
