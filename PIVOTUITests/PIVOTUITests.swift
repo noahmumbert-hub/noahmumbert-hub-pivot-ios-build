@@ -71,6 +71,41 @@ final class PIVOTUITests: XCTestCase {
                       "One real search-field tap must open the keyboard")
     }
 
+    private func visibleMapCluster(in app: XCUIApplication, memberCount: Int? = nil) -> XCUIElement? {
+        let clusters: XCUIElementQuery
+        if let memberCount {
+            clusters = app.buttons.matching(NSPredicate(format: "identifier == %@ AND label == %@",
+                "Map place cluster", "\(memberCount) places. Zoom in"))
+        } else {
+            clusters = app.buttons.matching(identifier: "Map place cluster")
+        }
+        XCTAssertTrue(clusters.firstMatch.waitForExistence(timeout: 5))
+        var visible: XCUIElement?
+        let minimum: CGFloat = 44
+        let ready = NSPredicate { _, _ in
+            let viewport = app.frame
+            visible = clusters.allElementsBoundByIndex.first { element in
+                guard element.exists && element.isHittable else { return false }
+                let frame = element.frame
+                return viewport.contains(frame)
+                    && frame.width >= minimum - minimum.ulp * 8
+                    && frame.height >= minimum - minimum.ulp * 8
+            }
+            return visible != nil
+        }
+        let result = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 10)
+        guard result == .completed, let visible else {
+            screenshot("No visible native cluster matching the requested members", app: app)
+            XCTFail("A hittable full-size native cluster must be visible before its one physical tap")
+            return nil
+        }
+        waitForSettledFrames([visible])
+        XCTAssertTrue(visible.isHittable)
+        assertParkBannerTouchTarget(visible.frame)
+        print("MAP_CLUSTER_NATIVE_TARGET label=\(visible.label) frame=\(visible.frame)")
+        return visible
+    }
+
     private func rootFixture(_ extra: [String] = []) -> XCUIApplication {
         let app = XCUIApplication()
         app.launchArguments = ["--apple-ui-test", "--apple-ui-fixtures", "--ui-light"] + extra
@@ -1946,16 +1981,18 @@ final class PIVOTUITests: XCTestCase {
         waitForCamera(app, { $0[2] > initialAltitude * 3 }, timeout: 20)
         XCTAssertEqual(camera(app)[2], initialAltitude * 4, accuracy: initialAltitude * 0.4,
                        "Two zoom-out presses must settle near four times the original altitude")
-        let cluster = app.buttons["Map place cluster"].firstMatch
-        XCTAssertTrue(cluster.waitForExistence(timeout: 5))
+        guard let cluster = visibleMapCluster(in: app) else { return }
         let before = camera(app)
-        cluster.tap()
+        cluster.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5)).tap()
         // Native SE evidence recorded this valid cluster-fit animation taking
         // 8.1 seconds. Keep the same zoom requirement while awaiting its finish.
         waitForCamera(app, { $0[2] < before[2] * 0.85 }, timeout: 20)
         chooseMapCategory("Food", app: app)
         app.buttons["Show whole park"].tap()
-        XCTAssertTrue(cluster.waitForExistence(timeout: 5)); cluster.tap()
+        // MapKit retains non-hittable AX clusters and member pins from earlier
+        // regions. Select the visible two-place Food cluster, not their first AX match.
+        guard let foodCluster = visibleMapCluster(in: app, memberCount: 2) else { return }
+        foodCluster.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5)).tap()
         let member = app.buttons["map-place-row-fixture-food-a"]
         let otherMember = app.buttons["map-place-row-fixture-food-b"]
         XCTAssertTrue(member.waitForExistence(timeout: 5))
@@ -1999,6 +2036,14 @@ final class PIVOTUITests: XCTestCase {
         member.tap()
         XCTAssertTrue(app.staticTexts["North counter"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.staticTexts["Dining location · hours unavailable"].exists)
+        let selectedName = app.staticTexts["Selected place name"]
+        let selected = NSPredicate { _, _ in
+            selectedName.exists && selectedName.label == "North counter" && selectedName.isHittable
+                && !member.exists && !otherMember.exists && !done.exists
+                && app.buttons["Close place details"].isHittable
+        }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: selected, object: nil)], timeout: 10), .completed,
+                       "One native member-row tap must dismiss the list and select the actual place card")
     }
 
     private func mapAttributionCredit(in safari: XCUIApplication) -> XCUIElement {
