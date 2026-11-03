@@ -15,7 +15,41 @@ final class PIVOTUITests: XCTestCase {
         app.buttons["Filter map places"].tap()
         let choice = app.buttons[category].firstMatch
         XCTAssertTrue(choice.waitForExistence(timeout: 3))
-        choice.tap()
+        waitForSettledFrames([choice])
+        XCTAssertTrue(choice.isHittable)
+        // Native menu AX activation points can land in unresponsive padding.
+        // Locate the actual painted title in the unmodified native row pixels
+        // and send one real touch there; selection/dismissal remain mandatory.
+        let frame = choice.frame
+        let capture = choice.screenshot()
+        guard let pixels = capture.image.cgImage else {
+            XCTFail("The native category row must supply its actual pixels")
+            return
+        }
+        let request = VNRecognizeTextRequest()
+        request.recognitionLevel = .accurate
+        request.recognitionLanguages = ["en-US"]
+        request.usesLanguageCorrection = false
+        do { try VNImageRequestHandler(cgImage: pixels, options: [:]).perform([request]) }
+        catch { XCTFail("Native category title recognition failed: \(error)"); return }
+        let matches = (request.results ?? []).filter {
+            $0.topCandidates(1).first?.string.trimmingCharacters(in: .whitespacesAndNewlines) == category
+        }
+        guard matches.count == 1, let title = matches.first else {
+            let attachment = XCTAttachment(screenshot: capture)
+            attachment.name = "Unresolved native map category title \(category)"
+            attachment.lifetime = .keepAlways
+            add(attachment)
+            XCTFail("Exactly one painted category title must be found: \(category)")
+            return
+        }
+        let point = CGPoint(x: frame.minX + title.boundingBox.midX * frame.width,
+                            y: frame.minY + (1 - title.boundingBox.midY) * frame.height)
+        XCTAssertTrue(frame.contains(point) && app.frame.contains(point))
+        print("MAP_CATEGORY_NATIVE_TITLE title=\(category) row=\(frame) titlePoint=\(point) nativeCenter=\(CGPoint(x: frame.midX, y: frame.midY))")
+        app.coordinate(withNormalizedOffset: CGVector(
+            dx: (point.x - app.frame.minX) / app.frame.width,
+            dy: (point.y - app.frame.minY) / app.frame.height)).tap()
         waitForMapCategory(category, app: app)
     }
 
