@@ -16,12 +16,26 @@ final class PIVOTUITests: XCTestCase {
         let available = NSPredicate { _, _ in filter.exists && filter.isHittable }
         XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: available, object: nil)], timeout: 5), .completed)
         filter.tap()
-        XCTAssertTrue(app.navigationBars["Place categories"].waitForExistence(timeout: 5))
+        let chooserBar = app.navigationBars["Place categories"]
+        XCTAssertTrue(chooserBar.waitForExistence(timeout: 5))
+        waitForSettledFrames([chooserBar])
+        let window = app.frame
+        if chooserBar.frame.minY > window.minY + window.height * 0.25 {
+            // On SE the medium detent leaves lower rows at the sheet's edge.
+            // Expand it with one real native drag before locating a whole row.
+            chooserBar.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+                .press(forDuration: 0.05,
+                       thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.12)),
+                       withVelocity: .slow, thenHoldForDuration: 0.2)
+            waitForSettledFrames([chooserBar])
+            XCTAssertLessThan(chooserBar.frame.minY, window.minY + window.height * 0.25,
+                              "The native category sheet must expand before selecting a lower row")
+        }
         let choice = app.buttons[category].firstMatch
         XCTAssertTrue(choice.waitForExistence(timeout: 3))
+        waitForSettledFrames([choice])
         let ready = NSPredicate { _, _ in choice.exists && choice.isHittable }
         XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 5), .completed)
-        waitForSettledFrames([choice])
         assertParkBannerTouchTarget(choice.frame)
         print("MAP_CATEGORY_ROW_READY title=\(category) frame=\(choice.frame)")
         choice.tap()
