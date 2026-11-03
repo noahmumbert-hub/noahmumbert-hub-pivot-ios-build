@@ -15,41 +15,85 @@ final class PIVOTUITests: XCTestCase {
         app.buttons["Filter map places"].tap()
         let choice = app.buttons[category].firstMatch
         XCTAssertTrue(choice.waitForExistence(timeout: 3))
-        // Native menu rows can exist and have their final frame before they
-        // become touch-ready. Require both hit testing and settled geometry
-        // before sending one normal native tap; never retry the input itself.
-        var previous = CGRect.null
-        var stableSince = Date()
+        waitForSettledFrames([choice])
+        // Measure the painted title rather than assuming the native row's AX
+        // activation point is actionable. Resample geometry before input only;
+        // there is exactly one real touch and all outcome checks remain strict.
+        let window = app.windows.firstMatch
+        let deadline = Date().addingTimeInterval(10)
+        var target: (point: CGPoint, window: CGRect)?
+        var lastCapture: XCUIScreenshot?
         var trace: [String] = []
-        let ready = NSPredicate { _, _ in
-            let exists = choice.exists
-            let hittable = exists && choice.isHittable
-            guard exists, hittable else {
-                previous = .null
-                stableSince = Date()
-                trace.append("Category readiness exists=\(exists) hittable=\(hittable)")
-                return false
-            }
-            let frame = choice.frame
-            guard !frame.isEmpty, !frame.isNull,
-                  [frame.minX, frame.minY, frame.width, frame.height].allSatisfy(\.isFinite) else {
-                previous = .null
-                stableSince = Date()
-                trace.append("Unready category frame: \(frame)")
-                return false
-            }
-            let settled = !previous.isNull && abs(frame.minX - previous.minX) <= 1
-                && abs(frame.minY - previous.minY) <= 1
-                && abs(frame.width - previous.width) <= 1 && abs(frame.height - previous.height) <= 1
-            if !settled { stableSince = Date() }
-            previous = frame
-            trace.append("Hittable category frame: \(frame)")
-            return settled && Date().timeIntervalSince(stableSince) >= 0.25
+        func usable(_ rect: CGRect) -> Bool {
+            !rect.isEmpty && !rect.isNull
+                && [rect.minX, rect.minY, rect.width, rect.height].allSatisfy(\.isFinite)
         }
-        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 10), .completed,
-                       "The native category choice must be hittable and settled before one tap: \(trace)")
-        print("MAP_CATEGORY_READY title=\(category) frame=\(previous)")
-        choice.tap()
+        func sameFrame(_ lhs: CGRect, _ rhs: CGRect) -> Bool {
+            abs(lhs.minX - rhs.minX) <= 1 && abs(lhs.minY - rhs.minY) <= 1
+                && abs(lhs.width - rhs.width) <= 1 && abs(lhs.height - rhs.height) <= 1
+        }
+        let unit = CGRect(x: 0, y: 0, width: 1, height: 1)
+        let pattern = "\\b" + NSRegularExpression.escapedPattern(for: category) + "\\b"
+        while Date() < deadline {
+            if !trace.isEmpty { Thread.sleep(forTimeInterval: 0.25) }
+            let frame = choice.frame
+            let windowFrame = window.frame
+            guard usable(frame), usable(windowFrame), windowFrame.contains(frame) else {
+                trace.append("Unready native row=\(frame) window=\(windowFrame)")
+                continue
+            }
+            let capture = choice.screenshot()
+            lastCapture = capture
+            guard let pixels = capture.image.cgImage else {
+                XCTFail("The native category row must supply its actual pixels")
+                return
+            }
+            let request = VNRecognizeTextRequest()
+            request.recognitionLevel = .accurate
+            request.recognitionLanguages = ["en-US"]
+            request.usesLanguageCorrection = false
+            do { try VNImageRequestHandler(cgImage: pixels, options: [:]).perform([request]) }
+            catch { XCTFail("Native category title recognition failed: \(error)"); return }
+            let matches: [CGRect] = (request.results ?? []).compactMap { observation in
+                guard let text = observation.topCandidates(1).first,
+                      let range = text.string.range(of: pattern, options: .regularExpression) else { return nil }
+                if let word = try? text.boundingBox(for: range), usable(word.boundingBox),
+                   unit.contains(CGPoint(x: word.boundingBox.midX, y: word.boundingBox.midY)) {
+                    return word.boundingBox
+                }
+                return observation.boundingBox
+            }
+            guard matches.count == 1, let title = matches.first, usable(title),
+                  unit.contains(CGPoint(x: title.midX, y: title.midY)) else {
+                trace.append("Unready OCR boxes=\(matches) row=\(frame) window=\(windowFrame)")
+                continue
+            }
+            let point = CGPoint(x: frame.minX + title.midX * frame.width,
+                                y: frame.minY + (1 - title.midY) * frame.height)
+            let after = choice.frame
+            let windowAfter = window.frame
+            let measurement = "title=\(category) row=\(frame) after=\(after) window=\(windowFrame) windowAfter=\(windowAfter) box=\(title) titlePoint=\(point) nativeCenter=\(CGPoint(x: frame.midX, y: frame.midY))"
+            trace.append(measurement)
+            guard sameFrame(frame, after), sameFrame(windowFrame, windowAfter),
+                  frame.contains(point), windowFrame.contains(point) else { continue }
+            print("MAP_CATEGORY_NATIVE_TITLE \(measurement) menuAXHittable=\(choice.isHittable)")
+            target = (point, windowFrame)
+            break
+        }
+        guard let target else {
+            if let lastCapture {
+                let attachment = XCTAttachment(screenshot: lastCapture)
+                attachment.name = "Unresolved native map category title \(category)"
+                attachment.lifetime = .keepAlways
+                add(attachment)
+            }
+            XCTFail("A stable, bounded native category title must be measured before input: \(trace)")
+            return
+        }
+        XCTAssertTrue(target.window.contains(target.point))
+        window.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(
+            dx: target.point.x - target.window.minX,
+            dy: target.point.y - target.window.minY)).tap()
         waitForMapCategory(category, app: app)
     }
 
@@ -252,6 +296,28 @@ final class PIVOTUITests: XCTestCase {
         }
         XCTAssertTrue(app.buttons["park-photo-credit-64"].isHittable)
         screenshot("Park banner cold launch park and complete schedule", app: app)
+        // Validate the painted title and initialize the existing native text
+        // recognizer in this short readiness case, before longer UI journeys.
+        let titleCapture = app.buttons["Change park. Current park: Islands of Adventure"].screenshot()
+        guard let pixels = titleCapture.image.cgImage else {
+            XCTFail("The cold-launch park title must supply native pixels")
+            return
+        }
+        let request = VNRecognizeTextRequest()
+        request.recognitionLevel = .accurate
+        request.recognitionLanguages = ["en-US"]
+        request.usesLanguageCorrection = false
+        do { try VNImageRequestHandler(cgImage: pixels, options: [:]).perform([request]) }
+        catch { XCTFail("Cold-launch title recognition failed: \(error)"); return }
+        let words = request.results?.compactMap { $0.topCandidates(1).first?.string } ?? []
+        let visible = words.contains { $0.range(of: "Islands", options: .caseInsensitive) != nil }
+        if !visible {
+            let attachment = XCTAttachment(screenshot: titleCapture)
+            attachment.name = "Unresolved cold-launch native park title"
+            attachment.lifetime = .keepAlways
+            add(attachment)
+        }
+        XCTAssertTrue(visible, "The native cold-launch park title must be painted and readable: \(words)")
     }
 
     private func assertParkBannerTouchTarget(_ frame: CGRect,
