@@ -659,12 +659,11 @@ struct ParkMapView: View {
                     .frame(width: 36, height: 44).accessibilityLabel("Clear place search")
             }
             Menu {
-                Picker("Places", selection: $category) {
-                    Text("All places").tag(Optional<ParkMapCategory>.none)
-                    ForEach(ParkMapCategory.allCases) { Text($0.title).tag(Optional($0)) }
-                }
+                mapCategoryAction(nil)
+                ForEach(ParkMapCategory.allCases) { mapCategoryAction($0) }
                 if category == .ride { Toggle("Open rides only", isOn: $openOnly) }
             } label: { Image(systemName: "line.3.horizontal.decrease").frame(width: 44, height: 44) }
+                .menuActionDismissBehavior(.enabled)
                 .accessibilityLabel("Filter map places").accessibilityIdentifier("Filter map places")
                 .accessibilityValue(category?.title ?? "All places")
             Button {
@@ -680,6 +679,19 @@ struct ParkMapView: View {
         .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 16))
         .tint(accent)
     }
+    private func mapCategoryAction(_ value: ParkMapCategory?) -> some View {
+        let title = value?.title ?? "All places"
+        // Explicit native actions commit and dismiss in one interaction. On the
+        // compact iOS menu, the nested Picker could leave its row tap uncommitted
+        // and keep the presentation over the search field.
+        return Button { category = value } label: {
+            if category == value { Label(title, systemImage: "checkmark") }
+            else { Text(title) }
+        }
+        .accessibilityLabel(title)
+        .accessibilityAddTraits(category == value ? .isSelected : [])
+    }
+
     private func mapControl(_ title: String, symbol: String, action: @escaping () -> Void) -> some View {
         Button(action: action) { Image(systemName: symbol).font(.body.weight(.medium)).frame(width: 44, height: 44) }
             .accessibilityLabel(title).accessibilityIdentifier(title).tint(accent)
