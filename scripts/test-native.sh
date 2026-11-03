@@ -94,6 +94,14 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testReferenceEPCOTCardsSearchFiltersAndPhotoCredits
       -only-testing:PIVOTUITests/PIVOTUITests/testExpandedParkCanBeFoundAndSelected
     ) ;;
+  history-details)
+    test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestDetailsKeepFirstThreeLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestDetailsKeepSecondThreeLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestDetailsKeepThirdThreeLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestDetailsKeepLastThreeLabelsReadable
+      -test-iterations 3
+    ) ;;
   layout-review)
     test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutKeepsParkHoursAndHistoryTouchTarget
@@ -274,7 +282,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
     ) ;;
   *)
-    echo 'Unsupported PIVOT_TEST_SCOPE; use all, map-search, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, or park-picker.' >&2
+    echo 'Unsupported PIVOT_TEST_SCOPE; use all, map-search, history-details, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, or park-picker.' >&2
     exit 1 ;;
 esac
 python3 - <<'PY'

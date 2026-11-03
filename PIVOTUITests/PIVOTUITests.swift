@@ -906,8 +906,25 @@ final class PIVOTUITests: XCTestCase {
     }
 
     private func assertHistoryHeaderLayout(_ header: XCUIElement, chart: XCUIElement, app: XCUIApplication,
-                                           category: UIContentSizeCategory, capture: String) {
+                                           category: UIContentSizeCategory, capture: String) -> Bool {
+        func requireExpandedHistory(_ stage: String) -> Bool {
+            let value = header.value as? String
+            let observation = "HISTORY_DISCLOSURE_STATE stage=\(stage) value=\(value ?? "missing") header=\(header.frame) chartExists=\(chart.exists)"
+            print(observation)
+            guard value == "Expanded" else {
+                screenshot("\(capture) unexpected disclosure state \(stage)", app: app)
+                let evidence = XCTAttachment(string: "\(observation)\n\(app.debugDescription)")
+                evidence.name = "History disclosure state \(stage)"
+                evidence.lifetime = .keepAlways
+                add(evidence)
+                XCTFail("Positioning the history header must preserve its expanded disclosure: \(observation)")
+                return false
+            }
+            return true
+        }
+        if header.exists { guard requireExpandedHistory("before positioning") else { return false } }
         centerFullyVisible(header, in: app)
+        guard requireExpandedHistory("after complete header positioning") else { return false }
         let viewport = safeContentViewport(in: app)
         let movement = min(viewport.height * 0.8, max(0, header.frame.minY - viewport.minY - 12))
         if movement > 2 {
@@ -918,6 +935,7 @@ final class PIVOTUITests: XCTestCase {
                 dx: verticalPanX(in: viewport) - appFrame.minX, dy: viewport.midY + movement / 2 - appFrame.minY))
             start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: 0, dy: -movement)),
                         withVelocity: .slow, thenHoldForDuration: 0.2)
+            guard requireExpandedHistory("after upper-edge positioning drag") else { return false }
             waitForSettledFrames([header, chart])
         }
         let headerFrame = header.frame
@@ -939,12 +957,15 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertLessThanOrEqual(headerFrame.maxY + 8, chartFrame.minY,
                                  "The full disclosure header must end before the plotted wait labels begin")
         screenshot("\(capture) complete history header clear of chart", app: app)
+        return true
     }
 
     private func assertHistoryColumns(_ waits: [String], chart: XCUIElement, app: XCUIApplication,
                                       category: UIContentSizeCategory = .accessibilityExtraExtraExtraLarge,
                                       observations: Range<Int>? = nil, header: XCUIElement? = nil, capture: String) {
-        if let header { assertHistoryHeaderLayout(header, chart: chart, app: app, category: category, capture: capture) }
+        if let header {
+            guard assertHistoryHeaderLayout(header, chart: chart, app: app, category: category, capture: capture) else { return }
+        }
         centerFullyVisible(chart, in: app)
         assertObservedChartSamples(waits, chart: chart)
         let times = chart.staticTexts.matching(NSPredicate(format: "identifier BEGINSWITH 'wait-sample-time-10916-'"))
