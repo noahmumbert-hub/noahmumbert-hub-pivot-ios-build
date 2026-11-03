@@ -58,6 +58,11 @@ test_options=(
 )
 case "${PIVOT_TEST_SCOPE:-all}" in
   all) ;;
+  map-search)
+    test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testMapSearchAndCategoryWorkWithBundledLocations
+      -test-iterations 3
+    ) ;;
   park-banner)
     test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testBannerColdLaunchShowsParkAndSchedule
