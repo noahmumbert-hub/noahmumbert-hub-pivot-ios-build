@@ -141,10 +141,13 @@ struct ParkBannerView: View {
         .overlay(alignment: .bottomTrailing) {
             if artwork != nil {
                 Button { showPhotoCredit = true } label: {
-                    Image(systemName: "info.circle")
-                        .font(.system(size: 17)).foregroundStyle(.white.opacity(0.9))
-                        .frame(width: 44, height: 44)
-                        .contentShape(Rectangle())
+                    ZStack {
+                        Rectangle().fill(.clear)
+                        Image(systemName: "info.circle")
+                            .font(.system(size: 17)).foregroundStyle(.white.opacity(0.9))
+                    }
+                    .frame(width: 44, height: 44)
+                    .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
                 .accessibilityLabel("Photo credit")

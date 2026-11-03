@@ -296,8 +296,8 @@ final class PIVOTUITests: XCTestCase {
         assertContained(credit.frame, in: bounds.frame, "The information target must remain inside the banner", file: file, line: line)
         XCTAssertTrue(credit.isHittable, file: file, line: line)
         screenshot("Park banner \(capture) information target", app: app)
-        // Exercise the44pt rectangle outside the17pt glyph. Across the two
-        // parks and size categories these taps cover all four target corners.
+        // Exercise the44pt rectangle outside the17pt glyph. Start with the
+        // original corner, then check every remaining corner in this same case.
         let edge: CGVector
         if category == .large {
             edge = parkID == 5 ? CGVector(dx: 0.1, dy: 0.1) : CGVector(dx: 0.9, dy: 0.9)
@@ -307,6 +307,7 @@ final class PIVOTUITests: XCTestCase {
         print("PARK_BANNER_INFORMATION_TARGET \(capture) frame=\(credit.frame) edge=\(edge)")
         credit.coordinate(withNormalizedOffset: edge).tap()
         XCTAssertTrue(app.navigationBars["Photo credit"].waitForExistence(timeout: 5), file: file, line: line)
+        print("PARK_BANNER_CORNER_VERIFIED \(capture) edge=\(edge)")
         if category != .large {
             let probe = app.staticTexts["park-photo-credit-type-probe"]
             XCTAssertTrue(probe.waitForExistence(timeout: 5), "The presented sheet must receive the requested native text-size fixture", file: file, line: line)
@@ -321,6 +322,24 @@ final class PIVOTUITests: XCTestCase {
         assertFullTextLayout(source, style: .body, category: category, file: file, line: line)
         XCTAssertTrue(source.isHittable, file: file, line: line)
         app.buttons["Done"].tap()
+
+        let remainingCorners = [CGVector(dx: 0.1, dy: 0.1), CGVector(dx: 0.9, dy: 0.1),
+                                CGVector(dx: 0.1, dy: 0.9), CGVector(dx: 0.9, dy: 0.9)]
+            .filter { $0.dx != edge.dx || $0.dy != edge.dy }
+        for corner in remainingCorners {
+            centerFullyVisible(credit, in: app, file: file, line: line)
+            waitForSettledFrames([bounds, credit], file: file, line: line)
+            assertParkBannerTouchTarget(credit.frame, file: file, line: line)
+            assertContained(credit.frame, in: bounds.frame,
+                            "Every information-target corner must remain inside the banner", file: file, line: line)
+            XCTAssertTrue(credit.isHittable, file: file, line: line)
+            print("PARK_BANNER_INFORMATION_TARGET \(capture) frame=\(credit.frame) edge=\(corner)")
+            credit.coordinate(withNormalizedOffset: corner).tap()
+            XCTAssertTrue(app.navigationBars["Photo credit"].waitForExistence(timeout: 5),
+                          "Each corner of the44pt information control must open its credit sheet", file: file, line: line)
+            print("PARK_BANNER_CORNER_VERIFIED \(capture) edge=\(corner)")
+            app.buttons["Done"].tap()
+        }
 
         centerFullyVisible(choose, in: app, file: file, line: line)
         choose.tap()
