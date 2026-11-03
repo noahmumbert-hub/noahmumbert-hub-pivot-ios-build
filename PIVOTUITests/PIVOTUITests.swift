@@ -32,8 +32,12 @@ final class PIVOTUITests: XCTestCase {
         request.usesLanguageCorrection = false
         do { try VNImageRequestHandler(cgImage: pixels, options: [:]).perform([request]) }
         catch { XCTFail("Native category title recognition failed: \(error)"); return }
-        let matches = (request.results ?? []).filter {
-            $0.topCandidates(1).first?.string.trimmingCharacters(in: .whitespacesAndNewlines) == category
+        let pattern = "\\b" + NSRegularExpression.escapedPattern(for: category) + "\\b"
+        let matches: [CGRect] = (request.results ?? []).compactMap { observation in
+            guard let text = observation.topCandidates(1).first,
+                  let range = text.string.range(of: pattern, options: .regularExpression),
+                  let title = try? text.boundingBox(for: range) else { return nil }
+            return title.boundingBox
         }
         guard matches.count == 1, let title = matches.first else {
             let attachment = XCTAttachment(screenshot: capture)
@@ -43,8 +47,8 @@ final class PIVOTUITests: XCTestCase {
             XCTFail("Exactly one painted category title must be found: \(category)")
             return
         }
-        let point = CGPoint(x: frame.minX + title.boundingBox.midX * frame.width,
-                            y: frame.minY + (1 - title.boundingBox.midY) * frame.height)
+        let point = CGPoint(x: frame.minX + title.midX * frame.width,
+                            y: frame.minY + (1 - title.midY) * frame.height)
         XCTAssertTrue(frame.contains(point) && app.frame.contains(point))
         print("MAP_CATEGORY_NATIVE_TITLE title=\(category) row=\(frame) titlePoint=\(point) nativeCenter=\(CGPoint(x: frame.midX, y: frame.midY))")
         app.coordinate(withNormalizedOffset: CGVector(
