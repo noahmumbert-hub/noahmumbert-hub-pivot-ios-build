@@ -15,86 +15,39 @@ final class PIVOTUITests: XCTestCase {
         app.buttons["Filter map places"].tap()
         let choice = app.buttons[category].firstMatch
         XCTAssertTrue(choice.waitForExistence(timeout: 3))
-        waitForSettledFrames([choice])
-        XCTAssertTrue(choice.isHittable)
-        // Measure the painted title rather than assuming the native row's AX
-        // activation point is actionable. Resample geometry before input only;
-        // there is exactly one real touch and all outcome checks remain strict.
-        let window = app.windows.firstMatch
-        let deadline = Date().addingTimeInterval(10)
-        var target: (point: CGPoint, window: CGRect)?
-        var lastCapture: XCUIScreenshot?
+        // Native menu rows can exist and have their final frame before they
+        // become touch-ready. Require both hit testing and settled geometry
+        // before sending one normal native tap; never retry the input itself.
+        var previous = CGRect.null
+        var stableSince = Date()
         var trace: [String] = []
-        func usable(_ rect: CGRect) -> Bool {
-            !rect.isEmpty && !rect.isNull
-                && [rect.minX, rect.minY, rect.width, rect.height].allSatisfy(\.isFinite)
-        }
-        func sameFrame(_ lhs: CGRect, _ rhs: CGRect) -> Bool {
-            abs(lhs.minX - rhs.minX) <= 1 && abs(lhs.minY - rhs.minY) <= 1
-                && abs(lhs.width - rhs.width) <= 1 && abs(lhs.height - rhs.height) <= 1
-        }
-        let unit = CGRect(x: 0, y: 0, width: 1, height: 1)
-        let pattern = "\\b" + NSRegularExpression.escapedPattern(for: category) + "\\b"
-        while Date() < deadline {
-            if !trace.isEmpty { Thread.sleep(forTimeInterval: 0.25) }
+        let ready = NSPredicate { _, _ in
+            guard choice.exists, choice.isHittable else {
+                previous = .null
+                stableSince = Date()
+                trace.append("Category row exists but is not yet hittable")
+                return false
+            }
             let frame = choice.frame
-            let windowFrame = window.frame
-            guard usable(frame), usable(windowFrame), windowFrame.contains(frame) else {
-                trace.append("Unready native row=\(frame) window=\(windowFrame)")
-                continue
+            guard !frame.isEmpty, !frame.isNull,
+                  [frame.minX, frame.minY, frame.width, frame.height].allSatisfy(\.isFinite) else {
+                previous = .null
+                stableSince = Date()
+                trace.append("Unready category frame: \(frame)")
+                return false
             }
-            let capture = choice.screenshot()
-            lastCapture = capture
-            guard let pixels = capture.image.cgImage else {
-                XCTFail("The native category row must supply its actual pixels")
-                return
-            }
-            let request = VNRecognizeTextRequest()
-            request.recognitionLevel = .accurate
-            request.recognitionLanguages = ["en-US"]
-            request.usesLanguageCorrection = false
-            do { try VNImageRequestHandler(cgImage: pixels, options: [:]).perform([request]) }
-            catch { XCTFail("Native category title recognition failed: \(error)"); return }
-            let matches: [CGRect] = (request.results ?? []).compactMap { observation in
-                guard let text = observation.topCandidates(1).first,
-                      let range = text.string.range(of: pattern, options: .regularExpression) else { return nil }
-                if let word = try? text.boundingBox(for: range), usable(word.boundingBox),
-                   unit.contains(CGPoint(x: word.boundingBox.midX, y: word.boundingBox.midY)) {
-                    return word.boundingBox
-                }
-                return observation.boundingBox
-            }
-            guard matches.count == 1, let title = matches.first, usable(title),
-                  unit.contains(CGPoint(x: title.midX, y: title.midY)) else {
-                trace.append("Unready OCR boxes=\(matches) row=\(frame) window=\(windowFrame)")
-                continue
-            }
-            let point = CGPoint(x: frame.minX + title.midX * frame.width,
-                                y: frame.minY + (1 - title.midY) * frame.height)
-            let after = choice.frame
-            let windowAfter = window.frame
-            let measurement = "title=\(category) row=\(frame) after=\(after) window=\(windowFrame) windowAfter=\(windowAfter) box=\(title) titlePoint=\(point) nativeCenter=\(CGPoint(x: frame.midX, y: frame.midY))"
-            trace.append(measurement)
-            guard sameFrame(frame, after), sameFrame(windowFrame, windowAfter),
-                  frame.contains(point), windowFrame.contains(point) else { continue }
-            print("MAP_CATEGORY_NATIVE_TITLE \(measurement)")
-            target = (point, windowFrame)
-            break
+            let settled = !previous.isNull && abs(frame.minX - previous.minX) <= 1
+                && abs(frame.minY - previous.minY) <= 1
+                && abs(frame.width - previous.width) <= 1 && abs(frame.height - previous.height) <= 1
+            if !settled { stableSince = Date() }
+            previous = frame
+            trace.append("Hittable category frame: \(frame)")
+            return settled && Date().timeIntervalSince(stableSince) >= 0.25
         }
-        guard let target else {
-            if let lastCapture {
-                let attachment = XCTAttachment(screenshot: lastCapture)
-                attachment.name = "Unresolved native map category title \(category)"
-                attachment.lifetime = .keepAlways
-                add(attachment)
-            }
-            XCTFail("A stable, bounded native category title must be measured before input: \(trace)")
-            return
-        }
-        XCTAssertTrue(target.window.contains(target.point))
-        window.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(
-            dx: target.point.x - target.window.minX,
-            dy: target.point.y - target.window.minY)).tap()
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 10), .completed,
+                       "The native category choice must be hittable and settled before one tap: \(trace)")
+        print("MAP_CATEGORY_READY title=\(category) frame=\(previous)")
+        choice.tap()
         waitForMapCategory(category, app: app)
     }
 
