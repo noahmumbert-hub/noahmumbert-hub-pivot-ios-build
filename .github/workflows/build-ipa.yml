@@ -38,10 +38,9 @@ jobs:
   build:
     if: (github.ref != 'refs/heads/diagnostics/apple-native-redesign' || contains(github.event.head_commit.message, '[full-regression]') || inputs.scope == 'all') && (github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all')
     runs-on: macos-15
-    # The original combined suite took 37m. Bounded visual cases now inspect
-    # every large-text chart column; allow test, archive and evidence uploads.
-    # Individual XCTest time limits remain unchanged.
-    timeout-minutes: 120
+    # The full visual suite can approach two hours before evidence export.
+    # Allow archive/export/upload margin; XCTest case limits stay 180/240s.
+    timeout-minutes: 150
     env:
       DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
       PIVOT_SIMULATOR_NAME: iPhone 16 Pro
@@ -84,6 +83,7 @@ jobs:
             build/native-tests.log
             build/ui-screenshots/manifest.json
             build/ui-screenshots/*.png
+            build/ui-screenshots/*.txt
             build/native-tests.xcresult/database.sqlite3*
             build/native-tests.xcresult/Info.plist
             build/simulator-selection.json
@@ -104,7 +104,7 @@ jobs:
     if: (github.ref != 'refs/heads/diagnostics/apple-native-redesign' || contains(github.event.head_commit.message, '[full-regression]') || inputs.scope == 'all') && (github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all')
     name: iPhone regression (${{ matrix.simulator }})
     runs-on: macos-15
-    timeout-minutes: 120
+    timeout-minutes: 150
     strategy:
       fail-fast: false
       matrix:
@@ -133,6 +133,7 @@ jobs:
             build/native-tests.log
             build/ui-screenshots/manifest.json
             build/ui-screenshots/*.png
+            build/ui-screenshots/*.txt
             build/native-tests.xcresult/database.sqlite3*
             build/native-tests.xcresult/Info.plist
             build/simulator-selection.json
@@ -179,6 +180,7 @@ jobs:
             build/native-tests.log
             build/ui-screenshots/manifest.json
             build/ui-screenshots/*.png
+            build/ui-screenshots/*.txt
             build/native-tests.xcresult/database.sqlite3*
             build/native-tests.xcresult/Info.plist
             build/simulator-selection.json

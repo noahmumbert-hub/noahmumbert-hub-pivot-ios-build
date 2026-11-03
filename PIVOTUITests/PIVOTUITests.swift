@@ -39,7 +39,26 @@ final class PIVOTUITests: XCTestCase {
                 && !app.buttons[category].firstMatch.exists
                 && search.exists && search.isHittable && filter.isHittable
         }
-        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 5), .completed,
+        let result = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 5)
+        if result != .completed {
+            // Preserve the five-second assertion. Observe a failed interaction
+            // without another tap so bounded evidence distinguishes a late UI
+            // update from a selection that never committed.
+            screenshot("Map category failed original five-second postcondition", app: app)
+            let filter = app.buttons["Filter map places"]
+            let chooserExists = app.navigationBars["Place categories"].exists
+            let rowExists = app.buttons[category].firstMatch.exists
+            let initial = "category=\(category); filter=\(String(describing: filter.value)); chooser=\(chooserExists); row=\(rowExists)"
+            let later = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 10)
+            screenshot("Map category after observation without another input", app: app)
+            let details = "Original result: \(result.rawValue)\n\(initial)\nLater result: \(later.rawValue)\n\(app.debugDescription)"
+            print("MAP_CATEGORY_FAILURE_DIAGNOSTIC \(initial); later=\(later.rawValue)")
+            let attachment = XCTAttachment(string: details)
+            attachment.name = "Map category original failure and later native state"
+            attachment.lifetime = .keepAlways
+            add(attachment)
+        }
+        XCTAssertEqual(result, .completed,
                        "The chosen category must be applied and its native chooser dismissed before searching")
     }
 
@@ -1930,7 +1949,9 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(cluster.waitForExistence(timeout: 5))
         let before = camera(app)
         cluster.tap()
-        waitForCamera(app) { $0[2] < before[2] * 0.85 }
+        // Native SE evidence recorded this valid cluster-fit animation taking
+        // 8.1 seconds. Keep the same zoom requirement while awaiting its finish.
+        waitForCamera(app, { $0[2] < before[2] * 0.85 }, timeout: 20)
         chooseMapCategory("Food", app: app)
         app.buttons["Show whole park"].tap()
         XCTAssertTrue(cluster.waitForExistence(timeout: 5)); cluster.tap()
