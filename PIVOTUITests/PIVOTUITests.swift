@@ -321,7 +321,7 @@ final class PIVOTUITests: XCTestCase {
         screenshot("Park banner \(capture) original photo link", app: app)
         assertFullTextLayout(source, style: .body, category: category, file: file, line: line)
         XCTAssertTrue(source.isHittable, file: file, line: line)
-        app.buttons["Done"].tap()
+        dismissParkPhotoCredit(app, returningTo: credit, file: file, line: line)
 
         let remainingCorners = [CGVector(dx: 0.1, dy: 0.1), CGVector(dx: 0.9, dy: 0.1),
                                 CGVector(dx: 0.1, dy: 0.9), CGVector(dx: 0.9, dy: 0.9)]
@@ -338,7 +338,7 @@ final class PIVOTUITests: XCTestCase {
             XCTAssertTrue(app.navigationBars["Photo credit"].waitForExistence(timeout: 5),
                           "Each corner of the44pt information control must open its credit sheet", file: file, line: line)
             print("PARK_BANNER_CORNER_VERIFIED \(capture) edge=\(corner)")
-            app.buttons["Done"].tap()
+            dismissParkPhotoCredit(app, returningTo: credit, file: file, line: line)
         }
 
         centerFullyVisible(choose, in: app, file: file, line: line)
@@ -348,6 +348,22 @@ final class PIVOTUITests: XCTestCase {
         app.buttons["Done"].tap()
         XCTAssertTrue(app.buttons["Change park. Current park: \(name)"].waitForExistence(timeout: 5), file: file, line: line)
         print("PARK_BANNER_VERIFIED park=\(parkID) category=\(category.rawValue) height=\(height) schedule=complete informationTarget=44 parkAction=working")
+    }
+
+    private func dismissParkPhotoCredit(_ app: XCUIApplication, returningTo credit: XCUIElement,
+                                        file: StaticString = #filePath, line: UInt = #line) {
+        let done = app.buttons["Done"].firstMatch
+        XCTAssertTrue(done.waitForExistence(timeout: 5), file: file, line: line)
+        waitForSettledFrames([done], file: file, line: line)
+        XCTAssertTrue(done.isHittable, "The credit sheet must expose a usable Done control", file: file, line: line)
+        done.tap()
+        let dismissed = NSPredicate { _, _ in !app.navigationBars["Photo credit"].exists }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: dismissed, object: nil)], timeout: 10), .completed,
+                       "One Done tap must dismiss credits before the next corner is exercised", file: file, line: line)
+        let ready = NSPredicate { _, _ in credit.exists && credit.isHittable }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 10), .completed,
+                       "The banner information control must become usable again after dismissal", file: file, line: line)
+        print("PARK_BANNER_CREDIT_DISMISSED frame=\(credit.frame)")
     }
 
     func testWaitsCompactLayoutKeepsParkHoursAndHistoryTouchTarget() {

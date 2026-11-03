@@ -176,7 +176,9 @@ struct ParkBannerView: View {
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("park-banner-\(park?.id ?? -1)")
         .sheet(isPresented: $showPhotoCredit) {
-            if let artwork { ParkPhotoCreditView(artwork: artwork) }
+            if let artwork {
+                ParkPhotoCreditView(artwork: artwork) { showPhotoCredit = false }
+            }
         }
     }
 
@@ -200,8 +202,8 @@ struct ParkBannerView: View {
 }
 
 private struct ParkPhotoCreditView: View {
-    @Environment(\.dismiss) private var dismiss
     let artwork: ParkArtwork
+    let onClose: () -> Void
     var body: some View {
         NavigationStack {
             List {
@@ -211,7 +213,7 @@ private struct ParkPhotoCreditView: View {
                 Link(artwork.license, destination: artwork.licenseURL)
                 Text("Displayed with a crop and a dark overlay for readability.").foregroundStyle(.secondary)
             }.navigationTitle("Photo credit").navigationBarTitleDisplayMode(.inline)
-                .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
+                .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done", action: onClose) } }
         }
         .modifier(PivotUITestTypeSize(probeIdentifier: "park-photo-credit-type-probe"))
     }
