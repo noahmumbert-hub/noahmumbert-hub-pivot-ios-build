@@ -50,6 +50,17 @@ print(record['identifier'])
 PY
 )"
 cat build/simulator-selection.json
+# Finish the selected simulator's OS boot before XCTest starts an app case.
+# App launches and the existing per-case budgets remain unchanged.
+xcrun simctl bootstatus "$simulator_id" -b
+python3 - <<'READY'
+import json
+from pathlib import Path
+path = Path('build/simulator-selection.json')
+record = json.loads(path.read_text())
+record['bootReady'] = True
+path.write_text(json.dumps(record, indent=2) + '\n')
+READY
 test_options=(
   -parallel-testing-enabled NO
   -test-timeouts-enabled YES
