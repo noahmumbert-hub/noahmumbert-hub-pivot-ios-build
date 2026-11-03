@@ -2763,8 +2763,11 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Map coverage & sources"].exists || app.buttons["Done"].exists)
         app.buttons["Done"].tap()
 
-        // Reselect the same category, cancel another menu, then interrupt an
-        // active search. Each return must leave the real field usable by one tap.
+        // Alternate real categories so every repeated action has an observable
+        // value change; reselecting the current Picker value is only a no-op.
+        // Then cancel another menu and interrupt an active search. Each return
+        // must leave the real field usable by one tap.
+        chooseMapCategory("Rides", app: app)
         chooseMapCategory("Food", app: app)
         app.buttons["Filter map places"].tap()
         XCTAssertTrue(app.buttons["Rides"].firstMatch.waitForExistence(timeout: 3))
