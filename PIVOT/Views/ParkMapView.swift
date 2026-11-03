@@ -509,6 +509,7 @@ struct ParkMapView: View {
     @State private var command = ParkMapCameraCommand(action: .fit)
     @State private var clusterPoints: [ParkMapPoint]?
     @State private var showPlaces = false
+    @State private var showCategories = false
     @State private var selectedRide: LiveRide?
     @State private var isFullScreen = false
     @State private var now = Date()
@@ -642,6 +643,7 @@ struct ParkMapView: View {
         }
         .onChange(of: selectedID) { _, _ in searchFocused = false }
         .sheet(isPresented: $showPlaces) { placesSheet }
+        .sheet(isPresented: $showCategories) { categorySheet }
         .sheet(item: $selectedRide) { ride in
             RideDetailScreenView(initialRide: ride, timeZone: park?.timeZone ?? .current,
                                  mapPoint: allPoints.first { $0.rideId == ride.id })
@@ -658,12 +660,9 @@ struct ParkMapView: View {
                 Button { query = "" } label: { Image(systemName: "xmark.circle.fill").foregroundStyle(.secondary) }
                     .frame(width: 36, height: 44).accessibilityLabel("Clear place search")
             }
-            Menu {
-                Picker("Places", selection: $category) {
-                    Text("All places").tag(Optional<ParkMapCategory>.none)
-                    ForEach(ParkMapCategory.allCases) { Text($0.title).tag(Optional($0)) }
-                }
-                if category == .ride { Toggle("Open rides only", isOn: $openOnly) }
+            Button {
+                searchFocused = false
+                showCategories = true
             } label: { Image(systemName: "line.3.horizontal.decrease").frame(width: 44, height: 44) }
                 .accessibilityLabel("Filter map places").accessibilityIdentifier("Filter map places")
                 .accessibilityValue(category?.title ?? "All places")
@@ -680,6 +679,53 @@ struct ParkMapView: View {
         .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 16))
         .tint(accent)
     }
+    private var categorySheet: some View {
+        NavigationStack {
+            List {
+                Section("Categories") {
+                    categoryRow(nil)
+                    ForEach(ParkMapCategory.allCases) { categoryRow($0) }
+                }
+                if category == .ride {
+                    Section {
+                        Toggle("Open rides only", isOn: $openOnly)
+                    }
+                }
+            }
+            .navigationTitle("Place categories")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel") { showCategories = false }
+                        .accessibilityIdentifier("Cancel map categories")
+                }
+            }
+        }
+        .tint(accent)
+        .presentationDetents([.medium, .large])
+    }
+
+    private func categoryRow(_ value: ParkMapCategory?) -> some View {
+        let title = value?.title ?? "All places"
+        let selected = category == value
+        return Button {
+            category = value
+            showCategories = false
+        } label: {
+            HStack {
+                Text(title)
+                Spacer()
+                if selected { Image(systemName: "checkmark").foregroundStyle(accent) }
+            }
+            .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(title)
+        .accessibilityValue(selected ? "Selected" : "")
+        .accessibilityAddTraits(selected ? .isSelected : [])
+    }
+
     private func mapControl(_ title: String, symbol: String, action: @escaping () -> Void) -> some View {
         Button(action: action) { Image(systemName: symbol).font(.body.weight(.medium)).frame(width: 44, height: 44) }
             .accessibilityLabel(title).accessibilityIdentifier(title).tint(accent)
