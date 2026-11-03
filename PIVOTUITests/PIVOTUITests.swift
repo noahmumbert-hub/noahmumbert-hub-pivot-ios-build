@@ -2188,6 +2188,22 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Selected ride wait"].waitForExistence(timeout: 3), "The edge of the native marker’s 44-point target must select the ride")
         app.buttons["Ride details"].tap()
         XCTAssertTrue(app.staticTexts["Current wait"].waitForExistence(timeout: 5))
+        // The wait card can appear before the bundled image finishes decoding.
+        // Require the real image state before recording this visual gate.
+        let artwork = app.descendants(matching: .any)["ride-illustration-6-138"].firstMatch
+        XCTAssertTrue(artwork.waitForExistence(timeout: 5))
+        let loaded = NSPredicate { _, _ in artwork.value as? String == "Loaded" }
+        let imageReady = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: loaded, object: nil)], timeout: 5) == .completed
+        if !imageReady {
+            screenshot("Native ride detail artwork did not load", app: app)
+            let hierarchy = XCTAttachment(string: app.debugDescription)
+            hierarchy.name = "Native ride detail artwork loading failure hierarchy"
+            hierarchy.lifetime = .keepAlways
+            add(hierarchy)
+        }
+        XCTAssertTrue(imageReady, "The bundled Space Mountain illustration must load after returning from Safari")
+        guard imageReady else { return }
+        print("MAP_RIDE_DETAIL_ARTWORK_VERIFIED key=6-138 state=Loaded")
         screenshot("Native ride detail sheet", app: app)
     }
 

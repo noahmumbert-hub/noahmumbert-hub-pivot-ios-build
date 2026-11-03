@@ -169,6 +169,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
   map-attribution)
     test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeBrowseFocusesRideAndRootWaitDetailsStayCurrent
+      -test-iterations 3
     ) ;;
   wait-history)
     test_options+=(
