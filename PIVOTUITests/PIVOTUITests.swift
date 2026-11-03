@@ -2125,6 +2125,18 @@ final class PIVOTUITests: XCTestCase {
             let chromeReady = address.waitForExistence(timeout: 15)
             if !chromeReady { recordSafariAttributionFailure("startup chrome", safari: safari) }
             XCTAssertTrue(chromeReady, "Safari's address control must be ready, beyond its launch screen")
+            if mapAttributionCredit(in: safari).exists {
+                // Repeated journeys must clear the document left by the prior
+                // real Legal tap; do not let restored content satisfy the next.
+                XCTAssertTrue(address.isHittable)
+                address.tap()
+                address.typeText("about:blank\n")
+                let cleared = NSPredicate { _, _ in !self.mapAttributionCredit(in: safari).exists }
+                let reset = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: cleared, object: nil)], timeout: 10) == .completed
+                if !reset { recordSafariAttributionFailure("clear prior attribution document", safari: safari) }
+                XCTAssertTrue(reset, "The prior journey's attribution document must close before the next Legal tap")
+                print("MAP_ATTRIBUTION_BROWSER_RESET priorDocumentCleared=\(reset)")
+            }
             XCTAssertFalse(mapAttributionCredit(in: safari).exists,
                            "The Legal journey must not start with an already loaded attribution document")
             // Closing it makes a fresh foreground transition part of the actual
