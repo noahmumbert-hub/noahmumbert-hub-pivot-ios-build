@@ -22,10 +22,12 @@ final class PIVOTUITests: XCTestCase {
         var stableSince = Date()
         var trace: [String] = []
         let ready = NSPredicate { _, _ in
-            guard choice.exists, choice.isHittable else {
+            let exists = choice.exists
+            let hittable = exists && choice.isHittable
+            guard exists, hittable else {
                 previous = .null
                 stableSince = Date()
-                trace.append("Category row exists but is not yet hittable")
+                trace.append("Category readiness exists=\(exists) hittable=\(hittable)")
                 return false
             }
             let frame = choice.frame
