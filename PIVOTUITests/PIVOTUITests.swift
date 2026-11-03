@@ -926,19 +926,36 @@ final class PIVOTUITests: XCTestCase {
         centerFullyVisible(header, in: app)
         guard requireExpandedHistory("after complete header positioning") else { return false }
         let viewport = safeContentViewport(in: app)
-        let movement = min(viewport.height * 0.8, max(0, header.frame.minY - viewport.minY - 12))
+        let positionedHeader = header.frame
+        let movement = min(viewport.height * 0.8, max(0, positionedHeader.minY - viewport.minY - 12))
         if movement > 2 {
             // Put the title near the upper edge so that the adjacent plot also
             // has a real visible frame, even when both are taller than SE.
+            // This is a scroll-positioning gesture. Begin in measured container
+            // padding, outside the disclosure button and its toggle action.
             let appFrame = app.frame
+            let gutterLeft = max(viewport.minX, appFrame.minX + 20)
+            let gutterRight = positionedHeader.minX - 2
+            guard gutterRight - gutterLeft >= 4 else {
+                XCTFail("History positioning needs visible scroll padding outside the disclosure. Header \(positionedHeader); viewport \(viewport)")
+                return false
+            }
+            let point = CGPoint(x: (gutterLeft + gutterRight) / 2, y: viewport.midY + movement / 2)
+            XCTAssertTrue(viewport.contains(point), "The positioning gesture must begin inside visible content")
+            XCTAssertFalse(positionedHeader.insetBy(dx: -1, dy: -1).contains(point),
+                           "Scrolling into position must not begin on the disclosure button")
+            print("HISTORY_POSITIONING_GESTURE start=\(point) movement=\(movement) header=\(positionedHeader) viewport=\(viewport)")
             let start = app.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(
-                dx: verticalPanX(in: viewport) - appFrame.minX, dy: viewport.midY + movement / 2 - appFrame.minY))
+                dx: point.x - appFrame.minX, dy: point.y - appFrame.minY))
             start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: 0, dy: -movement)),
                         withVelocity: .slow, thenHoldForDuration: 0.2)
             guard requireExpandedHistory("after upper-edge positioning drag") else { return false }
             waitForSettledFrames([header, chart])
+            XCTAssertLessThan(header.frame.minY, positionedHeader.minY - min(10, movement / 2),
+                              "The real positioning drag must move the presented history content")
         }
         let headerFrame = header.frame
+        assertContained(headerFrame, in: safeContentViewport(in: app), "The complete history header must stay visible after positioning")
         let wording = header.label
         XCTAssertTrue(wording.hasPrefix("Recent observed waits"))
         // The complete control must be at least as tall as its wording would
