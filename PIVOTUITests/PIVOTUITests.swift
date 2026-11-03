@@ -29,8 +29,8 @@ final class PIVOTUITests: XCTestCase {
     }
 
     private func waitForMapCategory(_ category: String, app: XCUIApplication) {
-        // A menu choice can exist before its selection/dismissal transition has
-        // completed. Do not send a text-field tap through that native overlay.
+        // Selection and sheet dismissal must finish before a search-field tap.
+        // Keep the real foreground controls reachable before sending input.
         let ready = NSPredicate { _, _ in
             let filter = app.buttons["Filter map places"]
             let search = app.textFields["Search park places"]
