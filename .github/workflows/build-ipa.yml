@@ -37,7 +37,7 @@ concurrency:
 jobs:
   build:
     if: (github.ref != 'refs/heads/diagnostics/apple-native-redesign' || contains(github.event.head_commit.message, '[full-regression]') || inputs.scope == 'all') && (github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all')
-    runs-on: macos-15-intel
+    runs-on: macos-15
     # The full visual suite can approach two hours before evidence export.
     # Allow archive/export/upload margin; XCTest case limits stay 180/240s.
     timeout-minutes: 150
@@ -103,7 +103,7 @@ jobs:
   iphone-regression:
     if: (github.ref != 'refs/heads/diagnostics/apple-native-redesign' || contains(github.event.head_commit.message, '[full-regression]') || inputs.scope == 'all') && (github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all')
     name: iPhone regression (${{ matrix.simulator }})
-    runs-on: macos-15-intel
+    runs-on: macos-15
     timeout-minutes: 150
     strategy:
       fail-fast: false
@@ -153,7 +153,7 @@ jobs:
   diagnose:
     name: Focused UI diagnostics
     if: (github.event_name == 'workflow_dispatch' && inputs.scope != '' && inputs.scope != 'all') || (github.event_name == 'push' && github.ref == 'refs/heads/diagnostics/apple-native-redesign' && !contains(github.event.head_commit.message, '[full-regression]'))
-    runs-on: macos-15-intel
+    runs-on: macos-15
     timeout-minutes: 45
     env:
       DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
