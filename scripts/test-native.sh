@@ -60,6 +60,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
   all) ;;
   map-search)
     test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testMapRefreshKeepsUnchangedProviderWaitOnActualMap
       -only-testing:PIVOTUITests/PIVOTUITests/testMapSearchAndCategoryWorkWithBundledLocations
       -test-iterations 3
     ) ;;
@@ -259,7 +260,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
     ) ;;
   *)
-    echo 'Unsupported PIVOT_TEST_SCOPE; use all, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, or park-picker.' >&2
+    echo 'Unsupported PIVOT_TEST_SCOPE; use all, map-search, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, or park-picker.' >&2
     exit 1 ;;
 esac
 python3 - <<'PY'

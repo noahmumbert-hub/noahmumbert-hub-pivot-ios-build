@@ -16,6 +16,29 @@ final class PIVOTUITests: XCTestCase {
         let choice = app.buttons[category].firstMatch
         XCTAssertTrue(choice.waitForExistence(timeout: 3))
         choice.tap()
+        waitForMapCategory(category, app: app)
+    }
+
+    private func waitForMapCategory(_ category: String, app: XCUIApplication) {
+        // A menu choice can exist before its selection/dismissal transition has
+        // completed. Do not send a text-field tap through that native overlay.
+        let ready = NSPredicate { _, _ in
+            let filter = app.buttons["Filter map places"]
+            let search = app.textFields["Search park places"]
+            return filter.exists && filter.value as? String == category
+                && !app.buttons[category].firstMatch.exists
+                && search.exists && search.isHittable && filter.isHittable
+        }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 5), .completed,
+                       "The chosen category must be applied and its native menu dismissed before searching")
+    }
+
+    private func focusMapSearch(_ app: XCUIApplication) {
+        let search = app.textFields["Search park places"]
+        XCTAssertTrue(search.isHittable)
+        search.tap()
+        XCTAssertTrue(app.keyboards.firstMatch.waitForExistence(timeout: 5),
+                      "One real search-field tap must open the keyboard")
     }
 
     private func rootFixture(_ extra: [String] = []) -> XCUIApplication {
@@ -2690,12 +2713,10 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(search.waitForExistence(timeout: 5))
         chooseMapCategory("Food", app: app)
         XCTAssertTrue(app.buttons["Browse map places"].exists)
-        screenshot("Map search after Food selection", app: app)
-        print("MAP_SEARCH_AFTER_FOOD\n" + app.debugDescription)
-        search.tap()
-        screenshot("Map search after search tap", app: app)
-        print("MAP_SEARCH_AFTER_TAP\n" + app.debugDescription)
+        focusMapSearch(app)
+        screenshot("Map search keyboard after category selection", app: app)
         search.typeText("zz-no-such-place")
+        XCTAssertEqual(search.value as? String, "zz-no-such-place")
         XCTAssertTrue(app.staticTexts["No matching places."].waitForExistence(timeout: 3))
         screenshot("Map search empty state", app: app)
         app.buttons["Clear place search"].tap()
@@ -2703,8 +2724,30 @@ final class PIVOTUITests: XCTestCase {
         app.buttons["Browse map places"].tap()
         XCTAssertTrue(app.staticTexts["Map coverage & sources"].exists || app.buttons["Done"].exists)
         app.buttons["Done"].tap()
+
+        // Reselect the same category, cancel another menu, then interrupt an
+        // active search. Each return must leave the real field usable by one tap.
+        chooseMapCategory("Food", app: app)
+        app.buttons["Filter map places"].tap()
+        XCTAssertTrue(app.buttons["Rides"].firstMatch.waitForExistence(timeout: 3))
+        app.coordinate(withNormalizedOffset: CGVector(dx: 0.1, dy: 0.55)).tap()
+        waitForMapCategory("Food", app: app)
+        screenshot("Map category menu cancelled without changing Food", app: app)
+        focusMapSearch(app)
+        search.typeText("zz-no-such-place")
+        XCTAssertTrue(app.staticTexts["No matching places."].waitForExistence(timeout: 3))
+        XCUIDevice.shared.press(.home)
+        app.activate()
+        XCTAssertTrue(search.waitForExistence(timeout: 5))
+        XCTAssertEqual(search.value as? String, "zz-no-such-place")
+        focusMapSearch(app)
+        search.typeText("\n")
+        let keyboardGone = NSPredicate { _, _ in !app.keyboards.firstMatch.exists }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: keyboardGone, object: nil)], timeout: 5), .completed)
+        screenshot("Map search restored after foreground interruption", app: app)
+        app.buttons["Clear place search"].tap()
         chooseMapCategory("Rides", app: app)
-        search.tap()
+        focusMapSearch(app)
         search.typeText("Space Mountain\n")
         let pin = app.buttons["map-pin-b2260923-9315-40fd-9c6b-44dd811dbe64"]
         XCTAssertTrue(pin.waitForExistence(timeout: 5))
