@@ -432,8 +432,14 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertEqual(toggle.value as? String, "Expanded", file: file, line: line)
         screenshot("Compact Waits \(capture) expanded history", app: app)
         toggle.tap()
-        let collapsed = NSPredicate { _, _ in toggle.value as? String == "Collapsed" && !chart.exists }
-        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: collapsed, object: nil)], timeout: 5), .completed,
+        // Check both outcomes independently: a missing-element AX snapshot can take
+        // several seconds on the runner even after the recording shows collapse.
+        // Sharing five seconds between both queries made a correct collapse time out.
+        let collapsed = NSPredicate { _, _ in toggle.value as? String == "Collapsed" }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: collapsed, object: nil)], timeout: 10), .completed,
+                       "The history control must report its collapsed state", file: file, line: line)
+        let removed = NSPredicate { _, _ in !chart.exists }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: removed, object: nil)], timeout: 10), .completed,
                        "Toggling history must not intercept the ride action or leave a chart mounted", file: file, line: line)
     }
 
