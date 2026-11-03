@@ -1658,8 +1658,12 @@ final class PIVOTUITests: XCTestCase {
             }
             screenshot("Artwork delivery excluded \(rideID) detail fallback", app: app)
             let wait = app.staticTexts["45 min wait"]
-            reveal(wait, in: app)
+            // A full-screen flick can jump across this short status card on
+            // SE, oscillating between the photograph and the history chart.
+            // Use the measured missing edge and require the entire label.
+            centerFullyVisible(wait, in: app)
             XCTAssertTrue(wait.isHittable)
+            print("ARTWORK_FALLBACK_WAIT_VERIFIED ride=\(rideID) text=\(wait.label) frame=\(wait.frame)")
             app.terminate()
         }
     }
