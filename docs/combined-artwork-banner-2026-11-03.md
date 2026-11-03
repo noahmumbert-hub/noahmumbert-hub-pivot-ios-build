@@ -19,3 +19,5 @@ Full run 227 attempt 2 finished its export but failed the real-provider refresh 
 Run 227's first SE attempt passed all 317 tests but reached the overall 120-minute job boundary during attachment export. The full jobs now allow 150 minutes for the same suite plus archive, export and uploads. Per-case limits, assertions, standard runner types and read-only workflow permissions are unchanged.
 
 Future bounded summaries also preserve exported text attachments from the newly instrumented failures. This collects fresh diagnostics directly from future runs; it does not retrieve or repackage any previously denied artifact.
+
+Run 231 passed all 15 repeated functional cases, but visual review found two member-list captures taken before the list was painted. The fixture now targets the specific native list-row identifiers, requires both rows and Done to be hittable and settled, and retains the exact native screenshot whose pixels contain both member names. Existing selection and status assertions remain. The successful-run capture count stays unchanged. This is an evidence-readiness repair; production rendering and behavior are unchanged.

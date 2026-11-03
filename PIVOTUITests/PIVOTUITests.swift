@@ -48,7 +48,8 @@ final class PIVOTUITests: XCTestCase {
             let filter = app.buttons["Filter map places"]
             let chooserExists = app.navigationBars["Place categories"].exists
             let rowExists = app.buttons[category].firstMatch.exists
-            let initial = "category=\(category); filter=\(String(describing: filter.value)); chooser=\(chooserExists); row=\(rowExists)"
+            let filterValue = filter.exists ? String(describing: filter.value) : "<absent>"
+            let initial = "category=\(category); filter=\(filterValue); chooser=\(chooserExists); row=\(rowExists)"
             let later = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 10)
             screenshot("Map category after observation without another input", app: app)
             let details = "Original result: \(result.rawValue)\n\(initial)\nLater result: \(later.rawValue)\n\(app.debugDescription)"
@@ -1955,10 +1956,46 @@ final class PIVOTUITests: XCTestCase {
         chooseMapCategory("Food", app: app)
         app.buttons["Show whole park"].tap()
         XCTAssertTrue(cluster.waitForExistence(timeout: 5)); cluster.tap()
-        let member = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'North counter'")).firstMatch
+        let member = app.buttons["map-place-row-fixture-food-a"]
+        let otherMember = app.buttons["map-place-row-fixture-food-b"]
         XCTAssertTrue(member.waitForExistence(timeout: 5))
-        XCTAssertTrue(app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'South counter'")).firstMatch.exists)
-        screenshot("Co-located map places native member list", app: app)
+        XCTAssertTrue(otherMember.exists)
+        let done = app.buttons["Done"]
+        let listReady = NSPredicate { _, _ in member.isHittable && otherMember.isHittable && done.isHittable }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: listReady, object: nil)], timeout: 10), .completed)
+        waitForSettledFrames([member, otherMember, done])
+        // AX existence can precede the sheet's painted frame. Keep the exact
+        // native frame that visibly contains both names as the required capture.
+        let captureDeadline = Date().addingTimeInterval(10)
+        var paintedCapture: XCUIScreenshot?
+        var paintedWords: [String] = []
+        repeat {
+            let capture = XCUIScreen.main.screenshot()
+            guard let pixels = capture.image.cgImage else {
+                XCTFail("The native member list must supply screen pixels"); return
+            }
+            let request = VNRecognizeTextRequest()
+            request.recognitionLevel = .accurate
+            request.recognitionLanguages = ["en-US"]
+            request.usesLanguageCorrection = false
+            do { try VNImageRequestHandler(cgImage: pixels, options: [:]).perform([request]) }
+            catch { XCTFail("Native member-list recognition failed: \(error)"); return }
+            paintedWords = request.results?.compactMap { $0.topCandidates(1).first?.string } ?? []
+            let text = paintedWords.joined(separator: " ")
+            if ["North counter", "South counter"].allSatisfy({ text.range(of: $0, options: .caseInsensitive) != nil }) {
+                paintedCapture = capture
+                break
+            }
+            Thread.sleep(forTimeInterval: 0.1)
+        } while Date() < captureDeadline
+        guard let paintedCapture else {
+            screenshot("Unresolved native co-located member list", app: app)
+            XCTFail("Both native member names must be painted: \(paintedWords)"); return
+        }
+        let memberCapture = XCTAttachment(screenshot: paintedCapture)
+        memberCapture.name = "Co-located map places native member list"
+        memberCapture.lifetime = .keepAlways
+        add(memberCapture)
         member.tap()
         XCTAssertTrue(app.staticTexts["North counter"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.staticTexts["Dining location · hours unavailable"].exists)
