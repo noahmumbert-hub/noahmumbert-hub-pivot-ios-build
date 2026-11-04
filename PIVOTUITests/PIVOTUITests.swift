@@ -771,10 +771,25 @@ final class PIVOTUITests: XCTestCase {
     }
 
     private func assertObservedChartSamples(_ waits: [String], chart: XCUIElement) {
-        let points = chart.descendants(matching: .any).matching(NSPredicate(format: "label BEGINSWITH 'Observation '"))
+        // Read every real semantic dot from one native snapshot. Resolving a
+        // separate live query for every value repeatedly snapshots this large
+        // Swift Charts subtree and can exhaust an SE case before its gestures.
+        guard let snapshot = try? chart.snapshot() else {
+            XCTFail("The presented chart must supply its native accessibility snapshot")
+            return
+        }
+        var nodes = [snapshot]
+        var pending = snapshot.children
+        while let node = pending.popLast() {
+            nodes.append(node)
+            pending.append(contentsOf: node.children)
+        }
+        let points = nodes.filter { $0.label.hasPrefix("Observation ") }
         XCTAssertEqual(points.count, waits.count, "Every distinct dot must remain readable to VoiceOver")
         for (index, wait) in waits.enumerated() {
-            let point = points.matching(NSPredicate(format: "label BEGINSWITH %@", "Observation \(index + 1),")).firstMatch
+            let matches = points.filter { $0.label.hasPrefix("Observation \(index + 1),") }
+            XCTAssertEqual(matches.count, 1, "Each observation must have exactly one genuine semantic dot")
+            guard let point = matches.first else { continue }
             XCTAssertEqual(point.value as? String, "\(wait) minutes", "Each dot must announce its own recorded wait")
         }
     }
@@ -814,6 +829,7 @@ final class PIVOTUITests: XCTestCase {
     }
 
     private func waitForSettledFrames(_ elements: [XCUIElement],
+                                      sampleFrames: (() -> [CGRect])? = nil,
                                       file: StaticString = #filePath, line: UInt = #line) {
         let started = Date()
         let deadline = started.addingTimeInterval(15)
@@ -828,9 +844,14 @@ final class PIVOTUITests: XCTestCase {
             // An AX read cannot be interrupted. Check before each read so only
             // the in-flight frame lookup may finish after the deadline.
             var frames: [CGRect] = []
-            for element in elements {
+            if let sampleFrames {
                 guard Date() < deadline else { break }
-                frames.append(element.frame)
+                frames = sampleFrames()
+            } else {
+                for element in elements {
+                    guard Date() < deadline else { break }
+                    frames.append(element.frame)
+                }
             }
             let sampledAt = Date()
             trace.append("t=\(sampledAt.timeIntervalSince(started)): \(frames)")
@@ -932,14 +953,31 @@ final class PIVOTUITests: XCTestCase {
     private func centerHorizontally(_ label: XCUIElement, in scrollView: XCUIElement, app: XCUIApplication,
                                     file: StaticString = #filePath, line: UInt = #line) {
         XCTAssertTrue(label.waitForExistence(timeout: 5), "A genuine displayed time label must exist", file: file, line: line)
+        let identifier = label.identifier
+        XCTAssertFalse(identifier.isEmpty, "The displayed clock needs its genuine accessibility identity", file: file, line: line)
+        func currentFrames() -> [CGRect] {
+            // Both frames must describe the same native state. A pair of live
+            // .frame queries otherwise incurs two independent tree snapshots
+            // for every pan and every settling sample.
+            guard let snapshot = try? scrollView.snapshot() else { return [.zero, .zero] }
+            var pending = snapshot.children
+            var matches: [CGRect] = []
+            while let node = pending.popLast() {
+                if node.identifier == identifier { matches.append(node.frame) }
+                pending.append(contentsOf: node.children)
+            }
+            guard matches.count == 1 else { return [.zero, .zero] }
+            return [snapshot.frame, matches[0]]
+        }
         let contentViewport = safeContentViewport(in: app)
         let appFrame = app.frame
         var trace: [String] = []
         // Measure once more after the final permitted pan. Largest observation
         // columns can begin several viewports away from the requested quarter.
         for attempt in 0...24 {
-            let viewport = scrollView.frame.intersection(contentViewport).insetBy(dx: 4, dy: 0)
-            let frame = label.frame
+            let frames = currentFrames()
+            let viewport = frames[0].intersection(contentViewport).insetBy(dx: 4, dy: 0)
+            let frame = frames[1]
             let offset = frame.minX < viewport.minX
                 ? viewport.minX - frame.minX + 12 : viewport.maxX - frame.maxX - 12
             trace.append("attempt \(attempt): label=\(frame), viewport=\(viewport), horizontalOffset=\(offset)")
@@ -949,15 +987,18 @@ final class PIVOTUITests: XCTestCase {
             }
             let fullyVisible = viewport.insetBy(dx: -1, dy: -1).contains(frame)
             if fullyVisible {
-                waitForSettledFrames([scrollView, label], file: file, line: line)
+                waitForSettledFrames([scrollView, label], sampleFrames: currentFrames, file: file, line: line)
                 // The inset above is a positioning margin. After scrolling settles,
                 // require the full glyph frame to fit the actual visible clip.
-                let currentViewport = scrollView.frame.intersection(safeContentViewport(in: app))
-                assertContained(label.frame, in: currentViewport, "The entire time label must be inside the horizontal viewport", file: file, line: line)
+                let settled = currentFrames()
+                let currentViewport = settled[0].intersection(safeContentViewport(in: app))
+                assertContained(settled[1], in: currentViewport, "The entire time label must be inside the horizontal viewport", file: file, line: line)
+                print("HORIZONTAL_CLOCK_VERIFIED identifier=\(identifier) pans=\(attempt) frame=\(settled[1]) viewport=\(currentViewport)")
                 return
             }
             guard attempt < 24 else { break }
             let movement = min(viewport.width * 0.85, max(20, abs(offset))) * (offset < 0 ? -1 : 1)
+            print("HORIZONTAL_CLOCK_PAN identifier=\(identifier) attempt=\(attempt) frame=\(frame) viewport=\(viewport) movement=\(movement)")
             let start = app.coordinate(withNormalizedOffset: .zero)
                 .withOffset(CGVector(dx: viewport.midX - movement / 2 - appFrame.minX, dy: viewport.midY - appFrame.minY))
             start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: movement, dy: 0)),
