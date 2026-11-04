@@ -178,6 +178,8 @@ jobs:
           name: PIVOT-diagnostics-${{ inputs.simulator || 'iPhone 16 Pro Max' }}-${{ inputs.scope || 'native-design' }}-${{ github.run_number }}-${{ github.run_attempt }}
           path: |
             build/native-tests.log
+            build/map-startup-diagnostics/*.png
+            build/map-startup-diagnostics/manifest.json
             build/ui-screenshots/manifest.json
             build/ui-screenshots/*.png
             build/ui-screenshots/*.txt

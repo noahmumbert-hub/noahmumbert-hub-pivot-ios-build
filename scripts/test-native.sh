@@ -311,6 +311,12 @@ with open('build/test-scope.json', 'w') as f:
     json.dump(dict(scope=scope, completeRegression=scope == 'all'), f, indent=2)
     f.write('\n')
 PY
+startup_observer_pid=""
+if [[ "${PIVOT_TEST_SCOPE:-all}" == "map-recovery" ]]; then
+  rm -f build/map-startup-observer.stop
+  python3 scripts/capture-map-startup.py "$simulator_id" &
+  startup_observer_pid=$!
+fi
 test_exit=0
 xcodebuild -project PIVOT.xcodeproj -scheme PIVOT \
   -destination "platform=iOS Simulator,id=$simulator_id" \
@@ -319,6 +325,10 @@ xcodebuild -project PIVOT.xcodeproj -scheme PIVOT \
   "${test_options[@]}" -jobs 3 \
   CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO DEVELOPMENT_TEAM= \
   test 2>&1 | tee build/native-tests.log || test_exit=$?
+if [[ -n "$startup_observer_pid" ]]; then
+  touch build/map-startup-observer.stop
+  wait "$startup_observer_pid" || true
+fi
 export_exit=0
 if [[ -d build/native-tests.xcresult ]]; then
   xcrun xcresulttool export attachments --path build/native-tests.xcresult --output-path build/ui-screenshots || export_exit=$?
