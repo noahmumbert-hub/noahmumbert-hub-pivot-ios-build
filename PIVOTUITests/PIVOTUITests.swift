@@ -85,6 +85,29 @@ final class PIVOTUITests: XCTestCase {
         search.tap()
         XCTAssertTrue(app.keyboards.firstMatch.waitForExistence(timeout: 5),
                       "One real search-field tap must open the keyboard")
+        let submit = app.keyboards.buttons["Search"]
+        if !submit.isHittable {
+            // A fresh simulator can present the system slide-to-type tutorial
+            // after returning from Home. It replaces the keyboard's normal keys.
+            let tutorial = app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@",
+                "Speed up your typing by sliding your finger")).firstMatch
+            if tutorial.waitForExistence(timeout: 2) {
+                let proceed = app.buttons["Continue"].firstMatch
+                XCTAssertTrue(proceed.isHittable, "The identified system keyboard tutorial must expose Continue")
+                proceed.tap()
+                print("MAP_KEYBOARD_SYSTEM_TUTORIAL_DISMISSED nativeContinueTap=true")
+            }
+        }
+        let keyReady = NSPredicate { _, _ in submit.isHittable }
+        let result = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: keyReady, object: nil)], timeout: 5)
+        if result != .completed {
+            screenshot("Map keyboard preparation did not expose native Search", app: app)
+            let state = XCTAttachment(string: app.debugDescription)
+            state.name = "Map native keyboard preparation failure state"
+            state.lifetime = .keepAlways
+            add(state)
+        }
+        XCTAssertEqual(result, .completed, "The actual keyboard Search key must be hittable before its one submit tap")
     }
 
     private func visibleMapCluster(in app: XCUIApplication, memberCount: Int? = nil) -> XCUIElement? {
