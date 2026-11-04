@@ -48,11 +48,30 @@ final class PIVOTUITests: XCTestCase {
         let ready = NSPredicate { _, _ in
             let filter = app.buttons["Filter map places"]
             let search = app.textFields["Search park places"]
-            // Hittability already requires existence. Avoid two redundant AX
-            // round trips consuming the unchanged five-second interaction gate.
-            return filter.value as? String == category
-                && !app.navigationBars["Place categories"].exists
-                && !app.buttons[category].firstMatch.exists
+            // An absent row's live query can retry for several seconds even
+            // after the recorded sheet has gone. Read all structural conditions
+            // from one native snapshot, then check both real hit targets.
+            guard let snapshot = try? app.snapshot() else { return false }
+            var pending = [snapshot]
+            var applied = false
+            var chooserExists = false
+            var rowExists = false
+            while let element = pending.popLast() {
+                pending.append(contentsOf: element.children)
+                if element.elementType == .button {
+                    if element.identifier == "Filter map places" {
+                        applied = element.value as? String == category
+                    }
+                    if element.identifier == category || element.label == category {
+                        rowExists = true
+                    }
+                }
+                if element.elementType == .navigationBar
+                    && (element.identifier == "Place categories" || element.label == "Place categories") {
+                    chooserExists = true
+                }
+            }
+            return applied && !chooserExists && !rowExists
                 && search.isHittable && filter.isHittable
         }
         let result = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 5)
