@@ -743,7 +743,7 @@ final class PIVOTUITests: XCTestCase {
         let chart = app.descendants(matching: .any)["observed-wait-chart-10916"].firstMatch
         centerFullyVisible(chart, in: app)
         screenshot("Every observed wait dot labeled latest samples", app: app)
-        centerHorizontally(chart.staticTexts["wait-sample-time-10916-0"].firstMatch, in: chart, app: app)
+        centerHorizontally("wait-sample-time-10916-0", in: "observed-wait-chart-10916", app: app)
         screenshot("Every observed wait dot labeled earlier samples", app: app)
         let sampleTimes = app.buttons["Sample times"].firstMatch
         reveal(sampleTimes, in: app); sampleTimes.tap()
@@ -770,6 +770,32 @@ final class PIVOTUITests: XCTestCase {
         return app
     }
 
+    private func nativeSnapshotNodes(_ snapshot: XCUIElementSnapshot) -> [XCUIElementSnapshot] {
+        var nodes = [snapshot]
+        var pending = snapshot.children
+        while let node = pending.popLast() {
+            nodes.append(node)
+            pending.append(contentsOf: node.children)
+        }
+        return nodes
+    }
+
+    private func nativeElementSnapshot(_ identifier: String, in app: XCUIApplication) -> XCUIElementSnapshot? {
+        // Snapshot the application itself before looking up an identity. Asking
+        // an identifier-filtered XCUIElement for a snapshot first resolves its
+        // query remotely. The retained timeout stacks are in that resolution.
+        guard let root = try? app.snapshot() else { return nil }
+        let matches = nativeSnapshotNodes(root).filter { $0.identifier == identifier }
+        return matches.count == 1 ? matches[0] : nil
+    }
+
+    private struct NativeChartColumnSnapshot {
+        let chart: XCUIElementSnapshot
+        let clock: XCUIElementSnapshot
+        let nodes: [XCUIElementSnapshot]
+        let contentViewport: CGRect
+    }
+
     private func assertObservedChartSamples(_ waits: [String], chart: XCUIElement) {
         // Read every real semantic dot from one native snapshot. Resolving a
         // separate live query for every value repeatedly snapshots this large
@@ -778,12 +804,10 @@ final class PIVOTUITests: XCTestCase {
             XCTFail("The presented chart must supply its native accessibility snapshot")
             return
         }
-        var nodes = [snapshot]
-        var pending = snapshot.children
-        while let node = pending.popLast() {
-            nodes.append(node)
-            pending.append(contentsOf: node.children)
-        }
+        assertObservedChartSamples(waits, nodes: nativeSnapshotNodes(snapshot))
+    }
+
+    private func assertObservedChartSamples(_ waits: [String], nodes: [XCUIElementSnapshot]) {
         let points = nodes.filter { $0.label.hasPrefix("Observation ") }
         XCTAssertEqual(points.count, waits.count, "Every distinct dot must remain readable to VoiceOver")
         for (index, wait) in waits.enumerated() {
@@ -831,6 +855,19 @@ final class PIVOTUITests: XCTestCase {
     private func waitForSettledFrames(_ elements: [XCUIElement],
                                       sampleFrames: (() -> [CGRect])? = nil,
                                       file: StaticString = #filePath, line: UInt = #line) {
+        waitForSettledFrames(count: elements.count, sampleFrames: { deadline in
+            if let sampleFrames { return sampleFrames() }
+            var frames: [CGRect] = []
+            for element in elements {
+                guard Date() < deadline else { break }
+                frames.append(element.frame)
+            }
+            return frames
+        }, file: file, line: line)
+    }
+
+    private func waitForSettledFrames(count: Int, sampleFrames: (Date) -> [CGRect],
+                                      file: StaticString = #filePath, line: UInt = #line) {
         let started = Date()
         let deadline = started.addingTimeInterval(15)
         var previous: [CGRect] = []
@@ -843,19 +880,11 @@ final class PIVOTUITests: XCTestCase {
             }
             // An AX read cannot be interrupted. Check before each read so only
             // the in-flight frame lookup may finish after the deadline.
-            var frames: [CGRect] = []
-            if let sampleFrames {
-                guard Date() < deadline else { break }
-                frames = sampleFrames()
-            } else {
-                for element in elements {
-                    guard Date() < deadline else { break }
-                    frames.append(element.frame)
-                }
-            }
+            guard Date() < deadline else { break }
+            let frames = sampleFrames(deadline)
             let sampledAt = Date()
             trace.append("t=\(sampledAt.timeIntervalSince(started)): \(frames)")
-            guard frames.count == elements.count else { break }
+            guard frames.count == count else { break }
             let valid = frames.allSatisfy { frame in
                 !frame.isEmpty && !frame.isNull
                     && [frame.minX, frame.minY, frame.width, frame.height].allSatisfy(\.isFinite)
@@ -879,21 +908,33 @@ final class PIVOTUITests: XCTestCase {
 
     /// Move by the measured missing edge, using longer drags only while far
     /// away. The entire target must fit clear of foreground native bars.
-    private func centerFullyVisible(_ element: XCUIElement, in app: XCUIApplication,
+    private func centerFullyVisible(_ element: XCUIElement, in app: XCUIApplication, snapshotIdentifier: String? = nil,
                                      file: StaticString = #filePath, line: UInt = #line) {
+        func currentFrame() -> CGRect {
+            if let snapshotIdentifier {
+                return nativeElementSnapshot(snapshotIdentifier, in: app)?.frame ?? .zero
+            }
+            return element.exists ? element.frame : .zero
+        }
         let viewport = safeContentViewport(in: app)
         let appFrame = app.frame
         for _ in 0..<22 {
             var movement: CGFloat = min(420, viewport.height * 0.8)
-            let frame = element.exists ? element.frame : .zero
+            let frame = currentFrame()
             if !frame.isEmpty {
                 guard frame.height <= viewport.height + 1, frame.width <= viewport.width + 1 else {
                     XCTFail("Target cannot fit the visible content area. Frame \(frame); viewport \(viewport)", file: file, line: line)
                     return
                 }
                 if viewport.insetBy(dx: -1, dy: -1).contains(frame) {
-                    waitForSettledFrames([element], file: file, line: line)
-                    assertContained(element.frame, in: safeContentViewport(in: app), "The complete target must remain visible", file: file, line: line)
+                    if snapshotIdentifier != nil {
+                        waitForSettledFrames(count: 1, sampleFrames: { _ in [currentFrame()] }, file: file, line: line)
+                    } else {
+                        waitForSettledFrames([element], file: file, line: line)
+                    }
+                    let finalViewport = safeContentViewport(in: app)
+                    let finalFrame = snapshotIdentifier == nil ? element.frame : currentFrame()
+                    assertContained(finalFrame, in: finalViewport, "The complete target must remain visible", file: file, line: line)
                     return
                 }
                 let offset = frame.minY < viewport.minY
@@ -907,10 +948,10 @@ final class PIVOTUITests: XCTestCase {
             start.press(forDuration: 0.05, thenDragTo: end, withVelocity: .slow, thenHoldForDuration: 0.2)
         }
         screenshot("Complete target could not fit the content viewport", app: app)
-        XCTFail("Could not place the complete target inside the visible content area. Frame \(element.frame); viewport \(safeContentViewport(in: app))", file: file, line: line)
+        XCTFail("Could not place the complete target inside the visible content area. Frame \(currentFrame()); viewport \(safeContentViewport(in: app))", file: file, line: line)
     }
 
-    private func assertCompleteClock(_ label: XCUIElement, category: UIContentSizeCategory,
+    private func assertCompleteClock(_ label: XCUIElementSnapshot, category: UIContentSizeCategory,
                                      file: StaticString = #filePath, line: UInt = #line) {
         let text = label.label
         let clock = text.split(whereSeparator: \.isWhitespace).joined(separator: " ")
@@ -950,24 +991,24 @@ final class PIVOTUITests: XCTestCase {
                                     "The visible text frame must accommodate its entire wrapped wording", file: file, line: line)
     }
 
-    private func centerHorizontally(_ label: XCUIElement, in scrollView: XCUIElement, app: XCUIApplication,
-                                    file: StaticString = #filePath, line: UInt = #line) {
-        XCTAssertTrue(label.waitForExistence(timeout: 5), "A genuine displayed time label must exist", file: file, line: line)
-        let identifier = label.identifier
+    @discardableResult
+    private func centerHorizontally(_ identifier: String, in chartIdentifier: String, app: XCUIApplication,
+                                    file: StaticString = #filePath, line: UInt = #line) -> NativeChartColumnSnapshot? {
         XCTAssertFalse(identifier.isEmpty, "The displayed clock needs its genuine accessibility identity", file: file, line: line)
+        func readColumn() -> (chart: XCUIElementSnapshot, clock: XCUIElementSnapshot, nodes: [XCUIElementSnapshot])? {
+            guard let chart = nativeElementSnapshot(chartIdentifier, in: app) else { return nil }
+            let nodes = nativeSnapshotNodes(chart)
+            let clocks = nodes.filter { $0.elementType == .staticText && $0.identifier == identifier }
+            guard clocks.count == 1 else { return nil }
+            return (chart, clocks[0], nodes)
+        }
+        let exists = NSPredicate { _, _ in readColumn() != nil }
+        let existence = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: exists, object: nil)], timeout: 5)
+        XCTAssertEqual(existence, .completed, "A genuine displayed time label must exist exactly once", file: file, line: line)
+        guard existence == .completed else { return nil }
         func currentFrames() -> [CGRect] {
-            // Both frames must describe the same native state. A pair of live
-            // .frame queries otherwise incurs two independent tree snapshots
-            // for every pan and every settling sample.
-            guard let snapshot = try? scrollView.snapshot() else { return [.zero, .zero] }
-            var pending = snapshot.children
-            var matches: [CGRect] = []
-            while let node = pending.popLast() {
-                if node.identifier == identifier { matches.append(node.frame) }
-                pending.append(contentsOf: node.children)
-            }
-            guard matches.count == 1 else { return [.zero, .zero] }
-            return [snapshot.frame, matches[0]]
+            guard let state = readColumn() else { return [.zero, .zero] }
+            return [state.chart.frame, state.clock.frame]
         }
         let contentViewport = safeContentViewport(in: app)
         let appFrame = app.frame
@@ -983,18 +1024,26 @@ final class PIVOTUITests: XCTestCase {
             trace.append("attempt \(attempt): label=\(frame), viewport=\(viewport), horizontalOffset=\(offset)")
             guard !frame.isEmpty, frame.width <= viewport.width + 1 else {
                 XCTFail("A complete time label must fit its scroll viewport. Frame \(frame); viewport \(viewport)", file: file, line: line)
-                return
+                return nil
             }
             let fullyVisible = viewport.insetBy(dx: -1, dy: -1).contains(frame)
             if fullyVisible {
-                waitForSettledFrames([scrollView, label], sampleFrames: currentFrames, file: file, line: line)
+                waitForSettledFrames(count: 2, sampleFrames: { _ in currentFrames() }, file: file, line: line)
                 // The inset above is a positioning margin. After scrolling settles,
                 // require the full glyph frame to fit the actual visible clip.
-                let settled = currentFrames()
-                let currentViewport = settled[0].intersection(safeContentViewport(in: app))
-                assertContained(settled[1], in: currentViewport, "The entire time label must be inside the horizontal viewport", file: file, line: line)
-                print("HORIZONTAL_CLOCK_VERIFIED identifier=\(identifier) pans=\(attempt) frame=\(settled[1]) viewport=\(currentViewport)")
-                return
+                let contentViewport = safeContentViewport(in: app)
+                guard let settled = readColumn() else {
+                    XCTFail("The settled chart and its unique displayed clock must retain their native identities", file: file, line: line)
+                    return nil
+                }
+                let currentViewport = settled.chart.frame.intersection(contentViewport)
+                assertContained(settled.clock.frame, in: currentViewport, "The entire time label must be inside the horizontal viewport", file: file, line: line)
+                print("HORIZONTAL_CLOCK_VERIFIED identifier=\(identifier) pans=\(attempt) frame=\(settled.clock.frame) viewport=\(currentViewport)")
+                // These are attributes of the actual post-pan state, obtained
+                // together. Re-reading label/value/frame as live queries here
+                // was the next blocking remote lookup in the timeout trace.
+                return NativeChartColumnSnapshot(chart: settled.chart, clock: settled.clock,
+                    nodes: settled.nodes, contentViewport: contentViewport)
             }
             guard attempt < 24 else { break }
             let movement = min(viewport.width * 0.85, max(20, abs(offset))) * (offset < 0 ? -1 : 1)
@@ -1006,6 +1055,7 @@ final class PIVOTUITests: XCTestCase {
         }
         XCTFail("Could not bring the complete time label into its horizontal viewport. Actual pan trace: \(trace.joined(separator: "; "))",
                 file: file, line: line)
+        return nil
     }
 
     private func assertHistoryHeaderLayout(_ header: XCUIElement, chart: XCUIElement, app: XCUIApplication,
@@ -1026,7 +1076,7 @@ final class PIVOTUITests: XCTestCase {
             return true
         }
         if header.exists { guard requireExpandedHistory("before positioning") else { return false } }
-        centerFullyVisible(header, in: app)
+        centerFullyVisible(header, in: app, snapshotIdentifier: "wait-history-toggle-10916")
         guard requireExpandedHistory("after complete header positioning") else { return false }
         let viewport = safeContentViewport(in: app)
         let positionedHeader = header.frame
@@ -1087,25 +1137,35 @@ final class PIVOTUITests: XCTestCase {
         if let header {
             guard assertHistoryHeaderLayout(header, chart: chart, app: app, category: category, capture: capture) else { return }
         }
-        centerFullyVisible(chart, in: app)
-        assertObservedChartSamples(waits, chart: chart)
-        let times = chart.staticTexts.matching(NSPredicate(format: "identifier BEGINSWITH 'wait-sample-time-10916-'"))
+        centerFullyVisible(chart, in: app, snapshotIdentifier: "observed-wait-chart-10916")
+        guard let initial = nativeElementSnapshot("observed-wait-chart-10916", in: app) else {
+            XCTFail("The presented history chart must have one genuine native accessibility identity")
+            return
+        }
+        let initialNodes = nativeSnapshotNodes(initial)
+        assertObservedChartSamples(waits, nodes: initialNodes)
+        let times = initialNodes.filter { $0.elementType == .staticText && $0.identifier.hasPrefix("wait-sample-time-10916-") }
         XCTAssertEqual(times.count, waits.count, "Every dot must have a genuine displayed local-time label")
         for index in (observations ?? waits.indices).reversed() {
-            let time = chart.staticTexts["wait-sample-time-10916-\(index)"].firstMatch
-            centerHorizontally(time, in: chart, app: app)
-            assertCompleteClock(time, category: category)
-            let point = chart.descendants(matching: .any).matching(NSPredicate(format: "label BEGINSWITH %@", "Observation \(index + 1),")).firstMatch
+            guard let column = centerHorizontally("wait-sample-time-10916-\(index)",
+                in: "observed-wait-chart-10916", app: app) else { return }
+            assertCompleteClock(column.clock, category: category)
+            let points = column.nodes.filter { $0.label.hasPrefix("Observation \(index + 1),") }
+            XCTAssertEqual(points.count, 1, "The visible column must retain its unique semantic observation")
+            guard let point = points.first else { return }
             XCTAssertEqual(point.value as? String, "\(waits[index]) minutes")
-            let annotation = chart.staticTexts["wait-sample-value-10916-\(index)"].firstMatch
-            if annotation.exists {
+            let annotations = column.nodes.filter {
+                $0.elementType == .staticText && $0.identifier == "wait-sample-value-10916-\(index)"
+            }
+            XCTAssertLessThanOrEqual(annotations.count, 1, "An ordinary wait annotation must have one native identity")
+            if let annotation = annotations.first {
                 XCTAssertEqual(annotation.label, "\(waits[index]) min")
-                assertContained(annotation.frame, in: chart.frame.intersection(safeContentViewport(in: app)), "The complete wait annotation must remain visible")
+                assertContained(annotation.frame, in: column.chart.frame.intersection(column.contentViewport), "The complete wait annotation must remain visible")
             }
             // Charts may expose annotations through the semantic Observation
             // element instead of a Text node. The real time label positions the
             // same column; each attachment also records that dot's visible glyphs.
-            assertContained(chart.frame, in: safeContentViewport(in: app), "The entire chart must be visible for every captured observation")
+            assertContained(column.chart.frame, in: column.contentViewport, "The entire chart must be visible for every captured observation")
             screenshot("\(capture) observation \(index + 1) value and full local time", app: app)
         }
     }
@@ -1113,8 +1173,14 @@ final class PIVOTUITests: XCTestCase {
     private func assertForecastTimeLabels(in forecast: XCUIElement, app: XCUIApplication,
                                          quarter: Int, capture: String) {
         let chart = forecast.descendants(matching: .any)["wait-forecast-chart"].firstMatch
-        centerFullyVisible(chart, in: app)
-        let times = chart.staticTexts.matching(NSPredicate(format: "identifier BEGINSWITH 'wait-forecast-time-'"))
+        centerFullyVisible(chart, in: app, snapshotIdentifier: "wait-forecast-chart")
+        guard let initial = nativeElementSnapshot("wait-forecast-chart", in: app) else {
+            XCTFail("The presented forecast chart must have one genuine native accessibility identity")
+            return
+        }
+        let times = nativeSnapshotNodes(initial).filter {
+            $0.elementType == .staticText && $0.identifier.hasPrefix("wait-forecast-time-")
+        }
         let count = times.count
         XCTAssertGreaterThan(count, 1, "A multi-hour forecast must display its actual time labels")
         XCTAssertLessThanOrEqual(count, 25)
@@ -1124,9 +1190,8 @@ final class PIVOTUITests: XCTestCase {
         // preserving every clock, font, and whole-viewport assertion.
         let indices = (quarter * 2)..<(quarter * 2 + 2)
         for index in indices.reversed() {
-            let time = chart.staticTexts["wait-forecast-time-\(index)"].firstMatch
-            centerHorizontally(time, in: chart, app: app)
-            assertCompleteClock(time, category: .accessibilityLarge)
+            guard let column = centerHorizontally("wait-forecast-time-\(index)", in: "wait-forecast-chart", app: app) else { return }
+            assertCompleteClock(column.clock, category: .accessibilityLarge)
             screenshot("\(capture) full forecast time \(index + 1)", app: app)
         }
     }
@@ -1162,7 +1227,7 @@ final class PIVOTUITests: XCTestCase {
         centerFullyVisible(chart, in: app)
         assertObservedChartSamples(Array(repeating: "15", count: 12), chart: chart)
         screenshot("Observed history repeated waits latest \(appearance)", app: app)
-        centerHorizontally(chart.staticTexts["wait-sample-time-10916-0"].firstMatch, in: chart, app: app)
+        centerHorizontally("wait-sample-time-10916-0", in: "observed-wait-chart-10916", app: app)
         screenshot("Observed history repeated waits earlier \(appearance)", app: app)
         assertObservedSampleRows(Array(repeating: "15", count: 12), app: app)
         app.terminate()
@@ -1316,7 +1381,7 @@ final class PIVOTUITests: XCTestCase {
         let app = observedHistoryFixture(["--ride-history-supported", "--ui-large-type"])
         let summary = app.otherElements["ride-lowest-wait-summary"].firstMatch
         let hourly = summary.buttons["ride-history-hourly-estimates"]
-        centerFullyVisible(hourly, in: app); hourly.tap()
+        centerFullyVisible(hourly, in: app, snapshotIdentifier: "ride-history-hourly-estimates"); hourly.tap()
         XCTAssertTrue(app.navigationBars["Predicted waits"].waitForExistence(timeout: 5))
         let forecast = app.otherElements["ride-wait-forecast"].firstMatch
         XCTAssertTrue(forecast.waitForExistence(timeout: 5))
@@ -1374,7 +1439,7 @@ final class PIVOTUITests: XCTestCase {
         }
         screenshot(expired ? "Lowest wait unavailable at accessibility size" : "Lowest wait evidence at accessibility size", app: app)
         let hourly = summary.buttons["ride-history-hourly-estimates"]
-        centerFullyVisible(hourly, in: app); hourly.tap()
+        centerFullyVisible(hourly, in: app, snapshotIdentifier: "ride-history-hourly-estimates"); hourly.tap()
         XCTAssertTrue(app.navigationBars["Predicted waits"].waitForExistence(timeout: 5))
         let forecast = app.otherElements["ride-wait-forecast"].firstMatch
         XCTAssertTrue(forecast.waitForExistence(timeout: 5), "Assertions must inspect the presented forecast, whose source evidence also appears on the underlying page")

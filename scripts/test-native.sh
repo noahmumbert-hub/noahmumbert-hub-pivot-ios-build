@@ -119,6 +119,18 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestDetailsKeepLastThreeLabelsReadable
       -test-iterations 3
     ) ;;
+  chart-recovery)
+    # Reproduce the failed row/forecast paths and the previously affected detail
+    # path repeatedly. The real-provider observation remains a strict Live test.
+    test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestRowsKeepLastThreeLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestRowsKeepSecondThreeLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestRowsKeepThirdThreeLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testObservedHistoryLargestDetailsKeepSecondThreeLabelsReadable
+      -only-testing:PIVOTUITests/PIVOTUITests/testHourlyForecastShowsFirstTwoCompleteTimesAtAccessibilityTextSize
+      -only-testing:PIVOTUITests/PIVOTUITests/testLiveMapRefreshReportsRealProviderStatus
+      -test-iterations 3
+    ) ;;
   layout-review)
     test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutKeepsParkHoursAndHistoryTouchTarget
@@ -301,7 +313,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
     ) ;;
   *)
-    echo 'Unsupported PIVOT_TEST_SCOPE; use all, map-search, history-details, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, or park-picker.' >&2
+    echo 'Unsupported PIVOT_TEST_SCOPE; use all, map-search, history-details, chart-recovery, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, or park-picker.' >&2
     exit 1 ;;
 esac
 python3 - <<'PY'
