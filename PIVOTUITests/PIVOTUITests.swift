@@ -989,23 +989,24 @@ final class PIVOTUITests: XCTestCase {
         guard requireExpandedHistory("after complete header positioning") else { return false }
         let viewport = safeContentViewport(in: app)
         let positionedHeader = header.frame
-        let movement = min(viewport.height * 0.8, max(0, positionedHeader.minY - viewport.minY - 12))
+        // A narrow horizontal gutter beside a SwiftUI Button can still be in
+        // its effective touch region. Start above the disclosure instead, and
+        // keep the whole upward pan clear of the control's expanded hit area.
+        let clearance: CGFloat = 44
+        let point = CGPoint(x: viewport.midX, y: positionedHeader.minY - clearance)
+        let movement = min(viewport.height * 0.8,
+                           max(0, point.y - viewport.minY - 12))
         if movement > 2 {
             // Put the title near the upper edge so that the adjacent plot also
             // has a real visible frame, even when both are taller than SE.
-            // This is a scroll-positioning gesture. Begin in measured container
-            // padding, outside the disclosure button and its toggle action.
+            // This is a scroll-positioning gesture through the preceding
+            // content, rather than the disclosure's adjacent touch padding.
             let appFrame = app.frame
-            let gutterLeft = max(viewport.minX, appFrame.minX + 20)
-            let gutterRight = positionedHeader.minX - 2
-            guard gutterRight - gutterLeft >= 4 else {
-                XCTFail("History positioning needs visible scroll padding outside the disclosure. Header \(positionedHeader); viewport \(viewport)")
-                return false
-            }
-            let point = CGPoint(x: (gutterLeft + gutterRight) / 2, y: viewport.midY + movement / 2)
             XCTAssertTrue(viewport.contains(point), "The positioning gesture must begin inside visible content")
-            XCTAssertFalse(positionedHeader.insetBy(dx: -1, dy: -1).contains(point),
-                           "Scrolling into position must not begin on the disclosure button")
+            XCTAssertFalse(positionedHeader.insetBy(dx: -32, dy: -32).contains(point),
+                           "The positioning pan must begin beyond the disclosure's adjacent touch padding")
+            XCTAssertLessThanOrEqual(point.y, positionedHeader.minY - clearance,
+                                     "The positioning pan must stay clear of the disclosure's touch padding")
             print("HISTORY_POSITIONING_GESTURE start=\(point) movement=\(movement) header=\(positionedHeader) viewport=\(viewport)")
             let start = app.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(
                 dx: point.x - appFrame.minX, dy: point.y - appFrame.minY))
