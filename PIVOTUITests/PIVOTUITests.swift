@@ -3043,16 +3043,25 @@ final class PIVOTUITests: XCTestCase {
         let submit = app.keyboards.buttons["Search"]
         XCTAssertTrue(submit.isHittable)
         submit.tap()
-        let keyboardGone = NSPredicate { _, _ in !app.keyboards.firstMatch.exists }
-        let submitted = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: keyboardGone, object: nil)], timeout: 5)
-        if submitted != .completed {
+        // The interrupted-journey recording shows the keyboard gone while the
+        // generic predicate waiter times out. Use XCTest's native disappearance
+        // API for the same actual element and unchanged five-second deadline.
+        let submitted: Bool
+        if #available(iOS 18.0, *) {
+            submitted = app.keyboards.firstMatch.waitForNonExistence(timeout: 5)
+        } else {
+            let gone = NSPredicate { _, _ in !app.keyboards.firstMatch.exists }
+            submitted = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: gone, object: nil)], timeout: 5) == .completed
+        }
+        if !submitted {
             screenshot("Interrupted map search failed native submission", app: app)
             let state = XCTAttachment(string: app.debugDescription)
             state.name = "Interrupted map native submission failure state"
             state.lifetime = .keepAlways
             add(state)
         }
-        XCTAssertEqual(submitted, .completed)
+        XCTAssertTrue(submitted, "The native Search submission must remove the keyboard within five seconds")
+        print("MAP_INTERRUPTED_KEYBOARD_DISMISSED nativeNonExistence=\(submitted)")
         screenshot("Map search restored after foreground interruption", app: app)
         app.buttons["Clear place search"].tap()
         XCTAssertFalse(app.buttons["Clear place search"].exists)
