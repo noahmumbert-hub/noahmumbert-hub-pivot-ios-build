@@ -2980,6 +2980,44 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Map coverage & sources"].exists || app.buttons["Done"].exists)
         app.buttons["Done"].tap()
 
+        chooseMapCategory("Rides", app: app)
+        focusMapSearch(app)
+        search.typeText("Space Mountain")
+        let submit = app.keyboards.buttons["Search"]
+        XCTAssertTrue(submit.isHittable)
+        submit.tap()
+        let pin = app.buttons["map-pin-b2260923-9315-40fd-9c6b-44dd811dbe64"]
+        XCTAssertTrue(pin.waitForExistence(timeout: 5))
+        XCTAssertGreaterThanOrEqual(pin.frame.width, 44)
+        XCTAssertGreaterThanOrEqual(pin.frame.height, 44)
+        pin.tap()
+        let status = app.staticTexts["Selected ride wait"]
+        XCTAssertTrue(status.waitForExistence(timeout: 3))
+        XCTAssertTrue(status.isHittable)
+        XCTAssertFalse(status.label.isEmpty)
+        XCTAssertTrue(app.buttons["Full screen map"].isHittable)
+        XCTAssertTrue(app.buttons["Browse map places"].isHittable)
+        XCTAssertTrue(app.tabBars.buttons["Map"].isSelected)
+        screenshot("Production map selected ride with tab bar", app: app)
+        app.buttons["Full screen map"].tap()
+        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
+        XCTAssertTrue(status.isHittable)
+        screenshot("Production full screen map selected ride", app: app)
+        app.buttons["Close full screen map"].tap()
+        XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 5))
+        XCTAssertTrue(status.isHittable)
+    }
+
+    func testMapCategoryChangesAndInterruptedSearchRemainUsable() {
+        let app = XCUIApplication()
+        app.launchArguments = ["-pivot.selectedPark", "6"]
+        app.launch()
+        let map = app.tabBars.firstMatch.buttons["Map"]
+        XCTAssertTrue(map.waitForExistence(timeout: 5))
+        map.tap()
+        let search = app.textFields["Search park places"]
+        XCTAssertTrue(search.waitForExistence(timeout: 5))
+        chooseMapCategory("Food", app: app)
         // Alternate real categories so every repeated action has an observable
         // value change; every selection must commit and dismiss the chooser.
         // Then cancel another menu and interrupt an active search. Each return
@@ -3002,34 +3040,22 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(search.waitForExistence(timeout: 5))
         XCTAssertEqual(search.value as? String, "zz-no-such-place")
         focusMapSearch(app)
-        search.typeText("\n")
+        let submit = app.keyboards.buttons["Search"]
+        XCTAssertTrue(submit.isHittable)
+        submit.tap()
         let keyboardGone = NSPredicate { _, _ in !app.keyboards.firstMatch.exists }
-        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: keyboardGone, object: nil)], timeout: 5), .completed)
+        let submitted = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: keyboardGone, object: nil)], timeout: 5)
+        if submitted != .completed {
+            screenshot("Interrupted map search failed native submission", app: app)
+            let state = XCTAttachment(string: app.debugDescription)
+            state.name = "Interrupted map native submission failure state"
+            state.lifetime = .keepAlways
+            add(state)
+        }
+        XCTAssertEqual(submitted, .completed)
         screenshot("Map search restored after foreground interruption", app: app)
         app.buttons["Clear place search"].tap()
-        chooseMapCategory("Rides", app: app)
-        focusMapSearch(app)
-        search.typeText("Space Mountain\n")
-        let pin = app.buttons["map-pin-b2260923-9315-40fd-9c6b-44dd811dbe64"]
-        XCTAssertTrue(pin.waitForExistence(timeout: 5))
-        XCTAssertGreaterThanOrEqual(pin.frame.width, 44)
-        XCTAssertGreaterThanOrEqual(pin.frame.height, 44)
-        pin.tap()
-        let status = app.staticTexts["Selected ride wait"]
-        XCTAssertTrue(status.waitForExistence(timeout: 3))
-        XCTAssertTrue(status.isHittable)
-        XCTAssertFalse(status.label.isEmpty)
-        XCTAssertTrue(app.buttons["Full screen map"].isHittable)
-        XCTAssertTrue(app.buttons["Browse map places"].isHittable)
-        XCTAssertTrue(app.tabBars.buttons["Map"].isSelected)
-        screenshot("Production map selected ride with tab bar", app: app)
-        app.buttons["Full screen map"].tap()
-        XCTAssertTrue(app.buttons["Close full screen map"].waitForExistence(timeout: 5))
-        XCTAssertTrue(status.isHittable)
-        screenshot("Production full screen map selected ride", app: app)
-        app.buttons["Close full screen map"].tap()
-        XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 5))
-        XCTAssertTrue(status.isHittable)
+        XCTAssertFalse(app.buttons["Clear place search"].exists)
     }
 
     func testNativeTabBarStaysFixedWhileContentScrolls() {

@@ -69,9 +69,16 @@ test_options=(
 )
 case "${PIVOT_TEST_SCOPE:-all}" in
   all) ;;
+  map-recovery)
+    test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testMapSearchAndCategoryWorkWithBundledLocations
+      -only-testing:PIVOTUITests/PIVOTUITests/testMapCategoryChangesAndInterruptedSearchRemainUsable
+      -test-iterations 3
+    ) ;;
   release-recovery)
     test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testMapSearchAndCategoryWorkWithBundledLocations
+      -only-testing:PIVOTUITests/PIVOTUITests/testMapCategoryChangesAndInterruptedSearchRemainUsable
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
       -only-testing:PIVOTUITests/PIVOTUITests/testReferenceCardsKeepEachParksIdentityAndNativeTabs
       -only-testing:PIVOTUITests/PIVOTUITests/testReferenceEPCOTCardsSearchFiltersAndPhotoCredits
@@ -83,6 +90,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testBannerColdLaunchShowsParkAndSchedule
       -only-testing:PIVOTUITests/PIVOTUITests/testMapRefreshKeepsUnchangedProviderWaitOnActualMap
       -only-testing:PIVOTUITests/PIVOTUITests/testMapSearchAndCategoryWorkWithBundledLocations
+      -only-testing:PIVOTUITests/PIVOTUITests/testMapCategoryChangesAndInterruptedSearchRemainUsable
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeMapFillsWindowAndSupportsPinchPanZoomWithoutCameraReset
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
       -test-iterations 3
@@ -287,6 +295,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
   map-gestures)
     test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testMapSearchAndCategoryWorkWithBundledLocations
+      -only-testing:PIVOTUITests/PIVOTUITests/testMapCategoryChangesAndInterruptedSearchRemainUsable
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeMapFillsWindowAndSupportsPinchPanZoomWithoutCameraReset
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeBrowseFocusesRideAndRootWaitDetailsStayCurrent
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
