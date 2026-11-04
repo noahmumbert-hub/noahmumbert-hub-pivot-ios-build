@@ -2719,7 +2719,10 @@ final class PIVOTUITests: XCTestCase {
 
     func testLiveMapRefreshReportsRealProviderStatus() {
         let app = XCUIApplication()
-        app.launchArguments = ["-pivot.selectedPark", "6"]
+        // Keep scheduled polling from racing this manual button check and tap.
+        // The separate automatic HTTP test retains the production polling loop;
+        // omitting --map-refresh-network-test keeps this request on the real API.
+        app.launchArguments = ["--map-refresh-manual-test", "-pivot.selectedPark", "6"]
         app.launch()
         XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 15))
         app.tabBars.buttons["Map"].tap()
