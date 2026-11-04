@@ -71,20 +71,51 @@ def main():
             assert abs(width / height - 0.8) < 0.01, f"Portrait aspect ratio: {filename}"
             total_bytes += len(data)
         assert rides[key]["generationStatus"] == "accepted" and rides[key]["integrationStatus"] == "bundled"
-    assert keys == set(proof), "Manifest and provenance differ"
+    selection_name = coverage.get("bundleSelection")
+    if selection_name:
+        assert Path(selection_name).name == selection_name
+    selection_path = ROOT / "docs/ride-artwork" / selection_name if selection_name else None
+    selection = json.loads(selection_path.read_text()) if selection_path else None
+    if selection:
+        accepted_keys = set(proof)
+        assert keys == set(selection["selectedKeys"]), "Stage bundle differs from its exact selection"
+        assert len(keys) == selection["bundledCount"] == coverage["counts"]["bundledIllustrations"]
+        assert set(selection["priorReleasedKeys"]) <= keys, "Previously released artwork must remain bundled"
+        assert len(selection["priorReleasedKeys"]) == selection["previouslyReleasedCount"] == 119
+        deferred = accepted_keys - keys
+        assert deferred == set(selection["deferredKeys"])
+        assert len(deferred) == selection["deferredAcceptedCount"] == coverage["counts"]["deferredAcceptedIllustrations"]
+        assert len(accepted_keys) == selection["acceptedCount"] == coverage["counts"]["acceptedIllustrations"]
+        assert selection["addedCount"] == len(keys) - len(selection["priorReleasedKeys"])
+        full_delivery = json.loads((ROOT / "docs/ride-artwork/global-delivery-selection-2026-11-02.json").read_text())
+        assert accepted_keys == set(full_delivery["selectedKeys"]), "Keep every accepted provenance record"
+        assert set(selection["priorReleasedKeys"]) == set(full_delivery["baseRecordKeys"])
+        assert selection["JPEGCount"] == 2 * len(keys) and selection["JPEGBytes"] == total_bytes
+        assert selection["parksWithBundledArtwork"] == len({r["parkId"] for r in manifest["records"]})
+        for key in deferred:
+            assert rides[key]["generationStatus"] == "accepted" and rides[key]["integrationStatus"] == "deferred-stage"
+        for record in manifest["records"]:
+            key = f"{record['parkId']}-{record['rideId']}"
+            assert all(proof[key].get(field) == value for field, value in record.items()), key
+    else:
+        accepted_keys = keys
+        assert keys == set(proof), "Manifest and provenance differ"
     assert expected_files == {p.name for p in folder.iterdir()}, "Untracked/missing bundle resources"
     assert len(rides) == coverage["counts"]["unionEntries"]
-    assert len(keys) == coverage["counts"]["acceptedIllustrations"]
+    assert len(accepted_keys) == coverage["counts"]["acceptedIllustrations"]
     direction = json.loads((ROOT / "docs/ride-artwork/direction.json").read_text())
     current_keys = {f"{r['parkId']}-{r['rideId']}" for r in manifest["records"] if r.get("styleRevision", 1) == direction["requestedStyleRevision"]}
-    assert len(current_keys) == direction["acceptedForRequestedStyle"]
-    assert len(current_keys) == coverage["counts"]["acceptedForRequestedStyle"]
+    accepted_current_keys = {key for key in accepted_keys if proof[key].get("styleRevision", 1) == direction["requestedStyleRevision"]}
+    assert len(accepted_current_keys) == direction["acceptedForRequestedStyle"]
+    assert len(accepted_current_keys) == coverage["counts"]["acceptedForRequestedStyle"]
     blocked_keys = {r["key"] for r in json.loads((ROOT / "docs/ride-artwork/blocked-rides.json").read_text())["records"]}
-    assert not current_keys & blocked_keys, "Blocked artwork cannot count as accepted"
-    pending = [key for key, ride in rides.items() if key not in current_keys and ride["catalogStatus"] != "excluded-retired"]
+    assert not accepted_current_keys & blocked_keys, "Blocked artwork cannot count as accepted"
+    pending = [key for key, ride in rides.items() if key not in accepted_current_keys and ride["catalogStatus"] != "excluded-retired"]
     summary = {"validatedIllustrations": len(keys), "catalogEntries": len(rides), "unfinishedEntries": len(pending),
                "parksWithArtwork": len({r["parkId"] for r in manifest["records"]}), "packagedBytes": total_bytes,
-               "acceptedForRequestedStyle": len(current_keys), "complete": not pending}
+               "acceptedForRequestedStyle": len(accepted_current_keys),
+               "bundledForRequestedStyle": len(current_keys),
+               "deferredAcceptedIllustrations": len(accepted_keys - keys), "complete": not pending}
     print(json.dumps(summary, indent=2))
     if args.require_complete and pending:
         raise SystemExit(f"Artwork coverage incomplete: {len(pending)} entries remain; see docs/ride-artwork/coverage.json")

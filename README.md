@@ -1,5 +1,7 @@
 # PIVOT iOS builds
 
+Stage one is being prepared on this branch: **445 bundled illustrations** (119 previously shipped plus 326 unchanged additions), with 637 accepted images explicitly deferred. All current native code/Map fixes and the smaller park card are retained. Nothing from this staged branch is published. See [stage scope and publication hold](docs/staged-artwork-release-1-2026-11-04.md).
+
 Public iOS source and GitHub-hosted macOS builds for installing PIVOT through
 SideStore. The web application, backend implementation, and private repository
 history are not included here. The app uses the existing PIVOT backend.

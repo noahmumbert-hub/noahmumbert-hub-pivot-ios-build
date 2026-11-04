@@ -216,8 +216,8 @@ final class PIVOTTests: XCTestCase {
 
     func testGlobalArtworkDeliveryMatchesAcceptedIDsAndKeepsBlockedFallbacks() throws {
         let records = RideIllustrationCatalog.records
-        XCTAssertEqual(records.count, 1_082, "Exact accepted requested-style delivery selection")
-        XCTAssertEqual(Set(records.map(\.id)).count, 1_082)
+        XCTAssertEqual(records.count, 445, "Exact stage-one selection: 119 released plus 326 unchanged additions")
+        XCTAssertEqual(Set(records.map(\.id)).count, 445)
         XCTAssertEqual(Set(records.map(\.parkId)), Set(FloridaPark.allCases.map(\.id)))
         let catalog = try ParkMapCatalog.load()
         let liveOnly: Set<String> = ["58-51320538612942", "58-261088229033589"]

@@ -368,7 +368,9 @@
     "pendingIllustrations": 42,
     "acceptedForRequestedStyle": 1082,
     "unfinishedForRequestedStyle": 42,
-    "blocked": 33
+    "blocked": 33,
+    "bundledIllustrations": 445,
+    "deferredAcceptedIllustrations": 637
   },
   "parks": [
     {
@@ -376,224 +378,288 @@
       "parkName": "EPCOT",
       "live": 11,
       "map": 11,
-      "union": 11
+      "union": 11,
+      "bundledIllustrations": 8,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 6,
       "parkName": "Magic Kingdom Park",
       "live": 21,
       "map": 21,
-      "union": 21
+      "union": 21,
+      "bundledIllustrations": 17,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 7,
       "parkName": "Disney’s Hollywood Studios",
       "live": 9,
       "map": 9,
-      "union": 9
+      "union": 9,
+      "bundledIllustrations": 6,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 8,
       "parkName": "Disney’s Animal Kingdom",
       "live": 6,
       "map": 6,
-      "union": 6
+      "union": 6,
+      "bundledIllustrations": 5,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 21,
       "parkName": "SeaWorld Orlando",
       "live": 18,
       "map": 18,
-      "union": 18
+      "union": 18,
+      "bundledIllustrations": 15,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 24,
       "parkName": "Busch Gardens Tampa Bay",
       "live": 24,
       "map": 25,
-      "union": 25
+      "union": 25,
+      "bundledIllustrations": 25,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 32,
       "parkName": "Six Flags Magic Mountain",
       "live": 37,
       "map": 37,
-      "union": 37
+      "union": 37,
+      "bundledIllustrations": 35,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 33,
       "parkName": "Six Flags Discovery Kingdom",
       "live": 35,
       "map": 35,
-      "union": 35
+      "union": 35,
+      "bundledIllustrations": 34,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 34,
       "parkName": "Six Flags Over Texas",
       "live": 43,
       "map": 43,
-      "union": 43
+      "union": 43,
+      "bundledIllustrations": 40,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 35,
       "parkName": "Six Flags Over Georgia",
       "live": 39,
       "map": 39,
-      "union": 39
+      "union": 39,
+      "bundledIllustrations": 39,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 37,
       "parkName": "Six Flags Great Adventure",
       "live": 47,
       "map": 47,
-      "union": 47
+      "union": 47,
+      "bundledIllustrations": 45,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 38,
       "parkName": "Six Flags Great America",
       "live": 45,
       "map": 45,
-      "union": 45
+      "union": 45,
+      "bundledIllustrations": 45,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 39,
       "parkName": "Six Flags Fiesta Texas",
       "live": 55,
       "map": 55,
-      "union": 55
+      "union": 55,
+      "bundledIllustrations": 54,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 41,
       "parkName": "Hurricane Harbor Los Angeles",
       "live": 12,
       "map": 12,
-      "union": 12
+      "union": 12,
+      "bundledIllustrations": 12,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 43,
       "parkName": "Six Flags New England",
       "live": 54,
       "map": 54,
-      "union": 54
+      "union": 54,
+      "bundledIllustrations": 1,
+      "deferredAcceptedIllustrations": 45
     },
     {
       "parkID": 44,
       "parkName": "Hurricane Harbor New Jersey",
       "live": 20,
       "map": 20,
-      "union": 20
+      "union": 20,
+      "bundledIllustrations": 1,
+      "deferredAcceptedIllustrations": 16
     },
     {
       "parkID": 50,
       "parkName": "Cedar Point",
       "live": 69,
       "map": 69,
-      "union": 69
+      "union": 69,
+      "bundledIllustrations": 1,
+      "deferredAcceptedIllustrations": 68
     },
     {
       "parkID": 57,
       "parkName": "California’s Great America",
       "live": 53,
       "map": 53,
-      "union": 53
+      "union": 53,
+      "bundledIllustrations": 1,
+      "deferredAcceptedIllustrations": 52
     },
     {
       "parkID": 58,
       "parkName": "Canada’s Wonderland",
       "live": 78,
       "map": 76,
-      "union": 78
+      "union": 78,
+      "bundledIllustrations": 3,
+      "deferredAcceptedIllustrations": 74
     },
     {
       "parkID": 59,
       "parkName": "Carowinds",
       "live": 57,
       "map": 57,
-      "union": 57
+      "union": 57,
+      "bundledIllustrations": 1,
+      "deferredAcceptedIllustrations": 56
     },
     {
       "parkID": 60,
       "parkName": "Kings Island",
       "live": 70,
       "map": 70,
-      "union": 70
+      "union": 70,
+      "bundledIllustrations": 1,
+      "deferredAcceptedIllustrations": 69
     },
     {
       "parkID": 61,
       "parkName": "Knott’s Berry Farm",
       "live": 37,
       "map": 37,
-      "union": 37
+      "union": 37,
+      "bundledIllustrations": 1,
+      "deferredAcceptedIllustrations": 36
     },
     {
       "parkID": 62,
       "parkName": "Kings Dominion",
       "live": 55,
       "map": 55,
-      "union": 55
+      "union": 55,
+      "bundledIllustrations": 1,
+      "deferredAcceptedIllustrations": 54
     },
     {
       "parkID": 64,
       "parkName": "Islands of Adventure",
       "live": 18,
       "map": 18,
-      "union": 18
+      "union": 18,
+      "bundledIllustrations": 17,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 65,
       "parkName": "Universal Studios Florida",
       "live": 13,
       "map": 13,
-      "union": 13
+      "union": 13,
+      "bundledIllustrations": 10,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 67,
       "parkName": "Volcano Bay",
       "live": 13,
       "map": 13,
-      "union": 13
+      "union": 13,
+      "bundledIllustrations": 13,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 69,
       "parkName": "Dorney Park & Wildwater Kingdom",
       "live": 58,
       "map": 58,
-      "union": 58
+      "union": 58,
+      "bundledIllustrations": 1,
+      "deferredAcceptedIllustrations": 57
     },
     {
       "parkID": 281,
       "parkName": "Six Flags Darien Lake",
       "live": 43,
       "map": 43,
-      "union": 43
+      "union": 43,
+      "bundledIllustrations": 1,
+      "deferredAcceptedIllustrations": 42
     },
     {
       "parkID": 282,
       "parkName": "Frontier City",
       "live": 26,
       "map": 26,
-      "union": 26
+      "union": 26,
+      "bundledIllustrations": 1,
+      "deferredAcceptedIllustrations": 25
     },
     {
       "parkID": 295,
       "parkName": "Hurricane Harbor Phoenix",
       "live": 14,
       "map": 14,
-      "union": 14
+      "union": 14,
+      "bundledIllustrations": 1,
+      "deferredAcceptedIllustrations": 13
     },
     {
       "parkID": 334,
       "parkName": "Epic Universe",
       "live": 11,
       "map": 11,
-      "union": 11
+      "union": 11,
+      "bundledIllustrations": 9,
+      "deferredAcceptedIllustrations": 0
     },
     {
       "parkID": 339,
       "parkName": "Schlitterbahn New Braunfels",
       "live": 32,
       "map": 32,
-      "union": 32
+      "union": 32,
+      "bundledIllustrations": 1,
+      "deferredAcceptedIllustrations": 30
     }
   ],
   "rides": [
@@ -11839,7 +11905,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -11863,7 +11929,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -11887,7 +11953,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -11911,7 +11977,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -11940,7 +12006,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -11964,7 +12030,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -11988,7 +12054,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12012,7 +12078,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12041,7 +12107,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12089,7 +12155,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12113,7 +12179,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12142,7 +12208,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12166,7 +12232,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12190,7 +12256,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12214,7 +12280,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12238,7 +12304,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12267,7 +12333,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12296,7 +12362,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12325,7 +12391,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12349,7 +12415,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12373,7 +12439,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12397,7 +12463,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12445,7 +12511,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12469,7 +12535,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12493,7 +12559,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12546,7 +12612,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12575,7 +12641,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12604,7 +12670,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12633,7 +12699,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12681,7 +12747,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12710,7 +12776,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12739,7 +12805,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12797,7 +12863,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12821,7 +12887,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12845,7 +12911,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12874,7 +12940,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12898,7 +12964,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12922,7 +12988,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -12946,7 +13012,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13023,7 +13089,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13047,7 +13113,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13071,7 +13137,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13095,7 +13161,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13143,7 +13209,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13196,7 +13262,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13244,7 +13310,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13292,7 +13358,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13316,7 +13382,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13340,7 +13406,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13364,7 +13430,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13388,7 +13454,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13412,7 +13478,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13436,7 +13502,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13484,7 +13550,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13508,7 +13574,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13532,7 +13598,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13556,7 +13622,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13580,7 +13646,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13628,7 +13694,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13652,7 +13718,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13676,7 +13742,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13705,7 +13771,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13734,7 +13800,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13763,7 +13829,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13792,7 +13858,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13821,7 +13887,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13850,7 +13916,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13879,7 +13945,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13908,7 +13974,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13937,7 +14003,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13966,7 +14032,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -13995,7 +14061,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14024,7 +14090,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14053,7 +14119,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14082,7 +14148,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14111,7 +14177,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14140,7 +14206,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14169,7 +14235,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14198,7 +14264,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14227,7 +14293,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14256,7 +14322,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14292,7 +14358,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14316,7 +14382,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14345,7 +14411,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14374,7 +14440,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14403,7 +14469,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14432,7 +14498,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14461,7 +14527,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14490,7 +14556,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14519,7 +14585,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14548,7 +14614,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14577,7 +14643,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14606,7 +14672,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14635,7 +14701,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14664,7 +14730,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14693,7 +14759,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14722,7 +14788,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14751,7 +14817,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14780,7 +14846,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14809,7 +14875,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14867,7 +14933,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14896,7 +14962,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14925,7 +14991,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14954,7 +15020,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -14978,7 +15044,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15007,7 +15073,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15036,7 +15102,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15065,7 +15131,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15094,7 +15160,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15123,7 +15189,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15147,7 +15213,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15176,7 +15242,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15210,7 +15276,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15239,7 +15305,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15263,7 +15329,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15292,7 +15358,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15321,7 +15387,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15350,7 +15416,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15379,7 +15445,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15408,7 +15474,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15437,7 +15503,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15466,7 +15532,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15495,7 +15561,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15524,7 +15590,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15553,7 +15619,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15582,7 +15648,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15611,7 +15677,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15640,7 +15706,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15669,7 +15735,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15698,7 +15764,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15727,7 +15793,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15756,7 +15822,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15785,7 +15851,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15814,7 +15880,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15843,7 +15909,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15872,7 +15938,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15901,7 +15967,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15925,7 +15991,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15954,7 +16020,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -15983,7 +16049,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16007,7 +16073,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16036,7 +16102,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16065,7 +16131,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16094,7 +16160,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16118,7 +16184,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16147,7 +16213,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16171,7 +16237,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16200,7 +16266,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16224,7 +16290,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16248,7 +16314,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16272,7 +16338,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16301,7 +16367,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16325,7 +16391,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16354,7 +16420,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16378,7 +16444,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16407,7 +16473,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16431,7 +16497,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16460,7 +16526,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16489,7 +16555,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16513,7 +16579,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16542,7 +16608,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16571,7 +16637,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16600,7 +16666,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16629,7 +16695,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16658,7 +16724,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16687,7 +16753,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16745,7 +16811,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16769,7 +16835,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16798,7 +16864,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16827,7 +16893,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16856,7 +16922,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16885,7 +16951,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16914,7 +16980,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16943,7 +17009,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16972,7 +17038,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -16996,7 +17062,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17025,7 +17091,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17054,7 +17120,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17083,7 +17149,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17112,7 +17178,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17141,7 +17207,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17165,7 +17231,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17223,7 +17289,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17252,7 +17318,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17281,7 +17347,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17310,7 +17376,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17339,7 +17405,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17363,7 +17429,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17387,7 +17453,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17416,7 +17482,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17445,7 +17511,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17474,7 +17540,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17503,7 +17569,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17532,7 +17598,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17561,7 +17627,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17590,7 +17656,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17619,7 +17685,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17648,7 +17714,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17677,7 +17743,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17706,7 +17772,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17764,7 +17830,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17793,7 +17859,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17817,7 +17883,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17846,7 +17912,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17875,7 +17941,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17899,7 +17965,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17952,7 +18018,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -17981,7 +18047,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18010,7 +18076,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18039,7 +18105,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18068,7 +18134,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18097,7 +18163,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18126,7 +18192,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18155,7 +18221,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18184,7 +18250,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18213,7 +18279,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18242,7 +18308,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18271,7 +18337,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18300,7 +18366,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18329,7 +18395,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18358,7 +18424,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18387,7 +18453,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18416,7 +18482,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18445,7 +18511,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18474,7 +18540,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18503,7 +18569,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18532,7 +18598,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18561,7 +18627,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18590,7 +18656,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18619,7 +18685,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18648,7 +18714,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18677,7 +18743,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18701,7 +18767,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18730,7 +18796,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18754,7 +18820,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18778,7 +18844,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18807,7 +18873,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18836,7 +18902,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18860,7 +18926,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18889,7 +18955,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18918,7 +18984,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18947,7 +19013,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -18976,7 +19042,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19005,7 +19071,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19034,7 +19100,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19063,7 +19129,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19097,7 +19163,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19155,7 +19221,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19184,7 +19250,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19213,7 +19279,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19242,7 +19308,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19271,7 +19337,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19295,7 +19361,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19324,7 +19390,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19348,7 +19414,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19377,7 +19443,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19406,7 +19472,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19430,7 +19496,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19459,7 +19525,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19483,7 +19549,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19512,7 +19578,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19541,7 +19607,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19570,7 +19636,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19599,7 +19665,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19623,7 +19689,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19652,7 +19718,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19686,7 +19752,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19715,7 +19781,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19744,7 +19810,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19773,7 +19839,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19802,7 +19868,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19831,7 +19897,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19855,7 +19921,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19884,7 +19950,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19913,7 +19979,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19942,7 +20008,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -19971,7 +20037,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20000,7 +20066,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20029,7 +20095,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20053,7 +20119,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20082,7 +20148,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20111,7 +20177,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20140,7 +20206,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20169,7 +20235,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20198,7 +20264,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20227,7 +20293,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20256,7 +20322,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20285,7 +20351,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20309,7 +20375,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20333,7 +20399,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20362,7 +20428,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20391,7 +20457,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20420,7 +20486,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20454,7 +20520,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20483,7 +20549,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20512,7 +20578,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20541,7 +20607,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20570,7 +20636,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20599,7 +20665,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20628,7 +20694,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20652,7 +20718,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20681,7 +20747,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20705,7 +20771,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20729,7 +20795,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20758,7 +20824,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20782,7 +20848,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20840,7 +20906,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20869,7 +20935,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20898,7 +20964,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20927,7 +20993,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20951,7 +21017,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -20980,7 +21046,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21004,7 +21070,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21033,7 +21099,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21062,7 +21128,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21091,7 +21157,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21120,7 +21186,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21149,7 +21215,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21178,7 +21244,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21202,7 +21268,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21231,7 +21297,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21255,7 +21321,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21284,7 +21350,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21313,7 +21379,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21342,7 +21408,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21371,7 +21437,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21400,7 +21466,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21424,7 +21490,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21453,7 +21519,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21482,7 +21548,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21511,7 +21577,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21540,7 +21606,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21569,7 +21635,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21593,7 +21659,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21622,7 +21688,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21651,7 +21717,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21680,7 +21746,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21709,7 +21775,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21733,7 +21799,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21762,7 +21828,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21786,7 +21852,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21810,7 +21876,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21844,7 +21910,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21873,7 +21939,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21897,7 +21963,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21926,7 +21992,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21955,7 +22021,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -21984,7 +22050,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22013,7 +22079,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22042,7 +22108,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22066,7 +22132,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22095,7 +22161,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22124,7 +22190,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22148,7 +22214,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22177,7 +22243,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22201,7 +22267,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22225,7 +22291,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22249,7 +22315,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22278,7 +22344,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22336,7 +22402,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22365,7 +22431,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22394,7 +22460,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22423,7 +22489,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22447,7 +22513,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22476,7 +22542,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22505,7 +22571,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22534,7 +22600,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22563,7 +22629,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22592,7 +22658,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22616,7 +22682,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22645,7 +22711,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22674,7 +22740,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22698,7 +22764,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22727,7 +22793,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22751,7 +22817,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22780,7 +22846,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22809,7 +22875,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22833,7 +22899,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22862,7 +22928,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22886,7 +22952,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22915,7 +22981,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22939,7 +23005,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22968,7 +23034,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -22997,7 +23063,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23026,7 +23092,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23055,7 +23121,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23113,7 +23179,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23142,7 +23208,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23171,7 +23237,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23200,7 +23266,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23229,7 +23295,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23258,7 +23324,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23282,7 +23348,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23311,7 +23377,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23340,7 +23406,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23364,7 +23430,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23393,7 +23459,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23422,7 +23488,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23451,7 +23517,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23475,7 +23541,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23504,7 +23570,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23533,7 +23599,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23562,7 +23628,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23591,7 +23657,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23615,7 +23681,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23644,7 +23710,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23668,7 +23734,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23697,7 +23763,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23726,7 +23792,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23755,7 +23821,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23784,7 +23850,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23813,7 +23879,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23842,7 +23908,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23871,7 +23937,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23900,7 +23966,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23929,7 +23995,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -23982,7 +24048,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24011,7 +24077,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24035,7 +24101,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24064,7 +24130,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24093,7 +24159,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24122,7 +24188,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24151,7 +24217,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24175,7 +24241,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24199,7 +24265,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24228,7 +24294,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24257,7 +24323,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24281,7 +24347,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24310,7 +24376,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24339,7 +24405,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24368,7 +24434,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24397,7 +24463,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24421,7 +24487,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24450,7 +24516,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24479,7 +24545,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24508,7 +24574,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24532,7 +24598,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24561,7 +24627,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24590,7 +24656,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24619,7 +24685,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24648,7 +24714,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24672,7 +24738,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24701,7 +24767,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24730,7 +24796,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24759,7 +24825,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24783,7 +24849,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24812,7 +24878,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24841,7 +24907,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24865,7 +24931,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24894,7 +24960,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24918,7 +24984,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24942,7 +25008,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -24971,7 +25037,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -25000,7 +25066,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -25024,7 +25090,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -25053,7 +25119,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -25082,7 +25148,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -25111,7 +25177,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -25140,7 +25206,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -25169,7 +25235,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -25193,7 +25259,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -25217,7 +25283,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -25241,7 +25307,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -25270,7 +25336,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -25299,7 +25365,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -25328,7 +25394,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -25357,7 +25423,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -25381,7 +25447,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -25410,7 +25476,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -25439,7 +25505,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -26773,7 +26839,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -26802,7 +26868,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -26826,7 +26892,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -26855,7 +26921,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -26884,7 +26950,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -26913,7 +26979,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -26942,7 +27008,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -26971,7 +27037,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27000,7 +27066,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27024,7 +27090,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27053,7 +27119,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27082,7 +27148,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27111,7 +27177,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27135,7 +27201,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27159,7 +27225,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27183,7 +27249,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27207,7 +27273,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27231,7 +27297,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27260,7 +27326,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27289,7 +27355,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27318,7 +27384,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27347,7 +27413,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27371,7 +27437,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27400,7 +27466,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27429,7 +27495,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27458,7 +27524,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27482,7 +27548,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27511,7 +27577,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27540,7 +27606,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27564,7 +27630,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27593,7 +27659,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27617,7 +27683,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27641,7 +27707,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27670,7 +27736,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27694,7 +27760,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27723,7 +27789,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27752,7 +27818,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27781,7 +27847,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27810,7 +27876,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27839,7 +27905,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27868,7 +27934,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27897,7 +27963,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27926,7 +27992,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27955,7 +28021,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -27984,7 +28050,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28013,7 +28079,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28042,7 +28108,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28071,7 +28137,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28100,7 +28166,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28129,7 +28195,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28158,7 +28224,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28187,7 +28253,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28211,7 +28277,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28269,7 +28335,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28298,7 +28364,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28322,7 +28388,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28346,7 +28412,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28370,7 +28436,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28399,7 +28465,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28428,7 +28494,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28452,7 +28518,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28481,7 +28547,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28510,7 +28576,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28539,7 +28605,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28568,7 +28634,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28597,7 +28663,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28621,7 +28687,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28645,7 +28711,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28674,7 +28740,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28703,7 +28769,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28732,7 +28798,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28761,7 +28827,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28790,7 +28856,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28819,7 +28885,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28872,7 +28938,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28901,7 +28967,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28930,7 +28996,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28959,7 +29025,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -28988,7 +29054,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29017,7 +29083,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29041,7 +29107,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29065,7 +29131,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29094,7 +29160,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29118,7 +29184,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29147,7 +29213,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29176,7 +29242,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29200,7 +29266,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29229,7 +29295,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29258,7 +29324,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29287,7 +29353,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29316,7 +29382,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29345,7 +29411,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29374,7 +29440,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29398,7 +29464,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29427,7 +29493,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29456,7 +29522,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29485,7 +29551,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29514,7 +29580,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29543,7 +29609,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29567,7 +29633,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29591,7 +29657,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29644,7 +29710,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29668,7 +29734,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29697,7 +29763,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29721,7 +29787,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29745,7 +29811,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29769,7 +29835,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29793,7 +29859,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29817,7 +29883,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29841,7 +29907,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29865,7 +29931,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29889,7 +29955,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29913,7 +29979,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29937,7 +30003,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29966,7 +30032,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -29990,7 +30056,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30014,7 +30080,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30043,7 +30109,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30067,7 +30133,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30091,7 +30157,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30115,7 +30181,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30144,7 +30210,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30168,7 +30234,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30192,7 +30258,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30250,7 +30316,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30279,7 +30345,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30308,7 +30374,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30337,7 +30403,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30361,7 +30427,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30385,7 +30451,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30414,7 +30480,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30438,7 +30504,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30467,7 +30533,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30491,7 +30557,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30515,7 +30581,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30539,7 +30605,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30563,7 +30629,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30930,7 +30996,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30959,7 +31025,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -30983,7 +31049,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31007,7 +31073,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31031,7 +31097,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31060,7 +31126,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31089,7 +31155,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31113,7 +31179,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31137,7 +31203,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31161,7 +31227,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31185,7 +31251,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31209,7 +31275,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31233,7 +31299,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31257,7 +31323,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31281,7 +31347,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31305,7 +31371,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31334,7 +31400,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31358,7 +31424,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31382,7 +31448,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31406,7 +31472,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31430,7 +31496,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31459,7 +31525,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31483,7 +31549,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31531,7 +31597,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31555,7 +31621,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31579,7 +31645,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31603,7 +31669,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31627,7 +31693,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31651,7 +31717,7 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     },
     {
@@ -31675,8 +31741,9 @@
       ],
       "referenceReview": "pixels-reviewed",
       "generationStatus": "accepted",
-      "integrationStatus": "bundled",
+      "integrationStatus": "deferred-stage",
       "requestedStyleStatus": "accepted"
     }
-  ]
+  ],
+  "bundleSelection": "staged-release-selection-2026-11-04.json"
 }
