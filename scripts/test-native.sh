@@ -69,6 +69,15 @@ test_options=(
 )
 case "${PIVOT_TEST_SCOPE:-all}" in
   all) ;;
+  release-recovery)
+    test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testMapSearchAndCategoryWorkWithBundledLocations
+      -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
+      -only-testing:PIVOTUITests/PIVOTUITests/testReferenceCardsKeepEachParksIdentityAndNativeTabs
+      -only-testing:PIVOTUITests/PIVOTUITests/testReferenceEPCOTCardsSearchFiltersAndPhotoCredits
+      -only-testing:PIVOTUITests/PIVOTUITests/testReopeningPredictionRemainsReadableAtAccessibilitySizeInRadar
+      -test-iterations 3
+    ) ;;
   map-search)
     test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testBannerColdLaunchShowsParkAndSchedule

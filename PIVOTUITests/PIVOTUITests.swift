@@ -48,10 +48,12 @@ final class PIVOTUITests: XCTestCase {
         let ready = NSPredicate { _, _ in
             let filter = app.buttons["Filter map places"]
             let search = app.textFields["Search park places"]
-            return filter.exists && filter.value as? String == category
+            // Hittability already requires existence. Avoid two redundant AX
+            // round trips consuming the unchanged five-second interaction gate.
+            return filter.value as? String == category
                 && !app.navigationBars["Place categories"].exists
                 && !app.buttons[category].firstMatch.exists
-                && search.exists && search.isHittable && filter.isHittable
+                && search.isHittable && filter.isHittable
         }
         let result = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 5)
         if result != .completed {
@@ -143,6 +145,11 @@ final class PIVOTUITests: XCTestCase {
         }
         let result = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: predicate, object: nil)], timeout: timeout)
         if result != .completed {
+            screenshot("Native map camera failed its original postcondition", app: app)
+            let hierarchy = XCTAttachment(string: "Camera: \(camera(app))\nEvents: \(mapEvents(app))\n\(app.debugDescription)")
+            hierarchy.name = "Native map camera failure state"
+            hierarchy.lifetime = .keepAlways
+            add(hierarchy)
             XCTFail("Last measured camera: \(camera(app)); events: \(mapEvents(app))", file: file, line: line)
         }
     }
@@ -169,9 +176,22 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(source.isHittable)
         app.buttons["Done"].tap()
         let search = app.textFields["Ride search"]
-        reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
+        reveal(search, in: app); search.tap()
+        XCTAssertTrue(app.keyboards.firstMatch.waitForExistence(timeout: 5))
+        search.typeText("Guardians")
+        let submit = app.keyboards.buttons["Search"]
+        XCTAssertTrue(submit.isHittable)
+        submit.tap()
         let keyboardGone = NSPredicate { _, _ in !app.keyboards.firstMatch.exists }
-        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: keyboardGone, object: nil)], timeout: 5), .completed,
+        let submitted = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: keyboardGone, object: nil)], timeout: 5)
+        if submitted != .completed {
+            screenshot("Reference ride search failed keyboard dismissal", app: app)
+            let state = XCTAttachment(string: app.debugDescription)
+            state.name = "Reference ride search submission failure state"
+            state.lifetime = .keepAlways
+            add(state)
+        }
+        XCTAssertEqual(submitted, .completed,
                        "Submitting a ride search must dismiss the keyboard so results remain reachable on compact phones")
         let guardians = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Guardians of the Galaxy'")).firstMatch
         reveal(guardians, in: app)
@@ -1412,7 +1432,15 @@ final class PIVOTUITests: XCTestCase {
             XCTAssertTrue(option.waitForExistence(timeout: 5))
             option.tap()
             let updated = NSPredicate { _, _ in picker.value as? String == title }
-            XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: updated, object: nil)], timeout: 5), .completed)
+            let result = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: updated, object: nil)], timeout: 5)
+            if result != .completed {
+                screenshot("Radar selection failed after one native menu tap", app: app)
+                let state = XCTAttachment(string: "Requested: \(title)\nActual: \(String(describing: picker.value))\n\(app.debugDescription)")
+                state.name = "Radar native selection failure state"
+                state.lifetime = .keepAlways
+                add(state)
+            }
+            XCTAssertEqual(result, .completed)
         }
         if picker.value as? String != automaticTitle { choose(automaticTitle) }
         centerFullyVisible(picker, in: app)
@@ -1913,8 +1941,11 @@ final class PIVOTUITests: XCTestCase {
             XCTAssertTrue(park.waitForExistence(timeout: 5))
             XCTAssertTrue(app.staticTexts["Current rides"].exists)
             XCTAssertEqual(app.tabBars.firstMatch.buttons.count, 5)
-            returnToTop(app)
-            XCTAssertTrue(app.descendants(matching: .any)["PIVOT header"].isHittable)
+            // This is a fresh launch at the top. Assert the real header is
+            // visible instead of five unconditional positioning swipes per park.
+            let header = app.descendants(matching: .any)["PIVOT header"]
+            XCTAssertTrue(header.isHittable)
+            XCTAssertTrue(app.frame.contains(header.frame))
             screenshot("Reference park \(id) overview", app: app)
             app.tabBars.buttons["Plan"].tap()
             XCTAssertTrue(park.waitForExistence(timeout: 5))
@@ -2026,8 +2057,17 @@ final class PIVOTUITests: XCTestCase {
         chooseMapCategory("Rides", app: app)
         waitForCamera(app) { $0[2] > 0 && $0[2] < 10_000 }
         let initialAltitude = camera(app)[2]
-        app.buttons["Zoom out"].tap()
-        app.buttons["Zoom out"].tap()
+        let zoomOut = app.buttons["Zoom out"]
+        waitForSettledFrames([zoomOut])
+        XCTAssertTrue(zoomOut.isHittable)
+        assertParkBannerTouchTarget(zoomOut.frame)
+        XCTAssertTrue(app.frame.contains(zoomOut.frame))
+        let physicalCenter = zoomOut.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+        print("MAP_RAPID_ZOOM_NATIVE_TARGET frame=\(zoomOut.frame) initialAltitude=\(initialAltitude)")
+        // Keep both rapid presses and the original 4x outcome; send each real
+        // touch to the measured control centre, without an intervening wait.
+        physicalCenter.tap()
+        physicalCenter.tap()
         // The loaded simulator took13.8s to finish this consecutive MapKit
         // animation. Require its actual settled camera, with the same scale gate.
         waitForCamera(app, { $0[2] > initialAltitude * 3 }, timeout: 20)
