@@ -18,12 +18,21 @@
       "localizedDescription": "Park wait times, ride status, weather observations, planning, shows and Live Activities.",
       "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/d3a4d1cd4fbb8a536659399efea2b5ff9d79a5ee/icon.png",
       "tintColor": "70DFC0",
-      "version": "1.18.3",
-      "versionDate": "2026-11-02T08:43:35Z",
-      "versionDescription": "Waits uses less space between the park card and Current rides, with smaller Recent observed waits controls and less vertical padding. Text keeps its normal size and expands with Dynamic Type.\n\nMap shows current waits when a fresh provider response confirms an unchanged value. Feed status and refresh are available on the map, and refresh continues in full screen and resumes when returning to the app. Failed or expired responses still withhold unverified waits.",
-      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/d3a4d1cd4fbb8a536659399efea2b5ff9d79a5ee/PIVOT-1.18.3-100.177.1.ipa",
-      "size": 32461401,
+      "version": "1.18.4",
+      "versionDate": "2026-11-05T17:58:43Z",
+      "versionDescription": "Adds 326 accepted ride illustrations in this first stage, bringing bundled coverage to 445 illustrations across 32 parks. All 119 previously shipped illustrations and every selected artwork byte and credit remain unchanged. The other 637 accepted illustrations are deferred and are not included in this IPA.\n\nThe Waits park card is about 24 points shorter at standard text size. Park names, hours, early entry, park selection and the 44-point information target remain available, with layouts that grow for accessibility text. Current Map category and search fixes and the released wait-refresh behavior are retained.\n\nThis is a complete replacement app, not an additive artwork pack. Later versions must bundle earlier images again to retain them. Keep the installed app and use the same signing identity to preserve saved data.",
+      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/1ac875d2be892500e46b3f8c4399a46f8e4610ac/PIVOT-1.18.4-100.283.1.ipa",
+      "size": 98033521,
       "versions": [
+        {
+          "version": "1.18.4",
+          "buildVersion": "100.283.1",
+          "date": "2026-11-05T17:58:43Z",
+          "localizedDescription": "Adds 326 accepted ride illustrations in this first stage, bringing bundled coverage to 445 illustrations across 32 parks. All 119 previously shipped illustrations and every selected artwork byte and credit remain unchanged. The other 637 accepted illustrations are deferred and are not included in this IPA.\n\nThe Waits park card is about 24 points shorter at standard text size. Park names, hours, early entry, park selection and the 44-point information target remain available, with layouts that grow for accessibility text. Current Map category and search fixes and the released wait-refresh behavior are retained.\n\nThis is a complete replacement app, not an additive artwork pack. Later versions must bundle earlier images again to retain them. Keep the installed app and use the same signing identity to preserve saved data.",
+          "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/1ac875d2be892500e46b3f8c4399a46f8e4610ac/PIVOT-1.18.4-100.283.1.ipa",
+          "size": 98033521,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.18.3",
           "buildVersion": "100.177.1",
