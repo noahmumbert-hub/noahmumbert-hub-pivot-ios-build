@@ -1,0 +1,5 @@
+Illustrations now download separately so future app updates can stay small. All 1,082 accepted illustrations retain their original bytes, exact ride identities and credits.
+
+Internet is needed once for artwork, including illustrations previously bundled in 1.18.4. The old app bundle is replaced during an update, so a direct upgrade cannot migrate those images. Photos or placeholders remain available while an illustration is not yet saved. In Settings → Artwork downloads, you can save all originals (about 219 MB), pause, and resume.
+
+Verified downloads remain available offline across ordinary app updates and are reused without downloading them again. New artwork downloads pause when storage is tight; valid saved originals are kept. Keep PIVOT installed and use the same signing identity to retain saved artwork and app data. Existing park cards, live waits, Map behavior, planning, accessibility layouts and attribution remain included.

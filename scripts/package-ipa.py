@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path
 import plistlib
+import re
 import subprocess
 import sys
 import tempfile
@@ -28,6 +29,8 @@ def package(app: Path, output: Path) -> Path:
         raise ValueError("The Live Activity extension is missing or has the wrong identifier")
     if widget_info["CFBundleVersion"] != info["CFBundleVersion"]:
         raise ValueError("App and extension build numbers must match")
+    if widget_info["CFBundleShortVersionString"] != info["CFBundleShortVersionString"]:
+        raise ValueError("App and extension marketing versions must match")
 
     output.mkdir(parents=True, exist_ok=True)
     filename = f'PIVOT-{info["CFBundleShortVersionString"]}-{info["CFBundleVersion"]}.ipa'
@@ -55,6 +58,21 @@ def package(app: Path, output: Path) -> Path:
         for entry in required:
             if entry not in archive.namelist():
                 raise ValueError(f"Missing IPA entry: {entry}")
+        if any(name.startswith(("Payload/PIVOT.app/RideIllustrations/",
+                                "Payload/PIVOT.app/PIVOTArtworkTestOriginals/"))
+               or re.fullmatch(r"\d+-\d+-(?:thumbnail|detail)\.jpg", Path(name).name)
+               for name in archive.namelist()):
+            raise ValueError("Original illustration JPEGs or Debug test fixtures leaked into the Release IPA")
+        catalog = json.loads(archive.read("Payload/PIVOT.app/RideIllustrationMetadata/catalog.json"))
+        if len(catalog["records"]) != 1082:
+            raise ValueError("The complete independently downloadable catalogue must be present")
+        binary = archive.read(f'Payload/PIVOT.app/{info["CFBundleExecutable"]}')
+        if any(marker in binary for marker in [b"PIVOT_ARTWORK_FIXTURE", b"PIVOTArtworkTestOriginals", b"RideArtworkUITestFixture"]):
+            raise ValueError("Debug artwork test transport leaked into Release")
+    ordinary_git_limit = 104_857_600
+    minimum_update_headroom = 32 * 1024 * 1024
+    if ipa.stat().st_size > ordinary_git_limit - minimum_update_headroom:
+        raise ValueError("IPA must preserve at least 32 MiB of ordinary-file headroom for future app updates")
     checksum = hashlib.sha256()
     with ipa.open("rb") as stream:
         for chunk in iter(lambda: stream.read(1024 * 1024), b""):
@@ -72,6 +90,12 @@ def package(app: Path, output: Path) -> Path:
         "signed": False,
         "commit": os.environ.get("GITHUB_SHA"),
         "run": os.environ.get("GITHUB_RUN_ID"),
+        "ordinaryGitLimitBytes": ordinary_git_limit,
+        "appBinaryHeadroomBytes": ordinary_git_limit - ipa.stat().st_size,
+        "minimumAppBinaryHeadroomBytes": minimum_update_headroom,
+        "bundledIllustrationJPEGs": 0,
+        "downloadableIllustrations": len(catalog["records"]),
+        "downloadableOriginalJPEGBytes": sum(record["thumbnailBytes"] + record["detailBytes"] for record in catalog["records"]),
     }
     (output / "build-info.json").write_text(json.dumps(metadata, indent=2) + "\n")
     print(json.dumps(metadata, indent=2))

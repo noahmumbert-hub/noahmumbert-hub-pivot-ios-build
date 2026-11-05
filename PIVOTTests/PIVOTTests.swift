@@ -200,7 +200,9 @@ final class PIVOTTests: XCTestCase {
                 // Force every delivered JPEG through the production display decode,
                 // releasing each bitmap before continuing through the full catalog.
                 try autoreleasepool {
-                    let url = try XCTUnwrap(record.fileURL(detail: detail), record.id)
+                    XCTAssertNil(record.fileURL(detail: detail), "Release resources contain metadata rather than the replaced illustration bundle")
+                    let url = try XCTUnwrap(Bundle.main.url(forResource: detail ? record.detailFile : record.thumbnailFile,
+                        withExtension: nil, subdirectory: "PIVOTArtworkTestOriginals"), record.id)
                     let image = try XCTUnwrap(UIImage(contentsOfFile: url.path), record.id)
                     let displayed = try XCTUnwrap(image.preparingForDisplay(), record.id)
                     let pixels = try XCTUnwrap(displayed.cgImage)
@@ -216,8 +218,8 @@ final class PIVOTTests: XCTestCase {
 
     func testGlobalArtworkDeliveryMatchesAcceptedIDsAndKeepsBlockedFallbacks() throws {
         let records = RideIllustrationCatalog.records
-        XCTAssertEqual(records.count, 445, "Exact stage-one selection: 119 released plus 326 unchanged additions")
-        XCTAssertEqual(Set(records.map(\.id)).count, 445)
+        XCTAssertEqual(records.count, 1082, "Every accepted identity is independently downloadable without an intermediate app version")
+        XCTAssertEqual(Set(records.map(\.id)).count, 1082)
         XCTAssertEqual(Set(records.map(\.parkId)), Set(FloridaPark.allCases.map(\.id)))
         let catalog = try ParkMapCatalog.load()
         let liveOnly: Set<String> = ["58-51320538612942", "58-261088229033589"]
@@ -298,7 +300,8 @@ final class PIVOTTests: XCTestCase {
 
     func testIllustrationCacheLoadsPackagedFilesAndHandlesMissingFiles() async throws {
         let record = try XCTUnwrap(RideIllustrationCatalog.ride(parkID: 5, rideID: 10916))
-        let url = try XCTUnwrap(record.fileURL(detail: false))
+        let url = try XCTUnwrap(Bundle.main.url(forResource: record.thumbnailFile, withExtension: nil,
+            subdirectory: "PIVOTArtworkTestOriginals"))
         let cache = RideIllustrationImageCache()
         let first = await cache.image(at: url)
         let repeated = await cache.image(at: url)

@@ -3,8 +3,17 @@ import UIKit
 import Vision
 
 final class PIVOTUITests: XCTestCase {
-    private func mapFixtureApp(_ arguments: [String] = []) -> XCUIApplication {
+    private func artworkFixtureApp(mode: String = "originals", directory: String = UUID().uuidString,
+                                   smallBatch: Bool = false) -> XCUIApplication {
         let app = XCUIApplication()
+        app.launchEnvironment["PIVOT_ARTWORK_FIXTURE"] = mode
+        app.launchEnvironment["PIVOT_ARTWORK_DIRECTORY"] = directory
+        if smallBatch { app.launchEnvironment["PIVOT_ARTWORK_SMALL_BATCH"] = "1" }
+        return app
+    }
+
+    private func mapFixtureApp(_ arguments: [String] = []) -> XCUIApplication {
+        let app = artworkFixtureApp()
         app.launchArguments = ["--park-map-ui-test"] + arguments
         app.launch()
         XCTAssertTrue(app.buttons["Full screen map"].waitForExistence(timeout: 10))
@@ -230,8 +239,9 @@ final class PIVOTUITests: XCTestCase {
         return visible
     }
 
-    private func rootFixture(_ extra: [String] = []) -> XCUIApplication {
-        let app = XCUIApplication()
+    private func rootFixture(_ extra: [String] = [], artworkMode: String = "originals",
+                             artworkDirectory: String = UUID().uuidString, smallArtworkBatch: Bool = false) -> XCUIApplication {
+        let app = artworkFixtureApp(mode: artworkMode, directory: artworkDirectory, smallBatch: smallArtworkBatch)
         app.launchArguments = ["--apple-ui-test", "--apple-ui-fixtures", "--ui-light"] + extra
         app.launch()
         XCTAssertTrue(app.descendants(matching: .any)["PIVOT header"].waitForExistence(timeout: 10))
@@ -2733,7 +2743,7 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testMapNetworkRefreshRepeatFullScreenFailureRecoveryAndNavigation() {
-        let app = XCUIApplication()
+        let app = artworkFixtureApp()
         app.launchArguments = ["--apple-ui-test", "--map-refresh-network-test", "--map-refresh-manual-test", "-pivot.selectedPark", "6"]
         app.launch()
         app.tabBars.buttons["Map"].tap()
@@ -2779,7 +2789,7 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testMapNetworkAutoRefreshContinuesInFullScreenAndAfterForegroundReturn() {
-        let app = XCUIApplication()
+        let app = artworkFixtureApp()
         app.launchArguments = ["--apple-ui-test", "--map-refresh-network-test", "-pivot.selectedPark", "6"]
         app.launch()
         app.tabBars.buttons["Map"].tap()
@@ -2811,7 +2821,7 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testLiveMapRefreshReportsRealProviderStatus() {
-        let app = XCUIApplication()
+        let app = artworkFixtureApp()
         // Keep scheduled polling from racing this manual button check and tap.
         // The separate automatic HTTP test retains the production polling loop;
         // omitting --map-refresh-network-test keeps this request on the real API.
@@ -2906,7 +2916,7 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testWaitForecastShowsHourlyPlanCrowdAndLearningState() {
-        let app = XCUIApplication()
+        let app = artworkFixtureApp()
         app.launchArguments = ["--wait-forecast-ui-test"]
         app.launch()
         XCTAssertTrue(app.staticTexts["Crowds & waits"].waitForExistence(timeout: 5))
@@ -2921,7 +2931,7 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testSavedForecastDoesNotSuggestRidingNow() {
-        let app = XCUIApplication()
+        let app = artworkFixtureApp()
         app.launchArguments = ["--wait-forecast-ui-test", "--forecast-saved"]
         app.launch()
         XCTAssertTrue(app.staticTexts["Crowds & waits"].waitForExistence(timeout: 5))
@@ -2930,7 +2940,7 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testPlanOwnsCrowdAndPredictedWaitControls() {
-        let app = XCUIApplication()
+        let app = artworkFixtureApp()
         app.launchArguments = ["-pivot.selectedPark", "6"]
         app.launch()
         XCTAssertTrue(app.descendants(matching: .any)["PIVOT header"].waitForExistence(timeout: 10))
@@ -2953,7 +2963,7 @@ final class PIVOTUITests: XCTestCase {
     }
 
     private func hhnApp(_ extraArguments: [String] = []) -> XCUIApplication {
-        let app = XCUIApplication()
+        let app = artworkFixtureApp()
         app.launchArguments = ["--hhn-ui-test", "--reset-hhn-ui-test"] + extraArguments
         app.launch()
         XCTAssertTrue(app.staticTexts["Halloween Horror Nights"].waitForExistence(timeout: 5))
@@ -3098,7 +3108,7 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testSortPreferenceSurvivesNavigationAndRelaunch() {
-        let app = XCUIApplication()
+        let app = artworkFixtureApp()
         app.launchArguments = ["-pivot.selectedPark", "6"]
         app.launch()
         for choice in ["Longest", "Shortest"] {
@@ -3117,7 +3127,7 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testAccentSettingsPersistAfterRelaunch() {
-        let app = XCUIApplication()
+        let app = artworkFixtureApp()
         app.launchArguments = ["-pivot.selectedPark", "-1"]
         app.launch()
         app.tabBars.buttons["More"].tap()
@@ -3134,8 +3144,8 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["More"].tap()
         app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Settings'")).firstMatch.tap()
         XCTAssertEqual(app.buttons["accent-purple"].value as? String, "Selected")
-        reveal(app.staticTexts["PIVOT 1.18.4"], in: app)
-        XCTAssertTrue(app.staticTexts["PIVOT 1.18.4"].exists)
+        reveal(app.staticTexts["PIVOT 1.18.5"], in: app)
+        XCTAssertTrue(app.staticTexts["PIVOT 1.18.5"].exists)
         let build = app.staticTexts["PIVOT build number"]
         reveal(build, in: app)
         XCTAssertNotNil(build.label.range(of: #"^Build \d+(?:\.\d+){0,2}$"#, options: .regularExpression))
@@ -3144,12 +3154,134 @@ final class PIVOTUITests: XCTestCase {
         app.buttons["accent-mint"].tap()
     }
 
+    private func openDownloadedSpaceMountain(_ app: XCUIApplication) -> XCUIElement {
+        let row = app.buttons["ride-row-action-126"]
+        XCTAssertTrue(row.waitForExistence(timeout: 5))
+        reveal(row, in: app)
+        XCTAssertTrue(row.isHittable)
+        row.tap()
+        XCTAssertTrue(app.navigationBars["Ride information"].waitForExistence(timeout: 5))
+        return app.descendants(matching: .any)["ride-illustration-6-126"].firstMatch
+    }
+
+    private func assertDownloadedImageLoaded(_ image: XCUIElement) {
+        XCTAssertTrue(image.waitForExistence(timeout: 5))
+        let loaded = NSPredicate { _, _ in image.value as? String == "Loaded" }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: loaded, object: nil)], timeout: 5), .completed)
+        XCTAssertTrue(image.label.hasPrefix("AI illustration:"))
+    }
+
+    private func openArtworkDownloadSettings(_ app: XCUIApplication) {
+        app.tabBars.buttons["More"].tap()
+        app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Settings'")).firstMatch.tap()
+        let link = app.buttons["artwork-download-settings"]
+        reveal(link, in: app)
+        XCTAssertTrue(link.isHittable)
+        link.tap()
+        XCTAssertTrue(app.navigationBars["Artwork downloads"].waitForExistence(timeout: 5))
+    }
+
+    func testArtworkDownloadsFreshOfflineUpgradeAndPersistentReuse() {
+        let directory = UUID().uuidString
+        let app = rootFixture(artworkMode: "offline", artworkDirectory: directory)
+        let missing = openDownloadedSpaceMountain(app)
+        let retry = app.buttons["retry-artwork-6-126"]
+        XCTAssertTrue(retry.waitForExistence(timeout: 5))
+        XCTAssertFalse(missing.exists)
+        XCTAssertFalse(app.descendants(matching: .any)["ride-illustration-credit"].exists)
+        XCTAssertTrue(app.staticTexts["The illustration is unavailable. Connect to the internet and retry."].waitForExistence(timeout: 5))
+        screenshot("Downloaded artwork direct upgrade offline fallback", app: app)
+        app.terminate()
+        app.launchEnvironment["PIVOT_ARTWORK_FIXTURE"] = "originals"
+        app.launch()
+        let downloaded = openDownloadedSpaceMountain(app)
+        assertDownloadedImageLoaded(downloaded)
+        XCTAssertTrue(app.descendants(matching: .any)["ride-illustration-credit"].exists)
+        screenshot("Downloaded artwork verified original and attribution", app: app)
+        app.terminate()
+        app.launchEnvironment["PIVOT_ARTWORK_FIXTURE"] = "offline"
+        app.launch()
+        assertDownloadedImageLoaded(openDownloadedSpaceMountain(app))
+        XCTAssertTrue(app.descendants(matching: .any)["ride-illustration-credit"].exists)
+        screenshot("Downloaded artwork survives offline relaunch", app: app)
+    }
+
+    func testArtworkDownloadsCorruptOriginalRequiresExplicitRetry() {
+        let app = rootFixture(artworkMode: "corrupt-once")
+        let image = openDownloadedSpaceMountain(app)
+        let message = app.staticTexts["The illustration couldn’t be verified. Retry to download the original."]
+        XCTAssertTrue(message.waitForExistence(timeout: 5))
+        XCTAssertFalse(image.exists)
+        XCTAssertFalse(app.descendants(matching: .any)["ride-illustration-credit"].exists)
+        let retry = app.buttons["retry-artwork-6-126"]
+        revealArtworkDetail(retry, in: app)
+        assertParkBannerTouchTarget(retry.frame)
+        screenshot("Downloaded artwork corrupt bytes rejected", app: app)
+        retry.tap()
+        assertDownloadedImageLoaded(app.descendants(matching: .any)["ride-illustration-6-126"].firstMatch)
+        XCTAssertTrue(app.descendants(matching: .any)["ride-illustration-credit"].exists)
+        screenshot("Downloaded artwork explicit retry preserves identity", app: app)
+    }
+
+    func testArtworkDownloadsLowStorageKeepsLargestTextAndLiveDetailsUsable() {
+        let app = rootFixture(["--ui-largest-type"], artworkMode: "low-storage")
+        let image = openDownloadedSpaceMountain(app)
+        let message = app.staticTexts["More free space is needed. Saved artwork stays available."]
+        XCTAssertTrue(message.waitForExistence(timeout: 5))
+        XCTAssertFalse(image.exists)
+        let retry = app.buttons["retry-artwork-6-126"]
+        revealArtworkDetail(retry, in: app)
+        assertParkBannerTouchTarget(retry.frame)
+        screenshot("Downloaded artwork low storage largest text retry", app: app)
+        let wait = app.scrollViews["ride-information-content"].staticTexts["45 min wait"].firstMatch
+        revealArtworkDetail(wait, in: app)
+        XCTAssertTrue(wait.isHittable)
+        screenshot("Downloaded artwork low storage retains live wait details", app: app)
+        app.buttons["Done"].tap()
+        XCTAssertTrue(app.tabBars.buttons["Map"].isHittable)
+        app.tabBars.buttons["Map"].tap()
+        XCTAssertTrue(app.buttons["Full screen map"].waitForExistence(timeout: 5))
+        screenshot("Downloaded artwork storage error leaves Map usable", app: app)
+    }
+
+    func testArtworkDownloadsPauseResumeAndSettingsOfflineInventory() {
+        let directory = UUID().uuidString
+        let app = rootFixture(["--ui-largest-type"], artworkMode: "slow", artworkDirectory: directory, smallArtworkBatch: true)
+        openArtworkDownloadSettings(app)
+        let download = app.buttons["download-all-artwork"]
+        reveal(download, in: app)
+        download.tap()
+        let pause = app.buttons["pause-artwork-downloads"]
+        XCTAssertTrue(pause.waitForExistence(timeout: 5))
+        pause.tap()
+        let message = app.staticTexts["artwork-download-message"]
+        let paused = NSPredicate { _, _ in message.exists && message.label.contains("paused") }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: paused, object: nil)], timeout: 5), .completed)
+        screenshot("Downloaded artwork batch paused without removing originals", app: app)
+        app.terminate()
+        app.launchEnvironment["PIVOT_ARTWORK_FIXTURE"] = "originals"
+        app.launch()
+        openArtworkDownloadSettings(app)
+        app.buttons["download-all-artwork"].tap()
+        let count = app.staticTexts["artwork-download-count"]
+        let complete = NSPredicate { _, _ in count.exists && count.label == "2 of 2 illustrations saved" }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: complete, object: nil)], timeout: 15), .completed)
+        screenshot("Downloaded artwork batch resumes original files", app: app)
+        app.terminate()
+        app.launchEnvironment["PIVOT_ARTWORK_FIXTURE"] = "offline"
+        app.launch()
+        openArtworkDownloadSettings(app)
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: complete, object: nil)], timeout: 5), .completed)
+        XCTAssertFalse(app.buttons["download-all-artwork"].isEnabled)
+        screenshot("Downloaded artwork offline inventory survives update style relaunch", app: app)
+    }
+
     override func setUpWithError() throws {
         continueAfterFailure = false
     }
 
     func testDashboardUsesTheNativeTabBarAndDestinations() {
-        let app = XCUIApplication()
+        let app = artworkFixtureApp()
         app.launchArguments = ["-pivot.selectedPark", "-1"]
         app.launch()
 
@@ -3208,7 +3340,7 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testMapSearchAndCategoryWorkWithBundledLocations() {
-        let app = XCUIApplication()
+        let app = artworkFixtureApp()
         app.launchArguments = ["-pivot.selectedPark", "6"]
         app.launch()
         let map = app.tabBars.firstMatch.buttons["Map"]
@@ -3259,7 +3391,7 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testMapCategoryChangesAndInterruptedSearchRemainUsable() {
-        let app = XCUIApplication()
+        let app = artworkFixtureApp()
         app.launchArguments = ["-pivot.selectedPark", "6"]
         app.launch()
         let map = app.tabBars.firstMatch.buttons["Map"]
@@ -3318,7 +3450,7 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testNativeTabBarStaysFixedWhileContentScrolls() {
-        let app = XCUIApplication()
+        let app = artworkFixtureApp()
         app.launchArguments = ["-pivot.selectedPark", "-1"]
         app.launch()
 
@@ -3336,7 +3468,7 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testExpandedParkCanBeFoundAndSelected() {
-        let app = XCUIApplication()
+        let app = artworkFixtureApp()
         app.launchArguments = ["-pivot.selectedPark", "6"]
         app.launch()
 

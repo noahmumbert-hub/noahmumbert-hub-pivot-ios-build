@@ -12,6 +12,7 @@ struct PIVOTApp: App {
     @StateObject private var store = DashboardStore()
     @AppStorage(PivotAccent.storageKey) private var selectedAccent = PivotAccent.mint.rawValue
     @AppStorage("pivot:appearance") private var appearance = "dark"
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some Scene {
         WindowGroup {
@@ -23,6 +24,9 @@ struct PIVOTApp: App {
                 .modifier(PivotUITestTypeSize())
                 .onChange(of: selectedAccent) { _, _ in
                     store.synchronizeLiveActivity()
+                }
+                .onChange(of: scenePhase) { _, phase in
+                    if phase == .background { Task { await RideArtworkDownloads.shared.pause() } }
                 }
         }
     }

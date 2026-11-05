@@ -147,6 +147,22 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testObservedSampleTimesRemainReadableAtLargestAccessibilitySize
       -only-testing:PIVOTUITests/PIVOTUITests/testMapFailedRefreshDoesNotPresentCachedWaitAsCurrent
     ) ;;
+  artwork-downloads)
+    test_options+=(
+      -only-testing:PIVOTTests/RideArtworkDownloadTests
+      -only-testing:PIVOTTests/PIVOTTests/testGeneratedIllustrationsAreBundledBoundedAndAttributed
+      -only-testing:PIVOTTests/PIVOTTests/testGlobalArtworkDeliveryMatchesAcceptedIDsAndKeepsBlockedFallbacks
+      -only-testing:PIVOTTests/PIVOTTests/testGeneratedIllustrationsRequireAnExactParkAndRideMatch
+      -only-testing:PIVOTTests/PIVOTTests/testIllustrationCacheLoadsPackagedFilesAndHandlesMissingFiles
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDownloadsFreshOfflineUpgradeAndPersistentReuse
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDownloadsCorruptOriginalRequiresExplicitRetry
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDownloadsLowStorageKeepsLargestTextAndLiveDetailsUsable
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDownloadsPauseResumeAndSettingsOfflineInventory
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryCreditsRemainReadableAtLargestAccessibilitySize
+      -only-testing:PIVOTUITests/PIVOTUITests/testArtworkDeliveryKeepsExcludedDraftAndPhotoFallbackTruthful
+      -only-testing:PIVOTUITests/PIVOTUITests/testGeneratedRideIllustrationLoadsWithCreditsAndPreservesWaits
+      -test-iterations 3
+    ) ;;
   artwork-delivery)
     test_options+=(
       -only-testing:PIVOTTests/PIVOTTests/testGeneratedIllustrationsAreBundledBoundedAndAttributed
@@ -317,7 +333,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
     ) ;;
   *)
-    echo 'Unsupported PIVOT_TEST_SCOPE; use all, map-search, history-details, chart-recovery, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, or park-picker.' >&2
+    echo 'Unsupported PIVOT_TEST_SCOPE; use all, artwork-downloads, map-recovery, release-recovery, map-search, history-details, chart-recovery, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, or park-picker.' >&2
     exit 1 ;;
 esac
 python3 - <<'PY'

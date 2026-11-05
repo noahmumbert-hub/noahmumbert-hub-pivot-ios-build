@@ -90,6 +90,10 @@ struct PivotSettingsView: View {
                         .accessibilityIdentifier("PIVOT build number")
                     Text("App updates are available in SideStore through the PIVOT source.").foregroundStyle(.secondary)
                 }
+                Section {
+                    NavigationLink("Artwork downloads") { ArtworkDownloadSettingsView() }
+                        .accessibilityIdentifier("artwork-download-settings")
+                }
             }
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)

@@ -222,10 +222,12 @@ private struct ParkPhotoCreditView: View {
 struct RideThumbnailView: View {
     let ride: LiveRide
     let parkID: Int?
+    @ObservedObject private var downloads = RideArtworkDownloads.shared
     private var illustration: RideIllustration? { RideIllustrationCatalog.ride(parkID: parkID, rideID: ride.id) }
+    private var asset: RideArtworkAsset? { illustration?.downloadAsset(detail: false) }
     var body: some View {
         Group {
-            if let illustration {
+            if let illustration, let asset, downloads.localURL(for: asset) != nil {
                 RideIllustrationImage(artwork: illustration)
             } else if let artwork = ParkArtworkCatalog.ride(parkID: parkID, rideID: ride.id) {
                 Image(artwork.assetName).resizable().scaledToFill()
@@ -240,6 +242,9 @@ struct RideThumbnailView: View {
         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         .overlay { RoundedRectangle(cornerRadius: 16).strokeBorder(Color.pivotBorder, lineWidth: 1) }
         .accessibilityHidden(true)
+        .task(id: asset?.sha256) {
+            if let asset { await downloads.request(asset) }
+        }
     }
     private var placeholder: some View {
         ZStack {

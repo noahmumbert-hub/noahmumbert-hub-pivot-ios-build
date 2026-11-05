@@ -28,8 +28,10 @@ def main():
     parser.add_argument("--require-complete", action="store_true", help="Fail while any in-scope catalog entry remains unfinished")
     args = parser.parse_args()
     folder = ROOT / "PIVOT/Resources/RideIllustrations"
-    manifest = json.loads((folder / "index.json").read_text())
     coverage = json.loads((ROOT / "docs/ride-artwork/coverage.json").read_text())
+    downloads = coverage.get("deliveryMode") == "persistent-original-downloads"
+    metadata = ROOT / "PIVOT/Resources/RideIllustrationMetadata/catalog.json"
+    manifest = json.loads((metadata if downloads else folder / "index.json").read_text())
     provenance = json.loads((ROOT / "docs/ride-artwork/provenance.json").read_text())
     rides = {r["key"]: r for r in coverage["rides"]}
     proof = {r["key"]: r for r in provenance["records"]}
@@ -70,8 +72,12 @@ def main():
             assert 0 < width <= bounds[0] and 0 < height <= bounds[1]
             assert abs(width / height - 0.8) < 0.01, f"Portrait aspect ratio: {filename}"
             total_bytes += len(data)
-        assert rides[key]["generationStatus"] == "accepted" and rides[key]["integrationStatus"] == "bundled"
-    selection_name = coverage.get("bundleSelection")
+        assert rides[key]["generationStatus"] == "accepted"
+        assert rides[key]["integrationStatus"] == ("downloadable" if downloads else "bundled")
+        if downloads:
+            assert record["downloadSourceCommit"] == "77191e42fb6dde600e6bc9a3ab948c7ce09ed4c2"
+            assert all(proof[key].get(field) == value for field, value in record.items() if field != "downloadSourceCommit"), key
+    selection_name = None if downloads else coverage.get("bundleSelection")
     if selection_name:
         assert Path(selection_name).name == selection_name
     selection_path = ROOT / "docs/ride-artwork" / selection_name if selection_name else None
@@ -100,6 +106,18 @@ def main():
     else:
         accepted_keys = keys
         assert keys == set(proof), "Manifest and provenance differ"
+    if downloads:
+        delivery = json.loads((ROOT / "docs/ride-artwork/download-delivery-selection-2026-11-05.json").read_text())
+        previous = json.loads((folder / "index.json").read_text())
+        assert len(previous["records"]) == 445
+        assert hashlib.sha256((folder / "index.json").read_bytes()).hexdigest() == delivery["previous445IndexSHA256"]
+        assert {f"{r['parkId']}-{r['rideId']}" for r in previous["records"]} <= keys
+        assert len(keys) == delivery["downloadableIllustrations"] == 1082
+        assert 2 * len(keys) == delivery["originalJPEGCount"] == 2164
+        assert total_bytes == delivery["originalJPEGBytes"] == 218526843
+        assert coverage["counts"]["bundledIllustrations"] == 0
+        assert coverage["counts"]["downloadableIllustrations"] == len(keys)
+        assert set(p.name for p in metadata.parent.iterdir()) == {"catalog.json"}
     assert expected_files == {p.name for p in folder.iterdir()}, "Untracked/missing bundle resources"
     assert len(rides) == coverage["counts"]["unionEntries"]
     assert len(accepted_keys) == coverage["counts"]["acceptedIllustrations"]
@@ -112,9 +130,11 @@ def main():
     assert not accepted_current_keys & blocked_keys, "Blocked artwork cannot count as accepted"
     pending = [key for key, ride in rides.items() if key not in accepted_current_keys and ride["catalogStatus"] != "excluded-retired"]
     summary = {"validatedIllustrations": len(keys), "catalogEntries": len(rides), "unfinishedEntries": len(pending),
-               "parksWithArtwork": len({r["parkId"] for r in manifest["records"]}), "packagedBytes": total_bytes,
+               "parksWithArtwork": len({r["parkId"] for r in manifest["records"]}), "packagedBytes": 0 if downloads else total_bytes,
+               "sourceOriginalJPEGBytes": total_bytes,
                "acceptedForRequestedStyle": len(accepted_current_keys),
-               "bundledForRequestedStyle": len(current_keys),
+               "bundledForRequestedStyle": 0 if downloads else len(current_keys),
+               "downloadableIllustrations": len(keys) if downloads else 0,
                "deferredAcceptedIllustrations": len(accepted_keys - keys), "complete": not pending}
     print(json.dumps(summary, indent=2))
     if args.require_complete and pending:

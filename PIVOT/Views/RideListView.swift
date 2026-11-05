@@ -296,12 +296,19 @@ private struct RideInformationView: View {
 struct RideDetailScreenView: View {
     @Environment(\.dismiss) private var dismiss
     @EnvironmentObject private var store: DashboardStore
+    @ObservedObject private var downloads = RideArtworkDownloads.shared
     let initialRide: LiveRide
     let timeZone: TimeZone
     var mapPoint: ParkMapPoint? = nil
     private var ride: LiveRide { store.snapshot?.rides.first(where: { $0.id == initialRide.id }) ?? initialRide }
     private var artwork: ParkArtwork? { ParkArtworkCatalog.ride(parkID: store.selectedPark?.id, rideID: ride.id) }
-    private var illustration: RideIllustration? { RideIllustrationCatalog.ride(parkID: store.selectedPark?.id, rideID: ride.id) }
+    private var acceptedIllustration: RideIllustration? { RideIllustrationCatalog.ride(parkID: store.selectedPark?.id, rideID: ride.id) }
+    private var downloadAsset: RideArtworkAsset? { acceptedIllustration?.downloadAsset(detail: true) }
+    private var illustration: RideIllustration? {
+        guard let acceptedIllustration, let downloadAsset,
+              downloads.localURL(for: downloadAsset) != nil else { return nil }
+        return acceptedIllustration
+    }
 
     var body: some View {
         NavigationStack {
@@ -309,6 +316,9 @@ struct RideDetailScreenView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
                     RetainedSnapshotNotice()
+                    if let acceptedIllustration, illustration == nil {
+                        RideArtworkDownloadStatus(artwork: acceptedIllustration)
+                    }
                     if let illustration {
                         VStack(alignment: .leading, spacing: 8) {
                             RideIllustrationImage(artwork: illustration, detail: true, contentMode: .fit)
@@ -354,7 +364,7 @@ struct RideDetailScreenView: View {
                             .fixedSize(horizontal: false, vertical: true)
                         if !ride.land.isEmpty { Text(ride.land).font(.subheadline).foregroundStyle(Color.pivotMuted) }
                     }
-                    if illustration == nil && ride.details?.photo == nil && artwork == nil {
+                    if acceptedIllustration == nil && ride.details?.photo == nil && artwork == nil {
                         Text("A verified ride photo isn’t available yet.").font(.subheadline).foregroundStyle(Color.pivotMuted)
                     }
                     ActiveScreenTimeline(every: 15) { date in
@@ -419,6 +429,9 @@ struct RideDetailScreenView: View {
             .toolbar { ToolbarItem(placement: .topBarTrailing) { Button("Done") { dismiss() }.foregroundStyle(.primary) } }
         }
         .modifier(PivotUITestTypeSize(probeIdentifier: "Ride information body size"))
+        .task(id: downloadAsset?.sha256) {
+            if let downloadAsset { await downloads.request(downloadAsset) }
+        }
     }
 }
 

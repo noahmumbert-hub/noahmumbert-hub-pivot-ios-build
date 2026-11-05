@@ -3,8 +3,8 @@ import UIKit
 
 /// Generated artwork never supplies ride identity, status, waits or locations.
 /// An exact park + ride match is required; photos remain the fallback.
-struct RideIllustration: Decodable, Identifiable {
-    struct Reference: Decodable {
+struct RideIllustration: Decodable, Identifiable, Sendable {
+    struct Reference: Decodable, Sendable {
         let sourceURL: URL
         let credit: String
         let license: String
@@ -16,6 +16,13 @@ struct RideIllustration: Decodable, Identifiable {
     let rideName: String
     let thumbnailFile: String
     let detailFile: String
+    let thumbnailSHA256: String
+    let thumbnailBytes: Int
+    let thumbnailPixels: [Int]
+    let detailSHA256: String
+    let detailBytes: Int
+    let detailPixels: [Int]
+    let downloadSourceCommit: String?
     let alt: String
     let references: [Reference]
     let license: String?
@@ -24,29 +31,48 @@ struct RideIllustration: Decodable, Identifiable {
     var id: String { "\(parkId)-\(rideId)" }
 
     func fileURL(detail: Bool) -> URL? {
+        // Only the current bundle is addressable. An updated app cannot recover
+        // JPEGs from the replaced 1.18.4 bundle; Release contains no such folder.
         Bundle.main.url(forResource: detail ? detailFile : thumbnailFile,
                         withExtension: nil, subdirectory: "RideIllustrations")
+    }
+
+    func downloadAsset(detail: Bool) -> RideArtworkAsset? {
+        guard let downloadSourceCommit else { return nil }
+        let pixels = detail ? detailPixels : thumbnailPixels
+        guard pixels.count == 2 else { return nil }
+        let asset = RideArtworkAsset(artworkID: id, variant: detail ? .detail : .thumbnail,
+            filename: detail ? detailFile : thumbnailFile,
+            sha256: detail ? detailSHA256 : thumbnailSHA256,
+            byteCount: detail ? detailBytes : thumbnailBytes,
+            width: pixels[0], height: pixels[1], sourceCommit: downloadSourceCommit)
+        return asset.isValid ? asset : nil
     }
 }
 
 enum RideIllustrationCatalog {
-    private struct Catalog: Decodable { let records: [RideIllustration] }
+    private struct Catalog: Decodable { let schemaVersion: Int; let records: [RideIllustration] }
     static let records: [RideIllustration] = {
-        guard let url = Bundle.main.url(forResource: "index", withExtension: "json", subdirectory: "RideIllustrations"),
+        guard let url = Bundle.main.url(forResource: "catalog", withExtension: "json", subdirectory: "RideIllustrationMetadata"),
               let data = try? Data(contentsOf: url),
-              let catalog = try? JSONDecoder().decode(Catalog.self, from: data) else { return [] }
+              let catalog = try? JSONDecoder().decode(Catalog.self, from: data), catalog.schemaVersion == 1,
+              Set(catalog.records.map(\.id)).count == catalog.records.count,
+              catalog.records.allSatisfy({ $0.downloadAsset(detail: false) != nil && $0.downloadAsset(detail: true) != nil }) else { return [] }
         return catalog.records
     }()
+    /// Every release contains all accepted metadata, not an additive patch.
+    /// The replaced 1.18.4 bundle cannot be read to migrate its old JPEGs.
+    static var downloadableRecords: [RideIllustration] { records }
     private static let byID = Dictionary(records.map { ($0.id, $0) }, uniquingKeysWith: { first, _ in first })
 
     static func ride(parkID: Int?, rideID: Int) -> RideIllustration? {
         guard let parkID, let artwork = byID["\(parkID)-\(rideID)"],
-              artwork.fileURL(detail: false) != nil, artwork.fileURL(detail: true) != nil else { return nil }
+              artwork.downloadAsset(detail: false) != nil, artwork.downloadAsset(detail: true) != nil else { return nil }
         return artwork
     }
 }
 
-/// Files have bounded pixel dimensions before they enter the app bundle.
+/// Verified originals have bounded pixel dimensions before display.
 /// NSCache is thread safe, evicts on memory pressure, and never retains the
 /// complete park catalog. Decode happens away from the scrolling main thread.
 final class RideIllustrationImageCache: @unchecked Sendable {
@@ -76,7 +102,13 @@ struct RideIllustrationImage: View {
     var contentMode: ContentMode = .fill
     @State private var loadedURL: URL?
     @State private var image: UIImage?
-    private var url: URL? { artwork.fileURL(detail: detail) }
+    @State private var decodeFailed = false
+    @State private var decodeAttempt = 0
+    @ObservedObject private var downloads = RideArtworkDownloads.shared
+    private var url: URL? {
+        artwork.fileURL(detail: detail) ?? artwork.downloadAsset(detail: detail).flatMap { downloads.localURL(for: $0) }
+    }
+    private var decodeTaskID: String { (url?.absoluteString ?? "none") + ":\(decodeAttempt)" }
 
     var body: some View {
         Group {
@@ -84,18 +116,24 @@ struct RideIllustrationImage: View {
                 Image(uiImage: image).resizable().aspectRatio(contentMode: contentMode)
             } else {
                 Rectangle().fill(Color.pivotSurfaceRaised)
-                    .overlay { Image(systemName: "photo").foregroundStyle(Color.pivotMuted) }
+                    .overlay {
+                        if decodeFailed && detail {
+                            Button("Retry illustration") { decodeAttempt += 1 }.frame(minHeight: 44)
+                        } else { Image(systemName: "photo").foregroundStyle(Color.pivotMuted) }
+                    }
             }
         }
         .accessibilityLabel("AI illustration: \(artwork.alt)")
-        .accessibilityValue(loadedURL == url && image != nil ? "Loaded" : "Loading")
-        .task(id: url) {
+        .accessibilityValue(loadedURL == url && image != nil ? "Loaded" : (decodeFailed ? "Unavailable" : "Loading"))
+        .task(id: decodeTaskID) {
             image = nil
             loadedURL = nil
+            decodeFailed = false
             guard let requestedURL = url else { return }
             let result = await RideIllustrationImageCache.shared.image(at: requestedURL)
             guard !Task.isCancelled else { return }
             image = result
+            decodeFailed = result == nil
             loadedURL = requestedURL
         }
     }
@@ -119,5 +157,31 @@ struct RideIllustrationCredit: View {
         }
         .font(.caption).foregroundStyle(Color.pivotMuted)
         .fixedSize(horizontal: false, vertical: true)
+    }
+}
+
+struct RideArtworkDownloadStatus: View {
+    let artwork: RideIllustration
+    @ObservedObject private var downloads = RideArtworkDownloads.shared
+    private var asset: RideArtworkAsset? { artwork.downloadAsset(detail: true) }
+    var body: some View {
+        if let asset {
+            VStack(alignment: .leading, spacing: 8) {
+                if downloads.downloading.contains(asset.sha256) {
+                    ProgressView("Downloading illustration…")
+                } else {
+                    Text(downloads.failures[asset.sha256]?.message ?? "This illustration needs a one-time download before it is available offline.")
+                        .fixedSize(horizontal: false, vertical: true)
+                    Button(downloads.failures[asset.sha256] == nil ? "Download illustration" : "Retry artwork download") {
+                        Task { await downloads.request(asset, retry: true) }
+                    }
+                    .frame(minHeight: 44)
+                    .accessibilityIdentifier("retry-artwork-\(artwork.id)")
+                    .disabled(downloads.isPausing)
+                }
+            }
+            .font(.subheadline).foregroundStyle(Color.pivotMuted)
+            .accessibilityIdentifier("ride-artwork-download-status-\(artwork.id)")
+        }
     }
 }

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "marketingVersion": "1.18.5",
+  "deliveryMode": "persistent-original-downloads",
+  "downloadableIllustrations": 1082,
+  "bundledIllustrations": 0,
+  "originalJPEGCount": 2164,
+  "originalJPEGBytes": 218526843,
+  "immutableSource": "77191e42fb6dde600e6bc9a3ab948c7ce09ed4c2",
+  "immutableSourceTree": "419993f1411f558b408f6cd4b7353c41b1306eb5",
+  "repository": "noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
+  "previous445IndexSHA256": "8e8f7f2544a8c670389ccfb6e8634da3133939d88a948181e3cb4ff54907e33d",
+  "allPrevious445ContentRetained": true,
+  "allAcceptedProvenanceRetained": true,
+  "originalsReencoded": false,
+  "sourceOriginalsRetainedForDebugOnlyNativeTests": true,
+  "directUpgradeNeedsOneTimeInternet": true,
+  "intermediateVersionRequired": false,
+  "downloadStoreQuotaBytes": 402653184,
+  "freeSpaceReserveBytes": 536870912,
+  "downloadedOriginalsAutomaticallyEvicted": false,
+  "physicalDeviceCapacity": "uninspected; checked at runtime before each new write"
+}
