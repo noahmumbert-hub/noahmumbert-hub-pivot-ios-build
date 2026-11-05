@@ -2388,16 +2388,43 @@ final class PIVOTUITests: XCTestCase {
         pin.coordinate(withNormalizedOffset: CGVector(dx: 0.08, dy: 0.5)).tap()
         XCTAssertTrue(app.staticTexts["Selected ride wait"].waitForExistence(timeout: 3), "The edge of the native marker’s 44-point target must select the ride")
         app.buttons["Ride details"].tap()
-        XCTAssertTrue(app.staticTexts["Current wait"].waitForExistence(timeout: 5))
+        // The map behind this sheet also says Current wait. Require the actual
+        // detail content before starting its artwork checks.
+        let detailContent = app.scrollViews["ride-information-content"]
+        XCTAssertTrue(detailContent.staticTexts["Current wait"].waitForExistence(timeout: 5))
         // The wait card can appear before the bundled image finishes decoding.
         // Require the real image state before recording this visual gate.
-        let artwork = app.descendants(matching: .any)["ride-illustration-6-138"].firstMatch
+        let artworkID = "ride-illustration-6-138"
+        let artwork = app.descendants(matching: .any)[artworkID].firstMatch
         XCTAssertTrue(artwork.waitForExistence(timeout: 5))
-        let loaded = NSPredicate { _, _ in artwork.value as? String == "Loaded" }
-        let imageReady = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: loaded, object: nil)], timeout: 5) == .completed
+        let artworkTimeout: TimeInterval = 5
+        let observationStarted = ProcessInfo.processInfo.systemUptime
+        var artworkSamples: [String] = []
+        let loaded = NSPredicate { _, _ in
+            // Run276 spent most of this deadline resolving one live element
+            // query, then retained a rendered image with Loaded in its later
+            // hierarchy. Resolve the current identity in one native snapshot;
+            // record query time separately from the image's actual state.
+            let sampleStarted = ProcessInfo.processInfo.systemUptime
+            let snapshot = try? app.snapshot()
+            let matches = snapshot.map { self.nativeSnapshotNodes($0).filter { $0.identifier == artworkID } } ?? []
+            let current = matches.count == 1 ? matches[0] : nil
+            let sampledAt = ProcessInfo.processInfo.systemUptime
+            let elapsed = sampledAt - observationStarted
+            let value = current?.value as? String ?? "<unavailable>"
+            let timing = String(format: "elapsed=%.3fs snapshot=%.3fs", elapsed, sampledAt - sampleStarted)
+            let state = "available=\(snapshot != nil) matches=\(matches.count) value=\(value) type=\(String(describing: current?.elementType))"
+            artworkSamples.append("\(timing) \(state) frame=\(String(describing: current?.frame))")
+            // A slow snapshot returning Loaded after the original five-second
+            // deadline must still fail. Later diagnostics cannot qualify it.
+            return elapsed <= artworkTimeout && current != nil && value == "Loaded"
+        }
+        let imageReady = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: loaded, object: nil)], timeout: artworkTimeout) == .completed
+        let artworkObservations = artworkSamples.isEmpty ? "<no native samples>" : artworkSamples.joined(separator: "\n")
+        print("MAP_RIDE_DETAIL_ARTWORK_OBSERVATIONS\n\(artworkObservations)")
         if !imageReady {
             screenshot("Native ride detail artwork did not load", app: app)
-            let hierarchy = XCTAttachment(string: app.debugDescription)
+            let hierarchy = XCTAttachment(string: "Original five-second result: failed\n\(artworkObservations)\n\nLater diagnostic hierarchy (not a passing observation):\n\(app.debugDescription)")
             hierarchy.name = "Native ride detail artwork loading failure hierarchy"
             hierarchy.lifetime = .keepAlways
             add(hierarchy)
