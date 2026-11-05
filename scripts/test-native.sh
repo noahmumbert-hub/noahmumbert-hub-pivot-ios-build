@@ -70,9 +70,13 @@ test_options=(
 case "${PIVOT_TEST_SCOPE:-all}" in
   all) ;;
   map-recovery)
+    # Repeat the two run-281 failure paths with their diagnostic evidence and
+    # retain the separate production automatic-polling journey.
     test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testMapSearchAndCategoryWorkWithBundledLocations
       -only-testing:PIVOTUITests/PIVOTUITests/testMapCategoryChangesAndInterruptedSearchRemainUsable
+      -only-testing:PIVOTUITests/PIVOTUITests/testLiveMapRefreshReportsRealProviderStatus
+      -only-testing:PIVOTUITests/PIVOTUITests/testMapNetworkAutoRefreshContinuesInFullScreenAndAfterForegroundReturn
       -test-iterations 3
     ) ;;
   release-recovery)

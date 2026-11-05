@@ -34,12 +34,78 @@ final class PIVOTUITests: XCTestCase {
         let choice = app.buttons[category].firstMatch
         XCTAssertTrue(choice.waitForExistence(timeout: 3))
         waitForSettledFrames([choice])
-        let ready = NSPredicate { _, _ in choice.exists && choice.isHittable }
-        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 5), .completed)
+        let readinessStartedAt = ProcessInfo.processInfo.systemUptime
+        var readinessTrace: [String] = []
+        let ready = NSPredicate { _, _ in
+            let startedAt = ProcessInfo.processInfo.systemUptime
+            let exists = choice.exists
+            let hittable = exists && choice.isHittable
+            let finishedAt = ProcessInfo.processInfo.systemUptime
+            if readinessTrace.count < 12 {
+                readinessTrace.append("atMs=\(Int((startedAt - readinessStartedAt) * 1_000)) readMs=\(Int((finishedAt - startedAt) * 1_000)) exists=\(exists) hittable=\(hittable)")
+            }
+            return exists && hittable
+        }
+        let result = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 5)
+        if result != .completed {
+            recordMapCategoryRowFailure(category, result: result, startedAt: readinessStartedAt,
+                trace: readinessTrace, app: app)
+        }
+        XCTAssertEqual(result, .completed)
         assertParkBannerTouchTarget(choice.frame)
         print("MAP_CATEGORY_ROW_READY title=\(category) frame=\(choice.frame)")
         choice.tap()
         waitForMapCategory(category, app: app)
+    }
+
+    private func recordMapCategoryRowFailure(_ category: String, result: XCTWaiter.Result,
+                                             startedAt: TimeInterval, trace: [String], app: XCUIApplication) {
+        // The original waiter has already failed. These observations send no
+        // input and cannot replace its result with a later passing state.
+        let originalElapsed = ProcessInfo.processInfo.systemUptime - startedAt
+        let original = "category=\(category) originalResult=\(result.rawValue) originalElapsedMs=\(Int(originalElapsed * 1_000))"
+        print("MAP_CATEGORY_ROW_FAILURE_ORIGINAL \(original) \(trace.joined(separator: " | "))")
+        let capture = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        capture.name = "Map category row after failed original five-second readiness"
+        capture.lifetime = .keepAlways
+        add(capture)
+        let snapshotStartedAt = ProcessInfo.processInfo.systemUptime
+        let root = try? app.snapshot()
+        let snapshotElapsed = ProcessInfo.processInfo.systemUptime - snapshotStartedAt
+        let nodes = root.map { nativeSnapshotNodes($0) } ?? []
+        let names = [category, "Place categories", "Cancel map categories", "Filter map places", "Search park places"]
+        let relevant = nodes.filter { node in
+            names.contains(node.identifier) || names.contains(node.label)
+                || node.elementType == .sheet || node.elementType == .alert
+                || node.elementType == .table || node.elementType == .scrollView
+        }
+        func bounded(_ value: Any?) -> String {
+            String(String(describing: value ?? "<nil>").replacingOccurrences(of: "\n", with: " ").prefix(160))
+        }
+        let rows = relevant.prefix(32).map { node in
+            "type=\(node.elementType.rawValue) id=\(bounded(node.identifier)) label=\(bounded(node.label)) value=\(bounded(node.value)) enabled=\(node.isEnabled) selected=\(node.isSelected) frame=\(node.frame) children=\(node.children.count)"
+        }
+        let rootFrame = root.map { String(describing: $0.frame) } ?? "unavailable"
+        let matches = nodes.filter { $0.elementType == .button && ($0.identifier == category || $0.label == category) }.count
+        let details = (["\(original) snapshotReadMs=\(Int(snapshotElapsed * 1_000)) rootFrame=\(rootFrame) nativeNodes=\(nodes.count) matchingButtons=\(matches) relevantNodes=\(relevant.count)"] + trace + rows).joined(separator: "\n")
+        print("MAP_CATEGORY_ROW_FAILURE \(details.replacingOccurrences(of: "\n", with: " | "))")
+        let attachment = XCTAttachment(string: details)
+        attachment.name = "Map category original row-readiness failure and native snapshot"
+        attachment.lifetime = .keepAlways
+        add(attachment)
+    }
+
+    private func recordMapRefreshRequestDiagnostic(_ phase: String, app: XCUIApplication) {
+        print("MAP_REFRESH_REQUEST_DIAGNOSTIC_BEGIN phase=\(phase)")
+        let startedAt = ProcessInfo.processInfo.systemUptime
+        let probe = app.staticTexts["Map refresh request diagnostic"]
+        let value = probe.exists ? (probe.value as? String ?? "<value unavailable>") : "<probe absent>"
+        let details = "phase=\(phase) readMs=\(Int((ProcessInfo.processInfo.systemUptime - startedAt) * 1_000)) \(value)"
+        print("MAP_REFRESH_REQUEST_DIAGNOSTIC \(details)")
+        let attachment = XCTAttachment(string: details)
+        attachment.name = "Actual map refresh request metadata"
+        attachment.lifetime = .keepAlways
+        add(attachment)
     }
 
     private func waitForMapCategory(_ category: String, app: XCUIApplication) {
@@ -2749,21 +2815,26 @@ final class PIVOTUITests: XCTestCase {
         // Keep scheduled polling from racing this manual button check and tap.
         // The separate automatic HTTP test retains the production polling loop;
         // omitting --map-refresh-network-test keeps this request on the real API.
-        app.launchArguments = ["--map-refresh-manual-test", "-pivot.selectedPark", "6"]
+        app.launchArguments = ["--map-refresh-manual-test", "--map-refresh-diagnostics", "-pivot.selectedPark", "6"]
         app.launch()
         XCTAssertTrue(app.tabBars.buttons["Map"].waitForExistence(timeout: 15))
         app.tabBars.buttons["Map"].tap()
         selectRootMapRide("Prince Charming", app: app)
         let refresh = app.buttons["Refresh map waits"]
         let ready = NSPredicate { _, _ in refresh.exists && refresh.isEnabled }
-        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 30), .completed)
+        let readyBeforeTap = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 30)
+        if readyBeforeTap != .completed { recordMapRefreshRequestDiagnostic("before-tap-wait-failed", app: app) }
+        XCTAssertEqual(readyBeforeTap, .completed)
         refresh.tap()
-        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 30), .completed)
+        let readyAfterTap = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 30)
+        if readyAfterTap != .completed { recordMapRefreshRequestDiagnostic("after-tap-wait-failed", app: app) }
+        XCTAssertEqual(readyAfterTap, .completed)
         let status = app.staticTexts["Map feed status"]
         let observation = "LIVE MAP OBSERVATION: \(status.label); selected ride: \(app.staticTexts["Selected ride wait"].label)"
         print(observation)
         let evidence = XCTAttachment(string: observation); evidence.lifetime = .keepAlways; add(evidence)
         screenshot("Live provider map refresh observation", app: app)
+        recordMapRefreshRequestDiagnostic("after-manual-refresh", app: app)
         XCTAssertTrue(status.label.hasPrefix("Live"), observation)
         // Real service failures remain failures; no synthetic fallback is used.
         app.buttons["Full screen map"].tap()

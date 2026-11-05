@@ -100,6 +100,9 @@ final class DashboardStore: ObservableObject {
     @Published private(set) var isLoading = false
     @Published private(set) var isRefreshing = false
     @Published private(set) var errorMessage: String?
+#if DEBUG
+    @Published private(set) var mapRefreshDiagnostic = "idle"
+#endif
     @Published private(set) var alertsEnabled: Bool
     @Published private(set) var isRequestingAlertPermission = false
     @Published private(set) var alertPreferences: NativeAlertPreferences
@@ -630,6 +633,16 @@ final class DashboardStore: ObservableObject {
         activeRefresh = (requestID, expectedPark, requestGeneration)
         isRefreshing = true
         if snapshot == nil { isLoading = true }
+#if DEBUG
+        let diagnosticStartedAt = ProcessInfo.processInfo.arguments.contains("--map-refresh-diagnostics")
+            ? ProcessInfo.processInfo.systemUptime : nil
+        var diagnosticOutcome = "in-flight"
+        var diagnosticError: Error? = nil
+        if let diagnosticStartedAt {
+            recordMapRefreshDiagnostic("started", requestID: requestID, park: expectedPark,
+                generation: requestGeneration, startedAt: diagnosticStartedAt)
+        }
+#endif
         defer {
             // A slow/cancelled previous park cannot clear the new request's UI.
             if activeRefresh?.id == requestID {
@@ -637,11 +650,18 @@ final class DashboardStore: ObservableObject {
                 isRefreshing = false
                 isLoading = false
             }
+#if DEBUG
+            if let diagnosticStartedAt {
+                recordMapRefreshDiagnostic(diagnosticOutcome, requestID: requestID, park: expectedPark,
+                    generation: requestGeneration, startedAt: diagnosticStartedAt, error: diagnosticError)
+            }
+#endif
         }
 
         do {
             let nextSnapshot = try await apiClient.snapshot(for: expectedPark)
 #if DEBUG
+            diagnosticOutcome = "decoded-not-applied"
             if ProcessInfo.processInfo.arguments.contains("--map-refresh-network-test") {
                 print("MAP_REFRESH_LIFECYCLE response park=\(expectedPark.rawValue) cancelled=\(Task.isCancelled) requestGeneration=\(requestGeneration) currentGeneration=\(monitoringGeneration)")
             }
@@ -686,6 +706,9 @@ final class DashboardStore: ObservableObject {
                 cachedParkHours[expectedPark.rawValue] = hours
             }
             snapshot = nextSnapshot
+#if DEBUG
+            diagnosticOutcome = "applied"
+#endif
             errorMessage = nil
             crowdSnapshots[expectedPark.rawValue] = nextSnapshot
             crowdRefreshErrors.remove(expectedPark.rawValue)
@@ -721,8 +744,15 @@ final class DashboardStore: ObservableObject {
                 }
             }
         } catch is CancellationError {
+#if DEBUG
+            diagnosticOutcome = "cancelled"
+#endif
             return
         } catch {
+#if DEBUG
+            diagnosticOutcome = "failed"
+            diagnosticError = error
+#endif
             guard selectedPark == expectedPark, requestGeneration == monitoringGeneration else { return }
             resetAlertBaselines()
             liveActivityObservationParkID = nil
@@ -732,6 +762,37 @@ final class DashboardStore: ObservableObject {
         }
     }
 
+#if DEBUG
+    /// Opt-in test evidence only: retain typed failures without response bodies,
+    /// request headers, URLs, or arbitrary server/error messages.
+    private func recordMapRefreshDiagnostic(_ outcome: String, requestID: UInt, park: FloridaPark,
+                                           generation: UInt, startedAt: TimeInterval, error: Error? = nil) {
+        let failure: String
+        if let error {
+            if let apiError = error as? PivotAPIError {
+                switch apiError {
+                case .invalidURL: failure = "invalid-url"
+                case .invalidResponse: failure = "invalid-response"
+                case .server(let status, _): failure = "http-\(status)"
+                case .wrongPark(let expected, let received): failure = "wrong-park-\(expected)-\(received)"
+                }
+            } else if error is DecodingError {
+                failure = "decoding"
+            } else {
+                let nativeError = error as NSError
+                failure = "\(nativeError.domain):\(nativeError.code)"
+            }
+        } else {
+            failure = "none"
+        }
+        let elapsed = Int((ProcessInfo.processInfo.systemUptime - startedAt) * 1_000)
+        let selected = selectedPark.map { String($0.rawValue) } ?? "none"
+        let synthetic = ProcessInfo.processInfo.arguments.contains("--map-refresh-network-test")
+        mapRefreshDiagnostic = "outcome=\(outcome) request=\(requestID) park=\(park.rawValue) elapsedMs=\(elapsed) requestGeneration=\(generation) currentGeneration=\(monitoringGeneration) selectedPark=\(selected) cancelled=\(Task.isCancelled) syntheticTransport=\(synthetic) error=\(failure)"
+        print("MAP_REFRESH_APP_DIAGNOSTIC \(mapRefreshDiagnostic)")
+    }
+
+#endif
     func synchronizeLiveActivity() {
         guard let selectedPark else {
             liveActivityService.synchronize(nil)

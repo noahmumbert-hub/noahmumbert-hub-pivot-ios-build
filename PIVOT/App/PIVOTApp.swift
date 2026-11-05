@@ -50,6 +50,17 @@ struct PIVOTApp: App {
             NativeHorrorNightUITestScreen()
         } else {
             RootView()
+                .overlay(alignment: .topLeading) {
+                    if ProcessInfo.processInfo.arguments.contains("--map-refresh-diagnostics") {
+                        // A test-only AX value exposes the actual request outcome
+                        // without adding a control or changing the visible Map.
+                        Text("Map refresh request diagnostic").font(.system(size: 1))
+                            .frame(width: 1, height: 1).opacity(0.02)
+                            .accessibilityIdentifier("Map refresh request diagnostic")
+                            .accessibilityValue(store.mapRefreshDiagnostic)
+                            .allowsHitTesting(false)
+                    }
+                }
         }
 #else
         RootView()
