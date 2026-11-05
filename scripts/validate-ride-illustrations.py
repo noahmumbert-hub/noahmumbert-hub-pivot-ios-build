@@ -3,10 +3,33 @@
 import argparse
 import hashlib
 import json
+import re
 import struct
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+
+def validate_fixture_inputs(jpeg_files):
+    # Xcode sandboxes reads to declared inputs. The existing literal directory
+    # input permits rsync to enumerate it; each JPEG's data needs its own input.
+    file_list = ROOT / "PIVOT/Resources/RideArtworkTestOriginals.xcfilelist"
+    prefix = "$(SRCROOT)/PIVOT/Resources/RideIllustrations/"
+    expected = "".join(prefix + name + "\n" for name in sorted(jpeg_files))
+    assert file_list.read_bytes() == expected.encode(), (
+        "Debug fixture input list must contain every accepted JPEG exactly once, "
+        "in sorted order, with no directories, wildcards, metadata or extra files")
+    project = (ROOT / "PIVOT.xcodeproj/project.pbxproj").read_text()
+    match = re.search(r"C00000000000000000000140 /\* Debug artwork test originals \*/ = \{(.*?)\};", project, re.S)
+    assert match, "Debug fixture build phase is missing"
+    phase = match.group(1)
+    inputs = re.search(r"\binputFileListPaths = \((.*?)\);", phase, re.S)
+    assert inputs and re.findall(r'"([^"]+)"', inputs.group(1)) == [
+        "$(SRCROOT)/PIVOT/Resources/RideArtworkTestOriginals.xcfilelist"
+    ], "The Debug fixture phase must use the exact JPEG input file list"
+    directory = re.search(r"\binputPaths = \((.*?)\);", phase, re.S)
+    assert directory and re.findall(r'"([^"]+)"', directory.group(1)) == [
+        "$(SRCROOT)/PIVOT/Resources/RideIllustrations"
+    ], "Only the existing literal fixture directory may be enumerated"
 
 def jpeg_size(data):
     if data[:2] != b"\xff\xd8": raise ValueError("Not a JPEG")
@@ -118,6 +141,7 @@ def main():
         assert coverage["counts"]["bundledIllustrations"] == 0
         assert coverage["counts"]["downloadableIllustrations"] == len(keys)
         assert set(p.name for p in metadata.parent.iterdir()) == {"catalog.json"}
+        validate_fixture_inputs(expected_files - {"index.json"})
     assert expected_files == {p.name for p in folder.iterdir()}, "Untracked/missing bundle resources"
     assert len(rides) == coverage["counts"]["unionEntries"]
     assert len(accepted_keys) == coverage["counts"]["acceptedIllustrations"]
@@ -135,6 +159,7 @@ def main():
                "acceptedForRequestedStyle": len(accepted_current_keys),
                "bundledForRequestedStyle": 0 if downloads else len(current_keys),
                "downloadableIllustrations": len(keys) if downloads else 0,
+               "debugFixtureJPEGInputs": 2 * len(keys) if downloads else 0,
                "deferredAcceptedIllustrations": len(accepted_keys - keys), "complete": not pending}
     print(json.dumps(summary, indent=2))
     if args.require_complete and pending:
