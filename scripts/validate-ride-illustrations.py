@@ -9,27 +9,62 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-def validate_fixture_inputs(jpeg_files):
-    # Xcode sandboxes reads to declared inputs. The existing literal directory
-    # input permits rsync to enumerate it; each JPEG's data needs its own input.
-    file_list = ROOT / "PIVOT/Resources/RideArtworkTestOriginals.xcfilelist"
-    prefix = "$(SRCROOT)/PIVOT/Resources/RideIllustrations/"
-    expected = "".join(prefix + name + "\n" for name in sorted(jpeg_files))
-    assert file_list.read_bytes() == expected.encode(), (
-        "Debug fixture input list must contain every accepted JPEG exactly once, "
-        "in sorted order, with no directories, wildcards, metadata or extra files")
+FIXTURE_INPUT_LIST = "PIVOT/Resources/RideArtworkTestOriginals.xcfilelist"
+FIXTURE_OUTPUT_LIST = "PIVOT/Resources/RideArtworkTestOutputs.xcfilelist"
+FIXTURE_INPUT_PREFIX = "$(SRCROOT)/PIVOT/Resources/RideIllustrations/"
+FIXTURE_OUTPUT_PREFIX = "$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/PIVOTArtworkTestOriginals/"
+# This small allowlist of shell operations writes only the declared directory
+# and final files. Direct redirection avoids rsync's undeclared temporary names;
+# recopying every file also repairs interrupted or corrupt incremental outputs.
+FIXTURE_COPY_SCRIPT = '''set -e
+if [ "$CONFIGURATION" = "Debug" ]; then
+  fixture_dir="$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/PIVOTArtworkTestOriginals"
+  /bin/mkdir -p "$fixture_dir"
+  for source_file in "$SRCROOT/PIVOT/Resources/RideIllustrations/"*.jpg; do
+    test -f "$source_file"
+    /bin/cat "$source_file" > "$fixture_dir/${source_file##*/}"
+  done
+fi
+'''
+
+def fixture_build_phase(project):
+    matches = re.findall(r"C00000000000000000000140 /\* Debug artwork test originals \*/ = \{(.*?)\};", project, re.S)
+    assert len(matches) == 1, "Exactly one Debug fixture build phase is required"
+    return matches[0]
+
+def fixture_copy_script(project):
+    matches = re.findall(r'\bshellScript = ("(?:\\.|[^"])*");', fixture_build_phase(project))
+    assert len(matches) == 1, "Exactly one Debug fixture copy script is required"
+    return json.loads(matches[0])
+
+def validate_fixture_files(jpeg_files):
+    # The directory declarations allow only enumeration/mkdir. Both each source
+    # JPEG and its corresponding final destination must be explicit sandbox IO.
+    for label, path, prefix in [
+        ("input", FIXTURE_INPUT_LIST, FIXTURE_INPUT_PREFIX),
+        ("output", FIXTURE_OUTPUT_LIST, FIXTURE_OUTPUT_PREFIX),
+    ]:
+        expected = "".join(prefix + name + "\n" for name in sorted(jpeg_files))
+        assert (ROOT / path).read_bytes() == expected.encode(), (
+            f"Debug fixture {label} list must map every accepted JPEG exactly once, "
+            "in sorted order, with no directories, wildcards, metadata or extra files")
     project = (ROOT / "PIVOT.xcodeproj/project.pbxproj").read_text()
-    match = re.search(r"C00000000000000000000140 /\* Debug artwork test originals \*/ = \{(.*?)\};", project, re.S)
-    assert match, "Debug fixture build phase is missing"
-    phase = match.group(1)
-    inputs = re.search(r"\binputFileListPaths = \((.*?)\);", phase, re.S)
-    assert inputs and re.findall(r'"([^"]+)"', inputs.group(1)) == [
-        "$(SRCROOT)/PIVOT/Resources/RideArtworkTestOriginals.xcfilelist"
-    ], "The Debug fixture phase must use the exact JPEG input file list"
-    directory = re.search(r"\binputPaths = \((.*?)\);", phase, re.S)
-    assert directory and re.findall(r'"([^"]+)"', directory.group(1)) == [
-        "$(SRCROOT)/PIVOT/Resources/RideIllustrations"
-    ], "Only the existing literal fixture directory may be enumerated"
+    phase = fixture_build_phase(project)
+    for setting, path in [
+        ("inputFileListPaths", "$(SRCROOT)/" + FIXTURE_INPUT_LIST),
+        ("outputFileListPaths", "$(SRCROOT)/" + FIXTURE_OUTPUT_LIST),
+        ("inputPaths", FIXTURE_INPUT_PREFIX.rstrip("/")),
+        ("outputPaths", FIXTURE_OUTPUT_PREFIX.rstrip("/")),
+    ]:
+        values = re.findall(r"\b" + setting + r" = \((.*?)\);", phase, re.S)
+        assert len(values) == 1 and values[0].strip() == f'"{path}",', (
+            f"The Debug fixture phase must retain the exact {setting} declaration")
+    assert "alwaysOutOfDate = 1;" in phase, "Every Debug build must repair fixture outputs"
+    assert fixture_copy_script(project) == FIXTURE_COPY_SCRIPT, (
+        "Debug fixtures must copy original bytes directly to the declared final paths, "
+        "stop on failure and skip Release builds without undeclared temporary files")
+    assert project.count("ENABLE_USER_SCRIPT_SANDBOXING = YES;") == 2
+    assert "ENABLE_USER_SCRIPT_SANDBOXING = NO" not in project
 
 def jpeg_size(data):
     if data[:2] != b"\xff\xd8": raise ValueError("Not a JPEG")
@@ -141,7 +176,7 @@ def main():
         assert coverage["counts"]["bundledIllustrations"] == 0
         assert coverage["counts"]["downloadableIllustrations"] == len(keys)
         assert set(p.name for p in metadata.parent.iterdir()) == {"catalog.json"}
-        validate_fixture_inputs(expected_files - {"index.json"})
+        validate_fixture_files(expected_files - {"index.json"})
     assert expected_files == {p.name for p in folder.iterdir()}, "Untracked/missing bundle resources"
     assert len(rides) == coverage["counts"]["unionEntries"]
     assert len(accepted_keys) == coverage["counts"]["acceptedIllustrations"]
@@ -160,6 +195,7 @@ def main():
                "bundledForRequestedStyle": 0 if downloads else len(current_keys),
                "downloadableIllustrations": len(keys) if downloads else 0,
                "debugFixtureJPEGInputs": 2 * len(keys) if downloads else 0,
+               "debugFixtureJPEGOutputs": 2 * len(keys) if downloads else 0,
                "deferredAcceptedIllustrations": len(accepted_keys - keys), "complete": not pending}
     print(json.dumps(summary, indent=2))
     if args.require_complete and pending:
