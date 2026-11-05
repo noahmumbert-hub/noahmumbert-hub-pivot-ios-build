@@ -3192,6 +3192,17 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(contentReady, "The artwork download screen must show its saved-original count")
     }
 
+    private func findArtworkDownloadAction(in app: XCUIApplication) -> XCUIElement {
+        let action = app.buttons["download-all-artwork"]
+        // A fresh largest-text Form only exposes its visible rows to XCTest.
+        // Scroll the foreground form before asking for the download row.
+        for _ in 0..<10 {
+            if action.exists { break }
+            app.swipeUp()
+        }
+        return action
+    }
+
     func testArtworkDownloadsFreshOfflineUpgradeAndPersistentReuse() {
         let directory = UUID().uuidString
         let app = rootFixture(artworkMode: "offline", artworkDirectory: directory)
@@ -3273,7 +3284,7 @@ final class PIVOTUITests: XCTestCase {
         app.launchEnvironment["PIVOT_ARTWORK_FIXTURE"] = "originals"
         app.launch()
         openArtworkDownloadSettings(app)
-        let resume = app.buttons["download-all-artwork"]
+        let resume = findArtworkDownloadAction(in: app)
         let resumeReady = resume.waitForExistence(timeout: 5)
         if !resumeReady {
             let inventory = app.staticTexts["artwork-download-count"]
@@ -3298,8 +3309,9 @@ final class PIVOTUITests: XCTestCase {
         app.launch()
         openArtworkDownloadSettings(app)
         XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: complete, object: nil)], timeout: 5), .completed)
-        XCTAssertTrue(app.buttons["download-all-artwork"].exists)
-        XCTAssertFalse(app.buttons["download-all-artwork"].isEnabled)
+        let completedAction = findArtworkDownloadAction(in: app)
+        XCTAssertTrue(completedAction.exists)
+        XCTAssertFalse(completedAction.isEnabled)
         screenshot("Downloaded artwork offline inventory survives update style relaunch", app: app)
     }
 

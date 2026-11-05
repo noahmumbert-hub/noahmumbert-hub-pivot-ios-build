@@ -162,6 +162,7 @@ struct RideIllustrationCredit: View {
 
 struct RideArtworkDownloadStatus: View {
     let artwork: RideIllustration
+    @Environment(\.pivotAccent) private var accent
     @ObservedObject private var downloads = RideArtworkDownloads.shared
     private var asset: RideArtworkAsset? { artwork.downloadAsset(detail: true) }
     var body: some View {
@@ -172,16 +173,21 @@ struct RideArtworkDownloadStatus: View {
                 } else {
                     Text(downloads.failures[asset.sha256]?.message ?? "This illustration needs a one-time download before it is available offline.")
                         .fixedSize(horizontal: false, vertical: true)
-                    Button(downloads.failures[asset.sha256] == nil ? "Download illustration" : "Retry artwork download") {
+                        .accessibilityIdentifier("ride-artwork-download-status-\(artwork.id)")
+                    Button {
                         Task { await downloads.request(asset, retry: true) }
+                    } label: {
+                        Text(downloads.failures[asset.sha256] == nil ? "Download illustration" : "Retry artwork download")
+                            .frame(minWidth: 44, minHeight: 44, alignment: .leading)
+                            .foregroundStyle(accent)
+                            .contentShape(Rectangle())
                     }
-                    .frame(minHeight: 44)
+                    .buttonStyle(.plain)
                     .accessibilityIdentifier("retry-artwork-\(artwork.id)")
                     .disabled(downloads.isPausing)
                 }
             }
             .font(.subheadline).foregroundStyle(Color.pivotMuted)
-            .accessibilityIdentifier("ride-artwork-download-status-\(artwork.id)")
         }
     }
 }
