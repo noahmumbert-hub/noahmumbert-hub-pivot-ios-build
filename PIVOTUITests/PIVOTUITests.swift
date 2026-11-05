@@ -3155,13 +3155,14 @@ final class PIVOTUITests: XCTestCase {
     }
 
     private func openDownloadedSpaceMountain(_ app: XCUIApplication) -> XCUIElement {
-        let row = app.buttons["ride-row-action-126"]
-        XCTAssertTrue(row.waitForExistence(timeout: 5))
+        let row = app.buttons["ride-row-action-138"]
         reveal(row, in: app)
+        XCTAssertTrue(row.waitForExistence(timeout: 5))
         XCTAssertTrue(row.isHittable)
+        XCTAssertTrue(row.label.contains("Space Mountain"))
         row.tap()
         XCTAssertTrue(app.navigationBars["Ride information"].waitForExistence(timeout: 5))
-        return app.descendants(matching: .any)["ride-illustration-6-126"].firstMatch
+        return app.descendants(matching: .any)["ride-illustration-6-138"].firstMatch
     }
 
     private func assertDownloadedImageLoaded(_ image: XCUIElement) {
@@ -3179,13 +3180,23 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(link.isHittable)
         link.tap()
         XCTAssertTrue(app.navigationBars["Artwork downloads"].waitForExistence(timeout: 5))
+        let count = app.staticTexts["artwork-download-count"]
+        let contentReady = count.waitForExistence(timeout: 5)
+        if !contentReady {
+            screenshot("Artwork downloads content missing after navigation", app: app)
+            let hierarchy = XCTAttachment(string: app.debugDescription)
+            hierarchy.name = "Artwork downloads navigation failure state"
+            hierarchy.lifetime = .keepAlways
+            add(hierarchy)
+        }
+        XCTAssertTrue(contentReady, "The artwork download screen must show its saved-original count")
     }
 
     func testArtworkDownloadsFreshOfflineUpgradeAndPersistentReuse() {
         let directory = UUID().uuidString
         let app = rootFixture(artworkMode: "offline", artworkDirectory: directory)
         let missing = openDownloadedSpaceMountain(app)
-        let retry = app.buttons["retry-artwork-6-126"]
+        let retry = app.buttons["retry-artwork-6-138"]
         XCTAssertTrue(retry.waitForExistence(timeout: 5))
         XCTAssertFalse(missing.exists)
         XCTAssertFalse(app.descendants(matching: .any)["ride-illustration-credit"].exists)
@@ -3213,12 +3224,12 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(message.waitForExistence(timeout: 5))
         XCTAssertFalse(image.exists)
         XCTAssertFalse(app.descendants(matching: .any)["ride-illustration-credit"].exists)
-        let retry = app.buttons["retry-artwork-6-126"]
+        let retry = app.buttons["retry-artwork-6-138"]
         revealArtworkDetail(retry, in: app)
         assertParkBannerTouchTarget(retry.frame)
         screenshot("Downloaded artwork corrupt bytes rejected", app: app)
         retry.tap()
-        assertDownloadedImageLoaded(app.descendants(matching: .any)["ride-illustration-6-126"].firstMatch)
+        assertDownloadedImageLoaded(app.descendants(matching: .any)["ride-illustration-6-138"].firstMatch)
         XCTAssertTrue(app.descendants(matching: .any)["ride-illustration-credit"].exists)
         screenshot("Downloaded artwork explicit retry preserves identity", app: app)
     }
@@ -3229,7 +3240,7 @@ final class PIVOTUITests: XCTestCase {
         let message = app.staticTexts["More free space is needed. Saved artwork stays available."]
         XCTAssertTrue(message.waitForExistence(timeout: 5))
         XCTAssertFalse(image.exists)
-        let retry = app.buttons["retry-artwork-6-126"]
+        let retry = app.buttons["retry-artwork-6-138"]
         revealArtworkDetail(retry, in: app)
         assertParkBannerTouchTarget(retry.frame)
         screenshot("Downloaded artwork low storage largest text retry", app: app)
@@ -3262,7 +3273,22 @@ final class PIVOTUITests: XCTestCase {
         app.launchEnvironment["PIVOT_ARTWORK_FIXTURE"] = "originals"
         app.launch()
         openArtworkDownloadSettings(app)
-        app.buttons["download-all-artwork"].tap()
+        let resume = app.buttons["download-all-artwork"]
+        let resumeReady = resume.waitForExistence(timeout: 5)
+        if !resumeReady {
+            let inventory = app.staticTexts["artwork-download-count"]
+            let inventoryLabel = inventory.exists ? inventory.label : "missing"
+            print("ARTWORK_RESUME_UI_STATE download=false pause=\(app.buttons["pause-artwork-downloads"].exists) count=\(inventoryLabel)")
+            screenshot("Downloaded artwork resume control missing", app: app)
+            let hierarchy = XCTAttachment(string: app.debugDescription)
+            hierarchy.name = "Artwork downloads resume failure state"
+            hierarchy.lifetime = .keepAlways
+            add(hierarchy)
+        }
+        XCTAssertTrue(resumeReady, "The paused batch must offer a resume action after relaunch")
+        reveal(resume, in: app)
+        XCTAssertTrue(resume.isHittable)
+        resume.tap()
         let count = app.staticTexts["artwork-download-count"]
         let complete = NSPredicate { _, _ in count.exists && count.label == "2 of 2 illustrations saved" }
         XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: complete, object: nil)], timeout: 15), .completed)
@@ -3272,6 +3298,7 @@ final class PIVOTUITests: XCTestCase {
         app.launch()
         openArtworkDownloadSettings(app)
         XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: complete, object: nil)], timeout: 5), .completed)
+        XCTAssertTrue(app.buttons["download-all-artwork"].exists)
         XCTAssertFalse(app.buttons["download-all-artwork"].isEnabled)
         screenshot("Downloaded artwork offline inventory survives update style relaunch", app: app)
     }
