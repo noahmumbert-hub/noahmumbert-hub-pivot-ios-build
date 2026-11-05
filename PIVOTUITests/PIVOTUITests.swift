@@ -3300,6 +3300,8 @@ final class PIVOTUITests: XCTestCase {
         reveal(resume, in: app)
         XCTAssertTrue(resume.isHittable)
         resume.tap()
+        // The count row is above the action in the largest-text Form.
+        returnToTop(app)
         let count = app.staticTexts["artwork-download-count"]
         let complete = NSPredicate { _, _ in count.exists && count.label == "2 of 2 illustrations saved" }
         XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: complete, object: nil)], timeout: 15), .completed)
