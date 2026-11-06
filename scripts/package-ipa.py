@@ -58,11 +58,18 @@ def package(app: Path, output: Path) -> Path:
         for entry in required:
             if entry not in archive.namelist():
                 raise ValueError(f"Missing IPA entry: {entry}")
-        if any(name.startswith(("Payload/PIVOT.app/RideIllustrations/",
+        forbidden_entries = [
+            name for name in archive.namelist()
+            if name.startswith(("Payload/PIVOT.app/RideIllustrations/",
                                 "Payload/PIVOT.app/PIVOTArtworkTestOriginals/"))
-               or re.fullmatch(r"\d+-\d+-(?:thumbnail|detail)\.jpg", Path(name).name)
-               for name in archive.namelist()):
-            raise ValueError("Original illustration JPEGs or Debug test fixtures leaked into the Release IPA")
+            or re.fullmatch(r"\d+-\d+-(?:thumbnail|detail)\.jpg", Path(name).name)
+        ]
+        if forbidden_entries:
+            sample = ", ".join(repr(name) for name in forbidden_entries[:5])
+            raise ValueError(
+                "Original illustration JPEGs or Debug test fixtures leaked into the Release IPA: "
+                f"{len(forbidden_entries)} entries; first {sample}"
+            )
         catalog = json.loads(archive.read("Payload/PIVOT.app/RideIllustrationMetadata/catalog.json"))
         if len(catalog["records"]) != 1082:
             raise ValueError("The complete independently downloadable catalogue must be present")

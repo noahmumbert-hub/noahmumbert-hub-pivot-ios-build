@@ -3249,8 +3249,27 @@ final class PIVOTUITests: XCTestCase {
         reveal(build, in: app)
         XCTAssertNotNil(build.label.range(of: #"^Build \d+(?:\.\d+){0,2}$"#, options: .regularExpression))
         screenshot("Installed PIVOT version and build", app: app)
-        reveal(app.buttons["accent-mint"], in: app)
-        app.buttons["accent-mint"].tap()
+        // The About rows are below the accent choices. On compact phones the
+        // offscreen Mint row is absent from XCTest's tree, so scroll toward it.
+        let mint = app.buttons["accent-mint"]
+        var mintVisible = false
+        for _ in 0..<5 {
+            if mint.exists {
+                let frame = mint.frame
+                let viewport = app.frame.insetBy(dx: 1, dy: 1)
+                let center = CGPoint(x: frame.midX, y: frame.midY)
+                if !frame.isEmpty && viewport.contains(center) && mint.isHittable {
+                    mintVisible = true
+                    break
+                }
+            }
+            app.swipeDown()
+        }
+        guard mintVisible else {
+            XCTFail("Could not reveal Mint accent above the About section")
+            return
+        }
+        mint.tap()
     }
 
     private func openDownloadedSpaceMountain(_ app: XCUIApplication) -> XCUIElement {
