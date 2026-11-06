@@ -2,6 +2,10 @@ import SwiftUI
 #if canImport(UIKit)
 import UIKit
 #endif
+#if DEBUG && canImport(UIKit)
+import Combine
+import OSLog
+#endif
 import UserNotifications
 
 @main
@@ -52,6 +56,10 @@ struct PIVOTApp: App {
             NativeWaitForecastUITestScreen()
         } else if ProcessInfo.processInfo.arguments.contains("--hhn-ui-test") {
             NativeHorrorNightUITestScreen()
+#if canImport(UIKit)
+        } else if ProcessInfo.processInfo.arguments.contains("--ride-search-cold-control") {
+            RideSearchColdControlScreen()
+#endif
         } else {
             RootView()
                 .overlay(alignment: .topLeading) {
@@ -71,6 +79,102 @@ struct PIVOTApp: App {
 #endif
     }
 }
+
+#if DEBUG && canImport(UIKit)
+// A diagnostic-only first-keyboard control. It keeps Ride search's native
+// TextField, traits and row geometry while removing the surrounding app work.
+private struct RideSearchColdControlScreen: View {
+    @State private var query = ""
+    @FocusState private var searchFocused: Bool
+    private static let timingLog = Logger(subsystem: "com.noahmumbert.PIVOT",
+                                          category: "ride-search-timing")
+    private static let nativeEditingObserver: NSObjectProtocol = NotificationCenter.default.addObserver(
+        forName: UITextField.textDidBeginEditingNotification, object: nil, queue: nil
+    ) { notification in
+        guard let field = notification.object as? UITextField else { return }
+        let isRideSearch = field.accessibilityIdentifier == "Ride search"
+            || field.placeholder == "Search rides or lands"
+        let uptimeMs = Int(ProcessInfo.processInfo.systemUptime * 1_000)
+        RideSearchColdControlScreen.timingLog.notice(
+            "event=control-native-begin-editing isRideSearch=\(isRideSearch, privacy: .public) uptimeMs=\(uptimeMs, privacy: .public)"
+        )
+    }
+
+    private func logTiming(_ event: String) {
+        if event == "search-mounted" { _ = Self.nativeEditingObserver }
+        let uptimeMs = Int(ProcessInfo.processInfo.systemUptime * 1_000)
+        Self.timingLog.notice("event=control-\(event, privacy: .public) uptimeMs=\(uptimeMs, privacy: .public)")
+    }
+
+    var body: some View {
+        List {
+            Section {
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("Current rides").font(.title3.bold()).accessibilityAddTraits(.isHeader)
+                    HStack(spacing: 8) {
+                        HStack(spacing: 8) {
+                            Image(systemName: "magnifyingglass").foregroundStyle(Color.pivotMuted)
+                            TextField("Search rides or lands", text: $query)
+                                .font(.body)
+                                .accessibilityIdentifier("Ride search")
+                                .focused($searchFocused)
+                                .submitLabel(.search)
+                                .onSubmit { searchFocused = false }
+                                .onAppear { logTiming("search-mounted") }
+                                .onChange(of: searchFocused) { _, focused in
+                                    if focused { logTiming("focus-acquired") }
+                                }
+                                .onChange(of: query) { oldQuery, newQuery in
+                                    if oldQuery.isEmpty && !newQuery.isEmpty {
+                                        logTiming("first-query-nonempty")
+                                    }
+                                }
+                                .onReceive(NotificationCenter.default.publisher(for: UIResponder.keyboardWillShowNotification)) { _ in
+                                    logTiming("keyboard-will-show")
+                                }
+                                .onReceive(NotificationCenter.default.publisher(for: UIResponder.keyboardDidShowNotification)) { _ in
+                                    logTiming("keyboard-did-show")
+                                }
+                                .textInputAutocapitalization(.never)
+                                .autocorrectionDisabled()
+                            if !query.isEmpty {
+                                Button { query = "" } label: {
+                                    Image(systemName: "xmark.circle.fill").foregroundStyle(Color.pivotMuted)
+                                }
+                                .frame(minWidth: 32, minHeight: 44)
+                                .accessibilityLabel("Clear ride search")
+                            }
+                        }
+                        .padding(.horizontal, 13)
+                        .frame(minHeight: 46)
+                        .background(Color.pivotBackground.opacity(0.7), in: Capsule())
+                        .overlay { Capsule().strokeBorder(Color.pivotBorder, lineWidth: 1).allowsHitTesting(false) }
+                        .accessibilityElement(children: .contain)
+                        .accessibilityIdentifier("ride-search-control")
+                        Image(systemName: "arrow.up.arrow.down")
+                            .font(.subheadline.weight(.semibold))
+                            .frame(width: 46, height: 46)
+                            .accessibilityHidden(true)
+                    }
+                }
+                .padding(.horizontal, 14)
+                .padding(.vertical, 10)
+                .accessibilityElement(children: .contain)
+                .accessibilityIdentifier("waits-controls-row")
+                .listRowInsets(EdgeInsets())
+            }
+            .listRowBackground(Color.pivotSurface)
+        }
+        .listStyle(.insetGrouped)
+        .contentMargins(.horizontal, 14, for: .scrollContent)
+        .contentMargins(.top, 8, for: .scrollContent)
+        .listSectionSpacing(8)
+        .scrollContentBackground(.hidden)
+        .background(Color.pivotBackground)
+        .scrollDismissesKeyboard(.interactively)
+    }
+}
+#endif
 
 #if canImport(UIKit)
 final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {

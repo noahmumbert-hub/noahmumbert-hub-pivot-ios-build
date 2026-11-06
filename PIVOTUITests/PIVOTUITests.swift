@@ -2100,6 +2100,44 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testGeneratedRideIllustrationLoadsWithCreditsAndPreservesWaits() throws {
+#if PIVOT_COLD_SEARCH_CONTROL
+        // This branch is compiled only for the non-qualifying diagnostic scope.
+        // It must be the first text interaction on a fresh simulator; the
+        // normal artwork/credit/wait journey below is untouched in every gate.
+        let app = XCUIApplication()
+        app.launchArguments = ["--apple-ui-test", "--apple-ui-fixtures", "--ui-light", "--ui-dark", "--ride-search-cold-control"]
+        app.launch()
+        let search = app.textFields["Ride search"]
+        XCTAssertTrue(search.waitForExistence(timeout: 10))
+        reveal(search, in: app)
+        XCTAssertTrue(search.isHittable)
+        waitForSettledFrames([search])
+        let searchFrame = search.frame
+        assertContained(searchFrame, in: safeContentViewport(in: app),
+                        "The entire Ride search field must be visible before its tap")
+        let firstTapAt = ProcessInfo.processInfo.systemUptime
+        let focusDeadline = firstTapAt + 5
+        search.tap()
+        let tapCompletedAt = ProcessInfo.processInfo.systemUptime
+        search.typeText("G")
+        let inputCompletedAt = ProcessInfo.processInfo.systemUptime
+        let typedPrefix = search.value as? String
+        let readbackCompletedAt = ProcessInfo.processInfo.systemUptime
+        print("RIDE_SEARCH_CONTROL_ACTION firstTapUptimeMs=\(Int(firstTapAt * 1_000)) tapCompletedUptimeMs=\(Int(tapCompletedAt * 1_000)) inputCompletedUptimeMs=\(Int(inputCompletedAt * 1_000)) readbackCompletedUptimeMs=\(Int(readbackCompletedAt * 1_000)) exactPrefixReceived=\(typedPrefix == "G")")
+        if typedPrefix != "G" || inputCompletedAt > focusDeadline {
+            print("RIDE_SEARCH_CONTROL_INPUT_FAILURE tapMs=\(Int((tapCompletedAt - firstTapAt) * 1_000)) inputMs=\(Int((inputCompletedAt - tapCompletedAt) * 1_000)) actionMs=\(Int((inputCompletedAt - firstTapAt) * 1_000)) exactPrefixReceived=\(typedPrefix == "G") preparedFrame=\(searchFrame) keyboard=\(app.keyboards.firstMatch.exists) searchHittable=\(search.isHittable)")
+            screenshot("Cold Ride search control missed five seconds", app: app)
+            let hierarchy = XCTAttachment(string: app.debugDescription)
+            hierarchy.name = "Cold Ride search control failure state"
+            hierarchy.lifetime = .keepAlways
+            add(hierarchy)
+        }
+        XCTAssertEqual(typedPrefix, "G", "The exact Ride search field must receive the keyboard input")
+        XCTAssertLessThanOrEqual(inputCompletedAt, focusDeadline, "Ride search must accept input within five seconds of the first tap")
+        search.typeText("uardians")
+        XCTAssertEqual(search.value as? String, "Guardians")
+        search.typeText("\n")
+#else
         let app = rootFixture(["--reference-ui-park=5", "--ui-dark"])
         let search = app.textFields["Ride search"]
         reveal(search, in: app)
@@ -2162,6 +2200,7 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["Plan"].tap()
         reveal(app.buttons["native-day-favorites"], in: app)
         XCTAssertTrue(app.buttons["native-day-favorites"].isHittable)
+#endif
     }
 
     func testGeneratedRideWithReservedPhotoRightsKeepsAccurateCredits() throws {

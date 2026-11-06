@@ -170,6 +170,13 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testGeneratedRideIllustrationLoadsWithCreditsAndPreservesWaits
       -test-iterations 3
     ) ;;
+  ride-search-control)
+    # One fresh first-keyboard interaction on the isolated Debug control.
+    # It cannot satisfy the normal 66-unit/21-UI qualification gate.
+    test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testGeneratedRideIllustrationLoadsWithCreditsAndPreservesWaits
+      -test-iterations 1
+    ) ;;
   artwork-delivery)
     test_options+=(
       -only-testing:PIVOTTests/PIVOTTests/testGeneratedIllustrationsAreBundledBoundedAndAttributed
@@ -340,7 +347,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
     ) ;;
   *)
-    echo 'Unsupported PIVOT_TEST_SCOPE; use all, artwork-downloads, ride-search-timing, map-recovery, release-recovery, map-search, history-details, chart-recovery, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, or park-picker.' >&2
+    echo 'Unsupported PIVOT_TEST_SCOPE; use all, artwork-downloads, ride-search-timing, ride-search-control, map-recovery, release-recovery, map-search, history-details, chart-recovery, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, or park-picker.' >&2
     exit 1 ;;
 esac
 python3 - <<'PY'
@@ -357,14 +364,24 @@ if [[ "${PIVOT_TEST_SCOPE:-all}" == "map-recovery" ]]; then
   startup_observer_pid=$!
 fi
 test_exit=0
+diagnostic_build_settings=()
+if [[ "${PIVOT_TEST_SCOPE:-all}" == "ride-search-control" ]]; then
+  diagnostic_build_settings+=("SWIFT_ACTIVE_COMPILATION_CONDITIONS=DEBUG PIVOT_COLD_SEARCH_CONTROL")
+fi
 xcodebuild -project PIVOT.xcodeproj -scheme PIVOT \
   -destination "platform=iOS Simulator,id=$simulator_id" \
   -derivedDataPath build/TestDerivedData \
   -resultBundlePath build/native-tests.xcresult \
   "${test_options[@]}" -jobs 3 \
   CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO DEVELOPMENT_TEAM= \
+  "${diagnostic_build_settings[@]}" \
   test 2>&1 | tee build/native-tests.log || test_exit=$?
-if [[ "${PIVOT_TEST_SCOPE:-all}" == "artwork-downloads" || "${PIVOT_TEST_SCOPE:-all}" == "ride-search-timing" ]]; then
+if [[ "${PIVOT_TEST_SCOPE:-all}" == "ride-search-control" ]] &&
+   ! grep -Fq 'RIDE_SEARCH_CONTROL_ACTION' build/native-tests.log; then
+  echo 'Cold Ride search control did not execute; diagnostic result is invalid.' | tee -a build/native-tests.log
+  test_exit=1
+fi
+if [[ "${PIVOT_TEST_SCOPE:-all}" == "artwork-downloads" || "${PIVOT_TEST_SCOPE:-all}" == "ride-search-timing" || "${PIVOT_TEST_SCOPE:-all}" == "ride-search-control" ]]; then
   # The test and app report the same simulator uptime. Preserve only this
   # fixture's event names/timestamps so a first-use keyboard delay can be
   # separated from XCTest's post-tap idle wait without logging search text.
