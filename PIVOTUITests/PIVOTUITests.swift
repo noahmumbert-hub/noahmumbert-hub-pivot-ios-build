@@ -2162,18 +2162,29 @@ final class PIVOTUITests: XCTestCase {
         let searchFrame = search.frame
         assertContained(searchFrame, in: safeContentViewport(in: app),
                         "The entire Ride search field must be visible before its tap")
-        // Target the native TextField itself. The app-relative coordinate
-        // missed focus on SE; typing into the exact field both requires focus
-        // and verifies that a different control did not receive the input.
+        // Target the native TextField itself; an app-relative coordinate missed
+        // focus on SE. Tap the visible keyboard key for the first character,
+        // then verify that this exact field received it.
         let firstTapAt = ProcessInfo.processInfo.systemUptime
         let focusDeadline = firstTapAt + 5
         search.tap()
         let tapCompletedAt = ProcessInfo.processInfo.systemUptime
-        search.typeText("G")
+        let keyboard = app.keyboards.firstMatch
+        XCTAssertTrue(keyboard.waitForExistence(timeout: max(0, focusDeadline - ProcessInfo.processInfo.systemUptime)))
+        let gKey = keyboard.keys.matching(NSPredicate(format: "label ==[c] %@", "g")).firstMatch
+        XCTAssertTrue(gKey.exists, "The visible keyboard must expose its G key")
+        let needsShift = gKey.label == "g"
+        if needsShift {
+            let shiftKey = keyboard.descendants(matching: .any)
+                .matching(NSPredicate(format: "label ==[c] %@", "shift")).firstMatch
+            XCTAssertTrue(shiftKey.exists, "The visible keyboard must expose Shift for uppercase G")
+            shiftKey.tap()
+        }
+        gKey.tap()
         let inputCompletedAt = ProcessInfo.processInfo.systemUptime
         let typedPrefix = search.value as? String
         let readbackCompletedAt = ProcessInfo.processInfo.systemUptime
-        print("ARTWORK_RIDE_SEARCH_ACTION firstTapUptimeMs=\(Int(firstTapAt * 1_000)) tapCompletedUptimeMs=\(Int(tapCompletedAt * 1_000)) inputCompletedUptimeMs=\(Int(inputCompletedAt * 1_000)) readbackCompletedUptimeMs=\(Int(readbackCompletedAt * 1_000)) exactPrefixReceived=\(typedPrefix == "G")")
+        print("ARTWORK_RIDE_SEARCH_ACTION firstTapUptimeMs=\(Int(firstTapAt * 1_000)) tapCompletedUptimeMs=\(Int(tapCompletedAt * 1_000)) inputCompletedUptimeMs=\(Int(inputCompletedAt * 1_000)) readbackCompletedUptimeMs=\(Int(readbackCompletedAt * 1_000)) visibleKey=true shiftUsed=\(needsShift) exactPrefixReceived=\(typedPrefix == "G")")
         if typedPrefix != "G" || inputCompletedAt > focusDeadline {
             print("ARTWORK_RIDE_SEARCH_INPUT_FAILURE tapMs=\(Int((tapCompletedAt - firstTapAt) * 1_000)) inputMs=\(Int((inputCompletedAt - tapCompletedAt) * 1_000)) actionMs=\(Int((inputCompletedAt - firstTapAt) * 1_000)) readbackMs=\(Int((ProcessInfo.processInfo.systemUptime - firstTapAt) * 1_000)) typedPrefix=\(typedPrefix ?? "<absent>") preparedFrame=\(searchFrame) keyboard=\(app.keyboards.firstMatch.exists) searchHittable=\(search.isHittable)")
             screenshot("Artwork ride search did not accept input within five seconds", app: app)
