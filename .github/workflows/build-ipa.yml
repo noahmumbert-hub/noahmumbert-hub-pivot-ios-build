@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       scope:
-        description: Full release regression or focused diagnostics without an IPA
+        description: Full regression, focused UI, or Release archive diagnostic
         type: choice
         default: all
-        options: [all, artwork-downloads, ride-search-timing, ride-search-control, map-recovery, release-recovery, map-search, history-details, chart-recovery, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, park-picker]
+        options: [all, archive-diagnostic, artwork-downloads, ride-search-timing, ride-search-control, map-recovery, release-recovery, map-search, history-details, chart-recovery, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, park-picker]
         required: true
       simulator:
-        description: iPhone used for focused diagnostics only
+        description: iPhone used for focused UI diagnostics; ignored for archive diagnostic
         type: choice
         default: iPhone 16 Pro Max
         options: ['iPhone SE (3rd generation)', 'iPhone 16 Pro', 'iPhone 16 Pro Max']
@@ -36,7 +36,7 @@ concurrency:
 
 jobs:
   build:
-    if: (github.ref != 'refs/heads/diagnostics/apple-native-redesign' || contains(github.event.head_commit.message, '[full-regression]') || inputs.scope == 'all') && (github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all')
+    if: (github.ref != 'refs/heads/diagnostics/apple-native-redesign' || contains(github.event.head_commit.message, '[full-regression]') || inputs.scope == 'all' || inputs.scope == 'archive-diagnostic') && (github.event_name != 'workflow_dispatch' || inputs.scope == '' || inputs.scope == 'all' || inputs.scope == 'archive-diagnostic')
     runs-on: macos-15
     # The full visual suite can approach two hours before evidence export.
     # Allow archive/export/upload margin; XCTest case limits stay 180/240s.
@@ -54,14 +54,22 @@ jobs:
         run: xcodebuild -version
 
       - name: Run Xcode unit and simulator UI tests
+        if: inputs.scope != 'archive-diagnostic'
         run: bash scripts/test-native.sh
 
       - name: Build and validate unsigned IPA
         env:
           PIVOT_BUILD_NUMBER: 100.${{ github.run_number }}.${{ github.run_attempt }}
-        run: bash scripts/build-ipa.sh
+          PIVOT_WORKFLOW_SCOPE: ${{ inputs.scope || 'all' }}
+        run: |
+          if [[ "$PIVOT_WORKFLOW_SCOPE" == archive-diagnostic ]]; then
+            echo 'Archive diagnostic only; simulator tests and IPA artifact upload are skipped.' >> "$GITHUB_STEP_SUMMARY"
+            export GITHUB_STEP_SUMMARY=/dev/null
+          fi
+          bash scripts/build-ipa.sh
 
       - name: Upload IPA and checksum
+        if: inputs.scope != 'archive-diagnostic'
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: PIVOT-SideStore-${{ github.run_number }}-${{ github.run_attempt }}
@@ -152,7 +160,7 @@ jobs:
 
   diagnose:
     name: Focused UI diagnostics
-    if: (github.event_name == 'workflow_dispatch' && inputs.scope != '' && inputs.scope != 'all') || (github.event_name == 'push' && github.ref == 'refs/heads/diagnostics/apple-native-redesign' && !contains(github.event.head_commit.message, '[full-regression]'))
+    if: (github.event_name == 'workflow_dispatch' && inputs.scope != '' && inputs.scope != 'all' && inputs.scope != 'archive-diagnostic') || (github.event_name == 'push' && github.ref == 'refs/heads/diagnostics/apple-native-redesign' && !contains(github.event.head_commit.message, '[full-regression]'))
     runs-on: macos-15
     timeout-minutes: 45
     env:
