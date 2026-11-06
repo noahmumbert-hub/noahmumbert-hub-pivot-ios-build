@@ -175,7 +175,6 @@ case "${PIVOT_TEST_SCOPE:-all}" in
     # It cannot satisfy the normal 66-unit/21-UI qualification gate.
     test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testGeneratedRideIllustrationLoadsWithCreditsAndPreservesWaits
-      -test-iterations 1
     ) ;;
   artwork-delivery)
     test_options+=(
