@@ -56,10 +56,8 @@ struct PIVOTApp: App {
             NativeWaitForecastUITestScreen()
         } else if ProcessInfo.processInfo.arguments.contains("--hhn-ui-test") {
             NativeHorrorNightUITestScreen()
-#if canImport(UIKit)
         } else if ProcessInfo.processInfo.arguments.contains("--ride-search-cold-control") {
             RideSearchColdControlScreen()
-#endif
         } else {
             RootView()
                 .overlay(alignment: .topLeading) {
