@@ -2110,9 +2110,10 @@ final class PIVOTUITests: XCTestCase {
         // repeated artwork run left this field visible but without keyboard
         // focus after XCTest's tap, so verify focus before entering text.
         let focusDeadline = ProcessInfo.processInfo.systemUptime + 5
-        let focusedSearch = app.textFields.matching(NSPredicate(
-            format: "identifier == %@ AND hasKeyboardFocus == 1", "Ride search")).firstMatch
-        let focused = NSPredicate { _, _ in focusedSearch.exists }
+        // XCUIElementAttributes.hasFocus is XCTest's supported focus state.
+        // The hasKeyboardFocus query can miss a field that the accessibility
+        // hierarchy already reports as Keyboard Focused.
+        let focused = NSPredicate { _, _ in search.hasFocus }
         func waitForFocus(_ timeout: TimeInterval) -> XCTWaiter.Result {
             XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: focused, object: nil)], timeout: timeout)
         }
@@ -3312,8 +3313,6 @@ final class PIVOTUITests: XCTestCase {
         // until the foreground sheet scrolls. The swipe consumes the original
         // five-second status deadline rather than adding time to it.
         app.swipeUp()
-        let downloadsScreen = app.navigationBars["Artwork downloads"]
-        XCTAssertTrue(downloadsScreen.exists, "The artwork download sheet must stay open after revealing pause status")
         let message = app.staticTexts["artwork-download-message"]
         let paused = NSPredicate { _, _ in message.exists && message.label.contains("paused") }
         let remaining = pauseDeadline - ProcessInfo.processInfo.systemUptime
@@ -3330,6 +3329,8 @@ final class PIVOTUITests: XCTestCase {
             add(hierarchy)
         }
         XCTAssertEqual(pauseResult, .completed)
+        let downloadsScreen = app.navigationBars["Artwork downloads"]
+        XCTAssertTrue(downloadsScreen.exists, "The artwork download sheet must stay open after revealing pause status")
         screenshot("Downloaded artwork batch paused without removing originals", app: app)
         app.terminate()
         app.launchEnvironment["PIVOT_ARTWORK_FIXTURE"] = "originals"
