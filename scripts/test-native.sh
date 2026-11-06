@@ -380,17 +380,31 @@ if [[ "${PIVOT_TEST_SCOPE:-all}" == "ride-search-control" ]] &&
   echo 'Cold Ride search control did not execute; diagnostic result is invalid.' | tee -a build/native-tests.log
   test_exit=1
 fi
-if [[ "${PIVOT_TEST_SCOPE:-all}" == "artwork-downloads" || "${PIVOT_TEST_SCOPE:-all}" == "ride-search-timing" || "${PIVOT_TEST_SCOPE:-all}" == "ride-search-control" ]]; then
+ride_search_gate=false
+case "${PIVOT_TEST_SCOPE:-all}" in
+  all|artwork-downloads|ride-search-timing|artwork-delivery|artwork-credits|reference-ui)
+    ride_search_gate=true ;;
+esac
+if [[ "$ride_search_gate" == true || "${PIVOT_TEST_SCOPE:-all}" == "ride-search-control" ]]; then
   # The test and app report the same simulator uptime. Preserve only this
   # fixture's event names/timestamps so a first-use keyboard delay can be
   # separated from XCTest's post-tap idle wait without logging search text.
   printf 'ARTWORK_RIDE_SEARCH_APP_TIMING_BEGIN\n' | tee -a build/native-tests.log
-  if ! xcrun simctl spawn "$simulator_id" log show --style compact --last 45m \
+  if ! xcrun simctl spawn "$simulator_id" log show --style compact --last 6h \
       --predicate 'subsystem == "com.noahmumbert.PIVOT" AND category == "ride-search-timing"' \
       2>&1 | tee -a build/native-tests.log; then
     printf 'ARTWORK_RIDE_SEARCH_APP_TIMING_COLLECTION_FAILED\n' | tee -a build/native-tests.log
+    if [[ "$ride_search_gate" == true ]]; then test_exit=1; fi
   fi
   printf 'ARTWORK_RIDE_SEARCH_APP_TIMING_END\n' | tee -a build/native-tests.log
+fi
+if [[ "$ride_search_gate" == true && "$test_exit" -eq 0 ]]; then
+  expected_search_runs=1
+  if [[ "${PIVOT_TEST_SCOPE:-all}" == "artwork-downloads" || "${PIVOT_TEST_SCOPE:-all}" == "ride-search-timing" ]]; then
+    expected_search_runs=3
+  fi
+  python3 scripts/validate-ride-search-timing.py build/native-tests.log "$expected_search_runs" \
+    | tee -a build/native-tests.log || test_exit=$?
 fi
 if [[ -n "$startup_observer_pid" ]]; then
   touch build/map-startup-observer.stop

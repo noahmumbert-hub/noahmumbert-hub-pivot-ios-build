@@ -38,9 +38,32 @@ struct RideListView: View {
         )
     }
 
+    // Fixture-only native input timestamps let CI compare the app's exact
+    // query update with UITextField input without counting XCTest idle waits.
+    private static let nativeTextObserver: NSObjectProtocol = NotificationCenter.default.addObserver(
+        forName: UITextField.textDidChangeNotification, object: nil, queue: nil
+    ) { notification in
+        guard ProcessInfo.processInfo.arguments.contains("--apple-ui-fixtures"),
+              let field = notification.object as? UITextField,
+              field.accessibilityIdentifier == "Ride search" || field.placeholder == "Search rides or lands" else { return }
+        let event: String
+        switch field.text ?? "" {
+        case "G": event = "native-exact-G"
+        case "Guardians": event = "native-exact-Guardians"
+        default: return
+        }
+        let uptimeMs = Int(ProcessInfo.processInfo.systemUptime * 1_000)
+        RideListView.rideSearchTimingLog.notice(
+            "event=\(event, privacy: .public) uptimeMs=\(uptimeMs, privacy: .public)"
+        )
+    }
+
     private func logRideSearchTiming(_ event: String) {
         guard !radarOnly, ProcessInfo.processInfo.arguments.contains("--apple-ui-fixtures") else { return }
-        if event == "search-mounted" { _ = Self.nativeEditingObserver }
+        if event == "search-mounted" {
+            _ = Self.nativeEditingObserver
+            _ = Self.nativeTextObserver
+        }
         let uptimeMs = Int(ProcessInfo.processInfo.systemUptime * 1_000)
         Self.rideSearchTimingLog.notice("event=\(event, privacy: .public) uptimeMs=\(uptimeMs, privacy: .public)")
     }
@@ -207,6 +230,8 @@ struct RideListView: View {
                             if oldQuery.isEmpty && !newQuery.isEmpty {
                                 logRideSearchTiming("first-query-nonempty")
                             }
+                            if newQuery == "G" { logRideSearchTiming("query-exact-G") }
+                            if newQuery == "Guardians" { logRideSearchTiming("query-exact-Guardians") }
                         }
                         .onReceive(NotificationCenter.default.publisher(for: UIResponder.keyboardWillShowNotification)) { _ in
                             logRideSearchTiming("keyboard-will-show")
