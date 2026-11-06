@@ -12,6 +12,9 @@ ROOT = Path(__file__).resolve().parent.parent
 FIXTURE_LIST_DIRECTORY = "PIVOT/Resources/RideArtworkTestFixtures"
 FIXTURE_INPUT_PREFIX = "$(SRCROOT)/PIVOT/Resources/RideIllustrations/"
 FIXTURE_OUTPUT_PREFIX = "$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/PIVOTArtworkTestOriginals/"
+FIXTURE_DIRECTORY_OUTPUT_SETTING = "PIVOT_ARTWORK_FIXTURE_DIRECTORY_OUTPUT"
+FIXTURE_DEBUG_DIRECTORY_OUTPUT = FIXTURE_OUTPUT_PREFIX.rstrip("/")
+FIXTURE_RELEASE_DIRECTORY_OUTPUT = "$(TEMP_DIR)/PIVOTArtworkTestOriginals-Release"
 # Run 290's single phase exceeded sandbox-exec's 65,535-byte compiled-profile
 # limit (108,178 bytes). Bound each independent phase rather than aggregating
 # lists in one profile. These are declaration limits, not a measurement of the
@@ -98,7 +101,7 @@ fi
 def fixture_phase_definition(index):
     input_list, output_list = fixture_list_paths(index)
     dependency = f'"{fixture_marker(index - 1)}",' if index else ""
-    outputs = (f'"{FIXTURE_OUTPUT_PREFIX.rstrip("/")}", ' if index == 0 else "") + f'"{fixture_marker(index)}",'
+    outputs = (f'"$({FIXTURE_DIRECTORY_OUTPUT_SETTING})", ' if index == 0 else "") + f'"{fixture_marker(index)}",'
     return (f"\t\t{fixture_phase_id(index)} /* {fixture_phase_name(index)} */ = {{isa = PBXShellScriptBuildPhase; "
         "alwaysOutOfDate = 1; buildActionMask = 2147483647; files = (); "
         f'inputFileListPaths = ("$(SRCROOT)/{input_list}",); inputPaths = ({dependency}); '
@@ -135,6 +138,15 @@ def validate_fixture_files(jpeg_files):
     for legacy in ("RideArtworkTestOriginals.xcfilelist", "RideArtworkTestOutputs.xcfilelist"):
         assert not (ROOT / "PIVOT/Resources" / legacy).exists(), "Remove the obsolete unbounded fixture list"
     project = (ROOT / "PIVOT.xcodeproj/project.pbxproj").read_text()
+    for config_id, name, directory in (("11", "Debug", FIXTURE_DEBUG_DIRECTORY_OUTPUT),
+                                       ("12", "Release", FIXTURE_RELEASE_DIRECTORY_OUTPUT)):
+        prefix = f"\t\tD000000000000000000000{config_id} /* {name} */ = "
+        configurations = [line for line in project.splitlines() if line.startswith(prefix)]
+        assert len(configurations) == 1
+        assert f'{FIXTURE_DIRECTORY_OUTPUT_SETTING} = "{directory}";' in configurations[0], (
+            f"The {name} fixture directory output must use the expected build location")
+    assert project.count(f"{FIXTURE_DIRECTORY_OUTPUT_SETTING} = ") == 2, (
+        "Only the app target's Debug and Release builds may declare the fixture directory output")
     assert fixture_build_phases(project) == [fixture_phase_definition(i) for i in range(len(groups))], (
         "Use separate exact bounded phases, direct final-path copies, first-phase directory creation, "
         "serial intermediate-file dependencies, fail-fast behavior and the Debug guard")

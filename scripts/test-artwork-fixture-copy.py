@@ -56,7 +56,7 @@ class FixtureDeclarationsTests(unittest.TestCase):
         self.assertEqual(len(inputs), len(set(inputs)))
         self.assertEqual(len(outputs), len(set(outputs)))
         phases = validator.fixture_build_phases(self.project)
-        directory = validator.FIXTURE_OUTPUT_PREFIX.rstrip("/")
+        directory = f"$({validator.FIXTURE_DIRECTORY_OUTPUT_SETTING})"
         self.assertEqual(sum(f'outputPaths = ("{directory}",' in p for p in phases), 1)
         self.assertNotIn('inputPaths = ("$(SRCROOT)', "\n".join(phases))
 
@@ -130,6 +130,13 @@ class FixtureDeclarationsTests(unittest.TestCase):
         self.assert_invalid("duplicate reference", project=self.project.replace(references[0], references[0] * 2, 1))
         self.assert_invalid("duplicate phase definition", project=self.project + "\n" + phases[-1])
         self.assert_invalid("sandbox disabled", project=self.project.replace("ENABLE_USER_SCRIPT_SANDBOXING = YES;", "ENABLE_USER_SCRIPT_SANDBOXING = NO;", 1))
+
+    def test_configuration_specific_fixture_directory_outputs_are_required(self):
+        setting = validator.FIXTURE_DIRECTORY_OUTPUT_SETTING
+        debug = f'{setting} = "{validator.FIXTURE_DEBUG_DIRECTORY_OUTPUT}";'
+        release = f'{setting} = "{validator.FIXTURE_RELEASE_DIRECTORY_OUTPUT}";'
+        self.assert_invalid("Release fixture directory in app bundle", project=self.project.replace(release, debug, 1))
+        self.assert_invalid("Debug fixture directory in temporaries", project=self.project.replace(debug, release, 1))
 
     def test_undeclared_writes_scans_and_unsafe_copy_strategies_are_rejected(self):
         for index in (0, len(self.groups) - 1):
