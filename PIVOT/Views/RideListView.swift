@@ -1,4 +1,9 @@
 import SwiftUI
+#if DEBUG && os(iOS)
+import Combine
+import OSLog
+import UIKit
+#endif
 
 struct RideListView: View {
     @Environment(\.pivotAccent) private var accent
@@ -13,6 +18,17 @@ struct RideListView: View {
     var nativeFooter: AnyView? = nil
     @State private var selectedRide: LiveRide?
     @FocusState private var searchFocused: Bool
+
+#if DEBUG && os(iOS)
+    private static let rideSearchTimingLog = Logger(subsystem: "com.noahmumbert.PIVOT",
+                                                    category: "ride-search-timing")
+
+    private func logRideSearchTiming(_ event: String) {
+        guard !radarOnly, ProcessInfo.processInfo.arguments.contains("--apple-ui-fixtures") else { return }
+        let uptimeMs = Int(ProcessInfo.processInfo.systemUptime * 1_000)
+        Self.rideSearchTimingLog.notice("event=\(event, privacy: .public) uptimeMs=\(uptimeMs, privacy: .public)")
+    }
+#endif
 
     private var rides: [LiveRide] {
         store.visibleRides(query: query, filter: radarOnly ? .radar : filter, sort: sort)
@@ -166,6 +182,23 @@ struct RideListView: View {
                         .focused($searchFocused)
                         .submitLabel(.search)
                         .onSubmit { searchFocused = false }
+#if DEBUG && os(iOS)
+                        .onAppear { logRideSearchTiming("search-mounted") }
+                        .onChange(of: searchFocused) { _, focused in
+                            if focused { logRideSearchTiming("focus-acquired") }
+                        }
+                        .onChange(of: query) { oldQuery, newQuery in
+                            if oldQuery.isEmpty && !newQuery.isEmpty {
+                                logRideSearchTiming("first-query-nonempty")
+                            }
+                        }
+                        .onReceive(NotificationCenter.default.publisher(for: UIResponder.keyboardWillShowNotification)) { _ in
+                            logRideSearchTiming("keyboard-will-show")
+                        }
+                        .onReceive(NotificationCenter.default.publisher(for: UIResponder.keyboardDidShowNotification)) { _ in
+                            logRideSearchTiming("keyboard-did-show")
+                        }
+#endif
 #if os(iOS)
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled()

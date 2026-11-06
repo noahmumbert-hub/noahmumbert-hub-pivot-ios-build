@@ -2120,6 +2120,8 @@ final class PIVOTUITests: XCTestCase {
         search.typeText("G")
         let inputCompletedAt = ProcessInfo.processInfo.systemUptime
         let typedPrefix = search.value as? String
+        let readbackCompletedAt = ProcessInfo.processInfo.systemUptime
+        print("ARTWORK_RIDE_SEARCH_ACTION firstTapUptimeMs=\(Int(firstTapAt * 1_000)) tapCompletedUptimeMs=\(Int(tapCompletedAt * 1_000)) inputCompletedUptimeMs=\(Int(inputCompletedAt * 1_000)) readbackCompletedUptimeMs=\(Int(readbackCompletedAt * 1_000)) exactPrefixReceived=\(typedPrefix == "G")")
         if typedPrefix != "G" || inputCompletedAt > focusDeadline {
             print("ARTWORK_RIDE_SEARCH_INPUT_FAILURE tapMs=\(Int((tapCompletedAt - firstTapAt) * 1_000)) inputMs=\(Int((inputCompletedAt - tapCompletedAt) * 1_000)) actionMs=\(Int((inputCompletedAt - firstTapAt) * 1_000)) readbackMs=\(Int((ProcessInfo.processInfo.systemUptime - firstTapAt) * 1_000)) typedPrefix=\(typedPrefix ?? "<absent>") preparedFrame=\(searchFrame) keyboard=\(app.keyboards.firstMatch.exists) searchHittable=\(search.isHittable)")
             screenshot("Artwork ride search did not accept input within five seconds", app: app)

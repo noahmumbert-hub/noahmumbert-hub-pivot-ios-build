@@ -357,6 +357,18 @@ xcodebuild -project PIVOT.xcodeproj -scheme PIVOT \
   "${test_options[@]}" -jobs 3 \
   CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO DEVELOPMENT_TEAM= \
   test 2>&1 | tee build/native-tests.log || test_exit=$?
+if [[ "${PIVOT_TEST_SCOPE:-all}" == "artwork-downloads" ]]; then
+  # The test and app report the same simulator uptime. Preserve only this
+  # fixture's event names/timestamps so a first-use keyboard delay can be
+  # separated from XCTest's post-tap idle wait without logging search text.
+  printf 'ARTWORK_RIDE_SEARCH_APP_TIMING_BEGIN\n' | tee -a build/native-tests.log
+  if ! xcrun simctl spawn "$simulator_id" log show --style compact --last 45m \
+      --predicate 'subsystem == "com.noahmumbert.PIVOT" AND category == "ride-search-timing"' \
+      2>&1 | tee -a build/native-tests.log; then
+    printf 'ARTWORK_RIDE_SEARCH_APP_TIMING_COLLECTION_FAILED\n' | tee -a build/native-tests.log
+  fi
+  printf 'ARTWORK_RIDE_SEARCH_APP_TIMING_END\n' | tee -a build/native-tests.log
+fi
 if [[ -n "$startup_observer_pid" ]]; then
   touch build/map-startup-observer.stop
   wait "$startup_observer_pid" || true
