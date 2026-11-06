@@ -2102,7 +2102,37 @@ final class PIVOTUITests: XCTestCase {
     func testGeneratedRideIllustrationLoadsWithCreditsAndPreservesWaits() throws {
         let app = rootFixture(["--reference-ui-park=5", "--ui-dark"])
         let search = app.textFields["Ride search"]
-        reveal(search, in: app); search.tap(); search.typeText("Guardians\n")
+        reveal(search, in: app)
+        XCTAssertTrue(search.isHittable)
+        search.tap()
+        // This method tests illustration, credit, and wait behavior. A separate
+        // search test requires one tap to open the keyboard. On Pro Max, one
+        // repeated artwork run left this field visible but without keyboard
+        // focus after XCTest's tap, so verify focus before entering text.
+        let focusDeadline = ProcessInfo.processInfo.systemUptime + 5
+        let focusedSearch = app.textFields.matching(NSPredicate(
+            format: "identifier == %@ AND hasKeyboardFocus == 1", "Ride search")).firstMatch
+        let focused = NSPredicate { _, _ in focusedSearch.exists }
+        func waitForFocus(_ timeout: TimeInterval) -> XCTWaiter.Result {
+            XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: focused, object: nil)], timeout: timeout)
+        }
+        var focusResult = waitForFocus(2)
+        if focusResult != .completed {
+            XCTAssertTrue(search.isHittable, "Ride search must remain reachable for a real focus tap")
+            search.tap()
+            let remaining = focusDeadline - ProcessInfo.processInfo.systemUptime
+            focusResult = remaining > 0 ? waitForFocus(remaining) : .timedOut
+        }
+        if focusResult != .completed {
+            print("ARTWORK_RIDE_SEARCH_FOCUS_FAILURE originalFiveSecondResult=\(focusResult.rawValue) keyboard=\(app.keyboards.firstMatch.exists) searchHittable=\(search.isHittable)")
+            screenshot("Artwork ride search did not gain keyboard focus", app: app)
+            let hierarchy = XCTAttachment(string: app.debugDescription)
+            hierarchy.name = "Artwork ride search focus failure state"
+            hierarchy.lifetime = .keepAlways
+            add(hierarchy)
+        }
+        XCTAssertEqual(focusResult, .completed, "Ride search must have keyboard focus before typing")
+        search.typeText("Guardians\n")
         let guardians = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Guardians of the Galaxy'")).firstMatch
         reveal(guardians, in: app)
         XCTAssertTrue(guardians.label.contains("45 minute wait"))
@@ -3276,9 +3306,30 @@ final class PIVOTUITests: XCTestCase {
         let pause = app.buttons["pause-artwork-downloads"]
         XCTAssertTrue(pause.waitForExistence(timeout: 5))
         pause.tap()
+        let pauseDeadline = ProcessInfo.processInfo.systemUptime + 5
+        // The status follows the changing action row. At largest type on Pro
+        // Max it is below the visible Form, which XCTest does not materialize
+        // until the foreground sheet scrolls. The swipe consumes the original
+        // five-second status deadline rather than adding time to it.
+        app.swipeUp()
+        let downloadsScreen = app.navigationBars["Artwork downloads"]
+        XCTAssertTrue(downloadsScreen.exists, "The artwork download sheet must stay open after revealing pause status")
         let message = app.staticTexts["artwork-download-message"]
         let paused = NSPredicate { _, _ in message.exists && message.label.contains("paused") }
-        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: paused, object: nil)], timeout: 5), .completed)
+        let remaining = pauseDeadline - ProcessInfo.processInfo.systemUptime
+        let pauseResult: XCTWaiter.Result = remaining > 0
+            ? XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: paused, object: nil)], timeout: remaining)
+            : .timedOut
+        if pauseResult != .completed {
+            let laterMessage = message.exists ? message.label : "<absent>"
+            print("ARTWORK_PAUSE_STATUS_FAILURE originalFiveSecondResult=\(pauseResult.rawValue) elapsedMs=\(Int((ProcessInfo.processInfo.systemUptime - (pauseDeadline - 5)) * 1_000)) laterMessage=\(laterMessage) downloadAction=\(app.buttons["download-all-artwork"].exists) pauseAction=\(pause.exists)")
+            screenshot("Artwork pause status missing at original deadline", app: app)
+            let hierarchy = XCTAttachment(string: app.debugDescription)
+            hierarchy.name = "Artwork pause status failure state"
+            hierarchy.lifetime = .keepAlways
+            add(hierarchy)
+        }
+        XCTAssertEqual(pauseResult, .completed)
         screenshot("Downloaded artwork batch paused without removing originals", app: app)
         app.terminate()
         app.launchEnvironment["PIVOT_ARTWORK_FIXTURE"] = "originals"
