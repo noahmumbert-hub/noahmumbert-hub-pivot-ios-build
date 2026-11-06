@@ -2104,22 +2104,24 @@ final class PIVOTUITests: XCTestCase {
         let search = app.textFields["Ride search"]
         reveal(search, in: app)
         XCTAssertTrue(search.isHittable)
-        // Resolve the exact field and its tap point before starting the clock.
-        // An app-relative coordinate avoids another field lookup during tap;
-        // typeText on the app requires a focused descendant. The subsequent
-        // exact field readback proves that the intended search received G.
-        let fieldCenter = CGPoint(x: search.frame.midX, y: search.frame.midY)
-        let appFrame = app.frame
-        let tapPoint = app.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(
-            dx: fieldCenter.x - appFrame.minX, dy: fieldCenter.y - appFrame.minY))
+        // A virtualized List can report a hittable field while its frame is
+        // still moving. Finish that preparation before measuring interaction.
+        waitForSettledFrames([search])
+        let searchFrame = search.frame
+        assertContained(searchFrame, in: safeContentViewport(in: app),
+                        "The entire Ride search field must be visible before its tap")
+        // Target the native TextField itself. The app-relative coordinate
+        // missed focus on SE; typing into the exact field both requires focus
+        // and verifies that a different control did not receive the input.
         let firstTapAt = ProcessInfo.processInfo.systemUptime
         let focusDeadline = firstTapAt + 5
-        tapPoint.tap()
-        app.typeText("G")
+        search.tap()
+        let tapCompletedAt = ProcessInfo.processInfo.systemUptime
+        search.typeText("G")
         let inputCompletedAt = ProcessInfo.processInfo.systemUptime
         let typedPrefix = search.value as? String
         if typedPrefix != "G" || inputCompletedAt > focusDeadline {
-            print("ARTWORK_RIDE_SEARCH_INPUT_FAILURE actionMs=\(Int((inputCompletedAt - firstTapAt) * 1_000)) readbackMs=\(Int((ProcessInfo.processInfo.systemUptime - firstTapAt) * 1_000)) typedPrefix=\(typedPrefix ?? "<absent>") keyboard=\(app.keyboards.firstMatch.exists) searchHittable=\(search.isHittable)")
+            print("ARTWORK_RIDE_SEARCH_INPUT_FAILURE tapMs=\(Int((tapCompletedAt - firstTapAt) * 1_000)) inputMs=\(Int((inputCompletedAt - tapCompletedAt) * 1_000)) actionMs=\(Int((inputCompletedAt - firstTapAt) * 1_000)) readbackMs=\(Int((ProcessInfo.processInfo.systemUptime - firstTapAt) * 1_000)) typedPrefix=\(typedPrefix ?? "<absent>") preparedFrame=\(searchFrame) keyboard=\(app.keyboards.firstMatch.exists) searchHittable=\(search.isHittable)")
             screenshot("Artwork ride search did not accept input within five seconds", app: app)
             let hierarchy = XCTAttachment(string: app.debugDescription)
             hierarchy.name = "Artwork ride search input failure state"
