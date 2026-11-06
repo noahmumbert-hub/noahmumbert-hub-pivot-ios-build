@@ -3301,8 +3301,21 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(resume.isHittable)
         resume.tap()
         // The count row is above the action in the largest-text Form.
-        returnToTop(app)
         let count = app.staticTexts["artwork-download-count"]
+        let downloadsScreen = app.navigationBars["Artwork downloads"]
+        let viewport = app.frame.insetBy(dx: 1, dy: 1)
+        func countIsVisible() -> Bool {
+            guard count.exists else { return false }
+            let frame = count.frame
+            return !frame.isEmpty && viewport.contains(CGPoint(x: frame.midX, y: frame.midY))
+        }
+        for _ in 0..<5 {
+            XCTAssertTrue(downloadsScreen.exists, "The artwork download sheet must remain open while scrolling to the saved count")
+            if countIsVisible() { break }
+            app.swipeDown()
+        }
+        XCTAssertTrue(downloadsScreen.exists, "The artwork download sheet must remain open for the saved-count check")
+        XCTAssertTrue(countIsVisible(), "The saved-count row must be visible after scrolling")
         let complete = NSPredicate { _, _ in count.exists && count.label == "2 of 2 illustrations saved" }
         XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: complete, object: nil)], timeout: 15), .completed)
         screenshot("Downloaded artwork batch resumes original files", app: app)
