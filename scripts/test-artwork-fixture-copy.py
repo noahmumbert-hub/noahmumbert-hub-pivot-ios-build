@@ -60,6 +60,29 @@ class FixtureDeclarationsTests(unittest.TestCase):
         self.assertEqual(sum(f'outputPaths = ("{directory}",' in p for p in phases), 1)
         self.assertNotIn('inputPaths = ("$(SRCROOT)', "\n".join(phases))
 
+    def test_all_output_paths_resolve_outside_release_app_and_inside_debug_app(self):
+        setting = validator.FIXTURE_DIRECTORY_OUTPUT_SETTING
+        reference = f"$({setting})"
+        phases = validator.fixture_build_phases(self.project)
+        self.assertIn(f'outputPaths = ("{reference}",', phases[0])
+        declared = [line for index in range(len(self.groups))
+            for line in self.lists[validator.fixture_list_paths(index)[1]].splitlines()]
+        self.assertEqual(len(declared), 2164)
+        self.assertTrue(all(line.startswith(reference + "/") for line in declared))
+        for configuration, root, expected_directory in (
+            ("Debug", validator.FIXTURE_DEBUG_DIRECTORY_OUTPUT, "/build/Products/PIVOT.app/PIVOTArtworkTestOriginals"),
+            ("Release", validator.FIXTURE_RELEASE_DIRECTORY_OUTPUT, "/build/Intermediates/PIVOTArtworkTestOriginals-Release"),
+        ):
+            directory = (root.replace("$(TARGET_BUILD_DIR)", "/build/Products")
+                .replace("$(UNLOCALIZED_RESOURCES_FOLDER_PATH)", "PIVOT.app")
+                .replace("$(TEMP_DIR)", "/build/Intermediates"))
+            self.assertEqual(directory, expected_directory, configuration)
+            resolved = [line.replace(reference, directory, 1) for line in declared]
+            self.assertEqual(set(resolved), {f"{directory}/{name}" for name in self.names}, configuration)
+            self.assertEqual(len(resolved), len(set(resolved)), configuration)
+            if configuration == "Release":
+                self.assertTrue(all(not line.startswith("/build/Products/PIVOT.app/") for line in resolved))
+
     def assert_invalid(self, label, lists=None, project=None):
         global INVALID_CONFIGURATIONS
         with self.subTest(label=label), tempfile.TemporaryDirectory(prefix="fixture-declarations-") as temporary:

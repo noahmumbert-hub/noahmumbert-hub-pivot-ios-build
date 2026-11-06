@@ -11,10 +11,10 @@ ROOT = Path(__file__).resolve().parent.parent
 
 FIXTURE_LIST_DIRECTORY = "PIVOT/Resources/RideArtworkTestFixtures"
 FIXTURE_INPUT_PREFIX = "$(SRCROOT)/PIVOT/Resources/RideIllustrations/"
-FIXTURE_OUTPUT_PREFIX = "$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/PIVOTArtworkTestOriginals/"
 FIXTURE_DIRECTORY_OUTPUT_SETTING = "PIVOT_ARTWORK_FIXTURE_DIRECTORY_OUTPUT"
-FIXTURE_DEBUG_DIRECTORY_OUTPUT = FIXTURE_OUTPUT_PREFIX.rstrip("/")
+FIXTURE_DEBUG_DIRECTORY_OUTPUT = "$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/PIVOTArtworkTestOriginals"
 FIXTURE_RELEASE_DIRECTORY_OUTPUT = "$(TEMP_DIR)/PIVOTArtworkTestOriginals-Release"
+FIXTURE_OUTPUT_PREFIX = f"$({FIXTURE_DIRECTORY_OUTPUT_SETTING})/"
 # Run 290's single phase exceeded sandbox-exec's 65,535-byte compiled-profile
 # limit (108,178 bytes). Bound each independent phase rather than aggregating
 # lists in one profile. These are declaration limits, not a measurement of the
