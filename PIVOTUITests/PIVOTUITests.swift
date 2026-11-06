@@ -2105,35 +2105,32 @@ final class PIVOTUITests: XCTestCase {
         reveal(search, in: app)
         XCTAssertTrue(search.isHittable)
         search.tap()
-        // This method tests illustration, credit, and wait behavior. A separate
-        // search test requires one tap to open the keyboard. On Pro Max, one
-        // repeated artwork run left this field visible but without keyboard
-        // focus after XCTest's tap, so verify focus before entering text.
+        // A separate search test requires one tap to open the keyboard. This
+        // method can retry one real tap, then proves the exact field accepted
+        // input within five seconds. XCTest's typeText itself requires keyboard
+        // focus; focus-property polling missed it in the Pro Max diagnostics.
         let focusDeadline = ProcessInfo.processInfo.systemUptime + 5
-        // XCUIElementAttributes.hasFocus is XCTest's supported focus state.
-        // The hasKeyboardFocus query can miss a field that the accessibility
-        // hierarchy already reports as Keyboard Focused.
-        let focused = NSPredicate { _, _ in search.hasFocus }
-        func waitForFocus(_ timeout: TimeInterval) -> XCTWaiter.Result {
-            XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: focused, object: nil)], timeout: timeout)
-        }
-        var focusResult = waitForFocus(2)
-        if focusResult != .completed {
-            XCTAssertTrue(search.isHittable, "Ride search must remain reachable for a real focus tap")
+        if !app.keyboards.firstMatch.exists {
             search.tap()
-            let remaining = focusDeadline - ProcessInfo.processInfo.systemUptime
-            focusResult = remaining > 0 ? waitForFocus(remaining) : .timedOut
         }
-        if focusResult != .completed {
-            print("ARTWORK_RIDE_SEARCH_FOCUS_FAILURE originalFiveSecondResult=\(focusResult.rawValue) keyboard=\(app.keyboards.firstMatch.exists) searchHittable=\(search.isHittable)")
-            screenshot("Artwork ride search did not gain keyboard focus", app: app)
+        XCTAssertLessThan(ProcessInfo.processInfo.systemUptime, focusDeadline,
+                          "Ride search must be ready for input within five seconds of the first tap")
+        search.typeText("G")
+        let typedPrefix = search.value as? String
+        let inputConfirmedAt = ProcessInfo.processInfo.systemUptime
+        if typedPrefix != "G" || inputConfirmedAt > focusDeadline {
+            print("ARTWORK_RIDE_SEARCH_INPUT_FAILURE elapsedMs=\(Int((inputConfirmedAt - (focusDeadline - 5)) * 1_000)) typedPrefix=\(typedPrefix ?? "<absent>") keyboard=\(app.keyboards.firstMatch.exists) searchHittable=\(search.isHittable)")
+            screenshot("Artwork ride search did not accept input within five seconds", app: app)
             let hierarchy = XCTAttachment(string: app.debugDescription)
-            hierarchy.name = "Artwork ride search focus failure state"
+            hierarchy.name = "Artwork ride search input failure state"
             hierarchy.lifetime = .keepAlways
             add(hierarchy)
         }
-        XCTAssertEqual(focusResult, .completed, "Ride search must have keyboard focus before typing")
-        search.typeText("Guardians\n")
+        XCTAssertEqual(typedPrefix, "G", "The exact Ride search field must receive the keyboard input")
+        XCTAssertLessThanOrEqual(inputConfirmedAt, focusDeadline, "Ride search must accept input within five seconds of the first tap")
+        search.typeText("uardians")
+        XCTAssertEqual(search.value as? String, "Guardians")
+        search.typeText("\n")
         let guardians = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Guardians of the Galaxy'")).firstMatch
         reveal(guardians, in: app)
         XCTAssertTrue(guardians.label.contains("45 minute wait"))
