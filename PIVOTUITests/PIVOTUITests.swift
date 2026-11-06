@@ -2104,22 +2104,22 @@ final class PIVOTUITests: XCTestCase {
         let search = app.textFields["Ride search"]
         reveal(search, in: app)
         XCTAssertTrue(search.isHittable)
-        search.tap()
-        // A separate search test requires one tap to open the keyboard. This
-        // method can retry one real tap, then proves the exact field accepted
-        // input within five seconds. XCTest's typeText itself requires keyboard
-        // focus; focus-property polling missed it in the Pro Max diagnostics.
-        let focusDeadline = ProcessInfo.processInfo.systemUptime + 5
-        if !app.keyboards.firstMatch.exists {
-            search.tap()
-        }
-        XCTAssertLessThan(ProcessInfo.processInfo.systemUptime, focusDeadline,
-                          "Ride search must be ready for input within five seconds of the first tap")
-        search.typeText("G")
+        // Resolve the exact field and its tap point before starting the clock.
+        // An app-relative coordinate avoids another field lookup during tap;
+        // typeText on the app requires a focused descendant. The subsequent
+        // exact field readback proves that the intended search received G.
+        let fieldCenter = CGPoint(x: search.frame.midX, y: search.frame.midY)
+        let appFrame = app.frame
+        let tapPoint = app.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(
+            dx: fieldCenter.x - appFrame.minX, dy: fieldCenter.y - appFrame.minY))
+        let firstTapAt = ProcessInfo.processInfo.systemUptime
+        let focusDeadline = firstTapAt + 5
+        tapPoint.tap()
+        app.typeText("G")
+        let inputCompletedAt = ProcessInfo.processInfo.systemUptime
         let typedPrefix = search.value as? String
-        let inputConfirmedAt = ProcessInfo.processInfo.systemUptime
-        if typedPrefix != "G" || inputConfirmedAt > focusDeadline {
-            print("ARTWORK_RIDE_SEARCH_INPUT_FAILURE elapsedMs=\(Int((inputConfirmedAt - (focusDeadline - 5)) * 1_000)) typedPrefix=\(typedPrefix ?? "<absent>") keyboard=\(app.keyboards.firstMatch.exists) searchHittable=\(search.isHittable)")
+        if typedPrefix != "G" || inputCompletedAt > focusDeadline {
+            print("ARTWORK_RIDE_SEARCH_INPUT_FAILURE actionMs=\(Int((inputCompletedAt - firstTapAt) * 1_000)) readbackMs=\(Int((ProcessInfo.processInfo.systemUptime - firstTapAt) * 1_000)) typedPrefix=\(typedPrefix ?? "<absent>") keyboard=\(app.keyboards.firstMatch.exists) searchHittable=\(search.isHittable)")
             screenshot("Artwork ride search did not accept input within five seconds", app: app)
             let hierarchy = XCTAttachment(string: app.debugDescription)
             hierarchy.name = "Artwork ride search input failure state"
@@ -2127,7 +2127,7 @@ final class PIVOTUITests: XCTestCase {
             add(hierarchy)
         }
         XCTAssertEqual(typedPrefix, "G", "The exact Ride search field must receive the keyboard input")
-        XCTAssertLessThanOrEqual(inputConfirmedAt, focusDeadline, "Ride search must accept input within five seconds of the first tap")
+        XCTAssertLessThanOrEqual(inputCompletedAt, focusDeadline, "Ride search must accept input within five seconds of the first tap")
         search.typeText("uardians")
         XCTAssertEqual(search.value as? String, "Guardians")
         search.typeText("\n")
@@ -3231,6 +3231,35 @@ final class PIVOTUITests: XCTestCase {
         return action
     }
 
+    /// Leave the download control high enough that the progress row and pause
+    /// message can appear below it at largest type. Do this before starting a
+    /// slow batch, so status observation needs no full-height flick afterward.
+    private func positionArtworkDownloadActionForPause(_ action: XCUIElement, in app: XCUIApplication) {
+        let viewport = safeContentViewport(in: app)
+        let appFrame = app.frame
+        let desiredTop = viewport.minY + 24
+        for _ in 0..<4 {
+            guard action.exists else { XCTFail("The download action disappeared before the batch started"); return }
+            let frame = action.frame
+            if frame.minY >= viewport.minY + 4,
+               frame.minY <= viewport.minY + 72,
+               action.isHittable { return }
+            let displacement = frame.minY - desiredTop
+            let movement = min(viewport.height * 0.55, max(20, abs(displacement)))
+                * (displacement >= 0 ? 1 : -1)
+            let x = verticalPanX(in: viewport)
+            let startY = viewport.midY + movement / 2
+            let start = app.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(
+                dx: x - appFrame.minX, dy: startY - appFrame.minY))
+            start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: 0, dy: -movement)),
+                        withVelocity: .slow, thenHoldForDuration: 0.2)
+        }
+        let finalFrame = action.frame
+        XCTAssertTrue(action.isHittable && finalFrame.minY >= viewport.minY + 4
+                      && finalFrame.minY <= viewport.minY + 72,
+                      "The download action must sit near the top of the visible Form before the timed pause. Frame \(finalFrame), viewport \(viewport)")
+    }
+
     func testArtworkDownloadsFreshOfflineUpgradeAndPersistentReuse() {
         let directory = UUID().uuidString
         let app = rootFixture(artworkMode: "offline", artworkDirectory: directory)
@@ -3300,25 +3329,27 @@ final class PIVOTUITests: XCTestCase {
         openArtworkDownloadSettings(app)
         let download = app.buttons["download-all-artwork"]
         reveal(download, in: app)
+        positionArtworkDownloadActionForPause(download, in: app)
+        print("ARTWORK_PAUSE_PREP downloadFrame=\(download.frame) viewport=\(safeContentViewport(in: app))")
         download.tap()
         let pause = app.buttons["pause-artwork-downloads"]
         XCTAssertTrue(pause.waitForExistence(timeout: 5))
+        XCTAssertTrue(pause.isHittable, "The pause action must stay visible after the batch starts")
+        print("ARTWORK_PAUSE_PREP pauseFrame=\(pause.frame)")
+        let pauseStartedAt = ProcessInfo.processInfo.systemUptime
         pause.tap()
-        let pauseDeadline = ProcessInfo.processInfo.systemUptime + 5
-        // The status follows the changing action row. At largest type on Pro
-        // Max it is below the visible Form, which XCTest does not materialize
-        // until the foreground sheet scrolls. The swipe consumes the original
-        // five-second status deadline rather than adding time to it.
-        app.swipeUp()
+        let pauseDeadline = pauseStartedAt + 5
         let message = app.staticTexts["artwork-download-message"]
-        let paused = NSPredicate { _, _ in message.exists && message.label.contains("paused") }
+        let paused = NSPredicate { _, _ in
+            message.exists && message.label == "Download paused. Saved artwork stays available."
+        }
         let remaining = pauseDeadline - ProcessInfo.processInfo.systemUptime
         let pauseResult: XCTWaiter.Result = remaining > 0
             ? XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: paused, object: nil)], timeout: remaining)
             : .timedOut
         if pauseResult != .completed {
             let laterMessage = message.exists ? message.label : "<absent>"
-            print("ARTWORK_PAUSE_STATUS_FAILURE originalFiveSecondResult=\(pauseResult.rawValue) elapsedMs=\(Int((ProcessInfo.processInfo.systemUptime - (pauseDeadline - 5)) * 1_000)) laterMessage=\(laterMessage) downloadAction=\(app.buttons["download-all-artwork"].exists) pauseAction=\(pause.exists)")
+            print("ARTWORK_PAUSE_STATUS_FAILURE originalFiveSecondResult=\(pauseResult.rawValue) elapsedMs=\(Int((ProcessInfo.processInfo.systemUptime - pauseStartedAt) * 1_000)) laterMessage=\(laterMessage) downloadAction=\(app.buttons["download-all-artwork"].exists) pauseAction=\(pause.exists)")
             screenshot("Artwork pause status missing at original deadline", app: app)
             let hierarchy = XCTAttachment(string: app.debugDescription)
             hierarchy.name = "Artwork pause status failure state"
