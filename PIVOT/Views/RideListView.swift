@@ -23,8 +23,24 @@ struct RideListView: View {
     private static let rideSearchTimingLog = Logger(subsystem: "com.noahmumbert.PIVOT",
                                                     category: "ride-search-timing")
 
+    // NotificationCenter delivers this native editing event on the posting
+    // thread. It separates UITextField's editing start from SwiftUI's later
+    // FocusState observation without changing the field's touch handling.
+    private static let nativeEditingObserver: NSObjectProtocol = NotificationCenter.default.addObserver(
+        forName: UITextField.textDidBeginEditingNotification, object: nil, queue: nil
+    ) { notification in
+        guard let field = notification.object as? UITextField else { return }
+        let isRideSearch = field.accessibilityIdentifier == "Ride search"
+            || field.placeholder == "Search rides or lands"
+        let uptimeMs = Int(ProcessInfo.processInfo.systemUptime * 1_000)
+        RideListView.rideSearchTimingLog.notice(
+            "event=native-begin-editing isRideSearch=\(isRideSearch, privacy: .public) uptimeMs=\(uptimeMs, privacy: .public)"
+        )
+    }
+
     private func logRideSearchTiming(_ event: String) {
         guard !radarOnly, ProcessInfo.processInfo.arguments.contains("--apple-ui-fixtures") else { return }
+        if event == "search-mounted" { _ = Self.nativeEditingObserver }
         let uptimeMs = Int(ProcessInfo.processInfo.systemUptime * 1_000)
         Self.rideSearchTimingLog.notice("event=\(event, privacy: .public) uptimeMs=\(uptimeMs, privacy: .public)")
     }
