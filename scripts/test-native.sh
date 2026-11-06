@@ -163,6 +163,13 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testGeneratedRideIllustrationLoadsWithCreditsAndPreservesWaits
       -test-iterations 3
     ) ;;
+  ride-search-timing)
+    # Non-qualifying cold-start diagnostic. The original five-second Ride
+    # search assertion and all downstream checks remain in this one method.
+    test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testGeneratedRideIllustrationLoadsWithCreditsAndPreservesWaits
+      -test-iterations 3
+    ) ;;
   artwork-delivery)
     test_options+=(
       -only-testing:PIVOTTests/PIVOTTests/testGeneratedIllustrationsAreBundledBoundedAndAttributed
@@ -333,7 +340,7 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testNativeClustersZoomAndCoLocatedPlacesRemainSelectable
     ) ;;
   *)
-    echo 'Unsupported PIVOT_TEST_SCOPE; use all, artwork-downloads, map-recovery, release-recovery, map-search, history-details, chart-recovery, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, or park-picker.' >&2
+    echo 'Unsupported PIVOT_TEST_SCOPE; use all, artwork-downloads, ride-search-timing, map-recovery, release-recovery, map-search, history-details, chart-recovery, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, or park-picker.' >&2
     exit 1 ;;
 esac
 python3 - <<'PY'
@@ -357,7 +364,7 @@ xcodebuild -project PIVOT.xcodeproj -scheme PIVOT \
   "${test_options[@]}" -jobs 3 \
   CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO DEVELOPMENT_TEAM= \
   test 2>&1 | tee build/native-tests.log || test_exit=$?
-if [[ "${PIVOT_TEST_SCOPE:-all}" == "artwork-downloads" ]]; then
+if [[ "${PIVOT_TEST_SCOPE:-all}" == "artwork-downloads" || "${PIVOT_TEST_SCOPE:-all}" == "ride-search-timing" ]]; then
   # The test and app report the same simulator uptime. Preserve only this
   # fixture's event names/timestamps so a first-use keyboard delay can be
   # separated from XCTest's post-tap idle wait without logging search text.

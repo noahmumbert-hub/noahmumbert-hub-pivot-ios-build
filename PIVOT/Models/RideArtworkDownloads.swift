@@ -2,6 +2,9 @@ import Foundation
 import CryptoKit
 import ImageIO
 import Combine
+#if DEBUG && os(iOS)
+import OSLog
+#endif
 
 enum RideArtworkVariant: String, Sendable { case thumbnail, detail }
 
@@ -304,6 +307,22 @@ actor RideArtworkFileStore {
 
 @MainActor
 final class RideArtworkDownloads: ObservableObject {
+#if DEBUG && os(iOS)
+    private static let searchTimingLog = Logger(subsystem: "com.noahmumbert.PIVOT",
+                                                category: "ride-search-timing")
+
+    private func recordThumbnailTiming(_ event: String, asset: RideArtworkAsset) {
+        guard asset.variant == .thumbnail,
+              ProcessInfo.processInfo.arguments.contains("--apple-ui-fixtures") else { return }
+        let uptimeMs = Int(ProcessInfo.processInfo.systemUptime * 1_000)
+        Self.searchTimingLog.notice(
+            "event=\(event, privacy: .public) artworkID=\(asset.artworkID, privacy: .public) activeCount=\(self.downloading.count, privacy: .public) uptimeMs=\(uptimeMs, privacy: .public)"
+        )
+    }
+#else
+    private func recordThumbnailTiming(_ event: String, asset: RideArtworkAsset) {}
+#endif
+
     static let shared: RideArtworkDownloads = {
 #if DEBUG
         if let fixture = RideArtworkUITestFixture.make() { return fixture }
@@ -339,15 +358,24 @@ final class RideArtworkDownloads: ObservableObject {
         if localURLs[asset.sha256] != nil { return true }
         if !retry && failures[asset.sha256] != nil { return false }
         if tasks[asset.sha256] == nil {
+            recordThumbnailTiming("thumbnail-request-start", asset: asset)
             failures[asset.sha256] = nil
             downloading.insert(asset.sha256)
+            recordThumbnailTiming("thumbnail-start-published", asset: asset)
             tasks[asset.sha256] = Task { [weak self, store] in
                 guard let self else { return }
-                do { self.localURLs[asset.sha256] = try await store.load(asset) }
-                catch { self.failures[asset.sha256] = (error as? RideArtworkDownloadError) ?? .networkUnavailable }
+                do {
+                    let local = try await store.load(asset)
+                    self.recordThumbnailTiming("thumbnail-load-complete", asset: asset)
+                    self.localURLs[asset.sha256] = local
+                } catch {
+                    self.recordThumbnailTiming("thumbnail-load-failed", asset: asset)
+                    self.failures[asset.sha256] = (error as? RideArtworkDownloadError) ?? .networkUnavailable
+                }
                 self.storedBytes = (try? await store.storedBytes()) ?? self.storedBytes
                 self.downloading.remove(asset.sha256)
                 self.tasks[asset.sha256] = nil
+                self.recordThumbnailTiming("thumbnail-end-published", asset: asset)
             }
         }
         await tasks[asset.sha256]?.value
