@@ -4,13 +4,15 @@ Add this source in SideStore → Sources → +:
 
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 
-Current update: **1.18.3 / build 100.177.1**, iOS 17.0+.
+Current update: **1.18.5 / build 100.328.1**, iOS 17.0+.
 
-Waits uses less space between the park card and Current rides, with smaller Recent observed waits controls and less vertical padding. Text keeps its normal size and expands with Dynamic Type.
+Illustrations now download separately so future app updates can stay small. All 1,082 accepted illustrations retain their original bytes, exact ride identities and credits.
 
-Map shows current waits when a fresh provider response confirms an unchanged value. Feed status and refresh are available on the map, and refresh continues in full screen and resumes when returning to the app. Failed or expired responses still withhold unverified waits.
+Internet is needed once for artwork, including illustrations previously bundled in 1.18.4. The old app bundle is replaced during an update, so a direct upgrade cannot migrate those images. Photos or placeholders remain available while an illustration is not yet saved. In Settings → Artwork downloads, you can save all originals (about 219 MB), pause, and resume.
 
-IPA SHA-256: `c02d0b9f9e40abb5dfafde2c5ae960f10e752646efb74c545e007f1d3ffe4b3d`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/41402012227).
+Verified downloads remain available offline across ordinary app updates and are reused without downloading them again. New artwork downloads pause when storage is tight; valid saved originals are kept. Keep PIVOT installed and use the same signing identity to retain saved artwork and app data. Existing park cards, live waits, Map behavior, planning, accessibility layouts and attribution remain included.
+
+IPA SHA-256: `cca984c583ea412054b8148516aea2badca45d1f943e7d307faeac7c2175b879`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/42311737865).
 The unsigned IPA preserves `com.noahmumbert.PIVOT` and its Live Activity extension.
 Install as an update using the same signing identity; keep the existing app installed to retain saved data.
 Native unit and simulator UI tests passed for this build. Physical SideStore installation remains untested.
