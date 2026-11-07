@@ -161,9 +161,14 @@ struct PivotIconButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .frame(width: 44, height: 44)
-            .background(Color.pivotSurfaceRaised.opacity(configuration.isPressed ? 0.65 : 1))
-            .overlay(Circle().stroke(Color.pivotBorder, lineWidth: 1))
-            .clipShape(Circle())
+            .background {
+                Circle().fill(Color.pivotSurfaceRaised.opacity(configuration.isPressed ? 0.65 : 1))
+            }
+            .overlay {
+                Circle().strokeBorder(Color.pivotBorder, lineWidth: 1)
+                    .allowsHitTesting(false)
+            }
+            .contentShape(Circle())
             .scaleEffect(configuration.isPressed ? 0.95 : 1)
     }
 }

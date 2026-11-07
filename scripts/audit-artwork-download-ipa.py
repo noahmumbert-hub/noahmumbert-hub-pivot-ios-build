@@ -15,7 +15,7 @@ sys.dont_write_bytecode = True
 root, ipa, info_path = map(Path, sys.argv[1:])
 info = json.loads(info_path.read_text())
 head = subprocess.check_output(['git', '-C', str(root), 'rev-parse', 'HEAD'], text=True).strip()
-assert head == info['commit'] and info['version'] == '1.18.5'
+assert head == info['commit'] and info['version'] == '1.18.6'
 assert info['signed'] is False
 assert info['appBinaryHeadroomBytes'] == 104857600 - ipa.stat().st_size >= 32 * 1024 * 1024
 spec = importlib.util.spec_from_file_location('publisher', root / 'scripts/publish-sidestore.py')

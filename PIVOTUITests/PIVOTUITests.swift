@@ -3243,8 +3243,8 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["More"].tap()
         app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Settings'")).firstMatch.tap()
         XCTAssertEqual(app.buttons["accent-purple"].value as? String, "Selected")
-        reveal(app.staticTexts["PIVOT 1.18.5"], in: app)
-        XCTAssertTrue(app.staticTexts["PIVOT 1.18.5"].exists)
+        reveal(app.staticTexts["PIVOT 1.18.6"], in: app)
+        XCTAssertTrue(app.staticTexts["PIVOT 1.18.6"].exists)
         let build = app.staticTexts["PIVOT build number"]
         reveal(build, in: app)
         XCTAssertNotNil(build.label.range(of: #"^Build \d+(?:\.\d+){0,2}$"#, options: .regularExpression))
@@ -3502,6 +3502,70 @@ final class PIVOTUITests: XCTestCase {
 
     override func setUpWithError() throws {
         continueAfterFailure = false
+    }
+
+    func testTopBrandAndParkSelectorAlignAcrossRepeatedTabNavigation() {
+        checkTopBrandAndParkSelector(extra: ["--ui-dark"], repeated: true)
+    }
+
+    func testTopBrandAndParkSelectorFitAtLargestTextSize() {
+        checkTopBrandAndParkSelector(extra: ["--ui-largest-type"], repeated: false)
+    }
+
+    private func checkTopBrandAndParkSelector(extra: [String], repeated: Bool,
+                                               file: StaticString = #filePath, line: UInt = #line) {
+        let name = "Hurricane Harbor Los Angeles"
+        let app = rootFixture(["--reference-ui-park=41"] + extra)
+        defer { app.terminate() }
+        let tabs = app.tabBars.firstMatch
+        let route = repeated
+            ? ["Waits", "Plan", "Shows", "Map", "More", "Map", "Shows", "Plan", "Waits"]
+            : ["Waits", "Plan", "Shows", "Map", "More"]
+        var firstHeaderY: CGFloat?
+        var firstParkY: CGFloat?
+        for tab in route {
+            if tab != "Waits" || firstHeaderY != nil { tabs.buttons[tab].tap() }
+            let headerQuery = app.descendants(matching: .any).matching(identifier: "PIVOT header")
+            let header = headerQuery.allElementsBoundByIndex.first { $0.isHittable }
+            let refreshQuery = app.buttons.matching(NSPredicate(format: "label == %@", "Refresh ride data now"))
+            let refresh = refreshQuery.allElementsBoundByIndex.first { $0.exists && app.frame.intersects($0.frame) }
+            let parkQuery = app.buttons.matching(NSPredicate(format: "label == %@", "Change park. Current park: \(name)"))
+            let park = parkQuery.allElementsBoundByIndex.first { $0.isHittable }
+            guard let header, let refresh, let park else {
+                screenshot("Missing top controls on \(tab)", app: app)
+                XCTFail("\(tab) must expose the PIVOT logo, refresh and selected park", file: file, line: line)
+                return
+            }
+            let viewport = safeContentViewport(in: app)
+            assertContained(header.frame, in: viewport, "\(tab) logo must not clip", file: file, line: line)
+            assertContained(refresh.frame, in: viewport, "\(tab) refresh circle must not clip", file: file, line: line)
+            assertContained(park.frame, in: viewport, "\(tab) park selector must not clip", file: file, line: line)
+            assertParkBannerTouchTarget(refresh.frame, file: file, line: line)
+            assertParkBannerTouchTarget(park.frame, file: file, line: line)
+            XCTAssertLessThan(header.frame.maxX, refresh.frame.minX,
+                              "The logo and refresh circle must not overlap on \(tab)", file: file, line: line)
+            XCTAssertLessThan(header.frame.maxY, park.frame.minY,
+                              "The park selector must remain below the logo on \(tab)", file: file, line: line)
+            if let firstHeaderY {
+                XCTAssertEqual(header.frame.minY, firstHeaderY, accuracy: 8,
+                               "Logo position must stay aligned across tabs", file: file, line: line)
+            } else { firstHeaderY = header.frame.minY }
+            if let firstParkY {
+                XCTAssertEqual(park.frame.minY, firstParkY, accuracy: 18,
+                               "Park selector must start in the same header band", file: file, line: line)
+            } else { firstParkY = park.frame.minY }
+            screenshot("Top controls \(tab) \(repeated ? "standard" : "largest")", app: app)
+        }
+        if repeated {
+            tabs.buttons["Map"].tap()
+            let park = app.buttons["Change park. Current park: \(name)"]
+            XCTAssertTrue(park.isHittable, file: file, line: line)
+            park.tap()
+            XCTAssertTrue(app.navigationBars["Choose a park"].waitForExistence(timeout: 5), file: file, line: line)
+            app.buttons["Done"].tap()
+            XCTAssertTrue(park.waitForExistence(timeout: 5), file: file, line: line)
+            XCTAssertTrue(park.isHittable, file: file, line: line)
+        }
     }
 
     func testDashboardUsesTheNativeTabBarAndDestinations() {

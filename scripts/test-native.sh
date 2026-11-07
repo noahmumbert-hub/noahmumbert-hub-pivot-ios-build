@@ -137,6 +137,8 @@ case "${PIVOT_TEST_SCOPE:-all}" in
     ) ;;
   layout-review)
     test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testTopBrandAndParkSelectorAlignAcrossRepeatedTabNavigation
+      -only-testing:PIVOTUITests/PIVOTUITests/testTopBrandAndParkSelectorFitAtLargestTextSize
       -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutKeepsParkHoursAndHistoryTouchTarget
       -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutKeepsTwelveSampleControlSmall
       -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutAllowsAccessibilityTextToWrap

@@ -95,8 +95,7 @@ struct RootView: View {
                 } else {
                     ScrollView {
                         VStack(alignment: .leading, spacing: 18) {
-                            header
-                            parkSwitch
+                            topChrome
                             Text("Wait times").font(.title2.bold())
                             Text("Choose your park to see current rides and waits.")
                                 .foregroundStyle(.secondary)
@@ -112,8 +111,7 @@ struct RootView: View {
 
     private var waitsHeader: some View {
         VStack(alignment: .leading, spacing: 0) {
-            header.padding(.bottom, 12)
-            parkSwitch
+            topChrome
             // An empty timeline still occupies a VStack slot. Put its spacing
             // inside the visible notice so a healthy feed leaves no blank row.
             RetainedSnapshotNotice(topSpacing: 12)
@@ -130,18 +128,17 @@ struct RootView: View {
                         onChoosePark: { showParkPicker = true }, refreshFailed: store.errorMessage != nil,
                         isRefreshing: store.isRefreshing, onRefresh: { await store.refreshNow() })
                 .id(store.selectedPark?.id)
-                .navigationTitle("Map")
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .principal) {
-                        Button { showParkPicker = true } label: {
-                            HStack(spacing: 4) {
-                                Text(store.selectedPark?.name ?? "Choose a park").font(.headline).lineLimit(1)
-                                Image(systemName: "chevron.down").font(.caption2)
-                            }.frame(minHeight: 44)
-                        }.accessibilityLabel("Change park. Current park: \(store.selectedPark?.name ?? "none")")
+                .safeAreaInset(edge: .top, spacing: 0) {
+                    VStack(alignment: .leading, spacing: 12) {
+                        header
+                        mapParkSwitch
                     }
+                    .padding(.horizontal, 14)
+                    .padding(.top, 8)
+                    .padding(.bottom, 12)
+                    .background(Color.pivotBackground)
                 }
+                .toolbar(.hidden, for: .navigationBar)
         }
     }
 
@@ -150,8 +147,7 @@ struct RootView: View {
             List {
                 Section {
                     VStack(alignment: .leading, spacing: 16) {
-                        header
-                        parkSwitch
+                        topChrome
                         Text("Shows").font(.largeTitle.bold())
                         Text("Today’s entertainment, all in one place.").font(.subheadline).foregroundStyle(.secondary)
                     }
@@ -180,6 +176,7 @@ struct RootView: View {
             }
             .scrollContentBackground(.hidden)
             .background(Color.pivotBackground)
+            .contentMargins(.top, 8, for: .scrollContent)
             .toolbar(.hidden, for: .navigationBar)
             .refreshable { await store.refreshNow() }
             .onChange(of: store.selectedPark?.id) { _, _ in expandedShowIDs.removeAll() }
@@ -202,7 +199,7 @@ struct RootView: View {
             Form {
                 Section {
                     VStack(alignment: .leading, spacing: 16) {
-                        header
+                        topChrome
                         Text("More").font(.largeTitle.bold())
                     }.padding(.bottom, 16).listRowInsets(EdgeInsets()).listRowBackground(Color.clear)
                 }
@@ -230,6 +227,7 @@ struct RootView: View {
             }
             .scrollContentBackground(.hidden)
             .background(Color.pivotBackground)
+            .contentMargins(.top, 8, for: .scrollContent)
             .navigationTitle("More")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar(.hidden, for: .navigationBar)
@@ -264,8 +262,7 @@ struct RootView: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 18) {
-                    header
-                    parkSwitch
+                    topChrome
                     RetainedSnapshotNotice()
                     Text("Your day").font(.largeTitle.bold()).accessibilityAddTraits(.isHeader)
                     if store.selectedPark?.id == 65, store.snapshot?.parkId == 65,
@@ -438,6 +435,8 @@ struct RootView: View {
                 Text("PIVOT")
                     .font(.system(size: 21, weight: .bold))
                     .tracking(4)
+                    .fixedSize(horizontal: true, vertical: false)
+                    .padding(.horizontal, 2)
                 Circle()
                     .fill(accent)
                     .frame(width: 7, height: 7)
@@ -446,13 +445,13 @@ struct RootView: View {
             .accessibilityLabel("PIVOT")
             .accessibilityIdentifier("PIVOT header")
 
-            Spacer()
+            Spacer(minLength: 8)
 
             Button { showAlertSettings = true } label: {
                 Image(systemName: store.alertsEnabled ? "bell.badge.fill" : "bell")
                     .font(.system(size: 16, weight: .medium))
                     .foregroundStyle(store.alertsEnabled ? Color.pivotMint : Color.primary)
-                    .frame(width: 44, height: 44)
+                    .frame(width: 24, height: 24)
             }
             .buttonStyle(PivotIconButtonStyle())
             .accessibilityLabel(store.alertsEnabled ? "Ride alerts on" : "Set up ride alerts")
@@ -462,7 +461,7 @@ struct RootView: View {
             } label: {
                 Image(systemName: "arrow.clockwise")
                     .font(.system(size: 16, weight: .medium))
-                    .frame(width: 44, height: 44)
+                    .frame(width: 24, height: 24)
                     .rotationEffect(store.isRefreshing && !reduceMotion ? .degrees(360) : .zero)
                     .animation(
                         store.isRefreshing && !reduceMotion
@@ -475,6 +474,38 @@ struct RootView: View {
             .disabled(store.selectedPark == nil || store.isRefreshing)
             .accessibilityLabel("Refresh ride data now")
         }
+    }
+
+    private var topChrome: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            header
+            parkSwitch
+        }
+    }
+
+    private var mapParkSwitch: some View {
+        Button { showParkPicker = true } label: {
+            HStack(spacing: 10) {
+                Image(systemName: ParkArtworkCatalog.symbol(for: store.selectedPark))
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundStyle(accent)
+                    .frame(width: 28)
+                    .accessibilityHidden(true)
+                Text(store.selectedPark?.name ?? "Choose your park")
+                    .font(.headline)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                Image(systemName: "chevron.down")
+                    .font(.caption.weight(.semibold))
+                    .accessibilityHidden(true)
+            }
+            .padding(.horizontal, 12)
+            .frame(minHeight: 44)
+            .background(Color.pivotSurfaceRaised, in: RoundedRectangle(cornerRadius: 14))
+            .contentShape(RoundedRectangle(cornerRadius: 14))
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("Change park. Current park: \(store.selectedPark?.name ?? "none")")
     }
 
     private var parkSwitch: some View {

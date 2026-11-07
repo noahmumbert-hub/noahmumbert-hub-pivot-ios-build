@@ -1,0 +1,3 @@
+PIVOT's logo, alert and refresh controls, and park selector now start in the same place across Waits, Plan, Shows, Map, and More. Map keeps a compact park selector so the map remains usable. Long park names and larger text can wrap without clipping the controls.
+
+The refresh circle and PIVOT wordmark have more room to render completely. Existing live waits, planning, shows, map controls, alerts, park schedules, illustration credits, and persistent artwork downloads remain available. Artwork still needs an initial internet download and then remains available offline; the app update does not bundle the 1,082 original illustrations again.

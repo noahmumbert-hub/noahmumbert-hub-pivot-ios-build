@@ -1,6 +1,6 @@
 # PIVOT iOS builds
 
-This branch prepares **1.18.5** with **all 1,082 accepted illustrations as verified persistent original-byte downloads**. Release includes catalogue metadata instead of the illustration JPEGs, leaving room for future app updates. A fresh install or direct upgrade from 1.18.4 needs internet once for artwork; photos and placeholders remain usable until downloads finish. Saved originals are reused across later ordinary updates. See [implementation, storage budgets and release gates](docs/artwork-downloads-1.18.5.md). The existing SideStore feed currently delivers 1.18.4; this candidate is not yet published.
+This branch prepares **1.18.6** with consistent PIVOT branding and park selection across the five tabs, including an accessible compact selector above Map. The circular header controls and logo have room to render completely. The **1.18.5** persistent-download design remains: all 1,082 accepted illustrations download as original bytes, leaving app-binary room for future updates and remaining available offline after saving. See [artwork implementation and storage budgets](docs/artwork-downloads-1.18.5.md). The existing SideStore feed currently delivers 1.18.5; this UI update is not yet published.
 
 Public iOS source and GitHub-hosted macOS builds for installing PIVOT through
 SideStore. The web application, backend implementation, and private repository
