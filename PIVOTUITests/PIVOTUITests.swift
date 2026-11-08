@@ -3292,7 +3292,10 @@ final class PIVOTUITests: XCTestCase {
 
     private func openArtworkDownloadSettings(_ app: XCUIApplication) {
         app.tabBars.buttons["More"].tap()
-        app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Settings'")).firstMatch.tap()
+        let settings = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Settings'")).firstMatch
+        reveal(settings, in: app)
+        XCTAssertTrue(settings.isHittable)
+        settings.tap()
         let link = app.buttons["artwork-download-settings"]
         reveal(link, in: app)
         XCTAssertTrue(link.isHittable)

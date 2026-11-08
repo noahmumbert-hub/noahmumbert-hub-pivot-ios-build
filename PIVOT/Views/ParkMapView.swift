@@ -102,6 +102,9 @@ struct ParkMapRidePresentation: Equatable {
 @MainActor
 final class ParkMapSession: ObservableObject {
     var camera: MKMapCamera?
+    // Preserve a camera the visitor deliberately changed across map presentations.
+    // An automatic fit in the compact tab does not own the fullscreen viewport.
+    var cameraWasUserAdjusted = false
 #if DEBUG
     @Published var telemetry = ""
     @Published var gestureRect: CGRect?
@@ -212,6 +215,7 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
     @Binding var selectedID: String?
     let session: ParkMapSession
     let command: ParkMapCameraCommand
+    let refitForFirstFullScreen: Bool
     let margins: UIEdgeInsets
     let viewportSize: CGSize
     let accent: Color
@@ -233,7 +237,10 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
         map.pointOfInterestFilter = .excludingAll
         map.register(ParkMarkerView.self, forAnnotationViewWithReuseIdentifier: "place")
         map.register(ParkMarkerView.self, forAnnotationViewWithReuseIdentifier: "cluster")
-        if let camera = session.camera {
+        // A compact tab may fit into only a narrow strip between its header and
+        // bottom panel. Fit again for the first fullscreen viewport; otherwise
+        // restore the camera so a visitor's pan or zoom survives presentation.
+        if let camera = session.camera, !refitForFirstFullScreen {
             container.enqueueCameraChange { [weak map, weak coordinator = context.coordinator] in
                 coordinator?.cameraInitialized = true
                 map?.setCamera(camera, animated: false)
@@ -357,7 +364,10 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
             // An animated programmatic callback can arrive after setCamera returns.
             // Only a real active UIKit gesture takes ownership from its destination.
             let userGesture = hasActiveGesture(in: mapView)
-            if !applyingCameraCommand && userGesture { zoomTargetAltitude = nil }
+            if !applyingCameraCommand && userGesture {
+                zoomTargetAltitude = nil
+                parent.session.cameraWasUserAdjusted = true
+            }
 #if DEBUG
             parent.session.record("regionWill animated=\(animated) gesture=\(userGesture) applying=\(applyingCameraCommand) current=\(mapView.camera.altitude)")
 #endif
@@ -476,6 +486,7 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
                    coordinates.allSatisfy({ MKMapPoint(first).distance(to: MKMapPoint($0)) < 20 }) {
                     parent.onCluster(members)
                 } else {
+                    parent.session.cameraWasUserAdjusted = true
                     fit(coordinates, on: mapView, animated: true, paddingMeters: 20)
                 }
                 return
@@ -559,6 +570,7 @@ struct ParkMapView: View {
                 if let park, parkData != nil {
                     NativeParkMapCanvas(points: points, allPoints: allPoints, park: park, selectedID: $selectedID,
                         session: session, command: command,
+                        refitForFirstFullScreen: isFullScreen && !session.cameraWasUserAdjusted,
                         margins: UIEdgeInsets(top: geometry.safeAreaInsets.top + 72, left: 12,
                                               // The selected card has a190pt content limit plus its44pt Browse row.
                                               // Reserve that complete resting height immediately, before preferences update.
@@ -614,11 +626,20 @@ struct ParkMapView: View {
             .overlay(alignment: .trailing) {
                 if park != nil, parkData != nil {
                     VStack(spacing: 0) {
-                        mapControl("Zoom in", symbol: "plus") { command = command.zoomed(by: -1) }
+                        mapControl("Zoom in", symbol: "plus") {
+                            session.cameraWasUserAdjusted = true
+                            command = command.zoomed(by: -1)
+                        }
                         Divider().frame(width: 32)
-                        mapControl("Zoom out", symbol: "minus") { command = command.zoomed(by: 1) }
+                        mapControl("Zoom out", symbol: "minus") {
+                            session.cameraWasUserAdjusted = true
+                            command = command.zoomed(by: 1)
+                        }
                         Divider().frame(width: 32)
-                        mapControl("Show whole park", symbol: "location") { command = .init(action: .fit) }
+                        mapControl("Show whole park", symbol: "location") {
+                            session.cameraWasUserAdjusted = true
+                            command = .init(action: .fit)
+                        }
                     }
                     .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 14))
                     .padding(.trailing, 10)
@@ -815,6 +836,7 @@ struct ParkMapView: View {
                     ForEach(clusterPoints ?? points) { point in
                         Button {
                             selectedID = point.id
+                            session.cameraWasUserAdjusted = true
                             command = .init(action: .focus(point.coordinate))
                             showPlaces = false
                         } label: {
