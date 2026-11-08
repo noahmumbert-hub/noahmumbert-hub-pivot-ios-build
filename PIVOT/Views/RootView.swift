@@ -493,7 +493,8 @@ struct RootView: View {
                     .accessibilityHidden(true)
                 Text(store.selectedPark?.name ?? "Choose your park")
                     .font(.headline)
-                    .fixedSize(horizontal: false, vertical: true)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.7)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 Image(systemName: "chevron.down")
                     .font(.caption.weight(.semibold))
@@ -505,6 +506,10 @@ struct RootView: View {
             .contentShape(RoundedRectangle(cornerRadius: 14))
         }
         .buttonStyle(.plain)
+        // The embedded map must retain room for its search, zoom and Browse
+        // controls even at the largest accessibility text setting. The picker
+        // and accessibility label still expose the full park name.
+        .dynamicTypeSize(...DynamicTypeSize.accessibility1)
         .accessibilityLabel("Change park. Current park: \(store.selectedPark?.name ?? "none")")
     }
 

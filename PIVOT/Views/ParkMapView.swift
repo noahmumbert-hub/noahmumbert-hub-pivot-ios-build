@@ -606,7 +606,10 @@ struct ParkMapView: View {
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
             .overlay(alignment: .top) {
-                if park != nil, parkData != nil { mapToolbar.padding(10) }
+                if park != nil, parkData != nil {
+                    mapToolbar.padding(10)
+                        .dynamicTypeSize(...DynamicTypeSize.accessibility1)
+                }
             }
             .overlay(alignment: .trailing) {
                 if park != nil, parkData != nil {
@@ -619,11 +622,13 @@ struct ParkMapView: View {
                     }
                     .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 14))
                     .padding(.trailing, 10)
+                    .dynamicTypeSize(...DynamicTypeSize.accessibility1)
                 }
             }
             .overlay(alignment: .bottom) {
                 if park != nil, parkData != nil {
                     bottomPanel
+                        .dynamicTypeSize(...DynamicTypeSize.accessibility1)
                         .background(GeometryReader { proxy in Color.clear.preference(key: MapBottomHeightKey.self, value: proxy.size.height) })
                         .padding(.horizontal, 10).padding(.bottom, 8)
                 }

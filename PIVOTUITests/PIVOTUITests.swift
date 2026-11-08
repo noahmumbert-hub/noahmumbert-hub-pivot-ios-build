@@ -3555,6 +3555,29 @@ final class PIVOTUITests: XCTestCase {
                                "Park selector must start in the same header band", file: file, line: line)
             } else { firstParkY = park.frame.minY }
             screenshot("Top controls \(tab) \(repeated ? "standard" : "largest")", app: app)
+            if tab == "Map" && !repeated {
+                let search = app.textFields["Search park places"]
+                let filter = app.buttons["Filter map places"]
+                let fullScreen = app.buttons["Full screen map"]
+                let zoom = app.buttons["Zoom in"]
+                let browse = app.buttons["Browse map places"]
+                for control in [search, filter, fullScreen, zoom, browse] {
+                    XCTAssertTrue(control.waitForExistence(timeout: 5),
+                                  "The largest-text Map must expose \(control.identifier)", file: file, line: line)
+                    XCTAssertTrue(control.isHittable,
+                                  "The largest-text Map control \(control.identifier) must remain usable", file: file, line: line)
+                    assertContained(control.frame, in: viewport,
+                                    "The largest-text Map control \(control.identifier) must stay visible", file: file, line: line)
+                }
+                XCTAssertLessThan(park.frame.height, viewport.height * 0.3,
+                                  "The park selector must leave room for Map controls", file: file, line: line)
+                XCTAssertGreaterThan(browse.frame.minY - search.frame.maxY, 88,
+                                     "The map must retain a usable viewport between search and Browse", file: file, line: line)
+                XCTAssertFalse(filter.frame.intersects(fullScreen.frame),
+                               "Map toolbar actions must not overlap", file: file, line: line)
+                XCTAssertFalse(zoom.frame.intersects(search.frame) || zoom.frame.intersects(browse.frame),
+                               "Map zoom must remain clear of the search and Browse controls", file: file, line: line)
+            }
         }
         if repeated {
             tabs.buttons["Map"].tap()
