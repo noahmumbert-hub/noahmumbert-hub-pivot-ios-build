@@ -349,8 +349,13 @@ case "${PIVOT_TEST_SCOPE:-all}" in
     ) ;;
   map-gesture-diagnostic)
     test_options+=(-only-testing:PIVOTUITests/PIVOTUITests/testNativeMapFillsWindowAndSupportsPinchPanZoomWithoutCameraReset) ;;
+  map-tab-diagnostic)
+    test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testMapRefreshKeepsUnchangedProviderWaitOnActualMap
+      -test-iterations 3
+    ) ;;
   *)
-    echo 'Unsupported PIVOT_TEST_SCOPE; use all, artwork-downloads, ride-search-timing, ride-search-control, map-recovery, release-recovery, map-search, history-details, chart-recovery, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-gesture-diagnostic, map-refresh, or park-picker.' >&2
+    echo 'Unsupported PIVOT_TEST_SCOPE; use all, artwork-downloads, ride-search-timing, ride-search-control, map-recovery, release-recovery, map-search, history-details, chart-recovery, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-gesture-diagnostic, map-tab-diagnostic, map-refresh, or park-picker.' >&2
     exit 1 ;;
 esac
 python3 - <<'PY'

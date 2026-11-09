@@ -322,6 +322,43 @@ final class PIVOTUITests: XCTestCase {
         screenshot("Map gesture target missing after original five-second check", app: app)
     }
 
+    private func mapTabBeforeFirstTap(_ app: XCUIApplication) -> String {
+        let startedAt = ProcessInfo.processInfo.systemUptime
+        let tab = app.tabBars.buttons["Map"]
+        let exists = tab.exists
+        let enabled = exists && tab.isEnabled
+        let hittable = enabled && tab.isHittable
+        let selected = exists && tab.isSelected
+        let frame = exists ? String(describing: tab.frame) : "absent"
+        let fixturePark = app.otherElements["park-banner-5"].exists
+        let detail = "uptimeMs=\(Int(startedAt * 1_000)) readMs=\(Int((ProcessInfo.processInfo.systemUptime - startedAt) * 1_000)) mapExists=\(exists) enabled=\(enabled) hittable=\(hittable) selected=\(selected) frame=\(frame) fixturePark=\(fixturePark)"
+        print("MAP_TAB_FIRST_TAP_PRECONDITION \(detail)")
+        return detail
+    }
+
+    private func recordMapTabTransitionFailure(_ app: XCUIApplication, beforeTap: String) {
+        // Capture state after the existing search-field deadline, without
+        // another tap or a new waiting period that could conceal the failure.
+        let root = try? app.snapshot()
+        let nodes = root.map(nativeSnapshotNodes) ?? []
+        func item(_ label: String) -> String {
+            guard let node = nodes.first(where: { $0.elementType == .button && $0.label == label }) else {
+                return "absent"
+            }
+            return "selected=\(node.isSelected) enabled=\(node.isEnabled) frame=\(node.frame)"
+        }
+        let banner = nodes.first { $0.identifier == "park-banner-5" }
+        let overlay = nodes.first { $0.identifier == "AdditionalDimmingOverlay" }
+        let mapSearch = nodes.first { $0.identifier == "Search park places" }
+        let detail = "before=\(beforeTap) afterWaits=\(item("Waits")) afterMap=\(item("Map")) parkBanner=\(banner.map { String(describing: $0.frame) } ?? "absent") mapSearch=\(mapSearch.map { String(describing: $0.frame) } ?? "absent") dimmingOverlay=\(overlay.map { String(describing: $0.frame) } ?? "absent")"
+        print("MAP_TAB_TRANSITION_FAILURE \(detail)")
+        let attachment = XCTAttachment(string: detail)
+        attachment.name = "Map tab first-tap precondition and post-failure native state"
+        attachment.lifetime = .keepAlways
+        add(attachment)
+        screenshot("Map tab did not expose search after its original deadline", app: app)
+    }
+
     func testReferenceEPCOTCardsSearchFiltersAndPhotoCredits() {
         let app = rootFixture(["--reference-ui-park=5", "--ui-dark"])
         let header = app.descendants(matching: .any)["PIVOT header"]
@@ -2772,9 +2809,13 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Selected ride wait"].waitForExistence(timeout: 3), mapEvents(app))
     }
 
-    private func selectRootMapRide(_ name: String, app: XCUIApplication) {
+    private func selectRootMapRide(_ name: String, app: XCUIApplication, mapTabBeforeTap: String? = nil) {
         let search = app.textFields["Search park places"]
-        XCTAssertTrue(search.waitForExistence(timeout: 10))
+        let searchExists = search.waitForExistence(timeout: 10)
+        if !searchExists, let mapTabBeforeTap {
+            recordMapTabTransitionFailure(app, beforeTap: mapTabBeforeTap)
+        }
+        XCTAssertTrue(searchExists)
         let reachable = NSPredicate { _, _ in search.exists && search.isHittable }
         XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: reachable, object: nil)], timeout: 10), .completed,
                        "The active park's map search must be reachable before typing")
@@ -2787,8 +2828,12 @@ final class PIVOTUITests: XCTestCase {
 
     func testMapRefreshKeepsUnchangedProviderWaitOnActualMap() {
         let app = rootFixture(["--reference-ui-park=5", "--ride-search-unchanged-provider"])
+        let mapTabBeforeTap = mapTabBeforeFirstTap(app)
         app.tabBars.buttons["Map"].tap()
-        selectRootMapRide("Guardians", app: app)
+        let mapSelectedAfterTap = app.tabBars.buttons["Map"].isSelected
+        let mapTabTransition = "\(mapTabBeforeTap) selectedImmediatelyAfterTap=\(mapSelectedAfterTap)"
+        print("MAP_TAB_FIRST_TAP_RESULT \(mapTabTransition)")
+        selectRootMapRide("Guardians", app: app, mapTabBeforeTap: mapTabTransition)
         screenshot("Map unchanged provider wait baseline", app: app)
         XCTAssertEqual(app.staticTexts["Selected ride wait"].label, "45 min")
         app.buttons["Full screen map"].tap()
