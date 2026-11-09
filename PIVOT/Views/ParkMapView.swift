@@ -108,6 +108,7 @@ final class ParkMapSession: ObservableObject {
 #if DEBUG
     @Published var telemetry = ""
     @Published var gestureRect: CGRect?
+    @Published var gestureDiagnostic = "Native gesture target has not been evaluated"
     @Published var eventTrace = ""
     private var events: [String] = []
     func record(_ event: String) {
@@ -410,6 +411,10 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
                 let safe = map.bounds.inset(by: UIEdgeInsets(top: map.layoutMargins.top + 12, left: 20,
                     bottom: map.layoutMargins.bottom + 12, right: 84))
                 var target: CGRect?
+                var examined = 0
+                var blocked: [String] = []
+                var xs: [CGFloat] = []
+                var ys: [CGFloat] = []
                 if safe.width >= 140 && safe.height >= 140 {
                     // A fixed grid can miss a valid strip at the bottom/right edge.
                     // Test exact safe boundaries and annotation edges instead.
@@ -423,8 +428,6 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
                         yOrigins.insert(obstacle.minY - 141)
                         yOrigins.insert(obstacle.maxY + 1)
                     }
-                    var xs: [CGFloat] = []
-                    var ys: [CGFloat] = []
                     for x in xOrigins where x.isFinite && x >= safe.minX && x <= maxX { xs.append(x) }
                     for y in yOrigins where y.isFinite && y >= safe.minY && y <= maxY { ys.append(y) }
                     xs.sort()
@@ -432,13 +435,17 @@ private struct NativeParkMapCanvas: UIViewRepresentable {
                     search: for y in ys {
                         for x in xs {
                             let candidate = CGRect(x: x, y: y, width: 140, height: 140)
-                            if !occupied.contains(where: { $0.intersects(candidate) }) { target = candidate; break search }
+                            examined += 1
+                            if let obstacle = occupied.first(where: { $0.intersects(candidate) }) {
+                                if blocked.count < 6 { blocked.append("\(candidate) blockedBy=\(obstacle)") }
+                            } else { target = candidate; break search }
                         }
                     }
                 }
-                let geometry = "gesture target safe=\(safe) occupied=\(occupied.count) selected=\(String(describing: target))"
+                let geometry = "bounds=\(map.bounds) margins=\(map.layoutMargins) safe=\(safe) occupied=\(occupied.count) axes=\(xs.count)x\(ys.count) examined=\(examined) blockers=\(blocked) selected=\(String(describing: target))"
                 if self.lastGestureGeometry != geometry {
                     self.lastGestureGeometry = geometry
+                    self.parent.session.gestureDiagnostic = geometry
                     self.parent.session.record(geometry)
                 }
                 if self.parent.session.gestureRect != target { self.parent.session.gestureRect = target }
@@ -602,6 +609,11 @@ struct ParkMapView: View {
                         Text(session.eventTrace).font(.system(size: 1)).opacity(0.02)
                             .accessibilityIdentifier("Map event trace")
                             .frame(width: 1, height: 1).allowsHitTesting(false)
+                        if ProcessInfo.processInfo.arguments.contains("--map-gesture-test") {
+                            Text(session.gestureDiagnostic).font(.system(size: 1)).opacity(0.02)
+                                .accessibilityIdentifier("Map gesture geometry")
+                                .frame(width: 1, height: 1).allowsHitTesting(false)
+                        }
                     }
 #endif
                 } else if park == nil {

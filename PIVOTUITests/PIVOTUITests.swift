@@ -301,6 +301,27 @@ final class PIVOTUITests: XCTestCase {
         return trace.exists ? trace.label : "No map events available"
     }
 
+    private func recordMissingMapGestureTarget(_ app: XCUIApplication) {
+        // Observe only after the original five-second existence check fails.
+        // The Debug probe distinguishes no geometry callback, no clear native
+        // rectangle, and an AX omission despite a computed rectangle.
+        let root = try? app.snapshot()
+        let nodes = root.map(nativeSnapshotNodes) ?? []
+        func node(_ identifier: String) -> XCUIElementSnapshot? {
+            nodes.first { $0.identifier == identifier }
+        }
+        let geometry = node("Map gesture geometry")?.label ?? "Map gesture geometry probe absent"
+        let events = node("Map event trace")?.label ?? "Map event trace probe absent"
+        let target = node("Map gesture area")
+        let details = "geometry=\(geometry) targetAX=\(target.map { String(describing: $0.frame) } ?? "absent") mapAX=\(node("Park map").map { String(describing: $0.frame) } ?? "absent") searchAX=\(node("Search park places").map { String(describing: $0.frame) } ?? "absent") browseAX=\(node("Browse map places").map { String(describing: $0.frame) } ?? "absent") events=\(events)"
+        print("MAP_GESTURE_TARGET_FAILURE \(details.replacingOccurrences(of: "\n", with: " "))")
+        let attachment = XCTAttachment(string: details)
+        attachment.name = "Missing Map gesture target native geometry and accessibility"
+        attachment.lifetime = .keepAlways
+        add(attachment)
+        screenshot("Map gesture target missing after original five-second check", app: app)
+    }
+
     func testReferenceEPCOTCardsSearchFiltersAndPhotoCredits() {
         let app = rootFixture(["--reference-ui-park=5", "--ui-dark"])
         let header = app.descendants(matching: .any)["PIVOT header"]
@@ -2323,7 +2344,9 @@ final class PIVOTUITests: XCTestCase {
         // Real two-finger gestures begin inside native map pixels, clear of the
         // search/Browse overlays that occupy the whole Map element's outer edges.
         let gestureArea = app.descendants(matching: .any)["Map gesture area"]
-        XCTAssertTrue(gestureArea.waitForExistence(timeout: 5))
+        let gestureTargetExists = gestureArea.waitForExistence(timeout: 5)
+        if !gestureTargetExists { recordMissingMapGestureTarget(app) }
+        XCTAssertTrue(gestureTargetExists)
         XCTAssertTrue(map.frame.contains(gestureArea.frame))
         XCTAssertFalse(gestureArea.frame.intersects(app.textFields["Search park places"].frame))
         XCTAssertFalse(gestureArea.frame.intersects(app.buttons["Browse map places"].frame))
