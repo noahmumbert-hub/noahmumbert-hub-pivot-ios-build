@@ -56,6 +56,12 @@ def summarize(text: str, outcome: str) -> tuple[list[str], list[str]]:
             timing_errors.append(short(line[line.index("MAP_GESTURE_TARGET_FAILURE") :], 1400))
         if "MAP_TAB_TRANSITION_FAILURE" in line and len(timing_errors) < 5:
             timing_errors.append(short(line[line.index("MAP_TAB_TRANSITION_FAILURE") :], 1400))
+        if "PARK_SCHEDULE_FIRST_SCREEN_FAILURE" in line and len(timing_errors) < 5:
+            timing_errors.append(short(line[line.index("PARK_SCHEDULE_FIRST_SCREEN_FAILURE") :], 1400))
+        if "PARK_SCHEDULE_POST_DEADLINE_SNAPSHOT" in line and len(timing_errors) < 5:
+            timing_errors.append(short(line[line.index("PARK_SCHEDULE_POST_DEADLINE_SNAPSHOT") :], 1400))
+        if "FORECAST_SHEET_FAILURE" in line and len(timing_errors) < 5:
+            timing_errors.append(short(line[line.index("FORECAST_SHEET_FAILURE") :], 1400))
         match = SUITE.search(line)
         if match:
             suite = match[1]

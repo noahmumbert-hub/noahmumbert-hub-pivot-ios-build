@@ -511,8 +511,28 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(app.buttons["Change park. Current park: Islands of Adventure"].isHittable)
         for identifier in ["park-hours-value", "park-early-entry-value"] {
             let value = app.staticTexts[identifier]
-            let complete = NSPredicate { _, _ in value.exists && value.label.contains(" – ") }
-            XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: complete, object: nil)], timeout: 10), .completed,
+            let startedAt = ProcessInfo.processInfo.systemUptime
+            var reads: [String] = []
+            let complete = NSPredicate { _, _ in
+                let beganAt = ProcessInfo.processInfo.systemUptime
+                let exists = value.exists
+                let existenceReadAt = ProcessInfo.processInfo.systemUptime
+                let label = exists ? value.label : "<absent>"
+                let finishedAt = ProcessInfo.processInfo.systemUptime
+                if reads.count < 6 {
+                    reads.append("atMs=\(Int((beganAt - startedAt) * 1_000)) existsMs=\(Int((existenceReadAt - beganAt) * 1_000)) labelMs=\(Int((finishedAt - existenceReadAt) * 1_000)) exists=\(exists) label=\(String(reflecting: String(label.prefix(160))))")
+                }
+                return exists && label.contains(" – ")
+            }
+            let result = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: complete, object: nil)], timeout: 10)
+            if result != .completed {
+                print("PARK_SCHEDULE_FIRST_SCREEN_FAILURE endpoint=\(identifier) expected=opening_clock_space_en_dash_space_closing_clock elapsedMs=\(Int((ProcessInfo.processInfo.systemUptime - startedAt) * 1_000)) reads=\(reads.joined(separator: " | "))")
+                let nodes = (try? app.snapshot()).map(nativeSnapshotNodes) ?? []
+                let relevant = nodes.filter { ["park-hours-value", "park-early-entry-value", "park-banner-64"].contains($0.identifier) }
+                    .map { "id=\($0.identifier) label=\(String(reflecting: String($0.label.prefix(160)))) frame=\($0.frame)" }
+                print("PARK_SCHEDULE_POST_DEADLINE_SNAPSHOT \(relevant.joined(separator: " | "))")
+            }
+            XCTAssertEqual(result, .completed,
                            "The first Waits screen must display both complete schedule endpoints")
         }
         XCTAssertTrue(app.buttons["park-photo-credit-64"].isHittable)
@@ -1539,8 +1559,20 @@ final class PIVOTUITests: XCTestCase {
         let app = observedHistoryFixture(["--ride-history-supported", "--ui-large-type"])
         let summary = app.otherElements["ride-lowest-wait-summary"].firstMatch
         let hourly = summary.buttons["ride-history-hourly-estimates"]
-        centerFullyVisible(hourly, in: app, snapshotIdentifier: "ride-history-hourly-estimates"); hourly.tap()
-        XCTAssertTrue(app.navigationBars["Predicted waits"].waitForExistence(timeout: 5))
+        centerFullyVisible(hourly, in: app, snapshotIdentifier: "ride-history-hourly-estimates")
+        let tappedAt = ProcessInfo.processInfo.systemUptime
+        hourly.tap()
+        let tapReturnedAt = ProcessInfo.processInfo.systemUptime
+        let sheetOpened = app.navigationBars["Predicted waits"].waitForExistence(timeout: 5)
+        if !sheetOpened {
+            let nodes = (try? app.snapshot()).map(nativeSnapshotNodes) ?? []
+            let relevant = nodes.filter {
+                ["ride-history-hourly-estimates", "ride-wait-forecast", "Predicted waits", "Done"].contains($0.identifier)
+                    || ["See hourly estimates", "Predicted waits", "Done"].contains($0.label)
+            }.prefix(8).map { "type=\($0.elementType) id=\($0.identifier) label=\(String(reflecting: String($0.label.prefix(100)))) frame=\($0.frame)" }
+            print("FORECAST_SHEET_FAILURE quarter=\(quarter) tapMs=\(Int((tapReturnedAt - tappedAt) * 1_000)) afterTapWaitMs=\(Int((ProcessInfo.processInfo.systemUptime - tapReturnedAt) * 1_000)) postDeadlineNodes=\(relevant.joined(separator: " | "))")
+        }
+        XCTAssertTrue(sheetOpened)
         let forecast = app.otherElements["ride-wait-forecast"].firstMatch
         XCTAssertTrue(forecast.waitForExistence(timeout: 5))
         let bodySize = app.staticTexts["Hourly forecast body size"]
