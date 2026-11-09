@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       scope:
-        description: Full regression, focused UI, or Release archive diagnostic
+        description: Full regression, single-device diagnostic, focused UI, or Release archive diagnostic
         type: choice
         default: all
-        options: [all, archive-diagnostic, artwork-downloads, ride-search-timing, ride-search-control, map-recovery, release-recovery, map-search, history-details, chart-recovery, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, park-picker]
+        options: [all, full-diagnostic, archive-diagnostic, artwork-downloads, ride-search-timing, ride-search-control, map-recovery, release-recovery, map-search, history-details, chart-recovery, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-refresh, park-picker]
         required: true
       simulator:
-        description: iPhone used for focused UI diagnostics; ignored for archive diagnostic
+        description: iPhone used for diagnostic scopes; ignored for archive diagnostic
         type: choice
         default: iPhone 16 Pro Max
         options: ['iPhone SE (3rd generation)', 'iPhone 16 Pro', 'iPhone 16 Pro Max']
@@ -54,8 +54,15 @@ jobs:
         run: xcodebuild -version
 
       - name: Run Xcode unit and simulator UI tests
+        id: native_tests
         if: inputs.scope != 'archive-diagnostic'
         run: bash scripts/test-native.sh
+
+      - name: Summarize native test outcome
+        if: ${{ always() && (steps.native_tests.outcome == 'success' || steps.native_tests.outcome == 'failure') }}
+        env:
+          PIVOT_NATIVE_TEST_OUTCOME: ${{ steps.native_tests.outcome }}
+        run: python3 scripts/report-native-test-outcome.py build/native-tests.log
 
       - name: Build and validate unsigned IPA
         env:
@@ -130,7 +137,14 @@ jobs:
         run: xcodebuild -version
 
       - name: Run native regression on selected iPhone
+        id: native_tests
         run: bash scripts/test-native.sh
+
+      - name: Summarize native test outcome
+        if: ${{ always() && (steps.native_tests.outcome == 'success' || steps.native_tests.outcome == 'failure') }}
+        env:
+          PIVOT_NATIVE_TEST_OUTCOME: ${{ steps.native_tests.outcome }}
+        run: python3 scripts/report-native-test-outcome.py build/native-tests.log
 
       - name: Upload iPhone regression results
         if: always()
@@ -159,14 +173,14 @@ jobs:
           retention-days: 7
 
   diagnose:
-    name: Focused UI diagnostics
+    name: ${{ inputs.scope == 'full-diagnostic' && 'Single-device full regression diagnostic' || 'Focused UI diagnostics' }}
     if: (github.event_name == 'workflow_dispatch' && inputs.scope != '' && inputs.scope != 'all' && inputs.scope != 'archive-diagnostic') || (github.event_name == 'push' && github.ref == 'refs/heads/diagnostics/apple-native-redesign' && !contains(github.event.head_commit.message, '[full-regression]'))
     runs-on: macos-15
-    timeout-minutes: 45
+    timeout-minutes: ${{ inputs.scope == 'full-diagnostic' && 150 || 45 }}
     env:
       DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
       PIVOT_SIMULATOR_NAME: ${{ inputs.simulator || 'iPhone 16 Pro Max' }}
-      PIVOT_TEST_SCOPE: ${{ inputs.scope || 'native-design' }}
+      PIVOT_TEST_SCOPE: ${{ inputs.scope == 'full-diagnostic' && 'all' || inputs.scope || 'native-design' }}
     steps:
       - name: Check out candidate source
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -176,8 +190,19 @@ jobs:
       - name: Confirm Xcode toolchain
         run: xcodebuild -version
 
-      - name: Run focused UI diagnostics
+      - name: Mark single-device diagnostic
+        if: inputs.scope == 'full-diagnostic'
+        run: echo 'Single-device diagnostic only; full three-device regression and Release archive still required.' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Run selected native tests
+        id: native_tests
         run: bash scripts/test-native.sh
+
+      - name: Summarize native test outcome
+        if: ${{ always() && (steps.native_tests.outcome == 'success' || steps.native_tests.outcome == 'failure') }}
+        env:
+          PIVOT_NATIVE_TEST_OUTCOME: ${{ steps.native_tests.outcome }}
+        run: python3 scripts/report-native-test-outcome.py build/native-tests.log
 
       - name: Upload diagnostic evidence
         if: always()
