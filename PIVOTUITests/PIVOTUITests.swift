@@ -43,19 +43,14 @@ final class PIVOTUITests: XCTestCase {
         let choice = app.buttons[category].firstMatch
         XCTAssertTrue(choice.waitForExistence(timeout: 3))
         waitForSettledFrames([choice])
-        let readinessStartedAt = ProcessInfo.processInfo.systemUptime
-        var readinessTrace: [String] = []
-        let ready = NSPredicate { _, _ in
-            let startedAt = ProcessInfo.processInfo.systemUptime
-            let exists = choice.exists
-            let hittable = exists && choice.isHittable
-            let finishedAt = ProcessInfo.processInfo.systemUptime
-            if readinessTrace.count < 12 {
-                readinessTrace.append("atMs=\(Int((startedAt - readinessStartedAt) * 1_000)) readMs=\(Int((finishedAt - startedAt) * 1_000)) exists=\(exists) hittable=\(hittable)")
-            }
-            return exists && hittable
+        // The row already exists and has a settled frame. A predicate waiter
+        // delays its first evaluation, and a second `exists` AX round trip can
+        // consume the remaining deadline before a true hittability read returns.
+        // Start immediately and reject a true result that arrives after 5 s.
+        let (ready, readinessStartedAt, readinessTrace) = observeMapRowHittability(timeout: 5) {
+            choice.isHittable
         }
-        let result = XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: nil)], timeout: 5)
+        let result: XCTWaiter.Result = ready ? .completed : .timedOut
         if result != .completed {
             recordMapCategoryRowFailure(category, result: result, startedAt: readinessStartedAt,
                 trace: readinessTrace, app: app)
@@ -65,6 +60,35 @@ final class PIVOTUITests: XCTestCase {
         print("MAP_CATEGORY_ROW_READY title=\(category) frame=\(choice.frame)")
         choice.tap()
         waitForMapCategory(category, app: app)
+    }
+
+    private func observeMapRowHittability(timeout: TimeInterval,
+                                          readHittable: () -> Bool) -> (Bool, TimeInterval, [String]) {
+        let startedAt = ProcessInfo.processInfo.systemUptime
+        let deadline = startedAt + timeout
+        var trace: [String] = []
+        while ProcessInfo.processInfo.systemUptime < deadline {
+            let readStartedAt = ProcessInfo.processInfo.systemUptime
+            let hittable = readHittable()
+            let readFinishedAt = ProcessInfo.processInfo.systemUptime
+            if trace.count < 12 {
+                trace.append("atMs=\(Int((readStartedAt - startedAt) * 1_000)) readMs=\(Int((readFinishedAt - readStartedAt) * 1_000)) hittable=\(hittable)")
+            }
+            if hittable && readFinishedAt <= deadline { return (true, startedAt, trace) }
+            if readFinishedAt >= deadline { break }
+            Thread.sleep(forTimeInterval: min(0.1, deadline - readFinishedAt))
+        }
+        return (false, startedAt, trace)
+    }
+
+    func testMapCategoryReadinessRejectsAnAccessibilityReadAfterItsDeadline() {
+        let late = observeMapRowHittability(timeout: 0.01) {
+            Thread.sleep(forTimeInterval: 0.03)
+            return true
+        }
+        XCTAssertFalse(late.0, "A late true AX result must not pass the five-second readiness gate")
+        let immediate = observeMapRowHittability(timeout: 0.5) { true }
+        XCTAssertTrue(immediate.0, "The first AX read must run without a waiter scheduling delay")
     }
 
     private func recordMapCategoryRowFailure(_ category: String, result: XCTWaiter.Result,
