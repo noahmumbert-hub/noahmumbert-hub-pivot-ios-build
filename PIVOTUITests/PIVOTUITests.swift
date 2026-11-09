@@ -3179,6 +3179,23 @@ final class PIVOTUITests: XCTestCase {
         reveal(forecastSection, in: app)
         forecastSection.tap()
         let forecasts = app.buttons["plan-predicted-waits"]
+        if !forecasts.exists {
+            // Capture the state before reveal() scrolls: on compact phones an
+            // absent row can mean either a closed disclosure or an offscreen
+            // accessibility node. This is diagnostic only; the assertion stays.
+            let root = try? app.snapshot()
+            let nodes = root.map(nativeSnapshotNodes) ?? []
+            let relevant = nodes.filter { node in
+                ["Crowds & predicted waits", "plan-predicted-waits", "park-crowd-meter",
+                 "Offline day pack", "Your day"].contains(node.identifier)
+                    || ["Crowds & predicted waits", "Predicted waits", "Offline day pack"].contains(node.label)
+                    || node.elementType == .scrollView
+            }
+            let rows = relevant.prefix(24).map { node in
+                "type=\(node.elementType.rawValue) id=\(node.identifier) label=\(node.label) value=\(String(describing: node.value)) frame=\(node.frame) selected=\(node.isSelected) children=\(node.children.count)"
+            }
+            print("PLAN_FORECAST_AFTER_DISCLOSURE_TAP disclosureValue=\(String(describing: forecastSection.value)) disclosureFrame=\(forecastSection.frame) forecastExists=false nodes=\(nodes.count) | \(rows.joined(separator: " | "))")
+        }
         reveal(forecasts, in: app)
         XCTAssertTrue(app.descendants(matching: .any)["park-crowd-meter"].exists)
         XCTAssertTrue(app.buttons["browse-park-crowds"].exists)
