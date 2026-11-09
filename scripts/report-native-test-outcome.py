@@ -30,6 +30,7 @@ def summarize(text: str, outcome: str) -> tuple[list[str], list[str]]:
     cases: Counter[str] = Counter()
     errors: dict[str, tuple[str, str, str]] = {}
     compile_errors: list[str] = []
+    execution_timeouts: list[str] = []
     timing_errors: list[str] = []
     totals: dict[str, tuple[str, str]] = {}
     suite = ""
@@ -50,6 +51,8 @@ def summarize(text: str, outcome: str) -> tuple[list[str], list[str]]:
             compile_errors.append(
                 f'{Path(match["path"]).name}:{match["line"]}: {short(match["reason"])}'
             )
+        if "exceeded execution time allowance" in line and len(execution_timeouts) < 5:
+            execution_timeouts.append(short(line, 500))
         if "RIDE_SEARCH_TIMING_GATE_FAILED" in line and len(timing_errors) < 5:
             timing_errors.append(short(line[line.index("RIDE_SEARCH_TIMING_GATE_FAILED") :]))
         if "MAP_GESTURE_TARGET_FAILURE" in line and len(timing_errors) < 5:
@@ -67,7 +70,10 @@ def summarize(text: str, outcome: str) -> tuple[list[str], list[str]]:
             suite = match[1]
         match = TOTAL.search(line)
         if match and suite:
-            totals[suite] = (match["tests"], match["failures"])
+            # Xcode can restart after a case exceeds its hard allowance. Its
+            # empty restarted suite must not erase the executed case count.
+            if suite not in totals or int(match["tests"]) >= int(totals[suite][0]):
+                totals[suite] = (match["tests"], match["failures"])
             suite = ""
 
     details = []
@@ -79,6 +85,7 @@ def summarize(text: str, outcome: str) -> tuple[list[str], list[str]]:
         location, line, reason = errors[name]
         details.append(f"{name} at {location}:{line}: {reason}")
     details.extend(compile_errors)
+    details.extend(execution_timeouts)
     details.extend(timing_errors)
     if outcome == "failure" and not details:
         details.append("Native test step failed; no failed XCTest case or compiler error was found in the log")

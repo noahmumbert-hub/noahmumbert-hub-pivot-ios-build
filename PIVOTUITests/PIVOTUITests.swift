@@ -2394,6 +2394,10 @@ final class PIVOTUITests: XCTestCase {
     }
 
     func testNativeMapFillsWindowAndSupportsPinchPanZoomWithoutCameraReset() {
+        // This journey includes multiple real MapKit gestures and a 16-second
+        // freshness observation. Keep each assertion's own deadline, while
+        // allowing the complete SE journey to finish past XCTest's 180s default.
+        executionTimeAllowance = 240
         let app = rootFixture(["--map-gesture-test"])
         app.tabBars.buttons["Map"].tap()
         app.buttons["Full screen map"].tap()
