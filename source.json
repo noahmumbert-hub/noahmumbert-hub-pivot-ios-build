@@ -7,7 +7,7 @@
   "localizedDescription": "PIVOT updates for SideStore. Uses the existing PIVOT app identity.",
   "website": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
   "websiteURL": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
-  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/31a8435e702fabab8543d8c66f32ebd3fa392ba4/icon.png",
+  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/bd6170d49e1290557e791e1d81140e173d2fbcd0/icon.png",
   "tintColor": "70DFC0",
   "apps": [
     {
@@ -16,14 +16,23 @@
       "developerName": "Noah Mumbert",
       "subtitle": "Theme park companion",
       "localizedDescription": "Park wait times, ride status, weather observations, planning, shows and Live Activities.",
-      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/31a8435e702fabab8543d8c66f32ebd3fa392ba4/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/bd6170d49e1290557e791e1d81140e173d2fbcd0/icon.png",
       "tintColor": "70DFC0",
-      "version": "1.18.5",
-      "versionDate": "2026-11-07T13:46:29Z",
-      "versionDescription": "Illustrations now download separately so future app updates can stay small. All 1,082 accepted illustrations retain their original bytes, exact ride identities and credits.\n\nInternet is needed once for artwork, including illustrations previously bundled in 1.18.4. The old app bundle is replaced during an update, so a direct upgrade cannot migrate those images. Photos or placeholders remain available while an illustration is not yet saved. In Settings → Artwork downloads, you can save all originals (about 219 MB), pause, and resume.\n\nVerified downloads remain available offline across ordinary app updates and are reused without downloading them again. New artwork downloads pause when storage is tight; valid saved originals are kept. Keep PIVOT installed and use the same signing identity to retain saved artwork and app data. Existing park cards, live waits, Map behavior, planning, accessibility layouts and attribution remain included.",
-      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/31a8435e702fabab8543d8c66f32ebd3fa392ba4/PIVOT-1.18.5-100.328.1.ipa",
-      "size": 8580297,
+      "version": "1.18.6",
+      "versionDate": "2026-11-13T15:48:57Z",
+      "versionDescription": "PIVOT's logo, alert and refresh controls, and park selector now start in the same place across Waits, Plan, Shows, Map, and More. Map keeps a compact park selector so the map remains usable. Long park names and larger text can wrap without clipping the controls.\n\nThe refresh circle and PIVOT wordmark have more room to render completely. Existing live waits, planning, shows, map controls, alerts, park schedules, illustration credits, and persistent artwork downloads remain available. Artwork still needs an initial internet download and then remains available offline; the app update does not bundle the 1,082 original illustrations again.",
+      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/bd6170d49e1290557e791e1d81140e173d2fbcd0/PIVOT-1.18.6-100.344.1.ipa",
+      "size": 8591123,
       "versions": [
+        {
+          "version": "1.18.6",
+          "buildVersion": "100.344.1",
+          "date": "2026-11-13T15:48:57Z",
+          "localizedDescription": "PIVOT's logo, alert and refresh controls, and park selector now start in the same place across Waits, Plan, Shows, Map, and More. Map keeps a compact park selector so the map remains usable. Long park names and larger text can wrap without clipping the controls.\n\nThe refresh circle and PIVOT wordmark have more room to render completely. Existing live waits, planning, shows, map controls, alerts, park schedules, illustration credits, and persistent artwork downloads remain available. Artwork still needs an initial internet download and then remains available offline; the app update does not bundle the 1,082 original illustrations again.",
+          "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/bd6170d49e1290557e791e1d81140e173d2fbcd0/PIVOT-1.18.6-100.344.1.ipa",
+          "size": 8591123,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.18.5",
           "buildVersion": "100.328.1",
