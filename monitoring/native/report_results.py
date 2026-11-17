@@ -17,7 +17,7 @@ def render(root):
         'No continuous uptime or prediction accuracy claim.',
         '**Logs-only retention. Screenshots are transient on the runner and unavailable after the job. '
         'No artifacts, caches, ZIP files or screenshot data are uploaded.**']
-    for name in ('source-sha.txt', 'monitor-sha.txt', 'toolchain.txt', 'simulator-id.txt',
+    for name in ('feed-sha.txt', 'source-sha.txt', 'monitor-sha.txt', 'toolchain.txt', 'simulator-id.txt',
                  'build-execution.json', 'fixtures-execution.json', 'fixtures-summary.json',
                  'live-ui-execution.json', 'live-ui-summary.json', 'live-api.json',
                  'fixtures-export-errors.log', 'live-ui-export-errors.log'):

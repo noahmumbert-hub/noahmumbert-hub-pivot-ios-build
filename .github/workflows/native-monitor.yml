@@ -28,10 +28,27 @@ jobs:
           path: monitor
           persist-credentials: false
 
-      - name: Check out released 1.15.6 source
+      - name: Read published SideStore release metadata
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: 04b1c98d588b471479631f6e9df2aab4e8a1d05d
+          ref: ipa-builds
+          path: feed
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /source.json
+            /build-info-*.json
+
+      - name: Resolve published source commit
+        id: release
+        run: |
+          sha=$(python3 monitor/monitoring/native/released_source.py feed)
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+
+      - name: Check out published app source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ steps.release.outputs.sha }}
           path: app
           persist-credentials: false
 
@@ -44,7 +61,7 @@ jobs:
           git -C app rev-parse HEAD > app/build/monitor/source-sha.txt
           git -C monitor rev-parse HEAD > app/build/monitor/monitor-sha.txt
           xcodebuild -version > app/build/monitor/toolchain.txt
-          git -C app apply ../monitor/monitoring/native/ui-evidence.patch
+          git -C feed rev-parse HEAD > app/build/monitor/feed-sha.txt
 
       - name: Compile simulator tests once
         id: compile
@@ -53,13 +70,14 @@ jobs:
         run: bash ../monitor/monitoring/native/simulator.sh build
 
       - name: Deterministic fixture regressions
+        id: fixtures
         if: ${{ !cancelled() && steps.compile.outcome == 'success' }}
         timeout-minutes: 7
         working-directory: app
         run: bash ../monitor/monitoring/native/simulator.sh fixtures
 
       - name: Live native navigation smoke (not fixture or data-health proof)
-        if: ${{ !cancelled() && steps.compile.outcome == 'success' }}
+        if: ${{ !cancelled() && steps.fixtures.outcome == 'success' }}
         timeout-minutes: 6
         working-directory: app
         run: bash ../monitor/monitoring/native/simulator.sh live-ui

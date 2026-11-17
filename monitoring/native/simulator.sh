@@ -38,17 +38,23 @@ simulator_id="$(cat build/monitor/simulator-id.txt)"
 args=(-project PIVOT.xcodeproj -scheme PIVOT
   -destination "platform=iOS Simulator,id=$simulator_id"
   -derivedDataPath build/MonitorDerivedData
-  -parallel-testing-enabled NO -jobs 3
+  -parallel-testing-enabled NO -maximum-concurrent-test-simulator-destinations 1 -jobs 3
   CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO DEVELOPMENT_TEAM=)
 case "$phase" in
-  build) args+=(build-for-testing) ;;
+  build)
+    echo "Starting simulator boot at $(date -u +%FT%TZ)"
+    xcrun simctl bootstatus "$simulator_id" -b
+    echo "Simulator boot completed at $(date -u +%FT%TZ)"
+    args+=(build-for-testing) ;;
   fixtures)
     args+=(test-without-building -resultBundlePath build/fixtures.xcresult
       -only-testing:PIVOTTests
       -only-testing:PIVOTUITests/PIVOTUITests/testWaitForecastShowsHourlyPlanCrowdAndLearningState
       -only-testing:PIVOTUITests/PIVOTUITests/testSavedForecastDoesNotSuggestRidingNow
       -only-testing:PIVOTUITests/PIVOTUITests/testHHNFavoritesCompletionUndoAndRelaunch
-      -only-testing:PIVOTUITests/PIVOTUITests/testHHNSavedAndEmptyFeedsNeverShowLiveWaits) ;;
+      -only-testing:PIVOTUITests/PIVOTUITests/testHHNSavedAndEmptyFeedsNeverShowLiveWaits
+      -only-testing:PIVOTUITests/PIVOTUITests/testStaleLowestWaitHourlySheetWithholdsRecommendationAtAccessibilityTextSize
+      -only-testing:PIVOTUITests/PIVOTUITests/testReopeningWindowDistinguishesEndedFailedAndPassedPredictions) ;;
   live-ui)
     args+=(test-without-building -resultBundlePath build/live-ui.xcresult
       -only-testing:PIVOTUITests/PIVOTUITests/testPlanOwnsCrowdAndPredictedWaitControls
@@ -57,6 +63,7 @@ case "$phase" in
 esac
 
 started="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+echo "$phase xcodebuild started at $started on $simulator_id"
 result=0
 xcodebuild "${args[@]}" 2>&1 | tee "build/monitor/$phase.log" || result=$?
 python3 - "$phase" "$started" "$result" <<'PY'
