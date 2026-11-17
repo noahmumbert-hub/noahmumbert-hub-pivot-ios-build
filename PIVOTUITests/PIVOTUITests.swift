@@ -3388,8 +3388,9 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["More"].tap()
         app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Settings'")).firstMatch.tap()
         XCTAssertEqual(app.buttons["accent-purple"].value as? String, "Selected")
-        reveal(app.staticTexts["PIVOT 1.18.6"], in: app)
-        XCTAssertTrue(app.staticTexts["PIVOT 1.18.6"].exists)
+        let version = app.staticTexts["PIVOT 1.18.7"]
+        reveal(version, in: app)
+        XCTAssertTrue(version.exists)
         let build = app.staticTexts["PIVOT build number"]
         reveal(build, in: app)
         XCTAssertNotNil(build.label.range(of: #"^Build \d+(?:\.\d+){0,2}$"#, options: .regularExpression))
