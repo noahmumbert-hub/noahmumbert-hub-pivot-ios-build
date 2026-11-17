@@ -7,6 +7,7 @@ from unittest.mock import patch
 
 import live_api
 import report_results
+import released_source
 
 
 class MonitorChecks(unittest.TestCase):
@@ -18,6 +19,24 @@ class MonitorChecks(unittest.TestCase):
 
     def classify(self, body, status=200, content_type='application/json'):
         return live_api.classify(status, content_type, body, 5)
+
+    def test_only_matching_published_manifest_resolves(self):
+        version = dict(version="1.2", buildVersion="100.2", size=512,
+                       downloadURL=released_source.BASE + "a" * 40 + "/PIVOT-1.2-100.2.ipa")
+        app = dict(bundleIdentifier=released_source.BUNDLE, versions=[version])
+        feed = dict(sourceURL=released_source.BASE + "ipa-builds/source.json", apps=[app])
+        info = dict(bundleIdentifier=released_source.BUNDLE, version="1.2", build="100.2",
+                    size=512, filename="PIVOT-1.2-100.2.ipa", commit="b" * 40)
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / "source.json").write_text(json.dumps(feed))
+            manifest = root / "build-info-1.2-100.2.json"
+            manifest.write_text(json.dumps(info))
+            self.assertEqual(released_source.resolve(root), "b" * 40)
+            for change in ({"version": "1.3"}, {"commit": "main"}, {"size": 511}):
+                manifest.write_text(json.dumps(info | change))
+                with self.assertRaises(ValueError):
+                    released_source.resolve(root)
 
     def test_html_502_is_http_failure_not_json_or_zero_rides(self):
         result = self.classify(b'<html>Bad Gateway</html>', 502, 'text/html')

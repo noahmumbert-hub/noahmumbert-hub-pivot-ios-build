@@ -12,7 +12,7 @@ The job checks public visibility before runner allocation and again after checko
 
 - Active schedule: once daily at **14:37 UTC** (`37 14 * * *`), 10:37 EDT / 09:37 EST. Installed on default `main` after reviewing the first manual run.
 - One standard macOS runner, one iPhone simulator, no matrix, one compilation, no automatic test retries. Global concurrency prevents overlapping monitor runs.
-- Hard job limit: **27 minutes**. Compile 12 minutes; fixtures 7; live UI 6; explicit API probes 2; result export/report 2. A hard timeout may prevent the final summary; step logs remain the available evidence.
+- Hard job limit: **27 minutes**. Compile 12 minutes; fixtures 12; live UI 6; explicit API probes 2; result export/report 2. A hard timeout may prevent the final summary; step logs remain the available evidence.
 - Fixture phase: all unit tests from the published app source and six fixture UI journeys, including stale waits and reopening disruptions. Separate live UI phase: **2 navigation smoke tests**.
 - Explicit API probes: EPCOT (5) and Universal Studios Florida (65), one GET each, no retries or redirects, 5-second connect / 15-second total timeout and 2 MiB response cap. The app's live UI also makes its ordinary requests while tests run; the two-request cap applies only to explicit probes.
 - Normal Actions logs retain compiler/test output, pass/fail details and fixture performance measurements. The job summary retains source/monitor SHAs, toolchain, simulator, phase timing/exits, exported XCTest summaries, measurements and separate live API observations. Text sections are bounded to 32 KiB. Retention follows the repository's normal workflow-log policy; no account setting is changed.

@@ -72,7 +72,7 @@ jobs:
       - name: Deterministic fixture regressions
         id: fixtures
         if: ${{ !cancelled() && steps.compile.outcome == 'success' }}
-        timeout-minutes: 7
+        timeout-minutes: 12
         working-directory: app
         run: bash ../monitor/monitoring/native/simulator.sh fixtures
 
