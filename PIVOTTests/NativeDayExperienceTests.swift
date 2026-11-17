@@ -46,6 +46,17 @@ final class NativeDayExperienceTests: XCTestCase {
         XCTAssertEqual(route.cutRideIDs, [1])
     }
 
+    func testImpossibleMustDoLeavesRoomForFeasibleOptionalVisit() {
+        var day = NativeDayState()
+        day.mustDoIDs = [2]
+        day.start = "ride:1"
+        let route = NativeDayPlanning.build(rides: [ride(1, wait: 5, location: location), ride(2, wait: 90, location: location)],
+                                            favoriteIDs: [1], day: day, park: park, startAt: now,
+                                            endAt: now.addingTimeInterval(30 * 60), now: now)
+        XCTAssertEqual(route.stops.map(\.rideID), [1])
+        XCTAssertEqual(route.cutRideIDs, [2])
+    }
+
     func testParkLocalDayAcrossUTCAndDaylightSavingBoundaries() {
         let beforeFloridaMidnight = ISO8601DateFormatter().date(from: "2026-10-05T03:59:00Z")!
         let afterFloridaMidnight = ISO8601DateFormatter().date(from: "2026-10-05T04:01:00Z")!

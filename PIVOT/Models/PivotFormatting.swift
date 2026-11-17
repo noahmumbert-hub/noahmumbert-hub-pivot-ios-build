@@ -1006,6 +1006,23 @@ enum DayPlanner {
             route = orderedRoute(rides: kept, startLocation: startLocation, preferShortWalks: preferShortWalks)
         }
 
+        // If a must-do itself could not fit, the cuts made to protect it may
+        // have displaced shorter visits. Restore feasible rides in a stable order.
+        if removed.contains(where: { mustDoIDs.contains($0.id) }) {
+            let candidates = removed.sorted { first, second in
+                let firstRequired = mustDoIDs.contains(first.id)
+                let secondRequired = mustDoIDs.contains(second.id)
+                return firstRequired == secondRequired ? first.id < second.id : firstRequired
+            }
+            for ride in candidates {
+                let attempt = orderedRoute(rides: kept + [ride], startLocation: startLocation, preferShortWalks: preferShortWalks)
+                if attempt.durationMinutes <= availableMinutes {
+                    kept.append(ride)
+                    route = attempt
+                    removed.removeAll { $0.id == ride.id }
+                }
+            }
+        }
         return (route, removed)
     }
 
