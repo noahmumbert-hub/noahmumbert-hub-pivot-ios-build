@@ -223,6 +223,14 @@ struct NativeRideLowWaitSummary: View {
                         Text("\(ParkTimeFormatter.time(best.start, timeZone: timeZone))–\(ParkTimeFormatter.time(best.end, timeZone: timeZone)) · about \(best.minutes) min")
                             .font(.subheadline.weight(.medium)).fixedSize(horizontal: false, vertical: true)
                             .accessibilityIdentifier("ride-lowest-wait-window")
+                        if let current = store.snapshot?.rides.first(where: { $0.id == ride.id }),
+                           let posted = current.waitTime, best.start > evaluationDate {
+                            let when = ParkTimeFormatter.time(best.start, timeZone: timeZone)
+                            Text(posted > best.upper
+                                 ? "Should I wait? The posted wait is \(posted) min. If you already plan to return around \(when), past waits were \(best.lower)–\(best.upper) min."
+                                 : "Should I wait? The posted wait is \(posted) min. The observed \(best.lower)–\(best.upper) min range around \(when) gives no clear reason to return later.")
+                                .font(.subheadline).fixedSize(horizontal: false, vertical: true)
+                        }
                         Text("Park time · \(ParkTimeFormatter.dateTime(best.start, timeZone: timeZone))")
                             .font(.caption).foregroundStyle(Color.pivotMuted)
                             .fixedSize(horizontal: false, vertical: true)

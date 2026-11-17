@@ -10,6 +10,10 @@ struct NativeDayPlannerView: View {
     @ObservedObject var experience: NativeDayExperienceStore
     let onChoosePark: () -> Void
 
+    @State private var constraintText = ""
+    @State private var constraintPreview: NativePlanConstraints?
+    @State private var previewBase: NativeDayState?
+    @State private var constraintFeedback: String?
     @State private var showFavorites = false
     @State private var showCommitment = false
     @State private var showWindow = false
@@ -33,6 +37,7 @@ struct NativeDayPlannerView: View {
             }
         }
         .onChange(of: park?.id) { _, _ in
+            constraintText = ""; constraintPreview = nil; constraintFeedback = nil
             message = nil; showFavorites = false; showCommitment = false; showWindow = false; showPack = false
         }
     }
@@ -78,6 +83,8 @@ struct NativeDayPlannerView: View {
                 }
             }.tint(accent).pivotCard(padding: 14)
 
+            constraintEditor(park: park, rides: current?.rides ?? [], day: day, window: window,
+                             favorites: favorites, now: now, route: route)
             if let route {
                 routeCard(route, park: park, rides: current?.rides ?? [], now: now)
             } else {
@@ -97,8 +104,8 @@ struct NativeDayPlannerView: View {
             DisclosureGroup("Fixed stops · \(day.commitments.count)") {
                 commitments(park: park, day: day, route: route, window: window, now: now).padding(.top, 8)
             }
-            DisclosureGroup("All favorites & progress") {
-                progress(park: park, rides: current?.rides ?? [], savedRides: pack?.rides ?? [], favorites: favorites, day: day, now: now).padding(.top, 8)
+            DisclosureGroup((day.mustDoIDs ?? []).isEmpty ? "All favorites & progress" : "Favorites, must-dos & progress") {
+                progress(park: park, rides: current?.rides ?? [], savedRides: pack?.rides ?? [], favorites: favorites.union(day.mustDoIDs ?? []), day: day, now: now).padding(.top, 8)
             }
             DisclosureGroup("Crowds & predicted waits") {
                 VStack(spacing: 14) { NativeParkCrowdOverview(); NativePlanWaitForecasts() }.padding(.top, 8)
@@ -130,6 +137,74 @@ struct NativeDayPlannerView: View {
                 perform { try experience.removePack(for: park); message = "Saved pack removed." }
             }
             Button("Cancel", role: .cancel) { }
+        }
+    }
+
+    @ViewBuilder
+    private func constraintEditor(park: FloridaPark, rides: [LiveRide], day: NativeDayState,
+                                  window: (start: Date, end: Date), favorites: Set<Int>, now: Date,
+                                  route: NativeDayRoute?) -> some View {
+        DisclosureGroup("Plan with constraints") {
+            VStack(alignment: .leading, spacing: 10) {
+                TextField("Must do [ride], lunch at 1, avoid backtracking, leave by 5", text: $constraintText, axis: .vertical)
+                    .textFieldStyle(.roundedBorder)
+                    .accessibilityLabel("Day constraints")
+                    .onChange(of: constraintText) { _, _ in constraintPreview = nil; constraintFeedback = nil }
+                Button("Preview changes") {
+                    do {
+                        let result = try NativePlanConstraints.parse(constraintText, day: day, rides: rides, park: park,
+                                                                    start: window.start, end: window.end, now: now)
+                        constraintPreview = result
+                        previewBase = day
+                        constraintFeedback = nil
+                    } catch {
+                        constraintPreview = nil
+                        constraintFeedback = error.localizedDescription
+                    }
+                }
+                if let preview = constraintPreview, day == previewBase {
+                    ForEach(Array(preview.reasons.enumerated()), id: \.offset) { entry in
+                        Text(entry.element).font(.subheadline)
+                    }
+                    if let route {
+                        let next = NativeDayPlanning.build(rides: rides, favoriteIDs: favorites, day: preview.day, park: park,
+                                                           startAt: preview.day.visitStart ?? window.start,
+                                                           endAt: preview.day.visitEnd ?? window.end, now: now)
+                        let previous = route.stops.map(\.rideID)
+                        let planned = next.stops.map(\.rideID)
+                        Text(previous == planned ? "Ride order stays the same." :
+                                "Updated order: " + (next.stops.isEmpty ? "No rides fit." : next.stops.map(\.rideName).joined(separator: " → ")))
+                            .font(.subheadline)
+                        ForEach(next.cutRideIDs + next.unavailableRideIDs + next.missingRideIDs, id: \.self) { id in
+                            let name = rides.first { $0.id == id }?.name ?? "Ride #\(id)"
+                            Text(next.cutRideIDs.contains(id) ? "\(name) does not fit before a fixed stop or departure." :
+                                    "\(name) has no eligible live wait for this route.").font(.caption)
+                        }
+                    } else {
+                        Text("Route feasibility needs a fresh park update.").font(.caption)
+                    }
+                    Button("Apply to this visit") {
+                        do {
+                            let checked = try NativePlanConstraints.parse(constraintText, day: day, rides: rides, park: park,
+                                                                         start: window.start, end: window.end, now: now)
+                            guard checked.day == preview.day else {
+                                constraintPreview = nil; constraintFeedback = "Visit details changed. Preview again."; return
+                            }
+                            try experience.applyConstraints(checked, park: park, now: now)
+                            constraintText = ""; constraintPreview = nil; message = "Visit updated."
+                        } catch { constraintPreview = nil; constraintFeedback = error.localizedDescription }
+                    }
+                }
+                if let constraintFeedback { Text(constraintFeedback).font(.callout).accessibilityAddTraits(.updatesFrequently) }
+                if !(day.mustDoIDs ?? []).isEmpty || day.preferShortWalks == true {
+                    let names = (day.mustDoIDs ?? []).map { id in rides.first { $0.id == id }?.name ?? "Ride #\(id)" }
+                    if !names.isEmpty { Text("Must do: " + names.joined(separator: ", ")).font(.caption) }
+                    if day.preferShortWalks == true { Text("Shorter walking legs preferred").font(.caption) }
+                    Button("Clear ride priorities and walking preference") {
+                        perform { try experience.clearRoutePreferences(park: park, now: now) }
+                    }
+                }
+            }.padding(.top, 8)
         }
     }
 

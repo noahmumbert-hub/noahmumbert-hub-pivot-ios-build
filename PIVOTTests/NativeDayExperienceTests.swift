@@ -7,6 +7,45 @@ final class NativeDayExperienceTests: XCTestCase {
     private let park = FloridaPark.magicKingdom
     private let location = AttractionLocation(latitude: 28.416, longitude: -81.581)
 
+    func testCombinedDayConstraintsPreserveParkTimeAndFeasibility() throws {
+        let rides = [ride(1), ride(2)]
+        let finish = now.addingTimeInterval(11 * 3600)
+        let result = try NativePlanConstraints.parse("must do Ride 2, lunch at 1, avoid backtracking and leave by 5",
+                                                     day: NativeDayState(), rides: rides, park: park, start: now, end: finish, now: now)
+        XCTAssertEqual(result.day.mustDoIDs, [2])
+        XCTAssertEqual(result.day.preferShortWalks, true)
+        XCTAssertEqual(result.day.visitEnd, now.addingTimeInterval(8 * 3600))
+        XCTAssertEqual(result.day.commitments.first?.startAt, now.addingTimeInterval(4 * 3600))
+        let route = NativeDayPlanning.build(rides: rides, favoriteIDs: [1], day: result.day, park: park,
+                                            startAt: now, endAt: try XCTUnwrap(result.day.visitEnd), now: now)
+        XCTAssertTrue(route.stops.contains { $0.rideID == 2 })
+        XCTAssertTrue(route.stops.allSatisfy { $0.completeAt <= route.endAt })
+        XCTAssertEqual(route.commitments.count, 1)
+    }
+
+    func testConstraintsRejectUnknownRideAndConflictingLunch() throws {
+        let finish = now.addingTimeInterval(10 * 3600)
+        for input in ["must do unknown", "lunch at 1, leave by 1:15", "lunch at 25:75", "leave by 9 am"] {
+            XCTAssertThrowsError(try NativePlanConstraints.parse(input, day: NativeDayState(), rides: [ride(1)],
+                                                                 park: park, start: now, end: finish, now: now))
+        }
+        let previous = Data(#"{"progress":{},"start":"entrance","commitments":[]}"#.utf8)
+        let decoded = try JSONDecoder().decode(NativeDayState.self, from: previous)
+        XCTAssertNil(decoded.mustDoIDs)
+        XCTAssertTrue(decoded.isValid)
+    }
+
+    func testFeasibleMustDoSurvivesOptionalRideCut() {
+        var day = NativeDayState()
+        day.mustDoIDs = [2]
+        day.start = "ride:2"
+        let route = NativeDayPlanning.build(rides: [ride(1, wait: 8, location: location), ride(2, wait: 8, location: location)],
+                                            favoriteIDs: [1], day: day, park: park, startAt: now,
+                                            endAt: now.addingTimeInterval(24 * 60), now: now)
+        XCTAssertEqual(route.stops.map(\.rideID), [2])
+        XCTAssertEqual(route.cutRideIDs, [1])
+    }
+
     func testParkLocalDayAcrossUTCAndDaylightSavingBoundaries() {
         let beforeFloridaMidnight = ISO8601DateFormatter().date(from: "2026-10-05T03:59:00Z")!
         let afterFloridaMidnight = ISO8601DateFormatter().date(from: "2026-10-05T04:01:00Z")!

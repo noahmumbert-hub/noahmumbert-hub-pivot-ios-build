@@ -800,7 +800,9 @@ enum DayPlanner {
         startAt: Date,
         endAt: Date,
         now: Date = Date(),
-        startLocation: AttractionLocation?
+        startLocation: AttractionLocation?,
+        mustDoIDs: Set<Int> = [],
+        preferShortWalks: Bool = false
     ) -> DayPlan {
         let effectiveStart = max(startAt, min(now, endAt))
         let availableMinutes = max(0, min(14 * 60, Int(endAt.timeIntervalSince(effectiveStart) / 60)))
@@ -812,8 +814,8 @@ enum DayPlanner {
         }
         let eligibleIDs = Set(eligible.map(\.id))
         let unavailable = requested.filter { !eligibleIDs.contains($0.id) }
-        let fullRoute = orderedRoute(rides: eligible, startLocation: startLocation)
-        let fitted = routeThatFits(rides: eligible, availableMinutes: availableMinutes, startLocation: startLocation)
+        let fullRoute = orderedRoute(rides: eligible, startLocation: startLocation, preferShortWalks: preferShortWalks)
+        let fitted = routeThatFits(rides: eligible, availableMinutes: availableMinutes, startLocation: startLocation, mustDoIDs: mustDoIDs, preferShortWalks: preferShortWalks)
         var stops: [DayPlanStop] = []
         var cursor = effectiveStart
         var totalWalkMinutes = 0
@@ -891,7 +893,7 @@ enum DayPlanner {
         let minutesSaved: Int
     }
 
-    private static func orderedRoute(rides: [LiveRide], startLocation: AttractionLocation?) -> OrderedRoute {
+    private static func orderedRoute(rides: [LiveRide], startLocation: AttractionLocation?, preferShortWalks: Bool) -> OrderedRoute {
         var remaining = Dictionary(uniqueKeysWithValues: rides.map { ($0.id, $0) })
         var legs: [OrderedLeg] = []
         var currentLocation = startLocation
@@ -911,6 +913,7 @@ enum DayPlanner {
                     score(for: ride, walkMinutes: walking.minutes, experienceMinutes: experience, sameLand: sameLand)
                 )
             }.sorted {
+                if preferShortWalks, $0.walking.minutes != $1.walking.minutes { return $0.walking.minutes < $1.walking.minutes }
                 if legs.isEmpty {
                     let firstIsLocated = $0.ride.location != nil
                     let secondIsLocated = $1.ride.location != nil
@@ -922,7 +925,8 @@ enum DayPlanner {
                 }
                 if $0.score != $1.score { return $0.score > $1.score }
                 if $0.walking.minutes != $1.walking.minutes { return $0.walking.minutes < $1.walking.minutes }
-                return $0.ride.name.localizedStandardCompare($1.ride.name) == .orderedAscending
+                let order = $0.ride.name.localizedStandardCompare($1.ride.name)
+                return order == .orderedSame ? $0.ride.id < $1.ride.id : order == .orderedAscending
             }
             guard let selected = candidates.first else { break }
             legs.append(OrderedLeg(
@@ -944,11 +948,13 @@ enum DayPlanner {
     private static func routeThatFits(
         rides: [LiveRide],
         availableMinutes: Int,
-        startLocation: AttractionLocation?
+        startLocation: AttractionLocation?,
+        mustDoIDs: Set<Int>,
+        preferShortWalks: Bool
     ) -> (route: OrderedRoute, removed: [LiveRide]) {
         var kept = rides
         var removed: [LiveRide] = []
-        var route = orderedRoute(rides: kept, startLocation: startLocation)
+        var route = orderedRoute(rides: kept, startLocation: startLocation, preferShortWalks: preferShortWalks)
 
         while !kept.isEmpty, route.durationMinutes > availableMinutes {
             let estimates = route.legs.enumerated().map { index, leg -> RemovalEstimate in
@@ -975,8 +981,10 @@ enum DayPlanner {
             }
 
             let minutesNeeded = route.durationMinutes - availableMinutes
-            let fitting = estimates.filter { $0.minutesSaved >= minutesNeeded }
-            let selected = (fitting.isEmpty ? estimates : fitting).sorted { first, second in
+            let optional = estimates.filter { !mustDoIDs.contains($0.removedRide.id) }
+            let removable = optional.isEmpty ? estimates : optional
+            let fitting = removable.filter { $0.minutesSaved >= minutesNeeded }
+            let selected = (fitting.isEmpty ? removable : fitting).sorted { first, second in
                 if !fitting.isEmpty {
                     let firstDemand = recentDemandMinutes(for: first.removedRide)
                     let secondDemand = recentDemandMinutes(for: second.removedRide)
@@ -995,7 +1003,7 @@ enum DayPlanner {
             guard let selected else { break }
             removed.append(selected.removedRide)
             kept.removeAll { $0.id == selected.removedRide.id }
-            route = orderedRoute(rides: kept, startLocation: startLocation)
+            route = orderedRoute(rides: kept, startLocation: startLocation, preferShortWalks: preferShortWalks)
         }
 
         return (route, removed)

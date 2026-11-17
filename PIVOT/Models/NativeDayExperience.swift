@@ -47,6 +47,8 @@ struct NativeDayState: Codable, Equatable, Sendable {
     var commitments: [NativeDayCommitment] = []
     var visitStart: Date? = nil
     var visitEnd: Date? = nil
+    var mustDoIDs: [Int]? = nil
+    var preferShortWalks: Bool? = nil
 
     var isValid: Bool {
         progress.count <= 1000 && progress.keys.allSatisfy { $0 >= 0 }
@@ -54,6 +56,7 @@ struct NativeDayState: Codable, Equatable, Sendable {
         && commitments.allSatisfy(\.isValid)
         && Set(commitments.map(\.id)).count == commitments.count
         && !commitments.enumerated().contains { index, item in commitments.dropFirst(index + 1).contains { item.overlaps($0) } }
+        && (mustDoIDs ?? []).count <= 1000 && (mustDoIDs ?? []).allSatisfy { $0 >= 0 }
         && validWindow
     }
 
@@ -209,7 +212,8 @@ enum NativeDayPlanning {
         // A duplicate/partial feed must not trap Dictionary(uniqueKeysWithValues:) in the base planner.
         var seen: Set<Int> = []
         let rides = rides.filter { seen.insert($0.id).inserted }
-        let remaining = favoriteIDs.filter { day.progress[$0] == nil }
+        let priorities = Set(day.mustDoIDs ?? [])
+        let remaining = favoriteIDs.union(priorities).filter { day.progress[$0] == nil }
         let start = resolveStart(day.start, rides: rides, park: park)
         let effectiveStart = max(startAt, min(now, endAt))
         let base = DayPlanner.build(rides: rides, requestedRideIDs: remaining, startAt: startAt,
@@ -244,7 +248,8 @@ enum NativeDayPlanning {
             }
             if leaveBy > cursor && cursor < endAt {
                 let segment = DayPlanner.build(rides: rides, requestedRideIDs: pending, startAt: cursor,
-                                               endAt: min(leaveBy, endAt), now: cursor, startLocation: location)
+                                               endAt: min(leaveBy, endAt), now: cursor, startLocation: location,
+                                               mustDoIDs: priorities, preferShortWalks: day.preferShortWalks == true)
                 for stop in segment.stops {
                     stops.append(NativeDayRouteStop(stop, sequence: stops.count + 1))
                     pending.remove(stop.rideID)
@@ -495,6 +500,14 @@ final class NativeDayExperienceStore: ObservableObject {
         try update(park, at: now) { $0.visitStart = start; $0.visitEnd = end }
     }
 
+    func applyConstraints(_ constraints: NativePlanConstraints, park: FloridaPark, now: Date) throws {
+        try update(park, at: now) { $0 = constraints.day }
+    }
+
+    func clearRoutePreferences(park: FloridaPark, now: Date) throws {
+        try update(park, at: now) { $0.mustDoIDs = nil; $0.preferShortWalks = nil }
+    }
+
     func addCommitment(_ commitment: NativeDayCommitment, park: FloridaPark, now: Date = Date()) throws {
         guard commitment.isValid else { throw NativeDayExperienceError.invalidCommitment }
         let current = state(for: park, at: now)
@@ -622,5 +635,109 @@ final class NativeDayExperienceStore: ObservableObject {
                 packs[park.id] = pack
             } catch { storageMessage = NativeDayExperienceError.corruptFile.localizedDescription }
         }
+    }
+}
+
+// Interpret supported clauses against one park and one visit. Persist only after the whole request validates.
+struct NativePlanConstraints {
+    struct InputError: LocalizedError {
+        let message: String
+        var errorDescription: String? { message }
+        init(_ message: String) { self.message = message }
+    }
+
+    let day: NativeDayState
+    let reasons: [String]
+
+    static func parse(_ input: String, day: NativeDayState, rides: [LiveRide], park: FloridaPark,
+                      start: Date, end: Date, now: Date) throws -> Self {
+        guard !input.isEmpty, input.count <= 500 else { throw InputError("Enter up to 500 characters.") }
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = park.timeZone
+        let format = DateFormatter()
+        format.timeZone = park.timeZone
+        format.dateStyle = .none
+        format.timeStyle = .short
+        func clock(_ raw: String) throws -> Date {
+            let value = raw.lowercased().replacingOccurrences(of: " ", with: "")
+            guard value.range(of: #"^(?:[1-9]|1[0-2])(?::[0-5][0-9])?(?:am|pm)?$"#, options: .regularExpression) != nil else {
+                throw InputError("Use a park-local time such as 1 PM or 5:30 PM.")
+            }
+            let parts = value.replacingOccurrences(of: "am", with: "").replacingOccurrences(of: "pm", with: "").split(separator: ":")
+            let hour = Int(parts[0])!
+            // Unqualified hours refer to daytime visit hours. The preview always shows the resolved time.
+            let afternoon = value.hasSuffix("pm") || (!value.hasSuffix("am") && (hour < 8 || hour == 12))
+            let localHour = hour % 12 + (afternoon ? 12 : 0)
+            let minute = parts.count == 2 ? Int(parts[1])! : 0
+            guard let date = calendar.date(bySettingHour: localHour, minute: minute, second: 0, of: start),
+                  calendar.isDate(date, inSameDayAs: start) else { throw InputError("That time is outside this visit day.") }
+            return date
+        }
+        func key(_ name: String) -> String {
+            name.folding(options: [.caseInsensitive, .diacriticInsensitive], locale: Locale(identifier: "en_US_POSIX"))
+                .components(separatedBy: CharacterSet.alphanumerics.inverted).filter { !$0.isEmpty }.joined(separator: " ")
+        }
+        let text = input.replacingOccurrences(of: #"(?i)\s+and\s+(?=must[ -]do\b|lunch\b|avoid\b|leave\b|depart\b|departure\b)"#,
+                                              with: ";", options: .regularExpression)
+        let clauses = text.components(separatedBy: CharacterSet(charactersIn: ",;\n"))
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }.filter { !$0.isEmpty }
+        guard !clauses.isEmpty else { throw InputError("Enter at least one constraint.") }
+        var next = day
+        var reasons: [String] = []
+        var lunch: Date?
+        var departure: Date?
+        for clause in clauses {
+            let lower = clause.lowercased()
+            if ["avoid backtracking", "avoiding backtracking"].contains(lower) {
+                next.preferShortWalks = true
+                reasons.append("Prefer shorter walking legs between feasible rides.")
+            } else if let range = lower.range(of: #"^must[ -]do\s+"#, options: .regularExpression) {
+                let name = String(lower[range.upperBound...])
+                let eligible = rides.filter(\.radarEligible)
+                func matches(_ name: String) -> [LiveRide] { eligible.filter { key($0.name) == key(name) } }
+                let names = matches(name).isEmpty ? name.components(separatedBy: " and ") : [name]
+                for name in names {
+                    let candidates = matches(name)
+                    guard Set(candidates.map(\.id)).count == 1, let ride = candidates.first else {
+                        throw InputError("Use the full name of one ride at this park for “\(name)”.")
+                    }
+                    next.mustDoIDs = Array(Set((next.mustDoIDs ?? []) + [ride.id])).sorted()
+                    reasons.append("Keep \(ride.name) ahead of optional rides when time is tight.")
+                }
+            } else if lower.hasPrefix("lunch at ") {
+                guard lunch == nil else { throw InputError("Choose one lunch time.") }
+                lunch = try clock(String(lower.dropFirst("lunch at ".count)))
+            } else if let range = lower.range(of: #"^(leave|depart|departure) (at |by )?"#, options: .regularExpression) {
+                guard departure == nil else { throw InputError("Choose one departure time.") }
+                departure = try clock(String(lower[range.upperBound...]))
+            } else {
+                throw InputError("Couldn’t interpret “\(clause)”. Use must do, lunch at, avoid backtracking, or leave by.")
+            }
+        }
+        let finish = departure ?? end
+        if let departure {
+            guard departure > max(now, start), departure <= end else {
+                throw InputError("Departure must fall inside the remaining visit window.")
+            }
+            next.visitStart = start
+            next.visitEnd = departure
+            reasons.append("Finish by \(format.string(from: departure)) park time.")
+        }
+        if let lunch {
+            let stop = NativeDayCommitment(id: "constraints:lunch", title: "Lunch", kind: .lunch, startAt: lunch,
+                                           endAt: lunch.addingTimeInterval(30 * 60), bufferMinutes: 0, location: nil)
+            guard lunch >= max(start, now), stop.endAt <= finish else { throw InputError("Lunch needs 30 minutes inside the remaining visit.") }
+            next.commitments.removeAll { $0.id == stop.id }
+            if let conflict = next.commitments.first(where: { $0.overlaps(stop) }) {
+                throw InputError("Lunch overlaps \(conflict.title).")
+            }
+            next.commitments.append(stop)
+            reasons.append("Reserve \(format.string(from: lunch))–\(format.string(from: stop.endAt)) for lunch, plus estimated travel.")
+        }
+        if departure != nil, let conflict = next.commitments.first(where: { $0.endAt > finish }) {
+            throw InputError("\(conflict.title) ends after departure.")
+        }
+        guard next.isValid else { throw InputError("These constraints exceed the limits for a saved day.") }
+        return Self(day: next, reasons: reasons)
     }
 }
