@@ -614,8 +614,18 @@ final class PIVOTUITests: XCTestCase {
         let choose = app.buttons["Change park. Current park: \(name)"].firstMatch
         XCTAssertTrue(bounds.waitForExistence(timeout: 10), file: file, line: line)
         XCTAssertTrue(choose.waitForExistence(timeout: 5), file: file, line: line)
-        waitForSettledFrames([bounds, choose], file: file, line: line)
-        let height = bounds.frame.height
+        // Measure the banner and its button together. Independent AX queries can
+        // consume the full settling deadline before even one pair can be compared.
+        let settled = waitForSettledFrames(count: 2, sampleFrames: { _ in
+            guard let root = try? app.snapshot() else { return [.zero, .zero] }
+            let nodes = nativeSnapshotNodes(root)
+            let banners = nodes.filter { $0.identifier == "park-banner-layout-bounds-\(parkID)" }
+            let buttons = nodes.filter { $0.elementType == .button && $0.label == "Change park. Current park: \(name)" }
+            guard banners.count == 1, buttons.count == 1 else { return [.zero, .zero] }
+            return [banners[0].frame, buttons[0].frame]
+        }, file: file, line: line)
+        guard let settled else { return }
+        let height = settled[0].height
         if category == .large {
             // Released native cards measure176–177pt on these devices. Keep a
             // meaningful reduction while allowing font rounding and wrapping.
@@ -623,7 +633,7 @@ final class PIVOTUITests: XCTestCase {
         } else {
             XCTAssertGreaterThan(height, 160, "Schedule text must grow naturally at accessibility sizes", file: file, line: line)
         }
-        print("PARK_BANNER_METRICS \(capture) category=\(category.rawValue) card=\(bounds.frame) parkAction=\(choose.frame)")
+        print("PARK_BANNER_METRICS \(capture) category=\(category.rawValue) card=\(settled[0]) parkAction=\(settled[1])")
         screenshot("Park banner \(capture) overview", app: app)
 
         centerFullyVisible(choose, in: app, file: file, line: line)
@@ -1030,9 +1040,10 @@ final class PIVOTUITests: XCTestCase {
                       "\(message). Frame \(frame); visible area \(viewport)", file: file, line: line)
     }
 
+    @discardableResult
     private func waitForSettledFrames(_ elements: [XCUIElement],
                                       sampleFrames: (() -> [CGRect])? = nil,
-                                      file: StaticString = #filePath, line: UInt = #line) {
+                                      file: StaticString = #filePath, line: UInt = #line) -> [CGRect]? {
         waitForSettledFrames(count: elements.count, sampleFrames: { deadline in
             if let sampleFrames { return sampleFrames() }
             var frames: [CGRect] = []
@@ -1044,8 +1055,9 @@ final class PIVOTUITests: XCTestCase {
         }, file: file, line: line)
     }
 
+    @discardableResult
     private func waitForSettledFrames(count: Int, sampleFrames: (Date) -> [CGRect],
-                                      file: StaticString = #filePath, line: UInt = #line) {
+                                      file: StaticString = #filePath, line: UInt = #line) -> [CGRect]? {
         let started = Date()
         let deadline = started.addingTimeInterval(15)
         var previous: [CGRect] = []
@@ -1071,12 +1083,13 @@ final class PIVOTUITests: XCTestCase {
                 abs(lhs.minX - rhs.minX) <= 1 && abs(lhs.minY - rhs.minY) <= 1
                     && abs(lhs.width - rhs.width) <= 1 && abs(lhs.height - rhs.height) <= 1
             }
-            if stable, let previousSampleAt, sampledAt.timeIntervalSince(previousSampleAt) >= 0.25 { return }
+            if stable, let previousSampleAt, sampledAt.timeIntervalSince(previousSampleAt) >= 0.25 { return frames }
             previous = valid ? frames : []
             previousSampleAt = sampledAt
         }
         XCTFail("Displayed glyph frames must settle before measuring or capturing them. Actual sample trace: \(trace.joined(separator: "; "))",
                 file: file, line: line)
+        return nil
     }
 
     private func verticalPanX(in viewport: CGRect) -> CGFloat {
@@ -1992,25 +2005,23 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(navigation.waitForExistence(timeout: 5), file: file, line: line)
         XCTAssertTrue(element.waitForExistence(timeout: 5), file: file, line: line)
         let window = app.frame
-        let scroll = app.scrollViews.allElementsBoundByIndex.first { candidate in
-            candidate.exists && !candidate.frame.isEmpty && candidate.frame.intersects(window) && candidate.isHittable
-        }
-        guard let scroll else {
+        let scroll = app.scrollViews["ride-information-content"].firstMatch
+        guard scroll.exists, scroll.frame.intersects(window), scroll.isHittable else {
             XCTFail("Artwork details must expose a foreground scroll view", file: file, line: line)
             return
         }
-        func visibleBody() -> CGRect {
-            var area = scroll.frame.intersection(window).insetBy(dx: 2, dy: 4)
+        func visibleBody(_ scrollFrame: CGRect) -> CGRect {
+            var area = scrollFrame.intersection(window).insetBy(dx: 2, dy: 4)
             let bottom = min(area.maxY, window.maxY - 12)
             area.origin.y = max(area.minY, navigation.frame.maxY + 8)
             area.size.height = max(0, bottom - area.minY)
             return area
         }
         for attempt in 0..<10 {
-            waitForSettledFrames([scroll, element], file: file, line: line)
-            let area = visibleBody()
-            let frame = element.frame
-            print("ARTWORK_DETAIL_VISIBLE attempt=\(attempt) label=\(element.label) viewport=\(area) target=\(frame)")
+            guard let settled = waitForSettledFrames([scroll, element], file: file, line: line) else { return }
+            let area = visibleBody(settled[0])
+            let frame = settled[1]
+            print("ARTWORK_DETAIL_VISIBLE attempt=\(attempt) viewport=\(area) target=\(frame)")
             guard area.width > 0, area.height > 44, !frame.isEmpty else {
                 XCTFail("Artwork detail text needs a measured visible scroll region and nonempty frame", file: file, line: line)
                 return
@@ -2030,8 +2041,8 @@ final class PIVOTUITests: XCTestCase {
             let end = start.withOffset(CGVector(dx: 0, dy: -movement))
             start.press(forDuration: 0.05, thenDragTo: end, withVelocity: .slow, thenHoldForDuration: 0.2)
         }
-        waitForSettledFrames([scroll, element], file: file, line: line)
-        assertContained(element.frame, in: visibleBody(), "Complete artwork text must remain clear of navigation and screen edges", file: file, line: line)
+        guard let settled = waitForSettledFrames([scroll, element], file: file, line: line) else { return }
+        assertContained(settled[1], in: visibleBody(settled[0]), "Complete artwork text must remain clear of navigation and screen edges", file: file, line: line)
         XCTAssertTrue(element.isHittable, file: file, line: line)
     }
 
