@@ -228,6 +228,7 @@ actor PivotAPIClient {
 /// refresh journey. No synthetic transport or payload is compiled into Release.
 final class MapRefreshTestURLProtocol: URLProtocol, @unchecked Sendable {
     @MainActor private static var requestCount = 0
+    @MainActor private static var heldParkResponse: (owner: MapRefreshTestURLProtocol, finish: () -> Void)?
     override class func canInit(with request: URLRequest) -> Bool { true }
     override class func canonicalRequest(for request: URLRequest) -> URLRequest { request }
     override func startLoading() {
@@ -239,7 +240,8 @@ final class MapRefreshTestURLProtocol: URLProtocol, @unchecked Sendable {
                 let parkID = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems?
                     .first(where: { $0.name == "park" })?.value.flatMap(Int.init) ?? 6
                 let manual = ProcessInfo.processInfo.arguments.contains("--map-refresh-manual-test")
-                let status = manual && count == 3 ? 503 : 200
+                let slowSwitch = ProcessInfo.processInfo.arguments.contains("--slow-park-switch")
+                let status = manual && !slowSwitch && count == 3 ? 503 : 200
                 let data: Data
                 if status == 503 { data = Data(#"{"error":"Synthetic refresh outage"}"#.utf8) }
                 else if manual && count == 7 { data = Data("invalid JSON".utf8) }
@@ -259,7 +261,7 @@ final class MapRefreshTestURLProtocol: URLProtocol, @unchecked Sendable {
                         "usedForOperationalTraining": false,
                         "source": ["name": "Synthetic map transport", "label": "Synthetic map transport",
                             "url": "https://example.invalid", "termsUrl": "https://example.invalid", "updateCadenceMinutes": 5]]
-                    let wait = manual ? (count == 1 ? 35 : count == 2 ? 5 : count == 4 ? 0 : 15) : 35 + count
+                    let wait = slowSwitch ? (parkID == 6 ? 35 : 12) : manual ? (count == 1 ? 35 : count == 2 ? 5 : count == 4 ? 0 : 15) : 35 + count
                     payload["rides"] = (payload["rides"] as! [[String: Any]]).map { original in
                         var row = original
                         row["status"] = "OPEN"; row["isOpen"] = true; row["waitTime"] = wait
@@ -274,12 +276,27 @@ final class MapRefreshTestURLProtocol: URLProtocol, @unchecked Sendable {
                 print("MAP_REFRESH_SYNTHETIC request=\(count) park=\(parkID) http=\(status) bytes=\(data.count)")
                 let response = HTTPURLResponse(url: url, statusCode: status, httpVersion: "HTTP/1.1",
                     headerFields: ["Content-Type": "application/json"])!
-                client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)
-                client?.urlProtocol(self, didLoad: data)
-                client?.urlProtocolDidFinishLoading(self)
+                func finish() {
+                    client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)
+                    client?.urlProtocol(self, didLoad: data)
+                    client?.urlProtocolDidFinishLoading(self)
+                }
+                if slowSwitch && parkID == 6 && count == 2 {
+                    Self.heldParkResponse = (self, finish)
+                    return
+                }
+                finish()
+                if slowSwitch && parkID == 5, let held = Self.heldParkResponse {
+                    Self.heldParkResponse = nil
+                    held.finish()
+                }
             } catch { client?.urlProtocol(self, didFailWithError: error) }
         }
     }
-    override func stopLoading() {}
+    override func stopLoading() {
+        Task { @MainActor in
+            if Self.heldParkResponse?.owner === self { Self.heldParkResponse = nil }
+        }
+    }
 }
 #endif

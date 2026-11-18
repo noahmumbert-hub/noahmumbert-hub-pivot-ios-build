@@ -1,4 +1,6 @@
 import XCTest
+import Combine
+import UserNotifications
 import SwiftUI
 import UIKit
 @testable import PIVOT
@@ -1625,6 +1627,53 @@ final class PIVOTTests: XCTestCase {
         )
     }
 
+    @MainActor
+    func testConfirmedForegroundReopeningSubmitsOneParkScopedNotification() async throws {
+        let suite = "reopen-journey-" + UUID().uuidString
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: suite))
+        defaults.set(6, forKey: "pivot.selectedPark")
+        defaults.set(true, forKey: "pivot.alertsEnabled")
+        NativeAlertPreferences(mode: .reopened).save(to: defaults)
+        var submissions: [UNNotificationRequest] = []
+        let service = NotificationService(authorizedForTest: .authorized) { submissions.append($0) }
+        let store = DashboardStore(apiClient: hhnTestClient(), notificationService: service, defaults: defaults)
+        defer {
+            store.setSceneActive(false)
+            AuditURLProtocol.response = nil
+            defaults.removePersistentDomain(forName: suite)
+        }
+        let encoder = JSONEncoder()
+        encoder.dateEncodingStrategy = .iso8601
+        let first = Date().timeIntervalSince(start) - 12
+        func response(_ status: RideStatus, _ index: Int, pending: Bool = false) throws -> Data {
+            try encoder.encode(makeSnapshot(sourceOffset: first + Double(index), ride: makeRide(status: status, reopenPending: pending)))
+        }
+        let closed = try response(.down, 0)
+        AuditURLProtocol.response = { _ in closed }
+        let baseline = expectation(description: "Foreground session applied its first closed observation")
+        let subscription = store.$isRefreshing.dropFirst().filter { !$0 }.prefix(1).sink { _ in baseline.fulfill() }
+        store.setSceneActive(true)
+        await fulfillment(of: [baseline], timeout: 5)
+        subscription.cancel()
+        XCTAssertEqual(store.snapshot?.rides.first?.status, .down)
+        XCTAssertTrue(submissions.isEmpty)
+        let pending = try response(.open, 1, pending: true)
+        AuditURLProtocol.response = { _ in pending }
+        await store.refreshNow()
+        XCTAssertTrue(submissions.isEmpty)
+        let confirmed = try response(.open, 2)
+        AuditURLProtocol.response = { _ in confirmed }
+        await store.refreshNow()
+        await store.refreshNow() // Replaying the same observation must stay quiet.
+        XCTAssertEqual(submissions.count, 1)
+        let request = try XCTUnwrap(submissions.first)
+        XCTAssertEqual(request.content.title, "Space Mountain reopened")
+        XCTAssertEqual(request.content.userInfo["parkId"] as? Int, 6)
+        XCTAssertEqual(request.content.userInfo["rideId"] as? Int, 126)
+        XCTAssertEqual(request.content.userInfo["kind"] as? String, "REOPENED")
+        XCTAssertEqual(store.toastMessage, request.content.title)
+    }
+
     func testRideTransitionsRequireBaselineAndConfirmedReopening() {
         let first = makeSnapshot(sourceOffset: 1, ride: makeRide(status: .open))
         let baselineResult = RideTransitionEngine.evaluate(selectedParkId: 6, previous: nil, current: first)
@@ -2696,6 +2745,36 @@ final class PIVOTTests: XCTestCase {
         return ReopeningGuidance.presentation(ride: snapshot.rides[0], snapshot: snapshot,
             feedHealth: DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot,
                 isLoading: false, refreshFailed: failed, at: now), at: now, timeZone: FloridaPark.magicKingdom.timeZone)
+    }
+
+    func testClosedRideAdviceUsesCurrentAlternativesAndWithholdsStaleOrWrongParkOptions() throws {
+        var snapshot = try reopeningFixture()
+        let down = snapshot.rides[0]
+        let now = snapshot.fetchedAt
+        func advice(parkID: Int = 6, failed: Bool = false) -> ClosedRideAdvice? {
+            ClosedRideAdvice.presentation(ride: down, parkID: parkID, snapshot: snapshot,
+                feedHealth: DashboardFeedHealth.presentation(parkSelected: true, snapshot: snapshot,
+                    isLoading: false, refreshFailed: failed, at: now), refreshFailed: failed, at: now,
+                timeZone: FloridaPark.magicKingdom.timeZone)
+        }
+        let encoder = JSONEncoder()
+        encoder.dateEncodingStrategy = .iso8601
+        func option(_ id: Int, _ name: String, _ land: String, _ wait: Int, pending: Bool = false) throws -> LiveRide {
+            let ride = makeRide(id: id, name: name, land: land, status: .open, waitTime: wait, reopenPending: pending)
+            var json = try XCTUnwrap(JSONSerialization.jsonObject(with: encoder.encode(ride)) as? [String: Any])
+            json["lastUpdated"] = ISO8601DateFormatter().string(from: now)
+            return try PivotAPIClient.makeDecoder().decode(LiveRide.self, from: JSONSerialization.data(withJSONObject: json))
+        }
+        snapshot.rides += [try option(9001, "Other land", "Elsewhere", 0),
+                           try option(9002, "In this land", down.land, 10),
+                           try option(9003, "Unconfirmed", down.land, 2, pending: true)]
+        let result = try XCTUnwrap(advice())
+        XCTAssertTrue(result.decision.contains("estimated window"))
+        XCTAssertTrue(result.alternative?.contains("In this land") == true)
+        XCTAssertNil(advice(failed: true)?.alternative)
+        XCTAssertNil(advice(parkID: 65)?.alternative)
+        snapshot.rides = [down]
+        XCTAssertTrue(advice()?.alternative?.contains("No other ride") == true)
     }
 
     func testSparseReopeningHistoryCannotShowAnExactGuess() throws {

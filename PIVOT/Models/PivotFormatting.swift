@@ -180,6 +180,58 @@ struct ForecastPresentation: Equatable, Sendable {
 
 /// A supported historical range is different from a park-confirmed reopening.
 /// These gates also protect clients talking to older servers without metadata.
+struct ClosedRideAdvice {
+    let decision: String
+    let alternative: String?
+
+    static func presentation(ride: LiveRide, parkID: Int?, snapshot: LiveParkSnapshot?,
+                             feedHealth: DashboardFeedHealth, refreshFailed: Bool,
+                             at now: Date, timeZone: TimeZone) -> Self? {
+        guard ride.status == .down || ride.status == .scheduled else { return nil }
+        guard let snapshot, snapshot.parkId == parkID, feedHealth.isLive, snapshot.parkActive,
+              let observed = snapshot.rides.first(where: { $0.id == ride.id }), observed.status == ride.status,
+              RideWaitPresentation.resolve(rideID: ride.id, parkID: parkID, snapshot: snapshot,
+                  refreshFailed: refreshFailed, at: now).isCurrent else {
+            return Self(decision: "Refresh the park before deciding. The last report cannot confirm whether the ride is open now.", alternative: nil)
+        }
+
+        let decision: String
+        if observed.status == .scheduled {
+            decision = "Plan another stop. Check the operating schedule before returning."
+        } else {
+            let guidance = ReopeningGuidance.presentation(ride: observed, snapshot: snapshot,
+                feedHealth: feedHealth, at: now, timeZone: timeZone)
+            if guidance.range != nil, let estimate = observed.estimate {
+                decision = now < estimate.windowStart
+                    ? "Try another ride first and check again near the start of the estimated window. Reopening could be earlier or later."
+                    : "If this is your priority, ask the entrance team before waiting nearby. The ride could stay closed beyond the estimated window."
+            } else {
+                decision = "Try another ride and check back for an open status. There is no current reopening window to plan around."
+            }
+        }
+
+        // Prefer an option in the same named land, then the shortest current posted wait.
+        let candidates = snapshot.rides.filter {
+            $0.id != observed.id && $0.status == .open && !$0.reopenPending && $0.waitTime != nil
+        }.sorted { a, b in
+            let aLocal = !observed.land.isEmpty && a.land == observed.land
+            let bLocal = !observed.land.isEmpty && b.land == observed.land
+            if aLocal != bLocal { return aLocal }
+            if a.waitTime != b.waitTime { return (a.waitTime ?? .max) < (b.waitTime ?? .max) }
+            return a.id < b.id
+        }
+        for option in candidates {
+            let current = RideWaitPresentation.resolve(rideID: option.id, parkID: parkID, snapshot: snapshot,
+                refreshFailed: refreshFailed, at: now)
+            if let wait = current.waitMinutes {
+                let land = option.land.isEmpty ? "" : " in " + option.land
+                return Self(decision: decision, alternative: "\(option.name)\(land) is open with a posted wait of \(wait) min.")
+            }
+        }
+        return Self(decision: decision, alternative: "Check the park schedule or ask at the entrance. No other ride has a current posted wait here.")
+    }
+}
+
 struct ReopeningGuidance: Equatable, Sendable {
     let headline: String
     let range: String?

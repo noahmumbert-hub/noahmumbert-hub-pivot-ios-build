@@ -484,6 +484,17 @@ struct RideDetailScreenView: View {
                                 }
                                 if let window = ride.operatingWindow { Text(window.label) }
                             }
+                            if let advice = ClosedRideAdvice.presentation(ride: ride, parkID: store.selectedPark?.id,
+                                snapshot: store.snapshot, feedHealth: store.feedHealth(at: date),
+                                refreshFailed: store.errorMessage != nil, at: date, timeZone: timeZone) {
+                                Text("Should I wait?").font(.headline)
+                                Text(advice.decision).fixedSize(horizontal: false, vertical: true)
+                                    .accessibilityIdentifier("closed-ride-decision-\(ride.id)")
+                                if let alternative = advice.alternative {
+                                    Text(alternative).fixedSize(horizontal: false, vertical: true)
+                                        .accessibilityIdentifier("closed-ride-alternative-\(ride.id)")
+                                }
+                            }
                             Text("Waits & status from ThemeParks.wiki").font(.caption).foregroundStyle(Color.pivotMuted)
                         }
                         .font(.subheadline).foregroundStyle(.primary)

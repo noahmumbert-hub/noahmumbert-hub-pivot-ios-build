@@ -1706,6 +1706,19 @@ final class PIVOTUITests: XCTestCase {
             reveal(ride, in: app); ride.tap()
             XCTAssertTrue(app.navigationBars["Ride information"].waitForExistence(timeout: 5))
             checkPrediction()
+            if ["supported", "missing", "stale"].contains(mode) {
+                let decision = app.staticTexts["closed-ride-decision-159"]
+                reveal(decision, in: app)
+                let expected = mode == "supported" ? "estimated window" : mode == "missing" ? "check back" : "Refresh the park"
+                XCTAssertTrue(decision.label.contains(expected), decision.label)
+                let alternate = app.staticTexts["closed-ride-alternative-159"]
+                if mode == "stale" {
+                    XCTAssertFalse(alternate.exists)
+                } else {
+                    reveal(alternate, in: app)
+                    XCTAssertTrue(alternate.label.contains("posted wait"), alternate.label)
+                }
+            }
             if mode == "supported" || mode == "stale" { screenshot("Reopening best prediction \(mode) detail", app: app) }
             app.buttons["Done"].tap(); app.terminate()
         }
@@ -3015,6 +3028,33 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(app.buttons["Change park. Current park: EPCOT"].exists)
     }
 
+    func testSwitchParkWhileOldMapResponseIsHeld() {
+        let app = artworkFixtureApp()
+        app.launchArguments = ["--apple-ui-test", "--map-refresh-network-test", "--map-refresh-manual-test",
+                               "--map-refresh-diagnostics", "--slow-park-switch", "-pivot.selectedPark", "6"]
+        app.launch()
+        app.tabBars.buttons["Map"].tap()
+        selectRootMapRide("Space Mountain", app: app)
+        waitForMapWait("35 min", app: app)
+        app.buttons["Refresh map waits"].tap()
+        let diagnostic = app.staticTexts["Map refresh request diagnostic"]
+        let pending = NSPredicate { _, _ in
+            let value = diagnostic.value as? String ?? ""
+            return value.contains("outcome=started") && value.contains("park=6 ")
+        }
+        XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: pending, object: nil)], timeout: 5), .completed)
+        app.buttons["Change park. Current park: Magic Kingdom Park"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5))
+        search.tap(); search.typeText("EPCOT")
+        guard tapVisibleParkPickerRow("EPCOT", in: app, parkSearch: search,
+            captureTitle: "Select EPCOT during a delayed Magic Kingdom response", timeout: 10) else { return }
+        XCTAssertTrue(app.buttons["Change park. Current park: EPCOT"].waitForExistence(timeout: 10))
+        selectRootMapRide("Guardians", app: app)
+        refreshMapWait("12 min", app: app)
+        XCTAssertTrue(app.buttons["Change park. Current park: EPCOT"].exists)
+    }
+
     func testMapNetworkAutoRefreshContinuesInFullScreenAndAfterForegroundReturn() {
         let app = artworkFixtureApp()
         app.launchArguments = ["--apple-ui-test", "--map-refresh-network-test", "-pivot.selectedPark", "6"]
@@ -3388,7 +3428,7 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["More"].tap()
         app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Settings'")).firstMatch.tap()
         XCTAssertEqual(app.buttons["accent-purple"].value as? String, "Selected")
-        let version = app.staticTexts["PIVOT 1.18.7"]
+        let version = app.staticTexts["PIVOT 1.18.8"]
         reveal(version, in: app)
         XCTAssertTrue(version.exists)
         let build = app.staticTexts["PIVOT build number"]
