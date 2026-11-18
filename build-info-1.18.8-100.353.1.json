@@ -1,0 +1,18 @@
+{
+  "filename": "PIVOT-1.18.8-100.353.1.ipa",
+  "sha256": "8d3e9f4952cfc2a546295eb5b4e136f5af16ed4b5e6861c8a3a44782134193b6",
+  "size": 8635496,
+  "bundleIdentifier": "com.noahmumbert.PIVOT",
+  "version": "1.18.8",
+  "build": "100.353.1",
+  "minimumOSVersion": "17.0",
+  "signed": false,
+  "commit": "5a9de3cfcf82d4eb0143e3b95afe111ad4a96c4f",
+  "run": "44337817886",
+  "ordinaryGitLimitBytes": 104857600,
+  "appBinaryHeadroomBytes": 96222104,
+  "minimumAppBinaryHeadroomBytes": 33554432,
+  "bundledIllustrationJPEGs": 0,
+  "downloadableIllustrations": 1082,
+  "downloadableOriginalJPEGBytes": 218526843
+}
