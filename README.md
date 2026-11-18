@@ -4,13 +4,13 @@ Add this source in SideStore → Sources → +:
 
 https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/ipa-builds/source.json
 
-Current update: **1.18.6 / build 100.344.1**, iOS 17.0+.
+Current update: **1.18.7 / build 100.348.1**, iOS 17.0+.
 
-PIVOT's logo, alert and refresh controls, and park selector now start in the same place across Waits, Plan, Shows, Map, and More. Map keeps a compact park selector so the map remains usable. Long park names and larger text can wrap without clipping the controls.
+In Plan, enter visit constraints such as “must do [ride name], lunch at 1, avoid backtracking, leave by 5.” Preview the route, park-local times and rides that fit before saving. Must-do rides apply to this visit and preserve your favorites.
 
-The refresh circle and PIVOT wordmark have more room to render completely. Existing live waits, planning, shows, map controls, alerts, park schedules, illustration credits, and persistent artwork downloads remain available. Artwork still needs an initial internet download and then remains available offline; the app update does not bundle the 1,082 original illustrations again.
+“Should I wait?” compares the current posted wait with later historical wait ranges when the available data supports a comparison.
 
-IPA SHA-256: `d1db9b0f569b43219f544a2806f7b0b41e0e86d215261a757e1c0ded936b014f`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/42642574966).
+IPA SHA-256: `d5e2f92e98d584ecf433cb03d94f0b2602215b1f3eb63f2f64fa623673cfadc6`. [Tested build](https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/actions/runs/44192773993).
 The unsigned IPA preserves `com.noahmumbert.PIVOT` and its Live Activity extension.
 Install as an update using the same signing identity; keep the existing app installed to retain saved data.
 Native unit and simulator UI tests passed for this build. Physical SideStore installation remains untested.
