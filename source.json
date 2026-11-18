@@ -7,7 +7,7 @@
   "localizedDescription": "PIVOT updates for SideStore. Uses the existing PIVOT app identity.",
   "website": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
   "websiteURL": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
-  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/79e30215e5053b239a3180032ab1328252a5572a/icon.png",
+  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/c648d1483aaaf1eb00c61a32aea5bada7be39834/icon.png",
   "tintColor": "70DFC0",
   "apps": [
     {
@@ -16,14 +16,23 @@
       "developerName": "Noah Mumbert",
       "subtitle": "Theme park companion",
       "localizedDescription": "Park wait times, ride status, weather observations, planning, shows and Live Activities.",
-      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/79e30215e5053b239a3180032ab1328252a5572a/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/c648d1483aaaf1eb00c61a32aea5bada7be39834/icon.png",
       "tintColor": "70DFC0",
-      "version": "1.18.7",
-      "versionDate": "2026-11-18T03:18:16Z",
-      "versionDescription": "In Plan, enter visit constraints such as “must do [ride name], lunch at 1, avoid backtracking, leave by 5.” Preview the route, park-local times and rides that fit before saving. Must-do rides apply to this visit and preserve your favorites.\n\n“Should I wait?” compares the current posted wait with later historical wait ranges when the available data supports a comparison.",
-      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/79e30215e5053b239a3180032ab1328252a5572a/PIVOT-1.18.7-100.348.1.ipa",
-      "size": 8631375,
+      "version": "1.18.8",
+      "versionDate": "2026-11-18T21:59:49Z",
+      "versionDescription": "Open the details for a closed ride to see whether it makes sense to stay nearby or check back later. When PIVOT has a current posted wait for another open ride, it shows an alternative and favors options in the same land. Stale or failed refreshes withhold live recommendations.",
+      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/c648d1483aaaf1eb00c61a32aea5bada7be39834/PIVOT-1.18.8-100.353.1.ipa",
+      "size": 8635496,
       "versions": [
+        {
+          "version": "1.18.8",
+          "buildVersion": "100.353.1",
+          "date": "2026-11-18T21:59:49Z",
+          "localizedDescription": "Open the details for a closed ride to see whether it makes sense to stay nearby or check back later. When PIVOT has a current posted wait for another open ride, it shows an alternative and favors options in the same land. Stale or failed refreshes withhold live recommendations.",
+          "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/c648d1483aaaf1eb00c61a32aea5bada7be39834/PIVOT-1.18.8-100.353.1.ipa",
+          "size": 8635496,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.18.7",
           "buildVersion": "100.348.1",
