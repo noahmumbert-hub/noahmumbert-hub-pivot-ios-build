@@ -900,7 +900,7 @@ struct RootView: View {
                 .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
-            .accessibilityElement(children: .ignore)
+            .accessibilityIdentifier("show-disclosure-\(show.id)")
             .accessibilityLabel("\(show.name). \(statusLabel). \(countLabel)")
             .accessibilityValue(isExpanded ? "Expanded" : "Collapsed")
             .accessibilityHint(isExpanded ? "Double tap to hide showtimes" : "Double tap to show all showtimes")
@@ -956,6 +956,7 @@ struct RootView: View {
                 }
             }
         }
+        .accessibilityElement(children: .contain)
     }
 
     private func showScheduleEyebrow(for state: ShowScheduleState?) -> String {

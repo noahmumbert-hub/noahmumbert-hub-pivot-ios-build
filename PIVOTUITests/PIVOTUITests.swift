@@ -2764,9 +2764,10 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(banner.waitForExistence(timeout: 5))
         XCTAssertEqual(banner.frame.minX, waitsFrame.minX, accuracy: 1)
         XCTAssertEqual(banner.frame.maxX, waitsFrame.maxX, accuracy: 1)
-        let show = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Castle afternoon performance'")).firstMatch
+        let show = app.buttons["show-disclosure-apple-ui-show"]
         reveal(show, in: app)
-        XCTAssertEqual(show.value as? String, "Collapsed")
+        XCTAssertTrue(show.label.contains("Castle afternoon performance"), show.label)
+        XCTAssertEqual(show.value as? String, "Collapsed", app.debugDescription)
         XCTAssertGreaterThanOrEqual(show.frame.height, 44)
         screenshot("Shows schedule collapsed", app: app)
         show.tap()
@@ -2815,12 +2816,12 @@ final class PIVOTUITests: XCTestCase {
     func testShowsExpandedPerformanceFitsAtLargestTextSize() {
         let app = rootFixture(["--ui-largest-type"])
         app.tabBars.buttons["Shows"].tap()
-        let row = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Castle afternoon performance'")).firstMatch
+        let row = app.buttons["show-disclosure-apple-ui-show"]
         centerFullyVisible(row, in: app)
         assertContained(row.frame, in: safeContentViewport(in: app), "The wrapped show name and status must fit")
         XCTAssertGreaterThanOrEqual(row.frame.height, 44)
         row.tap()
-        XCTAssertEqual(row.value as? String, "Expanded")
+        XCTAssertEqual(row.value as? String, "Expanded", app.debugDescription)
         let time = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "showtime-apple-ui-show-")).firstMatch
         centerFullyVisible(time, in: app)
         assertContained(time.frame, in: safeContentViewport(in: app), "The full showtime action must fit")
