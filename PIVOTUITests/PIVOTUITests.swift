@@ -3474,7 +3474,7 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["More"].tap()
         app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Settings'")).firstMatch.tap()
         XCTAssertEqual(app.buttons["accent-purple"].value as? String, "Selected")
-        let version = app.staticTexts["PIVOT 1.18.9"]
+        let version = app.staticTexts["PIVOT 1.18.10"]
         reveal(version, in: app)
         XCTAssertTrue(version.exists)
         let build = app.staticTexts["PIVOT build number"]

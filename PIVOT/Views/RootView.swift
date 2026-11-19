@@ -142,9 +142,7 @@ struct RootView: View {
         NavigationStack {
             List {
                 Section {
-                    topChrome
-                    .listRowInsets(EdgeInsets())
-                    .listRowBackground(Color.clear)
+                    topChrome.parkDashboardHeaderRow()
                 }
                 if showsHasRetainedWarning, store.feedHealth().retainedGuidance != nil {
                     Section { RetainedSnapshotNotice() }

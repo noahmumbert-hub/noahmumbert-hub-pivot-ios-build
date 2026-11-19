@@ -115,10 +115,7 @@ struct RideListView: View {
     private var nativeList: some View {
         List {
             if let nativeHeader {
-                Section { nativeHeader }
-                    .listRowInsets(EdgeInsets())
-                    .listRowBackground(Color.clear)
-                    .listRowSeparator(.hidden)
+                Section { nativeHeader.parkDashboardHeaderRow() }
             }
             Section {
                 controls
@@ -682,11 +679,20 @@ private struct RideRowView: View {
 }
 
 extension View {
+    func parkDashboardHeaderRow() -> some View {
+        // Keep the existing top inset inside the cell so the grouped section's
+        // corner mask clears the refresh button, including its outer stroke.
+        self.padding(.top, 8)
+            .listRowInsets(EdgeInsets())
+            .listRowBackground(Color.clear)
+            .listRowSeparator(.hidden)
+    }
+
     func parkDashboardListStyle() -> some View {
         self
             .listStyle(.insetGrouped)
             .contentMargins(.horizontal, 14, for: .scrollContent)
-            .contentMargins(.top, 8, for: .scrollContent)
+            .contentMargins(.top, 0, for: .scrollContent)
             .listSectionSpacing(8)
             .scrollContentBackground(.hidden)
             .background(Color.pivotBackground)
