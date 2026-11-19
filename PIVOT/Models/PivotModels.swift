@@ -578,6 +578,8 @@ struct LiveRide: Codable, Identifiable, Sendable {
     let statusComparisonReason: String?
     let scheduledReason: String?
     let operatingWindow: AttractionOperatingWindow?
+    /// Real timestamped API observations; legacy trend values have no timestamps.
+    var waitHistory: [WaitHistorySample]? = nil
 
     var isRadarDown: Bool {
         status == .down && radarEligible
@@ -797,6 +799,8 @@ struct WeatherSnapshot: Codable, Sendable {
     let nws: NWSDetails
     let lightning: LightningDetails
     let radar: RadarDetails?
+    /// Absent on older servers. The experiment remains server-controlled and off by default.
+    var lightningDeparture: LightningDepartureEstimate? = nil
 }
 
 struct HorrorNight: Codable, Sendable {
@@ -897,4 +901,62 @@ enum RideSort: String, CaseIterable, Identifiable {
     case name = "Name"
 
     var id: String { rawValue }
+}
+
+
+/// A posted wait observation, never a forecast or a fabricated trend timestamp.
+struct WaitHistorySample: Codable, Sendable, Equatable, Identifiable {
+    let observedAt: Date
+    let waitTime: Double
+    var id: Date { observedAt }
+}
+
+/// Exact optional weather.lightningDeparture wire contract. Raw strings retain
+/// forward compatibility; the view only displays numbers for the known range state.
+struct LightningDepartureEstimate: Codable, Sendable {
+    let status: String
+    let reason: String
+    let label: String
+    let algorithmVersion: String
+    let calibration: String
+    let issuedAt: Date
+    let radarObservedAt: Date?
+    let lightningIntervalEndAt: Date?
+    let earliestDepartureAt: Date?
+    let latestDepartureAt: Date?
+    let diagnostics: LightningDepartureDiagnostics
+    let frameCount: Int
+    let frameTimes: [Date]
+    let trackedRadiusMiles: Double
+    let watchRadiusMiles: Double?
+    let motion: LightningDepartureMotion?
+    let source: LightningDepartureSource
+    let limitations: String
+}
+
+struct LightningDepartureDiagnostics: Codable, Sendable {
+    let radarAgeMinutes: Double?
+    let lightningAgeMinutes: Double?
+    let footprintPixelCounts: [Int]
+    let componentCounts: [Int]
+    let componentPixelCounts: [[Int]]
+    let unknownRadarCells: [Int]
+    let unknownLightningCells: Int?
+    let pairOverlap: [Double]
+    let pairSpeedsMph: [Double]
+    let densityIntervalMinutes: Int
+    let reflectivityUnits: String
+}
+
+struct LightningDepartureMotion: Codable, Sendable {
+    let eastMilesPerMinute: Double
+    let northMilesPerMinute: Double
+    let speedMph: Double
+    let bearingDegrees: Double
+    let agreement: String
+}
+
+struct LightningDepartureSource: Codable, Sendable {
+    let radar: String
+    let lightning: String
 }

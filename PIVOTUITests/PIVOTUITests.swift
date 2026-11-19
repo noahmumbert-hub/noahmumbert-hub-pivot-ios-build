@@ -38,7 +38,7 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["More"].tap()
         app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Settings'")).firstMatch.tap()
         XCTAssertEqual(app.buttons["accent-purple"].value as? String, "Selected")
-        XCTAssertTrue(app.staticTexts["PIVOT 1.9.1"].exists)
+        XCTAssertTrue(app.staticTexts["PIVOT 1.14.1"].exists)
         app.buttons["accent-mint"].tap()
     }
 

@@ -8,11 +8,14 @@ private enum DashboardSection: String {
     case data
 }
 
+@MainActor
 struct RootView: View {
     @Environment(\.pivotAccent) private var accent
     @EnvironmentObject private var store: DashboardStore
     @Environment(\.scenePhase) private var scenePhase
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    @StateObject private var dayExperience = NativeDayExperienceStore()
 
     @State private var showParkPicker = false
     @State private var showAlertSettings = false
@@ -97,6 +100,7 @@ struct RootView: View {
                     LazyVStack(spacing: 20) {
                         header
                         parkSwitch
+                        RetainedSnapshotNotice()
 
                         if store.selectedPark?.id == 65, store.snapshot?.parkId == 65,
                            let event = store.snapshot?.halloweenHorrorNights {
@@ -105,10 +109,12 @@ struct RootView: View {
 
                         switch section {
                         case .today:
-                            DayPlannerView(
+                            NativeDayPlannerView(
                                 park: store.selectedPark,
                                 snapshot: store.snapshot,
                                 isRefreshing: store.isRefreshing,
+                                feedIsLive: store.feedHealth().isLive,
+                                experience: dayExperience,
                                 onChoosePark: { showParkPicker = true }
                             )
 
@@ -145,6 +151,7 @@ struct RootView: View {
                                 title: "Reopen Radar",
                                 detail: "Closures, reopening windows, and park weather."
                             )
+                            radarSelection
                             radarCard {
                                 withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.2)) {
                                     scrollProxy.scrollTo("down-rides", anchor: .top)
@@ -152,6 +159,11 @@ struct RootView: View {
                             }
                             if store.selectedPark != nil {
                                 weatherStrip
+                                if let estimate = store.snapshot?.weather.lightningDeparture {
+                                    NativeLightningDepartureCard(estimate: estimate,
+                                        timeZone: store.selectedPark?.timeZone ?? ParkTimeFormatter.selectedParkTimeZone,
+                                        refreshFailed: store.errorMessage != nil || store.snapshot?.feedHealthy != true)
+                                }
                             }
 
                             if store.selectedPark != nil {
@@ -223,61 +235,26 @@ struct RootView: View {
     }
 
     private func horrorNightSection(_ event: HorrorNightSnapshot, showHouses: Bool) -> some View {
-        TimelineView(.periodic(from: .now, by: 1)) { context in
-            if event.isActive(at: context.date) {
-                VStack(alignment: .leading, spacing: 14) {
-                    VStack(alignment: .leading, spacing: 6) {
-                        Text("Halloween Horror Nights").font(.title3.bold())
-                        Text("Tonight · \(horrorClock(event.night.openingTime))–\(horrorClock(event.night.closingTime))")
-                            .font(.subheadline)
-                        Text("Separate event ticket required · switches off at closing")
-                            .font(.footnote).foregroundStyle(Color.pivotMuted)
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(16)
-                    .background(Color.orange.opacity(0.12), in: RoundedRectangle(cornerRadius: 18))
-
-                    if showHouses {
-                        Text("Haunted houses").font(.title2.bold())
-                        ForEach(event.houses) { house in
-                            let fresh = context.date.timeIntervalSince(event.fetchedAt) < 15 * 60 && house.status != "UNAVAILABLE"
-                            let waitFresh = context.date.timeIntervalSince(house.sourceUpdatedAt) < 15 * 60
-                            HStack(spacing: 12) {
-                                VStack(alignment: .leading, spacing: 6) {
-                                    Text(house.name).font(.headline).fixedSize(horizontal: false, vertical: true)
-                                    Text(!fresh ? "Updating" : house.status == "OPEN" ? "Open" : house.status == "DOWN" ? "Temporarily down" : context.date < event.night.openingTime ? "Opens with event" : "Closed")
-                                        .font(.subheadline).foregroundStyle(Color.pivotMuted)
-                                }
-                                Spacer(minLength: 4)
-                                if fresh, waitFresh, house.status == "OPEN", let wait = house.waitTime {
-                                    VStack(spacing: 2) {
-                                        Text("\(wait)").font(.title2.bold()).monospacedDigit()
-                                        Text("min").font(.caption)
-                                    }
-                                } else {
-                                    Text(fresh && house.status == "OPEN" ? "Wait not published" : "—")
-                                        .font(.footnote).foregroundStyle(Color.pivotMuted)
-                                        .frame(maxWidth: 85).multilineTextAlignment(.trailing)
-                                }
-                            }
-                            .pivotCard(padding: 16)
-                        }
-                        if event.houses.isEmpty {
-                            Text("House listings are unavailable from the live feed. PIVOT will retry automatically.").font(.subheadline)
-                        }
-                        Text("House waits by ThemeParks.wiki").font(.footnote).foregroundStyle(Color.pivotMuted)
-                    }
-                }
-                .foregroundStyle(.white)
-            }
-        }
+        NativeHorrorNightPanel(event: event, showHouses: showHouses,
+                              refreshFailed: store.errorMessage != nil || store.snapshot?.feedHealthy != true)
     }
 
-    private func horrorClock(_ date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.timeZone = TimeZone(identifier: "America/New_York")
-        formatter.dateFormat = "h:mm a"
-        return formatter.string(from: date)
+    private var radarSelection: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Picker("Featured ride", selection: Binding<Int?>(get: { store.pinnedRadarRideID }, set: { store.pinRadarRide($0) })) {
+                Text("Automatic · highest recent demand").tag(Optional<Int>.none)
+                ForEach(store.reviewedRides) { ride in
+                    Text(ride.name).tag(Optional(ride.id))
+                }
+            }
+            .pickerStyle(.menu)
+            if let pinned = store.pinnedRadarRideID, !store.radarRides.contains(where: { $0.id == pinned }) {
+                Text("Your pinned ride is not currently down. Radar shows another eligible closure when available.")
+                    .font(.caption).foregroundStyle(Color.pivotMuted)
+            }
+        }
+        .pivotCard(padding: 14)
+        .disabled(store.selectedPark == nil)
     }
 
     private var moreActions: some View {
@@ -471,10 +448,17 @@ struct RootView: View {
     }
 
     private var sourceStrip: some View {
+        TimelineView(.periodic(from: .now, by: 1)) { context in
+            let health = store.feedHealth(at: context.date)
+            sourceStrip(health: health)
+        }
+    }
+
+    private func sourceStrip(health: DashboardFeedHealth) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack(spacing: 10) {
-                PivotStatusDot(color: store.snapshot?.feedHealthy == true ? .pivotMint : .orange)
-                Text(store.sourceStatus)
+                PivotStatusDot(color: health.isLive ? .pivotMint : .orange)
+                Text(health.status)
                     .font(.caption.weight(.semibold))
                     .foregroundStyle(.white)
                     .lineLimit(2)
@@ -502,6 +486,7 @@ struct RootView: View {
     @ViewBuilder
     private var weatherStrip: some View {
         if let weather = store.snapshot?.weather {
+            TimelineView(.periodic(from: .now, by: 1)) { context in
             let inferredRides = store.snapshot?.rides.filter {
                 $0.status == .down && $0.delayEvidence?.weatherOriginSignal == "RADAR_CLOSURE_WAVE"
             } ?? []
@@ -514,6 +499,7 @@ struct RootView: View {
                     Spacer()
                     lightningCondition(
                         weather,
+                        at: context.date,
                         inferredWeatherClosureCount: inferredRides.count,
                         contradictoryOpenDescription: contradictoryOpenDescription
                     )
@@ -523,12 +509,14 @@ struct RootView: View {
                     Divider().overlay(Color.pivotBorder)
                     lightningCondition(
                         weather,
+                        at: context.date,
                         inferredWeatherClosureCount: inferredRides.count,
                         contradictoryOpenDescription: contradictoryOpenDescription
                     )
                 }
             }
             .pivotCard(padding: 16)
+            }
         }
     }
 
@@ -549,19 +537,24 @@ struct RootView: View {
 
     private func lightningCondition(
         _ weather: WeatherSnapshot,
+        at now: Date,
         inferredWeatherClosureCount: Int,
         contradictoryOpenDescription: String?
     ) -> some View {
+        let health = DashboardLightningHealth.presentation(lightning: weather.lightning, feedHealth: store.feedHealth(at: now), at: now)
         let state = weather.lightning.clearanceState
         let radius = weather.lightning.sampleRadiusMiles > 0 ? weather.lightning.sampleRadiusMiles : 5
         let radiusLabel = radius.rounded() == radius ? "\(Int(radius))" : String(format: "%.1f", radius)
         let required = max(1, weather.lightning.requiredClearMinutes ?? 30)
         let clearMinutes = max(0, weather.lightning.clearMinutes ?? 0)
-        let detected = inferredWeatherClosureCount >= 2 ||
-            (weather.lightning.status == "LIVE" && (state == "ACTIVE" || state == "COUNTDOWN"))
+        let detected = health.isCurrent && (inferredWeatherClosureCount >= 2 ||
+            (state == "ACTIVE" || state == "COUNTDOWN"))
         let title: String
         let detail: String
-        if weather.lightning.sourceKind == "GLM", let glm = weather.lightning.glm {
+        if !health.isCurrent {
+            title = health.title
+            detail = "Current lightning conditions cannot be verified. Last observation \(ParkTimeFormatter.observationTime(weather.lightning.sourceUpdatedAt)); last check \(ParkTimeFormatter.observationTime(weather.lightning.checkedAt))."
+        } else if weather.lightning.sourceKind == "GLM", let glm = weather.lightning.glm {
             title = glm.state == "VERIFIED" ? "Estimated weather-clear interval complete" : glm.state == "UNKNOWN" ? "Lightning timer · coverage incomplete" : "Weather-clear estimate · \(glm.clearMinutes)/30 min observed"
             detail = "Last GLM detection \(ParkTimeFormatter.observationTime(glm.lastDetectedAt)) · target \(ParkTimeFormatter.observationTime(glm.targetAt)). Only newer detections move the target; missing observations do not count as clear. Locations are approximate, not exact ground strikes."
         } else if inferredWeatherClosureCount >= 2 {
@@ -572,24 +565,24 @@ struct RootView: View {
             detail = "NOAA nowCOAST \(radiusLabel)-mile zone is not current · \(weather.lightning.completeFrames30Minutes ?? 0) complete recent frames"
         } else if state == "ACTIVE" {
             let nearest = weather.lightning.nearestPositiveSampleMiles.map { String(format: " · nearest positive sample %.1f mi", $0) } ?? ""
-            title = "Outdoor hold · lightning inside \(radiusLabel) mi"
+            title = "Mapped lightning inside \(radiusLabel) mi"
             detail = "NOAA positive sample\(nearest) · 30-minute clock uses the possible strike time inside the 15-minute density interval · conservative clear end \(ParkTimeFormatter.dateTime(weather.lightning.clearanceAt))"
         } else if state == "COUNTDOWN" {
-            title = "Outdoor reopen clock · \(clearMinutes)/\(required) min"
-            detail = "No in-zone strike in complete NOAA frames · target \(ParkTimeFormatter.dateTime(weather.lightning.clearanceAt)) · \(radarTrendText(weather.radar?.trend))"
+            title = "Mapped clear interval · \(clearMinutes)/\(required) min"
+            detail = "No mapped in-zone detection in complete NOAA frames · target \(ParkTimeFormatter.dateTime(weather.lightning.clearanceAt)) · \(radarTrendText(weather.radar?.trend))"
         } else if state == "VERIFIED" {
-            title = "Outdoor lightning clearance verified"
-            detail = "\(required)-minute no-strike interval complete at \(ParkTimeFormatter.dateTime(weather.lightning.clearanceVerifiedAt ?? weather.lightning.clearanceAt)) · restart window may begin"
+            title = "Mapped lightning-clear interval complete"
+            detail = "\(required)-minute mapped clear interval complete at \(ParkTimeFormatter.dateTime(weather.lightning.clearanceVerifiedAt ?? weather.lightning.clearanceAt)) · park operations decide reopening"
         } else if weather.lightning.lastDensityDetectedAt != nil {
             title = "Waiting for a complete clear interval"
             detail = "Last in-zone sample \(ParkTimeFormatter.dateTime(weather.lightning.lastDensityDetectedAt)) · \(weather.lightning.completeFrames30Minutes ?? 0) complete NOAA frames · \(radarTrendText(weather.radar?.trend))"
         } else {
-            title = "No lightning inside \(radiusLabel) mi"
-            detail = "Outdoor attractions may remain open under the PIVOT rule · \(radarTrendText(weather.radar?.trend)) · \(weather.lightning.completeFrames30Minutes ?? 0) complete NOAA frames"
+            title = "No mapped lightning inside \(radiusLabel) mi"
+            detail = "No mapped detections in the available observations · \(radarTrendText(weather.radar?.trend)) · \(weather.lightning.completeFrames30Minutes ?? 0) complete NOAA frames"
         }
         let rule = inferredWeatherClosureCount >= 2
-            ? "Park-specific provisional fallback · no verified strike claimed · 30-minute buffer after projected convective echoes exit."
-            : "PIVOT outdoor rule: open while lightning is >\(radiusLabel) mi away · reopen after \(required) continuous clear min."
+            ? "Park-specific provisional fallback · no verified strike claimed · modeled restart buffer; scalar radar intensity does not measure storm departure."
+            : "Mapped observations are approximate. The \(required)-minute interval is a PIVOT model; park operators decide closures and reopening."
         return HStack(spacing: 10) {
             Image(systemName: detected ? "bolt.fill" : "bolt.slash")
                 .foregroundStyle(detected ? Color.pivotWeather : Color.pivotMuted)
@@ -618,7 +611,7 @@ struct RootView: View {
     private func radarTrendText(_ trend: String?) -> String {
         switch trend {
         case "CLEAR": "Radar clear"
-        case "EXITING": "Radar echoes exiting"
+        case "EXITING": "Radar reflectivity decreasing"
         case "BUILDING": "Radar echoes building"
         case "STEADY": "Radar echoes steady"
         default: "Radar updating"
@@ -633,7 +626,7 @@ struct RootView: View {
 
     @ViewBuilder
     private var parkHoursCard: some View {
-        if let hours = store.snapshot?.parkHours {
+        if let park = store.selectedPark, let hours = store.parkHours(for: park) {
             VStack(alignment: .leading, spacing: 13) {
                 HStack(alignment: .firstTextBaseline) {
                     VStack(alignment: .leading, spacing: 4) {
@@ -820,7 +813,23 @@ struct RootView: View {
                 } else {
                     ShowTimeFlowLayout(spacing: 7) {
                         ForEach(show.sortedShowtimes) { showtime in
-                            Text(ShowScheduleRowFormatter.pillLabel(for: showtime))
+                            Button {
+                                guard let park = store.selectedPark else { return }
+                                do {
+                                    try dayExperience.addShow(show, showtime: showtime, park: park, now: Date())
+                                    store.toastMessage = "\(show.name) added to Plan. No reservation made."
+                                } catch {
+                                    store.toastMessage = error.localizedDescription
+                                }
+                            } label: {
+                                VStack(alignment: .leading, spacing: 3) {
+                                    Text(ShowScheduleRowFormatter.pillLabel(for: showtime))
+                                    Text(showtime.endTime == nil || showtime.endTime == showtime.startTime ? "+ Plan · reserve 30 min" : "+ Add to Plan")
+                                        .font(.caption2)
+                                }
+                            }
+                                .buttonStyle(.plain)
+                                .disabled(showtime.startTime <= referenceDate)
                                 .font(.caption.weight(.semibold).monospacedDigit())
                                 .foregroundStyle(.white)
                                 .lineLimit(1)
@@ -890,7 +899,7 @@ struct RootView: View {
 
                 Text("How reopening forecasts work")
                     .font(.headline)
-                Text("The Today planner schedules only rides the user marks as favorites and never inserts unrelated filler rides. For selected favorites that are currently open and reporting a fresh standby wait, it combines that hidden queue cost with recent observed demand and exact attraction coordinates from ThemeParks.wiki to reduce time and walking inside the selected visit window. When the full list cannot fit, it names the favorites that must be removed; unavailable favorites are labeled separately and reconsidered after every live refresh. Coordinate distance receives a 1.35× park-path adjustment, so the result is planning guidance rather than turn-by-turn navigation. Raw queue numbers remain only in Waits.")
+                Text("The Today planner schedules remaining favorites from your chosen starting point. Done and skipped rides remain in favorites, while fixed shows, meals and return windows reserve walking and arrival buffers. Explicit saved day packs keep reference information available offline, clearly labelled with their saved time. It never inserts unrelated filler rides. For selected favorites that are currently open and reporting a fresh standby wait, it combines that hidden queue cost with recent observed demand and exact attraction coordinates from ThemeParks.wiki to reduce time and walking inside the selected visit window. When the full list cannot fit, it names the favorites that must be removed; unavailable favorites are labeled separately and reconsidered after every live refresh. Coordinate distance receives a 1.35× park-path adjustment, so the result is planning guidance rather than turn-by-turn navigation. Raw queue numbers remain only in Waits.")
                 Text("Shows and entertainment are a separate daily schedule stream. PIVOT displays every published performance time for the selected park, preserves the full schedule after times pass, and clearly distinguishes a completed day, no scheduled performances, and a provider outage. Showtimes are not ride waits and never enter Reopen Radar.")
                 Text("Park hours and early entry come from each selected park’s dated ThemeParks.wiki schedule. Every park has its own local-date cache, so schedules and operating boundaries cannot leak between properties or time zones. A prior schedule is labeled stale if the provider is temporarily unavailable.")
                 Text("PIVOT covers \(FloridaPark.allCases.count) reviewed parks across Disney, Universal, United Parks, the legacy Cedar Fair portfolio, and the legacy Six Flags portfolio. The list contains reviewed ride attractions and ride-like queued experiences; stage shows, meet-and-greets, play areas, walkthroughs, duplicate queues, and unreviewed entries are excluded.")
@@ -1751,6 +1760,33 @@ private extension View {
             tabBarMinimizeBehavior(.never)
         } else {
             self
+        }
+    }
+}
+
+/// A single freshness warning for every dashboard tab and the full-screen ride
+/// detail. Time alone can expire a retained snapshot, even without a new response.
+struct RetainedSnapshotNotice: View {
+    @EnvironmentObject private var store: DashboardStore
+
+    var body: some View {
+        TimelineView(.periodic(from: .now, by: 1)) { context in
+            let health = store.feedHealth(at: context.date)
+            if let guidance = health.retainedGuidance {
+                VStack(alignment: .leading, spacing: 5) {
+                    Label(health.status, systemImage: "exclamationmark.triangle")
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(Color.orange)
+                    Text(guidance)
+                        .font(.caption)
+                        .foregroundStyle(Color.pivotMuted)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .pivotCard(padding: 14)
+                .accessibilityElement(children: .combine)
+                .accessibilityIdentifier("retained-snapshot-notice")
+            }
         }
     }
 }

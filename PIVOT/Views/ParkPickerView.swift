@@ -43,6 +43,17 @@ struct ParkPickerView: View {
     }
 
     var body: some View {
+        TimelineView(.periodic(from: .now, by: 60)) { context in
+            picker(at: context.date)
+                .task(id: FloridaPark.allCases.map {
+                    ParkHoursSnapshot.localDate(for: $0, at: context.date)
+                }.joined(separator: "|")) {
+                    store.loadParkHours()
+                }
+        }
+    }
+
+    private func picker(at now: Date) -> some View {
         NavigationStack {
             List {
                 Section("Location") {
@@ -68,7 +79,7 @@ struct ParkPickerView: View {
                 }
 
                 Section("Monitoring") {
-                    parkButton(nil)
+                    parkButton(nil, at: now)
                 }
 
 
@@ -77,7 +88,7 @@ struct ParkPickerView: View {
                     if !parks.isEmpty {
                         Section(portfolio) {
                             ForEach(parks) { park in
-                                parkButton(park)
+                                parkButton(park, at: now)
                             }
                         }
                     }
@@ -122,9 +133,6 @@ struct ParkPickerView: View {
             }
         }
         .preferredColorScheme(.dark)
-        .task {
-            store.loadParkHours()
-        }
         .onChange(of: store.locationStatus) { _, status in
             if case .found = status {
                 dismiss()
@@ -132,7 +140,7 @@ struct ParkPickerView: View {
         }
     }
 
-    private func parkButton(_ park: FloridaPark?) -> some View {
+    private func parkButton(_ park: FloridaPark?, at now: Date) -> some View {
         Button {
             store.selectPark(park)
             dismiss()
@@ -159,7 +167,7 @@ struct ParkPickerView: View {
                     Text(parkDetail(for: park))
                         .font(.caption)
                         .foregroundStyle(Color.pivotMuted)
-                    if let park, let hours = store.parkHours(for: park) {
+                    if let park, let hours = store.parkHours(for: park, at: now) {
                         Text(scheduleLine(hours, park: park))
                             .font(.caption.weight(.semibold))
                             .foregroundStyle(.white)
@@ -169,7 +177,7 @@ struct ParkPickerView: View {
                             .foregroundStyle(.white)
                             .fixedSize(horizontal: false, vertical: true)
                     } else if park != nil {
-                        Text("Park hours load after selection")
+                        Text("Park hours updating")
                             .font(.caption)
                             .foregroundStyle(.white)
                             .fixedSize(horizontal: false, vertical: true)

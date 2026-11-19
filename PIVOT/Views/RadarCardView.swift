@@ -16,7 +16,9 @@ struct RadarCardView: View {
             } else if let ride = store.radarRide {
                 radar(ride)
             } else {
-                clearState
+                TimelineView(.periodic(from: .now, by: 1)) { context in
+                    clearState(at: context.date)
+                }
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -123,11 +125,11 @@ struct RadarCardView: View {
                     VStack(alignment: .leading, spacing: 8) {
                         if estimate.estimateKind == "WEATHER" {
                             if ride.delayEvidence?.weatherOriginSignal == "RADAR_CLOSURE_WAVE" {
-                                Text("\(estimate.modelVersion) · \(basisName(estimate.basis)). The park’s lightning-density layer was not current, so PIVOT required a synchronized exposed-ride closure wave plus live NOAA radar and NWS storm context. \(closureWaveOpenCopy)An older pre-storm breakdown is never relabeled. This limited range reserves a 30-minute buffer after projected convective echoes exit and does not claim verified lightning clearance.")
+                                Text("\(estimate.modelVersion) · \(basisName(estimate.basis)). The park’s lightning-density layer was not current, so PIVOT required a synchronized exposed-ride closure wave plus live NOAA radar and NWS storm context. \(closureWaveOpenCopy)An older pre-storm breakdown is never relabeled. This limited range reserves a modeled restart buffer; the scalar radar trend does not measure when storm cells leave and does not claim verified lightning clearance.")
                             } else if ride.isPostOperationalWeatherConstraint {
                                 Text("\(estimate.modelVersion) · \(basisName(estimate.basis)). This ride closed before the later lightning period, so its original ride-recovery window stayed primary. Only after that window expired with a fresh still-closed report did lightning clearance constrain the next range. Complete NOAA frames run the 30-minute clear clock across PIVOT’s modeled five-mile zone.")
                             } else {
-                                Text("\(estimate.modelVersion) · \(basisName(estimate.basis)). Complete NOAA lightning-density frames run a 30-minute clear clock across PIVOT’s modeled five-mile zone; the recent NOAA radar echo trend shapes the storm-exit range.")
+                                Text("\(estimate.modelVersion) · \(basisName(estimate.basis)). Complete NOAA lightning-density frames run a 30-minute clear clock across PIVOT’s modeled five-mile zone; the scalar NOAA radar trend describes intensity changes, not storm movement or the final lightning strike.")
                             }
                         } else {
                             Text("\(estimate.modelVersion) · \(basisName(estimate.basis)) · \(estimate.sampleSize) completed and \(estimate.censoredSampleSize) ongoing comparable closures across \(estimate.distinctDayCount) park days.")
@@ -190,7 +192,7 @@ struct RadarCardView: View {
                         }
                         if let radarTrend = ride.delayEvidence?.radarTrend {
                             let reflectivity = ride.delayEvidence?.radarReflectivityDbz.map { " · \(Int($0.rounded())) dBZ highest zone sample" } ?? ""
-                            let projectedClear = ride.delayEvidence?.radarProjectedClearAt.map { " · projected convective-echo clearance \(ParkTimeFormatter.dateTime($0))" } ?? ""
+                            let projectedClear = ride.delayEvidence?.radarProjectedClearAt.map { _ in " · legacy intensity-only heuristic; not spatial departure" } ?? ""
                             Text("NOAA radar: \(radarTrendName(radarTrend))\(reflectivity)\(projectedClear).")
                         }
                         if let reason = ride.estimateReason { Text(reason) }
@@ -228,26 +230,22 @@ struct RadarCardView: View {
         .accessibilityElement(children: .contain)
     }
 
-    private var clearState: some View {
-        HStack(spacing: 14) {
-            Image(systemName: store.snapshot?.parkActive == false ? "moon.stars" : "checkmark.circle.fill")
+    private func clearState(at now: Date) -> some View {
+        let verified = store.canAssertNoClosures(at: now)
+        return HStack(spacing: 14) {
+            Image(systemName: verified ? "checkmark.circle.fill" : "questionmark.circle")
                 .font(.title2)
-                .foregroundStyle(store.snapshot?.parkActive == false ? Color.pivotMuted : Color.pivotMint)
+                .foregroundStyle(verified ? Color.pivotMint : Color.pivotMuted)
             VStack(alignment: .leading, spacing: 4) {
-                Text(store.snapshot?.parkActive == false ? "Park does not appear active" : "No reviewed rides are reported down")
+                Text(verified ? "No reviewed rides are reported down" : "Current ride status unavailable")
                     .font(.headline)
-                Text(clearStateDetail)
+                Text(verified ? "No down rides in the current observations for \(store.selectedPark?.name ?? "the selected park")."
+                    : store.feedHealth(at: now).retainedGuidance ?? "Valid ride observations are required before Radar can report no closures. Pull to refresh.")
                     .font(.subheadline)
                     .foregroundStyle(Color.pivotMuted)
             }
         }
         .pivotCard()
-    }
-
-    private var clearStateDetail: String {
-        if let error = store.errorMessage, store.snapshot == nil { return error }
-        if store.snapshot?.parkActive == false { return "Overnight and park-wide scheduled closures are not modeled." }
-        return "Reopen Radar is currently clear for \(store.selectedPark?.name ?? "the selected park")."
     }
 
     private func basisName(_ basis: String) -> String {
@@ -267,7 +265,7 @@ struct RadarCardView: View {
     private func radarTrendName(_ trend: String) -> String {
         switch trend {
         case "CLEAR": "clear near the park"
-        case "EXITING": "echoes exiting"
+        case "EXITING": "reflectivity decreasing"
         case "BUILDING": "echoes building"
         case "STEADY": "echoes steady"
         default: "updating"
