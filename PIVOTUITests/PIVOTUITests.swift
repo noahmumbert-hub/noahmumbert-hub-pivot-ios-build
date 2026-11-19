@@ -3746,6 +3746,7 @@ final class PIVOTUITests: XCTestCase {
         let surfaceTone: Int
         let rimSamples: [[Int]]
         let glyphArea: CGFloat
+        let glyphDistribution: [Double]
 
         init(_ image: CGImage, diameter: CGFloat) throws {
             let width = image.width, height = image.height
@@ -3758,7 +3759,8 @@ final class PIVOTUITests: XCTestCase {
             let scale = CGFloat(width) / diameter
             let radius = diameter / 2
             var arcs = [[Int]](repeating: [], count: 72)
-            var stroke: [Int] = [], surface: [Int] = [], center: [Int] = []
+            var stroke: [Int] = [], surface: [Int] = []
+            var center: [(tone: Int, sector: Int)] = []
             for y in 0..<height {
                 for x in 0..<width {
                     let dx = (CGFloat(x) + 0.5 - CGFloat(width) / 2) / scale
@@ -3766,11 +3768,11 @@ final class PIVOTUITests: XCTestCase {
                     let distance = hypot(dx, dy)
                     let offset = (y * width + x) * 4
                     let tone = (Int(data[offset]) + Int(data[offset + 1]) + Int(data[offset + 2])) / 3
-                    if distance < 13 { center.append(tone) }
+                    let turn = atan2(dy, dx) / (2 * .pi) + 1
+                    if distance < 13 { center.append((tone, Int(turn * 12) % 12)) }
                     if (14...17).contains(distance) { surface.append(tone) }
                     if (radius - 0.8 ... radius - 0.2).contains(distance) { stroke.append(tone) }
                     if (radius - 2 ... radius + 0.5).contains(distance) {
-                        let turn = atan2(dy, dx) / (2 * .pi) + 1
                         arcs[Int(turn * 72) % 72].append(tone)
                     }
                 }
@@ -3779,7 +3781,17 @@ final class PIVOTUITests: XCTestCase {
             surfaceTone = fill
             rimTone = try XCTUnwrap(stroke.sorted().dropFirst(stroke.count / 2).first)
             rimSamples = arcs
-            glyphArea = CGFloat(center.filter { abs($0 - fill) > 18 }.count) / (scale * scale)
+            let ink = center.filter { abs($0.tone - fill) > 18 }
+            glyphArea = CGFloat(ink.count) / (scale * scale)
+            var distribution = [Double](repeating: 0, count: 12)
+            for pixel in ink { distribution[pixel.sector] += 1 / Double(ink.count) }
+            glyphDistribution = distribution
+        }
+
+        func arrowChanged(from idle: Self) -> Bool {
+            // The arrowhead and the gap move between angular sectors. Merely
+            // dimming or scaling the same upright arrow does not qualify.
+            zip(glyphDistribution, idle.glyphDistribution).map { abs($0 - $1) }.reduce(0, +) > 0.18
         }
 
         func check(against plan: Self, tab: String, file: StaticString = #filePath, line: UInt = #line) {
@@ -3810,40 +3822,59 @@ final class PIVOTUITests: XCTestCase {
         app.launchArguments = ["--apple-ui-test", "--map-refresh-network-test", "--map-refresh-manual-test",
                                "--slow-park-switch", "-pivot.selectedPark", "6"]
         if largest { app.launchArguments += ["--ui-largest-type"] }
-        app.launch()
-        let refresh = app.buttons["Refresh ride data now"].firstMatch
+        var idlePlan: RefreshButtonPixels?
+        var movingPlan: RefreshButtonPixels?
         var referenceFrame: CGRect?
-        for busy in [false, true] {
-            if busy {
-                // Start the held request using the Map's separate refresh control.
-                // Pressing the reference button itself briefly scales it to 95%.
-                app.tabBars.buttons["Map"].tap()
-                let trigger = app.buttons["Refresh map waits"]
-                XCTAssertTrue(trigger.waitForExistence(timeout: 5))
-                trigger.tap()
-            }
-            app.tabBars.buttons["Plan"].tap()
+
+        for tab in ["Plan", "Waits", "Shows"] {
+            // Each launch has one held manual request. Trigger it on the tab
+            // under test so the live symbol visibly turns before it is sampled.
+            app.launch()
+            let tabs = app.tabBars.buttons
+            tabs[tab == "Plan" ? "Shows" : "Plan"].tap()
+            tabs[tab].tap()
+            let refresh = app.buttons["Refresh ride data now"].firstMatch
             XCTAssertTrue(refresh.waitForExistence(timeout: 5))
-            var plan: RefreshButtonPixels?
-            for tab in ["Plan", "Waits", "Shows"] {
-                if tab != "Plan" { app.tabBars.buttons[tab].tap() }
-                let frame = refresh.frame
-                XCTAssertEqual(refresh.isEnabled, !busy, "\(tab) must show the requested refresh state")
-                XCTAssertEqual(frame.width, 44, accuracy: 0.5)
-                XCTAssertEqual(frame.height, 44, accuracy: 0.5)
-                if let referenceFrame {
-                    XCTAssertEqual(frame.midX, referenceFrame.midX, accuracy: 1)
-                    XCTAssertEqual(frame.midY, referenceFrame.midY, accuracy: 1)
-                } else { referenceFrame = frame }
-                let screenshot = refresh.screenshot()
-                let attachment = XCTAttachment(screenshot: screenshot)
-                attachment.name = "Refresh rim \(tab) \(busy ? "rotating" : "idle") \(largest ? "largest" : "standard")"
+            XCTAssertTrue(refresh.isHittable && refresh.isEnabled)
+            let frame = refresh.frame
+            XCTAssertEqual(frame.width, 44, accuracy: 0.5)
+            XCTAssertEqual(frame.height, 44, accuracy: 0.5)
+            if let referenceFrame {
+                XCTAssertEqual(frame.midX, referenceFrame.midX, accuracy: 1)
+                XCTAssertEqual(frame.midY, referenceFrame.midY, accuracy: 1)
+            } else { referenceFrame = frame }
+
+            func keep(_ image: XCUIScreenshot, state: String) {
+                let attachment = XCTAttachment(screenshot: image)
+                attachment.name = "Refresh rim \(tab) \(state) \(largest ? "largest" : "standard")"
                 attachment.lifetime = .keepAlways
                 add(attachment)
-                let pixels = try RefreshButtonPixels(XCTUnwrap(screenshot.image.cgImage), diameter: frame.width)
-                if tab == "Plan" { plan = pixels }
-                pixels.check(against: try XCTUnwrap(plan), tab: tab)
             }
+            let still = refresh.screenshot()
+            keep(still, state: "idle")
+            let idle = try RefreshButtonPixels(XCTUnwrap(still.image.cgImage), diameter: frame.width)
+            if tab == "Plan" { idlePlan = idle }
+            idle.check(against: try XCTUnwrap(idlePlan), tab: tab)
+
+            refresh.tap()
+            let deadline = Date().addingTimeInterval(8)
+            var moving: RefreshButtonPixels?
+            repeat {
+                guard !refresh.isEnabled else { break }
+                let image = refresh.screenshot()
+                // Normalize to idle diameter when the existing pressed
+                // transform briefly scales the whole control, including ink.
+                let pixels = try RefreshButtonPixels(XCTUnwrap(image.image.cgImage), diameter: frame.width)
+                if pixels.arrowChanged(from: idle) {
+                    keep(image, state: "rotating")
+                    moving = pixels
+                    break
+                }
+            } while Date() < deadline
+            let rotated = try XCTUnwrap(moving, "\(tab) must capture an in-flight arrow at a different angle")
+            if tab == "Plan" { movingPlan = rotated }
+            rotated.check(against: try XCTUnwrap(movingPlan), tab: tab)
+            app.terminate()
         }
     }
 
