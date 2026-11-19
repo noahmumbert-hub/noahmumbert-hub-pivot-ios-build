@@ -2756,11 +2756,29 @@ final class PIVOTUITests: XCTestCase {
 
     func testNativeSurfacesPreserveHoursShowsAlertsAndPlanProgress() {
         let app = rootFixture()
+        let banner = app.descendants(matching: .any)["park-banner-layout-bounds-6"].firstMatch
+        XCTAssertTrue(banner.waitForExistence(timeout: 5))
+        let waitsFrame = banner.frame
         screenshot("Native Waits light", app: app)
         app.tabBars.buttons["Shows"].tap()
+        XCTAssertTrue(banner.waitForExistence(timeout: 5))
+        XCTAssertEqual(banner.frame.minX, waitsFrame.minX, accuracy: 1)
+        XCTAssertEqual(banner.frame.maxX, waitsFrame.maxX, accuracy: 1)
         let show = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Castle afternoon performance'")).firstMatch
-        reveal(show, in: app); XCTAssertTrue(show.waitForExistence(timeout: 5)); show.tap()
+        reveal(show, in: app)
+        XCTAssertEqual(show.value as? String, "Collapsed")
+        XCTAssertGreaterThanOrEqual(show.frame.height, 44)
+        screenshot("Shows schedule collapsed", app: app)
+        show.tap()
+        XCTAssertEqual(show.value as? String, "Expanded")
+        let time = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "showtime-apple-ui-show-")).firstMatch
+        reveal(time, in: app)
+        XCTAssertTrue(time.isHittable)
+        assertContained(time.frame, in: safeContentViewport(in: app), "The expanded showtime must be fully visible")
         screenshot("Native Shows light", app: app)
+        show.tap()
+        XCTAssertEqual(show.value as? String, "Collapsed")
+        XCTAssertFalse(time.exists)
         app.tabBars.buttons["Plan"].tap()
         let favorites = app.buttons["native-day-favorites"]
         reveal(favorites, in: app); favorites.tap()
@@ -2792,6 +2810,22 @@ final class PIVOTUITests: XCTestCase {
         app.buttons["Ride alerts & Live Activity"].tap()
         XCTAssertTrue(app.switches["Alerts favorites only"].waitForExistence(timeout: 5))
         screenshot("Native alert settings Form", app: app)
+    }
+
+    func testShowsExpandedPerformanceFitsAtLargestTextSize() {
+        let app = rootFixture(["--ui-largest-type"])
+        app.tabBars.buttons["Shows"].tap()
+        let row = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Castle afternoon performance'")).firstMatch
+        centerFullyVisible(row, in: app)
+        assertContained(row.frame, in: safeContentViewport(in: app), "The wrapped show name and status must fit")
+        XCTAssertGreaterThanOrEqual(row.frame.height, 44)
+        row.tap()
+        XCTAssertEqual(row.value as? String, "Expanded")
+        let time = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "showtime-apple-ui-show-")).firstMatch
+        centerFullyVisible(time, in: app)
+        assertContained(time.frame, in: safeContentViewport(in: app), "The full showtime action must fit")
+        XCTAssertTrue(time.isHittable)
+        screenshot("Shows expanded largest text", app: app)
     }
 
     func testNativeDarkAndLargeTextSurfacesRemainReachable() {
@@ -3439,7 +3473,7 @@ final class PIVOTUITests: XCTestCase {
         app.tabBars.buttons["More"].tap()
         app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Settings'")).firstMatch.tap()
         XCTAssertEqual(app.buttons["accent-purple"].value as? String, "Selected")
-        let version = app.staticTexts["PIVOT 1.18.8"]
+        let version = app.staticTexts["PIVOT 1.18.9"]
         reveal(version, in: app)
         XCTAssertTrue(version.exists)
         let build = app.staticTexts["PIVOT build number"]
@@ -3723,8 +3757,49 @@ final class PIVOTUITests: XCTestCase {
             : ["Waits", "Plan", "Shows", "Map", "More"]
         var firstHeaderY: CGFloat?
         var firstParkY: CGFloat?
+        var waitsBanner: CGRect?
         for tab in route {
             if tab != "Waits" || firstHeaderY != nil { tabs.buttons[tab].tap() }
+            if tab == "Map" {
+                let canvas = app.maps.firstMatch
+                XCTAssertTrue(canvas.waitForExistence(timeout: 5), file: file, line: line)
+                let bounds = canvas.frame
+                XCTAssertEqual(bounds.minX, app.frame.minX, accuracy: 1, file: file, line: line)
+                XCTAssertEqual(bounds.maxX, app.frame.maxX, accuracy: 1, file: file, line: line)
+                XCTAssertEqual(bounds.minY, app.frame.minY, accuracy: 1, file: file, line: line)
+                XCTAssertEqual(bounds.maxY, app.frame.maxY, accuracy: 1, file: file, line: line)
+                let park = app.buttons["Change park. Current park: \(name)"]
+                XCTAssertTrue(park.isHittable, file: file, line: line)
+                assertParkBannerTouchTarget(park.frame, file: file, line: line)
+                XCTAssertTrue(tabs.buttons["Waits"].isHittable, file: file, line: line)
+                let viewport = safeContentViewport(in: app)
+                assertContained(park.frame, in: viewport, "The floating selector must stay clear of the status area", file: file, line: line)
+                let search = app.textFields["Search park places"]
+                let filter = app.buttons["Filter map places"]
+                let fullScreen = app.buttons["Full screen map"]
+                let zoom = app.buttons["Zoom in"]
+                let browse = app.buttons["Browse map places"]
+                for control in [search, filter, fullScreen, zoom, browse] {
+                    XCTAssertTrue(control.waitForExistence(timeout: 5),
+                                  "The largest-text Map must expose \(control.identifier)", file: file, line: line)
+                    XCTAssertTrue(control.isHittable,
+                                  "The largest-text Map control \(control.identifier) must remain usable", file: file, line: line)
+                    assertContained(control.frame, in: viewport,
+                                    "The largest-text Map control \(control.identifier) must stay visible", file: file, line: line)
+                }
+                XCTAssertLessThan(park.frame.height, viewport.height * 0.3,
+                                  "The park selector must leave room for Map controls", file: file, line: line)
+                XCTAssertGreaterThan(browse.frame.minY - search.frame.maxY, 88,
+                                     "The map must retain a usable viewport between search and Browse", file: file, line: line)
+                XCTAssertFalse(filter.frame.intersects(fullScreen.frame),
+                               "Map toolbar actions must not overlap", file: file, line: line)
+                XCTAssertFalse(zoom.frame.intersects(search.frame) || zoom.frame.intersects(browse.frame),
+                               "Map zoom must remain clear of the search and Browse controls", file: file, line: line)
+                XCTAssertFalse(park.frame.intersects(search.frame), file: file, line: line)
+                XCTAssertLessThanOrEqual(browse.frame.maxY, tabs.frame.minY, file: file, line: line)
+                screenshot("Top controls Map \(repeated ? "standard" : "largest")", app: app)
+                continue
+            }
             let headerQuery = app.descendants(matching: .any).matching(identifier: "PIVOT header")
             let header = headerQuery.allElementsBoundByIndex.first { $0.isHittable }
             let refreshQuery = app.buttons.matching(NSPredicate(format: "label == %@", "Refresh ride data now"))
@@ -3754,30 +3829,17 @@ final class PIVOTUITests: XCTestCase {
                 XCTAssertEqual(park.frame.minY, firstParkY, accuracy: 18,
                                "Park selector must start in the same header band", file: file, line: line)
             } else { firstParkY = park.frame.minY }
-            screenshot("Top controls \(tab) \(repeated ? "standard" : "largest")", app: app)
-            if tab == "Map" && !repeated {
-                let search = app.textFields["Search park places"]
-                let filter = app.buttons["Filter map places"]
-                let fullScreen = app.buttons["Full screen map"]
-                let zoom = app.buttons["Zoom in"]
-                let browse = app.buttons["Browse map places"]
-                for control in [search, filter, fullScreen, zoom, browse] {
-                    XCTAssertTrue(control.waitForExistence(timeout: 5),
-                                  "The largest-text Map must expose \(control.identifier)", file: file, line: line)
-                    XCTAssertTrue(control.isHittable,
-                                  "The largest-text Map control \(control.identifier) must remain usable", file: file, line: line)
-                    assertContained(control.frame, in: viewport,
-                                    "The largest-text Map control \(control.identifier) must stay visible", file: file, line: line)
+            if tab == "Waits" || tab == "Shows" {
+                let card = app.descendants(matching: .any)["park-banner-layout-bounds-41"].firstMatch
+                XCTAssertTrue(card.waitForExistence(timeout: 5), file: file, line: line)
+                if tab == "Waits" { waitsBanner = card.frame }
+                else if let waitsBanner {
+                    XCTAssertEqual(card.frame.minX, waitsBanner.minX, accuracy: 1, file: file, line: line)
+                    XCTAssertEqual(card.frame.maxX, waitsBanner.maxX, accuracy: 1, file: file, line: line)
                 }
-                XCTAssertLessThan(park.frame.height, viewport.height * 0.3,
-                                  "The park selector must leave room for Map controls", file: file, line: line)
-                XCTAssertGreaterThan(browse.frame.minY - search.frame.maxY, 88,
-                                     "The map must retain a usable viewport between search and Browse", file: file, line: line)
-                XCTAssertFalse(filter.frame.intersects(fullScreen.frame),
-                               "Map toolbar actions must not overlap", file: file, line: line)
-                XCTAssertFalse(zoom.frame.intersects(search.frame) || zoom.frame.intersects(browse.frame),
-                               "Map zoom must remain clear of the search and Browse controls", file: file, line: line)
             }
+            screenshot("Top controls \(tab) \(repeated ? "standard" : "largest")", app: app)
+
         }
         if repeated {
             tabs.buttons["Map"].tap()
@@ -3825,7 +3887,7 @@ final class PIVOTUITests: XCTestCase {
         XCTAssertTrue(app.descendants(matching: .any)["PIVOT header"].exists)
         today.tap()
         XCTAssertTrue(app.staticTexts["Your day"].waitForExistence(timeout: 3))
-        XCTAssertFalse(app.staticTexts["Today’s entertainment, all in one place."].exists)
+        XCTAssertFalse(app.buttons["Choose a park for showtimes"].exists)
 
         waits.tap()
         XCTAssertTrue(waits.isSelected)
@@ -3833,7 +3895,7 @@ final class PIVOTUITests: XCTestCase {
 
         shows.tap()
         XCTAssertTrue(shows.isSelected)
-        XCTAssertTrue(app.staticTexts["Today’s entertainment, all in one place."].waitForExistence(timeout: 3))
+        XCTAssertTrue(app.buttons["Choose a park for showtimes"].waitForExistence(timeout: 3))
 
         map.tap()
         XCTAssertTrue(map.isSelected)

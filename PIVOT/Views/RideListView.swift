@@ -154,12 +154,7 @@ struct RideListView: View {
             }
         }
         .accessibilityIdentifier("waits-rides-list")
-        .listStyle(.insetGrouped)
-        .contentMargins(.horizontal, 14, for: .scrollContent)
-        .contentMargins(.top, 8, for: .scrollContent)
-        .listSectionSpacing(8)
-        .scrollContentBackground(.hidden)
-        .background(Color.pivotBackground)
+        .parkDashboardListStyle()
         .scrollDismissesKeyboard(.interactively)
         .refreshable { await store.refreshNow() }
     }
@@ -683,5 +678,17 @@ private struct RideRowView: View {
         else { parts.append(current.title) }
         if current.isCurrent, let downtime = ride.downTimePresentation { parts.append(downtime.accessibilityLabel) }
         return parts.joined(separator: ". ")
+    }
+}
+
+extension View {
+    func parkDashboardListStyle() -> some View {
+        self
+            .listStyle(.insetGrouped)
+            .contentMargins(.horizontal, 14, for: .scrollContent)
+            .contentMargins(.top, 8, for: .scrollContent)
+            .listSectionSpacing(8)
+            .scrollContentBackground(.hidden)
+            .background(Color.pivotBackground)
     }
 }

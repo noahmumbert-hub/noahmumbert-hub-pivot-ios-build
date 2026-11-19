@@ -508,6 +508,11 @@ private struct MapBottomHeightKey: PreferenceKey {
     static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) { value = max(value, nextValue()) }
 }
 
+private struct MapTopHeightKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) { value = max(value, nextValue()) }
+}
+
 struct ParkMapView: View {
     @Environment(\.pivotAccent) private var accent
     let park: FloridaPark?
@@ -516,6 +521,7 @@ struct ParkMapView: View {
     var refreshFailed = false
     var isRefreshing = false
     var onRefresh: (() async -> Void)? = nil
+    var parkControls: AnyView? = nil
     var catalogOverride: ParkMapCatalog? = nil
     @State private var catalog: ParkMapCatalog?
     @State private var loadFailed = false
@@ -532,6 +538,7 @@ struct ParkMapView: View {
     @State private var isFullScreen = false
     @State private var now = Date()
     @State private var bottomHeight: CGFloat = 60
+    @State private var topHeight: CGFloat = 0
     @FocusState private var searchFocused: Bool
 
     private var parkData: ParkMapPark? { park.flatMap { catalog?.parks[String($0.id)] } }
@@ -558,7 +565,7 @@ struct ParkMapView: View {
     private var selected: ParkMapPoint? { points.first { $0.id == selectedID } }
 
     var body: some View {
-        Group {
+        ZStack {
             if isFullScreen { Color.clear } else { mapScreen }
         }
         .task(id: park?.id) { loadCatalog() }
@@ -575,20 +582,21 @@ struct ParkMapView: View {
         GeometryReader { geometry in
             ZStack {
                 if let park, parkData != nil {
-                    NativeParkMapCanvas(points: points, allPoints: allPoints, park: park, selectedID: $selectedID,
-                        session: session, command: command,
-                        refitForFirstFullScreen: isFullScreen && !session.cameraWasUserAdjusted,
-                        margins: UIEdgeInsets(top: geometry.safeAreaInsets.top + 72, left: 12,
-                                              // The selected card has a190pt content limit plus its44pt Browse row.
-                                              // Reserve that complete resting height immediately, before preferences update.
-                                              // Keep the native Legal text clear even when Browse
-                                              // wraps to two accessibility-size lines on compact phones.
-                                              bottom: geometry.safeAreaInsets.bottom + max(bottomHeight, selected == nil ? 60 : 250) + 32, right: 12),
-                        viewportSize: CGSize(width: geometry.size.width,
-                            height: geometry.size.height + (isFullScreen ? geometry.safeAreaInsets.top + geometry.safeAreaInsets.bottom : 0)),
-                        accent: accent,
-                        onCluster: { clusterPoints = $0; showPlaces = true })
-                        .ignoresSafeArea(edges: isFullScreen ? .all : [])
+                    GeometryReader { canvas in
+                        NativeParkMapCanvas(points: points, allPoints: allPoints, park: park, selectedID: $selectedID,
+                            session: session, command: command,
+                            refitForFirstFullScreen: isFullScreen && !session.cameraWasUserAdjusted,
+                            margins: UIEdgeInsets(top: geometry.safeAreaInsets.top + max(topHeight, 64), left: 12,
+                                                  // The selected card has a190pt content limit plus its44pt Browse row.
+                                                  // Reserve that complete resting height immediately, before preferences update.
+                                                  // Keep the native Legal text clear even when Browse
+                                                  // wraps to two accessibility-size lines on compact phones.
+                                                  bottom: geometry.safeAreaInsets.bottom + max(bottomHeight, selected == nil ? 60 : 250) + 32, right: 12),
+                            viewportSize: canvas.size,
+                            accent: accent,
+                            onCluster: { clusterPoints = $0; showPlaces = true })
+                    }
+                    .ignoresSafeArea(.container)
 #if DEBUG
                     if ProcessInfo.processInfo.arguments.contains("--park-map-ui-test") || ProcessInfo.processInfo.arguments.contains("--apple-ui-test") {
                         if ProcessInfo.processInfo.arguments.contains("--map-gesture-test"), let rect = session.gestureRect {
@@ -597,7 +605,7 @@ struct ParkMapView: View {
                             // rectangle; synthesized touches still reach the real MKMapView.
                             Rectangle().fill(Color.black.opacity(0.001))
                                 .frame(width: rect.width, height: rect.height)
-                                .position(x: rect.midX, y: rect.midY - (isFullScreen ? geometry.safeAreaInsets.top : 0))
+                                .position(x: rect.midX, y: rect.midY - geometry.safeAreaInsets.top)
                                 .accessibilityElement(children: .ignore)
                                 .accessibilityLabel("Map gesture area")
                                 .accessibilityIdentifier("Map gesture area")
@@ -630,10 +638,19 @@ struct ParkMapView: View {
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
             .overlay(alignment: .top) {
-                if park != nil, parkData != nil {
-                    mapToolbar.padding(10)
-                        .dynamicTypeSize(...DynamicTypeSize.accessibility1)
+                VStack(spacing: 6) {
+                    if !isFullScreen, let parkControls { parkControls }
+                    if park != nil, parkData != nil { mapToolbar }
                 }
+                .padding(.horizontal, 10)
+                .padding(.vertical, 8)
+                .dynamicTypeSize(...DynamicTypeSize.accessibility1)
+                .background(GeometryReader { proxy in
+                    Color.clear.preference(key: MapTopHeightKey.self, value: proxy.size.height)
+                })
+            }
+            .onPreferenceChange(MapTopHeightKey.self) { height in
+                if height > 0 { topHeight = height }
             }
             .overlay(alignment: .trailing) {
                 if park != nil, parkData != nil {

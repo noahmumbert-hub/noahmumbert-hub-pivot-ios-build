@@ -126,18 +126,14 @@ struct RootView: View {
         NavigationStack {
             ParkMapView(park: store.selectedPark, snapshot: store.snapshot,
                         onChoosePark: { showParkPicker = true }, refreshFailed: store.errorMessage != nil,
-                        isRefreshing: store.isRefreshing, onRefresh: { await store.refreshNow() })
+                        isRefreshing: store.isRefreshing, onRefresh: { await store.refreshNow() },
+                        parkControls: AnyView(HStack(spacing: 8) {
+                            mapParkSwitch
+                            Spacer(minLength: 0)
+                            alertButton.background(.regularMaterial, in: Circle())
+                        }))
                 .id(store.selectedPark?.id)
-                .safeAreaInset(edge: .top, spacing: 0) {
-                    VStack(alignment: .leading, spacing: 12) {
-                        header
-                        mapParkSwitch
-                    }
-                    .padding(.horizontal, 14)
-                    .padding(.top, 8)
-                    .padding(.bottom, 12)
-                    .background(Color.pivotBackground)
-                }
+                .toolbarBackground(.hidden, for: .tabBar)
                 .toolbar(.hidden, for: .navigationBar)
         }
     }
@@ -146,12 +142,7 @@ struct RootView: View {
         NavigationStack {
             List {
                 Section {
-                    VStack(alignment: .leading, spacing: 16) {
-                        topChrome
-                        Text("Shows").font(.largeTitle.bold())
-                        Text("Today’s entertainment, all in one place.").font(.subheadline).foregroundStyle(.secondary)
-                    }
-                    .padding(.bottom, 16)
+                    topChrome
                     .listRowInsets(EdgeInsets())
                     .listRowBackground(Color.clear)
                 }
@@ -159,24 +150,29 @@ struct RootView: View {
                     Section { RetainedSnapshotNotice() }
                 }
                 if store.selectedPark != nil {
-                    Section("Today’s shows") {
+                    Section {
                         if let shows = store.snapshot?.showList, !shows.isEmpty {
-                            ForEach(shows) { show in showScheduleRow(show, referenceDate: Date()) }
+                            ForEach(shows) { show in
+                                showScheduleRow(show, referenceDate: Date(), compact: true)
+                                    .listRowInsets(EdgeInsets())
+                            }
                         } else {
                             VStack(alignment: .leading, spacing: 6) {
                                 Text(store.snapshot?.showSchedulePresentation().headline ?? "Updating today’s schedule").font(.headline)
                                 Text(store.snapshot?.showSchedulePresentation().detail ?? "Checking the daily entertainment provider.").foregroundStyle(.secondary)
                             }
                         }
+                    } header: {
+                        Text("Today’s shows").font(.title2.bold()).foregroundStyle(.primary)
+                            .textCase(nil).accessibilityAddTraits(.isHeader)
+                            .accessibilityIdentifier("shows-heading")
                     }
                     Section { Text(showScheduleSourceText(store.snapshot)).font(.caption).foregroundStyle(.secondary) }
                 } else {
-                    Button("Choose a park for showtimes") { showParkPicker = true }
+                    Section("Today’s shows") { Button("Choose a park for showtimes") { showParkPicker = true } }
                 }
             }
-            .scrollContentBackground(.hidden)
-            .background(Color.pivotBackground)
-            .contentMargins(.top, 8, for: .scrollContent)
+            .parkDashboardListStyle()
             .toolbar(.hidden, for: .navigationBar)
             .refreshable { await store.refreshNow() }
             .onChange(of: store.selectedPark?.id) { _, _ in expandedShowIDs.removeAll() }
@@ -447,14 +443,7 @@ struct RootView: View {
 
             Spacer(minLength: 8)
 
-            Button { showAlertSettings = true } label: {
-                Image(systemName: store.alertsEnabled ? "bell.badge.fill" : "bell")
-                    .font(.system(size: 16, weight: .medium))
-                    .foregroundStyle(store.alertsEnabled ? Color.pivotMint : Color.primary)
-                    .frame(width: 24, height: 24)
-            }
-            .buttonStyle(PivotIconButtonStyle())
-            .accessibilityLabel(store.alertsEnabled ? "Ride alerts on" : "Set up ride alerts")
+            alertButton
 
             Button {
                 Task { await store.refreshNow() }
@@ -476,6 +465,17 @@ struct RootView: View {
         }
     }
 
+    private var alertButton: some View {
+        Button { showAlertSettings = true } label: {
+            Image(systemName: store.alertsEnabled ? "bell.badge.fill" : "bell")
+                .font(.system(size: 16, weight: .medium))
+                .foregroundStyle(store.alertsEnabled ? Color.pivotMint : Color.primary)
+                .frame(width: 24, height: 24)
+        }
+        .buttonStyle(PivotIconButtonStyle())
+        .accessibilityLabel(store.alertsEnabled ? "Ride alerts on" : "Set up ride alerts")
+    }
+
     private var topChrome: some View {
         VStack(alignment: .leading, spacing: 12) {
             header
@@ -495,14 +495,13 @@ struct RootView: View {
                     .font(.headline)
                     .lineLimit(2)
                     .minimumScaleFactor(0.7)
-                    .frame(maxWidth: .infinity, alignment: .leading)
                 Image(systemName: "chevron.down")
                     .font(.caption.weight(.semibold))
                     .accessibilityHidden(true)
             }
             .padding(.horizontal, 12)
             .frame(minHeight: 44)
-            .background(Color.pivotSurfaceRaised, in: RoundedRectangle(cornerRadius: 14))
+            .background(.regularMaterial, in: Capsule())
             .contentShape(RoundedRectangle(cornerRadius: 14))
         }
         .buttonStyle(.plain)
@@ -852,7 +851,7 @@ struct RootView: View {
         }
     }
     @ViewBuilder
-    private func showScheduleRow(_ show: LiveShow, referenceDate: Date) -> some View {
+    private func showScheduleRow(_ show: LiveShow, referenceDate: Date, compact: Bool = false) -> some View {
         let isExpanded = expandedShowIDs.contains(show.id)
         let rowPresentation = ShowScheduleRowFormatter.presentation(
             for: show,
@@ -895,10 +894,10 @@ struct RootView: View {
                         .animation(reduceMotion ? nil : .easeInOut(duration: 0.18), value: isExpanded)
                         .accessibilityHidden(true)
                 }
+                .padding(.horizontal, compact ? 12 : 16)
+                .padding(.vertical, compact ? 6 : 16)
+                .frame(minHeight: compact ? 44 : 58)
                 .contentShape(Rectangle())
-                .padding(.horizontal, 16)
-                .padding(.vertical, 16)
-                .frame(minHeight: 58)
             }
             .buttonStyle(.plain)
             .accessibilityElement(children: .ignore)
@@ -936,7 +935,7 @@ struct RootView: View {
                                 .disabled(showtime.startTime <= referenceDate)
                                 .font(.caption.weight(.semibold).monospacedDigit())
                                 .foregroundStyle(.primary)
-                                .lineLimit(1)
+                                .fixedSize(horizontal: false, vertical: true)
                                 .padding(.horizontal, 9)
                                 .padding(.vertical, 6)
                                 .background(Color.pivotSurfaceRaised)
@@ -945,6 +944,7 @@ struct RootView: View {
                                         .stroke(Color.pivotBorder, lineWidth: 1)
                                 }
                                 .clipShape(Capsule())
+                                .accessibilityIdentifier("showtime-\(show.id)-\(showtime.id)")
                                 .accessibilityLabel(ShowScheduleRowFormatter.accessibilityLabel(for: showtime))
                         }
                     }
@@ -1795,6 +1795,12 @@ private struct FavoriteRidePickerSheet: View {
 private struct ShowTimeFlowLayout: Layout {
     let spacing: CGFloat
 
+    private func fittedSize(_ subview: LayoutSubview, availableWidth: CGFloat) -> CGSize {
+        let ideal = subview.sizeThatFits(.unspecified)
+        guard ideal.width > availableWidth else { return ideal }
+        return subview.sizeThatFits(ProposedViewSize(width: availableWidth, height: nil))
+    }
+
     func sizeThatFits(
         proposal: ProposedViewSize,
         subviews: Subviews,
@@ -1807,7 +1813,7 @@ private struct ShowTimeFlowLayout: Layout {
         var contentWidth: CGFloat = 0
 
         for subview in subviews {
-            let size = subview.sizeThatFits(.unspecified)
+            let size = fittedSize(subview, availableWidth: maximumWidth)
             let nextWidth = rowWidth == 0 ? size.width : rowWidth + spacing + size.width
             if nextWidth > maximumWidth, rowWidth > 0 {
                 totalHeight += rowHeight + spacing
@@ -1839,7 +1845,7 @@ private struct ShowTimeFlowLayout: Layout {
         var rowHeight: CGFloat = 0
 
         for subview in subviews {
-            let size = subview.sizeThatFits(.unspecified)
+            let size = fittedSize(subview, availableWidth: bounds.width)
             if x > bounds.minX, x + size.width > bounds.maxX {
                 x = bounds.minX
                 y += rowHeight + spacing

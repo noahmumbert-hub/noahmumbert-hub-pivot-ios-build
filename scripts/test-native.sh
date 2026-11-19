@@ -137,6 +137,11 @@ case "${PIVOT_TEST_SCOPE:-all}" in
     ) ;;
   layout-review)
     test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testShowsExpandedPerformanceFitsAtLargestTextSize
+      -only-testing:PIVOTUITests/PIVOTUITests/testNativeSurfacesPreserveHoursShowsAlertsAndPlanProgress
+      -only-testing:PIVOTUITests/PIVOTUITests/testNativeMapFillsWindowAndSupportsPinchPanZoomWithoutCameraReset
+      -only-testing:PIVOTUITests/PIVOTUITests/testSwitchParkWhileOldMapResponseIsHeld
+      -only-testing:PIVOTUITests/PIVOTUITests/testMapNetworkRefreshRepeatFullScreenFailureRecoveryAndNavigation
       -only-testing:PIVOTUITests/PIVOTUITests/testTopBrandAndParkSelectorAlignAcrossRepeatedTabNavigation
       -only-testing:PIVOTUITests/PIVOTUITests/testTopBrandAndParkSelectorFitAtLargestTextSize
       -only-testing:PIVOTUITests/PIVOTUITests/testWaitsCompactLayoutKeepsParkHoursAndHistoryTouchTarget
