@@ -3742,13 +3742,11 @@ final class PIVOTUITests: XCTestCase {
     /// Read the compositor's pixels, including any mask applied by the parent
     /// List. An element's frame still measures 44 points when its rim is cut.
     private struct RefreshButtonPixels {
-        let rimTone: Int
-        let surfaceTone: Int
-        let rimSamples: [[Int]]
+        let rimContrast: [Int]
         let glyphArea: CGFloat
         let glyphDistribution: [Double]
 
-        init(_ image: CGImage, diameter: CGFloat) throws {
+        init(_ image: CGImage, cropWidth: CGFloat, diameter: CGFloat) throws {
             let width = image.width, height = image.height
             let colorSpace = try XCTUnwrap(CGColorSpace(name: CGColorSpace.sRGB))
             let context = try XCTUnwrap(CGContext(data: nil, width: width, height: height,
@@ -3756,10 +3754,10 @@ final class PIVOTUITests: XCTestCase {
                 bitmapInfo: CGImageAlphaInfo.noneSkipLast.rawValue | CGBitmapInfo.byteOrder32Big.rawValue))
             context.draw(image, in: CGRect(x: 0, y: 0, width: width, height: height))
             let data = try XCTUnwrap(context.data).assumingMemoryBound(to: UInt8.self)
-            let scale = CGFloat(width) / diameter
+            let scale = CGFloat(width) / cropWidth
             let radius = diameter / 2
             var arcs = [[Int]](repeating: [], count: 72)
-            var stroke: [Int] = [], surface: [Int] = []
+            var background: [Int] = [], surface: [Int] = []
             var center: [(tone: Int, sector: Int)] = []
             for y in 0..<height {
                 for x in 0..<width {
@@ -3771,16 +3769,18 @@ final class PIVOTUITests: XCTestCase {
                     let turn = atan2(dy, dx) / (2 * .pi) + 1
                     if distance < 13 { center.append((tone, Int(turn * 12) % 12)) }
                     if (14...17).contains(distance) { surface.append(tone) }
-                    if (radius - 0.8 ... radius - 0.2).contains(distance) { stroke.append(tone) }
-                    if (radius - 2 ... radius + 0.5).contains(distance) {
+                    if distance > radius + 2 { background.append(tone) }
+                    // Include the real border throughout the native 95–100%
+                    // press transform. The unmasked surface has zero contrast.
+                    if (radius - 3 ... radius + 1).contains(distance) {
                         arcs[Int(turn * 72) % 72].append(tone)
                     }
                 }
             }
             let fill = try XCTUnwrap(surface.sorted().dropFirst(surface.count / 2).first)
-            surfaceTone = fill
-            rimTone = try XCTUnwrap(stroke.sorted().dropFirst(stroke.count / 2).first)
-            rimSamples = arcs
+            let outside = try XCTUnwrap(background.sorted().dropFirst(background.count / 2).first)
+            let direction = fill > outside ? 1 : -1
+            rimContrast = arcs.map { samples in samples.map { ($0 - fill) * direction }.max() ?? 0 }
             let ink = center.filter { abs($0.tone - fill) > 18 }
             glyphArea = CGFloat(ink.count) / (scale * scale)
             var distribution = [Double](repeating: 0, count: 12)
@@ -3795,11 +3795,9 @@ final class PIVOTUITests: XCTestCase {
         }
 
         func check(against plan: Self, tab: String, file: StaticString = #filePath, line: UInt = #line) {
-            let contrast = abs(plan.rimTone - plan.surfaceTone)
+            let contrast = plan.rimContrast.sorted()[plan.rimContrast.count / 2]
             XCTAssertGreaterThan(contrast, 12, "The Plan reference must show a distinct border", file: file, line: line)
-            let missing = rimSamples.indices.filter { bin in
-                !rimSamples[bin].contains { abs($0 - plan.rimTone) <= max(4, contrast / 3) }
-            }
+            let missing = rimContrast.indices.filter { rimContrast[$0] < (contrast + 1) / 2 }
             XCTAssertTrue(missing.isEmpty, "\(tab) missing refresh rim in 5-degree sectors \(missing)", file: file, line: line)
             XCTAssertGreaterThan(plan.glyphArea, 12, "The reference arrow must be visible", file: file, line: line)
             // Rotation changes antialiasing. Compare visible ink area without
@@ -3844,15 +3842,26 @@ final class PIVOTUITests: XCTestCase {
                 XCTAssertEqual(frame.midY, referenceFrame.midY, accuracy: 1)
             } else { referenceFrame = frame }
 
-            func keep(_ image: XCUIScreenshot, state: String) {
-                let attachment = XCTAttachment(screenshot: image)
+            let window = app.frame
+            let sampleRect = frame.insetBy(dx: -2, dy: -2).offsetBy(dx: -window.minX, dy: -window.minY)
+            func capture() throws -> (CGImage, RefreshButtonPixels) {
+                // Element screenshots crop to the transformed accessibility
+                // frame, which can cut the rim while the press is unwinding.
+                let screen = try XCTUnwrap(app.screenshot().image.cgImage)
+                let scale = CGFloat(screen.width) / window.width
+                let rect = sampleRect.applying(CGAffineTransform(scaleX: scale, y: scale)).integral
+                let image = try XCTUnwrap(screen.cropping(to: rect))
+                return (image, try RefreshButtonPixels(image, cropWidth: rect.width / scale, diameter: frame.width))
+            }
+            func keep(_ image: CGImage, state: String) throws {
+                let attachment = try XCTAttachment(data: XCTUnwrap(UIImage(cgImage: image).pngData()),
+                                                   uniformTypeIdentifier: "public.png")
                 attachment.name = "Refresh rim \(tab) \(state) \(largest ? "largest" : "standard")"
                 attachment.lifetime = .keepAlways
                 add(attachment)
             }
-            let still = refresh.screenshot()
-            keep(still, state: "idle")
-            let idle = try RefreshButtonPixels(XCTUnwrap(still.image.cgImage), diameter: frame.width)
+            let (still, idle) = try capture()
+            try keep(still, state: "idle")
             if tab == "Plan" { idlePlan = idle }
             idle.check(against: try XCTUnwrap(idlePlan), tab: tab)
 
@@ -3861,12 +3870,9 @@ final class PIVOTUITests: XCTestCase {
             var moving: RefreshButtonPixels?
             repeat {
                 guard !refresh.isEnabled else { break }
-                let image = refresh.screenshot()
-                // Normalize to idle diameter when the existing pressed
-                // transform briefly scales the whole control, including ink.
-                let pixels = try RefreshButtonPixels(XCTUnwrap(image.image.cgImage), diameter: frame.width)
+                let (image, pixels) = try capture()
                 if pixels.arrowChanged(from: idle) {
-                    keep(image, state: "rotating")
+                    try keep(image, state: "rotating")
                     moving = pixels
                     break
                 }
