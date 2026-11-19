@@ -3814,9 +3814,16 @@ final class PIVOTUITests: XCTestCase {
         let refresh = app.buttons["Refresh ride data now"].firstMatch
         var referenceFrame: CGRect?
         for busy in [false, true] {
+            if busy {
+                // Start the held request using the Map's separate refresh control.
+                // Pressing the reference button itself briefly scales it to 95%.
+                app.tabBars.buttons["Map"].tap()
+                let trigger = app.buttons["Refresh map waits"]
+                XCTAssertTrue(trigger.waitForExistence(timeout: 5))
+                trigger.tap()
+            }
             app.tabBars.buttons["Plan"].tap()
             XCTAssertTrue(refresh.waitForExistence(timeout: 5))
-            if busy { refresh.tap() }
             var plan: RefreshButtonPixels?
             for tab in ["Plan", "Waits", "Shows"] {
                 if tab != "Plan" { app.tabBars.buttons[tab].tap() }
