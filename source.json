@@ -7,7 +7,7 @@
   "localizedDescription": "PIVOT updates for SideStore. Uses the existing PIVOT app identity.",
   "website": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
   "websiteURL": "https://github.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build",
-  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/9b276214e517724b407b41f8ac1ea88e15751ec7/icon.png",
+  "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/1f4c953bd898b3745b8c9ad2f97f1727d666b6c5/icon.png",
   "tintColor": "70DFC0",
   "apps": [
     {
@@ -16,14 +16,23 @@
       "developerName": "Noah Mumbert",
       "subtitle": "Theme park companion",
       "localizedDescription": "Park wait times, ride status, weather observations, planning, shows and Live Activities.",
-      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/9b276214e517724b407b41f8ac1ea88e15751ec7/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/1f4c953bd898b3745b8c9ad2f97f1727d666b6c5/icon.png",
       "tintColor": "70DFC0",
-      "version": "1.18.9",
-      "versionDate": "2026-11-19T06:12:50Z",
-      "versionDescription": "The Map tab now opens edge to edge. Switch parks, search, filter, and check the latest waits using controls over the map.\n\nShows and Waits now use the same park selector width. The Shows schedule starts higher on the screen, and its more compact rows expand to show performance times and Add to Plan actions. Show names and times wrap at larger text sizes.",
-      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/9b276214e517724b407b41f8ac1ea88e15751ec7/PIVOT-1.18.9-100.359.1.ipa",
-      "size": 8640635,
+      "version": "1.18.10",
+      "versionDate": "2026-11-19T18:41:04Z",
+      "versionDescription": "Fixed the clipped outer edge of the refresh button on Waits and Shows. Its size and position now match Plan, including while the arrow rotates and at large text sizes.",
+      "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/1f4c953bd898b3745b8c9ad2f97f1727d666b6c5/PIVOT-1.18.10-100.369.3.ipa",
+      "size": 8642126,
       "versions": [
+        {
+          "version": "1.18.10",
+          "buildVersion": "100.369.3",
+          "date": "2026-11-19T18:41:04Z",
+          "localizedDescription": "Fixed the clipped outer edge of the refresh button on Waits and Shows. Its size and position now match Plan, including while the arrow rotates and at large text sizes.",
+          "downloadURL": "https://raw.githubusercontent.com/noahmumbert-hub/noahmumbert-hub-pivot-ios-build/1f4c953bd898b3745b8c9ad2f97f1727d666b6c5/PIVOT-1.18.10-100.369.3.ipa",
+          "size": 8642126,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.18.9",
           "buildVersion": "100.359.1",
