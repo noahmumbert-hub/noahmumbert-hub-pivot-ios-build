@@ -7,13 +7,13 @@ on:
         description: Full regression, single-device diagnostic, focused UI, or Release archive diagnostic
         type: choice
         default: all
-        options: [all, full-diagnostic, archive-diagnostic, artwork-downloads, ride-search-timing, ride-search-control, map-recovery, release-recovery, map-search, history-details, chart-recovery, artwork-delivery, artwork-credits, park-banner, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-gesture-diagnostic, map-tab-diagnostic, plan-forecast-diagnostic, map-refresh, park-picker]
+        options: [all, full-diagnostic, archive-diagnostic, artwork-downloads, ride-search-timing, ride-search-control, map-recovery, release-recovery, map-search, history-details, chart-recovery, artwork-delivery, artwork-credits, park-banner, refresh-visual, layout-review, map-attribution, wait-history, lowest-waits, reopening, reopening-accessibility, reference-ui, native-design, large-text, map-gestures, map-gesture-diagnostic, map-tab-diagnostic, plan-forecast-diagnostic, map-refresh, park-picker]
         required: true
       simulator:
         description: iPhone used for diagnostic scopes; ignored for archive diagnostic
         type: choice
         default: iPhone 16 Pro Max
-        options: ['iPhone SE (3rd generation)', 'iPhone 16 Pro', 'iPhone 16 Pro Max']
+        options: ['iPhone SE (3rd generation)', 'iPhone 16 Pro', 'iPhone 16 Pro Max', 'iPhone 17 Pro']
         required: true
   push:
     branches: [main, diagnostics/apple-native-redesign, feature/apple-native-redesign]

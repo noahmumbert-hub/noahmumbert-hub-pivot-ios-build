@@ -135,6 +135,11 @@ case "${PIVOT_TEST_SCOPE:-all}" in
       -only-testing:PIVOTUITests/PIVOTUITests/testLiveMapRefreshReportsRealProviderStatus
       -test-iterations 3
     ) ;;
+  refresh-visual)
+    test_options+=(
+      -only-testing:PIVOTUITests/PIVOTUITests/testRefreshButtonRetainsPlanRimAndGlyphAcrossTabs
+      -only-testing:PIVOTUITests/PIVOTUITests/testRefreshButtonRetainsPlanRimAndGlyphAtLargestText
+    ) ;;
   layout-review)
     test_options+=(
       -only-testing:PIVOTUITests/PIVOTUITests/testShowsExpandedPerformanceFitsAtLargestTextSize

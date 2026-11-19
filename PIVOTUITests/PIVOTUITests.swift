@@ -3739,6 +3739,107 @@ final class PIVOTUITests: XCTestCase {
         continueAfterFailure = false
     }
 
+    /// Read the compositor's pixels, including any mask applied by the parent
+    /// List. An element's frame still measures 44 points when its rim is cut.
+    private struct RefreshButtonPixels {
+        let rimTone: Int
+        let surfaceTone: Int
+        let rimSamples: [[Int]]
+        let glyphArea: CGFloat
+
+        init(_ image: CGImage, diameter: CGFloat) throws {
+            let width = image.width, height = image.height
+            let colorSpace = try XCTUnwrap(CGColorSpace(name: CGColorSpace.sRGB))
+            let context = try XCTUnwrap(CGContext(data: nil, width: width, height: height,
+                bitsPerComponent: 8, bytesPerRow: width * 4, space: colorSpace,
+                bitmapInfo: CGImageAlphaInfo.noneSkipLast.rawValue | CGBitmapInfo.byteOrder32Big.rawValue))
+            context.draw(image, in: CGRect(x: 0, y: 0, width: width, height: height))
+            let data = try XCTUnwrap(context.data).assumingMemoryBound(to: UInt8.self)
+            let scale = CGFloat(width) / diameter
+            let radius = diameter / 2
+            var arcs = [[Int]](repeating: [], count: 72)
+            var stroke: [Int] = [], surface: [Int] = [], center: [Int] = []
+            for y in 0..<height {
+                for x in 0..<width {
+                    let dx = (CGFloat(x) + 0.5 - CGFloat(width) / 2) / scale
+                    let dy = (CGFloat(y) + 0.5 - CGFloat(height) / 2) / scale
+                    let distance = hypot(dx, dy)
+                    let offset = (y * width + x) * 4
+                    let tone = (Int(data[offset]) + Int(data[offset + 1]) + Int(data[offset + 2])) / 3
+                    if distance < 13 { center.append(tone) }
+                    if (14...17).contains(distance) { surface.append(tone) }
+                    if (radius - 0.8 ... radius - 0.2).contains(distance) { stroke.append(tone) }
+                    if (radius - 2 ... radius + 0.5).contains(distance) {
+                        let turn = atan2(dy, dx) / (2 * .pi) + 1
+                        arcs[Int(turn * 72) % 72].append(tone)
+                    }
+                }
+            }
+            let fill = try XCTUnwrap(surface.sorted().dropFirst(surface.count / 2).first)
+            surfaceTone = fill
+            rimTone = try XCTUnwrap(stroke.sorted().dropFirst(stroke.count / 2).first)
+            rimSamples = arcs
+            glyphArea = CGFloat(center.filter { abs($0 - fill) > 18 }.count) / (scale * scale)
+        }
+
+        func check(against plan: Self, tab: String, file: StaticString = #filePath, line: UInt = #line) {
+            let contrast = abs(plan.rimTone - plan.surfaceTone)
+            XCTAssertGreaterThan(contrast, 12, "The Plan reference must show a distinct border", file: file, line: line)
+            let missing = rimSamples.indices.filter { bin in
+                !rimSamples[bin].contains { abs($0 - plan.rimTone) <= max(4, contrast / 3) }
+            }
+            XCTAssertTrue(missing.isEmpty, "\(tab) missing refresh rim in 5-degree sectors \(missing)", file: file, line: line)
+            XCTAssertGreaterThan(plan.glyphArea, 12, "The reference arrow must be visible", file: file, line: line)
+            // Rotation changes antialiasing. Compare visible ink area without
+            // requiring the live arrow to point in the reference direction.
+            XCTAssertEqual(glyphArea, plan.glyphArea, accuracy: max(3, plan.glyphArea * 0.18),
+                           "\(tab) refresh glyph ink area vs Plan", file: file, line: line)
+        }
+    }
+
+    func testRefreshButtonRetainsPlanRimAndGlyphAcrossTabs() throws {
+        try checkRefreshButtonPixels(largest: false)
+    }
+
+    func testRefreshButtonRetainsPlanRimAndGlyphAtLargestText() throws {
+        try checkRefreshButtonPixels(largest: true)
+    }
+
+    private func checkRefreshButtonPixels(largest: Bool) throws {
+        let app = artworkFixtureApp()
+        app.launchArguments = ["--apple-ui-test", "--map-refresh-network-test", "--map-refresh-manual-test",
+                               "--slow-park-switch", "-pivot.selectedPark", "6"]
+        if largest { app.launchArguments += ["--ui-largest-type"] }
+        app.launch()
+        let refresh = app.buttons["Refresh ride data now"].firstMatch
+        var referenceFrame: CGRect?
+        for busy in [false, true] {
+            app.tabBars.buttons["Plan"].tap()
+            XCTAssertTrue(refresh.waitForExistence(timeout: 5))
+            if busy { refresh.tap() }
+            var plan: RefreshButtonPixels?
+            for tab in ["Plan", "Waits", "Shows"] {
+                if tab != "Plan" { app.tabBars.buttons[tab].tap() }
+                let frame = refresh.frame
+                XCTAssertEqual(refresh.isEnabled, !busy, "\(tab) must show the requested refresh state")
+                XCTAssertEqual(frame.width, 44, accuracy: 0.5)
+                XCTAssertEqual(frame.height, 44, accuracy: 0.5)
+                if let referenceFrame {
+                    XCTAssertEqual(frame.midX, referenceFrame.midX, accuracy: 1)
+                    XCTAssertEqual(frame.midY, referenceFrame.midY, accuracy: 1)
+                } else { referenceFrame = frame }
+                let screenshot = refresh.screenshot()
+                let attachment = XCTAttachment(screenshot: screenshot)
+                attachment.name = "Refresh rim \(tab) \(busy ? "rotating" : "idle") \(largest ? "largest" : "standard")"
+                attachment.lifetime = .keepAlways
+                add(attachment)
+                let pixels = try RefreshButtonPixels(XCTUnwrap(screenshot.image.cgImage), diameter: frame.width)
+                if tab == "Plan" { plan = pixels }
+                pixels.check(against: try XCTUnwrap(plan), tab: tab)
+            }
+        }
+    }
+
     func testTopBrandAndParkSelectorAlignAcrossRepeatedTabNavigation() {
         checkTopBrandAndParkSelector(extra: ["--ui-dark"], repeated: true)
     }
